@@ -5,18 +5,18 @@
   "aliases": ["Defaults", "Default bias", "Opt-out effect"],
   "category": "decision",
   "statement": "The option that takes effect when nobody acts is chosen far more often than the same option is chosen freely, and 58 studies pool to d = 0.68.",
-  "meaning": "A default is whatever happens to a person who does nothing. Choice architects set one whenever a form has a pre-ticked box, a pension plan enrols new hires automatically, or a utility assigns a tariff. The claim is that moving the default moves the distribution of choices, without removing any option and without changing any price. Three routes are usually offered for why. Accepting the default costs no effort, the default tells the chooser what the institution thinks it should be, and the default becomes the reference point against which the alternatives look like losses. Which route dominates matters for policy, because effort can be engineered away and endorsement cannot. Defaults are the operational half of status quo bias, and the organ-donation evidence that made them famous sits in that entry rather than this one.",
+  "meaning": "A default is whatever happens to a person who does nothing. Choice architects set one whenever a form has a pre-ticked box, a pension plan enrols new hires automatically, or a utility assigns a tariff. The claim is that moving the default moves the distribution of choices, without removing any option and without changing any price. Three routes are usually offered for why. Accepting the default costs no effort, the default tells the chooser what the institution thinks it should be, and the default becomes the reference point against which the alternatives look like losses. Which route dominates matters for policy, because effort can be engineered away and endorsement cannot. Defaults are the operational half of status quo bias, and the organ-donation evidence that made them famous sits in that entry, no. 51, rather than this one.",
   "origin": {
     "year": 1993,
     "who": "Eric J. Johnson, John C. Hershey, Jacqueline Meszaros and Howard Kunreuther",
     "where": "Journal of Risk and Uncertainty",
-    "note": "Their study of car insurance in two neighbouring states, where New Jersey made limited tort the default and Pennsylvania made full tort the default, is the natural experiment the default literature was built on. The article is paywalled and the figures quoted on this page were read off Dhingra and colleagues' 2012 description of it, not off the article."
+    "note": "Their questionnaire study put the same auto insurance choice to subjects under two framings, and it preceded the Pennsylvania law. The two-state comparison they are remembered for is not their own data collection. They cite the Insurance Information Institute for it, and call it a natural quasi-experiment. New Jersey motorists had to acquire the full right to sue at extra cost and about 20 percent did. In Pennsylvania the full right was the default and about 75 percent kept it. The article is open on Johnson's Columbia Business School page, which was read here; Springer sells it."
   },
-  "evidence": "The quantitative core is a meta-analysis. Jachimowicz, Duncan, Weber and Johnson searched the literature and pooled 58 datasets from 55 studies in 35 articles, with a pooled n of 73,675. The base model gives d = 0.68, 95% CI [0.53, 0.83]; a three-level model that allows for datasets nested in studies gives d = 0.63, 95% CI [0.47, 0.80]. For the binary outcomes, which are most of them, Cramér's V is 0.29, 95% CI [0.21, 0.37], and the absolute difference in take-up between default conditions averages 27.24 percentage points. Two domain moderators come out: consumer settings b = 0.73, SE = 0.23, p = 0.003, and environmental settings b = -0.47, SE = 0.27, p = 0.08. Of the three proposed routes, two moderate the effect and one does not. Endorsement gives b = 0.32, SE = 0.15, p = 0.038 and endowment b = 0.31, SE = 0.15, p = 0.044, while ease gives b = -0.05, SE = 0.15, p = 0.75. The field evidence is larger than the laboratory evidence in every sense. Carroll, Choi, Laibson, Madrian and Metrick studied a firm that briefly required new hires to state a 401(k) decision rather than leaving non-enrolment as the default. Three months after hire, 69 percent of the active-decision cohort had enrolled against 41 percent of the standard-enrolment cohort, a gap of 28 percentage points, and the savings distribution reached at three months would have taken thirty months to reach under the ordinary default. Liebe, Gewinner and Diekmann report two Swiss field studies covering over 200,000 households and 8,000 enterprises whose supplier made renewable electricity the standard package. Around 80 percent of customers in both sectors stayed with the green default, and the effect was stable over at least four years. Electricity consumption had only a weak effect on acceptance, and accepting the default did not raise consumption afterwards.",
+  "evidence": "The quantitative core is a meta-analysis. Jachimowicz, Duncan, Weber and Johnson searched the literature and pooled 58 datasets from 55 studies in 35 articles, with a pooled n of 73,675. The base model gives d = 0.68, 95% CI [0.53, 0.83]; a three-level model that allows for datasets nested in studies gives d = 0.63, 95% CI [0.47, 0.80]. For the binary outcomes, which are most of them, Cramér's V is 0.29, 95% CI [0.21, 0.37], and the absolute difference in take-up between default conditions averages 27.24 percentage points. One domain moderator comes out: consumer settings, b = 0.73, SE = 0.23, p = 0.003. Environmental settings run the other way but only marginally, b = -0.47, SE = 0.27, p = 0.08. Of the three proposed routes, two moderate the effect and one does not. Endorsement gives b = 0.32, SE = 0.15, p = 0.038 and endowment b = 0.31, SE = 0.15, p = 0.044, while ease gives b = -0.05, SE = 0.15, p = 0.75. Re-run with robust variance estimation, endowment drops to p = 0.081. The field evidence is larger than the laboratory evidence in every sense. Carroll, Choi, Laibson, Madrian and Metrick studied a firm that briefly required new hires to state a 401(k) decision rather than leaving non-enrolment as the default. Three months after hire, 69 percent of the active-decision cohort had enrolled against 41 percent of the standard-enrolment cohort, a gap of 28 percentage points, and the savings distribution reached at three months would have taken thirty months to reach under the ordinary default. Liebe, Gewinner and Diekmann report two Swiss field studies covering over 200,000 households and 8,000 enterprises whose suppliers made renewable electricity the standard package. Around 80 percent of customers in both sectors stayed with the green default, and the effect was stable over at least four years. Electricity consumption had only a weak effect on acceptance, and accepting the default did not raise consumption afterwards.",
   "replication": {
     "state": "replicated",
     "headline": "Fifty-eight default studies pool to d = 0.68, and the spread around that figure is wider than the figure.",
-    "detail": "Jachimowicz and colleagues found the effect in the large majority of the studies they collected, and their pooled estimate is d = 0.68, 95% CI [0.53, 0.83]. Their own tests for a missing-studies problem point the other way from the usual worry. Egger's test is flat, t(56) = -0.39, p = 0.69, and trim-and-fill adds eight hypothetical studies and raises the estimate to d = 0.80, 95% CI [0.65, 0.96]. What the pooled figure conceals is heterogeneity of I-squared = 98.21 percent, falling to 92.32 percent once the three channels are entered as moderators. Most default studies find positive effects, several find nothing, and two find effects in the wrong direction. The field record is consistent with a real and large effect. DellaVigna and Linos excluded default interventions from the main sample of their nudge-unit study because defaults were rare there, only two arms of one trial out of 126. Those two arms covered 1.3 million people and moved take-up by 9.4 and 11.2 percentage points, against an average of 1.4 percentage points across the 243 nudges they did analyse.",
+    "detail": "Jachimowicz and colleagues found the effect in the large majority of the studies they collected, and their pooled estimate is d = 0.68, 95% CI [0.53, 0.83]. Their own tests for a missing-studies problem point the other way from the usual worry. Egger's test is flat, t(56) = -0.39, p = 0.69, and trim-and-fill adds eight missing studies and raises the estimate to d = 0.80, 95% CI [0.65, 0.96]. The authors add that Egger's regression makes Type I errors where heterogeneity is high, as it is here, and say the result should be read with caution. What the pooled figure conceals is heterogeneity of I-squared = 98.21 percent. Adding the study characteristics brings it to 93.54 percent, and adding the three channels on top of those brings it to 92.32 percent. Most default studies find positive effects, several find nothing, and two find effects in the wrong direction. The field record is consistent with a real and large effect. DellaVigna and Linos excluded default interventions from the main sample of their nudge-unit study because defaults were rare there, only two arms of one trial out of 126. Those two arms covered 1.3 million people and moved take-up by 9.4 and 11.2 percentage points, against an average of 1.4 percentage points across the 243 nudges they did analyse.",
     "study": {
       "cite": "Jachimowicz, J. M., Duncan, S., Weber, E. U., & Johnson, E. J. (2019). When and why defaults influence decisions: A meta-analysis of default effects. Behavioural Public Policy, 3(2), 159-186.",
       "doi": "10.1017/bpp.2018.43",
@@ -26,92 +26,92 @@
     "replicated": { "es": 0.68, "esType": "d", "ci": [0.53, 0.83], "ciLevel": 95 }
   },
   "limits": "Defaults fail in the field, and the failures are informative. Bronchetti, Dee, Huffman and Magenheim ran a field experiment with 259 low-income tax filers in which part of the federal refund went into savings bonds unless the filer chose otherwise. Take-up in the control condition was about 9 percent, the default moved nothing, and the interval around the estimate rules out an effect larger than roughly 8 percentage points. Their reading is that these filers arrived with plans for the money. The meta-analytic moderator points the same way for environmental settings, where the coefficient is negative. Persistence is a separate question from take-up. Even in Carroll and colleagues' firm the enrolment gap fell to 17 percentage points at 24 months of tenure and 5 points at 42 months. Choukhmane, using more than 100 US retirement plans and a British panel, reproduces the twelve-month effect of automatic enrolment and finds it attenuated by 36 months, with modest average increases in saving at that horizon and a fitted switching cost of about $250. Almost none of this literature is preregistered multi-site replication of a single protocol. The evidence is a large number of one-off studies in different domains, which is what the 98 percent heterogeneity is measuring.",
-  "misreadings": "The first error is importing the nudge literature's publication-bias problem wholesale. Mertens, Herberz, Hahnel and Brosch meta-analysed choice-architecture studies broadly, 440 effect sizes and n = 2,148,439 after their 2022 correction, and reported d = 0.43, 95% CI [0.38, 0.48]. Maier, Bartoš, Stanley, Shanks, Harris and Wagenmakers re-analysed those data with a model that allows for selective publication and got d = 0.04, 95% CI [0.00, 0.14], with d = 0.11, 95% CI [0.00, 0.24] using only the most precise estimate per study. For the decision-structure category, which is where defaults sit, they report d = 0.12 with a Bayes factor of 1.12, which is the value that decides nothing. Defaults were not the target of that exchange, and Jachimowicz and colleagues' own bias tests on the default-only literature came out clean. The second error runs the other way. DellaVigna and Linos compared 126 nudge-unit trials covering 23 million people with nudge trials in academic journals: 8.7 percentage points and a 33.5 percent lift over control in the journals, 1.4 percentage points and 8.1 percent in the nudge units. Correcting for selective publication, with insignificant trials written up at an estimated probability of 0.1, brings the journal figure to 3.2 percentage points. Those numbers describe nudges in general, and defaults were removed from both samples. The third error is reading an acceptance rate as an effect. Eighty percent staying with a green default is a level, and the effect is the difference from what people choose with no default or the opposite one. The fourth is treating a moved choice as moved welfare, which is what Choukhmane's medium-run results deny.",
+  "misreadings": "The first error is importing the nudge literature's publication-bias problem wholesale. Mertens, Herberz, Hahnel and Brosch meta-analysed choice-architecture studies broadly, 447 effect sizes from 212 publications and n = 2,148,439 after their 2022 correction, and reported d = 0.43, 95% CI [0.38, 0.48]. The correction's own abstract rounds the count to 440, which is the figure usually quoted. Maier, Bartoš, Stanley, Shanks, Harris and Wagenmakers re-analysed those data with a model that allows for selective publication and got d = 0.04 with a 95 percent credible interval of [0.00, 0.14], and d = 0.11, [0.00, 0.24], using only the most precise estimate per study. Those are Bayesian posteriors, not confidence intervals. For the decision-structure category, which is where defaults sit, they report d = 0.12 with a Bayes factor for the null of 1.12, which is the value that decides nothing. Defaults were not the target of that exchange, and Jachimowicz and colleagues' own bias tests on the default-only literature point at missing large effects rather than missing null ones. The second error runs the other way. DellaVigna and Linos compared 126 nudge-unit trials covering 23 million people with nudge trials in academic journals: 8.7 percentage points and a 33.4 percent lift over control in the journals, 1.4 percentage points and 8.0 percent in the nudge units. Correcting for selective publication, with insignificant trials written up at an estimated probability of 0.1, brings the journal figure to 3.2 percentage points. Those numbers describe nudges in general, and defaults were removed from both samples. The third error is reading an acceptance rate as an effect. Eighty percent staying with a green default is a level, and the effect is the difference from what people choose with no default or the opposite one. The fourth is treating a moved choice as moved welfare, which is what Choukhmane's medium-run results deny.",
   "sources": [
     {
-      "text": "Jachimowicz, J. M., Duncan, S., Weber, E. U., & Johnson, E. J. (2019). When and why defaults influence decisions: A meta-analysis of default effects. Behavioural Public Policy, 3(2), 159-186.",
+      "text": "Jachimowicz, J. M., Duncan, S., Weber, E. U., & Johnson, E. J. (2019). When and why defaults influence decisions: A meta-analysis of default effects. Behavioural Public Policy, 3(2), 159-186. Open access at Cambridge Core and read in full; every figure on this page was checked against it.",
       "doi": "10.1017/bpp.2018.43",
       "url": "https://doi.org/10.1017/bpp.2018.43",
       "type": "primary"
     },
     {
-      "text": "Johnson, E. J., Hershey, J., Meszaros, J., & Kunreuther, H. (1993). Framing, probability distortions, and insurance decisions. Journal of Risk and Uncertainty, 7(1), 35-51. Paywalled; the New Jersey and Pennsylvania figures on this page were read off Dhingra and colleagues (2012), not off this article.",
+      "text": "Johnson, E. J., Hershey, J., Meszaros, J., & Kunreuther, H. (1993). Framing, probability distortions, and insurance decisions. Journal of Risk and Uncertainty, 7(1), 35-51. Springer sells the article, but the authors' scan is free at https://business.columbia.edu/sites/default/files-efs/pubfiles/1137/Copy_of_Framing_Probability_Distortions.pdf and was read here. It has no text layer, so it was read by optical character recognition.",
       "doi": "10.1007/BF01065313",
       "url": "https://doi.org/10.1007/BF01065313",
       "type": "primary"
     },
     {
-      "text": "Dhingra, N., Gorn, Z., Kener, A., & Dana, J. (2012). The default pull: An experimental demonstration of subtle default effects on preferences. Judgment and Decision Making, 7(1), 69-76. Quoted here for its description of Johnson and colleagues (1993): 75 percent of Pennsylvania consumers paid to retain full tort against 20 percent in New Jersey.",
+      "text": "Dhingra, N., Gorn, Z., Kener, A., & Dana, J. (2012). The default pull: An experimental demonstration of subtle default effects on preferences. Judgment and Decision Making, 7(1), 69-76. Read in full. Its summary of Johnson and colleagues (1993) says 75 percent of Pennsylvania consumers paid to retain full tort against 20 percent of New Jersey consumers. New Jersey drivers had no full tort to retain, and the article says they acquired it, so this page follows the article rather than the summary.",
       "doi": "10.1017/S1930297500001844",
       "url": "https://doi.org/10.1017/S1930297500001844",
       "type": "commentary"
     },
     {
-      "text": "Carroll, G. D., Choi, J. J., Laibson, D., Madrian, B. C., & Metrick, A. (2009). Optimal defaults and active decisions. The Quarterly Journal of Economics, 124(4), 1639-1674. The 69 and 41 percent enrolment figures were read off the authors' preprint at https://www.economics.utoronto.ca/gabriel.carroll/odad.pdf, which carries the journal's pagination.",
+      "text": "Carroll, G. D., Choi, J. J., Laibson, D., Madrian, B. C., & Metrick, A. (2009). Optimal defaults and active decisions. The Quarterly Journal of Economics, 124(4), 1639-1674. Read at https://www.economics.utoronto.ca/gabriel.carroll/odad.pdf, which carries the journal's running heads and its pagination from 1639. The 69 and 41 percent enrolment figures, the 28 point gap and the thirty-month equivalence are in it.",
       "doi": "10.1162/qjec.2009.124.4.1639",
       "url": "https://doi.org/10.1162/qjec.2009.124.4.1639",
       "type": "primary"
     },
     {
-      "text": "Liebe, U., Gewinner, J., & Diekmann, A. (2021). Large and persistent effects of green energy defaults in the household and business sectors. Nature Human Behaviour, 5(5), 576-585.",
+      "text": "Liebe, U., Gewinner, J., & Diekmann, A. (2021). Large and persistent effects of green energy defaults in the household and business sectors. Nature Human Behaviour, 5(5), 576-585. Nature sells it. The accepted manuscript is open at the Warwick research archive and was read, and the published abstract was read at PubMed. The two differ: the accepted manuscript says 15,000 enterprises and the published version says 8,000, which is the figure used here.",
       "doi": "10.1038/s41562-021-01070-3",
       "url": "https://doi.org/10.1038/s41562-021-01070-3",
       "type": "primary"
     },
     {
-      "text": "Bronchetti, E. T., Dee, T. S., Huffman, D. B., & Magenheim, E. (2013). When a nudge isn't enough: Defaults and saving among low-income tax filers. National Tax Journal, 66(3), 609-634.",
+      "text": "Bronchetti, E. T., Dee, T. S., Huffman, D. B., & Magenheim, E. (2013). When a nudge isn't enough: Defaults and saving among low-income tax filers. National Tax Journal, 66(3), 609-634. The journal's host answers with a bot challenge rather than a paywall notice. Only the published abstract was read, through a January 2023 Wayback capture, and it states the bound as 20 percent of the effects found in the 401(k) literature.",
       "doi": "10.17310/ntj.2013.3.04",
       "url": "https://doi.org/10.17310/ntj.2013.3.04",
       "type": "replication"
     },
     {
-      "text": "Bronchetti, E. T., Dee, T. S., Huffman, D. B., & Magenheim, E. (2011). When a nudge isn't enough: Defaults and saving among low-income tax filers. NBER Working Paper 16887. The sample of 259, the 9 percent control take-up and the 8 percentage point bound were read off this version.",
+      "text": "Bronchetti, E. T., Dee, T. S., Huffman, D. B., & Magenheim, E. (2011). When a nudge isn't enough: Defaults and saving among low-income tax filers. NBER Working Paper 16887. Read in full. The sample of 259, the 9 percent control take-up and the 8 percentage point bound were read off this version, and the published abstract does not contradict them.",
       "doi": "10.3386/w16887",
       "url": "https://doi.org/10.3386/w16887",
       "type": "replication"
     },
     {
-      "text": "Choukhmane, T. (2025). Default options and retirement saving dynamics. American Economic Review, 115(11), 3749-3787.",
+      "text": "Choukhmane, T. (2025). Default options and retirement saving dynamics. American Economic Review, 115(11), 3749-3787. The full text needs a login. The published abstract was read on the journal's own page and carries every figure used here: over 100 US retirement plans, a representative UK panel, the twelve-month effect, its attenuation by 36 months and the switching cost of about $250. The author's 2021 working paper, which was also read, counts 86 firms instead and is not quoted here.",
       "doi": "10.1257/aer.20210881",
       "url": "https://doi.org/10.1257/aer.20210881",
       "type": "commentary"
     },
     {
-      "text": "DellaVigna, S., & Linos, E. (2022). RCTs to scale: Comprehensive evidence from two nudge units. Econometrica, 90(1), 81-116.",
+      "text": "DellaVigna, S., & Linos, E. (2022). RCTs to scale: Comprehensive evidence from two nudge units. Econometrica, 90(1), 81-116. The full text needs a login. The published abstract was read on the Econometric Society's page and gives a 33.4 percent lift in the journals and 8.0 percent in the nudge units. The free online appendix was also read, and its Table A4b note carries the two default arms.",
       "doi": "10.3982/ECTA18709",
       "url": "https://doi.org/10.3982/ECTA18709",
       "type": "commentary"
     },
     {
-      "text": "DellaVigna, S., & Linos, E. (2020). RCTs to scale: Comprehensive evidence from two nudge units. NBER Working Paper 27594. Every DellaVigna and Linos figure on this page, including the two default arms and the publication-bias correction, was read off this version rather than the journal article.",
+      "text": "DellaVigna, S., & Linos, E. (2020). RCTs to scale: Comprehensive evidence from two nudge units. NBER Working Paper 27594. Read in full. The publication-bias correction quoted here, and the estimated write-up probability of 0.1, were read off this version. Its percentage lifts of 33.5 and 8.1 became 33.4 and 8.0 in the article, so the article's figures are used above.",
       "doi": "10.3386/w27594",
       "url": "https://doi.org/10.3386/w27594",
       "type": "commentary"
     },
     {
-      "text": "Mertens, S., Herberz, M., Hahnel, U. J. J., & Brosch, T. (2022). The effectiveness of nudging: A meta-analysis of choice architecture interventions across behavioral domains. Proceedings of the National Academy of Sciences, 119(1), e2107346118.",
+      "text": "Mertens, S., Herberz, M., Hahnel, U. J. J., & Brosch, T. (2022). The effectiveness of nudging: A meta-analysis of choice architecture interventions across behavioral domains. Proceedings of the National Academy of Sciences, 119(1), e2107346118. The publisher answers with a bot challenge. Read in full through Europe PMC. Defaults are a technique inside the decision-structure category, which is why that category is the one quoted here.",
       "doi": "10.1073/pnas.2107346118",
       "url": "https://doi.org/10.1073/pnas.2107346118",
       "type": "commentary"
     },
     {
-      "text": "Correction for Mertens et al., The effectiveness of nudging (2022). Proceedings of the National Academy of Sciences, 119(19). The correction reduces the analysis to 440 effect sizes and n = 2,148,439 and the pooled estimate from d = 0.45 to d = 0.43.",
+      "text": "Correction for Mertens et al., The effectiveness of nudging (2022). Proceedings of the National Academy of Sciences, 119(19). Read in full through Europe PMC. It corrects the abstract's count to 440 effect sizes and the results section's to 447 from 212 publications, both at n = 2,148,439, and the pooled estimate from d = 0.45 to d = 0.43.",
       "doi": "10.1073/pnas.2204059119",
       "url": "https://doi.org/10.1073/pnas.2204059119",
       "type": "commentary"
     },
     {
-      "text": "Maier, M., Bartoš, F., Stanley, T. D., Shanks, D. R., Harris, A. J. L., & Wagenmakers, E.-J. (2022). No evidence for nudging after adjusting for publication bias. Proceedings of the National Academy of Sciences, 119(31), e2200300119.",
+      "text": "Maier, M., Bartoš, F., Stanley, T. D., Shanks, D. R., Harris, A. J. L., & Wagenmakers, E.-J. (2022). No evidence for nudging after adjusting for publication bias. Proceedings of the National Academy of Sciences, 119(31), e2200300119. Read in full through Europe PMC. Its adjusted estimates carry credible intervals rather than confidence intervals, and its Bayes factors are stated for the null.",
       "doi": "10.1073/pnas.2200300119",
       "url": "https://doi.org/10.1073/pnas.2200300119",
       "type": "commentary"
     },
     {
-      "text": "Samuelson, W., & Zeckhauser, R. (1988). Status quo bias in decision making. Journal of Risk and Uncertainty, 1(1), 7-59. Cross-referenced for the status quo bias entry, which carries the organ-donation default evidence.",
+      "text": "Samuelson, W., & Zeckhauser, R. (1988). Status quo bias in decision making. Journal of Risk and Uncertainty, 1(1), 7-59. Read in full from a free copy at MIT. No figure on this page rests on it. The organ-donation default evidence is carried by the status quo bias entry, no. 51.",
       "doi": "10.1007/BF00055564",
       "url": "https://doi.org/10.1007/BF00055564",
       "type": "primary"
     }
   ],
-  "checkedOn": "2026-08-09"
+  "checkedOn": "2026-09-21"
 }
