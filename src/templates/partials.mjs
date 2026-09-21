@@ -184,7 +184,7 @@ export function escapeHtml(s) {
  * The one-line replication fact on a card's foot.
  *
  * This used to print a lab count or, failing that, "no replication located".
- * Only 66 entries carry a site count, so 387 entries that name a replication
+ * Only 44 entries carry a site count, so 387 entries that name a replication
  * study were telling readers on the index that none had been found. The claim
  * a card makes about the literature has to be the claim the entry makes, and
  * an absence is the one thing this site cannot afford to assert loosely.
