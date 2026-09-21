@@ -2,7 +2,10 @@
   "no": 266,
   "slug": "worse-than-average-effect",
   "name": "Worse-than-average effect",
-  "aliases": ["Below-average effect", "Worse-than-average bias"],
+  "aliases": [
+    "Below-average effect",
+    "Worse-than-average bias"
+  ],
   "category": "social",
   "statement": "On skills that hardly anybody has, people place themselves below the average person, by the same comparison that puts them above average on skills nearly everybody has.",
   "meaning": "This is a claim about placement in a ranking rather than about how good people think they are in absolute terms. On hard tasks the two come apart. Moore and Healy report that people overestimate their actual performance on difficult tasks while believing they are worse than others, and that both errors reverse on easy tasks. Someone can think they juggle better than they do and still put themselves in the bottom quarter of jugglers. The effect is the better-than-average effect read at the other end of a difficulty scale, so an account of one has to explain the other. Kruger's own explanation is that the comparison is egocentric: people start from their own skill and adjust too little for everyone else's.",
@@ -12,64 +15,72 @@
     "where": "Journal of Personality and Social Psychology",
     "note": "Kruger set the below-average effect against the Lake Wobegon literature, and his abstract concludes that the tendency to see oneself as above average may not be as ubiquitous as once thought. He puts the label in quotation marks in his own title."
   },
-  "evidence": "Kruger's Study 1 gave eight abilities of varying difficulty to 37 Cornell students, 8 men and 29 women, and asked them to rank themselves against their peers. Mean percentile estimates were 58.8 for using a mouse, 65.4 for driving, 64.0 for riding a bicycle and 61.5 for saving money. On the four difficult abilities they were 46.5 for telling jokes, 27.8 for playing chess, 26.5 for juggling and 24.8 for computer programming. Every figure but telling jokes differed from the 50th percentile. Those numbers and that sample description are read off Korbmacher, Kwan and Feldman's reproduction of Kruger's table, because the original paper is paywalled and was not obtained. Studies 2 and 3 substituted a single easy or difficult test for the domain list, and Study 3 added cognitive load, which the abstract reports made both directions worse. Zell, Strickhouser, Sedikides and Alicke found the same split in their meta-analysis of better-than-average studies. Across seven matched samples that measured both kinds of ability, easy abilities gave dz = 1.10 and hard abilities gave a worse-than-average effect of dz = -0.52, t = 36.84, p < .001. Those meta-analytic figures are read from the authors' accepted manuscript in the University of Southampton repository.",
+  "evidence": "Kruger's Study 1 gave eight abilities of varying difficulty to 37 Cornell students, 8 men and 29 women, and asked them to rank themselves against their peers. Mean percentile estimates were 58.8 for using a mouse, 65.4 for driving, 64.0 for riding a bicycle and 61.5 for saving money. On the four difficult abilities they were 46.5 for telling jokes, 27.8 for playing chess, 26.5 for juggling and 24.8 for computer programming. Every figure but telling jokes differed from the 50th percentile. Those numbers and that sample description are read off Tables 1 and 4 of Korbmacher, Kwan and Feldman, who reproduce Kruger's own table, because the original paper could not be opened. The same authors report that Kruger's Studies 2 and 3 replaced the domain list with one test, either easy or difficult, and Kruger's abstract says cognitive load in Study 3 made the biases worse. Zell, Strickhouser, Sedikides and Alicke found the same split in their meta-analysis of better-than-average studies. Seven matched samples, holding 373 participants between them, gave dz = 1.10, 95% CI [1.06, 1.15], on easy abilities and dz = -0.52, 95% CI [-0.59, -0.46], on hard ones. The t of 36.84 printed beside that pair tests the gap between the two, not either estimate against zero. Those meta-analytic figures are read from the authors' accepted manuscript in the University of Southampton repository.",
   "replication": {
     "state": "replicated",
     "headline": "A preregistered replication found the effect on three of the four difficult abilities Kruger used, and on the fourth it failed in the original too.",
-    "detail": "Korbmacher, Kwan and Feldman recruited 756 US MTurk workers in 2020 and kept 691 after preregistered exclusions, against Kruger's 37 students. The 240 who saw Kruger's original wording rated themselves above the 50th percentile on all four easy abilities and below it on playing chess at 41.0, juggling at 32.0 and programming at 40.7, each p < .001. Telling jokes came out at 52.4 and did not differ from the midpoint, which is the exception Kruger reported. Across the eight domains the correlation between rated difficulty and comparative standing was r = -0.85, the figure in the field below. Rewording the domains moved the result as predicted: mean comparative ability was 58.86 under easy rewordings, 53.29 under the original wording and 46.97 under difficult ones. The egocentric pattern held as well. For driving, own absolute ability predicted comparative standing at a standardised beta of 0.85 where peers' ability predicted it at -0.11.",
+    "detail": "Korbmacher, Kwan and Feldman recruited 756 US MTurk workers in 2020 and kept 691 after preregistered exclusions, against Kruger's 37 students. The 240 who saw Kruger's original wording rated themselves above the 50th percentile on all four easy abilities and below it on playing chess at 41.0, juggling at 32.0 and programming at 40.7, each p < .001. Telling jokes came out at 52.4 and did not differ from the midpoint, which is the exception Kruger reported. Across the eight domain means the correlation between rated difficulty and comparative standing was r(6) = -0.85, the figure in the field below. It is a correlation over eight points, not over 240 people, and the width of its interval says so. Rewording the domains moved the result as predicted: mean comparative ability was 58.86 under easy rewordings, 53.29 under the original wording and 46.97 under difficult ones. The egocentric pattern held across the domains. Own absolute ability predicted comparative standing at standardised betas of 0.59 to 0.85 on seven of them and 0.29 on using a mouse, where peers' ability ran from -0.11 to 0.18.",
     "study": {
       "cite": "Korbmacher, M., Kwan, C. (I.), & Feldman, G. (2022). Both better and worse than others depending on difficulty: Replication and extensions of Kruger's (1999) above and below average effects. Judgment and Decision Making, 17(2), 449-486.",
       "doi": "10.1017/S1930297500009189",
       "year": 2022,
       "n": 691
     },
-    "replicated": { "es": -0.85, "esType": "r", "ci": [-0.97, -0.37], "ciLevel": 95 }
+    "replicated": {
+      "es": -0.85,
+      "esType": "r",
+      "ci": [
+        -0.97,
+        -0.37
+      ],
+      "ciLevel": 95
+    }
   },
-  "limits": "Difficulty is not the only thing that varies across these domains. In the replication the easy abilities were rated more desirable than the difficult ones by 1.16 scale points, and comparative standing tracked desirability at r = 0.72, 95% CI [0.03, 0.95]. The mechanism is disputed. Moore and Small argue that no bias is needed, because people hold better information about their own performance than about anyone else's, so their estimates of others regress further towards a prior. That alone puts people above average on easy tasks and below average on hard ones. Their third experiment takes the self out of the design. Participants judged two other people, and those shown one person's completed quiz predicted that person would beat the other by 0.66 points on an easy quiz and lose by 0.25 on a difficult one, while those shown the other person's quiz predicted the reverse, F(1, 109) = 13.24, p < .001. Chambers and Windschitl had concluded that differential regression plays no major role, a line Moore and Small quote from page 828 and answer by pointing to differences in how the two sets of studies measured performance. The meta-analytic estimate rests on seven matched samples. Zell and colleagues also report that their most stringent selection model drops the better-than-average effect for abilities from dz = 0.51 to 0.09, so the ability literature this effect lives in may be the part most exposed to publication bias. Moore's 2007 review of worse-than-average findings, in Organizational Behavior and Human Decision Processes, is paywalled and was not obtained for this entry.",
-  "misreadings": "Believing oneself worse than average is not the same as believing one did badly. Moore and Healy report that on difficult tasks people overestimate their actual scores at the same time as they place themselves below others, so the two errors point in opposite directions in the same person. The effect is not evidence of low self-esteem or of modesty either, because the same participants show the opposite bias on the easy items of the same questionnaire. It is a different measurement from the hard-easy effect in calibration, which compares stated confidence against accuracy rather than the self against other people, and which has its own entry here. Kruger's finding does not overturn illusory superiority. Zell and colleagues put the pooled better-than-average effect at dz = 0.78 across 291 samples, and the reversal shows up in the ability domains where hardly anyone is skilled.",
+  "limits": "Difficulty is not the only thing that varies across these domains. In the replication the easy abilities were rated more desirable than the difficult ones by 1.16 scale points, and comparative standing tracked desirability at r = 0.72, 95% CI [0.03, 0.95]. The mechanism is disputed. Moore and Small argue that no bias is needed, because people hold better information about their own performance than about anyone else's, so their estimates of others regress further towards a prior. That alone puts people above average on easy tasks and below average on hard ones. Their third experiment takes the self out of the design. Participants judged two other people, and those shown one person's completed quiz predicted that person would beat the other by 0.66 points on an easy quiz and lose by 0.25 on a difficult one, while those shown the other person's quiz predicted the reverse, F(1, 109) = 13.24, p < .001. Chambers and Windschitl had concluded that differential regression plays no major role, a line Moore and Small quote from page 828 and answer by pointing to differences in how the two sets of studies measured performance. The meta-analytic estimate rests on seven matched samples. Zell and colleagues also report that their most stringent selection model drops the better-than-average effect for abilities from dz = 0.51 to 0.09, so the ability literature this effect lives in may be the part most exposed to publication bias. Moore's 2007 review of worse-than-average findings, in Organizational Behavior and Human Decision Processes, was not obtained on 21 September 2026. Elsevier's linking service answered that the request could not be processed, the SSRN working paper behind it is held by a Cloudflare challenge, and Crossref, Unpaywall, OpenAlex and Semantic Scholar list no open copy. Nothing on this page rests on it.",
+  "misreadings": "Believing oneself worse than average is not the same as believing one did badly. Moore and Healy report that on difficult tasks people overestimate their actual scores at the same time as they place themselves below others, so the two errors point in opposite directions in the same person. The effect is not evidence of low self-esteem or of modesty either, because the same participants show the opposite bias on the easy items of the same questionnaire. It is a different measurement from the hard-easy effect in calibration, which compares stated confidence against accuracy rather than the self against other people, and which is entry no. 247. Kruger's finding does not overturn illusory superiority. Zell and colleagues put the pooled better-than-average effect at dz = 0.78 across 291 samples, and the reversal shows up in the ability domains where hardly anyone is skilled.",
   "sources": [
     {
-      "text": "Kruger, J. (1999). Lake Wobegon be gone! The \"below-average effect\" and the egocentric nature of comparative ability judgments. Journal of Personality and Social Psychology, 77(2), 221-232.",
+      "text": "Kruger, J. (1999). Lake Wobegon be gone! The \"below-average effect\" and the egocentric nature of comparative ability judgments. Journal of Personality and Social Psychology, 77(2), 221-232. The APA's own record answers an Incapsula bot challenge rather than a paywall notice, and Crossref, Unpaywall, OpenAlex, Semantic Scholar, CORE, the Internet Archive and scholar.archive.org listed no open copy on 21 September 2026. Only the author's abstract was read that day, from PubMed. The figures and the sample come from Korbmacher and colleagues' reproduction of Kruger's table.",
       "doi": "10.1037/0022-3514.77.2.221",
       "url": "https://doi.org/10.1037/0022-3514.77.2.221",
       "type": "primary"
     },
     {
-      "text": "Korbmacher, M., Kwan, C. (I.), & Feldman, G. (2022). Both better and worse than others depending on difficulty: Replication and extensions of Kruger's (1999) above and below average effects. Judgment and Decision Making, 17(2), 449-486.",
+      "text": "Korbmacher, M., Kwan, C. (I.), & Feldman, G. (2022). Both better and worse than others depending on difficulty: Replication and extensions of Kruger's (1999) above and below average effects. Judgment and Decision Making, 17(2), 449-486. Read in full on 21 September 2026 from Cambridge Core, which serves the article free under the authors' Creative Commons licence. The running head prints volume 17, number 1, where Crossref records number 2.",
       "doi": "10.1017/S1930297500009189",
       "url": "https://doi.org/10.1017/S1930297500009189",
       "type": "replication"
     },
     {
-      "text": "Zell, E., Strickhouser, J. E., Sedikides, C., & Alicke, M. D. (2020). The better-than-average effect in comparative self-evaluation: A comprehensive review and meta-analysis. Psychological Bulletin, 146(2), 118-149.",
+      "text": "Zell, E., Strickhouser, J. E., Sedikides, C., & Alicke, M. D. (2020). The better-than-average effect in comparative self-evaluation: A comprehensive review and meta-analysis. Psychological Bulletin, 146(2), 118-149. The accepted manuscript was read in full on 21 September 2026 from the University of Southampton repository, whose Anubis proof-of-work challenge was solved to reach the file. The manuscript warns that it may not match the published article, which stays closed, so every figure taken from it is labelled as the manuscript's.",
       "doi": "10.1037/bul0000218",
       "url": "https://doi.org/10.1037/bul0000218",
       "type": "replication"
     },
     {
-      "text": "Moore, D. A., & Small, D. A. (2007). Error and bias in comparative judgment: On being both better and worse than we think we are. Journal of Personality and Social Psychology, 92(6), 972-989.",
+      "text": "Moore, D. A., & Small, D. A. (2007). Error and bias in comparative judgment: On being both better and worse than we think we are. Journal of Personality and Social Psychology, 92(6), 972-989. The authors' draft, which says on its first page that it is not the copy of record, was read in full on 21 September 2026 from Don Moore's own laboratory site. Its abstract matches the published abstract at PubMed word for word in substance. The SSRN copy is held by a Cloudflare challenge.",
       "doi": "10.1037/0022-3514.92.6.972",
       "url": "https://doi.org/10.1037/0022-3514.92.6.972",
       "type": "critique"
     },
     {
-      "text": "Moore, D. A., & Healy, P. J. (2008). The trouble with overconfidence. Psychological Review, 115(2), 502-517.",
+      "text": "Moore, D. A., & Healy, P. J. (2008). The trouble with overconfidence. Psychological Review, 115(2), 502-517. The draft of 22 May 2007 was read in full on 21 September 2026 from Carnegie Mellon's KiltHub deposit, reached through the Figshare interface after the repository's own pages answered an AWS challenge. The published abstract was read at PubMed the same day and carries the same two claims used here.",
       "doi": "10.1037/0033-295X.115.2.502",
       "url": "https://doi.org/10.1037/0033-295X.115.2.502",
       "type": "background"
     },
     {
-      "text": "Chambers, J. R., & Windschitl, P. D. (2004). Biases in social comparative judgments: The role of nonmotivated factors in above-average and comparative-optimism effects. Psychological Bulletin, 130(5), 813-838.",
+      "text": "Chambers, J. R., & Windschitl, P. D. (2004). Biases in social comparative judgments: The role of nonmotivated factors in above-average and comparative-optimism effects. Psychological Bulletin, 130(5), 813-838. The published version of record was read on 21 September 2026 from the Judgment, Decision and Social Comparison Lab at the University of Iowa. The sentence Moore and Small quote sits on page 828, as they say.",
       "doi": "10.1037/0033-2909.130.5.813",
       "url": "https://doi.org/10.1037/0033-2909.130.5.813",
       "type": "commentary"
     },
     {
-      "text": "Moore, D. A. (2007). Not so above average after all: When people believe they are worse than average and its implications for theories of bias in social comparison. Organizational Behavior and Human Decision Processes, 102(1), 42-58.",
+      "text": "Moore, D. A. (2007). Not so above average after all: When people believe they are worse than average and its implications for theories of bias in social comparison. Organizational Behavior and Human Decision Processes, 102(1), 42-58. Not obtained on 21 September 2026. Elsevier's linking service answered that the request could not be processed, the SSRN working paper behind it is held by a Cloudflare challenge, and Crossref, Unpaywall, OpenAlex and Semantic Scholar list no open copy. Only the SSRN abstract deposited at Crossref was read, and nothing here rests on it.",
       "doi": "10.1016/j.obhdp.2006.09.005",
       "url": "https://doi.org/10.1016/j.obhdp.2006.09.005",
       "type": "background"
     }
   ],
-  "checkedOn": "2026-08-10"
+  "checkedOn": "2026-09-21"
 }
