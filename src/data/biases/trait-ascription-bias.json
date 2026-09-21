@@ -2,10 +2,13 @@
   "no": 289,
   "slug": "trait-ascription-bias",
   "name": "Trait ascription bias",
-  "aliases": ["Trait ascription", "Self-other asymmetry in trait ascription"],
+  "aliases": [
+    "Trait ascription",
+    "Self-other asymmetry in trait ascription"
+  ],
   "category": "social",
   "statement": "People hand fixed personality traits to others and call their own behaviour situation-dependent, a gap a preregistered replication with 878 people put at Cohen's f = 0.10.",
-  "meaning": "The claim is about description, not explanation. Given a pair of opposing adjectives and a third option reading \"depends on the situation\", people are said to pick a trait more often for someone else and the situational option more often for themselves. The measure is a forced choice repeated over many adjective pairs, and the score is the count of trait choices. A second version of the claim uses consistency ratings: people rate their own trait-related behaviour as varying more from occasion to occasion than another person's. A third version asks how much predictive weight personality carries for self against other. The claim is distinct from the actor-observer asymmetry, which is about the causes people cite when they explain a behaviour, and from the fundamental attribution error, which is about inferring a trait from behaviour a situation forced. This site carries entries on both, and the three are routinely merged.",
+  "meaning": "The claim is about description, not explanation. Given a pair of opposing adjectives and a third option reading \"depends on the situation\", people are said to pick a trait more often for someone else and the situational option more often for themselves. The measure is a forced choice repeated over many adjective pairs, and the score is the count of trait choices. A second version of the claim uses consistency ratings: people rate their own trait-related behaviour as varying more from occasion to occasion than another person's. A third version asks how much predictive weight personality carries for self against other. The claim is distinct from the actor-observer asymmetry, which is about the causes people cite when they explain a behaviour, and from the fundamental attribution error, which is about inferring a trait from behaviour a situation forced. This site carries entries on both, numbers 152 and 11, and the three are routinely merged.",
   "origin": {
     "year": 1973,
     "who": "Richard E. Nisbett, Craig Caputo, Patricia Legant and Jeanne Marecek",
@@ -16,7 +19,7 @@
   "replication": {
     "state": "mixed",
     "headline": "The self-other gap in trait ascription turned up again in 878 people at Cohen's f = 0.10 against the original 0.35, while the trait asymmetry measured through behaviour explanations pools at d = 0.09 and misses significance.",
-    "detail": "Adelina and Feldman ran a preregistered replication of Pronin and Ross's Studies 1 to 3, recruiting 911 American MTurk workers and keeping 878 after preregistered exclusions. Their instrument merged the two original scales into 22 items, each offering two opposing traits and a third option reading \"variable/depends on the situation\", with target assigned between subjects. Participants ascribed 17.02 traits on average when judging a friend and 16.16 when judging themselves, F(1, 876) = 9.02, p = 0.003, Cohen's f = 0.10. The original effect was f = 0.35, 95% confidence interval 0.09 to 0.61. They class the outcome as signal inconsistent and smaller. The paper prints three different intervals for its own f: 0.03 to 0.16 in the abstract, 0.04 to 0.17 in the results text and in Table 5, and 0.05 to 0.16 in a footnote. Cohen's f is not a metric this site's structured effect-size fields accept, so those figures stay in prose. Against that, Malle, Knobe and Nelson tested a trait version of the actor-observer hypothesis across nine studies, over 1,300 participants and 8,000 explanations, and found the trait asymmetry at a precision-weighted d of 0.09, not significant. Malle's earlier meta-analysis reaches the same place from the other side: among the 61 studies in his pool where traits dominated the internal attributions, the asymmetry was d = 0.098, 95% confidence interval -0.011 to 0.207.",
+    "detail": "Adelina and Feldman ran a preregistered replication of Pronin and Ross's Studies 1 to 3, recruiting 911 American MTurk workers and keeping 878 after preregistered exclusions. Their instrument merged the two original scales into 22 items, each offering two opposing traits and a third option reading \"variable/depends on the situation\", with target assigned between subjects. Participants ascribed 17.02 traits on average when judging a friend and 16.16 when judging themselves, F(1, 876) = 9.02, p = 0.003, Cohen's f = 0.10. Adelina and Feldman compute the original effect from Pronin and Ross's printed statistics at f = 0.35, 95% confidence interval 0.09 to 0.61. They class the outcome as signal inconsistent and smaller. The paper prints three different intervals for its own f: 0.03 to 0.16 in the abstract, 0.04 to 0.17 in the results text and in Table 5, and 0.05 to 0.16 in a footnote. Cohen's f is not a metric this site's structured effect-size fields accept, so those figures stay in prose. Against that, Malle, Knobe and Nelson pooled the six studies in their paper with three more from their own laboratory, covering over 1,300 participants and 8,000 explanations. Their random-effects model on precision-weighted effect sizes put the trait asymmetry at d = 0.09, not significant. Malle's earlier meta-analysis reaches the same place from the other side: among the 61 studies in his pool where traits dominated the internal attributions, the asymmetry was d = 0.098, 95% confidence interval -0.011 to 0.207.",
     "study": {
       "cite": "Adelina, N., & Feldman, G. (2021). Are past and future selves perceived differently from present self? Replication and extension of Pronin and Ross (2006) temporal differences in trait self-ascription. International Review of Social Psychology, 34(1), 29.",
       "doi": "10.5334/irsp.571",
@@ -24,74 +27,80 @@
       "n": 878
     }
   },
-  "limits": "The versions of the claim do not travel together. Kammer's subjects gave themselves the less consistent behaviour and the stronger traits at the same time, which is awkward for any account in which the self is simply seen as trait-free. White argued that the rate at which people pick a trait rather than a situation is set by the response format: across formats varying the number of trait and situation options, trait responding stayed close to chance expectancy, and he concluded that no inference about natural trait-ascription frequency can be drawn from those absolute rates. He added that this leaves self-other differences untouched. Design matters too. Adelina and Feldman assigned the target between subjects, as Pronin and Ross had. On the neighbouring claim that people see their own lives as less predictable than a peer's, Chandrashekar and colleagues ran three preregistered replications of Pronin and Kugler's Experiment 1 and found d = -0.33, 95% confidence interval -0.52 to -0.14, with 424 people judging self or other, and d = 0.00, 95% confidence interval -0.10 to 0.10, with 434 people judging both. Their reading is that people correct the asymmetry once the two judgements sit side by side. Baxter and Goldberg's subjects did describe both persons, so the pattern is not confined to single-target designs, but no preregistered within-subject test of the trait-versus-situation forced choice was located. Searches of Crossref, OpenAlex, Semantic Scholar, PubMed and Europe PMC found no test of that forced choice outside Western samples. The founding study used male college students only.",
-  "misreadings": "The bias is not the actor-observer asymmetry, and the two entries on this site reach different verdicts because they measure different things. Malle's meta-analysis of 173 studies of causal explanations gives d = 0.095, and Malle, Knobe and Nelson's trait figure of 0.09 belongs to that same explanation-coding tradition. What Adelina and Feldman replicated was a forced choice between adjectives, which asks people to describe rather than to explain. Nor is it the fundamental attribution error, which concerns a trait inferred from behaviour the situation compelled. The claim is also weaker than the slogan suggests. Adelina and Feldman's two means, 17.02 for a friend and 16.16 for the self out of 22 items, sit close together, so people were not declining to describe themselves in traits. Raw percentages of trait responses are the figure most often quoted from this literature and the one White's analysis says carries no information about people, only about the answer sheet. The name is not the literature's. Papers say trait ascription or self-other asymmetry; a Crossref bibliographic search for the exact phrase \"trait ascription bias\" returned one title, Parvini's 2015 chapter on Iago and Othello.",
+  "limits": "The versions of the claim do not travel together. Kammer's subjects gave themselves the less consistent behaviour and the stronger traits at the same time, which is awkward for any account in which the self is simply seen as trait-free. That result came from two independent groups of actors and observers. Where the same subjects described both self and friend, Kammer reports the pattern only partly supported. White argued that the rate at which people pick a trait rather than a situation is set by the response format: across formats varying the number of trait and situation options, trait responding stayed close to chance expectancy, and he concluded that no inference about natural trait-ascription frequency can be drawn from those absolute rates. He added that this leaves self-other differences untouched. Design matters too. Adelina and Feldman assigned the target between subjects, as Pronin and Ross had. On the neighbouring claim that people see their own lives as less predictable than a peer's, Chandrashekar and colleagues ran three preregistered replications of Pronin and Kugler's Experiment 1. Pooling the three they put the asymmetry at d = -0.36, 95% confidence interval -0.52 to -0.20, and call the replication mostly successful. The design contrast sits inside their Study 2 alone. Its between-subjects arm gave d = -0.33, 95% confidence interval -0.52 to -0.14, in 424 people judging self or other. Its within-subjects arm gave d = 0.00, 95% confidence interval -0.10 to 0.10, in 434 people judging both. Their reading is that people correct the asymmetry once the two judgements sit side by side. Baxter and Goldberg's subjects did describe both persons, so the pattern is not confined to single-target designs, but those searches located no preregistered within-subject test of the trait-versus-situation forced choice. Searches of Crossref, OpenAlex, Semantic Scholar, PubMed and Europe PMC on 21 September 2026 found no test of that forced choice outside Western samples. The founding study used male college students only.",
+  "misreadings": "The bias is not the actor-observer asymmetry, and entries 152 and 11 on this site reach different verdicts because they measure different things. Malle's meta-analysis of 173 studies of causal explanations gives d = 0.095, and Malle, Knobe and Nelson's trait figure of 0.09 belongs to that same explanation-coding tradition. What Adelina and Feldman replicated was a forced choice between adjectives, which asks people to describe rather than to explain. Nor is it the fundamental attribution error, which concerns a trait inferred from behaviour the situation compelled. The claim is also weaker than the slogan suggests. Adelina and Feldman's two means, 17.02 for a friend and 16.16 for the self out of 22 items, sit close together, so people were not declining to describe themselves in traits. Raw percentages of trait responses are the figure most often quoted from this literature and the one White's analysis says carries no information about people, only about the answer sheet. The name is not the literature's. Papers say trait ascription or self-other asymmetry; a Crossref bibliographic search for the exact phrase \"trait ascription bias\" on 21 September 2026 returned one title, Parvini's 2015 chapter on Iago and Othello.",
   "sources": [
     {
-      "text": "Jones, E. E., & Nisbett, R. E. (1971). The actor and the observer: Divergent perceptions of the causes of behavior. Morristown, NJ: General Learning Press. Reprinted in E. E. Jones et al. (Eds.), Attribution: Perceiving the Causes of Behavior, 79-94.",
+      "text": "Jones, E. E., & Nisbett, R. E. (1971). The actor and the observer: Divergent perceptions of the causes of behavior. Morristown, NJ: General Learning Press. Reprinted in E. E. Jones et al. (Eds.), Attribution: Perceiving the Causes of Behavior, 79-94. Read in full as the scan at the URL given, which runs from page 79 to page 94. The twenty polar adjectives, the two example pairs, the five target persons and the reference to the 1971 Yale manuscript were all read off it.",
       "url": "https://archive.org/download/15341_Readings/15341_Readings/Social_Cognition/Jones_%26_Nisbett_The_Actor_%26_the_Observer_Attribution_pp79-94_text.pdf",
       "type": "primary"
     },
     {
-      "text": "Nisbett, R. E., Caputo, C., Legant, P., & Marecek, J. (1973). Behavior as seen by the actor and as seen by the observer. Journal of Personality and Social Psychology, 27(2), 154-164.",
+      "text": "Nisbett, R. E., Caputo, C., Legant, P., & Marecek, J. (1973). Behavior as seen by the actor and as seen by the observer. Journal of Personality and Social Psychology, 27(2), 154-164. Closed at the American Psychological Association, whose DOI resolves to a subscription record, and CiteSeerX's listed copy answered with a connection reset on 21 September 2026. Read at abstract level only, from the publisher's deposit at OpenAlex on that date, which carries the sentence that observers ascribe more personality traits to other people than to themselves.",
       "doi": "10.1037/h0034779",
       "url": "https://doi.org/10.1037/h0034779",
       "type": "primary"
     },
     {
-      "text": "Kammer, D. (1982). Differences in trait ascriptions to self and friend: Unconfounding intensity from variability. Psychological Reports, 51(1), 99-102.",
+      "text": "Kammer, D. (1982). Differences in trait ascriptions to self and friend: Unconfounding intensity from variability. Psychological Reports, 51(1), 99-102. Closed at SAGE, which answered the DOI and the PDF path with a Cloudflare challenge under two user agents on 21 September 2026, not a paywall notice. Read at abstract level only, from the publisher's deposit at OpenAlex on that date. The 56 subjects, the consistency judgement and the trait intensities were read off it, as was the partial support from dependent descriptions.",
       "doi": "10.2466/pr0.1982.51.1.99",
       "url": "https://doi.org/10.2466/pr0.1982.51.1.99",
       "type": "primary"
     },
     {
-      "text": "Baxter, T. L., & Goldberg, L. R. (1987). Perceived behavioral consistency underlying trait attributions to oneself and another. Personality and Social Psychology Bulletin, 13(4), 437-447.",
+      "text": "Baxter, T. L., & Goldberg, L. R. (1987). Perceived behavioral consistency underlying trait attributions to oneself and another. Personality and Social Psychology Bulletin, 13(4), 437-447. Closed at SAGE, which answered with a Cloudflare challenge under two user agents on 21 September 2026. Read at abstract level only, from the publisher's deposit at OpenAlex on that date, which carries the 60 adjectives, the scale and its four middle options, and the figure of 72% of traits.",
       "doi": "10.1177/0146167287134001",
       "url": "https://doi.org/10.1177/0146167287134001",
       "type": "primary"
     },
     {
-      "text": "White, P. A. (1987). The trait ascription main effect as an artifact of method. Personality and Social Psychology Bulletin, 13(4), 578-584.",
+      "text": "White, P. A. (1987). The trait ascription main effect as an artifact of method. Personality and Social Psychology Bulletin, 13(4), 578-584. Closed at SAGE, which answered with a Cloudflare challenge under two user agents on 21 September 2026. Read at abstract level only, from the publisher's deposit at OpenAlex on that date, which carries the chance-expectancy conclusion and White's own statement that self-other differences are untouched.",
       "doi": "10.1177/0146167287134014",
       "url": "https://doi.org/10.1177/0146167287134014",
       "type": "commentary"
     },
     {
-      "text": "Malle, B. F. (2006). The actor-observer asymmetry in attribution: A (surprising) meta-analysis. Psychological Bulletin, 132(6), 895-919.",
+      "text": "Malle, B. F. (2006). The actor-observer asymmetry in attribution: A (surprising) meta-analysis. Psychological Bulletin, 132(6), 895-919. Read in full as the PDF on Malle's laboratory page at Brown, which carries the journal's pagination. The figure of d = 0.098 for the 61 studies where traits dominated is from his moderator analysis, not from his headline.",
       "doi": "10.1037/0033-2909.132.6.895",
       "url": "https://research.clps.brown.edu/SocCogSci/Publications/Pubs/Malle_(2006)_ActObs_meta.pdf",
       "type": "replication"
     },
     {
-      "text": "Malle, B. F., Knobe, J. M., & Nelson, S. E. (2007). Actor-observer asymmetries in explanations of behavior: New answers to an old question. Journal of Personality and Social Psychology, 93(4), 491-514.",
+      "text": "Malle, B. F., Knobe, J. M., & Nelson, S. E. (2007). Actor-observer asymmetries in explanations of behavior: New answers to an old question. Journal of Personality and Social Psychology, 93(4), 491-514. Read in full at the URL given. The paper reports six studies and pools them with three more from the same laboratory, so the trait figure of 0.09 is an average over nine, as its Figure 2 caption says.",
       "doi": "10.1037/0022-3514.93.4.491",
       "url": "https://research.clps.brown.edu/SocCogSci/Publications/Pubs/Malle_Knobe_Nelson_(2007)_JPSP.pdf",
       "type": "replication"
     },
     {
-      "text": "Pronin, E., & Kugler, M. B. (2010). People believe they have more free will than others. Proceedings of the National Academy of Sciences, 107(52), 22469-22474.",
+      "text": "Pronin, E., & Kugler, M. B. (2010). People believe they have more free will than others. Proceedings of the National Academy of Sciences, 107(52), 22469-22474. PubMed Central now fronts its pages and PDFs with a reCAPTCHA, and the publisher answered with 403, so the article was read as the Wayback Machine's replay of the PNAS PDF on 21 September 2026. The box models, the 58 subjects and both pairs of percentages are from its Experiment 4.",
       "doi": "10.1073/pnas.1012046108",
       "url": "https://europepmc.org/articles/PMC3012523",
       "type": "primary"
     },
     {
-      "text": "Adelina, N., & Feldman, G. (2021). Are past and future selves perceived differently from present self? Replication and extension of Pronin and Ross (2006) temporal differences in trait self-ascription. International Review of Social Psychology, 34(1), 29.",
+      "text": "Adelina, N., & Feldman, G. (2021). Are past and future selves perceived differently from present self? Replication and extension of Pronin and Ross (2006) temporal differences in trait self-ascription. International Review of Social Psychology, 34(1), 29. The journal's rebuilt site answers the article and its galley with an empty application shell, so the version of record was read as the Wayback Machine's replay of the publisher's own full-text page. Every figure here was read off it, including the three different confidence intervals it prints for its own Cohen's f.",
       "doi": "10.5334/irsp.571",
       "url": "https://rips-irsp.com/articles/10.5334/irsp.571",
       "type": "replication"
     },
     {
-      "text": "Chandrashekar, S. P., Permut, S., Sjastad, H., Lo, C. W., Kueh, Y. J., Zhong, E. S., Wan, K. H., Choy, K. Y. K., Wong, M. C., Hugh, S. W. J., Tahira, K., Cheng, B. L., & Feldman, G. (2024). Do people believe they are less predictable than others? Three replications of Pronin and Kugler's (2010) Experiment 1. International Review of Social Psychology, 37(1), 20.",
+      "text": "Chandrashekar, S. P., Permut, S., Sjastad, H., Lo, C. W., Kueh, Y. J., Zhong, E. S., Wan, K. H., Choy, K. Y. K., Wong, M. C., Hugh, S. W. J., Tahira, K., Cheng, B. L., & Feldman, G. (2024). Do people believe they are less predictable than others? Three replications of Pronin and Kugler's (2010) Experiment 1. International Review of Social Psychology, 37(1), 20. The journal's rebuilt site answers with an empty application shell, so the version of record was read as the Europe PMC full-text XML for PMC12372692. The two design arms and the pooled estimate are from its Study 2 and its internal meta-analysis.",
       "doi": "10.5334/irsp.946",
       "url": "https://rips-irsp.com/articles/10.5334/irsp.946",
       "type": "replication"
     },
     {
-      "text": "Parvini, N. (2015). Iago, Othello and trait ascription bias. In Shakespeare and Cognition: Thinking Fast and Slow through Character, 36-51. Palgrave Macmillan UK.",
+      "text": "Parvini, N. (2015). Iago, Othello and trait ascription bias. In Shakespeare and Cognition: Thinking Fast and Slow through Character, 36-51. Palgrave Macmillan UK. Closed at Springer, whose chapter page served on 21 September 2026 offers no preview and sells the chapter. Read at abstract level only, which is enough for the one claim made of it, that the phrase names the chapter.",
       "doi": "10.1057/9781137543165_4",
       "url": "https://doi.org/10.1057/9781137543165_4",
       "type": "commentary"
+    },
+    {
+      "text": "Pronin, E., & Ross, L. (2006). Temporal differences in trait self-ascription: When the self is seen as an other. Journal of Personality and Social Psychology, 90(2), 197-209. Closed at the American Psychological Association, and no repository holds a copy. Read at abstract level only, from the publisher's deposit at OpenAlex on 21 September 2026. It reports seven studies; the replication covers the first three, and the original effect size quoted here was computed by the replicators.",
+      "doi": "10.1037/0022-3514.90.2.197",
+      "url": "https://doi.org/10.1037/0022-3514.90.2.197",
+      "type": "primary"
     }
   ],
-  "checkedOn": "2026-08-10"
+  "checkedOn": "2026-09-21"
 }
