@@ -2,7 +2,10 @@
   "no": 126,
   "slug": "self-deception",
   "name": "Self-deception",
-  "aliases": ["Self-deceptive enhancement", "Motivated self-deception"],
+  "aliases": [
+    "Self-deceptive enhancement",
+    "Motivated self-deception"
+  ],
   "category": "social",
   "statement": "People are said to hide an unwelcome belief from themselves, holding the flattering version while some part of them registers the true one.",
   "meaning": "Sackeim and Gur set four conditions for calling something self-deception. The person holds two contradictory beliefs, holds them at the same time, is unaware of one of them, and that unawareness is motivated. All four have to hold. The last two are what separate the claim from ordinary error and from ordinary flattery. Someone who says a kind thing about himself and believes it is not deceiving himself, he is simply wrong, or right. The interesting case is someone who reports the flattering answer while another part of him holds the true one, and that is the case laboratory work has struggled to catch. Published demonstrations mostly show a person producing a favourable judgement in conditions where a plainer motive would produce the same judgement. Establishing the second, hidden belief is the difficult half, and it is the half the paradigms argue about.",
@@ -10,9 +13,9 @@
     "year": 1979,
     "who": "Ruben C. Gur and Harold A. Sackeim",
     "where": "Journal of Personality and Social Psychology",
-    "note": "Their paper is titled \"Self-deception: A concept in search of a phenomenon\", and it pairs the four criteria with two experiments. The criteria had been set out the year before, in a chapter called \"Self-deception, self-confrontation, and consciousness\" in volume 2 of Consciousness and Self-Regulation. The voice task itself is older: Greenwald traces it to Wolff in 1932. The word is far older than any of this, and 1979 is the date of the first sustained attempt to make it a laboratory finding."
+    "note": "Their paper is titled \"Self-deception: A concept in search of a phenomenon\". The criteria had been set out the year before, in a chapter called \"Self-deception, self-confrontation, and consciousness\" in volume 2 of Consciousness and Self-Regulation. The voice task itself is older: Greenwald traces it to Wolff in 1932. The word is far older than any of this, and 1979 is the date of the first sustained attempt to make it a laboratory finding."
   },
-  "evidence": "Gur and Sackeim's paradigm records a person's voice, plays back a mixed series of samples, and asks after each one whether the voice is theirs. Skin conductance is recorded throughout. Self-deception is scored when the skin response marks an own-voice trial that the person calls not mine. The description here is Greenwald's, because the 1979 paper could not be opened. Quattrone and Tversky ran a different design on 38 Stanford undergraduates, who held a forearm in circulating cold water before and after a minute on an exercise bicycle. Half were told a strong heart shows up as more cold tolerance after exercise, half that it shows up as less. Mean immersion fell from 44.74 to 37.11 seconds in the decrease condition and rose from 34.21 to 46.05 seconds in the increase condition, F(1, 36) = 30.64, p < .001. Only 9 of the 38 said they had tried to alter their time. Two of those nine inferred the healthy heart type, against 20 of the 29 who denied trying, p < .05, and the two groups had shifted by similar amounts. Those figures come from the June 1983 Office of Naval Research technical report, since the 1984 journal version is paywalled. Chance, Norton, Gino and Ariely tested 441 people across four experiments in which half took a test with the answer key printed at the foot of the page. In their second experiment the answer group scored 8.97 out of 10 against the control group's 6.29, then predicted 7.73 on a second test with no key, against 6.32, t(129) = 4.04, p < .001. Both groups then scored about 5. Schwardmann and van der Weele paid 688 people to convince a stranger they had done well on a hard task, and the paid group reported privately higher confidence than controls, pooled d = 0.31, p < .001.",
+  "evidence": "Gur and Sackeim's paradigm records a person's voice, plays back a mixed series of samples, and asks after each one whether the voice is theirs. Skin conductance is recorded throughout. Self-deception is scored when the skin response marks an own-voice trial that the person calls not mine. The description here is Greenwald's, because the 1979 paper could not be opened. Quattrone and Tversky ran a different design on 38 Stanford undergraduates, who held a forearm in circulating cold water before and after a minute on an exercise bicycle. Half were told a strong heart shows up as more cold tolerance after exercise, half that it shows up as less. Mean immersion fell from 44.74 to 37.11 seconds in the decrease condition and rose from 34.21 to 46.05 seconds in the increase condition, F(1, 36) = 30.64, p < .001. Only 9 of the 38 said they had tried to alter their time. Two of those nine inferred the healthy heart type, against 20 of the 29 who denied trying, p < .05, and the two groups had shifted by similar amounts. Those figures come from the June 1983 Office of Naval Research technical report, since the 1984 journal version could not be opened. Its publisher answers a bot challenge rather than asking for money. Chance, Norton, Gino and Ariely ran four experiments on 421 people, half of whom took a test with the answer key printed at the foot of the page. A separate group of 36, who only imagined taking such a test, is not one of the four. In their second experiment the answer group scored 8.97 out of 10 against the control group's 6.29, then predicted 7.73 on a second test with no key, against 6.32, t(129) = 4.04, p < .001. Both groups then scored about 5. Schwardmann and van der Weele ran two experiments on 688 people who first sat an intelligence test. Half were told they could earn 15 euros by convincing an employer, face to face, that they had done well. Their privately elicited confidence, taken before any meeting, was higher than the control group's, pooled d = 0.31, p < .001. The first experiment on its own reached only P = 0.049.",
   "replication": {
     "state": "mixed",
     "headline": "The inflated prediction after cheating repeats in an independent sample. The step from that to a hidden second belief does not survive its critics.",
@@ -23,114 +26,114 @@
       "year": 2019
     }
   },
-  "limits": "The hard part is unproved. Each design shows a person giving a flattering answer, and none of them isolates a second, unwelcome belief held at the same moment. Greenwald offers a reading of the voice task that needs no hidden belief: the skin response can be driven by acoustic features resembling one's own voice, at a stage before any identification, the way an envelope can be taken for junk mail without being opened. Quattrone and Tversky raise their own alternative, that a placebo effect may have moved the pain threshold rather than the reported time, and note that denial is not all or none. Their journal version could not be obtained, so the figures on this page come from the technical report and may differ from print. Gur and Sackeim's own numbers could not be read off their paper and are left out. Two authors of the cheating study have had other work retracted, including a 2012 PNAS paper on dishonesty co-authored by Gino and Ariely that Crossref now lists as retracted; the 2011 self-deception paper carries no retraction notice in Crossref or PubMed. Paulhus's Self-Deceptive Enhancement scale, the trait measure used in that study, was built on Sackeim and Gur's split between conscious and unconscious bias, and Paulhus and John later dropped that split as the organising axis, recasting the two factors as agentic and communal in content. They also say plainly that their method studies a gap between self-ratings and the ratings of informed observers, rather than verifying that the person is aware of the observer's view.",
-  "misreadings": "The philosophical puzzle is not the finding. Whether one mind can both know and not know a thing is a question about the concept, and Greenwald's answer is that abandoning the assumption of a single unified knower dissolves it. Kurzban makes the same move in his commentary on von Hippel and Trivers, arguing that a modular mind leaves neither a self to be deceived nor a deception. Second, von Hippel and Trivers' proposal is often reported as settled. Their 2011 target article argues that self-deception evolved because it hides the cues that give a liar away, and the journal ran it with open commentary. Dunning's reply says the claim carries too many implications to be promoted by indirect argument and belongs in a laboratory, and offers the alternative that better deceivers are people who do not care about the truth. Third, a high score on a self-deception questionnaire is not evidence that anyone deceived themselves. It is a report of positive self-regard, and Paulhus and Holden group those scales under self-enhancement. Fourth, the cold-water result is retold as people fooling themselves about their hearts. What was measured is a shift in immersion time and a denial of intent on an anonymous questionnaire, and Quattrone and Tversky's own claim was the narrower one, that the diagnosis was accepted mainly by the people who denied trying.",
+  "limits": "The hard part is unproved. Each design shows a person giving a flattering answer, and none of them isolates a second, unwelcome belief held at the same moment. Greenwald offers a reading of the voice task that needs no hidden belief: the skin response can be driven by acoustic features resembling one's own voice, at a stage before any identification, the way an envelope can be taken for junk mail without being opened. Quattrone and Tversky raise their own alternative, a motivational placebo effect in which wanting the shift produces a real change in tolerance rather than a deliberate one. They also note that denial is not all or none. Their journal version could not be obtained, so the figures on this page come from the technical report and may differ from print. Gur and Sackeim's own numbers could not be read off their paper and are left out. Two authors of the cheating study have had other work retracted, including a 2012 PNAS paper on dishonesty co-authored by Gino and Ariely that Crossref lists as retracted, and that entry 379 covers; the 2011 self-deception paper carries no retraction notice in Crossref or PubMed. Paulhus's Self-Deceptive Enhancement scale, the trait measure used in that study, was built on Sackeim and Gur's split between conscious and unconscious bias, and Paulhus and John later dropped that split as the organising axis, recasting the two factors as agentic and communal in content. They also say plainly that their method studies a gap between self-ratings and the ratings of informed observers, rather than verifying that the person is aware of the observer's view.",
+  "misreadings": "The philosophical puzzle is not the finding. Whether one mind can both know and not know a thing is a question about the concept, and Greenwald's answer is that abandoning the assumption of a single unified knower dissolves it. Kurzban's commentary on von Hippel and Trivers is titled for the same move, and his abstract says a modular view of the mind finesses the problem of a self to be deceived. The argument beneath the title is narrower. He accepts the arms-race account where an audience is present, and objects only to calling a plain bias self-deception when no outside party is being fooled. Second, von Hippel and Trivers' proposal is often reported as settled. Their 2011 target article argues that self-deception evolved because it hides the cues that give a liar away, and the journal ran it with open commentary. Dunning's reply says the claim carries too many implications to be promoted by indirect argument and belongs in a laboratory, and offers the alternative that better deceivers are people who do not care about the truth. Third, a high score on a self-deception questionnaire is not evidence that anyone deceived themselves. It is a report of positive self-regard, and Paulhus and Holden group those scales under self-enhancement. Fourth, the cold-water result is retold as people fooling themselves about their hearts. What was measured is a shift in immersion time and a denial of intent on an anonymous questionnaire, and Quattrone and Tversky's own claim was the narrower one, that the diagnosis was accepted mainly by the people who denied trying.",
   "sources": [
     {
-      "text": "Gur, R. C., & Sackeim, H. A. (1979). Self-deception: A concept in search of a phenomenon. Journal of Personality and Social Psychology, 37(2), 147-169.",
+      "text": "Gur, R. C., & Sackeim, H. A. (1979). Self-deception: A concept in search of a phenomenon. Journal of Personality and Social Psychology, 37(2), 147-169. Not read. APA's PsycNet answers an Imperva bot challenge rather than a paywall, and on 21 September 2026 no open copy was listed by OpenAlex, Unpaywall, Semantic Scholar, Europe PMC, PubMed, CORE or the Internet Archive. The paradigm is described here from Greenwald's 1997 chapter.",
       "doi": "10.1037/0022-3514.37.2.147",
       "url": "https://doi.org/10.1037/0022-3514.37.2.147",
       "type": "primary"
     },
     {
-      "text": "Quattrone, G. A., & Tversky, A. (1984). Causal versus diagnostic contingencies: On self-deception and on the voter's illusion. Journal of Personality and Social Psychology, 46(2), 237-248.",
+      "text": "Quattrone, G. A., & Tversky, A. (1984). Causal versus diagnostic contingencies: On self-deception and on the voter's illusion. Journal of Personality and Social Psychology, 46(2), 237-248. Not read. PsycNet answers an Imperva bot challenge, and OpenAlex, Unpaywall and Semantic Scholar list no open copy as of 21 September 2026. The figures quoted here come from the 1983 technical report instead.",
       "doi": "10.1037/0022-3514.46.2.237",
       "url": "https://doi.org/10.1037/0022-3514.46.2.237",
       "type": "primary"
     },
     {
-      "text": "Quattrone, G. A., & Tversky, A. (1983). Causal versus diagnostic contingencies: On self-deception and on the voter's illusion. Office of Naval Research technical report, Department of Psychology, Stanford University, June 1983. The source of the cold-water figures quoted here.",
+      "text": "Quattrone, G. A., & Tversky, A. (1983). Causal versus diagnostic contingencies: On self-deception and on the voter's illusion. Office of Naval Research technical report, Department of Psychology, Stanford University, June 1983. The source of the cold-water figures quoted here. Read in full, from the Internet Archive's scan of the Defense Technical Information Center copy.",
       "url": "https://archive.org/details/DTIC_ADA131586",
       "type": "primary"
     },
     {
-      "text": "Chance, Z., Norton, M. I., Gino, F., & Ariely, D. (2011). Temporal view of the costs and benefits of self-deception. Proceedings of the National Academy of Sciences, 108(supplement 3), 15655-15659.",
+      "text": "Chance, Z., Norton, M. I., Gino, F., & Ariely, D. (2011). Temporal view of the costs and benefits of self-deception. Proceedings of the National Academy of Sciences, 108(supplement 3), 15655-15659. Read in full. The PubMed Central PDF is served once its proof-of-work challenge is solved, which took a second; the publisher's own site answers a Cloudflare challenge.",
       "doi": "10.1073/pnas.1010658108",
       "url": "https://doi.org/10.1073/pnas.1010658108",
       "type": "primary"
     },
     {
-      "text": "Schwardmann, P., & van der Weele, J. (2019). Deception and self-deception. Nature Human Behaviour, 3(10), 1055-1061.",
+      "text": "Schwardmann, P., & van der Weele, J. (2019). Deception and self-deception. Nature Human Behaviour, 3(10), 1055-1061. Read in full, from the University of Amsterdam repository copy of the published version.",
       "doi": "10.1038/s41562-019-0666-7",
       "url": "https://doi.org/10.1038/s41562-019-0666-7",
       "type": "primary"
     },
     {
-      "text": "Smith, M. K., Trivers, R., & von Hippel, W. (2017). Self-deception facilitates interpersonal persuasion. Journal of Economic Psychology, 63, 93-101.",
+      "text": "Smith, M. K., Trivers, R., & von Hippel, W. (2017). Self-deception facilitates interpersonal persuasion. Journal of Economic Psychology, 63, 93-101. Not read. ScienceDirect answers a captcha, no repository copy is listed by OpenAlex, Unpaywall or Semantic Scholar, and the one indexed manuscript host refused every request on 21 September 2026. No figure on this page rests on it.",
       "doi": "10.1016/j.joep.2017.02.012",
       "url": "https://doi.org/10.1016/j.joep.2017.02.012",
       "type": "primary"
     },
     {
-      "text": "Liu, J., Zhang, W., Zhan, Y., Song, L., Guan, P., Kang, D., Jian, J., Cai, R., & Li, M. (2019). The effect of negative feedback on positive beliefs in self-deception. Frontiers in Psychology, 10, 702.",
+      "text": "Liu, J., Zhang, W., Zhan, Y., Song, L., Guan, P., Kang, D., Jian, J., Cai, R., & Li, M. (2019). The effect of negative feedback on positive beliefs in self-deception. Frontiers in Psychology, 10, 702. Read in full, from the Frontiers open-access PDF.",
       "doi": "10.3389/fpsyg.2019.00702",
       "url": "https://doi.org/10.3389/fpsyg.2019.00702",
       "type": "replication"
     },
     {
-      "text": "Douglas, W., & Gibbins, K. (1983). Inadequacy of voice recognition as a demonstration of self-deception. Journal of Personality and Social Psychology, 44(3), 589-592.",
+      "text": "Douglas, W., & Gibbins, K. (1983). Inadequacy of voice recognition as a demonstration of self-deception. Journal of Personality and Social Psychology, 44(3), 589-592. Abstract read in PubMed; the full text sits behind APA's bot challenge. The finding described here is the abstract's own wording.",
       "doi": "10.1037/0022-3514.44.3.589",
       "url": "https://doi.org/10.1037/0022-3514.44.3.589",
       "type": "replication"
     },
     {
-      "text": "Sackeim, H. A., & Gur, R. C. (1985). Voice recognition and the ontological status of self-deception. Journal of Personality and Social Psychology, 48(5), 1365-1368.",
+      "text": "Sackeim, H. A., & Gur, R. C. (1985). Voice recognition and the ontological status of self-deception. Journal of Personality and Social Psychology, 48(5), 1365-1368. Abstract read in PubMed; the full text sits behind APA's bot challenge. PubMed gives the pages as 1365-1372, which runs over the reply; Crossref's 1365-1368 is used here.",
       "doi": "10.1037/0022-3514.48.5.1365",
       "url": "https://doi.org/10.1037/0022-3514.48.5.1365",
       "type": "commentary"
     },
     {
-      "text": "Gibbins, K., & Douglas, W. (1985). Voice recognition and self-deception: A reply to Sackeim and Gur. Journal of Personality and Social Psychology, 48(5), 1369-1372.",
+      "text": "Gibbins, K., & Douglas, W. (1985). Voice recognition and self-deception: A reply to Sackeim and Gur. Journal of Personality and Social Psychology, 48(5), 1369-1372. Not read, and no abstract is indexed in PubMed, Crossref or OpenAlex. Only its title, journal, issue and pages are used here, all confirmed in Crossref.",
       "doi": "10.1037/0022-3514.48.5.1369",
       "url": "https://doi.org/10.1037/0022-3514.48.5.1369",
       "type": "commentary"
     },
     {
-      "text": "Zhang, Y., & Rand, D. G. (2025). Self-persuasion does not imply self-deception. Cognition, 263, 106215.",
+      "text": "Zhang, Y., & Rand, D. G. (2025). Self-persuasion does not imply self-deception. Cognition, 263, 106215. Abstract read in PubMed, which carries both sample sizes and the fivefold reduction. The full text was not obtained: ScienceDirect answers a captcha despite the article's CC-BY licence, and no repository copy was found on 21 September 2026.",
       "doi": "10.1016/j.cognition.2025.106215",
       "url": "https://doi.org/10.1016/j.cognition.2025.106215",
       "type": "commentary"
     },
     {
-      "text": "von Hippel, W., & Trivers, R. (2011). The evolution and psychology of self-deception. Behavioral and Brain Sciences, 34(1), 1-16.",
+      "text": "von Hippel, W., & Trivers, R. (2011). The evolution and psychology of self-deception. Behavioral and Brain Sciences, 34(1), 1-16. Read in full, from a university course copy of the whole issue, carrying the target article, every commentary and the authors' response.",
       "doi": "10.1017/S0140525X10001354",
       "url": "https://doi.org/10.1017/S0140525X10001354",
       "type": "primary"
     },
     {
-      "text": "Dunning, D. (2011). Get thee to a laboratory. Behavioral and Brain Sciences, 34(1), 18-19.",
+      "text": "Dunning, D. (2011). Get thee to a laboratory. Behavioral and Brain Sciences, 34(1), 18-19. Read in full, in that same copy of the issue.",
       "doi": "10.1017/S0140525X10002530",
       "url": "https://doi.org/10.1017/S0140525X10002530",
       "type": "commentary"
     },
     {
-      "text": "Kurzban, R. (2011). Two problems with \"self-deception\": No \"self\" and no \"deception\". Behavioral and Brain Sciences, 34(1), 32-33.",
+      "text": "Kurzban, R. (2011). Two problems with \"self-deception\": No \"self\" and no \"deception\". Behavioral and Brain Sciences, 34(1), 32-33. Read in full, in that same copy of the issue.",
       "doi": "10.1017/S0140525X10002116",
       "url": "https://doi.org/10.1017/S0140525X10002116",
       "type": "commentary"
     },
     {
-      "text": "Greenwald, A. G. (1997). Self-knowledge and self-deception: Further consideration. In M. S. Myslobodsky (Ed.), The mythomanias: The nature of deception and self-deception, chapter 3. Mahwah, NJ: Lawrence Erlbaum.",
+      "text": "Greenwald, A. G. (1997). Self-knowledge and self-deception: Further consideration. In M. S. Myslobodsky (Ed.), The mythomanias: The nature of deception and self-deception, chapter 3. Mahwah, NJ: Lawrence Erlbaum. Read in full, from the author's faculty page.",
       "url": "https://faculty.washington.edu/agg/pdf/Gwald_Self-decept_1997.OCR.pdf",
       "type": "commentary"
     },
     {
-      "text": "Paulhus, D. L., & John, O. P. (1998). Egoistic and moralistic biases in self-perception: The interplay of self-deceptive styles with basic traits and motives. Journal of Personality, 66(6), 1025-1060.",
+      "text": "Paulhus, D. L., & John, O. P. (1998). Egoistic and moralistic biases in self-perception: The interplay of self-deceptive styles with basic traits and motives. Journal of Personality, 66(6), 1025-1060. Read in full, from the author's faculty page.",
       "doi": "10.1111/1467-6494.00041",
       "url": "https://www2.psych.ubc.ca/~dpaulhus/research/DEFENSE/downloads/JP%2098%20with%20John.pdf",
       "type": "commentary"
     },
     {
-      "text": "Paulhus, D. L., & Holden, R. R. (2009). Measuring self-enhancement: From self-report to concrete behavior. In C. R. Agnew, D. E. Carlston, W. G. Graziano, & J. R. Kelly (Eds.), Then a miracle occurs, chapter 12. New York: Oxford University Press.",
+      "text": "Paulhus, D. L., & Holden, R. R. (2009). Measuring self-enhancement: From self-report to concrete behavior. In C. R. Agnew, D. E. Carlston, W. G. Graziano, & J. R. Kelly (Eds.), Then a miracle occurs, chapter 12. New York: Oxford University Press. Read in full, from the author's faculty page.",
       "url": "https://www2.psych.ubc.ca/~dpaulhus/research/SDR/downloads/CHAPTERS/Paulhus&Holden%2009.pdf",
       "type": "commentary"
     },
     {
-      "text": "Shu, L. L., Mazar, N., Gino, F., Ariely, D., & Bazerman, M. H. (2012). Signing at the beginning makes ethics salient and decreases dishonest self-reports in comparison to signing at the end. Proceedings of the National Academy of Sciences, 109(38), 15197-15200. Listed by Crossref as retracted.",
+      "text": "Shu, L. L., Mazar, N., Gino, F., Ariely, D., & Bazerman, M. H. (2012). Signing at the beginning makes ethics salient and decreases dishonest self-reports in comparison to signing at the end. Proceedings of the National Academy of Sciences, 109(38), 15197-15200. Listed by Crossref as retracted. Retraction confirmed in Crossref on 21 September 2026, which names the retraction notice.",
       "doi": "10.1073/pnas.1209746109",
       "url": "https://doi.org/10.1073/pnas.1209746109",
       "type": "commentary"
     }
   ],
-  "checkedOn": "2026-08-09"
+  "checkedOn": "2026-09-21"
 }
