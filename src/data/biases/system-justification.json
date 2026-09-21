@@ -2,7 +2,11 @@
   "no": 168,
   "slug": "system-justification",
   "name": "System justification",
-  "aliases": ["System justification theory", "Status-legitimacy hypothesis", "False consciousness"],
+  "aliases": [
+    "System justification theory",
+    "Status-legitimacy hypothesis",
+    "False consciousness"
+  ],
   "category": "social",
   "statement": "People are motivated to defend and rationalise the social, economic and political arrangements they live under, sometimes against their own interests.",
   "meaning": "Three claims travel under one name and only two have been tested at scale. The first is that a system-justifying motive exists alongside motives to defend the self and the ingroup. That is a framework rather than a prediction, and it is compatible with almost any pattern of results. The second is the status-legitimacy hypothesis: that people disadvantaged by a hierarchy legitimise it more than the advantaged do, because the clash between their position and their belief in the system produces dissonance they resolve in the system's favour. That claim is sharp, it is falsifiable, and most of the argument about system justification theory has been about it. The third is the palliative function: that holding system-justifying beliefs makes people feel better, which is why they hold them. The verdict below is about the second claim and about the experimental literature that grew around the first.",
@@ -10,13 +14,13 @@
     "year": 1994,
     "who": "John T. Jost and Mahzarin R. Banaji",
     "where": "British Journal of Social Psychology",
-    "note": "Their paper is \"The role of stereotyping in system-justification and the production of false consciousness\", in a special issue on social stereotyping. Jost's 2019 retrospective in the same journal says the aim was to explain 'the participation by disadvantaged individuals and groups in negative stereotypes of themselves' and the related phenomenon of outgroup favouritism. The term itself came from a line in Kluegel and Smith's 1986 book. The 1994 paper made no status-legitimacy prediction. That came nine years later, in Jost, Pelham, Sheldon and Ni Sullivan's survey paper. The 1994 text was not retrieved for this entry, and the account of it here is Jost's own from 2019."
+    "note": "Their paper is \"The role of stereotyping in system-justification and the production of false consciousness\". Its abstract defines system-justification as psychological processes contributing to the preservation of existing social arrangements even at the expense of personal and group interest, and says the idea is needed to account for the participation by disadvantaged individuals and groups in negative stereotypes of themselves. The sharp prediction that the disadvantaged legitimise the system more than the advantaged came nine years later, in Jost, Pelham, Sheldon and Ni Sullivan's survey paper, whose abstract calls the dissonance-based version the strongest form of the hypothesis. The 1994 text was not retrieved here. It is paywalled at Wiley and no open copy was listed at Unpaywall, OpenAlex, Europe PMC or Semantic Scholar on 21 September 2026, so the account above is read from the abstract at Crossref."
   },
-  "evidence": "The status-legitimacy hypothesis was set out by Jost, Pelham, Sheldon and Ni Sullivan across five US national survey studies, published in the European Journal of Social Psychology in 2003. Their abstract reports six results. Low-income respondents and African Americans were more likely than others to support limits on the right of citizens and the media to criticise the government. Low-income Latinos trusted US government officials more, and were more likely to say the government is run for the benefit of all, than high-income Latinos. Low-income respondents were more likely to say large pay differences are needed to motivate effort. Southerners endorsed meritocratic belief systems more than Northerners, and poor Southern African Americans more than affluent Northern ones. Low-income respondents and African Americans were more likely to call economic inequality legitimate and necessary. Stronger meritocratic belief went with greater satisfaction with one's own economic situation. The paper's full text was not retrieved for this entry, so no coefficient from it is quoted here. The experimental branch of the literature ran separately, using manipulations meant to raise system-justifying motivation, including system threat, system dependence, complementary stereotypes and meritocracy primes.",
+  "evidence": "The status-legitimacy hypothesis was set out by Jost, Pelham, Sheldon and Ni Sullivan across five US national survey studies, published in the European Journal of Social Psychology in 2003. Their abstract reports six results. Low-income respondents and African Americans were more likely than others to support limits on the right of citizens and the media to criticise the government. Low-income Latinos trusted US government officials more, and were more likely to say the government is run for the benefit of all, than high-income Latinos. Low-income respondents were more likely to say large pay differences are needed to motivate effort. Southerners endorsed meritocratic belief systems more than Northerners, and poor Southern African Americans more than affluent Northern ones. Low-income respondents and African Americans were more likely to call economic inequality legitimate and necessary. Stronger meritocratic belief went with greater satisfaction with one's own economic situation. The full text was not obtained on 21 September 2026. Wiley and the SSRN copy of the submitted version each answered with a bot challenge rather than a paywall notice, and Unpaywall, OpenAlex, Europe PMC and CORE listed no other open copy, so no coefficient from the paper is quoted here. The experimental branch of the literature ran separately, using manipulations meant to raise system-justifying motivation, including system threat, system dependence, complementary stereotypes and meritocracy primes.",
   "replication": {
     "state": "failed",
     "headline": "In 66 samples across 30 countries, higher subjective status went with seeing the system as more legitimate, and the association was positive in every country.",
-    "detail": "Brandt and 65 co-authors collected 12,788 responses in 66 samples across 30 countries and regressed four measures of perceived legitimacy on country-mean-centred subjective status. The slope was b = 0.152, SE 0.005, 95% CI [0.142, 0.162], which they describe as a 15% difference in perceived legitimacy between the highest and lowest levels of subjective status. Adding age, gender, sample type and measure type left it at b = 0.151, SE 0.005, 95% CI [0.141, 0.161]. With random slopes by country the estimate stayed positive in every country. Eight moderators were tested, and at no level of any of them did the association turn negative. Their power analysis put detection of a slope of 0.02 at about 49%. The earlier large-sample test points the same way. Brandt pooled the American National Election Studies, the General Social Survey and the World Values Survey, 151,794 respondents in total. His abstract reports that the average effect across years and countries 'was most often directly contrary to the status-legitimacy hypothesis or was practically zero'. The two moderators he tested, inequality and civil liberties, gave weak, null or contrary evidence. Valdes, Liu and Williams tried to repeat Li and colleagues' Chinese finding in stratified quota samples of 1,004 people in China and 1,161 in the United States, measured twice six months apart. Subjective status correlated positively with system justification in both, r = .31 in China and r = .30 in the United States, and held cross-lagged. The objective-status result that had supported the hypothesis did not repeat. The experimental literature has its own problem. Sotola and Credé ran a z-curve over 116 papers and 232 samples, entering 180 significant p-values. They estimated an expected replication rate of .18, 98% CI [.10, .30], against an observed discovery rate of .78 and an expected discovery rate of .14. Studies using system-threat manipulations came out worst, with an expected replication rate of .11 and a Sorić false discovery rate of .66. One of these experiments has been tested directly. Caruso, Vohs, Baxter and Waytz reported that showing people a faint image of banknotes raised system justification at d = 0.80, 95% CI [0.05, 1.54]. Many Labs 1 repeated it in 36 samples with 6,333 participants and found a weighted d of -0.02, 99% CI [-0.08, 0.04], with 97% of samples returning nothing and the aggregate test at t(6331) = -0.79, p = .83.",
+    "detail": "Brandt and 74 co-authors collected 12,788 responses in 66 samples across 30 countries and regressed four measures of perceived legitimacy on country-mean-centred subjective status. The slope was b = 0.152, SE 0.005, 95% CI [0.142, 0.162], which they describe as a 15% difference in perceived legitimacy between the highest and lowest levels of subjective status. Adding age, gender, sample type and measure type left it at b = 0.151, SE 0.005, 95% CI [0.141, 0.161]. With random slopes by country the estimate stayed positive in every country. Their abstract reports that the association was never negative at any level of eight moderator variables, although the positive association was sometimes reduced. A simulation put their power to detect a slope of 0.01 at about 49% and a slope of 0.02 at about 97%. The earlier large-sample test points the same way. Brandt pooled the American National Election Studies, 27,543 respondents across 18 years between 1958 and 2008, the General Social Survey, 27,589 across 24 years between 1975 and 2010, and the World Values Survey, 96,662 people in 65 countries, for 151,794 in total. One of 14 status-by-legitimacy effects ran in the predicted direction: on confidence in societal institutions in the World Values Survey, the gap between the least and most educated was 4.4% of the legitimacy scale. Six ran the other way and seven were not significantly different from zero. Of 22 tests of his two moderators, inequality and civil liberties, one matched the dissonance prediction. Valdes, Liu and Williams tried to repeat Li and colleagues' Chinese finding in stratified quota samples of 1,004 people in China and 1,161 in the United States, measured twice six months apart. Subjective status correlated positively with system justification in both, r = .31, 95% CI [.25, .36] in China and r = .30 in the United States, and stayed a positive predictor in the cross-lagged models. The objective-status result split. Cross-sectionally, income in China predicted system justification negatively, as Li and colleagues had found, while education did not; in the cross-lagged models education predicted it positively and income did not, against Li and colleagues. In the United States objective status supported the hypothesis in neither analysis. Valdes, Liu, Williams and Carr then modelled 24,009 respondents in 42 countries and report that greater objective socioeconomic status went with greater system justification, and that their multilevel models largely supported the competing claims of social dominance and social identity theory. The experimental branch has its own problem. Sotola and Credé ran a z-curve over 116 papers and 232 unique samples and report an overall average statistical power of 16%, with system-threat manipulations showing particularly low estimated replication rates and the literature since 2015 improved on what came before. Their full text is open access at Wiley, which answered a bot challenge to every request on 21 September 2026, so those three figures are read from the abstract and no other number from the paper appears here. One of these experiments has been tested directly. Many Labs 1 repeated Caruso, Vohs, Baxter and Waytz's currency prime in 36 samples with 6,333 participants and found a weighted d of -0.02, 99% CI [-0.08, 0.04], with 97% of samples returning nothing and the aggregate test at t(6331) = -0.79, p = .83. Many Labs 1 puts the original effect at d = 0.80, 95% CI [0.05, 1.54], a figure it calculated from the original report rather than one Caruso and colleagues printed. Caruso, Shapira and Landy later ran three preregistered money-priming experiments, N = 4,649, and report that no manipulation consistently affected any dependent measure, though the measures their abstract lists do not include system justification. This site's social-priming entry carries the wider money-priming record, which is not repeated here.",
     "study": {
       "cite": "Brandt, M. J., Kuppens, T., Spears, R., et al. (2020). Subjective status and perceived legitimacy across countries. European Journal of Social Psychology, 50(5), 921-942.",
       "doi": "10.1002/ejsp.2694",
@@ -28,82 +32,85 @@
       "es": 0.152,
       "esType": "md",
       "unit": "share of the perceived-legitimacy scale, across the full range of subjective status",
-      "ci": [0.142, 0.162],
+      "ci": [
+        0.142,
+        0.162
+      ],
       "ciLevel": 95,
       "weighting": "multilevel, measures nested in persons in samples in countries"
     }
   },
-  "limits": "Support for the status-legitimacy hypothesis exists and is narrow. Sengupta, Osborne and Sibley found it in a New Zealand probability sample of 6,162 people, but only on one of two measures. Asians rated ethnic-group relations fairer than Europeans did, Cohen's d = -.32 for the European-Asian gap, and Pacific Islanders more so still, d = -.36. On general support for the political system there was no gap between Europeans, Asians and Pacific people, and Māori, the group with the most politicised identity, scored lowest of all, d = -.37 against Europeans. Henry and Saul's Bolivian study and Li and colleagues' Chinese study are cited on the supportive side by both camps; neither was retrieved for this entry. The palliative function is a separate question with its own evidence. Vargas-Salfate, Paez, Khan, Liu and Gil de Zúñiga ran a two-wave longitudinal survey of representative online samples in 18 countries, N = 5,901. They report that system justification was positively related to life satisfaction and negatively to anxiety and depression. Neither country-level inequality nor individual social status changed the relationship. Their coefficients were not retrieved, so none appears here. The same group's 19-nation comparison of social dominance theory and system justification, which Brandt and colleagues list among the studies finding no support for the status-legitimacy hypothesis, is behind a paywall and its numbers are not quoted here. Brandt's 2013 full text was also not obtained, and the figures above from it come from its own abstract. Jost's 2020 book, published by Harvard University Press, was not read for this entry. A z-curve is a forecast of how often significant findings would repeat, not a demonstration that any particular one is false, and Sotola and Credé's post-2015 subset came out better than the pre-2015 one on every index they report.",
-  "misreadings": "The most common error is treating a failed status-legitimacy hypothesis as a refutation of system justification theory. Jost rejects the equation, and in print. He writes that his group 'never regarded dissonance reduction as the \"engine\" of system justification'. Brandt, he says, 'went so far as to rename the strong, dissonance-based hypothesis the \"status-legitimacy hypothesis\"' and extended it to gender and education, which were not part of the original programme. He also quotes his own 2003 paper as having said that disadvantaged groups are not 'always (or even ordinarily) the most likely ones to provide ideological support for the system'. His question is a different one: why do members of the working class defend the status quo as much as they do, rather than more than the rich do. The second error runs the other way. Brandt's null results also gave little support to group self-interest, so they do not vindicate social identity or realistic conflict accounts by default. Jost makes that point, and Brandt's own later work finds a positive slope rather than the flat one. The third is to read the theory's supportive correlational literature as evidence for the causal story. People with lower subjective status report lower perceived legitimacy, which is what self-interest predicts and what the theory's sharp prediction denies.",
+  "limits": "Support for the status-legitimacy hypothesis exists and is narrow. Sengupta, Osborne and Sibley found it in a New Zealand probability sample of 6,162 people, but only on one of two measures. Asians and Pacific Islanders rated ethnic-group relations fairer than Europeans did. On the overall political system those groups did not score above Europeans, and Māori showed the least support of all. Their paper is paywalled at Wiley, so the effect sizes behind those statements are not quoted and the account comes from the abstract at PubMed. Li, Yang, Wu and Kou report five Chinese studies, total N = 26,134, in which objective socioeconomic status predicted system justification negatively and subjective status positively; that paper is paywalled and its account here comes from the abstract at Crossref. Henry and Saul's Bolivian study is paywalled at Springer and is named rather than quoted. The palliative function is a separate question with its own evidence. Vargas-Salfate, Paez, Khan, Liu and Gil de Zúñiga ran a two-wave longitudinal survey of representative online samples in 18 countries, N = 5,901, six months apart. Controlling for the first wave of each outcome, system justification at wave one predicted higher life satisfaction at wave two, b = 0.02, SE 0.008, z = 3.22, p = .001, lower anxiety, b = -0.04, SE 0.010, z = -4.36, and lower depression, b = -0.04, SE 0.013, z = -2.89, p = .004. Neither the Gini index, the human development index nor individual subjective status moderated any of the three. Lima, de Souza and Jost later pooled 34 articles and 65 effect sizes on members of disadvantaged minority groups and report system justification associated with lower psychological distress, r = -0.131, k = 22, N = 25,506, higher subjective well-being, r = 0.190, k = 31, N = 172,075, and higher self-esteem, r = 0.106, k = 12, N = 4,839. That paper is paywalled at Elsevier and those figures are read from its abstract at PubMed. The same group's 19-nation comparison of social dominance theory and system justification runs the other way on status. Vargas-Salfate, Paez, Liu, Pratto and Gil de Zúñiga surveyed 14,936 people and conclude that the results fit the social dominance and realistic conflict account better, because system justification was higher among high-status people and in developed nations. Jost's 2020 book, published by Harvard University Press, was not read for this entry. A z-curve is a forecast of how often significant findings would repeat, not a demonstration that any particular one is false.",
+  "misreadings": "The most common error is treating a failed status-legitimacy hypothesis as a refutation of system justification theory. The 2003 abstract calls the dissonance-based prediction the strongest form of the hypothesis, which leaves weaker forms standing. Brandt draws the line himself. His data, he writes, cannot determine whether people with low social status ever feel the dissonance the theory hypothesises, and they do not show that such people never legitimise the system more than the advantaged. Jost's 2019 review answers the criticisms at length, and its full text was not obtained here, so nothing is quoted from it. The second error runs the other way. Brandt's 2013 slopes vary significantly across years and countries, which he reads as showing there are cases where the predicted pattern does occur, and he leaves the boundaries on it to later work. His own 2020 data then produced a positive slope rather than a flat one. The third is to read the theory's supportive correlational literature as evidence for the causal story. People with lower subjective status report lower perceived legitimacy, which is what self-interest predicts and what the sharp prediction denies. Brandt raises the reverse path too, that confidence in the system might help people rise, and answers it by citing a status-prime experiment by Jost and Burgess that was not retrieved for this entry.",
   "sources": [
     {
-      "text": "Jost, J. T., & Banaji, M. R. (1994). The role of stereotyping in system-justification and the production of false consciousness. British Journal of Social Psychology, 33(1), 1-27. Record verified at Crossref; the text was not retrieved for this entry.",
+      "text": "Jost, J. T., & Banaji, M. R. (1994). The role of stereotyping in system-justification and the production of false consciousness. British Journal of Social Psychology, 33(1), 1-27. Source for the definition of system-justification, read from the abstract at Crossref; the full text is paywalled at Wiley and was not retrieved.",
       "doi": "10.1111/j.2044-8309.1994.tb01008.x",
       "url": "https://doi.org/10.1111/j.2044-8309.1994.tb01008.x",
       "type": "primary"
     },
     {
-      "text": "Jost, J. T., Pelham, B. W., Sheldon, O., & Ni Sullivan, B. (2003). Social inequality and the reduction of ideological dissonance on behalf of the system: evidence of enhanced system justification among the disadvantaged. European Journal of Social Psychology, 33(1), 13-36. Source for the six survey results, read from the abstract at Crossref.",
+      "text": "Jost, J. T., Pelham, B. W., Sheldon, O., & Ni Sullivan, B. (2003). Social inequality and the reduction of ideological dissonance on behalf of the system: evidence of enhanced system justification among the disadvantaged. European Journal of Social Psychology, 33(1), 13-36. Source for the six survey results and for the description of the dissonance version as the strongest form of the hypothesis, read from the abstract at Crossref. The full text was not obtained: Wiley and the SSRN copy of the submitted version each returned a bot challenge.",
       "doi": "10.1002/ejsp.127",
       "url": "https://doi.org/10.1002/ejsp.127",
       "type": "primary"
     },
     {
-      "text": "Brandt, M. J. (2013). Do the disadvantaged legitimize the social system? A large-scale test of the status-legitimacy hypothesis. Journal of Personality and Social Psychology, 104(5), 765-785. Source for the sample and the quoted conclusion, read from the abstract at PubMed.",
+      "text": "Brandt, M. J. (2013). Do the disadvantaged legitimize the social system? A large-scale test of the status-legitimacy hypothesis. Journal of Personality and Social Psychology, 104(5), 765-785. Read in full from the author's copy at osf.io/bcnuy; source for the three sample sizes, the tally of 14 effects, the 4.4% education gap, the 22 moderator tests and the author's own caveats.",
       "doi": "10.1037/a0031751",
       "url": "https://doi.org/10.1037/a0031751",
       "type": "replication"
     },
     {
-      "text": "Brandt, M. J., Kuppens, T., Spears, R., et al. (2020). Subjective status and perceived legitimacy across countries. European Journal of Social Psychology, 50(5), 921-942. Source for the coefficients, the country-level slopes and the moderator tests.",
+      "text": "Brandt, M. J., Kuppens, T., Spears, R., et al. (2020). Subjective status and perceived legitimacy across countries. European Journal of Social Psychology, 50(5), 921-942. Source for the coefficients, the country-level slopes, the eight moderators and the power simulation. Read twice, from the Copenhagen repository copy and from the PubMed Central record.",
       "doi": "10.1002/ejsp.2694",
       "url": "https://doi.org/10.1002/ejsp.2694",
       "type": "replication"
     },
     {
-      "text": "Valdes, E. A., Liu, J. H., & Williams, M. (2023). Testing the status-legitimacy hypothesis: Predicting system justification using objective and subjective socioeconomic status in China and the United States. Asian Journal of Social Psychology, 26(2), 238-253.",
+      "text": "Valdes, E. A., Liu, J. H., & Williams, M. (2023). Testing the status-legitimacy hypothesis: Predicting system justification using objective and subjective socioeconomic status in China and the United States. Asian Journal of Social Psychology, 26(2), 238-253. Read in full from the Massey University repository copy of the published article.",
       "doi": "10.1111/ajsp.12555",
       "url": "https://doi.org/10.1111/ajsp.12555",
       "type": "replication"
     },
     {
-      "text": "Sotola, L. K., & Credé, M. (2022). On the predicted replicability of two decades of experimental research on system justification: A Z-curve analysis. European Journal of Social Psychology, 52(5-6), 895-909.",
+      "text": "Sotola, L. K., & Credé, M. (2022). On the predicted replicability of two decades of experimental research on system justification: A Z-curve analysis. European Journal of Social Psychology, 52(5-6), 895-909. Open access at Wiley, which returned a bot challenge to every request on 21 September 2026; the figures here are read from the abstract at Crossref.",
       "doi": "10.1002/ejsp.2858",
       "url": "https://doi.org/10.1002/ejsp.2858",
       "type": "review"
     },
     {
-      "text": "Klein, R. A., Ratliff, K. A., Vianello, M., et al. (2014). Investigating variation in replicability: A \"many labs\" replication project. Social Psychology, 45(3), 142-152. Source for the currency-priming replication figures.",
+      "text": "Klein, R. A., Ratliff, K. A., Vianello, M., et al. (2014). Investigating variation in replicability: A \"many labs\" replication project. Social Psychology, 45(3), 142-152. Source for the currency-priming replication figures and for the original effect size it calculated. Read from the accepted version in the LSE repository.",
       "doi": "10.1027/1864-9335/a000178",
       "url": "https://doi.org/10.1027/1864-9335/a000178",
       "type": "replication"
     },
     {
-      "text": "Caruso, E. M., Vohs, K. D., Baxter, B., & Waytz, A. (2013). Mere exposure to money increases endorsement of free-market systems and social inequality. Journal of Experimental Psychology: General, 142(2), 301-306. The original of the currency-priming effect; its effect size is quoted from the Many Labs paper.",
+      "text": "Caruso, E. M., Vohs, K. D., Baxter, B., & Waytz, A. (2013). Mere exposure to money increases endorsement of free-market systems and social inequality. Journal of Experimental Psychology: General, 142(2), 301-306. The original of the currency-priming effect; paywalled, and the effect size quoted here is the Many Labs team's calculation rather than a figure from this paper.",
       "doi": "10.1037/a0029288",
       "url": "https://doi.org/10.1037/a0029288",
       "type": "primary"
     },
     {
-      "text": "Sengupta, N. K., Osborne, D., & Sibley, C. G. (2015). The status-legitimacy hypothesis revisited: Ethnic-group differences in general and dimension-specific legitimacy. British Journal of Social Psychology, 54(2), 324-340.",
+      "text": "Sengupta, N. K., Osborne, D., & Sibley, C. G. (2015). The status-legitimacy hypothesis revisited: Ethnic-group differences in general and dimension-specific legitimacy. British Journal of Social Psychology, 54(2), 324-340. Paywalled at Wiley; the account here is read from the abstract at PubMed and no effect size from it is quoted.",
       "doi": "10.1111/bjso.12080",
       "url": "https://doi.org/10.1111/bjso.12080",
       "type": "primary"
     },
     {
-      "text": "Vargas-Salfate, S., Paez, D., Khan, S. S., Liu, J. H., & Gil de Zúñiga, H. (2018). System justification enhances well-being: A longitudinal analysis of the palliative function of system justification in 18 countries. British Journal of Social Psychology, 57(3), 567-590. Read from the abstract; its coefficients were not retrieved.",
+      "text": "Vargas-Salfate, S., Paez, D., Khan, S. S., Liu, J. H., & Gil de Zúñiga, H. (2018). System justification enhances well-being: A longitudinal analysis of the palliative function of system justification in 18 countries. British Journal of Social Psychology, 57(3), 567-590. Read in full from the published version on the last author's site; source for the three longitudinal coefficients and the null moderator tests.",
       "doi": "10.1111/bjso.12254",
       "url": "https://doi.org/10.1111/bjso.12254",
       "type": "primary"
     },
     {
-      "text": "Vargas-Salfate, S., Paez, D., Liu, J. H., Pratto, F., & Gil de Zúñiga, H. (2018). A comparison of social dominance theory and system justification: The role of social status in 19 nations. Personality and Social Psychology Bulletin, 44(7), 1060-1076. Named as existing; paywalled, and no figure from it appears here.",
+      "text": "Vargas-Salfate, S., Paez, D., Liu, J. H., Pratto, F., & Gil de Zúñiga, H. (2018). A comparison of social dominance theory and system justification: The role of social status in 19 nations. Personality and Social Psychology Bulletin, 44(7), 1060-1076. Read in full from the published version on the last author's site; source for the sample of 14,936 and the conclusion.",
       "doi": "10.1177/0146167218757455",
       "url": "https://doi.org/10.1177/0146167218757455",
       "type": "replication"
     },
     {
-      "text": "Jost, J. T. (2019). A quarter century of system justification theory: Questions, answers, criticisms, and societal applications. British Journal of Social Psychology, 58(2), 263-314. Source for Jost's reply to Brandt and for the account of the 1994 paper.",
+      "text": "Jost, J. T. (2019). A quarter century of system justification theory: Questions, answers, criticisms, and societal applications. British Journal of Social Psychology, 58(2), 263-314. Paywalled at Wiley; the author's own copy at as.nyu.edu returned 403 to every request on 21 September 2026 and the Internet Archive is blocked from this session. Named here from its abstract at Crossref; nothing is quoted from its text.",
       "doi": "10.1111/bjso.12297",
       "url": "https://doi.org/10.1111/bjso.12297",
       "type": "review"
@@ -113,7 +120,37 @@
       "doi": "10.4159/9780674247192",
       "url": "https://doi.org/10.4159/9780674247192",
       "type": "background"
+    },
+    {
+      "text": "Valdes, E. A., Liu, J. H., Williams, M., & Carr, S. C. (2025). A cross-cultural test of competing hypotheses about system justification using data from 42 nations. Political Psychology, 46(4), 822-846. Read in full from the Massey University repository copy of the published article.",
+      "doi": "10.1111/pops.13039",
+      "url": "https://doi.org/10.1111/pops.13039",
+      "type": "replication"
+    },
+    {
+      "text": "Li, W., Yang, Y., Wu, J., & Kou, Y. (2020). Testing the status-legitimacy hypothesis in China: Objective and subjective socioeconomic status divergently predict system justification. Personality and Social Psychology Bulletin, 46(7), 1044-1058. The Chinese finding Valdes and colleagues tried to repeat; paywalled, and read from the abstract at Crossref.",
+      "doi": "10.1177/0146167219893997",
+      "url": "https://doi.org/10.1177/0146167219893997",
+      "type": "primary"
+    },
+    {
+      "text": "Henry, P. J., & Saul, A. (2006). The development of system justification in the developing world. Social Justice Research, 19(3), 365-378. Cited on the supportive side by both camps; paywalled at Springer and named rather than quoted.",
+      "doi": "10.1007/s11211-006-0012-x",
+      "url": "https://doi.org/10.1007/s11211-006-0012-x",
+      "type": "primary"
+    },
+    {
+      "text": "Lima, B. P. B., de Souza, L. E. C., & Jost, J. T. (2025). System justification, subjective well-being, and mental health symptoms in members of disadvantaged minority groups. Clinical Psychology Review, 115, 102532. A meta-analysis co-authored by the theory's originator; paywalled at Elsevier and read from the abstract at PubMed.",
+      "doi": "10.1016/j.cpr.2024.102532",
+      "url": "https://doi.org/10.1016/j.cpr.2024.102532",
+      "type": "review"
+    },
+    {
+      "text": "Caruso, E. M., Shapira, O., & Landy, J. F. (2017). Show me the money: A systematic exploration of manipulations, moderators, and mechanisms of priming effects. Psychological Science, 28(8), 1148-1159. The original author's own later money-priming experiments; paywalled, and read from the abstract at Crossref.",
+      "doi": "10.1177/0956797617706161",
+      "url": "https://doi.org/10.1177/0956797617706161",
+      "type": "replication"
     }
   ],
-  "checkedOn": "2026-08-09"
+  "checkedOn": "2026-09-21"
 }
