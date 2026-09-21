@@ -2,21 +2,26 @@
   "no": 137,
   "slug": "inequity-aversion",
   "name": "Inequity aversion",
-  "aliases": ["Inequality aversion", "Difference aversion", "Fehr-Schmidt preferences", "Sense of fairness"],
+  "aliases": [
+    "Inequality aversion",
+    "Difference aversion",
+    "Fehr-Schmidt preferences",
+    "Sense of fairness"
+  ],
   "category": "social",
   "statement": "People will pay to avoid unequal payoffs, turning down money rather than accept a split that leaves them far behind the person they are dealing with.",
-  "meaning": "Three claims travel under this name and they need separating. The first is a behavioural regularity: responders in bargaining experiments turn down small offers, which costs them money. The second is a formal model of preference. Fehr and Schmidt write utility as material payoff minus a penalty for the gap between own and others' payoffs, weighting the case of falling behind more heavily than the case of getting ahead. They call it self-centred inequity aversion, meaning a person cares about the gap between themselves and others rather than about inequality among third parties. Bolton and Ockenfels published a related model a year later, built on relative payoff standing rather than pairwise gaps. The third claim is comparative: that other animals share the aversion and refuse a poor reward when a neighbour gets a better one for the same work. The three stand or fall separately, and the evidence for them is of different quality.",
+  "meaning": "Three claims travel under this name and they need separating. The first is a behavioural regularity: responders in bargaining experiments turn down small offers, which costs them money. The second is a formal model of preference. Fehr and Schmidt write utility as material payoff minus a penalty for the gap between own and others' payoffs, weighting the case of falling behind more heavily than the case of getting ahead. They call it self-centred inequity aversion, meaning a person cares about the gap between themselves and others rather than about inequality among third parties. Bolton and Ockenfels published a related model a year later, built on a person's share of the total payoff rather than on pairwise gaps. The third claim is comparative: that other animals share the aversion and refuse a poor reward when a neighbour gets a better one for the same work. The three stand or fall separately, and the evidence for them is of different quality.",
   "origin": {
     "year": 1999,
     "who": "Ernst Fehr and Klaus M. Schmidt",
     "where": "The Quarterly Journal of Economics",
-    "note": "Their paper is \"A Theory of Fairness, Competition, and Cooperation\", 114(3), 817-868. It supplied the name and the algebra, citing Adams among earlier writers on equity and citing Loewenstein, Thompson and Bazerman for the asymmetry between falling behind and getting ahead. Gary Bolton and Axel Ockenfels reached a related model independently in the American Economic Review in 2000. The experimental base both were built on starts with Güth, Schmittberger and Schwarze's ultimatum game in 1982."
+    "note": "Their paper is \"A Theory of Fairness, Competition, and Cooperation\", 114(3), 817-868. It supplied the name and the algebra, citing Adams among earlier writers on equity and citing Loewenstein, Thompson and Bazerman for the asymmetry between falling behind and getting ahead. It cites Bolton and Ockenfels as a 1997 working paper, and that model appeared in the American Economic Review in 2000, built on a subject's own pecuniary payoff and own relative payoff standing. The experimental base both were built on starts with Güth, Schmittberger and Schwarze's ultimatum game in 1982."
   },
-  "evidence": "Oosterbeek, Sloof and van de Kuilen pooled 37 papers reporting 75 ultimatum-game results. Proposers offered 40% of the pie on average, and 16% of offers were rejected, with rejection falling as the pie grew and as the offered share rose. Fehr and Schmidt fitted their model to ultimatum data with a discrete distribution of two parameters: an envy weight of 0 for 30% of subjects, 0.5 for 30%, 1 for 30% and 4 for 10%, and a guilt weight of 0 for 30%, 0.25 for 30% and 0.6 for 40%. An envy weight of 1 means giving up a dollar to cut the opponent's payoff by two. Henrich and colleagues took the game to 15 small-scale societies. Group mean offers ran from 26% to 58%, against the 40% to 50% typical of student samples, and modal offers from 15% to 50%. Machiguenga horticulturalists in Peru had a mean of 0.26 and modes at 0.15 and 0.25, and their responders rejected a single offer although more than 75% of offers were below 30% of the pie. Lamalera whalers in Indonesia had a mean of 0.57, and 63% of proposers split the pie evenly. Hadza foragers rejected 24% of all offers and nine of the 21 offers at or below 20%. The Au and Gnau of Papua New Guinea rejected offers above 50% about as often as offers below it. Brosnan and de Waal reported in 2003 that brown capuchins refused to trade a token for cucumber once a neighbour received a grape for the same token, which is the result the popular video shows.",
+  "evidence": "Oosterbeek, Sloof and van de Kuilen pooled 37 papers reporting 75 ultimatum-game results. Proposers offered 40% of the pie on average and 16% of offers were rejected, with the rejection rate lower for larger pies and for larger shares offered. Fehr and Schmidt did not estimate their parameters and say so: their 2010 reply states that they never claimed to have estimated preference parameters and never used the word calibration in the 1999 paper. Their Table III assumes a discrete distribution chosen to fit known ultimatum evidence, with an envy weight of 0 for 30% of subjects, 0.5 for 30%, 1 for 30% and 4 for 10%, and a guilt weight of 0 for 30%, 0.25 for 30% and 0.6 for 40%. An envy weight of 1 means giving up a dollar to cut the opponent's payoff by two. Henrich and colleagues took the game to 15 small-scale societies. Group mean offers ran from 26% to 58%, against the 40% to 50% typical of student samples, and modal offers from 15% to 50%. Machiguenga horticulturalists in Peru had a mean of 0.26 and modes at 0.15 and 0.25, and their responders rejected a single offer although more than 75% of offers were below 30% of the pie. Lamalera whalers in Indonesia had a mean of 0.57, and 63% of proposers split the pie evenly. Hadza foragers rejected 24% of all offers and nine of the 21 offers at or below 20%. The Au and Gnau of Papua New Guinea rejected offers above 50% about as often as offers below it. Brosnan and de Waal tested five adult female brown capuchins in 2003 across four conditions. Their tendency to trade a token for cucumber varied across those conditions at F(3,16) = 25.78, p < 0.001, and fell furthest when a partner got a grape for no effort at all.",
   "replication": {
     "state": "mixed",
-    "headline": "People really do reject low offers, at 16% pooled across 37 ultimatum papers, but no inequity effect survives a meta-analysis of 23 animal studies.",
-    "detail": "The two literatures pull apart. On the human side Oosterbeek, Sloof and van de Kuilen found a 16% rejection rate across 75 results from 37 papers, and the behavioural pattern is not in dispute. On the animal side Ritov, Völter, Raihani and Engelmann obtained the primary data behind 23 accept/reject studies, covering 302 subjects, 60,430 observations and 18 species. The coefficient for the inequity condition was 0.257, with a bootstrapped 95% interval running from -0.029 to 0.543 and p = 0.0923. No pre-registered subset reached p < 0.05: capuchin monkeys gave 0.375 with an interval of -0.294 to 0.979, and chimpanzees gave -0.075 with an interval of -0.640 to 0.514. The disappointment condition, where a better reward is shown without a partner being favoured, gave 0.513 with an interval of 0.108 to 0.955 and p = 0.0339. Engelmann, Clift, Herrmann and Tomasello had shown the same thing directly in nine chimpanzees, who refused food from a human experimenter on 26.1% of trials and from a machine on 2.4%, and who refused most often when no partner was present at all.",
+    "headline": "People really do reject low offers, at 16% across 75 ultimatum results, while no inequity effect survives a meta-analysis of 23 animal studies.",
+    "detail": "The two literatures pull apart. On the human side Oosterbeek, Sloof and van de Kuilen report a 16% rejection rate across 75 results from 37 papers, and the behavioural pattern is not in dispute. On the animal side Ritov, Völter, Raihani and Engelmann asked the authors of 30 eligible publications for their primary data and received it for 23, covering 24 studies, one of which they dropped for having no effortful task. What they analysed is 23 studies, 302 subjects, 60,430 observations and 18 species. The coefficient for the inequity condition was 0.257, with a bootstrapped 95% interval running from -0.029 to 0.543 and p = 0.0923. None of the five populations in their first model reached p < 0.05: capuchin monkeys gave 0.375 with an interval of -0.294 to 0.979, and chimpanzees gave -0.075 with an interval of -0.640 to 0.514. The disappointment condition, where a better reward is shown without a partner being favoured, gave 0.513 with an interval of 0.108 to 0.955 and p = 0.0339, and reached p < 0.05 in three of the five populations. A third model found no inequity effect left once disappointment was in it, at -0.001 with an interval of -0.392 to 0.347 across 17 studies and 244 subjects. Engelmann, Clift, Herrmann and Tomasello had shown the same thing directly in nine chimpanzees, who refused food from a human experimenter on 26.1% of trials and from a machine on 2.4%, and who refused most often when no partner was present at all.",
     "study": {
       "cite": "Ritov, O., Völter, C. J., Raihani, N. J., & Engelmann, J. M. (2024). No evidence for inequity aversion in non-human animals: a meta-analysis of accept/reject paradigms. Proceedings of the Royal Society B, 291(2035), 20241452.",
       "doi": "10.1098/rspb.2024.1452",
@@ -26,115 +31,148 @@
     "replicated": {
       "es": 0.257,
       "esType": "beta",
-      "ci": [-0.029, 0.543],
+      "ci": [
+        -0.029,
+        0.543
+      ],
       "ciLevel": 95
     }
   },
-  "limits": "The animal meta-analysis covers accept/reject tasks only. Its authors approached 30 eligible publications and received data for 23, and they dropped conditions in which the subject faced no effortful task, so the synthesis is narrower than the literature it reviews. On the model side, Binmore and Shaked argue that ultimatum data cannot pin the Fehr-Schmidt parameters down at all: a proposer who offers half the pie tells you only that the guilt weight exceeds 0.5, which makes the exercise a parametrisation rather than a calibration, and of the four games analysed in the 1999 paper they say only one arguably beats a money-maximising model. Fehr and Schmidt replied in the same issue. Charness and Rabin ran distribution games built to separate the motives, and found few subjects would pay to reduce inequality by lowering another player's payoff, with Pareto-damaging choices more common when they increased inequality than when they reduced it. Dirk Engelmann and Martin Strobel report that a mix of efficiency concern, maximin preference and selfishness fits their distribution data better than either fairness model. Henrich and colleagues' own figures do not quite agree with each other: their text gives the range of group means as 26% to 58%, while their Table 2 lists Lamalera at 0.57 and Quichua at 0.25.",
-  "misreadings": "Humans rejecting unfair offers, humans modelled as having inequity-averse preferences, and a monkey throwing cucumber are three claims, and evidence for one is not evidence for another. Henrich made the point in Nature: applied to the capuchin setup, the Fehr-Schmidt model predicts the monkey should eat the cucumber, because refusing it widens the gap rather than closing it, and the grape-eating capuchin sometimes reached through and took the discarded slice. Henrich also noted the human comparison. In an impunity game, where rejection costs the responder but leaves the proposer's payoff untouched, subjects never rejected. Wynne, reading Brosnan and de Waal's own data, reported 43% refusals in the inequality test against 49% in the food control, where a grape sat in the empty partner seat and no second monkey was present. Brosnan and de Waal answered that the levels are not the point and the trends differ, reporting a comparison of regression slopes across trials at F(2,69) = 28.71, p < 0.001. Bräuer, Call and Tomasello added controls and got the opposite pattern in apes, who ignored fewer food pieces when a conspecific received the better food, which they read as expectation of food rather than as fairness. Roma and colleagues found witness rejections infrequent and unrelated to what the other monkey received. The cross-cultural data also undercut the claim that everyone rejects unfair offers: Machiguenga responders rejected once, and the Kazakh, Quichua, Aché and Tsimane rejected nothing at all.",
+  "limits": "The animal meta-analysis covers accept/reject tasks only. Its authors approached 30 eligible publications and received data for 23, and they dropped conditions in which the subject faced no effortful task, so the synthesis is narrower than the literature it reviews. The note to their Table 2 defines n as the number of species, while the column reads 302 for all species, which their text gives as the number of subjects. On the model side, Binmore and Shaked argue that ultimatum data cannot pin the Fehr-Schmidt parameters down at all: nothing more can be said of a proposer who offers half the pie than that the guilt weight exceeds 0.5, which makes the exercise a parametrisation rather than a calibration, and of the four games analysed in the 1999 paper they say only one arguably beats a money-maximising model. Fehr and Schmidt replied in the same issue that the criticism is unsubstantiated, while granting that a simple model may still be useful even though inequity aversion does not describe other-regarding preferences fully. Charness and Rabin ran distribution games built to separate the motives, and found few subjects would pay to reduce inequality by lowering another player's payoff. They observed Pareto-damaging behaviour more often when it increased inequality than when it reduced it, and they add that this comparison is itself confounded by other explanations. Dirk Engelmann and Martin Strobel ran 13 treatments in three classroom sessions at Humboldt-Universität zu Berlin, with 136 participants in 1998, 240 in 2000 and 210 in 2001. In their treatment P, where both fairness models predict the least efficient allocation, 60% of subjects took the efficient one. Their conditional logit gave odds ratios of 1.232 for efficiency at p = 0.012 and 1.492 for maximin at p < 0.001, while neither Fehr-Schmidt component was significant, at p = 0.161 and p = 0.286. Fehr, Naef and Schmidt re-ran two of those treatments on other subject pools and report that the efficiency result belongs to economics and business students: among Munich non-economists the egalitarian allocation was chosen by 57.8% and 54.2%, against 22.9% and 27.5% among Munich economists. Bolton and Ockenfels published a second comment in the same issue and Engelmann and Strobel replied to both; neither was obtained. Henrich and colleagues' own figures do not quite agree with each other: their text gives the range of group means as 26% to 58%, while their Table 2 lists Lamalera at 0.57 and Quichua at 0.25.",
+  "misreadings": "Humans rejecting unfair offers, humans modelled as having inequity-averse preferences, and a monkey throwing cucumber are three claims, and evidence for one is not evidence for another. Henrich made the point in Nature: applied to the capuchin setup, the Fehr-Schmidt model predicts the monkey should eat the cucumber, because refusing it widens the gap rather than closing it, and the grape-receiving capuchin sometimes reached through the cage and took the discarded slice. Henrich also noted the human comparison. In an impunity game, where rejection costs the responder but leaves the proposer's payoff untouched, subjects never rejected. Wynne, reading Brosnan and de Waal's own data, reported 43% refusals in the inequality test against 49% in the food control, where a grape sat in the empty partner seat and no second monkey was present. Brosnan and de Waal answered that the levels are not the point and the trends differ. Their 2003 paper had tested the trend with an exact Wilcoxon that could not return a p below 0.06 on five subjects; the reply instead compares regression slopes across trials, at F(2,69) = 28.71, p < 0.001, which is a re-analysis rather than the printed test. Bräuer, Call and Tomasello tested 7 orangutans, 6 gorillas, 4 bonobos and 13 chimpanzees against the chimpanzee study Brosnan, Schiff and de Waal published in 2005, dropping the token exchange and adding a no-partner control. The apes ignored fewer food pieces when a conspecific received the better food, which is the opposite pattern, although across all four species that effect sits at F(1,29) = 4.19, p = 0.050, and is firmer in the chimpanzees alone at F(1,12) = 9.70, p = 0.009. They read it as expectation of food rather than as fairness. Roma and colleagues paired four capuchin models with four witnesses and found witness rejections infrequent and unrelated to what the model received, while models offered cucumber rejected it more often than witnesses did. Brosnan and de Waal answered that too, and Bräuer and colleagues describe their answer as a reanalysis of the original data that found no support for the frustration effect. The cross-cultural data also undercut the claim that everyone rejects unfair offers: Machiguenga responders rejected once, and the Kazakh, Quichua, Aché and Tsimane rejected nothing in 10, 14, 51 and 70 offers. The same ultimatum meta-analysis is used in the entries on reciprocity and two wrongs make a right, and the 15-society dataset also appears in the entry on cultural bias.",
   "sources": [
     {
-      "text": "Fehr, E., & Schmidt, K. M. (1999). A Theory of Fairness, Competition, and Cooperation. The Quarterly Journal of Economics, 114(3), 817-868. Read in full from a copy of the published article, including the parameter distribution in Table III.",
+      "text": "Fehr, E., & Schmidt, K. M. (1999). A Theory of Fairness, Competition, and Cooperation. The Quarterly Journal of Economics, 114(3), 817-868. Read in full on 21 September 2026 from a copy carrying the journal's running heads and pagination, including the parameter distribution in Table III on page 844.",
       "doi": "10.1162/003355399556151",
       "url": "https://doi.org/10.1162/003355399556151",
       "type": "primary"
     },
     {
-      "text": "Bolton, G. E., & Ockenfels, A. (2000). ERC: A Theory of Equity, Reciprocity, and Competition. American Economic Review, 90(1), 166-193. Abstract read at Crossref; the article itself was not obtained.",
+      "text": "Bolton, G. E., & Ockenfels, A. (2000). ERC: A Theory of Equity, Reciprocity, and Competition. American Economic Review, 90(1), 166-193. Read on 21 September 2026 as a scanned reprint of the published article, carrying the journal's running heads. The description of the model on this page is from its abstract and Section I.",
       "doi": "10.1257/aer.90.1.166",
       "url": "https://doi.org/10.1257/aer.90.1.166",
       "type": "primary"
     },
     {
-      "text": "Güth, W., Schmittberger, R., & Schwarze, B. (1982). An experimental analysis of ultimatum bargaining. Journal of Economic Behavior & Organization, 3(4), 367-388. Bibliographic record verified at Crossref; the article itself was not obtained.",
+      "text": "Güth, W., Schmittberger, R., & Schwarze, B. (1982). An experimental analysis of ultimatum bargaining. Journal of Economic Behavior & Organization, 3(4), 367-388. Read on 21 September 2026 as a scanned interlibrary reprint carrying the authors' names and the journal's first page. No figure from it appears on this page.",
       "doi": "10.1016/0167-2681(82)90011-7",
       "url": "https://doi.org/10.1016/0167-2681(82)90011-7",
       "type": "primary"
     },
     {
-      "text": "Oosterbeek, H., Sloof, R., & van de Kuilen, G. (2004). Cultural Differences in Ultimatum Game Experiments: Evidence from a Meta-Analysis. Experimental Economics, 7(2), 171-188. The 40% offer and 16% rejection figures are read from the published abstract.",
+      "text": "Oosterbeek, H., Sloof, R., & van de Kuilen, G. (2004). Cultural Differences in Ultimatum Game Experiments: Evidence from a Meta-Analysis. Experimental Economics, 7(2), 171-188. The article was not obtained. The 40% offer and 16% rejection figures are read from the published abstract, fetched twice, at Crossref and at OpenAlex.",
       "doi": "10.1023/B:EXEC.0000026978.14316.74",
       "url": "https://doi.org/10.1023/B:EXEC.0000026978.14316.74",
       "type": "primary"
     },
     {
-      "text": "Henrich, J., Boyd, R., Bowles, S., Camerer, C., Fehr, E., Gintis, H., McElreath, R., et al. (2005). \"Economic man\" in cross-cultural perspective: Behavioral experiments in 15 small-scale societies. Behavioral and Brain Sciences, 28(6), 795-815. Read in full; the society-level figures come from its Table 2 and the surrounding text.",
+      "text": "Henrich, J., Boyd, R., Bowles, S., Camerer, C., Fehr, E., Gintis, H., McElreath, R., et al. (2005). \"Economic man\" in cross-cultural perspective: Behavioral experiments in 15 small-scale societies. Behavioral and Brain Sciences, 28(6), 795-855. Read in full on 21 September 2026; the society-level figures come from its Table 2 and section 4.1.",
       "doi": "10.1017/S0140525X05000142",
       "url": "https://doi.org/10.1017/S0140525X05000142",
       "type": "primary"
     },
     {
-      "text": "Henrich, J., Boyd, R., Bowles, S., Camerer, C., Fehr, E., Gintis, H., & McElreath, R. (2001). In Search of Homo Economicus: Behavioral Experiments in 15 Small-Scale Societies. American Economic Review, 91(2), 73-78. Bibliographic record verified at Crossref; the article itself was not obtained.",
+      "text": "Henrich, J., Boyd, R., Bowles, S., Camerer, C., Fehr, E., Gintis, H., & McElreath, R. (2001). In Search of Homo Economicus: Behavioral Experiments in 15 Small-Scale Societies. American Economic Review, 91(2), 73-78. Bibliographic record verified at Crossref; the article was not obtained and no figure on this page rests on it.",
       "doi": "10.1257/aer.91.2.73",
       "url": "https://doi.org/10.1257/aer.91.2.73",
       "type": "primary"
     },
     {
-      "text": "Brosnan, S. F., & de Waal, F. B. M. (2003). Monkeys reject unequal pay. Nature, 425(6955), 297-299. Abstract read at PubMed; the article itself was not obtained, and the trial-level percentages on this page come from Wynne's comment and from the authors' reply.",
+      "text": "Brosnan, S. F., & de Waal, F. B. M. (2003). Monkeys reject unequal pay. Nature, 425(6955), 297-299. Read in full on 21 September 2026 from the reprint on Brosnan's own site at https://static.squarespace.com/static/5436c971e4b0a1999029f096/t/54386cb6e4b0b8f839e28841/1412983990953/monkeys-reject-unequal-pay.pdf. The 43% and 49% trial-level percentages on this page are not printed in it and come from Wynne's comment.",
       "doi": "10.1038/nature01963",
       "url": "https://doi.org/10.1038/nature01963",
       "type": "primary"
     },
     {
-      "text": "Wynne, C. D. L. (2004). Fair refusal by capuchin monkeys. Nature, 428(6979), 140. Read in full, together with Brosnan and de Waal's reply printed beneath it.",
+      "text": "Wynne, C. D. L. (2004). Fair refusal by capuchin monkeys. Nature, 428(6979), 140. Read in full on 21 September 2026, together with Brosnan and de Waal's reply printed beneath it.",
       "doi": "10.1038/428140a",
       "url": "https://doi.org/10.1038/428140a",
       "type": "commentary"
     },
     {
-      "text": "Henrich, J. (2004). Inequity aversion in capuchins? Nature, 428(6979), 139. Read in full.",
+      "text": "Henrich, J. (2004). Inequity aversion in capuchins? Nature, 428(6979), 139. Read in full on 21 September 2026.",
       "doi": "10.1038/428139a",
       "url": "https://doi.org/10.1038/428139a",
       "type": "commentary"
     },
     {
-      "text": "Roma, P. G., Silberberg, A., Ruggiero, A. M., & Suomi, S. J. (2006). Capuchin monkeys, inequity aversion, and the frustration effect. Journal of Comparative Psychology, 120(1), 67-73. Abstract read at PubMed; the article itself was not obtained.",
+      "text": "Roma, P. G., Silberberg, A., Ruggiero, A. M., & Suomi, S. J. (2006). Capuchin monkeys, inequity aversion, and the frustration effect. Journal of Comparative Psychology, 120(1), 67-73. The article was not obtained; the publisher's copy is closed and no repository copy was found at Unpaywall on 21 September 2026. What is reported here is from the abstract at PubMed.",
       "doi": "10.1037/0735-7036.120.1.67",
       "url": "https://doi.org/10.1037/0735-7036.120.1.67",
       "type": "replication"
     },
     {
-      "text": "Bräuer, J., Call, J., & Tomasello, M. (2006). Are apes really inequity averse? Proceedings of the Royal Society B, 273(1605), 3123-3128. Abstract read at Crossref; the article itself was not obtained.",
+      "text": "Bräuer, J., Call, J., & Tomasello, M. (2006). Are apes really inequity averse? Proceedings of the Royal Society B, 273(1605), 3123-3128. Read in full on 21 September 2026 in the PubMed Central deposit, PMC1679898, which carries the Royal Society's 2006 copyright line and the final pagination and is therefore the published version, not the submitted one an index reports. Two separate fetches carried the same figures. Its methods give 13 chimpanzees and its results section says 14; the degrees of freedom agree with 13.",
       "doi": "10.1098/rspb.2006.3693",
       "url": "https://doi.org/10.1098/rspb.2006.3693",
       "type": "replication"
     },
     {
-      "text": "Engelmann, J. M., Clift, J. B., Herrmann, E., & Tomasello, M. (2017). Social disappointment explains chimpanzees' behaviour in the inequity aversion task. Proceedings of the Royal Society B, 284(1861), 20171502. Read in full.",
+      "text": "Engelmann, J. M., Clift, J. B., Herrmann, E., & Tomasello, M. (2017). Social disappointment explains chimpanzees' behaviour in the inequity aversion task. Proceedings of the Royal Society B, 284(1861), 20171502. Read in full on 21 September 2026 in the PubMed Central deposit, PMC5577499.",
       "doi": "10.1098/rspb.2017.1502",
       "url": "https://doi.org/10.1098/rspb.2017.1502",
       "type": "replication"
     },
     {
-      "text": "Ritov, O., Völter, C. J., Raihani, N. J., & Engelmann, J. M. (2024). No evidence for inequity aversion in non-human animals: a meta-analysis of accept/reject paradigms. Proceedings of the Royal Society B, 291(2035), 20241452. Read in full; the coefficients quoted here are from its Table 2.",
+      "text": "Ritov, O., Völter, C. J., Raihani, N. J., & Engelmann, J. M. (2024). No evidence for inequity aversion in non-human animals: a meta-analysis of accept/reject paradigms. Proceedings of the Royal Society B, 291(2035), 20241452. Read in full on 21 September 2026 from the JATS XML of the published article at Europe PMC, fetched twice with identical bytes; the coefficients quoted here are from its Table 2.",
       "doi": "10.1098/rspb.2024.1452",
       "url": "https://doi.org/10.1098/rspb.2024.1452",
       "type": "replication"
     },
     {
-      "text": "Charness, G., & Rabin, M. (2002). Understanding Social Preferences with Simple Tests. The Quarterly Journal of Economics, 117(3), 817-869. Read in full.",
+      "text": "Charness, G., & Rabin, M. (2002). Understanding Social Preferences with Simple Tests. The Quarterly Journal of Economics, 117(3), 817-869. The published article was not obtained. What is quoted here is read from the working paper, Economics Working Paper E02-317 of August 2001, at https://escholarship.org/content/qt3d04q5sm/qt3d04q5sm.pdf, and is labelled as such.",
       "doi": "10.1162/003355302760193904",
       "url": "https://doi.org/10.1162/003355302760193904",
       "type": "commentary"
     },
     {
-      "text": "Engelmann, D., & Strobel, M. (2004). Inequality Aversion, Efficiency, and Maximin Preferences in Simple Distribution Experiments. American Economic Review, 94(4), 857-869. Abstract read at Crossref; the article itself was not obtained.",
+      "text": "Engelmann, D., & Strobel, M. (2004). Inequality Aversion, Efficiency, and Maximin Preferences in Simple Distribution Experiments. American Economic Review, 94(4), 857-869. Read in full on 21 September 2026 from the publisher's PDF deposited at Maastricht University, https://cris.maastrichtuniversity.nl/ws/portalfiles/portal/632849/guid-d4b3e96d-8890-4744-8e2a-e0a9f955c3bc-ASSET1.0.pdf, whose cover page records it as the version of record. The repository's own file link returns a Cloudflare bot challenge rather than a paywall. The treatment figures quoted here are from its Tables 1 to 4.",
       "doi": "10.1257/0002828042002741",
       "url": "https://doi.org/10.1257/0002828042002741",
       "type": "commentary"
     },
     {
-      "text": "Binmore, K., & Shaked, A. (2010). Experimental economics: Where next? Journal of Economic Behavior & Organization, 73(1), 87-100. Read in full.",
+      "text": "Binmore, K., & Shaked, A. (2010). Experimental economics: Where next? Journal of Economic Behavior & Organization, 73(1), 87-100. Read in full on 21 September 2026 from a copy carrying the journal's running heads and pagination.",
       "doi": "10.1016/j.jebo.2008.10.019",
       "url": "https://doi.org/10.1016/j.jebo.2008.10.019",
       "type": "commentary"
     },
     {
-      "text": "Fehr, E., & Schmidt, K. M. (2010). On inequity aversion: A reply to Binmore and Shaked. Journal of Economic Behavior & Organization, 73(1), 101-108. Bibliographic record verified at Crossref; the article itself was not obtained.",
+      "text": "Fehr, E., & Schmidt, K. M. (2010). On inequity aversion: A reply to Binmore and Shaked. Journal of Economic Behavior & Organization, 73(1), 101-108. Read on 21 September 2026 as the authors' accepted manuscript of 4 February 2009; the typeset article was not obtained.",
       "doi": "10.1016/j.jebo.2009.12.001",
       "url": "https://doi.org/10.1016/j.jebo.2009.12.001",
       "type": "commentary"
+    },
+    {
+      "text": "Brosnan, S. F., Schiff, H. C., & de Waal, F. B. M. (2005). Tolerance for inequity may increase with social closeness in chimpanzees. Proceedings of the Royal Society B, 272(1560), 253-258. The article was not obtained; the abstract was read at PubMed, and this is the study Bräuer, Call and Tomasello set out to extend.",
+      "doi": "10.1098/rspb.2004.2947",
+      "url": "https://doi.org/10.1098/rspb.2004.2947",
+      "type": "replication"
+    },
+    {
+      "text": "Brosnan, S. F., & de Waal, F. B. M. (2006). Partial support from a nonreplication: Comment on Roma, Silberberg, Ruggiero, and Suomi (2006). Journal of Comparative Psychology, 120(1), 74-75. Bibliographic record verified at Crossref; the comment was not obtained, and what it argues is taken here from Bräuer, Call and Tomasello's description of it.",
+      "doi": "10.1037/0735-7036.120.1.74",
+      "url": "https://doi.org/10.1037/0735-7036.120.1.74",
+      "type": "commentary"
+    },
+    {
+      "text": "Fehr, E., Naef, M., & Schmidt, K. M. (2006). Inequality Aversion, Efficiency, and Maximin Preferences in Simple Distribution Experiments: Comment. American Economic Review, 96(5), 1912-1917. Read in full on 21 September 2026; the subject-pool percentages come from its Table 1, whose Berlin rows reproduce Engelmann and Strobel's own counts.",
+      "doi": "10.1257/aer.96.5.1912",
+      "url": "https://doi.org/10.1257/aer.96.5.1912",
+      "type": "commentary"
+    },
+    {
+      "text": "Bolton, G. E., & Ockenfels, A. (2006). Inequality Aversion, Efficiency, and Maximin Preferences in Simple Distribution Experiments: Comment. American Economic Review, 96(5), 1906-1911. Bibliographic record verified at Crossref; the comment was not obtained and nothing on this page rests on it.",
+      "doi": "10.1257/aer.96.5.1906",
+      "url": "https://doi.org/10.1257/aer.96.5.1906",
+      "type": "commentary"
+    },
+    {
+      "text": "Engelmann, D., & Strobel, M. (2006). Inequality Aversion, Efficiency, and Maximin Preferences in Simple Distribution Experiments: Reply. American Economic Review, 96(5), 1918-1923. Bibliographic record verified at Crossref; the reply was not obtained and nothing on this page rests on it.",
+      "doi": "10.1257/aer.96.5.1918",
+      "url": "https://doi.org/10.1257/aer.96.5.1918",
+      "type": "commentary"
     }
   ],
-  "checkedOn": "2026-08-09"
+  "checkedOn": "2026-09-21"
 }
