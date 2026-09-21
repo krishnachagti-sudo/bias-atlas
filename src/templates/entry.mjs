@@ -187,7 +187,7 @@ ${orig ? `          <div class="stat"><span class="s-k">In the original study</s
   const cite = s.url || (s.doi ? `https://doi.org/${s.doi}` : '');
 
   return `        <p class="lead">${badge} ${escapeHtml(r.headline)}</p>
-${numbers}${r.detail ? `        <p>${escapeHtml(r.detail)}</p>\n` : ''}        <p class="src-note">Read off ${cite ? `<a href="${escapeHtml(cite)}" rel="nofollow noopener">${escapeHtml(s.cite)}</a>` : escapeHtml(s.cite)}${r.indexedBy ? `. Located via ${escapeHtml(r.indexedBy)}, which points at the study; the numbers above are the study's own` : ''}.</p>
+${numbers}${r.detail ? `        <p>${escapeHtml(r.detail)}</p>\n` : ''}        <p class="src-trust">Read off ${cite ? `<a href="${escapeHtml(cite)}" rel="nofollow noopener">${escapeHtml(s.cite)}</a>` : escapeHtml(s.cite)}${r.indexedBy ? `. Located via ${escapeHtml(r.indexedBy)}, which points at the study; the numbers above are the study's own` : ''}.</p>
 `;
 }
 

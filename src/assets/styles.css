@@ -896,6 +896,14 @@ a.badge{text-decoration:none;display:inline-block}
 @media(max-width:640px){.answer{padding:15px 16px}.answer .answer-v{font-size:16.5px}}
 
 .dash{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(124px,100%),1fr));gap:12px;margin:26px 0 2px}
+/* The two effect sizes in the replication block: the original beside what the
+   repeat found. It is the comparison the whole index is built on, so it gets a
+   track wide enough for its own labels. `.dash--pair` carried no rule at all and
+   inherited the strip's 124px minimum, which is sized for "1983" and not for
+   "Pooled across the replication, random-effects". auto-fit rather than two
+   fixed columns because one side is often missing, and a lone figure should fill
+   the row instead of sitting next to a hole. */
+.dash--pair{grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr))}
 .stat{background:var(--surface);border:1px solid var(--line);border-radius:3px;padding:13px 15px;display:flex;flex-direction:column;gap:6px;transition:border-color .2s,transform .2s}
 .stat .s-k{font-family:var(--mono);font-size:9.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--faint)}
 .stat .s-v{font-family:var(--serif);font-weight:600;font-size:17px;color:var(--ink);line-height:1.12;letter-spacing:-.01em}
