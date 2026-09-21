@@ -87,7 +87,10 @@ the sentence the page's verdict rests on and check the document says it.
    title, authors, journal and identifier. The metadata all checks out, so
    nothing flags it. Confirm that the document you opened is the document
    the citation names, by looking for the authors' names and the claim you
-   came for, before quoting from it.
+   came for, before quoting from it. Never guess a sequential path on a
+   repository: one guessed identifier returned a real, correctly formatted
+   article that was simply the wrong paper, with a 200 and nothing to flag it.
+   Checking the title before extracting caught it in one command.
 10. **A claim about this corpus, made without grepping it.** Entries assert
     what a neighbouring entry says, how many entries cover something, or
     that no entry does. Those are checkable in a second and have been wrong.
@@ -102,6 +105,10 @@ These have repeatedly served the same document when the indexed URL did not.
 
 - `rd.springer.com` serves PDFs that `link.springer.com` answers with a Fastly
   bot challenge. Seven of one entry's eleven leads turned on this alone.
+- A named dataset's own publication list, where an entry turns on re-analyses
+  of one dataset. Five of one entry's seven documents came from a single
+  subject host this way. Go there before any aggregator; it is the cheapest
+  route in this corpus.
 - Institutional repositories that no index lists: DukeSpace, Aarhus Pure,
   UCLouvain DIAL, Oxford Brookes RADAR, Lancaster, Utrecht, and many more.
   Plain search finds a version of record that two indexes both miss.
@@ -109,7 +116,12 @@ These have repeatedly served the same document when the indexed URL did not.
   rendered page or PDF is challenged.
 - Authors' own faculty and laboratory pages. Repeatedly one download away
   from a note calling the paper closed at every location.
-- An Anubis proof-of-work challenge can sometimes be solved. Say so if you do.
+- A proof-of-work challenge can often be solved, in seconds of processor time.
+  Anubis is one; ServerGuard is another with the same shape. Any 202 answer
+  carrying a refresh to a `.well-known` path is a challenge to solve, not a
+  block, and its first response looks just like the meta-refresh holding page
+  below, so a cookie jar retry alone will fail and read as a refusal. Say so
+  if you solve one.
 - A later reprint's free front matter, in a book chapter or collected volume
   no index lists as a full-text location. One publisher's free opening summary
   carried the founding paper's own first two paragraphs, and settled a claim
