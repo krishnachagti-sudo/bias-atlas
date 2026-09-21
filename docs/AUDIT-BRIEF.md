@@ -72,6 +72,18 @@ the sentence the page's verdict rests on and check the document says it.
    a rule phrased around figures and dates never catches this. Check the
    descriptive sentences too, especially for sources the page says it did
    not read.
+8. **A printed number reattached to a neighbouring quantity.** Item 2 does
+   not cover this, because the figure really is in the document; it has been
+   given to the wrong thing. A share of bets read as a share of money, an
+   implied probability as a win probability, a rate of return as the house
+   take, a residue as a result, a count of samples as a count of studies.
+   For every figure, check what the document says it is a figure of.
+9. **A record that is wrong about content, not just about openness.** One
+   repository's record carried another paper's abstract under the correct
+   title, authors, journal and identifier. The metadata all checks out, so
+   nothing flags it. Confirm that the document you opened is the document
+   the citation names, by looking for the authors' names and the claim you
+   came for, before quoting from it.
 
 ## Routes that have worked
 
