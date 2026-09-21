@@ -87,6 +87,107 @@ function esLine(e) {
   return `${headline}${ci}`;
 }
 
+// Inline rather than sprite references: two icons, used once each per page, and
+// `currentColor` lets the callout's own rule tint them. Copied from The Law
+// Tome's callout set, which the stylesheet was already written around.
+const ICON = {
+  warn: '<svg class="co-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M12 4l9 16H3z"/><path d="M12 10v4.5"/><circle cx="12" cy="17.4" r=".7" fill="currentColor" stroke="none"/></svg>',
+  key: '<svg class="co-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="8.2"/><circle cx="12" cy="12" r="3"/></svg>',
+};
+
+/**
+ * The original effect beside what the repeat found, drawn on one axis.
+ *
+ * This is the one picture this index is actually about. Every entry answers
+ * "did it hold up", and where both figures exist the answer is a distance: how
+ * far the replication estimate sits from the original, and whether its interval
+ * still clears the null. That was printed as two numbers in two boxes, which
+ * makes the reader do the comparison in their head, and a shrunk effect looks
+ * exactly like a preserved one until you subtract.
+ *
+ * Drawn server-side as inline SVG. No script, no library, and no data fetched
+ * at render time: it is the same numbers the sentences quote, so the picture
+ * cannot drift from the prose.
+ *
+ * Three things here are correctness rather than decoration:
+ *
+ *   The null line is 1 for an odds ratio and 0 for everything else. Ten entries
+ *   carry an OR, and drawing their null at zero would put every one of them far
+ *   to the right of a line meaning nothing, which reads as an enormous effect.
+ *
+ *   The two estimates are only ever plotted together when `esType` matches. All
+ *   85 pairs in the corpus do match today; the guard is here because a d against
+ *   an r on a shared axis is a comparison of nothing, and a future entry is one
+ *   edit away from that.
+ *
+ *   The interval's level is read from the entry and printed on the row. The
+ *   corpus holds 90, 95 and 99 per cent intervals, so a chart that implies one
+ *   of them everywhere would misstate the others. Where an estimate has no
+ *   interval it is drawn as a bare point, not as a point with invented whiskers.
+ */
+export function effectPlot(r) {
+  const rows = [];
+  const usable = (e) => e && typeof e.es === 'number';
+  if (usable(r.original)) rows.push({ k: 'Original', e: r.original, cls: 'fx-o' });
+  if (usable(r.replicated)) rows.push({ k: 'Replication', e: r.replicated, cls: 'fx-r' });
+  if (!rows.length) return '';
+  // Mixed scales are not comparable, so they are not drawn on one axis.
+  if (rows.length === 2 && rows[0].e.esType !== rows[1].e.esType) return '';
+
+  const type = rows[0].e.esType;
+  // eta squared is a proportion of variance: it cannot go below zero, and a
+  // null of zero is its floor rather than a point the interval can straddle.
+  const NULL_AT = type === 'OR' ? 1 : 0;
+
+  // The axis must contain every drawn value AND the null line, or the reference
+  // the whole chart is read against would sit off the edge.
+  const vals = [NULL_AT];
+  for (const row of rows) {
+    vals.push(row.e.es);
+    if (Array.isArray(row.e.ci)) vals.push(row.e.ci[0], row.e.ci[1]);
+  }
+  let lo = Math.min(...vals), hi = Math.max(...vals);
+  if (hi - lo < 1e-9) { lo -= 0.5; hi += 0.5; }
+  const pad = (hi - lo) * 0.12;
+  lo -= pad; hi += pad;
+
+  const W = 640, RH = 46, PT = 26, PB = 24, LAB = 104;
+  const H = PT + rows.length * RH + PB;
+  const x = (v) => LAB + ((v - lo) / (hi - lo)) * (W - LAB - 18);
+  const nx = x(NULL_AT);
+
+  const body = rows.map((row, i) => {
+    const cy = PT + i * RH + RH / 2 - 4;
+    const px = x(row.e.es);
+    const ci = Array.isArray(row.e.ci) ? row.e.ci : null;
+    const whisk = ci
+      ? `<line class="fx-ci ${row.cls}" x1="${x(ci[0]).toFixed(1)}" y1="${cy}" x2="${x(ci[1]).toFixed(1)}" y2="${cy}"/>`
+        + `<line class="fx-cap ${row.cls}" x1="${x(ci[0]).toFixed(1)}" y1="${cy - 5}" x2="${x(ci[0]).toFixed(1)}" y2="${cy + 5}"/>`
+        + `<line class="fx-cap ${row.cls}" x1="${x(ci[1]).toFixed(1)}" y1="${cy - 5}" x2="${x(ci[1]).toFixed(1)}" y2="${cy + 5}"/>`
+      : '';
+    const level = ci ? `${row.e.ciLevel || 95}% CI ${dp2(ci[0])} to ${dp2(ci[1])}` : 'no interval reported';
+    const shown = row.e.esType === 'md'
+      ? `${dp2(row.e.es)} ${escapeHtml(row.e.unit || '')}`
+      : `${escapeHtml(row.e.esType)} = ${dp2(row.e.es)}`;
+    return `    <text class="fx-k" x="0" y="${cy + 4}">${escapeHtml(row.k)}</text>
+    ${whisk}<circle class="fx-pt ${row.cls}" cx="${px.toFixed(1)}" cy="${cy}" r="5.5"/>
+    <title>${escapeHtml(row.k)}: ${shown}, ${escapeHtml(level)}</title>`;
+  }).join('\n');
+
+  const nullLabel = NULL_AT === 1 ? 'no effect (OR 1)' : 'no effect';
+  return `        <figure class="fx-fig">
+  <svg class="fx-svg" viewBox="0 0 ${W} ${H}" role="img" aria-label="The original effect and the replication estimate on one scale.">
+    <line class="fx-null" x1="${nx.toFixed(1)}" y1="${PT - 10}" x2="${nx.toFixed(1)}" y2="${H - PB + 4}"/>
+    <text class="fx-nulllab" x="${nx.toFixed(1)}" y="${H - PB + 17}" text-anchor="middle">${nullLabel}</text>
+${body}
+  </svg>
+  <figcaption class="fx-cap-t">${rows.length === 2
+    ? 'The same scale for both, so the distance between the two points is the change the repeat found.'
+    : 'Plotted against the point where there is no effect.'} Hover a point for its interval.</figcaption>
+</figure>
+`;
+}
+
 /** The statement, with its accent phrase marked if the entry names one. */
 function accented(entry) {
   const s = escapeHtml(entry.statement);
@@ -193,7 +294,7 @@ ${orig ? `          <div class="stat"><span class="s-k">In the original study</s
   const citeText = String(s.cite || '').replace(/\.\s*$/, '');
 
   return `        <p class="lead">${badge} ${escapeHtml(r.headline)}</p>
-${numbers}${r.detail ? `        <p>${escapeHtml(r.detail)}</p>\n` : ''}        <p class="src-trust">Read off ${cite ? `<a href="${escapeHtml(cite)}" rel="nofollow noopener">${escapeHtml(citeText)}</a>` : escapeHtml(citeText)}${r.indexedBy ? `. Located via ${escapeHtml(r.indexedBy)}, which points at the study; the numbers above are the study's own` : ''}.</p>
+${numbers}${effectPlot(r)}${r.detail ? `        <p>${escapeHtml(r.detail)}</p>\n` : ''}        <p class="src-trust">Read off ${cite ? `<a href="${escapeHtml(cite)}" rel="nofollow noopener">${escapeHtml(citeText)}</a>` : escapeHtml(citeText)}${r.indexedBy ? `. Located via ${escapeHtml(r.indexedBy)}, which points at the study; the numbers above are the study's own` : ''}.</p>
 `;
 }
 
@@ -297,10 +398,21 @@ export function entryPage(entry, { base = '/', origin = '', count = 0, entries =
       `        <p>${escapeHtml(entry.evidence)}</p>\n`],
     ['Origin', 'Where it came from',
       `        <p><b>${escapeHtml(String(entry.origin.year))}</b>, ${escapeHtml(entry.origin.who)}, in ${escapeHtml(entry.origin.where)}.${entry.origin.note ? ` ${escapeHtml(entry.origin.note)}` : ''}</p>\n`],
+    // Two of the seven sections are not prose about the bias; they are warnings
+    // about how to use it. `limits` says where the claim stops holding and
+    // `misreadings` says what it is routinely taken to mean and does not. Set as
+    // running paragraphs they looked like more description, and a reader
+    // skimming for the claim skimmed straight past the caveat attached to it.
+    // The callout styles came with the stylesheet and had never been used.
     ['Where it runs out', 'The limits of the claim',
-      `        <p>${escapeHtml(entry.limits)}</p>\n`],
+      // `--info`, not `--warn`. This palette is deliberately cool throughout, so
+      // its `--gold` token is a desaturated blue and a warn callout came out
+      // almost the same colour as the key one below — two boxes that look alike
+      // differentiate nothing. Distinguished by weight instead: the limits are a
+      // bounded, neutral note, and the misreading is the tinted correction.
+      `        <div class="callout callout--info">${ICON.warn}<p>${escapeHtml(entry.limits)}</p></div>\n`],
     ['Commonly misread as', 'What people get wrong about it',
-      `        <p>${escapeHtml(entry.misreadings)}</p>\n`],
+      `        <div class="callout callout--key">${ICON.key}<p>${escapeHtml(entry.misreadings)}</p></div>\n`],
     ['Sources', 'Everything this page rests on',
       // `sources-list`, `snum`, `stext`, `stype` and `src-trust`, which are the
       // classes the stylesheet actually defines. This block rendered `src-list`,
@@ -356,7 +468,10 @@ ${aliases.length ? `    <div class="aka">also known as — ${aliases.map((a) => 
 ${verdictAnswer(r)}${factStrip(entry, { base })}  <div class="wrap-wide">
     <div class="entry-layout">
       <nav class="toc" aria-label="On this page">
-${blocks.map((b) => `        <a href="#${b.id}">${escapeHtml(b.label)}</a>`).join('\n')}
+        <div class="toc-links">
+${blocks.map((b, i) => `          <a href="#${b.id}"><span class="toc-n">${String(i + 1).padStart(2, '0')}</span>${escapeHtml(b.label)}</a>`).join('\n')}
+        </div>
+        <p class="toc-foot">Checked <b>${escapeHtml(entry.checkedOn)}</b><br>against ${sources.length} source${sources.length === 1 ? '' : 's'}</p>
       </nav>
       <div class="lawmain">
 ${blocks.map((b) => `        <div class="block" id="${b.id}" data-reveal>

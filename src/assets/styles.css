@@ -896,6 +896,28 @@ a.badge{text-decoration:none;display:inline-block}
 @media(max-width:640px){.answer{padding:15px 16px}.answer .answer-v{font-size:16.5px}}
 
 .dash{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(124px,100%),1fr));gap:12px;margin:26px 0 2px}
+/* The effect-size chart: the original estimate and the replication's, on one
+   axis, with the null marked. Theme-aware through CSS rather than literal SVG
+   fills, so it inverts with the rest of the page.
+
+   The replication point is the accent colour and the original is muted, because
+   the reader's question is where the repeat landed; the original is the
+   reference it landed against. */
+.fx-fig{margin:18px 0 6px;padding:16px 18px 10px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--e1)}
+.fx-svg{display:block;width:100%;height:auto;overflow:visible}
+.fx-null{stroke:var(--line-strong);stroke-width:1;stroke-dasharray:3 3}
+.fx-nulllab{font-family:var(--mono);font-size:9px;letter-spacing:.06em;text-transform:uppercase;fill:var(--faint)}
+.fx-k{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;fill:var(--muted)}
+.fx-ci{stroke-width:2;stroke-linecap:round}
+.fx-cap{stroke-width:1.5}
+.fx-pt{stroke:var(--surface);stroke-width:2}
+.fx-o.fx-pt{fill:var(--muted)}
+.fx-o.fx-ci,.fx-o.fx-cap{stroke:var(--line-strong)}
+.fx-r.fx-pt{fill:var(--accent)}
+.fx-r.fx-ci,.fx-r.fx-cap{stroke:var(--accent);opacity:.75}
+.fx-cap-t{margin-top:8px;font-family:var(--sans);font-size:11.5px;line-height:1.5;color:var(--faint)}
+@media(max-width:640px){.fx-fig{padding:12px 12px 8px}.fx-cap-t{font-size:11px}}
+
 /* The two effect sizes in the replication block: the original beside what the
    repeat found. It is the comparison the whole index is built on, so it gets a
    track wide enough for its own labels. `.dash--pair` carried no rule at all and
@@ -918,16 +940,33 @@ a.stat--link .s-k::after{content:" →";letter-spacing:0;opacity:.55}
    an accent fill (--scroll, 0..1, set on scroll) travels down it, and the active
    item grows + turns accent. The active state is driven by scroll position in JS,
    so it tracks instantly rather than lagging behind an IntersectionObserver. */
-/* Two things were confused here and have to be separated. The COLUMN is full
-   viewport height, because the track line and its accent fill are a scroll
-   indicator: a line that stops where the last link happens to fall indicates
-   nothing. The LINKS hug the top, because `space-between` against that height
-   reads as designed at fifteen sections and as broken at seven, where each
-   link sits a third of a screen from the next. An earlier fix swapped the
-   height for a max-height, which fixed the spacing by shortening the rail, so
-   the track ran out two thirds of the way down the screen. Height fixed,
-   content flex-start, overflow scrolling for lists longer than the viewport. */
-.toc{position:sticky;top:calc(var(--header-h) + 8px);align-self:start;height:calc(100vh - var(--header-h) - 46px);overflow-y:auto;display:flex;flex-direction:column;justify-content:flex-start;gap:6px;padding:10px 0 12px 18px;border-left:2px solid var(--line);--fill:0px}
+/* Three attempts got this wrong in three different ways, so the reasoning is
+   worth keeping. The COLUMN must be full viewport height, because the track and
+   its accent fill are a scroll indicator, and a line that stops where the last
+   link happens to fall indicates nothing — that was the max-height version,
+   which fixed the spacing by shortening the rail. But full height with the
+   links hugging the top leaves a thousand pixels of empty track under them,
+   which reads as broken for the opposite reason; and spreading seven links with
+   `space-between` puts each one a third of a screen from the next.
+
+   The answer is not a spacing value, it is that the column needs content at
+   both ends. The links stay tight in their own group at the top, a small
+   provenance note sits at the foot, and `space-between` separates the two
+   groups rather than the individual links. The Law Tome's rail looks full
+   because it carries twelve to fifteen items; this one carries seven, so it
+   fills the column with something worth reading instead. */
+.toc{position:sticky;top:calc(var(--header-h) + 8px);align-self:start;height:calc(100vh - var(--header-h) - 46px);overflow-y:auto;display:flex;flex-direction:column;justify-content:space-between;gap:18px;padding:10px 0 12px 18px;border-left:2px solid var(--line);--fill:0px}
+.toc-links{display:flex;flex-direction:column;gap:6px}
+/* The numeral is the same one the section heading carries, so the rail and the
+   body agree about which section is which. */
+/* A flex row with a real gap, not a min-width on the numeral. The active link
+   grows from 11.5px to 15px, and at that size "05" outgrew a 20px box and sat
+   flush against its label: "05Where it runs out". */
+.toc a{display:flex;gap:9px;align-items:baseline}
+.toc-n{flex:none;color:var(--line-strong);transition:color .3s ease;font-variant-numeric:tabular-nums}
+.toc a.on .toc-n{color:var(--accent)}
+.toc-foot{font-family:var(--mono);font-size:10px;line-height:1.7;letter-spacing:.04em;text-transform:uppercase;color:var(--faint);margin:0;flex:none}
+.toc-foot b{color:var(--muted);font-weight:400}
 /* the accent line runs down to the CURRENT item (its centre), so the indicator
    tracks the active section name rather than raw scroll position */
 .toc::before{content:"";position:absolute;left:-2px;top:0;width:2px;height:var(--fill);background:var(--accent);transition:height .3s cubic-bezier(.2,.7,.2,1)}
