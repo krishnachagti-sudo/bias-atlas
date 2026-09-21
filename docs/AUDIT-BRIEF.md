@@ -145,6 +145,11 @@ These have repeatedly served the same document when the indexed URL did not.
 Science Framework does the same: its `/download` path now returns an
 application shell, and the file comes from `api.osf.io/v2/files/`.
 
+`archive.org/download/<item>/<item>_djvu.txt` is the strongest route on this
+beat. It opened a founding paper that twenty years of citation calls had left
+closed, in a session where every Wayback replay failed. Try it before anything
+else for older journal issues.
+
 Internet Archive item downloads work, and have carried whole journal issues
 and open uploads of books that publishers call closed. The Wayback Machine at
 `web.archive.org` works over https and has served PDFs and accepted
