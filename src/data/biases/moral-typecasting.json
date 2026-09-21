@@ -2,21 +2,24 @@
   "no": 19,
   "slug": "moral-typecasting",
   "name": "Moral typecasting",
-  "aliases": ["Moral agent-patient asymmetry", "Agent-patient typecasting"],
+  "aliases": [
+    "Moral agent-patient asymmetry",
+    "Agent-patient typecasting"
+  ],
   "category": "social",
   "statement": "People sort others into those who act and those who are acted upon, and once someone is a victim they are seen as less capable of doing wrong.",
-  "meaning": "Gray and Wegner proposed that moral perception runs on two roles rather than one dimension. A moral agent does things and can be blamed; a moral patient has things done to them and can be harmed. The claim that makes this a bias is that the roles are exclusive: casting someone as one makes it harder to see them as the other, independently of the facts. The test is symmetrical by design. The same accident, with the same physical consequences, is described with an adult harming a baby or a baby harming an adult, and the question is whether responsibility follows the act or follows the casting.",
+  "meaning": "Gray and Wegner proposed that moral perception runs on two roles rather than one dimension. A moral agent does things and can be blamed; a moral patient has things done to them and can be harmed. The claim that makes this a bias is that the roles are exclusive: casting someone as one makes it harder to see them as the other, independently of the facts. The test is symmetrical by design. The same accident, with the same shattered glasses and the same cut leg, is shown with the older party knocking the tray over or with the older party being cut. The question is whether responsibility follows the act or follows the casting.",
   "origin": {
     "year": 2009,
     "who": "Kurt Gray and Daniel Wegner",
     "where": "Journal of Personality and Social Psychology",
     "note": "The paper is \"Moral typecasting: Divergent perceptions of moral agents and moral patients\", and it sits inside their broader dyadic account of moral cognition."
   },
-  "evidence": "The paper reports seven studies. Study 1a is the one with a replication record. Sixty-nine participants read about a tray of glasses knocked over, with either a man harming a baby or a baby harming a man, and rated responsibility, intentionality and the victim's pain. The man was rated more responsible than the baby, 5.29 against 3.86, d = 0.80. He was rated as acting more intentionally, 4.05 against 3.07, d = 0.53. When he was the one harmed he was judged to feel less pain than the baby, 4.63 against 5.76, d = 0.85. Responsibility was the measure carried forward for replication. Gray and Wegner's paper is paywalled and could not be opened for this check, so the Study 1a figures here are quoted from Many Labs 2's account of it rather than from the paper.",
+  "evidence": "The paper reports seven studies. Study 1a is the one with a replication record. Sixty-nine people, recruited in dining halls, shopping centres and train stations, saw pictures of Sam and Roger, each of whom was either 5 or 25 years old. They read one sentence, in which Sam pushes a tray of glasses off a table and a shard cuts into Roger's leg. They then rated Sam's responsibility, how intentional his behaviour was, and how much pain Roger felt, each on a seven-point scale. The paper prints test statistics and nothing else for this study: t(68) = 3.32 for responsibility, t(68) = 2.20 for intentionality and t(68) = 3.49 for pain. It gives no means, no standard deviations and no effect sizes for Study 1a. The figures usually quoted for it, 5.29 against 3.86 and d = 0.80 for responsibility, 4.05 against 3.07 and d = 0.53 for intentionality, and 4.63 against 5.76 and d = 0.85 for pain, come from Many Labs 2's account of the study rather than from the paper. Responsibility was the measure carried forward for replication.",
   "replication": {
     "state": "replicated",
     "headline": "Across 8,002 people the asymmetry came back slightly larger than the original, at d = 0.95.",
-    "detail": "Many Labs 2 ran the glasses vignette in its second slate, which was administered at 61 of the project's 125 samples. The adult was rated 5.41 for responsibility and the baby 3.77, giving d = 0.95 with a 95% confidence interval from 0.91 to 1.00. The original was 0.80, interval 0.31 to 1.29. The replication estimate sits inside the original interval and is far more precise. Both secondary measures were run as well. The adult was rated as acting more intentionally, d = 0.50 with an interval from 0.46 to 0.55, and as feeling less pain when harmed, d = 0.62 with an interval from 0.57 to 0.66. Each is smaller than the original estimate for the same measure.",
+    "detail": "Many Labs 2 ran the glasses vignette in Slate 2, which 61 of the project's 125 samples administered. Its materials put the pair in a picture and made the younger party a baby. The adult was rated 5.41 for responsibility and the baby 3.77, giving d = 0.95 with a 95% confidence interval from 0.91 to 1.00. The original was 0.80, interval 0.31 to 1.29, an estimate Many Labs 2 derived from the original test statistic. The replication estimate sits inside that interval and is far more precise. Responsibility was the only measure in the confirmatory test, but the protocol planned the other two as secondary analyses and both came back. The adult was rated as acting more intentionally, d = 0.50 with an interval from 0.46 to 0.55, and as feeling less pain when harmed, d = 0.62 with an interval from 0.57 to 0.66. Each is smaller than the estimate Many Labs 2 gives for the original on the same measure.",
     "study": {
       "cite": "Klein, R. A., Vianello, M., Hasselman, F., et al. (2018). Many Labs 2: Investigating variation in replicability across samples and settings. Advances in Methods and Practices in Psychological Science, 1(4), 443-490.",
       "doi": "10.1177/2515245918810225",
@@ -24,24 +27,46 @@
       "sites": 61,
       "n": 8002
     },
-    "original": { "es": 0.80, "esType": "d", "ci": [0.31, 1.29], "ciLevel": 95 },
-    "replicated": { "es": 0.95, "esType": "d", "ci": [0.91, 1.00], "ciLevel": 95, "weighting": "aggregate" }
+    "original": {
+      "es": 0.8,
+      "esType": "d",
+      "ci": [
+        0.31,
+        1.29
+      ],
+      "ciLevel": 95
+    },
+    "replicated": {
+      "es": 0.95,
+      "esType": "d",
+      "ci": [
+        0.91,
+        1.0
+      ],
+      "ciLevel": 95,
+      "weighting": "aggregate"
+    }
   },
-  "limits": "Only the responsibility measure was replicated. The intentionality rating and the pain judgement, which are what make the finding about typecasting rather than about responsibility alone, were part of the original and not part of the confirmatory test. This also uses one contrast, an adult against a baby, where the two roles are confounded with almost everything else that separates adults from babies: capability, foresight, physical control. The vignette shows that responsibility tracks something other than the act; it does not isolate moral agency as the something.",
-  "misreadings": "The finding is sometimes read as showing that people excuse victims, which overstates it. What was measured is a difference in attributed responsibility between two parties in a described accident, and the more mundane explanation is that adults are expected to be careful around babies. Treating this experiment as strong evidence for the dyadic theory of morality also runs ahead of what one vignette can carry, however well it replicates.",
+  "limits": "The confirmatory test rested on responsibility alone. Intentionality and the pain judgement, which are what make the finding about typecasting rather than about responsibility alone, were secondary analyses, and both shrank. The replication also widened the contrast it inherited. Gray and Wegner set a child of five against an adult of twenty-five; Many Labs 2 set a baby against a grown man. Either way the two roles are confounded with almost everything else that separates the old from the young: capability, foresight, physical control. The vignette shows that responsibility tracks something other than the act; it does not isolate moral agency as the something. The effect also varied across the samples that ran it, with I2 of 73 per cent, and the test comparing WEIRD with less WEIRD samples returned p = .01.",
+  "misreadings": "The finding is sometimes read as showing that people excuse victims, which overstates it. What was measured is a difference in attributed responsibility between two parties in a described accident, and the more mundane explanation is that adults are expected to be careful around small children. The original study is widely described, by Many Labs 2 among others, as pitting a man against a baby. The paper's own targets are a five-year-old and a twenty-five-year-old. Treating this experiment as strong evidence for the dyadic theory of morality also runs ahead of what one vignette can carry, however well it replicates.",
   "sources": [
     {
-      "text": "Gray, K., & Wegner, D. M. (2009). Moral typecasting: Divergent perceptions of moral agents and moral patients. Journal of Personality and Social Psychology, 96(3), 505-520.",
+      "text": "Gray, K., & Wegner, D. M. (2009). Moral typecasting: Divergent perceptions of moral agents and moral patients. Journal of Personality and Social Psychology, 96(3), 505-520. Read in full as a PDF on 21 September 2026, from the Wayback Machine's copy of Daniel Wegner's Harvard page. The live file at scholar.harvard.edu answers with an Akamai access denial to every user agent tried, and OpenAlex and Unpaywall both record the article as closed.",
       "doi": "10.1037/a0013748",
-      "url": "https://doi.org/10.1037/a0013748",
+      "url": "https://web.archive.org/web/2019id_/https://scholar.harvard.edu/files/dwegner/files/gray__wegner_2009_moral_typecasting.pdf",
       "type": "primary"
     },
     {
-      "text": "Klein, R. A., Vianello, M., Hasselman, F., et al. (2018). Many Labs 2: Investigating variation in replicability across samples and settings. Advances in Methods and Practices in Psychological Science, 1(4), 443-490.",
+      "text": "Klein, R. A., Vianello, M., Hasselman, F., et al. (2018). Many Labs 2: Investigating variation in replicability across samples and settings. Advances in Methods and Practices in Psychological Science, 1(4), 443-490. Read in full as the published version, from Radboud University's repository, on 21 September 2026, after journals.sagepub.com answered 403. Effect 22 in Slate 2 carries the figures used here, and Table 3 carries the heterogeneity test.",
       "doi": "10.1177/2515245918810225",
-      "url": "https://doi.org/10.1177/2515245918810225",
+      "url": "https://repository.ubn.ru.nl/bitstream/handle/2066/199156/1/199156.pdf",
       "type": "replication"
+    },
+    {
+      "text": "Klein, R. A., Vianello, M., Hasselman, F., et al. Many Labs 2 protocol, ML2_-_Protocol.pdf, deposited on the Open Science Framework. Section 22 read on 21 September 2026. It carries the replication materials, the analysis plan naming responsibility as the confirmatory measure, and the list of known differences from the original, which mentions online administration but not the change of target.",
+      "url": "https://osf.io/8cd4r/",
+      "type": "method"
     }
   ],
-  "checkedOn": "2026-08-08"
+  "checkedOn": "2026-09-21"
 }
