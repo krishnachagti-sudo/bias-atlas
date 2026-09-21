@@ -2,7 +2,10 @@
   "no": 308,
   "slug": "positivity-offset",
   "name": "Positivity offset",
-  "aliases": ["Positive mood offset", "Positivity bias at low input"],
+  "aliases": [
+    "Positive mood offset",
+    "Positivity bias at low input"
+  ],
   "category": "decision",
   "statement": "At low levels of affective input, positive response is said to exceed negative response, so a neutral or novel situation draws mild approach rather than indifference.",
   "meaning": "The offset is one of two asymmetries in Cacioppo and Berntson's evaluative space model. The model treats positivity and negativity as separable activation functions rather than two ends of one scale. The offset is the gap between their intercepts, and the negativity bias is the gap between their slopes. Cacioppo, Gardner and Berntson define the offset as \"the tendency for there to be a weak positive (approach) motivational output at zero input\". The two asymmetries are not rivals. Both hold at once, at opposite ends of the input range, and the model predicts approach in a bare environment together with a sharper reaction to strong threat. The offset is a parameter recovered from a regression, not a reported mood, and papers that estimate it disagree about which regression to run.",
@@ -12,11 +15,11 @@
     "where": "Personality and Social Psychology Review",
     "note": "The abstract of \"Beyond bipolar conceptualizations and measures\" names the \"positivity offset and negativity bias principles\" as the distinct activation functions its review argues for. The model it formalises comes from Cacioppo and Berntson's 1994 Psychological Bulletin review, which Norris and colleagues credit as the source of the model's figure, though this check did not obtain the 1994 text and cannot say whether the phrase appears in it. The fullest statement is the 1999 Journal of Personality and Social Psychology paper, which supplies the definition quoted above."
   },
-  "evidence": "The 1999 paper is a theoretical review, and it rests the offset on two studies. One is Gardner's \"Biases in impression formation: A demonstration of a bivariate model of evaluation\", listed in its reference section as an unpublished doctoral dissertation at Ohio State University. Cacioppo and colleagues report that Gardner found an offset in four studies of impression formation, in judgements of human targets and of novel fish and insects. That dissertation was not obtained here. The other is Ito, Cacioppo and Lang, who collected positivity and negativity ratings for 472 photographs from the International Affective Picture System. Of it the 1999 paper says \"Analyses revealed that the intercept was significantly higher for ratings of positive than for negative stimuli\". Norris, Gollan, Berntson and Cacioppo later gathered the supporting literature: spinal extensor responses at low stimulus intensity, mere exposure, mild liking of unknown others, optimistic forecasts, and Harinck and colleagues' finding that gains loom larger than losses for small sums. Their own summary of the state of the field is that \"little research has directly examined individual differences in these proposed operating characteristics of the affect system\". The individual-differences study they point to, Ito and Cacioppo's 2005 paper, sits behind a paywall and was not opened; Norris and colleagues describe it as finding the offset normally distributed and stable over about two weeks.",
+  "evidence": "The 1999 paper is a theoretical review, and it rests the offset on two studies. One is Gardner's \"Biases in impression formation: A demonstration of a bivariate model of evaluation\", listed in its reference section as an unpublished doctoral dissertation at Ohio State University. Cacioppo and colleagues report that Gardner found an offset in four studies of impression formation, in judgements of human targets and of novel fish and insects. Searches of the OhioLINK electronic thesis archive, the Ohio State University Libraries catalogue and the open web on 21 September 2026 did not locate that dissertation. The other is Ito, Cacioppo and Lang, who collected positivity and negativity ratings for 472 photographs from the International Affective Picture System. Of it the 1999 paper says \"Analyses revealed that the intercept was significantly higher for ratings of positive than for negative stimuli\". Norris, Gollan, Berntson and Cacioppo later gathered the supporting literature: spinal extensor responses at low stimulus intensity, mere exposure, mild liking of unknown others, optimistic forecasts, and Harinck and colleagues' finding that gains loom larger than losses for small sums. Their own summary of the state of the field is that \"little research has directly examined individual differences in these proposed operating characteristics of the affect system\". The individual-differences study they point to, Ito and Cacioppo's 2005 paper, was not read here. Taylor and Francis returned 403 to every request made on 21 September 2026, and Unpaywall and Semantic Scholar both record no open copy. Norris and colleagues describe it as finding the offset normally distributed and stable over about two weeks.",
   "replication": {
     "state": "mixed",
     "headline": "Independent labs recover the offset from arousal ratings, a 261-person German sample putting it at beta = 0.98, while a study of Twitter and Weibo text found the reverse sign.",
-    "detail": "The clearest independent estimate comes from Riehle, Pillny and Lincoln at Hamburg, working from Strauss's clinical adaptation of the model rather than with its authors. Their online community sample of 261 people, mean age 41.3 years, standard deviation 13.7, range 19 to 75, rated positivity, negativity and arousal for pleasant, unpleasant and neutral pictures. A multilevel model put the intercept of the positivity activation function at 5.29, 95% CI [4.94, 5.64], and the negativity intercept at 2.89, 95% CI [2.54, 3.24]. The offset, the difference between the two, was a random effect with a mean of 2.40 and a standard deviation of 0.92, beta = 0.98, 95% CI [0.78, 1.18], t(183.2) = 9.64, p < 0.001. The same quantity has been measured three more times in clinical work, always as a baseline that illness shrinks. Strauss, Gold and colleagues compared 76 schizophrenia patients with 60 healthy controls and found the patients' capacity for positive emotion intact at high input and their offset diminished. Bartolomeo, Raugh and Strauss repeated the test in daily life with 44 patients and 48 controls over a week of momentary assessment and geolocation. Gollan and colleagues found the offset lower and the negativity bias higher in 41 depressed than in 36 healthy participants. The disagreement comes from outside the laboratory. Cho, Pang, Thapa, Sherman, Ungar, Tay and Guntuku fitted valence and arousal functions to posts from 3,113 US Twitter users, about 3.6 million posts, and to over 29 million Sina Weibo posts, scoring text with the NRC-VAD lexicon. They write: \"One surprising finding in our study was that we did not find a positivity offset. We instead found a negativity offset for both American and Chinese participants.\" The intercept gap ran to beta2 = -0.031 on Twitter and -0.016 on Weibo. Their regression predicts arousal from valence, the reverse of the direction Riehle and Strauss use, so the two are not the same test. Yuan, Tian, Huang, Fan and Wei meta-analysed P3 amplitudes, 49 effect sizes from 38 studies and 1,263 subjects, and report that scenic stimuli produce a negativity bias while verbal stimuli produce a positivity offset. Their abstract names arousal, stimulus type and task setting as the significant moderators; cultural background, which they list among the factors examined, is not among them.",
+    "detail": "An independent estimate comes from Riehle, Pillny and Lincoln at Hamburg, who worked from Strauss's clinical adaptation of the model rather than with its authors. Their survey was opened by 521 people, 393 consented, 269 supplied eligible data and 261 remained after long-string responses were dropped. The analysed sample had a mean age of 41.3 years, standard deviation 13.7, range 19 to 75, and rated positivity, negativity and arousal for pleasant, unpleasant and neutral pictures. A multilevel model put the intercept of the positivity activation function at 5.29, 95% CI [4.94, 5.64], and the negativity intercept at 2.89, 95% CI [2.54, 3.24]. The offset, the difference between the two, was a random effect with a mean of 2.40 and a standard deviation of 0.92, beta = 0.98, 95% CI [0.78, 1.18], t(183.2) = 9.64, p < 0.001. The same quantity has been measured four times in clinical work, always as a baseline that illness shrinks. Strauss, Frost, Lee and Gold compared 76 schizophrenia patients with 60 healthy controls. Controls showed the offset, positive intercept 4.7 against negative 3.0, t = 2.33, p < 0.03. Patients ran the other way at a level the paper calls a trend, positive 3.12 against negative 4.2, t = 1.69, p = 0.09. The group difference in the individual offset score was F(1, 134) = 16.68, p < 0.001, Cohen's d = 0.71, patients at M = 1.28, SD = 5.01 and controls at M = 4.98, SD = 5.53. In the same data the controls' negativity bias was not significant, negative slope 0.31 against positive 0.15, t = 1.1, p = 0.26. Bartolomeo, Raugh and Strauss repeated the test in daily life over a week of momentary assessment and geolocation, recruiting 46 patients and 50 controls and analysing 44 and 48 after adherence exclusions. Bartolomeo and colleagues then ran it on people at clinical high risk for psychosis, where 121 high-risk participants and 57 controls completed six days of assessment and 100 high-risk participants met the same adherence rule. Offset scores were 13.49, SD 63.24, against 39.18, SD 23.61, F(1, 156) = 8.69, p = 0.004, eta-squared = 0.05. Their negativity bias difference was not significant, F(1, 156) = 0.43, p = 0.51. Gollan and colleagues compared 41 depressed with 36 healthy participants and put the offset at 0.61, SD 0.55, in controls against 0.30, SD 0.41, in patients, F(1, 75) = 7.69, p = 0.02, eta-squared = 0.09, and the negativity bias at 0.18 against 0.45, F(1, 75) = 5.4, p = 0.02, eta-squared = 0.07. The disagreement comes from outside the laboratory. Cho, Pang, Thapa, Sherman, Ungar, Tay and Guntuku fitted valence and arousal functions to posts from 3,113 US Twitter users, about 3.6 million posts, and to Sina Weibo. They gathered over 29 million Weibo posts from 859,054 people and analysed 668,257 posts from 8,731 of them, scoring text with the NRC-VAD lexicon. They write: \"One surprising finding in our study was that we did not find a positivity offset. We instead found a negativity offset for both American and Chinese participants.\" The intercept gap ran to beta2 = -0.031 on Twitter and -0.016 on Weibo. Their regression predicts arousal from valence, the reverse of the direction Riehle and Strauss use, so the two are not the same test. Yuan, Tian, Huang, Fan and Wei meta-analysed P3 amplitudes, 49 effect sizes from 38 studies and 1,263 subjects, and report that scenic stimuli produce a negativity bias while verbal stimuli produce a positivity offset. Their abstract names arousal, stimulus type and task setting as the significant moderators; cultural background, which they list among the factors examined, is not among them.",
     "study": {
       "cite": "Riehle, M., Pillny, M., & Lincoln, T. M. (2022). Expanding the positivity offset theory of anhedonia to the psychosis continuum. Schizophrenia, 8, 47.",
       "doi": "10.1038/s41537-022-00251-x",
@@ -26,15 +29,18 @@
     "replicated": {
       "es": 0.98,
       "esType": "beta",
-      "ci": [0.78, 1.18],
+      "ci": [
+        0.78,
+        1.18
+      ],
       "ciLevel": 95
     }
   },
-  "limits": "The name covers at least three quantities. Ito, Cacioppo and Lang regressed unipolar positivity and negativity ratings on rated intensity. Riehle and Strauss regress them on rated arousal and read the offset off the main effect. Cho and colleagues regress arousal on valence and read it off the gap between the two arms of a V. A result in one of these is not a result in the others, and the third is the one that came out with the opposite sign. Cross-cultural coverage is thin. Diener and Diener's 43-nation figure is life satisfaction rather than an activation function, and the German participants in Riehle's study rated pleasant pictures as less arousing than the picture set's US validation sample, Cohen's d = -0.54, which the authors say could indicate a cross-cultural difference. Booy and Carolan's two experiments, the clearest mechanism test located, ran on 62 and 71 female undergraduates at Simon Fraser University, with 60 retained for analysis in the second, so the samples were single-sex and single-site. Searches of Europe PMC for the phrase, of Crossref, and of the journals that publish this work found no multi-laboratory or registered replication of the offset itself. Two of the three founding demonstrations could not be read here: Gardner's dissertation and Ito and Cacioppo's 2005 individual-differences paper. Much of the supporting literature is the same group's, and the independent tests that do exist were designed to study schizophrenia and depression, not to check the parameter.",
-  "misreadings": "The offset is often equated with the finding that most people are happy. Diener and Diener report that in 86% of 43 nations with nationally representative samples the mean subjective wellbeing response was above neutral, and that only India and the Dominican Republic fell below it, on a scale running from 0 to 10. That is a survey mean, published a year before the term existed, and it reaches them through Veenhoven's 1993 summary of almost 1,000 surveys rather than from the surveys themselves. It is consistent with the offset and is not a measurement of it. The second error is reading the offset and the negativity bias as competing claims about whether people lean good or bad. In the model they are the intercept and the slope of one pair of functions, and the negativity bias entry covers the slope. The third is citing the clinical literature as proof that the offset is universal. Strauss and Riehle measured it in order to show where it shrinks, and Riehle's data have it falling with negative symptoms, anhedonia, positive symptoms and depression alike. The fourth is treating Gardner's impression-formation studies as published evidence. They are a 1996 dissertation, described in a later review by one of its readers.",
+  "limits": "The name covers at least three quantities. Ito, Cacioppo and Lang regressed unipolar positivity and negativity ratings on rated intensity. Riehle and Strauss regress them on rated arousal and read the offset off the main effect. Cho and colleagues regress arousal on valence and read it off the gap between the two arms of a V. A result in one of these is not a result in the others, and the third is the one that came out with the opposite sign. Cross-cultural coverage is thin. Diener and Diener's 43-nation figure comes from survey life-satisfaction and happiness scales rather than from an activation function, and the German participants in Riehle's study rated pleasant pictures as less arousing than the picture set's US validation sample, Cohen's d = -0.54, which the authors say could indicate a cross-cultural difference. Booy and Carolan ran two experiments on female undergraduates at Simon Fraser University, recruiting 62 for the first and dropping one for low accuracy, and recruiting 71 for the second and retaining 60. Both samples were single-sex and single-site. Searches of Europe PMC, Crossref and the OSF preprint archive on 21 September 2026 found no multi-laboratory or registered replication of the offset itself. Two of the three founding demonstrations were not read here. Gardner's dissertation was not located, and Taylor and Francis refused automated requests for Ito and Cacioppo's 2005 paper. Much of the supporting literature is the same group's, and the four clinical tests that exist were designed to study schizophrenia, psychosis risk and depression, not to check the parameter.",
+  "misreadings": "The offset is often equated with the finding that most people are happy. Diener and Diener report that in 86% of 43 nations with nationally representative samples the mean subjective wellbeing response was above neutral, and that only India and the Dominican Republic fell below it, on a scale running from 0 to 10. That is a survey mean, and it reaches them through Veenhoven's 1993 summary of almost 1,000 surveys rather than from the surveys themselves. It is consistent with the offset and is not a measurement of it. The second error is reading the offset and the negativity bias as competing claims about whether people lean good or bad. In the model they are the intercept and the slope of one pair of functions, and the negativity bias entry, no. 39, covers the slope. The third is citing the clinical literature as proof that the offset is universal. Strauss, Bartolomeo and Riehle measured it in order to show where it shrinks, and Riehle's data have it falling with negative symptoms, anhedonia, positive symptoms and depression alike. The fourth is treating Gardner's impression-formation studies as published evidence. They are a 1996 dissertation, described in a later review she co-authored.",
   "sources": [
     {
-      "text": "Cacioppo, J. T., Gardner, W. L., & Berntson, G. G. (1997). Beyond bipolar conceptualizations and measures: The case of attitudes and evaluative space. Personality and Social Psychology Review, 1(1), 3-25. Abstract read at PubMed; full text not opened during this check.",
+      "text": "Cacioppo, J. T., Gardner, W. L., & Berntson, G. G. (1997). Beyond bipolar conceptualizations and measures: The case of attitudes and evaluative space. Personality and Social Psychology Review, 1(1), 3-25. Abstract read in full at Europe PMC on 21 September 2026. The full text was not opened: SAGE answered with a Cloudflare bot challenge rather than a paywall notice, and Unpaywall records no open copy.",
       "doi": "10.1207/s15327957pspr0101_2",
       "url": "https://doi.org/10.1207/s15327957pspr0101_2",
       "type": "primary"
@@ -46,55 +52,55 @@
       "type": "primary"
     },
     {
-      "text": "Cacioppo, J. T., & Berntson, G. G. (1994). Relationship between attitudes and evaluative space: A critical review, with emphasis on the separability of positive and negative substrates. Psychological Bulletin, 115(3), 401-423. Cited as the source of the evaluative space model; not opened during this check.",
+      "text": "Cacioppo, J. T., & Berntson, G. G. (1994). Relationship between attitudes and evaluative space: A critical review, with emphasis on the separability of positive and negative substrates. Psychological Bulletin, 115(3), 401-423. Norris and colleagues adapt their figure of the two activation functions from it. Not opened here: APA PsycNet answered with an Incapsula bot block on 21 September 2026, and Unpaywall records no open copy.",
       "doi": "10.1037/0033-2909.115.3.401",
       "url": "https://doi.org/10.1037/0033-2909.115.3.401",
       "type": "primary"
     },
     {
-      "text": "Ito, T. A., Cacioppo, J. T., & Lang, P. J. (1998). Eliciting affect using the International Affective Picture System: Trajectories through evaluative space. Personality and Social Psychology Bulletin, 24(8), 855-879. Cited as the 472-slide study the 1999 paper reads its intercept result from; full text not opened during this check.",
+      "text": "Ito, T. A., Cacioppo, J. T., & Lang, P. J. (1998). Eliciting affect using the International Affective Picture System: Trajectories through evaluative space. Personality and Social Psychology Bulletin, 24(8), 855-879. Cited as the 472-slide study the 1999 paper reads its intercept result from. Not opened here: SAGE answered with a Cloudflare bot challenge on 21 September 2026, and Unpaywall records no open copy.",
       "doi": "10.1177/0146167298248006",
       "url": "https://doi.org/10.1177/0146167298248006",
       "type": "primary"
     },
     {
-      "text": "Ito, T. A., & Cacioppo, J. T. (2005). Variations on a human universal: Individual differences in positivity offset and negativity bias. Cognition & Emotion, 19(1), 1-26. Paywalled; described here from Norris and colleagues' 2010 account of it.",
+      "text": "Ito, T. A., & Cacioppo, J. T. (2005). Variations on a human universal: Individual differences in positivity offset and negativity bias. Cognition & Emotion, 19(1), 1-26. Not read here. Taylor and Francis returned 403 to every automated request on 21 September 2026, and Unpaywall and Semantic Scholar both record no open copy; described on this page from Norris and colleagues' 2010 account of it.",
       "doi": "10.1080/02699930441000120",
       "url": "https://doi.org/10.1080/02699930441000120",
       "type": "primary"
     },
     {
-      "text": "Norris, C. J., Gollan, J., Berntson, G. G., & Cacioppo, J. T. (2010). The current status of research on the structure of evaluative space. Biological Psychology, 84(3), 422-436.",
+      "text": "Norris, C. J., Gollan, J., Berntson, G. G., & Cacioppo, J. T. (2010). The current status of research on the structure of evaluative space. Biological Psychology, 84(3), 422-436. Read in full from the NIH author manuscript at PMC2894997.",
       "doi": "10.1016/j.biopsycho.2010.03.011",
       "url": "https://doi.org/10.1016/j.biopsycho.2010.03.011",
       "type": "commentary"
     },
     {
-      "text": "Norris, C. J., Larsen, J. T., Crawford, L. E., & Cacioppo, J. T. (2011). Better (or worse) for some than others: Individual differences in the positivity offset and negativity bias. Journal of Research in Personality, 45(1), 100-111. Paywalled; named here as the follow-up to Ito and Cacioppo, not read.",
+      "text": "Norris, C. J., Larsen, J. T., Crawford, L. E., & Cacioppo, J. T. (2011). Better (or worse) for some than others: Individual differences in the positivity offset and negativity bias. Journal of Research in Personality, 45(1), 100-111. Named here as the follow-up to Ito and Cacioppo, not read. ScienceDirect returned 403 to automated requests on 21 September 2026, and Unpaywall records no open copy.",
       "doi": "10.1016/j.jrp.2010.12.001",
       "url": "https://doi.org/10.1016/j.jrp.2010.12.001",
       "type": "primary"
     },
     {
-      "text": "Riehle, M., Pillny, M., & Lincoln, T. M. (2022). Expanding the positivity offset theory of anhedonia to the psychosis continuum. Schizophrenia, 8, 47.",
+      "text": "Riehle, M., Pillny, M., & Lincoln, T. M. (2022). Expanding the positivity offset theory of anhedonia to the psychosis continuum. Schizophrenia, 8, 47. Open access; read in full, with the sample table read off the journal's separate table page.",
       "doi": "10.1038/s41537-022-00251-x",
       "url": "https://doi.org/10.1038/s41537-022-00251-x",
       "type": "replication"
     },
     {
-      "text": "Strauss, G. P., Frost, K. H., Lee, B. G., & Gold, J. M. (2017). The positivity offset theory of anhedonia in schizophrenia. Clinical Psychological Science, 5(2), 226-238. PubMed and Crossref disagree on the second author, who is listed as Frost by PubMed and as Visser by Crossref; abstract read, full text paywalled.",
+      "text": "Strauss, G. P., Frost, K. H., Lee, B. G., & Gold, J. M. (2017). The positivity offset theory of anhedonia in schizophrenia. Clinical Psychological Science, 5(2), 226-238. Read in full on 21 September 2026 from the NIH author manuscript at PMC5421554, which is the accepted version rather than the typeset article; OpenAlex labels that copy a submitted version. An earlier version of this entry called it paywalled, which was wrong. PubMed and the author manuscript name the second author Frost; Crossref names her Visser.",
       "doi": "10.1177/2167702616674989",
       "url": "https://doi.org/10.1177/2167702616674989",
       "type": "replication"
     },
     {
-      "text": "Bartolomeo, L. A., Raugh, I. M., & Strauss, G. P. (2023). The positivity offset theory of anhedonia in schizophrenia: Evidence for a deficit in daily life using digital phenotyping. Psychological Medicine, 53(14), 6491-6499.",
+      "text": "Bartolomeo, L. A., Raugh, I. M., & Strauss, G. P. (2023). The positivity offset theory of anhedonia in schizophrenia: Evidence for a deficit in daily life using digital phenotyping. Psychological Medicine, 53(14), 6491-6499. Read in full at PMC10600929. One request for that page returned a reCAPTCHA challenge and a retry returned the article.",
       "doi": "10.1017/S0033291722003774",
       "url": "https://doi.org/10.1017/S0033291722003774",
       "type": "replication"
     },
     {
-      "text": "Gollan, J. K., Hoxha, D., Hunnicutt-Ferguson, K., Norris, C. J., Rosebrock, L., Sankin, L., & Cacioppo, J. (2016). Twice the negativity bias and half the positivity offset: Evaluative responses to emotional information in depression. Journal of Behavior Therapy and Experimental Psychiatry, 52, 166-170. Abstract read; full text not obtained.",
+      "text": "Gollan, J. K., Hoxha, D., Hunnicutt-Ferguson, K., Norris, C. J., Rosebrock, L., Sankin, L., & Cacioppo, J. (2016). Twice the negativity bias and half the positivity offset: Evaluative responses to emotional information in depression. Journal of Behavior Therapy and Experimental Psychiatry, 52, 166-170. Read in full on 21 September 2026 from the author manuscript at PMC5685183, which carries the publisher's notice that it is unedited and precedes typesetting. An earlier version of this entry said the full text was not obtained, which was wrong.",
       "doi": "10.1016/j.jbtep.2015.09.005",
       "url": "https://doi.org/10.1016/j.jbtep.2015.09.005",
       "type": "replication"
@@ -106,29 +112,35 @@
       "type": "replication"
     },
     {
-      "text": "Yuan, J., Tian, Y., Huang, X., Fan, H., & Wei, X. (2019). Emotional bias varies with stimulus type, arousal and task setting: Meta-analytic evidences. Neuroscience & Biobehavioral Reviews, 107, 461-472. Abstract read at Europe PMC; full text paywalled.",
+      "text": "Yuan, J., Tian, Y., Huang, X., Fan, H., & Wei, X. (2019). Emotional bias varies with stimulus type, arousal and task setting: Meta-analytic evidences. Neuroscience & Biobehavioral Reviews, 107, 461-472. Abstract read in full at Europe PMC. Full text not opened: ScienceDirect returned 403 to automated requests on 21 September 2026, and Unpaywall records no open copy.",
       "doi": "10.1016/j.neubiorev.2019.09.035",
       "url": "https://doi.org/10.1016/j.neubiorev.2019.09.035",
       "type": "replication"
     },
     {
-      "text": "Booy, R. M., & Carolan, P. L. (2021). The role of selective attention in the positivity offset: Evidence from event related potentials. PLOS ONE, 16(11), e0258640.",
+      "text": "Booy, R. M., & Carolan, P. L. (2021). The role of selective attention in the positivity offset: Evidence from event related potentials. PLOS ONE, 16(11), e0258640. Open access; read in full from the journal's JATS XML.",
       "doi": "10.1371/journal.pone.0258640",
       "url": "https://doi.org/10.1371/journal.pone.0258640",
       "type": "replication"
     },
     {
-      "text": "Diener, E., & Diener, C. (1996). Most people are happy. Psychological Science, 7(3), 181-185.",
+      "text": "Diener, E., & Diener, C. (1996). Most people are happy. Psychological Science, 7(3), 181-185. Read in full from a scanned copy hosted at scottbarrykaufman.com; the SAGE copy answered with a bot challenge.",
       "doi": "10.1111/j.1467-9280.1996.tb00354.x",
       "url": "https://doi.org/10.1111/j.1467-9280.1996.tb00354.x",
       "type": "primary"
     },
     {
-      "text": "Diener, E., Kanazawa, S., Suh, E. M., & Oishi, S. (2015). Why people are in a generally good mood. Personality and Social Psychology Review, 19(3), 235-256. Abstract read; full text paywalled.",
+      "text": "Diener, E., Kanazawa, S., Suh, E. M., & Oishi, S. (2015). Why people are in a generally good mood. Personality and Social Psychology Review, 19(3), 235-256. Abstract read at Europe PMC. Full text not opened: SAGE answered with a Cloudflare bot challenge on 21 September 2026, and Unpaywall records no open copy.",
       "doi": "10.1177/1088868314544467",
       "url": "https://doi.org/10.1177/1088868314544467",
       "type": "commentary"
+    },
+    {
+      "text": "Bartolomeo, L. A., James, S. H., Berglund, A. M., Raugh, I. M., Mittal, V. A., Walker, E. F., & Strauss, G. P. (2025). Digital phenotyping evidence for the reduced positivity offset as a mechanism underlying anhedonia among individuals at clinical high-risk for psychosis. Schizophrenia Research, 281, 45-51. Read in full from the NIH author manuscript at PMC12167134.",
+      "doi": "10.1016/j.schres.2025.04.029",
+      "url": "https://doi.org/10.1016/j.schres.2025.04.029",
+      "type": "replication"
     }
   ],
-  "checkedOn": "2026-08-10"
+  "checkedOn": "2026-09-21"
 }
