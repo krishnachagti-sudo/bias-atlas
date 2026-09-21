@@ -116,7 +116,10 @@ These have repeatedly served the same document when the indexed URL did not.
   UCLouvain DIAL, Oxford Brookes RADAR, Lancaster, Utrecht, and many more.
   Plain search finds a version of record that two indexes both miss.
 - PubMed Central, and Europe PMC's `fullTextXML` REST route where the
-  rendered page or PDF is challenged.
+  rendered page or PDF is challenged. PubMed Central now fronts its pages and
+  PDFs with a captcha, and `efetch?db=pmc` still serves author manuscripts.
+- eScholarship answers an empty 202 challenge; the Wayback Machine replays
+  around it.
 - Authors' own faculty and laboratory pages. Repeatedly one download away
   from a note calling the paper closed at every location.
 - A proof-of-work challenge can often be solved, in seconds of processor time.
