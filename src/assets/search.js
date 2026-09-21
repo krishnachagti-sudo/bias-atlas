@@ -38,7 +38,11 @@
       .replace(/"/g, '&quot;');
   }
 
-  var BADGE = { Empirical: 'b-emp', Heuristic: 'b-heu', 'Folk-adage': 'b-folk', Contested: 'b-con' };
+  // Verdict badge classes. This file was forked from The Law Tome, whose cards
+  // carry a four-tier reliability rating; that scale was deleted from this corpus
+  // rather than adapted, and the facet here is the replication verdict. Index rows
+  // ship `verdict` and `verdictClass` already resolved, so this is the fallback.
+  var BADGE = { replicated: 'b-emp', mixed: 'b-heu', 'none-located': 'b-folk', failed: 'b-con' };
   function badgeClass(r) { return BADGE[r] || 'b-heu'; }
 
   // Byte-identical twin of build/search-index.mjs `fold`. See that file for why
@@ -124,32 +128,39 @@
 
   function buildCard(row) {
     var a = el('a', 'card');
-    a.setAttribute('href', BASE + 'laws/' + encodeURIComponent(row.slug) + '/');
+    // `bias/`, not `laws/`. The fork kept The Law Tome's path, so every card this
+    // builder produced pointed at a URL this site does not serve.
+    a.setAttribute('href', BASE + 'bias/' + encodeURIComponent(row.slug) + '/');
     // Mirror the server-rendered card: the field palette in styles.css keys off
     // this attribute and cascades --field to the spine and the label.
     if (row.category) a.setAttribute('data-cat-c', row.category);
 
     var top = el('div', 'top');
-    var no = el('span', 'no'); no.textContent = '№ ' + (row.no || '');
+    // Padded to three digits, as biasCard() renders it, so a client-filtered grid
+    // does not reshuffle between "№ 7" and "№ 007" as you type.
+    var n = String(row.no == null ? '' : row.no);
+    while (n.length < 3) n = '0' + n;
+    var no = el('span', 'no'); no.textContent = '№ ' + n;
     top.appendChild(no);
-    if (row.reliability) {
-      var badge = el('span', 'badge ' + badgeClass(row.reliability));
-      badge.textContent = row.reliability; // textContent — corpus-controlled enum
+    if (row.verdict) {
+      var badge = el('span', 'badge ' + (row.verdictClass || badgeClass(row.state)));
+      badge.textContent = row.verdict; // textContent — corpus-controlled enum
       top.appendChild(badge);
     }
 
-    var h3 = document.createElement('h3'); h3.textContent = row.name || '';
+    // `.card-name`, matching the server card. Without the class the heading falls
+    // back to bare h3 styling and client results render at a different size from
+    // the ones beside them.
+    var h3 = el('h3', 'card-name'); h3.textContent = row.name || '';
 
     var say = el('div', 'say'); say.textContent = '"' + (row.statement || '') + '"';
 
     var foot = el('div', 'foot');
     var cat = el('span', 'cat'); cat.textContent = row.category || '';
     foot.appendChild(cat);
-    var relN = Array.isArray(row.related) ? row.related.length : row.rels;
-    if (relN != null) {
+    if (row.foot) {
       var rel = el('span', 'rel');
-      var ic = el('i', 'ti ti-affiliate'); ic.setAttribute('aria-hidden', 'true'); ic.setAttribute('style', 'font-size:13px');
-      rel.appendChild(ic); rel.appendChild(document.createTextNode(' ' + relN + ' related'));
+      rel.textContent = row.foot; // "36 labs", "6,330 people", or the plain case
       foot.appendChild(rel);
     }
 
@@ -183,16 +194,20 @@
     var groupBtn = document.getElementById('group-toggle');
     var activeSort = (sortSel && sortSel.value) || 'no';
     var grouped = false;
-    var TIERRANK = { Empirical: 0, Heuristic: 1, 'Folk-adage': 2, Contested: 3 };
-    var TIER_ORDER = ['Empirical', 'Heuristic', 'Folk-adage', 'Contested'];
-    function relCount(r) { return Array.isArray(r.related) ? r.related.length : (r.rels || 0); }
+    // Verdict order, strongest evidence of survival first and the honest "nobody
+    // has looked" last. It is an ordering for display, not a ranking of the
+    // biases: `none-located` sits at the end because it is a statement about the
+    // literature, so it belongs after the three that report a result.
+    var TIERRANK = { replicated: 0, mixed: 1, failed: 2, 'none-located': 3 };
+    var TIER_ORDER = ['replicated', 'mixed', 'failed', 'none-located'];
     function byNo(a, b) { return (parseInt(a.no, 10) || 0) - (parseInt(b.no, 10) || 0); }
     function applySort(list) {
       var l = list.slice();
       if (activeSort === 'az') l.sort(function (a, b) { return String(a.name || '').localeCompare(String(b.name || '')); });
       else if (activeSort === 'za') l.sort(function (a, b) { return String(b.name || '').localeCompare(String(a.name || '')); });
-      else if (activeSort === 'rels') l.sort(function (a, b) { return relCount(b) - relCount(a) || byNo(a, b); });
-      else if (activeSort === 'tier') l.sort(function (a, b) { var ta = TIERRANK[a.reliability]; ta = ta == null ? 9 : ta; var tb = TIERRANK[b.reliability]; tb = tb == null ? 9 : tb; return ta - tb || byNo(a, b); });
+      // The Law Tome's 'rels' sort (by count of related laws) is gone with the
+      // `related` key it read; nothing in this corpus records neighbours.
+      else if (activeSort === 'tier') l.sort(function (a, b) { var ta = TIERRANK[a.state]; ta = ta == null ? 9 : ta; var tb = TIERRANK[b.state]; tb = tb == null ? 9 : tb; return ta - tb || byNo(a, b); });
       else return l; // 'no' — keep the natural order (server № order, or search relevance)
       return l;
     }
@@ -227,7 +242,7 @@
 
     function filtered() {
       var base = query ? searchRows(rows, query) : rows.slice();
-      if (activeRel) base = base.filter(function (r) { return r.reliability === activeRel; });
+      if (activeRel) base = base.filter(function (r) { return r.state === activeRel; });
       if (activeCat !== 'all') base = base.filter(function (r) { return r.category === activeCat; });
       return base;
     }
@@ -245,10 +260,10 @@
       if (list.length) {
         var frag = document.createDocumentFragment();
         if (grouped) {
-          // Grouped view: a full-width tier heading, then that tier's cards, in
-          // Empirical → Heuristic → Folk-adage → Contested order (rows keep their
+          // Grouped view: a full-width verdict heading, then that verdict's cards,
+          // in replicated → mixed → failed → none-located order (rows keep their
           // current sort within each group). A trailing "Other" holds any card
-          // whose reliability isn't one of the four (e.g. a coined law).
+          // whose state is not one of the four.
           var seen = {};
           function groupBlock(label, members) {
             var h = document.createElement('h2'); h.className = 'grid-group-h';
@@ -259,11 +274,13 @@
           }
           for (var t = 0; t < TIER_ORDER.length; t++) {
             var tier = TIER_ORDER[t], members = [];
-            for (var g = 0; g < list.length; g++) if (list[g].reliability === tier) members.push(list[g]);
-            if (members.length) { groupBlock(tier, members); seen[tier] = 1; }
+            for (var g = 0; g < list.length; g++) if (list[g].state === tier) members.push(list[g]);
+            // Headed by the verdict as a reader says it ("Failed to replicate"),
+            // not by the state key that encodes it ("failed").
+            if (members.length) { groupBlock(members[0].verdict || tier, members); seen[tier] = 1; }
           }
           var rest = [];
-          for (var r2 = 0; r2 < list.length; r2++) if (!seen[list[r2].reliability]) rest.push(list[r2]);
+          for (var r2 = 0; r2 < list.length; r2++) if (!seen[list[r2].state]) rest.push(list[r2]);
           if (rest.length) groupBlock('Other', rest);
         } else {
           for (var i = 0; i < list.length; i++) frag.appendChild(buildCard(list[i]));

@@ -28,6 +28,7 @@ import { browsePage, aboutPage, notFoundPage } from '../src/templates/pages.mjs'
 import { entryPage, entryPath } from '../src/templates/entry.mjs';
 import { loadCorpus } from './corpus.mjs';
 import { buildSitemap } from './sitemap.mjs';
+import { buildSearchIndex } from './search-index.mjs';
 import { LASTMOD_TOKEN, manifestFile, resolve as resolveLastmod, stamp } from './lastmod.mjs';
 import { renderPng, siteCardSvg } from './cards.mjs';
 
@@ -124,6 +125,15 @@ for (const [path, html] of Object.entries(pages)) {
 // not in `pages` because it has no URL of its own, so it has no date and must
 // not be in the sitemap.
 writes.push(write(join(out, '404.html'), notFoundPage({ base, origin })));
+
+// The client search index. assets/search.js fetches this at `${base}search-index.json`
+// and does nothing without it, which is what it did: the file was never built, so
+// the search field on the home page accepted typing and returned silence.
+// Not in `pages`, so it carries no date and stays out of the sitemap.
+writes.push(write(
+  join(out, 'search-index.json'),
+  `${JSON.stringify(buildSearchIndex(entries))}\n`,
+));
 
 // robots.txt — a stated policy rather than a default.
 //

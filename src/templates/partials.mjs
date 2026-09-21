@@ -333,7 +333,7 @@ export function clampDescription(text, max = DESC_MAX) {
  * @param {string} [o.robots]     robots directive (defaults to a permissive, rich-preview policy)
  * @param {object[]} [o.jsonld]   array of JSON-LD objects; each emitted via jsonLd()
  */
-export function head({ title, description, base = '/', origin = '', path, canonical, og, jsonld, siteName = BRAND, robots, modified, published, alternates } = {}) {
+export function head({ title, description, base = '/', origin = '', path, canonical, og, jsonld, siteName = BRAND, robots, modified, published, alternates, search = false } = {}) {
   const canon = canonical || (path != null ? `${origin}${base}${path}` : undefined);
   // Clamped here so no generator can ship a truncated result slot. The OG and
   // Twitter copy below deliberately uses the UNCLAMPED text: an unfurl card has
@@ -435,6 +435,11 @@ export function head({ title, description, base = '/', origin = '', path, canoni
   // visible with no JS dependency.
   out.push(`<script>(function(){var d=document.documentElement,t;try{t=localStorage.getItem('ba-theme')}catch(e){}if(t)d.setAttribute('data-theme',t);else if(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)d.setAttribute('data-theme','dark');try{if(window.matchMedia&&!matchMedia('(prefers-reduced-motion: reduce)').matches&&'IntersectionObserver' in window)d.classList.add('anim')}catch(e){}})();</script>`);
   out.push(`<script defer src="${asset(base, 'assets/common.js')}"></script>`);
+  // search.js only on the pages carrying a search surface. It was shipped to
+  // assets/ and loaded by nothing, so the home page's search field took typing
+  // and returned silence; the script bails out on its own if no `#q`, `#grid` or
+  // `#rand` is present, but there is no reason to fetch it on a page with none.
+  if (search) out.push(`<script defer src="${asset(base, 'assets/search.js')}"></script>`);
   if (Array.isArray(jsonld)) for (const block of jsonld) out.push(jsonLd(block));
   out.push('</head>');
   out.push('<body>');
@@ -603,6 +608,53 @@ export function searchBox(placeholder = 'Search a bias — or describe what you 
         <input id="q" type="search" placeholder="${escapeHtml(placeholder)}" autocomplete="off" aria-label="Search biases">
       </label>
 `;
+}
+
+/**
+ * Field chips and the verdict / sort / group controls for a listing page.
+ *
+ * The browse page listed 544 cards in one flat grid with nothing to narrow them
+ * by. That is a worse index than no index: a reader who wants the biases that
+ * failed to replicate, or the ones about memory, had to scroll and read badges.
+ * Every control here was already styled in styles.css and already handled by
+ * search.js; only the markup was missing.
+ *
+ * The facet is the replication verdict, where The Law Tome puts its reliability
+ * tier. That is the whole difference between the two sites, so it is the filter
+ * worth having: "show me what did not survive retesting" is the question this
+ * corpus exists to answer.
+ *
+ * @param {string[]} cats the category keys, in corpus order
+ */
+export function browseControls(cats = []) {
+  const fieldChips = `    <div class="chips" id="chips" role="group" aria-label="Filter by field"><button class="chip on" type="button" aria-pressed="true" data-c="all">all</button>${cats
+    .map((c) => `<button class="chip" type="button" aria-pressed="false" data-c="${escapeHtml(c)}">${escapeHtml(c)}</button>`)
+    .join('')}</div>
+`;
+  // The dot colours are the badge colours, so a chip and the badge it filters to
+  // are recognisably the same thing. "All verdicts" carries no dot: it is the
+  // absence of a filter rather than a fifth state.
+  const VERDICTS = [
+    ['', 'All verdicts', ''],
+    ['replicated', 'Replicated', 'var(--ok)'],
+    ['mixed', 'Mixed', 'var(--gold)'],
+    ['failed', 'Failed', 'var(--con)'],
+    ['none-located', 'None located', 'var(--faint)'],
+  ];
+  const relChips = `<div class="chips chips--rel" id="rel-chips" role="group" aria-label="Filter by replication verdict">${VERDICTS
+    .map(([val, label, col], i) => `<button class="chip${i === 0 ? ' on' : ''}" type="button" aria-pressed="${i === 0 ? 'true' : 'false'}" data-r="${escapeHtml(val)}">${col ? `<span class="rel-dot" style="background:${col}"></span>` : ''}${escapeHtml(label)}</button>`)
+    .join('')}</div>`;
+  const sortControl = `<div class="browse-sort">
+      <label class="browse-sort-l" for="sort">Sort</label>
+      <select id="sort" class="browse-select" aria-label="Sort entries">
+        <option value="no">№ order</option>
+        <option value="az">Name A–Z</option>
+        <option value="za">Name Z–A</option>
+        <option value="tier">By verdict</option>
+      </select>
+      <button class="chip group-toggle" id="group-toggle" type="button" aria-pressed="false">Group by verdict</button>
+    </div>`;
+  return `${fieldChips}    <div class="browse-controls">${relChips}${sortControl}</div>\n`;
 }
 
 /**

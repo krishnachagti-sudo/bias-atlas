@@ -1,7 +1,7 @@
 // The pages that are not entries and not the front door: /browse/, /about/, and
 // the 404. Small enough to share a file until one of them needs more.
 
-import { head, sprite, header, footer, escapeHtml, shareRow, BRAND, founderNode, biasCard } from './partials.mjs';
+import { head, sprite, header, footer, escapeHtml, shareRow, BRAND, founderNode, biasCard, searchBox, browseControls } from './partials.mjs';
 import { hubHead, hubNav, hubFaq, hubJsonLd } from './hub.mjs';
 import { entryPath, replicationLabel, REPLICATION_CLASS } from './entry.mjs';
 
@@ -25,8 +25,15 @@ export function browsePage({ base = '/', origin = '', entries = [], mapped = 0 }
   // already has; the column saying whether each one survived retesting is the
   // only reason to read this one, so it is on the card rather than one click
   // inside it.
+  // Categories in corpus order, deduplicated, for the field chips.
+  const cats = [...new Set(entries.map((e) => e.category).filter(Boolean))];
+
+  // The controls sit between the lede and the grid: search, then field, then
+  // verdict and ordering. All four are client-side over the whole index, and all
+  // four degrade to nothing without JS, which is why every card stays in the
+  // markup below rather than being fetched.
   const list = count > 0
-    ? `    <div class="grid">
+    ? `${searchBox(`Search all ${n(count)} entries…`)}${browseControls(cats)}    <div class="grid" id="grid">
 ${entries.map((e) => biasCard(e, base, {
     level: 2,
     verdictLabel: replicationLabel(e.replication.state),
@@ -76,6 +83,7 @@ ${faq.html}${hubNav('browse/', { base })}  </div>
       base,
       origin,
       path: 'browse/',
+      search: true,
       jsonld: [
         ...hubJsonLd({
           name: 'Browse',

@@ -128,7 +128,13 @@ ${searchBox('Search a bias — or describe what you noticed…')}    </div>
     </div>
     <p class="sec-lede">${answer}</p>
 ${count > 0
-    ? `    <div class="grid">
+    // `id="grid"` and `data-limit` are what make the search field above this
+    // section work. search.js renders its results into `#grid`, and the limit
+    // caps the IDLE view at a sample. Every card stays in the markup, so the page
+    // is complete with no JS and for a crawler; a reader who types gets the whole
+    // corpus filtered rather than a sample of it. Without the id the search box
+    // had nowhere to put an answer, which is part of why it did nothing.
+    ? `    <div class="grid" id="grid" data-limit="18">
 ${entries.map((e) => biasCard(e, base, {
       level: 3,
       verdictLabel: replicationLabel(e.replication.state),
@@ -154,6 +160,7 @@ ${faq.html}  </div>
       base,
       origin,
       path: '',
+      search: true,
       jsonld: [
         {
           '@context': 'https://schema.org',
