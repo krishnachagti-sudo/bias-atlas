@@ -2,7 +2,11 @@
   "no": 132,
   "slug": "overjustification-effect",
   "name": "Overjustification effect",
-  "aliases": ["Undermining effect", "Overjustification hypothesis", "Corruption effect"],
+  "aliases": [
+    "Undermining effect",
+    "Overjustification hypothesis",
+    "Corruption effect"
+  ],
   "category": "social",
   "statement": "Rewarding people for something they already enjoy can leave them less willing to do it once the reward stops.",
   "meaning": "The claim is narrow, and two conditions carry it. The activity has to be one the person already finds interesting, and the reward has to be promised in advance for doing it. Under those conditions the reward supplies a reason for the behaviour that the person did not previously have, and when the reward goes the reason goes with it. Self-perception theory framed this as an inference about oneself: the contract is visible, so the person reads their own drawing or puzzle-solving as a means to an end. The prediction that made the idea testable is about later behaviour, measured when nothing is on offer and nobody appears to be watching.",
@@ -16,76 +20,76 @@
   "replication": {
     "state": "mixed",
     "headline": "Both sides of the argument find that a reward promised in advance for doing an already-interesting task cuts later free-choice engagement; they disagree about everything wider than that.",
-    "detail": "Deci, Koestner and Ryan pooled 128 experiments and reported tangible rewards cutting free-choice engagement by d = -0.34, 95% CI -0.39 to -0.28, with expected tangible rewards at -0.36 and rewards contingent on merely engaging in the task at -0.40. Verbal praise ran the other way at 0.33. Eisenberger and Cameron, presenting figures from Cameron and Pierce's analysis of 96 studies, put all rewards on free time at -0.04, a null, and read their hierarchy from the bottom, where one category survived. Their own numbers give tangible rewards -0.21 and expected tangible rewards -0.25, both intervals clear of zero, and on that basis they concluded that detrimental effects occur under highly restricted, easily avoidable conditions. Cameron, Banko and Pierce then merged both databases into 145 studies and split them first by how interesting the task was, which neither earlier analysis had done. Across all tasks the free-choice effect was -0.08 and not significant. On high-interest tasks it was -0.09, 95% CI -0.14 to -0.04, and on low-interest tasks it was positive, 0.28. Rewards offered simply for doing a high-interest task came out at -0.35, 95% CI -0.43 to -0.27, next to the -0.40 the rival team reported for the same case. The disagreement is about what to average over, not about that cell. Murayama and colleagues later found the same pattern of behaviour in an independent laboratory, with 28 adults and a stopwatch task, the paid group playing it fewer times in both free-choice periods, Mann-Whitney U = 52.5 and 54.5, p < .05.",
+    "detail": "Deci, Koestner and Ryan pooled 128 experiments and reported tangible rewards cutting free-choice engagement by d = -0.34, 95% CI -0.39 to -0.28, with expected tangible rewards at -0.36 and rewards contingent on merely engaging in the task at -0.40. Verbal praise ran the other way at 0.33. Eisenberger and Cameron, presenting figures from Cameron and Pierce's analysis of 96 studies, put all rewards on free time at -0.04, a null, and read their hierarchy from the bottom, where one category survived. Their own numbers give tangible rewards -0.21 and expected tangible rewards -0.25, both intervals clear of zero, and on that basis they concluded that detrimental effects occur under highly restricted, easily avoidable conditions. Cameron, Banko and Pierce then merged both databases into 145 studies and made initial task interest their first split. Across all tasks the free-choice effect was -0.08 and not significant. On high-interest tasks it was -0.09, 95% CI -0.14 to -0.04, and on low-interest tasks it was positive, 0.28. That headline null averages over tasks the rival team had excluded on purpose, since Deci and colleagues admitted only tasks whose interest value was at least neutral and treated the boring ones in a supplemental analysis of 13 studies. Cameron and colleagues say they coded initial interest by the procedures Deci and colleagues set out. Rewards offered simply for doing a high-interest task came out at -0.35, 95% CI -0.43 to -0.27, next to the -0.40 the rival team reported for the same case. The disagreement is about what to average over, not about that cell. Murayama and colleagues later found the same pattern of behaviour in an independent laboratory, with 28 Tamagawa University students and a stopwatch task, the paid group playing it fewer times in both free-choice periods, Mann-Whitney U = 52.5 and 54.5, p < .05.",
     "study": {
       "cite": "Cameron, J., Banko, K. M., & Pierce, W. D. (2001). Pervasive negative effects of rewards on intrinsic motivation: The myth continues. The Behavior Analyst, 24(1), 1-44.",
       "doi": "10.1007/BF03392017",
       "year": 2001
     }
   },
-  "limits": "No independent laboratory has re-run the magic-marker protocol as a preregistered direct replication, and a search of the replication literature turned up none. The nearest thing is Greene and Lepper's 1974 study, run in the same nursery school by two of the same authors, where 55% of the children promised an award touched the activity afterwards against 85% of the unexpected-award children and 87% of the controls, chi-square = 8.18, p < .02. A direct replication of Deci's 1971 puzzle experiment, by Peters and colleagues in 2022 with 24 undergraduates, found engagement falling in both the paid and unpaid groups and reported no support for the hypothesis. Free-choice time is a proxy for motivation rather than motivation. Cameron and colleagues translate d = -0.30 into about 47 seconds of an eight-minute period, using a pooled standard deviation of 2.6 minutes taken from one well-measured study, and call the size of the effect modest. Almost all of this literature is short laboratory or nursery sessions with a single reward, and what repeated rewards do across months is largely untested.",
-  "misreadings": "The finding is not that rewards reduce motivation. Every meta-analysis in the dispute finds verbal praise raises free-choice engagement, 0.33 in Deci, Koestner and Ryan and 0.31 in Cameron, Banko and Pierce, and both find unexpected tangible rewards do nothing. Cameron and colleagues also find rewards raise engagement with tasks people did not like to begin with, at 0.28, which is where incentive schemes are usually pointed. The 8.59% in the 1973 paper is a share of available free-choice time, not a share of children, and the highest of the three cells was the unexpected-award group rather than the untouched control. Baseline percentages are often quoted next to it and the paper reports none. Lepper and his co-authors wrote in that same paper that proscribing token economies on their evidence would be a mistaken overgeneralisation, since such programmes are used precisely where initial interest is low. Cerasoli, Nicklin and Ford, working on performance rather than persistence across 183 samples and 212,468 people, found intrinsic motivation predicting performance at rho = .26 overall, and the link weaker where incentives were tied directly to performance than where they were tied to it indirectly, .30 against .45.",
+  "limits": "No independent laboratory has re-run the magic-marker protocol as a preregistered direct replication. The search was re-run on 21 September 2026 across Crossref, PubMed, the OSF registries and the 1,000 citing papers Semantic Scholar lists for the 1973 article, and found none. The nearest thing is Greene and Lepper's 1974 study, run at the same nursery school by two of the same authors, where 55% of the children promised an award showed any interest in the activity afterwards against 85% of the unexpected-award children and 87% of the controls, chi-square = 8.18, p < .02. A direct replication of Deci's 1971 puzzle experiment, by Peters and colleagues in 2022 with 24 undergraduates, found engagement falling in both the paid and unpaid groups and reported no support for the hypothesis. They also describe Mawhinney's 1979 reanalysis of Deci's first experiment, in which only 4 of the 24 subjects played with the puzzle less at the third break than at the first. Free-choice time is a proxy for motivation rather than motivation. Cameron and colleagues translate d = -0.30 into about 47 seconds of an eight-minute period, using a pooled standard deviation of 2.6 minutes taken from one well-designed study, and conclude that the effect is statistically significant but does not suggest a strong impact. Almost all of this literature is short laboratory or nursery sessions with a single reward. Cameron and colleagues say no study has tested whether the loss accumulates across many successive opportunities, and Eisenberger and Cameron report four within-subject studies using repeated rewards, none of which found a decrement afterwards.",
+  "misreadings": "The finding is not that rewards reduce motivation. Every meta-analysis in the dispute finds verbal praise raises free-choice engagement, 0.33 in Deci, Koestner and Ryan and 0.31 in Cameron, Banko and Pierce, and both find unexpected tangible rewards do nothing. Cameron and colleagues also find rewards raise engagement with tasks people did not like to begin with, at 0.28, which is where incentive schemes are usually pointed. The 8.59% in the 1973 paper is a share of available free-choice time, not a share of children, and the highest of the three cells was the unexpected-award group rather than the untouched control. Baseline percentages are often quoted next to it and the paper reports none. Lepper and his co-authors wrote in that same paper that proscribing token economies on their evidence would be a mistaken overgeneralisation, since such programmes are used precisely where initial interest is low. Cerasoli, Nicklin and Ford, working on performance rather than persistence across 183 samples and 212,468 people, found intrinsic motivation predicting performance at rho = .26 overall, and the link weaker where incentives were tied directly to performance than where they were tied to it indirectly, .30 against .45, on 27 and 8 samples. Nor is this the extrinsic incentives bias, which entry no. 284 covers. That claim is about what people believe moves other people, and it predicts nothing about what a reward does to later behaviour.",
   "sources": [
     {
-      "text": "Lepper, M. R., Greene, D., & Nisbett, R. E. (1973). Undermining children's intrinsic interest with extrinsic reward: A test of the \"overjustification\" hypothesis. Journal of Personality and Social Psychology, 28(1), 129-137.",
+      "text": "Lepper, M. R., Greene, D., & Nisbett, R. E. (1973). Undermining children's intrinsic interest with extrinsic reward: A test of the \"overjustification\" hypothesis. Journal of Personality and Social Psychology, 28(1), 129-137. Read in full on 21 September 2026 from an open copy of the published article at heartofcharacter.org, after APA PsycNet answered with an Imperva bot block. Source of every figure in the evidence field, and of the token-economy sentence quoted under misreadings.",
       "doi": "10.1037/h0035519",
-      "url": "https://doi.org/10.1037/h0035519",
+      "url": "https://www.heartofcharacter.org/wp-content/uploads/Undermining_Childrens_Intrinsic_Interest_with_Ext-1.pdf",
       "type": "primary"
     },
     {
-      "text": "Deci, E. L. (1971). Effects of externally mediated rewards on intrinsic motivation. Journal of Personality and Social Psychology, 18(1), 105-115.",
+      "text": "Deci, E. L. (1971). Effects of externally mediated rewards on intrinsic motivation. Journal of Personality and Social Psychology, 18(1), 105-115. The published article is a scan with no text layer, hosted by selfdeterminationtheory.org. It was fetched on 21 September 2026 and read through optical character recognition run page by page. It supports the description of the puzzle experiment; the judgement of its statistical strength is Lepper and his co-authors' own, quoted from their 1973 paper.",
       "doi": "10.1037/h0030644",
-      "url": "https://doi.org/10.1037/h0030644",
+      "url": "https://selfdeterminationtheory.org/SDT/documents/1971_Deci.pdf",
       "type": "background"
     },
     {
-      "text": "Greene, D., & Lepper, M. R. (1974). Effects of extrinsic rewards on children's subsequent intrinsic interest. Child Development, 45(4), 1141-1145.",
+      "text": "Greene, D., & Lepper, M. R. (1974). Effects of extrinsic rewards on children's subsequent intrinsic interest. Child Development, 45(4), 1141-1145. Read in full on 21 September 2026 from the Bing Nursery School's own copy at Stanford, which no index lists. Source of the three percentages and the chi-square in the limits field.",
       "doi": "10.2307/1128110",
-      "url": "https://doi.org/10.2307/1128110",
+      "url": "https://bingschool.stanford.edu/sites/bingschool/files/1974_greenelepper.pdf",
       "type": "replication"
     },
     {
-      "text": "Deci, E. L., Koestner, R., & Ryan, R. M. (1999). A meta-analytic review of experiments examining the effects of extrinsic rewards on intrinsic motivation. Psychological Bulletin, 125(6), 627-668.",
+      "text": "Deci, E. L., Koestner, R., & Ryan, R. M. (1999). A meta-analytic review of experiments examining the effects of extrinsic rewards on intrinsic motivation. Psychological Bulletin, 125(6), 627-668. The authors' own copy at selfdeterminationtheory.org is a 42-page scan with no text layer. It was fetched on 21 September 2026 and read through optical character recognition run page by page. Source of the 128 studies, the free-choice effect sizes quoted here, and the statement that only tasks of at least neutral interest entered the primary analyses.",
       "doi": "10.1037/0033-2909.125.6.627",
-      "url": "https://doi.org/10.1037/0033-2909.125.6.627",
+      "url": "https://selfdeterminationtheory.org/wp-content/uploads/2014/04/1999_DeciKoestnerRyan_Meta.pdf",
       "type": "review"
     },
     {
-      "text": "Eisenberger, R., & Cameron, J. (1996). Detrimental effects of reward: Reality or myth? American Psychologist, 51(11), 1153-1166.",
+      "text": "Eisenberger, R., & Cameron, J. (1996). Detrimental effects of reward: Reality or myth? American Psychologist, 51(11), 1153-1166. Read in full on 21 September 2026 from an open copy of the published article on a Southeastern Oklahoma State University staff page. Every effect size attributed to it here was read off its Figure 2, whose free-choice branch runs from all rewards through tangible and expected tangible to the three contingency cells.",
       "doi": "10.1037/0003-066X.51.11.1153",
-      "url": "https://doi.org/10.1037/0003-066X.51.11.1153",
+      "url": "https://homepages.se.edu/cvonbergen/files/2021/01/Detrimental_Effects_of_Reward_Reality_or_Myth.pdf",
       "type": "critique"
     },
     {
-      "text": "Cameron, J., & Pierce, W. D. (1994). Reinforcement, reward, and intrinsic motivation: A meta-analysis. Review of Educational Research, 64(3), 363-423. The effect sizes reproduced in Eisenberger and Cameron's 1996 figure come from this paper.",
+      "text": "Cameron, J., & Pierce, W. D. (1994). Reinforcement, reward, and intrinsic motivation: A meta-analysis. Review of Educational Research, 64(3), 363-423. The effect sizes reproduced in Eisenberger and Cameron's 1996 figure come from this paper. Not obtained. On 21 September 2026 SAGE answered both a plain and a browser-like request with a Cloudflare challenge rather than a paywall notice, and no open copy was found at Unpaywall, Semantic Scholar, OpenAIRE or ERIC, which holds a record only. The Internet Archive could not be reached from this session at all. The claim that Eisenberger and Cameron's figure carries this paper's effect sizes was checked instead against two documents that were read: Eisenberger and Cameron say so themselves, and Deci, Koestner and Ryan describe the same numbers as Cameron and Pierce's.",
       "doi": "10.3102/00346543064003363",
-      "url": "https://doi.org/10.3102/00346543064003363",
+      "url": "https://eric.ed.gov/?id=EJ495731",
       "type": "review"
     },
     {
-      "text": "Cameron, J., Banko, K. M., & Pierce, W. D. (2001). Pervasive negative effects of rewards on intrinsic motivation: The myth continues. The Behavior Analyst, 24(1), 1-44.",
+      "text": "Cameron, J., Banko, K. M., & Pierce, W. D. (2001). Pervasive negative effects of rewards on intrinsic motivation: The myth continues. The Behavior Analyst, 24(1), 1-44. Read in full on 21 September 2026 from an open copy of the published article at behavior.org. PubMed Central's copy is closed behind a proof-of-work challenge which, once solved, hands out a captcha, and Springer sells the article. Source of the 145 studies and of every effect size attributed to these authors.",
       "doi": "10.1007/BF03392017",
-      "url": "https://doi.org/10.1007/BF03392017",
+      "url": "https://www.behavior.org/resources/331.pdf",
       "type": "replication"
     },
     {
-      "text": "Murayama, K., Matsumoto, M., Izuma, K., & Matsumoto, K. (2010). Neural basis of the undermining effect of monetary reward on intrinsic motivation. Proceedings of the National Academy of Sciences, 107(49), 20911-20916.",
+      "text": "Murayama, K., Matsumoto, M., Izuma, K., & Matsumoto, K. (2010). Neural basis of the undermining effect of monetary reward on intrinsic motivation. Proceedings of the National Academy of Sciences, 107(49), 20911-20916. Read in full on 21 September 2026 from the copy at selfdeterminationtheory.org, after PNAS answered 403 and PubMed Central answered with a captcha. Source of the sample and of both Mann-Whitney statistics.",
       "doi": "10.1073/pnas.1013305107",
-      "url": "https://doi.org/10.1073/pnas.1013305107",
+      "url": "https://selfdeterminationtheory.org/SDT/documents/2010_MurayamaEtAl_PNAS_2010.pdf",
       "type": "replication"
     },
     {
-      "text": "Peters, K. P., Grauerholz-Fisher, E., Vollmer, T. R., & Van Arsdale, A. (2022). An evaluation of the overjustification hypothesis: A replication of Deci (1971). Behavior Analysis: Research and Practice, 22(3), 258-264.",
+      "text": "Peters, K. P., Grauerholz-Fisher, E., Vollmer, T. R., & Van Arsdale, A. (2022). An evaluation of the overjustification hypothesis: A replication of Deci (1971). Behavior Analysis: Research and Practice, 22(3), 258-264. Read in full on 21 September 2026 from the publisher's own open copy. A plain request drew an Imperva bot block and a browser-like one was served the file, so the block was an artefact of the fetcher. Source of the replication's result and of the Mawhinney reanalysis reported here.",
       "doi": "10.1037/bar0000245",
-      "url": "https://doi.org/10.1037/bar0000245",
+      "url": "https://psycnet.apa.org/fulltext/2022-53480-001.pdf",
       "type": "replication"
     },
     {
-      "text": "Cerasoli, C. P., Nicklin, J. M., & Ford, M. T. (2014). Intrinsic motivation and extrinsic incentives jointly predict performance: A 40-year meta-analysis. Psychological Bulletin, 140(4), 980-1008.",
+      "text": "Cerasoli, C. P., Nicklin, J. M., & Ford, M. T. (2014). Intrinsic motivation and extrinsic incentives jointly predict performance: A 40-year meta-analysis. Psychological Bulletin, 140(4), 980-1008. Read in full on 21 September 2026 from the copy at selfdeterminationtheory.org. That file is the online-first version of 3 February 2014 rather than the typeset issue, and the figures quoted here were taken from its results section.",
       "doi": "10.1037/a0035661",
-      "url": "https://doi.org/10.1037/a0035661",
+      "url": "https://selfdeterminationtheory.org/wp-content/uploads/2017/06/2014_Cerasoli_Intrinsic.pdf",
       "type": "review"
     }
   ],
-  "checkedOn": "2026-08-09"
+  "checkedOn": "2026-09-21"
 }
