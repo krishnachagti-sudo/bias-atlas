@@ -2,7 +2,10 @@
   "no": 117,
   "slug": "reminiscence-bump",
   "name": "Reminiscence bump",
-  "aliases": ["Reminiscence effect", "Reminiscence component"],
+  "aliases": [
+    "Reminiscence effect",
+    "Reminiscence component"
+  ],
   "category": "memory",
   "statement": "Adults past about 40 recall a disproportionate share of their autobiographical memories from adolescence and early adulthood.",
   "meaning": "Plot the memories an older adult produces against the age they were when the event happened. The curve falls away from the present, as forgetting predicts, then rises again over the person's youth before dropping into childhood amnesia. That rise is the bump. Rubin, Wetzler and Nebes defined it by subtraction: it is whatever has to be added to a retention curve and a childhood amnesia curve to reproduce the data. Two things about it are usually run together. That the rise exists is one of the steadiest results in autobiographical memory research. Why it exists is not settled, and four accounts are still in play. The location is not fixed either. It moves by several years depending on how the memories are asked for, which is itself evidence about the mechanism.",
@@ -12,7 +15,7 @@
     "where": "Autobiographical Memory (Cambridge University Press), chapter 12, pages 202-222",
     "note": "The chapter reanalysed four word-cued datasets covering nominal ages 12 to 70, including 20 Duke undergraduates of mean age 19.6 and 20 community-dwelling older adults of mean age 71.2 run in Nebes's laboratory in February and March 1978. Its conclusion names three components: retention, childhood amnesia and reminiscence. The chapter cites earlier sightings it is building on, notably a U-shaped function reported by McCormack in 1979 and bimodal distributions reported by Franklin and Holding in 1977."
   },
-  "evidence": "Rubin, Wetzler and Nebes state the finding in a single line: their figures 12.1 to 12.4 'clearly show nonmonotonically decreasing functions for subjects over 40 with the increase in memories occurring at the time when the subjects were approximately 10 to 30 years old'. They add two boundary conditions that later summaries drop. Reminiscence is fixed by the age of the person at encoding rather than by how old the memory is. And it appears only once the person is older than about 35 to 45, after which their age stops mattering. Rubin and Schulkind cued memories with words from 20- and 70-year-olds. Both groups showed a drop across childhood and a power-function retention curve over their most recent 10 years, and only the older group showed an increase across ages 10 to 30. The pattern held for individual participants and whether 124 or 921 memories were cued. Janssen, Chessa and Murre ran the cue-word task online with almost 2,000 people in the United States and the Netherlands, aged 11 to 70, ten cue words each. They put the peak at ages 15 to 18 for men and 13 to 14 for women. The elicitation method moves the peak. Koppel and Berntsen reviewed the literature and found the mean range of the bump running from 8.7 to 22.5 years of age for word-cued memories against 15.1 to 27.9 for important memories. Koppel and Rubin give the same figures rounded to beginning and ending ages of 9 and 23 against 15 and 28, a gap of about five years, from more than 50 studies. Odour cues push it earlier still. Willander and Larsson gave 93 older adults word, picture or odour cues, and odour-cued memories fell mostly in the first decade of life while word- and picture-cued memories peaked at 11 to 20. Munawar, Kuhn and Haque screened 523 studies, kept 68, and report roughly 10 to 30 years for important events, roughly 5 to 30 for word-cued memories and 6 to 39 for life-script studies. Valence splits the effect. Berntsen and Rubin asked 1,241 Danes aged 20 to 93 for their happiest, saddest, most traumatic, most important and most recent involuntary memory. Older respondents showed a clear bump in their 20s for the most important and happiest memories, while saddest and most traumatic memories decayed monotonically. Happy involuntary memories were over twice as common as unhappy ones, and only the happy ones bumped. Rubin and Berntsen repeated the design with 1,307 respondents aged 20 to 94 asked when they were most afraid, proud, jealous, in love and angry, and again found a bump for positive but not negative events.",
+  "evidence": "Rubin, Wetzler and Nebes state the finding in a single line: their figures 12.1 to 12.4 'clearly show nonmonotonically decreasing functions for subjects over 40 with the increase in memories occurring at the time when the subjects were approximately 10 to 30 years old'. They add two boundary conditions that later summaries drop. Reminiscence is fixed by the age of the person at encoding rather than by how old the memory is. And it appears only once the person is older than about 35 to 45, after which their age stops mattering. Rubin and Schulkind cued memories with words from 20- and 70-year-olds. Both groups showed a drop across childhood and a power-function retention curve over their most recent 10 years, and only the older group showed an increase across ages 10 to 30. The pattern held for individual participants and whether 124 or 921 memories were cued. Janssen, Chessa and Murre ran the cue-word task online with almost 2,000 people in the United States and the Netherlands, aged 11 to 70, ten cue words each. They put the peak at ages 15 to 18 for men and 13 to 14 for women. The elicitation method moves the peak. Koppel and Berntsen reviewed the literature and found the mean range of the bump running from 8.7 to 22.5 years of age for word-cued memories against 15.1 to 27.9 for important memories. The mean midpoints, 15.5 and 21.5, differ at t(51) = 4.84, p < .001, d = 1.37. They weighed all studies equally rather than all participants, because five cue-word studies have samples at least four times larger than any other in their table. Koppel and Rubin give the same figures rounded to beginning and ending ages of 9 and 23 against 15 and 28, a gap of about five years, from more than 50 studies. Odour cues push it earlier still. Willander and Larsson gave 93 older adults word, picture or odour cues, and odour-cued memories fell mostly in the first decade of life while word- and picture-cued memories peaked at 11 to 20. Munawar, Kuhn and Haque screened 523 studies, kept 68, and report roughly 10 to 30 years for important events, roughly 5 to 30 for word-cued memories and 6 to 39 for life-script studies. Valence splits the effect. Berntsen and Rubin asked 1,241 Danes aged 20 to 93 for their happiest, saddest, most traumatic, most important and most recent involuntary memory. Older respondents showed a clear bump in their 20s for the most important and happiest memories, while saddest and most traumatic memories decayed monotonically. Happy involuntary memories were over twice as common as unhappy ones, and only the happy ones bumped. Rubin and Berntsen repeated the design with 1,307 respondents aged 20 to 94 asked when they were most afraid, proud, jealous, in love and angry, and again found a bump for positive but not negative events.",
   "replication": {
     "state": "replicated",
     "headline": "The bump turns up across dozens of studies, several countries and every major elicitation method, but its location shifts by about five years between methods and it is largely absent for negative events.",
@@ -23,96 +26,95 @@
       "year": 2018
     }
   },
-  "limits": "The verdict covers the existence of the bump and the fact that its location moves with method. It does not settle the cause, and nothing here endorses one account. Four are live. The identity or narrative account holds that events in this period build the adult self. The cognitive or novelty account points to first-time experiences and to rehearsal. The cognitive abilities account, set out by Janssen, holds that memory works best in adolescence and early adulthood, and Janssen presents it as complementary because it does not try to explain the bump for highly significant events. The life-script account puts the work at retrieval, in shared cultural knowledge of when landmark events are supposed to happen. Munawar and colleagues judged the narrative or identity account fully supported by seven studies and partly by six, and the life-script account fully supported by two, partly by ten and unsupported by two. Public events are a weaker case than personal ones. Janssen, Murre and Meeter found people answered questions best about events from when they were 10 to 25, more so for cued recall than recognition. Koppel reviewed the public-event literature and concluded the bump is frequently found but that whether it counts as a legitimate effect depends on how strict a standard is applied, with a taxonomy of alternative age distributions needed for the exceptions. Tekcan, Boduroglu, Mutluturk and Aktan Erciyes asked a large Turkish national sample about personal and public events. A bump appeared for the most important public events only for the two most frequently mentioned ones, and emotion-cued public events showed recency instead. Cultural products are also uneven. Janssen, Chessa and Murre found recency effects and bumps for favourite books, films and records, with the largest bump for records and the largest recency effect for books. Rathbone, O'Connor and Moulin asked people over 40 to pick the five most personally significant items from top-grossing films and songs, and found a bump for significant songs but not for films. Krumhansl and Zupnick found young adults' responses to popular music peaked both for their own lifetime and for their parents' generation, a pattern they call cascading reminiscence bumps. Most sources here were read only as abstracts. Those are Rubin and Schulkind, Rubin, Rahhal and Poon, all four Janssen papers, Berntsen and Rubin 2002 and 2004, and Rubin and Berntsen. Also Willander and Larsson, Conway, Demiray, Dickson, Tekcan, Krumhansl and Zupnick, Rathbone, and Koppel and Berntsen 2016. The full text of Koppel and Berntsen 2015 could not be retrieved. The 8.7 to 22.5 and 15.1 to 27.9 figures are read off its own abstract. The count of more than 50 studies comes from Koppel and Rubin describing it. The 2020 published version of Janssen's cognitive abilities paper was not obtained, and the abstract quoted is from the author's preprint. The search ran across Crossref, PubMed, Europe PMC, PMC, Cambridge Core, DukeSpace and the open web.",
-  "misreadings": "The phrase 'ages 10 to 30' is quoted as though it were a constant. It is the range Rubin, Wetzler and Nebes read off word-cued data in 1986, and Koppel and Berntsen's review puts word-cued bumps at 8.7 to 22.5 years and important-memory bumps at 15.1 to 27.9. Asking for someone's most important memories and asking them what a cue word brings to mind are different questions with answers about five years apart. The bump is also read as a general boost to memories from youth. It is mostly a boost to positive ones. Berntsen and Rubin's saddest and most traumatic memories decline monotonically, and Rubin and Berntsen found no bump for negative events. Koppel and Rubin note the one apparent exception, 'extremely jealous', often turns on being in love. The bump is not a claim that young adults remember their teens best. Rubin, Wetzler and Nebes report reminiscence only for people older than about 35 to 45. Bump memories are often assumed to feel more vivid. Janssen, Rubin and St Jacques had participants rate word-cued memories on reliving and vividness, and memories from the overrepresented period were neither relived more nor recalled more vividly; recent events scored higher than remote ones. The bump is commonly explained by better encoding in youth, which is not what its own founding chapter argued. Rubin, Wetzler and Nebes favoured differential sampling over differential encoding, reasoning that 12-, 20- and 30-year-olds show monotonically decreasing functions and so give no sign of encoding events at ages 10 to 30 any differently. Later work pushes the same way. Koppel and Berntsen asked students to imagine the word-cued and most important memories of a hypothetical 70-year-old, and the fictional distributions closely matched real distributions from people aged 61 to 70. The life-script account is not the settled answer either. Dickson, Pillemer and Bruehl found bumps for surprising and unexpected events, which a script of expected landmarks does not predict."
-  ,
+  "limits": "The verdict covers the existence of the bump and the fact that its location moves with method. It does not settle the cause, and nothing here endorses one account. Four are live. The identity or narrative account holds that events in this period build the adult self. The cognitive or novelty account points to first-time experiences and to rehearsal. The cognitive abilities account, set out by Janssen, holds that memory works best in adolescence and early adulthood, and Janssen presents it as complementary because it does not try to explain the bump for highly significant events. The life-script account puts the work at retrieval, in shared cultural knowledge of when landmark events are supposed to happen. Munawar and colleagues judged the narrative or identity account fully supported by seven studies and partly by six, and the life-script account fully supported by two, partly by ten and unsupported by two. Public events are a weaker case than personal ones. Janssen, Murre and Meeter found people answered questions best about events from when they were 10 to 25, more so for cued recall than recognition. Koppel reviewed the public-event literature and concluded the bump is frequently found but that whether it counts as a legitimate effect depends on how strict a standard is applied, with a taxonomy of alternative age distributions needed for the exceptions. Tekcan, Boduroglu, Mutluturk and Aktan Erciyes interviewed 1,205 adults in Turkey face to face in November and December 2013, kept 1,106 after exclusions and drew the bump analyses from the 653 who were over 40. A bump appeared for the most important public events only for the two most frequently mentioned ones, and emotion-cued public events showed recency instead. Cultural products are also uneven. Janssen, Chessa and Murre found recency effects and bumps for favourite books, films and records, with the largest bump for records and the largest recency effect for books. Rathbone, O'Connor and Moulin asked people over 40 to pick the five most personally significant items from top-grossing films and songs, and found a bump for significant songs but not for films. Their first study drew on 172 respondents over 40, out of 1,538 who completed the questionnaire. Krumhansl and Zupnick found young adults' responses to popular music peaked both for their own lifetime and for their parents' generation, a pattern they call cascading reminiscence bumps. Fourteen of the twenty-four sources here were read in full. The other ten were read as abstracts: Janssen, Chessa and Murre 2005 and 2007, Janssen and Murre, Janssen, Murre and Meeter, Willander and Larsson, Conway, Demiray, Koppel 2013, Janssen 2020 and Krumhansl and Zupnick. Koppel and Berntsen 2015 and 2016 were read as the accepted manuscripts posted by Aarhus University, which the 2016 coversheet says match the published text apart from typography. The count of more than 50 studies in Koppel and Berntsen comes from Koppel and Rubin describing it. Two blocks are bot challenges rather than paywalls, and a later reader may get past them: link.springer.com returns a Fastly challenge for the Memory & Cognition papers, whose PDFs download from rd.springer.com instead, and the Vrije Universiteit copy of Janssen, Murre and Meeter sits behind a Cloudflare challenge. Willander and Larsson is a genuine paywall, offered at 39.95 US dollars. On 21 September 2026 the search for open copies ran across Crossref, PubMed, Europe PMC, PubMed Central, OpenAlex, Semantic Scholar, Cambridge Core, DukeSpace, Aarhus University Pure, the Vrije Universiteit and University of Amsterdam portals, the University of New Hampshire Scholars Repository and Oxford Brookes RADAR.",
+  "misreadings": "The phrase 'ages 10 to 30' is quoted as though it were a constant. It is the range Rubin, Wetzler and Nebes read off word-cued data in 1986, and Koppel and Berntsen's review puts word-cued bumps at 8.7 to 22.5 years and important-memory bumps at 15.1 to 27.9. Asking for someone's most important memories and asking them what a cue word brings to mind are different questions with answers about five years apart. The bump is also read as a general boost to memories from youth. It is mostly a boost to positive ones. Berntsen and Rubin's saddest and most traumatic memories decline monotonically, and Rubin and Berntsen found no bump for negative events. Koppel and Rubin name three exceptions among the negative cues. 'Extremely jealous' often turns on being in love. 'Extremely afraid' and 'most traumatic' bumped only in the oldest Danish respondents, whose bump period covered the occupation of Denmark. The bump is not a claim that young adults remember their teens best. Rubin, Wetzler and Nebes report reminiscence only for people older than about 35 to 45. Bump memories are often assumed to feel more vivid. Janssen, Rubin and St Jacques had participants rate word-cued memories on reliving and vividness, and memories from the overrepresented period were neither relived more nor recalled more vividly; recent events scored higher than remote ones. The bump is commonly explained by better encoding in youth, which is not what its own founding chapter argued. Rubin, Wetzler and Nebes favoured differential sampling over differential encoding, reasoning that 12-, 20- and 30-year-olds show monotonically decreasing functions and so give no sign of encoding events at ages 10 to 30 any differently. Later work pushes the same way. Koppel and Berntsen asked students to imagine the word-cued and most important memories of a hypothetical 70-year-old, and the fictional distributions closely matched real distributions from people aged 61 to 70. The life-script account is not the settled answer either. Dickson, Pillemer and Bruehl found a bump for surprising positive memories as large as the one for especially positive memories, 34.78% against 34.71% of events between ages 16 and 30, which a script of expected landmarks does not predict. Their surprising negative memories were flat.",
   "sources": [
     {
-      "text": "Rubin, D. C., Wetzler, S. E., & Nebes, R. D. (1986). Autobiographical memory across the lifespan. In D. C. Rubin (Ed.), Autobiographical Memory (pp. 202-222). Cambridge University Press. Read in full from the author's posted scan; the source for every 1986 figure and quotation here.",
+      "text": "Rubin, D. C., Wetzler, S. E., & Nebes, R. D. (1986). Autobiographical memory across the lifespan. In D. C. Rubin (Ed.), Autobiographical Memory (pp. 202-222). Cambridge University Press. Read in full from the searchable scan in DukeSpace; the source for every 1986 figure and quotation here.",
       "doi": "10.1017/CBO9780511558313.018",
       "url": "https://doi.org/10.1017/CBO9780511558313.018",
       "type": "primary"
     },
     {
-      "text": "Rubin, D. C., & Schulkind, M. D. (1997). The distribution of autobiographical memories across the lifespan. Memory & Cognition, 25(6), 859-866. Abstract read.",
+      "text": "Rubin, D. C., & Schulkind, M. D. (1997). The distribution of autobiographical memories across the lifespan. Memory & Cognition, 25(6), 859-866. Read in full from DukeSpace.",
       "doi": "10.3758/BF03211330",
       "url": "https://doi.org/10.3758/BF03211330",
       "type": "primary"
     },
     {
-      "text": "Rubin, D. C., Rahhal, T. A., & Poon, L. W. (1998). Things learned in early adulthood are remembered best. Memory & Cognition, 26(1), 3-19. Abstract read; it is the source for the claim that favourite films, music and books also come from the 10 to 30 period.",
+      "text": "Rubin, D. C., Rahhal, T. A., & Poon, L. W. (1998). Things learned in early adulthood are remembered best. Memory & Cognition, 26(1), 3-19. Read in full from DukeSpace; its abstract is the source for the claim that favourite films, music and books also come from the 10 to 30 period.",
       "doi": "10.3758/BF03211366",
       "url": "https://doi.org/10.3758/BF03211366",
       "type": "primary"
     },
     {
-      "text": "Koppel, J., & Berntsen, D. (2015). The peaks of life: The differential temporal locations of the reminiscence bump across disparate cueing methods. Journal of Applied Research in Memory and Cognition, 4(1), 66-80. Abstract read; the full text could not be retrieved.",
+      "text": "Koppel, J., & Berntsen, D. (2015). The peaks of life: The differential temporal locations of the reminiscence bump across disparate cueing methods. Journal of Applied Research in Memory and Cognition, 4(1), 66-80. Read in full as the accepted manuscript posted by Aarhus University; the source for 8.7 to 22.5, 15.1 to 27.9 and t(51) = 4.84.",
       "doi": "10.1016/j.jarmac.2014.11.004",
       "url": "https://doi.org/10.1016/j.jarmac.2014.11.004",
-      "type": "meta-analysis"
+      "type": "review"
     },
     {
-      "text": "Koppel, J., & Rubin, D. C. (2016). Recent advances in understanding the reminiscence bump: The importance of cues in guiding recall from autobiographical memory. Current Directions in Psychological Science, 25(2), 135-140. Read in full at PubMed Central; the source for the rounded 9, 23, 15 and 28 figures and for the count of more than 50 studies in Koppel and Berntsen.",
+      "text": "Koppel, J., & Rubin, D. C. (2016). Recent advances in understanding the reminiscence bump: The importance of cues in guiding recall from autobiographical memory. Current Directions in Psychological Science, 25(2), 135-140. Read in full at PubMed Central; the source for the rounded 9, 23, 15 and 28 figures, for the count of more than 50 studies in Koppel and Berntsen, and for the three exceptions among negative cues.",
       "doi": "10.1177/0963721416631955",
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4850910/",
       "type": "review"
     },
     {
-      "text": "Munawar, K., Kuhn, S. K., & Haque, S. (2018). Understanding the reminiscence bump: A systematic review. PLOS ONE, 13(12), e0208595. Abstract and body read.",
+      "text": "Munawar, K., Kuhn, S. K., & Haque, S. (2018). Understanding the reminiscence bump: A systematic review. PLOS ONE, 13(12), e0208595. Read in full. Its abstract and its theoretical-accounts section disagree on the narrative or identity count, eight studies against seven fully and six partly; the figures here are the section's.",
       "doi": "10.1371/journal.pone.0208595",
       "url": "https://doi.org/10.1371/journal.pone.0208595",
       "type": "review"
     },
     {
-      "text": "Janssen, S. M. J., Chessa, A. G., & Murre, J. M. J. (2005). The reminiscence bump in autobiographical memory: Effects of age, gender, education, and culture. Memory, 13(6), 658-668. Abstract read.",
+      "text": "Janssen, S. M. J., Chessa, A. G., & Murre, J. M. J. (2005). The reminiscence bump in autobiographical memory: Effects of age, gender, education, and culture. Memory, 13(6), 658-668. Abstract read at PubMed.",
       "doi": "10.1080/09658210444000322",
       "url": "https://doi.org/10.1080/09658210444000322",
       "type": "replication"
     },
     {
-      "text": "Janssen, S. M. J., & Murre, J. M. J. (2008). Reminiscence bump in autobiographical memory: Unexplained by novelty, emotionality, valence, or importance of personal events. Quarterly Journal of Experimental Psychology, 61(12), 1847-1860. Abstract read.",
+      "text": "Janssen, S. M. J., & Murre, J. M. J. (2008). Reminiscence bump in autobiographical memory: Unexplained by novelty, emotionality, valence, or importance of personal events. Quarterly Journal of Experimental Psychology, 61(12), 1847-1860. Abstract read at PubMed.",
       "doi": "10.1080/17470210701774242",
       "url": "https://doi.org/10.1080/17470210701774242",
       "type": "replication"
     },
     {
-      "text": "Janssen, S. M. J., Rubin, D. C., & St. Jacques, P. L. (2011). The temporal distribution of autobiographical memory: Changes in reliving and vividness over the life span do not explain the reminiscence bump. Memory & Cognition, 39(1), 1-11. Abstract read.",
+      "text": "Janssen, S. M. J., Rubin, D. C., & St. Jacques, P. L. (2011). The temporal distribution of autobiographical memory: Changes in reliving and vividness over the life span do not explain the reminiscence bump. Memory & Cognition, 39(1), 1-11. Read in full from the Europe PMC full-text XML.",
       "doi": "10.3758/s13421-010-0003-x",
       "url": "https://doi.org/10.3758/s13421-010-0003-x",
       "type": "replication"
     },
     {
-      "text": "Berntsen, D., & Rubin, D. C. (2002). Emotionally charged autobiographical memories across the life span: The recall of happy, sad, traumatic, and involuntary memories. Psychology and Aging, 17(4), 636-652. Abstract read.",
+      "text": "Berntsen, D., & Rubin, D. C. (2002). Emotionally charged autobiographical memories across the life span: The recall of happy, sad, traumatic, and involuntary memories. Psychology and Aging, 17(4), 636-652. Read in full from DukeSpace.",
       "doi": "10.1037/0882-7974.17.4.636",
       "url": "https://doi.org/10.1037/0882-7974.17.4.636",
       "type": "primary"
     },
     {
-      "text": "Rubin, D. C., & Berntsen, D. (2003). Life scripts help to maintain autobiographical memories of highly positive, but not highly negative, events. Memory & Cognition, 31(1), 1-14. Abstract read.",
+      "text": "Rubin, D. C., & Berntsen, D. (2003). Life scripts help to maintain autobiographical memories of highly positive, but not highly negative, events. Memory & Cognition, 31(1), 1-14. Read in full from DukeSpace.",
       "doi": "10.3758/BF03196077",
       "url": "https://doi.org/10.3758/BF03196077",
       "type": "primary"
     },
     {
-      "text": "Berntsen, D., & Rubin, D. C. (2004). Cultural life scripts structure recall from autobiographical memory. Memory & Cognition, 32(3), 427-442. Abstract read.",
+      "text": "Berntsen, D., & Rubin, D. C. (2004). Cultural life scripts structure recall from autobiographical memory. Memory & Cognition, 32(3), 427-442. Read in full from DukeSpace.",
       "doi": "10.3758/BF03195836",
       "url": "https://doi.org/10.3758/BF03195836",
       "type": "primary"
     },
     {
-      "text": "Koppel, J., & Berntsen, D. (2016). The reminiscence bump without memories: The distribution of imagined word-cued and important autobiographical memories in a hypothetical 70-year-old. Consciousness and Cognition, 44, 89-102. Abstract read.",
+      "text": "Koppel, J., & Berntsen, D. (2016). The reminiscence bump without memories: The distribution of imagined word-cued and important autobiographical memories in a hypothetical 70-year-old. Consciousness and Cognition, 44, 89-102. Read in full as the accepted manuscript posted by Aarhus University.",
       "doi": "10.1016/j.concog.2016.06.010",
       "url": "https://doi.org/10.1016/j.concog.2016.06.010",
       "type": "primary"
     },
     {
-      "text": "Dickson, R. A., Pillemer, D. B., & Bruehl, E. C. (2011). The reminiscence bump for salient personal memories: Is a cultural life script required? Memory & Cognition, 39(6), 977-991. Abstract read.",
+      "text": "Dickson, R. A., Pillemer, D. B., & Bruehl, E. C. (2011). The reminiscence bump for salient personal memories: Is a cultural life script required? Memory & Cognition, 39(6), 977-991. Read in full from rd.springer.com.",
       "doi": "10.3758/s13421-011-0082-3",
       "url": "https://doi.org/10.3758/s13421-011-0082-3",
       "type": "critique"
     },
     {
-      "text": "Janssen, S. M. J. (2020). Introduction to the cognitive abilities account for the reminiscence bump in the temporal distribution of autobiographical memory. Psychological Reports, 123(1), 12-42. Only the author's preprint abstract was read; the published text was not obtained.",
+      "text": "Janssen, S. M. J. (2020). Introduction to the cognitive abilities account for the reminiscence bump in the temporal distribution of autobiographical memory. Psychological Reports, 123(1), 12-42. Published online 30 April 2019. The published abstract was read from the Crossref record; the body was not obtained.",
       "doi": "10.1177/0033294119843221",
       "url": "https://doi.org/10.1177/0033294119843221",
       "type": "review"
@@ -124,53 +126,53 @@
       "type": "replication"
     },
     {
-      "text": "Demiray, B., Gulgoz, S., & Bluck, S. (2009). Examining the life story account of the reminiscence bump: Why we remember more from young adulthood. Memory, 17(7), 708-723. Abstract read.",
+      "text": "Demiray, B., Gulgoz, S., & Bluck, S. (2009). Examining the life story account of the reminiscence bump: Why we remember more from young adulthood. Memory, 17(7), 708-723. Abstract read at PubMed.",
       "doi": "10.1080/09658210902939322",
       "url": "https://doi.org/10.1080/09658210902939322",
       "type": "replication"
     },
     {
-      "text": "Willander, J., & Larsson, M. (2006). Smell your way back to childhood: Autobiographical odor memory. Psychonomic Bulletin & Review, 13(2), 240-244. Abstract read.",
+      "text": "Willander, J., & Larsson, M. (2006). Smell your way back to childhood: Autobiographical odor memory. Psychonomic Bulletin & Review, 13(2), 240-244. Abstract read at PubMed. The full text is paywalled at Springer, offered at 39.95 US dollars.",
       "doi": "10.3758/BF03193837",
       "url": "https://doi.org/10.3758/BF03193837",
       "type": "primary"
     },
     {
-      "text": "Janssen, S. M. J., Murre, J. M. J., & Meeter, M. (2008). Reminiscence bump in memory for public events. European Journal of Cognitive Psychology, 20(4), 738-764. Abstract read at the Vrije Universiteit research portal.",
+      "text": "Janssen, S. M. J., Murre, J. M. J., & Meeter, M. (2008). Reminiscence bump in memory for public events. European Journal of Cognitive Psychology, 20(4), 738-764. Abstract read at the Vrije Universiteit research portal. The portal's copy of the article is behind a Cloudflare bot challenge rather than a paywall.",
       "doi": "10.1080/09541440701554409",
       "url": "https://research.vu.nl/en/publications/reminiscence-bump-in-memory-for-public-events/",
       "type": "primary"
     },
     {
-      "text": "Koppel, J. (2013). The reminiscence bump for public events: A review of its prevalence and taxonomy of alternative age distributions. Applied Cognitive Psychology, 27(1), 12-32. Published online in August 2012. Abstract read from the Crossref record.",
+      "text": "Koppel, J. (2013). The reminiscence bump for public events: A review of its prevalence and taxonomy of alternative age distributions. Applied Cognitive Psychology, 27(1), 12-32. Published online 17 August 2012. Abstract read from the Crossref record.",
       "doi": "10.1002/acp.2865",
       "url": "https://doi.org/10.1002/acp.2865",
       "type": "review"
     },
     {
-      "text": "Tekcan, A. I., Boduroglu, A., Mutluturk, A., & Aktan Erciyes, A. (2017). Life-span retrieval of public events: Reminiscence bump for high-impact events, recency for others. Memory & Cognition, 45(7), 1095-1112. Abstract read.",
+      "text": "Tekcan, A. I., Boduroglu, A., Mutluturk, A., & Aktan Erciyes, A. (2017). Life-span retrieval of public events: Reminiscence bump for high-impact events, recency for others. Memory & Cognition, 45(7), 1095-1112. Read in full from rd.springer.com.",
       "doi": "10.3758/s13421-017-0724-1",
       "url": "https://doi.org/10.3758/s13421-017-0724-1",
       "type": "primary"
     },
     {
-      "text": "Janssen, S. M. J., Chessa, A. G., & Murre, J. M. J. (2007). Temporal distribution of favourite books, movies, and records: Differential encoding and re-sampling. Memory, 15(7), 755-767. Abstract read.",
+      "text": "Janssen, S. M. J., Chessa, A. G., & Murre, J. M. J. (2007). Temporal distribution of favourite books, movies, and records: Differential encoding and re-sampling. Memory, 15(7), 755-767. Abstract read at PubMed.",
       "doi": "10.1080/09658210701539646",
       "url": "https://doi.org/10.1080/09658210701539646",
       "type": "primary"
     },
     {
-      "text": "Krumhansl, C. L., & Zupnick, J. A. (2013). Cascading reminiscence bumps in popular music. Psychological Science, 24(10), 2057-2068. Abstract read.",
+      "text": "Krumhansl, C. L., & Zupnick, J. A. (2013). Cascading reminiscence bumps in popular music. Psychological Science, 24(10), 2057-2068. Abstract read at PubMed.",
       "doi": "10.1177/0956797613486486",
       "url": "https://doi.org/10.1177/0956797613486486",
       "type": "primary"
     },
     {
-      "text": "Rathbone, C. J., O'Connor, A. R., & Moulin, C. J. A. (2017). The tracks of my years: Personal significance contributes to the reminiscence bump. Memory & Cognition, 45(1), 137-150. Abstract read.",
+      "text": "Rathbone, C. J., O'Connor, A. R., & Moulin, C. J. A. (2017). The tracks of my years: Personal significance contributes to the reminiscence bump. Memory & Cognition, 45(1), 137-150. Read in full as the accepted manuscript in Oxford Brookes RADAR.",
       "doi": "10.3758/s13421-016-0647-2",
       "url": "https://doi.org/10.3758/s13421-016-0647-2",
       "type": "primary"
     }
   ],
-  "checkedOn": "2026-08-09"
+  "checkedOn": "2026-09-21"
 }
