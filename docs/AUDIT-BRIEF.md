@@ -150,6 +150,12 @@ Litigation dockets. An expert report filed in a court case has described
 three closed papers, and disagreed with a published summary about one of
 their figures.
 
+The Wayback Machine also replays dead repository copies that an index still
+lists. Kahneman and Tversky (1973) was recorded across this corpus, and in
+these instructions, as unobtainable after roughly twenty venues. Its dead
+CiteSeerX copy replays, and reading it killed two claims on the entry that
+found it.
+
 The Wayback Machine's copies of old publisher landing pages, when every index
 says no abstract exists. Two papers from the 1980s were read that way after
 Crossref, OpenAlex and Semantic Scholar all held nothing.
