@@ -2,99 +2,114 @@
   "no": 140,
   "slug": "hostile-attribution-bias",
   "name": "Hostile attribution bias",
-  "aliases": ["Hostile attributional bias", "Hostile intent attribution", "Hostile attribution of intent"],
+  "aliases": [
+    "Hostile attributional bias",
+    "Hostile intent attribution",
+    "Hostile attribution of intent"
+  ],
   "category": "social",
   "statement": "People who behave aggressively are more likely than others to read an ambiguous action by someone else as deliberately hostile.",
-  "meaning": "The claim belongs to social information processing theory, which treats a social response as the output of several steps: encoding the cues, working out what the other person meant, picking a goal, generating responses and choosing one. Hostile attribution bias sits at the interpretation step. Somebody spills a drink on you, or a ball hits you in the back, and the cause is genuinely unclear. The claim is that aggressive children and adults settle on 'they did that on purpose' more often than other people do. Two things follow, and they are usually run together. One is a correlation between a person's readiness to infer hostile intent and how aggressively they behave. The other is a causal story in which the inference drives the aggression, and so changing the inference should reduce it. The first is well measured. The second is a separate question with much thinner evidence.",
+  "meaning": "The claim belongs to social information processing theory, which De Castro and colleagues set out in six steps: encoding the cues, representing what the other person meant, picking a goal, generating responses, choosing one and acting on it. Hostile attribution bias sits at the second step, representation. Entry 221 files it under the attribution family. Somebody spills a drink on you, or a ball hits you in the back, and the cause is genuinely unclear. The claim is that aggressive children and adults settle on 'they did that on purpose' more often than other people do. Two things follow, and they are usually run together. One is a correlation between a person's readiness to infer hostile intent and how aggressively they behave. The other is a causal story in which the inference drives the aggression, and so changing the inference should reduce it. The first is well measured. The second is a separate question with much thinner evidence.",
   "origin": {
     "year": 1980,
     "who": "Kenneth A. Dodge",
     "where": "Child Development",
-    "note": "Dodge's paper, 'Social cognition and children's aggressive behavior', runs from page 162 to page 170 of volume 51. Later work dates the idea to it, and De Castro and colleagues, reviewing the field in 2002, group Dodge's own result with the studies reporting small effects. A second 1980 paper carries the title 'Attributional bias among aggressive boys to interpret unambiguous social stimuli as displays of hostility', by W. Nasby, B. Hayden and B. M. DePaulo in the Journal of Abnormal Psychology. Neither PubMed nor Crossref carries an abstract for either paper."
+    "note": "Dodge's paper, 'Social cognition and children's aggressive behavior', runs from page 162 to page 170 of volume 51. Later work dates the idea to it, and De Castro and colleagues, reviewing the field in 2002, group Dodge's own result with the studies reporting small effects. A second 1980 paper carries the title 'Attributional bias among aggressive boys to interpret unambiguous social stimuli as displays of hostility', by W. Nasby, B. Hayden and B. M. DePaulo in the Journal of Abnormal Psychology. Neither PubMed nor Crossref carried an abstract for either paper on 21 September 2026, though ERIC holds a two-sentence description of Dodge's. Neither full text was obtained."
   },
-  "evidence": "Almost all of it is vignette work. A child hears or reads a short story in which a peer causes a bad outcome for them and the peer's motive is left open, then says why the peer did it. The answers are scored hostile or benign, and that score is set against ratings of the child's aggression by teachers, peers or parents. De Castro, Veerman, Koops, Bosch and Monshouwer pooled 41 such studies with 6,017 participants in 2002. Verhoef, Alsem, Verhulp and De Castro repeated the exercise in 2019 on 111 studies, 219 effect sizes and 29,272 participants. Both are syntheses of concurrent measurement rather than of experiments. Dodge and 17 colleagues added the largest longitudinal test in 2015, following 1,299 children with a mean age of 8.3 years in the first year across 12 ecological groups in nine countries. Each child rated 10 ambiguous provocation vignettes in year three, and mothers and children rated the child's chronic aggression in years two, three and four. The experimental evidence sits in the intervention literature. Hudley and Graham randomly assigned 101 African-American elementary school boys to attributional retraining, attention training or no treatment in 1993, and the retrained aggressive boys inferred hostile intent less often, endorsed retaliation less often and were rated less aggressive by their teachers afterwards. Yeager, Miu, Powers and Dweck reported in 2013 that teaching adolescents that personality can change reduced hostile intent attributions in an experiment and reduced attributions and aggressive desires over eight months in an intervention.",
+  "evidence": "Almost all of it is vignette work. A child hears or reads a short story in which a peer causes a bad outcome for them and the peer's motive is left open, then says why the peer did it. The answers are scored hostile or benign, and that score is set against ratings of the child's aggression by teachers, peers or parents. De Castro, Veerman, Koops, Bosch and Monshouwer pooled 41 such studies with 6,017 participants in 2002. Verhoef, Alsem, Verhulp and De Castro repeated the exercise in 2019 on 111 studies, 219 effect sizes and 29,272 participants. Neither pools experiments. Both took premanipulation data only where a study manipulated anything, and Verhoef and colleagues also excluded studies that measured the two things at different times. Dodge and 17 colleagues added a longitudinal test in 2015, following 1,299 children with a mean age of 8.3 years in the first year across 12 ecological groups in nine countries. Each child rated 10 ambiguous provocation vignettes in year three, and mothers and children rated the child's chronic aggression in years two, three and four. The experimental evidence sits in the intervention literature. Hudley and Graham randomly assigned 101 African-American elementary school boys to attributional retraining, attention training or no treatment in 1993, and the retrained aggressive boys inferred hostile intent less often and endorsed hostile retaliation less often. Teachers rated the intervention group as a whole less aggressive afterwards. Yeager, Miu, Powers and Dweck reported in 2013 that teaching adolescents that personality can change reduced hostile intent attributions in an experiment and reduced attributions and aggressive desires over eight months in an intervention.",
   "replication": {
     "state": "replicated",
-    "headline": "Two meta-analyses seventeen years apart put the association at the same modest size, and neither can show which way it runs.",
-    "detail": "De Castro and colleagues found a weighted mean of r = .17, Z = 11.25, p < .001, with 37 of the 41 effects in the predicted direction. Individual studies ranged from r = -.29 to r = .65 and were heterogeneous, chi-square(40) = 188.37, p < .001. Their fail-safe number was 3,411, meaning that many null studies would have to be missing to overturn the pooled result. Verhoef and colleagues, working on a database more than four times the size, report d = 0.33, SE = .03, t(218) = 12.16, p < .001, 95% CI [0.28, 0.39]. They restate the 2002 result as d = 0.35 for comparison, which is the figure this entry uses in the structured field, since the 2002 paper itself reports r. Between-study differences accounted for 68.90% of the variance in the 2019 analysis, so the pooled figure describes a wide spread rather than a stable quantity. Neither synthesis includes designs that measured attribution and aggression at different times. Dodge and colleagues' nine-country study is the longitudinal check: in every ecological group children reported reactive aggression more often in the vignettes where they had attributed hostile intent, and hostile attribution scores predicted later mother-rated and child-rated chronic aggression with prior aggression controlled.",
+    "headline": "Two meta-analyses seventeen years apart put the association at the same modest size, and neither tested which way it runs.",
+    "detail": "De Castro and colleagues found a weighted mean of r = .17, Z = 11.25, p < .001, with 37 of the 41 effects in the predicted direction. Individual studies ranged from r = -.29 to r = .65 and were heterogeneous, chi-square(40) = 188.37, p < .001. Their fail-safe number was 3,411, meaning that many null studies would have to be missing to overturn the pooled result. Verhoef and colleagues, working on a database more than four times the size, report d = 0.33, SE = .03, t(218) = 12.16, p < .001, 95% CI [0.28, 0.39]. They restate the 2002 result as d = 0.35 for comparison, which is the figure this entry uses in the structured field, since the 2002 paper itself reports r. Between-study differences accounted for 68.90% of the variance in the 2019 analysis, so the pooled figure describes a wide spread rather than a stable quantity. Verhoef and colleagues excluded studies that measured attribution and aggression at different times, so their figure describes concurrent measurement. De Castro and colleagues say plainly that their analysis did not assess causality. Dodge and colleagues' nine-country study is the longitudinal check, and it splits. In each of the 12 ecological groups children predicted reactive aggression more often in the vignettes where they had attributed hostile intent. With year two aggression controlled, year three hostile attribution predicted child-rated chronic aggression, but the path to year four mother-rated aggression was not significant, p = 0.20.",
     "study": {
       "cite": "Verhoef, R. E. J., Alsem, S. C., Verhulp, E. E., & De Castro, B. O. (2019). Hostile intent attribution and aggressive behavior in children revisited: A meta-analysis. Child Development, 90(5), e525-e547.",
       "doi": "10.1111/cdev.13255",
       "year": 2019,
       "n": 29272
     },
-    "original": { "es": 0.35, "esType": "d" },
-    "replicated": { "es": 0.33, "esType": "d", "ci": [0.28, 0.39], "ciLevel": 95 }
+    "original": {
+      "es": 0.35,
+      "esType": "d"
+    },
+    "replicated": {
+      "es": 0.33,
+      "esType": "d",
+      "ci": [
+        0.28,
+        0.39
+      ],
+      "ciLevel": 95
+    }
   },
-  "limits": "The size of the effect depends on how it is measured, which is the field's oldest complaint about itself. In the 2002 analysis, studies that showed situations as pictures found r = .02, video found r = .09, stories read aloud or by the child found r = .24, and the two studies that staged a real interaction found r = .55. The 2019 analysis reaches the same conclusion from a larger base: real-time interaction with an actual peer gave d = 1.33, but that figure rests on three effect sizes from two studies, and around 98% of all effect sizes came from hypothetical stories. Reliability is patchy. Verhoef and colleagues report that fewer than half the included studies gave a Cronbach's alpha, and that the association was stronger where the measure was more reliable. Controlling for intelligence roughly halves the result, r = .10 against r = .18 in 2002, and De Castro and colleagues say openly that they cannot tell whether intelligence is a confound or part of the causal chain. Girls were badly under-represented in the older literature: one study of the 41 included only girls, and one of the seven clinical studies included any girls at all. In adults the evidence is thinner still. Klein Tuente, Bogaerts and Veling reviewed 25 studies of adults in 2019, found small to medium associations across students, patients and forensic samples, and concluded that because most were cross-sectional and the measures varied in quality, the implications for treatment are preliminary.",
-  "misreadings": "The finding is correlational, and the widely repeated version of it is causal. Verhoef and colleagues state that their design cannot establish the direction of the relation, and Smeijers, Bulten and Brazil say the same of the wider hostility bias literature. Aggression may build the expectation as easily as the expectation drives the aggression. Theory also predicts that the link should be specific to reactive aggression, the hot response to a perceived threat, rather than to the cold instrumental kind. It is not. Verhoef and colleagues found d = 0.36 for reactive aggression against d = 0.33 for aggression measured as a general construct, with no difference between them, p = .602. The 2002 analysis went the other way from the prediction: the four studies that excluded purely proactively aggressive children reported r = .08, smaller than the r = .19 of the studies that presumably included them, which the authors call the opposite of the expected effect. Martinelli and colleagues' 2018 paper on aggression subtype and gender, often cited here, is a systematic literature review of the field rather than a meta-analysis, and reports no pooled figure. The bias is also not a claim that aggressive people misread everything. It concerns ambiguous situations with a bad outcome for the person themselves, and De Castro and colleagues note Dodge and Frame's finding that the effect appears only when children feel they are personally involved. Finally, treating the attribution as a lever is optimistic. Ciesinski and colleagues pooled 29 randomised trials of cognitive bias modification with 2,334 participants and found Hedges g = -0.23, 95% CI [-0.35, -0.11], for aggression. Trials targeting interpretation bias specifically gave g = -0.27, 95% CI [-0.43, -0.12], across 16 studies, and the authors report that this advantage did not hold once baseline aggression was accounted for.",
+  "limits": "The size of the effect depends on how it is measured, which is the field's oldest complaint about itself. In the 2002 analysis, studies that showed situations as pictures found r = .02, video found r = .09, stories read aloud or by the child found r = .24, and the two studies that staged a real interaction found r = .55. The 2019 analysis reaches the same conclusion from a larger base: real-time interaction with an actual peer gave d = 1.33, but that figure rests on three effect sizes from two studies, and around 98% of all effect sizes came from hypothetical stories. Reliability is patchy. Verhoef and colleagues report an alpha for only 97 of their 219 effect sizes, and the association was stronger where the measure was more reliable. Controlling for intelligence roughly halves the result, r = .10 against r = .18 in 2002, and De Castro and colleagues say openly that they cannot tell whether intelligence is a confound or part of the causal chain. Girls were badly under-represented in the older literature: one study of the 41 included only girls, and one of the seven clinical studies included any girls at all. In adults the evidence is thinner still. Klein Tuente, Bogaerts and Veling reviewed 25 studies of adults in 2019, found small to medium associations across students, patients and forensic samples, and concluded that because most were cross-sectional and the measures varied in quality, the implications for treatment are preliminary.",
+  "misreadings": "The finding is correlational, and the widely repeated version of it is causal. De Castro and colleagues state that their analysis did not assess causality, and that the relation may run either way or come from a third factor. Smeijers, Bulten and Brazil say the same of the wider hostility bias literature, because most of its studies are cross-sectional. Verhoef and colleagues make no such statement anywhere in their paper. Aggression may build the expectation as easily as the expectation drives the aggression. Theory also predicts that the link should be specific to reactive aggression, the hot response to a perceived threat, rather than to the cold instrumental kind. It is not. Verhoef and colleagues found d = 0.36 for reactive aggression against d = 0.33 for aggression measured as a general construct, with no difference between them, p = .602. The 2002 analysis went the other way from the prediction: the four studies that excluded purely proactively aggressive children reported r = .08, smaller than the r = .19 of the studies that presumably included them, which the authors call the opposite of the expected effect. Martinelli and colleagues' 2018 paper on aggression subtype and gender is a systematic literature review of 27 articles rather than a meta-analysis, and its abstract and highlights carry no pooled figure. Its conclusion, that hostile attribution relates more consistently to reactive than to proactive aggression, is the one Verhoef and colleagues could not reproduce. The bias is also not a claim that aggressive people misread everything. It concerns ambiguous situations with a bad outcome for the person themselves, and De Castro and colleagues note Dodge and Frame's finding that the effect appears only when children feel they are personally involved. Finally, treating the attribution as a lever is optimistic. Ciesinski and colleagues reviewed 29 randomised trials of cognitive bias modification with 2,334 participants, of which 21 trials with 1,817 participants reported an aggression outcome. Those 21 gave Hedges g = -0.24, 95% CI [-0.38, -0.11]. The 15 that also reported a baseline gave g = -0.23, 95% CI [-0.35, -0.11], the figure the abstract leads with. Trials targeting interpretation bias gave g = -0.27, 95% CI [-0.43, -0.12], across 16 studies, and their advantage over attention training vanished in the baseline-adjusted analysis, which held only two of the four attention trials.",
   "sources": [
     {
-      "text": "Dodge, K. A. (1980). Social cognition and children's aggressive behavior. Child Development, 51(1), 162-170.",
+      "text": "Dodge, K. A. (1980). Social cognition and children's aggressive behavior. Child Development, 51(1), 162-170. Not obtained. The JSTOR record behind the DOI, Wiley and Oxford Academic all answered a Cloudflare challenge on 21 September 2026, and the Internet Archive holds only a volume index. PubMed and Crossref carry the record without an abstract; ERIC's EJ226023 carries a two-sentence description, and the pagination here comes from PubMed, ERIC and De Castro's reference list.",
       "doi": "10.2307/1129603",
       "url": "https://doi.org/10.2307/1129603",
       "type": "primary"
     },
     {
-      "text": "Nasby, W., Hayden, B., & DePaulo, B. M. (1980). Attributional bias among aggressive boys to interpret unambiguous social stimuli as displays of hostility. Journal of Abnormal Psychology, 89(3), 459-468.",
+      "text": "Nasby, W., Hayden, B., & DePaulo, B. M. (1980). Attributional bias among aggressive boys to interpret unambiguous social stimuli as displays of hostility. Journal of Abnormal Psychology, 89(3), 459-468. Not obtained. PsycNet answered an Imperva challenge on 21 September 2026 and no repository copy was found at OpenAlex, Semantic Scholar, Europe PMC or the Internet Archive. Title, authors, journal, volume and pages come from the Crossref and PubMed records, neither of which carries an abstract.",
       "doi": "10.1037/0021-843X.89.3.459",
       "url": "https://doi.org/10.1037/0021-843X.89.3.459",
       "type": "primary"
     },
     {
-      "text": "De Castro, B. O., Veerman, J. W., Koops, W., Bosch, J. D., & Monshouwer, H. J. (2002). Hostile attribution of intent and aggressive behavior: A meta-analysis. Child Development, 73(3), 916-934.",
+      "text": "De Castro, B. O., Veerman, J. W., Koops, W., Bosch, J. D., & Monshouwer, H. J. (2002). Hostile attribution of intent and aggressive behavior: A meta-analysis. Child Development, 73(3), 916-934. Read in full as the publisher's version of record, open at the VU Research Portal. Every 2002 figure on this page was checked against that file.",
       "doi": "10.1111/1467-8624.00447",
       "url": "https://research.vu.nl/ws/files/1828280/Orobio%20de%20Castro%20Child%20Development%2073(3)%202002%20u.pdf",
       "type": "replication"
     },
     {
-      "text": "Verhoef, R. E. J., Alsem, S. C., Verhulp, E. E., & De Castro, B. O. (2019). Hostile intent attribution and aggressive behavior in children revisited: A meta-analysis. Child Development, 90(5), e525-e547.",
+      "text": "Verhoef, R. E. J., Alsem, S. C., Verhulp, E. E., & De Castro, B. O. (2019). Hostile intent attribution and aggressive behavior in children revisited: A meta-analysis. Child Development, 90(5), e525-e547. Read in full from the PubMed Central copy. Every 2019 figure on this page was checked against it, including the inclusion criteria.",
       "doi": "10.1111/cdev.13255",
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6851691/",
       "type": "replication"
     },
     {
-      "text": "Dodge, K. A., Malone, P. S., Lansford, J. E., Sorbring, E., Skinner, A. T., Tapanya, S., et al. (2015). Hostile attributional bias and aggressive behavior in global context. Proceedings of the National Academy of Sciences, 112(30), 9310-9315.",
+      "text": "Dodge, K. A., Malone, P. S., Lansford, J. E., Sorbring, E., Skinner, A. T., Tapanya, S., et al. (2015). Hostile attributional bias and aggressive behavior in global context. Proceedings of the National Academy of Sciences, 112(30), 9310-9315. Read in full from the PubMed Central copy, which answered a reCAPTCHA twice before serving the article on 21 September 2026. The publisher's PDF answered 403. Every 2015 figure on this page comes from that copy.",
       "doi": "10.1073/pnas.1418572112",
       "url": "https://doi.org/10.1073/pnas.1418572112",
       "type": "replication"
     },
     {
-      "text": "Ciesinski, N. K., Himelein-Wachowiak, M., Krick, L. C., Sorgi-Wilson, K. M., Cheung, J. C. Y., & McCloskey, M. S. (2023). A systematic review with meta-analysis of cognitive bias modification interventions for anger and aggression. Behaviour Research and Therapy, 167, 104344.",
+      "text": "Ciesinski, N. K., Himelein-Wachowiak, M., Krick, L. C., Sorgi-Wilson, K. M., Cheung, J. C. Y., & McCloskey, M. S. (2023). A systematic review with meta-analysis of cognitive bias modification interventions for anger and aggression. Behaviour Research and Therapy, 167, 104344. Read in full from the PubMed Central copy, and the source of the trial counts as well as the effect sizes.",
       "doi": "10.1016/j.brat.2023.104344",
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10526745/",
       "type": "replication"
     },
     {
-      "text": "Hudley, C., & Graham, S. (1993). An attributional intervention to reduce peer-directed aggression among African-American boys. Child Development, 64(1), 124-138.",
+      "text": "Hudley, C., & Graham, S. (1993). An attributional intervention to reduce peer-directed aggression among African-American boys. Child Development, 64(1), 124-138. Not obtained. Wiley, Oxford Academic and JSTOR each answered a Cloudflare challenge on 21 September 2026, and the eScholarship copy an index points to is a different paper, Hudley, Graham and Taylor 2007. Described here from the PubMed abstract only.",
       "doi": "10.2307/1131441",
       "url": "https://pubmed.ncbi.nlm.nih.gov/8436025/",
       "type": "commentary"
     },
     {
-      "text": "Yeager, D. S., Miu, A. S., Powers, J., & Dweck, C. S. (2013). Implicit theories of personality and attributions of hostile intent: A meta-analysis, an experiment, and a longitudinal intervention. Child Development, 84(5), 1651-1667.",
+      "text": "Yeager, D. S., Miu, A. S., Powers, J., & Dweck, C. S. (2013). Implicit theories of personality and attributions of hostile intent: A meta-analysis, an experiment, and a longitudinal intervention. Child Development, 84(5), 1651-1667. Not obtained. OpenAlex and Semantic Scholar both record it as closed, and the Stanford repository copy is Yeager's 2011 dissertation rather than the article. Described here from the PubMed abstract only.",
       "doi": "10.1111/cdev.12062",
       "url": "https://pubmed.ncbi.nlm.nih.gov/23402434/",
       "type": "commentary"
     },
     {
-      "text": "Klein Tuente, S., Bogaerts, S., & Veling, W. (2019). Hostile attribution bias and aggression in adults: A systematic review. Aggression and Violent Behavior, 46, 66-81.",
+      "text": "Klein Tuente, S., Bogaerts, S., & Veling, W. (2019). Hostile attribution bias and aggression in adults: A systematic review. Aggression and Violent Behavior, 46, 66-81. Read in full as the publisher's version of record, taken from the Wayback Machine's capture of the University of Groningen file after the live repository answered a Cloudflare challenge on 21 September 2026. The published title uses a dash, not a colon.",
       "doi": "10.1016/j.avb.2019.01.009",
       "url": "https://doi.org/10.1016/j.avb.2019.01.009",
       "type": "commentary"
     },
     {
-      "text": "Smeijers, D., Bulten, E. B. H., & Brazil, I. A. (2019). The computations of hostile biases (CHB) model: Grounding hostility biases in a unified cognitive framework. Clinical Psychology Review, 73, 101775.",
+      "text": "Smeijers, D., Bulten, E. B. H., & Brazil, I. A. (2019). The computations of hostile biases (CHB) model: Grounding hostility biases in a unified cognitive framework. Clinical Psychology Review, 73, 101775. Read in full, but as the accepted manuscript posted by the first author rather than the version of record. The causality sentence quoted here was checked in that manuscript.",
       "doi": "10.1016/j.cpr.2019.101775",
       "url": "https://doi.org/10.1016/j.cpr.2019.101775",
       "type": "commentary"
     },
     {
-      "text": "Martinelli, A., Ackermann, K., Bernhard, A., Freitag, C. M., & Schwenck, C. (2018). Hostile attribution bias and aggression in children and adolescents: A systematic literature review on the influence of aggression subtype and gender. Aggression and Violent Behavior, 39, 25-32.",
+      "text": "Martinelli, A., Ackermann, K., Bernhard, A., Freitag, C. M., & Schwenck, C. (2018). Hostile attribution bias and aggression in children and adolescents: A systematic literature review on the influence of aggression subtype and gender. Aggression and Violent Behavior, 39, 25-32. Not obtained. OpenAlex and Semantic Scholar both record it as closed and ScienceDirect answered 403 on 21 September 2026. Described here from the publisher's abstract and highlights, read through a Wayback Machine capture.",
       "doi": "10.1016/j.avb.2018.01.005",
       "url": "https://doi.org/10.1016/j.avb.2018.01.005",
       "type": "commentary"
     }
   ],
-  "checkedOn": "2026-08-09"
+  "checkedOn": "2026-09-21"
 }
