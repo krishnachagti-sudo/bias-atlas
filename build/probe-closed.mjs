@@ -13,6 +13,10 @@
 // lead with a URL attached, which is what an agent needs and what it otherwise
 // spends most of its run discovering.
 //
+// One limit no widening fixes: a note sits on a source, but the claim it makes
+// may be about a different paper cited through that one. The watching-eye audit
+// found exactly that, and only reading the note tells you which paper is meant.
+//
 // Usage: node build/probe-closed.mjs [--before 2026-08-11] [--json out.json]
 
 import { readdirSync, readFileSync, writeFileSync } from 'node:fs';
@@ -26,8 +30,13 @@ const arg = (k, d) => {
 const BEFORE = arg('--before', '2026-08-11');
 const OUT = arg('--json', null);
 
+// Widened after the first run. Three audits reported the same gap: the note
+// that hides a false claim often uses no unobtainability word at all. One said
+// merely "abstract read at OpenAlex" for an article that is gold open access.
+// Any note that rests a claim on an abstract, or on someone else's account of
+// the paper, is making the same bet and is worth the same test.
 const UNOBTAINED =
-  /\bpaywall|could not be (obtained|retrieved|read|opened|found)|was not (obtained|opened|read)|not obtained|abstract only|only its abstract|read (here )?(only )?(as|from|in) (its|the) abstract|behind a (paywall|firewall)|no open copy|not opened|unobtainable|lending-restricted/i;
+  /\bpaywall|could not be (obtained|retrieved|read|opened|found)|was not (obtained|opened|read)|not obtained|abstract only|only its abstract|read (here )?(only )?(as|from|in) (its|the) abstract|behind a (paywall|firewall)|no open copy|not opened|unobtainable|lending-restricted|abstract (was )?read|read (at|from) (crossref|pubmed|europe pmc|openalex|semantic scholar|the publisher)|(figures?|numbers?|statistics?) (here )?(are|is) .{0,40}(restate|account|description|as .{0,20} reports)|at one remove|quoted (here )?(from|through)|described here from/i;
 
 // Claims the August audits found to be right about the block but wrong about
 // its nature. Worth separating: a bot challenge is not a paywall, and the next
@@ -50,37 +59,65 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const results = [];
 let done = 0;
 
-async function probe(t) {
+const UA = { 'User-Agent': 'bias-atlas-audit (+https://github.com/krishnachagti-sudo/biases)' };
+
+async function get(url) {
   for (let attempt = 0; attempt < 3; attempt++) {
     try {
-      const res = await fetch(`https://api.openalex.org/works/doi:${encodeURIComponent(t.doi)}`, {
-        headers: { 'User-Agent': 'bias-atlas-audit (+https://github.com/krishnachagti-sudo/biases)' },
-        signal: AbortSignal.timeout(25000),
-      });
-      if (res.status === 404) return { ...t, verdict: 'no-record' };
-      if (!res.ok) {
-        await sleep(600 * (attempt + 1));
-        continue;
-      }
-      const j = await res.json();
-      const oa = j.open_access || {};
-      const loc = j.best_oa_location || null;
-      return {
-        ...t,
-        verdict: oa.is_oa ? 'OPEN' : 'closed',
-        oaStatus: oa.oa_status || null,
-        title: j.title || null,
-        url: loc ? loc.pdf_url || loc.landing_page_url : null,
-        host: loc?.source?.display_name || null,
-        version: loc?.version || null,
-      };
+      const res = await fetch(url, { headers: UA, signal: AbortSignal.timeout(25000) });
+      if (res.status === 404) return { missing: true };
+      if (res.ok) return { json: await res.json() };
     } catch {
-      await sleep(600 * (attempt + 1));
+      /* fall through to the retry */
+    }
+    await sleep(700 * (attempt + 1));
+  }
+  return { unknown: true };
+}
+
+// Two indexes, because one is not enough. The first run reported a 2019 paper
+// closed; two other services mark it green, and the audit that caught it noted
+// that an index saying closed is not evidence of closure, which is the same
+// failure as the notes this tool exists to test.
+async function probe(t) {
+  const [oaRes, s2Res] = await Promise.all([
+    get(`https://api.openalex.org/works/doi:${encodeURIComponent(t.doi)}`),
+    get(
+      `https://api.semanticscholar.org/graph/v1/paper/DOI:${encodeURIComponent(t.doi)}?fields=title,isOpenAccess,openAccessPdf`,
+    ),
+  ]);
+
+  const found = [];
+  if (oaRes.json) {
+    const oa = oaRes.json.open_access || {};
+    const loc = oaRes.json.best_oa_location || null;
+    if (oa.is_oa && loc) {
+      found.push({
+        index: 'openalex',
+        status: oa.oa_status || null,
+        version: loc.version || null,
+        url: loc.pdf_url || loc.landing_page_url || null,
+        host: loc.source?.display_name || null,
+      });
     }
   }
+  if (s2Res.json?.isOpenAccess && s2Res.json.openAccessPdf?.url) {
+    found.push({
+      index: 'semanticscholar',
+      status: s2Res.json.openAccessPdf.status || null,
+      version: null,
+      url: s2Res.json.openAccessPdf.url,
+      host: null,
+    });
+  }
+
+  const title = oaRes.json?.title || s2Res.json?.title || null;
+  if (found.length) return { ...t, verdict: 'OPEN', title, found };
+  if (oaRes.missing && s2Res.missing) return { ...t, verdict: 'no-record', title };
   // Exhausted retries is not evidence of anything. It is recorded as unknown,
   // the same way check-sources.mjs treats a transient DOI failure.
-  return { ...t, verdict: 'unknown' };
+  if (oaRes.unknown && s2Res.unknown) return { ...t, verdict: 'unknown', title };
+  return { ...t, verdict: 'closed', title };
 }
 
 // Modest concurrency; the index asks for politeness and there is no hurry.
@@ -113,8 +150,10 @@ console.log(`\n${byEntry.size} entries carry a claim that an index says is open:
 for (const [file, rs] of [...byEntry.entries()].sort((a, b) => b[1].length - a[1].length)) {
   console.log(`  ${String(rs[0].no).padStart(3)}  ${rs[0].name.slice(0, 32).padEnd(32)} ${rs.length}`);
   for (const r of rs) {
-    console.log(`        ${r.oaStatus}/${r.version || '?'}  ${r.doi}`);
-    console.log(`        ${(r.url || '').slice(0, 110)}`);
+    for (const f of r.found) {
+      console.log(`        ${f.index} ${f.status || '?'}/${f.version || '?'}  ${r.doi}`);
+      console.log(`        ${(f.url || '').slice(0, 110)}`);
+    }
   }
 }
 
