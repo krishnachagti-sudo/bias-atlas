@@ -100,6 +100,10 @@ These have repeatedly served the same document when the indexed URL did not.
 - Authors' own faculty and laboratory pages. Repeatedly one download away
   from a note calling the paper closed at every location.
 - An Anubis proof-of-work challenge can sometimes be solved. Say so if you do.
+- A later reprint's free front matter, in a book chapter or collected volume
+  no index lists as a full-text location. One publisher's free opening summary
+  carried the founding paper's own first two paragraphs, and settled a claim
+  the page had guessed at. Go to the citation, not only to the claim.
 
 - Repository REST and bitstream endpoints, which often serve a file whose
   rendered page or handle is guarded. One Anubis challenge was bypassed
