@@ -2,21 +2,24 @@
   "no": 292,
   "slug": "next-in-line-effect",
   "name": "Next-in-line effect",
-  "aliases": ["Performance anticipation effect", "Pre-performance memory deficit"],
+  "aliases": [
+    "Performance anticipation effect",
+    "Pre-performance memory deficit"
+  ],
   "category": "memory",
   "statement": "People remember little of what was said just before their own turn to speak, because the coming performance takes the attention that encoding would have used.",
-  "meaning": "The claim is about encoding, not about nerves in general. A person waiting to read, present or introduce themselves is still hearing what the previous speaker says, and later cannot report it. The measured quantity is recall or recognition for material as a function of its position relative to one's own turn, with the dip falling on the items immediately before that turn. Two accounts have been tested against each other. One puts the failure in a peripheral operation, such as breaking eye contact with the speaker. The other puts it in a central one, the elaborative rehearsal that turns a heard word into a retrievable memory. The evidence favours the central account, which is why the effect survives in settings where there is nobody to look at.",
+  "meaning": "The claim is about encoding, not about nerves in general. A person waiting to read, present or introduce themselves is still hearing what the previous speaker says, and later cannot report it. The measured quantity is recall or recognition for material as a function of its position relative to one's own turn, with the dip falling on the items around that turn. Two accounts have been tested against each other. One puts the failure in a peripheral operation, such as breaking eye contact with the speaker. The other puts it in a central one, the elaborative rehearsal that turns a heard word into a retrievable memory. Bond, Pitre and van Leeuwen report that verbal elaboration removed the effect and eye contact did not, which favours the central account.",
   "origin": {
     "year": 1973,
     "who": "Malcolm Brenner",
     "where": "Journal of Verbal Learning and Verbal Behavior",
-    "note": "Brenner's four-page paper \"The next-in-line effect\" named the phenomenon and supplied the turn-taking word-reading paradigm every later study modifies."
+    "note": "Brenner's four-page paper \"The next-in-line effect\" named the phenomenon and supplied the turn-taking word-reading paradigm every later study modifies. His abstract calls the resulting recall curve a scallop effect."
   },
-  "evidence": "Brenner's own paper could not be obtained for this entry, and what follows is his design as Forrin, Ralph, Dhaliwal, Smilek and MacLeod describe it in 2019. Participants sat in pairs around a table. One member of each pair was a reader and the other a listener, the readers took turns reading words aloud to the group, and after the words had gone round the table twice everyone recalled as many as they could. Two results came out. Readers remembered their own words better than words they had heard, and readers had worse recall for words read shortly before their own turn, starting three words earlier. Listeners, who never faced a turn, showed no such dip. Brenner read this as anticipation competing for the attention that encoding needed. A conference paper by Ovid Tzeng in 1974 ran the same idea with sentences: 45 undergraduates in three groups of 15 sat in a circle and took turns reading a sentence card aloud, and recall peaked for the sentence a student read and fell for sentences two positions before to one position after it. Tzeng reports a figure rather than a test statistic. The sharpest numbers in the classic paradigm come from Adnan Omar and Charles Bond's 1989 conference paper, which seated 96 Texas Christian University students at 24 numbered desks over four sessions and had half of each group read words aloud in a predictable order. Splitting participants at the median of the Social Anxiety Scale, high-anxiety readers recalled 10.6% of words at the position before their turn against 25.7% at positions two to six back, F(1, 46) = 11.90, p < .001. Low-anxiety readers recalled 23.3% against 26.5%, F(1, 48) = 0.46, not significant.",
+  "evidence": "Brenner's own abstract, read from the University of Michigan Deep Blue record because the article itself could not be obtained, describes a free recall task with subjects seated in a square. Alternate subjects turned over a word card and read the word aloud to the group, the rest listened, and everyone was tested for recall. Subjects who performed tended not to recall words read nine seconds before and after their performance, which Brenner calls a scallop effect, and that loss grew with the difficulty of the performance. He also reports high recall for the material a subject performed, which he calls a peak effect. Forrin, Ralph, Dhaliwal, Smilek and MacLeod describe the same study in 2019 as 22 participants sitting in pairs around a table, one member of each pair reading and the other listening, with the words going round twice. Their retelling puts the dip at three words before a reader's turn, where Brenner's abstract puts it on both sides of the turn. A conference paper by Ovid Tzeng at Ohio State in 1974 ran the same idea with sentences. Forty-five undergraduates in three groups of 15 sat in a circle and took turns reading a sentence card aloud, over three trials of 21 sentences each. Recall peaked for the sentence a student read and fell from two positions before it to one position after. Tzeng reports a figure rather than a test statistic. The sharpest numbers in the classic paradigm come from Adnan Omar and Charles Bond's 1989 conference paper, which seated 96 Texas Christian University students at 24 numbered desks over four sessions and had half of each group read words aloud in a predictable order. Splitting participants at the median of the Social Anxiety Scale, high-anxiety readers recalled 10.6% of words at the position before their turn against 25.7% at positions two to six back, F(1, 46) = 11.90, p < .001. Low-anxiety readers recalled 23.3% against 26.5%, F(1, 48) = 0.46, not significant. That eight-page paper was read in full and does not say how many readers fell on each side of the median.",
   "replication": {
     "state": "replicated",
-    "headline": "Independent laboratories have found the pre-performance dip repeatedly since 1973, including in a 2019 recognition study of 100 people and a 2021 classroom study of 240.",
-    "detail": "Forrin and colleagues rebuilt the effect inside a single-participant memory task in 2019. Their Experiment 3 gave 100 Waterloo undergraduates a marker showing whether each upcoming word was to be read aloud or silently. Recognition of silent words was worse when an aloud word came next, F(1, 99) = 12.90, MSE = 0.02, p = .001, partial eta squared = .12, with d = 0.25 where the previous word was aloud and d = 0.26 where it was silent. Experiment 1, which used the same task without the markers, produced no positional effect, which is what the authors predicted: with no way to see the turn coming, anticipation sits flat across the whole list. Experiment 4 repeated Experiment 3 with the experimenter out of the room and 100 fresh participants, and the gap fell to one percentage point, t(99) = 0.87, p = .38, d = .08, with a Bayesian approximation giving positive support for the null at pBIC = .87. Caron, Hicks, Browne, Smilek and Forrin then took it to a simulated classroom in 2021. Their 240 undergraduates were told privately that they would present second, fifth, or not at all, and were quizzed on a confederate's opening presentation. Both groups expecting to present scored below those who were not, and second differed little from fifth. Silaban and colleagues repeated that design over Zoom in 2024 with 69 Indonesian students, where the control group's mean recognition score was 4.32 against 3.23 for those awaiting their turn, Mann-Whitney p = .011.",
+    "headline": "The pre-performance dip has been found outside Brenner's laboratory since 1974, though four of the studies come from Charles Bond's group and the 2019 and 2021 ones share two authors.",
+    "detail": "Forrin and colleagues rebuilt the effect inside a single-participant memory task in 2019. Their Experiment 3 gave 100 Waterloo undergraduates a marker showing whether each upcoming word was to be read aloud or silently. Recognition of silent words was worse when an aloud word came next, F(1, 99) = 12.90, MSE = 0.02, p = .001, partial eta squared = .12, with d = 0.25 where the previous word was aloud and d = 0.26 where it was silent. Experiment 1, whose mixed-list group of 50 used the same task without the markers, produced no such positional effect, t(49) = 0.37, p = .71, d = 0.04 for silent hits, which is what the authors predicted: with no way to see the turn coming, anticipation sits flat across the list. Experiment 4 repeated Experiment 3 with the experimenter out of the room and 100 fresh participants, and the gap fell to one percentage point, t(99) = 0.87, p = .38, d = .08, with a Bayesian approximation giving positive support for the null at pBIC = .87. Caron, Hicks, Browne, Smilek and Forrin then took it to a simulated classroom in 2021, and Smilek and Forrin are on both papers. Their 240 undergraduates were told privately that they would present second, fifth, or not at all, and were quizzed on a confederate's opening presentation. Both groups expecting to present scored reliably below those who were not, and the gap between second and fifth was not reliable. Silaban and colleagues repeated that design over Zoom in 2024 with 69 Indonesian students, 35 of them in the group awaiting a turn and 34 in the control, where the control group's mean recognition score was 4.32 against 3.23, Mann-Whitney p = .011. Earlier free-recall work came from other groups. Brown and Oxman reported in 1978 that listeners beat speakers on an immediate test and that recall fell as uncertainty about when to participate rose, and that all of those differences disappeared on a delayed test.",
     "study": {
       "cite": "Forrin, N. D., Ralph, B. C. W., Dhaliwal, N. K., Smilek, D., & MacLeod, C. M. (2019). Wait for it…performance anticipation reduces recognition memory. Journal of Memory and Language, 109, 104050.",
       "doi": "10.1016/j.jml.2019.104050",
@@ -24,79 +27,85 @@
       "n": 100
     }
   },
-  "limits": "The effect has conditions attached, and every one of them was found by the people testing it. Innes reported in 1982 that readers lost recall against listeners when the words were loosely related, and that the difference was small when the words were strongly associated. Omar and Bond's deficit in 1989 was carried by the half of their sample scoring above the median in social anxiety, and their low-anxiety half showed nothing. Forrin's Experiment 4 lost the effect once the experimenter left the room, and the authors offer two readings of that null: the social presence was doing the work, or participants simply read aloud less often when unobserved. Bond, Pitre and van Leeuwen removed the effect in 1991 by instructing people to elaborate on what they heard, and Bond removed it in 1985 by telling people beforehand to make a special effort, which reversed the deficit into superior pre-performance recall. Sample sizes in the older work are small by current standards, and the two studies with the most legible numbers here, Tzeng and Omar and Bond, are unpublished conference papers held by ERIC rather than peer-reviewed articles. The searches behind this entry covered Crossref, OpenAlex, Semantic Scholar's list of 63 papers citing Brenner, the Internet Archive's full-text index and web searches for preregistered or multi-laboratory attempts. No meta-analysis and no registered replication turned up. A search of PsycINFO, ProQuest dissertations or the Open Science Framework could find work these did not reach.",
-  "misreadings": "The effect is often told as stage fright wiping out memory, which is close but points at the wrong step. Bond showed in 1985 that semantic cues at test do not shrink the deficit, and that instructions given before the words do, so the material was never encoded rather than being encoded and lost. Bond, Pitre and van Leeuwen then split the encoding account in two and found that verbal elaboration removed the effect while eye contact did not, placing the failure at elaborative rehearsal. Anxiety belongs in the story as a moderator: Omar and Bond found the deficit among socially anxious readers and not among the rest. A second confusion is with the spotlight effect, which this atlas holds separately at entry 22. That is a claim about overestimating how much others notice you. This is a claim about your own memory, and the two share only the fact that an audience is present. The reach of the dip is also reported inconsistently in later accounts, from three words before a turn to a window running from two items before to one item after, and Brenner's own figures were not available to settle it.",
+  "limits": "The effect has conditions attached, and every one of them was found by the people testing it. Brown and Oxman's 1978 differences were gone by the delayed recall test. Innes reported in 1982 that readers lost recall against listeners when the words were loosely related, and that the difference was small when the words were strongly associated. Omar and Bond's deficit in 1989 was carried by the half of their sample scoring above the median in social anxiety, and their low-anxiety half showed nothing. Forrin's Experiment 4 lost the effect once the experimenter left the room, and the authors offer two readings of that null: the social presence was doing the work, or participants simply read aloud less often when unobserved. Bond, Pitre and van Leeuwen removed the effect in 1991 by instructing people to elaborate on what they heard, and Bond removed it in 1985 by telling people beforehand to make a special effort, which reversed the deficit into superior pre-performance recall. The literature is small and concentrated. Four of the classic studies are Charles Bond's, the 2019 and 2021 studies share Smilek and Forrin, and sample sizes in the older work are small by current standards. The two studies with the most legible numbers here, Tzeng and Omar and Bond, are conference papers held by ERIC rather than peer-reviewed articles, and the journal version of the second, Bond and Omar in 1990, was not obtained. The searches behind this entry covered Crossref, OpenAlex, Unpaywall, OpenAIRE, Semantic Scholar's list of 64 papers citing Brenner and its 13 citing Forrin, the Internet Archive's full-text index and web searches for preregistered or multi-laboratory attempts, all on 21 September 2026. No meta-analysis and no registered replication turned up. A search of PsycINFO, ProQuest dissertations or the Open Science Framework could find work these did not reach.",
+  "misreadings": "The effect is often told as stage fright wiping out memory, which is close but points at the wrong step. Bond showed in 1985 that semantic cues at test do not shrink the deficit, and that instructions given before the words do, so the material was never encoded rather than being encoded and lost. That distinction is the one this atlas holds at entry 253, cue-dependent forgetting, and the next-in-line effect falls on the other side of it. Bond, Pitre and van Leeuwen then split the encoding account in two and found that verbal elaboration removed the effect while eye contact did not, placing the failure at elaborative rehearsal. Anxiety belongs in the story as a moderator: Omar and Bond found the deficit among socially anxious readers and not among the rest. A second confusion is with the spotlight effect, which this atlas holds separately at entry 22. That is a claim about overestimating how much others notice you. This is a claim about your own memory, and the two share only the fact that an audience is present. The reach of the dip is reported inconsistently. Brenner's abstract gives nine seconds before and after the turn, Innes describes his result as a decrement before and after, Tzeng found two positions before to one after, and Forrin and colleagues render Brenner as three words before the turn with nothing said about the words that follow it.",
   "sources": [
     {
-      "text": "Brenner, M. (1973). The next-in-line effect. Journal of Verbal Learning and Verbal Behavior, 12(3), 320-323. The originating paper. Not obtained for this entry; its design is quoted here from Forrin et al. (2019).",
+      "text": "Brenner, M. (1973). The next-in-line effect. Journal of Verbal Learning and Verbal Behavior, 12(3), 320-323. The originating paper. The article was not obtained on 21 September 2026. OpenAlex and Unpaywall list a bronze open-access copy at ScienceDirect and a submitted version in the University of Michigan Deep Blue repository; both refuse with a bot challenge rather than a paywall, ScienceDirect with a 403 and Deep Blue with a Cloudflare interstitial. The Internet Archive holds no copy. Brenner's own abstract, quoted here, was read from the Deep Blue record as harvested by OpenAIRE, fetched twice to the same wording.",
       "doi": "10.1016/S0022-5371(73)80076-3",
       "url": "https://doi.org/10.1016/S0022-5371(73)80076-3",
       "type": "primary"
     },
     {
-      "text": "Tzeng, O. J. L. (1974). The next-in-line effect on sentence memory. Paper presented at the Annual Meeting of the American Educational Research Association, Chicago, 15-19 April 1974. ERIC ED089222.",
+      "text": "Tzeng, O. J. L. (1974). The next-in-line effect on sentence memory. Paper presented at the Annual Meeting of the American Educational Research Association, Chicago, 15-19 April 1974. ERIC ED089222. Full text read from the Internet Archive scan.",
       "url": "https://archive.org/download/ERIC_ED089222/ERIC_ED089222_djvu.txt",
       "type": "replication"
     },
     {
-      "text": "Walker, B. S., & Orr, F. E. (1976). Anxiety and the next-in-line effect. Journal of Educational Psychology, 68(6), 775-778. Cited by Forrin et al. (2019) as one of the free-recall replications; not read for this entry.",
+      "text": "Brown, A. S., & Oxman, M. (1978). Learning through participation: Effects of involvement and anticipation of involvement. The American Journal of Psychology, 91(3), 461-472. Cited by Forrin et al. (2019) as a free-recall replication. Abstract read at OpenAIRE, fetched twice; full text not obtained, checked 21 September 2026.",
+      "doi": "10.2307/1421692",
+      "url": "https://doi.org/10.2307/1421692",
+      "type": "replication"
+    },
+    {
+      "text": "Walker, B. S., & Orr, F. E. (1976). Anxiety and the next-in-line effect. Journal of Educational Psychology, 68(6), 775-778. Cited by Forrin et al. (2019) as one of the free-recall replications. Nothing of it was read. The APA record answers with an Imperva bot block rather than a paywall, and Crossref and OpenAIRE carry no abstract, checked 21 September 2026.",
       "doi": "10.1037/0022-0663.68.6.775",
       "url": "https://doi.org/10.1037/0022-0663.68.6.775",
       "type": "replication"
     },
     {
-      "text": "Innes, J. M. (1982). The next-in-line effect and the recall of structured and unstructured material. British Journal of Social Psychology, 21(1), 1-5. Abstract read; full text not obtained.",
+      "text": "Innes, J. M. (1982). The next-in-line effect and the recall of structured and unstructured material. British Journal of Social Psychology, 21(1), 1-5. Abstract read at Crossref and confirmed at OpenAIRE. The full text was not obtained; Wiley returns a bot challenge, checked 21 September 2026.",
       "doi": "10.1111/j.2044-8309.1982.tb00505.x",
       "url": "https://doi.org/10.1111/j.2044-8309.1982.tb00505.x",
       "type": "replication"
     },
     {
-      "text": "Bond, C. F., & Kirkpatrick, C. K. (1982). Distraction, amnesia, and the next-in-line effect. Journal of Experimental Social Psychology, 18(4), 307-323. Described here only as Forrin et al. (2019) describe it; not read for this entry.",
+      "text": "Bond, C. F., & Kirkpatrick, C. K. (1982). Distraction, amnesia, and the next-in-line effect. Journal of Experimental Social Psychology, 18(4), 307-323. Abstract read at OpenAIRE, fetched twice. It reports two free recall studies, an effect that appears even when the performance is reading a word to oneself, no deficit when the performance is not anticipated, and poor recall throughout when people know they will perform but not when. Full text not obtained; ScienceDirect returns a bot challenge, checked 21 September 2026.",
       "doi": "10.1016/0022-1031(82)90056-7",
       "url": "https://doi.org/10.1016/0022-1031(82)90056-7",
       "type": "extension"
     },
     {
-      "text": "Bond, C. F. (1985). The next-in-line effect: Encoding or retrieval deficit? Journal of Personality and Social Psychology, 48(4), 853-862. Abstract read; full text not obtained.",
+      "text": "Bond, C. F. (1985). The next-in-line effect: Encoding or retrieval deficit? Journal of Personality and Social Psychology, 48(4), 853-862. Abstract read at OpenAIRE, fetched twice. Full text not obtained; the APA record answers with an Imperva bot block, checked 21 September 2026.",
       "doi": "10.1037/0022-3514.48.4.853",
       "url": "https://doi.org/10.1037/0022-3514.48.4.853",
       "type": "extension"
     },
     {
-      "text": "Omar, A. S., & Bond, C. F. (1989). The next-in-line effect and social anxiety. Paper presented at the 35th Annual Meeting of the Southwestern Psychological Association, Houston, 13-15 April 1989. ERIC ED309362.",
+      "text": "Omar, A. S., & Bond, C. F. (1989). The next-in-line effect and social anxiety. Paper presented at the 35th Annual Meeting of the Southwestern Psychological Association, Houston, 13-15 April 1989. ERIC ED309362. Full text read from the Internet Archive scan.",
       "url": "https://archive.org/download/micro_IA41153308_0129/micro_IA41153308_0129_djvu.txt",
       "type": "replication"
     },
     {
-      "text": "Bond, C. F., & Omar, A. S. (1990). Social anxiety, state dependence, and the next-in-line effect. Journal of Experimental Social Psychology, 26(3), 185-198. The journal version of the 1989 conference paper; not read for this entry.",
+      "text": "Bond, C. F., & Omar, A. S. (1990). Social anxiety, state dependence, and the next-in-line effect. Journal of Experimental Social Psychology, 26(3), 185-198. The journal version of the 1989 conference paper. Abstract read at OpenAIRE; full text not obtained, ScienceDirect returns a bot challenge, checked 21 September 2026. The figures printed on this page come from the conference version, not from this one.",
       "doi": "10.1016/0022-1031(90)90034-J",
       "url": "https://doi.org/10.1016/0022-1031(90)90034-J",
       "type": "replication"
     },
     {
-      "text": "Bond, C. F., Pitre, U., & van Leeuwen, M. D. (1991). Encoding operations and the next-in-line effect. Personality and Social Psychology Bulletin, 17(4), 435-441. Abstract read; full text not obtained.",
+      "text": "Bond, C. F., Pitre, U., & van Leeuwen, M. D. (1991). Encoding operations and the next-in-line effect. Personality and Social Psychology Bulletin, 17(4), 435-441. Abstract read at Crossref. Full text not obtained; SAGE returns a bot challenge, checked 21 September 2026.",
       "doi": "10.1177/0146167291174012",
       "url": "https://doi.org/10.1177/0146167291174012",
       "type": "extension"
     },
     {
-      "text": "Forrin, N. D., Ralph, B. C. W., Dhaliwal, N. K., Smilek, D., & MacLeod, C. M. (2019). Wait for it…performance anticipation reduces recognition memory. Journal of Memory and Language, 109, 104050. Full text read.",
+      "text": "Forrin, N. D., Ralph, B. C. W., Dhaliwal, N. K., Smilek, D., & MacLeod, C. M. (2019). Wait for it…performance anticipation reduces recognition memory. Journal of Memory and Language, 109, 104050. Full text read from the authors' lab copy at the University of Waterloo; every figure quoted here was extracted from the PDF text. Elsevier's own copy is closed.",
       "doi": "10.1016/j.jml.2019.104050",
       "url": "https://doi.org/10.1016/j.jml.2019.104050",
       "type": "replication"
     },
     {
-      "text": "Caron, E. E., Hicks, L. J., Browne, D. T., Smilek, D., & Forrin, N. D. (2021). Performance anticipation diminishes memory: Evidence from a simulated classroom. Journal of Applied Research in Memory and Cognition, 10(3), 479-489. Abstract read; full text not obtained.",
+      "text": "Caron, E. E., Hicks, L. J., Browne, D. T., Smilek, D., & Forrin, N. D. (2021). Performance anticipation diminishes memory: Evidence from a simulated classroom. Journal of Applied Research in Memory and Cognition, 10(3), 479-489. Abstract read at OpenAIRE, fetched twice, and everything attributed here is its wording. Full text not obtained; ScienceDirect returns a bot challenge, and the corresponding author's own site lists no copy, checked 21 September 2026.",
       "doi": "10.1016/j.jarmac.2021.01.006",
       "url": "https://doi.org/10.1016/j.jarmac.2021.01.006",
       "type": "replication"
     },
     {
-      "text": "Silaban, K. R. M., Srisayekti, W., Saputra, W. N., Carmella, G. S., Hafidza, A., Ilham, R. F. M., Rizkiyani, F., & Shari, N. I. B. (2024). The effect of performance anticipation on students' recognition in online learning. Psympathic: Jurnal Ilmiah Psikologi, 11(1), 59-68. Full text read.",
+      "text": "Silaban, K. R. M., Srisayekti, W., Saputra, W. N., Carmella, G. S., Hafidza, A., Ilham, R. F. M., Rizkiyani, F., & Shari, N. I. B. (2024). The effect of performance anticipation on students' recognition in online learning. Psympathic: Jurnal Ilmiah Psikologi, 11(1), 59-68. Full text read as a PDF from the publisher.",
       "doi": "10.15575/psy.v11i1.32480",
       "url": "https://doi.org/10.15575/psy.v11i1.32480",
       "type": "replication"
     }
   ],
-  "checkedOn": "2026-08-10"
+  "checkedOn": "2026-09-21"
 }
