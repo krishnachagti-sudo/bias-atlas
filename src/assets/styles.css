@@ -2456,6 +2456,11 @@ html[data-theme="light"] .chip.on{background:var(--accent);border-color:var(--ac
 .vd-bn{font-size:13.5px;color:var(--faint)}
 .vd-h{font-family:var(--serif);font-weight:600;font-size:20px;margin:0 0 10px}
 .vd-p{font-size:15px;line-height:1.72;color:var(--dim);margin:0 0 30px;max-width:70ch}
+/* The list form of .vd-p, for the about page's reuse routes. Same measure and
+   colour, so a list and a paragraph in the same section read as one voice. */
+.vd-list{font-size:15px;line-height:1.72;color:var(--dim);margin:0 0 30px;max-width:70ch;padding-left:20px}
+.vd-list li{margin:0 0 10px}
+.vd-list code{font-family:var(--mono);font-size:13px;color:var(--muted)}
 .vd-src{margin:0 0 30px;padding-left:20px;max-width:70ch}
 .vd-src li{font-size:13.5px;line-height:1.6;color:var(--dim);margin:0 0 9px}
 .vd-st{font-family:var(--mono);font-size:10px;letter-spacing:.05em;text-transform:uppercase;color:var(--faint)}

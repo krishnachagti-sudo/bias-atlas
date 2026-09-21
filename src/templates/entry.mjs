@@ -496,6 +496,10 @@ ${asideRail(entry, { base, siblings })}    </div>
       path,
       og: { type: 'article' },
       modified: LASTMOD_TOKEN,
+      // The Markdown twin, declared as an alternate representation of this same
+      // URL. Declaring it is what makes it an alternate rather than cloaking,
+      // and it is reachable and readable by a person too.
+      alternates: [{ type: 'text/markdown', title: `${entry.name} (Markdown)`, href: `${origin}${base}${path}index.md` }],
       jsonld: [
         ...hubJsonLd({
           name: entry.name,
@@ -524,6 +528,45 @@ ${asideRail(entry, { base, siblings })}    </div>
           })),
           dateModified: LASTMOD_TOKEN,
           creator: founderRef(origin, base),
+        },
+        // An Article node beside the DefinedTerm, which the checklist asks for
+        // and this page had no equivalent of. The two say different things and
+        // both are true: the DefinedTerm is the bias, the Article is this
+        // write-up of it. Without the second there was nothing on the page
+        // carrying a dateModified that a crawler reads as content freshness,
+        // and nothing naming what the page is *about* as a separate entity.
+        //
+        // `ScholarlyArticle` was the tempting type and is the wrong one. This is
+        // not peer-reviewed research; it is a sourced reference entry, and
+        // claiming the stronger type would be the kind of small inflation this
+        // project exists not to do.
+        {
+          '@context': 'https://schema.org',
+          '@type': 'Article',
+          '@id': `${origin}${base}${path}#article`,
+          headline: `${entry.name} — what it claims, and whether it replicated`,
+          description,
+          url: `${origin}${base}${path}`,
+          mainEntity: { '@id': `${origin}${base}${path}#term` },
+          about: { '@id': `${origin}${base}${path}#term` },
+          isPartOf: { '@type': 'WebSite', name: BRAND, url: `${origin}${base}` },
+          author: founderRef(origin, base),
+          publisher: founderRef(origin, base),
+          inLanguage: 'en',
+          license: 'https://creativecommons.org/licenses/by/4.0/',
+          // Both dates are the real ones. `checkedOn` is the day every claim was
+          // last held against its sources, which for a reference entry is the
+          // honest publication date; the modified token is substituted with the
+          // day this page's content hash last changed.
+          datePublished: entry.checkedOn,
+          dateModified: LASTMOD_TOKEN,
+          // The same alternate the <link> declares, so a consumer reading only
+          // the graph still finds the plain-text representation.
+          encoding: {
+            '@type': 'MediaObject',
+            encodingFormat: 'text/markdown',
+            contentUrl: `${origin}${base}${path}index.md`,
+          },
         },
         ...(faq.jsonld ? [faq.jsonld] : []),
       ],

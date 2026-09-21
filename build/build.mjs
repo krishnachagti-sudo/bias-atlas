@@ -26,7 +26,9 @@ import { setAssetVersions, setBuildDate } from '../src/templates/partials.mjs';
 import { homePage } from '../src/templates/home.mjs';
 import { browsePage, aboutPage, notFoundPage } from '../src/templates/pages.mjs';
 import { entryPage, entryPath } from '../src/templates/entry.mjs';
-import { loadCorpus } from './corpus.mjs';
+import { loadCorpus, CATEGORIES } from './corpus.mjs';
+import { entryMarkdown } from './markdown.mjs';
+import { buildApi } from './api.mjs';
 import { buildSitemap } from './sitemap.mjs';
 import { buildSearchIndex } from './search-index.mjs';
 import { LASTMOD_TOKEN, manifestFile, resolve as resolveLastmod, stamp } from './lastmod.mjs';
@@ -135,6 +137,32 @@ const write = async (path, body) => {
 for (const [path, html] of Object.entries(pages)) {
   writes.push(write(join(out, path, 'index.html'), stamp(html, dates[path])));
 }
+
+// The Markdown twin of every entry, beside its HTML at /bias/<slug>/index.md.
+//
+// Most AI crawlers fetch a page and never run its JavaScript, and the ones that
+// do still have to strip a nav, a rail, an aside and a footer back off before
+// reaching the sentences that answer the question. This is the same content
+// with none of that, generated from the same entry object, and linked from the
+// HTML as rel="alternate" so it is an alternate representation, not cloaking.
+//
+// Not in `pages`, so these carry no date and stay out of the sitemap: the
+// canonical URL for an entry is its HTML.
+for (const e of entries) {
+  writes.push(write(
+    join(out, 'bias', e.slug, 'index.md'),
+    entryMarkdown(e, { baseUrl: `${origin}${base}`, fieldLabel: CATEGORIES[e.category] || e.category }),
+  ));
+}
+
+// The whole corpus in one document, with its schema and licence stated inside
+// it. This project has no earned backlinks, so being fetchable and reusable is
+// the distribution route; a consumer should not need a second request to learn
+// what the fields mean or whether they may quote them.
+writes.push(write(
+  join(out, 'api.json'),
+  `${JSON.stringify(buildApi(entries, { baseUrl: `${origin}${base}`, categories: CATEGORIES }), null, 2)}\n`,
+));
 
 // 404.html at the output root: the host serves it for any unmatched path. It is
 // not in `pages` because it has no URL of its own, so it has no date and must

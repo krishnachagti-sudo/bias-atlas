@@ -158,6 +158,15 @@ ${hubHead({
     <h2 class="vd-h">What it must not contain</h2>
     <p class="vd-p">A date, a name or a finding that has not been checked against a source in front of the writer. A biography written from memory. A confident sentence standing in for an unclear record. These are the failure modes of writing at volume about a subject with a long history, and the reason each is named here is that naming it is what makes it checkable later.</p>
 
+    <h2 class="vd-h">How to reuse it, and how a machine reads it</h2>
+    <p class="vd-p">The corpus is licensed <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">CC BY 4.0</a>. Take it and use it, with attribution; you do not need to ask. Three ways in, in rising order of how much you want:</p>
+    <ul class="vd-list">
+      <li><a href="${base}api.json">The whole catalogue as one JSON document</a>, with its schema and licence stated inside the file. Every entry, its verdict, its effect sizes and its full source list. It is a catalogue rather than the full text, and each record carries the address of its own prose.</li>
+      <li>Any entry as plain Markdown, at its own address with <code>index.md</code> on the end — for example <a href="${base}bias/sunk-cost/index.md">the sunk cost entry</a>. Same content as the page, without the navigation. Each entry page declares it as an alternate representation.</li>
+      <li><a href="${base}browse/">The pages themselves</a>, which are static HTML with every claim present before any script runs.</li>
+    </ul>
+    <p class="vd-p">Replication counts quoted from <a href="https://doi.org/10.17605/OSF.IO/9R62X" rel="nofollow noopener">FORRT’s Replication Database</a> carry their own CC BY 4.0 terms, and that attribution travels with them.</p>
+
     <div class="sk-share">
 ${shareRow({ url: `${origin}${base}about/`, title: `About ${BRAND}`, text: 'How this index is written and sourced.', label: 'Share this page' })}    </div>
 
