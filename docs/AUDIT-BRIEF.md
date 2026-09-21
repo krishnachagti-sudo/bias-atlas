@@ -188,6 +188,12 @@ serve the file only to a second request sharing a cookie jar. A single
 `curl -L` there looks exactly like a block. Retry with the jar before
 concluding.
 
+An incomplete certificate chain is sometimes fixable and sometimes not. The
+missing intermediate is usually published by the issuer, and supplying it lets
+the fetch complete. Where the issuer publishes it only over plain http, this
+session's egress refuses that, and the document stays shut for a reason that
+is ours rather than the publisher's. Say which of the two happened.
+
 A block can also be an artefact of your own request. One host served a
 proof-of-work challenge only to browser-like user agents, and a plain curl
 user agent got the PDF at once. A note saying that host is unobtainable
