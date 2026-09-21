@@ -199,3 +199,11 @@ Claude-Session: https://claude.ai/code/session_01RgDhJAXaSAcfzXrh5YZEND
 pass, whether the state changed and to what, the one sharpest finding in a
 sentence, anything the reviewing session must decide or act on beyond this
 entry, and any rule of the brief you broke. Do not restate the files.
+
+## Sources that say nothing
+
+`npm run unnoted` lists entries whose sources carry no note about whether
+anybody read them. Every other check in this project needs a note to work on,
+so these entries are invisible to all of them, and two audits found their
+worst fault sitting on exactly such a source. If your entry appears, treat
+every silent source as unread until you have opened it.
