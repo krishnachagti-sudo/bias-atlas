@@ -66,7 +66,12 @@ the sentence the page's verdict rests on and check the document says it.
    paper's title in Crossref for a version of record; this corpus cites them
    constantly, and one was called unreviewed three months after it appeared
    in a journal. A working paper is often not its article. Label which version each figure comes
-   from, and do not assert the two are identical without checking. Two
+   from, and do not assert the two are identical without checking. The gap can
+   be larger than a stale draft: three repositories served one submitted
+   manuscript under a different title, with a different total and a p value of
+   .14 where the article prints .54. And a supplementary table can hold a
+   preregistered analysis the authors excluded from the manuscript, whose
+   figures differ from the ones they stand behind. Two
    indexes agreeing that only a submitted copy is open is not evidence that
    no published copy is open; a version of record has been found by plain
    search in a repository neither index listed. And the fault often sits on
