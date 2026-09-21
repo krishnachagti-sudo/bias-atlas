@@ -115,6 +115,15 @@ the user agent before concluding, and solving a challenge may not help where
 the egress address rotates between requests, because the token is bound to
 the address.
 
+## Check what other entries say about your documents
+
+`npm run contradictions` lists every identifier that appears in two entries
+with notes disagreeing about whether the document could be read. Run it and
+look for your entry. One side of each pair is wrong, and the side claiming a
+block is wrong more often than not, so a disagreement naming your entry is a
+strong lead. Fix your own side; do not edit the other entry, and say in your
+report which other entry is implicated.
+
 ## Scope and neighbours
 
 Many entry names cover more than one literature with separate replication
