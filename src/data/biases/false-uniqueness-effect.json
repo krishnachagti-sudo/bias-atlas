@@ -2,21 +2,24 @@
   "no": 235,
   "slug": "false-uniqueness-effect",
   "name": "False uniqueness effect",
-  "aliases": ["Uniqueness bias", "False uniqueness bias"],
+  "aliases": [
+    "Uniqueness bias",
+    "False uniqueness bias"
+  ],
   "category": "social",
   "statement": "People who hold a desirable trait or perform a desirable behaviour underestimate how many others do too, measured against the real rate.",
-  "meaning": "The measurement is what separates this from the false consensus effect, and the two are often described as contradicting each other when they do not. False consensus is comparative: it compares the estimates of people who chose one option with the estimates of people who chose the other, and needs no knowledge of the truth. False uniqueness is an accuracy claim. Monin and Norton define it as the actual prevalence of a desirable behaviour minus the mean estimate of that prevalence, which can only be computed where the true rate has been measured. A single sample can therefore show both at once, and in their field study it did. Bathers gave higher estimates than non-bathers, and everybody's estimate sat below the truth.",
+  "meaning": "The measurement is what separates this from the false consensus effect, and the two are often described as contradicting each other when they do not. False consensus is comparative: it compares the estimates of people who chose one option with the estimates of people who chose the other, and needs no knowledge of the truth. False uniqueness is an accuracy claim. Monin and Norton, crediting Suls and Wan, compute it as the actual prevalence of a desirable behaviour minus the mean estimate of that prevalence. It can only be scored where the true rate has been measured. A single sample can therefore show both at once, and in their field study it did. Bathers gave higher estimates than non-bathers, and everybody underestimated whichever form of showering was desirable that night.",
   "origin": {
     "year": 1987,
     "who": "Jerry Suls and Choi K. Wan",
     "where": "Journal of Personality and Social Psychology",
-    "note": "Their title is In search of the false-uniqueness phenomenon, and the search is the point: they report that the social perception literature to that date yielded little evidence for it. They credit the idea to Valins and Nisbett (1972) and argue that earlier work missed the effect by never scoring estimates for accuracy."
+    "note": "Their title is In search of the false-uniqueness phenomenon, and the search is the point: they report that the social perception literature to that date yielded little evidence for it. They credit the idea to Valins and Nisbett (1972) and argue that earlier work missed the effect by rarely scoring estimates for accuracy. They name two studies that did score it, by Tabachnik, Crocker and Alloy and by Sanders and Mullen, both 1983."
   },
   "evidence": "Suls and Wan gave respondents an abbreviated fear survey and asked them to estimate consensus. Both high-fear and low-fear respondents overestimated how common high fear was among their peers, and the high-fear group was further out. The false uniqueness came from the low-fear group, who underestimated how many peers were also low in fear. Suls, Wan and Sanders ran the same logic on health behaviours in college-aged men the following year. Their abstract reports strong support for false consensus and for overestimation by people behaving undesirably, and only some support for false uniqueness. Campbell had already separated the attribute types in 1986. Students rated themselves on seven opinion and ability dimensions, estimated what percentage of other students held each position, and were scored against the sample's real percentages. They overestimated consensus for their opinions and for their low abilities, and underestimated it for their high abilities. Two meta-analytic integrations by Mullen and Hu pooled the earlier consensus-estimation studies and found that majorities underestimate their own size while minorities overestimate theirs, with the minority's error the larger of the two. Because desirable behaviours tend to be common, that alone can produce what looks like self-serving uniqueness. Mullen and Goethals then reanalysed the same database and reported that overestimation of consensus fell as the positivity of the behaviour rose, independently of and additively with actual consensus.",
   "replication": {
     "state": "mixed",
     "headline": "The pattern turns up in a field study of a real shower ban, and a preregistered replication with 1,005 people found no false uniqueness where a 2014 paper had reported it.",
-    "detail": "Monin and Norton surveyed 415 Princeton students on five consecutive nights in 1999, across a three-day ban on showering and its lifting. While showering was banned and rare, students overestimated it: 47% estimated against 33% reported on day two, t(119) = 6.6, p < .001. Once the ban lifted and showering was desirable and common again, the sign flipped. Day four gave 70% estimated against 77% reported, t(67) = -2.5, p < .05, and day five gave 72% against 84%, t(98) = -5.1, p < .001. The false consensus effect held on every one of those days, with bathers estimating 72% overall and non-bathers 44%, t(325) = -11.6, p < .001. The failure is narrower and better powered. Stern, West and Schmitt reported in 2014 that liberals underestimate their similarity to other liberals while moderates and conservatives overestimate theirs. Blanchar and thirteen colleagues ran a close preregistered replication with 1,005 participants. Liberals, moderates and conservatives all overestimated ingroup consensus, weakest among liberals and strongest among conservatives, so the ideological ordering held and the uniqueness illusion did not appear at all.",
+    "detail": "Monin and Norton surveyed 415 Princeton students on five consecutive nights in 1999, across a three-day ban on showering and its lifting. While showering was banned and rare, students overestimated it: 47% estimated against 33% reported on day two, t(119) = 6.6, p < .001. Once the ban lifted and showering was desirable and common again, the sign flipped. Day four gave 70% estimated against 77% reported, t(67) = -2.5, p < .05, and day five gave 72% against 84%, t(98) = -5.1, p < .001. The false consensus effect held on every one of those days, with bathers estimating 72% overall and non-bathers 44%, t(325) = -11.6, p < .001. The failure is narrower and better powered. Stern, West and Schmitt reported in 2014 that liberals underestimate their similarity to other liberals while moderates and conservatives overestimate theirs. Blanchar and thirteen colleagues ran a close preregistered replication with 1,005 participants. Liberals, moderates and conservatives all overestimated ingroup consensus, weakest among liberals and strongest among conservatives, so the ideological ordering held and the uniqueness illusion did not appear at all. Liberals did score higher on a need for uniqueness scale, which partly accounted for their weaker false consensus.",
     "study": {
       "cite": "Blanchar, J. C., Alonzo, M., Ayoh, C., et al. (2021). A replication of Stern, West, and Schmitt (2014) indicates less false consensus among liberals than conservatives, but no false uniqueness. Social Psychology, 52(3), 197-202.",
       "doi": "10.1027/1864-9335/a000448",
@@ -24,17 +27,17 @@
       "n": 1005
     }
   },
-  "limits": "Four of the papers behind this entry are paywalled and were read only in their published abstracts: Suls and Wan, Campbell, Suls, Wan and Sanders, and Mullen and Hu. No sample size, test statistic or effect size was obtained for any of them, and the only numbers on this page come from Monin and Norton's text, which was read in full. Mullen and Hu's pooled magnitudes were not obtained either, so the entry states the direction of their findings and not their size. The effect is also harder to measure than its neighbour. Scoring it requires the true prevalence in the same population, which rules out most of the vignette work where false consensus is easy to run, and it is why the strongest demonstration here is a field study rather than an experiment. Whether desirability is doing the work is unsettled. Mullen and Hu's account needs only majority size, and Monin and Norton note that Krueger and Clement's assumption that everyone believes themselves to be in the majority also generates both effects. Their own data, they say, do not speak to that question. One housekeeping note: the PDF of Monin and Norton prints the DOI 10.1177/0146167203251523, which Crossref does not resolve. The registered DOI for the article is the one cited below.",
+  "limits": "Five of the papers behind this entry were read only in their published abstracts: Suls and Wan, Campbell, Suls, Wan and Sanders, Mullen and Hu, and Chambers. Stern, West and Schmitt and Blanchar and colleagues were read in abstract only as well. No test statistic or effect size was obtained for any of the seven. Every test statistic on this page comes from Monin and Norton's text, which was read in full, and the sample of 1,005 comes from Blanchar's abstract. Mullen and Hu's pooled magnitudes were not obtained either, so the entry states the direction of their findings and not their size. The effect is also harder to measure than its neighbour. Scoring it requires the true prevalence in the same population, which rules out most of the vignette work where false consensus is easy to run, and it is why the strongest demonstration here is a field study rather than an experiment. Whether desirability is doing the work is unsettled. Mullen and Hu's account needs only majority size, and Monin and Norton note that Krueger and Clement's assumption that everyone believes themselves to be in the majority also generates both effects. Their own data, they say, do not speak to that question. One housekeeping note: the PDF of Monin and Norton prints the DOI 10.1177/0146167203251523, which Crossref does not resolve. The registered DOI for the article is the one cited below.",
   "misreadings": "The two effects are not a contradiction, and treating false uniqueness as the mirror image of false consensus misstates both. They were observed in the same participants on the same behaviour on the same evening. The abilities-versus-opinions split is also stated too strongly. Campbell found a reliable false consensus effect on abilities as well as opinions, merely larger on opinions, so the split describes which way the accuracy error points rather than where false consensus stops. This is not the better-than-average effect either. Illusory superiority asks people to rank themselves against a comparison group and needs no external truth, whereas false uniqueness is a signed error against a rate somebody measured. And the bias does not only flatter. Chambers's review argues that people often claim to be worse off than others, which is why he treats self-enhancement as too narrow an explanation.",
   "sources": [
     {
-      "text": "Suls, J., & Wan, C. K. (1987). In search of the false-uniqueness phenomenon: Fear and estimates of social consensus. Journal of Personality and Social Psychology, 52(1), 211-217. Read in abstract only.",
+      "text": "Suls, J., & Wan, C. K. (1987). In search of the false-uniqueness phenomenon: Fear and estimates of social consensus. Journal of Personality and Social Psychology, 52(1), 211-217. Abstract read at PubMed on 21 September 2026.",
       "doi": "10.1037/0022-3514.52.1.211",
       "url": "https://doi.org/10.1037/0022-3514.52.1.211",
       "type": "primary"
     },
     {
-      "text": "Campbell, J. D. (1986). Similarity and uniqueness: The effects of attribute type, relevance, and individual differences in self-esteem and depression. Journal of Personality and Social Psychology, 50(2), 281-294. Read in abstract only.",
+      "text": "Campbell, J. D. (1986). Similarity and uniqueness: The effects of attribute type, relevance, and individual differences in self-esteem and depression. Journal of Personality and Social Psychology, 50(2), 281-294. Abstract read at PubMed on 21 September 2026.",
       "doi": "10.1037/0022-3514.50.2.281",
       "url": "https://doi.org/10.1037/0022-3514.50.2.281",
       "type": "primary"
@@ -46,31 +49,31 @@
       "type": "primary"
     },
     {
-      "text": "Monin, B., & Norton, M. I. (2003). Perceptions of a fluid consensus: Uniqueness bias, false consensus, false polarization, and pluralistic ignorance in a water conservation crisis. Personality and Social Psychology Bulletin, 29(5), 559-567.",
+      "text": "Monin, B., & Norton, M. I. (2003). Perceptions of a fluid consensus: Uniqueness bias, false consensus, false polarization, and pluralistic ignorance in a water conservation crisis. Personality and Social Psychology Bulletin, 29(5), 559-567. Full text read from the copy at Harvard Business School on 21 September 2026, and every figure on this page checked against it. Unpaywall lists no free copy.",
       "doi": "10.1177/0146167203029005001",
       "url": "https://doi.org/10.1177/0146167203029005001",
       "type": "replication"
     },
     {
-      "text": "Stern, C., West, T. V., & Schmitt, P. G. (2014). The liberal illusion of uniqueness. Psychological Science, 25(1), 137-144.",
+      "text": "Stern, C., West, T. V., & Schmitt, P. G. (2014). The liberal illusion of uniqueness. Psychological Science, 25(1), 137-144. Abstract read at PubMed on 21 September 2026. Unpaywall lists no free copy.",
       "doi": "10.1177/0956797613500796",
       "url": "https://doi.org/10.1177/0956797613500796",
       "type": "primary"
     },
     {
-      "text": "Blanchar, J. C., Alonzo, M., Ayoh, C., et al. (2021). A replication of Stern, West, and Schmitt (2014) indicates less false consensus among liberals than conservatives, but no false uniqueness. Social Psychology, 52(3), 197-202.",
+      "text": "Blanchar, J. C., Alonzo, M., Ayoh, C., et al. (2021). A replication of Stern, West, and Schmitt (2014) indicates less false consensus among liberals than conservatives, but no false uniqueness. Social Psychology, 52(3), 197-202. Abstract read on 21 September 2026 from a Wayback Machine snapshot of the publisher page. Hogrefe answers a direct request with a Cloudflare bot challenge, not a paywall. Unpaywall lists no free copy.",
       "doi": "10.1027/1864-9335/a000448",
       "url": "https://doi.org/10.1027/1864-9335/a000448",
       "type": "replication"
     },
     {
-      "text": "Mullen, B., & Hu, L. (1988). Social projection as a function of cognitive mechanisms: Two meta-analytic integrations. British Journal of Social Psychology, 27(4), 333-356. Read in abstract only.",
+      "text": "Mullen, B., & Hu, L. (1988). Social projection as a function of cognitive mechanisms: Two meta-analytic integrations. British Journal of Social Psychology, 27(4), 333-356. Read in abstract only. Not reopened in the light pass of September 2026, and the characterisation on this page follows Monin and Norton's summary of it.",
       "doi": "10.1111/j.2044-8309.1988.tb00836.x",
       "url": "https://doi.org/10.1111/j.2044-8309.1988.tb00836.x",
       "type": "replication"
     },
     {
-      "text": "Mullen, B., & Goethals, G. R. (1990). Social projection, actual consensus and valence. British Journal of Social Psychology, 29(3), 279-282.",
+      "text": "Mullen, B., & Goethals, G. R. (1990). Social projection, actual consensus and valence. British Journal of Social Psychology, 29(3), 279-282. Abstract read at Crossref on 21 September 2026.",
       "doi": "10.1111/j.2044-8309.1990.tb00907.x",
       "url": "https://doi.org/10.1111/j.2044-8309.1990.tb00907.x",
       "type": "replication"
@@ -82,5 +85,5 @@
       "type": "commentary"
     }
   ],
-  "checkedOn": "2026-08-10"
+  "checkedOn": "2026-09-21"
 }
