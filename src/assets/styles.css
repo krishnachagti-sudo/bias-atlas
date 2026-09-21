@@ -896,6 +896,40 @@ a.badge{text-decoration:none;display:inline-block}
 @media(max-width:640px){.answer{padding:15px 16px}.answer .answer-v{font-size:16.5px}}
 
 .dash{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(124px,100%),1fr));gap:12px;margin:26px 0 2px}
+/* The origin block's fields, and the gap between claim and retest.
+   `.field-grid` and `.field` came with the stylesheet and had never been used;
+   only the spacing below is new, because the origin block is three short facts
+   rather than the long form the grid was cut for. */
+.field-grid{margin:2px 0 18px}
+.field-grid .field{gap:3px;padding:10px 0;border-top:1px solid var(--line)}
+
+/* Claimed → retested. Two years with the distance between them drawn to scale
+   of nothing — the line is a constant width, because the point is the number of
+   years, not a position on a timeline the page never establishes. */
+.gap{display:flex;align-items:center;gap:14px;margin:22px 0 6px;font-family:var(--mono)}
+.gap-y{flex:none;font-size:18px;color:var(--muted);letter-spacing:.02em}
+.gap-y--to{color:var(--accent)}
+.gap-line{position:relative;flex:1;height:1px;background:var(--line-strong);min-width:60px}
+.gap-line::after{content:"";position:absolute;right:0;top:-3px;width:7px;height:7px;
+  border-top:1px solid var(--line-strong);border-right:1px solid var(--line-strong);transform:rotate(45deg)}
+.gap-n{position:absolute;left:50%;top:-9px;transform:translateX(-50%);background:var(--bg);padding:0 10px;
+  font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:var(--faint);white-space:nowrap}
+.gap-cap{margin:10px 0 0;font-family:var(--sans);font-size:11.5px;line-height:1.5;color:var(--faint)}
+@media(max-width:560px){.gap{gap:9px}.gap-y{font-size:15px}.gap-n{font-size:9px;padding:0 6px}}
+
+/* What kind of reading an entry rests on, as one proportion bar. */
+.mix{margin:20px 0 4px}
+.mix-bar{display:flex;gap:2px;height:7px;border-radius:4px;overflow:hidden}
+.mix-seg{display:block;min-width:3px}
+.mix-primary{background:var(--accent)}
+.mix-replication{background:var(--ok)}
+.mix-discussion{background:var(--line-strong)}
+.mix-context{background:var(--faint);opacity:.5}
+.mix-key{display:flex;flex-wrap:wrap;gap:6px 18px;margin:10px 0 0;
+  font-family:var(--mono);font-size:10px;letter-spacing:.05em;text-transform:uppercase;color:var(--faint)}
+.mix-k{display:inline-flex;align-items:center;gap:6px}
+.mix-dot{width:7px;height:7px;border-radius:2px;flex:none}
+
 /* The effect-size chart: the original estimate and the replication's, on one
    axis, with the null marked. Theme-aware through CSS rather than literal SVG
    fills, so it inverts with the rest of the page.
@@ -1047,6 +1081,14 @@ a.stat--link .s-k::after{content:" →";letter-spacing:0;opacity:.55}
 .entry-layout .lawmain .block>.lbl::before{counter-increment:sec;content:counter(sec,decimal-leading-zero);font-size:10px;letter-spacing:.04em;color:var(--faint);border:1px solid var(--line-strong);border-radius:3px;padding:3px 7px}
 /* jumped-to sections must clear the sticky header (72px desktop / 62px mobile) */
 .block{margin-bottom:60px;scroll-margin-top:calc(var(--header-h) + 12px)}
+/* Space between paragraphs inside a section. There was none, and it did not
+   show, because every block rendered exactly one <p>: the corpus stores each
+   prose field as a single string and the template printed it whole. Now that
+   long fields are set as several paragraphs, the gap is what makes them
+   paragraphs rather than one block with arbitrary line breaks in it. */
+.block p{margin:0 0 18px}
+.block p:last-child{margin-bottom:0}
+.block .lead{margin-bottom:20px}
 .block:last-child{margin-bottom:0}
 /* infographic card: reliability meter + lineage timeline (real per-law data) */
 .viz-card{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(230px,100%),1fr));gap:26px;background:var(--surface);border:1px solid var(--line);border-radius:3px;padding:20px 24px;margin-bottom:60px}

@@ -65,6 +65,78 @@ const num = (x) => Number(x).toLocaleString('en-US');
 // carelessly transcribed rather than quoted.
 const dp2 = (n) => Number(n).toFixed(2);
 
+// Abbreviations that end in a full stop without ending a sentence. The corpus is
+// full of them, because it is written about papers: "et al.", "e.g.", "Fig. 2",
+// "No. 14", "p. 88", "Dr. Smith", "vs.". A splitter that does not know these
+// breaks a sentence in the middle of a citation.
+const ABBREV = /\b(?:et al|e\.g|i\.e|cf|vs|approx|ca|Dr|Prof|Mr|Mrs|Ms|St|Fig|Figs|No|Nos|pp?|Vol|Ch|Ed|eds|Jr|Sr|Inc|Ltd|U\.S|U\.K)\.$/i;
+
+/**
+ * Break one long string into paragraphs.
+ *
+ * This is typesetting, not editing: no word is added, removed or reordered. The
+ * corpus stores each prose field as a single string, and the template rendered
+ * each one as a single <p>. `evidence` has a median of 330 words and runs to
+ * 1,058 — which is a wall of text no amount of surrounding illustration fixes,
+ * and it was the actual reason these pages read as heavy.
+ *
+ * Two rules, in order:
+ *
+ *   If the field already contains blank-line breaks, they are the author's and
+ *   they win. 24 to 29 entries per field have them, and rendering the field as
+ *   one <p> silently collapsed every one — the corpus was expressing paragraph
+ *   structure the page threw away.
+ *
+ *   Otherwise group sentences to about 75 words. Sentence boundaries only, so
+ *   the break always falls where the writing already stopped, and a trailing
+ *   runt is merged back rather than left alone.
+ *
+ * Short fields are left as one paragraph: breaking 150 words into two is fussy
+ * rather than readable.
+ */
+export function paragraphs(text, { target = 75, min = 140 } = {}) {
+  const raw = String(text == null ? '' : text).trim();
+  if (!raw) return [];
+
+  // An authored break is never crossed — but it does not exempt the block it
+  // introduces from being long. One entry's `limits` is two authored blocks of
+  // 329 and 145 words, and honouring the break alone still left a 329-word wall.
+  // So: split on authored breaks first, then group sentences inside each block.
+  const authored = raw.split(/\n\s*\n+/).map((s) => s.replace(/\s+/g, ' ').trim()).filter(Boolean);
+  return authored.flatMap((block) => {
+    if (block.split(/\s+/).length <= min) return [block];
+
+    // Candidate boundary: a full stop, question or exclamation mark, then space,
+    // then something that can begin a sentence. Guarded against abbreviations
+    // and against initials, where the character before the stop is a lone
+    // capital. A digit counts as a sentence opener: this corpus starts sentences
+    // with figures constantly ("95% of the sample…").
+    const parts = [];
+    let buf = '';
+    for (const piece of block.split(/(?<=[.!?])\s+/)) {
+      const endsAbbrev = ABBREV.test(buf) || /\s[A-Z]\.$/.test(buf);
+      if (buf && !endsAbbrev && buf.split(/\s+/).length >= target && /^[A-Z0-9"“(]/.test(piece)) {
+        parts.push(buf);
+        buf = piece;
+      } else {
+        buf = buf ? `${buf} ${piece}` : piece;
+      }
+    }
+    if (buf) parts.push(buf);
+
+    // A final paragraph of a few words reads as a mistake; give it back.
+    if (parts.length > 1 && parts[parts.length - 1].split(/\s+/).length < 30) {
+      parts[parts.length - 2] += ` ${parts.pop()}`;
+    }
+    return parts;
+  });
+}
+
+/** Render a prose field as one or more paragraphs, escaped. */
+const prose = (text, cls = '') => paragraphs(text)
+  .map((p) => `        <p${cls ? ` class="${cls}"` : ''}>${escapeHtml(p)}</p>`)
+  .join('\n') + '\n';
+
 /**
  * `d = 0.31 (99% CI 0.22 to 0.39)`, or '' when there is no number to print.
  *
@@ -185,6 +257,104 @@ ${body}
     ? 'The same scale for both, so the distance between the two points is the change the repeat found.'
     : 'Plotted against the point where there is no effect.'} Hover a point for its interval.</figcaption>
 </figure>
+`;
+}
+
+/**
+ * The origin block: the three facts as fields, then the note as prose, then —
+ * where both years are known — the gap between the claim and the retest.
+ *
+ * Year, who and where are structured data that was being flattened into a
+ * sentence ("1998, Roy F. Baumeister, in Journal of…"). Rendered as fields they
+ * are scannable, and they stop the section opening with a comma-spliced list.
+ *
+ * The gap strip is the one genuinely new fact on this page, and it is computed
+ * rather than written: the origin year is in the corpus, and the replication
+ * year is the one in its own citation. 455 entries have both, and in all 455 the
+ * replication is the later of the two — checked, not assumed. "Claimed 1998,
+ * retested 2016, eighteen years later" is the shape of the replication crisis in
+ * three numbers, and no sentence in the corpus says it.
+ */
+function originBlock(entry, r) {
+  const o = entry.origin || {};
+  const fields = [
+    ['Year', o.year],
+    ['Who', o.who],
+    ['Where', o.where],
+  ].filter(([, v]) => v != null && v !== '');
+
+  let strip = '';
+  // The year inside the replication citation, e.g. "… (2016). A Multilab …".
+  const cite = r && r.study && r.study.cite;
+  const m = cite ? String(cite).match(/\((\d{4})[a-z]?\)/) : null;
+  const from = Number(o.year);
+  const to = m ? Number(m[1]) : NaN;
+  if (Number.isFinite(from) && Number.isFinite(to) && to >= from) {
+    const gap = to - from;
+    strip = `        <div class="gap" role="img" aria-label="Claimed in ${from}, retested in ${to}, ${gap} years later.">
+          <span class="gap-y">${from}</span>
+          <span class="gap-line"><span class="gap-n">${gap === 0 ? 'same year' : `${gap} year${gap === 1 ? '' : 's'} later`}</span></span>
+          <span class="gap-y gap-y--to">${to}</span>
+        </div>
+        <p class="gap-cap">The claim, and the replication this entry reads its figures from.</p>
+`;
+  }
+
+  return `        <div class="field-grid">
+${fields.map(([k, v]) => `          <div class="field"><span class="field-n">${escapeHtml(k)}</span><span class="field-name">${escapeHtml(String(v))}</span></div>`).join('\n')}
+        </div>
+${o.note ? prose(o.note) : ''}${strip}`;
+}
+
+/**
+ * What kind of reading this entry rests on, as one bar.
+ *
+ * The sources section lists every document, which answers "what did you read"
+ * but not "what kind of evidence is this". An entry standing on one primary
+ * paper and nine commentaries is a different object from one standing on four
+ * replications, and the corpus already types every source. 541 entries carry at
+ * least one typed source.
+ *
+ * Types are collapsed to four families, because the raw vocabulary has 26 values
+ * and a 26-segment bar communicates nothing.
+ */
+// Every type the corpus actually uses is mapped explicitly. A first version left
+// the long tail to fall through to `context`, and `secondary` — 205 sources, the
+// bulk of several entries' reading — was counted as "background and reference"
+// when it is the discussion of a result, not the furniture around it.
+const SOURCE_FAMILY = {
+  primary: 'primary', preprint: 'primary', unpublished: 'primary', data: 'primary', method: 'primary',
+  replication: 'replication', 'replication-report': 'replication', reanalysis: 'replication',
+  'meta-analysis': 'replication', extension: 'replication',
+  secondary: 'discussion', commentary: 'discussion', critique: 'discussion', review: 'discussion',
+  contrary: 'discussion', supporting: 'discussion', comparison: 'discussion', correction: 'discussion',
+  provenance: 'context', background: 'context', index: 'context', reference: 'context',
+  related: 'context', context: 'context', press: 'context', other: 'context',
+};
+const FAMILY_LABEL = {
+  primary: 'primary research',
+  replication: 'replication and reanalysis',
+  discussion: 'commentary and critique',
+  context: 'background and reference',
+};
+
+function sourceMix(sources) {
+  const counts = { primary: 0, replication: 0, discussion: 0, context: 0 };
+  let typed = 0;
+  for (const s of sources) {
+    if (!s.type) continue;
+    typed++;
+    counts[SOURCE_FAMILY[s.type] || 'context']++;
+  }
+  // Below three typed sources a proportion bar is a picture of nothing.
+  if (typed < 3) return '';
+  const rows = Object.entries(counts).filter(([, n]) => n > 0);
+  return `        <div class="mix">
+          <div class="mix-bar" role="img" aria-label="${rows.map(([k, n]) => `${n} ${FAMILY_LABEL[k]}`).join(', ')}.">
+${rows.map(([k, n]) => `            <span class="mix-seg mix-${k}" style="flex:${n}"></span>`).join('\n')}
+          </div>
+          <p class="mix-key">${rows.map(([k, n]) => `<span class="mix-k"><span class="mix-dot mix-${k}"></span>${n} ${escapeHtml(FAMILY_LABEL[k])}</span>`).join('')}</p>
+        </div>
 `;
 }
 
@@ -391,13 +561,16 @@ export function entryPage(entry, { base = '/', origin = '', count = 0, entries =
   // The body, as blocks. One list drives both the table of contents and the
   // sections, so a heading cannot exist without a link to it or the reverse.
   const blocks = [
+    // `lead` only on the first paragraph. It is a larger, lighter face meant to
+    // open a section; running 200 words of it is why "What it claims" read as
+    // the heaviest block on the page rather than the easiest.
     ['What it claims', `What does ${entry.name} mean?`,
-      `        <p class="lead">${escapeHtml(entry.meaning)}</p>\n`],
+      paragraphs(entry.meaning)
+        .map((p, i) => `        <p${i === 0 ? ' class="lead"' : ''}>${escapeHtml(p)}</p>`).join('\n') + '\n'],
     ['Does it replicate?', `Has ${entry.name} been retested?`, replicationBlock(r, { base })],
     ['The experiments', 'What the studies actually did',
-      `        <p>${escapeHtml(entry.evidence)}</p>\n`],
-    ['Origin', 'Where it came from',
-      `        <p><b>${escapeHtml(String(entry.origin.year))}</b>, ${escapeHtml(entry.origin.who)}, in ${escapeHtml(entry.origin.where)}.${entry.origin.note ? ` ${escapeHtml(entry.origin.note)}` : ''}</p>\n`],
+      prose(entry.evidence) + sourceMix(sources)],
+    ['Origin', 'Where it came from', originBlock(entry, r)],
     // Two of the seven sections are not prose about the bias; they are warnings
     // about how to use it. `limits` says where the claim stops holding and
     // `misreadings` says what it is routinely taken to mean and does not. Set as
@@ -410,9 +583,15 @@ export function entryPage(entry, { base = '/', origin = '', count = 0, entries =
       // almost the same colour as the key one below — two boxes that look alike
       // differentiate nothing. Distinguished by weight instead: the limits are a
       // bounded, neutral note, and the misreading is the tinted correction.
-      `        <div class="callout callout--info">${ICON.warn}<p>${escapeHtml(entry.limits)}</p></div>\n`],
+      // Only the FIRST paragraph is boxed. A callout wrapped around 300 words is
+      // not a callout, it is a tinted wall — the box stops meaning "read this
+      // bit" once it contains the whole section. The opening paragraph carries
+      // the caveat; the rest follows as ordinary prose.
+      `        <div class="callout callout--info">${ICON.warn}<p>${escapeHtml(paragraphs(entry.limits)[0] || '')}</p></div>\n`
+        + prose(paragraphs(entry.limits).slice(1).join('\n\n'))],
     ['Commonly misread as', 'What people get wrong about it',
-      `        <div class="callout callout--key">${ICON.key}<p>${escapeHtml(entry.misreadings)}</p></div>\n`],
+      `        <div class="callout callout--key">${ICON.key}<p>${escapeHtml(paragraphs(entry.misreadings)[0] || '')}</p></div>\n`
+        + prose(paragraphs(entry.misreadings).slice(1).join('\n\n'))],
     ['Sources', 'Everything this page rests on',
       // `sources-list`, `snum`, `stext`, `stype` and `src-trust`, which are the
       // classes the stylesheet actually defines. This block rendered `src-list`,
