@@ -16,76 +16,82 @@
   "replication": {
     "state": "mixed",
     "headline": "The danger-inflating effect turns up again in anxious and fearful samples, and the result that separated patients from everybody else does not.",
-    "detail": "Engelhard, Macklin, McNally, van den Hout and Arntz gave the scenarios to Vietnam combat veterans. Veterans without PTSD inferred danger from the objective information, while veterans with PTSD also inferred it from anxiety and from intrusive memories, and both effects were largely mediated by perceived uncontrollability. The 2022 systematic review records this as the one included study that used Arntz's scenarios without modification. Verwoerd and colleagues ran the design twice with disgust in place of anxiety, comparing 31 people above the clinical range on contamination fear with 27 below it, and 35 people high on a measure of fear of vomiting with 38 low. High scorers in both studies inferred risk of illness from their disgust. The control-group result is the part that has not held. Muris, Merckelbach and van Spauwen found a general emotional reasoning effect in 101 primary school children, with anxiety sensitivity and trait anxiety predicting how far a child leaned on anxiety information in the safety scripts. Morren, Muris and Kindt found the effect in 508 children aged 7 to 13, and Morren and colleagues found it on two occasions ten months apart in 122 non-clinical children. Berle and Moulds gave an adapted task to 70 students split into 28 low and 42 high dysphoric on the Beck Depression Inventory. Both groups showed emotional reasoning, the groups did not differ, and they did not differ on the panic item carried over from Arntz either.",
+    "detail": "Engelhard, Macklin, McNally, van den Hout and Arntz gave the scenarios to Vietnam combat veterans. Veterans without PTSD inferred danger from the objective information, while veterans with PTSD also inferred it from anxiety and from intrusive memories, and both effects were largely mediated by perceived uncontrollability. The 2022 systematic review records this as the one included study that used Arntz's scenarios without modification. Verwoerd and colleagues carried the design to disgust, twice. The first study compared 31 people above the clinical range on contamination fear with 27 selected as low, on scripts that varied objective threat of contamination and the actor's disgust. The second compared 35 people high on a measure of fear of vomiting with 38 low, on scripts that were all objectively safe and that varied disgust and anxiety separately. High scorers in both inferred risk of illness from the disgust, and in the second study disgust rather than anxiety drove the effect. The control-group result is the part that has not held. Muris, Merckelbach and van Spauwen found a general emotional reasoning effect in 101 primary school children, with anxiety sensitivity and trait anxiety predicting how far a child leaned on anxiety information in the safety scripts. Morren, Muris and Kindt found the effect in 508 children aged 7 to 13, and Morren and colleagues found it on two occasions ten months apart in 122 non-clinical children. Berle and Moulds gave an adapted task to 70 students split into 28 low and 42 high dysphoric on the Beck Depression Inventory. Both groups showed emotional reasoning on the dysphoria scripts, and the groups did not differ. On the panic script carried over from Arntz neither group showed the effect at all, which the authors report as a contrast with the 1995 result rather than as a tie.",
     "study": {
       "cite": "Engelhard, I. M., Macklin, M. L., McNally, R. J., van den Hout, M. A., & Arntz, A. (2001). Emotion- and intrusion-based reasoning in Vietnam veterans with and without chronic posttraumatic stress disorder. Behaviour Research and Therapy, 39(11), 1339-1348.",
       "doi": "10.1016/S0005-7967(00)00101-7",
       "year": 2001
     }
   },
-  "limits": "The evidence base is small and comes from one tradition. The 2022 systematic review searched PubMed, PsycInfo, Scopus and The Cochrane Library and included nine articles, the earliest from 1995 and the latest from 2016. Five were run in the Netherlands, three in Australia and one in Italy. Seven were case-control studies scoring 7 to 9 out of 12 on the review's quality tool, and one of the nine justified its sample size. No meta-analysis, multi-site replication or preregistered replication of the 1995 experiment turned up in the searches run for this entry, which covered Europe PMC, Crossref, and the reference lists of the 2022 review and of Gangemi, Dahò and Mancini. Every study rates imagined scenarios rather than felt emotion, a limitation Verwoerd and colleagues state about their own work. The 1995 paper is paywalled and only its abstract was read here. That matters, because the review's table describes the study as 133 people including 9 spider phobics, while the abstract gives 52 spider phobics among 162 patients. Gangemi and colleagues refer to a first experiment, so the paper may report more than one, and this entry cannot settle the discrepancy.",
-  "misreadings": "The finding is often read as a line between anxious people and everybody else. Non-clinical children show the effect whatever their anxiety level, and dysphoric and non-dysphoric students showed it alike, so symptoms track the size of the tendency rather than its presence. The name also invites confusion with the affect heuristic, which comes from the judgement-and-decision-making literature and is tested against risk and benefit ratings and against probability weighting. Both describe a feeling standing in for evidence, and their evidence bases do not meet. Nothing resembling the Many Labs 2 test that broke one affect heuristic prediction has been run on Arntz's task. The depression case is also not the anxiety case. Berle and Moulds found no difference between currently depressed and non-depressed participants across 78 people, and the 2022 review reports no group differences for depressive symptoms in either of the two studies that looked.",
+  "limits": "The evidence base is small and comes from one tradition. The 2022 systematic review searched PubMed, PsycInfo, Scopus and The Cochrane Library and included nine articles, the earliest from 1995 and the latest from 2016. Five were run in the Netherlands, three in Australia and one in Italy. Seven were case-control studies scoring 7 to 9 out of 12 on the review's quality tool, and one of the nine justified its sample size. No meta-analysis, multi-site replication or preregistered replication of the 1995 experiment turned up in searches run on 21 September 2026 of Europe PMC and Crossref, and of the reference lists of the 2022 review and of Gangemi, Dahò and Mancini. The tasks rate imagined scenarios rather than felt emotion. The review says the authors of the included studies generally grant that, and Verwoerd and colleagues state it about their own work. The 1995 paper was not obtained on that date, and the figures here come from its PubMed abstract. That matters, because the review's table describes the study as 133 people, 119 of them patients, with 9 spider phobics, where the abstract gives 52. The review's other group sizes of 41, 38, 31 and 24 match the abstract exactly, so the disagreement sits on the spider phobia group alone. Gangemi and colleagues refer to a first experiment, so the paper may report more than one, but a single mistyped figure fits the pattern better, and this entry cannot settle it from the abstract.",
+  "misreadings": "The finding is often read as a line between anxious people and everybody else. Non-clinical children show the effect whatever their anxiety level, and dysphoric and non-dysphoric students showed it alike, so symptoms track the size of the tendency rather than its presence. The name also invites confusion with the affect heuristic, entry no. 12, which comes from the judgement-and-decision-making literature and is tested against risk and benefit ratings and against probability weighting. Both describe a feeling standing in for evidence, and their evidence bases do not meet. No test of Arntz's task on the scale of the Many Labs 2 attempt that reversed one affect heuristic prediction appeared in the Europe PMC and Crossref searches of 21 September 2026. The depression case is also not the anxiety case. In a separate study Berle and Moulds compared 27 currently depressed people with 25 never depressed and 26 previously depressed, and none of the differences in emotional reasoning reached significance. That is not the same as no differences at all, because the previously depressed did engage in more non-self-referent emotional reasoning than the never depressed.",
   "sources": [
     {
-      "text": "Arntz, A., Rauner, M., & van den Hout, M. (1995). \"If I feel anxious, there must be danger\": Ex-consequentia reasoning in inferring danger in anxiety disorders. Behaviour Research and Therapy, 33(8), 917-925.",
+      "text": "Arntz, A., Rauner, M., & van den Hout, M. (1995). \"If I feel anxious, there must be danger\": Ex-consequentia reasoning in inferring danger in anxiety disorders. Behaviour Research and Therapy, 33(8), 917-925. Not obtained on 21 September 2026; described here from its PubMed abstract. Elsevier answers this session with a 403 rather than a paywall page, and Unpaywall, OpenAlex, Semantic Scholar and plain search list no open copy. The Maastricht repository refuses search requests from this session.",
       "doi": "10.1016/0005-7967(95)00032-S",
       "url": "https://doi.org/10.1016/0005-7967(95)00032-S",
       "type": "primary"
     },
     {
-      "text": "Engelhard, I. M., Macklin, M. L., McNally, R. J., van den Hout, M. A., & Arntz, A. (2001). Emotion- and intrusion-based reasoning in Vietnam veterans with and without chronic posttraumatic stress disorder. Behaviour Research and Therapy, 39(11), 1339-1348.",
+      "text": "Engelhard, I. M., Macklin, M. L., McNally, R. J., van den Hout, M. A., & Arntz, A. (2001). Emotion- and intrusion-based reasoning in Vietnam veterans with and without chronic posttraumatic stress disorder. Behaviour Research and Therapy, 39(11), 1339-1348. Not obtained on 21 September 2026; described here from its PubMed abstract, which carries the group result and the mediation by perceived uncontrollability quoted above. Elsevier answers with a 403, and no repository or author copy was found.",
       "doi": "10.1016/S0005-7967(00)00101-7",
       "url": "https://doi.org/10.1016/S0005-7967(00)00101-7",
       "type": "replication"
     },
     {
-      "text": "Muris, P., Merckelbach, H., & van Spauwen, I. (2003). The emotional reasoning heuristic in children. Behaviour Research and Therapy, 41(3), 261-272.",
+      "text": "Muris, P., Merckelbach, H., & van Spauwen, I. (2003). The emotional reasoning heuristic in children. Behaviour Research and Therapy, 41(3), 261-272. Not obtained on 21 September 2026; described here from its PubMed abstract, which carries the sample size and the anxiety sensitivity result. Elsevier answers with a 403, and no open copy is listed.",
       "doi": "10.1016/S0005-7967(02)00005-0",
       "url": "https://doi.org/10.1016/S0005-7967(02)00005-0",
       "type": "replication"
     },
     {
-      "text": "Morren, M., Muris, P., & Kindt, M. (2004). Emotional reasoning and parent-based reasoning in normal children. Child Psychiatry and Human Development, 35(1), 3-20.",
+      "text": "Morren, M., Muris, P., & Kindt, M. (2004). Emotional reasoning and parent-based reasoning in normal children. Child Psychiatry and Human Development, 35(1), 3-20. Full text read on 21 September 2026, from the author postprint served by Nivel. That copy is the accepted manuscript rather than the published version, and the sample of 508 children was checked in it.",
       "doi": "10.1023/B:CHUD.0000039317.50547.e3",
       "url": "https://doi.org/10.1023/B:CHUD.0000039317.50547.e3",
       "type": "replication"
     },
     {
-      "text": "Morren, M., Muris, P., Kindt, M., Schouten, E., & van den Hout, M. (2008). Emotional reasoning and parent-based reasoning in non-clinical children, and their prospective relationships with anxiety symptoms. Child Psychiatry and Human Development, 39(4), 351-367.",
+      "text": "Morren, M., Muris, P., Kindt, M., Schouten, E., & van den Hout, M. (2008). Emotional reasoning and parent-based reasoning in non-clinical children, and their prospective relationships with anxiety symptoms. Child Psychiatry and Human Development, 39(4), 351-367. Not obtained on 21 September 2026; described here from its PubMed abstract. Springer serves the article's landing page in place of the PDF at both link.springer.com and rd.springer.com.",
       "doi": "10.1007/s10578-007-0091-4",
       "url": "https://doi.org/10.1007/s10578-007-0091-4",
       "type": "replication"
     },
     {
-      "text": "Berle, D., & Moulds, M. L. (2013). Emotional reasoning processes and dysphoric mood: Cross-sectional and prospective relationships. PLoS ONE, 8(6), e67359.",
+      "text": "Berle, D., & Moulds, M. L. (2013). Emotional reasoning processes and dysphoric mood: Cross-sectional and prospective relationships. PLoS ONE, 8(6), e67359. Full text read on 21 September 2026, from the publisher's open copy. The group sizes and the result on the panic script were checked in it.",
       "doi": "10.1371/journal.pone.0067359",
       "url": "https://doi.org/10.1371/journal.pone.0067359",
       "type": "replication"
     },
     {
-      "text": "Verwoerd, J., de Jong, P. J., Wessel, I., & van Hout, W. J. P. J. (2013). \"If I feel disgusted, I must be getting ill\": Emotional reasoning in the context of contamination fear. Behaviour Research and Therapy, 51(3), 122-127.",
+      "text": "Berle, D., & Moulds, M. L. (2013). An experimental investigation of emotional reasoning processes in depression. British Journal of Clinical Psychology, 52(3), 316-329. Not obtained on 21 September 2026; described here from its PubMed abstract, which carries the three group sizes and the result for previously depressed participants. Wiley answers this session with a Cloudflare challenge rather than a paywall page, and no open copy is listed.",
+      "doi": "10.1111/bjc.12019",
+      "url": "https://doi.org/10.1111/bjc.12019",
+      "type": "replication"
+    },
+    {
+      "text": "Verwoerd, J., de Jong, P. J., Wessel, I., & van Hout, W. J. P. J. (2013). \"If I feel disgusted, I must be getting ill\": Emotional reasoning in the context of contamination fear. Behaviour Research and Therapy, 51(3), 122-127. Not obtained on 21 September 2026; described here from its PubMed abstract and from the account of it in the 2016 paper. The Groningen repository answers this session with a Cloudflare challenge rather than a paywall page.",
       "doi": "10.1016/j.brat.2012.11.005",
       "url": "https://doi.org/10.1016/j.brat.2012.11.005",
       "type": "replication"
     },
     {
-      "text": "Verwoerd, J., van Hout, W. J. P. J., & de Jong, P. J. (2016). Disgust- and anxiety-based emotional reasoning in non-clinical fear of vomiting. Journal of Behavior Therapy and Experimental Psychiatry, 50, 83-89.",
+      "text": "Verwoerd, J., van Hout, W. J. P. J., & de Jong, P. J. (2016). Disgust- and anxiety-based emotional reasoning in non-clinical fear of vomiting. Journal of Behavior Therapy and Experimental Psychiatry, 50, 83-89. Full text read on 21 September 2026. The Groningen repository answers this session with a Cloudflare challenge, and the Wayback Machine served the copy deposited there, which states that it is the version of record.",
       "doi": "10.1016/j.jbtep.2015.05.009",
       "url": "https://doi.org/10.1016/j.jbtep.2015.05.009",
       "type": "replication"
     },
     {
-      "text": "Paredes-Mealla, M., Martínez-Borba, V., Miragall, M., García-Palacios, A., Baños, R. M., & Suso-Ribera, C. (2022). Is there evidence that emotional reasoning processing underlies emotional disorders in adults? A systematic review. Current Psychology, 42(32), 28738-28754.",
+      "text": "Paredes-Mealla, M., Martínez-Borba, V., Miragall, M., García-Palacios, A., Baños, R. M., & Suso-Ribera, C. (2022). Is there evidence that emotional reasoning processing underlies emotional disorders in adults? A systematic review. Current Psychology, 42(32), 28738-28754. Full text read on 21 September 2026, through Europe PMC's XML route. The counts of studies, countries and quality scores, and the table row for the 1995 study, were checked in it.",
       "doi": "10.1007/s12144-022-03884-4",
       "url": "https://doi.org/10.1007/s12144-022-03884-4",
       "type": "review"
     },
     {
-      "text": "Gangemi, A., Dahò, M., & Mancini, F. (2021). Emotional reasoning and psychopathology. Brain Sciences, 11(4), 471.",
+      "text": "Gangemi, A., Dahò, M., & Mancini, F. (2021). Emotional reasoning and psychopathology. Brain Sciences, 11(4), 471. Full text read on 21 September 2026, through Europe PMC. The MDPI copy answers this session with an Akamai refusal. The quotation from Beck, Emery and Greenberg and the four script endings were checked in it.",
       "doi": "10.3390/brainsci11040471",
       "url": "https://doi.org/10.3390/brainsci11040471",
       "type": "review"
     }
   ],
-  "checkedOn": "2026-08-10"
+  "checkedOn": "2026-09-21"
 }
