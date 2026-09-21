@@ -108,6 +108,10 @@ These have repeatedly served the same document when the indexed URL did not.
 
 - `rd.springer.com` serves PDFs that `link.springer.com` answers with a Fastly
   bot challenge. Seven of one entry's eleven leads turned on this alone.
+- Semantic Scholar's `openAccessPdf` field. It has disagreed with Unpaywall
+  and OpenAlex and been the one that was right. Note the reverse too: it has
+  advertised an article as open whose link is a bot challenge, so an index
+  claiming openness is a lead, not a fact, in both directions.
 - Publishers' own deposited abstracts at Crossref and OpenAlex, where the
   article is challenged. One audit settled six of its seven blocked sources
   this way, and it is the cheapest route on this beat: no document to fetch
