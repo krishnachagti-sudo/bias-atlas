@@ -326,7 +326,7 @@ export function clampDescription(text, max = DESC_MAX) {
  * @param {string} [o.description] meta description; emitted only when given
  * @param {string} [o.base='/']   site base path — MUST end with '/', e.g. '/lawtome/'
  * @param {string} [o.origin='']  absolute origin, e.g. 'https://example.com'
- * @param {string} [o.path]       base-relative page path (e.g. 'laws/goodharts-law/'); used to derive canonical/og:url
+ * @param {string} [o.path]       base-relative page path (e.g. 'bias/sunk-cost/'); used to derive canonical/og:url
  * @param {string} [o.canonical]  explicit canonical URL (overrides the derived one)
  * @param {object} [o.og]         Open Graph fields {title,description,image,type}
  * @param {string} [o.siteName=BRAND] og:site_name

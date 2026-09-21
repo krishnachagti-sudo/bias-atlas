@@ -99,7 +99,8 @@ ${hook}${first ? `    <div class="stmt-wrap">
       <div class="attrib" id="attrib">— <a class="who" href="${base}${entryPath(first)}">${escapeHtml(first.name)}</a></div>
     </div>
 ` : ''}    <div class="hero-actions">
-${searchBox('Search a bias — or describe what you noticed…')}    </div>
+${searchBox('Search a bias — or describe what you noticed…')}      <button class="ghost" id="rand" type="button"><i class="ti ti-arrows-shuffle" aria-hidden="true"></i> Random bias</button>
+    </div>
     <p class="hero-credit">By <a href="https://conyso.com/founder/" rel="author">Krishna Chagti</a> · <a href="${base}about/">about &amp; method</a></p>
   </div>
 </section>

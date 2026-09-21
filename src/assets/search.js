@@ -376,7 +376,7 @@
       rand.addEventListener('click', function () {
         if (!rows.length) return;
         var pick = rows[Math.floor(Math.random() * rows.length)];
-        location = BASE + 'laws/' + encodeURIComponent(pick.slug) + '/';
+        location = BASE + 'bias/' + encodeURIComponent(pick.slug) + '/';
       });
     }
 
