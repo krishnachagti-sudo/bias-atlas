@@ -5,100 +5,100 @@
   "aliases": ["Name Letter Test", "Initial Preference Task", "Affective selfparticles hypothesis"],
   "category": "social",
   "statement": "People rate the letters in their own name, above all their initials, as more attractive than other letters.",
-  "meaning": "Nuttin's claim is narrow. Shown the alphabet and asked which letters they like, people put the letters of their own name near the top, and their initials highest of all. A second claim was attached later, and it is the one that made the finding useful to other researchers. If people like their initials because they like themselves, then rating the alphabet is a back door to self-esteem that a respondent cannot manage. That instrument is the Name Letter Test, also called the Initial Preference Task, and it became one of the two standard measures of implicit self-esteem alongside the Implicit Association Test. The two claims stand or fall separately. Pelham's extension of the same premise to careers, towns and spouses is a third claim, treated under nominative determinism.",
+  "meaning": "Nuttin's claim is narrow. Shown the alphabet and asked which letters they like, people put the letters of their own name near the top, and their initials highest of all. A second claim was attached later, and it is the one that made the finding useful to other researchers. If people like their initials because they like themselves, then rating the alphabet is a back door to self-esteem that a respondent cannot manage. That instrument is the Name Letter Test, also called the Initial Preference Task. Hoorens's review places it among the most used indirect measures of self-esteem, surpassed only by the Implicit Association Test. The two claims stand or fall separately. The same premise extended to careers, towns and spouses is a third claim, covered under nominative determinism, entry 56. The birthday-number effect, entry 171, is the parallel measure built on numbers rather than letters.",
   "origin": {
     "year": 1985,
     "who": "Jozef M. Nuttin Jr.",
     "where": "European Journal of Social Psychology",
-    "note": "The paper is titled \"Narcissism beyond Gestalt and awareness: The name letter effect\". Its abstract tests \"mere belongingness to self\" as a sufficient condition for the enhancement of the attractiveness of visual letter stimuli, and reports the preference as holding independent of visual, acoustical, aesthetic, semantic and frequency characteristics. Nuttin followed it in 1987 with a study across twelve European languages. Neither paper is about self-esteem: his term is mere ownership. Hoorens's review calls the claim Nuttin's affective selfparticles hypothesis, and gives the elementary self-attachment hypothesis and the mere ownership hypothesis as its other names. Buhrmester, Blanton and Swann trace the reading of letter preference as a carryover from high self-esteem to Greenwald and Banaji in 1995."
+    "note": "The paper is titled \"Narcissism beyond Gestalt and awareness: The name letter effect\". Its abstract tests \"mere belongingness to self\" as a sufficient condition for the enhancement of the attractiveness of visual letter stimuli. It reports the preference as holding independent of visual, acoustical, aesthetic, semantic and frequency characteristics. Nuttin followed it in 1987 with a study across twelve European languages, whose abstract frames the test as mere ownership. Neither paper is about self-esteem. Hoorens's 2014 review dates the first report to an address Nuttin gave to Dutch social psychologists in 1984, seven years after he collected the data. Her 1990 review calls the claim Nuttin's affective selfparticles hypothesis, and gives the elementary self-attachment hypothesis and the mere ownership hypothesis as its other names. Buhrmester, Blanton and Swann trace the reading of letter preference as a carryover from high self-esteem to Greenwald and Banaji in 1995."
   },
-  "evidence": "Nuttin's first design was yoked, which holds letter frequency constant. Thirty-eight primary school girls picked the more attractive letter from each of a series of pairs. Every list was judged twice, once by the owner of the name hidden in it and once by a partner who did not own that name. Owners chose the hidden name's letters on 55.1% of pairs against 44.6% for their partners. A second study on 96 university students got the same result through rejections rather than choices, 53.8% against 37.3% non-rejection. The 1987 study dropped the yoking and asked students from twelve European countries to pick their six favourite letters from the whole alphabet. A letter reached that set 30% of the time when it belonged to the rater's name and 20% when it did not, rising to 46% for own initials, with a reliable effect in nine of the twelve groups. Those figures are read from Vera Hoorens's 1990 review, which sets both papers out in detail; the papers themselves sit behind a paywall these checks did not pass. Bosson, Swann and Pennebaker measured the same preference in American undergraduates and found initials rated 0.93 scale points above what those same letters scored from people who did not own them, t = 6.13.",
+  "evidence": "Nuttin's first design was yoked, which holds letter frequency constant. Thirty-eight primary school girls picked the more attractive letter from each pair in a list. Every list was judged twice, once by the owner of the name hidden in it and once by a partner who did not own that name. Owners chose the hidden name's letters on 55.1% of pairs against 44.6% for their partners. A second study on 96 university students got the same result through rejections, 53.8% non-rejection against 37.3%. The 1987 study dropped the yoking and asked students of twelve European nationalities to pick their six favourite letters from the alphabet. A letter reached that set 30% of the time when it belonged to the rater's name and 20% when it did not. Restricted to first-name letters the figure rose to 33%, and to 46% for own initials. The effect held in nine of the twelve groups. Those figures are read from Vera Hoorens's 1990 review, whose full text sits in the Psychologica Belgica open archive. Nuttin's own two papers stayed shut. Bosson, Swann and Pennebaker ran the task on undergraduates at the University of Texas at Austin. Own initials scored 0.93 points above the average rating those same letters drew across the whole sample, t(80) = 6.13.",
   "replication": {
     "state": "replicated",
-    "headline": "The letter preference holds in large and varied samples; its reading as a measure of self-esteem does not.",
-    "detail": "Stieger and LeBel gave a letter-rating task to 1,380 people of mixed age. They report reliable preferences for the initials of a new married surname and for the initials of an abandoned birth name, still there after twenty years of marriage. The effect appeared in every age cohort tested. That paper was read here at its abstract. Bosson, Swann and Pennebaker's initials task produced a positivity bias of 0.93 scale points, t = 6.13, in 84 undergraduates. What fails is the step to self-esteem. Pietschnig and thirteen co-authors meta-analysed 60 studies covering 105 independent adult samples and 17,777 people. They put the correlation between the Initial Preference Task and explicit self-esteem at r = .102, 95% CI .079 to .125, about 1% of shared variance. They report internal consistencies from the low .30s to the low .50s and retest reliabilities from the high .30s to the high .60s, and end by saying that the latent construct measured by the task remains unclear. Bosson's single sample showed the same shape: the initials task correlated .13, .11, .09 and .13 with four explicit self-esteem measures, none of them reliable, and -.06 with the self-esteem Implicit Association Test. Its retest correlation over a mean of 31.23 days was .63, the second best of seven implicit measures and below the Rosenberg scale's .80. Buhrmester, Blanton and Swann reviewed 40 name-letter studies against 79 Implicit Association Test studies and concluded that the name-letter test is best understood as a measure of implicit egotism rather than of self-esteem.",
+    "headline": "The letter preference holds in large and varied samples; what the task measures is still contested.",
+    "detail": "Hoorens, Takano, Franck, Roberts and Raes gave a letter rating task to 164 community participants aged 17 to 67, on each of seven days. Preference was stronger for initials than for non-initials, F(1, 130) = 38.62, and stronger for first names than for last, F(1, 130) = 27.02. Stieger and LeBel report reliable preferences in 1,380 people for the initial of a new married surname and for the initial of an abandoned birth name, after twenty years of marriage, across every age cohort assessed. Only their abstract could be read here. Bosson, Swann and Pennebaker recruited 84 undergraduates and dropped one for not following instructions. Their initials task produced a positivity bias of 0.93 scale points, t(80) = 6.13, and its retest correlation over a mean of 31.23 days was .63. That was the second best of their seven implicit measures and below the Rosenberg scale's .80. Hoorens's 2014 review concludes that the effect is now well established as a demonstration of self-attachment. It lists the preference as documented in the Roman, Greek, Cyrillic, Thai and Japanese hiragana alphabets, and in people from school age to old age. The step to self-esteem is where accounts diverge. Pietschnig and thirteen co-authors meta-analysed 60 studies covering 105 independent adult samples and 17,777 people. They put the correlation between the Initial Preference Task and explicit self-esteem at r = .102, 95% CI .079 to .125, which they describe as about 1% of shared variance. They end by saying that the latent construct measured by the task remains unclear. Bosson's single sample showed the same shape: the initials task correlated .13, .11, .09 and .13 with four explicit self-esteem measures, none of them reliable, and -.06 with the self-esteem Implicit Association Test. Buhrmester, Blanton and Swann reviewed 40 name-letter studies against 79 Implicit Association Test studies. They conclude that the name-letter test is best understood as a measure of implicit egotism rather than of self-esteem. Hoorens reads the same literature less harshly, holding that initial preferences do predict behaviours tied to self-esteem in theory and in data. Both documents were read for this entry, and they disagree.",
     "study": {
-      "cite": "Stieger, S., & LeBel, E. P. (2012). Name-letter preferences for new last name and abandoned birth name initials in the context of name-change via marriage. Social Psychology, 43(1), 7-13.",
-      "doi": "10.1027/1864-9335/a000075",
-      "year": 2012,
-      "n": 1380
+      "cite": "Hoorens, V., Takano, K., Franck, E., Roberts, J. E., & Raes, F. (2015). Initial and noninitial name-letter preferences as obtained through repeated letter rating tasks continue to reflect (different aspects of) self-esteem. Psychological Assessment, 27(3), 905-914.",
+      "doi": "10.1037/pas0000092",
+      "year": 2015,
+      "n": 164
     }
   },
-  "limits": "The numbers depend on how they are computed. Pietschnig's group report an average Cronbach's alpha of .47 for the I-algorithm and .48 for the S-algorithm. The implicit-explicit correlation itself moved with the scoring rule, .13 for the B-algorithm against .06 for the others. It also came to .11 for a single administration against .02 for a double one. Stieger, Voracek and Formann had already given the question of how to run the task two meta-analyses, k = 49 and N = 11,514, plus an experiment on 449 people. Reliability is not the only problem. Hoorens reports that in a control study by Nuttin not one participant identified the own-letter pattern in the materials, even when offered money for it, but the modern task puts the initials in plain view. Krizan found that close to half of respondents recognise what the task is for and that those who do score higher on it, which is read here from Buhrmester's account of his paper rather than from the paper. Whether initial and non-initial preferences measure one thing is also open. Hoorens and colleagues followed 164 community participants daily for a week and again at six months. They report initial preferences moving with state self-esteem while non-initial preferences tracked trait self-esteem. That paper was read at its abstract. Two further items could not be obtained. Hoorens's 2014 review in the European Review of Social Psychology is paywalled, as are Krizan's 2008 paper and Krizan and Suls's meta-analysis, whose name-letter to Rosenberg correlation of .12 across 19 estimates is quoted here from Buhrmester's table.",
-  "misreadings": "The two claims get collapsed. Reports that implicit self-esteem measures have failed are read as saying that the letter preference itself is gone, when that preference is among the better-replicated findings in the area. The traffic runs the other way too, with the robustness of the letter preference offered as warrant for whatever the task is being used to measure. Buhrmester, Blanton and Swann draw the line: the task measures something, and that something looks like implicit egotism rather than self-worth. The effect is also not confined to initials, and Nuttin's own analyses separate first-name from family-name letters and initials from non-initials. Nor does it spread to letters standing for anything a person merely belongs to. Hoorens's review reports that Nuttin found no preference for national initials, F for a French rater, and none for the capital letters marking a car's country of origin. Johnson found none for the letters of a person's home town. The career and marriage claims built from the same premise belong to a separate literature and are covered under nominative determinism.",
+  "limits": "The numbers depend on how they are computed. Pietschnig's group cite LeBel and Gawronski for average Cronbach alphas of .47 and .48, across eighteen investigations, for the I-algorithm and the S-algorithm. They cite other work for internal consistencies from the low .30s to the low .50s and retest reliabilities from the high .30s to the high .60s. Their own meta-analysis found the implicit-explicit correlation moving with the scoring rule, .13 for the B-algorithm against .06 for the rest. It came to .11 for a single administration against .02 for a double one. Stieger, Voracek and Formann had already given the question of how to run the task two meta-analyses, k = 49 and N = 11,514, plus a follow-up experiment on 449 people. Those figures come from the abstract their publisher deposited with Crossref, not from the paper. Reliability is not the only problem. Hoorens's 1990 review reports that in a control study by Nuttin not one participant identified the own-letter pattern in the materials, even when promised money for it. The modern task puts the initials in plain view. Buhrmester reports that nearly half of respondents in a study by Krizan recognised the task's self-relevant nature, and that those who did scored higher on it. Krizan's paper is described here from Buhrmester's account rather than from the paper. Whether initial and non-initial preferences measure one thing is also open. In the 164-person study both correlated with trait and with average state self-esteem at zero order. Only the partial correlations separate them, initials going with state self-esteem and non-initials with trait. Four papers resisted every route tried on 21 September 2026. Stieger and LeBel, Stieger, Voracek and Formann, Krizan, and Krizan and Suls have no repository copy indexed by Unpaywall, OpenAlex or Semantic Scholar. The publisher pages at Hogrefe, Sage and Taylor and Francis answered with a Cloudflare bot challenge rather than a paywall notice, so what stops a reader there is a robot check and not a price.",
+  "misreadings": "The two claims get collapsed. Reports that implicit self-esteem measures have failed are read as saying that the letter preference itself is gone, when that preference is among the better-replicated findings in the area. The traffic runs the other way too, with the robustness of the letter preference offered as warrant for whatever the task is being used to measure. Buhrmester, Blanton and Swann draw the line: the task measures something, and that something looks like implicit egotism rather than self-worth. The effect is also not confined to initials, and Nuttin's own analyses separate first-name from family-name letters and initials from non-initials. Nor does it spread to letters standing for anything a person merely belongs to. Hoorens's 1990 review reports that Nuttin found no preference for national initials, F for a French rater, and none for the capital letters marking a car's country of origin. Johnson found none for the letters of a person's home town. A second collapse is the one Hoorens heads off in her own review, which states that it does not cover the literature on name-letter-driven choices of place, job, brand or spouse, and points to Simonsohn's refutation of those field studies. That literature is covered under nominative determinism, entry 56.",
   "sources": [
     {
-      "text": "Nuttin, J. M. (1985). Narcissism beyond Gestalt and awareness: The name letter effect. European Journal of Social Psychology, 15(3), 353-361. Paywalled; read at its abstract.",
+      "text": "Nuttin, J. M. (1985). Narcissism beyond Gestalt and awareness: The name letter effect. European Journal of Social Psychology, 15(3), 353-361. Wiley served no full text and no repository copy is indexed; read at the abstract the publisher deposited with Crossref. Its figures reach this entry through Hoorens's 1990 review.",
       "doi": "10.1002/ejsp.2420150309",
       "url": "https://doi.org/10.1002/ejsp.2420150309",
       "type": "primary"
     },
     {
-      "text": "Nuttin, J. M. (1987). Affective consequences of mere ownership: The name letter effect in twelve European languages. European Journal of Social Psychology, 17(4), 381-402. Paywalled; read at its abstract.",
+      "text": "Nuttin, J. M. (1987). Affective consequences of mere ownership: The name letter effect in twelve European languages. European Journal of Social Psychology, 17(4), 381-402. Read at the abstract the publisher deposited with Crossref; its figures reach this entry through Hoorens's 1990 review.",
       "doi": "10.1002/ejsp.2420170402",
       "url": "https://doi.org/10.1002/ejsp.2420170402",
       "type": "primary"
     },
     {
-      "text": "Hoorens, V. (1990). Nuttin's affective selfparticles hypothesis and the name letter effect: A review. Psychologica Belgica, 30(1-2), 23-48. The source for the figures this entry gives from Nuttin's 1985 and 1987 papers.",
+      "text": "Hoorens, V. (1990). Nuttin's affective selfparticles hypothesis and the name letter effect: A review. Psychologica Belgica, 30(1-2), 23-48. Read in full from the journal's open archive. The source for the figures this entry gives from Nuttin's 1985 and 1987 papers.",
       "doi": "10.5334/pb.801",
       "url": "https://doi.org/10.5334/pb.801",
       "type": "review"
     },
     {
-      "text": "Bosson, J. K., Swann, W. B., Jr., & Pennebaker, J. W. (2000). Stalking the perfect measure of implicit self-esteem: The blind men and the elephant revisited? Journal of Personality and Social Psychology, 79(4), 631-643.",
+      "text": "Hoorens, V. (2014). What's really in a Name-Letter Effect? Name-letter preferences as indirect measures of self-esteem. European Review of Social Psychology, 25(1), 228-262. Read in full. The publisher's copy is subscription-only, but the author's accepted manuscript is a free download from KU Leuven's Lirias repository, so what is quoted here carries the manuscript's wording and not the published pagination.",
+      "doi": "10.1080/10463283.2014.980085",
+      "url": "https://doi.org/10.1080/10463283.2014.980085",
+      "type": "review"
+    },
+    {
+      "text": "Bosson, J. K., Swann, W. B., Jr., & Pennebaker, J. W. (2000). Stalking the perfect measure of implicit self-esteem: The blind men and the elephant revisited? Journal of Personality and Social Psychology, 79(4), 631-643. Read in full from a copy on the author's university page.",
       "doi": "10.1037/0022-3514.79.4.631",
       "url": "https://doi.org/10.1037/0022-3514.79.4.631",
       "type": "primary"
     },
     {
-      "text": "Pietschnig, J., Gittler, G., Stieger, S., Forster, M., Gadek, N., Gartus, A., Kocsis-Bogar, K., Kubicek, B., Luftenegger, M., Olsen, J., Prem, R., Ruiz, N., Serfas, B. G., & Voracek, M. (2018). Indirect (implicit) and direct (explicit) self-esteem measures are virtually unrelated: A meta-analysis of the initial preference task. PLOS ONE, 13(9), e0202873.",
+      "text": "Pietschnig, J., Gittler, G., Stieger, S., Forster, M., Gadek, N., Gartus, A., Kocsis-Bogar, K., Kubicek, B., Luftenegger, M., Olsen, J., Prem, R., Ruiz, N., Serfas, B. G., & Voracek, M. (2018). Indirect (implicit) and direct (explicit) self-esteem measures are virtually unrelated: A meta-analysis of the initial preference task. PLOS ONE, 13(9), e0202873. Open access; read in full.",
       "doi": "10.1371/journal.pone.0202873",
       "url": "https://doi.org/10.1371/journal.pone.0202873",
       "type": "replication"
     },
     {
-      "text": "Stieger, S., & LeBel, E. P. (2012). Name-letter preferences for new last name and abandoned birth name initials in the context of name-change via marriage. Social Psychology, 43(1), 7-13. Read at its abstract only.",
-      "doi": "10.1027/1864-9335/a000075",
-      "url": "https://doi.org/10.1027/1864-9335/a000075",
-      "type": "replication"
-    },
-    {
-      "text": "Buhrmester, M. D., Blanton, H., & Swann, W. B., Jr. (2011). Implicit self-esteem: Nature, measurement, and a new way forward. Journal of Personality and Social Psychology, 100(2), 365-385.",
-      "doi": "10.1037/a0021341",
-      "url": "https://doi.org/10.1037/a0021341",
-      "type": "commentary"
-    },
-    {
-      "text": "Stieger, S., Voracek, M., & Formann, A. K. (2012). How to administer the Initial Preference Task. European Journal of Personality, 26(1), 63-78. Read at its abstract only.",
-      "doi": "10.1002/per.823",
-      "url": "https://doi.org/10.1002/per.823",
-      "type": "commentary"
-    },
-    {
-      "text": "Hoorens, V., Takano, K., Franck, E., Roberts, J. E., & Raes, F. (2015). Initial and noninitial name-letter preferences as obtained through repeated letter rating tasks continue to reflect (different aspects of) self-esteem. Psychological Assessment, 27(3), 905-914. Read at its abstract only.",
+      "text": "Hoorens, V., Takano, K., Franck, E., Roberts, J. E., & Raes, F. (2015). Initial and noninitial name-letter preferences as obtained through repeated letter rating tasks continue to reflect (different aspects of) self-esteem. Psychological Assessment, 27(3), 905-914. Read in full as the accepted author version in the University of Antwerp repository.",
       "doi": "10.1037/pas0000092",
       "url": "https://doi.org/10.1037/pas0000092",
       "type": "replication"
     },
     {
-      "text": "Krizan, Z. (2008). What is implicit about implicit self-esteem? Journal of Research in Personality, 42(6), 1635-1640. Paywalled; named here and described from Buhrmester, Blanton and Swann, not read.",
+      "text": "Buhrmester, M. D., Blanton, H., & Swann, W. B., Jr. (2011). Implicit self-esteem: Nature, measurement, and a new way forward. Journal of Personality and Social Psychology, 100(2), 365-385. Read in full from a copy on a university course page.",
+      "doi": "10.1037/a0021341",
+      "url": "https://doi.org/10.1037/a0021341",
+      "type": "commentary"
+    },
+    {
+      "text": "Stieger, S., & LeBel, E. P. (2012). Name-letter preferences for new last name and abandoned birth name initials in the context of name-change via marriage. Social Psychology, 43(1), 7-13. Read at the abstract the publisher deposited with Crossref. Hogrefe's own page answers a plain request with a Cloudflare bot challenge, and no repository copy is indexed.",
+      "doi": "10.1027/1864-9335/a000075",
+      "url": "https://doi.org/10.1027/1864-9335/a000075",
+      "type": "replication"
+    },
+    {
+      "text": "Stieger, S., Voracek, M., & Formann, A. K. (2012). How to administer the Initial Preference Task. European Journal of Personality, 26(1), 63-78. Read at the abstract the publisher deposited with Crossref; Sage's page answers with a Cloudflare bot challenge, and no repository copy is indexed.",
+      "doi": "10.1002/per.823",
+      "url": "https://doi.org/10.1002/per.823",
+      "type": "commentary"
+    },
+    {
+      "text": "Krizan, Z. (2008). What is implicit about implicit self-esteem? Journal of Research in Personality, 42(6), 1635-1640. Subscription-only at Elsevier, no repository copy indexed, and no abstract deposited with Crossref. Named here and described from Buhrmester, Blanton and Swann, not read.",
       "doi": "10.1016/j.jrp.2008.07.002",
       "url": "https://doi.org/10.1016/j.jrp.2008.07.002",
       "type": "commentary"
     },
     {
-      "text": "Krizan, Z., & Suls, J. (2008). Are implicit and explicit measures of self-esteem related? A meta-analysis for the Name-Letter Test. Personality and Individual Differences, 44(2), 521-531. Paywalled; its correlation is quoted here from Buhrmester, Blanton and Swann's table.",
+      "text": "Krizan, Z., & Suls, J. (2008). Are implicit and explicit measures of self-esteem related? A meta-analysis for the Name-Letter Test. Personality and Individual Differences, 44(2), 521-531. Subscription-only at Elsevier, no repository copy indexed, and no abstract deposited with Crossref. Its summary correlation is quoted here from two papers that were read: Buhrmester's table gives .12 across 19 estimates, and Pietschnig's group give .115.",
       "doi": "10.1016/j.paid.2007.09.017",
       "url": "https://doi.org/10.1016/j.paid.2007.09.017",
       "type": "replication"
-    },
-    {
-      "text": "Hoorens, V. (2014). What's really in a Name-Letter Effect? Name-letter preferences as indirect measures of self-esteem. European Review of Social Psychology, 25(1), 228-262. Paywalled; named here, not read for this entry.",
-      "doi": "10.1080/10463283.2014.980085",
-      "url": "https://doi.org/10.1080/10463283.2014.980085",
-      "type": "review"
     }
   ],
-  "checkedOn": "2026-08-09"
+  "checkedOn": "2026-09-21"
 }
