@@ -23,6 +23,10 @@ claim on not having read the document, where an index says an open copy
 exists. Leads, not verdicts: an index can be wrong and a listed copy can
 refuse the fetcher.
 
+Most entries have no lead file, and that is not a finding. It means the probe
+found nothing to flag, which is a fact about the phrasing of the notes rather
+than about the entry. Start from the taxonomy instead.
+
 Do not stop there. In most entries so far, more false notes sat outside the
 lead file than inside it. Re-try every source whose note says or implies the
 document was not read.
