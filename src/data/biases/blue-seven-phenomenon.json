@@ -2,20 +2,25 @@
   "no": 272,
   "slug": "blue-seven-phenomenon",
   "name": "Blue-seven phenomenon",
-  "aliases": ["Blue seven phenomenon", "Blue and seven phenomena", "Seven phenomenon", "Blue phenomenon"],
+  "aliases": [
+    "Blue seven phenomenon",
+    "Blue and seven phenomena",
+    "Seven phenomenon",
+    "Blue phenomenon"
+  ],
   "category": "decision",
   "statement": "Asked to name a colour and to pick a digit from 0 to 9, more people say blue and seven than any other answer.",
-  "meaning": "Two findings travel under one name. The first is that when people are asked to say a colour, blue comes up more often than any other. The second is that when they are asked for a digit from 0 to 9, seven comes up more often than any other. Simon reported both from one questionnaire in 1971 and the pairing stuck. Whether they are a single effect is a separate question, and the two papers that tested it say they are not. The size of each depends on how the question is put. Naming a colour and naming a favourite colour draw different answers, and the popularity of seven depends on the range of numbers offered. The related claim that people like the digits in their own birth date is covered under the birthday-number effect.",
+  "meaning": "Two findings travel under one name. The first is that when people are asked to say a colour, blue comes up more often than any other. The second is that when they are asked for a digit from 0 to 9, seven comes up more often than any other. Simon reported both from one questionnaire in 1971 and the pairing stuck. Whether they are a single effect is a separate question, and the two papers that tested it say they are not. The size of each depends on how the question is put. Naming a colour and naming a favourite colour draw different answers, and the popularity of seven depends on the range of numbers offered. The related claim that people like the digits in their own birth date is covered under the birthday-number effect, entry 171.",
   "origin": {
     "year": 1971,
     "who": "William E. Simon",
     "where": "Perceptual and Motor Skills",
-    "note": "Simon put two questions to 490 college students: write down a number between 0 and 9, and write down the name of a colour. His abstract reports that 7 and blue were by far the most frequently written, and that sex differences appeared on both. It prints no percentages. Saito's 2015 encyclopedia entry puts Simon's result at over 40% for blue and over 30% for seven, and those two figures are quoted here from her, not from him. The paper itself was not read; only the abstract deposited with Crossref was."
+    "note": "Simon put two questions to 490 college students: write down a number between 0 and 9, and write down the name of a colour. His abstract reports that 7 and blue were by far the most frequently written, and that sex differences appeared on both. It prints no percentages. Saito's 2015 encyclopedia entry puts Simon's result at over 40% for blue and over 30% for seven, and those two figures are quoted here from her, not from him. The paper itself was not read. Its abstract was read at Crossref on 21 September 2026, the day SAGE answered every attempt with a Cloudflare bot challenge and PsycNET with a refusal."
   },
-  "evidence": "Simon and Primavera put the same two questions to 533 elementary and junior high school children the following year. Seven and blue were again the most frequent, each at p < .001. Silver and six colleagues asked 582 undergraduates for a favourite colour and a number from 0 to 9, and report blue and seven leading among both sexes and both racial groups in their sample. Knowles ran three studies setting free choice against 109 respondents' favourite colour and number, and reports that the preference for blue and seven repeated. Trueman collected written answers from 145 Australian university students, 118 men and 27 women of mean age 19.5, and found both phenomena present, with partial change in behaviour after respondents were told about the bias. Kubovy and Psotka asked instead for the first digit that comes to mind, and 28.4% said 7. Away from questionnaires, Wang, Potter van Loon, van den Assem and van Dolder hold five million Dutch Lotto combinations of six numbers from 1 to 45. Random picking would give each number 13.3%. Seven was picked in 16.3% of combinations, second to 11 at 16.5%. In a Dutch casino game of four numbers from 0 to 36, where chance gives 2.70%, 7 was the most popular at 4.19%, and blue was the most chosen jackpot colour at 22.2% of six options.",
+  "evidence": "Simon and Primavera put the same two questions to 533 elementary and junior high school children the following year. Seven and blue were again the most frequent, each at p < .001. Silver and six colleagues asked 582 undergraduates for a favourite colour and a number from 0 to 9, and report blue and seven leading among both sexes and both racial groups in their sample. Knowles ran three studies setting free choice against 109 respondents' favourite colour and number, and reports that the preference for blue and seven repeated. Trueman collected written answers from 145 Australian university students, 118 men and 27 women of mean age 19.5, and found both phenomena present, with partial change in behaviour after respondents were told about the bias. Kubovy and Psotka asked instead for the first digit that comes to mind, and 28.4% said 7. Away from questionnaires, Wang, Potter van Loon, van den Assem and van Dolder hold 5,108,343 Dutch Lotto combinations of six numbers from 1 to 45. Random picking would give each number 13.3%. Seven was picked in 16.3% of combinations, second to 11 at 16.5%. Lotto players also choose one jackpot colour from six, and blue led there at 22.2%, ahead of red at 18.9%. In a separate Dutch casino game of 568,987 predictions of four numbers from 0 to 36, where chance gives 2.70%, 7 was the most popular at 4.19%.",
   "replication": {
     "state": "mixed",
-    "headline": "The pairing repeats in American, Australian and Japanese samples and fails in Niger, Congo, Transkei, the Netherlands and Turkey.",
+    "headline": "Blue and seven both lead in American, Australian and Japanese samples, and neither leads in Niger, Congo, Transkei, the Netherlands or Turkey.",
     "detail": "Vandewiele, D'Hondt, Didillon, Iwawaki and Mwamwenda asked children in four places to write a favourite colour and a number between 0 and 9. In Niger 353 boys and 308 girls tended to write 9 and red. Of the Japanese children, 121 boys and 112 girls, the majority wrote 7 and blue. Transkeian children, 95 boys and 126 girls, generally chose 8 and black. In Brazzaville 126 boys and 155 girls tended to choose 9 and red. Kuloğlu, Atmaca, Tezcan, Unal and Gecici asked 500 psychiatric patients in eastern Turkey for a colour from the Lüscher test and a number between 0 and 9; green and 3 came out on top, which they read as reflecting the region's religious and cultural setting. Wiegersma and de Klerck titled their Dutch note \"The 'blue phenomenon' is red in the Netherlands\". Saito's Japanese sample went the other way. Among 586 undergraduates, blue was named by 33.5% on the first question and chosen as favourite by 37.1%, and 22.5% picked seven, with respondents giving luck and happiness as the reason. Age matters as well. Wiegersma found the seven result absent in 8- and 9-year-olds and present in 10- and 11-year-olds.",
     "study": {
       "cite": "Vandewiele, M., D'Hondt, W., Didillon, H., Iwawaki, S., & Mwamwenda, T. (1986). Number and color preferences in four countries. Perceptual and Motor Skills, 63(2), 945-946.",
@@ -23,11 +28,11 @@
       "year": 1986
     }
   },
-  "limits": "The seven result does not survive a change of range, which is the obvious thing to test and was tested early. Kubovy and Psotka's 28.4% fell to 17.3% when the request was for a number between 6 and 15, and to 16.6% when the experimenter offered 7 as an example of an answer. Asked for a number in the 20s, 27.7% chose 27; asked for one in the 70s, only 15.5% chose 77. Kubovy's follow-up changed two words. 'The first digit that comes to mind' drew 7 from 28.4% and 1 from 2.2%, while 'the one-digit number that comes to mind' drew 1 from 18.0% and 7 from 12.1%. He reads this as respondents first trying to comply, then replacing an answer that looks too plain to pass as spontaneous. Colour carries the same problem. Wiegersma and Van Der Elst show that Dutch answers to 'write your favourite colour' differ from answers to 'write the first colour name that comes to mind', and argue that comparing countries needs the wording held fixed. Wiegersma and Van Loon then found that among Dutch students pleasantness, rather than prototypicality or conspicuousness, determined the four commonest spontaneous choices, with blue rated the most pleasant of 12 colours while red remained the commonest choice. Almost every study here is a note of one to three pages in Perceptual and Motor Skills, Psychological Reports or the Journal of General Psychology, with samples in the hundreds and no preregistration. Searches of Crossref, PubMed and the open web for work since 2000 returned the Turkish patient sample, Saito's Japanese sample and the lottery data, and no fresh test of Simon's questionnaire. Most abstracts here were read through Crossref or a third-party index, because the publisher pages refused the request. Five items were not read at all: Simon 1971 beyond its abstract, Benel 1976, Philbrick's East Africa report, Pasciak and Williams's high-school note, and Boutwell and Fennell 1974, for which no DOI was located.",
-  "misreadings": "The hyphen does more work than the evidence supports. Knowles set out to test whether choosing blue predicts choosing seven and reports no conditional relationship between them. Trueman reports no evidence for a combined blue-seven or seven-blue phenomenon. Two separate response tendencies were measured on one questionnaire and have been named as a pair ever since. The figures are also pluralities rather than majorities: the largest proportion for seven anywhere in this record is 28.4%, so most respondents say something else. Calling the task random selection inverts what the best explanation of it says. Kubovy's account is that a respondent trying to look spontaneous is making a deliberate choice, which is why naming 7 as an example cuts its popularity to 16.6%. The name is sometimes used for the colour half alone. Saito's encyclopedia entry lists 'Blue-Seven Phenomenon' as a synonym for the claim that blue is the universal favourite colour, and her own survey of 400 people across nine cultural groups found vivid blue the only colour commonly preferred highly by all of them. Her two accounts of her Japanese data disagree on one figure: the 1999 abstract puts red at 26.0% on the naming question, the 2015 encyclopedia entry at 28.02%.",
+  "limits": "The seven result does not survive a change of range, which is the obvious thing to test and was tested early. Kubovy and Psotka's 28.4% fell to 17.3% when the request was for a number between 6 and 15, and to 16.6% when the experimenter offered 7 as an example of an answer. Asked for a number in the 20s, 27.7% chose 27; asked for one in the 70s, only 15.5% chose 77. Kubovy's follow-up changed the wording of the request. 'The digit that comes to mind' drew 7 from 28.4% and 1 from 2.2%, while 'the one-digit number that comes to mind' drew 1 from 18.0% and 7 from 12.1%. He reads this as respondents first trying to comply, then replacing an answer that looks too plain to pass as spontaneous. Colour carries the same problem. Wiegersma and Van Der Elst show that Dutch answers to 'write your favourite colour' differ from answers to 'write the first colour name that comes to mind', and argue that comparing countries needs the wording held fixed. Wiegersma and Van Loon then found that among Dutch students pleasantness, rather than prototypicality or conspicuousness, determined the four commonest spontaneous choices, with blue rated the most pleasant of 12 colours while red remained the commonest choice. The lottery figures are raw choice frequencies, and Wang and colleagues show that position on the form moves them. Numbers in the middle of the Lotto grid are chosen 5 to 13% more often than numbers at its edges, and in the casino grid 22 to 40% more often. They also cannot tell which Lotto combinations a player simply kept from the random generator. Almost every study here is a note of one to three pages in Perceptual and Motor Skills, Psychological Reports or the Journal of General Psychology, with samples in the hundreds and no preregistration. Searches of Crossref, PubMed, OpenAlex and the open web on 21 September 2026 for work since 2000 returned the Turkish patient sample and the lottery data, and no fresh test of Simon's questionnaire. Most abstracts here were read at Crossref, PubMed or OpenAlex, because SAGE and Taylor and Francis answered the fetcher with a Cloudflare bot challenge rather than a paywall, and CoLab refused this session's address outright. Five items were not read at all: Simon 1971 beyond its abstract, Benel 1976, Philbrick's East Africa report, Pasciak and Williams's high-school note, and Boutwell and Fennell 1974, which Crossref carries no DOI for.",
+  "misreadings": "The hyphen does more work than the evidence supports. Knowles set out to test whether choosing blue predicts choosing seven and reports no conditional relationship between them. Trueman reports no evidence for a combined blue-seven or seven-blue phenomenon. Two separate response tendencies were measured on one questionnaire and have been named as a pair ever since. The figures are pluralities rather than majorities wherever a percentage is printed. Kubovy and Psotka's 28.4% is the largest share for seven taken here from a paper of its own, and Saito puts Simon's share above 30%. On either figure most respondents say something else. Calling the task random selection inverts what the best explanation of it says. Kubovy's account is that a respondent trying to look spontaneous is making a deliberate choice, which is why naming 7 as an example cuts its popularity to 16.6%. The name is sometimes used for the colour half alone. Saito's encyclopedia entry lists 'Blue-Seven Phenomenon' as a synonym for the claim that blue is the universal favourite colour, and her own survey of 400 people across nine cultural groups found vivid blue the only colour commonly preferred highly by all of them. Her two accounts of her Japanese data disagree on one figure: the 1999 abstract puts red at 26.0% on the naming question, the 2015 encyclopedia entry at 28.02%.",
   "sources": [
     {
-      "text": "Simon, W. E. (1971). Number and color responses of some college students: Preliminary evidence for a \"blue seven phenomenon\". Perceptual and Motor Skills, 33(2), 373-374. Read at its Crossref abstract; the paper itself was not obtained.",
+      "text": "Simon, W. E. (1971). Number and color responses of some college students: Preliminary evidence for a \"blue seven phenomenon\". Perceptual and Motor Skills, 33(2), 373-374. Read at its Crossref abstract on 21 September 2026. The paper itself was not obtained: SAGE served a Cloudflare bot challenge to four user agents and PsycNET refused the request.",
       "doi": "10.2466/pms.1971.33.2.373",
       "url": "https://doi.org/10.2466/pms.1971.33.2.373",
       "type": "primary"
@@ -45,31 +50,31 @@
       "type": "primary"
     },
     {
-      "text": "Pasciak, J., & Williams, R. V. (1974). Note on the \"blue seven phenomenon\" among male senior high students. Psychological Reports, 35(1), 494. Named here from its title only; not read.",
+      "text": "Pasciak, J., & Williams, R. V. (1974). Note on the \"blue seven phenomenon\" among male senior high students. Psychological Reports, 35(1), 494. Named here from its title only. Neither Crossref nor OpenAlex holds an abstract, and SAGE served a Cloudflare bot challenge on 21 September 2026.",
       "doi": "10.2466/pr0.1974.35.1.494",
       "url": "https://doi.org/10.2466/pr0.1974.35.1.494",
       "type": "replication"
     },
     {
-      "text": "Benel, R. A. (1976). The \"blue-seven phenomenon\" or the \"blue, seven, ... phenomena\"? The Journal of General Psychology, 94(1), 145-146. Named here from its title only; not read.",
+      "text": "Benel, R. A. (1976). The \"blue-seven phenomenon\" or the \"blue, seven, ... phenomena\"? The Journal of General Psychology, 94(1), 145-146. Named here from its title only. Neither Crossref nor OpenAlex holds an abstract, ProQuest shows a bibliographic record alone, and Taylor and Francis served a Cloudflare bot challenge on 21 September 2026.",
       "doi": "10.1080/00221309.1976.9711600",
       "url": "https://doi.org/10.1080/00221309.1976.9711600",
       "type": "replication"
     },
     {
-      "text": "Philbrick, J. L. (1976). Blue seven in East Africa: Preliminary report. Perceptual and Motor Skills, 42(2), 484. Named here from its title only; not read.",
+      "text": "Philbrick, J. L. (1976). Blue seven in East Africa: Preliminary report. Perceptual and Motor Skills, 42(2), 484. Named here from its title only. Neither Crossref nor OpenAlex holds an abstract, and SAGE and PsycNET both refused the request on 21 September 2026.",
       "doi": "10.2466/pms.1976.42.2.484",
       "url": "https://doi.org/10.2466/pms.1976.42.2.484",
       "type": "replication"
     },
     {
-      "text": "Kubovy, M., & Psotka, J. (1976). The predominance of seven and the apparent spontaneity of numerical choices. Journal of Experimental Psychology: Human Perception and Performance, 2(2), 291-294. The source for every range and example figure quoted here; abstract read at ERIC and at CoLab, which reproduce it identically.",
+      "text": "Kubovy, M., & Psotka, J. (1976). The predominance of seven and the apparent spontaneity of numerical choices. Journal of Experimental Psychology: Human Perception and Performance, 2(2), 291-294. The source for every range and example figure quoted here. The full publisher abstract was read at OpenAlex; ERIC carries an abridged version printing only the 28.4%, and CoLab refused this session’s address.",
       "doi": "10.1037/0096-1523.2.2.291",
       "url": "https://doi.org/10.1037/0096-1523.2.2.291",
       "type": "primary"
     },
     {
-      "text": "Kubovy, M. (1977). Response availability and the apparent spontaneity of numerical choices. Journal of Experimental Psychology: Human Perception and Performance, 3(2), 359-364. Abstract read at CoLab.",
+      "text": "Kubovy, M. (1977). Response availability and the apparent spontaneity of numerical choices. Journal of Experimental Psychology: Human Perception and Performance, 3(2), 359-364. Abstract read at OpenAlex; CoLab refused this session’s address.",
       "doi": "10.1037/0096-1523.3.2.359",
       "url": "https://doi.org/10.1037/0096-1523.3.2.359",
       "type": "primary"
@@ -81,7 +86,7 @@
       "type": "replication"
     },
     {
-      "text": "Trueman, J. (1979). Existence and robustness of the blue and seven phenomena. The Journal of General Psychology, 101(1), 23-26. Abstract read at CoLab.",
+      "text": "Trueman, J. (1979). Existence and robustness of the blue and seven phenomena. The Journal of General Psychology, 101(1), 23-26. Abstract read at OpenAlex; CoLab refused this session’s address.",
       "doi": "10.1080/00221309.1979.9920057",
       "url": "https://doi.org/10.1080/00221309.1979.9920057",
       "type": "replication"
@@ -93,7 +98,7 @@
       "type": "replication"
     },
     {
-      "text": "Wiegersma, S., & De Klerck, I. (1984). The 'blue phenomenon' is red in the Netherlands. Perceptual and Motor Skills, 59(3), 790. Only its title was obtained; no abstract is deposited and the note was not read.",
+      "text": "Wiegersma, S., & De Klerck, I. (1984). The 'blue phenomenon' is red in the Netherlands. Perceptual and Motor Skills, 59(3), 790. Only its title was obtained. No abstract is deposited at Crossref or OpenAlex, and SAGE served a Cloudflare bot challenge on 21 September 2026.",
       "doi": "10.2466/pms.1984.59.3.790",
       "url": "https://doi.org/10.2466/pms.1984.59.3.790",
       "type": "replication"
@@ -117,7 +122,7 @@
       "type": "commentary"
     },
     {
-      "text": "Wiegersma, S., & Van Loon, A. (1989). Some variables in the blue (red) phenomenon. The Journal of General Psychology, 116(3), 259-269. Abstract read at CoLab.",
+      "text": "Wiegersma, S., & Van Loon, A. (1989). Some variables in the blue (red) phenomenon. The Journal of General Psychology, 116(3), 259-269. Abstract read at PubMed, PMID 2794984.",
       "doi": "10.1080/00221309.1989.9917760",
       "url": "https://doi.org/10.1080/00221309.1989.9917760",
       "type": "commentary"
@@ -135,7 +140,7 @@
       "type": "replication"
     },
     {
-      "text": "Saito, M. (2015). Comparative (cross-cultural) color preference and its structure. Encyclopedia of Color Science and Technology, 1-7. Springer. The source for Simon's percentages as quoted here, and for the nine-group colour survey.",
+      "text": "Saito, M. (2015). Comparative (cross-cultural) color preference and its structure. Encyclopedia of Color Science and Technology, 1-7. Springer. Read in full as the PDF held at the University of California, Irvine. The source for Simon’s percentages as quoted here, and for the nine-group colour survey of 400 people.",
       "doi": "10.1007/978-3-642-27851-8_73-1",
       "url": "https://sites.socsci.uci.edu/~kjameson/ECST/Saito_ComparativeCrossCulturalColorPreferenceAndItsStructure.pdf",
       "type": "commentary"
@@ -145,7 +150,12 @@
       "doi": "10.1017/S1930297500003089",
       "url": "https://doi.org/10.1017/S1930297500003089",
       "type": "replication"
+    },
+    {
+      "text": "Boutwell, R. C., & Fennell, P. (1974). Investigation and theoretical consideration of the \"blue-seven\" phenomenon. The Journal of General Psychology, 91, 301. Cited from ProQuest’s bibliographic record, which carries no abstract; Crossref holds no DOI for it and the article was not read.",
+      "url": "https://www.proquest.com/openview/985aed844de7375241530dcbad0d2beb/1",
+      "type": "replication"
     }
   ],
-  "checkedOn": "2026-08-10"
+  "checkedOn": "2026-09-21"
 }
