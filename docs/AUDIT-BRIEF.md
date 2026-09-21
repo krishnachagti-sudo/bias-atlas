@@ -274,6 +274,30 @@ so these entries are invisible to all of them, and two audits found their
 worst fault sitting on exactly such a source. If your entry appears, treat
 every silent source as unread until you have opened it.
 
+## Work in batches
+
+Most of what an audit costs is the number of separate calls it makes, not the
+size of what it reads. Audits have run to a hundred and sixty calls by
+fetching one document per call and checking one figure per call. Do neither.
+
+Fetch every source in one call, not one each:
+
+    mkdir -p /tmp/a && cd /tmp/a
+    for u in "$URL1" "$URL2" "$URL3"; do curl -sL --max-time 60 -O "$u"; done
+    for f in *.pdf; do pdftotext "$f" "${f%.pdf}.txt" 2>/dev/null; done
+    ls -la; head -c 200 *.txt
+
+Then check many claims against all of them in one call, not one grep per
+figure:
+
+    grep -n -C2 -E "1,469|t\(296\)|22\.75|Bogor" /tmp/a/*.txt
+
+One call tells you which figures are present, in which document, and in what
+context. Group your questions before you ask them, and prefer one call with
+ten patterns to ten calls with one.
+
+The same goes for the gates: run all four in a single call.
+
 ## How to read a document
 
 Verification means seeing the string in the document. It does not mean having
