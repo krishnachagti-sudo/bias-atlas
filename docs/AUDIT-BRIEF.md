@@ -84,6 +84,12 @@ the sentence the page's verdict rests on and check the document says it.
    nothing flags it. Confirm that the document you opened is the document
    the citation names, by looking for the authors' names and the claim you
    came for, before quoting from it.
+10. **A claim about this corpus, made without grepping it.** Entries assert
+    what a neighbouring entry says, how many entries cover something, or
+    that no entry does. Those are checkable in a second and have been wrong.
+    One entry argued from a reference list it had miscounted. Grep before
+    asserting anything about the corpus or about a cited list, including
+    counts.
 
 ## Routes that have worked
 
