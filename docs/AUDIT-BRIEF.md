@@ -61,8 +61,11 @@ the sentence the page's verdict rests on and check the document says it.
    comparison is not significant.
 5. **Marginal results printed flat**; recruited samples given where the paper
    analysed fewer.
-6. **Preprint or manuscript figures cited as though published.** A working
-   paper is often not its article. Label which version each figure comes
+6. **Preprint or manuscript figures cited as though published**, and working
+   papers that have since been published. Re-search every cited working
+   paper's title in Crossref for a version of record; this corpus cites them
+   constantly, and one was called unreviewed three months after it appeared
+   in a journal. A working paper is often not its article. Label which version each figure comes
    from, and do not assert the two are identical without checking. Two
    indexes agreeing that only a submitted copy is open is not evidence that
    no published copy is open; a version of record has been found by plain
@@ -157,7 +160,10 @@ else for older journal issues.
 Internet Archive item downloads work, and have carried whole journal issues
 and open uploads of books that publishers call closed. The Wayback Machine at
 `web.archive.org` works over https and has served PDFs and accepted
-manuscripts here. Its reliability has fallen through the day. Early audits read manuscripts from
+manuscripts here. An archived snapshot can faithfully replay a publisher's challenge page,
+answering 200 with something that is not the document. Check what came back.
+
+Its reliability has fallen through the day. Early audits read manuscripts from
 it; later ones lost every attempt of twenty or thirty to a connection closing
 mid-exchange with no status, while `archive.org` itself kept answering. Treat
 it as worth one try and never as evidence about a document. Plain http returns
