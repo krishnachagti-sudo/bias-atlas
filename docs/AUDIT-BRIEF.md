@@ -134,7 +134,9 @@ These have repeatedly served the same document when the indexed URL did not.
   rendered page or handle is guarded. One Anubis challenge was bypassed
   simply by asking the REST route instead. A newer DSpace handle answers
   200 with an empty application shell and no content, which reads exactly
-  like a present file being gone; ask its REST bitstream route instead.
+  like a present file being gone; ask its REST bitstream route instead. The Open
+Science Framework does the same: its `/download` path now returns an
+application shell, and the file comes from `api.osf.io/v2/files/`.
 
 Internet Archive item downloads work, and have carried whole journal issues
 and open uploads of books that publishers call closed. The Wayback Machine at
