@@ -2521,6 +2521,9 @@ html[data-theme="light"] .chip.on{background:var(--accent);border-color:var(--ac
    a hand's width from the label they belong to. Tables with no prose column get
    a measure of their own. */
 .vtable--narrow{max-width:620px}
+/* A licence name is a unit — "SIL Open Font License 1.1" broken across two
+   lines reads as two licences. */
+.vtable .nowrap{white-space:nowrap}
 .vtable tbody tr:hover td,.vtable tbody tr:hover th{background:var(--surface)}
 @media(max-width:640px){
   .vtable{font-size:13.5px}

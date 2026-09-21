@@ -23,8 +23,10 @@ const BLURB = {
   'how-solid/': 'what the whole corpus says about whether any of it held up',
   'data/': 'the corpus as one file, and every entry as plain text',
   'about/': 'how entries are written, sourced and corrected',
+  'features/': 'what this site does, and what it deliberately does not',
   'sources/': 'every document this index rests on',
   'manifesto/': 'why an index that checks replication is worth writing',
+  'credits/': 'the typefaces, the icons and the data this is built from',
   'privacy/': 'what this site collects, which is nothing',
 };
 const HUBS = ALL_PAGES.map(([, href, label]) => [href, label, BLURB[href] || '']);

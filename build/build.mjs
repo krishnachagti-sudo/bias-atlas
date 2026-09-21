@@ -26,7 +26,9 @@ import { setAssetVersions, setBuildDate } from '../src/templates/partials.mjs';
 import { homePage } from '../src/templates/home.mjs';
 import { browsePage, aboutPage, notFoundPage } from '../src/templates/pages.mjs';
 import { entryPage, entryPath } from '../src/templates/entry.mjs';
-import { howSolidPage, dataPage, sourcesPage, manifestoPage, privacyPage } from '../src/templates/meta.mjs';
+import {
+  howSolidPage, dataPage, sourcesPage, manifestoPage, creditsPage, featuresPage, privacyPage,
+} from '../src/templates/meta.mjs';
 import { loadCorpus, CATEGORIES } from './corpus.mjs';
 import { entryMarkdown } from './markdown.mjs';
 import { buildApi } from './api.mjs';
@@ -103,6 +105,8 @@ const pages = {
   'data/': dataPage({ base, origin, entries }),
   'sources/': sourcesPage({ base, origin, entries }),
   'manifesto/': manifestoPage({ base, origin, entries }),
+  'features/': featuresPage({ base, origin, entries }),
+  'credits/': creditsPage({ base, origin, entries }),
   'privacy/': privacyPage({ base, origin, entries }),
 };
 for (const e of entries) {

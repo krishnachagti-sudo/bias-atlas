@@ -1,10 +1,21 @@
 // The pages that are about the index rather than about a bias.
 //
 // The Law Tome carries a set of these — /how-solid/, /data/, /sources/,
-// /manifesto/, /privacy/ — and this site had only /about/. They are not filler:
-// each one answers a question a reader or a crawler actually asks, and between
-// them they are where a reference site states what it is, what it found, what it
-// rests on and what it does with your visit.
+// /manifesto/, /credits/, /features/, /privacy/ — and this site had only
+// /about/. They are not filler: each one answers a question a reader or a
+// crawler actually asks, and between them they are where a reference site states
+// what it is, what it found, what it rests on and what it does with your visit.
+//
+// Two of them are here on a decision that went the other way from my advice, and
+// the reasoning matters for how they are written. I argued against /credits/ and
+// /features/ on the grounds that The Law Tome's are an image-credits page and a
+// seventeen-item feature tour, and this site has no images and fewer features.
+// Both are built, and neither is padded to match: /credits/ credits what the
+// site is actually made of — two typefaces, an icon subset, a replication
+// database and a candidate list, every one with a real licence and a checkable
+// upstream — and /features/ lists only what the site actually does, with the
+// count of entries each claim is true of. A features page that overstates is
+// worse than none on a site whose whole asset is being accurate.
 //
 // Everything numeric on these pages is COMPUTED from the corpus at build time.
 // Not one figure is typed into the prose, because a hand-typed count on a page
@@ -460,4 +471,219 @@ ${faq.html}${hubNav('privacy/', { base })}  </div>
       ...(faq.jsonld ? [faq.jsonld] : []),
     ],
   }) + sprite() + header({ base, active: 'privacy', count: entries.length }) + section + footer({ base });
+}
+
+/**
+ * /credits/ — what this site is made of.
+ *
+ * The Law Tome's version of this page credits its photographs. There are none
+ * here, so a like-for-like copy would have been an empty page built for
+ * symmetry. What this site does carry, and had nowhere acknowledged, is other
+ * people's work in four other forms: two typefaces under the Open Font Licence,
+ * an icon set under MIT, the replication database the verdicts are quoted from,
+ * and the Wikipedia lists the candidate set was drawn from.
+ *
+ * Every row states a licence and points at an upstream that can be checked. A
+ * credits page whose claims cannot be verified is worse than no credits page,
+ * because it is the one page whose entire job is being accurate about others.
+ */
+export function creditsPage({ base = '/', origin = '', entries = [] } = {}) {
+  const answer = `This site is built from other people's work in four places: two typefaces under the Open Font Licence, an icon set under MIT, the replication database the verdicts are quoted from, and the Wikipedia lists the candidate set was drawn from.`;
+
+  const ROWS = [
+    ['Source Serif 4',
+      'Every word of running text, and the headings.',
+      'SIL Open Font License 1.1',
+      'https://github.com/adobe-fonts/source-serif',
+      'adobe-fonts/source-serif'],
+    ['IBM Plex Mono',
+      'Labels, numbers, the rail and the kicker.',
+      'SIL Open Font License 1.1',
+      'https://github.com/IBM/plex',
+      'IBM/plex'],
+    ['Tabler Icons 3.7.0',
+      'Seven glyphs — search, share, copy and the rest. Subset from 5,377 upstream icons to the seven this site uses.',
+      'MIT',
+      'https://tabler.io',
+      'tabler.io'],
+    ['FORRT Replication Database',
+      'Used to establish that a replication exists. What each one found is read off the paper itself, not quoted from the database.',
+      'CC BY 4.0',
+      'https://doi.org/10.17605/OSF.IO/9R62X',
+      'doi.org/10.17605/OSF.IO/9R62X'],
+    ['List of cognitive biases, Wikipedia',
+      'One of the two lists the candidate set was drawn from, with the List of fallacies.',
+      'CC BY-SA 4.0',
+      'https://en.wikipedia.org/wiki/List_of_cognitive_biases',
+      'en.wikipedia.org'],
+    ['Wikimedia REST pageviews API',
+      'How often each bias is looked up, which set the order entries were written in.',
+      'CC0',
+      'https://wikimedia.org/api/rest_v1/',
+      'wikimedia.org'],
+    ['@resvg/resvg-js',
+      'Renders the site icon from SVG at build time. The only runtime dependency this project has.',
+      'MPL-2.0',
+      'https://github.com/yisibl/resvg-js',
+      'yisibl/resvg-js'],
+  ];
+
+  const faq = hubFaq([
+    {
+      q: 'Are the fonts loaded from Google Fonts?',
+      a: 'No. Both families are served from this domain, subset to the characters the corpus uses. Nothing on any page is fetched from a third party, which is a privacy property as much as a performance one — and the unmodified licence text for each family is served alongside the binaries, as the Open Font Licence requires.',
+    },
+    {
+      q: 'Is the replication data yours?',
+      a: 'No, and that is the point. The verdicts rest on FORRT’s Replication Database and on the replication papers themselves, so the most load-bearing part of this index is the part that is not our judgement. The database is used to find out that a replication exists; what it found is read off the paper.',
+    },
+  ], { heading: 'Questions about the credits' });
+
+  const section = `<section class="sec">
+  <div class="wrap">
+${hubHead({
+    title: 'Credits',
+    answer,
+    base,
+    crumbs: [],
+    lede: 'There are no photographs or illustrations on this site, so there is nothing here to credit under an image licence. What follows is everything else it is built from.',
+  })}
+    <h2 class="vd-h">What this site is built from</h2>
+    <table class="vtable">
+      <caption>Third-party work used in ${escapeHtml(BRAND)}, with licences.</caption>
+      <thead><tr><th scope="col">What</th><th scope="col">Used for</th><th scope="col">Licence</th><th scope="col">Upstream</th></tr></thead>
+      <tbody>
+${ROWS.map(([name, use, lic, href, label]) => `          <tr>
+            <th scope="row">${escapeHtml(name)}</th>
+            <td>${escapeHtml(use)}</td>
+            <td class="nowrap">${escapeHtml(lic)}</td>
+            <td><a href="${escapeHtml(href)}" rel="nofollow noopener">${escapeHtml(label)}</a></td>
+          </tr>`).join('\n')}
+      </tbody>
+    </table>
+
+    <h2 class="vd-h">About the absence of imagery</h2>
+    <p class="vd-p">A cognitive bias has no portrait. The people who named these effects are mostly living psychologists, and an index that illustrated each entry with a photograph of its author would be making a claim about authorship that the history often does not support — many of these effects were named by one person and demonstrated by another, and several are named after somebody who never used the term. The charts on the entry pages are drawn from the effect sizes in the corpus and are not illustrations; there is nothing decorative on this site to credit.</p>
+
+    <h2 class="vd-h">The text</h2>
+    <p class="vd-p">Written by <a href="https://conyso.com/founder/" rel="author">Krishna Chagti</a> and licensed <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">CC BY 4.0</a>. The sources each entry rests on are listed on the entry itself and, in bulk, in <a href="${base}data/">the dataset</a>. Quotations from those sources remain the property of their authors and are used as citations.</p>
+
+    <div class="sk-share">
+${shareRow({ url: `${origin}${base}credits/`, title: `Credits — ${BRAND}`, text: answer, label: 'Share this page' })}    </div>
+
+${faq.html}${hubNav('credits/', { base })}  </div>
+</section>
+`;
+
+  const description = `What ${BRAND} is built from: two open-licensed typefaces, an MIT icon set, FORRT's Replication Database and the Wikipedia lists behind the candidate set.`;
+  return head({
+    title: `Credits — What This Site Is Built From | ${BRAND}`,
+    description,
+    base,
+    origin,
+    path: 'credits/',
+    modified: LASTMOD_TOKEN,
+    jsonld: [
+      ...hubJsonLd({ name: 'Credits', description, path: 'credits/', origin, base, crumbs: [] }),
+      ...(faq.jsonld ? [faq.jsonld] : []),
+    ],
+  }) + sprite() + header({ base, active: 'credits', count: entries.length }) + section + footer({ base });
+}
+
+/**
+ * /features/ — what the site actually does.
+ *
+ * Every claim on this page carries the number of entries it is true of, and the
+ * numbers are computed rather than written. That is not decoration: a feature
+ * tour is the easiest page on a site to overstate, and "effect sizes plotted on
+ * one scale" means something different when it is true of 216 entries than when
+ * a reader assumes it is true of all 544.
+ */
+export function featuresPage({ base = '/', origin = '', entries = [] } = {}) {
+  const s = corpusStats(entries);
+  let chart = 0, aliases = 0, aliasCount = 0, typed = 0;
+  for (const e of entries) {
+    const r = e.replication || {};
+    const has = (x) => x && typeof x.es === 'number';
+    if (has(r.original) || has(r.replicated)) chart++;
+    const a = Array.isArray(e.aliases) ? e.aliases : [];
+    if (a.length) { aliases++; aliasCount += a.length; }
+    if ((e.sources || []).some((x) => x.type)) typed++;
+  }
+
+  const answer = `${BRAND} answers one question about each of ${n(s.total)} cognitive biases — did it survive being retested — and gives you the evidence, the sources and the whole corpus to take away.`;
+
+  const FEATURES = [
+    ['The answer comes first',
+      `Every entry opens with whether the effect replicated, in one sentence, above the explanation. All ${n(s.total)} of them.`],
+    ['Both effect sizes, on one scale',
+      `Where the original study and the replication both report a number, they are plotted on the same axis with the null marked, so the distance between them is visible rather than asserted. ${n(chart)} entries carry a chart; ${n(s.pairs)} show both estimates.`],
+    ['How long nobody checked',
+      `Each entry shows the gap between the claim being published and somebody retesting it. The median is ${n(s.medianGap)} years.`],
+    ['Search by what you noticed',
+      'Type a name, or describe the thing you saw happen. A query that matches nothing by name falls back to scoring entries on the words you used, so "i keep going because i already paid for it" finds sunk cost.'],
+    ['Filter by verdict, not just by topic',
+      `Narrow the index to what failed, what replicated, what is mixed and what nobody has checked — ${n(s.state.failed)}, ${n(s.state.replicated)}, ${n(s.state.mixed)} and ${n(s.state['none-located'])} entries respectively — across ${s.fields.size} fields.`],
+    ['What people get it confused with',
+      'Every entry carries a section on what it is routinely misread as, because the common misunderstanding is usually closer to what a reader arrived believing than the definition is.'],
+    ['Where the claim runs out',
+      'And a section on the limits: the populations, conditions and measures where the effect has not been shown to hold.'],
+    ['Sources, typed and linked',
+      `${n(s.sources)} source records across ${n(s.domains.size)} domains, marked as primary research, replication, commentary or background — ${n(typed)} entries carry at least one typed source — with ${n(s.dois)} resolvable DOIs.`],
+    ['A date on every claim',
+      'Each entry states when it was last held against its sources, so you can see what is fresh and what is not, rather than guessing from a site-wide "last updated".'],
+    ['Every name it goes by',
+      `${n(aliasCount)} aliases across ${n(aliases)} entries, all searchable, so an effect you know under a different name still finds its entry.`],
+    ['Take the whole thing',
+      'The corpus is one JSON file and every entry is also plain Markdown at its own address, licensed CC BY 4.0. No key, no rate limit, no permission needed.'],
+    ['No ads, no tracking, no third-party anything',
+      'No analytics, no cookies, no fonts or scripts loaded from anybody else. The pages are static HTML and work with JavaScript switched off.'],
+  ];
+
+  const faq = hubFaq([
+    {
+      q: 'Is any of this behind a login or a paywall?',
+      a: 'No. Every page, the dataset and the per-entry Markdown are public and free, and the corpus is CC BY 4.0. There is no account, no newsletter and nothing to buy.',
+    },
+  ], { heading: 'Questions people ask' });
+
+  const section = `<section class="sec">
+  <div class="wrap">
+${hubHead({
+    title: `What ${BRAND} does`,
+    answer,
+    base,
+    crumbs: [],
+    lede: 'Every claim on this page carries the number of entries it is true of, and the numbers are read from the corpus at build time rather than written down.',
+  })}
+    <div class="feat-grid">
+${FEATURES.map(([t, b]) => `      <div class="feat">
+        <h2 class="feat-t">${escapeHtml(t)}</h2>
+        <p class="feat-b">${escapeHtml(b)}</p>
+      </div>`).join('\n')}
+    </div>
+
+    <h2 class="vd-h">What it does not do</h2>
+    <p class="vd-p">It does not rate these effects on a scale of our own invention, recommend which biases to worry about, or tell you how to debias yourself. It is a reference: what the claim is, where it came from, what happened when it was retested, and where to read the papers. The ${n(s.state['none-located'])} entries with no located replication say so rather than guessing, and that is a feature.</p>
+
+    <div class="sk-share">
+${shareRow({ url: `${origin}${base}features/`, title: `What ${BRAND} does`, text: answer, label: 'Share this page' })}    </div>
+
+${faq.html}${hubNav('features/', { base })}  </div>
+</section>
+`;
+
+  const description = `What ${BRAND} does: a replication verdict on every one of ${n(s.total)} cognitive biases, both effect sizes plotted together, ${n(s.sources)} sources, and the whole corpus downloadable under CC BY 4.0.`;
+  return head({
+    title: `What ${BRAND} Does | ${BRAND}`,
+    description,
+    base,
+    origin,
+    path: 'features/',
+    modified: LASTMOD_TOKEN,
+    jsonld: [
+      ...hubJsonLd({ name: `What ${BRAND} does`, description, path: 'features/', origin, base, crumbs: [] }),
+      ...(faq.jsonld ? [faq.jsonld] : []),
+    ],
+  }) + sprite() + header({ base, active: 'features', count: entries.length }) + section + footer({ base });
 }

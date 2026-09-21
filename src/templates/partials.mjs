@@ -60,8 +60,10 @@ export const NAV = [
 ];
 
 export const MORE = [
+  ['features', 'features/', 'What it does'],
   ['sources', 'sources/', 'Bibliography'],
   ['manifesto', 'manifesto/', 'Why this exists'],
+  ['credits', 'credits/', 'Credits'],
   ['privacy', 'privacy/', 'Privacy'],
 ];
 

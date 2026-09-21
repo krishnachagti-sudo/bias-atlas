@@ -41,7 +41,10 @@ test('every nav destination is one the site actually builds', () => {
   // of at deploy time.
   // ALL_PAGES rather than NAV: the footer and the hub feet link the pages the
   // masthead has no room for, and a dead link there is just as dead.
-  const BUILT = new Set(['', 'browse/', 'how-solid/', 'data/', 'about/', 'sources/', 'manifesto/', 'privacy/']);
+  const BUILT = new Set([
+    '', 'browse/', 'how-solid/', 'data/', 'about/',
+    'features/', 'sources/', 'manifesto/', 'credits/', 'privacy/',
+  ]);
   for (const [, href] of ALL_PAGES) {
     assert.ok(BUILT.has(href), `nav points at ${href}, which nothing builds`);
   }
