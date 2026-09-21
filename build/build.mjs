@@ -80,7 +80,7 @@ const pages = {
   'about/': aboutPage({ base, origin, mapped: MAPPED }),
 };
 for (const e of entries) {
-  pages[entryPath(e)] = entryPage(e, { base, origin, count: entries.length });
+  pages[entryPath(e)] = entryPage(e, { base, origin, count: entries.length, entries });
 }
 
 // ---- dates -----------------------------------------------------------------

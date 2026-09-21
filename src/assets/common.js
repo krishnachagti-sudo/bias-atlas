@@ -271,7 +271,71 @@
     });
   }
 
-  function wire() { wireTheme(); wireNav(); wireMotion(); wireCoinForm(); }
+  // ---- entry page contents rail: scroll-spy + track fill -------------------
+  // The rail is drawn by CSS as a full-height track with an accent fill (--fill)
+  // and an active link (.on). Nothing ever set either, so every entry page shipped
+  // an inert rail: seven identical grey links and a track that never moved. Both
+  // states are styled in the stylesheet already; this supplies the positions.
+  //
+  // Deliberately NOT gated behind <html class="anim">. Knowing which section you
+  // are in is navigation, not decoration, so a visitor who turns motion off still
+  // gets the highlight — they just get it without the CSS transition.
+  function wireToc() {
+    var toc = document.querySelector('.toc');
+    if (!toc) return;
+    var links = [].slice.call(toc.querySelectorAll('a'));
+    var secs = links
+      .map(function (a) { return { a: a, el: document.getElementById(a.getAttribute('href').slice(1)) }; })
+      .filter(function (o) { return o.el; });
+    if (!secs.length) return;
+
+    var ticking = false, lock = null, lockT = 0;
+    function mark(a) {
+      for (var j = 0; j < links.length; j++) links[j].classList.remove('on');
+      if (!a) return;
+      a.classList.add('on');
+      // Fill runs to the CENTRE of the active item, so the indicator points at
+      // the section name rather than at raw scroll position.
+      toc.style.setProperty('--fill', (a.offsetTop + a.offsetHeight / 2) + 'px');
+    }
+
+    // The active section is the one owning the reading line, a third of the way
+    // down the content area — not the one whose heading last crossed the top, and
+    // not the one covering the most pixels. Largest-area hands the win to the next
+    // section the moment it claims half the screen, which runs ahead of the reader.
+    var HEADER = 92;
+    function apply() {
+      ticking = false;
+      if (lock) { if (Date.now() < lockT) { mark(lock); return; } lock = null; }
+      var line = HEADER + 0.30 * (window.innerHeight - HEADER);
+      var best = null;
+      for (var i = 0; i < secs.length; i++) {
+        if (secs[i].el.getBoundingClientRect().top <= line) best = secs[i];
+      }
+      if (!best) best = secs[0];
+      // The closing sections are often too short to ever reach the line, so at the
+      // foot of the page nothing past the penultimate one would light up.
+      if (window.innerHeight + window.scrollY >= document.body.scrollHeight - 4) best = secs[secs.length - 1];
+      mark(best ? best.a : null);
+    }
+    function onScroll() { if (!ticking) { ticking = true; requestAnimationFrame(apply); } }
+
+    // A click wins over the spy while the smooth scroll is still travelling;
+    // otherwise the intermediate positions repaint the highlight onto whatever
+    // section is being passed through and it settles on the wrong one.
+    for (var k = 0; k < links.length; k++) {
+      links[k].addEventListener('click', function () { lock = this; lockT = Date.now() + 1400; mark(this); });
+    }
+    function release() { if (lock) { lock = null; onScroll(); } }
+    addEventListener('wheel', release, { passive: true });
+    addEventListener('touchstart', release, { passive: true });
+    addEventListener('keydown', release);
+    addEventListener('scroll', onScroll, { passive: true });
+    addEventListener('resize', onScroll);
+    apply();
+  }
+
+  function wire() { wireTheme(); wireNav(); wireMotion(); wireCoinForm(); wireToc(); }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', wire);
   else wire();
 })();

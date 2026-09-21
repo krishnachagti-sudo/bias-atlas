@@ -194,12 +194,78 @@ ${numbers}${r.detail ? `        <p>${escapeHtml(r.detail)}</p>\n` : ''}        <
 /**
  * @param {object} entry a validated row from build/corpus.mjs
  */
-export function entryPage(entry, { base = '/', origin = '', count = 0 } = {}) {
+/**
+ * The right rail.
+ *
+ * `.entry-layout` has always declared three columns and only ever rendered two,
+ * so every entry page reserved 300px plus a 58px gap for a child that did not
+ * exist and squeezed the prose into 732px to make room for it.
+ *
+ * The Law Tome fills this column with a relationship mini-map. That is not
+ * available here and is not going to be faked: no entry in this corpus carries a
+ * `related` key, so drawing a graph of neighbours would mean inventing the
+ * relationships it draws. Two panels that rest on data the entries actually hold:
+ *
+ *   The replication study, pinned. It is the document that settled the question
+ *   and the reason this index exists, and it otherwise appears only as one line
+ *   inside a source list seven sections down. 455 of 544 entries carry one with a
+ *   citation and a link; the 89 without get no panel rather than an empty one.
+ *
+ *   Others in the same field, which is a plain `category` match — the one
+ *   relation between entries this corpus does record.
+ *
+ * Nothing here repeats the fact strip: verdict, year, field, source count and
+ * last-checked date are all already tiles above.
+ */
+function asideRail(entry, { base, siblings }) {
+  const s = entry.replication && entry.replication.study;
+  const panels = [];
+
+  if (s && s.cite) {
+    const href = s.url || (s.doi ? `https://doi.org/${s.doi}` : '');
+    // n and sites are printed only where they exist; both are sparse (301 and 44
+    // of 544) and an absent figure is left absent rather than filled with a zero.
+    const figures = [
+      s.n ? `${num(s.n)} people` : '',
+      s.sites ? `${num(s.sites)} sites` : '',
+    ].filter(Boolean);
+    panels.push(`      <div class="panel">
+        <h3>The replication</h3>
+        <p class="rep-cite">${href
+      ? `<a href="${escapeHtml(href)}" rel="nofollow noopener">${escapeHtml(s.cite)}</a>`
+      : escapeHtml(s.cite)}</p>
+${figures.length ? `        <p class="rep-fig">${escapeHtml(figures.join(' · '))}</p>\n` : ''}      </div>`);
+  }
+
+  if (siblings.length) {
+    panels.push(`      <div class="panel panel--compare">
+        <h3>More in ${escapeHtml(String(CATEGORIES[entry.category] || entry.category).toLowerCase())}</h3>
+        <ul class="cmp-side">
+${siblings.map((o) => `          <li><a href="${base}${entryPath(o)}">${escapeHtml(o.name)}</a></li>`).join('\n')}
+        </ul>
+      </div>`);
+  }
+
+  if (!panels.length) return '';
+  return `      <aside class="aside">
+${panels.join('\n')}
+      </aside>\n`;
+}
+
+export function entryPage(entry, { base = '/', origin = '', count = 0, entries = [] } = {}) {
   const path = entryPath(entry);
   const r = entry.replication;
   const field = CATEGORIES[entry.category] || entry.category;
   const aliases = Array.isArray(entry.aliases) ? entry.aliases : [];
   const sources = Array.isArray(entry.sources) ? entry.sources : [];
+
+  // Neighbours for the right rail: same category, nearest entry numbers either
+  // side, wrapping the corpus so the first and last entries in a field get a full
+  // list rather than a stub. Ordering by `no` keeps it stable between builds.
+  const pool = entries.filter((o) => o.category === entry.category && o.slug !== entry.slug);
+  const at = pool.findIndex((o) => o.no > entry.no);
+  const from = at === -1 ? Math.max(0, pool.length - 5) : Math.max(0, at - 2);
+  const siblings = pool.slice(from, from + 5);
 
   // The body, as blocks. One list drives both the table of contents and the
   // sections, so a heading cannot exist without a link to it or the reverse.
@@ -268,7 +334,7 @@ ${b.body}        </div>`).join('\n')}
 ${shareRow({ url: `${origin}${base}${path}`, title: entry.name, text: entry.statement, label: 'Share this entry' })}        </div>
 
 ${faq.html}      </div>
-    </div>
+${asideRail(entry, { base, siblings })}    </div>
   </div>
 `;
 

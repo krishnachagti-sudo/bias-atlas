@@ -902,13 +902,16 @@ a.stat--link .s-k::after{content:" →";letter-spacing:0;opacity:.55}
    an accent fill (--scroll, 0..1, set on scroll) travels down it, and the active
    item grows + turns accent. The active state is driven by scroll position in JS,
    so it tracks instantly rather than lagging behind an IntersectionObserver. */
-/* justify-content was `space-between` against a fixed viewport height, which
-   distributes the links evenly down the screen. That reads as designed at
-   fifteen entries — the count the original site had — and as broken at seven,
-   where each link sits a third of a screen from the next. Hugging the top with
-   a max-height is correct at any count: a long list still fills the column and
-   scrolls, a short one stays a list. */
-.toc{position:sticky;top:calc(var(--header-h) + 8px);align-self:start;max-height:calc(100vh - var(--header-h) - 46px);overflow-y:auto;display:flex;flex-direction:column;justify-content:flex-start;gap:6px;padding:10px 0 12px 18px;border-left:2px solid var(--line);--fill:0px}
+/* Two things were confused here and have to be separated. The COLUMN is full
+   viewport height, because the track line and its accent fill are a scroll
+   indicator: a line that stops where the last link happens to fall indicates
+   nothing. The LINKS hug the top, because `space-between` against that height
+   reads as designed at fifteen sections and as broken at seven, where each
+   link sits a third of a screen from the next. An earlier fix swapped the
+   height for a max-height, which fixed the spacing by shortening the rail, so
+   the track ran out two thirds of the way down the screen. Height fixed,
+   content flex-start, overflow scrolling for lists longer than the viewport. */
+.toc{position:sticky;top:calc(var(--header-h) + 8px);align-self:start;height:calc(100vh - var(--header-h) - 46px);overflow-y:auto;display:flex;flex-direction:column;justify-content:flex-start;gap:6px;padding:10px 0 12px 18px;border-left:2px solid var(--line);--fill:0px}
 /* the accent line runs down to the CURRENT item (its centre), so the indicator
    tracks the active section name rather than raw scroll position */
 .toc::before{content:"";position:absolute;left:-2px;top:0;width:2px;height:var(--fill);background:var(--accent);transition:height .3s cubic-bezier(.2,.7,.2,1)}
@@ -1238,6 +1241,13 @@ html{scroll-behavior:smooth}
 @media(max-width:860px){.aside{position:static}}
 .panel{border:1px solid var(--line);border-radius:3px;background:var(--surface);padding:18px 20px;box-shadow:var(--e1)}
 .panel h3{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);font-weight:400;margin-bottom:14px}
+/* the pinned replication study in the right rail. Set in serif at reading size
+   rather than as a label: it is a citation meant to be read and followed, and
+   the figures under it are a caption to that, not a statistic of their own. */
+.rep-cite{font-family:var(--serif);font-size:14px;line-height:1.5;color:var(--read)}
+.rep-cite a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line-strong)}
+.rep-cite a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+.rep-fig{margin-top:9px;font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--faint)}
 .glance .row{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-top:1px solid var(--line);font-size:13px}
 .glance .row:first-child{border-top:none}
 .glance .k{color:var(--faint);font-family:var(--mono);font-size:11px;letter-spacing:.02em;text-transform:uppercase}
