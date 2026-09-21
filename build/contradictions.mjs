@@ -67,7 +67,7 @@ for (const f of fs.readdirSync(DIR).filter(f => f.endsWith('.json'))) {
   for (const s of d.sources ?? []) {
     if (!s.doi) continue;
     const doi = String(s.doi).trim().toLowerCase().replace(/^https?:\/\/(dx\.)?doi\.org\//, '');
-    const c = classify(s.text ?? '');
+    const c = classify(`${s.text ?? ""} ${s.note ?? ""}`);
     if (!byDoi.has(doi)) byDoi.set(doi, []);
     byDoi.get(doi).push({ no: d.no, slug: d.slug, checkedOn: d.checkedOn, ...c, text: s.text ?? '' });
   }

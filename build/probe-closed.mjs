@@ -48,7 +48,7 @@ for (const f of readdirSync(DIR).filter((x) => x.endsWith('.json'))) {
   const e = JSON.parse(readFileSync(join(DIR, f), 'utf8'));
   if (!(e.checkedOn < BEFORE)) continue;
   for (const s of e.sources || []) {
-    if (!s.doi || !UNOBTAINED.test(s.text || '')) continue;
+    if (!s.doi || !UNOBTAINED.test(`${s.text || ""} ${s.note || ""}`)) continue;
     targets.push({ no: e.no, file: f, name: e.name, doi: s.doi, text: s.text, botwall: BOTWALL.test(s.text) });
   }
 }

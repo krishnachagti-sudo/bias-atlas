@@ -36,7 +36,7 @@ for (const f of readdirSync(DIR).filter((x) => x.endsWith('.json'))) {
   if (!cited.length) continue;
   entries++;
 
-  const noted = cited.filter((s) => NOTE.test(s.text || '')).length;
+  const noted = cited.filter((s) => NOTE.test(`${s.text || ""} ${s.note || ""}`)).length;
   const row = { no: e.no, slug: e.slug, noted, total: cited.length, checkedOn: e.checkedOn };
   if (noted === 0) silent.push(row);
   else if (noted < cited.length) partial.push(row);
