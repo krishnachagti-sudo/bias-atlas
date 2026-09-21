@@ -123,7 +123,9 @@ Internet Archive item downloads work, and have carried whole journal issues
 and open uploads of books that publishers call closed. The Wayback Machine at
 `web.archive.org` works over https and has served PDFs and accepted
 manuscripts here. Roughly half of attempts die with a TLS error and need a
-retry, and plain http returns a refusal from this session's egress policy.
+retry, and plain http returns a refusal from this session's egress policy. The
+CDX index endpoint is refused outright; the dated replay path with an `id_`
+suffix works, and needs redirects followed.
 An earlier version of this file said flatly that it is blocked, which was
 wrong and would have produced false unobtainability notes.
 
