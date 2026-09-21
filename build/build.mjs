@@ -99,9 +99,22 @@ await writeFile(manifestFile, `${JSON.stringify(manifest, null, 2)}\n`);
 
 // ---- write -----------------------------------------------------------------
 const writes = [];
+// Retried once on ENOENT. Several audits run `npm run build` at the same time,
+// and one build's `rm -rf dist` deletes a directory another build has just
+// created, between its mkdir and its writeFile. Every build writes every page,
+// so whichever finishes last leaves a complete tree; the only real failure was
+// the crash. It cost several false gate failures and sent one agent chasing a
+// bug that was not there.
 const write = async (path, body) => {
-  await mkdir(dirname(path), { recursive: true });
-  await writeFile(path, body);
+  for (let attempt = 0; ; attempt++) {
+    try {
+      await mkdir(dirname(path), { recursive: true });
+      await writeFile(path, body);
+      return;
+    } catch (err) {
+      if (err.code !== 'ENOENT' || attempt > 0) throw err;
+    }
+  }
 };
 for (const [path, html] of Object.entries(pages)) {
   writes.push(write(join(out, path, 'index.html'), stamp(html, dates[path])));
