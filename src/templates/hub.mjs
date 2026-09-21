@@ -11,17 +11,23 @@
 //   2. A crumb and a stat line, so the page states its own scale.
 //   3. A footer of the other hubs, so no way in is a dead end.
 
-import { escapeHtml, BRAND, NAV } from './partials.mjs';
+import { escapeHtml, BRAND, ALL_PAGES } from './partials.mjs';
 import { LASTMOD_TOKEN } from '../../build/lastmod.mjs';
 
-// The destinations hubNav offers. Sourced from NAV so the header, the footer and
-// the hub feet cannot disagree about what this site contains; the blurb is the
-// one thing a nav bar has no room for.
+// The destinations hubNav offers. Sourced from ALL_PAGES — not from the masthead
+// NAV — so that the pages the header has no room for are still reachable from
+// the foot of every hub, and so the three lists cannot disagree about what this
+// site contains. The blurb is the one thing a nav bar has no room for.
 const BLURB = {
   'browse/': 'every bias in the index, and what each one claims',
+  'how-solid/': 'what the whole corpus says about whether any of it held up',
+  'data/': 'the corpus as one file, and every entry as plain text',
   'about/': 'how entries are written, sourced and corrected',
+  'sources/': 'every document this index rests on',
+  'manifesto/': 'why an index that checks replication is worth writing',
+  'privacy/': 'what this site collects, which is nothing',
 };
-const HUBS = NAV.map(([, href, label]) => [href, label, BLURB[href] || '']);
+const HUBS = ALL_PAGES.map(([, href, label]) => [href, label, BLURB[href] || '']);
 
 /**
  * The head of a hub: crumb, title, count, the direct answer, then the lede.

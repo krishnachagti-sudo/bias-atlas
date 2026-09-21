@@ -2498,6 +2498,38 @@ html[data-theme="light"] .chip.on{background:var(--accent);border-color:var(--ac
 .vd-bn{font-size:13.5px;color:var(--faint)}
 .vd-h{font-family:var(--serif);font-weight:600;font-size:20px;margin:0 0 10px}
 .vd-p{font-size:15px;line-height:1.72;color:var(--dim);margin:0 0 30px;max-width:70ch}
+/* Tables on the index-about-itself pages.
+   Deliberately a real <table> with a <caption> and header cells that name the
+   entity rather than only the attribute: the visibility research records tables
+   as disproportionately cited, and a caption plus scoped headers is what lets a
+   retrieval layer lift one whole and still know what it is looking at. */
+.vtable{width:100%;border-collapse:collapse;margin:0 0 30px;font-size:14.5px;line-height:1.55}
+.vtable caption{caption-side:top;text-align:left;font-family:var(--mono);font-size:10px;
+  letter-spacing:.11em;text-transform:uppercase;color:var(--faint);padding:0 0 10px}
+.vtable th,.vtable td{text-align:left;padding:10px 14px 10px 0;border-top:1px solid var(--line);vertical-align:baseline}
+.vtable thead th{border-top:none;border-bottom:1px solid var(--line-strong);font-family:var(--mono);
+  font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:var(--faint);font-weight:400;padding-bottom:8px}
+.vtable tbody th{font-family:var(--serif);font-weight:600;color:var(--ink);padding-right:18px}
+.vtable tbody th a{color:inherit;text-decoration:none;border-bottom:1px solid var(--line-strong)}
+.vtable tbody th a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+.vtable td{color:var(--dim)}
+.vtable .num{font-family:var(--mono);font-size:13px;color:var(--muted);white-space:nowrap;text-align:right;
+  font-variant-numeric:tabular-nums}
+.vtable thead .num{text-align:right}
+.vtable .badge{white-space:nowrap}
+/* A three-column table stretched to the full 1080px column strands its numbers
+   a hand's width from the label they belong to. Tables with no prose column get
+   a measure of their own. */
+.vtable--narrow{max-width:620px}
+.vtable tbody tr:hover td,.vtable tbody tr:hover th{background:var(--surface)}
+@media(max-width:640px){
+  .vtable{font-size:13.5px}
+  .vtable th,.vtable td{padding:9px 10px 9px 0}
+  /* The gloss column is the first thing to go: it is the longest cell and the
+     least load-bearing once the verdict and the count are side by side. */
+  .vtable--drop td:last-child,.vtable--drop thead th:last-child{display:none}
+}
+
 /* The list form of .vd-p, for the about page's reuse routes. Same measure and
    colour, so a list and a paragraph in the same section read as one voice. */
 .vd-list{font-size:15px;line-height:1.72;color:var(--dim);margin:0 0 30px;max-width:70ch;padding-left:20px}

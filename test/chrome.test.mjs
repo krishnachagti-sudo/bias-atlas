@@ -12,7 +12,7 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 
 import {
-  BRAND, NAV, head, header, footer, clampTitle, escapeHtml,
+  BRAND, NAV, MORE, ALL_PAGES, head, header, footer, clampTitle, escapeHtml,
 } from '../src/templates/partials.mjs';
 import { hubFaq, hubNav, hubJsonLd } from '../src/templates/hub.mjs';
 
@@ -39,19 +39,36 @@ test('every nav destination is one the site actually builds', () => {
   // The build emits exactly these page paths. Kept as a literal rather than
   // imported, so adding a nav item without adding the page fails here instead
   // of at deploy time.
-  const BUILT = new Set(['', 'browse/', 'about/']);
-  for (const [, href] of NAV) {
+  // ALL_PAGES rather than NAV: the footer and the hub feet link the pages the
+  // masthead has no room for, and a dead link there is just as dead.
+  const BUILT = new Set(['', 'browse/', 'how-solid/', 'data/', 'about/', 'sources/', 'manifesto/', 'privacy/']);
+  for (const [, href] of ALL_PAGES) {
     assert.ok(BUILT.has(href), `nav points at ${href}, which nothing builds`);
   }
 });
 
-test('the header carries no menu of pages that do not exist', () => {
+test('the masthead stays short, and everything else is still reachable', () => {
+  // Four items in the header; a fifth starts to wrap. The rest live in MORE,
+  // which the footer and the hub feet carry — so the split is navigation rather
+  // than pages that exist and cannot be found.
   const h = header({ base: BASE });
   const hrefs = [...h.matchAll(/href="([^"#]*)"/g)]
     .map((m) => m[1])
     .filter((u) => u.startsWith(BASE))
     .map((u) => u.slice(BASE.length));
-  assert.deepEqual([...new Set(hrefs)].sort(), ['', 'about/', 'browse/']);
+  assert.deepEqual([...new Set(hrefs)].sort(), ['', 'about/', 'browse/', 'data/', 'how-solid/']);
+  assert.ok(NAV.length <= 4, `${NAV.length} items in the masthead`);
+
+  // No page may sit in both lists, or the footer renders it twice.
+  const navHrefs = new Set(NAV.map(([, href]) => href));
+  for (const [, href] of MORE) assert.ok(!navHrefs.has(href), `${href} is in both NAV and MORE`);
+
+  // Every page in MORE must actually appear in the footer, which is the only
+  // chrome that carries it.
+  const f = footer({ base: BASE });
+  for (const [, href, label] of MORE) {
+    assert.ok(f.includes(`href="${BASE}${href}"`), `${label} is in MORE but not in the footer`);
+  }
 });
 
 test('the count reads as an em dash before there are entries, never as zero', () => {

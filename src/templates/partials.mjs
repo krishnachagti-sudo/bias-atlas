@@ -41,10 +41,32 @@ export const KICKER = 'what each one claims, and what replicated';
 // emitted, which is the mechanism that keeps this honest rather than merely the
 // intention to keep it honest. The Law Tome's twenty-six item "More" panel was
 // right for 1,116 entries and would be theatre here.
+// Two lists, because three places need different lengths of the same thing.
+//
+// NAV is the masthead: four items, because a fifth starts to wrap and because
+// the header should name the things a first-time reader wants. "How solid?" is
+// in it rather than buried, since it is the question the whole index answers.
+//
+// MORE is everything else with a URL — the dataset, the bibliography, the
+// argument, the privacy statement. The footer and the hub feet list NAV + MORE,
+// so nothing is reachable only by guessing, while the masthead stays short.
+// The Law Tome's twenty-six item "More" panel was right for 1,116 entries and
+// would still be theatre here.
 export const NAV = [
   ['browse', 'browse/', 'Browse'],
+  ['how-solid', 'how-solid/', 'How solid?'],
+  ['data', 'data/', 'The data'],
   ['about', 'about/', 'About'],
 ];
+
+export const MORE = [
+  ['sources', 'sources/', 'Bibliography'],
+  ['manifesto', 'manifesto/', 'Why this exists'],
+  ['privacy', 'privacy/', 'Privacy'],
+];
+
+/** Every page with a URL of its own, for the footer and the hub feet. */
+export const ALL_PAGES = [...NAV, ...MORE];
 
 // Whether build.mjs emits feed.xml. See the autodiscovery link in head().
 const HAS_FEED = false;
@@ -718,7 +740,7 @@ export function footer({ base = '/', scripts = '' } = {}) {
     </div>
       <nav class="foot-col" aria-label="This site">
         <h2>This site</h2>
-${NAV.map(([, path, label]) => `        <a href="${base}${path}">${escapeHtml(label)}</a>`).join('\n')}
+${ALL_PAGES.map(([, path, label]) => `        <a href="${base}${path}">${escapeHtml(label)}</a>`).join('\n')}
       </nav>
   </div>
   <div class="wrap foot-share">

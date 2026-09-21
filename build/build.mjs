@@ -26,6 +26,7 @@ import { setAssetVersions, setBuildDate } from '../src/templates/partials.mjs';
 import { homePage } from '../src/templates/home.mjs';
 import { browsePage, aboutPage, notFoundPage } from '../src/templates/pages.mjs';
 import { entryPage, entryPath } from '../src/templates/entry.mjs';
+import { howSolidPage, dataPage, sourcesPage, manifestoPage, privacyPage } from '../src/templates/meta.mjs';
 import { loadCorpus, CATEGORIES } from './corpus.mjs';
 import { entryMarkdown } from './markdown.mjs';
 import { buildApi } from './api.mjs';
@@ -96,6 +97,13 @@ const pages = {
   '': homePage({ base, origin, entries, mapped: MAPPED }),
   'browse/': browsePage({ base, origin, entries, mapped: MAPPED }),
   'about/': aboutPage({ base, origin, mapped: MAPPED, count: entries.length }),
+  // The pages that are about the index rather than about a bias. Every figure on
+  // them is computed from `entries` at build time rather than typed into prose.
+  'how-solid/': howSolidPage({ base, origin, entries }),
+  'data/': dataPage({ base, origin, entries }),
+  'sources/': sourcesPage({ base, origin, entries }),
+  'manifesto/': manifestoPage({ base, origin, entries }),
+  'privacy/': privacyPage({ base, origin, entries }),
 };
 for (const e of entries) {
   pages[entryPath(e)] = entryPage(e, { base, origin, count: entries.length, entries });
