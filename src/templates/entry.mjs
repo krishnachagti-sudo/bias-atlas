@@ -185,9 +185,15 @@ ${orig ? `          <div class="stat"><span class="s-k">In the original study</s
 `
     : '';
   const cite = s.url || (s.doi ? `https://doi.org/${s.doi}` : '');
+  // Every one of the 455 study citations ends in a full stop, as a citation
+  // should, and this sentence then added its own — so all 455 pages printed
+  // "546-573..". Trimmed here rather than across the corpus: the stop belongs to
+  // the citation, and the sentence has to supply one when the citation is a bare
+  // identifier that does not carry it.
+  const citeText = String(s.cite || '').replace(/\.\s*$/, '');
 
   return `        <p class="lead">${badge} ${escapeHtml(r.headline)}</p>
-${numbers}${r.detail ? `        <p>${escapeHtml(r.detail)}</p>\n` : ''}        <p class="src-trust">Read off ${cite ? `<a href="${escapeHtml(cite)}" rel="nofollow noopener">${escapeHtml(s.cite)}</a>` : escapeHtml(s.cite)}${r.indexedBy ? `. Located via ${escapeHtml(r.indexedBy)}, which points at the study; the numbers above are the study's own` : ''}.</p>
+${numbers}${r.detail ? `        <p>${escapeHtml(r.detail)}</p>\n` : ''}        <p class="src-trust">Read off ${cite ? `<a href="${escapeHtml(cite)}" rel="nofollow noopener">${escapeHtml(citeText)}</a>` : escapeHtml(citeText)}${r.indexedBy ? `. Located via ${escapeHtml(r.indexedBy)}, which points at the study; the numbers above are the study's own` : ''}.</p>
 `;
 }
 
