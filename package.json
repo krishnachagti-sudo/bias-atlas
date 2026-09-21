@@ -15,7 +15,8 @@
     "preflight": "node build/preflight.mjs",
     "serve": "node build/build.mjs && node -e \"import('node:http').then(async h=>{const{readFile}=await import('node:fs/promises');const{extname,resolve,sep}=await import('node:path');const T={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'text/javascript; charset=utf-8','.json':'application/json','.txt':'text/plain; charset=utf-8','.png':'image/png','.woff2':'font/woff2','.xml':'application/xml','.svg':'image/svg+xml'};const ROOT=resolve('dist');h.createServer(async(q,s)=>{try{let p=decodeURI(q.url.split('?')[0]).replace(/^\\/biases(?=\\/|$)/,'')||'/';if(p.endsWith('/'))p+='index.html';const f=resolve(ROOT,'.'+p);if(f!==ROOT&&!f.startsWith(ROOT+sep))throw new Error('outside root');const b=await readFile(f);s.writeHead(200,{'content-type':T[extname(f)]||'application/octet-stream'});s.end(b)}catch{s.writeHead(404);s.end('404')}}).listen(8080,'127.0.0.1',()=>console.log('http://localhost:8080/biases/'))})\"",
     "sources": "node build/check-sources.mjs",
-    "contradictions": "node build/contradictions.mjs"
+    "contradictions": "node build/contradictions.mjs",
+    "orphans": "node build/orphan-figures.mjs"
   },
   "dependencies": {
     "@resvg/resvg-js": "^2.6.2"
