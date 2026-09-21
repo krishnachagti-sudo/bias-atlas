@@ -59,7 +59,12 @@ the sentence the page's verdict rests on and check the document says it.
    analysed fewer.
 6. **Preprint or manuscript figures cited as though published.** A working
    paper is often not its article. Label which version each figure comes
-   from, and do not assert the two are identical without checking.
+   from, and do not assert the two are identical without checking. Two
+   indexes agreeing that only a submitted copy is open is not evidence that
+   no published copy is open; a version of record has been found by plain
+   search in a repository neither index listed. And the fault often sits on
+   a source the lead file never flagged, so check provenance everywhere,
+   not only where an index pointed.
 7. **Invented prose about a document nobody opened.** An entry can be
    scrupulous about numbers and still describe an experiment's design,
    apparatus or procedure from memory, sometimes in the same sentence that
