@@ -135,6 +135,10 @@ Litigation dockets. An expert report filed in a court case has described
 three closed papers, and disagreed with a published summary about one of
 their figures.
 
+The Wayback Machine's copies of old publisher landing pages, when every index
+says no abstract exists. Two papers from the 1980s were read that way after
+Crossref, OpenAlex and Semantic Scholar all held nothing.
+
 Read the body of a 403 rather than trusting its status. Most of the refusals
 in this corpus that entries recorded as paywalls are Cloudflare challenges
 saying so in their own HTML.
