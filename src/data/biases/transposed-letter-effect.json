@@ -2,7 +2,13 @@
   "no": 214,
   "slug": "transposed-letter-effect",
   "name": "Transposed-letter effect",
-  "aliases": ["Transposed-letter priming", "TL effect", "TL priming", "Jumbled word effect", "Typoglycemia"],
+  "aliases": [
+    "Transposed-letter priming",
+    "TL effect",
+    "TL priming",
+    "Jumbled word effect",
+    "Typoglycemia"
+  ],
   "category": "perception",
   "statement": "A nonword made by swapping two letters of a word, such as jugde, activates that word far more strongly than a nonword made by replacing the same two letters.",
   "meaning": "The finding is about how the reading system codes where a letter sits, not about how easily jumbled prose can be read. In a masked-priming lexical decision task the prime flashes for about 40 to 50 milliseconds under a mask, too briefly to be reported, and the target follows in capitals. If uhser speeds the recognition of USHER more than ufner does, the two transposed letters are still doing lexical work in the wrong slots. That comparison is the whole experiment. Against an unrelated prime almost any partial overlap helps, so the control has to be a nonword that disturbs the same letter positions by substitution rather than by exchange. Models that give each letter its own position-specific channel predict no difference between the two, because in both primes the letters at those positions are wrong. The effect is the main reason such models were abandoned in favour of schemes that code relative position, among them Whitney's SERIOL bigrams, Davis's spatial coding and Grainger and van Heuven's open bigrams.",
@@ -10,94 +16,110 @@
     "year": 1987,
     "who": "Kenneth I. Forster, Chris Davis, Carole Schoknecht and Rosemarie Carter",
     "where": "The Quarterly Journal of Experimental Psychology Section A",
-    "note": "Their paper \"Masked priming with graphemically related forms: Repetition or partial activation?\" contains the first masked-priming test with transposed primes. Perea and Lupker name Bruner and O'Dowd (1958), Chambers (1979) and O'Connor and Forster (1981) as earlier evidence that transposed-letter nonwords resemble their base words, and the label came from later authors."
+    "note": "Their paper \"Masked priming with graphemically related forms: Repetition or partial activation?\" holds the earliest transposed-letter test in Perea and Lupker's table of this literature, run as masked priming with lexical decision. Perea and Lupker give the first cross-position priming result to Humphreys, Evett and Quinlan (1990), who used four-field masking and target identification. They trace the idea that transposed-letter nonwords resemble their base words to Chambers (1979) and O'Connor and Forster (1981). The label came from later authors."
   },
-  "evidence": "Perea and Lupker summarise Experiment 1 of Forster and colleagues as follows: six-letter targets, a 60 ms prime-target interval, and mean latencies of 486 ms for identity primes (sailor-SAILOR), 487 ms for transposed-letter primes (salior-SAILOR), 500 ms for one-letter-different primes (sanlor-SAILOR) and 550 ms for unrelated words (cheese-SAILOR). Those figures are quoted here from Perea and Lupker's table rather than read off the 1987 paper. Perea and Lupker then supplied the orthographic control the earlier work lacked, in three experiments at the University of Western Ontario with a 40 ms prime and a 40 ms mask. Experiment 1 used 36 students and 120 five-letter targets. Primes with two internal letters exchanged (uhser-USHER, 556 ms) beat their substitution control (ufner-USHER, 586 ms) by 30 ms, F(1,30) = 18.92, p < .001, while primes with the last two letters exchanged (ushre-USHER, 554 ms) beat ushno-USHER (567 ms) by 13 ms, F(1,30) = 3.53, p < .07. Identity primes were worth 47 ms. Experiment 2 used 30 students and added unrelated baselines: 22 ms for internal transpositions, F(1,24) = 11.77, p < .001, and 11 ms for final ones, F(1,24) = 2.42, p > .10. Experiment 3 used 32 students and 160 six-letter targets, giving 44 ms for internal transpositions, F(1,24) = 85.19, p < .001, and 12 ms for final ones, F(1,24) = 4.27, p = .05. Measured instead against unrelated controls the two came out at 44 and 39 ms, and the authors say the internal advantage rests on the internal substitution control being slow rather than on the transposed prime being fast. The letters need not be neighbours. In Spanish, Perea and Lupker found that caniso primed CASINO 21 ms faster than caviro did, F1(1,24) = 13.00, with 28 students, and 17 ms faster in a second group of 28, F1(1,24) = 7.47. Vowels behaved differently: with 24 students, anamil-ANIMAL came out 9 ms slower than anomel-ANIMAL, and with 62 students and words of seven to ten letters the consonant effect was 18 ms, F1(1,60) = 32.29, against 6 ms for vowels, F1(1,60) = 2.19, p > .10, interaction F1(1,60) = 4.37.",
+  "evidence": "Perea and Lupker summarise Experiment 1 of Forster and colleagues as follows: six-letter targets, a 60 ms prime-target SOA, and mean latencies of 486 ms for identity primes (sailor-SAILOR), 487 ms for transposed-letter primes (salior-SAILOR), 500 ms for one-letter-different primes (sanlor-SAILOR) and 550 ms for unrelated words (cheese-SAILOR). Those figures are quoted here from Perea and Lupker's table, because the 1987 paper stayed behind a Cloudflare challenge on 21 September 2026 and only its publisher-deposited abstract was read. Perea and Lupker then supplied the two-letter substitution control the earlier work lacked, in three experiments at the University of Western Ontario with a 40 ms prime followed by a 40 ms pattern mask. Experiment 1 used 36 students and 120 five-letter targets. Primes with two internal letters exchanged (uhser-USHER, 556 ms) beat their substitution control (ufner-USHER, 586 ms) by 30 ms, F(1,30) = 18.92, p < .001, while primes with the last two letters exchanged (ushre-USHER, 554 ms) beat ushno-USHER (567 ms) by 13 ms, F(1,30) = 3.53, p < .07. Identity primes were worth 47 ms in their table and 45 ms in their text. Experiment 2 used 30 students and added unrelated baselines: 22 ms for internal transpositions, F(1,24) = 11.77, p < .001, and 11 ms for final ones, F(1,24) = 2.42, p > .10. Experiment 3 used 32 students and 160 six-letter targets, giving 44 ms for internal transpositions, F(1,24) = 85.19, p < .001, and 12 ms for final ones, F(1,24) = 4.27, p = .05. Measured instead against unrelated controls the two came out at 44 and 39 ms, and the authors say the internal advantage rests on the internal substitution control being slow rather than on the transposed prime being fast. The letters need not be neighbours. In Spanish, Perea and Lupker found that caniso primed CASINO 21 ms faster than caviro did, F1(1,24) = 13.00, with 28 students, and 17 ms faster in a second group of 28, F1(1,24) = 7.47. Vowels behaved differently: with 24 students, anamil-ANIMAL came out 9 ms slower than anomel-ANIMAL, and with 62 students and words of seven to ten letters the consonant effect was 18 ms, F1(1,60) = 32.29, against 6 ms for vowels, F1(1,60) = 2.19, p > .10, interaction F1(1,60) = 4.37.",
   "replication": {
     "state": "replicated",
     "headline": "A 14-site study of over 1,000 readers put medial transposed-letter priming at 31.42 ms, in an experiment precise enough to call 2.90 ms reliable.",
-    "detail": "Adelman and 17 co-authors built the Form Priming Project to settle exactly this kind of comparison. Over 1,000 participants at 14 university sites each did 840 trials of primed lexical decision across 28 prime types on the same 420 six-letter word targets. Tukey's HSD on their estimate of the error term makes a 2.90 ms difference between conditions reliable at 5%, 3.24 ms at 1% and 3.66 ms at 0.1%. Against the arbitrary unrelated prime at 677.17 ms, identity primes gained 42.69 ms. The three transposition conditions came next after identity and the two single-letter deletions: final transpositions (desing-DESIGN) 32.46 ms, medial transpositions (desgin-DESIGN) 31.42 ms, initial transpositions (edsign-DESIGN) 29.03 ms. Medial substitution of the same two letters gained 22.68 ms and double medial substitution 14.94 ms, so transposition beat replacement, as earlier work had reported. A prime keeping only the two exterior letters (dzbtkn-DESIGN) gained 2.34 ms and a reversal of everything after the first letter (dngise-DESIGN) 2.86 ms, both below the unrelated pseudoword baseline. The authors also report small but reliable priming from extreme transpositions that earlier studies had recorded as null, including 16.77 ms from edisng-DESIGN and 8.80 ms from igndes-DESIGN, and they attribute the discrepancy to power or to the greater length of the earlier stimuli. Their initial-versus-final ordering does not match Schoonbaert and Grainger's French result, and they say so.",
+    "detail": "Adelman and 17 co-authors built the masked form priming database they distribute as the FPP. Over 1,000 participants at 14 university sites each did 840 trials of primed lexical decision across 28 prime types on the same 420 six-letter word targets. Tukey's HSD on their estimate of the error term makes a 2.90 ms difference between conditions reliable at 5%, 3.24 ms at 1% and 3.66 ms at 0.1%. Against the arbitrary unrelated prime at 677.17 ms, identity primes gained 42.69 ms. Next came a deleted final letter (desig-DESIGN) at 34.23 ms and an added final letter (designl-DESIGN) at 33.66 ms, then final transpositions (desing-DESIGN) at 32.46 ms and medial transpositions (desgin-DESIGN) at 31.42 ms. Initial transpositions (edsign-DESIGN) gained 29.03 ms, which puts them behind a medial deletion and two single substitutions, so the three transposition conditions do not sit together in the ranking. The authors report that final transpositions beat initial ones and that medial transpositions differ from neither. A single medial substitution gained 22.68 ms and a double medial substitution 14.94 ms, so exchanging two letters beat replacing them, as earlier work had reported. A prime keeping only the two exterior letters (dzbtkn-DESIGN) gained 2.34 ms and a reversal of everything after the first letter (dngise-DESIGN) 2.86 ms, both below the unrelated pseudoword baseline. The authors also report small but reliable priming from extreme transpositions that earlier studies had recorded as null, including 16.77 ms from edisng-DESIGN and 8.80 ms from igndes-DESIGN, and they attribute the discrepancy to power or to the greater length of the earlier stimuli. Their medial-versus-exterior result does not match Schoonbaert and Grainger's French five-letter finding, and they say so.",
     "study": {
       "cite": "Adelman, J. S., Johnson, R. L., McCormick, S. F., McKague, M., Kinoshita, S., Bowers, J. S., Perry, J. R., Lupker, S. J., Forster, K. I., Cortese, M. J., Scaltritti, M., Aschenbrenner, A. J., Coane, J. H., White, L., Yap, M. J., Davis, C., Kim, J., & Davis, C. J. (2014). A behavioral database for masked form priming. Behavior Research Methods, 46(4), 1052-1067.",
       "doi": "10.3758/s13428-013-0442-y",
       "year": 2014,
       "sites": 14
     },
-    "replicated": { "es": 31.42, "esType": "md", "unit": "ms of lexical decision latency, medial transposed-letter prime against an arbitrary unrelated prime" },
+    "replicated": {
+      "es": 31.42,
+      "esType": "md",
+      "unit": "ms of lexical decision latency, medial transposed-letter prime against an arbitrary unrelated prime"
+    },
     "indexedBy": "Form Priming Project"
   },
-  "limits": "The effect is not a property of alphabets in general. Velan and Frost gave Hebrew readers masked primes formed by transposing two letters of a word's consonantal root, in three lexical decision experiments with 51, 80 and 84 students. Root primes helped, by 21 and 18 ms in Experiment 1. Transposed-root primes hurt: 14 and 10 ms of inhibition in Experiment 1, 9 ms in Experiment 2, and 11 ms in Experiment 3 where identity primes were worth 29 ms. Their conclusion is that a Hebrew root with two letters swapped is a different root, and it recruits the wrong family of words. Perea, abu Mallouh and Carreiras found the same split in Arabic. With 26 students at the University of Amman, primes transposing two root letters produced nothing at all, at minus 1, minus 4 and minus 6 ms across initial, middle and final positions. With 28 students, primes that transposed a root letter with a word-pattern letter, leaving root order intact, produced 16 ms. The boundary is morphological rather than genealogical. Perea, Gatt, Moret-Tatay and Fabri ran the sentence task in Maltese, a Semitic language written in the Latin alphabet with its vowels spelled out and a productive Romance morphology alongside its root-and-pattern one. Twenty students at the University of Malta reproduced target words with two root letters transposed as often as intact ones, 81.5% against 81.0% in Maltese and 76.5% against 78.0% in English, all Fs < 1. Within English the effect also depends on what is moved: Perea and Lupker's vowel transpositions produced nothing, and transposing the final two letters is worth roughly a third of transposing two internal ones.",
-  "misreadings": "The famous version of this effect is an email, and the email is not a study. It circulated from September 2003 and claimed that Cambridge University research had shown letter order does not matter provided the first and last letters stay put. Matt Davis at the MRC Cognition and Brain Sciences Unit, who first heard of it when a journalist approached his colleague Sian Miller on 16 September, writes that \"there's no-one in Cambridge UK who is currently doing research on this topic\". The nearest real antecedent he traces is Graham Rawlinson's unpublished 1976 Nottingham doctoral thesis, \"The significance of letter position in word recognition\", which Rawlinson described in a 1999 letter to New Scientist as showing that randomising letters in the middle of words had little or no effect on skilled readers. Davis lists what makes the demonstration text easy: short words and function words do not change at all, 8 of the 15 words in its first sentence are in the correct order, the transpositions are adjacent, none of them creates another word, they preserve the sound of the original, and the passage is predictable. Grainger and Whitney, who used the email to introduce open-bigram coding, put it at almost 50% of words unscrambled. The claim that jumbled text costs nothing is false. The unit's page on the email reports Rayner and colleagues' eye-tracking result that \"the reading rate decreased by 11% for sentences containing words with word-internal transpositions and by 36% and 26% when transpositions were at the beginnings or ends, respectively\", a figure quoted here from that page rather than from the 2006 paper. The laboratory effect is a matter of milliseconds in a masked comparison, and it says that letter position is coded loosely, not that it is ignored.",
+  "limits": "The effect is not a property of alphabets in general. Velan and Frost gave Hebrew readers masked primes formed by transposing two letters of a word's consonantal root, in three lexical decision experiments with 51, 80 and 84 students. Root primes helped, by 21 and 18 ms in Experiment 1. Transposed-root primes hurt: 14 and 10 ms of inhibition in Experiment 1, 9 ms in Experiment 2, and 11 ms in Experiment 3 where identity primes were worth 29 ms. Their conclusion is that a Hebrew root with two letters swapped is a different root, and it recruits the wrong family of words. Perea, abu Mallouh and Carreiras found the same split in Arabic. With 26 students at the University of Amman, primes transposing two root letters produced nothing at all, at minus 1, minus 4 and minus 6 ms across initial, middle and final positions. With 28 students, primes that transposed a root letter with a word-pattern letter, leaving root order intact, produced 16 ms. The boundary is morphological rather than genealogical. Perea, Gatt, Moret-Tatay and Fabri ran the sentence task in Maltese, a Semitic language written in the Latin alphabet with its vowels spelled out and a mostly Romance morphology alongside its root-and-pattern one. Twenty students at the University of Malta reproduced target words with two root letters transposed as often as intact ones, 81.5% against 81.0% in Maltese and 76.5% against 78.0% in English, all Fs < 1. What is moved matters too, though the Spanish and English records differ. Perea and Lupker's Spanish vowel transpositions produced nothing, against consonant effects of 17 to 21 ms. In English, transposing the final two letters was worth a third to a half of transposing two internal ones against the substitution control, but the same experiment put the two at 44 and 39 ms against unrelated controls, and the Form Priming Project put final transpositions slightly above medial ones. The gap is a fact about which baseline is used, not about the ends of words.",
+  "misreadings": "The famous version of this effect is an email, and the email is not a study. It circulated from September 2003 and claimed that Cambridge University research had shown letter order does not matter provided the first and last letters stay put. Matt Davis at the MRC Cognition and Brain Sciences Unit, who first heard of it when a journalist approached his colleague Sian Miller on 16 September, writes that \"there's no-one in Cambridge UK who is currently doing research on this topic\". The nearest real antecedent he traces is Graham Rawlinson's unpublished 1976 Nottingham doctoral thesis, \"The significance of letter position in word recognition\", which Rawlinson described in a 1999 letter to New Scientist as showing that randomising letters in the middle of words had little or no effect on skilled readers. Davis lists what makes one sentence of the demonstration easy, the one beginning \"the rset can be a toatl mses\": short words and function words do not change at all, 8 of its 15 words are in the correct order, the transpositions are adjacent, none of them creates another word, they preserve the sound of the original, and the passage is predictable. Grainger and Whitney, arguing for open-bigram coding, put the whole email at almost 50% of words not mixed up. The claim that jumbled text costs nothing is false. Dennis Norris's page at the same unit reports Rayner and colleagues' eye-tracking result that \"the reading rate decreased by 11% for sentences containing words with word-internal transpositions and by 36% and 26% when transpositions were at the beginnings or ends, respectively\". The accepted manuscript of that paper, read at Leicester, gives 30 readers at Durham a base rate of 255 words per minute, falling to 227 for internal transpositions, 189 for final ones and 163 for initial ones. The manuscript calls the first of those a 12% decrement, where its own rates give 11%. The laboratory effect is a matter of milliseconds in a masked comparison, and it says that letter position is coded loosely, not that it is ignored.",
   "sources": [
     {
-      "text": "Perea, M., & Lupker, S. J. (2003). Transposed-letter confusability effects in masked form priming. In S. Kinoshita & S. J. Lupker (Eds.), Masked priming: The state of the art (pp. 97-120). Psychology Press.",
+      "text": "Perea, M., & Lupker, S. J. (2003). Transposed-letter confusability effects in masked form priming. In S. Kinoshita & S. J. Lupker (Eds.), Masked priming: The state of the art (pp. 97-120). Psychology Press. Read in full on 21 September 2026 as the PDF on Lupker's University of Western Ontario page.",
       "url": "https://www.psychology.uwo.ca/faculty/lupkerpdfs/Perea%20&%20Lupker,%202003,%20chapter.pdf",
-      "type": "primary"
+      "type": "primary",
+      "note": "Read in full on 21 September 2026 as the PDF on Lupker's University of Western Ontario page. Every figure attributed to it above was found in its Tables 4.1 to 4.4 or in its results text."
     },
     {
-      "text": "Forster, K. I., Davis, C., Schoknecht, C., & Carter, R. (1987). Masked priming with graphemically related forms: Repetition or partial activation? The Quarterly Journal of Experimental Psychology Section A, 39(2), 211-251.",
+      "text": "Forster, K. I., Davis, C., Schoknecht, C., & Carter, R. (1987). Masked priming with graphemically related forms: Repetition or partial activation? The Quarterly Journal of Experimental Psychology Section A, 39(2), 211-251. Not obtained on 21 September 2026: the publisher answers a Cloudflare challenge rather than a paywall, and only the abstract deposited at Crossref was read.",
       "doi": "10.1080/14640748708401785",
       "url": "https://doi.org/10.1080/14640748708401785",
-      "type": "primary"
+      "type": "primary",
+      "note": "Not obtained on 21 September 2026. The Sage copy of the DOI answers a Cloudflare interstitial rather than a paywall, and Semantic Scholar records it as closed with no open copy. Its publisher-deposited abstract was read at Crossref, and it is about form priming and neighbourhood density, not transpositions. Its Experiment 1 latencies are taken from Perea and Lupker's table."
     },
     {
-      "text": "Perea, M., & Lupker, S. J. (2004). Can CANISO activate CASINO? Transposed-letter similarity effects with nonadjacent letter positions. Journal of Memory and Language, 51(2), 231-246.",
+      "text": "Perea, M., & Lupker, S. J. (2004). Can CANISO activate CASINO? Transposed-letter similarity effects with nonadjacent letter positions. Journal of Memory and Language, 51(2), 231-246. Read in full on 21 September 2026 as the PDF on Perea's Valencia page.",
       "doi": "10.1016/j.jml.2004.05.005",
       "url": "https://www.uv.es/~mperea/perealupkerjml.pdf",
-      "type": "primary"
+      "type": "primary",
+      "note": "Read in full on 21 September 2026 as the PDF on Perea's Valencia page. The Spanish experiments, participant counts and F values above were checked against its results sections and Tables 1 to 3."
     },
     {
-      "text": "Adelman, J. S., et al. (2014). A behavioral database for masked form priming. Behavior Research Methods, 46(4), 1052-1067.",
+      "text": "Adelman, J. S., et al. (2014). A behavioral database for masked form priming. Behavior Research Methods, 46(4), 1052-1067. Read in full on 21 September 2026 as the PDF from rd.springer.com, after the adelmanlab.org copy failed to answer.",
       "doi": "10.3758/s13428-013-0442-y",
       "url": "https://adelmanlab.org/fpp.pdf",
-      "type": "replication"
+      "type": "replication",
+      "note": "Read in full on 21 September 2026. The adelmanlab.org copy did not answer, and the PDF came from rd.springer.com. All condition means above are from its Table 4."
     },
     {
-      "text": "Velan, H., & Frost, R. (2009). Letter-transposition effects are not universal: The impact of transposing letters in Hebrew. Journal of Memory and Language, 61(3), 285-302.",
+      "text": "Velan, H., & Frost, R. (2009). Letter-transposition effects are not universal: The impact of transposing letters in Hebrew. Journal of Memory and Language, 61(3), 285-302. Read in full on 21 September 2026 as the author manuscript, taken from PubMed Central by the efetch route after the rendered page answered a captcha.",
       "doi": "10.1016/j.jml.2009.05.003",
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2748959/",
-      "type": "replication"
+      "type": "replication",
+      "note": "Read in full on 21 September 2026 as the author manuscript, fetched from PubMed Central by the efetch route after the rendered page answered a captcha. Participant counts and the priming and inhibition figures are from its results text and Tables 2, 4 and 6."
     },
     {
-      "text": "Velan, H., & Frost, R. (2007). Cambridge University versus Hebrew University: The impact of letter transposition on reading English and Hebrew. Psychonomic Bulletin & Review, 14(5), 913-918.",
+      "text": "Velan, H., & Frost, R. (2007). Cambridge University versus Hebrew University: The impact of letter transposition on reading English and Hebrew. Psychonomic Bulletin & Review, 14(5), 913-918. Read in full on 21 September 2026 as the PDF from rd.springer.com, after PubMed served a cookie-required page.",
       "doi": "10.3758/BF03194121",
       "url": "https://pubmed.ncbi.nlm.nih.gov/18087959/",
-      "type": "replication"
+      "type": "replication",
+      "note": "Read in full on 21 September 2026. PubMed serves a cookie-required page, and the PDF came from rd.springer.com. It reports the Hebrew and English sentence task, and no figure above is taken from it."
     },
     {
-      "text": "Perea, M., Abu Mallouh, R., & Carreiras, M. (2010). The search for an input-coding scheme: Transposed-letter priming in Arabic. Psychonomic Bulletin & Review, 17(3), 375-380.",
+      "text": "Perea, M., Abu Mallouh, R., & Carreiras, M. (2010). The search for an input-coding scheme: Transposed-letter priming in Arabic. Psychonomic Bulletin & Review, 17(3), 375-380. Read in full on 21 September 2026 as the PDF on Perea's Valencia page.",
       "doi": "10.3758/PBR.17.3.375",
       "url": "https://www.uv.es/~mperea/Arabic_PBR.pdf",
-      "type": "replication"
+      "type": "replication",
+      "note": "Read in full on 21 September 2026 as the PDF on Perea's Valencia page. The position-by-position figures above are from its Tables 2 and 3, where the minus signs render poorly in extracted text."
     },
     {
-      "text": "Perea, M., Gatt, A., Moret-Tatay, C., & Fabri, R. (2012). Are all Semitic languages immune to letter transpositions? The case of Maltese. Psychonomic Bulletin & Review, 19(5), 942-947.",
+      "text": "Perea, M., Gatt, A., Moret-Tatay, C., & Fabri, R. (2012). Are all Semitic languages immune to letter transpositions? The case of Maltese. Psychonomic Bulletin & Review, 19(5), 942-947. Read in full on 21 September 2026 as the PDF on Perea's Valencia page.",
       "doi": "10.3758/s13423-012-0273-3",
       "url": "https://www.uv.es/~mperea/rsvp_maltese.pdf",
-      "type": "replication"
+      "type": "replication",
+      "note": "Read in full on 21 September 2026 as the PDF on Perea's Valencia page. The Maltese and English reproduction rates above are from its results text."
     },
     {
-      "text": "Grainger, J., & Whitney, C. (2004). Does the huamn mnid raed wrods as a wlohe? Trends in Cognitive Sciences, 8(2), 58-59.",
+      "text": "Grainger, J., & Whitney, C. (2004). Does the huamn mnid raed wrods as a wlohe? Trends in Cognitive Sciences, 8(2), 58-59. Read in full on 21 September 2026 from Whitney's copy at the University of Maryland.",
       "doi": "10.1016/j.tics.2003.11.006",
       "url": "http://www.cs.umd.edu/~shankar/cwhitney/Papers/TICS.pdf",
-      "type": "review"
+      "type": "review",
+      "note": "Read in full on 21 September 2026 from Whitney's copy at the University of Maryland. The almost 50% figure is its own, and it describes the words as not mixed up rather than unscrambled."
     },
     {
-      "text": "Davis, M. Reading jumbled texts: Psycholinguistic evidence on scrambled letters in reading. MRC Cognition and Brain Sciences Unit, University of Cambridge.",
+      "text": "Davis, M. Reading jumbled texts: Psycholinguistic evidence on scrambled letters in reading. MRC Cognition and Brain Sciences Unit, University of Cambridge. Read in full on 21 September 2026.",
       "url": "https://www.mrc-cbu.cam.ac.uk/people/matt.davis/cmabridge/",
-      "type": "critique"
+      "type": "critique",
+      "note": "Read in full on 21 September 2026. It carries the Sian Miller date, the Rawlinson thesis reference and the seven properties of the jumbled sentence, but not the sentence quoted above about reading rate."
     },
     {
-      "text": "Norris, D. The Cambridge email. MRC Cognition and Brain Sciences Unit, University of Cambridge.",
+      "text": "Norris, D. The Cambridge email. MRC Cognition and Brain Sciences Unit, University of Cambridge. Read in full on 21 September 2026.",
       "url": "https://www.mrc-cbu.cam.ac.uk/people/dennis.norris/personal/cambridgeemail/",
-      "type": "critique"
+      "type": "critique",
+      "note": "Read in full on 21 September 2026. This is the page that carries the quoted sentence about reading rate, and it cites Rayner and colleagues for it."
     },
     {
-      "text": "Rayner, K., White, S. J., Johnson, R. L., & Liversedge, S. P. (2006). Raeding wrods with jubmled lettres: There is a cost. Psychological Science, 17(3), 192-193.",
+      "text": "Rayner, K., White, S. J., Johnson, R. L., & Liversedge, S. P. (2006). Raeding wrods with jubmled lettres: There is a cost. Psychological Science, 17(3), 192-193. Read in full on 21 September 2026 as the accepted manuscript, marked as not the final published version, downloaded from the Leicester repository through figshare after the handle answered an empty shell.",
       "doi": "10.1111/j.1467-9280.2006.01684.x",
       "url": "https://pubmed.ncbi.nlm.nih.gov/16507057/",
-      "type": "critique"
+      "type": "critique",
+      "note": "Read in full on 21 September 2026 as the accepted manuscript, which is marked as not the final published version, from the Leicester repository through the figshare download route. PubMed serves a cookie-required page and the handle answers an empty shell."
     }
   ],
-  "checkedOn": "2026-08-09"
+  "checkedOn": "2026-09-21"
 }
