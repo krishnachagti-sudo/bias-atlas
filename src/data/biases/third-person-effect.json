@@ -2,115 +2,133 @@
   "no": 158,
   "slug": "third-person-effect",
   "name": "Third-person effect",
-  "aliases": ["Third-person perception", "TPE", "TPP"],
+  "aliases": [
+    "Third-person perception",
+    "TPE",
+    "TPP"
+  ],
   "category": "social",
   "statement": "People judge persuasive media to work on other people more than on themselves, and are held to act on that gap by supporting restrictions on what others may see.",
-  "meaning": "Davison's hypothesis has two parts and they are supported to different degrees. The perceptual part says that a person in the audience for a persuasive message will estimate its effect on others as larger than its effect on themselves. The behavioural part says that this gap moves people to act, most often by backing censorship of content they judge harmful to others. Communication research calls the first the third-person perception and the second the behavioural component, and tests them separately. Almost all the accumulated evidence is on the first. The gap reverses for messages whose influence would be flattering to admit, which is called the first-person effect and is the boundary condition on the whole idea.",
+  "meaning": "Davison's hypothesis has two parts and they are supported to different degrees. The perceptual part says that a person in the audience for a persuasive message will estimate its effect on others as larger than its effect on themselves. The behavioural part says that this gap moves people to act, most often by backing censorship of content they judge harmful to others. Communication research calls the first the third-person perception and the second the behavioural component, and tests them separately. Almost all the accumulated evidence is on the first. The gap narrows and can reverse for messages whose influence would be flattering to admit, which is called the first-person effect and is the boundary condition on the whole idea.",
   "origin": {
     "year": 1983,
     "who": "W. Phillips Davison",
     "where": "Public Opinion Quarterly",
     "note": "His article ran in volume 47, pages 1 to 15, and states the hypothesis on page 3: \"people will tend to overestimate the influence that mass communications have on the attitudes and behavior of others\". Its abstract offers \"four small experiments that tend to support this hypothesis\". Davison also named censorship as the most interesting field for speculation about the effect, and closed the paper by asking whether people overestimate effects on others or underestimate effects on themselves."
   },
-  "evidence": "Davison opens with a story he heard around 1949 from a Princeton historian. A service unit of black troops with white officers on Iwo Jima was leafleted by Japanese aircraft with the theme that this was a white man's war, and the unit was withdrawn the next day. Davison's own footnote records that the historian, Jeter Isely, died shortly afterwards, and that the resulting book makes no reference at all to Japanese leaflets. His four tests were small and he said so: \"All these tests have been conducted with small groups under informal conditions. Elegant experiments they were not.\" The first put 33 Columbia graduate students in 1978 on a nought to seven influence scale, asking about Governor Carey's attacks on Mr Duryea's undisclosed tax returns. The mean for New Yorkers in general was 3.4 and the mean for self 2.26, with 48% seeing more influence on others, 6% on themselves and 36% the same. The second asked 25 graduate students in 1981 whether television made them ask their parents for products as children, and whether it does so to other people's children: 32% said quite a lot for themselves against 68% for other children. The third asked 25 adults at the Museum of Broadcasting about the 1980 New Hampshire primary, where none said it would influence their own vote quite a lot while 52% said it would do quite a lot for Reagan's fortunes. A fourth trial, on charges that Reagan would be hawkish, reports only that about twice as many respondents thought others would be swayed more than they would. Two further experiments in 1981 and 1982 are mentioned without numbers.",
+  "evidence": "Davison opens with a story he heard in 1949 or 1950 from a Princeton historian. A service unit of black troops with white officers on Iwo Jima was leafleted by Japanese aircraft with the theme that this was a white man's war, and the unit was withdrawn the next day. Davison's own footnote records that the historian, Jeter Isely, died shortly afterwards, and that the resulting book makes no reference at all to Japanese leaflets. His four tests were small and he said so: \"All these tests have been conducted with small groups under informal conditions. Elegant experiments they were not.\" The first put 33 Columbia graduate students in 1978 on a nought to seven influence scale, asking about Governor Carey's attacks on Mr Duryea's undisclosed tax returns. The mean for New Yorkers in general was 3.4 and the mean for self 2.26, with 48% seeing more influence on others, 6% on themselves, 36% the same and 9% giving no answer. The second asked 25 graduate students in the spring of 1981 whether television made them ask their parents for products as children, and whether it does so to other people's children: 32% said quite a lot for themselves against 68% for other children. The third asked 25 adults at the Museum of Broadcasting about the 1980 New Hampshire primary, where none said it would influence their own vote quite a lot while 52% said it would do quite a lot for Reagan's political fortunes. That other-directed question is about a candidate's fortunes rather than about other voters, and Davison grants in the same paragraph that the questions were not strictly comparable. A fourth trial, on charges that Reagan would be hawkish, reports only that about twice as many respondents thought others would be swayed more than they would. Two further experiments in 1981 and 1982 are mentioned without numbers.",
   "replication": {
     "state": "mixed",
     "headline": "The perceptual gap is one of the better-replicated findings in communication research at d = 0.646, and the behavioural claim it was built to support does not hold up in the same way.",
-    "detail": "Sun, Pan and Shen pooled all published tests of the perceptual component: 60 papers, 106 studies, 372 effect sizes. Their multilevel intercept-only model gives d = 0.646 (z = 14.85, p < .001), 95% confidence interval 0.56 to 0.73, equal to r = .307. The estimate did not vary by research setting, population, between- or within-subjects design, mode of data collection, or single versus multiple item measures. Their publication-bias checks came back empty: no visible funnel asymmetry, non-significant Begg-Mazumdar and Egger tests, and trim-and-fill identifying no missing studies, with the 106 independent effect sizes giving d = .649. A separate vote count on 124 comparisons from 29 studies that lacked variance information gives d = .193, 95% CI 0.128 to 0.256. Message desirability is the strongest moderator. Undesirable messages give d = 0.862 (95% CI 0.76 to 0.96, 171 effect sizes) and ambiguous ones d = 0.645 (0.54 to 0.75, 147), while desirable messages flip to d = -0.168 with a confidence interval from -0.34 to 0.01 (54 effect sizes), so the first-person effect did not reach significance. The behavioural side is where the theory thins out. Chung and Moon reanalysed the censorship literature, pooling reports from 13 previous studies with a combined 6,414 respondents and then reworking Schmierbach and colleagues' data on 692 people, and found that the presumed effect on others predicts censorship attitudes better than the self-other gap does. Zhang recruited 554 undergraduates and then 750 MTurk workers, and in the second study perceived offensiveness to the self predicted support for censoring pornography, beer commercials and graphic violence with standardised coefficients of 0.67, 0.51 and 0.55, while perceived offensiveness to others predicted none of the three. Li and Yan surveyed 1,500 Chinese medical students in April 2022 and found the perceptual gap pointing the wrong way, associated with less intention to rebut misinformation (b = -0.12, p < .001) and less promotion of corrective information (b = -0.08, p < .05).",
+    "detail": "Sun, Pan and Shen pooled all published tests of the perceptual component: 60 papers, 106 studies, 372 effect sizes. Their multilevel intercept-only model gives d = 0.646 (z = 14.85, p < .001), 95% confidence interval 0.56 to 0.73, equal to r = .307. The estimate did not vary by research setting, population, between- or within-subjects design, mode of data collection, or single versus multiple item measures. Their publication-bias checks came back empty: no visible funnel asymmetry, non-significant Begg-Mazumdar and Egger tests, and trim-and-fill identifying no missing studies, with the 106 independent effect sizes giving d = .649. A separate vote count on 124 comparisons from 29 studies that lacked variance information gives d = .193, 95% CI 0.128 to 0.256. Message desirability is the strongest moderator. Undesirable messages give d = 0.862 (95% CI 0.76 to 0.96, 171 effect sizes) and ambiguous ones d = 0.645 (0.54 to 0.75, 147). Desirable messages flip to d = -0.168 with a confidence interval from -0.34 to 0.01 across 54 effect sizes, so the first-person effect did not reach significance. The behavioural side is where the theory thins out. Chung and Moon reanalysed the censorship literature twice over. They pooled reports from 13 previous studies with a combined 6,414 respondents, then reworked Schmierbach, Boyle, Xu and McLeod's data on 692 people. Both times the presumed effect on others predicted censorship attitudes better than the self-other gap did. Zhang ran two surveys, analysing 544 undergraduates and then between 669 and 672 MTurk workers across three regressions. In the second study perceived offensiveness to the self predicted support for censoring pornography, beer commercials and graphic violence, with unstandardised coefficients of 0.67, 0.51 and 0.55, while perceived offensiveness to others predicted none of the three. Perceived harm to others did predict all three in the same models, so what fails is the offensiveness judgement about others rather than every judgement about others. Li and Yan surveyed 1,500 Chinese medical students in April 2022 and analysed 1,483, and found the perceptual gap pointing the wrong way. It went with weaker intention to correct misinformation (standardised β = -0.12, p < .001) and weaker promotion of corrective information (β = -0.08, p < .05). Li and colleagues pooled 30 articles on distorted information in 2026 and report the same split, with the perceptual gap failing to predict regulatory support (p = 0.211) while presumed effects on others (r = 0.240) and on self (r = 0.166) both predicted it.",
     "study": {
       "cite": "Sun, Y., Pan, Z., & Shen, L. (2008). Understanding the third-person perception: Evidence from a meta-analysis. Journal of Communication, 58(2), 280-300.",
       "doi": "10.1111/j.1460-2466.2008.00385.x",
       "year": 2008
     },
-    "replicated": { "es": 0.646, "esType": "d", "ci": [0.56, 0.73], "ciLevel": 95 }
+    "replicated": {
+      "es": 0.646,
+      "esType": "d",
+      "ci": [
+        0.56,
+        0.73
+      ],
+      "ciLevel": 95
+    }
   },
-  "limits": "Xu and Gonzenbach's 2008 meta-analysis of the behavioural component is the paper that would settle the second half of this entry, and it is paywalled and was not read here. A pooled correlation of .13 between the perceptual gap and behavioural intention is widely attributed to it, and because that figure was reachable only through search-engine summaries it is not published on this page. Perloff and Shen's 2023 review of the field at 40 years is also paywalled, as are two recent meta-analyses of third-person perception and distorted information, in Information Processing and Management in 2023 and Current Psychology in 2026. Work on deepfakes and AI-generated content is now appearing and was located but not readable, so nothing about it is asserted here. Paul, Salwen and Dupagne's earlier meta-analysis of the perceptual hypothesis is quoted only through Sun and colleagues, who reanalysed 35 of its effect sizes and report that its r = .50 fell to r = .29 once the right within-subjects formula was used, an overestimation of .14 (z = 3.06, p < .001). Davison's own tests carry no significance tests, three of them used fewer than 35 people, and he noted that his self and other questions were differently worded. The desirable-message estimate in Sun and colleagues rests on 54 effect sizes, the smallest of their three categories.",
-  "misreadings": "The most quoted application is the weakest link in the chain. Davison named censorship as the natural home of the effect, but the studies that test it find the perceptual gap doing little of the work. Chung and Moon's two reanalyses put the presumed effect on others ahead of the self-other difference, and Zhang's surveys put offensiveness to the self ahead of both. Kim surveyed 400 South Korean social media users and found perceived influence on others failed to predict support for regulating health misinformation on its own (b = -0.09, p = .39), reaching significance only among people who also thought the misinformation affected them. The social-distance corollary is stated more confidently than the evidence carries. Cohen, Mutz, Price and Gunther's 1988 defamation experiment reported that the gap grew as the others became more distant from the reader, and Sun and colleagues find that cueing sociodemographic similarity narrows the gap, which supports the idea, while geographic distance was not a significant moderator in their full model. Whether the gap is a bias at all is contested. Lyons benchmarked the perception against behaviour in three YouGov panels totalling 10,004 American respondents in 2018, and found 64 to 79% showing the usual third-person perception but only 21 to 29% actually overconfident once their ability to tell false from mainstream headlines was measured. On his reading 62 to 68% of those showing the perception are in fact less susceptible than average, so most of what the standard measure counts is earned confidence. Davison raised the same doubt in his last paragraph. Finally, the effect is not universal across messages. Moser and colleagues reanalysed Sun and colleagues' data restricted to advertising and found a first-person effect for desirable ads, d = -0.47 with a 95% interval of -0.70 to -0.24 across 7 effect sizes, where the original pooling had found nothing.",
+  "limits": "Xu and Gonzenbach's 2008 meta-analysis of the behavioural component is the paper that would settle the second half of this entry, and only its deposited abstract could be read on 21 September 2026. Oxford Academic answers its landing page and its PDF with a Cloudflare bot challenge rather than a paywall notice, under four different user agents. A pooled correlation of .13 between the perceptual gap and behavioural intention is widely attributed to it, that figure is in neither the abstract nor any document read here, and so it stays off this page. Perloff and Shen's 2023 review of the field at 40 years is behind the same kind of challenge at Taylor and Francis, and its abstract promises a synthesis rather than a pooled figure. The 2023 meta-analysis of third-person perception and distorted information in Information Processing and Management could not be read at all: ScienceDirect answers with a captcha, the ACM mirror with a 403, and neither Crossref nor OpenAlex holds its abstract. The 2026 Current Psychology meta-analysis is readable only as far as its abstract, which prints r = 0.158 for corrective action and again for regulatory support, so its figures are quoted here sparingly. Work on deepfakes and AI-generated content is appearing in Asian Journal of Communication, Behaviour and Information Technology and Springer volumes, and none of it opened on 21 September 2026, so nothing about it is asserted here. Paul, Salwen and Dupagne's earlier meta-analysis of the perceptual hypothesis is quoted only through Sun and colleagues. They reanalysed 35 of its effect sizes, reproduced r = .43 on that subset with Paul and colleagues' own between-subjects formula, and got r = .29 with the right one, a difference of .14 (z = 3.06, p < .001). That .14 is the gap within the reanalysed subset, not the distance from the .50 that Paul and colleagues report across all 121 of their effect sizes. Davison's own tests carry no significance tests, three of them used fewer than 35 people, and his respondents pointed out that his self and other questions were differently worded. The desirable-message estimate in Sun and colleagues rests on 54 effect sizes, the smallest of their three categories.",
+  "misreadings": "The most quoted application is the weakest link in the chain. Davison named censorship as the natural home of the effect, but the studies that test it find the perceptual gap doing little of the work. Chung and Moon's two reanalyses put the presumed effect on others ahead of the self-other difference, and Zhang's surveys put offensiveness to the self ahead of both. Kim surveyed 400 South Korean social media users and found perceived influence on others failed to predict support for regulating health misinformation on its own (b = -0.09, p = .39). That path became significant at the mean of perceived influence on oneself and above it, and not below. The social-distance corollary is stated more confidently than the evidence carries. Cohen, Mutz, Price and Gunther's 1988 defamation experiment reported that the gap grew as the others became more distant from the reader. Sun and colleagues find that cueing sociodemographic similarity narrows the gap, which supports the idea. Geographic distance was not a significant moderator once their other referent characteristics were in the model. Whether the gap is a bias at all is contested. Lyons benchmarked the perception against behaviour in three YouGov panels totalling 10,004 American respondents, fielded from June 2018 to the start of 2019. He found 64 to 79% showing the usual third-person perception but only 21 to 29% actually overconfident once their ability to tell false from mainstream headlines was measured. On his reading 62 to 68% of those showing the perception are in fact less susceptible than average, so most of what the standard measure counts is earned confidence. Davison raised the same doubt in his last paragraph. The effect is also not universal across messages. Moser and colleagues reanalysed Sun and colleagues' data restricted to advertising and found a first-person effect for desirable ads, d = -0.47 with a 95% interval of -0.70 to -0.24 across 7 effect sizes, where the original pooling had found nothing. Their second reanalysis, of Eisend's public service announcement data, gives a smaller first-person effect of d = -0.16, interval -0.27 to -0.04, across 33 effect sizes. Finally, this is not the hostile media effect at no. 205, which compares two partisan groups' readings of the same content rather than one person's estimate of self against others.",
   "sources": [
     {
-      "text": "Davison, W. P. (1983). The third-person effect in communication. Public Opinion Quarterly, 47(1), 1-15.",
+      "text": "Davison, W. P. (1983). The third-person effect in communication. Public Opinion Quarterly, 47(1), 1-15. Read in full from a scan of the JSTOR copy on an open personal site.",
       "doi": "10.1086/268763",
       "url": "https://doi.org/10.1086/268763",
       "type": "primary"
     },
     {
-      "text": "Sun, Y., Pan, Z., & Shen, L. (2008). Understanding the third-person perception: Evidence from a meta-analysis. Journal of Communication, 58(2), 280-300.",
+      "text": "Sun, Y., Pan, Z., & Shen, L. (2008). Understanding the third-person perception: Evidence from a meta-analysis. Journal of Communication, 58(2), 280-300. Read in full from an open copy on a University of Maryland course server.",
       "doi": "10.1111/j.1460-2466.2008.00385.x",
       "url": "https://doi.org/10.1111/j.1460-2466.2008.00385.x",
       "type": "replication"
     },
     {
-      "text": "Paul, B., Salwen, M. B., & Dupagne, M. (2000). The third-person effect: A meta-analysis of the perceptual hypothesis. Mass Communication and Society, 3(1), 57-85. Paywalled; its pooled figure is quoted on this page from Sun and colleagues rather than from the paper.",
+      "text": "Paul, B., Salwen, M. B., & Dupagne, M. (2000). The third-person effect: A meta-analysis of the perceptual hypothesis. Mass Communication and Society, 3(1), 57-85. Abstract read from the publisher's deposited record; Taylor and Francis answers the full text with a Cloudflare bot challenge, and its pooled figure is quoted on this page from Sun and colleagues rather than from the paper.",
       "doi": "10.1207/S15327825MCS0301_04",
       "url": "https://doi.org/10.1207/S15327825MCS0301_04",
       "type": "replication"
     },
     {
-      "text": "Xu, J., & Gonzenbach, W. J. (2008). Does a perceptual discrepancy lead to action? A meta-analysis of the behavioral component of the third-person effect. International Journal of Public Opinion Research, 20(3), 375-385. Paywalled and not read for this entry.",
+      "text": "Xu, J., & Gonzenbach, W. J. (2008). Does a perceptual discrepancy lead to action? A meta-analysis of the behavioral component of the third-person effect. International Journal of Public Opinion Research, 20(3), 375-385. Abstract read from the publisher's deposited record on 21 September 2026; Oxford Academic answers the landing page and the PDF with a Cloudflare bot challenge under four user agents, and the abstract carries no pooled figure.",
       "doi": "10.1093/ijpor/edn031",
       "url": "https://doi.org/10.1093/ijpor/edn031",
       "type": "replication"
     },
     {
-      "text": "Chung, S., & Moon, S.-I. (2016). Is the third-person effect real? A critical examination of rationales, testing methods, and previous findings of the third-person effect on censorship attitudes. Human Communication Research, 42(2), 312-337. Abstract read; full text paywalled.",
+      "text": "Chung, S., & Moon, S.-I. (2016). Is the third-person effect real? A critical examination of rationales, testing methods, and previous findings of the third-person effect on censorship attitudes. Human Communication Research, 42(2), 312-337. Abstract read from the publisher's deposited record on 21 September 2026, which carries both sample sizes used here; Oxford Academic and Wiley both answer the full text with a Cloudflare bot challenge.",
       "doi": "10.1111/hcre.12078",
       "url": "https://doi.org/10.1111/hcre.12078",
       "type": "replication"
     },
     {
-      "text": "Zhang, J. (2023). Perceived offensiveness to the self, not that to others, is a robust positive predictor of support of censoring sexual, alcoholic, and violent media content. Frontiers in Psychology, 14, 1159014.",
+      "text": "Zhang, J. (2023). Perceived offensiveness to the self, not that to others, is a robust positive predictor of support of censoring sexual, alcoholic, and violent media content. Frontiers in Psychology, 14, 1159014. Read in full from the publisher's open page.",
       "doi": "10.3389/fpsyg.2023.1159014",
       "url": "https://doi.org/10.3389/fpsyg.2023.1159014",
       "type": "replication"
     },
     {
-      "text": "Lyons, B. A. (2022). Why we should rethink the third-person effect: Disentangling bias and earned confidence using behavioral data. Journal of Communication, 72(5), 565-577.",
+      "text": "Lyons, B. A. (2022). Why we should rethink the third-person effect: Disentangling bias and earned confidence using behavioral data. Journal of Communication, 72(5), 565-577. The published abstract was read from the publisher's deposited record and carries the sample and the 62 to 68% figure; the other two percentages come from the author's accepted manuscript of May 2021 on the Open Science Framework, because Oxford Academic answers the article PDF with a Cloudflare bot challenge.",
       "doi": "10.1093/joc/jqac021",
       "url": "https://doi.org/10.1093/joc/jqac021",
       "type": "replication"
     },
     {
-      "text": "Moser, K., Paul, K. I., Soucek, R., Eskofier, A., & Galais, N. (2024). The first-person effect. A reconsideration of two meta-analyses. PLOS ONE, 19(12), e0311155.",
+      "text": "Moser, K., Paul, K. I., Soucek, R., Eskofier, A., & Galais, N. (2024). The first-person effect. A reconsideration of two meta-analyses. PLOS ONE, 19(12), e0311155. Read in full from the publisher's open PDF.",
       "doi": "10.1371/journal.pone.0311155",
       "url": "https://doi.org/10.1371/journal.pone.0311155",
       "type": "replication"
     },
     {
-      "text": "Cohen, J., Mutz, D., Price, V., & Gunther, A. (1988). Perceived impact of defamation: An experiment on third-person effects. Public Opinion Quarterly, 52(2), 161-173. Abstract read; full text paywalled.",
+      "text": "Cohen, J., Mutz, D., Price, V., & Gunther, A. (1988). Perceived impact of defamation: An experiment on third-person effects. Public Opinion Quarterly, 52(2), 161-173. Abstract read from the publisher's deposited record; Oxford Academic answers the full text with a Cloudflare bot challenge.",
       "doi": "10.1086/269092",
       "url": "https://doi.org/10.1086/269092",
       "type": "primary"
     },
     {
-      "text": "Li, Z., & Yan, J. (2024). Does a perceptual gap lead to actions against digital misinformation? A third-person effect study among medical students. BMC Public Health, 24, 1291.",
+      "text": "Li, Z., & Yan, J. (2024). Does a perceptual gap lead to actions against digital misinformation? A third-person effect study among medical students. BMC Public Health, 24, 1291. Read in full from the open PDF on rd.springer.com, which link.springer.com answers with a bot challenge.",
       "doi": "10.1186/s12889-024-18763-9",
       "url": "https://doi.org/10.1186/s12889-024-18763-9",
       "type": "replication"
     },
     {
-      "text": "Kim, M. (2026). When it affects me: The role of perceived media influence on self and others in supporting regulation of health misinformation. Frontiers in Psychology, 17, 1695690.",
+      "text": "Kim, M. (2026). When it affects me: The role of perceived media influence on self and others in supporting regulation of health misinformation. Frontiers in Psychology, 17, 1695690. Read in full from the publisher's open page.",
       "doi": "10.3389/fpsyg.2026.1695690",
       "url": "https://doi.org/10.3389/fpsyg.2026.1695690",
       "type": "replication"
     },
     {
-      "text": "Sun, Y., Shen, L., & Pan, Z. (2008). On the behavioral component of the third-person effect. Communication Research, 35(2), 257-278. Paywalled; cited here for the framing of the behavioural component rather than for any figure.",
+      "text": "Sun, Y., Shen, L., & Pan, Z. (2008). On the behavioral component of the third-person effect. Communication Research, 35(2), 257-278. Abstract read from the publisher's deposited record; SAGE answers the full text with a Cloudflare bot challenge. Cited here for the framing of the behavioural component rather than for any figure.",
       "doi": "10.1177/0093650207313167",
       "url": "https://doi.org/10.1177/0093650207313167",
       "type": "commentary"
     },
     {
-      "text": "Perloff, R. M. (1993). Third-person effect research 1983-1992: A review and synthesis. International Journal of Public Opinion Research, 5(2), 167-184. Paywalled and not read for this entry.",
+      "text": "Perloff, R. M. (1993). Third-person effect research 1983-1992: A review and synthesis. International Journal of Public Opinion Research, 5(2), 167-184. Abstract read from the publisher's deposited record; Oxford Academic answers the full text with a Cloudflare bot challenge.",
       "doi": "10.1093/ijpor/5.2.167",
       "url": "https://doi.org/10.1093/ijpor/5.2.167",
       "type": "commentary"
     },
     {
-      "text": "Perloff, R. M., & Shen, L. (2023). The third-person effect 40 years after Davison penned it: What we know and where we should traverse. Mass Communication and Society, 26(3), 384-413. Paywalled and not read for this entry.",
+      "text": "Perloff, R. M., & Shen, L. (2023). The third-person effect 40 years after Davison penned it: What we know and where we should traverse. Mass Communication and Society, 26(3), 384-413. Abstract read from the publisher's deposited record; Taylor and Francis answers the full text with a Cloudflare bot challenge.",
       "doi": "10.1080/15205436.2022.2134802",
       "url": "https://doi.org/10.1080/15205436.2022.2134802",
       "type": "commentary"
+    },
+    {
+      "text": "Li, X., Lyu, W., Mohamed Salleh, S., & Ahmad, A. L. (2026). Combating distorted information through third person perception advances in a meta-analysis. Current Psychology, 45(6), 673. Abstract read on rd.springer.com, which serves the page link.springer.com answers with a bot challenge; the full text is subscription-only.",
+      "doi": "10.1007/s12144-026-09212-4",
+      "url": "https://doi.org/10.1007/s12144-026-09212-4",
+      "type": "replication"
     }
   ],
-  "checkedOn": "2026-08-09"
+  "checkedOn": "2026-09-21"
 }
