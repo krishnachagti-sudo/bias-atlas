@@ -22,8 +22,7 @@
     "study": {
       "cite": "Thompson, V. A. (1994). Interpretational factors in conditional reasoning. Memory & Cognition, 22(6), 742-758.",
       "doi": "10.3758/BF03209259",
-      "year": 1994,
-      "n": 80
+      "year": 1994
     }
   },
   "limits": "The meta-analysis everyone quotes could not be read. Schroyens, Schaeken and d'Ydewalle's 2001 article in Thinking and Reasoning is closed at the publisher, has no repository copy according to Unpaywall, OpenAlex or Semantic Scholar, and returned 403 at Taylor and Francis. Its four acceptance rates are quoted on this page at one remove, from the text of Eva, Hartmann and Singmann's accepted manuscript in the Warwick repository, and they are not entered as effect sizes. The brief that commissioned this entry circulated a different set of numbers, 97, 72, 63 and 55, and three of the four disagree with the ones actually printed in a document that was opened. Its own title shows the paper is about how negations are processed, so the rates it reports are averages over a negations design and are not a general endorsement rate. Singmann and Klauer's 2011 article is also paywalled and was not obtained. The figures given here come from its Experiment 1 data as distributed with the R package afex and reanalysed in the package vignette by Singmann himself, who notes there that his 'inductive' instruction is called probabilistic in the vignette and that the plausibility factor is a recoding of factors the manuscript used. Oaksford, Chater and Larkin's 2000 article was read only as its PubMed abstract. The double dissociation between instruction and problem type holds on the affirmation problems. On the denial problems, modus tollens and denying the antecedent, the validity effect reached significance in neither instruction group, so a reader should not carry the crossover across to denying the antecedent. Every rate on this page belongs to its materials and its instruction condition, and the two together move endorsement by tens of points. The probabilistic rehabilitation has a boundary. Adams' notion of p-validity, as Singmann, Klauer and Over set it out, classifies modus ponens and modus tollens as p-valid and affirming the consequent and denying the antecedent as not, exactly parallel to classical logic. Pfeifer and Kleiter's coherence interval for affirming the consequent has a lower bound of zero, so a coherent reasoner may hold the conclusion to be arbitrarily improbable. Where the premises are certain the form stays invalid on any of these standards. What the probabilistic accounts change is the scoring key when the premises are uncertain."
@@ -96,5 +95,5 @@
       "type": "provenance"
     }
   ],
-  "checkedOn": "2026-08-17"
+  "checkedOn": "2026-09-21"
 }

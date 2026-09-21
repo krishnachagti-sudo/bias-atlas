@@ -25,8 +25,7 @@
     "study": {
       "cite": "Hannikainen, I. R., et al. (2022). Coordination and expertise foster legal textualism. Proceedings of the National Academy of Sciences, 119(44), e2206531119. Total n = 5,794 across 15 countries.",
       "doi": "10.1073/pnas.2206531119",
-      "year": 2022,
-      "n": 5794
+      "year": 2022
     },
     "original": {
       "es": 5.6,
@@ -98,5 +97,5 @@
       "type": "replication"
     }
   ],
-  "checkedOn": "2026-08-17"
+  "checkedOn": "2026-09-21"
 }

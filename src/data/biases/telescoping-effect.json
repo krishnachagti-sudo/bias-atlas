@@ -20,8 +20,7 @@
     "study": {
       "cite": "Abate, G. T., de Brauw, A., Gibson, J., Hirvonen, K., & Wolle, A. (2020). Telescoping causes overstatement in recalled food consumption: Evidence from a survey experiment in Ethiopia. IFPRI Discussion Paper 01976.",
       "doi": "10.2499/p15738coll2.134161",
-      "year": 2020,
-      "n": 890
+      "year": 2020
     },
     "replicated": {
       "es": 54.41,
@@ -71,5 +70,5 @@
       "type": "replication"
     }
   ],
-  "checkedOn": "2026-08-10"
+  "checkedOn": "2026-09-21"
 }

@@ -23,8 +23,7 @@
     "study": {
       "cite": "Ryskin, R. A., & Brown-Schmidt, S. (2014). Do adults show a curse of knowledge in false-belief reasoning? A robust estimate of the true effect size. PLoS ONE, 9(3), e92406.",
       "doi": "10.1371/journal.pone.0092406",
-      "year": 2014,
-      "n": 3074
+      "year": 2014
     },
     "original": {
       "es": 0.469,
@@ -110,5 +109,5 @@
       "type": "commentary"
     }
   ],
-  "checkedOn": "2026-08-17"
+  "checkedOn": "2026-09-21"
 }

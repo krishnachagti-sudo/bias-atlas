@@ -26,8 +26,7 @@
     "study": {
       "cite": "Sehl, C. G., Denison, S., & Friedman, O. (2024). Doing things efficiently: Testing an account of why simple explanations are satisfying. Cognitive Psychology, 154, 101692.",
       "doi": "10.1016/j.cogpsych.2024.101692",
-      "year": 2024,
-      "n": 2820
+      "year": 2024
     }
   },
   "limits": "No standardised effect size is quoted here, because the papers that repeated the paradigm report proportions and regression coefficients rather than d or r. The stimuli are also narrow. Every experiment in the Lombrozo line uses fictional diseases on an invented planet with deterministic causal links and no prior beliefs to draw on, which is the feature Zemla and colleagues objected to. Lombrozo's own Experiment 4 shows how fragile the preference is: printing the joint probabilities took it from 61% to 17%. Johnson, Valenti and Keil report two moderators, a stronger simplicity preference in deterministic than stochastic contexts and in physical than social systems. Both are read from the published abstract. Their article is closed at the publisher, marked closed by Unpaywall, and no copy was found at OpenAlex or Semantic Scholar. Sehl and colleagues' article was reachable only as an abstract on this pass. The applied claim is the weakest part. No study measuring a preference for single-cause accounts among accident investigators was located in searches of Crossref, OpenAlex, PubMed, Semantic Scholar and the open web. The nearest work found is Thallapureddy and colleagues, who ran simulated investigation interviews with 34 experienced construction investigators and report confirmation bias, anchoring and the fundamental attribution error, not this one. On the other side, an audit of 214 root cause analysis reports from 43 Hong Kong public hospitals over two years counted 504 root causes, an average of 2.4 per report, so investigations there were not settling on one cause.",
@@ -99,5 +98,5 @@
       "type": "commentary"
     }
   ],
-  "checkedOn": "2026-08-17"
+  "checkedOn": "2026-09-21"
 }

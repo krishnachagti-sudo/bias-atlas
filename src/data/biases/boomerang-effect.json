@@ -23,8 +23,7 @@
     "study": {
       "cite": "Allcott, H. (2011). Social norms and energy conservation. Journal of Public Economics, 95(9-10), 1082-1095.",
       "doi": "10.1016/j.jpubeco.2011.03.003",
-      "year": 2011,
-      "n": 600000
+      "year": 2011
     }
   },
   "limits": "The 2007 design carried no untreated control group, a point Verkooijen and colleagues state plainly and trace to a 2011 piece by Krueger. Without one, a fall among heavy users and a rise among light users is also what regression to the mean looks like, and the two accounts cannot be separated. Allcott's null is a null for a whole letter rather than for a bare descriptive norm. The Home Energy Report carried conservation tips and injunctive labels alongside the neighbour comparison, and he says the absent boomerang must be down to some part of that bundle. Costa and Kahn's work on political ideology is often read as a boomerang. Their NBER working paper, revised in January 2015, puts the point estimate for a conservative household at a 5.7% rise in consumption after a 'good' rather than a 'room for improvement' message. The matching figure for a liberal household is 0.9%. The paper states that the pointwise 95% intervals are large and that the hypothesis of no normative-message effect is not rejected for either group. The same paper reports that both groups cut usage on receiving the report, by 3.6% for its most liberal profile and 1.1% for its most conservative. The published Journal of the European Economic Association version was not obtained, and the figures here are the working paper's. Kuang, Delea, Thulin and Bicchieri registered a systematic review of boomerang effects in 2020 under PROSPERO CRD42020156989; searches of Crossref and Europe PMC in August 2026 returned the protocol and no completed review. Bergquist, Nilsson and Schultz's meta-analysis of social norm field experiments sits behind a paywall these checks did not pass, and nothing is quoted from it here.",
@@ -103,5 +102,5 @@
       "type": "commentary"
     }
   ],
-  "checkedOn": "2026-08-17"
+  "checkedOn": "2026-09-21"
 }

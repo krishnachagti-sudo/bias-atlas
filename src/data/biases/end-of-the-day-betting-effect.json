@@ -21,8 +21,7 @@
     "study": {
       "cite": "McKenzie, C. R. M., Sher, S., Müller-Trede, J., Lin, C., Liersch, M. J., & Rawstron, A. G. (2016). Are longshots only for losers? A new look at the last race effect. Journal of Behavioral Decision Making, 29(1), 25-36.",
       "doi": "10.1002/bdm.1873",
-      "year": 2016,
-      "n": 618
+      "year": 2016
     },
     "replicated": { "es": 0.19, "esType": "beta" }
   },

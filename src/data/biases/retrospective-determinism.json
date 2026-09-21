@@ -20,8 +20,7 @@
     "study": {
       "cite": "Meuer, M., Nestler, S., & Oeberst, A. (2023). What determines hindsight bias in written work? One field and three experimental studies in the context of Wikipedia. Journal of Experimental Psychology: Applied, 29(2), 239-258.",
       "doi": "10.1037/xap0000445",
-      "year": 2023,
-      "n": 720
+      "year": 2023
     }
   },
   "limits": "The figures for Meuer, Nestler and Oeberst were read off the accepted manuscript posted at OSF, which carries the publisher's notice that it is not the copy of record; the published article was not obtained, and the page numbers in the citation come from the Crossref record rather than from the document. Three of the papers that define the inevitability component could only be read in abstract. Blank, Nestler, von Collani and Fischer's Cognition paper and Nestler, Blank and Egloff's dissociation experiments were read at PubMed, and Blank and Nestler's Leipzig study at Crossref, so the sample sizes and directions quoted above are the authors' own summaries and no effect size from any of the three appears here. Unpaywall reports all three closed. Oeberst, von der Beck and Nestler's cross-cultural study of inevitability judgements from Wikipedia articles was located by DOI and not obtained. Europe PMC returns nothing at all for the phrase 'retrospective determinism', 19 records for 'creeping determinism' and 2 for 'inevitability impressions'; OpenAlex could not be searched, because its API reported the day's budget exhausted. No multi-laboratory replication of any inevitability measure was found in those searches. Raymond Aron's phrase for the same idea, widely quoted in French, was not verified against his text and is not attributed here.",
@@ -106,5 +105,5 @@
       "type": "index"
     }
   ],
-  "checkedOn": "2026-08-17"
+  "checkedOn": "2026-09-21"
 }

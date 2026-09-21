@@ -19,8 +19,7 @@
     "study": {
       "cite": "Droog, E., & Burgers, C. (2024). The underlying mechanisms of the persuasiveness of different types of satirical news messages. Discourse Processes, 61(10), 479-497.",
       "doi": "10.1080/0163853X.2024.2381407",
-      "year": 2024,
-      "n": 3139
+      "year": 2024
     },
     "replicated": {
       "es": 0.03,
@@ -109,5 +108,5 @@
       "type": "replication"
     }
   ],
-  "checkedOn": "2026-08-17"
+  "checkedOn": "2026-09-21"
 }

@@ -25,8 +25,7 @@
     "study": {
       "cite": "Pillai, R. M., & Fazio, L. K. (2025). Repeated by many versus repeated by one: Examining the role of social consensus in the relationship between repetition and belief. Journal of Applied Research in Memory and Cognition.",
       "doi": "10.1037/mac0000166",
-      "year": 2025,
-      "n": 718
+      "year": 2025
     },
     "replicated": {
       "es": 0.29,
@@ -114,5 +113,5 @@
       "type": "replication"
     }
   ],
-  "checkedOn": "2026-08-17"
+  "checkedOn": "2026-09-21"
 }

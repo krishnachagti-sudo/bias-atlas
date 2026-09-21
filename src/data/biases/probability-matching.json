@@ -20,8 +20,7 @@
     "study": {
       "cite": "Saldana, C., Claidiere, N., Fagot, J., & Smith, K. (2022). Probability matching is not the default decision making strategy in human and non-human primates. Scientific Reports, 12, 13092.",
       "doi": "10.1038/s41598-022-16983-w",
-      "year": 2022,
-      "n": 238
+      "year": 2022
     }
   },
   "limits": "No meta-analysis of probability matching was located. Crossref, OpenAlex and open-web searches for one returned methodological papers about meta-analysing binary outcomes and nothing on this effect, so no pooled estimate and no interval are given here. The historical group means all come from Vulkan's tables rather than from the papers behind them, and Vulkan warns that the sequences used by Grant and colleagues, Jarvik, Gardner, Anderson and Whalen, and Goodnow were not independent from trial to trial. He records that Fiorina concluded on those grounds that the whole psychological literature on probability matching should be disregarded. One much-cited moderator has failed a direct test. Wolford, Newman, Miller and Wig reported in 2004 that a verbal working-memory load pushed people towards maximising, on 10 per condition. Schulze, James, Koehler and Newell ran a preregistered replication with 162 participants and found the final-block difference between the n-back and control groups at t(109) = -0.562, p = .576, d = -0.107, 95% CI [-0.479, 0.266], with a Bayes factor of 0.232 against the effect. Their control group also gives a clean baseline: 18 of 57 met the 95% criterion for maximising in the final block. West and Stanovich's 2003 paper on cognitive ability, cited throughout this literature, was not obtained, and the cognitive-ability claims here rest on Koehler and James instead.",
@@ -82,5 +81,5 @@
       "type": "primary"
     }
   ],
-  "checkedOn": "2026-08-10"
+  "checkedOn": "2026-09-21"
 }

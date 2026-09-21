@@ -23,8 +23,7 @@
     "study": {
       "cite": "Kerameas, K., Vartanian, L. R., Herman, C. P., & Polivy, J. (2015). The effect of portion size and unit size on food intake: Unit bias or segmentation effect? Health Psychology, 34(6), 670-676.",
       "doi": "10.1037/hea0000160",
-      "year": 2015,
-      "n": 129
+      "year": 2015
     }
   },
   "limits": "The 2006 evidence has no people in it. Its unit of analysis is the day, 10 days per condition for two of the studies, and nobody was identified, counted or asked anything. What was measured was selection, not consumption, a point the authors make themselves. The tests are one-tailed, two of them rest on five paired ratios, and the Tootsie Roll result reaches significance only through the binomial sign test. The Cochrane review of portion, package and tableware size screened the paper and excluded it as not an eligible study design. The heuristic is also self-limiting by construction: the authors restrict it to units within a range of acceptable sizes, so a single pea is too small and a bucket too large, and the paper offers no way to fix that range in advance. Searches of PubMed and the open web for tests of unit bias outside food, in the pill, film and fairground cases the paper suggests, returned none. The strongest downstream evidence concerns unit size rather than one-unit stopping. The Cochrane review lists a dissertation by Bajaj, which served 313 Arizona students a bagel either quartered or whole; the review's own extraction gives a standardised mean difference of 0.23, 95% CI 0.01 to 0.45, on 301 participants, and the study awaits full assessment in that review.",
@@ -73,5 +72,5 @@
       "type": "meta-analysis"
     }
   ],
-  "checkedOn": "2026-08-15"
+  "checkedOn": "2026-09-21"
 }

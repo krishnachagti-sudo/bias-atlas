@@ -24,8 +24,7 @@
     "study": {
       "cite": "Chen, D. L., Moskowitz, T. J., & Shue, K. (2016). Decision making under the gambler's fallacy: Evidence from asylum judges, loan officers, and baseball umpires. The Quarterly Journal of Economics, 131(3), 1181-1242. The n below counts asylum decisions, not judges and not applicants.",
       "doi": "10.1093/qje/qjw017",
-      "year": 2016,
-      "n": 150357
+      "year": 2016
     }
   },
   "limits": "No meta-analysis of the gambler's fallacy was located. Searches covered Crossref, Europe PMC, the Open Science Framework preprint index, arXiv and general web search, and returned individual studies and narrative reviews only, so the entry has no pooled estimate to quote and none should be inferred from the figures above. The field results carry caveats their own authors state. Croson and Sundali find nothing at streaks of one to four, which is where most roulette hands live. They also note that almost every roulette bet carries the same expected value, minus 5.26% on a double-zero wheel, so this is a setting where a costless bias can survive. Chen, Moskowitz and Shue say they cannot completely rule out sequential contrast effects as an alternative to the gambler's fallacy, and the magnitudes quoted here were read from the February 2016 NBER working-paper version rather than the published article. The Danish lotto magnitudes were likewise read from the authors' working paper, not from the published article, and they are percentages of a small weekly stake rather than shifts in belief. Muto and colleagues do not claim the fallacy is absent everywhere. Their argument is that baccarat's structure and its scoreboard invite trend-following, and they treat the contrast with roulette as the result rather than a refutation of the earlier work. The Xiang result splits the claim in two, and the split is disputed. Betting against a streak replicates. Whether people also state a lower probability for the streak continuing is now argued over by people working from the same data. Banki and Simonsohn count responses instead of averaging them and report that after a streak of four, 57% of probability judgments call the streak overly likely to end against 31% that do the opposite. Choi and DeKay report that a fuller reanalysis yields strong evidence of the fallacy in those probability judgments and undermines the claimed gap between judgments and choices. A Crossref search in August 2026 finds both only as preprint deposits rather than peer-reviewed articles, and neither collected new data. Dorst argues that the reversal need not be irrational at all: Bayesians who start uncertain whether a process is streaky, and then watch data from one that is not, rule out streaky hypotheses faster than switchy ones, so the average one expects a switch. The retrospective gambler's fallacy, in which an observed streak makes people guess that a longer unseen sequence preceded it, is a claim about reconstructing the past rather than predicting the future. It has its own entry, no. 519, where the Many Labs 1 replication of Oppenheimer and Monin is reported, and it is not a replication of the classic fallacy.",
@@ -125,5 +124,5 @@
       "type": "secondary"
     }
   ],
-  "checkedOn": "2026-08-17"
+  "checkedOn": "2026-09-21"
 }

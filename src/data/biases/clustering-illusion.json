@@ -24,8 +24,7 @@
     "study": {
       "cite": "Yu, R. Q., Gunn, J., Osherson, D., & Zhao, J. (2018). The consistency of the subjective concept of randomness. Quarterly Journal of Experimental Psychology, 71(4), 906-916.",
       "doi": "10.1080/17470218.2017.1307428",
-      "year": 2018,
-      "n": 161
+      "year": 2018
     }
   },
   "limits": "Searches of Crossref, Europe PMC and general web search turned up no meta-analysis and no multi-laboratory replication, so there is no pooled estimate here and none should be read into the figures above. The preregistered work that exists is small. Castillo and colleagues preregistered both experiments, at osf.io/ux5tp and osf.io/q3yrj, then replaced the preregistered distributional measure with one chosen after the data were in, a swap the paper reports and a reviewer questioned in the published review. Boger and colleagues state that their modelling choices and experiments were not preregistered. Gronchi and Sloman state the same of their reaction-time study, run on 40 students at Florence. The Falk and Konold correlations are computed across ten group means, one per level of P(A), not across individuals, and the authors say the averaging suppresses noise that characterises individual responses. Why the bias exists is unsettled. Falk and Konold's own answer is the encoding hypothesis, that a sequence is called random when it is hard to memorise, and their memorisation time correlates .94 with apparent randomness against .63 for entropy. Zhao, Hahn and Osherson tested that directly with 40 Princeton undergraduates, 20 per condition, and 16 by 16 matrices set against mirror-symmetric ones. Symmetric matrices were harder to encode, with lower change-detection d-prime at every switch rate, and were still chosen as random below chance at every switch rate except 0.85 and 0.9. Hahn and Warren argue instead that the bias is an apt response to finite experience, because a sliding window makes some subsequences less likely to appear at all. Warren and colleagues put the occurrence rate of the run 0000 in a length-20 sequence at around 0.47 against around 0.75 for 0001. Their own two experiments, on 12 Manchester undergraduates and 72 volunteers at Birkbeck, compare human sequences with an unbiased process on window-based statistics and conclude that the notion of bias is questionable. The same paper fits human generation with a run-breaking boost of 0.77 and 0.76 before exposure to a genuine random source and 0.61 and 0.63 after, where an unbiased process sits at 0.5. Sun, Tweney and Wang contest the theoretical argument, and Reimers and colleagues found people's judgements essentially unrelated to that alternative norm, with models including it 8.7 to 14.5 times less likely than models without it. Bar-Hillel and Wagenaar's review is cited by every paper here and could not be obtained. Unpaywall records it as closed with no open location, the CORE file Semantic Scholar points to returns 404, ScienceDirect refuses the request and scholar.archive.org holds no copy. It is named rather than used. Gilovich's 1991 book, the work usually said to carry the name, is marked access-restricted at the Internet Archive and was not read.",
@@ -121,5 +120,5 @@
       "type": "replication"
     }
   ],
-  "checkedOn": "2026-08-17"
+  "checkedOn": "2026-09-21"
 }

@@ -23,8 +23,7 @@
     "study": {
       "cite": "McCormick-Huhn, K., & Shields, S. A. (2021). Favorable evaluations of Black and White women's workplace anger during the era of #MeToo. Frontiers in Psychology, 12, 594260.",
       "doi": "10.3389/fpsyg.2021.594260",
-      "year": 2021,
-      "n": 1095
+      "year": 2021
     }
   },
   "limits": "No study located here tests tone policing as the term defines it. Every experiment above varies what a speaker did and measures what observers thought of the speaker. None varies a critic's objection to tone and measures whether the underlying argument then gets a hearing, which is the causal step the term asserts. The evidence is also thin where it is oldest. Brescoll and Uhlmann's first study put 69 people across four cells, and the paper reports prep, a probability-of-replication statistic, rather than p values, and prints no standardised effect sizes, so none are quoted here. Their samples came from one Connecticut park. No multi-laboratory or registered replication of any of this work was found. That search covered Crossref, Europe PMC, Unpaywall, Semantic Scholar's list of 53 works citing the 2015 mock jury paper, and open-web search. A Europe PMC query for the phrase \"tone policing\" returns 21 records, none of them an experiment on the phenomenon. The one preregistration in this group belongs to Lee and colleagues, and it covers an intervention rather than a replication. Reframed moderation guidelines cut flagging of a discrimination disclosure to 36.26% from the 51.65% produced by conventional guidelines, b = -0.79, 95% CI [-1.23, -0.35]. The preregistered comparison against showing no guidelines at all, 44.50%, did not come out, b = 0.35, 95% CI [-0.08, 0.78], p = .11. Their tone-policing measure is a lexicon of negative-emotion words applied to field data, so it is correlational. Four papers cited here were read only as abstracts, because the full texts stayed behind paywalls on this pass: both Salerno mock jury papers, the Motro workplace studies and the Williams and Tiedens meta-analysis. No sample size is quoted for the 2015 mock jury study for that reason.",
@@ -114,5 +113,5 @@
       "type": "commentary"
     }
   ],
-  "checkedOn": "2026-08-17"
+  "checkedOn": "2026-09-21"
 }

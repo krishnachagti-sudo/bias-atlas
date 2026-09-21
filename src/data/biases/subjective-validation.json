@@ -19,8 +19,7 @@
     "study": {
       "cite": "Snyder, C. R. (1974). Why horoscopes are true: The effects of specificity on acceptance of astrological interpretations. Journal of Clinical Psychology, 30(4), 577-580.",
       "doi": "10.1002/1097-4679(197410)30:4<577::AID-JCLP2270300434>3.0.CO;2-8",
-      "year": 1974,
-      "n": 63
+      "year": 1974
     }
   },
   "limits": "No pooled effect size exists for the relevance manipulation. Searches of Crossref, OpenAlex and the open web for this entry produced no meta-analysis of it, and the tally above comes from a narrative review published in 1985. Snyder's experiment ran 21 people per cell, all of them women, with novice student experimenters, and the review notes that most of this literature used university students. The sharpest counter-evidence sits inside the same review. Greene, and later Harris and Greene, asked participants directly whether a generalised profile described them as a unique person; participants said it did not, while still rating it accurate. Dickson and Kelly leave that unresolved against the studies using the indirect \"for you\" manipulation, and it bears on the mechanism rather than on the acceptance ratings. The origin of the phrase could not be verified either. Marks and Kammann's book is held search-only at HathiTrust, which returned HTTP 403 to two attempts, the Internet Archive holds no scan, and the Google Books API was out of quota, so no text of it was read. Dutton's review of cold reading records that academic work here has been almost entirely Barnum-style testing of undergraduate classes rather than study of readings given in the field.",
@@ -74,5 +73,5 @@
       "type": "primary"
     }
   ],
-  "checkedOn": "2026-08-10"
+  "checkedOn": "2026-09-21"
 }

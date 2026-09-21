@@ -24,8 +24,7 @@
     "study": {
       "cite": "Sullivan, J. (2019). The primacy effect in impression formation: Some replications and extensions. Social Psychological and Personality Science, 10(4), 432-439.",
       "doi": "10.1177/1948550618771003",
-      "year": 2019,
-      "n": 2882
+      "year": 2019
     },
     "replicated": {
       "es": 0.36,
@@ -91,5 +90,5 @@
       "type": "replication"
     }
   ],
-  "checkedOn": "2026-08-17"
+  "checkedOn": "2026-09-21"
 }
