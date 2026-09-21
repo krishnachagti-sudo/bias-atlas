@@ -12,11 +12,11 @@
     "where": "Journal of Personality and Social Psychology",
     "note": "Their paper is titled \"When Choice is Demotivating: Can One Desire Too Much of a Good Thing?\" and reports three studies, on jams, essay topics and chocolates. The phrase \"paradox of choice\" comes from Barry Schwartz's later popular book rather than from this paper."
   },
-  "evidence": "The jam study is Study 1, a field experiment at Draeger's Supermarket in Menlo Park, California, run over two Saturdays. A tasting booth displayed either 6 jams or 24, alternating by the hour, and everyone who approached got a coupon for $1 off a jar. The large display drew more traffic: of 242 customers who passed it, 145 (60%) stopped, against 104 of 260 (40%) at the small display. Purchasing ran the other way. Thirty per cent (31) of the limited-choice consumers redeemed the coupon, against 3% (4) of the extensive-choice consumers, X2(1, N = 249) = 32.34, p < .0001. Those denominators are the 249 people who stopped, not the 502 who walked past, and the famous ratio rests on 35 jars of jam. Study 2 gave 197 Stanford students either 6 or 30 optional essay topics for extra credit; 74% of the 70 in the limited condition handed something in, against 60% of the 123 in the extensive condition, X2(1, N = 193) = 3.93, p < .05. Study 3 gave 134 Columbia students a choice of chocolate from 6 or 30 varieties, or no choice at all. Satisfaction with the sampled chocolate was higher after the small array (M = 6.28, SD = 0.54) than the large one (M = 5.46, SD = 0.82). Offered $5 or a $5 box of Godiva chocolates as payment, 48% of the limited-choice group took the chocolates against 12% of the extensive-choice group, X2(1, N = 67) = 10.78, p < .001.",
+  "evidence": "The jam study is Study 1, a field experiment at Draeger's Supermarket in Menlo Park, California, run over two Saturdays. A tasting booth displayed either 6 jams or 24, alternating by the hour, and everyone who approached got a coupon for $1 off a jar. The large display stopped a higher share of passers-by: of 242 customers who passed it, 145 (60%) stopped, against 104 of 260 (40%) at the small display, X2(1, N = 502) = 19.89, p < .001. Purchasing ran the other way. Nearly 30% (31) of the limited-choice consumers redeemed the coupon, against 3% (4) of the extensive-choice consumers, X2(1, N = 249) = 32.34, p < .0001. Those denominators are the 249 people who stopped, not the 502 who walked past, and the famous ratio rests on 31 purchases against four. Study 2 gave 197 Stanford students either 6 or 30 optional essay topics for extra credit; 74% of the 70 in the limited condition handed something in, against 60% of the 123 in the extensive condition, X2(1, N = 193) = 3.93, p < .05. Study 3 gave 134 Columbia students a choice of chocolate from 6 or 30 varieties, or no choice at all. Satisfaction with the sampled chocolate was higher after the small array (M = 6.28, SD = 0.54) than the large one (M = 5.46, SD = 0.82). Offered $5 or a $5 box of Godiva chocolates as payment, 48% of the limited-choice group took the chocolates against 12% of the extensive-choice group, X2(1, N = 67) = 10.78, p < .001.",
   "replication": {
     "state": "mixed",
     "headline": "Two meta-analyses of largely the same literature reached opposite verdicts, and neither has been withdrawn.",
-    "detail": "Scheibehenne, Greifeneder and Todd pooled 63 conditions from 50 published and unpublished experiments (N = 5,036) in a random-effects model and found a mean effect of D = 0.02, 95% CI -0.09 to 0.12. Trimming the six highest and six lowest effects left D = 0.001, CI -0.08 to 0.07. Heterogeneity was real, I2 = 68%, Q(62) = 192, p < .001, but their meta-regression found no sufficient condition for overload; the moderators that did register were prior preferences or expertise, which pushed towards more-is-better, and a publication-source effect favouring positive results. Chernev, Bockenholt and Goodman analysed 99 observations from 53 published studies (N = 7,202) with a three-level model built around four theorised moderators. All four came out significant at p < .001: choice set complexity 0.55 (SE 0.07), decision goal 0.56 (0.06), decision task difficulty 0.37 (0.08) and preference uncertainty 0.32 (0.07). Their intercept for studies carrying no moderator was 0.41 (SE 0.14), t(67) = 3.0. Restricted to choices made from a given assortment, the main effect was b = 0.17, t(39) = 4.5, p < .001. They attribute the disagreement to two things, a different pool of studies and a different model, and report that re-running their own model on the earlier meta-analysis's studies reproduced their result. Scheibehenne and colleagues answered that their conclusion survives narrower inclusion rules: restricting to studies without prior preferences, expertise or time pressure gives D = 0.04 across 56 conditions, and dropping their own studies as well leaves D = 0.14 across 37, with the interval still spanning zero. That reply was self-published rather than peer reviewed, and the authors say the journal did not give them space for one.",
+    "detail": "Scheibehenne, Greifeneder and Todd pooled 63 conditions from 50 published and unpublished experiments (N = 5,036) in a random-effects model and found a mean effect of D = 0.02, 95% CI -0.09 to 0.12. Trimming the six highest and six lowest effects left D = 0.001, CI -0.08 to 0.07. Heterogeneity was real, I2 = 68%, Q(62) = 192, p < .001, but their meta-regression found no sufficient condition for overload. Four of its moderators registered, not one. Using consumption quantity as the dependent measure, b = -0.87, and controlling for prior preferences or expertise, b = -0.50, both pushed towards more-is-better. Journal publication rather than unpublished data pushed the other way, b = 0.27, and later publication years pushed back, b = -0.05. Chernev, Bockenholt and Goodman analysed 99 observations from 53 published studies (N = 7,202) with a three-level model built around four theorised moderators. All four came out significant at p < .001: choice set complexity 0.55 (SE 0.07), decision goal 0.56 (0.06), decision task difficulty 0.37 (0.08) and preference uncertainty 0.32 (0.07). Their intercept for studies carrying no moderator was 0.41 (SE 0.14), t(67) = 3.0. Restricted to choices made from a given assortment, the main effect was b = 0.17, t(39) = 4.5, p < .001. They attribute the disagreement to two things, a different pool of studies and a different model, and report that re-running their own model on the earlier meta-analysis's studies reproduced their result. Scheibehenne and colleagues answered that their conclusion survives narrower inclusion rules: restricting to studies without prior preferences, expertise or time pressure gives D = 0.04 across 56 conditions, and dropping their own studies as well leaves D = 0.14 across 37, with the interval still spanning zero. That reply was self-published rather than peer reviewed, and the authors say the journal did not give them space for one.",
     "study": {
       "cite": "Scheibehenne, B., Greifeneder, R., & Todd, P. M. (2010). Can there ever be too many options? A meta-analytic review of choice overload. Journal of Consumer Research, 37(3), 409-425.",
       "doi": "10.1086/651235",
@@ -25,72 +25,78 @@
     },
     "replicated": { "es": 0.02, "esType": "d", "ci": [-0.09, 0.12], "ciLevel": 95 }
   },
-  "limits": "No preregistered direct replication of the jam study was located. Searches covered Crossref, arXiv and the general literature on choice overload replication, and turned up two attempts described only at one remove: Scheibehenne's 2008 doctoral work, which re-ran the jam design in an upscale German supermarket and found no effect, and a jelly-bean version that also failed. Both are reported in the 2010 meta-analysis rather than in a paper this entry could open. The field evidence outside the laboratory is thinner than the citation count suggests. Sethi-Iyengar, Huberman and Jiang's 401(k) chapter is the usual field support; the same three authors' peer-reviewed treatment of the same 793,794 employees in 647 plans puts the coefficient on the number of funds offered at -0.23 percentage points of participation per fund, SE 0.11, with a probit marginal probability of -0.25, and the paper's abstract lists five main findings, none of them the fund count. Briere, Poterba and Szafarz, working with 680,392 employees at 1,610 French firms, read their results as only partly consistent with overload and say the theory alone fails to account for the French evidence. Chernev, Bockenholt and Goodman's meta-analysis carries a 2016 corrigendum whose text this entry could not obtain.",
+  "limits": "No preregistered direct replication of the jam study was located. Searches on 21 September 2026 covered Crossref, the arXiv API, the OSF registries and plain web search. Two unregistered attempts exist and both can be read. Scheibehenne's 2008 Humboldt University dissertation is open, and an earlier version of this entry wrongly said otherwise. It re-ran the jam design over two Saturdays in an upscale Berlin store, with 504 customers. Coupon redemption was 32% after the large array against 33% after the small one, Cohen's d = 0.03, p = .853. A jelly-bean laboratory study in the same thesis, with 66 participants, found nothing either. The field evidence outside the laboratory is thinner than the citation count suggests. Sethi-Iyengar, Huberman and Jiang's 401(k) chapter is the usual field support, and it counts funds used by at least one participant rather than funds offered. The same three authors' peer-reviewed treatment of the same 793,794 employees in 647 plans puts the coefficient on the number of funds offered at -0.23 percentage points of participation per fund, SE 0.11, with a probit marginal probability of -0.25, and the paper's abstract lists five main findings, none of them the fund count. Briere, Poterba and Szafarz, working with 680,392 employees at 1,610 French firms, read their results as only partly consistent with overload and say the theory alone fails to account for the French evidence. Chernev, Bockenholt and Goodman's meta-analysis carries a 2016 corrigendum whose text this entry still could not obtain on 21 September 2026. Wiley and ScienceDirect both answered with a Cloudflare challenge rather than a paywall, and the Internet Archive was offline that day.",
   "misreadings": "The 30% against 3% is not a comparison of shoppers who saw the display. It is a comparison of the 104 and 145 people who stopped at it, and the numerator on the losing side is four people. The passing traffic ran the other way, with the 24-jam display stopping 60% of those who walked by against 40% for the six-jam display, so the study's own headline is that variety attracts and then fails to convert. Nor did the jam study measure satisfaction. Satisfaction comes from Study 3, in a laboratory, with chocolates and 67 choosers. The 2010 meta-analysis is often cited as showing that choice overload does not exist. It reports a mean of zero with wide variation between studies, and says explicitly that no sufficient conditions could be identified, which is a statement about conditions rather than about existence. The 2015 meta-analysis is likewise not a refutation of the 2010 one on its own terms: its authors agree that averaging across the moderators attenuates the effect, and their disagreement is over whether that average is the quantity worth reporting.",
   "sources": [
     {
-      "text": "Iyengar, S. S., & Lepper, M. R. (2000). When choice is demotivating: Can one desire too much of a good thing? Journal of Personality and Social Psychology, 79(6), 995-1006.",
+      "text": "Iyengar, S. S., & Lepper, M. R. (2000). When choice is demotivating: Can one desire too much of a good thing? Journal of Personality and Social Psychology, 79(6), 995-1006. Read in full in the PDF at https://faculty.washington.edu/jdb/345/345%20Articles/Iyengar%20%26%20Lepper%20(2000).pdf. Source of every figure in the evidence field. The Columbia copy answered 403.",
       "doi": "10.1037/0022-3514.79.6.995",
       "url": "https://doi.org/10.1037/0022-3514.79.6.995",
       "type": "primary"
     },
     {
-      "text": "Scheibehenne, B., Greifeneder, R., & Todd, P. M. (2010). Can there ever be too many options? A meta-analytic review of choice overload. Journal of Consumer Research, 37(3), 409-425.",
+      "text": "Scheibehenne, B., Greifeneder, R., & Todd, P. M. (2010). Can there ever be too many options? A meta-analytic review of choice overload. Journal of Consumer Research, 37(3), 409-425. Read in full in the typeset article, pages 409-425, at https://scheibehenne.de/ScheibehenneGreifenederTodd2010.pdf. Source of the mean effect, the trimmed estimate, the heterogeneity statistics and the meta-regression table. Oxford University Press answered a Cloudflare challenge.",
       "doi": "10.1086/651235",
       "url": "https://doi.org/10.1086/651235",
       "type": "replication"
     },
     {
-      "text": "Chernev, A., Bockenholt, U., & Goodman, J. (2015). Choice overload: A conceptual review and meta-analysis. Journal of Consumer Psychology, 25(2), 333-358.",
+      "text": "Chernev, A., Bockenholt, U., & Goodman, J. (2015). Choice overload: A conceptual review and meta-analysis. Journal of Consumer Psychology, 25(2), 333-358. Read in full in the typeset article at https://chernev.com/wp-content/uploads/2017/02/ChoiceOverload_JCP_2015.pdf, which is the copy the first author hosts and which carries the figures quoted here. Wiley and ScienceDirect both answered a Cloudflare challenge.",
       "doi": "10.1016/j.jcps.2014.08.002",
       "url": "https://doi.org/10.1016/j.jcps.2014.08.002",
       "type": "replication"
     },
     {
-      "text": "Chernev, A., Bockenholt, U., & Goodman, J. (2010). Commentary on Scheibehenne, Greifeneder, and Todd: Choice overload: Is there anything to it? Journal of Consumer Research, 37(3), 426-428.",
+      "text": "Chernev, A., Bockenholt, U., & Goodman, J. (2010). Commentary on Scheibehenne, Greifeneder, and Todd: Choice overload: Is there anything to it? Journal of Consumer Research, 37(3), 426-428. Read in full at https://chernev.com/wp-content/uploads/2017/02/ChoiceOverload_JCR_2010.pdf.",
       "doi": "10.1086/655200",
       "url": "https://doi.org/10.1086/655200",
       "type": "commentary"
     },
     {
-      "text": "Scheibehenne, B., Greifeneder, R., & Todd, P. M. Reply to Chernev, Bockenholt, & Goodman (2010), Choice overload: Is there anything to it? Self-published reply, not peer reviewed.",
+      "text": "Scheibehenne, B., Greifeneder, R., & Todd, P. M. Reply to Chernev, Bockenholt, & Goodman (2010), Choice overload: Is there anything to it? Self-published reply, not peer reviewed. Read in full. Source of the two narrower estimates and of the authors' statement that they were not given the opportunity to reply in the journal.",
       "url": "https://scheibehenne.com/ReplyToChernevBoeckenholdtGoodman2010.pdf",
       "type": "commentary"
     },
     {
-      "text": "Chernev, A., Bockenholt, U., & Goodman, J. (2016). Corrigendum to \"Choice overload: A conceptual review and meta-analysis\". Journal of Consumer Psychology, 26(2), 312.",
+      "text": "Chernev, A., Bockenholt, U., & Goodman, J. (2016). Corrigendum to \"Choice overload: A conceptual review and meta-analysis\". Journal of Consumer Psychology, 26(2), 312. Not read. Tried on 21 September 2026 at Wiley, at ScienceDirect and at the first author's own site, which answered a Cloudflare challenge, a Cloudflare challenge and a 404. The Internet Archive was offline that day. Nothing on this page rests on it.",
       "doi": "10.1016/j.jcps.2015.07.001",
       "url": "https://doi.org/10.1016/j.jcps.2015.07.001",
       "type": "commentary"
     },
     {
-      "text": "Scheibehenne, B., Greifeneder, R., & Todd, P. M. (2009). What moderates the too-much-choice effect? Psychology & Marketing, 26(3), 229-253.",
+      "text": "Scheibehenne, B., Greifeneder, R., & Todd, P. M. (2009). What moderates the too-much-choice effect? Psychology & Marketing, 26(3), 229-253. Read in full at https://www.scheibehenne.de/ScheibehenneGreifenederTodd2009.pdf. Background, and no figure on this page comes from it.",
       "doi": "10.1002/mar.20271",
       "url": "https://doi.org/10.1002/mar.20271",
       "type": "replication"
     },
     {
-      "text": "Sethi-Iyengar, S., Huberman, G., & Jiang, W. (2004). How much choice is too much? Contributions to 401(k) retirement plans. In O. S. Mitchell & S. Utkus (Eds.), Pension Design and Structure: New Lessons from Behavioral Finance (pp. 83-96). Oxford University Press.",
+      "text": "Sethi-Iyengar, S., Huberman, G., & Jiang, W. (2004). How much choice is too much? Contributions to 401(k) retirement plans. In O. S. Mitchell & S. Utkus (Eds.), Pension Design and Structure: New Lessons from Behavioral Finance (pp. 83-96). Oxford University Press. Read in full in the chapter PDF at https://pensionresearchcouncil.wharton.upenn.edu/wp-content/uploads/2015/09/0-19-927339-1-05.pdf. Oxford Academic answered a Cloudflare challenge.",
       "doi": "10.1093/0199273391.003.0005",
       "url": "https://doi.org/10.1093/0199273391.003.0005",
       "type": "primary"
     },
     {
-      "text": "Huberman, G., Iyengar, S. S., & Jiang, W. (2007). Defined contribution pension plans: Determinants of participation and contributions rates. Journal of Financial Services Research, 31(1), 1-32.",
+      "text": "Huberman, G., Iyengar, S. S., & Jiang, W. (2007). Defined contribution pension plans: Determinants of participation and contributions rates. Journal of Financial Services Research, 31(1), 1-32. Read in full. Source of the fund-count coefficient, its standard error, the probit marginal probability and the abstract's five findings.",
       "doi": "10.1007/s10693-007-0003-6",
       "url": "https://business.columbia.edu/sites/default/files-efs/pubfiles/1800/Participation%20and%20Contribution%20Springer%20Full%20Text.pdf",
       "type": "primary"
     },
     {
-      "text": "Briere, M., Poterba, J., & Szafarz, A. (2021). Choice overload? Participation and asset allocation in French employer-sponsored saving plans. Working paper, 20 December 2021.",
+      "text": "Briere, M., Poterba, J., & Szafarz, A. (2021). Choice overload? Participation and asset allocation in French employer-sponsored saving plans. Working paper, 20 December 2021. Read in full. Source of the sample counts and of the sentence that choice overload alone fails to catch the French evidence.",
       "url": "https://economics.mit.edu/sites/default/files/publications/Choice%20Overload.pdf",
       "type": "commentary"
     },
     {
-      "text": "Dean, M., Ravindran, D., & Stoye, J. (2022). A better test of choice overload. arXiv:2212.03931. Preprint, 1,832 subjects recruited on Amazon Mechanical Turk.",
+      "text": "Dean, M., Ravindran, D., & Stoye, J. (2022). A better test of choice overload. arXiv:2212.03931. Preprint; version 4 of 13 August 2026 read in full. It recruited 2,000 subjects on Amazon Mechanical Turk and analysed 1,832 after a comprehension quiz and one unusable record. No figure on this page comes from it.",
       "url": "https://arxiv.org/abs/2212.03931",
+      "type": "replication"
+    },
+    {
+      "text": "Scheibehenne, B. (2008). The effect of having too much choice. Doctoral dissertation, Humboldt University of Berlin. Read in full at the repository bitstream route. Source of the Berlin jam replication, its 504 customers, the 32% against 33% redemption and the jelly-bean study's 66 participants.",
+      "doi": "10.18452/15740",
+      "url": "https://edoc.hu-berlin.de/handle/18452/16392",
       "type": "replication"
     }
   ],
-  "checkedOn": "2026-08-09"
+  "checkedOn": "2026-09-21"
 }
