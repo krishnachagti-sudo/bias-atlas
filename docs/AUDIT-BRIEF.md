@@ -147,8 +147,9 @@ concluding.
 A block can also be an artefact of your own request. One host served a
 proof-of-work challenge only to browser-like user agents, and a plain curl
 user agent got the PDF at once. A note saying that host is unobtainable
-would have been a false unobtainability claim produced by the fetcher. Vary
-the user agent before concluding, and solving a challenge may not help where
+would have been a false unobtainability claim produced by the fetcher. It
+runs both ways: another host refused a plain curl agent and served a
+browser-like one. Vary the user agent in both directions before concluding, and solving a challenge may not help where
 the egress address rotates between requests, because the token is bound to
 the address.
 
