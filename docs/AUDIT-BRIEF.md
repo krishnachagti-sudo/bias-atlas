@@ -108,6 +108,10 @@ These have repeatedly served the same document when the indexed URL did not.
 
 - `rd.springer.com` serves PDFs that `link.springer.com` answers with a Fastly
   bot challenge. Seven of one entry's eleven leads turned on this alone.
+- Publishers' own deposited abstracts at Crossref and OpenAlex, where the
+  article is challenged. One audit settled six of its seven blocked sources
+  this way, and it is the cheapest route on this beat: no document to fetch
+  and nothing to convert.
 - A named dataset's own publication list, where an entry turns on re-analyses
   of one dataset. Five of one entry's seven documents came from a single
   subject host this way. Go there before any aggregator; it is the cheapest
