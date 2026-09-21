@@ -116,6 +116,9 @@ These have repeatedly served the same document when the indexed URL did not.
 
 - `rd.springer.com` serves PDFs that `link.springer.com` answers with a Fastly
   bot challenge. Seven of one entry's eleven leads turned on this alone.
+- HAL, searched by author rather than by identifier. It supplied two of one
+  entry's three newly opened documents, including a version of record that
+  Unpaywall and Semantic Scholar both called closed.
 - An author's collected writings, where a founding figure has a volume. Two
   sources one entry called unobtainable are open in a press's edition of
   Tversky's papers, and this corpus leans on a handful of such authors.
