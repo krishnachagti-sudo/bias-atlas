@@ -231,6 +231,15 @@ every silent source as unread until you have opened it.
 Verification means seeing the string in the document. It does not mean having
 read every page, and the difference is most of the cost of this programme.
 
+Fetch to disk, never into your context. `curl -sL -o /tmp/x.pdf <url>` costs
+nothing to read. Fetching the same document with a tool that returns its
+contents puts every page in front of you, and that single habit is most of
+what a deep audit spends. Use a fetching tool only for a page you must read as
+prose, and prefer a REST or XML route where one exists.
+
+Then convert once and search many times. `pdftotext /tmp/x.pdf /tmp/x.txt`,
+and every later question is a grep against the same file.
+
 Extract the text to a file, then search it for the claim you came to check.
 `pdftotext file.pdf - | grep -n -C3 "1,469"` answers whether a figure is in a
 paper, and what it is a figure of, for a fraction of reading the paper. Do the
