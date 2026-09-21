@@ -111,6 +111,9 @@ These have repeatedly served the same document when the indexed URL did not.
 
 - `rd.springer.com` serves PDFs that `link.springer.com` answers with a Fastly
   bot challenge. Seven of one entry's eleven leads turned on this alone.
+- Plain web search for a distinctive phrase from the document, in quotes. It
+  opened a founding paper after every index, repository and archive route had
+  failed. Indexes know about records; search engines know about files.
 - Semantic Scholar's `openAccessPdf` field. It has disagreed with Unpaywall
   and OpenAlex and been the one that was right. Note the reverse too: it has
   advertised an article as open whose link is a bot challenge, so an index
