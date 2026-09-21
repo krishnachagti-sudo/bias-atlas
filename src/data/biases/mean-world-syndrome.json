@@ -14,114 +14,114 @@
     "year": 1976,
     "who": "George Gerbner and Larry Gross",
     "where": "Journal of Communication",
-    "note": "Their paper \"Living with Television: The Violence Profile\" ran in volume 26, pages 172 to 199, and set out the Cultural Indicators approach of pairing content counts with viewer surveys. The phrase \"mean world syndrome\" is not in its title. Gerbner was using it himself by 1994, when an essay in In Context described three consequences of heavy viewing that \"in combination, I call the 'mean world syndrome'\", the third being a pervasive sense of insecurity and vulnerability. The earliest printed use could not be established."
+    "note": "Their paper \"Living with Television: The Violence Profile\" ran in volume 26, pages 172 to 199, and set out the Cultural Indicators approach of pairing content counts with viewer surveys. The phrase \"mean world syndrome\" is not in that paper. It is in print by 1980, in Violence Profile No. 11, where the Annenberg group write that examples of mainstreaming appear in \"questions relating to what we have called the 'mean world syndrome'\". The same paper names a Mean World Index, three interpersonal mistrust items from the 1975 and 1978 General Social Surveys. Gerbner was still using the phrase in 1994, when an essay in In Context described three consequences of heavy viewing that \"in combination, I call the 'mean world syndrome'\", the third being a pervasive sense of insecurity and vulnerability. No earlier printed use was found on 21 September 2026 in the 1976 paper, in Violence Profile No. 6, in the 1981 reply to Hirsch or in open web search."
   },
-  "evidence": "Two halves, counted separately and then joined. Message system analysis coded network drama for violence, defined as the \"overt expression of physical force against self or other, compelling action against one's will on pain of being hurt or killed, or actually hurting or killing\". Violence Profile No. 6, filed with ERIC in December 1974, gives the arithmetic. A programme score adds the percentage of programmes containing violence to twice the rate of violent episodes per programme and twice the rate per hour. A character score adds the percentage of characters involved in violence to the percentage involved in killing. The Violence Index is the two scores added together. Gerbner and Gross wrote in the same document that these composites \"are not statistical findings in themselves, and should not be treated as such\". The survey half asked respondents their chances of being involved in violence in any given week, offering \"about 50-50\", which is close to the television world, or \"one in a hundred\". Heavy viewers, four or more hours a day, chose the television answer 13 percentage points more often than light viewers, under two hours a day.",
+  "evidence": "Two halves, counted separately and then joined. Message system analysis coded network drama for violence, defined as the \"overt expression of physical force against self or other, compelling action against one's will on pain of being hurt or killed, or actually hurting or killing\". Violence Profile No. 6, filed with ERIC in December 1974, gives the arithmetic. A programme score adds the percentage of programmes containing violence to twice the rate of violent episodes per programme and twice the rate per hour. A character score adds the percentage of characters involved in violence to the percentage involved in killing. The Violence Index is the two scores added together. Gerbner and Gross wrote in the same document that these composites \"are not statistical findings in themselves, and should not be treated as such\". The survey half asked a national sample of adults whether their chances of being involved in some type of violence in any given week were one in ten or one in a hundred. One in ten was the television answer. Among all respondents, 52 percent of heavy viewers gave it against 39 percent of light viewers, a cultivation differential of thirteen points on the authors' own definition. Heavy viewers watched four hours a day or more, light viewers two hours a day or less.",
   "replication": {
     "state": "mixed",
-    "headline": "The correlation is still there after fifty years of studies and sits near a tenth, and it vanished in both reanalyses that controlled the original survey data properly.",
-    "detail": "Two reanalyses hit the finding within four years. Paul Hirsch reported in Communication Research in 1980 that once controls were applied together rather than one at a time, no linear relationship remained between amount of viewing and giving television answers, and he concluded the cultivation hypothesis lacked empirical support. His 1981 follow-up tested the refinements. Heavy viewers in the subgroups television portrays as most victimised did not see the world as meaner than light viewers in the same subgroups, and he judged mainstreaming and resonance to be stated in a form that no result could contradict. Michael Hughes reanalysed the 1975 and 1977 General Social Surveys in Public Opinion Quarterly the same year, controlling for age, sex, race, income, education, hours worked, church attendance, organisational membership and population size at once, and found the claimed effects largely absent. The pooled literature tells a different story. Morgan and Shanahan's 1997 meta-analysis of twenty years of work reports an average cultivation effect of .09. Hermann, Morgan and Shanahan repeated the exercise in 2021 across 3,842 effect sizes from 406 independent samples and found .107, stable across five decades and across the shift from broadcast to cable, streaming and social media. Their own moderator analysis found larger effects in smaller samples, which is the shape publication bias makes. A 2023 meta-analysis of 460 effect sizes from 66 samples applied the same frame to social media and found .123. Single large tests remain inconsistent. Chadee, Smith and Ferguson surveyed 3,003 adults in Trinidad and found that only perceived risk of victimisation predicted fear of crime, with no media variable doing so. Mustafaj and Van den Bulck used the fifth round of the European Social Survey, more than 51,000 respondents across 27 countries, and after accounting for cross-country variance found viewing related to fear after dark and to trust in others but not to worry about violent crime or burglary.",
+    "headline": "The pooled correlation across fifty years sits near a tenth, and it falls close to zero under simultaneous controls, in the critics' reanalyses and in the Annenberg group's own table.",
+    "detail": "Two reanalyses hit the finding within four years. Paul Hirsch reported in Communication Research in 1980 that once controls were applied together rather than one at a time, no linear relationship remained between amount of viewing and giving television answers, and he concluded the cultivation hypothesis lacked empirical support. His 1981 follow-up tested the refinements. Heavy viewers in the subgroups television portrays as most victimised did not see the world as meaner than light viewers in the same subgroups, and he judged mainstreaming and resonance to be stated in a form that offers no prediction which could fail. Michael Hughes reanalysed the 1975 and 1977 General Social Surveys in Public Opinion Quarterly in 1980, controlling at once for age, sex, race, income, education, hours worked, church attendance, organisational membership and population size, and found the claimed effects largely absent. The same pattern is printed on the other side. Violence Profile No. 11 reports a correlation of .12 between viewing and the Mean World Index, falling to .04 under all eight controls together and turning negative, at minus .10, among non-white respondents. The Annenberg group's 1981 reply to Hirsch grants that simultaneous controls reduce the aggregate associations in that survey data \"to trivial proportions\" in most cases, and rests its defence on subgroup patterns instead. The pooled literature tells a different story. Morgan and Shanahan's 1997 meta-analysis of twenty years of work reports an average cultivation effect of .09 and no moderator that explains the spread. Hermann, Morgan and Shanahan repeated the exercise in 2021 across 3,842 effect sizes from 406 independent samples and found .107, stable across five decades of change in television's technology and ownership. Their own abstract qualifies that twice. The stronger effect of overall viewing weakens over time, and effects are larger in smaller samples, which is the shape publication bias makes. A 2023 meta-analysis of 460 effect sizes from 66 samples applied the same frame to social media and found .123, larger for specific content, younger samples and Asian samples. Single large tests remain inconsistent. Chadee, Smith and Ferguson recruited 3,003 adults in Trinidad and analysed 888 and 2,190 of them in two regressions. Perceived risk of victimisation was the strong predictor of fear of crime, and crime drama, news and reality television were not, but viewing of non-crime drama predicted less fear, and perceived television realism predicted perceived risk. Mustafaj and Van den Bulck used the fifth round of the European Social Survey, more than 51,000 respondents across 27 countries, and after accounting for cross-country variance found viewing related to fear after dark and to lower trust in others but not to worry about violent crime or burglary.",
     "study": {
       "cite": "Hermann, E., Morgan, M., & Shanahan, J. (2021). Television, continuity, and change: A meta-analysis of five decades of cultivation research. Journal of Communication, 71(4), 515-544.",
       "doi": "10.1093/joc/jqab014",
       "year": 2021
     }
   },
-  "limits": "The pooled figures are quoted as the abstracts give them, as an \"average cultivation effect\" and an \"overall effect size\", without a stated metric, so they are not entered in this site's structured effect-size fields. Nothing here is experimental. Every number is an association between self-reported viewing and self-reported belief, and the direction is open: fearful people may watch more television. The critics' point was never that the correlation is absent but that it does not survive the controls, and the 2021 meta-analysis pools studies that vary in how many controls they carried. Morgan and Shanahan's own defence of small effects, that a few points can decide a vote or an epidemic, is quoted here from Mustafaj and Van den Bulck's paper rather than from the 1997 chapter, which is paywalled. Potter's 2014 critique is cited for its framing, which separates Gerbner's macrosystem theory from the loose research practice that carries its name; the full text was not readable. The 2010 Media Education Foundation film that carries the name is a documentary, not evidence, and is cited only for Gerbner's own words on camera.",
-  "misreadings": "The commonest error is treating cultivation as a short-term media-violence effect. Laboratory experiments on what a violent clip does to a viewer minutes later belong to the priming and media-aggression literatures, which test something else and are argued about on their own terms. Cultivation predicts nothing about the hour after a film. The second error is reading the Violence Index as a measure of how violent television is in any absolute sense. It is a weighted sum of a prevalence percentage and two rates, on no natural scale, and its authors said in print that it should not be treated as a statistical finding. The third concerns the size of the effect. A pooled association near .10 is small by any conventional reading, and cultivation's defenders answer that a small uniform shift across an entire population is what the theory predicts and that the theory would be wrong if the number were large. Both readings sit on the same figure. Finally, the word syndrome is doing no clinical work. Gerbner's 1994 essay uses it as a label for three consequences of heavy viewing, taken together, rather than as a disorder anyone is diagnosed with.",
+  "limits": "The pooled figures are quoted as the abstracts give them, as an \"average cultivation effect\" and an \"overall effect size\", without a stated metric, so they are not entered in this site's structured effect-size fields. Both meta-analyses, both Hirsch papers, Hughes, Newcomb and Potter were read as abstracts only. Every publisher holding one of them answered on 21 September 2026 with a Cloudflare challenge rather than a paywall, at Sage, Oxford, Taylor and Francis and Wiley. Nothing here is experimental. Every number is an association between self-reported viewing and self-reported belief, and the direction is open: fearful people may watch more television. The critics' point was never that the correlation is absent but that it does not survive the controls, and the 2021 meta-analysis pools studies that vary in how many controls they carried. Morgan and Shanahan's own defence of small effects, that a few points can decide a vote or an epidemic, is quoted here from Mustafaj and Van den Bulck's paper rather than from the 1997 chapter. Potter's 2014 critique is cited for its framing, which separates Gerbner's macrosystem explanation from the pattern of operational practice that carries the same name. The 2010 Media Education Foundation film that carries the name is a documentary, not evidence, and is cited only for Gerbner's own words on camera.",
+  "misreadings": "The commonest error is treating cultivation as a short-term media-violence effect. Laboratory experiments on what a violent clip does to a viewer minutes later belong to the priming and media-aggression literatures, which test something else and are argued about on their own terms. Cultivation predicts nothing about the hour after a film. The second error is reading the Violence Index as a measure of how violent television is in any absolute sense. It is a weighted sum of a prevalence percentage and two rates, on no natural scale, and its authors said in print that it should not be treated as a statistical finding. The third concerns the size of the effect. A pooled association near .10 is small by any conventional reading, and cultivation's defenders answer that a small uniform shift across an entire population is what the theory predicts and that the theory would be wrong if the number were large. Both readings sit on the same figure. A fourth error is quoting the abstracts of the single large surveys against the theory. Chadee and colleagues write in their abstract that no media variable predicted fear of crime, while their results section names one that did. Finally, the word syndrome is doing no clinical work. Gerbner's group attached it in 1980 to an index of interpersonal mistrust, and his 1994 essay uses it for three consequences of heavy viewing taken together, not for a disorder anyone is diagnosed with.",
   "sources": [
     {
-      "text": "Gerbner, G., & Gross, L. (1976). Living with television: The violence profile. Journal of Communication, 26(2), 172-199.",
+      "text": "Gerbner, G., & Gross, L. (1976). Living with television: The violence profile. Journal of Communication, 26(2), 172-199. Read in full as the scan the Gerbner Archive at the Annenberg School serves for asset 276. The live host refused every request on 21 September 2026, and the file was replayed from the Wayback Machine, byte for byte. The survey question, its two answers, the heavy and light viewing thresholds, the 52 and 39 percent figures in its Figure 8 and the definition of the cultivation differential were all read off it.",
       "doi": "10.1111/j.1460-2466.1976.tb01397.x",
       "url": "https://doi.org/10.1111/j.1460-2466.1976.tb01397.x",
       "type": "primary"
     },
     {
-      "text": "Gerbner, G., & Gross, L. (1974). Trends in network television drama and viewer conceptions of social reality, 1967-1973: Violence Profile No. 6. Annenberg School of Communications, University of Pennsylvania. ERIC ED101682.",
+      "text": "Gerbner, G., & Gross, L. (1974). Trends in network television drama and viewer conceptions of social reality, 1967-1973: Violence Profile No. 6. Annenberg School of Communications, University of Pennsylvania. ERIC ED101682. Read in full from ERIC's own full-text PDF, refetched on 21 September 2026. The definition of violence, the programme and character score formulas, the composition of the Violence Index and the sentence disclaiming them as statistical findings are all in it.",
       "url": "https://eric.ed.gov/?id=ED101682",
       "type": "primary"
     },
     {
-      "text": "Gerbner, G., Gross, L., Morgan, M., & Signorielli, N. (1980). The \"mainstreaming\" of America: Violence Profile No. 11. Journal of Communication, 30(3), 10-29.",
+      "text": "Gerbner, G., Gross, L., Morgan, M., & Signorielli, N. (1980). The \"mainstreaming\" of America: Violence Profile No. 11. Journal of Communication, 30(3), 10-29. Read in full as the scan the Gerbner Archive serves for asset 391, replayed from the Wayback Machine on 21 September 2026 because the live host refused. It has no text layer and was read by optical character recognition. It carries the phrase \"mean world syndrome\" in print, the Mean World Index built from three mistrust items of the 1975 and 1978 General Social Surveys, and the Table 1 correlations of .12, .04 and minus .10 quoted on this page.",
       "doi": "10.1111/j.1460-2466.1980.tb01987.x",
       "url": "https://doi.org/10.1111/j.1460-2466.1980.tb01987.x",
       "type": "primary"
     },
     {
-      "text": "Gerbner, G. (1994). Reclaiming our cultural mythology. In Context, 38, Spring 1994.",
+      "text": "Gerbner, G. (1994). Reclaiming our cultural mythology. In Context, 38, Spring 1994. Read in full from the Context Institute's own page on 21 September 2026. The quoted phrase and the third consequence were read off it.",
       "url": "https://www.context.org/iclib/ic38/gerbner/",
       "type": "primary"
     },
     {
-      "text": "Hirsch, P. M. (1980). The \"scary world\" of the nonviewer and other anomalies: A reanalysis of Gerbner et al.'s findings on cultivation analysis, Part I. Communication Research, 7(4), 403-456.",
+      "text": "Hirsch, P. M. (1980). The \"scary world\" of the nonviewer and other anomalies: A reanalysis of Gerbner et al.'s findings on cultivation analysis, Part I. Communication Research, 7(4), 403-456. Abstract read on 21 September 2026 from the publisher's own deposit at Crossref. The conclusion quoted here about simultaneous controls is the abstract's. The full text was not obtained: Sage answered a Cloudflare challenge, and the Wayback Machine holds only a sign-in page.",
       "doi": "10.1177/009365028000700401",
       "url": "https://doi.org/10.1177/009365028000700401",
       "type": "replication"
     },
     {
-      "text": "Hirsch, P. M. (1981). On not learning from one's own mistakes: A reanalysis of Gerbner et al.'s findings on cultivation analysis, Part II. Communication Research, 8(1), 3-37.",
+      "text": "Hirsch, P. M. (1981). On not learning from one's own mistakes: A reanalysis of Gerbner et al.'s findings on cultivation analysis, Part II. Communication Research, 8(1), 3-37. Abstract read on 21 September 2026 from the publisher's own deposit at Crossref, which carries the finding about victimised subgroups and the judgement on mainstreaming and resonance. The full text was not obtained; Sage answered a Cloudflare challenge.",
       "doi": "10.1177/009365028100800101",
       "url": "https://doi.org/10.1177/009365028100800101",
       "type": "replication"
     },
     {
-      "text": "Gerbner, G., Gross, L., Morgan, M., & Signorielli, N. (1981). A curious journey into the scary world of Paul Hirsch. Communication Research, 8(1), 39-72.",
+      "text": "Gerbner, G., Gross, L., Morgan, M., & Signorielli, N. (1981). A curious journey into the scary world of Paul Hirsch. Communication Research, 8(1), 39-72. Read in full as the scan the Gerbner Archive serves for asset 377, replayed from the Wayback Machine on 21 September 2026. The concession that simultaneous controls reduce the aggregate associations to trivial proportions, and the count of double-controlled correlations that survive, were read off it.",
       "doi": "10.1177/009365028100800102",
       "url": "https://doi.org/10.1177/009365028100800102",
       "type": "commentary"
     },
     {
-      "text": "Hughes, M. (1980). The fruits of cultivation analysis: A reexamination of some effects of television watching. Public Opinion Quarterly, 44(3), 287-302.",
+      "text": "Hughes, M. (1980). The fruits of cultivation analysis: A reexamination of some effects of television watching. Public Opinion Quarterly, 44(3), 287-302. Abstract read on 21 September 2026 from a Wayback Machine capture of the Oxford Academic page. It names the two survey years and all nine controls listed on this page. The full text was not obtained; Oxford answered a Cloudflare challenge.",
       "doi": "10.1086/268597",
       "url": "https://doi.org/10.1086/268597",
       "type": "replication"
     },
     {
-      "text": "Morgan, M., & Shanahan, J. (1997). Two decades of cultivation research: An appraisal and meta-analysis. Annals of the International Communication Association, 20(1), 1-45.",
+      "text": "Morgan, M., & Shanahan, J. (1997). Two decades of cultivation research: An appraisal and meta-analysis. Annals of the International Communication Association, 20(1), 1-45. Abstract read on 21 September 2026 from a Wayback Machine capture of the Taylor and Francis page, which carries the .09 figure and the absence of any moderator. The full text was not obtained; Taylor and Francis answered a Cloudflare challenge.",
       "doi": "10.1080/23808985.1997.11678937",
       "url": "https://doi.org/10.1080/23808985.1997.11678937",
       "type": "replication"
     },
     {
-      "text": "Hermann, E., Morgan, M., & Shanahan, J. (2021). Television, continuity, and change: A meta-analysis of five decades of cultivation research. Journal of Communication, 71(4), 515-544.",
+      "text": "Hermann, E., Morgan, M., & Shanahan, J. (2021). Television, continuity, and change: A meta-analysis of five decades of cultivation research. Journal of Communication, 71(4), 515-544. Abstract read on 21 September 2026 from the publisher's own deposit at Crossref, which carries the effect-size count, the sample count, the .107 figure, the weakening of the overall-viewing effect and the larger effects in smaller samples. The full text was not obtained; Oxford answered a Cloudflare challenge and no repository copy was found.",
       "doi": "10.1093/joc/jqab014",
       "url": "https://doi.org/10.1093/joc/jqab014",
       "type": "replication"
     },
     {
-      "text": "Hermann, E., Morgan, M., & Shanahan, J. (2023). Cultivation and social media: A meta-analysis. New Media & Society, 25(9), 2492-2511.",
+      "text": "Hermann, E., Morgan, M., & Shanahan, J. (2023). Cultivation and social media: A meta-analysis. New Media & Society, 25(9), 2492-2511. Abstract read on 21 September 2026 from the publisher's own deposit at Crossref, which carries the .123 figure and the three moderators. The full text was not obtained; Sage answered a Cloudflare challenge.",
       "doi": "10.1177/14614448231180257",
       "url": "https://doi.org/10.1177/14614448231180257",
       "type": "replication"
     },
     {
-      "text": "Chadee, D., Smith, S., & Ferguson, C. J. (2019). Murder she watched: Does watching news or fictional media cultivate fear of crime? Psychology of Popular Media Culture, 8(2), 125-133.",
+      "text": "Chadee, D., Smith, S., & Ferguson, C. J. (2019). Murder she watched: Does watching news or fictional media cultivate fear of crime? Psychology of Popular Media Culture, 8(2), 125-133. Read in full from the open copy on Christopher Ferguson's own site, fetched on 21 September 2026. Its Table 1 gives the analysed samples of 888 and 2,190, and its results section names non-crime drama viewing as a significant predictor of less fear, which its abstract does not.",
       "doi": "10.1037/ppm0000158",
       "url": "https://doi.org/10.1037/ppm0000158",
       "type": "replication"
     },
     {
-      "text": "Mustafaj, M., & Van den Bulck, J. (2021). Revisiting cultivation as a gravitational process: A cross-national comparison of the cultivation of fear and mistrust. International Journal of Communication, 15, 715-740.",
+      "text": "Mustafaj, M., & Van den Bulck, J. (2021). Revisiting cultivation as a gravitational process: A cross-national comparison of the cultivation of fear and mistrust. International Journal of Communication, 15, 715-740. Read in full, open access, from the journal's own PDF, fetched on 21 September 2026. The country and respondent counts, the three outcome results and the quotation from Morgan and Shanahan were read off it.",
       "url": "https://ijoc.org/index.php/ijoc/article/view/15230",
       "type": "replication"
     },
     {
-      "text": "Potter, W. J. (2014). A critical analysis of cultivation theory. Journal of Communication, 64(6), 1015-1036.",
+      "text": "Potter, W. J. (2014). A critical analysis of cultivation theory. Journal of Communication, 64(6), 1015-1036. Abstract read on 21 September 2026 from a Wayback Machine capture of the Oxford Academic page, which carries the three conceptions of cultivation summarised here. The full text was not obtained; both Oxford and Wiley answered a Cloudflare challenge.",
       "doi": "10.1111/jcom.12128",
       "url": "https://doi.org/10.1111/jcom.12128",
       "type": "commentary"
     },
     {
-      "text": "Newcomb, H. (1978). Assessing the violence profile studies of Gerbner and Gross. Communication Research, 5(3), 264-282.",
+      "text": "Newcomb, H. (1978). Assessing the violence profile studies of Gerbner and Gross: A humanistic critique and suggestion. Communication Research, 5(3), 264-282. Abstract read on 21 September 2026 from the publisher's own deposit at Crossref. Nothing on this page rests on it. A Wayback Machine capture of the Sage page gives the full title, which ends \"A Humanistic Critique and Suggestion\".",
       "doi": "10.1177/009365027800500303",
       "url": "https://doi.org/10.1177/009365027800500303",
       "type": "commentary"
     },
     {
-      "text": "Earp, J. (dir.) (2010). The mean world syndrome: Media violence and the cultivation of fear. Media Education Foundation. Transcript.",
+      "text": "Earp, J. (dir.) (2010). The mean world syndrome: Media violence and the cultivation of fear. Media Education Foundation. Transcript. Read in full from the Media Education Foundation's own transcript PDF, fetched on 21 September 2026. Gerbner speaks on camera in it.",
       "url": "https://www.mediaed.org/transcripts/Mean-World-Syndrome-Transcript.pdf",
       "type": "commentary"
     }
   ],
-  "checkedOn": "2026-08-09"
+  "checkedOn": "2026-09-21"
 }
