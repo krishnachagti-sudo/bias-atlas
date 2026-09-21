@@ -16,130 +16,130 @@
   "replication": {
     "state": "replicated",
     "headline": "In a task where subjects only counted targets, and where repeated and unrepeated trials sat in separate blocks, accuracy still fell from 0.84 to 0.58 when the two targets were identical.",
-    "detail": "Johnston, Hochhaus and Ruthruff set out to strip the paradigm of the memory and bias problems its critics had identified. Their targets were always the letters A and B, embedded in streams of other letters with one distractor between the two targets, and the response was a count rather than an identification. In Experiment 1, with 12 participants, the proportion correct on two-target trials was 0.919 when the targets differed and 0.665 when they repeated, t(11) = 7.44, p < 0.001, with all 12 participants in the same direction. Experiment 2 answered the bias objection by blocking: 16 participants were told before each block whether that block's two-target trials would be repeats or non-repeats, so declining to report a repetition bought nothing. The effect held at 0.841 against 0.578, t(15) = 6.71, p < 0.001, again in every participant, with a mean exposure of 118 ms per item on the final block. Experiments 3 and 4 required a keypress to each target as it went past, removing the delay between seeing and reporting. Experiment 3 gave 0.838 for non-repeated pairs against 0.589 for repeated ones, t(34) = 5.63, p < 0.001. The timing of the presses showed it is the second target that goes missing. Two earlier bias-controlled studies point the same way. Hochhaus and Johnston had subjects judge whether a single masked word matched a preceding cue, with confidence ratings feeding a signal detection analysis, and found perceptual sensitivity lowered in the repetition condition. Kanwisher, Kim and Wickens report across three experiments that the effect appears as a drop in d' rather than a shift in criterion, including in a display of two simultaneous letters. These figures come from the authors' accepted manuscript of the 2002 paper, posted by Ruthruff, rather than from the published version. That manuscript's discussion section reports Experiment 3 as 0.855 against 0.598, which does not match the 0.838 against 0.589 in its own results section.",
+    "detail": "Johnston, Hochhaus and Ruthruff set out to strip the paradigm of the memory and bias problems its critics had identified. Their targets were always the letters A and B, embedded in streams of other letters with one distractor between the two targets, and the response was a count rather than an identification. In Experiment 1, with 12 participants, the proportion correct on two-target trials was 0.919 when the targets differed and 0.665 when they repeated, t(11) = 7.44, p < 0.001, with all 12 participants in the same direction. Experiment 2 answered the bias objection by blocking: 16 participants were told before each block whether that block's two-target trials would be repeats or non-repeats, so declining to report a repetition bought nothing. The effect held at 0.841 against 0.578, t(15) = 6.71, p < 0.001, again in every participant, with a mean exposure of 118 ms per item on the final block. Experiments 3 and 4 required a keypress to each target as it went past, removing the delay between seeing and reporting. Experiment 3 gave 0.838 for non-repeated pairs against 0.589 for repeated ones, t(34) = 5.63, p < 0.001. The timing of the presses showed it is the second target that goes missing. Two earlier bias-controlled studies point the same way. Hochhaus and Johnston used a single-frame task in which one masked word had to be judged same or different from a probe. In the repetition condition that probe was shown as a precue beforehand, so the judgement amounted to whether the target repeated it. Confidence ratings fed a signal detection analysis, and perceptual sensitivity was lower in the repetition condition. Kanwisher, Kim and Wickens report across three experiments that the effect appears as a drop in d' rather than a shift in criterion, including in a display of two simultaneous letters. These figures come from the authors' accepted manuscript of the 2002 paper, posted by Ruthruff, rather than from the published version, which was open at no venue searched in September 2026. That manuscript's discussion section reports Experiment 3 as 0.855 against 0.598, which does not match the 0.838 against 0.589 in its own results section.",
     "study": {
       "cite": "Johnston, J. C., Hochhaus, L., & Ruthruff, E. (2002). Repetition blindness has a perceptual locus: Evidence from online processing of targets in RSVP streams. Journal of Experimental Psychology: Human Perception and Performance, 28(2), 477-489.",
       "doi": "10.1037/0096-1523.28.2.477",
       "year": 2002
     }
   },
-  "limits": "Whether the deficit shows up as blindness or as reticence depends on the design. Anderson and Neill had subjects count letters hidden in digit streams, and separated false reports of two different letters from false reports of two identical ones. With repeated and unrepeated trials randomly intermixed, the whole effect was response bias. With the two trial types blocked, it appeared in d'. Their conclusion is that the effect on sensitivity depends on the strategy the design invites, which is an awkward result for both camps. The memory case rests on findings the perceptual account has to absorb. Fagot and Pashler manipulated the order in which the two items were reported, and ran four tasks other than full report which a perceptual account predicts should show the effect; none did. They place it in retrieval and suggest it may be the Ranschburg effect of immediate recall under another name. Armstrong and Mewhort reproduced the deficit in free recall and then recovered the missing item by prompting with a retrieval probe, which means both copies were in memory and merely inaccessible. Whittlesea and Masson report that precuing the identity of the word that might repeat relieves the effect, and that cues delivered after the list has ended can cause it, when any inhibition would already have run its course. The stimulus matters as well. Harris, Hayward, Seet and Andrews ran words and their matching object pictures through the same procedure with the same 39 participants, and found the effect for words alongside a repetition benefit for pictures. With a small stimulus pool reused across the session, 24 participants showed it for both, at a mean of .297 for words against .106 for pictures. Grouping protects repeated items, in Goldfarb and Treisman's phrase the survival of the grouped. Kanwisher and Potter found nothing in compressed speech, though Soto-Faraco later obtained an auditory deficit under low memory load, with guessing biases estimated and ruled out.",
-  "misreadings": "The popular illustration is the duplicated word a proofreader misses, as in 'off the the swing'. That is a different finding. Staub, Dodge and Cohen tracked readers' eyes through sentences carrying either a repeated 'the' or a repeated noun, at their own reading pace rather than at eight items a second. A repeated 'the' was caught on 46% of trials, and on 66% even when both instances were fixated. A repeated noun was caught on 90%, whatever the eyes had done. Their proposal is that readers write the apparent duplication off as noise in their own eye movements, and the confinement of the failure to function words is the reverse of the laboratory pattern, where content words give the largest effect. The effect is also not the attentional blink, the deficit for a second target arriving within about half a second of the first. Chun obtained a double dissociation between them: the two follow different time courses, making targets easier to tell from distractors relieves the blink and not repetition blindness, and making the two targets episodically distinct relieves repetition blindness and not the blink. Nor does repetition ordinarily hurt. Repetition priming is the usual result, and Kanwisher's own third experiment found a repetition advantage, 59% against 41%, once the task asked for one item rather than a list. The blindness needs the report of two separate events in a stream too fast to build them both.",
+  "limits": "Whether the deficit shows up as blindness or as reticence depends on the design. Anderson and Neill had subjects count letters hidden in digit streams, and separated false reports of two different letters from false reports of two identical ones. With repeated and unrepeated trials randomly intermixed, the whole effect was response bias. With the two trial types blocked, it appeared in d'. They read the blocked result as support for a perceptual account, while granting that effects on discriminability depend on the strategy subjects adopt. The memory case rests on findings the perceptual account has to absorb. Fagot and Pashler manipulated the order in which the two items were reported. Three further experiments used tasks other than full report, which a perceptual account predicts should show the effect, and none did. A fifth experiment did find the deficit when one occurrence was spoken and the other shown, and they placed that instance in retrieval. They suggest the effect may be the Ranschburg effect of immediate recall under another name. Armstrong and Mewhort reproduced the deficit in free recall and then recovered the missing item by prompting with a retrieval probe, which means both copies were in memory and merely inaccessible. Whittlesea and Masson report that precuing the identity of the word that might repeat relieves the effect, and that cues delivered after the list has ended can cause it, when any inhibition would already have run its course. The stimulus matters as well. Harris, Hayward, Seet and Andrews ran words and their matching object pictures through the same procedure with the same 39 participants, and found the effect for words alongside a repetition benefit for pictures. With a small stimulus pool reused across the session, 24 participants showed it for both, at a mean of .297 for words against .106 for pictures. Grouping protects repeated items, in Goldfarb and Treisman's phrase the survival of the grouped. Kanwisher and Potter found nothing in compressed speech, though Soto-Faraco later obtained an auditory deficit under low memory load, with guessing biases estimated and ruled out.",
+  "misreadings": "The popular illustration is the duplicated word a proofreader misses, as in 'off the the swing'. That is a different finding. Staub, Dodge and Cohen tracked readers' eyes through sentences carrying either a repeated 'the' or a repeated noun, at their own reading pace rather than at eight items a second. A repeated 'the' was caught on 46% of trials, and on 66% even when both instances were fixated. A repeated noun was caught on 90%, whatever the eyes had done. Their proposal is that readers write the apparent duplication off as noise in their own eye movements. They add that token individuation gives no reason why the failure should strike 'the' and spare content words. The effect is also not the attentional blink, the deficit for a second target arriving within about half a second of the first. Chun obtained a double dissociation between them: the two follow different time courses, making targets easier to tell from distractors relieves the blink and not repetition blindness, and making the two targets episodically distinct relieves repetition blindness and not the blink. Nor does repetition ordinarily hurt. Repetition priming is the usual result, and Kanwisher's own third experiment found a repetition advantage, 59% against 41%, once the task asked for one item rather than a list. The blindness needs the report of two separate events in a stream too fast to build them both.",
   "sources": [
     {
-      "text": "Kanwisher, N. G. (1987). Repetition blindness: Type recognition without token individuation. Cognition, 27(2), 117-143.",
+      "text": "Kanwisher, N. G. (1987). Repetition blindness: Type recognition without token individuation. Cognition, 27(2), 117-143. Every figure quoted here, including the entries of Tables 2 and 3, was read off the full text at the URL given.",
       "doi": "10.1016/0010-0277(87)90016-3",
       "url": "http://wexler.free.fr/library/files/kanwisher%20(1987)%20repetition%20blindness.%20type%20recognition%20without%20token%20individuation.pdf",
       "type": "primary"
     },
     {
-      "text": "Kanwisher, N., & Potter, M. C. (1989). Repetition blindness: The effects of stimulus modality and spatial displacement. Memory & Cognition, 17(2), 117-124.",
+      "text": "Kanwisher, N., & Potter, M. C. (1989). Repetition blindness: The effects of stimulus modality and spatial displacement. Memory & Cognition, 17(2), 117-124. Read in full at the URL given. The link.springer.com page for this article answered a three-kilobyte cookie notice rather than the PDF, and rd.springer.com served it.",
       "doi": "10.3758/bf03197061",
-      "url": "https://link.springer.com/article/10.3758/BF03197061",
+      "url": "https://rd.springer.com/content/pdf/10.3758/BF03197061.pdf",
       "type": "primary"
     },
     {
-      "text": "Kanwisher, N. G., & Potter, M. C. (1990). Repetition blindness: Levels of processing. Journal of Experimental Psychology: Human Perception and Performance, 16(1), 30-47.",
+      "text": "Kanwisher, N. G., & Potter, M. C. (1990). Repetition blindness: Levels of processing. Journal of Experimental Psychology: Human Perception and Performance, 16(1), 30-47. The full text is closed at APA and no repository copy was located, so only the published abstract at the URL given was read. Nothing on this page rests on it.",
       "doi": "10.1037/0096-1523.16.1.30",
       "url": "https://pubmed.ncbi.nlm.nih.gov/2137522/",
       "type": "primary"
     },
     {
-      "text": "Johnston, J. C., Hochhaus, L., & Ruthruff, E. (2002). Repetition blindness has a perceptual locus: Evidence from online processing of targets in RSVP streams. Journal of Experimental Psychology: Human Perception and Performance, 28(2), 477-489.",
+      "text": "Johnston, J. C., Hochhaus, L., & Ruthruff, E. (2002). Repetition blindness has a perceptual locus: Evidence from online processing of targets in RSVP streams. Journal of Experimental Psychology: Human Perception and Performance, 28(2), 477-489. Every figure quoted here was read off the authors' accepted manuscript at the URL given, which is headed 'In press' and is not the published version. On 21 September 2026 the published version was open at none of PsycNET, Unpaywall, OpenAlex, Semantic Scholar, Crossref or NASA NTRS; the NTRS record carries the published abstract and no file.",
       "doi": "10.1037/0096-1523.28.2.477",
       "url": "https://www.unm.edu/~ruthruff/repetition%20blindness%202002.pdf",
       "type": "replication"
     },
     {
-      "text": "Hochhaus, L., & Johnston, J. C. (1996). Perceptual repetition blindness effects. Journal of Experimental Psychology: Human Perception and Performance, 22(2), 355-366.",
+      "text": "Hochhaus, L., & Johnston, J. C. (1996). Perceptual repetition blindness effects. Journal of Experimental Psychology: Human Perception and Performance, 22(2), 355-366. The full text is closed at APA, so only the published abstract at the URL given was read.",
       "doi": "10.1037/0096-1523.22.2.355",
       "url": "https://pubmed.ncbi.nlm.nih.gov/8934849/",
       "type": "replication"
     },
     {
-      "text": "Kanwisher, N. G., Kim, J. W., & Wickens, T. D. (1996). Signal detection analyses of repetition blindness. Journal of Experimental Psychology: Human Perception and Performance, 22(5), 1249-1260.",
+      "text": "Kanwisher, N. G., Kim, J. W., & Wickens, T. D. (1996). Signal detection analyses of repetition blindness. Journal of Experimental Psychology: Human Perception and Performance, 22(5), 1249-1260. The full text is closed at APA, so only the publisher's deposited abstract, read through OpenAlex, was used.",
       "doi": "10.1037/0096-1523.22.5.1249",
       "url": "https://pubmed.ncbi.nlm.nih.gov/8865620/",
       "type": "replication"
     },
     {
-      "text": "Fagot, C., & Pashler, H. (1995). Repetition blindness: Perception or memory failure? Journal of Experimental Psychology: Human Perception and Performance, 21(2), 275-292.",
+      "text": "Fagot, C., & Pashler, H. (1995). Repetition blindness: Perception or memory failure? Journal of Experimental Psychology: Human Perception and Performance, 21(2), 275-292. Read in full from the Wayback Machine copy at the URL given. The live file on Pashler's laboratory site serves an incomplete certificate chain, and answers 403 to every request once that is supplied.",
       "doi": "10.1037/0096-1523.21.2.275",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/7714472/",
+      "url": "https://web.archive.org/web/2018/http://laplab.ucsd.edu/articles/Fagot_Pashler_JEP.HPP1995.pdf",
       "type": "critique"
     },
     {
-      "text": "Armstrong, I. T., & Mewhort, D. J. K. (1995). Repetition deficit in rapid-serial-visual-presentation displays: Encoding failure or retrieval failure? Journal of Experimental Psychology: Human Perception and Performance, 21(5), 1044-1052.",
+      "text": "Armstrong, I. T., & Mewhort, D. J. K. (1995). Repetition deficit in rapid-serial-visual-presentation displays: Encoding failure or retrieval failure? Journal of Experimental Psychology: Human Perception and Performance, 21(5), 1044-1052. The full text is closed at APA, so only the published abstract at the URL given was read.",
       "doi": "10.1037/0096-1523.21.5.1044",
       "url": "https://pubmed.ncbi.nlm.nih.gov/7595242/",
       "type": "critique"
     },
     {
-      "text": "Whittlesea, B. W. A., & Masson, M. E. J. (2005). Repetition blindness in rapid lists: Activation and inhibition versus construction and attribution. Journal of Experimental Psychology: Learning, Memory, and Cognition, 31(1), 54-67.",
+      "text": "Whittlesea, B. W. A., & Masson, M. E. J. (2005). Repetition blindness in rapid lists: Activation and inhibition versus construction and attribution. Journal of Experimental Psychology: Learning, Memory, and Cognition, 31(1), 54-67. The full text is closed at APA, so only the published abstract at the URL given was read.",
       "doi": "10.1037/0278-7393.31.1.54",
       "url": "https://pubmed.ncbi.nlm.nih.gov/15641904/",
       "type": "critique"
     },
     {
-      "text": "Downing, P., & Kanwisher, N. (1995). Types and tokens unscathed: A reply to Whittlesea, Dorken, and Podrouzek (1995) and Whittlesea and Podrouzek (1995). Journal of Experimental Psychology: Learning, Memory, and Cognition, 21(6), 1698-1702.",
+      "text": "Downing, P., & Kanwisher, N. (1995). Types and tokens unscathed: A reply to Whittlesea, Dorken, and Podrouzek (1995) and Whittlesea and Podrouzek (1995). Journal of Experimental Psychology: Learning, Memory, and Cognition, 21(6), 1698-1702. The full text is closed at APA, so only the published abstract at the URL given was read. Nothing on this page rests on it.",
       "doi": "10.1037/0278-7393.21.6.1698",
       "url": "https://pubmed.ncbi.nlm.nih.gov/7490582/",
       "type": "critique"
     },
     {
-      "text": "Anderson, C. J., & Neill, W. T. (2002). Two Bs or not two Bs? A signal detection theory analysis of repetition blindness in a counting task. Perception & Psychophysics, 64(5), 732-740.",
+      "text": "Anderson, C. J., & Neill, W. T. (2002). Two Bs or not two Bs? A signal detection theory analysis of repetition blindness in a counting task. Perception & Psychophysics, 64(5), 732-740. Read in full at the URL given, after the link.springer.com page answered a cookie notice rather than the PDF.",
       "doi": "10.3758/bf03194740",
-      "url": "https://link.springer.com/article/10.3758/BF03194740",
+      "url": "https://rd.springer.com/content/pdf/10.3758/BF03194740.pdf",
       "type": "replication"
     },
     {
-      "text": "Neill, W. T., Neely, J. H., Hutchison, K. A., Kahan, T. A., & VerWys, C. A. (2002). Repetition blindness, forward and backward. Journal of Experimental Psychology: Human Perception and Performance, 28(1), 137-149.",
+      "text": "Neill, W. T., Neely, J. H., Hutchison, K. A., Kahan, T. A., & VerWys, C. A. (2002). Repetition blindness, forward and backward. Journal of Experimental Psychology: Human Perception and Performance, 28(1), 137-149. Read in full at the URL given. Nothing on this page rests on it.",
       "doi": "10.1037/0096-1523.28.1.137",
       "url": "https://web1.msu.montana.edu/attmemlab/documents/neilletal_2002a.pdf",
       "type": "replication"
     },
     {
-      "text": "Harris, I. M., Hayward, W. G., Seet, M. S., & Andrews, S. (2021). Repetition blindness for words and pictures: A failure to form stable type representations? Memory & Cognition, 49(6), 1153-1162.",
+      "text": "Harris, I. M., Hayward, W. G., Seet, M. S., & Andrews, S. (2021). Repetition blindness for words and pictures: A failure to form stable type representations? Memory & Cognition, 49(6), 1153-1162. Read in full at the URL given. The link.springer.com PDF path answered a three-kilobyte cookie notice, and rd.springer.com served the file.",
       "doi": "10.3758/s13421-021-01146-5",
-      "url": "https://link.springer.com/content/pdf/10.3758/s13421-021-01146-5.pdf",
+      "url": "https://rd.springer.com/content/pdf/10.3758/s13421-021-01146-5.pdf",
       "type": "replication"
     },
     {
-      "text": "Chun, M. M. (1997). Types and tokens in visual processing: A double dissociation between the attentional blink and repetition blindness. Journal of Experimental Psychology: Human Perception and Performance, 23(3), 738-755.",
+      "text": "Chun, M. M. (1997). Types and tokens in visual processing: A double dissociation between the attentional blink and repetition blindness. Journal of Experimental Psychology: Human Perception and Performance, 23(3), 738-755. The full text is closed at APA and chunlab.org is now a parked domain, so only the published abstract at the URL given was read.",
       "doi": "10.1037/0096-1523.23.3.738",
       "url": "https://pubmed.ncbi.nlm.nih.gov/9180042/",
       "type": "primary"
     },
     {
-      "text": "Goldfarb, L., & Treisman, A. (2011). Repetition blindness: The survival of the grouped. Psychonomic Bulletin & Review, 18(6), 1042-1049.",
+      "text": "Goldfarb, L., & Treisman, A. (2011). Repetition blindness: The survival of the grouped. Psychonomic Bulletin & Review, 18(6), 1042-1049. Read in full at the URL given.",
       "doi": "10.3758/s13423-011-0135-4",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/21811897/",
+      "url": "https://rd.springer.com/content/pdf/10.3758/s13423-011-0135-4.pdf",
       "type": "primary"
     },
     {
-      "text": "Soto-Faraco, S. (2000). An auditory repetition deficit under low memory load. Journal of Experimental Psychology: Human Perception and Performance, 26(1), 264-278.",
+      "text": "Soto-Faraco, S. (2000). An auditory repetition deficit under low memory load. Journal of Experimental Psychology: Human Perception and Performance, 26(1), 264-278. The full text is closed at APA, so only the published abstract at the URL given was read.",
       "doi": "10.1037/0096-1523.26.1.264",
       "url": "https://pubmed.ncbi.nlm.nih.gov/10696617/",
       "type": "replication"
     },
     {
-      "text": "Staub, A., Dodge, S., & Cohen, A. L. (2019). Failure to detect function word repetitions and omissions in reading: Are eye movements to blame? Psychonomic Bulletin & Review, 26(1), 340-346.",
+      "text": "Staub, A., Dodge, S., & Cohen, A. L. (2019). Failure to detect function word repetitions and omissions in reading: Are eye movements to blame? Psychonomic Bulletin & Review, 26(1), 340-346. Every percentage quoted here was read off the full text at the URL given.",
       "doi": "10.3758/s13423-018-1492-z",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/29869026/",
+      "url": "https://rd.springer.com/content/pdf/10.3758/s13423-018-1492-z.pdf",
       "type": "critique"
     },
     {
-      "text": "Arnell, K. M., & Shapiro, K. L. (2011). Attentional blink and repetition blindness. WIREs Cognitive Science, 2(3), 336-344.",
+      "text": "Arnell, K. M., & Shapiro, K. L. (2011). Attentional blink and repetition blindness. WIREs Cognitive Science, 2(3), 336-344. The full text is closed at Wiley, so only the publisher's deposited abstract, read through OpenAlex, was used. Nothing on this page rests on it.",
       "doi": "10.1002/wcs.129",
       "url": "https://pubmed.ncbi.nlm.nih.gov/26302081/",
       "type": "review"
     },
     {
-      "text": "Morris, A. L., Still, M. L., & Caldwell-Harris, C. L. (2009). Repetition blindness: An emergent property of inter-item competition. Cognitive Psychology, 58(3), 338-375.",
+      "text": "Morris, A. L., Still, M. L., & Caldwell-Harris, C. L. (2009). Repetition blindness: An emergent property of inter-item competition. Cognitive Psychology, 58(3), 338-375. The full text is closed at Elsevier, so only the published abstract at the URL given was read. Nothing on this page rests on it.",
       "doi": "10.1016/j.cogpsych.2008.08.001",
       "url": "https://pubmed.ncbi.nlm.nih.gov/18834585/",
       "type": "review"
     }
   ],
-  "checkedOn": "2026-08-10"
+  "checkedOn": "2026-09-21"
 }
