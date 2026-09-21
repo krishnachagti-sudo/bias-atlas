@@ -144,8 +144,11 @@ application shell, and the file comes from `api.osf.io/v2/files/`.
 Internet Archive item downloads work, and have carried whole journal issues
 and open uploads of books that publishers call closed. The Wayback Machine at
 `web.archive.org` works over https and has served PDFs and accepted
-manuscripts here. Roughly half of attempts die with a TLS error and need a
-retry, and plain http returns a refusal from this session's egress policy. The
+manuscripts here. Attempts fail in more than one way and none of them is evidence about the
+document: some die with a TLS error, some close mid-exchange with no status at
+all, and plain http returns a refusal from this session's egress policy. One
+audit lost eleven replay attempts to the mid-exchange close while
+`archive.org` itself answered normally. The
 CDX index endpoint is refused outright; the dated replay path with an `id_`
 suffix works, and needs redirects followed.
 An earlier version of this file said flatly that it is blocked, which was
