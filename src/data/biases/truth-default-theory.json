@@ -18,11 +18,11 @@
     "where": "Journal of Language and Social Psychology",
     "note": "The article calls itself an initial sketch. It defines the truth-default as a passive presumption of honesty, arising either from never considering deceit or from falling back after failing to find evidence of it, and sets out the theory's modules and propositions. Levine credits the older observation that people are truth-biased to McCornack and Parks and to Zuckerman and colleagues, and says what is new is the argument that the presumption is adaptive rather than a flaw."
   },
-  "evidence": "Bond and DePaulo's meta-analysis pooled 206 documents and 24,483 judges, covering 6,651 messages from 4,435 senders. Across 292 receiver samples the unweighted mean was 53.98% correct, and weighted methods gave 53.46%, 95% confidence interval 53.31% to 53.59%. Their own wording is that 54% is a reasonable estimate for the grand mean. The split behind the average carries more information than the average. In 207 samples, judges classified 61.34% of truthful messages correctly and 47.55% of deceptive ones. Receivers called 56.86% of messages honest on unweighted analysis and 55.23% weighted, 95% confidence interval 54.99% to 55.46%. Across studies the proportion of truth judgements was unrelated to the proportion correct, r = -.008. Levine, Kim, Park and Hughes tested the Park-Levine model against point predictions. Fifty participants judged interviews at an even base rate: they called 66.1% of messages true, got 67.1% of truths and 34.3% of lies right, and scored 50.7% overall, which did not beat chance. A separate 413 participants were assigned to eight base rates running from no honest messages to all of them. Accuracy rose with the proportion of honest messages, eta-squared .24 for the induction, slope 0.316, and the deviation from a straight line was not significant. Predictions built from the first group's truth and lie accuracy correlated .97 with the eight obtained means and missed them by 2.6 percentage points on average, the largest miss being 4.5 points. The same paper reports the earlier Levine, Park and McCornack figures as roughly 60% accuracy where 75% of messages were honest, 52% at 50% and 40% at 25%. Clare and Levine ran two experiments in which thought-listing came before or after a prompted truth-lie judgement, one with video and one face to face. Absent prior prompting, receivers mentioned the veracity of what they had heard less than 10% of the time. Serota, Levine and Boster asked 1,000 US adults how many lies they had told in a day. Sixty percent reported none, and almost half of all reported lies came from 5% of respondents.",
+  "evidence": "Bond and DePaulo's meta-analysis pooled 206 documents and 24,483 judges, covering 6,651 messages from 4,435 senders. Across 292 receiver samples the unweighted mean was 53.98% correct, and weighted methods gave 53.46%, 95% confidence interval 53.31% to 53.59%. Their own wording is that 54% is a reasonable estimate for the grand mean. The split behind the average carries more information than the average. In 207 samples, judges classified 61.34% of truthful messages correctly and 47.55% of deceptive ones. Receivers called 56.86% of messages honest on unweighted analysis and 55.23% weighted, 95% confidence interval 54.99% to 55.46%. Across studies the proportion of truth judgements was unrelated to the proportion correct, r = -.008. Levine, Kim, Park and Hughes tested the Park-Levine model against point predictions. Fifty participants judged interviews at an even base rate: they called 66.1% of messages true, got 67.1% of truths and 34.3% of lies right, and scored 50.7% overall, which did not beat chance. A separate 413 participants were assigned to eight base rates running from no honest messages to all of them. Accuracy rose with the proportion of honest messages, eta-squared .24 for the induction, slope 0.316, and the deviation from a straight line was not significant. Predictions built from the first group's truth and lie accuracy correlated .97 with the eight obtained means and missed them by 2.6 percentage points on average, the largest miss being 4.5 points. Levine, Park and McCornack's own third study, read here off the scan, recruited 177 students and analysed 174. Accuracy was 59.48% where 75% of messages were honest, 51.88% at 50% and 39.83% at 25%. Clare and Levine ran two experiments in which thought-listing came before or after a prompted truth-lie judgement, one with video and one face to face. Absent prior prompting, receivers mentioned the veracity of what they had heard less than 10% of the time. Serota, Levine and Boster asked 1,000 US adults how many lies they had told in a day. Sixty percent reported none, and almost half of all reported lies came from 5% of respondents.",
   "replication": {
     "state": "replicated",
     "headline": "The truth bias and the veracity effect hold in a large independent reanalysis, which at the same time found no trace of the sender differences the theory uses to explain low accuracy.",
-    "detail": "Volz, Reinhard and Müller reanalysed four lie-detection studies built on the Miami University Deception Detection Database, in which each sender supplied several truthful and several deceptive messages. Across more than 45,000 judgements by 2,903 judges, truth bias ran higher than in the meta-analysis, at 69.12% of messages judged honest, and mean accuracy ran lower, at 50.99%. Truth accuracy again exceeded lie accuracy, and message veracity was the best predictor of whether a judgement was correct. The sender-level claims did not survive. Messages differed in detectability, 21% of variance, of which veracity accounted for 16.8% of the total, while senders did not differ across their messages, and the distribution of sender detectability showed no sign of the transparent liars the theory posits. Judges drove 12% of the variance in whether a message was called a lie and 46% of the variance in confidence, and under 0.01% of accuracy. Halevy, Shalvi and Verschuere found most people reporting little or no lying, with self-reported frequent lying correlating with real cheating and psychopathic tendency, which puts the prolific-liar pattern outside Levine's group. Sánchez, Masip and Herrero had participants log every lie they noticed over ten weeks and found non-behavioural information more useful than behavioural cues, in line with the theory's content-in-context claim. The high-accuracy questioning results are the thin part of the record. Levine's own test in South Korea, n = 81, pushed accuracy to 65% and down to 30% by varying how the interviewee was questioned. Vrij, Meissner and Kassin published a critique of the expert-interrogation experiments under the title 'no proof to the contrary in Levine et al. (2014)'. Levine and Blair's reply reports accuracy over 95% by expert interrogators in both experiments and 87 of 89 interviews called correctly in the second, and grants that until the findings are replicated by other researchers and labs, caution is scientifically warranted.",
+    "detail": "Volz, Reinhard and Müller reanalysed four lie-detection studies built on the Miami University Deception Detection Database, in which each sender supplied several truthful and several deceptive messages. Across 45,691 judgements from 2,903 judges, 12 of whom were dropped from the models, truth bias ran higher than in the meta-analysis, at 69.12% of messages judged honest, and mean accuracy ran lower, at 50.99%. Truth accuracy again exceeded lie accuracy, and message veracity was the best predictor of whether a judgement was correct. The sender-level claims did not survive. Messages differed in detectability, 21% of variance, of which veracity accounted for 16.8% of the total, while senders did not differ across their messages, and the distribution of sender detectability showed no sign of the transparent liars the theory posits. Judges drove the variance in whether a message was called a lie, put at 12% in the abstract and 16% in the discussion, and 46% of the variance in confidence. Their share of accuracy was under 0.01%. Halevy, Shalvi and Verschuere found most people reporting little or no lying, with self-reported frequent lying correlating with real cheating and psychopathic tendency, which puts the prolific-liar pattern outside Levine's group. Sánchez, Masip and Herrero had participants log every lie they noticed over ten weeks and found non-behavioural information more useful than behavioural cues, in line with the theory's content-in-context claim. The high-accuracy questioning results are the thin part of the record. Levine's own test in South Korea, n = 81, pushed accuracy to 65% and down to 30% by varying how the interviewee was questioned. Vrij, Meissner and Kassin argue that theoretical and methodological features of those experiments undermine the reliability and validity of the data, that the studies therefore add nothing meaningful to the literatures on lie detection and false confessions, and that the results are dangerously misleading. Levine and Blair's reply reports accuracy over 95% by expert interrogators in both experiments and 87 of 89 interviews called correctly in the second, and grants that until the findings are replicated by other researchers and labs, caution is scientifically warranted.",
     "study": {
       "cite": "Volz, S., Reinhard, M.-A., & Müller, P. (2023). Is it the judge, the sender, or just the individual message? Disentangling person and message effects on variation in lie-detection judgments. Perspectives on Psychological Science, 18(6), 1368-1387.",
       "doi": "10.1177/17456916221149943",
@@ -30,117 +30,117 @@
       "n": 2903
     }
   },
-  "limits": "The base-rate model has one published point-prediction test, and that test and its follow-ups come from Levine's own group. The Volz reanalysis rests on a single stimulus database, and its authors note that people who believe themselves poor liars may never have joined the video recordings, which would compress the sender variance they went looking for. Four things on this page are quoted at one remove. The expert-interrogation accuracy figures come from Levine and Blair's 2018 reply, not from the 2014 experiments, which were not retrieved. Vrij, Meissner and Kassin's critique sat behind a paywall, so its argument appears here only as its title states it and as Levine and Blair characterise it. The 1999 veracity-effect percentages are quoted from the 2006 paper's account of them, because the copy on the author's site is a scan these checks could not convert to text. Levine and Serota's reanalysis is quoted from the abstract deposited at Crossref; the article itself returned 403 to every fetch. Fan, Griffin and Tagg's test of trigger sensitivity in intergroup communication was located and not read. One figure does not line up. Levine's 2022 review describes accuracy in these experiments as normally distributed around 54% with a standard deviation of about 6%. The nearest quantity in Bond and DePaulo is 6.11%, the observed standard deviation across study means, from which they infer a true across-study standard deviation of 4.52%.",
-  "misreadings": "The 54% is quoted as the accuracy of human lie detection. It is the grand mean of experiments in which half the messages were lies, and the weighted estimate in the same paper is 53.46%. Levine and Serota's reanalysis reports truth bias correlating .88 with accuracy for truths, -.88 with accuracy for lies and below .03 with overall accuracy, and argues that the 54% claim needs contextualising. The second misreading runs the other way, treating truth bias as a documented failure of judgement. The argument here is that where most messages are honest, believing them is right most of the time, which is a claim about base rates rather than about credulity. A third is treating truth-bias scores as measurements of the truth-default. Truth-bias is what a prompted judge does; the truth-default is the claim that the question does not arise unprompted, and the figure that measures it is the under-10% from Clare and Levine, produced in the theory's own laboratory. The sender demeanour work is over-read in the same way. Its headline, that the induction explained as much as 98% of the variance in detection accuracy, describes senders the experimenters had selected so that demeanour and honesty were matched or mismatched. It is not an estimate of how much ordinary senders differ, and the largest independent test of that question found they do not.",
+  "limits": "The base-rate model's point-prediction test and every published follow-up come from Levine's own group. Crossref lists an interactive base-rate experiment in 2014 and a Korean replication in 2017, both with Levine or Park on the byline, and a 2015 critique by Burgoon with a reply from Park and Levine. None of those four was read here. The Volz reanalysis rests on a single stimulus database. Its authors note that people uneasy about being filmed, or about lying on camera, may never have taken part, which would compress the sender variance they went looking for. Two claims are quoted at one remove. Levine and Serota's reanalysis is quoted from the abstract deposited at Crossref. OpenAlex and Unpaywall both list the article as open at Sage, but on 21 September 2026 Sage answered every route with a Cloudflare bot challenge rather than a paywall. Halevy, Shalvi and Verschuere are quoted from the abstract published at Oxford Academic, which gives neither a sample size nor a correlation. One source was not read at all. Fan, Griffin and Tagg's test of trigger sensitivity in intergroup communication sits behind the same Cloudflare challenge at Taylor and Francis, carries no abstract at Crossref, and on 21 September 2026 had no copy listed at OpenAlex, Unpaywall, Semantic Scholar or Europe PMC. One figure has been read as a mismatch and is not one. Levine's 2022 review describes accuracy in these experiments as normally distributed around 54% with a standard deviation of about 6%. That is Bond and DePaulo's observed 6.11%, which is the spread of study means rather than of judges, and from which they infer a true across-study value of 4.52%.",
+  "misreadings": "The 54% is quoted as the accuracy of human lie detection. It is the grand mean of experiments in which half the messages were lies, and the weighted estimate in the same paper is 53.46%. Levine and Serota's reanalysis reports truth bias correlating .88 with accuracy for truths, -.88 with accuracy for lies and below .03 with overall accuracy, and argues that the 54% claim needs contextualising. The second misreading runs the other way, treating truth bias as a documented failure of judgement. The argument here is that where most messages are honest, believing them is right most of the time, which is a claim about base rates rather than about credulity. A third is treating truth-bias scores as measurements of the truth-default. Truth-bias is what a prompted judge does; the truth-default is the claim that the question does not arise unprompted, and the figure that measures it is the under-10% from Clare and Levine, produced in the theory's own laboratory. The sender demeanour work is over-read in the same way. Its headline, that varying senders explained between 59% and 98% of the variance in detection accuracy, describes senders the experimenters had selected so that demeanour and honesty were matched or mismatched. It is not an estimate of how much ordinary senders differ, and the largest independent test of that question found they do not.",
   "sources": [
     {
-      "text": "Levine, T. R. (2014). Truth-Default Theory (TDT): A theory of human deception and deception detection. Journal of Language and Social Psychology, 33(4), 378-392.",
+      "text": "Levine, T. R. (2014). Truth-Default Theory (TDT): A theory of human deception and deception detection. Journal of Language and Social Psychology, 33(4), 378-392. Read in full from the author's own copy; the module names and the origin note above are read off it.",
       "doi": "10.1177/0261927X14535916",
       "url": "https://doi.org/10.1177/0261927X14535916",
       "type": "primary"
     },
     {
-      "text": "Bond, C. F., Jr., & DePaulo, B. M. (2006). Accuracy of deception judgments. Personality and Social Psychology Review, 10(3), 214-234. All accuracy and truth-judgement figures on this page are read off the article text.",
+      "text": "Bond, C. F., Jr., & DePaulo, B. M. (2006). Accuracy of deception judgments. Personality and Social Psychology Review, 10(3), 214-234. All accuracy and truth-judgement figures on this page, including the 6.11% and 4.52% standard deviations, are read off the article text, from the copy filed in an American Civil Liberties Union document release.",
       "doi": "10.1207/s15327957pspr1003_2",
       "url": "https://doi.org/10.1207/s15327957pspr1003_2",
       "type": "primary"
     },
     {
-      "text": "Park, H. S., & Levine, T. R. (2001). A probability model of accuracy in deception detection experiments. Communication Monographs, 68(2), 201-210.",
+      "text": "Park, H. S., & Levine, T. R. (2001). A probability model of accuracy in deception detection experiments. Communication Monographs, 68(2), 201-210. The copy on the author's site is a scan, read here by optical character recognition. No figure on this page comes from it; it is cited for the model the 2006 paper tests.",
       "doi": "10.1080/03637750128059",
       "url": "https://doi.org/10.1080/03637750128059",
       "type": "primary"
     },
     {
-      "text": "Levine, T. R., Kim, R. K., Park, H. S., & Hughes, M. (2006). Deception detection accuracy is a predictable linear function of message veracity base-rate: A formal test of Park and Levine's probability model. Communication Monographs, 73(3), 243-260.",
+      "text": "Levine, T. R., Kim, R. K., Park, H. S., & Hughes, M. (2006). Deception detection accuracy is a predictable linear function of message veracity base-rate: A formal test of Park and Levine's probability model. Communication Monographs, 73(3), 243-260. Read in full from the author's own copy. Every figure attributed to it above was found in its text.",
       "doi": "10.1080/03637750600873736",
       "url": "https://doi.org/10.1080/03637750600873736",
       "type": "primary"
     },
     {
-      "text": "Levine, T. R., Park, H. S., & McCornack, S. A. (1999). Accuracy in detecting truths and lies: Documenting the 'veracity effect'. Communication Monographs, 66(2), 125-144. Its percentages are quoted here from Levine, Kim, Park and Hughes (2006), not from this paper.",
+      "text": "Levine, T. R., Park, H. S., & McCornack, S. A. (1999). Accuracy in detecting truths and lies: Documenting the 'veracity effect'. Communication Monographs, 66(2), 125-144. The copy on the author's site is a scan, read here by optical character recognition, and the base-rate percentages above are now read off the paper itself rather than from the 2006 account of it.",
       "doi": "10.1080/03637759909376468",
       "url": "https://doi.org/10.1080/03637759909376468",
       "type": "primary"
     },
     {
-      "text": "Clare, D. D., & Levine, T. R. (2019). Documenting the truth-default: The low frequency of spontaneous unprompted veracity assessments in deception detection. Human Communication Research, 45(3), 286-308.",
+      "text": "Clare, D. D., & Levine, T. R. (2019). Documenting the truth-default: The low frequency of spontaneous unprompted veracity assessments in deception detection. Human Communication Research, 45(3), 286-308. The article is closed at Oxford Academic, whose abstract was read in full; the under-10% figure is quoted from it, and Levine and colleagues (2020) report the same figure.",
       "doi": "10.1093/hcr/hqz001",
       "url": "https://doi.org/10.1093/hcr/hqz001",
       "type": "primary"
     },
     {
-      "text": "Serota, K. B., Levine, T. R., & Boster, F. J. (2010). The prevalence of lying in America: Three studies of self-reported lies. Human Communication Research, 36(1), 2-25.",
+      "text": "Serota, K. B., Levine, T. R., & Boster, F. J. (2010). The prevalence of lying in America: Three studies of self-reported lies. Human Communication Research, 36(1), 2-25. Read in full from the author's own copy. The abstract gives 60% and 5%; the results section gives 59.9% and 5.3%.",
       "doi": "10.1111/j.1468-2958.2009.01366.x",
       "url": "https://doi.org/10.1111/j.1468-2958.2009.01366.x",
       "type": "primary"
     },
     {
-      "text": "Levine, T. R., Serota, K. B., Shulman, H., Clare, D. D., Park, H. S., Shaw, A. S., Shim, J. C., & Lee, J. H. (2011). Sender demeanor: Individual differences in sender believability have a powerful impact on deception detection judgments. Human Communication Research, 37(3), 377-403.",
+      "text": "Levine, T. R., Serota, K. B., Shulman, H., Clare, D. D., Park, H. S., Shaw, A. S., Shim, J. C., & Lee, J. H. (2011). Sender demeanor: Individual differences in sender believability have a powerful impact on deception detection judgments. Human Communication Research, 37(3), 377-403. Read in full from the author's own copy; the 59% to 98% range is read off its text.",
       "doi": "10.1111/j.1468-2958.2011.01407.x",
       "url": "https://doi.org/10.1111/j.1468-2958.2011.01407.x",
       "type": "primary"
     },
     {
-      "text": "Volz, S., Reinhard, M.-A., & Müller, P. (2023). Is it the judge, the sender, or just the individual message? Disentangling person and message effects on variation in lie-detection judgments. Perspectives on Psychological Science, 18(6), 1368-1387.",
+      "text": "Volz, S., Reinhard, M.-A., & Müller, P. (2023). Is it the judge, the sender, or just the individual message? Disentangling person and message effects on variation in lie-detection judgments. Perspectives on Psychological Science, 18(6), 1368-1387. Read in full from the Europe PMC full-text XML route, the publisher's own page being challenged; all figures above are read off it, including Table 1.",
       "doi": "10.1177/17456916221149943",
       "url": "https://doi.org/10.1177/17456916221149943",
       "type": "replication"
     },
     {
-      "text": "Halevy, R., Shalvi, S., & Verschuere, B. (2014). Being honest about dishonesty: Correlating self-reports and actual lying. Human Communication Research, 40(1), 54-72.",
+      "text": "Halevy, R., Shalvi, S., & Verschuere, B. (2014). Being honest about dishonesty: Correlating self-reports and actual lying. Human Communication Research, 40(1), 54-72. Closed at Oxford Academic and Wiley; the abstract published at Oxford Academic was read and is the source for the wording above.",
       "doi": "10.1111/hcre.12019",
       "url": "https://doi.org/10.1111/hcre.12019",
       "type": "replication"
     },
     {
-      "text": "Sánchez, N., Masip, J., & Herrero, C. (2021). How people [try to] detect lies in everyday life. Trames: Journal of the Humanities and Social Sciences, 25(4), 395-419. Cited for its abstract's conclusion.",
+      "text": "Sánchez, N., Masip, J., & Herrero, C. (2021). How people [try to] detect lies in everyday life. Trames: Journal of the Humanities and Social Sciences, 25(4), 395-419. Open access, read in full from the publisher; the ten-week diary and the non-behavioural conclusion are read off it.",
       "doi": "10.3176/tr.2021.4.02",
       "url": "https://doi.org/10.3176/tr.2021.4.02",
       "type": "replication"
     },
     {
-      "text": "Levine, T. R. (2023). Deception detection and question effects: Testing truth-default theory predictions in South Korea. Human Communication Research, 49(4), 448-451.",
+      "text": "Levine, T. R. (2023). Deception detection and question effects: Testing truth-default theory predictions in South Korea. Human Communication Research, 49(4), 448-451. Closed at Oxford Academic; the abstract deposited at Crossref was read and is the source for n = 81, 65% and 30%.",
       "doi": "10.1093/hcr/hqad026",
       "url": "https://doi.org/10.1093/hcr/hqad026",
       "type": "replication"
     },
     {
-      "text": "Levine, T. R., & Serota, K. B. (2025). A fresh view of the veracity effect in deception research: Bond and DePaulo re-examined. Communication Research. Quoted from the abstract deposited at Crossref; the article was not retrieved.",
+      "text": "Levine, T. R., & Serota, K. B. (2025). A fresh view of the veracity effect in deception research: Bond and DePaulo re-examined. Communication Research. Quoted from the abstract deposited at Crossref. OpenAlex and Unpaywall list the article as open at Sage, which on 21 September 2026 answered a Cloudflare bot challenge rather than a paywall.",
       "doi": "10.1177/00936502251316927",
       "url": "https://doi.org/10.1177/00936502251316927",
       "type": "commentary"
     },
     {
-      "text": "Vrij, A., Meissner, C. A., & Kassin, S. M. (2015). Problems in expert deception detection and the risk of false confessions: No proof to the contrary in Levine et al. (2014). Psychology, Crime & Law, 21(9), 901-909. Named for its title; the text was not obtained.",
+      "text": "Vrij, A., Meissner, C. A., & Kassin, S. M. (2015). Problems in expert deception detection and the risk of false confessions: No proof to the contrary in Levine et al. (2014). Psychology, Crime & Law, 21(9), 901-909. Read in full as the accepted manuscript deposited in the University of Portsmouth research portal, whose live copy is challenged and which the Wayback Machine replays. Page numbers are the article's; the text read is the manuscript.",
       "doi": "10.1080/1068316X.2015.1054389",
       "url": "https://doi.org/10.1080/1068316X.2015.1054389",
       "type": "commentary"
     },
     {
-      "text": "Levine, T. R., & Blair, J. P. (2018). Accurate expert deception detection: Faulty premises in Vrij et al. (2015). Journal of Media and Communication Studies, 10(2), 8-13. Source for the expert accuracy figures and for the authors' own call for caution pending outside replication.",
+      "text": "Levine, T. R., & Blair, J. P. (2018). Accurate expert deception detection: Faulty premises in Vrij et al. (2015). Journal of Media and Communication Studies, 10(2), 8-13. Open access, read in full. Source for the expert accuracy figures and for the authors' own call for caution pending outside replication.",
       "doi": "10.5897/JMCS2017.0588",
       "url": "https://doi.org/10.5897/JMCS2017.0588",
       "type": "commentary"
     },
     {
-      "text": "Levine, T. R., Clare, D. D., Blair, J. P., McCornack, S., Morrison, K., & Park, H. S. (2014). Expertise in deception detection involves actively prompting diagnostic information rather than passive behavioral observation. Human Communication Research, 40(4), 442-462. Not retrieved; its results are described here from Levine and Blair (2018).",
+      "text": "Levine, T. R., Clare, D. D., Blair, J. P., McCornack, S., Morrison, K., & Park, H. S. (2014). Expertise in deception detection involves actively prompting diagnostic information rather than passive behavioral observation. Human Communication Research, 40(4), 442-462. Closed at Oxford Academic; its abstract was read there and agrees with Levine and Blair's account, giving 33 interviews in the first experiment and 89 in the second.",
       "doi": "10.1111/hcre.12032",
       "url": "https://doi.org/10.1111/hcre.12032",
       "type": "primary"
     },
     {
-      "text": "Levine, T. R. (2022). Truth-default theory and the psychology of lying and deception detection. Current Opinion in Psychology, 47, 101380.",
+      "text": "Levine, T. R. (2022). Truth-default theory and the psychology of lying and deception detection. Current Opinion in Psychology, 47, 101380. Read in full from the author's own copy; the 54% and the 6% standard deviation are read off it.",
       "doi": "10.1016/j.copsyc.2022.101380",
       "url": "https://doi.org/10.1016/j.copsyc.2022.101380",
       "type": "commentary"
     },
     {
-      "text": "Fan, X., Griffin, D. J., & Tagg, E. P. (2022). Lie judgment trigger sensitivity and truth-bias: Truth default theory in intergroup communication. Communication Quarterly, 70(4), 448-468. Located during this check and not read.",
+      "text": "Fan, X., Griffin, D. J., & Tagg, E. P. (2022). Lie judgment trigger sensitivity and truth-bias: Truth default theory in intergroup communication. Communication Quarterly, 70(4), 448-468. Not read. Closed at Taylor and Francis behind a Cloudflare bot challenge, no abstract at Crossref, and no copy listed at OpenAlex, Unpaywall, Semantic Scholar or Europe PMC on 21 September 2026.",
       "doi": "10.1080/01463373.2022.2079994",
       "url": "https://doi.org/10.1080/01463373.2022.2079994",
       "type": "replication"
     }
   ],
-  "checkedOn": "2026-08-10"
+  "checkedOn": "2026-09-21"
 }
