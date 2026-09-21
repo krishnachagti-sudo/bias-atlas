@@ -2,10 +2,14 @@
   "no": 33,
   "slug": "pareidolia",
   "name": "Pareidolia",
-  "aliases": ["Face pareidolia", "Illusory face perception", "Faces in things"],
+  "aliases": [
+    "Face pareidolia",
+    "Illusory face perception",
+    "Faces in things"
+  ],
   "category": "perception",
   "statement": "People see faces in objects that have none, because the system that detects faces fires on any rough arrangement of two eyes and a mouth.",
-  "meaning": "The claim is about detection rather than belief. Nobody who sees a face in a plug socket concludes that the socket is alive, so the phenomenon is not a failure of reasoning. It is a false positive in vision, and the usual explanation is that a detector tuned for speed will accept a weak signal rather than miss a real face. That makes pareidolia a measurable error with a location and a latency, which is why most of the evidence is neuroscience rather than questionnaires. Apophenia is the broader claim, covering meaning found in any noise, and it is a separate entry.",
+  "meaning": "The claim is about detection rather than belief. Nobody who sees a face in a plug socket concludes that the socket is alive, so the phenomenon is not a failure of reasoning. It is a false positive in vision, and the usual explanation is that a detector tuned for speed will accept a weak signal rather than miss a real face. That makes pareidolia a measurable error with a location and a latency, which is why most of the evidence is neuroscience rather than questionnaires. Apophenia, entry no. 41, is the broader claim, covering meaning found in any noise. Agent detection, entry no. 173, is separate again, and concerns the attribution of a purposeful actor.",
   "origin": {
     "year": 1866,
     "who": "Karl Ludwig Kahlbaum",
@@ -16,117 +20,117 @@
   "replication": {
     "state": "mixed",
     "headline": "The early face-like brain response to illusory faces has held across labs, while the attention findings and the monkey single-neuron findings built on top of it have not.",
-    "detail": "Keys, Taubert and Wardle reported a visual search advantage for illusory faces in objects in 2021. Collyer, Ireland and Susilo ran three experiments comparing real faces, illusory faces, variable objects and a uniform set of flowers. Search for real faces beat every other target, but search for illusory faces beat only the variable objects and not the uniform ones, which they read as a limited advantage. Miti and colleagues then failed to replicate attentional capture: following Langton and colleagues (2008), they had 36 online and 30 laboratory participants search for a butterfly while an irrelevant real or illusory face sat among the distractors, and found no effect of distractor type, with Bayesian evidence against one. In a third experiment with 30 participants, illusory faces as targets were the slowest of all, at 1,019 ms against 653 ms for real faces and 757 ms for butterflies, F(2,58) = 296.35, p < .001, partial eta squared 0.91. The macaque recordings disagree with each other and with the human perceptual account. Sharma, Vinken, Jagadeesh and Livingstone found face cells in inferotemporal cortex selective for pareidolia images, but the selectivity survived scrambling the configuration, tracked the object parts read as eyes, and did not correlate with human faceness ratings. Koyano and colleagues recorded from four fMRI-defined face patches and found no population preference for pareidolia-evoking objects over control objects. On the social side the male bias did repeat: in an independent sample of 412 people aged 4 to 80, children showed the same bias as adults.",
+    "detail": "Keys, Taubert and Wardle reported a visual search advantage for illusory faces in objects in 2021. Collyer, Ireland and Susilo ran three experiments comparing real faces, illusory faces, variable objects and a uniform set of flowers. Search for real faces beat every other target, but search for illusory faces beat only the variable objects and not the uniform ones, which they read as a limited advantage. Miti and colleagues then failed to replicate attentional capture: following Langton and colleagues (2008), they had 36 online and 30 laboratory participants search for a butterfly while an irrelevant real or illusory face sat among the distractors, and found no effect of distractor type. The Bayesian evidence against a distractor effect was anecdotal online and moderate in the laboratory. In a third experiment with 30 participants, illusory faces as targets were the slowest of all, at 1,019 ms against 653 ms for real faces and 757 ms for butterflies, F(2,58) = 296.35, p < .001, partial eta squared 0.91. The macaque recordings disagree with each other and with the human perceptual account. Sharma, Vinken, Jagadeesh and Livingstone found face cells in inferotemporal cortex selective for pareidolia images, but the selectivity survived scrambling the configuration, tracked the object parts read as eyes, and did not correlate with human faceness ratings. Koyano and colleagues recorded from four fMRI-defined face patches and found no population preference for pareidolia-evoking objects over control objects. On the social side the male bias did repeat, though in the same laboratory. Wardle and colleagues tested a new sample of 412 people aged 4 to 80, and children showed the bias as adults did.",
     "study": {
       "cite": "Collyer, L., Ireland, J., & Susilo, T. (2024). A limited visual search advantage for illusory faces. Attention, Perception, & Psychophysics, 86(3), 717-730.",
       "doi": "10.3758/s13414-023-02833-y",
       "year": 2024
     }
   },
-  "limits": "No effect sizes are printed on the two sides above because the literature reports milliseconds, decoding accuracy and percentages rather than a common metric, and pairing a search-time difference with a decoding latency would invent a comparison neither paper makes. The search covered Crossref, Europe PMC, PubMed and PubMed Central, the publisher pages for each paper named here, and web searches for preregistered or multi-laboratory replications. Nothing resembling a Many Labs project or a registered replication report for pareidolia was found, and Miti and colleagues do not describe their study as preregistered. The electrophysiology is also less uniform than the summary suggests: Hadjikhani's seven analysed participants showed no difference between faces and face-like objects at 165 ms, while Akdeniz, recording from 35 people, found the N170 earlier and larger for faces than for pareidolia. The individual-differences work is thin. Riekki and colleagues tested 47 people and found believers in the paranormal had a more liberal response criterion with no advantage in sensitivity. Van Elk, testing 55 visitors to paranormal fairs, found sceptics rather than believers miscategorising ambiguous face stimuli as houses; his second field experiment, with 60 participants, measured global and local attention instead. Rahman and van Boxtel tested 263 people aged 18 to 82 and found detection related to age but not to autism-like traits. Sample sizes at that scale support no confident claim about who is prone to the illusion.",
-  "misreadings": "The most common overreach is that the brain treats illusory faces as faces. It treats them that way briefly. Wardle's MEG data put the resemblance to real faces at its strongest around 160 ms and gone by about 250 ms, and the macaque face patches Koyano recorded from showed no preference for these objects at all. A second error is to make pareidolia a marker of credulity. The belief studies point in opposite directions and rest on samples in the dozens. A third is to treat the male bias as a property of the objects. Wardle and colleagues found no gender bias in ratings of the objects when named, so the bias belongs to the percept rather than the plug socket. Pareidolia is also routinely used as a synonym for apophenia. The narrow claim is about perceiving a face where none exists; the broad one is about finding meaning in noise of any kind, and evidence for the first does not carry the second.",
+  "limits": "No effect sizes are printed on the two sides above because the literature reports milliseconds, decoding accuracy and percentages rather than a common metric, and pairing a search-time difference with a decoding latency would invent a comparison neither paper makes. The search was run again on 21 September 2026 across Crossref, Europe PMC, PubMed, PubMed Central, OpenAlex and the Open Science Framework registries, along with the publisher page for each paper named here. Nothing resembling a Many Labs project or a registered replication report for pareidolia was found, and none of the three search papers describes itself as preregistered. The electrophysiology is also less uniform than the summary suggests: Hadjikhani's seven analysed participants showed no difference between faces and face-like objects at 165 ms, while Akdeniz, recording from 35 people, found the N170 earlier and larger for faces than for pareidolia. The individual-differences work is thin. Riekki and colleagues tested 47 people and found believers in the paranormal had a more liberal response criterion with no advantage in sensitivity. Van Elk, testing 55 visitors to paranormal fairs, found sceptics rather than believers miscategorising ambiguous face stimuli as houses; his second field experiment, with 60 participants, measured global and local attention instead. Rahman and van Boxtel tested 263 people aged 18 to 82 and found detection related to age but not to autism-like traits. Sample sizes at that scale support no confident claim about who is prone to the illusion.",
+  "misreadings": "The most common overreach is that the brain treats illusory faces as faces. It treats them that way briefly. Wardle's MEG data put the resemblance to real faces at its strongest around 160 ms and gone by about 250 ms, and the four macaque face patches Koyano recorded from showed no population preference for these objects, although a minority of neurons did prefer them. A second error is to make pareidolia a marker of credulity. The belief studies point in opposite directions and rest on samples in the dozens. A third is to treat the male bias as a property of the objects. Wardle and colleagues found no gender bias in ratings of the objects when named, so the bias belongs to the percept rather than the plug socket. Pareidolia is also routinely used as a synonym for apophenia. The narrow claim is about perceiving a face where none exists; the broad one is about finding meaning in noise of any kind, and evidence for the first does not carry the second.",
   "sources": [
     {
-      "text": "Merriam-Webster. Pareidolia. Definition, etymology and first known use (1962), with the term traced to Kahlbaum's \"Die Sinnesdelirien\", Allgemeine Zeitschrift für Psychiatrie, Band 23 (1866).",
+      "text": "Merriam-Webster. Pareidolia. Definition, etymology and first known use (1962), with the term traced to Kahlbaum's \"Die Sinnesdelirien\", Allgemeine Zeitschrift für Psychiatrie, Band 23 (1866). Read in full on 21 September 2026. The Kahlbaum citation, the page numbers and the 1962 first use are all on that page.",
       "url": "https://www.merriam-webster.com/dictionary/pareidolia",
       "type": "reference"
     },
     {
-      "text": "Hadjikhani, N., Kveraga, K., Naik, P., & Ahlfors, S. P. (2009). Early (M170) activation of face-specific cortex by face-like objects. NeuroReport, 20(4), 403-407.",
+      "text": "Hadjikhani, N., Kveraga, K., Naik, P., & Ahlfors, S. P. (2009). Early (M170) activation of face-specific cortex by face-like objects. NeuroReport, 20(4), 403-407. Read in full as the author manuscript at PubMed Central, PMC2713437, through the efetch route. The nine volunteers, the two dropped for movement and the stimulus counts are in its methods.",
       "doi": "10.1097/WNR.0b013e328325a8e1",
       "url": "https://doi.org/10.1097/WNR.0b013e328325a8e1",
       "type": "primary"
     },
     {
-      "text": "Wardle, S. G., Taubert, J., Teichmann, L., & Baker, C. I. (2020). Rapid and dynamic processing of face pareidolia in the human brain. Nature Communications, 11, 4518.",
+      "text": "Wardle, S. G., Taubert, J., Teichmann, L., & Baker, C. I. (2020). Rapid and dynamic processing of face pareidolia in the human brain. Nature Communications, 11, 4518. Read in full at nature.com, where the article is open access. The two sample sizes, the stimulus counts and the decoding latencies are in its results.",
       "doi": "10.1038/s41467-020-18325-8",
       "url": "https://doi.org/10.1038/s41467-020-18325-8",
       "type": "primary"
     },
     {
-      "text": "Liu, J., Li, J., Feng, L., Li, L., Tian, J., & Lee, K. (2014). Seeing Jesus in toast: Neural and behavioral correlates of face pareidolia. Cortex, 53, 60-77. Twenty participants; the 34% and 38% report rates are from the published abstract and the sample size from the PubMed Central full text.",
+      "text": "Liu, J., Li, J., Feng, L., Li, L., Tian, J., & Lee, K. (2014). Seeing Jesus in toast: Neural and behavioral correlates of face pareidolia. Cortex, 53, 60-77. Read in full as the author manuscript at PubMed Central, PMC3980010, through the efetch route. The twenty participants and the 34% and 38% report rates are both in that text.",
       "doi": "10.1016/j.cortex.2014.01.013",
       "url": "https://doi.org/10.1016/j.cortex.2014.01.013",
       "type": "primary"
     },
     {
-      "text": "Proverbio, A. M., & Galli, J. (2016). Women are better at seeing faces where there are none: an ERP study of face pareidolia. Social Cognitive and Affective Neuroscience, 11(9), 1501-1512.",
+      "text": "Proverbio, A. M., & Galli, J. (2016). Women are better at seeing faces where there are none: an ERP study of face pareidolia. Social Cognitive and Affective Neuroscience, 11(9), 1501-1512. Only the publisher's deposited abstract was read, at PubMed Central and at OpenAlex, and it carries the 26 students and the N170 result. The full text was not obtained on 21 September 2026: Oxford University Press answers with a Cloudflare challenge, the PubMed Central PDF with a captcha, and the Milano-Bicocca deposit is locked behind a request-a-copy form.",
       "doi": "10.1093/scan/nsw064",
       "url": "https://doi.org/10.1093/scan/nsw064",
       "type": "primary"
     },
     {
-      "text": "Akdeniz, G. (2020). Brain activity underlying face and face pareidolia processing: an ERP study. Neurological Sciences, 41(6), 1557-1565.",
+      "text": "Akdeniz, G. (2020). Brain activity underlying face and face pareidolia processing: an ERP study. Neurological Sciences, 41(6), 1557-1565. Only the publisher's deposited abstract was read, at PubMed, and it carries the 35 participants and the N170 result. No open full text was found on 21 September 2026, and the author's own institutional record holds no file.",
       "doi": "10.1007/s10072-019-04232-4",
       "url": "https://doi.org/10.1007/s10072-019-04232-4",
       "type": "primary"
     },
     {
-      "text": "Taubert, J., Wardle, S. G., Flessert, M., Leopold, D. A., & Ungerleider, L. G. (2017). Face pareidolia in the rhesus monkey. Current Biology, 27(16), 2505-2509.e2.",
+      "text": "Taubert, J., Wardle, S. G., Flessert, M., Leopold, D. A., & Ungerleider, L. G. (2017). Face pareidolia in the rhesus monkey. Current Biology, 27(16), 2505-2509.e2. Read in full as the author manuscript at PubMed Central, PMC5584612, through the efetch route. Five monkeys were analysed, and a sixth was dropped for not finishing.",
       "doi": "10.1016/j.cub.2017.06.075",
       "url": "https://doi.org/10.1016/j.cub.2017.06.075",
       "type": "primary"
     },
     {
-      "text": "Wardle, S. G., Paranjape, S., Taubert, J., & Baker, C. I. (2022). Illusory faces are more likely to be perceived as male than female. Proceedings of the National Academy of Sciences, 119(5), e2117413119.",
+      "text": "Wardle, S. G., Paranjape, S., Taubert, J., & Baker, C. I. (2022). Illusory faces are more likely to be perceived as male than female. Proceedings of the National Academy of Sciences, 119(5), e2117413119. Read in full at PubMed Central, PMC8812520, where the article is open access. The 3,815 total, the 800 raters, the 100 ratings an image and the bias percentages are all in it.",
       "doi": "10.1073/pnas.2117413119",
       "url": "https://doi.org/10.1073/pnas.2117413119",
       "type": "primary"
     },
     {
-      "text": "Keys, R. T., Taubert, J., & Wardle, S. G. (2021). A visual search advantage for illusory faces in objects. Attention, Perception, & Psychophysics, 83(5), 1942-1953.",
+      "text": "Keys, R. T., Taubert, J., & Wardle, S. G. (2021). A visual search advantage for illusory faces in objects. Attention, Perception, & Psychophysics, 83(5), 1942-1953. Read in full as the publisher PDF served by rd.springer.com, after link.springer.com answered with a Fastly client challenge.",
       "doi": "10.3758/s13414-021-02267-4",
       "url": "https://doi.org/10.3758/s13414-021-02267-4",
       "type": "primary"
     },
     {
-      "text": "Collyer, L., Ireland, J., & Susilo, T. (2024). A limited visual search advantage for illusory faces. Attention, Perception, & Psychophysics, 86(3), 717-730.",
+      "text": "Collyer, L., Ireland, J., & Susilo, T. (2024). A limited visual search advantage for illusory faces. Attention, Perception, & Psychophysics, 86(3), 717-730. Read in full as the publisher PDF served by rd.springer.com, after link.springer.com answered with a Fastly client challenge. The four target types and the limited advantage are in its abstract and results.",
       "doi": "10.3758/s13414-023-02833-y",
       "url": "https://doi.org/10.3758/s13414-023-02833-y",
       "type": "replication"
     },
     {
-      "text": "Miti, F., Ciaramidaro, A., Rubichi, S., & Iani, C. (2025). Attentional capture by real and illusory faces: a failure to replicate. Psychological Research, 89(6), 181.",
+      "text": "Miti, F., Ciaramidaro, A., Rubichi, S., & Iani, C. (2025). Attentional capture by real and illusory faces: a failure to replicate. Psychological Research, 89(6), 181. Read in full at PubMed Central, PMC12662932, where the article is open access. The samples of 36, 30 and 30, the search times and the Bayes factors are in its results.",
       "doi": "10.1007/s00426-025-02211-3",
       "url": "https://doi.org/10.1007/s00426-025-02211-3",
       "type": "replication"
     },
     {
-      "text": "Sharma, S., Vinken, K., Jagadeesh, A. V., & Livingstone, M. S. (2024). Face cells encode object parts more than facial configuration of illusory faces. Nature Communications, 15, 9879.",
+      "text": "Sharma, S., Vinken, K., Jagadeesh, A. V., & Livingstone, M. S. (2024). Face cells encode object parts more than facial configuration of illusory faces. Nature Communications, 15, 9879. Read in full at PubMed Central, PMC11564726, where the article is open access. An earlier bioRxiv preprint carries a different title, and the figures used here come from the published article.",
       "doi": "10.1038/s41467-024-54323-w",
       "url": "https://doi.org/10.1038/s41467-024-54323-w",
       "type": "primary"
     },
     {
-      "text": "Koyano, K. W., Taubert, J., Robison, W., Waidmann, E. N., & Leopold, D. A. (2025). Face pareidolia minimally engages macaque face selective neurons. Progress in Neurobiology, 245, 102709.",
+      "text": "Koyano, K. W., Taubert, J., Robison, W., Waidmann, E. N., & Leopold, D. A. (2025). Face pareidolia minimally engages macaque face selective neurons. Progress in Neurobiology, 245, 102709. Read in full as the author manuscript at PubMed Central, PMC11781954, through the efetch route. The four face patches and the absent population preference are in its abstract and results.",
       "doi": "10.1016/j.pneurobio.2024.102709",
       "url": "https://doi.org/10.1016/j.pneurobio.2024.102709",
       "type": "replication"
     },
     {
-      "text": "Wardle, S. G., Ewing, L., Malcolm, G. L., Paranjape, S., & Baker, C. I. (2023). Children perceive illusory faces in objects as male more often than female. Cognition, 235, 105398.",
+      "text": "Wardle, S. G., Ewing, L., Malcolm, G. L., Paranjape, S., & Baker, C. I. (2023). Children perceive illusory faces in objects as male more often than female. Cognition, 235, 105398. Read in full as the author manuscript at PubMed Central, PMC10085858, through the efetch route. The analysed sample of 412 and the age range of 4 to 80 are both in it.",
       "doi": "10.1016/j.cognition.2023.105398",
       "url": "https://doi.org/10.1016/j.cognition.2023.105398",
       "type": "replication"
     },
     {
-      "text": "Riekki, T., Lindeman, M., Aleneff, M., Halme, A., & Nuortimo, A. (2013). Paranormal and religious believers are more prone to illusory face perception than skeptics and non-believers. Applied Cognitive Psychology, 27(2), 150-155.",
+      "text": "Riekki, T., Lindeman, M., Aleneff, M., Halme, A., & Nuortimo, A. (2013). Paranormal and religious believers are more prone to illusory face perception than skeptics and non-believers. Applied Cognitive Psychology, 27(2), 150-155. Only the publisher's deposited abstract was read, at Crossref, and it carries the 47 participants, the liberal criterion and the unchanged sensitivity. The full text was not obtained on 21 September 2026: Wiley answers with a Cloudflare challenge, the CiteSeerX copy two indexes list is dead and did not replay, and Semantic Scholar records the paper as closed.",
       "doi": "10.1002/acp.2874",
       "url": "https://doi.org/10.1002/acp.2874",
       "type": "primary"
     },
     {
-      "text": "van Elk, M. (2015). Perceptual biases in relation to paranormal and conspiracy beliefs. PLOS ONE, 10(6), e0130422.",
+      "text": "van Elk, M. (2015). Perceptual biases in relation to paranormal and conspiracy beliefs. PLOS ONE, 10(6), e0130422. Read in full at PubMed Central, PMC4482736, where the article is open access. The samples of 55 and 60 and the sceptics' errors are in its methods and results.",
       "doi": "10.1371/journal.pone.0130422",
       "url": "https://doi.org/10.1371/journal.pone.0130422",
       "type": "primary"
     },
     {
-      "text": "Rahman, M., & van Boxtel, J. J. A. (2022). Seeing faces where there are none: Pareidolia correlates with age but not autism traits. Vision Research, 199, 108071.",
+      "text": "Rahman, M., & van Boxtel, J. J. A. (2022). Seeing faces where there are none: Pareidolia correlates with age but not autism traits. Vision Research, 199, 108071. Only the publisher's deposited abstract was read, at PubMed, and it carries the 263 participants, the age range and the null result for autism-like traits. The full text was not obtained on 21 September 2026: Elsevier answers with a refusal citing its text-mining policy, and the Canberra research portal answers 403.",
       "doi": "10.1016/j.visres.2022.108071",
       "url": "https://doi.org/10.1016/j.visres.2022.108071",
       "type": "primary"
     }
   ],
-  "checkedOn": "2026-08-09"
+  "checkedOn": "2026-09-21"
 }
