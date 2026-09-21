@@ -115,12 +115,12 @@ These have repeatedly served the same document when the indexed URL did not.
   rendered page or handle is guarded. One Anubis challenge was bypassed
   simply by asking the REST route instead.
 
-One distinction worth knowing before you spend attempts on it. Internet
-Archive item downloads work, and have carried whole journal issues and open
-uploads of books that publishers call closed. The Wayback Machine at
-`web.archive.org`, including its CDX endpoint, is refused by this session's
-egress policy. Record that refusal as what it is rather than as evidence
-about the document.
+Internet Archive item downloads work, and have carried whole journal issues
+and open uploads of books that publishers call closed. The Wayback Machine at
+`web.archive.org` is intermittent here: three audits were refused outright by
+this session's egress and a fourth read an accepted manuscript from a snapshot
+the same day. So try it, and if it refuses, record that as a fact about this
+session rather than as evidence about the document.
 
 A block is per host and per day. Retry rather than inheriting a note.
 
