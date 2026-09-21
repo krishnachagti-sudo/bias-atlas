@@ -10,9 +10,9 @@
     "year": 2006,
     "who": "Dan Galai and Orly Sade",
     "where": "The Journal of Business",
-    "note": "Their paper is \"The 'Ostrich Effect' and the Relationship between the Liquidity and the Yields of Financial Assets\", on Israeli fixed-income yields. Karlsson, Loewenstein and Seppi credit the term to the 2003 working-paper version and quote its definition, \"avoiding apparently risky financial situations by pretending they do not exist\". The published article could not be obtained for this entry, so what it did is reported here at one remove."
+    "note": "Their paper is \"The 'Ostrich Effect' and the Relationship between the Liquidity and the Yields of Financial Assets\", on Israeli fixed-income yields. Its abstract, as the publisher deposited it, says Israeli treasury bills paid a higher yield to maturity than equally risky bank deposits. The gap was wider in periods of greater uncertainty, and taxes, risk and transaction costs do not account for it. Karlsson, Loewenstein and Seppi credit the term to the 2003 working-paper version, which they cite as an SSRN paper, and quote its definition, \"avoiding apparently risky financial situations by pretending they do not exist\". The full article was still shut on 21 September 2026, so what it did beyond its abstract is reported here at one remove."
   },
-  "evidence": "Karlsson, Loewenstein and Seppi tested the asymmetry on two sets of account records. The first came from the Swedish Premium Pension Authority, which by 2004 held 5.3 million of Sweden's 9 million citizens, covering 7 January 2002 to 13 October 2004. Daily logins averaged 10,903, of which 1,142 involved reallocations, leaving 9,761 informational look-ups. A one percent rise in the averaged prior return on the Stockholm All Shares index went with 120 to 140 extra look-ups, just over 1% of the daily mean. That coefficient reached the 10% level in one specification and the 1% level in the other. The second set came from Vanguard, covering 2 January 2006 to 30 June 2008, with a mean of 416,916 logins a day. There the same one percent rise went with 18,000 to 23,000 extra logins, 5% to 6% of the daily mean, significant at 1% in both specifications. Both are aggregate daily time series with day-of-week, trend and transaction controls, not experiments.",
+  "evidence": "Karlsson, Loewenstein and Seppi tested the asymmetry on two sets of account records. The first came from the Swedish Premium Pension Authority, which by 2004 held 5.3 million of Sweden's 9 million citizens, covering 7 January 2002 to 13 October 2004. Daily logins averaged 10,903, of which 1,142 involved reallocations, leaving 9,761 informational look-ups. A one percent rise in the averaged prior return on the Stockholm All Shares index went with 120 to 140 extra look-ups, just over 1% of the daily mean. That coefficient reached the 10% level in one specification and the 1% level in the other. The second set came from Vanguard, covering 2 January 2006 to 30 June 2008, with a mean of 416,916 logins a day. There the same one percent rise went with 18,000 to 23,000 extra logins, 5% to 6% of the daily mean, significant at 1% in both specifications. Both are aggregate daily time series with day-of-week and trend controls, not experiments. The Swedish regressions also control for the daily number of reallocations. The Vanguard data carry no transaction counts, so those regressions use S&P 500 trading volume as a proxy instead.",
   "replication": {
     "state": "mixed",
     "headline": "The asymmetry is large and stable in retirement-account data and reverses in a sample of active UK traders, where logins rose after falls as well as rises.",
@@ -24,81 +24,87 @@
       "n": 617
     }
   },
-  "limits": "Every finance test of this is observational. Karlsson, Loewenstein and Seppi worked with aggregate daily counts and named two rival stories themselves: media coverage might simply be heavier in bull markets, and logins might follow a desire to trade rather than a desire to look. Their answer to the second is a pair of partial correlations in the Swedish data. Controlling for look-ups, the correlation between transactions and the index was 0.04 with p = 0.34; controlling for transactions, the correlation between look-ups and the index was 0.35 with p < 0.001. The deeper limit is what counts as a bias here. Section 6 of their own paper says selective attention is fully rational once you grant that information affects how people feel, so the label describes preferences over information rather than an error in processing it. Rational inattention offers a competing account in which attention is simply costly. Olafsson and Pagel argue against it using logins to an Icelandic financial-management app. Attention there falls with spending and overdrafts, rises with cash and liquidity, and jumps when a balance turns from negative to positive. Their paper is an NBER working paper rather than a peer-reviewed article. Outside finance the pattern has separate support. The UK Huntington's Prediction Consortium recorded 9,407 predictive tests at 23 centres between 1993 and 2014. It put cumulative uptake among the population at 50% prior risk at 17.4% (95% CI 16.9 to 18.0), leaving over 80% untested. Oster, Shoulson and Dorsey followed 1,001 at-risk people in the PHAROS study, at about 40 sites in the United States and Canada. About 7% of those with uncertain status tested over ten years, and about 5% before any signs appeared. Those two figures are read off the working-paper version, and the article carries a 2016 corrigendum in the same journal which could not be obtained. Gigerenzer and Garcia-Retamero surveyed representative quota samples in two European countries. Between 85% and 90% would rather not know about coming negative events, and only 1% consistently wanted to know.",
-  "misreadings": "The effect is about looking, not about doing. An investor who stops checking a falling portfolio has not necessarily left it alone in any other sense. Sicherman and colleagues found that people classified as ostriches traded more in up-markets than in down-markets, which they note may protect such investors from selling into a slump. Popular summaries also inflate the sample. The Vanguard panel holds about 1.2 million accounts, and the published estimates come from a randomly drawn 100,000 of them. The name is a zoological error, and the original paper says so in a footnote: threatened ostriches press their necks flat to the ground, and do not bury their heads in sand. Deliberate ignorance about a future event is a cousin of this effect rather than the same thing, since the ostrich effect concerns a stake someone already holds and could check today.",
+  "limits": "Every finance test of this is observational. Karlsson, Loewenstein and Seppi worked with aggregate daily counts and named two rival stories themselves: media coverage might simply be heavier in bull markets, and logins might follow a desire to trade rather than a desire to look. Their answer to the second is a pair of partial correlations in the Swedish data. Controlling for look-ups, the correlation between transactions and the index was 0.04 with p = 0.34; controlling for transactions, the correlation between look-ups and the index was 0.35 with p < 0.001. The deeper limit is what counts as a bias here. Section 6 of their own paper says selective attention is fully rational once you grant that information affects how people feel, so the label describes preferences over information rather than an error in processing it. Rational inattention offers a competing account in which attention is simply costly. Olafsson and Pagel weigh it against logins to an Icelandic financial-management app. Attention there falls as overdraft debt grows, rises with cash and liquidity, and jumps when a balance turns from negative to positive. Spending does not move it at all, which is what sinks the story that people log in to plan their outgoings. They conclude that rational inattention and selective attention each explain part of the pattern and neither explains all of it. Their work circulated as an NBER working paper from 2017 and appeared in the Review of Economics and Statistics in 2025. Outside finance the pattern has separate support. The UK Huntington's Prediction Consortium recorded 9,407 predictive tests at 23 centres between 1993 and 2014. It put cumulative uptake among the population at 50% prior risk at 17.4% (95% CI 16.9 to 18.0), leaving over 80% untested. Oster, Shoulson and Dorsey followed 1,001 at-risk people in the PHAROS study, at about 40 sites in the United States and Canada. About 7% of those with uncertain status tested over ten years, and about 5% before any signs appeared. Both figures stand in the working paper and in the accepted manuscript the American Economic Association itself serves. The 2016 corrigendum in the same journal touches only Figure 4, where the authors had compared reported risk perceptions with a mistaken series for actual risk. On the corrected figure, people with mild symptoms judge their own risk about right, and only those further along are over-optimistic. The testing rates are untouched. Gigerenzer and Garcia-Retamero surveyed representative quota samples in two European countries. Between 85% and 90% would rather not know about coming negative events, and only 1% consistently wanted to know.",
+  "misreadings": "The effect is about looking, not about doing. An investor who stops checking a falling portfolio has not necessarily left it alone in any other sense. Sicherman and colleagues found that people classified as ostriches traded more in up-markets than in down-markets, which they note may protect such investors from selling into a slump. Popular summaries also inflate the sample. The Vanguard panel holds about 1.2 million accounts, and the published estimates come from a randomly drawn 100,000 of them. The name is a zoological error, and Karlsson, Loewenstein and Seppi say so in their first footnote: a nesting hen under threat presses her long neck flat along the ground, and ostriches do not bury their heads in sand. Deliberate ignorance about a future event is a cousin of this effect rather than the same thing, since the ostrich effect concerns a stake someone already holds and could check today.",
   "sources": [
     {
-      "text": "Karlsson, N., Loewenstein, G., & Seppi, D. (2009). The ostrich effect: Selective attention to information. Journal of Risk and Uncertainty, 38(2), 95-115.",
+      "text": "Karlsson, N., Loewenstein, G., & Seppi, D. (2009). The ostrich effect: Selective attention to information. Journal of Risk and Uncertainty, 38(2), 95-115. Read in full. The publisher's file, served from George Loewenstein's page at Carnegie Mellon, is a scan with no text layer, so its 22 pages were rendered at 300 dpi and put through optical recognition. Every figure, date and quotation above was confirmed against it.",
       "doi": "10.1007/s11166-009-9060-6",
       "url": "https://doi.org/10.1007/s11166-009-9060-6",
       "type": "primary"
     },
     {
-      "text": "Galai, D., & Sade, O. (2006). The \"ostrich effect\" and the relationship between the liquidity and the yields of financial assets. The Journal of Business, 79(5), 2741-2759.",
+      "text": "Galai, D., & Sade, O. (2006). The \"ostrich effect\" and the relationship between the liquidity and the yields of financial assets. The Journal of Business, 79(5), 2741-2759. Abstract read as the publisher deposited it at RePEc. The article itself was not obtained: Chicago, JSTOR, SSRN and ResearchGate each answered a bot challenge on 21 September 2026, which is not a paywall, and Crossref, OpenAlex and Semantic Scholar list no open copy anywhere.",
       "doi": "10.1086/505250",
       "url": "https://doi.org/10.1086/505250",
       "type": "provenance"
     },
     {
-      "text": "Sicherman, N., Loewenstein, G., Seppi, D. J., & Utkus, S. P. (2016). Financial attention. The Review of Financial Studies, 29(4), 863-897.",
+      "text": "Sicherman, N., Loewenstein, G., Seppi, D. J., & Utkus, S. P. (2016). Financial attention. The Review of Financial Studies, 29(4), 863-897. Read in full, the published version of record, from the authors' copy at Carnegie Mellon. Every figure attributed to it above was confirmed in its text or tables.",
       "doi": "10.1093/rfs/hhv073",
       "url": "https://doi.org/10.1093/rfs/hhv073",
       "type": "replication"
     },
     {
-      "text": "Gherzi, S., Egan, D., Stewart, N., Haisley, E., & Ayton, P. (2014). The meerkat effect: Personality and market returns affect investors' portfolio monitoring behaviour. Journal of Economic Behavior & Organization, 107, 512-526.",
+      "text": "Gherzi, S., Egan, D., Stewart, N., Haisley, E., & Ayton, P. (2014). The meerkat effect: Personality and market returns affect investors' portfolio monitoring behaviour. Journal of Economic Behavior & Organization, 107, 512-526. Read in full, the published article, from the Warwick Research Archive Portal after ScienceDirect refused the file.",
       "doi": "10.1016/j.jebo.2014.07.013",
       "url": "https://doi.org/10.1016/j.jebo.2014.07.013",
       "type": "critique"
     },
     {
-      "text": "Olafsson, A., & Pagel, M. (2017). The ostrich in us: Selective attention to financial accounts, income, spending, and liquidity. NBER Working Paper 23945.",
+      "text": "Olafsson, A., & Pagel, M. (2025). The ostrich in us: Selective attention to personal finances. Review of Economics and Statistics. The version of record. Its abstract was read as deposited at Crossref; MIT Press answered a plain and a browser-like request alike with a challenge, so the detail above comes from the working paper below.",
+      "doi": "10.1162/rest_a_01566",
+      "url": "https://doi.org/10.1162/rest_a_01566",
+      "type": "replication"
+    },
+    {
+      "text": "Olafsson, A., & Pagel, M. (2017). The ostrich in us: Selective attention to financial accounts, income, spending, and liquidity. NBER Working Paper 23945. Read in full, the October 2017 paper as revised in January 2023. It is the source for the Icelandic data and for the finding that spending deciles do not move logins at all.",
       "doi": "10.3386/w23945",
       "url": "https://doi.org/10.3386/w23945",
       "type": "replication"
     },
     {
-      "text": "Golman, R., Hagmann, D., & Loewenstein, G. (2017). Information avoidance. Journal of Economic Literature, 55(1), 96-135.",
+      "text": "Golman, R., Hagmann, D., & Loewenstein, G. (2017). Information avoidance. Journal of Economic Literature, 55(1), 96-135. Read in full, the published article, from the authors' copy at Carnegie Mellon after the publisher answered a Cloudflare challenge. Cited for context; no figure above rests on it.",
       "doi": "10.1257/jel.20151245",
       "url": "https://doi.org/10.1257/jel.20151245",
       "type": "review"
     },
     {
-      "text": "Gigerenzer, G., & Garcia-Retamero, R. (2017). Cassandra's regret: The psychology of not wanting to know. Psychological Review, 124(2), 179-196.",
+      "text": "Gigerenzer, G., & Garcia-Retamero, R. (2017). Cassandra's regret: The psychology of not wanting to know. Psychological Review, 124(2), 179-196. Read in full, the published version, from the Max Planck Society repository. Its rendered page answers a proof-of-work challenge, and its REST route served the file without one.",
       "doi": "10.1037/rev0000055",
       "url": "https://doi.org/10.1037/rev0000055",
       "type": "context"
     },
     {
-      "text": "Baig, S. S., Strong, M., Rosser, E., Taverner, N. V., Glew, R., Miedzybrodzka, Z., Clarke, A., Craufurd, D., UK Huntington's Disease Prediction Consortium, & Quarrell, O. W. (2016). 22 years of predictive testing for Huntington's disease: The experience of the UK Huntington's Prediction Consortium. European Journal of Human Genetics, 24(10), 1396-1402.",
+      "text": "Baig, S. S., Strong, M., Rosser, E., Taverner, N. V., Glew, R., Miedzybrodzka, Z., Clarke, A., Craufurd, D., UK Huntington's Disease Prediction Consortium, & Quarrell, O. W. (2016). 22 years of predictive testing for Huntington's disease: The experience of the UK Huntington's Prediction Consortium. European Journal of Human Genetics, 24(10), 1396-1402. Abstract read at the publisher, which carries every figure taken from it above. A 2017 corrigendum, 10.1038/ejhg.2017.139, was also read: it restores a division lost from the printed uptake formula and leaves the published estimate standing.",
       "doi": "10.1038/ejhg.2016.36",
       "url": "https://doi.org/10.1038/ejhg.2016.36",
       "type": "context"
     },
     {
-      "text": "Oster, E., Shoulson, I., & Dorsey, E. R. (2013). Optimal expectations and limited medical testing: Evidence from Huntington disease. American Economic Review, 103(2), 804-830.",
+      "text": "Oster, E., Shoulson, I., & Dorsey, E. R. (2013). Optimal expectations and limited medical testing: Evidence from Huntington disease. American Economic Review, 103(2), 804-830. The accepted manuscript, served by the American Economic Association itself, was read in full and carries both testing rates. The typeset version of record stayed behind a Cloudflare challenge on 21 September 2026.",
       "doi": "10.1257/aer.103.2.804",
       "url": "https://doi.org/10.1257/aer.103.2.804",
       "type": "context"
     },
     {
-      "text": "Oster, E., Shoulson, I., & Dorsey, E. R. (2011). Optimal expectations and limited medical testing: Evidence from Huntington disease. NBER Working Paper 17629.",
+      "text": "Oster, E., Shoulson, I., & Dorsey, E. R. (2011). Optimal expectations and limited medical testing: Evidence from Huntington disease. NBER Working Paper 17629. Read in full. Its testing rates match the ones in the article.",
       "doi": "10.3386/w17629",
       "url": "https://doi.org/10.3386/w17629",
       "type": "context"
     },
     {
-      "text": "Oster, E., Shoulson, I., & Dorsey, E. R. (2016). Optimal expectations and limited medical testing: Evidence from Huntington disease: Corrigendum. American Economic Review, 106(6), 1562-1565.",
+      "text": "Oster, E., Shoulson, I., & Dorsey, E. R. (2016). Optimal expectations and limited medical testing: Evidence from Huntington disease: Corrigendum. American Economic Review, 106(6), 1562-1565. Read as the abstract the publisher deposited with PubMed, after the American Economic Association's own file answered a challenge. It corrects Figure 4 and says the corrected figure shows less over-optimism than the original.",
       "doi": "10.1257/aer.106.6.1562",
       "url": "https://doi.org/10.1257/aer.106.6.1562",
       "type": "commentary"
     },
     {
-      "text": "Tassicker, R. J., Teltscher, B., Trembath, M. K., Collins, V., Sheffield, L. J., Chiu, E., Gurrin, L., & Delatycki, M. B. (2009). Problems assessing uptake of Huntington disease predictive testing and a proposed solution. European Journal of Human Genetics, 17(1), 66-70.",
+      "text": "Tassicker, R. J., Teltscher, B., Trembath, M. K., Collins, V., Sheffield, L. J., Chiu, E., Gurrin, L., & Delatycki, M. B. (2009). Problems assessing uptake of Huntington disease predictive testing and a proposed solution. European Journal of Human Genetics, 17(1), 66-70. Abstract read at the publisher. Cited for the ratio of people at risk to diagnosed cases that the uptake formula above rests on; no figure here is taken from it.",
       "doi": "10.1038/ejhg.2008.142",
       "url": "https://doi.org/10.1038/ejhg.2008.142",
       "type": "commentary"
     }
   ],
-  "checkedOn": "2026-08-09"
+  "checkedOn": "2026-09-21"
 }
