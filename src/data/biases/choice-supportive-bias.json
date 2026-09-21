@@ -2,99 +2,117 @@
   "no": 169,
   "slug": "choice-supportive-bias",
   "name": "Choice-supportive bias",
-  "aliases": ["Post-purchase rationalisation", "Choice-supportive memory", "Choice-supportive misremembering", "Choice-supportive source monitoring"],
+  "aliases": [
+    "Post-purchase rationalisation",
+    "Choice-supportive memory",
+    "Choice-supportive misremembering",
+    "Choice-supportive source monitoring"
+  ],
   "category": "memory",
   "statement": "People are said to remember a chosen option as having had more of the good features, and fewer of the bad ones, than it really did.",
-  "meaning": "The claim is about memory rather than taste. Two options are described by lists of features, one is picked, and later the rememberer has to say which option each feature belonged to. Mather, Shafir and Johnson's proposal is that when the source of a remembered feature is unclear, the knowledge of what was chosen fills the gap. A pleasant feature is credited to the option taken, an unpleasant one to the option refused. The inference is reasonable, since the chosen option probably was the better one, and it produces a record of the decision that is tidier than the decision was. Attitude change after choice is a separate literature. This one is about who gets the credit for a fact.",
+  "meaning": "The claim is about memory rather than taste. Two options are described by lists of features, one is picked, and later the rememberer has to say which option each feature belonged to. Mather, Shafir and Johnson's proposal is that when the source of a remembered feature is unclear, the knowledge of what was chosen fills the gap. A pleasant feature is credited to the option taken, an unpleasant one to the option refused. The inference is reasonable, since the chosen option probably was the better one, and it produces a record of the decision that is tidier than the decision was. Attitude change after choice is a separate literature, though the authors allow that the two may be linked. This one is about who gets the credit for a fact.",
   "origin": {
     "year": 2000,
     "who": "Mara Mather, Eldar Shafir and Marcia K. Johnson",
     "where": "Psychological Science",
     "note": "The paper named choice-supportive source monitoring and supplied the paradigm still in use. Mather and Johnson published the companion ageing study in Psychology and Aging the same year. The 2000 paper places itself after older work on selective memory for decision-supporting information, citing Davidson and Kiesler's 1964 job-candidate study and Greene's 1981 detective-story study, and notes that neither asked which option a remembered fact belonged to."
   },
-  "evidence": "Four hypothetical scenarios were run as questionnaires: two job candidates, two blind dates and two roommates, the last in a choice version and a rejection version. Each option carried a list of positive and negative features, pretested so that on average 21 of 22 raters agreed on the valence of each. Participants picked one option, spent 5 to 45 minutes on unrelated tasks, then saw the features intermixed with new ones and said which option each had belonged to, or that it was new. Scores were normalised within each scenario, so a participant counted as biased only relative to other participants facing the same lists. Mean asymmetry scores were 0.22 for job candidates, t(141) = 2.73, p < .01, with 142 participants; 0.22 for dating, t(74) = 1.99, p < .05, with 75; 0.35 for the first roommate scenario, t(76) = 3.26, p < .01, with 77; and 0.44 for the second roommate choice, t(171) = 5.76, p < .001, with 172. The 207 people asked to reject a roommate rather than choose one scored 0.28, t(206) = 4.56, p < .001. The bias was carried by positive features. In the second roommate scenario it reached 0.39 for positive items and 0.16 for negative ones, F(1, 377) = 15.76, p < .001. It appeared for new features that had belonged to neither option, which is the finding the authors use to place part of the distortion at retrieval rather than at encoding.",
+  "evidence": "Four hypothetical scenarios were run as questionnaires: two job candidates, two blind dates and two roommates, the last in a choice version and a rejection version. Each option carried a list of positive and negative features, pretested so that on average 21 of 22 raters agreed on the valence of each. Participants picked one option, spent 5 to 45 minutes on unrelated tasks, then saw the features intermixed with new ones and said which option each had belonged to, or that it was new. Scores were normalised within each scenario, so a participant counted as biased only relative to other participants facing the same lists. Mean asymmetry scores were 0.22 for job candidates, t(141) = 2.73, p < .01, with 142 participants; 0.22 for dating, t(74) = 1.99, p < .05, with 75; 0.35 for the first roommate scenario, t(76) = 3.26, p < .01, with 77; and 0.44 for the second roommate choice, t(171) = 5.76, p < .001, with 172. The 207 people asked to reject a roommate rather than choose one scored 0.28, t(206) = 4.56, p < .001. The bias was carried by positive features. Pooling the choice and rejection groups of the second roommate scenario, it reached 0.39 for positive items and 0.16 for negative ones, F(1, 377) = 15.76, p < .001. Features that had belonged to neither option were also attributed asymmetrically, though significantly so in only three of the five scenarios. That is the finding the authors use to place part of the distortion at source attribution rather than at encoding.",
   "replication": {
     "state": "replicated",
-    "headline": "Three independent groups have found the misattribution effect with source-recognition tests, and one showed it follows a false belief about which option was picked. The claim that it grows with age has failed four times.",
-    "detail": "Lind, Visentini, Mäntylä and Del Missier reviewed the field in 2017 and found twelve papers meeting their criteria. Their verdict on the core effect: none of the studies that looked for choice-supportive misattribution failed to find it. Their verdict on everything else: the evidence for choice-supportive fact distortion, false memory and selective forgetting is weak, and the effect has been shown almost entirely with recognition tests rather than recall. Henkel and Mather ran the paradigm over a two-day delay with 80 undergraduates and got an asymmetry score of 0.28, SE = 0.06, t(79) = 4.63, p < .001. Their second experiment answers the obvious objection that people simply chose what they already preferred. Forty-eight participants returned a week later and were told, falsely for two of the four scenarios, which option they had picked. Memory attributions followed the false reminder as strongly as the true one, 0.50 against 0.47, with no reliable difference, t(47) = 0.28. Choice alone is not the trigger. Mather, Shafir and Johnson found the bias in people who chose, 0.10, SE = 0.04, but not in people simply assigned an option, -0.07, SE = 0.04, F(1, 92) = 7.69, p < .01. Benney and Henkel, testing 172 adults, found it in a free-choice group and in a group told the assignment had been made in their best interest, and not in a group told the assignment was random. The ageing claim is the part that has not held. Mather and Johnson gave four scenarios to 54 younger adults and 108 adults aged 64 to 83, and scored 0.12 for the younger group, 0.41 for older adults tested after 30 minutes and 0.42 for older adults tested after two days. The younger group's score sat above zero only after being asked to review how they had felt, 0.41 against -0.07 for no review. Lind and colleagues record that Queen and Hess, Hess and Kotter-Grühn, Hess, Queen and Patterson, and Depping and Freund all found older adults no more choice-supportive than younger ones.",
+    "headline": "Groups sharing no author with the original have found the misattribution effect with source-recognition tests, and a false reminder about which option was picked carries the bias with it. Free recall is where it breaks, and the ageing claim has not held.",
+    "detail": "Lind, Visentini, Mäntylä and Del Missier reviewed the field in 2017 and found twelve papers meeting their criteria. Their verdict on the core effect: none of the studies in the misattribution category that investigated choice-supportiveness failed to find it. Their verdict on everything else: the evidence for choice-supportive fact distortion, false memory and selective forgetting is thin, and almost all of it comes from recognition rather than recall. Henkel and Mather tested 80 undergraduates two days after the choice and scored 0.28 for the choices participants remembered correctly, SE = 0.06, t(79) = 4.63, p < .001. Their second experiment answers the obvious objection that people simply chose what they already preferred. Sixty-one took part and 48 were analysed, returning a week later to be told, falsely for two of the four scored scenarios, which option they had picked. Memory attributions followed the false reminder as strongly as the true one, 0.50 against 0.47, with no reliable difference, t(47) = 0.28. Choice alone is not the trigger. Mather, Shafir and Johnson found the bias in people who chose, 0.10, SE = 0.04, but not in people simply assigned an option, -0.07, SE = 0.04, F(1, 92) = 7.69, p < .01. Benney and Henkel report the same split between free choice, an assignment said to be in the chooser's best interest, and a plain assignment. Queen and Hess, Hess and Kotter-Grühn, and Hess, Queen and Patterson all found choice-supportive memory with no Mather or Henkel among their authors. The ageing claim is the part that has not held. Mather and Johnson gave four scenarios to 54 younger adults and 108 adults aged 64 to 83, and scored 0.12 for the younger group, 0.41 for older adults tested after 30 minutes and 0.42 for older adults tested after two days. The younger group's score sat above zero only after being asked to review how they had felt, 0.41 against -0.07 for no review. Queen and Hess found no age difference at all. Hess and Kotter-Grühn found older adults choice-supportive only for moral traits. Hess, Queen and Patterson found no overall age effect, p = .21, but a significant interaction of age and attribute type that vanished once cognitive ability was covaried. Lind's 2019 thesis then split the field in two. Her first experiment gave 155 students five choices laid out as tables of six matched attributes, and tested free and cued recall after 2 minutes, 20 minutes or 2 days. Combined across scenarios, misattribution returned p = .86, and no other type of distortion came near significance either, at a power of .89 for a small effect. Her second gave 100 participants longer and wordier scenarios and added source recognition, and found choice-supportiveness in every condition and every test.",
     "study": {
       "cite": "Henkel, L. A., & Mather, M. (2007). Memory attributions for choices: How beliefs shape our memories. Journal of Memory and Language, 57(2), 163-176.",
       "doi": "10.1016/j.jml.2006.08.012",
       "year": 2007,
       "n": 80
     },
-    "original": { "es": 0.44, "esType": "md", "unit": "normalised asymmetry score" },
-    "replicated": { "es": 0.28, "esType": "md", "unit": "normalised asymmetry score" }
+    "original": {
+      "es": 0.44,
+      "esType": "md",
+      "unit": "normalised asymmetry score"
+    },
+    "replicated": {
+      "es": 0.28,
+      "esType": "md",
+      "unit": "normalised asymmetry score"
+    }
   },
-  "limits": "Every study in the review used hypothetical options on paper. Nobody has run the paradigm on a purchase somebody actually made, and the original authors write that real decisions may carry richer memories in which misattribution is less likely. Recognition is doing almost all the work: Lind and colleagues report that free and cued recall have barely been tried, and that Depping and Freund, who used free recall, found no choice-supportive memory in their choice groups at all. That is the only null in the set. No preregistered replication and no multi-laboratory attempt was located in this search, which covered Crossref, Europe PMC, Semantic Scholar citation lists and web search. The literature is small and the authors overlap: Mather appears on four of the twelve papers, Henkel on two, Hess on three. Martina Lind's 2019 Trento doctoral thesis, titled 'Choice-supportive misremembering: A robust phenomenon?', is the obvious place to look next; its repository was returning server errors throughout this search and it was not read. The Depping and Freund null and the four ageing failures are reported here as Lind and colleagues describe them, not from the papers themselves. Asymmetry scores are normalised within a scenario and are not a standardised effect size, so the numbers above compare across these studies and nowhere else.",
-  "misreadings": "The bias is usually retold as feeling better about a purchase afterwards. That is post-decision attitude change, which Brehm demonstrated in 1956 and which this work explicitly sets apart. What Mather and colleagues measured is a source error: a feature is remembered correctly and pinned to the wrong option. Chen and Risen's argument is often assumed to sink this literature too. It does not reach it. Their proof concerns the rate-choose-rate design, where the alternatives appear to spread apart because the choice reveals a preference the ratings measured imprecisely, and no rating spread is measured here. The analogous worry, that people chose the option they already liked, is handled twice. Mather, Shafir and Johnson normalised each score within its scenario so that an option favoured by everybody could not manufacture the effect, and Henkel and Mather found the same bias in people who had been misinformed about which option they picked. The bias tracked the belief, not the choice. The ageing headline is the claim to drop. It rests on one study from 2000, and four later ones looking for the same age difference did not find it.",
+  "limits": "Every study in the review used hypothetical options, though not all of them on paper: Mather and Johnson ran theirs on a Macintosh. Nobody has run the paradigm on a purchase somebody actually made, and the original authors write that real decisions may carry richer memories in which misattribution is less likely. Recognition is doing most of the work. Lind and colleagues report that free and cued recall have barely been tried, and Lind's own recall experiment with tabular, fully alignable options found nothing, which she reads as a limit on the materials rather than on the effect. Depping and Freund, who used free recall, found no choice-supportive memory in their choice groups, as the review describes them. No preregistered replication and no multi-laboratory attempt was located on 21 September 2026, in a search covering Crossref, Unpaywall, Europe PMC, PubMed, Semantic Scholar and web search. The literature is small and the authors overlap: Mather appears on four of the twelve reviewed papers, Henkel on two, Hess on three. Martina Lind's 2019 Trento thesis, 'Choice-supportive misremembering: A robust phenomenon?', was read in full from a Wayback Machine capture, because the Trento repository answered every request with a server error. Depping and Freund and Benney and Henkel were read only as published abstracts; the first is closed at the publisher and the second sits behind a Cloudflare challenge rather than a paywall. Asymmetry scores are normalised within a scenario and are not a standardised effect size, so the numbers above compare across these studies and nowhere else.",
+  "misreadings": "The bias is usually retold as feeling better about a purchase afterwards. That is post-decision attitude change, which Brehm demonstrated in 1956. Mather and colleagues set it apart, while allowing that memory distortion may be part of how attitudes shift. What they measured is a source error: a feature is remembered correctly and pinned to the wrong option. Chen and Risen's argument is often assumed to sink this literature too. It does not reach it. Their proof concerns the rank-choose-rank design, where the alternatives appear to spread apart because the choice reveals a preference the rankings measured imprecisely. Their paper never mentions memory, recall or source monitoring, and no rating spread is measured here. Entries 24 and 442 carry that argument where it does bite. The analogous worry, that people chose the option they already liked, is handled twice. Mather, Shafir and Johnson normalised each score within its scenario, so that an option favoured by everybody scores zero rather than manufacturing the effect. Henkel and Mather then found the same bias in people who had been misinformed about which option they picked. The bias tracked the belief, not the choice. The ageing headline is the claim to drop. It rests on one study from 2000, and the later work found either no age difference or one that differences in cognitive ability explain.",
   "sources": [
     {
-      "text": "Mather, M., Shafir, E., & Johnson, M. K. (2000). Misremembrance of options past: Source monitoring and choice. Psychological Science, 11(2), 132-138. Source for every number in the evidence section, read from the full text.",
+      "text": "Mather, M., Shafir, E., & Johnson, M. K. (2000). Misremembrance of options past: Source monitoring and choice. Psychological Science, 11(2), 132-138. Source for every number in the evidence section, read in full from the author copy on 21 September 2026.",
       "doi": "10.1111/1467-9280.00228",
       "url": "https://gero.usc.edu/labs/matherlab/files/2019/03/Matheretal2000.pdf",
       "type": "primary"
     },
     {
-      "text": "Mather, M., & Johnson, M. K. (2000). Choice-supportive source monitoring: Do our decisions seem better to us as we age? Psychology and Aging, 15(4), 596-606. The ageing study; read from a scanned copy.",
+      "text": "Mather, M., & Johnson, M. K. (2000). Choice-supportive source monitoring: Do our decisions seem better to us as we age? Psychology and Aging, 15(4), 596-606. The ageing study, and the source of the age and review-condition figures. Read page by page from a scanned author copy, which carries no text layer.",
       "doi": "10.1037/0882-7974.15.4.596",
       "url": "https://memlab.yale.edu/sites/default/files/files/2000_Mather_Johnson_PsychAging.pdf",
       "type": "primary"
     },
     {
-      "text": "Mather, M., Shafir, E., & Johnson, M. K. (2003). Remembering chosen and assigned options. Memory & Cognition, 31(3), 422-433. The assignment control, and the paper that states the normalisation used against the preference confound.",
+      "text": "Mather, M., Shafir, E., & Johnson, M. K. (2003). Remembering chosen and assigned options. Memory & Cognition, 31(3), 422-433. The assignment control, and the paper that spells out why the normalised asymmetry score answers the preference confound. Read in full.",
       "doi": "10.3758/BF03194400",
       "url": "https://memlab.yale.edu/sites/default/files/files/2003_Mather_Shafir_Johnson_MemCog.pdf",
       "type": "primary"
     },
     {
-      "text": "Henkel, L. A., & Mather, M. (2007). Memory attributions for choices: How beliefs shape our memories. Journal of Memory and Language, 57(2), 163-176. The false-reminder experiment, read from the full text.",
+      "text": "Henkel, L. A., & Mather, M. (2007). Memory attributions for choices: How beliefs shape our memories. Journal of Memory and Language, 57(2), 163-176. The false-reminder experiment, read in full. Experiment 2 recruited 61 and analysed 48.",
       "doi": "10.1016/j.jml.2006.08.012",
       "url": "https://gero.usc.edu/labs/matherlab/files/2019/03/HenkelMather2007.pdf",
       "type": "replication"
     },
     {
-      "text": "Stoll Benney, K., & Henkel, L. A. (2006). The role of free choice in memory for past decisions. Memory, 14(8), 1001-1011. The best-interest assignment condition; the abstract was read, the full text was not.",
+      "text": "Stoll Benney, K., & Henkel, L. A. (2006). The role of free choice in memory for past decisions. Memory, 14(8), 1001-1011. The best-interest assignment condition. The published abstract was read at PubMed on 21 September 2026; the full text was not obtained, the publisher and two mirrors answering with a Cloudflare bot challenge rather than a paywall. The sample of 172 is taken from the review, not from the paper.",
       "doi": "10.1080/09658210601046163",
       "url": "https://pubmed.ncbi.nlm.nih.gov/17077034/",
       "type": "replication"
     },
     {
-      "text": "Lind, M., Visentini, M., Mäntylä, T., & Del Missier, F. (2017). Choice-supportive misremembering: A new taxonomy and review. Frontiers in Psychology, 8, 2062. The only review of the field, and the source for the ageing failures and the free-recall null.",
+      "text": "Lind, M., Visentini, M., Mäntylä, T., & Del Missier, F. (2017). Choice-supportive misremembering: A new taxonomy and review. Frontiers in Psychology, 8, 2062. The only review of the field, read in full from the Europe PMC full-text route. Source for the count of twelve papers and for the Depping and Freund null.",
       "doi": "10.3389/fpsyg.2017.02062",
       "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2017.02062/full",
       "type": "review"
     },
     {
-      "text": "Chen, M. K., & Risen, J. L. (2010). How choice affects and reflects preferences: Revisiting the free-choice paradigm. Journal of Personality and Social Psychology, 99(4), 573-594. The artifact argument that applies to rating spread, not to this paradigm; the abstract was read, the full text was not.",
+      "text": "Chen, M. K., & Risen, J. L. (2010). How choice affects and reflects preferences: Revisiting the free-choice paradigm. Journal of Personality and Social Psychology, 99(4), 573-594. The artefact argument that applies to rating spread, not to this paradigm. Read in full from the author copy; it names no memory measure anywhere.",
       "doi": "10.1037/a0020217",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/20658837/",
+      "url": "https://www.anderson.ucla.edu/faculty_pages/keith.chen/papers/Final_JPSP10.pdf",
       "type": "critique"
     },
     {
-      "text": "Depping, M. K., & Freund, A. M. (2013). When choice matters: Task-dependent memory effects in older adulthood. Psychology and Aging, 28(4), 923-936. The one study in the review reporting no choice-supportive memory after choice; described here as the review describes it, not read.",
+      "text": "Depping, M. K., & Freund, A. M. (2013). When choice matters: Task-dependent memory effects in older adulthood. Psychology and Aging, 28(4), 923-936. The one study in the review reporting no choice-supportive memory after choice. The published abstract was read at PubMed on 21 September 2026; the full text was not obtained, the publisher record being closed and the Zurich repository serving a proof-of-work challenge. The null is reported here as the review describes it.",
       "doi": "10.1037/a0034520",
-      "url": "https://doi.org/10.1037/a0034520",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24364399/",
       "type": "replication"
     },
     {
-      "text": "Queen, T. L., & Hess, T. M. (2010). Age differences in the effects of conscious and unconscious thought in decision making. Psychology and Aging, 25(2), 251-261. One of the studies finding no age difference in choice-supportiveness; listed as the review cites it, not read.",
+      "text": "Queen, T. L., & Hess, T. M. (2010). Age differences in the effects of conscious and unconscious thought in decision making. Psychology and Aging, 25(2), 251-261. Read in full from PubMed Central. Both age groups showed choice-supportive memory and the authors record that they did not replicate the age difference.",
       "doi": "10.1037/a0018856",
-      "url": "https://doi.org/10.1037/a0018856",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2896215/",
       "type": "replication"
     },
     {
-      "text": "Hess, T. M., & Kotter-Grühn, D. (2011). Social knowledge and goal-based influences on social information processing in adulthood. Psychology and Aging, 26(4), 792-802. Another of the age comparisons; listed as the review cites it, not read.",
+      "text": "Hess, T. M., & Kotter-Grühn, D. (2011). Social knowledge and goal-based influences on social information processing in adulthood. Psychology and Aging, 26(4), 792-802. Read in full from PubMed Central. Choice-supportiveness appeared in the interaction condition for every age group, and in older adults only for moral traits.",
       "doi": "10.1037/a0023775",
-      "url": "https://doi.org/10.1037/a0023775",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3196814/",
       "type": "replication"
     },
     {
-      "text": "Hess, T. M., Queen, T. L., & Patterson, T. R. (2012). To deliberate or not to deliberate: Interactions between age, task characteristics, and cognitive activity on decision making. Journal of Behavioral Decision Making, 25(1), 29-40. The third age comparison; listed as the review cites it, not read.",
+      "text": "Hess, T. M., Queen, T. L., & Patterson, T. R. (2012). To deliberate or not to deliberate: Interactions between age, task characteristics, and cognitive activity on decision making. Journal of Behavioral Decision Making, 25(1), 29-40. Read in full from PubMed Central. The overall age effect was not significant, p = .21, but age interacted with attribute type until cognitive ability was covaried.",
       "doi": "10.1002/bdm.711",
-      "url": "https://doi.org/10.1002/bdm.711",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3923383/",
+      "type": "replication"
+    },
+    {
+      "text": "Lind, M. (2019). Choice-supportive misremembering: A robust phenomenon? Doctoral thesis, University of Trento. Read in full from a Wayback Machine capture of the Trento repository, which itself returned server errors on 21 September 2026. Experiment 1, 155 students and tabular alignable options, found no choice-supportiveness in free or cued recall. Experiment 2, 100 participants and verbose options, found it in every condition and test.",
+      "url": "https://web.archive.org/web/20240619075711/http://eprints-phd.biblio.unitn.it/3505/1/Final_thesis_Martina_Lind.pdf",
       "type": "replication"
     }
   ],
-  "checkedOn": "2026-08-09"
+  "checkedOn": "2026-09-21"
 }
