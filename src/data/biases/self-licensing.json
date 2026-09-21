@@ -15,13 +15,13 @@
     "year": 2001,
     "who": "Benoît Monin and Dale T. Miller",
     "where": "Journal of Personality and Social Psychology",
-    "note": "Their paper used the phrase moral credentials, not licensing. Study 1 approached 202 Princeton undergraduates with five negative statements about women, worded as either \"most\" or \"some\" women, and men who had disagreed with the blatant version then favoured a man for a stereotypically male job, F(2, 194) = 4.4, p < .05. The label moral self-licensing arrives later, in Merritt, Effron and Monin's 2010 review."
+    "note": "Study 1 approached 202 Princeton undergraduates on campus and analysed 200, after two failed to finish. They judged five negative statements about women, worded as either \"most\" or \"some\" women, then rated a cement company job. The credentials main effect ran across the whole sample, F(2, 194) = 4.4, p < .05, with means of 4.8 in the \"most\" condition against 4.3 and 4.5 in the \"some\" and base-rate conditions. Only men moved, but that is the unpredicted Gender by Credentials interaction, F(2, 194) = 3.7, p < .05, not the main effect. The 2001 paper already carries a section headed \"Self-Licensing Through Moral Credentials\", so the word is not a later coinage. Merritt, Effron and Monin's 2010 review is where it becomes the standard label."
   },
-  "evidence": "Study 2 of the original paper is the design later replications went after. 132 Princeton undergraduates chose one of five applicants for a starting position at a consulting firm, where the strongest candidate was a White woman, an African American man or a White man depending on condition. They then read a second hiring dilemma, set in a cement factory or in a racist police force, and said on a seven-point scale whether the job suited one gender or ethnicity better. Those who had the chance to pick a woman or a Black candidate favoured a White man more, F(1, 124) = 6.3, p < .05, with means of 4.8 against 4.4 on a scale whose midpoint was 4. Dropping the 22 participants who did not pick the star candidate raised it to F(1, 102) = 9.6, p < .005. Two later demonstrations carried the idea outside prejudice. Sachdeva, Iliev and Medin had people write about their own positive or negative traits, then measured charitable donations and cooperation. Mazar and Zhong had people shop in a green or a conventional online store, then measured cheating for money. Blanken, van de Ven and Zeelenberg pooled 91 studies and 7,397 participants in 2015 and reported d = 0.31, 95% CI [0.23, 0.38].",
+  "evidence": "Study 2 of the original paper is the design later replications went after. 132 Princeton undergraduates chose one of five applicants for a starting position at a large consulting firm, where the star candidate was a White woman, an African American man or a White man depending on condition. They then read a second hiring dilemma, set in a cement factory or in a racist police force, and said whether the job suited one gender or ethnicity better. The paper describes the answer scale as seven points running from -3 to 3 with a labelled midpoint, and prints the means on a 1 to 7 recoding. Those who had the chance to pick a woman or a Black candidate favoured a White man more, F(1, 124) = 6.3, p < .05, with means of 4.8 against 4.4. Dropping the 22 participants who did not pick the star candidate raised it to F(1, 102) = 9.6, p < .005, on means of 4.9 against 4.3. Two later demonstrations carried the idea outside prejudice. Sachdeva, Iliev and Medin had people copy a list of positive or negative trait words and write a story about themselves using them, then measured the sum people said they would give to a charity, and cooperation in a third experiment. Mazar and Zhong had people shop in a green or a conventional online store, then measured cheating for money. Blanken, van de Ven and Zeelenberg pooled 91 comparisons and 7,397 participants in 2015 and reported d = 0.31, 95% CI [0.23, 0.38].",
   "replication": {
     "state": "mixed",
-    "headline": "The founding paper's first study survived a 21-sample replication at a fraction of its original size, its second study failed a registered replication, and bias correction cuts the meta-analytic effect to somewhere between d = -0.05 and d = 0.18.",
-    "detail": "Many Labs 3 ran the Study 1 credentials manipulation in 20 university participant pools and one online sample. Across 3,134 participants the predicted main effect of credentials held, F(1, 3130) = 17.01, p < .001, partial eta squared .005, 95% CI [.001, .012], against .043, 95% CI [.002, .103] in the original 202 participants. Mean preference for a man was 4.44 in the \"most\" condition and 4.31 in the \"some\" condition. The gender moderation Monin and Miller had found, where only men responded to the manipulation, did not appear, F(1, 3130) = 0.0004, p = .985. Xiao, Li, Au, Tan, Chung and Feldman then ran a registered replication of Study 2 with 932 US participants online. The credential effect was d = 0.08, 95% CI [-0.14, 0.30] in the ethnicity scenario and d = -0.38, 95% CI [-0.61, -0.14] in the gender scenario. The original figure they compared against, d = 0.44, 95% CI [0.09, 0.79], is their own calculation from the 2001 paper, which reported no effect size. The gender result points the wrong way, and their participants in the no-credential condition already favoured men more strongly than the original sample did.",
+    "headline": "The founding paper's first study met a 21-sample replication that scored its preregistered test a failure while its main effect held at a fraction of the original size, its second study failed a registered replication and reversed, and bias correction cuts the meta-analytic effect to somewhere between d = -0.05 and d = 0.18.",
+    "detail": "Many Labs 3 ran the Study 1 credentials manipulation in 20 university participant pools and one online sample. Its preregistered key test was the Condition by Gender interaction Monin and Miller had found, and that vanished, F(1, 3130) = 0.0004, p = .985. The authors list Credentials and Prejudice among three effects that did not replicate. The credentials main effect was added afterwards, once the key tests had failed, as a theoretically relevant substitute, and across 3,134 participants it held, F(1, 3130) = 17.01, p < .001, partial eta squared .005, 95% CI [.001, .012], against .043, 95% CI [.002, .103] in the 200 originally analysed. Mean preference for a man was 4.44 in the \"most\" condition and 4.31 in the \"some\" condition. Ebersole and colleagues argue the main effect is the theoretically essential one, since the original authors did not predict the interaction. Xiao, Li, Au, Tan, Chung and Feldman then ran a registered replication of Study 2 online, keeping 932 US participants after preregistered exclusions. The replication comparisons rest on fewer, 874 once those preferring women or Black candidates are set aside. The credential effect was d = 0.08, 95% CI [-0.14, 0.30] in the ethnicity scenario and d = -0.38, 95% CI [-0.61, -0.14] in the gender scenario. The original figure they compared against, d = 0.44, 95% CI [0.09, 0.79], is their own calculation from the 2001 paper, which printed no effect size. The gender result points the wrong way, and credentialed participants there preferred men less, t(581) = -3.20, p = .001.",
     "study": {
       "cite": "Ebersole, C. R., Atherton, O. E., Belanger, A. L., et al. (2016). Many Labs 3: Evaluating participant pool quality across the academic semester via replication. Journal of Experimental Social Psychology, 67, 68-82.",
       "doi": "10.1016/j.jesp.2015.10.012",
@@ -32,91 +32,97 @@
     "original": {
       "es": 0.043,
       "esType": "eta2",
-      "ci": [0.002, 0.103],
+      "ci": [
+        0.002,
+        0.103
+      ],
       "ciLevel": 95
     },
     "replicated": {
       "es": 0.005,
       "esType": "eta2",
-      "ci": [0.001, 0.012],
+      "ci": [
+        0.001,
+        0.012
+      ],
       "ciLevel": 95
     }
   },
-  "limits": "Blanken and colleagues documented publication bias inside their own meta-analysis. Published studies averaged d = 0.43 and unpublished ones d = 0.11, QM(1) = 20.66, p < .001, and a regression test on the 57 published studies returned t(55) = 5.72, p < .001. Kuper and Bott reanalysed the larger Simbrunner and Schlegelmilch dataset in 2019. Its 76 independent effect sizes gave a naive random-effects mean of d = 0.27, 95% CI [0.19, 0.35]. A three-parameter selection model cut that to d = 0.18, 95% CI [0.06, 0.29], and PET-PEESE cut it to d = -0.05, 95% CI [-0.26, 0.16]. They also split the data by region, and North American samples gave d = 0.38 before correction against d = 0.10 for European ones after PET-PEESE. Direct replications outside the credentials paradigm found nothing. Blanken, van de Ven, Zeelenberg and Meijers ran three attempts at the trait-writing design with 105, 150 and 940 participants and confirmed none of the original results. Urban, Bahník and Braun Kohlová ran three attempts at the green shopping design with 1,274 participants and found no licensing of dishonesty. One recent analysis pulls the other way. Rotella, Jung, Chinn and Barclay pooled 115 experiments and 21,770 participants and report g = 0.65 when participants were observed against g = 0.13 when they were not, with a robust Bayesian correction for publication bias leaving g = 0.51 and a Bayes factor of 9.14 for observed participants, and g = -0.01 with a Bayes factor of 0.11 for unobserved ones. That paper is paywalled and those figures come from its abstract at Crossref, so no interval for them is printed here.",
-  "misreadings": "The figure d = 0.31 travels as the size of the effect. It is the uncorrected pooled mean from a meta-analysis whose own authors reported a funnel plot with 21 studies missing and a fourfold gap between published and unpublished results. Many Labs 3 gets cited both as a successful replication and as a failure, and it was each in part: the credentials main effect held across 21 samples, the moderation by participant gender vanished, and the effect size dropped to a tenth of the original point estimate. A third error is to state licensing as a general law of moral behaviour. The same literature records the opposite pattern, in which one moral act makes the next one more likely, and Rotella and colleagues' split by observation is one attempt to say which occurs when. Monin and Miller also measured a stated preference about a hypothetical vacancy on a seven-point scale, which is not a measure of who gets hired. Finally, self-licensing is used for anything from dieting to charitable giving to recycling, and the pooled estimates combine paradigms that share little beyond the order of their two tasks.",
+  "limits": "Blanken and colleagues documented publication bias inside their own meta-analysis. Published studies averaged d = 0.43 and unpublished ones d = 0.11, QM(1) = 20.66, p < .001, and a regression test on the published studies returned t(55) = 5.72, p < .001, with 21 studies estimated missing from the funnel plot. Kuper and Bott reanalysed the larger Simbrunner and Schlegelmilch dataset in 2019, which held 106 effect sizes. Once independence was ensured, its 76 effect sizes gave a naive random-effects mean of d = 0.27, 95% CI [0.19, 0.35]. A three-parameter selection model cut that to d = 0.18, 95% CI [0.06, 0.29], and PET-PEESE cut it to d = -0.05, 95% CI [-0.26, 0.16]. They also split the data by region, and the correction hits North America hardest. Uncorrected, North American samples gave d = 0.38 and European ones d = 0.21. After PET-PEESE the North American estimate falls to d = -0.13 and the European one to d = 0.10, so the region with the larger raw effect ends below the other. Direct replications outside the credentials paradigm found nothing. Blanken, van de Ven, Zeelenberg and Meijers ran three attempts at the trait-writing design with 105, 150 and 940 participants and confirmed none of the original results, noting that the original licensing contrasts they recomputed had confidence intervals including zero. Urban, Bahník and Braun Kohlová ran three attempts at the green shopping design with 1,274 analysed participants and found no licensing of dishonesty. One recent analysis pulls the other way. Rotella, Jung, Chinn and Barclay pooled 115 experiments and 21,770 participants and report g = 0.65, 95% CI [0.35, 0.94] when participants were observed against g = 0.13, 95% CI [0.04, 0.22] when they were not. A robust Bayesian correction for publication bias leaves g = 0.51, 95% CI [0.00, 0.79], with a Bayes factor of 9.14 for observed participants, and g = -0.01 with a Bayes factor of 0.11 for unobserved ones. The interval on that corrected estimate touches zero.",
+  "misreadings": "The figure d = 0.31 travels as the size of the effect. It is the uncorrected pooled mean from a meta-analysis whose own authors estimated 21 studies missing from the funnel plot and reported published results averaging d = 0.43 against d = 0.11 unpublished. Many Labs 3 gets cited both as a successful replication and as a failure, and it was each in part: its preregistered test of the gender moderation failed, and the credentials main effect it added afterwards held across 21 samples with partial eta squared falling from .043 to .005. A third error is to state licensing as a general law of moral behaviour. The same literature records the opposite pattern, in which one moral act makes the next one more likely, and Rotella and colleagues' split by observation is one attempt to say which occurs when. Entry 527 separates this from the different sequence in which being wronged licenses wronging back. Monin and Miller also measured a stated preference about a hypothetical vacancy on a seven-point scale, which is not a measure of who gets hired, and Sachdeva's charity measure was a sum people said they would pay, not money handed over. Finally, self-licensing is used for anything from dieting to charitable giving to recycling, and the pooled estimates combine paradigms that share little beyond the order of their two tasks.",
   "sources": [
     {
-      "text": "Monin, B., & Miller, D. T. (2001). Moral credentials and the expression of prejudice. Journal of Personality and Social Psychology, 81(1), 33-43.",
+      "text": "Monin, B., & Miller, D. T. (2001). Moral credentials and the expression of prejudice. Journal of Personality and Social Psychology, 81(1), 33-43. Read in full on 21 September 2026 as the published article, from the Wayback Machine's replay of the dead CiteSeerX copy, after the APA landing page and every index reported it closed.",
       "doi": "10.1037/0022-3514.81.1.33",
       "url": "https://doi.org/10.1037/0022-3514.81.1.33",
       "type": "primary"
     },
     {
-      "text": "Merritt, A. C., Effron, D. A., & Monin, B. (2010). Moral Self-Licensing: When Being Good Frees Us to Be Bad. Social and Personality Psychology Compass, 4(5), 344-357.",
+      "text": "Merritt, A. C., Effron, D. A., & Monin, B. (2010). Moral Self-Licensing: When Being Good Frees Us to Be Bad. Social and Personality Psychology Compass, 4(5), 344-357. Read in full on 21 September 2026 as the published article. A browser-like user agent got 403 from the host serving it and a plain curl agent got the PDF.",
       "doi": "10.1111/j.1751-9004.2010.00263.x",
       "url": "https://doi.org/10.1111/j.1751-9004.2010.00263.x",
       "type": "secondary"
     },
     {
-      "text": "Sachdeva, S., Iliev, R., & Medin, D. L. (2009). Sinning Saints and Saintly Sinners: The Paradox of Moral Self-Regulation. Psychological Science, 20(4), 523-528.",
+      "text": "Sachdeva, S., Iliev, R., & Medin, D. L. (2009). Sinning Saints and Saintly Sinners: The Paradox of Moral Self-Regulation. Psychological Science, 20(4), 523-528. Read in full on 21 September 2026 from the authors' laboratory page at Northwestern. That file is the accepted manuscript, paginated 1-21, not the journal's typeset article.",
       "doi": "10.1111/j.1467-9280.2009.02326.x",
       "url": "https://doi.org/10.1111/j.1467-9280.2009.02326.x",
       "type": "primary"
     },
     {
-      "text": "Mazar, N., & Zhong, C.-B. (2010). Do Green Products Make Us Better People? Psychological Science, 21(4), 494-498.",
+      "text": "Mazar, N., & Zhong, C.-B. (2010). Do Green Products Make Us Better People? Psychological Science, 21(4), 494-498. Read in full on 21 September 2026 from the Rotman School's faculty file. That file is marked in press at Psychological Science, so it is the accepted manuscript rather than the version of record.",
       "doi": "10.1177/0956797610363538",
       "url": "https://doi.org/10.1177/0956797610363538",
       "type": "primary"
     },
     {
-      "text": "Blanken, I., van de Ven, N., & Zeelenberg, M. (2015). A Meta-Analytic Review of Moral Licensing. Personality and Social Psychology Bulletin, 41(4), 540-558.",
+      "text": "Blanken, I., van de Ven, N., & Zeelenberg, M. (2015). A Meta-Analytic Review of Moral Licensing. Personality and Social Psychology Bulletin, 41(4), 540-558. Read in full on 21 September 2026 as the published article, from the first author's own publication page. Unpaywall, OpenAlex and Semantic Scholar all give a Tilburg handle as the open copy, and it resolves to the study's DataverseNL dataset rather than the article.",
       "doi": "10.1177/0146167215572134",
       "url": "https://doi.org/10.1177/0146167215572134",
       "type": "secondary"
     },
     {
-      "text": "Blanken, I., van de Ven, N., Zeelenberg, M., & Meijers, M. H. C. (2014). Three Attempts to Replicate the Moral Licensing Effect. Social Psychology, 45(3), 232-238.",
+      "text": "Blanken, I., van de Ven, N., Zeelenberg, M., & Meijers, M. H. C. (2014). Three Attempts to Replicate the Moral Licensing Effect. Social Psychology, 45(3), 232-238. Read in full on 21 September 2026 as the published article, from the UvA-DARE repository.",
       "doi": "10.1027/1864-9335/a000189",
       "url": "https://doi.org/10.1027/1864-9335/a000189",
       "type": "replication"
     },
     {
-      "text": "Ebersole, C. R., Atherton, O. E., Belanger, A. L., et al. (2016). Many Labs 3: Evaluating participant pool quality across the academic semester via replication. Journal of Experimental Social Psychology, 67, 68-82.",
+      "text": "Ebersole, C. R., Atherton, O. E., Belanger, A. L., et al. (2016). Many Labs 3: Evaluating participant pool quality across the academic semester via replication. Journal of Experimental Social Psychology, 67, 68-82. Read in full on 21 September 2026 as the published article, from a university laboratory page. The eScholarship copy the indexes give answers with an empty challenge and has no Wayback snapshot.",
       "doi": "10.1016/j.jesp.2015.10.012",
       "url": "https://doi.org/10.1016/j.jesp.2015.10.012",
       "type": "replication"
     },
     {
-      "text": "Urban, J., Bahník, Š., & Braun Kohlová, M. (2019). Green consumption does not make people cheat: Three attempts to replicate moral licensing effect due to pro-environmental behavior. Journal of Environmental Psychology, 63, 139-147.",
+      "text": "Urban, J., Bahník, Š., & Braun Kohlová, M. (2019). Green consumption does not make people cheat: Three attempts to replicate moral licensing effect due to pro-environmental behavior. Journal of Environmental Psychology, 63, 139-147. Read in full on 21 September 2026 as the published article, from the second author's own site, after every index called it closed.",
       "doi": "10.1016/j.jenvp.2019.01.011",
       "url": "https://doi.org/10.1016/j.jenvp.2019.01.011",
       "type": "replication"
     },
     {
-      "text": "Xiao, Q., Li, L. C., Au, Y. L., Tan, S. N., Chung, W. T., & Feldman, G. (2024). Licensing via Credentials: Replication Registered Report of Monin and Miller (2001) with Extensions. International Review of Social Psychology, 37(1), 10.",
+      "text": "Xiao, Q., Li, L. C., Au, Y. L., Tan, S. N., Chung, W. T., & Feldman, G. (2024). Licensing via Credentials: Replication Registered Report of Monin and Miller (2001) with Extensions. International Review of Social Psychology, 37(1), 10. Read in full on 21 September 2026 from the journal's own open-access XML at Europe PMC. Figures here come from its Table 1 and Table 3.",
       "doi": "10.5334/irsp.945",
       "url": "https://doi.org/10.5334/irsp.945",
       "type": "replication"
     },
     {
-      "text": "Kuper, N., & Bott, A. (2019). Has the evidence for moral licensing been inflated by publication bias? Meta-Psychology, 3.",
+      "text": "Kuper, N., & Bott, A. (2019). Has the evidence for moral licensing been inflated by publication bias? Meta-Psychology, 3. Read in full on 21 September 2026 from the journal's own open-access PDF. Regional figures here come from its Table 2.",
       "doi": "10.15626/MP.2018.878",
       "url": "https://doi.org/10.15626/MP.2018.878",
       "type": "secondary"
     },
     {
-      "text": "Simbrunner, P., & Schlegelmilch, B. B. (2017). Moral licensing: a culture-moderated meta-analysis. Management Review Quarterly, 67(4), 201-225. Cited as the source of the dataset Kuper and Bott reanalysed, not read directly.",
+      "text": "Simbrunner, P., & Schlegelmilch, B. B. (2017). Moral licensing: a culture-moderated meta-analysis. Management Review Quarterly, 67(4), 201-225. Read in full on 21 September 2026 as the published article, from rd.springer.com, which served the PDF that link.springer.com refused.",
       "doi": "10.1007/s11301-017-0128-0",
       "url": "https://doi.org/10.1007/s11301-017-0128-0",
       "type": "secondary"
     },
     {
-      "text": "Rotella, A., Jung, J., Chinn, C., & Barclay, P. (2026). Observation Moderates the Moral Licensing Effect: A Meta-Analytic Test of Interpersonal and Intrapsychic Mechanisms. Personality and Social Psychology Bulletin, 52(9), 2792-2808. Published online 2025; figures quoted here come from the abstract.",
+      "text": "Rotella, A., Jung, J., Chinn, C., & Barclay, P. (2026). Observation Moderates the Moral Licensing Effect: A Meta-Analytic Test of Interpersonal and Intrapsychic Mechanisms. Personality and Social Psychology Bulletin, 52(9), 2792-2808. Published online 8 July 2025, in the September 2026 print issue. Read in full on 21 September 2026 from the article's own open-access XML at Europe PMC. It is published under CC-BY and is not paywalled; intervals here come from its results tables, not from its abstract.",
       "doi": "10.1177/01461672251345512",
       "url": "https://doi.org/10.1177/01461672251345512",
       "type": "secondary"
     }
   ],
-  "checkedOn": "2026-08-09"
+  "checkedOn": "2026-09-21"
 }
