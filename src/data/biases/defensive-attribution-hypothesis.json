@@ -26,64 +26,64 @@
     "original": { "es": 0.64, "esType": "d" },
     "replicated": { "es": 0.27, "esType": "d", "weighting": "unweighted" }
   },
-  "limits": "The d of 0.64 for Walster's own study is Burger's estimate, reconstructed from her reported p level and sample size, and it does not appear in her paper. Burger's method is a combination of p levels rather than of effect sizes, it treats every unreported null as p = .50, and it produces no confidence interval, so the pooled figures here carry none. Walster's 1967 follow-up and Shaver's 1970 experiments were not obtained for this entry; both sit behind publisher paywalls, and what they found is reported here as Burger reports it. The same holds for the individual studies in his table. Robbennolt published a later meta-analysis of outcome severity and responsibility judgements in 2000, whose abstract says the direction holds across methods while the strength varies by the judgement asked for. Its estimates were not retrieved, so no figure from it appears here. The severity manipulation is confounded with how likely the outcome seems, a point Burger discusses at length and does not resolve. Searches of Crossref, PubMed, Semantic Scholar and the open web found no preregistered or multi-laboratory repeat of Walster's procedure. Later work using the name tests something adjacent rather than the 1966 design: Salminen interviewed victims, co-workers and foremen after 99 serious occupational accidents in Finland. Pinciotti and Orcutt modelled whether blaming a rape victim lowers a person's own sense of vulnerability, which it did among 618 undergraduates for women and not for men.",
-  "misreadings": "The version that circulates is the severity half on its own, which is the half that held up worst. Walster's own next study failed to find it. Burger reports that she looked at responsibility for large, moderate and small gains and losses in a house purchase and found no rise with severity, with a tendency towards less responsibility for greater losses. Shaver then failed to find it too, which is why the similarity variables exist at all. Readers also take the hypothesis to predict more victim blaming among people who feel at risk. It predicts the opposite for observers who could see themselves in the position of causing the harm, and the mechanism runs through blame avoidance rather than through indifference. Burger's headline verdict is often quoted as support for the hypothesis without the sentence that follows it, where he shows the pooled effect falling to 0.09 when one study is removed. Walster's data are also read as showing that people rewrite what the careless person did. Her carelessness ratings did not shift. Only the moral standard shifted. The idea is close enough to the just-world hypothesis that Burger, following Chaikin and Darley, judged the two to spring from the same assumptions and doubted that a situation could be designed where they predict different things."
+  "limits": "The d of 0.64 for Walster's own study is Burger's estimate, reconstructed from her reported p level and sample size, and it does not appear in her paper. Burger's method is a combination of p levels rather than of effect sizes, it treats every unreported null as p = .50, and it produces no confidence interval, so the pooled figures here carry none. Walster's 1967 follow-up was read in full from a scan on her own site, and is reported here from the paper rather than from Burger. One thing that reading changes is the direction: Burger's summary of it reads as a null, and the paper reports a significant reversal in its first experiment. That experiment was the one Burger could not enter in his table, because gains and losses were not reported separately, so the reversal is absent from every pooled figure above. Shaver's 1970 experiments were not obtained. Ovid marks the full text as paid, and the publisher's own record answered a bot challenge on 21 September 2026, so what Shaver found is reported here as Burger reports it, with the abstract read from Ovid. The same holds for the individual studies in Burger's table. Robbennolt published a later meta-analysis of outcome severity and responsibility judgements in 2000, whose abstract says the direction holds across methods while the strength varies by the judgement asked for. Its estimates were not retrieved, so no figure from it appears here. The severity manipulation is confounded with how likely the outcome seems, a point Burger discusses at length and does not resolve. Searches of Crossref, PubMed, the Open Science Framework registries and the open web on 21 September 2026 found no preregistered or multi-laboratory repeat of Walster's 1966 procedure. They did find a preregistration of a replication and extension of Shaver's second experiment, registered on the Open Science Framework in April 2024. No published report of it was found. Later work using the name tests something adjacent rather than the 1966 design: Salminen interviewed victims, co-workers and foremen after 99 serious occupational accidents in Finland. Pinciotti and Orcutt modelled whether blaming a rape victim lowers a person's own sense of vulnerability, which it did among 618 undergraduates for women and not for men.",
+  "misreadings": "The version that circulates is the severity half on its own, which is the half that held up worst. Walster's own next study did not merely fail to find it. She described a house purchase whose outcome was a large, moderate or small gain or loss. Among 153 high-school juniors the effect ran backwards, and less responsibility was assigned as the consequences grew, F(1, 123) = 8.27, p < .01. Her second experiment found no trend of any shape. Walster called the failure to repeat disturbing and wrote that she could not explain it. Shaver then failed to find it too, which is why the similarity variables exist at all. Readers also take the hypothesis to predict more victim blaming among people who feel at risk. It predicts the opposite for observers who could see themselves in the position of causing the harm, and the mechanism runs through blame avoidance rather than through indifference. Burger's headline verdict is often quoted as support for the hypothesis without the sentence that follows it, where he shows the pooled effect falling to 0.09 when one study is removed. Walster's data are also read as showing that people rewrite what the careless person did. Her carelessness ratings did not shift. Only the moral standard shifted. The idea is close enough to the just-world hypothesis that Burger, following Chaikin and Darley, judged the two to spring from the same assumptions and doubted that a situation could be designed where they predict different things."
   ,
   "sources": [
     {
-      "text": "Walster, E. (1966). Assignment of responsibility for an accident. Journal of Personality and Social Psychology, 3(1), 73-79. Source for the design, the condition means, the F tests and the sex interaction. Read from a copy hosted at elainehatfield.com.",
+      "text": "Walster, E. (1966). Assignment of responsibility for an accident. Journal of Personality and Social Psychology, 3(1), 73-79. Source for the design, the condition means, the F tests and the sex interaction. Read in full on 21 September 2026 from a copy hosted at elainehatfield.com, and every figure above was checked against it.",
       "doi": "10.1037/h0022733",
       "url": "https://doi.org/10.1037/h0022733",
       "type": "primary"
     },
     {
-      "text": "Walster, E. (1967). 'Second guessing' important events. Human Relations, 20(3), 239-249. Walster's own follow-up, which did not find the severity effect. Not obtained; described here as Burger describes it.",
+      "text": "Walster, E. (1967). 'Second guessing' important events. Human Relations, 20(3), 239-249. Walster's own follow-up, whose first experiment found a significant reversal of the severity effect. Read in full on 21 September 2026 from a scan at elainehatfield.com, the site this entry already uses for her 1966 paper. The scan carries no text layer and was read by optical character recognition, so the two F values quoted from it were re-read at higher resolution to confirm the digits.",
       "doi": "10.1177/001872676702000302",
       "url": "https://doi.org/10.1177/001872676702000302",
       "type": "replication"
     },
     {
-      "text": "Shaver, K. G. (1970). Defensive attribution: Effects of severity and relevance on the responsibility assigned for an accident. Journal of Personality and Social Psychology, 14(2), 101-113. The paper the name comes from. Not obtained; described here as Burger describes it.",
+      "text": "Shaver, K. G. (1970). Defensive attribution: Effects of severity and relevance on the responsibility assigned for an accident. Journal of Personality and Social Psychology, 14(2), 101-113. The paper the name comes from. Not obtained on 21 September 2026. Ovid marks the full text as paid, and the publisher's record answered a bot challenge rather than a paywall. The abstract was read from Ovid; the rest is described here as Burger describes it.",
       "doi": "10.1037/h0028777",
       "url": "https://doi.org/10.1037/h0028777",
       "type": "primary"
     },
     {
-      "text": "Burger, J. M. (1981). Motivational biases in the attribution of responsibility for an accident: A meta-analysis of the defensive-attribution hypothesis. Psychological Bulletin, 90(3), 496-512. Source for every pooled figure quoted.",
+      "text": "Burger, J. M. (1981). Motivational biases in the attribution of responsibility for an accident: A meta-analysis of the defensive-attribution hypothesis. Psychological Bulletin, 90(3), 496-512. Source for every pooled figure quoted. Read in full on 21 September 2026 from an archived copy of the Santa Clara University PDF, since the live copy now returns a 404.",
       "doi": "10.1037/0033-2909.90.3.496",
       "url": "https://doi.org/10.1037/0033-2909.90.3.496",
       "type": "replication"
     },
     {
-      "text": "Phares, E. J., & Wilson, K. G. (1972). Responsibility attribution: Role of outcome severity, situational ambiguity, and internal-external control. Journal of Personality, 40(3), 392-406. The study whose removal takes Burger's average d from 0.27 to 0.09.",
+      "text": "Phares, E. J., & Wilson, K. G. (1972). Responsibility attribution: Role of outcome severity, situational ambiguity, and internal-external control. Journal of Personality, 40(3), 392-406. The study whose removal takes Burger's average d from 0.27 to 0.09. Not obtained; Wiley answered a Cloudflare challenge on 21 September 2026. Its result is quoted here from Burger.",
       "doi": "10.1111/j.1467-6494.1972.tb00069.x",
       "url": "https://doi.org/10.1111/j.1467-6494.1972.tb00069.x",
       "type": "primary"
     },
     {
-      "text": "Chaikin, A. L., & Darley, J. M. (1973). Victim or perpetrator?: Defensive attribution of responsibility and the need for order and justice. Journal of Personality and Social Psychology, 25(2), 268-275. Named as existing; its results are quoted here from Burger.",
+      "text": "Chaikin, A. L., & Darley, J. M. (1973). Victim or perpetrator?: Defensive attribution of responsibility and the need for order and justice. Journal of Personality and Social Psychology, 25(2), 268-275. Not obtained; the publisher's record answered a bot challenge on 21 September 2026. Its results are quoted here from Burger.",
       "doi": "10.1037/h0033948",
       "url": "https://doi.org/10.1037/h0033948",
       "type": "primary"
     },
     {
-      "text": "Robbennolt, J. K. (2000). Outcome severity and judgments of 'responsibility': A meta-analytic review. Journal of Applied Social Psychology, 30(12), 2575-2609. Abstract read; its estimates were not retrieved for this entry.",
+      "text": "Robbennolt, J. K. (2000). Outcome severity and judgments of 'responsibility': A meta-analytic review. Journal of Applied Social Psychology, 30(12), 2575-2609. Abstract read from the Crossref record on 21 September 2026; its estimates were not retrieved for this entry.",
       "doi": "10.1111/j.1559-1816.2000.tb02451.x",
       "url": "https://doi.org/10.1111/j.1559-1816.2000.tb02451.x",
       "type": "review"
     },
     {
-      "text": "Salminen, S. (1992). Defensive attribution hypothesis and serious occupational accidents. Psychological Reports, 70(3, Pt 2), 1195-1199. Abstract read for the design and the direction of the result.",
+      "text": "Salminen, S. (1992). Defensive attribution hypothesis and serious occupational accidents. Psychological Reports, 70(3, Pt 2), 1195-1199. Abstract read from the Crossref record on 21 September 2026, for the design and the direction of the result.",
       "doi": "10.2466/pr0.1992.70.3c.1195",
       "url": "https://doi.org/10.2466/pr0.1992.70.3c.1195",
       "type": "primary"
     },
     {
-      "text": "Pinciotti, C. M., & Orcutt, H. K. (2020). It won't happen to me: An examination of the effectiveness of defensive attribution in rape victim blaming. Violence Against Women, 26(10), 1059-1079. Abstract read for the sample and the pattern by sex.",
+      "text": "Pinciotti, C. M., & Orcutt, H. K. (2020). It won't happen to me: An examination of the effectiveness of defensive attribution in rape victim blaming. Violence Against Women, 26(10), 1059-1079. Abstract read from the Crossref record on 21 September 2026, for the sample and the pattern by sex.",
       "doi": "10.1177/1077801219853367",
       "url": "https://doi.org/10.1177/1077801219853367",
       "type": "primary"
     }
   ],
-  "checkedOn": "2026-08-10"
+  "checkedOn": "2026-09-21"
 }
