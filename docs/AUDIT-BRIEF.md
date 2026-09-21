@@ -133,7 +133,11 @@ Run all four gates from the repository root and make them pass:
 
 ## The report
 
-Three numbered sections.
+Write two files, then return a short summary. The files carry the detail; the
+summary is read by a session that must not spend its context on prose it is
+about to read again in another form.
+
+**File one, `/tmp/audit/<no>.md`**, the full account, in three sections.
 
 1. The verdict and the numbers: what was read, what held, what changed.
 2. What could not be obtained, and what was left off rather than guessed.
@@ -141,3 +145,26 @@ Three numbered sections.
    brief was wrong. Briefs in this programme have been wrong repeatedly and
    the agent has been right. Say so plainly; that correction is worth more
    than agreement.
+
+**File two, `/tmp/cm/<no>.txt`**, the commit message, ready to use unedited.
+
+- First line: `<Entry name>, no. <no>, audited, and <the single sharpest
+  finding>`. If the state changed, say so in that line instead: `..., state
+  changed from X to Y, and <finding>`. Under about eighty characters after
+  the comma where you can manage it.
+- Then a blank line, then short paragraphs in the house voice: British
+  spellings, no em dashes, sentences around twenty words, plain words. Lead
+  with the worst fault and say what the page claimed and what the document
+  says. Name faults concretely without naming figures a reader cannot check.
+- No bullet lists, no headings, no markdown.
+- End with exactly these two lines:
+
+```
+Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01RgDhJAXaSAcfzXrh5YZEND
+```
+
+**Then return at most 150 words**, and nothing else: whether all four gates
+pass, whether the state changed and to what, the one sharpest finding in a
+sentence, anything the reviewing session must decide or act on beyond this
+entry, and any rule of the brief you broke. Do not restate the files.
