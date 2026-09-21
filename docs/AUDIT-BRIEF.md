@@ -117,7 +117,9 @@ These have repeatedly served the same document when the indexed URL did not.
 
 - Repository REST and bitstream endpoints, which often serve a file whose
   rendered page or handle is guarded. One Anubis challenge was bypassed
-  simply by asking the REST route instead.
+  simply by asking the REST route instead. A newer DSpace handle answers
+  200 with an empty application shell and no content, which reads exactly
+  like a present file being gone; ask its REST bitstream route instead.
 
 Internet Archive item downloads work, and have carried whole journal issues
 and open uploads of books that publishers call closed. The Wayback Machine at
@@ -233,6 +235,10 @@ Extract the text to a file, then search it for the claim you came to check.
 `pdftotext file.pdf - | grep -n -C3 "1,469"` answers whether a figure is in a
 paper, and what it is a figure of, for a fraction of reading the paper. Do the
 same for a sample size, a test statistic, a quoted phrase or an author's name.
+
+A scan with no text layer wants optical character recognition run page by
+page, not reading at length and not many pages at once. Parallel passes have
+died on timeouts and returned nothing.
 
 Read a document at length only when searching cannot settle it: a scan with no
 text layer, a disputed passage whose meaning depends on its surroundings, a
