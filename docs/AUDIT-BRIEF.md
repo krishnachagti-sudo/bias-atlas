@@ -124,6 +124,11 @@ session rather than as evidence about the document.
 
 A block is per host and per day. Retry rather than inheriting a note.
 
+Some hosts answer the first request with a meta-refresh holding page and
+serve the file only to a second request sharing a cookie jar. A single
+`curl -L` there looks exactly like a block. Retry with the jar before
+concluding.
+
 A block can also be an artefact of your own request. One host served a
 proof-of-work challenge only to browser-like user agents, and a plain curl
 user agent got the PDF at once. A note saying that host is unobtainable
