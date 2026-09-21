@@ -271,6 +271,22 @@
     });
   }
 
+  // ---- reading progress bar ------------------------------------------------
+  // Scales a fixed 3px bar across the top to the scroll fraction. Like the rail
+  // highlight this is orientation rather than ornament, so it is not gated behind
+  // the motion class; its own transition is short enough to read as direct.
+  function wireProgress() {
+    var bar = document.getElementById('progress');
+    if (!bar) return;
+    function upd() {
+      var h = document.documentElement, m = h.scrollHeight - h.clientHeight;
+      bar.style.transform = 'scaleX(' + (m > 0 ? Math.min(1, h.scrollTop / m) : 0) + ')';
+    }
+    addEventListener('scroll', upd, { passive: true });
+    addEventListener('resize', upd);
+    upd();
+  }
+
   // ---- entry page contents rail: scroll-spy + track fill -------------------
   // The rail is drawn by CSS as a full-height track with an accent fill (--fill)
   // and an active link (.on). Nothing ever set either, so every entry page shipped
@@ -335,7 +351,7 @@
     apply();
   }
 
-  function wire() { wireTheme(); wireNav(); wireMotion(); wireCoinForm(); wireToc(); }
+  function wire() { wireTheme(); wireNav(); wireMotion(); wireCoinForm(); wireToc(); wireProgress(); }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', wire);
   else wire();
 })();

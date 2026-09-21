@@ -267,6 +267,20 @@ export function entryPage(entry, { base = '/', origin = '', count = 0, entries =
   const from = at === -1 ? Math.max(0, pool.length - 5) : Math.max(0, at - 2);
   const siblings = pool.slice(from, from + 5);
 
+  // Previous and next by entry number across the whole corpus, so the foot of a
+  // page is a way onward rather than a dead end. The ends of the index simply get
+  // one side; the corpus is not wrapped, because № 544 is not next to № 1.
+  const order = entries.slice().sort((a, b) => a.no - b.no);
+  const here = order.findIndex((o) => o.slug === entry.slug);
+  const prev = here > 0 ? order[here - 1] : null;
+  const next = here > -1 && here < order.length - 1 ? order[here + 1] : null;
+  const sides = [];
+  if (prev) sides.push(`        <a href="${base}${entryPath(prev)}"><span class="lab">← Prev · № ${escapeHtml(String(prev.no).padStart(3, '0'))}</span><span class="t">${escapeHtml(prev.name)}</span></a>`);
+  if (next) sides.push(`        <a class="n2" href="${base}${entryPath(next)}"><span class="lab">Next · № ${escapeHtml(String(next.no).padStart(3, '0'))} →</span><span class="t">${escapeHtml(next.name)}</span></a>`);
+  const prevnext = sides.length
+    ? `        <nav class="prevnext" aria-label="Previous and next entry">\n${sides.join('\n')}\n        </nav>\n`
+    : '';
+
   // The body, as blocks. One list drives both the table of contents and the
   // sections, so a heading cannot exist without a link to it or the reverse.
   const blocks = [
@@ -306,7 +320,11 @@ ${sources.map((s) => {
 
   const description = `${entry.statement} ${r.headline}`;
 
-  const section = `<section class="entry">
+  // The reading-progress bar. `.progress` has always been in the stylesheet and
+  // was never rendered, so entry pages showed no reading position at all. It is
+  // decoration on a short page and orientation on a long one, and these are long.
+  const section = `  <div class="progress" id="progress" aria-hidden="true"></div>
+<section class="entry">
   <div class="wrap">
     <nav class="crumb" aria-label="Breadcrumb"><a href="${base}">Home</a><span class="sep">/</span><a href="${base}browse/">Browse</a><span class="sep">/</span>${escapeHtml(entry.name)}</nav>
     <div class="entry-meta" style="margin-top:18px">
@@ -333,7 +351,7 @@ ${b.body}        </div>`).join('\n')}
         <div class="sk-share">
 ${shareRow({ url: `${origin}${base}${path}`, title: entry.name, text: entry.statement, label: 'Share this entry' })}        </div>
 
-${faq.html}      </div>
+${faq.html}${prevnext}      </div>
 ${asideRail(entry, { base, siblings })}    </div>
   </div>
 `;
