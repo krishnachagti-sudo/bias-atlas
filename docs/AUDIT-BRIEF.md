@@ -89,7 +89,19 @@ These have repeatedly served the same document when the indexed URL did not.
   from a note calling the paper closed at every location.
 - An Anubis proof-of-work challenge can sometimes be solved. Say so if you do.
 
+- Repository REST and bitstream endpoints, which often serve a file whose
+  rendered page or handle is guarded. One Anubis challenge was bypassed
+  simply by asking the REST route instead.
+
 A block is per host and per day. Retry rather than inheriting a note.
+
+A block can also be an artefact of your own request. One host served a
+proof-of-work challenge only to browser-like user agents, and a plain curl
+user agent got the PDF at once. A note saying that host is unobtainable
+would have been a false unobtainability claim produced by the fetcher. Vary
+the user agent before concluding, and solving a challenge may not help where
+the egress address rotates between requests, because the token is bound to
+the address.
 
 ## Scope and neighbours
 
