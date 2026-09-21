@@ -2,17 +2,22 @@
   "no": 114,
   "slug": "social-desirability-bias",
   "name": "Social desirability bias",
-  "aliases": ["Socially desirable responding", "Social desirability response bias", "Faking good", "Social desirability response set"],
+  "aliases": [
+    "Socially desirable responding",
+    "Social desirability response bias",
+    "Faking good",
+    "Social desirability response set"
+  ],
   "category": "social",
   "statement": "Asked to report their own behaviour, people are said to shade the answer towards what looks respectable, overstating acts like voting and hiding stigmatised ones.",
-  "meaning": "This is a property of the instrument rather than of the mind behind it. A respondent who has understood the question and remembers the answer can still report something else, because a question about drug use or turnout is also a question about how the respondent wants to be seen. Two different things travel under the one name. The first is the response bias itself, the gap between what a person did and what a person reports. The second is a supposed trait, scored by scales such as the Marlowe-Crowne, on which some people come out higher than others. Paulhus divided the second into impression management, a deliberate presentation to an audience, and self-deception, where the respondent believes the flattering answer. Almost all the usable evidence concerns the first.",
+  "meaning": "This is a property of the instrument rather than of the mind behind it. A respondent who has understood the question and remembers the answer can still report something else, because a question about drug use or turnout is also a question about how the respondent wants to be seen. Two different things travel under the one name. The first is the response bias itself, the gap between what a person did and what a person reports. The second is a supposed trait, scored by scales such as the Marlowe-Crowne, on which some people come out higher than others. Paulhus divided the second into impression management, where the respondent consciously dissembles to an audience, and self-deception, where the respondent actually believes the flattering answer. Almost all the usable evidence concerns the first. Acquiescence and the other response styles are a separate literature with its own experiments, and entry 176 covers them.",
   "origin": {
     "year": 1960,
     "who": "Douglas P. Crowne and David Marlowe",
     "where": "Journal of Consulting Psychology",
-    "note": "Their paper is \"A new scale of social desirability independent of psychopathology\", and the title states its purpose: earlier measures, including Allen Edwards's 1957 social desirability scale, drew their items from clinical inventories, so a high score could mean a healthy respondent rather than a flattering one. The 1960 article is paywalled and was not obtained. Vésteinsdóttir and colleagues describe the resulting scale as 33 true-false items covering behaviours \"culturally sanctioned and approved of but which are improbable of occurrence\", which they quote from page 350."
+    "note": "Their paper is \"A new scale of social desirability independent of psychopathology\", and the title states its purpose. The article was read in full from the Internet Archive's scan of the August 1960 issue. Earlier scales took their items from clinical inventories: Allen Edwards drew his 39-item scale from the MMPI validity scales and the Manifest Anxiety Scale. Crowne and Marlowe object that a student who denies fitful sleep may simply be well rather than flattering himself. Their own items come from behaviours \"culturally sanctioned and approved but which are improbable of occurrence\", on page 350. An item analysis on 76 students cut 47 candidates to the 33 that survive, 18 keyed true and 15 false."
   },
-  "evidence": "The evidence that carries weight compares answers with records. Ansolabehere and Hersh matched 26,181 respondents in the 2008 Cooperative Congressional Election Study against commercial voter files across fifty states. Reported turnout was 84.3% and validated turnout 68.5%. Among respondents validated as non-voters, 52.0% said they had voted, against 25.3% to 27.7% in the validated National Election Studies of 1980, 1984 and 1988. Error in the other direction was almost absent, with 99.1% of validated voters reporting a vote. Experiments agree. Holbrook and Krosnick asked a national telephone sample of 898 American adults about the 2000 presidential election either directly or through an item count list, a design that lets a respondent report a vote without naming it. Direct questioning yielded 72.0% turnout and the item count technique 52.4%, a one-tailed difference at z = 1.66. Three parallel internet surveys showed no such gap. Administration mode moves disclosure the same way. Gnambs and Kaspar pooled 460 effect sizes from 48 samples and found more admission of sensitive behaviour on computer than on paper. The corrected odds ratio was 1.19, with a 95% interval on the log odds ratio of 0.10 to 0.25, and it reached 1.29 for sexual behaviour.",
+  "evidence": "The evidence that carries weight compares answers with records. Ansolabehere and Hersh matched 26,181 respondents in the 2008 Cooperative Congressional Election Study against commercial voter files across fifty states. Reported turnout was 84.3% and validated turnout 68.5%. Among respondents validated as non-voters, 52.0% said they had voted, against 25.3% in 1988, 27.7% in 1984 and 27.4% in 1980 in the validated National Election Studies. Error in the other direction was almost absent, with 99.1% of validated voters reporting a vote. Experiments agree. Holbrook and Krosnick asked a national telephone sample of 898 American adults about the 2000 presidential election either directly or through an item count list, a design that lets a respondent report a vote without naming it. Direct questioning yielded 72.0% turnout and the item count technique 52.4%, a one-tailed difference at z = 1.66. Three parallel internet surveys showed no such gap. Administration mode moves disclosure the same way. Gnambs and Kaspar pooled 460 effect sizes from 48 samples and found more admission of sensitive behaviour on computer than on paper. The corrected odds ratio was 1.19, with a 95% interval on the log odds ratio of 0.10 to 0.25, and it reached 1.29 for sexual behaviour.",
   "replication": {
     "state": "replicated",
     "headline": "Across 124 samples, shielding the answer raises reported rates of sensitive behaviour by 8.5 percentage points, and yet the correction cannot be relied on in any single study.",
@@ -20,87 +25,89 @@
     "study": {
       "cite": "Ehler, I., Wolter, F., & Junkermann, J. (2021). Sensitive questions in surveys: A comprehensive meta-analysis of experimental survey studies on the performance of the item count technique. Public Opinion Quarterly, 85(1), 6-27.",
       "doi": "10.1093/poq/nfab002",
-      "year": 2021,
-      "sites": 124
+      "year": 2021
     },
     "replicated": {
       "es": 0.085,
       "esType": "md",
       "unit": "proportion, item count technique minus direct questioning",
-      "ci": [0.065, 0.105],
+      "ci": [
+        0.065,
+        0.105
+      ],
       "ciLevel": 95,
       "weighting": "two-level robust variance estimation"
     }
   },
-  "limits": "Whether records beat self-reports is itself contested. Berent, Krosnick and Lupia report that matching methods badly underestimate how many Americans were registered, which pushes validated turnout down, and that among respondents who can be matched to a record the accuracy of self-reports is high. Their conclusion is that the gain from validation may be an artefact of the matching. The remedies are also weaker than their reputation. Holbrook and Krosnick found the randomised response technique produced turnout of 111.6% in their telephone study, an impossible figure, and non-response to the randomised items reached 15.8% against 0.6% for the direct question. Coverage is narrow: the record-linked work is almost all American turnout, and the mode meta-analysis draws 343 of its effects from the United States and 300 from substance use. Tourangeau and Yan's review was read only in abstract, so no figure from it appears here; its stated conclusion is that misreporting on sensitive topics is common and largely situational, which is the framing this entry follows. The item count percentages above come from the authors' posted manuscript rather than the Public Opinion Quarterly version.",
-  "misreadings": "The first error is filing this with the judgement biases. Nothing here says people reason badly; it says a self-report is a social act with a listener, and the same person gives a different answer to a screen than to an interviewer. The second is treating a score on a social desirability scale as a correction factor. Lanz, Thielmann and Gerpott meta-analysed 41 samples and 8,980 participants and found the correlation between such scores and prosocial behaviour in economic games was 0.04, with a 95% interval of 0.01 to 0.07. If the scales measured a bias the correlation should be negative, and if they measured a virtuous trait it should be clearly positive, so the authors advise dropping them. Paulhus had already argued that only impression management should be controlled, since scales loading on self-deception barely moved when responses were made public. The third error is the inference that survey answers are worthless. In the same validated sample where half of non-voters claimed a vote, reports of race matched the record for 94% to 95% of respondents and party registration for 93% to 95%. Misreporting attaches to the items that carry credit, not to the questionnaire.",
+  "limits": "Whether records beat self-reports is itself contested. Berent, Krosnick and Lupia report that matching methods badly underestimate how many Americans were registered, which pushes validated turnout down, and that among respondents who can be matched to a record the accuracy of self-reports is high. They call the apparent gain from validation an illusion made of two biases: matching failures that depress registration, and survey respondents voting more often than the people who did not answer. The remedies are also weaker than their reputation. Holbrook and Krosnick found the randomised response technique produced turnout of 111.6% in their telephone study, an impossible figure, and non-response to the randomised items reached 15.8% against 0.6% for the direct question. Coverage is narrow: the record-linked work is almost all American turnout, and the mode meta-analysis draws 343 of its effects from the United States and 300 from substance use. Tourangeau and Yan's review was read only in abstract, so no figure from it appears here; its stated conclusion is that misreporting on sensitive topics is common and largely situational, which is the framing this entry follows.",
+  "misreadings": "The first error is filing this with the judgement biases. Nothing here says people reason badly; it says a self-report is a social act with a listener, and the same person gives a different answer to a screen than to an interviewer. The second is treating a score on a social desirability scale as a correction factor. Lanz, Thielmann and Gerpott meta-analysed 41 samples and 8,980 participants and found the correlation between such scores and prosocial behaviour in economic games was 0.04, with a 95% interval of 0.01 to 0.07. If the scales measured a bias the correlation should be negative, and if they measured a virtuous trait it should be clearly positive, so the authors advise dropping them. Paulhus had already argued that only impression management should be controlled, since the scales loading on self-deception showed no significant change when responses were made public. The third error is the inference that survey answers are worthless. In the validated sample where half of non-voters claimed a vote, other reports held up. Race matched the record for 94% to 95% of respondents in the southern states that register it, on 4,540 cases, and party registration for 93% to 95% in the states that hold it, on 11,292. Misreporting attaches to the items that carry credit, not to the questionnaire.",
   "sources": [
     {
-      "text": "Crowne, D. P., & Marlowe, D. (1960). A new scale of social desirability independent of psychopathology. Journal of Consulting Psychology, 24(4), 349-354.",
+      "text": "Crowne, D. P., & Marlowe, D. (1960). A new scale of social desirability independent of psychopathology. Journal of Consulting Psychology, 24(4), 349-354. Read in full from the Internet Archive's scan of the August 1960 issue; the quotation and the item counts come from pages 349 to 351. An earlier note here called it paywalled and unobtained.",
       "doi": "10.1037/h0047358",
       "url": "https://doi.org/10.1037/h0047358",
       "type": "primary"
     },
     {
-      "text": "Vésteinsdóttir, V., Reips, U.-D., Joinson, A., & Thorsdottir, F. (2017). An item level evaluation of the Marlowe-Crowne Social Desirability Scale using item response theory on Icelandic Internet panel data and cognitive interviews. Personality and Individual Differences, 107, 164-173. Read for its description of the 1960 scale, which was not obtainable.",
+      "text": "Vésteinsdóttir, V., Reips, U.-D., Joinson, A., & Thorsdottir, F. (2017). An item level evaluation of the Marlowe-Crowne Social Desirability Scale using item response theory on Icelandic Internet panel data and cognitive interviews. Personality and Individual Differences, 107, 164-173. Full text read from the Konstanz repository. It quotes the 1960 definition with an added \"of\", and this entry follows the original wording instead.",
       "doi": "10.1016/j.paid.2016.11.023",
       "url": "https://doi.org/10.1016/j.paid.2016.11.023",
       "type": "secondary"
     },
     {
-      "text": "Paulhus, D. L. (1984). Two-component models of socially desirable responding. Journal of Personality and Social Psychology, 46(3), 598-609.",
+      "text": "Paulhus, D. L. (1984). Two-component models of socially desirable responding. Journal of Personality and Social Psychology, 46(3), 598-609. Read in full from the author's own page at the University of British Columbia. The scan carries no text layer, so it was read by optical character recognition.",
       "doi": "10.1037/0022-3514.46.3.598",
       "url": "https://doi.org/10.1037/0022-3514.46.3.598",
       "type": "primary"
     },
     {
-      "text": "Tourangeau, R., & Yan, T. (2007). Sensitive questions in surveys. Psychological Bulletin, 133(5), 859-883. Abstract only; the full text was not obtained.",
+      "text": "Tourangeau, R., & Yan, T. (2007). Sensitive questions in surveys. Psychological Bulletin, 133(5), 859-883. Abstract read in full at Ovid on 21 September 2026. The full text was not obtained: Unpaywall, OpenAlex, Crossref and CORE list no open file, the copy Semantic Scholar names at learnlab.org now answers 404, and every Wayback Machine replay attempt failed on this session's egress.",
       "doi": "10.1037/0033-2909.133.5.859",
       "url": "https://doi.org/10.1037/0033-2909.133.5.859",
       "type": "review"
     },
     {
-      "text": "Gnambs, T., & Kaspar, K. (2015). Disclosure of sensitive behaviors across self-administered survey modes: A meta-analysis. Behavior Research Methods, 47(4), 1237-1259.",
+      "text": "Gnambs, T., & Kaspar, K. (2015). Disclosure of sensitive behaviors across self-administered survey modes: A meta-analysis. Behavior Research Methods, 47(4), 1237-1259. Full text read from the publisher's PDF; the odds ratios, intervals and effect counts come from its Table 5.",
       "doi": "10.3758/s13428-014-0533-4",
       "url": "https://doi.org/10.3758/s13428-014-0533-4",
       "type": "meta-analysis"
     },
     {
-      "text": "Holbrook, A. L., & Krosnick, J. A. (2010). Social desirability bias in voter turnout reports: Tests using the item count technique. Public Opinion Quarterly, 74(1), 37-67. Figures read from the authors' posted manuscript at Stanford.",
+      "text": "Holbrook, A. L., & Krosnick, J. A. (2010). Social desirability bias in voter turnout reports: Tests using the item count technique. Public Opinion Quarterly, 74(1), 37-67. Both versions read. The Public Opinion Quarterly article, reached from the authors' own publications page, carries the same sample size, turnout percentages and test statistic as the posted manuscript linked here.",
       "doi": "10.1093/poq/nfp065",
       "url": "https://web.stanford.edu/dept/communication/faculty/krosnick/Turnout%20Overreporting%20-%20ICT%20Only%20-%20Final.pdf",
       "type": "primary"
     },
     {
-      "text": "Holbrook, A. L., & Krosnick, J. A. (2010). Measuring voter turnout by using the randomized response technique: Evidence calling into question the method's validity. Public Opinion Quarterly, 74(2), 328-343.",
+      "text": "Holbrook, A. L., & Krosnick, J. A. (2010). Measuring voter turnout by using the randomized response technique: Evidence calling into question the method's validity. Public Opinion Quarterly, 74(2), 328-343. Published article read in full from Krosnick's Stanford page; the turnout and non-response percentages come from its Study 1, a telephone sample of 966 adults.",
       "doi": "10.1093/poq/nfq012",
-      "url": "https://doi.org/10.1093/poq/nfq012",
+      "url": "https://web.stanford.edu/dept/communication/faculty/krosnick/docs/2010/2010_poq_holbrook.pdf",
       "type": "primary"
     },
     {
-      "text": "Ansolabehere, S., & Hersh, E. (2012). Validation: What big data reveal about survey misreporting and the real electorate. Political Analysis, 20(4), 437-459.",
+      "text": "Ansolabehere, S., & Hersh, E. (2012). Validation: What big data reveal about survey misreporting and the real electorate. Political Analysis, 20(4), 437-459. Full text read from the publisher's PDF; the turnout percentages come from its Table 1 and the party and race percentages from its Table 5.",
       "doi": "10.1093/pan/mps023",
       "url": "https://doi.org/10.1093/pan/mps023",
       "type": "primary"
     },
     {
-      "text": "Berent, M. K., Krosnick, J. A., & Lupia, A. (2016). Measuring voter registration and turnout in surveys: Do official government records yield more accurate assessments? Public Opinion Quarterly, 80(3), 597-621. Abstract only.",
+      "text": "Berent, M. K., Krosnick, J. A., & Lupia, A. (2016). Measuring voter registration and turnout in surveys: Do official government records yield more accurate assessments? Public Opinion Quarterly, 80(3), 597-621. Full text read from the copy on Krosnick's own publications page. An earlier note here said abstract only, which was wrong.",
       "doi": "10.1093/poq/nfw021",
       "url": "https://doi.org/10.1093/poq/nfw021",
       "type": "critique"
     },
     {
-      "text": "Ehler, I., Wolter, F., & Junkermann, J. (2021). Sensitive questions in surveys: A comprehensive meta-analysis of experimental survey studies on the performance of the item count technique. Public Opinion Quarterly, 85(1), 6-27.",
+      "text": "Ehler, I., Wolter, F., & Junkermann, J. (2021). Sensitive questions in surveys: A comprehensive meta-analysis of experimental survey studies on the performance of the item count technique. Public Opinion Quarterly, 85(1), 6-27. Full text read from the Konstanz repository copy; the pooled difference, interval, I-squared and prediction interval come from its Table 1.",
       "doi": "10.1093/poq/nfab002",
       "url": "https://doi.org/10.1093/poq/nfab002",
       "type": "meta-analysis"
     },
     {
-      "text": "Lanz, L., Thielmann, I., & Gerpott, F. H. (2022). Are social desirability scales desirable? A meta-analytic test of the validity of social desirability scales in the context of prosocial behavior. Journal of Personality, 90(2), 203-221.",
+      "text": "Lanz, L., Thielmann, I., & Gerpott, F. H. (2022). Are social desirability scales desirable? A meta-analytic test of the validity of social desirability scales in the context of prosocial behavior. Journal of Personality, 90(2), 203-221. Full text read from the Max Planck Society repository, whose proof-of-work challenge was solved to reach the file.",
       "doi": "10.1111/jopy.12662",
       "url": "https://doi.org/10.1111/jopy.12662",
       "type": "meta-analysis"
     }
   ],
-  "checkedOn": "2026-08-09"
+  "checkedOn": "2026-09-21"
 }
