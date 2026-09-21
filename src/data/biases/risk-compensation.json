@@ -2,7 +2,11 @@
   "no": 115,
   "slug": "risk-compensation",
   "name": "Risk compensation",
-  "aliases": ["Peltzman effect", "Risk homeostasis", "Offsetting behaviour"],
+  "aliases": [
+    "Peltzman effect",
+    "Risk homeostasis",
+    "Offsetting behaviour"
+  ],
   "category": "decision",
   "statement": "Making an activity safer can lead people to behave more riskily, so part or all of the intended safety gain is handed back through changed behaviour.",
   "meaning": "The idea comes in two strengths, and they are routinely treated as one. The weak version says a safety measure changes behaviour to some degree, so the benefit measured in the field is smaller than the benefit measured on a test rig. Almost nobody disputes that this can happen. The strong version says the offset is complete: people hold a fixed target level of risk, and any measure that lowers risk is met by behaviour that restores it. Gerald Wilde called the strong version risk homeostasis and wrote in 1982 that the accident rate is ultimately dependent on one factor only, the target level of risk in the population concerned. The strong version has a policy consequence the weak one does not, because it implies that engineering and regulation cannot work at all, and only changing what people want can. Which version is being defended is the first thing to establish in any argument about this.",
@@ -10,13 +14,13 @@
     "year": 1975,
     "who": "Sam Peltzman",
     "where": "Journal of Political Economy",
-    "note": "Peltzman's paper is about American car safety regulation and never uses the phrase now attached to it. The names came later from other people: the Peltzman effect for his result, and risk homeostasis from Gerald Wilde's 1982 paper in Risk Analysis, which turned it into a general theory of behaviour."
+    "note": "Peltzman's paper is about American car safety regulation, and the names attached to it came later from other people. The Peltzman effect stands for his result. Risk homeostasis comes from Gerald Wilde's 1982 paper in Risk Analysis, which made it a general theory of behaviour."
   },
-  "evidence": "Peltzman's abstract sets out the claim in four sentences. Engineering studies implied annual highway deaths would be 20 per cent higher without the mandated safety devices. That literature ignored non-regulatory demand for safety and drivers' response to the devices. His analysis of the fatality rate found these offsets virtually complete, so regulation had not reduced highway deaths. Time-series data, though not cross-section data, implied some saving of car occupants' lives at the cost of more pedestrian deaths and more non-fatal crashes. The last sentence is the mechanism: drivers protected inside the car impose the risk on people outside it.",
+  "evidence": "Only Peltzman's abstract could be read for this audit, the article being closed at every location tried. It sets out the claim in four sentences. Technological studies imply annual highway deaths would be 20 per cent greater without the mandated safety devices. That literature ignores non-regulatory demand for safety and drivers' response to the devices. The article states that these offsets are virtually complete, so regulation has not decreased highway deaths. Time-series data, though not cross-section data, imply some saving of car occupants' lives at the expense of more pedestrian deaths and more non-fatal accidents. Peltzman calls that pattern consistent with optimal driver response to regulation, which is the mechanism: drivers protected inside the car shift risk to people outside it.",
   "replication": {
     "state": "mixed",
     "headline": "Tested properly, the offset is usually small or absent, but it is not absent everywhere, and the domains have to be judged separately.",
-    "detail": "Car safety regulation. Leon Robertson answered Peltzman in the Journal of Economic Issues in 1977, and Barry Pless's 2016 review reports that this reanalysis of Peltzman's own data found numerous errors. Robertson then used 236,000 vehicles in fatal American crashes from 1975 to 1978 and found the federal standards cut occupant deaths per 100 million miles travelled and also cut fatal collisions with pedestrians, motorcyclists and cyclists, which is the opposite of Peltzman's displacement claim. He put the total at about 37,000 fewer deaths over those four years. Seat belts. Alma Cohen and Liran Einav built a panel of all 50 states and the District of Columbia for 1983 to 1997 and instrumented belt usage with the laws themselves. A one-point rise in usage saved 136 lives, and the effect on non-occupant deaths, the group that can only be harmed by careless driving, was a coefficient of -0.042 with a standard error of 0.121 on 556 observations. They concluded there is no strong support for the Peltzman effect. Jinpeng Lv and colleagues went back to the same 1983 to 1997 panel in 2015 and did find Peltzman effects on non-occupant fatalities, mainly where primary enforcement arrived directly, and found the effects faded over time. Bicycle helmets. Mohsen Esmaeilikia and colleagues screened 145 articles and included 23. Eighteen found no evidence that helmet use went with riskier behaviour, three were mixed, and the two supportive studies came from a single laboratory. Ross Phillips, Aslak Fyhri and Fridulv Sagberg had 35 cyclists ride 0.4 km downhill with and without a helmet: routine helmet users went slower and reported more risk when the helmet was removed, while cyclists unused to helmets showed no change on any measure. Ski helmets. Michael Scott and colleagues observed and interviewed 1,779 adults at 34 resorts and found helmet wearers reported slower speeds (OR 0.64) and less self-challenge (OR 0.76) than non-wearers, the reverse of compensation. HIV prophylaxis. The PROUD trial randomised 544 men in England to immediate or deferred pre-exposure prophylaxis and detected no difference between the groups in sexually transmitted infections, including rectal gonorrhoea and chlamydia, despite a suggestion of risk compensation among some recipients. Michael Traeger's meta-analysis of 16 observational studies and one open-label trial found rectal chlamydia raised (OR 1.59, 95% CI 1.19 to 2.13) and any STI diagnosis at OR 1.24 (95% CI 0.99 to 1.54), with most studies reporting more condomless sex. Motor racing. Russell Sobel and Todd Nesbit examined NASCAR, where the outcome data are individual rather than aggregate, and report that their results strongly support offsetting behaviour.",
+    "detail": "Car safety regulation. Leon Robertson answered Peltzman in the Journal of Economic Issues in 1977, and Barry Pless's 2016 commentary reports that this reanalysis of Peltzman's own data found numerous errors. Robertson then used detailed data on 236,000 vehicles in fatal American crashes from 1975 to 1978. He found the federal standards associated with substantial reductions in car occupant deaths per 100 million vehicle miles travelled, and some reduction in fatal collisions with pedestrians, motorcyclists and cyclists, which is the opposite of Peltzman's displacement claim. He put the total at some 37,000 fewer deaths over those four years. Seat belts. Alma Cohen and Liran Einav built a panel of all 50 states and the District of Columbia for 1983 to 1997 and instrumented belt usage with the laws themselves. A one-point rise in usage saved 136 lives a year, and the effect on non-occupant deaths, the group that can only be harmed by careless driving, was a coefficient of -0.042 with a standard error of 0.121 on 556 observations. They concluded there is no strong support for the Peltzman effect. Jinpeng Lv and colleagues went back to the same panel in 2015, but that paper could not be obtained for this audit, so nothing is reported from it here. Bicycle helmets. Mohsen Esmaeilikia and colleagues screened 145 records and included 23 studies. Eighteen found no supportive evidence that helmet use went with riskier behaviour, three were mixed, and the two supportive studies were Walker's 2007 overtaking study and Gamble and Walker's 2016 laboratory task, both from one laboratory. Ross Phillips, Aslak Fyhri and Fridulv Sagberg had 35 cyclists ride 0.4 km downhill with and without a helmet. Routine helmet users went slower and reported more risk when the helmet was removed, while cyclists unused to helmets showed no change on any measure. Ski helmets. Michael Scott and colleagues observed and interviewed 1,779 adults at 34 resorts and found helmet wearers reported slower speeds (OR 0.64) and less self-challenge (OR 0.76) than non-wearers, the reverse of compensation. HIV prophylaxis. The PROUD trial randomised 544 men at 13 clinics in England to immediate or deferred pre-exposure prophylaxis. It detected no difference between the groups in sexually transmitted infections, including rectal gonorrhoea and chlamydia, despite a suggestion of risk compensation among some recipients. Michael Traeger's meta-analysis of 16 observational studies and one open-label trial found rectal chlamydia raised (OR 1.59, 95% CI 1.19 to 2.13) and any STI diagnosis at OR 1.24 (95% CI 0.99 to 1.54), with most studies showing more condomless sex. Motor racing. Russell Sobel and Todd Nesbit examined NASCAR, where the outcome data are individual rather than aggregate, and report that their results strongly support offsetting behaviour.",
     "study": {
       "cite": "Cohen, A., & Einav, L. (2003). The effects of mandatory seat belt laws on driving behavior and traffic fatalities. The Review of Economics and Statistics, 85(4), 828-843.",
       "doi": "10.1162/003465303772815754",
@@ -28,118 +32,117 @@
       "esType": "beta"
     }
   },
-  "limits": "No systematic review of risk compensation across domains was located. Searches of PubMed, Crossref, OpenAlex and the open web turned up Esmaeilikia's 2019 review, which covers cycling only, and Barry Pless's 2016 piece in Safety, which states in its own text that it makes no pretence of being systematic. So the domain-by-domain picture above is assembled here rather than read off a single source, and the domains are not weighted against each other. The best-tested cases are also the ones with the most political attention, which is not a random sample. Cohen and Einav's null on non-occupant deaths and Lv's positive finding come from the same panel of years and states, so the disagreement is about specification rather than data. The PROUD trial ran for a year in one country, and STI screening intensity rises when people enter a prophylaxis programme, which inflates measured infection rates independently of behaviour. Wilde's strong version is close to untestable as stated, because any measured offset short of complete can be attributed to the target level of risk having shifted.",
-  "misreadings": "Ian Walker's 2007 study, in which drivers passed closer to a helmeted cyclist, is not a risk compensation finding. It measures the behaviour of other people towards someone wearing safety equipment, not the wearer's own behaviour, and Walker attributed it to drivers judging rider competence from appearance. Its history is also usually told backwards. Jake Olivier and Scott Walter reanalysed Walker's 2,355 passing events in 2013, split them at one metre, and found helmet wearing unrelated to close passing (adjusted OR 1.13, 95% CI 0.76 to 1.68, p = 0.54), while their own continuous model still gave a 5.8 cm reduction. Walker and Dorothy Robinson replied in 2019 that moving the one-metre cut-off slightly reverses the reanalysis, and their fresh analysis found the whole distribution shifted just over a fifth of a standard deviation closer. Walker was not an author of the reanalysis, and the reanalysis did not settle the question. The other frequent error is treating the Peltzman effect as established because it is famous. Peltzman claimed a complete offset in one country's road fatality statistics in 1975, and the strongest later support comes from stock car racing rather than public roads. Laboratory demonstrations do not stand in for the field either: Tim Gamble and Walker's 2016 finding that an unmentioned helmet raised risk taking on computer tasks drew a published comment in the same journal titled \"Bicycle Helmets and the Experimenter Effect\"."
-  ,
+  "limits": "No systematic review of risk compensation across domains was located. PubMed and Crossref were searched on 21 September 2026, and OpenAlex earlier the same day. The reviews that exist are domain-specific: bicycle helmets, HPV vaccination, male circumcision and pre-exposure prophylaxis. Esmaeilikia's 2019 review covers cycling only, and Barry Pless's 2016 piece in Safety states in its own text that it makes no pretence of being comprehensive or systematic. So the domain-by-domain picture above is assembled here rather than read off a single source, and the domains are not weighted against each other. The best-tested cases are also the ones with the most political attention, which is not a random sample. The PROUD trial ran for a year in one country, and screening intensity rises when people enter a prophylaxis programme, which inflates measured infection rates independently of behaviour. Wilde's strong version is close to untestable as stated, because any measured offset short of complete can be attributed to the target level of risk having shifted.",
+  "misreadings": "Ian Walker's 2007 study, in which drivers passed closer to a helmeted cyclist, is not a risk compensation finding. It measures the behaviour of other people towards someone wearing safety equipment, not the wearer's own behaviour. Walker put it down to drivers reading a rider's appearance for how predictably the rider will behave. Its history is also usually told backwards. Jake Olivier and Scott Walter reanalysed Walker's 2,355 passing events in 2013, split them at one metre, and found helmet wearing unrelated to close passing (adjusted OR 1.13, 95% CI 0.76 to 1.68, p = 0.54), while their own continuous model still gave a 5.8 cm reduction. Walker and Dorothy Robinson replied in 2019 that moving the one-metre cut-off reverses the reanalysis, and their fresh analysis found the whole distribution shifted just over a fifth of a standard deviation closer. Walker was not an author of the reanalysis, and the reanalysis did not settle the question. The other frequent error is treating the Peltzman effect as established because it is famous. Peltzman claimed a complete offset in one country's road fatality statistics in 1975, and the strongest later support comes from stock car racing rather than public roads. Laboratory demonstrations do not stand in for the field either: Tim Gamble and Walker's 2016 finding that an unmentioned helmet raised risk taking on computer tasks drew a published comment in the same journal titled \"Bicycle Helmets and the Experimenter Effect\".",
   "sources": [
     {
-      "text": "Peltzman, S. (1975). The effects of automobile safety regulation. Journal of Political Economy, 83(4), 677-725.",
+      "text": "Peltzman, S. (1975). The effects of automobile safety regulation. Journal of Political Economy, 83(4), 677-725. Abstract read in full from the publisher's deposited record, served by OpenAlex; every claim summarised here sits in it. The article itself was not obtained on 21 September 2026. The University of Chicago Press answered with a Cloudflare challenge, the Internet Archive's scan of the issue is lending-restricted, and the open Archive scan of volume 83 stops before page 677.",
       "doi": "10.1086/260352",
       "url": "https://doi.org/10.1086/260352",
       "type": "primary"
     },
     {
-      "text": "Wilde, G. J. S. (1982). The theory of risk homeostasis: Implications for safety and health. Risk Analysis, 2(4), 209-225.",
+      "text": "Wilde, G. J. S. (1982). The theory of risk homeostasis: Implications for safety and health. Risk Analysis, 2(4), 209-225. Abstract read in full from the publisher's own deposit at Crossref, which carries the sentence quoted here word for word. Wiley answered the PDF with a Cloudflare challenge on 21 September 2026 and no repository copy was found.",
       "doi": "10.1111/j.1539-6924.1982.tb01384.x",
       "url": "https://doi.org/10.1111/j.1539-6924.1982.tb01384.x",
       "type": "primary"
     },
     {
-      "text": "Robertson, L. S. (1977). A critical analysis of Peltzman's \"The effects of automobile safety regulation\". Journal of Economic Issues, 11(3), 587-600.",
+      "text": "Robertson, L. S. (1977). A critical analysis of Peltzman's \"The effects of automobile safety regulation\". Journal of Economic Issues, 11(3), 587-600. Not obtained on 21 September 2026. Taylor and Francis, Crossref, OpenAlex and Semantic Scholar held no open copy, and Crossref carries no abstract. Used here only through Pless's 2016 description of it, which was read in full.",
       "doi": "10.1080/00213624.1977.11503463",
       "url": "https://doi.org/10.1080/00213624.1977.11503463",
       "type": "commentary"
     },
     {
-      "text": "Robertson, L. S. (1981). Automobile safety regulations and death reductions in the United States. American Journal of Public Health, 71(8), 818-822.",
+      "text": "Robertson, L. S. (1981). Automobile safety regulations and death reductions in the United States. American Journal of Public Health, 71(8), 818-822. Abstract read in full from PubMed, and it is the source for the 236,000 vehicles, the 1975 to 1978 window, the reductions and the 37,000 deaths. The free PubMed Central copy is a scan whose page and PDF now answer with a captcha, and the publisher's copy sits behind a Cloudflare challenge.",
       "doi": "10.2105/ajph.71.8.818",
       "url": "https://doi.org/10.2105/ajph.71.8.818",
       "type": "replication"
     },
     {
-      "text": "Cohen, A., & Einav, L. (2003). The effects of mandatory seat belt laws on driving behavior and traffic fatalities. The Review of Economics and Statistics, 85(4), 828-843.",
+      "text": "Cohen, A., & Einav, L. (2003). The effects of mandatory seat belt laws on driving behavior and traffic fatalities. The Review of Economics and Statistics, 85(4), 828-843. Read in full from Einav's copy at Stanford, which carries the journal's pagination and abstract. Source for the 136 lives a year, the -0.042 coefficient with its 0.121 standard error, the 556 observations and the quoted conclusion.",
       "doi": "10.1162/003465303772815754",
       "url": "https://doi.org/10.1162/003465303772815754",
       "type": "replication"
     },
     {
-      "text": "Lv, J., Lord, D., Zhang, Y., & Chen, Z. (2015). Investigating Peltzman effects in adopting mandatory seat belt laws in the US: Evidence from non-occupant fatalities. Transport Policy, 44, 58-64.",
+      "text": "Lv, J., Lord, D., Zhang, Y., & Chen, Z. (2015). Investigating Peltzman effects in adopting mandatory seat belt laws in the US: Evidence from non-occupant fatalities. Transport Policy, 44, 58-64. Not obtained on 21 September 2026, so nothing is reported from it. ScienceDirect answered with a Cloudflare challenge, the copy Semantic Scholar lists on Lord's Texas A&M page is gone, Crossref and OpenAlex hold no abstract, and the Wayback Machine was unreachable from this session.",
       "doi": "10.1016/j.tranpol.2015.06.012",
       "url": "https://doi.org/10.1016/j.tranpol.2015.06.012",
       "type": "replication"
     },
     {
-      "text": "Walker, I. (2007). Drivers overtaking bicyclists: Objective data on the effects of riding position, helmet use, vehicle type and apparent gender. Accident Analysis & Prevention, 39(2), 417-425.",
+      "text": "Walker, I. (2007). Drivers overtaking bicyclists: Objective data on the effects of riding position, helmet use, vehicle type and apparent gender. Accident Analysis & Prevention, 39(2), 417-425. Abstract read in full from PubMed, and the author's own 2006 briefing document read in full from his site. The article was not obtained on 21 September 2026: Elsevier answered with a Cloudflare challenge and the Bath record carries no file.",
       "doi": "10.1016/j.aap.2006.08.010",
       "url": "https://doi.org/10.1016/j.aap.2006.08.010",
       "type": "primary"
     },
     {
-      "text": "Olivier, J., & Walter, S. R. (2013). Bicycle helmet wearing is not associated with close motor vehicle passing: A re-analysis of Walker, 2007. PLoS ONE, 8(9), e75424.",
+      "text": "Olivier, J., & Walter, S. R. (2013). Bicycle helmet wearing is not associated with close motor vehicle passing: A re-analysis of Walker, 2007. PLoS ONE, 8(9), e75424. Read in full from the journal's PDF. Source for the 2,355 passing events, the adjusted odds ratio with its interval and p value, and the 5.8 cm continuous estimate.",
       "doi": "10.1371/journal.pone.0075424",
       "url": "https://doi.org/10.1371/journal.pone.0075424",
       "type": "replication"
     },
     {
-      "text": "Walker, I., & Robinson, D. L. (2019). Bicycle helmet wearing is associated with closer overtaking by drivers: A response to Olivier and Walter, 2013. Accident Analysis & Prevention, 123, 107-113.",
+      "text": "Walker, I., & Robinson, D. L. (2019). Bicycle helmet wearing is associated with closer overtaking by drivers: A response to Olivier and Walter, 2013. Accident Analysis & Prevention, 123, 107-113. Accepted manuscript read in full from Bath's Pure file host, the research portal's own file path answering with a Cloudflare challenge. Source for the fifth of a standard deviation and the cut-off argument. Bath's record lists Robinson first, while PubMed and the journal print Walker first.",
       "doi": "10.1016/j.aap.2018.11.015",
       "url": "https://doi.org/10.1016/j.aap.2018.11.015",
       "type": "commentary"
     },
     {
-      "text": "Esmaeilikia, M., Radun, I., Grzebieta, R., & Olivier, J. (2019). Bicycle helmets and risky behaviour: A systematic review. Transportation Research Part F: Traffic Psychology and Behaviour, 60, 299-310.",
+      "text": "Esmaeilikia, M., Radun, I., Grzebieta, R., & Olivier, J. (2019). Bicycle helmets and risky behaviour: A systematic review. Transportation Research Part F: Traffic Psychology and Behaviour, 60, 299-310. Read in full from the UNSWorks bitstream, the publisher's PDF answering with a Cloudflare challenge. Source for the 145 records, the 23 included studies, the eighteen unsupportive and the two supportive ones.",
       "doi": "10.1016/j.trf.2018.10.026",
       "url": "https://doi.org/10.1016/j.trf.2018.10.026",
       "type": "replication"
     },
     {
-      "text": "Phillips, R. O., Fyhri, A., & Sagberg, F. (2011). Risk compensation and bicycle helmets. Risk Analysis, 31(8), 1187-1195.",
+      "text": "Phillips, R. O., Fyhri, A., & Sagberg, F. (2011). Risk compensation and bicycle helmets. Risk Analysis, 31(8), 1187-1195. Read in full from the copy at cycle-helmets.com, whose title page carries the journal, the authors and the DOI. Source for the 35 cyclists, the 0.4 km descent and the split between routine and occasional helmet users.",
       "doi": "10.1111/j.1539-6924.2011.01589.x",
       "url": "https://doi.org/10.1111/j.1539-6924.2011.01589.x",
       "type": "primary"
     },
     {
-      "text": "Gamble, T., & Walker, I. (2016). Wearing a bicycle helmet can increase risk taking and sensation seeking in adults. Psychological Science, 27(2), 289-294.",
+      "text": "Gamble, T., & Walker, I. (2016). Wearing a bicycle helmet can increase risk taking and sensation seeking in adults. Psychological Science, 27(2), 289-294. Published version read in full from Bournemouth's repository. Source for the eye-tracker cover story, the balloon task and the fact that the helmet was never presented as safety equipment.",
       "doi": "10.1177/0956797615620784",
       "url": "https://doi.org/10.1177/0956797615620784",
       "type": "primary"
     },
     {
-      "text": "Radun, I., & Lajunen, T. (2018). Bicycle helmets and the experimenter effect. Psychological Science, 29(6), 1020-1022.",
+      "text": "Radun, I., & Lajunen, T. (2018). Bicycle helmets and the experimenter effect. Psychological Science, 29(6), 1020-1022. Accepted manuscript read in full from Helda, reached by the repository's REST bitstream route after the rendered page answered with a proof-of-work challenge.",
       "doi": "10.1177/0956797618761040",
       "url": "https://doi.org/10.1177/0956797618761040",
       "type": "commentary"
     },
     {
-      "text": "Scott, M. D., Buller, D. B., Andersen, P. A., Walkosz, B. J., Voeks, J. H., Dignan, M. B., & Cutter, G. R. (2007). Testing the risk compensation hypothesis for safety helmets in alpine skiing and snowboarding. Injury Prevention, 13(3), 173-177.",
+      "text": "Scott, M. D., Buller, D. B., Andersen, P. A., Walkosz, B. J., Voeks, J. H., Dignan, M. B., & Cutter, G. R. (2007). Testing the risk compensation hypothesis for safety helmets in alpine skiing and snowboarding. Injury Prevention, 13(3), 173-177. Abstract read in full from PubMed, and it is the source for the 1,779 adults, the 34 resorts and both odds ratios. The free PubMed Central copy is a scan behind a captcha and the journal answered with a Cloudflare challenge.",
       "doi": "10.1136/ip.2006.014142",
       "url": "https://doi.org/10.1136/ip.2006.014142",
       "type": "replication"
     },
     {
-      "text": "McCormack, S., Dunn, D. T., Desai, M., et al. (2016). Pre-exposure prophylaxis to prevent the acquisition of HIV-1 infection (PROUD): Effectiveness results from the pilot phase of a pragmatic open-label randomised trial. The Lancet, 387(10013), 53-60.",
+      "text": "McCormack, S., Dunn, D. T., Desai, M., et al. (2016). Pre-exposure prophylaxis to prevent the acquisition of HIV-1 infection (PROUD): Effectiveness results from the pilot phase of a pragmatic open-label randomised trial. The Lancet, 387(10013), 53-60. Read in full from the White Rose copy. Source for the 544 participants, the 13 English clinics and the quoted finding on sexually transmitted infections.",
       "doi": "10.1016/S0140-6736(15)00056-2",
       "url": "https://doi.org/10.1016/S0140-6736(15)00056-2",
       "type": "replication"
     },
     {
-      "text": "Traeger, M. W., Schroeder, S. E., Wright, E. J., Hellard, M. E., Cornelisse, V. J., Doyle, J. S., & Stoove, M. A. (2018). Effects of pre-exposure prophylaxis for the prevention of human immunodeficiency virus infection on sexual risk behavior in men who have sex with men: A systematic review and meta-analysis. Clinical Infectious Diseases, 67(5), 676-686.",
+      "text": "Traeger, M. W., Schroeder, S. E., Wright, E. J., Hellard, M. E., Cornelisse, V. J., Doyle, J. S., & Stoove, M. A. (2018). Effects of pre-exposure prophylaxis for the prevention of human immunodeficiency virus infection on sexual risk behavior in men who have sex with men: A systematic review and meta-analysis. Clinical Infectious Diseases, 67(5), 676-686. Abstract read in full from PubMed, and it is the source for the 16 observational studies, the single open-label trial and both odds ratios. Oxford University Press answered its free PDF with a Cloudflare challenge, as did the Monash copy.",
       "doi": "10.1093/cid/ciy182",
       "url": "https://doi.org/10.1093/cid/ciy182",
       "type": "replication"
     },
     {
-      "text": "Sobel, R. S., & Nesbit, T. M. (2007). Automobile safety regulation and the incentive to drive recklessly: Evidence from NASCAR. Southern Economic Journal, 74(1), 71-84.",
+      "text": "Sobel, R. S., & Nesbit, T. M. (2007). Automobile safety regulation and the incentive to drive recklessly: Evidence from NASCAR. Southern Economic Journal, 74(1), 71-84. Abstract read in full from the publisher's deposit at Crossref, which carries the sentence quoted here. The full text was not obtained on 21 September 2026.",
       "doi": "10.1002/j.2325-8012.2007.tb00827.x",
       "url": "https://doi.org/10.1002/j.2325-8012.2007.tb00827.x",
       "type": "replication"
     },
     {
-      "text": "Pless, B. (2016). Risk compensation: Revisited and rebutted. Safety, 2(3), 16.",
+      "text": "Pless, B. (2016). Risk compensation: Revisited and rebutted. Safety, 2(3), 16. Read in full from the publisher's file host. Source for the note that Robertson's 1977 reanalysis found numerous errors, and for the author's own statement that he makes no pretence of a comprehensive or systematic review.",
       "doi": "10.3390/safety2030016",
       "url": "https://doi.org/10.3390/safety2030016",
       "type": "commentary"
     }
   ],
-  "checkedOn": "2026-08-09"
+  "checkedOn": "2026-09-21"
 }
