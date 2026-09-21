@@ -1,108 +1,115 @@
 {
-  "no": 248,
-  "slug": "regression-fallacy",
-  "name": "Regression fallacy",
-  "aliases": ["Regression to the mean fallacy", "Misconceptions of regression"],
-  "category": "belief",
-  "statement": "Extreme measurements tend to be followed by less extreme ones for statistical reasons alone, and the fallacy is crediting that return to whatever happened in between.",
-  "meaning": "Two things share the name and only one of them is about people. Regression to the mean is arithmetic. When two measurements of the same quantity correlate imperfectly, a group picked out for an extreme score on the first will, on average, sit closer to the mean on the second. Nothing pulls it back and no force is at work. The regression fallacy is the further claim that people miss this, and so hand the credit or the blame to whatever happened between the two measurements: the coaching, the pill, the reprimand, the new policy. The first half is a theorem. The second half is an empirical claim about human reasoning and has to be tested like any other, which is where the record gets thinner than the textbooks suggest.",
-  "origin": {
-    "year": 1974,
-    "who": "Amos Tversky and Daniel Kahneman",
-    "where": "Science",
-    "note": "The bias is set out under the heading \"Misconceptions of regression\" in \"Judgment under uncertainty: Heuristics and biases\". That paper states that people do not expect regression where it is bound to occur, and that when they do notice it they invent spurious causal explanations. It credits the flight-training example to reference 1, Kahneman and Tversky's 1973 Psychological Review article. The statistical phenomenon is much older and belongs to Galton in 1886."
+ "no": 248,
+ "slug": "regression-fallacy",
+ "name": "Regression fallacy",
+ "aliases": [
+  "Regression to the mean fallacy",
+  "Misconceptions of regression"
+ ],
+ "category": "belief",
+ "statement": "Extreme measurements tend to be followed by less extreme ones for statistical reasons alone, and the fallacy is crediting that return to whatever happened in between.",
+ "meaning": "Two things share the name and only one of them is about people. Regression to the mean is arithmetic. When two measurements of the same quantity correlate imperfectly, a group picked out for an extreme score on the first will, on average, sit closer to the mean on the second. Nothing pulls it back and no force is at work. The regression fallacy is the further claim that people miss this, and so hand the credit or the blame to whatever happened between the two measurements: the coaching, the pill, the reprimand, the new policy. The first half is a theorem. The second half is an empirical claim about human reasoning and has to be tested like any other, which is where the record gets thinner than the textbooks suggest.",
+ "origin": {
+  "year": 1974,
+  "who": "Amos Tversky and Daniel Kahneman",
+  "where": "Science",
+  "note": "The bias is set out under the heading \"Misconceptions of regression\" in \"Judgment under uncertainty: Heuristics and biases\". That paper states that people do not expect regression where it is bound to occur, and that when they do notice it they invent spurious causal explanations. It credits the flight-training example to reference 1, Kahneman and Tversky's 1973 Psychological Review article. The statistical phenomenon is much older and belongs to Galton in 1886."
+ },
+ "evidence": "Galton supplied the arithmetic. His 1886 memoir worked from the heights of 930 adult children and their 205 parentages, though his own table totals 928. Female statures were converted to male equivalents by a factor of 1.08, and he put the level of mediocrity in his population at 68.25 inches without shoes. His law was that the height deviate of the offspring is, on average, two-thirds of the height deviate of its mid-parentage. He explained it by ancestry rather than by imperfect correlation. The bias arrived as an anecdote. Tversky and Kahneman wrote that in a discussion of flight training, experienced instructors noted that praise for an exceptionally smooth landing is typically followed by a poorer landing on the next try. Harsh criticism after a rough landing was usually followed by an improvement. The instructors concluded that verbal rewards are detrimental to learning and verbal punishments beneficial. That passage reports no landing scores, no sample and no statistical test, and it credits the observation to the 1973 paper. Kahneman's Nobel autobiography gives the scene. He and Ozer Schild built a training course for instructors at the Air Force flight school, and one of the most seasoned instructors answered his speech on positive reinforcement with the pattern above. Kahneman then arranged a demonstration in which each participant tossed two coins at a target behind his back. He writes that the distances from the target were measured, and he reports no figures from it. The 1973 paper is not short of data. It carries seven problems, run on 248, 174, 171, 174, 104, 130 and 108 people, as tabulated by the 2024 replication rather than read in the original. Its seventh asked for 95% confidence bounds on the true IQ of a person scoring 140, and 67.59% of those 108 gave an interval symmetric around 140. Medicine supplies the clearest demonstration that the effect is worth guarding against. McCambridge, Kypri and McElduff followed 967 New Zealand students, of 1,480 who completed a baseline questionnaire, over six months. Mean AUDIT scores rose by 0.98 points with no entry threshold, 95% CI 0.72 to 1.24. Selecting only those scoring 8 or more cut the rise to 0.43, 95% CI 0.03 to 0.84, and selecting at 20 or more turned it into a fall of 1.99 points, 95% CI minus 3.18 to minus 0.80. A trial recruiting heavy drinkers would have watched them improve without treating anybody.",
+ "replication": {
+  "state": "failed",
+  "headline": "The 2024 replication reversed the 1973 paper's regression problem: non-regressive answers fell from 68% of 108 people to 18% of 801.",
+  "detail": "Chan and Feldman repeated all seven problems from Kahneman and Tversky (1973), with 801 US participants recruited on Prolific, mean age 43.03. They record that 1,031 people began the survey and 230 went no further than consent. Two of the seven problems bear on regression and both moved away from the original. On problem 7, the interval for a true IQ behind an observed 140, the original reported 67.59% of 108 giving an interval symmetric around 140, 22.22% giving a regressive one and 10.19% a counter-regressive one. The replication found 17.60% symmetric, 76.40% regressive and 5.99% counter-regressive. Dropping intervals centred below 100 as overly regressive left 554 people at 25.45% symmetric, 65.88% regressive and 8.66% counter-regressive. The direction of the original result is gone in both readings. Self-rated statistical knowledge did not track how far people regressed, r(799) = -.032, p = .365, with a Bayes factor of 12.18 for the null on all data and 14.44 after the overly regressive answers were removed. Problem 5 asked for grade point average predictions from percentile scores on academic achievement, on a mental concentration test described as unreliable, or on sense of humour. The 1973 paper held that predictions from the unreliable measure would be no more regressive than those from achievement. In the replication the mean predicted average was 2.69 from achievement against 2.82 from mental concentration, t(521) = -3, p = .003, d = -0.26, 95% CI [-0.43, -0.09]. The within-participant spread was narrower for mental concentration, 0.73 against 0.80, t(521) = 3.1, p = .002, d = 0.27, 95% CI [0.10, 0.44]. Chan and Feldman read this as participants doubting the weak evidence and regressing their predictions accordingly, and write that people may not fail to regress when the measure of ability is disclosed as unreliable. Their overall verdict on the seven problems is mixed support; the two regression problems are the clearest departures. Peer Community in Registered Reports gave the protocol in-principle acceptance on 31 May 2024, at version 5. The figures above are read off the thesis deposited at OSF, and a stage 2 report was not located on 21 September 2026 at Crossref, PCI RR or the project's own OSF storage, which holds only a stage 1 folder and a thesis folder.",
+  "study": {
+   "cite": "Chan, H. C., & Feldman, G. (2024). Representativeness heuristic in intuitive predictions: Replication Registered Report of problems reviewed in Kahneman and Tversky (1973). Bachelor of Social Sciences thesis, University of Hong Kong, deposited at OSF project 8zhcj.",
+   "url": "https://osf.io/7n8wg/",
+   "year": 2024,
+   "n": 801
+  }
+ },
+ "limits": "The replication tested one thing the fallacy is said to cover, non-regressive numerical prediction, and not the causal misattribution that gives the fallacy its name. Two studies that did test that could not be read. Schaffner's \"Specious learning about reward and punishment\" and Hogarth and Soyer's four experiments in Decision are both recorded as closed by Unpaywall, with no repository copy and no abstract at Crossref. APA's DOI landing pages answered with an Imperva bot block rather than a paywall notice, and ResearchGate returned 403. Searches on 21 September 2026 covered Crossref, Unpaywall, Semantic Scholar, the authors' own pages and the open web, so nothing either study found is stated here. The one direct test whose result was read is a preprint. Harris, Schulte and Alves ran four preregistered experiments on Prolific, recruiting 200, 201, 100 and 100 people for a stated total of 601. Experiment 2 analysed 166 of its 201 after a preregistered exclusion. Participants asked to recover true probabilities from another person's estimate shifted it towards the mean rather than away from it, t(99) = -6.94, p < .001, d = -0.69, and again in a version using fans of two football teams, t(99) = -7.44, p < .001, d = -0.74. That is about reading other people's judgements, not about a treatment applied between two measurements, and it has not been peer reviewed. The 1973 paper itself could not be opened on 21 September 2026. PsycNET and the APA DOI landing page return 403, Semantic Scholar holds no record for its DOI, Unpaywall lists no repository copy, Cambridge sells the 1982 book chapter, and this session's egress policy denies web.archive.org. Every figure attributed to it above is read off the replication's table of the target article's reported statistics. The replication's Study 5 table gives condition sizes of 436, 437 and 436, which belong to the simulated dataset of 1,309 that the stage 1 protocol carried as a placeholder rather than to the 801 people collected. Anyone quoting the recommendation's abstract, which reports N = 1,309, is quoting that simulation. Statisticians warning about regression are not immune to it. Barnett, van der Pols and Dobson's 2005 guide to computing the expected regression effect carried a wrong formula for ten years. Its worked example on HDL cholesterol gives a correlation of 0.64 and an expected regression effect of 9.6 mg/dl. Their 2015 correction restates that correlation as 0.36 and the expected effect as 17.3. No peer-reviewed test of the Sports Illustrated cover jinx was found. A Crossref search on the phrase returns one relevant record, a 2011 PsycEXTRA item by Reifman and Cohadarevic titled \"The Sports Illustrated jinx in golf: A control-group study\". It is registered as a dataset and carries no abstract in that record. Web searches on 21 September 2026 surfaced only blogs, encyclopedia articles and news items. The 2,456 covers and 37.2% rate that circulate everywhere are attributed to the magazine's cover story of 21 January 2002, which could not be obtained, si.com and vault.si.com both answering 404.",
+ "misreadings": "The commonest error is to treat regression as a force. It is a property of selection under imperfect correlation, and the individual measurement is not owed a correction. That distinguishes it from the gambler's fallacy, where the next outcome is imagined to compensate for the last: regression says the group average moves, not that any particular case is due for a reversal. The second error runs the other way. Showing that regression can explain an apparent improvement does not show that the treatment did nothing, only that the before-and-after comparison cannot tell. A randomised control group settles what a pre-post difference cannot. The third concerns the flight instructors. What Tversky and Kahneman published is a report of what instructors said about landings, not a measurement of landings, and the entry above found no analysis of instructor feedback against landing scores in the searches described. The story is evidence of how the idea was arrived at, and it circulates as though it were the study that established it. Kahneman's own account differs from the retellings in one detail worth keeping straight. The demonstration he ran used two coins tossed at a target behind the back, and he writes that the distances were measured. He gives no numbers from it.",
+ "sources": [
+  {
+   "text": "Tversky, A., & Kahneman, D. (1974). Judgment under uncertainty: Heuristics and biases. Science, 185(4157), 1124-1131. Read in full from a scan of the JSTOR copy; the source for the wording of the flight-training passage and for the two claims about how people handle regression.",
+   "doi": "10.1126/science.185.4157.1124",
+   "url": "https://sites.socsci.uci.edu/~bskyrms/bio/readings/tversky_k_heuristics_biases.pdf",
+   "type": "primary"
   },
-  "evidence": "Galton supplied the arithmetic. His 1886 memoir worked from the heights of 930 adult children and their 205 parentages. Female statures were converted to male equivalents by a factor of 1.08, and he put the level of mediocrity in his population at 68.25 inches without shoes. His law was that the height deviate of the offspring is, on average, two-thirds of the height deviate of its mid-parentage. He explained it by ancestry rather than by imperfect correlation. The bias arrived as an anecdote. Tversky and Kahneman wrote that in a discussion of flight training, experienced instructors noted that praise for an exceptionally smooth landing is typically followed by a poorer landing on the next try. Harsh criticism after a rough landing was usually followed by an improvement. The instructors concluded that verbal rewards are detrimental to learning and verbal punishments beneficial. The paper reports no landing scores, no sample and no statistical test. Kahneman's Nobel autobiography gives the scene. He and Ozer Schild built a training course for instructors at the Air Force flight school, and one seasoned instructor answered his speech on positive reinforcement with the pattern above. Kahneman then arranged a demonstration in which each participant tossed two coins at a target behind his back. He records no measurements from it either. The nearest thing to data in the 1973 paper is its seventh problem, which asked for 95% confidence bounds on the true IQ of a person scoring 140. Its own figures, as tabulated by the 2024 replication rather than read in the original, are 108 participants, of whom 67.59% gave an interval symmetric around 140. Medicine supplies the clearest demonstration that the effect is worth guarding against. McCambridge, Kypri and McElduff followed 967 New Zealand students, of 1,480 first approached, over six months. Mean AUDIT scores rose by 0.98 points with no entry threshold, 95% CI 0.72 to 1.24. Selecting only those scoring 8 or more cut the rise to 0.43, and selecting at 20 or more turned it into a fall of 1.99 points, 95% CI minus 3.18 to minus 0.80. A trial recruiting heavy drinkers would have watched them improve without treating anybody.",
-  "replication": {
-    "state": "failed",
-    "headline": "The only registered replication located reversed the 1973 paper's regression problem: non-regressive answers fell from 68% of 108 people to 18% of 801.",
-    "detail": "Chan and Feldman repeated all seven problems from Kahneman and Tversky (1973) as a Registered Report, with 801 US participants recruited on Prolific, mean age 43.03. Two of the seven bear on regression and both moved away from the original. On problem 7, the interval for a true IQ behind an observed 140, the original reported 67.59% of 108 giving an interval symmetric around 140, 22.22% giving a regressive one and 10.19% a counter-regressive one. The replication found 17.60% symmetric, 76.40% regressive and 5.99% counter-regressive. Dropping intervals centred below 100 as overly regressive left 554 people at 25.45% symmetric, 65.88% regressive and 8.66% counter-regressive. The direction of the original result is gone in both readings. Self-rated statistical knowledge did not track how far people regressed, r(799) = -.032, p = .365, with a Bayes factor of 12.18 for the null on all data and 14.44 after the overly regressive answers were removed. Problem 5 asked for grade point average predictions from percentile scores on academic achievement, on a mental concentration test described as unreliable, or on sense of humour. The 1973 paper held that predictions from the unreliable measure would be no more regressive than those from achievement. In the replication the mean predicted average was 2.69 from achievement against 2.82 from mental concentration, t(521) = -3, p = .003, d = -0.26, 95% CI [-0.43, -0.09]. The within-participant spread was narrower for mental concentration, 0.73 against 0.80, t(521) = 3.1, p = .002, d = 0.27, 95% CI [0.10, 0.44]. Chan and Feldman read this as participants doubting the weak evidence and regressing their predictions accordingly, and write that people may not fail to regress when the measure of ability is disclosed as unreliable. Their overall verdict on the seven problems is mixed support; the two regression problems are the clearest departures.",
-    "study": {
-      "cite": "Chan, H. C., & Feldman, G. (2024). Representativeness heuristic in intuitive predictions: Replication Registered Report of problems reviewed in Kahneman and Tversky (1973). Bachelor of Social Sciences thesis, University of Hong Kong, deposited at OSF project 8zhcj.",
-      "url": "https://osf.io/7n8wg/",
-      "year": 2024,
-      "n": 801
-    }
+  {
+   "text": "Kahneman, D., & Tversky, A. (1973). On the psychology of prediction. Psychological Review, 80(4), 237-251. Closed on every route tried on 21 September 2026: PsycNET and the APA DOI landing page return 403, Semantic Scholar holds no record for the DOI, Unpaywall lists no repository copy, and Cambridge sells the 1982 book chapter. Its bibliographic record was verified at Crossref. No figure attributed to it here was read in it.",
+   "doi": "10.1037/h0034747",
+   "url": "https://doi.org/10.1037/h0034747",
+   "type": "primary"
   },
-  "limits": "The replication tested one thing the fallacy is said to cover, non-regressive numerical prediction, and not the causal misattribution that gives the fallacy its name. Two studies that did test that could not be read. Schaffner's \"Specious learning about reward and punishment\" is closed at the publisher. Hogarth and Soyer's four experiments in Decision are recorded by Unpaywall as closed with no repository copy. Neither abstract could be obtained from Crossref, Semantic Scholar, Unpaywall or the publisher, so nothing either found is stated here. The one direct test whose result was read is a preprint. Harris, Schulte and Alves report four preregistered experiments, total N = 601. Participants asked to recover true probabilities from other people's estimates shifted those estimates towards the mean rather than away from it, reinforcing the regressiveness instead of correcting it. That is about reading other people's judgements, not about a treatment applied between two measurements, and it has not been peer reviewed. The 1973 paper itself could not be opened, so every figure attributed to it above is read off the replication's table of the target article's reported statistics. The replication's own Study 5 table reports condition sizes of 436, 437 and 436 for a study of 801 participants, which does not reconcile with its between-subjects description, and the discrepancy was not resolved. Statisticians warning about regression are not immune to it. Barnett, van der Pols and Dobson's 2005 guide to computing the expected regression effect carried a wrong formula for ten years. Their 2015 correction restates the worked example's correlation as 0.36 rather than 0.64, raising the expected effect from 9.6 mg/dl to 17.3. No peer-reviewed test of the Sports Illustrated cover jinx was found. A Crossref search on the phrase returns one relevant record, a 2011 PsycEXTRA item by Reifman and Cohadarevic titled \"The Sports Illustrated jinx in golf: A control-group study\". It is registered as a dataset and carries no abstract in that record. Web searches surfaced only blogs, encyclopedia articles and news items. The 2,456 covers and 37.2% rate that circulate everywhere come from the magazine's own 2002 cover story, which could not be obtained.",
-  "misreadings": "The commonest error is to treat regression as a force. It is a property of selection under imperfect correlation, and the individual measurement is not owed a correction. That distinguishes it from the gambler's fallacy, where the next outcome is imagined to compensate for the last: regression says the group average moves, not that any particular case is due for a reversal. The second error runs the other way. Showing that regression can explain an apparent improvement does not show that the treatment did nothing, only that the before-and-after comparison cannot tell. A randomised control group settles what a pre-post difference cannot. The third concerns the flight instructors. What Tversky and Kahneman published is a report of what instructors said about landings, not a measurement of landings, and the entry above found no analysis of instructor feedback against landing scores in the searches described. The story is evidence of how the idea was arrived at, and it circulates as though it were the study that established it. Kahneman's own account differs from the retellings in one detail worth keeping straight. The demonstration he ran used two coins tossed at a target behind the back, and he reports its result as something the room could see rather than as recorded data."
-  ,
-  "sources": [
-    {
-      "text": "Tversky, A., & Kahneman, D. (1974). Judgment under uncertainty: Heuristics and biases. Science, 185(4157), 1124-1131. Read in full from a scan of the JSTOR copy; the source for the wording of the flight-training passage and for the two claims about how people handle regression.",
-      "doi": "10.1126/science.185.4157.1124",
-      "url": "https://sites.socsci.uci.edu/~bskyrms/bio/readings/tversky_k_heuristics_biases.pdf",
-      "type": "primary"
-    },
-    {
-      "text": "Kahneman, D., & Tversky, A. (1973). On the psychology of prediction. Psychological Review, 80(4), 237-251. Closed on every route tried, including PsycNet, Semantic Scholar and Unpaywall. Its bibliographic record was verified at Crossref. No figure attributed to it here was read in it.",
-      "doi": "10.1037/h0034747",
-      "url": "https://doi.org/10.1037/h0034747",
-      "type": "primary"
-    },
-    {
-      "text": "Galton, F. (1886). Regression towards mediocrity in hereditary stature. The Journal of the Anthropological Institute of Great Britain and Ireland, 15, 246-263. Read in full as the scan at galton.org; the source for the 930 children, the 205 parentages, the 1.08 factor, the 68.25 inches and the two-thirds law.",
-      "doi": "10.2307/2841583",
-      "url": "https://galton.org/essays/1880-1889/galton-1886-jaigi-regression-stature.pdf",
-      "type": "primary"
-    },
-    {
-      "text": "Kahneman, D. (2003). Autobiography. In T. Frangsmyr (Ed.), Les Prix Nobel 2002. Read in full at nobelprize.org; the source for the flight-school course, the instructor's reply and the coin-tossing demonstration.",
-      "url": "https://www.nobelprize.org/prizes/economic-sciences/2002/kahneman/biographical/",
-      "type": "primary"
-    },
-    {
-      "text": "Chan, H. C., & Feldman, G. (2024). Representativeness heuristic in intuitive predictions: Replication Registered Report of problems reviewed in Kahneman and Tversky (1973). University of Hong Kong thesis, deposited at OSF. Read in full as the deposited PDF; the source for every replication figure above and for the original's problem 5 and problem 7 counts.",
-      "url": "https://osf.io/7n8wg/",
-      "type": "replication"
-    },
-    {
-      "text": "Rahal, R.-M. (2024). The Representativeness Heuristic Revisited: Registered Replication Report of Kahneman and Tversky (1973). Peer Community in Registered Reports, 31 May 2024. The recommendation record for the replication above. Only its Crossref record was checked; the article page returned an access-denied response.",
-      "doi": "10.24072/pci.rr.100609",
-      "type": "replication"
-    },
-    {
-      "text": "Harris, C., Schulte, A., & Alves, H. (2025). Regressive Judgments: How People Fail to Account for Regression in Other People's Judgments. Preprint posted 7 August 2025. Abstract read through the OSF API; the four experiments and the total N = 601 come from it. Not peer reviewed.",
-      "doi": "10.31234/osf.io/pbd69_v1",
-      "url": "https://osf.io/preprints/psyarxiv/pbd69_v1",
-      "type": "replication"
-    },
-    {
-      "text": "McCambridge, J., Kypri, K., & McElduff, P. (2014). Regression to the mean and alcohol consumption: A cohort study exploring implications for the interpretation of change in control groups in brief intervention trials. Drug and Alcohol Dependence, 135, 156-159. Read in full at PubMed Central; the source for the 967 participants and every AUDIT figure above.",
-      "doi": "10.1016/j.drugalcdep.2013.11.017",
-      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3929002/",
-      "type": "primary"
-    },
-    {
-      "text": "Barnett, A. G., van der Pols, J. C., & Dobson, A. J. (2005). Regression to the mean: what it is and how to deal with it. International Journal of Epidemiology, 34(1), 215-220. Abstract read; the full text is behind Oxford's paywall and no claim above rests on its body.",
-      "doi": "10.1093/ije/dyh299",
-      "url": "https://academic.oup.com/ije/article/34/1/215/638499",
-      "type": "primary"
-    },
-    {
-      "text": "Barnett, A. G., van der Pols, J. C., & Dobson, A. J. (2015). Correction to: Regression to the mean: what it is and how to deal with it. International Journal of Epidemiology, 44(5), 1748. The correction's wording, the 0.36 correlation and the move from 9.6 to 17.3 mg/dl were read twice, on two separate Oxford URLs for the notice.",
-      "doi": "10.1093/ije/dyv161",
-      "url": "https://academic.oup.com/ije/article/44/5/1748/2594551",
-      "type": "primary"
-    },
-    {
-      "text": "Schaffner, P. E. (1985). Specious learning about reward and punishment. Journal of Personality and Social Psychology, 48(6), 1377-1386. Named because it is the experimental test of the reward-and-punishment claim; closed at the publisher and not read, so nothing it found is reported above.",
-      "doi": "10.1037/0022-3514.48.6.1377",
-      "url": "https://doi.org/10.1037/0022-3514.48.6.1377",
-      "type": "primary"
-    },
-    {
-      "text": "Hogarth, R. M., & Soyer, E. (2021). Regression to the mean: Experimental evidence and a proposed heuristic. Decision, 8(3), 133-154. Four experiments on how people handle regression. Recorded by Unpaywall as closed with no repository copy; the abstract could not be obtained, so nothing it found is reported above.",
-      "doi": "10.1037/dec0000150",
-      "url": "https://doi.org/10.1037/dec0000150",
-      "type": "primary"
-    },
-    {
-      "text": "Reifman, A., & Cohadarevic, D. (2011). The Sports Illustrated jinx in golf: A control-group study. PsycEXTRA. The one relevant record a Crossref search on the cover jinx returns; registered as a dataset, carrying no abstract in that record, and not read.",
-      "doi": "10.1037/e527772014-785",
-      "url": "https://doi.org/10.1037/e527772014-785",
-      "type": "replication"
-    }
-  ],
-  "checkedOn": "2026-08-10"
+  {
+   "text": "Galton, F. (1886). Regression towards mediocrity in hereditary stature. The Journal of the Anthropological Institute of Great Britain and Ireland, 15, 246-263. Read in full as the scan at galton.org; the source for the 930 children, the 205 parentages, the 928 in his own table, the 1.08 factor, the 68.25 inches and the two-thirds law.",
+   "doi": "10.2307/2841583",
+   "url": "https://galton.org/essays/1880-1889/galton-1886-jaigi-regression-stature.pdf",
+   "type": "primary"
+  },
+  {
+   "text": "Kahneman, D. (2003). Autobiography. In T. Frangsmyr (Ed.), Les Prix Nobel 2002. Read in full at nobelprize.org; the source for the flight-school course, the instructor's reply and the coin-tossing demonstration.",
+   "url": "https://www.nobelprize.org/prizes/economic-sciences/2002/kahneman/biographical/",
+   "type": "primary"
+  },
+  {
+   "text": "Chan, H. C., & Feldman, G. (2024). Representativeness heuristic in intuitive predictions: Replication Registered Report of problems reviewed in Kahneman and Tversky (1973). University of Hong Kong thesis, deposited at OSF. Read in full as the deposited PDF; the source for every replication figure above and for the original's problem 5 and problem 7 counts.",
+   "url": "https://osf.io/7n8wg/",
+   "type": "replication"
+  },
+  {
+   "text": "Chan, H. C., & Feldman, G. (2024). Representativeness heuristic in intuitive predictions: Replication Registered Report of problems reviewed in Kahneman and Tversky (1973) [Stage 1], version 5. Read in full as the deposited PDF; the source for the statement that its reported results are a simulated dataset of 1,309 participants standing in until real data were collected.",
+   "url": "https://osf.io/9cqp6/",
+   "type": "replication"
+  },
+  {
+   "text": "Rahal, R.-M. (2024). The Representativeness Heuristic Revisited: Registered Replication Report of Kahneman and Tversky (1973). Peer Community in Registered Reports, 31 May 2024. The in-principle acceptance of the stage 1 protocol, whose Crossref record names the reviewed manuscript as osf.io/9cqp6. The article page sits behind an Anubis proof-of-work bot challenge rather than a paywall, so only the Crossref record was read.",
+   "doi": "10.24072/pci.rr.100609",
+   "type": "replication"
+  },
+  {
+   "text": "Harris, C., Schulte, A., & Alves, H. (2025). Regressive Judgments: How People Fail to Account for Regression in Other People's Judgments. Preprint posted 7 August 2025. Read in full as the PDF at osf.io; the source for the four experiments, the recruited samples and every figure above. Not peer reviewed.",
+   "doi": "10.31234/osf.io/pbd69_v1",
+   "url": "https://osf.io/preprints/psyarxiv/pbd69_v1",
+   "type": "replication"
+  },
+  {
+   "text": "McCambridge, J., Kypri, K., & McElduff, P. (2014). Regression to the mean and alcohol consumption: A cohort study exploring implications for the interpretation of change in control groups in brief intervention trials. Drug and Alcohol Dependence, 135, 156-159. Read in full at PubMed Central; the source for the 967 participants and every AUDIT figure above.",
+   "doi": "10.1016/j.drugalcdep.2013.11.017",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3929002/",
+   "type": "primary"
+  },
+  {
+   "text": "Barnett, A. G., van der Pols, J. C., & Dobson, A. J. (2005). Regression to the mean: what it is and how to deal with it. International Journal of Epidemiology, 34(1), 215-220. Read in full as the PDF mirrored at moodle2.units.it; the source for the 0.64 correlation and the 9.6 mg/dl worked example. Oxford's own PDF link answers with a Cloudflare bot challenge, not a paywall.",
+   "doi": "10.1093/ije/dyh299",
+   "url": "https://academic.oup.com/ije/article/34/1/215/638499",
+   "type": "primary"
+  },
+  {
+   "text": "Barnett, A. G., van der Pols, J. C., & Dobson, A. J. (2015). Correction to: Regression to the mean: what it is and how to deal with it. International Journal of Epidemiology, 44(5), 1748. The correction's wording, the 0.36 correlation and the move from 9.6 to 17.3 mg/dl were read twice, on two separate Oxford URLs for the notice. Oxford's PDF for the notice answers with a Cloudflare bot challenge.",
+   "doi": "10.1093/ije/dyv161",
+   "url": "https://academic.oup.com/ije/article/44/5/1748/2594551",
+   "type": "primary"
+  },
+  {
+   "text": "Schaffner, P. E. (1985). Specious learning about reward and punishment. Journal of Personality and Social Psychology, 48(6), 1377-1386. Named because it is the experimental test of the reward-and-punishment claim. Recorded as closed by Unpaywall with no repository copy, no abstract at Crossref, and an Imperva bot block on APA's DOI landing page. Not read on 21 September 2026, so nothing it found is reported above.",
+   "doi": "10.1037/0022-3514.48.6.1377",
+   "url": "https://doi.org/10.1037/0022-3514.48.6.1377",
+   "type": "primary"
+  },
+  {
+   "text": "Hogarth, R. M., & Soyer, E. (2021). Regression to the mean: Experimental evidence and a proposed heuristic. Decision, 8(3), 133-154. Four experiments on how people handle regression. Recorded by Unpaywall as closed with no repository copy, no abstract at Crossref, and ResearchGate returned 403. The author's own publication list names it without a file. Not read, so nothing it found is reported above.",
+   "doi": "10.1037/dec0000150",
+   "url": "https://doi.org/10.1037/dec0000150",
+   "type": "primary"
+  },
+  {
+   "text": "Reifman, A., & Cohadarevic, D. (2011). The Sports Illustrated jinx in golf: A control-group study. PsycEXTRA. The one relevant record a Crossref search on the cover jinx returns; registered as a dataset, carrying no abstract in that record, and not read. Its DOI resolves to an APA page that answers with an Imperva bot block.",
+   "doi": "10.1037/e527772014-785",
+   "url": "https://doi.org/10.1037/e527772014-785",
+   "type": "replication"
+  }
+ ],
+ "checkedOn": "2026-09-21"
 }
