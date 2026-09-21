@@ -83,7 +83,8 @@ the sentence the page's verdict rests on and check the document says it.
    admits no figures were taken from it. A design has no number in it, so
    a rule phrased around figures and dates never catches this. Check the
    descriptive sentences too, especially for sources the page says it did
-   not read.
+   not read. The same goes for a note saying a scan could not be converted:
+   two such claims were false, and character recognition read both.
 8. **A printed number reattached to a neighbouring quantity.** Item 2 does
    not cover this, because the figure really is in the document; it has been
    given to the wrong thing. A share of bets read as a share of money, an
@@ -217,6 +218,11 @@ missing intermediate is usually published by the issuer, and supplying it lets
 the fetch complete. Where the issuer publishes it only over plain http, this
 session's egress refuses that, and the document stays shut for a reason that
 is ours rather than the publisher's. Say which of the two happened.
+
+A rendering fetcher is itself a route. One audit read abstracts at a publisher
+that curl could not get under any user agent, and that settled three sources.
+The brief tells you to fetch to disk for cost, not because a rendering fetch is
+ever wrong.
 
 A block can also be an artefact of your own request. One host served a
 proof-of-work challenge only to browser-like user agents, and a plain curl
