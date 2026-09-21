@@ -217,26 +217,43 @@ so these entries are invisible to all of them, and two audits found their
 worst fault sitting on exactly such a source. If your entry appears, treat
 every silent source as unread until you have opened it.
 
+## How to read a document
+
+Verification means seeing the string in the document. It does not mean having
+read every page, and the difference is most of the cost of this programme.
+
+Extract the text to a file, then search it for the claim you came to check.
+`pdftotext file.pdf - | grep -n -C3 "1,469"` answers whether a figure is in a
+paper, and what it is a figure of, for a fraction of reading the paper. Do the
+same for a sample size, a test statistic, a quoted phrase or an author's name.
+
+Read a document at length only when searching cannot settle it: a scan with no
+text layer, a disputed passage whose meaning depends on its surroundings, a
+results section you must weigh as a whole, or a paper whose structure you have
+to understand before you can say what its figures are of.
+
+Never pipe a whole PDF into your context to find one number.
+
 ## Two tiers
 
 There is more corpus than budget, so effort is placed where being wrong costs
 most. Your instruction says which tier you are in.
 
-A **deep** audit is everything above: open every source, re-check every figure
-against its document, and re-run the absence claims.
+A **deep** audit opens every source and checks every figure against its
+document, searching rather than reading whole where searching will do.
 
-A **light** audit is the same rules with a narrower target. Do all of this and
-stop:
+A **light** audit opens **at most six documents**, chosen in this order, and
+stops:
 
-- Every source whose note claims a block, or carries no note at all. Try them.
-  A false block is the commonest fault here and the cheapest to find.
-- Every source the page says it read in full, checked against the one sentence
-  the page's verdict rests on. The largest corrections have come from these.
-- The state and any absence claim, re-searched today, with venues and date.
-- Any figure carrying the page's headline or sitting in `replication.study`.
-  Check what the document says that number is a figure of.
+1. The sources the state and the headline rest on. Usually two or three.
+   Check the sentence the verdict rests on, and check what each headline
+   figure is a figure of.
+2. Among the rest, the sources whose note claims a block or carries no note
+   at all, taking the ones carrying a claim the page actually leans on.
+   Ignore sources cited only in passing.
+3. The state's absence claim, re-searched today, with venues and date.
 
-In a light audit you are not re-verifying every figure on the page. Say so in
-your report, and name what you did not check, so the next reader knows what
-this pass did and did not cover. If what you find suggests the entry is worse
-than its tier assumed, say that too and keep going.
+If the six are spent before the list is done, stop and say so. Name in your
+report every source you did not open and every figure you did not check, so
+the next reader knows what this pass covered. If what you find suggests the
+entry deserves the deep tier, say that and keep going.
