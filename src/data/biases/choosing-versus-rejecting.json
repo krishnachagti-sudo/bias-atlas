@@ -12,7 +12,7 @@
     "where": "Memory & Cognition",
     "note": "The paper is \"Choosing versus rejecting: Why some options are both better and worse than others\", and the custody vignette is the version everyone quotes."
   },
-  "evidence": "In the original, 170 participants awarded custody to the extreme parent 64% of the time and denied custody to the same parent 55% of the time. The sum is 119%, and Shafir reported the excess over 100 as reliable, z = 2.48, p < .02. Many Labs 2 later converted that result to d = 0.35, with a 95% confidence interval from -0.04 to 0.68.",
+  "evidence": "In the original, 170 people were split between an award group and a deny group. The award group gave custody to the extreme parent 64% of the time, and the deny group denied it to the same parent 55% of the time. The sum is 119%, and Shafir reported the excess over 100 as reliable, z = 2.48, p < .02. Many Labs 2 later converted that result to d = 0.35, with a 95% confidence interval from -0.04 to 0.68.",
   "replication": {
     "state": "failed",
     "headline": "Across 7,901 people the two percentages summed to 93 rather than the 119 the original reported, missing the coherent 100 from the other side.",
@@ -26,21 +26,39 @@
     "original": { "es": 0.35, "esType": "d", "ci": [-0.04, 0.68], "ciLevel": 95 },
     "replicated": { "es": -0.13, "esType": "d", "ci": [-0.18, -0.09], "ciLevel": 95, "weighting": "aggregate" }
   },
-  "limits": "One vignette, one pair of options. Shafir's paper contains other scenarios and the compatibility principle behind it has support from other paradigms, so this is a verdict on the custody demonstration rather than on the idea that framing a decision as selection or elimination can matter. The interval quoted above is not Shafir's. Many Labs 2 reconstructed it from the original's cell sizes, and it runs from -0.04 to 0.68, so the effect-size estimate it produced contains zero. Shafir's own test on the same data was significant, z = 2.48, p < .02.",
-  "misreadings": "The custody problem is a fixture in decision-making courses, usually presented as a demonstration that preferences are constructed by the question rather than retrieved. That lesson may still be right, but this experiment no longer supports it. The result is also sometimes described as people being inconsistent, when the replication found people more consistent than coherence requires rather than less: a sum of 93% means the two groups were converging on the same answer from both directions.",
+  "limits": "One vignette, one pair of options. Shafir's paper carries eight problems, and Many Labs 2 replicated only the custody one, so this is a verdict on that demonstration rather than on the idea that selection and elimination can differ. A second team tested all eight. Chandrashekar and colleagues ran a preregistered close replication in 2021, with 1,026 people answering every problem, and their combined estimate was d = -0.01, 95% confidence interval -0.06 to 0.03. On the custody problem the two shares summed to 101.8%, the original's direction but not reliable, and their Bayes factor favoured the null by about eight to one. Two of the eight problems, both lotteries, did reproduce the original pattern. Many Labs 2 also departed from the original in a way its own table of deviations records: the two parents were not counterbalanced, and the average parent always came first. Shafir replied in the same issue, naming that fixed order and the ageing of the parents' features as possible causes of the reversal. The interval quoted above is not Shafir's. Many Labs 2 built it from cell sizes, assuming an equal split where a paper did not report them, so the estimate it produced contains zero while Shafir's own z test did not.",
+  "misreadings": "The custody problem is a fixture in decision-making courses, usually presented as a demonstration that preferences are constructed by the question rather than retrieved. That lesson may still be right, but this experiment no longer supports it. The result is also sometimes described as people being inconsistent, when the replication found people more consistent than coherence requires rather than less: a sum of 93% means the two groups were converging on the same answer from both directions. Shafir's published reply is missed too. He does not concede the effect, and holds that the replication's materials and its fixed option order could produce the reversal by themselves. His reply also says Wedell replicated the original result for the item Many Labs 2 used, which Wedell's paper does not report: of the five problems Wedell modelled on Shafir's, only one moved significantly in the predicted direction, and it was not the custody one.",
   "sources": [
     {
-      "text": "Shafir, E. (1993). Choosing versus rejecting: Why some options are both better and worse than others. Memory & Cognition, 21(4), 546-556.",
+      "text": "Shafir, E. (1993). Choosing versus rejecting: Why some options are both better and worse than others. Memory & Cognition, 21(4), 546-556. Read in full on 21 September 2026 from the Springer PDF route, which served the file to a plain request. Source for the original figures, for the wording of the custody vignette, and for the fact that the paper carries eight problems rather than one.",
       "doi": "10.3758/BF03197186",
-      "url": "https://doi.org/10.3758/BF03197186",
+      "url": "https://rd.springer.com/content/pdf/10.3758/BF03197186.pdf",
       "type": "primary"
     },
     {
-      "text": "Klein, R. A., Vianello, M., Hasselman, F., et al. (2018). Many Labs 2: Investigating variation in replicability across samples and settings. Advances in Methods and Practices in Psychological Science, 1(4), 443-490.",
+      "text": "Klein, R. A., Vianello, M., Hasselman, F., et al. (2018). Many Labs 2: Investigating variation in replicability across samples and settings. Advances in Methods and Practices in Psychological Science, 1(4), 443-490. The version of record was read in full on 21 September 2026 from the Radboud University repository copy. The SAGE site answers with a Cloudflare bot challenge rather than a paywall, HTTP 403, and Europe PMC holds no record of the article. Source for the replication figures, for the slate assignment, and for the note that the order of the two parents was not counterbalanced.",
       "doi": "10.1177/2515245918810225",
-      "url": "https://doi.org/10.1177/2515245918810225",
+      "url": "https://repository.ubn.ru.nl/bitstream/handle/2066/199156/1/199156.pdf",
       "type": "replication"
+    },
+    {
+      "text": "Shafir, E. (2018). The workings of choosing and rejecting: Commentary on Many Labs 2. Advances in Methods and Practices in Psychological Science, 1(4), 495-496. Read in full on 21 September 2026 from a Wayback Machine snapshot of the publisher's full-text page taken on 24 March 2019, the SAGE copy being behind the same Cloudflare challenge and no repository holding one. Source for the original author's reply, for the point about the fixed option order, and for his account of Wedell.",
+      "doi": "10.1177/2515245918814812",
+      "url": "https://web.archive.org/web/20190324002206/https://journals.sagepub.com/doi/10.1177/2515245918814812",
+      "type": "commentary"
+    },
+    {
+      "text": "Chandrashekar, S. P., Weber, J., Chan, S. Y., Cho, W. Y., Chu, T. C. C., Cheng, B. L., & Feldman, G. (2021). Accentuation and compatibility: Replication and extensions of Shafir (1993) to rethink choosing versus rejecting paradigms. Judgment and Decision Making, 16(1), 36-56. Read in full on 21 September 2026 from the open Cambridge Core copy. Source for the second replication, which covered all eight of the original problems.",
+      "doi": "10.1017/s1930297500008299",
+      "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/S1930297500008299",
+      "type": "replication"
+    },
+    {
+      "text": "Wedell, D. H. (1997). Another look at reasons for choosing and rejecting. Memory & Cognition, 25(6), 873-887. Read in full on 21 September 2026 from the Springer PDF route. Source for the accentuation account, and for what Wedell found on the problems he modelled on Shafir's.",
+      "doi": "10.3758/BF03211332",
+      "url": "https://rd.springer.com/content/pdf/10.3758/BF03211332.pdf",
+      "type": "critique"
     }
   ],
-  "checkedOn": "2026-08-09"
+  "checkedOn": "2026-09-21"
 }
