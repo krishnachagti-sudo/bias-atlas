@@ -50,8 +50,15 @@ ${entries.map((e) => biasCard(e, base, {
   const faq = hubFaq([
     count > 0
       ? {
-        q: `Why are there only ${n(count)}?`,
-        a: `Because writing an entry takes longer than listing one. Each carries the claim, its origin, its limits, and what happened when the underlying experiments were repeated, every part of it traced to something a reader can open. ${n(mapped)} biases have been identified and ranked; listing those names here before the entries exist would make this page look full and be worth nothing.`,
+        // The question changes once the index is no longer short of its own
+        // candidate pool. "Why are there only N" with a backlog behind it was
+        // the right question while entries were outstanding; with more entries
+        // written than candidates identified, it answers something nobody asked
+        // and cites a queue that has been worked through.
+        q: count < mapped ? `Why are there only ${n(count)}?` : 'Where does this list come from?',
+        a: count < mapped
+          ? `Because writing an entry takes longer than listing one. Each carries the claim, its origin, its limits, and what happened when the underlying experiments were repeated, every part of it traced to something a reader can open. ${n(mapped)} biases have been identified and ranked; listing those names here before the entries exist would make this page look full and be worth nothing.`
+          : `From a candidate set of ${n(mapped)} named biases and fallacies, ranked by how often each is looked up, plus the effects from the replication literature that the source lists leave out. Every name on it is now written, which is why the count here is the larger number. Each entry carries the claim, its origin, its limits, and what happened when the underlying experiments were repeated, traced to something a reader can open.`,
       }
       : {
         q: 'Why is the list empty?',
@@ -107,7 +114,7 @@ ${faq.html}${hubNav('browse/', { base })}  </div>
  * This page carries the Person node every other page points at, so it is the
  * one page that must exist before any structured data on the site is coherent.
  */
-export function aboutPage({ base = '/', origin = '', mapped = 0 } = {}) {
+export function aboutPage({ base = '/', origin = '', mapped = 0, count = 0 } = {}) {
   const answer = `${escapeHtml(BRAND)} is written and maintained by one person, Krishna Chagti. Every factual claim in an entry is checked against a source that can be fetched and read, and that source is linked from the entry.`;
 
   const faq = hubFaq([
@@ -136,7 +143,12 @@ export function aboutPage({ base = '/', origin = '', mapped = 0 } = {}) {
 ${hubHead({
     title: 'About',
     answer,
-    lede: `The index is being written now. ${n(mapped)} biases have been identified and ranked by how often people look them up, which is the build order; the entries are written one at a time against their sources.`,
+    // "The index is being written now" described a site with a backlog. Every
+    // identified candidate now has an entry, so the present tense here would be
+    // claiming work that is finished.
+    lede: count >= mapped && count > 0
+      ? `${n(count)} entries are published, written one at a time against their sources. The candidate set behind them held ${n(mapped)} named biases and fallacies, ranked by how often people look them up, and the index has since gone past it to cover effects from the replication literature that the source lists leave out.`
+      : `The index is being written now. ${n(mapped)} biases have been identified and ranked by how often people look them up, which is the build order; the entries are written one at a time against their sources.`,
     base,
     crumbs: [],
   })}

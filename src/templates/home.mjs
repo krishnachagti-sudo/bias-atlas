@@ -125,7 +125,13 @@ ${searchBox('Search a bias — or describe what you noticed…')}      <button c
   <div class="wrap">
     <div class="sec-head">
       <h2>${count > 0 ? 'Published so far' : 'What is here so far'}</h2>
-      <span class="sub">${count > 0 ? `${n(count)} of ${n(mapped)} identified` : 'nothing published yet'}</span>
+      <span class="sub">${count > 0
+    // "N of M identified" only says something while the index is still working
+    // through the candidate pool. The corpus has since passed it, and the line
+    // printed "544 of 177 identified", which reads as a broken template. Once
+    // there are more entries than candidates the honest sub is the count.
+    ? (count < mapped ? `${n(count)} of ${n(mapped)} identified` : `${n(count)} published`)
+    : 'nothing published yet'}</span>
     </div>
     <p class="sec-lede">${answer}</p>
 ${count > 0

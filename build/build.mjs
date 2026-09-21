@@ -68,17 +68,32 @@ setAssetVersions({
 // That is deliberate: a corpus that half-loads is worse than one that does not,
 // because the pages render and nobody notices which ones are missing.
 const entries = loadCorpus({ today: buildDate });
-// Biases identified and ranked in docs/BUILD-ORDER.md but not yet written. Stated
-// on the pages that would otherwise have to explain an empty list, and stated
-// as what it is — a count of work identified, not of work done.
-const MAPPED = 177;
+// Biases identified as candidates: the pool the entries are written from.
+//
+// This was the literal `177`, and it went stale in the worst way a number can.
+// docs/BUILD-ORDER.md says in its own first section that the 177-name list was
+// discarded, because it omitted confirmation bias, anchoring and Dunning-Kruger;
+// the constant outlived the list it counted. Then the corpus passed it, and the
+// home page began printing "544 of 177 identified".
+//
+// Counted from the candidate set instead, so it cannot drift from the file it
+// describes. `candidates` and `fallacies` are the two lists of named candidates
+// and they overlap by fifteen titles, so they are deduplicated on a folded title.
+// `supplement` is deliberately excluded: despite sitting beside them it is not a
+// list of biases at all but a list of replication effects keyed to entries.
+const candidateSet = JSON.parse(await readFile(new URL('../src/data/candidate-set.json', import.meta.url), 'utf8'));
+const foldTitle = (s) => String(s).normalize('NFKD').replace(/[̀-ͯ]/g, '')
+  .toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+const MAPPED = new Set(
+  [...(candidateSet.candidates || []), ...(candidateSet.fallacies || [])].map((c) => foldTitle(c.title)),
+).size;
 
 // ---- pages -----------------------------------------------------------------
 // path (base-relative, '' for the root) -> rendered HTML, tokens intact.
 const pages = {
   '': homePage({ base, origin, entries, mapped: MAPPED }),
   'browse/': browsePage({ base, origin, entries, mapped: MAPPED }),
-  'about/': aboutPage({ base, origin, mapped: MAPPED }),
+  'about/': aboutPage({ base, origin, mapped: MAPPED, count: entries.length }),
 };
 for (const e of entries) {
   pages[entryPath(e)] = entryPage(e, { base, origin, count: entries.length, entries });
