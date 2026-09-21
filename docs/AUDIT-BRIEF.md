@@ -233,6 +233,12 @@ browser-like one. Vary the user agent in both directions before concluding, and 
 the egress address rotates between requests, because the token is bound to
 the address.
 
+Crossref's own metadata is a lead, not a finding. Its `updated-by` field is
+filled in by publishers and it does attach corrections to the wrong record:
+on one audit it hung a corrigendum from an unrelated journal on a paper this
+corpus cites. Open a correction and read what it says it corrects before
+recording that it corrects anything. The same goes for retraction flags.
+
 ## Check what other entries say about your documents
 
 `npm run contradictions` lists every identifier that appears in two entries
