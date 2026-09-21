@@ -24,7 +24,6 @@
       "cite": "Tetlock, P. E., Peterson, R. S., McGuire, C., Chang, S., & Feld, P. (1992). Assessing political group dynamics: A test of the groupthink model. Journal of Personality and Social Psychology, 63(3), 403-425.",
       "doi": "10.1037/0022-3514.63.3.403",
       "year": 1992,
-      "sites": 10,
       "n": 88
     },
     "replicated": {
@@ -125,5 +124,5 @@
       "type": "replication"
     }
   ],
-  "checkedOn": "2026-08-17"
+  "checkedOn": "2026-09-21"
 }

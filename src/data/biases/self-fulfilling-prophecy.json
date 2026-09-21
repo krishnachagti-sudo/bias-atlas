@@ -24,8 +24,7 @@
     "study": {
       "cite": "Madon, S., Jussim, L., Guyll, M., Nofziger, H., Salib, E. R., Willard, J., & Scherr, K. C. (2018). The accumulation of stereotype-based self-fulfilling prophecies. Journal of Personality and Social Psychology, 115(5), 825-844.",
       "doi": "10.1037/pspi0000142",
-      "year": 2018,
-      "sites": 4
+      "year": 2018
     },
     "replicated": {
       "es": 0.65,
@@ -102,5 +101,5 @@
       "type": "review"
     }
   ],
-  "checkedOn": "2026-08-17"
+  "checkedOn": "2026-09-21"
 }

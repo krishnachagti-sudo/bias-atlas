@@ -24,7 +24,6 @@
       "cite": "Većkalov, B., Geiger, S. J., Bartoš, F., White, M. P., Rutjens, B. T., van Harreveld, F., et al. (2024). A 27-country test of communicating the scientific consensus on climate change. Nature Human Behaviour, 8, 1892-1905.",
       "doi": "10.1038/s41562-024-01928-2",
       "year": 2024,
-      "sites": 27,
       "n": 10527
     },
     "replicated": {
@@ -154,5 +153,5 @@
       "type": "commentary"
     }
   ],
-  "checkedOn": "2026-08-17"
+  "checkedOn": "2026-09-21"
 }

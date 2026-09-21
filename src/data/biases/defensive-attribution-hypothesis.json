@@ -20,8 +20,7 @@
     "study": {
       "cite": "Burger, J. M. (1981). Motivational biases in the attribution of responsibility for an accident: A meta-analysis of the defensive-attribution hypothesis. Psychological Bulletin, 90(3), 496-512.",
       "doi": "10.1037/0033-2909.90.3.496",
-      "year": 1981,
-      "sites": 22
+      "year": 1981
     },
     "original": { "es": 0.64, "esType": "d" },
     "replicated": { "es": 0.27, "esType": "d", "weighting": "unweighted" }

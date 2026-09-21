@@ -24,8 +24,7 @@
     "study": {
       "cite": "McCambridge, J., Witton, J., & Elbourne, D. R. (2014). Systematic review of the Hawthorne effect: New concepts are needed to study research participation effects. Journal of Clinical Epidemiology, 67(3), 267-277.",
       "doi": "10.1016/j.jclinepi.2013.08.015",
-      "year": 2014,
-      "sites": 19
+      "year": 2014
     },
     "replicated": {
       "es": 1.17,
@@ -101,5 +100,5 @@
       "type": "secondary"
     }
   ],
-  "checkedOn": "2026-08-17"
+  "checkedOn": "2026-09-21"
 }

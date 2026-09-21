@@ -21,7 +21,6 @@
       "cite": "Krys, K., Capaldi, C. A., van Tilburg, W., Lipp, O. V., Bond, M. H., Vauclair, C.-M., et al. (2018). Catching up with wonderful women: The women-are-wonderful effect is smaller in more gender egalitarian societies. International Journal of Psychology, 53(S1), 21-26.",
       "doi": "10.1002/ijop.12420",
       "year": 2018,
-      "sites": 44,
       "n": 4519
     },
     "replicated": { "es": 0.16, "esType": "d" }
@@ -119,5 +118,5 @@
       "type": "commentary"
     }
   ],
-  "checkedOn": "2026-08-08"
+  "checkedOn": "2026-09-21"
 }

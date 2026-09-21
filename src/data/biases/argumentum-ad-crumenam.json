@@ -21,7 +21,6 @@
       "cite": "Tanjitpiyanond, P., Jetten, J., Peters, K., et al. (2022). A 32-society investigation of the influence of perceived economic inequality on social class stereotyping. European Journal of Social Psychology, 53(2), 367-382. Preregistered; 5,504 participants after exclusions, rating both a wealthy and a poor target.",
       "doi": "10.1002/ejsp.2908",
       "year": 2022,
-      "sites": 32,
       "n": 5504
     },
     "replicated": {
@@ -88,5 +87,5 @@
       "type": "primary"
     }
   ],
-  "checkedOn": "2026-08-17"
+  "checkedOn": "2026-09-21"
 }

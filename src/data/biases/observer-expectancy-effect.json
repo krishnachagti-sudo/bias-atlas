@@ -26,7 +26,6 @@
       "cite": "Salazar, J., Moustgaard, H., Bracchiglione, J., & Hrobjartsson, A. (2025). Empirical evidence of observer bias in randomized clinical trials: updated and expanded analysis of trials with both blinded and non-blinded outcome assessors. Journal of Clinical Epidemiology, 183, 111787.",
       "doi": "10.1016/j.jclinepi.2025.111787",
       "year": 2025,
-      "sites": 66,
       "n": 9451
     }
   },
@@ -151,5 +150,5 @@
       "type": "secondary"
     }
   ],
-  "checkedOn": "2026-08-17"
+  "checkedOn": "2026-09-21"
 }

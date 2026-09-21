@@ -21,7 +21,6 @@
       "cite": "Everaert, J., Podina, I. R., & Koster, E. H. W. (2017). A comprehensive meta-analysis of interpretation biases in depression. Clinical Psychology Review, 58, 33-48.",
       "doi": "10.1016/j.cpr.2017.09.005",
       "year": 2017,
-      "sites": 87,
       "n": 9443
     },
     "replicated": { "es": 0.72, "esType": "g", "ci": [0.62, 0.82], "ciLevel": 95 }
@@ -139,5 +138,5 @@
       "type": "review"
     }
   ],
-  "checkedOn": "2026-08-17"
+  "checkedOn": "2026-09-21"
 }

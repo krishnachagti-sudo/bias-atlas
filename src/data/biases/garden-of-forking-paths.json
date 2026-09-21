@@ -21,7 +21,6 @@
       "cite": "Gould, E., Fraser, H. S., Parker, T. H., Nakagawa, S., et al. (2025). Same data, different analysts: variation in effect sizes due to analytical decisions in ecology and evolutionary biology. BMC Biology, 23(1), 35.",
       "doi": "10.1186/s12915-024-02101-x",
       "year": 2025,
-      "sites": 174,
       "n": 246
     }
   },
@@ -100,5 +99,5 @@
       "type": "background"
     }
   ],
-  "checkedOn": "2026-08-17"
+  "checkedOn": "2026-09-21"
 }

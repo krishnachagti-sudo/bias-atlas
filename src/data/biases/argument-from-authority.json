@@ -21,8 +21,7 @@
       "cite": "Većkalov, B., Geiger, S. J., Bartoš, F., et al. (2024). A 27-country test of communicating the scientific consensus on climate change. Nature Human Behaviour, 8(10), 1892-1905. Preregistered; n = 10,527 across 27 countries.",
       "doi": "10.1038/s41562-024-01928-2",
       "year": 2024,
-      "n": 10527,
-      "sites": 27
+      "n": 10527
     },
     "original": { "es": 0.23, "esType": "d", "ci": [0.18, 0.28], "ciLevel": 95 },
     "replicated": { "es": 0.10, "esType": "d", "ci": [0.04, 0.15], "ciLevel": 95 }
@@ -101,5 +100,5 @@
       "type": "provenance"
     }
   ],
-  "checkedOn": "2026-08-15"
+  "checkedOn": "2026-09-21"
 }

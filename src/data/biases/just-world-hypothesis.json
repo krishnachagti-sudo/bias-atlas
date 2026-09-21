@@ -21,7 +21,6 @@
       "cite": "Dawtry, R. J., Callan, M. J., Harvey, A. J., & Gheorghiu, A. I. (2020). Victims, vignettes, and videos: Meta-analytic and experimental evidence that emotional impact enhances the derogation of innocent victims. Personality and Social Psychology Review, 24(3), 233-259.",
       "doi": "10.1177/1088868320914208",
       "year": 2020,
-      "sites": 55,
       "n": 5947
     },
     "replicated": { "es": 0.15, "esType": "d", "ci": [0.03, 0.27], "ciLevel": 95, "weighting": "random-effects" }
@@ -118,5 +117,5 @@
       "type": "review"
     }
   ],
-  "checkedOn": "2026-08-17"
+  "checkedOn": "2026-09-21"
 }
