@@ -199,8 +199,14 @@ An agent checking whether anyone has tested the law of triviality was told by a
 search that a 2012 paper in the Journal of Organizational Behavior confirmed
 it, with effect claims and recommended interventions attached. No such paper is
 in Crossref. Three earlier cases produced figures of the same kind: "52% versus
-around 50%", "20-30% higher", a count of 1,043 Bundesliga penalty kicks, and
-F statistics, none of them in any document that was fetched.
+around 50%", "20-30% higher" and F statistics, none of them in any document
+that was fetched.
+
+One entry on that list has since come off it. A count of 1,043 Bundesliga
+penalty kicks was recorded here as unfound, and the audit of entry 241 found it
+in the registered abstract of a 2010 comment, read at Crossref twice. The
+lesson is not that the rule was too strict. It is that unfound at one moment is
+not the same as fabricated, and the two should not share a list.
 
 This is why the protocol's first rule is written the way it is. The test is not
 whether a claim came from a reputable-sounding place. It is whether the agent
