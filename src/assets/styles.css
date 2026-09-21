@@ -870,6 +870,14 @@ a.badge{text-decoration:none;display:inline-block}
 .entry-layout{display:grid;grid-template-columns:236px minmax(0,1fr) 300px;gap:clamp(38px,3.6vw,58px);padding:30px 0 44px;align-items:start}
 @media(max-width:1240px){.entry-layout{grid-template-columns:minmax(0,1fr) 300px;gap:46px}}
 @media(max-width:860px){.entry-layout{grid-template-columns:1fr;gap:34px}.aside{position:static}}
+/* A grid track sized `1fr` is `minmax(auto, 1fr)`, and that `auto` floor is the
+   item's min-content width — so one unbreakable string inside the column can
+   push the track wider than the grid itself and put the whole page into
+   horizontal scroll. It did: on a phone every entry page scrolled sideways,
+   because the track measured 754px inside a 322px container. Letting the items
+   shrink below min-content is the structural half of the fix; the wrapping rule
+   on the sources list is the other half. */
+.entry-layout>*{min-width:0}
 
 /* dashboard stat strip under the hero */
 /* The answer block: the replication verdict in one sentence, directly under the
@@ -955,6 +963,10 @@ a.stat--link .s-k::after{content:" →";letter-spacing:0;opacity:.55}
 .sources-list li{display:flex;gap:10px;align-items:baseline;padding:8px 0;border-top:1px solid var(--line);font-size:12.5px;line-height:1.5;color:var(--muted)}
 .sources-list li:first-child{border-top:none}
 .sources-list .snum{font-family:var(--mono);font-size:10.5px;color:var(--faint);flex:none;min-width:14px}
+/* 32 entries cite a source whose visible text is the bare URL, the longest 103
+   characters with nothing to break on. A flex item will not wrap mid-token by
+   default, so that one link set the min-content width of the whole column. */
+.sources-list .stext{min-width:0;overflow-wrap:anywhere}
 .sources-list .stext a{color:var(--muted);text-decoration:underline;text-underline-offset:2px}
 .sources-list .stext a:hover{color:var(--accent)}
 .sources-list .stype{font-family:var(--mono);font-size:8.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--faint);flex:none;align-self:center;border:1px solid var(--line);border-radius:3px;padding:1px 4px}

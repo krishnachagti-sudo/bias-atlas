@@ -296,13 +296,23 @@ export function entryPage(entry, { base = '/', origin = '', count = 0, entries =
     ['Commonly misread as', 'What people get wrong about it',
       `        <p>${escapeHtml(entry.misreadings)}</p>\n`],
     ['Sources', 'Everything this page rests on',
-      `        <ol class="src-list">
-${sources.map((s) => {
+      // `sources-list`, `snum`, `stext`, `stype` and `src-trust`, which are the
+      // classes the stylesheet actually defines. This block rendered `src-list`,
+      // `vd-st` and `src-note`: a rename that reached the template and never
+      // reached the CSS, so the most important section on the page — the one
+      // holding everything it rests on — fell back to a default <ol> with no
+      // rules at all. It also pushed every entry page into horizontal scroll on
+      // a phone, because an unstyled list cannot contain a long DOI.
+      `        <ol class="sources-list">
+${sources.map((s, i) => {
     const href = s.url || (s.doi ? `https://doi.org/${s.doi}` : '');
-    return `          <li>${href ? `<a href="${escapeHtml(href)}" rel="nofollow noopener">${escapeHtml(s.text)}</a>` : escapeHtml(s.text)}${s.type ? ` <span class="vd-st">${escapeHtml(s.type)}</span>` : ''}</li>`;
+    const text = href
+      ? `<a href="${escapeHtml(href)}" rel="nofollow noopener">${escapeHtml(s.text)}</a>`
+      : escapeHtml(s.text);
+    return `          <li><span class="snum">${i + 1}</span><span class="stext">${text}</span>${s.type ? `<span class="stype">${escapeHtml(s.type)}</span>` : ''}</li>`;
   }).join('\n')}
         </ol>
-        <p class="src-note">Every claim on this page was held against these sources on ${escapeHtml(entry.checkedOn)}. Nothing here is written from memory.</p>\n`],
+        <p class="src-trust">Every claim on this page was held against these sources on ${escapeHtml(entry.checkedOn)}. Nothing here is written from memory.</p>\n`],
   ].map(([label, h2, body]) => ({ id: `sec-${label.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}`, label, h2, body }));
 
   // ONE question, and deliberately only one. An earlier draft asked three, and
