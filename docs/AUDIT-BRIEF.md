@@ -117,10 +117,19 @@ These have repeatedly served the same document when the indexed URL did not.
 
 Internet Archive item downloads work, and have carried whole journal issues
 and open uploads of books that publishers call closed. The Wayback Machine at
-`web.archive.org` is intermittent here: three audits were refused outright by
-this session's egress and a fourth read an accepted manuscript from a snapshot
-the same day. So try it, and if it refuses, record that as a fact about this
-session rather than as evidence about the document.
+`web.archive.org` works over https and has served PDFs and accepted
+manuscripts here. Roughly half of attempts die with a TLS error and need a
+retry, and plain http returns a refusal from this session's egress policy.
+An earlier version of this file said flatly that it is blocked, which was
+wrong and would have produced false unobtainability notes.
+
+Litigation dockets. An expert report filed in a court case has described
+three closed papers, and disagreed with a published summary about one of
+their figures.
+
+Read the body of a 403 rather than trusting its status. Most of the refusals
+in this corpus that entries recorded as paywalls are Cloudflare challenges
+saying so in their own HTML.
 
 A block is per host and per day. Retry rather than inheriting a note.
 
@@ -207,3 +216,27 @@ anybody read them. Every other check in this project needs a note to work on,
 so these entries are invisible to all of them, and two audits found their
 worst fault sitting on exactly such a source. If your entry appears, treat
 every silent source as unread until you have opened it.
+
+## Two tiers
+
+There is more corpus than budget, so effort is placed where being wrong costs
+most. Your instruction says which tier you are in.
+
+A **deep** audit is everything above: open every source, re-check every figure
+against its document, and re-run the absence claims.
+
+A **light** audit is the same rules with a narrower target. Do all of this and
+stop:
+
+- Every source whose note claims a block, or carries no note at all. Try them.
+  A false block is the commonest fault here and the cheapest to find.
+- Every source the page says it read in full, checked against the one sentence
+  the page's verdict rests on. The largest corrections have come from these.
+- The state and any absence claim, re-searched today, with venues and date.
+- Any figure carrying the page's headline or sitting in `replication.study`.
+  Check what the document says that number is a figure of.
+
+In a light audit you are not re-verifying every figure on the page. Say so in
+your report, and name what you did not check, so the next reader knows what
+this pass did and did not cover. If what you find suggests the entry is worse
+than its tier assumed, say that too and keep going.
