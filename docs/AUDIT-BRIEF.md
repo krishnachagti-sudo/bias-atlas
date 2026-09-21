@@ -73,6 +73,24 @@ the sentence the page's verdict rests on and check the document says it.
    descriptive sentences too, especially for sources the page says it did
    not read.
 
+## Routes that have worked
+
+Indexes point at the publisher, and the publisher is usually what blocks.
+These have repeatedly served the same document when the indexed URL did not.
+
+- `rd.springer.com` serves PDFs that `link.springer.com` answers with a Fastly
+  bot challenge. Seven of one entry's eleven leads turned on this alone.
+- Institutional repositories that no index lists: DukeSpace, Aarhus Pure,
+  UCLouvain DIAL, Oxford Brookes RADAR, Lancaster, Utrecht, and many more.
+  Plain search finds a version of record that two indexes both miss.
+- PubMed Central, and Europe PMC's `fullTextXML` REST route where the
+  rendered page or PDF is challenged.
+- Authors' own faculty and laboratory pages. Repeatedly one download away
+  from a note calling the paper closed at every location.
+- An Anubis proof-of-work challenge can sometimes be solved. Say so if you do.
+
+A block is per host and per day. Retry rather than inheriting a note.
+
 ## Scope and neighbours
 
 Many entry names cover more than one literature with separate replication
