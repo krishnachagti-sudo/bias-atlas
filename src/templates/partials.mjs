@@ -180,6 +180,28 @@ export function escapeHtml(s) {
  * two facts that decide whether a reader opens it. `level` is the heading level:
  * pass 2 where the cards sit directly under the page h1, 3 under a section head.
  */
+/**
+ * The one-line replication fact on a card's foot.
+ *
+ * This used to print a lab count or, failing that, "no replication located".
+ * Only 66 entries carry a site count, so 387 entries that name a replication
+ * study were telling readers on the index that none had been found. The claim
+ * a card makes about the literature has to be the claim the entry makes, and
+ * an absence is the one thing this site cannot afford to assert loosely.
+ *
+ * A missing study is the real absence, and it lines up exactly with the
+ * none-located state across all 544 entries. Everything else reports the
+ * largest countable thing the study prints, and says only that a replication
+ * exists when it prints neither.
+ */
+function replicationFoot(replication) {
+  const study = replication && replication.study;
+  if (!study) return 'no replication located';
+  if (study.sites) return `${Number(study.sites)} labs`;
+  if (study.n) return `${Number(study.n).toLocaleString('en-GB')} people`;
+  return 'replication located';
+}
+
 export function biasCard(entry, base, { level = 3, verdictLabel, verdictClass } = {}) {
   const h = level === 2 ? 'h2' : 'h3';
   const field = String(entry.category || '');
@@ -187,7 +209,7 @@ export function biasCard(entry, base, { level = 3, verdictLabel, verdictClass } 
      <div class="top"><span class="no">№ ${String(entry.no).padStart(3, '0')}</span><span class="badge ${escapeHtml(verdictClass)}">${escapeHtml(verdictLabel)}</span></div>
      <${h} class="card-name">${escapeHtml(entry.name)}</${h}>
      <div class="say">"${escapeHtml(entry.statement)}"</div>
-     <div class="foot"><span class="cat">${escapeHtml(field)}</span><span class="rel">${escapeHtml(entry.replication.study && entry.replication.study.sites ? `${Number(entry.replication.study.sites)} labs` : 'no replication located')}</span></div>
+     <div class="foot"><span class="cat">${escapeHtml(field)}</span><span class="rel">${escapeHtml(replicationFoot(entry.replication))}</span></div>
    </a>`;
 }
 

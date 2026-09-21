@@ -16,12 +16,11 @@
   "replication": {
     "state": "mixed",
     "headline": "Finucane's risk-benefit experiment held in two preregistered repetitions, while the long-odds prediction reversed direction across 7,218 people.",
-    "detail": "Many Labs 2 put the kiss-versus-money choice in the first of its two slates, which 60 samples ran, for 7,218 participants. Where the original found 70% choosing the affective option under low probability against 35% under certainty, the replication found 47% against 51%, an odds ratio of 0.87 and d = -0.08, 95% confidence interval -0.13 to -0.03, p = 0.002. The interval excludes zero, so this is a reversal rather than a null, and it is a small one. Klein and colleagues count it among three effects running opposite to their originals at p < .05, and it is not among those that clear the stricter p < .0001 line they also report. Of the 60 samples, 57 returned nothing, two reached significance in the reversed direction and one in the direction the original predicted. The original d was 0.74 from 40 people, with a 95% interval Many Labs 2 gives as below 0.001 to 1.74. Finucane's own Study 2 has gone the other way. Efendić, Chandrashekar, Feldman and four colleagues repeated it on MTurk and Prolific under preregistration, analysing 1,552 participants after exclusions. Running the original's analysis, the correlation between manipulated and unmanipulated attributes was r(10) = -0.87, 95% CI [-0.96, -0.59] in the American sample and r(10) = -0.84, 95% CI [-0.95, -0.50] in the British one. The low-benefit condition was the exception, where risk ratings did not shift.",
+    "detail": "Many Labs 2 put the kiss-versus-money choice in the first of its two slates, and pooled 7,218 participants. Where the original found 70% choosing the affective option under low probability against 35% under certainty, the replication found 47% against 51%, an odds ratio of 0.87 and d = -0.08, 95% confidence interval -0.13 to -0.03, p = 0.002. The interval excludes zero, so this is a reversal rather than a null, and it is a small one. Klein and colleagues count it among three effects running opposite to their originals at p < .05, and it is not among those that clear the stricter p < .0001 line they also report. The paper prints no sample count for this effect. It gives 64 samples for that slate as a whole, and reports this effect's individual samples as proportions: 3.33% significant in the reversed direction, 1.67% significant in the original's direction, 95.00% neither. Its heterogeneity test for this effect carries 59 degrees of freedom, which implies 60 samples, and the three proportions are exact sixtieths. That count of 60 is inferred from those figures rather than read off the paper, so it is not stored here as one of this entry's numbers. The original d was 0.74 from 40 people, with a 95% interval Many Labs 2 gives as below 0.001 to 1.74. Finucane's own Study 2 has gone the other way. Efendić, Chandrashekar, Feldman and four colleagues repeated it on MTurk and Prolific under preregistration, analysing 1,552 participants after exclusions. Running the original's analysis, the correlation between manipulated and unmanipulated attributes was r(10) = -0.87, 95% CI [-0.96, -0.59] in the American sample and r(10) = -0.84, 95% CI [-0.95, -0.50] in the British one. The low-benefit condition was the exception, where risk ratings did not shift.",
     "study": {
       "cite": "Klein, R. A., Vianello, M., Hasselman, F., et al. (2018). Many Labs 2: Investigating variation in replicability across samples and settings. Advances in Methods and Practices in Psychological Science, 1(4), 443-490.",
       "doi": "10.1177/2515245918810225",
       "year": 2018,
-      "sites": 60,
       "n": 7218
     },
     "original": { "es": 0.74, "esType": "d" },
@@ -43,9 +42,9 @@
       "type": "primary"
     },
     {
-      "text": "Klein, R. A., Vianello, M., Hasselman, F., et al. (2018). Many Labs 2: Investigating variation in replicability across samples and settings. Advances in Methods and Practices in Psychological Science, 1(4), 443-490.",
+      "text": "Klein, R. A., Vianello, M., Hasselman, F., et al. (2018). Many Labs 2: Investigating variation in replicability across samples and settings. Advances in Methods and Practices in Psychological Science, 1(4), 443-490. Figures read from the accepted manuscript in the LSE repository, including its Tables 2, 3 and 5.",
       "doi": "10.1177/2515245918810225",
-      "url": "https://doi.org/10.1177/2515245918810225",
+      "url": "https://eprints.lse.ac.uk/91159/1/Kappes_Many-labs-2.pdf",
       "type": "replication"
     },
     {
@@ -67,5 +66,5 @@
       "type": "background"
     }
   ],
-  "checkedOn": "2026-08-17"
+  "checkedOn": "2026-09-21"
 }
