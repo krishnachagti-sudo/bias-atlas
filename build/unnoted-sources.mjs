@@ -51,13 +51,15 @@ for (const r of silent.sort((a, b) => a.no - b.no)) {
   console.log(`  ${String(r.no).padStart(3)}  ${r.slug.padEnd(40)} ${r.total} sources   checked ${r.checkedOn}`);
 }
 
-// The partial list is long and less urgent, so it prints as a tally by how
-// much of the entry is dark rather than row by row.
+// Printed in full above a threshold rather than as a top twenty. The first
+// version capped the list at twenty rows, and an entry with six silent
+// sources fell below the cut, so an audit reported the check had missed it.
+// The check had not missed it. The report had.
 const worst = partial
   .map((r) => ({ ...r, dark: r.total - r.noted }))
-  .sort((a, b) => b.dark - a.dark)
-  .slice(0, 20);
-console.log('\nEntries with the most sources left unexplained:\n');
+  .filter((r) => r.dark >= 3)
+  .sort((a, b) => b.dark - a.dark);
+console.log(`\n${worst.length} entries leave three or more sources unexplained:\n`);
 for (const r of worst) {
   console.log(`  ${String(r.no).padStart(3)}  ${r.slug.padEnd(40)} ${r.dark} of ${r.total} silent`);
 }
