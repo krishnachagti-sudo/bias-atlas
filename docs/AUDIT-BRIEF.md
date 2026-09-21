@@ -243,10 +243,12 @@ Never pipe a whole PDF into your context to find one number.
 There is more corpus than budget, so effort is placed where being wrong costs
 most. Your instruction says which tier you are in.
 
-An entry whose sources say nothing about provenance cannot be audited lightly.
-With no note to test, the tier's first two checks collapse into opening
-everything, and one light pass cost a deep one's fetching before this was
-understood. Those entries are assigned deep, and `npm run unnoted` names them.
+An entry that `npm run unnoted` names in either of its lists is assigned deep,
+whether it explains none of its sources or leaves three or more unexplained.
+The light tier works by testing what the notes claim, so where the notes are
+missing its first two checks collapse into opening everything. One light pass
+cost a deep one's fetching before this was understood, and a second was
+assigned light while the check named it, leaving three sources unopened.
 
 A **deep** audit opens every source and checks every figure against its
 document, searching rather than reading whole where searching will do.
