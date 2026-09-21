@@ -90,7 +90,10 @@ the sentence the page's verdict rests on and check the document says it.
    came for, before quoting from it. Never guess a sequential path on a
    repository: one guessed identifier returned a real, correctly formatted
    article that was simply the wrong paper, with a 200 and nothing to flag it.
-   Checking the title before extracting caught it in one command.
+   Checking the title before extracting caught it in one command. The same
+   check belongs on the file, not only on the record: two indexes offered an
+   open file for one citation that is a different paper by the same authors.
+   Read the opened document's own title page.
 10. **A claim about this corpus, made without grepping it.** Entries assert
     what a neighbouring entry says, how many entries cover something, or
     that no entry does. Those are checkable in a second and have been wrong.
