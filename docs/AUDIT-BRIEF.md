@@ -116,6 +116,9 @@ These have repeatedly served the same document when the indexed URL did not.
 
 - `rd.springer.com` serves PDFs that `link.springer.com` answers with a Fastly
   bot challenge. Seven of one entry's eleven leads turned on this alone.
+- An author's collected writings, where a founding figure has a volume. Two
+  sources one entry called unobtainable are open in a press's edition of
+  Tversky's papers, and this corpus leans on a handful of such authors.
 - Plain web search for a distinctive phrase from the document, in quotes. It
   opened a founding paper after every index, repository and archive route had
   failed. Indexes know about records; search engines know about files.
@@ -337,7 +340,9 @@ same for a sample size, a test statistic, a quoted phrase or an author's name.
 
 A scan with no text layer wants optical character recognition run page by
 page, not reading at length and not many pages at once. Parallel passes have
-died on timeouts and returned nothing.
+died on timeouts and returned nothing. Set `OMP_THREAD_LIMIT=1` first: without
+it every page timed out empty while three audits shared four cores, which
+looks exactly like a document with nothing in it.
 
 Read a document at length only when searching cannot settle it: a scan with no
 text layer, a disputed passage whose meaning depends on its surroundings, a
