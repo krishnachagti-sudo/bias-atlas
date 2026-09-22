@@ -57,7 +57,17 @@ import unicodedata
 import collections
 from collections import OrderedDict
 
-from PIL import Image
+# Pillow is needed only to crop and resize what has been downloaded, and every
+# call to it sits on the network path. Importing it at module level meant this
+# file could not be LOADED at all without it — and the two pure decision
+# functions here, the licence filter and the portrait guard, are loaded by the
+# Node suite, which runs in CI, where Pillow is not installed. Eleven deploys
+# went red on that. The import is deferred so those decisions can be checked
+# anywhere; a harvest without Pillow stops in main() with the reason.
+try:
+    from PIL import Image
+except ModuleNotFoundError:  # pragma: no cover - only where Pillow is absent
+    Image = None
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ENTRY_DIR = os.path.join(ROOT, 'src', 'data', 'biases')
@@ -1023,6 +1033,9 @@ def main():
     ap.add_argument('--only', default='')
     ap.add_argument('--mode', choices=('people', 'figures', 'artifacts', 'people2'), default='people')
     args = ap.parse_args()
+
+    if Image is None:
+        sys.exit('Pillow is required to harvest images: pip install Pillow')
 
     if args.mode == 'figures':
         return fetch_figures(args)

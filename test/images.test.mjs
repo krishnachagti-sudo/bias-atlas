@@ -27,6 +27,21 @@ const entries = readdirSync(DIR).filter((f) => f.endsWith('.json'))
 const MANIFEST = JSON.parse(readFileSync('src/data/images.json', 'utf8'));
 const BUILT = existsSync('dist/index.html');
 
+// Two tests below load the Python harvester to check its decisions. That needs
+// an interpreter, and a machine without one would fail them for a reason that
+// has nothing to do with the code, so they skip with that stated. It is only
+// the INTERPRETER that earns a skip: the harvester's own third-party imports
+// must not, which is why Pillow is loaded lazily there. Importing it at module
+// level made these two unloadable in CI and held eleven deploys red.
+const HAS_PY = (() => {
+  try {
+    execFileSync('python3', ['-c', 'pass'], { stdio: 'ignore' });
+    return true;
+  } catch {
+    return false;
+  }
+})();
+
 const sample = entries.find((e) => e.slug === 'anchoring-effect') || entries[0];
 const firstAuthor = String(sample.origin.who).split(/,\s*and\s+|\s+and\s+|,\s*/)[0].trim();
 
@@ -57,7 +72,8 @@ const render = (e, images) => entryPage(e, { base: '/biases/', origin: 'https://
 
 // ---- the guard -------------------------------------------------------------
 
-test('the harvester refuses a person whose article never names the bias', () => {
+test('the harvester refuses a person whose article never names the bias', (t) => {
+  if (!HAS_PY) return t.skip('no python3 on this machine');
   // This is the whole defence, and it is weaker here than in The Law Tome. That
   // corpus matches `namedAfter`, so "Amdahl's Law" is itself the evidence. This
   // one matches `origin.who`, and almost nothing here is an eponym — nobody
@@ -84,7 +100,8 @@ print(json.dumps({
   assert.equal(out.right[1], 'name');
 });
 
-test('the harvester publishes only licences that permit republication', () => {
+test('the harvester publishes only licences that permit republication', (t) => {
+  if (!HAS_PY) return t.skip('no python3 on this machine');
   const code = `
 import importlib.util, json
 spec = importlib.util.spec_from_file_location('fi', 'build/fetch-images.py')
