@@ -46,6 +46,8 @@ import { isItRealPage } from '../src/templates/veracity.mjs';
 import { sheetsIndexPage, sheetPage, sheetFields, sheetPath } from '../src/templates/sheets.mjs';
 import { comparePairs, comparePage, compareIndexPage } from '../src/templates/compare.mjs';
 import { graphPage } from '../src/templates/graph.mjs';
+import { projectsPage } from '../src/templates/projects.mjs';
+import { venuesPage } from '../src/templates/venues.mjs';
 import { tensionsPage } from '../src/templates/tensions.mjs';
 import { collections, collectionsPage, collectionPage } from '../src/templates/collections.mjs';
 import { dayIndex } from './quiz.mjs';
@@ -163,6 +165,8 @@ const pages = {
   'privacy/': privacyPage({ base, origin, entries }),
   'is-it-real/': isItRealPage(entries, { base, origin }),
   'sheets/': sheetsIndexPage({ base, origin, entries }),
+  'projects/': projectsPage({ base, origin, entries }),
+  'published-in/': venuesPage({ base, origin, entries }),
   'graph/': graphPage({ base, origin, count: entries.length, stats: graphJson(graph, { base, origin }).counts }),
 };
 for (const e of entries) {

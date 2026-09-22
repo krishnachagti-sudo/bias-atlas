@@ -714,6 +714,37 @@ a.stat--link .s-k::after{content:" →";letter-spacing:0;opacity:.55}
 .callout p{margin:0;font-size:16.5px;line-height:1.76;color:var(--read)}
 .callout--key{border-left-color:var(--accent);background:var(--accent-soft)}
 .callout--key .co-ic{color:var(--accent)}
+/* ---- /projects/ and /published-in/ ----------------------------------------
+   Two grouped-list pages with the same bones as /is-it-real/: a heading that
+   carries its own count, a line of provenance, then the entries. Kept as their
+   own classes rather than reusing .ir-* because the group heading here is a
+   citation or a journal name, which wraps, where a verdict label never does. */
+.pj,.vn{margin:0 0 40px;scroll-margin-top:calc(var(--header-h) + 20px)}
+.pj-h,.vn-h{font-family:var(--serif);font-weight:600;font-size:20px;line-height:1.3;margin:0 0 7px;
+  border-bottom:1px solid var(--line-strong);padding-bottom:9px}
+.pj-n,.vn-n{font-family:var(--mono);font-size:11px;letter-spacing:.04em;color:var(--faint);
+  white-space:nowrap;margin-left:8px}
+.pj-cite{font-size:12.5px;line-height:1.6;color:var(--muted);margin:0 0 6px;max-width:82ch;
+  overflow-wrap:anywhere}
+.pj-cite a{color:var(--muted)}
+.pj-fig,.pj-split{font-family:var(--mono);font-size:10.5px;letter-spacing:.04em;color:var(--faint);margin:0 0 4px}
+.pj-split{margin-bottom:12px}
+.pj-list,.vn-list{list-style:none;margin:0;padding:0;
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(min(300px,100%),1fr));gap:0 22px}
+.pj-list li,.vn-list li{display:flex;align-items:center;gap:9px;padding:7px 0;
+  border-bottom:1px solid var(--line);min-width:0}
+.pj-list a,.vn-list a{font-family:var(--serif);font-size:15px;color:var(--ink);text-decoration:none;
+  flex:1 1 auto;min-width:0}
+.pj-list a:hover,.vn-list a:hover{color:var(--accent)}
+.pj-list .badge,.vn-list .badge{flex:none}
+.vn-y{font-family:var(--mono);font-size:11px;color:var(--faint);flex:none}
+.vn-note{font-size:13px;line-height:1.6;color:var(--muted);margin:0 0 12px;max-width:78ch}
+.vn-rest{list-style:none;margin:0;padding:0;columns:3;column-gap:30px;
+  font-size:13px;line-height:1.75;color:var(--dim)}
+@media(max-width:900px){.vn-rest{columns:2}}
+@media(max-width:560px){.vn-rest{columns:1}}
+.vn-rest li{break-inside:avoid}
+
 /* ---- /graph/ --------------------------------------------------------------
    The stage is dark regardless of theme, which is the Tome's decision and the
    right one: a force-directed web of coloured dots needs a field that does not

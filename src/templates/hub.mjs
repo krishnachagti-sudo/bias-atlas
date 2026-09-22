@@ -26,6 +26,8 @@ const BLURB = {
   'sheets/': 'one field to a page, dense enough to print and carry',
   'compare/': 'two biases that get confused, side by side',
   'graph/': 'the whole index as a web, walked one neighbourhood at a time',
+  'projects/': 'the multi-laboratory studies that settled several entries at once',
+  'published-in/': 'the journals and papers these claims first appeared in',
   'data/': 'the corpus as one file, and every entry as plain text',
   'about/': 'how entries are written, sourced and corrected',
   'author/': 'who writes this index, and what that rests on',

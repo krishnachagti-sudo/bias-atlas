@@ -81,6 +81,7 @@ const FEATURES = [
   ['tensions/', IC.tension, 'The pairs that disagree', 'Biases people mix up whose verdicts came out opposite — confirmation bias replicated, the backfire effect did not.'],
   ['how-solid/', IC.shield, 'Replicated, or not?', 'Every entry carries a verdict on the experiments behind it, so you always know whether you are quoting a finding or a story.'],
   ['collections/', IC.stack, 'Collections', 'Cuts across the index, each computed from a rule printed on the page: the effects that shrank, the ones retested at scale, the failed ones still in circulation.'],
+  ['projects/', IC.shield, 'The projects that tested many at once', 'Many Labs 2 settled twenty-two of these in one paper. A verdict looks like its own story until you see the table it came from.'],
   ['sheets/', IC.sheet, 'Cheat sheets', 'One field to a page, dense enough to print and carry into a room: the claim in a line, the verdict beside it.'],
   ['timeline/', IC.clock, 'A history of the naming', 'Walk the corpus by decade, from the effects named before 1940 to the ones coined in living memory.'],
   ['named-by/', IC.person, 'By who named it', 'Browse entries under the researchers who first described them.'],
