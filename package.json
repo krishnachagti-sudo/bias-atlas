@@ -18,7 +18,8 @@
     "contradictions": "node build/contradictions.mjs",
     "orphans": "node build/orphan-figures.mjs",
     "unnoted": "node build/unnoted-sources.mjs",
-    "examples": "node build/examples-check.mjs"
+    "examples": "node build/examples-check.mjs",
+    "css": "node build/dead-css.mjs"
   },
   "dependencies": {
     "@resvg/resvg-js": "^2.6.2"
