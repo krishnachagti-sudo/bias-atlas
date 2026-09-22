@@ -255,6 +255,8 @@ ${hubHead({
       <thead><tr><th scope="col">File</th><th scope="col">What it is</th><th scope="col">Format</th></tr></thead>
       <tbody>
         <tr><th scope="row"><a href="${base}api.json">api.json</a></th><td>Every entry: identity, field, the claim, origin, replication verdict, both effect sizes and the full source list. The schema and the licence are stated inside the file.</td><td>JSON</td></tr>
+        <tr><th scope="row"><a href="${base}graph.json">graph.json</a></th><td>How the entries connect: which ones this index's own prose says are confused with each other, which share a replication study, and which share a namer. Every edge carries the sentence or citation it was derived from, so a link can be checked the way a claim can.</td><td>JSON</td></tr>
+        <tr><th scope="row"><a href="${base}feed.xml">feed.xml</a></th><td>The fifty most recent entries as Atom, each summary carrying the verdict. One per field as well, linked from that field's page.</td><td>Atom</td></tr>
         <tr><th scope="row"><a href="${base}bias/sunk-cost/index.md">&lt;entry&gt;/index.md</a></th><td>Any single entry in full, as plain text, at its own address with <code>index.md</code> on the end. This is the prose that <code>api.json</code> leaves out.</td><td>Markdown</td></tr>
         <tr><th scope="row"><a href="${base}sitemap.xml">sitemap.xml</a></th><td>Every page, with a last-modified date derived from the content rather than the build.</td><td>XML</td></tr>
       </tbody>
@@ -299,6 +301,8 @@ ${faq.html}${hubNav('data/', { base })}  </div>
         dateModified: LASTMOD_TOKEN,
         distribution: [
           { '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: `${origin}${base}api.json` },
+          { '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: `${origin}${base}graph.json` },
+          { '@type': 'DataDownload', encodingFormat: 'application/atom+xml', contentUrl: `${origin}${base}feed.xml` },
         ],
       },
       ...(faq.jsonld ? [faq.jsonld] : []),

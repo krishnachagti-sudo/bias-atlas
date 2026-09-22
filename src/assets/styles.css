@@ -312,9 +312,18 @@ nav.links{max-height:calc(100vh - 62px)}
 /* section lede — one intro paragraph under a .sec-head, above a grid */
 .sec-lede{font-family:var(--serif);font-size:16px;line-height:1.6;color:var(--read);max-width:640px;margin:-8px 0 26px}
 /* compare cross-links in the law-page aside */
-.panel--compare .cmp-side{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:1px}
-.panel--compare .cmp-side a{display:flex;gap:7px;align-items:baseline;padding:5px 0;font-family:var(--serif);font-size:14px;color:var(--ink);text-decoration:none}
-.panel--compare .cmp-side a:hover{color:var(--accent)}
+.panel--compare .cmp-side,
+.panel--rel .cmp-side{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:1px}
+.panel--compare .cmp-side a,
+.panel--rel .cmp-side a{display:flex;gap:7px;align-items:baseline;padding:5px 0;font-family:var(--serif);font-size:14px;color:var(--ink);text-decoration:none}
+.panel--compare .cmp-side a:hover,
+.panel--rel .cmp-side a:hover{color:var(--accent)}
+/* Each link says where it came from. Without the provenance line the panel
+   reads as an editorial "see also", which is the one thing these links are
+   not: every one is a sentence in this entry's own prose naming that entry. */
+.panel--rel .cmp-side li{padding:5px 0}
+.panel--rel .cmp-side li a{padding:0}
+.rel-why{display:block;font-family:var(--sans);font-size:11.5px;line-height:1.45;color:var(--faint);margin-top:2px}
 .quiz-eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
 .quiz{margin-top:8px;max-width:680px}
 /* ---- the quiz round -------------------------------------------------------

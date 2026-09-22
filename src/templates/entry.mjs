@@ -539,7 +539,7 @@ ${numbers}${effectPlot(r)}${r.detail ? `        <p>${escapeHtml(r.detail)}</p>\n
  * Nothing here repeats the fact strip: verdict, year, field, source count and
  * last-checked date are all already tiles above.
  */
-function asideRail(entry, { base, siblings }) {
+function asideRail(entry, { base, siblings, related = [] }) {
   const s = entry.replication && entry.replication.study;
   const panels = [];
 
@@ -559,6 +559,19 @@ function asideRail(entry, { base, siblings }) {
 ${figures.length ? `        <p class="rep-fig">${escapeHtml(figures.join(' · '))}</p>\n` : ''}      </div>`);
   }
 
+  // The entries this one's own prose names. Every item is derived from a
+  // sentence in `misreadings` or `limits`, so the panel is the entry pointing
+  // at its neighbour rather than the site guessing at one — which is why a
+  // relationship map was declined twice before the derivation existed.
+  if (related.length) {
+    panels.push(`      <div class="panel panel--rel">
+        <h3>Often confused with</h3>
+        <ul class="cmp-side">
+${related.map((r) => `          <li><a href="${base}bias/${escapeHtml(r.slug)}/">${escapeHtml(r.name)}</a><span class="rel-why">${escapeHtml(r.why)}</span></li>`).join('\n')}
+        </ul>
+      </div>`);
+  }
+
   if (siblings.length) {
     panels.push(`      <div class="panel panel--compare">
         <h3><a href="${base}${fieldPath(entry.category)}">More in ${escapeHtml(String(CATEGORIES[entry.category] || entry.category).toLowerCase())}</a></h3>
@@ -574,7 +587,7 @@ ${panels.join('\n')}
       </aside>\n`;
 }
 
-export function entryPage(entry, { base = '/', origin = '', count = 0, entries = [] } = {}) {
+export function entryPage(entry, { base = '/', origin = '', count = 0, entries = [], related = [] } = {}) {
   const path = entryPath(entry);
   const r = entry.replication;
   const field = CATEGORIES[entry.category] || entry.category;
@@ -726,7 +739,7 @@ ${b.body}        </div>`).join('\n')}
 ${shareRow({ url: `${origin}${base}${path}`, title: entry.name, text: entry.statement, label: 'Share this entry' })}        </div>
 
 ${faq.html}${prevnext}      </div>
-${asideRail(entry, { base, siblings })}    </div>
+${asideRail(entry, { base, siblings, related })}    </div>
   </div>
 `;
 

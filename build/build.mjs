@@ -41,6 +41,7 @@ import { ROUND, scoreVerdict } from './quiz.mjs';
 import { entryMarkdown } from './markdown.mjs';
 import { buildApi } from './api.mjs';
 import { buildFeed } from './feed.mjs';
+import { buildGraph, graphJson, relatedTo } from './graph.mjs';
 import { slugify } from './slugify.mjs';
 import { buildLlms, buildLlmsFull } from './llms.mjs';
 import { buildSitemap } from './sitemap.mjs';
@@ -84,6 +85,10 @@ setAssetVersions({
 // That is deliberate: a corpus that half-loads is worse than one that does not,
 // because the pages render and nobody notices which ones are missing.
 const entries = loadCorpus({ today: buildDate });
+
+// How the entries connect, derived from what they already say. Built once here
+// because both the per-entry rail and graph.json read it.
+const graph = buildGraph(entries);
 // Biases identified as candidates: the pool the entries are written from.
 //
 // This was the literal `177`, and it went stale in the worst way a number can.
@@ -122,7 +127,19 @@ const pages = {
   'privacy/': privacyPage({ base, origin, entries }),
 };
 for (const e of entries) {
-  pages[entryPath(e)] = entryPage(e, { base, origin, count: entries.length, entries });
+  pages[entryPath(e)] = entryPage(e, {
+    base,
+    origin,
+    count: entries.length,
+    entries,
+    // Only `confused-with`: the other two edge kinds are true and are in
+    // graph.json, but "first described by the same person" is not a reason for
+    // a reader on this page to click through, and a panel headed "often
+    // confused with" must not carry links that are not that.
+    related: relatedTo(e.slug, graph, { limit: 5 })
+      .filter((x) => x.kind === 'confused-with')
+      .map((x) => ({ slug: x.to, name: (graph.bySlug.get(x.to) || {}).name || x.to, why: x.why })),
+  });
 }
 
 // ---- grouping hubs ---------------------------------------------------------
@@ -325,6 +342,13 @@ for (const [key, label] of Object.entries(CATEGORIES)) {
     fallbackDate: buildDate,
   })));
 }
+
+// The relationship graph, as data. Every edge carries the evidence that
+// produced it, so a consumer can check a link the way they can check a claim.
+writes.push(write(
+  join(out, 'graph.json'),
+  `${JSON.stringify(graphJson(graph, { baseUrl: `${origin}${base}` }), null, 1)}\n`,
+));
 
 writes.push(write(
   join(out, 'sitemap.xml'),
