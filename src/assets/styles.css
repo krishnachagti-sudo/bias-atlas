@@ -794,6 +794,32 @@ html{scroll-behavior:smooth}
 .aside{position:static}}
 .panel{border:1px solid var(--line);border-radius:3px;background:var(--surface);padding:18px 20px;box-shadow:var(--e1)}
 .panel h3{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);font-weight:400;margin-bottom:14px}
+/* ---- save, cite, and the card download ------------------------------------
+   The Save button is the one control a returning reader looks for, so it sits
+   first in the rail and reads as a control rather than a link. `is-saved` is
+   set by saved.js from localStorage, which means it CANNOT be server-rendered:
+   the page ships in the unsaved state and corrects itself, so the unsaved state
+   has to be the one that looks deliberate. */
+.panel--save{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.panel--save .btn{display:inline-flex;align-items:center;gap:8px}
+.panel--save .ti-svg{width:16px;height:16px;flex:0 0 16px}
+.btn#save.is-saved{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.btn#save.is-saved .ti-svg{fill:currentColor}
+.save-link{font-family:var(--sans);font-size:13px;color:var(--muted);text-decoration:none;border-bottom:1px solid var(--line-strong)}
+.save-link:hover{color:var(--accent);border-bottom-color:var(--accent)}
+/* A citation is read and copied, not skimmed: monospaced so a reader can see
+   exactly what they are about to paste, including the spaces. */
+.cite-box{font-family:var(--mono);font-size:12px;line-height:1.6;color:var(--dim);background:var(--surface-2);
+  border:1px solid var(--line);border-radius:2px;padding:10px 12px;margin:0 0 12px;overflow-wrap:anywhere}
+.panel--share .share--compact{margin:0}
+/* The shortlist grid on /saved/, and the empty state that is the first thing
+   almost every visitor sees there. */
+.saved-n{font-family:var(--mono);font-size:11.5px;letter-spacing:.04em;text-transform:uppercase;color:var(--faint);margin:0 0 18px}
+.empty{font-family:var(--serif);font-size:16px;line-height:1.7;color:var(--muted);padding:28px 0;max-width:60ch}
+.empty a{color:var(--accent-ink);text-decoration:none;border-bottom:1px solid var(--line-strong)}
+.save-remove{margin-left:auto;background:none;border:0;padding:0;cursor:pointer;
+  font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--faint)}
+.save-remove:hover{color:var(--con)}
 /* the pinned replication study in the right rail. Set in serif at reading size
    rather than as a label: it is a citation meant to be read and followed, and
    the figures under it are a caption to that, not a statistic of their own. */

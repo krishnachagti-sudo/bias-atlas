@@ -25,7 +25,7 @@
 // template's own words is how a page like this becomes filler.
 
 import {
-  head, sprite, header, footer, escapeHtml, shareRow, BRAND, founderRef,
+  head, sprite, header, footer, escapeHtml, shareRow, BRAND, founderRef, asset,
 } from './partials.mjs';
 import { hubFaq, hubJsonLd } from './hub.mjs';
 import { CATEGORIES } from '../../build/corpus.mjs';
@@ -539,9 +539,27 @@ ${numbers}${effectPlot(r)}${r.detail ? `        <p>${escapeHtml(r.detail)}</p>\n
  * Nothing here repeats the fact strip: verdict, year, field, source count and
  * last-checked date are all already tiles above.
  */
-function asideRail(entry, { base, siblings, related = [] }) {
+function asideRail(entry, { base, origin = '', related = [], siblings }) {
   const s = entry.replication && entry.replication.study;
   const panels = [];
+
+  // Save, first, because it is the one control a returning reader looks for.
+  // Everything the /saved/ list needs to draw a card travels on the button, so
+  // the shortlist works with no second request and no index to consult.
+  panels.push(`      <div class="panel panel--save">
+        <button class="btn" id="save" type="button" aria-pressed="false"
+          data-slug="${escapeHtml(entry.slug)}"
+          data-name="${escapeHtml(entry.name)}"
+          data-statement="${escapeHtml(entry.statement || '')}"
+          data-cat="${escapeHtml(entry.category || '')}"
+          data-verdict="${escapeHtml(replicationLabel((entry.replication || {}).state) || '')}"
+          data-vclass="${escapeHtml(REPLICATION_CLASS[(entry.replication || {}).state] || '')}"
+          data-no="${escapeHtml(String(entry.no || ''))}">
+          <svg class="ti-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 7v14l-6-4-6 4V7a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4z"/></svg>
+          <span id="save-t">Save</span></button>
+        <a class="save-link" href="${base}saved/">View saved</a>
+      </div>
+`);
 
   if (s && s.cite) {
     const href = s.url || (s.doi ? `https://doi.org/${s.doi}` : '');
@@ -580,6 +598,29 @@ ${siblings.map((o) => `          <li><a href="${base}${entryPath(o)}">${escapeHt
         </ul>
       </div>`);
   }
+
+  // Citing an entry is a different act from passing it on, and wants different
+  // text: a citation is for a bibliography, so it carries the checked date and
+  // the canonical URL rather than the statement.
+  const citeUrl = `${origin}${base}bias/${entry.slug}/`;
+  const cite = `${BRAND}. "${entry.name}." Checked ${entry.checkedOn}. ${citeUrl}`;
+  panels.push(`      <div class="panel">
+        <h3>Cite this entry</h3>
+        <div class="cite-box" id="cite">${escapeHtml(cite)}</div>
+        <button class="btn" id="copy" type="button"><span id="copy-t">Copy citation</span></button>
+      </div>
+`);
+
+  // The card this page already has. It is built at build time for the link
+  // preview; offering it as a download costs one anchor and makes the thing
+  // shareable by hand, into places that do not unfurl links at all.
+  panels.push(`      <div class="panel panel--share">
+        <h3>Pass it on</h3>
+        <div class="share share--compact">
+          <a class="sh-b" href="${base}og/bias/${escapeHtml(entry.slug)}.png" download="${escapeHtml(entry.slug)}-bias-atlas.png">Save the card</a>
+        </div>
+      </div>
+`);
 
   if (!panels.length) return '';
   return `      <aside class="aside">
@@ -739,7 +780,7 @@ ${b.body}        </div>`).join('\n')}
 ${shareRow({ url: `${origin}${base}${path}`, title: entry.name, text: entry.statement, label: 'Share this entry' })}        </div>
 
 ${faq.html}${prevnext}      </div>
-${asideRail(entry, { base, siblings, related })}    </div>
+${asideRail(entry, { base, origin, siblings, related })}    </div>
   </div>
 `;
 
@@ -838,6 +879,8 @@ ${asideRail(entry, { base, siblings, related })}    </div>
         ...(faq.jsonld ? [faq.jsonld] : []),
       ],
     })
-    + sprite() + header({ base, active: 'browse', count: count > 0 ? count : null }) + section + footer({ base })
+    + sprite() + header({ base, active: 'browse', count: count > 0 ? count : null }) + section
+    // saved.js wires the Save button and does nothing on a page without one.
+    + footer({ base, scripts: `<script defer src="${asset(base, 'assets/saved.js')}"></script>` })
   );
 }

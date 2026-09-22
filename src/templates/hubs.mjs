@@ -171,7 +171,7 @@ ${hubHead({
       caption: `Which fields these ${n(list.length)} come from. The tallest bar is usually the largest field rather than the worst one; the split within each field is on its own page.`,
     },
   )}${grid(list, base)}
-${faq.html}${hubNav(verdictPath(state), { base })}  </div>
+${faq.html}${shareRow({ url: `${origin}${base}${verdictPath(state)}`, title: copy.title, text: answer, label: 'Share this page' })}${hubNav(verdictPath(state), { base })}  </div>
 </section>
 `;
 
@@ -234,7 +234,7 @@ ${hubHead({
     base,
     caption: `How ${label.toLowerCase()} held up, as a share of its ${n(list.length)} entries. Each band links to that verdict across the whole index.`,
   })}${grid(list, base)}
-${faq.html}${hubNav(fieldPath(cat), { base })}  </div>
+${faq.html}${shareRow({ url: `${origin}${base}${fieldPath(cat)}`, title: `${label} biases`, text: answer, label: 'Share this page' })}${hubNav(fieldPath(cat), { base })}  </div>
 </section>
 `;
 
@@ -300,7 +300,7 @@ ${hubHead({
     ],
     lede: `Entries whose origin names ${escapeHtml(person.name)} among the people who first described the effect. Being named here is a record of who published the finding, not a claim about who the effect is popularly credited to — those are often different people.`,
   })}${grid(list, base)}
-${faq.html}${hubNav(personPath(person.slug), { base })}  </div>
+${faq.html}${shareRow({ url: `${origin}${base}${personPath(person.slug)}`, title: `Biases first described by ${person.name}`, text: answer, label: 'Share this page' })}${hubNav(personPath(person.slug), { base })}  </div>
 </section>
 `;
 
@@ -356,7 +356,7 @@ ${list.map((p) => {
   }).join('\n')}
       </tbody>
     </table>
-${hubNav('named-by/', { base })}  </div>
+${shareRow({ url: `${origin}${base}named-by/`, title: 'Who named these biases', text: answer, label: 'Share this page' })}${hubNav('named-by/', { base })}  </div>
 </section>
 `;
 
@@ -423,7 +423,7 @@ ${letters.map((l) => `    <div class="aka-grp" id="aka-${l === '#' ? 'other' : l
 ${byLetter.get(l).map((r) => `        <li class="aka-row"><span class="aka-a">${escapeHtml(r.alias)}</span><span class="aka-s">→</span><a class="aka-l" href="${base}${entryPath(r.entry)}">${escapeHtml(r.entry.name)}</a></li>`).join('\n')}
       </ul>
     </div>`).join('\n')}
-${faq.html}${hubNav('also-known-as/', { base })}  </div>
+${faq.html}${shareRow({ url: `${origin}${base}also-known-as/`, title: 'Every alias in the index', text: answer, label: 'Share this page' })}${hubNav('also-known-as/', { base })}  </div>
 </section>
 `;
 
@@ -520,7 +520,7 @@ ${early.length ? `          <tr>
           </tr>\n` : ''}${shown.map(row).join('\n')}
       </tbody>
     </table>
-${hubNav('timeline/', { base })}  </div>
+${shareRow({ url: `${origin}${base}timeline/`, title: 'A timeline of the naming', text: answer, label: 'Share this page' })}${hubNav('timeline/', { base })}  </div>
 </section>
 `;
 
@@ -594,7 +594,7 @@ ${rows.map((e) => {
   }).join('\n')}
       </tbody>
     </table>
-${faq.html}${hubNav('effect-sizes/', { base })}  </div>
+${faq.html}${shareRow({ url: `${origin}${base}effect-sizes/`, title: 'Every measured effect size', text: answer, label: 'Share this page' })}${hubNav('effect-sizes/', { base })}  </div>
 </section>
 `;
 
@@ -670,7 +670,7 @@ ${byLetter.get(l).map((r) => (r.alias
     : `        <li class="aka-row"><a class="az-name" href="${base}${entryPath(r.entry)}">${escapeHtml(r.label)}</a><span class="badge ${REPLICATION_CLASS[r.entry.replication.state]}">${escapeHtml(replicationLabel(r.entry.replication.state))}</span></li>`)).join('\n')}
       </ul>
     </div>`).join('\n')}
-${hubNav('a-z/', { base })}  </div>
+${shareRow({ url: `${origin}${base}a-z/`, title: 'Every cognitive bias, A to Z', text: answer, label: 'Share this page' })}${hubNav('a-z/', { base })}  </div>
 </section>
 `;
 
@@ -753,7 +753,7 @@ ${hubHead({
     ],
     lede: 'Membership follows Wikipedia\'s List of fallacies, which is one of the two sources this index\'s candidate set was drawn from, plus any entry whose own name contains the word. It is not a judgement made here, and entries that belong on both lists appear on both.',
   })}${grid(list, base)}
-${faq.html}${hubNav('fallacies/', { base })}  </div>
+${faq.html}${shareRow({ url: `${origin}${base}fallacies/`, title: 'Every logical fallacy in the index', text: answer, label: 'Share this page' })}${hubNav('fallacies/', { base })}  </div>
 </section>
 `;
 
@@ -817,7 +817,7 @@ ${hubHead({
     ],
     lede: `Effects whose first published description falls in this decade, oldest first. The date is when the effect was named or first reported, not when it became well known.`,
   })}${grid(list, base)}
-${faq.html}${hubNav(decadePath(decade), { base })}  </div>
+${faq.html}${shareRow({ url: `${origin}${base}${decadePath(decade)}`, title: `Biases named in the ${decade}s`, text: answer, label: 'Share this page' })}${hubNav(decadePath(decade), { base })}  </div>
 </section>
 `;
 

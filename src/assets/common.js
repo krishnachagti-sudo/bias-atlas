@@ -584,6 +584,24 @@
     });
   };
 
+  /* The cite box on an entry page. It reuses `write` above rather than growing a
+     second clipboard path, because the fallback for an insecure origin and old
+     Safari is the fiddly part and one copy of it is enough. */
+  (function () {
+    var btn = document.getElementById('copy');
+    var box = document.getElementById('cite');
+    if (!btn || !box) return;
+    var label = document.getElementById('copy-t');
+    var was = label ? label.textContent : '';
+    btn.addEventListener('click', function () {
+      write(box.textContent.trim()).then(function () {
+        if (label) { label.textContent = 'Copied'; setTimeout(function () { label.textContent = was; }, 2000); }
+      }, function () {
+        if (label) { label.textContent = 'Press Ctrl+C'; setTimeout(function () { label.textContent = was; }, 2600); }
+      });
+    });
+  }());
+
   for (var i = 0; i < rows.length; i++) {
     (function (row) {
       var url = row.getAttribute('data-share-url');
