@@ -34,7 +34,7 @@ import {
   verdictHubPage, fieldHubPage, personHubPage, peopleIndexPage,
   aliasIndexPage, timelinePage, effectSizesPage,
   azPage, fallaciesPage, fallacySlugs, decadePage, decades,
-  namedBy, verdictPath, fieldPath, personPath, decadePath,
+  namedBy, verdictSlug, verdictPath, fieldPath, personPath, decadePath,
 } from '../src/templates/hubs.mjs';
 import { quizPage, scorePage } from '../src/templates/quiz.mjs';
 import { ROUND, scoreVerdict } from './quiz.mjs';
@@ -46,7 +46,7 @@ import { buildLlms, buildLlmsFull } from './llms.mjs';
 import { buildSitemap } from './sitemap.mjs';
 import { buildSearchIndex } from './search-index.mjs';
 import { LASTMOD_TOKEN, manifestFile, resolve as resolveLastmod, stamp } from './lastmod.mjs';
-import { renderPng, siteCardSvg, entryCardSvg, scoreCardSvg } from './cards.mjs';
+import { renderPng, siteCardSvg, entryCardSvg, scoreCardSvg, hubCardSvg, VERDICT_HUES } from './cards.mjs';
 
 const cfg = JSON.parse(await readFile('site.config.json', 'utf8'));
 const arg = (name) => (process.argv.find((a) => a.startsWith(`--${name}=`)) || '').split('=')[1];
@@ -346,6 +346,41 @@ writes.push(write(
 // nowhere in the preview.
 for (const e of entries) {
   writes.push(write(join(out, 'og', 'bias', `${e.slug}.png`), renderPng(entryCardSvg(e, { origin, base }))));
+}
+
+// The hubs. "42 of 544 failed to replicate" is the most shareable sentence this
+// site owns and it was unfurling as the generic picture.
+const VLABEL = { replicated: 'replicated', failed: 'failed to replicate', mixed: 'gave mixed results', 'none-located': 'have no located replication' };
+const VHUE = { replicated: '#1e7048', failed: '#a72b38', mixed: '#4a6a86', 'none-located': '#8a929c' };
+const tally = (list) => {
+  const t = { replicated: 0, mixed: 0, failed: 0, 'none-located': 0 };
+  for (const e of list) if ((e.replication || {}).state in t) t[e.replication.state]++;
+  return t;
+};
+for (const state of REPLICATION_STATES) {
+  const list = entries.filter((e) => (e.replication || {}).state === state);
+  const byField = new Map();
+  for (const e of list) byField.set(e.category, (byField.get(e.category) || 0) + 1);
+  writes.push(write(join(out, 'og', 'verdict', `${verdictSlug(state)}.png`), renderPng(hubCardSvg({
+    headline: `${list.length} of ${entries.length}`,
+    sub: `cognitive biases in this index ${VLABEL[state]}.`,
+    hue: VHUE[state],
+    split: [...byField].sort((a, b) => b[1] - a[1]).map(([c, v]) => [CATEGORIES[c] || c, v]),
+    origin,
+    base,
+  }))));
+}
+for (const [key, label] of Object.entries(CATEGORIES)) {
+  const list = entries.filter((e) => e.category === key);
+  const t = tally(list);
+  writes.push(write(join(out, 'og', 'field', `${slugify(label)}.png`), renderPng(hubCardSvg({
+    headline: String(list.length),
+    sub: `cognitive biases in ${label.toLowerCase()}. ${t.failed} of them failed to replicate.`,
+    split: [['Replicated', t.replicated], ['Mixed', t.mixed], ['Failed', t.failed], ['None located', t['none-located']]],
+    hues: VERDICT_HUES,
+    origin,
+    base,
+  }))));
 }
 
 // One card per possible score, so a shared round unfurls as the grid rather

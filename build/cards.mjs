@@ -110,6 +110,12 @@ function fit(text, { width, height, sizes }) {
   return { size, lines: lines.slice(0, max) };
 }
 
+/** Verdict hues, in the order the page's own bar draws them. */
+export const VERDICT_HUES = ['#1e7048', '#4a6a86', '#a72b38', '#8a929c'];
+
+/** One hue, stepped down in weight — for a split that is not about verdicts. */
+const NEUTRAL_HUES = ['#1a4f8a', '#4a72a4', '#7a96bd', '#a9bad6', '#d2dce9'];
+
 /** The four verdicts, as they read on a card, with the site's semantic hues. */
 const VERDICT = {
   replicated: ['Replicated', '#1e7048'],
@@ -174,6 +180,64 @@ export function entryCardSvg(entry, { origin = '', base = '/' } = {}) {
   <text y="${nameBottom + 60}" font-family="Source Serif 4" font-size="${said.size}" fill="${INK}" opacity="0.74">${tspans(said.lines, PAD, said.size)}</text>
 ${badge}
   <text x="${CARD_W - PAD}" y="${CARD_H - 81}" text-anchor="end" font-family="IBM Plex Mono" font-size="20" fill="${GOLD}">${displayUrl}</text>
+</svg>`;
+}
+
+/**
+ * A hub's card: the number that hub exists to report, said large.
+ *
+ * "42 of 544 failed to replicate" is the most shareable sentence this site
+ * owns, and until now the page carrying it unfurled as the same generic
+ * picture as every other page. Where a split is given it is drawn as the same
+ * stacked bar the page itself uses, so the card is the page in miniature
+ * rather than a different claim about it.
+ *
+ * @param {object} o
+ * @param {string} o.headline the figure, set large
+ * @param {string} o.sub what the figure counts
+ * @param {string} [o.hue] the accent stripe, usually the verdict's colour
+ * @param {Array<[string,number]>} [o.split] [label, count] pairs, drawn as a bar
+ * @param {string[]} [o.hues] the segment colours, one per split entry
+ *
+ * `hues` is not a styling choice. The first version of this drew the verdict
+ * hub's FIELD split in the verdict palette, so a reader saw a green band and a
+ * red band and read them as "replicated" and "failed" when they meant "social
+ * and self" and "memory". A chart asserts more confidently than a sentence
+ * does, so the semantic palette is only ever passed for a split that really is
+ * by verdict; a split by anything else gets the neutral ramp.
+ */
+export function hubCardSvg({ headline = '', sub = '', hue = GOLD, split = [], hues = NEUTRAL_HUES, origin = '', base = '/' } = {}) {
+  const displayUrl = escapeHtml(`${origin}${base}`.replace(/^https?:\/\//, '').replace(/\/+$/, ''));
+  const PAD = 90, COL = CARD_W - PAD * 2;
+
+  const subFit = fit(sub, { width: COL, height: 150, sizes: [44, 38, 33, 29] });
+  const tspans = subFit.lines
+    .map((l, i) => `<tspan x="${PAD}"${i ? ` dy="${(subFit.size * 1.32).toFixed(1)}"` : ''}>${escapeHtml(l)}</tspan>`)
+    .join('');
+
+  // The bar divides one row and says nothing about any other, exactly as on
+  // the page. Segments under 4% are still drawn: dropping them would make the
+  // widths stop summing to the whole, which is the one thing a bar promises.
+  const total = split.reduce((a, r) => a + Number(r[1]), 0);
+  let x = PAD;
+  const bar = total
+    ? split.filter((r) => Number(r[1]) > 0).map(([label, v], i) => {
+      const w = (Number(v) / total) * COL;
+      const seg = `<rect x="${x.toFixed(1)}" y="470" width="${w.toFixed(1)}" height="28" fill="${hues[i % hues.length]}" opacity="0.85"/>`;
+      x += w;
+      return seg;
+    }).join('\n  ')
+    : '';
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${CARD_W}" height="${CARD_H}" viewBox="0 0 ${CARD_W} ${CARD_H}">
+  <rect width="${CARD_W}" height="${CARD_H}" fill="${BG}"/>
+  <rect x="24" y="24" width="${CARD_W - 48}" height="${CARD_H - 48}" fill="none" stroke="${GOLD}" stroke-width="2" opacity="0.5"/>
+  <rect x="24" y="24" width="10" height="${CARD_H - 48}" fill="${hue}" opacity="0.9"/>
+  <text x="${PAD}" y="96" font-family="IBM Plex Mono" font-size="24" letter-spacing="5" fill="${GOLD}">${escapeHtml(BRAND.toUpperCase())}</text>
+  <text x="${PAD}" y="250" font-family="Source Serif 4" font-size="112" fill="${INK}">${escapeHtml(headline)}</text>
+  <text y="330" font-family="Source Serif 4" font-size="${subFit.size}" fill="${INK}" opacity="0.74">${tspans}</text>
+  ${bar}
+  <text x="${PAD}" y="${CARD_H - 60}" font-family="IBM Plex Mono" font-size="22" fill="${GOLD}">${displayUrl}</text>
 </svg>`;
 }
 

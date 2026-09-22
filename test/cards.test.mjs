@@ -9,7 +9,7 @@ import { readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 
 import {
-  entryCardSvg, scoreCardSvg, siteCardSvg, emWidth, wrap, CARD_W, CARD_H,
+  entryCardSvg, scoreCardSvg, siteCardSvg, hubCardSvg, VERDICT_HUES, emWidth, wrap, CARD_W, CARD_H,
 } from '../build/cards.mjs';
 import { scoreVerdict, ROUND } from '../build/quiz.mjs';
 
@@ -128,4 +128,33 @@ test('every card is the size every platform expects', () => {
   for (const svg of [siteCardSvg(O), scoreCardSvg(O), entryCardSvg(entries[0], O)]) {
     assert.match(svg, new RegExp(`width="${CARD_W}" height="${CARD_H}"`));
   }
+});
+
+test('a hub card states its figure and draws a bar that sums to the whole', () => {
+  const svg = hubCardSvg({
+    headline: '42 of 544', sub: 'failed to replicate.',
+    split: [['A', 24], ['B', 9], ['C', 9]], ...O,
+  });
+  assert.match(svg, /42 of 544/);
+  const widths = [...svg.matchAll(/<rect x="[\d.]+" y="470" width="([\d.]+)"/g)].map((m) => Number(m[1]));
+  assert.equal(widths.length, 3);
+  // The bar spans the column exactly: a segment dropped or double-counted shows here.
+  assert.ok(Math.abs(widths.reduce((a, b) => a + b, 0) - (1200 - 180)) < 0.5);
+});
+
+test('only a split that IS by verdict may use the verdict palette', () => {
+  // The verdict hub's split is by FIELD. Drawn in the verdict hues, a reader
+  // sees a green band and a red band and reads "replicated" and "failed" when
+  // they mean "social and self" and "memory".
+  const byField = hubCardSvg({ headline: '42', sub: 'x', split: [['Social', 24], ['Memory', 3]], ...O });
+  for (const hue of VERDICT_HUES) assert.ok(!byField.includes(hue), `field split used the verdict hue ${hue}`);
+
+  const byVerdict = hubCardSvg({ headline: '65', sub: 'x', split: [['Replicated', 28], ['Failed', 3]], hues: VERDICT_HUES, ...O });
+  assert.ok(byVerdict.includes(VERDICT_HUES[0]), 'a verdict split should carry the verdict hues');
+});
+
+test('a hub card with no split still renders', () => {
+  const svg = hubCardSvg({ headline: '544', sub: 'entries.', ...O });
+  assert.match(svg, /544/);
+  assert.doesNotMatch(svg, /y="470"/);
 });

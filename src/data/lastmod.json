@@ -2221,23 +2221,23 @@
       "date": "2026-09-22"
     },
     "field/belief-and-probability/": {
-      "hash": "af822ce67dda991d",
+      "hash": "8caf2f33480f9281",
       "date": "2026-09-22"
     },
     "field/decision-and-judgement/": {
-      "hash": "333ad4cbc3bc532b",
+      "hash": "ac1321b8dcd04471",
       "date": "2026-09-22"
     },
     "field/memory/": {
-      "hash": "6673aa780a0c33d2",
+      "hash": "5e09c4edc88f781d",
       "date": "2026-09-22"
     },
     "field/perception/": {
-      "hash": "6c77ebfe5853def5",
+      "hash": "d88d017ff70d3075",
       "date": "2026-09-22"
     },
     "field/social-and-self/": {
-      "hash": "7fb9a5b2d16773d3",
+      "hash": "194ceec2054b4a03",
       "date": "2026-09-22"
     },
     "how-solid/": {
@@ -2409,19 +2409,19 @@
       "date": "2026-09-22"
     },
     "verdict/failed-to-replicate/": {
-      "hash": "a36efe11712fc400",
+      "hash": "ed0a4075eef0e3fd",
       "date": "2026-09-22"
     },
     "verdict/mixed/": {
-      "hash": "dbc54dd27e65d0fe",
+      "hash": "f35f610cfad40f3c",
       "date": "2026-09-22"
     },
     "verdict/no-replication-located/": {
-      "hash": "f0d69d6154344c7d",
+      "hash": "59c6fe51ae6108e0",
       "date": "2026-09-22"
     },
     "verdict/replicated/": {
-      "hash": "58368a5de84d66c5",
+      "hash": "b5a590c0b28ad3c0",
       "date": "2026-09-22"
     }
   }

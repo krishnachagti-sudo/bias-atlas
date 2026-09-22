@@ -183,6 +183,8 @@ ${faq.html}${hubNav(verdictPath(state), { base })}  </div>
     origin,
     path: verdictPath(state),
     modified: LASTMOD_TOKEN,
+    // build.mjs writes one card per verdict at exactly this path.
+    og: { image: `${origin}${base}og/verdict/${verdictSlug(state)}.png` },
     jsonld: [
       ...hubJsonLd({
         name: copy.title,
@@ -244,6 +246,7 @@ ${faq.html}${hubNav(fieldPath(cat), { base })}  </div>
     origin,
     path: fieldPath(cat),
     modified: LASTMOD_TOKEN,
+    og: { image: `${origin}${base}og/field/${slugify(label)}.png` },
     // This field's own feed, so a reader who only wants memory research is not
     // made to subscribe to all five. build.mjs writes one per field at exactly
     // this path.
