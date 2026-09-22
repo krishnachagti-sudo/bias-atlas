@@ -540,7 +540,7 @@ ${numbers}${effectPlot(r)}${r.detail ? `        <p>${escapeHtml(r.detail)}</p>\n
  * Nothing here repeats the fact strip: verdict, year, field, source count and
  * last-checked date are all already tiles above.
  */
-function asideRail(entry, { base, origin = '', related = [], siblings }) {
+function asideRail(entry, { base, origin = '', related = [], siblings, tome = null }) {
   const s = entry.replication && entry.replication.study;
   const panels = [];
 
@@ -600,6 +600,25 @@ ${siblings.map((o) => `          <li><a href="${base}${entryPath(o)}">${escapeHt
       </div>`);
   }
 
+  // The same idea in The Law Tome, where 121 of these entries also appear.
+  //
+  // Not a duplicate and not a competitor: the two ask different questions of
+  // the same idea. The Tome asks whether a named principle is dependable and
+  // answers on a reliability scale; this asks what happened when the
+  // experiments were repeated. Showing the other answer beside ours is more
+  // use to a reader than pretending the other page does not exist, and it is
+  // the honest framing — the prose was measured and shares no wording.
+  if (tome && tome.tome) {
+    const t = tome.tome;
+    panels.push(`      <div class="panel panel--tome">
+        <h3>Also in The Law Tome</h3>
+        <p class="tm-say">“${escapeHtml(t.statement)}”</p>
+${t.reliability ? `        <p class="tm-rel">Rated <b>${escapeHtml(t.reliability)}</b> there, on how far a principle can be trusted.</p>\n` : ''}        <p class="tm-note">A sister index of named laws and principles. It asks whether an idea is dependable; this one asks what happened when it was retested.</p>
+        <a class="tm-go" href="https://conyso.com/lawtome/laws/${escapeHtml(t.slug)}/" rel="noopener">Read it there →</a>
+      </div>
+`);
+  }
+
   // Citing an entry is a different act from passing it on, and wants different
   // text: a citation is for a bibliography, so it carries the checked date and
   // the canonical URL rather than the statement.
@@ -629,7 +648,7 @@ ${panels.join('\n')}
       </aside>\n`;
 }
 
-export function entryPage(entry, { base = '/', origin = '', count = 0, entries = [], related = [] } = {}) {
+export function entryPage(entry, { base = '/', origin = '', count = 0, entries = [], related = [], tome = null } = {}) {
   const path = entryPath(entry);
   const r = entry.replication;
   const field = CATEGORIES[entry.category] || entry.category;
@@ -781,7 +800,7 @@ ${b.body}        </div>`).join('\n')}
 ${shareRow({ url: `${origin}${base}${path}`, title: entry.name, text: entry.statement, label: 'Share this entry' })}        </div>
 
 ${faq.html}${prevnext}      </div>
-${asideRail(entry, { base, origin, siblings, related })}    </div>
+${asideRail(entry, { base, origin, siblings, related, tome })}    </div>
   </div>
 `;
 

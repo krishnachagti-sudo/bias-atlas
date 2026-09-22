@@ -814,6 +814,18 @@ html{scroll-behavior:smooth}
 .panel--share .share--compact{margin:0}
 /* The shortlist grid on /saved/, and the empty state that is the first thing
    almost every visitor sees there. */
+/* The sister-index panel. Deliberately quieter than the rest of the rail: it
+   points off-site, and an off-site link styled like the page's own navigation
+   is a small deception about where a click goes. */
+.panel--tome{border-left:2px solid var(--gold)}
+.tm-say{font-family:var(--serif);font-style:italic;font-size:14.5px;line-height:1.6;color:var(--dim);margin:0 0 10px}
+.tm-rel{font-family:var(--serif);font-size:13px;line-height:1.55;color:var(--muted);margin:0 0 10px}
+.tm-rel b{color:var(--ink);font-weight:600}
+.tm-note{font-family:var(--sans);font-size:11.5px;line-height:1.5;color:var(--faint);margin:0 0 12px}
+.tm-go{font-family:var(--mono);font-size:11.5px;letter-spacing:.04em;color:var(--gold);text-decoration:none;
+  border-bottom:1px solid color-mix(in srgb,var(--gold) 45%,transparent)}
+.tm-go:hover{color:var(--accent);border-bottom-color:var(--accent)}
+
 /* ---- the masthead's "More" panel ------------------------------------------
    A <details>, so it opens with no JavaScript and is keyboard-operable for
    free. Nineteen pages live behind it; a script-driven panel would hide all of

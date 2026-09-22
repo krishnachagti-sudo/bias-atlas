@@ -19,7 +19,8 @@
     "orphans": "node build/orphan-figures.mjs",
     "unnoted": "node build/unnoted-sources.mjs",
     "examples": "node build/examples-check.mjs",
-    "css": "node build/dead-css.mjs"
+    "css": "node build/dead-css.mjs",
+    "crosswalk": "node build/crosswalk.mjs > src/data/crosswalk.json"
   },
   "dependencies": {
     "@resvg/resvg-js": "^2.6.2"

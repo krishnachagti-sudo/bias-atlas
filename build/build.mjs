@@ -98,6 +98,12 @@ const entries = loadCorpus({ today: buildDate });
 // because both the per-entry rail and graph.json read it.
 const graph = buildGraph(entries);
 const COMPARISON = JSON.parse(await readFile(new URL('../src/data/comparison.json', import.meta.url), 'utf8'));
+// Entries that also exist in The Law Tome. Committed data, not derived here:
+// CI checks out this repository alone. Regenerate with `npm run crosswalk`.
+const CROSSWALK = new Map(
+  JSON.parse(await readFile(new URL('../src/data/crosswalk.json', import.meta.url), 'utf8'))
+    .pairs.map((p) => [p.slug, p]),
+);
 // Biases identified as candidates: the pool the entries are written from.
 //
 // This was the literal `177`, and it went stale in the worst way a number can.
@@ -157,6 +163,7 @@ for (const e of entries) {
     related: relatedTo(e.slug, graph, { limit: 5 })
       .filter((x) => x.kind === 'confused-with')
       .map((x) => ({ slug: x.to, name: (graph.bySlug.get(x.to) || {}).name || x.to, why: x.why })),
+    tome: CROSSWALK.get(e.slug) || null,
   });
 }
 
