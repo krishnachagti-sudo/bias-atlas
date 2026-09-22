@@ -2528,6 +2528,40 @@ html[data-theme="light"] .chip.on{background:var(--accent);border-color:var(--ac
 /* A licence name is a unit — "SIL Open Font License 1.1" broken across two
    lines reads as two licences. */
 .vtable .nowrap{white-space:nowrap}
+/* The replication estimate, when it came out smaller than the original. Marked
+   rather than coloured red: a shrunken effect is the ordinary case here, not an
+   error, and 63 red cells in an 85-row table would read as a table of faults. */
+/* An effect-size cell is a quantity plus, for a raw mean difference, the unit it
+   was measured in — and those units are sentences: "14.70 percentage points,
+   positive-keyed minus negative-keyed endorsement, linear probability model on
+   the Allcott and Gentzkow items". Set as `.num` they inherited nowrap and
+   pushed the table to 2,405px inside a 1,080px column. They wrap, and the
+   figure keeps tabular figures so the short rows still line up. */
+.vtable .fx-es{font-family:var(--mono);font-size:12.5px;line-height:1.5;color:var(--muted);
+  font-variant-numeric:tabular-nums;max-width:22ch}
+.vtable .fx-down{color:var(--ink);font-weight:600}
+.vtable .fx-down::after{content:" ↓";color:var(--accent);font-weight:400}
+/* A count drawn to scale inside a table cell. Width is set per row from the
+   data; the cell itself stays a normal table cell so the column still aligns. */
+.tl-bar{display:block;width:var(--w,0);min-width:2px;height:8px;border-radius:2px;
+  background:var(--accent);opacity:.5}
+.vtable td:has(> .tl-bar){width:22%;padding-right:24px}
+@media(max-width:640px){.vtable td:has(> .tl-bar){display:none}}
+/* The standing cuts on /browse/. Links, not chips: the chips below them filter
+   the grid in place, these go to pages that can be linked to and cited. Kept
+   quiet so they read as a directory rather than competing with the controls. */
+.cuts{margin:4px 0 22px;padding:14px 0 4px;border-top:1px solid var(--line)}
+.cuts-row{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;margin:0 0 8px;
+  font-family:var(--mono);font-size:11.5px}
+.cuts-k{flex:none;min-width:104px;font-size:9.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--faint)}
+.cuts-row a{color:var(--muted);text-decoration:none;border-bottom:1px solid var(--line)}
+.cuts-row a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+@media(max-width:640px){.cuts-k{min-width:100%;margin-bottom:2px}}
+
+/* The alias index. A plain list of 1,578 rows, grouped by initial. */
+.aka-list{list-style:none;margin:0 0 26px;padding:0;
+  columns:2;column-gap:38px}
+@media(max-width:720px){.aka-list{columns:1}}
 .vtable tbody tr:hover td,.vtable tbody tr:hover th{background:var(--surface)}
 @media(max-width:640px){
   .vtable{font-size:13.5px}

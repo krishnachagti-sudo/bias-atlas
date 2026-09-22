@@ -4,8 +4,32 @@
 import { head, sprite, header, footer, escapeHtml, shareRow, BRAND, founderRef, biasCard, searchBox, browseControls } from './partials.mjs';
 import { hubHead, hubNav, hubFaq, hubJsonLd } from './hub.mjs';
 import { entryPath, replicationLabel, REPLICATION_CLASS } from './entry.mjs';
+import { verdictPath, fieldPath } from './paths.mjs';
+import { CATEGORIES } from '../../build/corpus.mjs';
 
 const n = (x) => Number(x).toLocaleString('en-US');
+
+/**
+ * The standing cuts of the corpus, as links rather than as filter state.
+ *
+ * The chips below this row filter the grid client-side, which is the right tool
+ * for narrowing while you read and the wrong one for everything else: a chip
+ * has no URL, so a filtered view could not be linked to, cited, bookmarked or
+ * returned as an answer to a question. These are the same cuts as pages.
+ */
+function cuts(base, entries) {
+  const fields = [...new Set(entries.map((e) => e.category))]
+    .filter(Boolean)
+    .map((c) => `<a href="${base}${fieldPath(c)}">${escapeHtml(CATEGORIES[c] || c)}</a>`);
+  const verdicts = ['replicated', 'mixed', 'failed', 'none-located']
+    .map((k) => `<a href="${base}${verdictPath(k)}">${escapeHtml(replicationLabel(k))}</a>`);
+  return `    <nav class="cuts" aria-label="Standing views of the index">
+      <p class="cuts-row"><span class="cuts-k">By verdict</span>${verdicts.join('')}</p>
+      <p class="cuts-row"><span class="cuts-k">By field</span>${fields.join('')}</p>
+      <p class="cuts-row"><span class="cuts-k">Other ways in</span><a href="${base}effect-sizes/">Effect sizes</a><a href="${base}timeline/">Timeline</a><a href="${base}named-by/">Named by</a><a href="${base}also-known-as/">Also known as</a></p>
+    </nav>
+`;
+}
 
 /**
  * /browse/ — the index of entries.
@@ -78,7 +102,7 @@ ${hubHead({
     answer,
     base,
     crumbs: [],
-  })}${list}
+  })}${count > 0 ? cuts(base, entries) : ''}${list}
 ${faq.html}${hubNav('browse/', { base })}  </div>
 </section>
 `;

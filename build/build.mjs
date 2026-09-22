@@ -29,7 +29,12 @@ import { entryPage, entryPath } from '../src/templates/entry.mjs';
 import {
   howSolidPage, dataPage, sourcesPage, manifestoPage, creditsPage, featuresPage, privacyPage, authorPage,
 } from '../src/templates/meta.mjs';
-import { loadCorpus, CATEGORIES } from './corpus.mjs';
+import { loadCorpus, CATEGORIES, REPLICATION_STATES } from './corpus.mjs';
+import {
+  verdictHubPage, fieldHubPage, personHubPage, peopleIndexPage,
+  aliasIndexPage, timelinePage, effectSizesPage,
+  namedBy, verdictPath, fieldPath, personPath,
+} from '../src/templates/hubs.mjs';
 import { entryMarkdown } from './markdown.mjs';
 import { buildApi } from './api.mjs';
 import { buildLlms, buildLlmsFull } from './llms.mjs';
@@ -114,6 +119,28 @@ const pages = {
 for (const e of entries) {
   pages[entryPath(e)] = entryPage(e, { base, origin, count: entries.length, entries });
 }
+
+// ---- grouping hubs ---------------------------------------------------------
+// The same corpus, cut the ways a reader asks for it. Every one of these was
+// already a filter on /browse/ — an interaction rather than a URL, so nothing
+// could link to it, cite it, or be returned as an answer.
+for (const state of REPLICATION_STATES) {
+  pages[verdictPath(state)] = verdictHubPage(state, { base, origin, entries });
+}
+for (const cat of Object.keys(CATEGORIES)) {
+  if (entries.some((e) => e.category === cat)) {
+    pages[fieldPath(cat)] = fieldHubPage(cat, { base, origin, entries });
+  }
+}
+// Four entries or more, so no page exists only to hold a name.
+const authors = namedBy(entries);
+pages['named-by/'] = peopleIndexPage({ base, origin, entries, list: authors });
+for (const person of authors) {
+  pages[personPath(person.slug)] = personHubPage(person, { base, origin, entries });
+}
+pages['also-known-as/'] = aliasIndexPage({ base, origin, entries });
+pages['timeline/'] = timelinePage({ base, origin, entries });
+pages['effect-sizes/'] = effectSizesPage({ base, origin, entries });
 
 // ---- dates -----------------------------------------------------------------
 const prev = existsSync(manifestFile)

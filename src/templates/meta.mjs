@@ -27,10 +27,15 @@ import { head, sprite, header, footer, escapeHtml, shareRow, BRAND, founderNode,
 import { hubHead, hubNav, hubFaq, hubJsonLd } from './hub.mjs';
 import { entryPath, replicationLabel, REPLICATION_CLASS } from './entry.mjs';
 import { CATEGORIES } from '../../build/corpus.mjs';
+import { verdictPath as VP, fieldPath } from './paths.mjs';
 import { LASTMOD_TOKEN } from '../../build/lastmod.mjs';
 
 const n = (x) => Number(x).toLocaleString('en-GB');
 const pc = (a, b) => (b ? Math.round((a / b) * 100) : 0);
+const VERDICT_PATH = {
+  replicated: VP('replicated'), failed: VP('failed'),
+  mixed: VP('mixed'), 'none-located': VP('none-located'),
+};
 
 /** Everything these pages count, derived once. */
 export function corpusStats(entries) {
@@ -85,6 +90,8 @@ export function corpusStats(entries) {
 
 /** A row of the verdict table. */
 function verdictRows(s, base) {
+  // Each row links to that verdict's own hub. It used to point every row at
+  // /browse/, which made the table a picture rather than a way in.
   const ORDER = ['replicated', 'mixed', 'failed', 'none-located'];
   const GLOSS = {
     replicated: 'A repeat found the effect again.',
@@ -93,7 +100,7 @@ function verdictRows(s, base) {
     'none-located': 'No replication attempt was found. That is a fact about the literature, not a verdict on the effect.',
   };
   return ORDER.map((k) => `          <tr>
-            <th scope="row"><a class="badge ${REPLICATION_CLASS[k]}" href="${base}browse/">${escapeHtml(replicationLabel(k))}</a></th>
+            <th scope="row"><a class="badge ${REPLICATION_CLASS[k]}" href="${base}${VERDICT_PATH[k]}">${escapeHtml(replicationLabel(k))}</a></th>
             <td class="num">${n(s.state[k])}</td>
             <td class="num">${pc(s.state[k], s.total)}%</td>
             <td>${escapeHtml(GLOSS[k])}</td>
@@ -175,6 +182,9 @@ ${top.map((e) => `          <tr>
           </tr>`).join('\n')}
       </tbody>
     </table>
+
+    <h2 class="vd-h">Other ways to cut this</h2>
+    <p class="vd-p">Each verdict above has its own page. Beyond them: <a href="${base}effect-sizes/">every entry where both effect sizes are reported on the same scale</a>, <a href="${base}timeline/">the decade each effect was named in</a> and how each decade has held up, <a href="${base}named-by/">the people named on four or more entries</a>, and <a href="${base}also-known-as/">every other name these effects go by</a>.</p>
 
     <h2 class="vd-h">Where this could be wrong</h2>
     <p class="vd-p">The verdicts are only as good as the replications that exist, and replication effort is not spread evenly: famous effects get retested and obscure ones do not, so a verdict of "no replication located" is partly a statement about attention. The ${n(s.state.mixed)} mixed verdicts cover a wide range, from an effect that survives in one culture and not another to one that survives only with the original materials. And an entry is a summary of a literature, which means the judgement of what counts as the replication of record has been made by one person and can be argued with. Each entry names its own sources so that argument can start from the same documents.</p>

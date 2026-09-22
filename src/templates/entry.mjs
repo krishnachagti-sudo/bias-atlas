@@ -29,6 +29,7 @@ import {
 } from './partials.mjs';
 import { hubFaq, hubJsonLd } from './hub.mjs';
 import { CATEGORIES } from '../../build/corpus.mjs';
+import { fieldPath } from './paths.mjs';
 import { LASTMOD_TOKEN } from '../../build/lastmod.mjs';
 
 export const entryPath = (entry) => `bias/${entry.slug}/`;
@@ -516,7 +517,7 @@ ${figures.length ? `        <p class="rep-fig">${escapeHtml(figures.join(' · ')
 
   if (siblings.length) {
     panels.push(`      <div class="panel panel--compare">
-        <h3>More in ${escapeHtml(String(CATEGORIES[entry.category] || entry.category).toLowerCase())}</h3>
+        <h3><a href="${base}${fieldPath(entry.category)}">More in ${escapeHtml(String(CATEGORIES[entry.category] || entry.category).toLowerCase())}</a></h3>
         <ul class="cmp-side">
 ${siblings.map((o) => `          <li><a href="${base}${entryPath(o)}">${escapeHtml(o.name)}</a></li>`).join('\n')}
         </ul>
