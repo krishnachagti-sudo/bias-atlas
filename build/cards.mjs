@@ -44,6 +44,179 @@ export function renderPng(svg) {
     .asPng();
 }
 
+// ---- fitting text to the card ----------------------------------------------
+//
+// resvg does not wrap text, so the statement is wrapped here and emitted as one
+// <tspan> block. It also gives no measurement API, and shelling out to one for
+// 544 cards would dominate the build, so widths are estimated from a
+// per-character table good to a few percent for Latin text. That is enough: it
+// decides between 38px and 46px, it does not typeset.
+//
+// The table errs WIDE, because the two failure modes are not equal. A slightly
+// short line is invisible; a line that overruns the card runs through the
+// verdict badge underneath it, on an image whose whole job is to be seen on
+// somebody else's timeline.
+
+const NARROW = "ijlt.,;:'!|()[]/\\ ";
+const WIDE = 'mwMW@%';
+const CAPS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+/** Approximate advance width of a string, in em. */
+export function emWidth(str) {
+  let w = 0;
+  for (const ch of String(str)) {
+    if (ch === ' ') w += 0.26;
+    else if (NARROW.includes(ch)) w += 0.30;
+    else if (WIDE.includes(ch)) w += 0.86;
+    else if (CAPS.includes(ch)) w += 0.66;
+    else if (ch >= '0' && ch <= '9') w += 0.55;
+    else w += 0.52;
+  }
+  return w;
+}
+
+/**
+ * Greedy word-wrap to a pixel width at a given font size. A single word too
+ * long for the column is left over-long rather than broken: hyphenating one
+ * would look worse than the rare overhang it prevents.
+ * @returns {string[]} lines
+ */
+export function wrap(text, size, width) {
+  const lines = [];
+  let line = '';
+  for (const word of String(text).trim().split(/\s+/)) {
+    const next = line ? `${line} ${word}` : word;
+    if (line && emWidth(next) * size > width) { lines.push(line); line = word; } else line = next;
+  }
+  if (line) lines.push(line);
+  return lines;
+}
+
+/**
+ * Pick the largest size at which the text fits the column in both directions.
+ * Overflow is the condition being tested for, so nothing can overflow.
+ */
+function fit(text, { width, height, sizes }) {
+  for (const size of sizes) {
+    const lines = wrap(text, size, width);
+    if (lines.length * (size * 1.32) <= height) return { size, lines };
+  }
+  const size = sizes[sizes.length - 1];
+  // Still too long at the smallest size: clip to the lines that fit and mark
+  // the cut, rather than letting the block run off the card.
+  const lines = wrap(text, size, width);
+  const max = Math.max(1, Math.floor(height / (size * 1.32)));
+  if (lines.length > max) lines[max - 1] = `${lines[max - 1].replace(/[,.;:]?$/, '')}…`;
+  return { size, lines: lines.slice(0, max) };
+}
+
+/** The four verdicts, as they read on a card, with the site's semantic hues. */
+const VERDICT = {
+  replicated: ['Replicated', '#1e7048'],
+  failed: ['Failed to replicate', '#a72b38'],
+  mixed: ['Mixed', '#4a6a86'],
+  'none-located': ['No replication located', '#5a6572'],
+};
+
+/**
+ * One entry's card: the name, what it claims, and the verdict stamped on it.
+ *
+ * The verdict is the reason this is worth generating at all. A shared link to a
+ * bias is ordinary; a shared link that already says the effect failed to
+ * replicate is the site's whole argument, made before anybody clicks.
+ *
+ * @param {object} entry a corpus entry
+ * @param {object} o
+ * @param {string} o.origin absolute site origin
+ * @param {string} o.base site root path, with trailing slash
+ */
+export function entryCardSvg(entry, { origin = '', base = '/' } = {}) {
+  const [label, hue] = VERDICT[(entry.replication || {}).state] || ['', INK];
+  const displayUrl = escapeHtml(`${origin}${base}`.replace(/^https?:\/\//, '').replace(/\/+$/, ''));
+
+  const PAD = 90;
+  const COL = CARD_W - PAD * 2;
+
+  // The name first, because it is what a reader scans for. Two lines at most;
+  // the longest in the corpus needs them.
+  const name = fit(entry.name, { width: COL, height: 170, sizes: [72, 62, 54, 46] });
+  const nameBottom = 196 + (name.lines.length - 1) * name.size * 1.16;
+
+  // Then the claim, in whatever room the name left.
+  const said = fit(entry.statement, {
+    width: COL,
+    height: CARD_H - 150 - (nameBottom + 44),
+    sizes: [40, 36, 32, 28],
+  });
+
+  const tspans = (lines, x, size) => lines
+    .map((l, i) => `<tspan x="${x}"${i ? ` dy="${(size * 1.32).toFixed(1)}"` : ''}>${escapeHtml(l)}</tspan>`)
+    .join('');
+
+  // The badge is set in IBM Plex Mono, so its width is the character count
+  // times a fixed advance, NOT emWidth — that table is proportional, and using
+  // it here sized the box for about four fewer characters than the label has,
+  // so "Failed to replicate" ran out the end of its own rectangle.
+  const BADGE_SIZE = 22;
+  const MONO_EM = 0.6; // IBM Plex Mono advance, 600/1000 units
+  const badgeW = Math.round(label.length * (BADGE_SIZE * MONO_EM + 1) + 44);
+  const badge = label
+    ? `  <rect x="${PAD}" y="${CARD_H - 112}" width="${badgeW}" height="46" rx="3" fill="${hue}"/>
+  <text x="${PAD + 22}" y="${CARD_H - 81}" font-family="IBM Plex Mono" font-size="${BADGE_SIZE}" letter-spacing="1" fill="#ffffff">${escapeHtml(label)}</text>`
+    : '';
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${CARD_W}" height="${CARD_H}" viewBox="0 0 ${CARD_W} ${CARD_H}">
+  <rect width="${CARD_W}" height="${CARD_H}" fill="${BG}"/>
+  <rect x="24" y="24" width="${CARD_W - 48}" height="${CARD_H - 48}" fill="none" stroke="${GOLD}" stroke-width="2" opacity="0.5"/>
+  <rect x="24" y="24" width="10" height="${CARD_H - 48}" fill="${hue}" opacity="0.9"/>
+  <text x="${PAD}" y="96" font-family="IBM Plex Mono" font-size="24" letter-spacing="5" fill="${GOLD}">${escapeHtml(BRAND.toUpperCase())} · No. ${escapeHtml(String(entry.no))}</text>
+  <text y="196" font-family="Source Serif 4" font-size="${name.size}" fill="${INK}">${tspans(name.lines, PAD, name.size)}</text>
+  <text y="${nameBottom + 60}" font-family="Source Serif 4" font-size="${said.size}" fill="${INK}" opacity="0.74">${tspans(said.lines, PAD, said.size)}</text>
+${badge}
+  <text x="${CARD_W - PAD}" y="${CARD_H - 81}" text-anchor="end" font-family="IBM Plex Mono" font-size="20" fill="${GOLD}">${displayUrl}</text>
+</svg>`;
+}
+
+/**
+ * A finished round, as a picture: ten boxes, one filled per right answer.
+ *
+ * The share text already carries the grid as emoji. This is the same grid for
+ * the places that unfurl a link instead of rendering its text, which is most of
+ * them. Without it a shared score unfurled as the generic site card, and a
+ * score nobody can see is not worth sharing.
+ *
+ * It says what the score IS, never "you scored" or "they scored": a static file
+ * has no way to know who is looking at it or whether they played.
+ *
+ * @param {object} o
+ * @param {number} o.score
+ * @param {number} [o.total=10]
+ * @param {string} o.verdict the line scoreVerdict() gives this score
+ */
+export function scoreCardSvg({ score = 0, total = 10, verdict = '', origin = '', base = '/' } = {}) {
+  const s = Math.max(0, Math.min(total, Math.round(Number(score) || 0)));
+  const displayUrl = escapeHtml(`${origin}${base}`.replace(/^https?:\/\//, '').replace(/\/+$/, ''));
+  const BOX = 84, GAP = 14, PAD = 90;
+  const boxes = Array.from({ length: total }, (_, i) => {
+    const x = PAD + i * (BOX + GAP);
+    // Filled for a right answer, hollow for a wrong one. The count of filled
+    // boxes IS the score, so the two cannot disagree.
+    return i < s
+      ? `<rect x="${x}" y="300" width="${BOX}" height="${BOX}" rx="6" fill="${GOLD}"/>`
+      : `<rect x="${x}" y="300" width="${BOX}" height="${BOX}" rx="6" fill="none" stroke="${GOLD}" stroke-width="2" opacity="0.4"/>`;
+  }).join('\n  ');
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${CARD_W}" height="${CARD_H}" viewBox="0 0 ${CARD_W} ${CARD_H}">
+  <rect width="${CARD_W}" height="${CARD_H}" fill="${BG}"/>
+  <rect x="24" y="24" width="${CARD_W - 48}" height="${CARD_H - 48}" fill="none" stroke="${GOLD}" stroke-width="2" opacity="0.5"/>
+  <text x="${PAD}" y="96" font-family="IBM Plex Mono" font-size="24" letter-spacing="5" fill="${GOLD}">${escapeHtml(BRAND.toUpperCase())} · DAILY QUIZ</text>
+  <text x="${PAD}" y="240" font-family="Source Serif 4" font-size="96" fill="${INK}">${s} / ${total}</text>
+  ${boxes}
+  <text x="${PAD}" y="470" font-family="Source Serif 4" font-size="42" fill="${INK}" opacity="0.74">${escapeHtml(verdict)}</text>
+  <text x="${PAD}" y="${CARD_H - 70}" font-family="IBM Plex Mono" font-size="22" fill="${GOLD}">${displayUrl}/quiz/</text>
+</svg>`;
+}
+
 /** The fallback card, for any page that has no picture of its own. */
 export function siteCardSvg({ origin = '', base = '/', count = 0 } = {}) {
   const displayUrl = escapeHtml(`${origin}${base}`.replace(/^https?:\/\//, '').replace(/\/+$/, ''));

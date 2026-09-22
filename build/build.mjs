@@ -37,14 +37,14 @@ import {
   namedBy, verdictPath, fieldPath, personPath, decadePath,
 } from '../src/templates/hubs.mjs';
 import { quizPage, scorePage } from '../src/templates/quiz.mjs';
-import { ROUND } from './quiz.mjs';
+import { ROUND, scoreVerdict } from './quiz.mjs';
 import { entryMarkdown } from './markdown.mjs';
 import { buildApi } from './api.mjs';
 import { buildLlms, buildLlmsFull } from './llms.mjs';
 import { buildSitemap } from './sitemap.mjs';
 import { buildSearchIndex } from './search-index.mjs';
 import { LASTMOD_TOKEN, manifestFile, resolve as resolveLastmod, stamp } from './lastmod.mjs';
-import { renderPng, siteCardSvg } from './cards.mjs';
+import { renderPng, siteCardSvg, entryCardSvg, scoreCardSvg } from './cards.mjs';
 
 const cfg = JSON.parse(await readFile('site.config.json', 'utf8'));
 const arg = (name) => (process.argv.find((a) => a.startsWith(`--${name}=`)) || '').split('=')[1];
@@ -309,6 +309,24 @@ writes.push(write(
   join(out, 'og', 'site.png'),
   renderPng(siteCardSvg({ origin, base, count: entries.length })),
 ));
+
+// One card per entry, at the path entry.mjs names in its og:image. Until this
+// existed all 594 pages unfurled as the same generic picture, which is the same
+// as having none: a reader scrolling a timeline cannot tell two of our links
+// apart, and the verdict — the one thing worth knowing before the click — was
+// nowhere in the preview.
+for (const e of entries) {
+  writes.push(write(join(out, 'og', 'bias', `${e.slug}.png`), renderPng(entryCardSvg(e, { origin, base }))));
+}
+
+// One card per possible score, so a shared round unfurls as the grid rather
+// than as the generic site picture.
+for (let s = 0; s <= ROUND; s++) {
+  writes.push(write(
+    join(out, 'og', `quiz-${s}.png`),
+    renderPng(scoreCardSvg({ score: s, total: ROUND, verdict: scoreVerdict(s, ROUND), origin, base })),
+  ));
+}
 
 writes.push(write(join(out, 'site.webmanifest'), `${JSON.stringify({
   name: cfg.brand,

@@ -744,7 +744,11 @@ ${asideRail(entry, { base, siblings })}    </div>
       base,
       origin,
       path,
-      og: { type: 'article' },
+      // Its own card, built at build time from this entry's own name,
+      // statement and verdict. The card generator writes one PNG per entry at
+      // exactly this path; if that loop is ever removed, remove this too or
+      // every shared link unfurls as a 404.
+      og: { type: 'article', image: `${origin}${base}og/bias/${entry.slug}.png` },
       modified: LASTMOD_TOKEN,
       // The Markdown twin, declared as an alternate representation of this same
       // URL. Declaring it is what makes it an alternate rather than cloaking,

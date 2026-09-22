@@ -246,9 +246,9 @@ ${MODES.map(([m, d], i) => `        <li><span class="qm-no">${String(i + 1).padS
       // noindex because eleven near-identical pages are exactly the thin
       // programmatic mass the visibility checklist refuses to index; `follow`
       // because a shared link should still pass through to the quiz.
-      // No per-score OG image: this site generates none, so naming one would
-      // point every shared card at a 404.
       robots: 'noindex, follow, max-image-preview:large',
+      // build/build.mjs writes one card per score at exactly this path.
+      og: { image: `${origin}${base}og/quiz-${s}.png` },
     }) +
     sprite() +
     header({ base, active: 'quiz', count }) +
