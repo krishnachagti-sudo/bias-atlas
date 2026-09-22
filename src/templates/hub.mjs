@@ -25,6 +25,7 @@ const BLURB = {
   'tensions/': 'pairs one entry says it is confused with, whose verdicts differ',
   'sheets/': 'one field to a page, dense enough to print and carry',
   'compare/': 'two biases that get confused, side by side',
+  'graph/': 'the whole index as a web, walked one neighbourhood at a time',
   'data/': 'the corpus as one file, and every entry as plain text',
   'about/': 'how entries are written, sourced and corrected',
   'author/': 'who writes this index, and what that rests on',

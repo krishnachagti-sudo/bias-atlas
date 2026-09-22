@@ -76,6 +76,7 @@ const IC = {
 
 const FEATURES = [
   ['situations/', IC.feeling, 'Describe what happened', 'Don’t know the name? Say what you saw — “we kept paying because we had already spent so much” — and read the closest matches.'],
+  ['graph/', IC.tension, 'Walk the whole web', 'Every entry is a door to a few others: the ones it gets confused with, the ones retested by the same study, the ones the same person first described.'],
   ['compare/', IC.versus, 'Compare two biases', 'Side by side, for the 611 pairs an entry says it gets taken for — with what each claims and how each fared.'],
   ['tensions/', IC.tension, 'The pairs that disagree', 'Biases people mix up whose verdicts came out opposite — confirmation bias replicated, the backfire effect did not.'],
   ['how-solid/', IC.shield, 'Replicated, or not?', 'Every entry carries a verdict on the experiments behind it, so you always know whether you are quoting a finding or a story.'],

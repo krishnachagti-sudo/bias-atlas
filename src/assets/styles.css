@@ -714,6 +714,85 @@ a.stat--link .s-k::after{content:" →";letter-spacing:0;opacity:.55}
 .callout p{margin:0;font-size:16.5px;line-height:1.76;color:var(--read)}
 .callout--key{border-left-color:var(--accent);background:var(--accent-soft)}
 .callout--key .co-ic{color:var(--accent)}
+/* ---- /graph/ --------------------------------------------------------------
+   The stage is dark regardless of theme, which is the Tome's decision and the
+   right one: a force-directed web of coloured dots needs a field that does not
+   compete with them, and switching that field between light and dark would mean
+   two palettes for the node colours too.
+   The values are recoloured though. The Tome's stage is warm — #13110f under an
+   amber glow — and this site is cold throughout. A warm stage in a cold site
+   reads as an embedded widget from somewhere else. */
+.graph-stage{background:#0f1319;border-radius:3px;position:relative;overflow:hidden;
+  border:1px solid #232a33;box-shadow:inset 0 0 120px -40px rgba(122,167,240,.18)}
+.graph-stage.graph-band{padding:0;height:600px}
+@media(max-width:640px){.graph-stage.graph-band{height:520px}}
+.graph-empty{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  font-family:var(--mono);font-size:13px;color:#8a94a2}
+.graph-stage.graph-live{cursor:grab}
+.graph-stage.graph-live:active{cursor:grabbing}
+.graph-intro{font-family:var(--sans);font-size:15px;color:var(--muted);max-width:680px;
+  line-height:1.6;margin:6px 0 20px}
+.graph-intro b{color:var(--ink);font-weight:600}
+.graph-search{position:relative;max-width:420px;margin-bottom:16px}
+.graph-search>.ti{position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--faint);font-size:16px}
+.graph-search input{width:100%;font-family:var(--mono);font-size:13px;padding:11px 14px 11px 36px;
+  background:var(--surface);border:1px solid var(--line-strong);border-radius:3px;color:var(--ink)}
+.graph-search input:focus{outline:none;border-color:var(--accent);
+  box-shadow:0 0 0 4px color-mix(in srgb,var(--accent) 20%,transparent)}
+.graph-suggest{position:absolute;left:0;right:0;top:calc(100% + 4px);z-index:20;background:var(--surface);
+  border:1px solid var(--line-strong);border-radius:3px;overflow:hidden;box-shadow:0 8px 22px rgba(0,0,0,.16)}
+.graph-suggest-item{display:block;width:100%;text-align:left;font-family:var(--serif);font-size:14px;
+  padding:9px 14px;background:none;border:0;border-bottom:1px solid var(--line);color:var(--ink);cursor:pointer}
+.graph-suggest-item:last-child{border-bottom:0}
+.graph-suggest-item:hover{background:var(--surface-2);color:var(--accent)}
+.gnode,.gnode-focus{cursor:pointer}
+.gnode .glabel,.gedge{transition:opacity .18s ease}
+.gnode-halo{animation:gpulse 3.2s ease-in-out infinite}
+@media(prefers-reduced-motion:reduce){.gnode-halo{animation:none}}
+.gnode:focus{outline:none}
+.gnode:focus-visible circle{stroke:var(--accent);stroke-width:4}
+.graph-controls{position:absolute;top:12px;right:12px;display:flex;flex-direction:column;gap:6px;z-index:6}
+.graph-ctrl{width:32px;height:32px;display:flex;align-items:center;justify-content:center;
+  font-family:var(--mono);font-size:17px;line-height:1;color:#dfe5ee;background:rgba(18,23,31,.82);
+  border:1px solid #2c3540;border-radius:6px;cursor:pointer;backdrop-filter:blur(3px)}
+.graph-ctrl:hover{border-color:var(--accent);color:#fff;background:#1a212a}
+.graph-key{position:absolute;left:12px;bottom:12px;z-index:6;max-width:min(340px,calc(100% - 68px))}
+.graph-key-toggle{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono);font-size:11px;
+  letter-spacing:.08em;text-transform:uppercase;color:#c3ccd8;background:rgba(15,19,25,.72);
+  border:1px solid rgba(255,255,255,.14);border-radius:20px;padding:5px 12px;cursor:pointer}
+.graph-key-toggle:hover{color:#fff;border-color:rgba(255,255,255,.3)}
+.graph-key-toggle::before{content:"\25B8";font-size:10px;transition:transform .15s ease}
+.graph-key.is-open .graph-key-toggle::before{transform:rotate(90deg)}
+.graph-key-panel{display:none;margin-top:8px;background:rgba(15,19,25,.88);border:1px solid rgba(255,255,255,.12);
+  border-radius:10px;padding:12px 14px;max-height:min(340px,58vh);overflow:auto}
+.graph-key.is-open .graph-key-panel{display:block}
+.graph-key-sec{margin-bottom:11px}
+.graph-key-sec:last-child{margin-bottom:0}
+.graph-key-h{font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:#7d8794;margin-bottom:7px}
+.graph-key-cats{display:grid;grid-template-columns:1fr 1fr;gap:4px 12px}
+.graph-leg-item{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:11px;
+  color:#bcc5d1;line-height:1.5}
+.graph-leg-swatch{width:9px;height:9px;border-radius:50%;flex:0 0 auto}
+.graph-key-line{width:22px;flex:0 0 auto;height:0;position:relative;border-top:2px solid #6f7d8f}
+.graph-key-line.line-tension{border-top:2px dashed #e0705a}
+.graph-key-note{font-family:var(--sans);font-size:10.5px;color:#7d8794;line-height:1.45;margin-top:2px}
+@media(max-width:640px){.graph-key{left:8px;bottom:8px}.graph-key-cats{grid-template-columns:1fr}}
+.graph-focusbar{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:16px}
+.graph-focus-name{font-family:var(--serif);font-weight:600;font-size:18px;color:var(--ink)}
+.graph-focus-meta{font-family:var(--mono);font-size:12px;color:var(--faint)}
+.graph-focus-link{margin-left:auto;font-family:var(--mono);font-size:12px;color:var(--accent);
+  text-decoration:none;white-space:nowrap}
+.graph-focus-link:hover{text-decoration:underline}
+.graph-back{font-family:var(--mono);font-size:12px;color:var(--muted);background:none;
+  border:1px solid var(--line-strong);border-radius:3px;padding:5px 10px;cursor:pointer}
+.graph-back:hover{border-color:var(--ink);color:var(--ink)}
+@media(max-width:560px){.graph-focus-link{margin-left:0}}
+/* Which instruction sentence a reader gets: "hover and click" is wrong advice
+   on a touch screen, where there is no hover and the first tap is the hover. */
+.ptr-coarse{display:none}
+@media(pointer:coarse){.ptr-fine{display:none}.ptr-coarse{display:inline}}
+
 /* ---- /compare/ ------------------------------------------------------------
    Two columns that must stay legible when the two things in them are unequal:
    one statement runs to 40 words and the other to 12, one entry has eight
