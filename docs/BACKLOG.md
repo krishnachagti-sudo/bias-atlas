@@ -4,9 +4,10 @@ Kept in the repository rather than in a conversation, so it survives and so the
 front page's "not here yet" tiles have something behind them. Ordered by what
 would change most if it were done.
 
-Status vocabulary: **open** (not started) · **built, held** (code exists and
-passes, deliberately unpublished) · **blocked** (needs something outside this
-repo) · **won't** (decided against, with the reason).
+Status vocabulary: **open** (not started) · **built** (shipped and live) ·
+**built, held** (code exists and passes, deliberately unpublished) ·
+**blocked** (needs something outside this repo) · **won't** (decided against,
+with the reason).
 
 ---
 
@@ -25,17 +26,24 @@ Needs a DNS record or an HTML file drop — a human action, not a build change.
 
 The pages a reader actually lands on, and the thickest remaining gap.
 
-- **Inline verdict meter and lineage** — open. The Tome breaks its opening
-  prose with a boxed card: the four reliability tiers with the current one
-  lit, and a dated timeline. The equivalent here is the four verdicts and a
-  line from first published to last checked. Its absence is why these pages
-  read as a wall.
-- **A wider fact strip** — open. Five cells against the Tome's eight. Who named
-  it, how many aliases, how many entries it is confused with, and the effect
-  size are all in the corpus and none are on the strip.
+- **Inline verdict meter and lineage** — built. A two-column card between the
+  claim and the verdict: the four verdicts with this entry's lit and a count
+  of the others, and the years from first published to the retest the entry
+  cites. 544 meters, 452 timelines — the timeline is omitted rather than faked
+  where there is no second date. This was why the pages read as a wall.
+- **A wider fact strip** — won't, on the reasoning already in the template.
+  Five cells against the Tome's eight looks like a gap and is not one. The
+  four candidates are each already stated within a screen of the strip: who
+  named it and the effect sizes are in the blocks below, the aliases are in
+  the `also known as` line directly above, and the confused-with count is in
+  the rail. The strip's own docstring says it is the five facts a reader
+  checks rather than the seven a methodologist would, and padding it to eight
+  for parity would be repeating facts worse to hit a number. Reopen this only
+  with a fact that is NOT elsewhere on the page.
 - **Related entries as cards at the foot** — open. They exist as a rail list;
   the Tome gives them full cards, which is what makes them get clicked.
-- **Previous and next entry** — open. The Tome closes every page with them.
+- **Previous and next entry** — built. Renders on every entry, by corpus
+  number, not wrapped at the ends: № 544 is not next to № 1.
 - **Portraits and first-publication scans** — blocked. The corpus holds no
   images and there is no licensing pipeline. The Tome has 1,026 verified
   public-domain images and a credits page; that is a project of its own.
