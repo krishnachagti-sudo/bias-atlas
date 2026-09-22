@@ -6,11 +6,26 @@
 // results container starts hidden and the full list starts visible, rather than
 // the other way round.
 //
-// The matching is word-overlap, not substring. Somebody typing "we kept paying
-// for it because we had already spent so much" shares no substring with "the
-// meal you are too full to finish", and a substring filter would tell them the
-// index has nothing — which is the one answer that would be false. Scoring by
-// how many of their words appear lets an ordinary sentence land.
+// The ranking is BM25-shaped, and every part of it is here because a plain
+// English sentence failed without it:
+//
+//   stemming            "we kept paying because we had already spent" matched
+//                       nothing at all against entries that say keep, pay, spend
+//   inverse document
+//   frequency           "because" and "people" are in nearly every entry and
+//                       were outvoting "sunk" and "anchor"
+//   field weighting     "all along" is in hindsight bias's own statement; the
+//                       same words elsewhere are coincidence, and without
+//                       weights the Asch experiment ranked above it
+//   length              a long `meaning` matches more of anybody's sentence by
+//   normalisation       chance — a description of the self-serving bias was
+//                       returning Plant blindness
+//   coverage            matching five of a reader's seven words beats matching
+//                       three rare ones, which the raw sum does not say
+//
+// It still matches WORDS, not meaning, and the page says so rather than
+// presenting the top hit as an answer. Vocabulary the entry never uses will not
+// be found, beyond the short everyday lexicon below.
 //
 // XSS discipline matches search.js: every corpus string reaches the DOM via
 // .textContent, never innerHTML.
@@ -240,12 +255,24 @@
     t = setTimeout(function () { run(q); }, 140);
   });
 
-  fetch(BASE + 'situations.json', { credentials: 'omit' })
-    .then(function (r) { return r.ok ? r.json() : null; })
-    .then(function (j) {
-      if (!Array.isArray(j)) return;
-      prepare(j);
-      if (pending) { run(pending); pending = ''; }
-    })
-    .catch(function () { /* the full list is already on the page */ });
+  /* Fetched on first use, not on load. The index is the biggest asset on the
+     site, and it was being pulled for every visitor including the ones who came
+     to read the list and never touched the box. Focus is early enough that it
+     has almost always arrived by the time a sentence is typed, and `run` parks
+     a query in `pending` if it has not. */
+  var asked = false;
+  function load() {
+    if (asked) return;
+    asked = true;
+    fetch(BASE + 'situations.json', { credentials: 'omit' })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (j) {
+        if (!Array.isArray(j)) return;
+        prepare(j);
+        if (pending) { run(pending); pending = ''; }
+      })
+      .catch(function () { /* the full list is already on the page */ });
+  }
+  input.addEventListener('focus', load, { once: true });
+  input.addEventListener('input', load, { once: true });
 }());

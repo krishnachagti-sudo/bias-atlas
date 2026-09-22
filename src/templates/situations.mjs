@@ -14,9 +14,11 @@
 // corpus answering in its own words.
 //
 // The page server-renders every situation, so all 1,632 phrases are crawlable
-// and the page works with JavaScript off. The filter is an enhancement on top,
-// and it searches the full example text, which is in situations.json rather
-// than in the markup because putting it inline would quadruple the page.
+// and the page works with JavaScript off. The filter is an enhancement on top.
+// It searches more than the examples — see situationsJson below for why the
+// examples alone were not enough — from situations.json, which is fetched on
+// first use rather than on load: it is the biggest asset on the site and most
+// visitors read the list without ever touching the box.
 
 import { head, sprite, header, footer, escapeHtml, shareRow, BRAND, asset } from './partials.mjs';
 import { hubHead, hubNav, hubFaq } from './hub.mjs';

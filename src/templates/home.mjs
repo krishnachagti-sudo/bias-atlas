@@ -38,10 +38,12 @@ import { LASTMOD_TOKEN } from '../../build/lastmod.mjs';
 // entries has no way of knowing there is a quiz, a situation finder, a print
 // edition or an open dataset behind it.
 //
-// The locked tiles are a promise, and promises on a public page are a debt. Each
-// one here is a thing that is designed and not yet built, not a thing that might
-// happen: comparison pages and the tensions hub both have their data derived
-// already. Anything speculative belongs in a backlog file, not on the front page.
+// The locked tiles are a promise, and promises on a public page are a debt, so
+// two rules. Each one is designed rather than merely wished for — the tensions
+// hub is built and held back, and the comparison pages have their data derived
+// already. And the heading says "not here yet" rather than "being built now",
+// because only one of the four is actually in progress and the other wording
+// would be three quarters false.
 const FEATURES = [
   ['Browse every entry', 'browse/', 'All 544, filterable by field and by verdict.'],
   ['Start from what happened', 'situations/', 'Describe the situation, find the name for it.'],
@@ -84,7 +86,7 @@ function featureGrid(base) {
     <div class="ft-grid">
 ${live}
     </div>
-    <h3 class="ft-soon-h">Being built now</h3>
+    <h3 class="ft-soon-h">Not here yet</h3>
     <div class="ft-grid ft-grid--soon">
 ${soon}
     </div>
@@ -125,7 +127,14 @@ export function homePage({ base = '/', origin = '', entries = [], mapped = 0 } =
   // would receive `split(/s+/)`, which splits on the letter s. That bug shipped
   // once on the site this came from and was invisible until the rendered timings
   // were measured, so it is written down here rather than rediscovered.
-  const hero = entries.map((e) => ({
+  // The rotator shipped all 544 entries as inline JSON — 130 KB, 31% of the
+  // front page, to animate a line almost nobody watches past the third turn.
+  // Forty is far more than anyone sees, and taking every Nth entry rather than
+  // the first forty keeps the sample spread across fields and verdicts instead
+  // of showing whichever ones happen to be numbered lowest.
+  const ROTATE = 40;
+  const step = Math.max(1, Math.floor(entries.length / ROTATE));
+  const hero = entries.filter((_, i) => i % step === 0).slice(0, ROTATE).map((e) => ({
     no: String(e.no).padStart(3, '0'),
     cat: e.category,
     slug: e.slug,
