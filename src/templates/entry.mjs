@@ -31,6 +31,7 @@ import {
 import { hubFaq, hubJsonLd } from './hub.mjs';
 import { CATEGORIES } from '../../build/corpus.mjs';
 import { fieldPath, verdictPath } from './paths.mjs';
+import { comparePath } from './compare.mjs';
 import { VERDICT_ORDER, VERDICT_GLOSS, verdictSplit } from './charts.mjs';
 import { correctionUrl } from './contribute.mjs';
 import { LASTMOD_TOKEN } from '../../build/lastmod.mjs';
@@ -816,23 +817,14 @@ ${figures.length ? `        <p class="rep-fig">${escapeHtml(figures.join(' · ')
       </div>`);
   }
 
-  // The provenance is stated ONCE, under the heading, rather than under every
-  // item. `why` reads "Named in this entry's misreadings." — true, and the
-  // reason the panel is allowed to exist at all, but it is the same sentence
-  // for every row. Printed per item it stacked three identical grey lines
-  // under three links and read as a template talking to itself. Said once it
-  // is the same guarantee in a quarter of the space.
-  if (related.length) {
-    const fields = [...new Set(related.map((r) => (/limits/i.test(r.why) ? 'limits' : 'misreadings')))];
-    const where = fields.length === 1 ? `own ${fields[0]}` : 'own limits and misreadings';
-    panels.push(`      <div class="panel panel--rel">
-        <h3>Often confused with</h3>
-        <p class="rel-why rel-why--note">Each one is named in this entry's ${escapeHtml(where)}.</p>
-        <ul class="cmp-side">
-${related.map((r) => `          <li><a href="${base}bias/${escapeHtml(r.slug)}/">${escapeHtml(r.name)}</a></li>`).join('\n')}
-        </ul>
-      </div>`);
-  }
+  // THE PLAIN LIST OF THESE IS GONE FROM THE RAIL, and that is the point rather
+  // than an omission. A review of this site named the rail as its worst
+  // problem — five stacked boxes of identical grey link lists, two of which did
+  // nearly the same job. These entries now appear twice on the page and each
+  // time for a reason the other cannot serve: as the relationship map above,
+  // which shows at a glance which of them disagree, and as cards at the foot,
+  // which carry what each one actually claims and link to the comparison. A
+  // third copy as bare names in the rail was the one adding nothing.
 
   if (siblings.length) {
     panels.push(`      <div class="panel panel--compare">
@@ -931,6 +923,7 @@ export function entryPage(entry, { base = '/', origin = '', count = 0, entries =
   // differently when the two ends disagree, and that needs the NEIGHBOUR's
   // verdict, which `related` does not carry.
   const stateBySlug = new Map(entries.map((e) => [e.slug, (e.replication || {}).state]));
+  const bySlug = new Map(entries.map((e) => [e.slug, e]));
   const order = entries.slice().sort((a, b) => a.no - b.no);
   const here = order.findIndex((o) => o.slug === entry.slug);
   const prev = here > 0 ? order[here - 1] : null;
@@ -1008,6 +1001,27 @@ export function entryPage(entry, { base = '/', origin = '', count = 0, entries =
       // the caveat; the rest follows as ordinary prose.
       `        <div class="callout callout--info">${ICON.warn}<p>${escapeHtml(paragraphs(entry.limits)[0] || '')}</p></div>\n`
         + prose(paragraphs(entry.limits).slice(1).join('\n\n'))],
+    ...(related.length ? [['Often confused with', `Which biases is ${entry.name} confused with?`,
+      // Cards rather than the rail's old list, because a name on its own does
+      // not tell a reader why they would click it. Each carries the other
+      // entry's own claim, its verdict, and a link to the two side by side —
+      // three things a list cannot hold, and the last of which did not exist
+      // until /compare/ did.
+      `        <p class="rel-lede">Each of these is named in this entry's own prose as something it gets taken for. Where the two came out differently, that is worth knowing before you quote either.</p>
+        <div class="rel-cards">
+${related.map((r) => {
+    const o = bySlug.get(r.slug);
+    if (!o) return '';
+    const st = (o.replication || {}).state;
+    const differs = st !== (entry.replication || {}).state;
+    return `          <a class="rel-card${differs ? ' rel-card--differs' : ''}" href="${base}${comparePath(entry.slug, r.slug)}">
+            <span class="rc-top"><span class="badge ${REPLICATION_CLASS[st] || 'b-heu'}">${escapeHtml(replicationLabel(st))}</span>${differs ? '<span class="rc-flag">differs from this one</span>' : ''}</span>
+            <span class="rc-name">${escapeHtml(o.name)}</span>
+            <span class="rc-say">${escapeHtml(o.statement || '')}</span>
+            <span class="rc-go">Side by side &rarr;</span>
+          </a>`;
+  }).filter(Boolean).join('\n')}
+        </div>\n`]] : []),
     ['Commonly misread as', `What is ${entry.name} confused with?`,
       `        <div class="callout callout--key">${ICON.key}<p>${escapeHtml(paragraphs(entry.misreadings)[0] || '')}</p></div>\n`
         + prose(paragraphs(entry.misreadings).slice(1).join('\n\n'))],

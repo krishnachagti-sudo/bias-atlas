@@ -128,15 +128,17 @@ test('the built graph.json and the entry rails agree', (t) => {
   const html = readFileSync('dist/bias/sunk-cost/index.html', 'utf8');
   assert.match(html, /Often confused with/);
   assert.match(html, /bias\/escalation-of-commitment\//);
-  // The panel must carry the provenance, or it reads as an editorial "see
-  // also". It is stated ONCE under the heading rather than once per row: the
-  // sentence is identical for every item, so three copies under three links
-  // stacked three identical grey lines and read as a template talking to
-  // itself. What matters is that the guarantee is on the page, not how many
-  // times it is repeated.
-  assert.match(html, /class="rel-why rel-why--note">Each one is named in this entry's own (limits and misreadings|limits|misreadings)\./);
-  // And that it is not ALSO printed per item, which is what this replaced.
-  const panel = (html.match(/<div class="panel panel--rel">[\s\S]*?<\/ul>/) || [''])[0];
-  assert.equal((panel.match(/rel-why/g) || []).length, 2,
-    'the provenance should appear in exactly one element, which carries two classes');
+  // The relationship must carry its provenance somewhere a reader sees, or it
+  // reads as an editorial "see also" — these links are only defensible because
+  // the entry's own prose names the other bias.
+  //
+  // It has MOVED. It used to sit in a rail panel listing the names; that panel
+  // is gone, because the relationship map above it carries the same links with
+  // more information and a review called the rail's stack of identical link
+  // lists its worst problem. The provenance now leads the cards at the foot,
+  // which is where the relationship is actually explained.
+  assert.match(html, /class="rel-lede">Each of these is named in this entry's own prose/);
+  assert.match(html, /class="rel-cards"/);
+  // And the rail no longer carries a third copy of the same list.
+  assert.doesNotMatch(html, /panel--rel/);
 });

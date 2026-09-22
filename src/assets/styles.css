@@ -711,6 +711,26 @@ a.stat--link .s-k::after{content:" →";letter-spacing:0;opacity:.55}
 .callout p{margin:0;font-size:16.5px;line-height:1.76;color:var(--read)}
 .callout--key{border-left-color:var(--accent);background:var(--accent-soft)}
 .callout--key .co-ic{color:var(--accent)}
+/* ---- the confused-with cards at the foot of an entry -----------------------
+   The rail used to carry these as a list of bare names. A name alone does not
+   tell a reader why they would click it, so the card carries the other entry's
+   claim and its verdict, and goes to the two side by side rather than to the
+   entry — the comparison is the thing a reader confusing them actually wants. */
+.rel-lede{font-size:14px;line-height:1.65;color:var(--muted);margin:0 0 16px;max-width:76ch}
+.rel-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(260px,100%),1fr));gap:14px;margin:0 0 6px}
+.rel-card{display:flex;flex-direction:column;gap:8px;padding:16px 18px;background:var(--surface);
+  border:1px solid var(--line);border-radius:3px;text-decoration:none;transition:border-color .18s}
+.rel-card:hover{border-color:var(--accent)}
+/* A card whose verdict differs from the entry you are on gets the accent edge:
+   that is the pair most worth opening, and the same signal the relationship map
+   above draws as a dashed edge. */
+.rel-card--differs{border-left:2px solid var(--accent)}
+.rc-top{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.rc-flag{font-family:var(--mono);font-size:9px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}
+.rc-name{font-family:var(--serif);font-size:17px;color:var(--ink);line-height:1.25}
+.rc-say{font-size:13px;line-height:1.55;color:var(--muted)}
+.rc-go{font-family:var(--mono);font-size:10.5px;letter-spacing:.04em;color:var(--accent);margin-top:2px}
+
 /* ---- /projects/ and /published-in/ ----------------------------------------
    Two grouped-list pages with the same bones as /is-it-real/: a heading that
    carries its own count, a line of provenance, then the entries. Kept as their
