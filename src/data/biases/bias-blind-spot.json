@@ -16,6 +16,17 @@
     "note": "The paper names the effect and reports three surveys and two experiments. Its samples are small, ranging from 24 to 91 people."
   },
   "evidence": "In the first survey 24 Stanford students rated themselves and the average American on eight biases, using nine-point scales. They placed themselves at 5.31 and the average American at 6.75, t(23) = 8.31, p < .0001, with the gap holding for every bias taken separately. The second survey changed the comparison to classmates in the same seminar. Thirty students rated themselves at 5.05 against 5.85 for a classmate, t(28) = 4.64. That survey added three shortcomings people notice in themselves: procrastination, fear of public speaking and the planning fallacy. Ratings on those ran the other way, 5.68 for self against 5.05 for classmates, a reversal that did not reach significance, t(28) = 1.49, p = .15. The third survey put the questions to 76 travellers at San Francisco airport, and found the asymmetry again on the original eight items, t(74) = 3.67, p < .0005, and none on the three shortcomings. Study 2 asked 91 students to rate themselves against their peers on six traits, then described the better-than-average effect and asked whether their own ratings had been biased. Seventy-nine rated themselves above average. Of those, 19 conceded bias, 63% said their ratings had been accurate and 13% said they had been too modest. Study 3 paired 20 same-sex pairs of students and gave one of each pair a fake high score on a social intelligence test and the other a fake low score. Fifteen of the 20 pairs showed the self-serving bias, and the figures that follow are drawn from those 15 pairs alone. Winners rated the test more valid than losers, 4.53 against 2.13, t(28) = 7.51, p < .0001. Asked who had been swayed by their score, participants rated their partner at 4.30 and themselves at 3.57, t(28) = 2.12, p < .05. A second item that named the bias rather than describing it gave 4.07 against 3.67, t(28) = 1, and no significant difference.",
+  "examples": [
+    { "kind": "everyday",
+      "tag": "The appraisals everyone else inflates",
+      "text": "A manager agrees that colleagues mark their own favourites too generously, and holds that his own ratings are the exception. He is reading his own intentions against their behaviour, which are not the same evidence, and the comparison comes out in his favour every time." },
+    { "kind": "everyday",
+      "tag": "Shown the pattern and unmoved",
+      "text": "An interviewer is shown that his scores fell with the order candidates were seen in, and accepts the pattern while maintaining that the order did not sway him. The demonstration reaches his answers and leaves his belief about himself where it was." },
+    { "kind": "everyday",
+      "tag": "The question about advertising",
+      "text": "Asked on a questionnaire how far advertising shapes what they buy, and how far it shapes what the average shopper buys, people put the average shopper higher. Every respondent cannot be in the less affected half, and the gap is the finding rather than the modesty." }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "Two preregistered direct replications found the self-other gap larger than the original, and both broke the same secondary prediction.",

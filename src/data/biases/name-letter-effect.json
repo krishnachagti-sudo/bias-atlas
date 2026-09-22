@@ -13,6 +13,17 @@
     "note": "The paper is titled \"Narcissism beyond Gestalt and awareness: The name letter effect\". Its abstract tests \"mere belongingness to self\" as a sufficient condition for the enhancement of the attractiveness of visual letter stimuli. It reports the preference as holding independent of visual, acoustical, aesthetic, semantic and frequency characteristics. Nuttin followed it in 1987 with a study across twelve European languages, whose abstract frames the test as mere ownership. Neither paper is about self-esteem. Hoorens's 2014 review dates the first report to an address Nuttin gave to Dutch social psychologists in 1984, seven years after he collected the data. Her 1990 review calls the claim Nuttin's affective selfparticles hypothesis, and gives the elementary self-attachment hypothesis and the mere ownership hypothesis as its other names. Buhrmester, Blanton and Swann trace the reading of letter preference as a carryover from high self-esteem to Greenwald and Banaji in 1995."
   },
   "evidence": "Nuttin's first design was yoked, which holds letter frequency constant. Thirty-eight primary school girls picked the more attractive letter from each pair in a list. Every list was judged twice, once by the owner of the name hidden in it and once by a partner who did not own that name. Owners chose the hidden name's letters on 55.1% of pairs against 44.6% for their partners. A second study on 96 university students got the same result through rejections, 53.8% non-rejection against 37.3%. The 1987 study dropped the yoking and asked students of twelve European nationalities to pick their six favourite letters from the alphabet. A letter reached that set 30% of the time when it belonged to the rater's name and 20% when it did not. Restricted to first-name letters the figure rose to 33%, and to 46% for own initials. The effect held in nine of the twelve groups. Those figures are read from Vera Hoorens's 1990 review, whose full text sits in the Psychologica Belgica open archive. Nuttin's own two papers stayed shut. Bosson, Swann and Pennebaker ran the task on undergraduates at the University of Texas at Austin. Own initials scored 0.93 points above the average rating those same letters drew across the whole sample, t(80) = 6.13.",
+  "examples": [
+    { "kind": "everyday",
+      "tag": "The alphabet ranked for looks",
+      "text": "Handed the letters in a jumbled order and asked which are pleasing to look at, a woman called Hannah puts H and A near the top and gives reasons about their shapes. The letters of her own name rise, and the two she signs with rise furthest." },
+    { "kind": "everyday",
+      "tag": "Choosing the lettering for a sign",
+      "text": "Asked which sample of lettering is handsomest, a man lingers on the sheet that happens to spell his initials and calls that one the best cut. The judgement is offered as being about the typeface." },
+    { "kind": "everyday",
+      "tag": "The doodle in the margin",
+      "text": "Filling a margin while on the telephone, people come back to their own initials more often than to other letters and say those shapes are the nicest to draw. The preference shows up in a judgement about letters, not in any choice of town or trade." }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "The letter preference holds in large and varied samples; what the task measures is still contested.",

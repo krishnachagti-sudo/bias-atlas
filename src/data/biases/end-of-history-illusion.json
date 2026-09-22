@@ -13,6 +13,17 @@
     "note": "Their design compared predictors aged a with reporters aged a + 10, drawn from the same recruitment pool. Nobody was followed over ten years, so the gap in the analysis is a gap between people rather than a gap in anyone's life. Two follow-ups did let some participants answer in both conditions on the same day, which tests scale wording rather than the passage of time."
   },
   "evidence": "Six studies, four numbered and two follow-ups. In study 1, 7,519 adults aged 18 to 68 completed the Ten Item Personality Inventory, then rated themselves either as they had been ten years earlier or as they expected to be ten years later. The condition coefficient was b = -0.14, p < 0.001. Study 2 ran the same design on 2,717 adults using ten values from the Schwartz Value Inventory, b = -0.46, p < 0.001. Study 3 asked 7,130 adults about five concrete preferences, their favourite music, holiday, food and hobby and the name of their best friend, b = -0.19, p < 0.001. One follow-up on 613 adults put each person in both conditions and gave b = -7.69, p = 0.001. A second, on 1,163 adults, asked in one general question how much they had changed or would change, b = -0.74, p = 0.007. To test whether reporters were simply misremembering, the authors set intraclass correlations against 3,808 adults measured twice in the MacArthur Midlife Development survey. Actual change over the decade gave 0.52, reported change 0.51 and predicted change 0.65, and a larger correlation means less change. Study 4 randomly assigned 170 people on Mechanical Turk to one concert question or the other. Those asked about seeing their current favourite band in ten years named $129 on average, against $80 from participants a decade older asked about seeing their once-favourite band next week. The paper puts that at 61% more for the future concert.",
+  "examples": [
+    { "kind": "everyday",
+      "tag": "The student who has finished changing",
+      "text": "A man of twenty describes how far his politics and his taste in music moved since school, then says he expects to hold much the same views at thirty. His account of the decade behind him is not the account he gives of the decade ahead." },
+    { "kind": "everyday",
+      "tag": "The tattoo that will always mean this",
+      "text": "Someone choosing a design assumes the meaning it carries now is the meaning it will keep, while saying readily what the same design would have meant to them at school. Change is granted to the past and withheld from the future." },
+    { "kind": "everyday",
+      "tag": "The cottage bought for the quiet",
+      "text": "A couple buy a house an hour from anyone, reasoning from the weekends they want now, having already remarked how far their idea of a good weekend has moved since their twenties. The forecast of change falls short of the change they report." }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The one longitudinal test produced two papers reading the same data in opposite directions, and the disagreement is about whether change is counted with its sign.",

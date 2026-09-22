@@ -18,6 +18,17 @@
     "note": "Their paper is \"A Theory of Fairness, Competition, and Cooperation\", 114(3), 817-868. It supplied the name and the algebra, citing Adams among earlier writers on equity and citing Loewenstein, Thompson and Bazerman for the asymmetry between falling behind and getting ahead. It cites Bolton and Ockenfels as a 1997 working paper, and that model appeared in the American Economic Review in 2000, built on a subject's own pecuniary payoff and own relative payoff standing. The experimental base both were built on starts with Güth, Schmittberger and Schwarze's ultimatum game in 1982."
   },
   "evidence": "Oosterbeek, Sloof and van de Kuilen pooled 37 papers reporting 75 ultimatum-game results. Proposers offered 40% of the pie on average and 16% of offers were rejected, with the rejection rate lower for larger pies and for larger shares offered. Fehr and Schmidt did not estimate their parameters and say so: their 2010 reply states that they never claimed to have estimated preference parameters and never used the word calibration in the 1999 paper. Their Table III assumes a discrete distribution chosen to fit known ultimatum evidence, with an envy weight of 0 for 30% of subjects, 0.5 for 30%, 1 for 30% and 4 for 10%, and a guilt weight of 0 for 30%, 0.25 for 30% and 0.6 for 40%. An envy weight of 1 means giving up a dollar to cut the opponent's payoff by two. Henrich and colleagues took the game to 15 small-scale societies. Group mean offers ran from 26% to 58%, against the 40% to 50% typical of student samples, and modal offers from 15% to 50%. Machiguenga horticulturalists in Peru had a mean of 0.26 and modes at 0.15 and 0.25, and their responders rejected a single offer although more than 75% of offers were below 30% of the pie. Lamalera whalers in Indonesia had a mean of 0.57, and 63% of proposers split the pie evenly. Hadza foragers rejected 24% of all offers and nine of the 21 offers at or below 20%. The Au and Gnau of Papua New Guinea rejected offers above 50% about as often as offers below it. Brosnan and de Waal tested five adult female brown capuchins in 2003 across four conditions. Their tendency to trade a token for cucumber varied across those conditions at F(3,16) = 25.78, p < 0.001, and fell furthest when a partner got a grape for no effort at all.",
+  "examples": [
+    { "kind": "everyday",
+      "tag": "The split that is turned down",
+      "text": "Two strangers are handed a hundred pounds to divide, and the one offered ten of it refuses, so that both walk away with nothing. The refusal costs him the ten he was offered, and what he buys with it is the closing of the gap between them." },
+    { "kind": "everyday",
+      "tag": "The pay rise that stops being one",
+      "text": "An employee is pleased with her rise until she learns that a colleague doing the same job got twice as much, and she takes a worse-paid post elsewhere. Her own pay never changed. The money she gives up is the price of not sitting behind the colleague." },
+    { "kind": "everyday",
+      "tag": "The second job with the same partner",
+      "text": "Two decorators split a fee and one finds the other kept the larger share, so he turns down the next job although the rate would suit him. Refusing costs him work he wants, and the thing he is avoiding is the gap rather than the amount." }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "People really do reject low offers, at 16% across 75 ultimatum results, while no inequity effect survives a meta-analysis of 23 animal studies.",

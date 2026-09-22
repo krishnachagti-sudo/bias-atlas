@@ -17,6 +17,23 @@
     "note": "\"Subjective Probability: A Judgment of Representativeness\" runs from birth sequences through reflection of randomness and sampling distributions to posterior probability. It numbers none of its problems. The count of eleven is the replication's, which labelled them in the order the original presented them. The prediction studies followed in Psychological Review in 1973, and Science carried the summary on 27 September 1974. Both originals were read on 21 September 2026, the 1972 paper on a University of California, San Diego page and the 1973 paper in a Wayback Machine replay of a dead CiteSeerX copy."
   },
   "evidence": "The 1974 review sets out the case. Told that a description had been drawn from a group of 70 engineers and 30 lawyers, or from 30 engineers and 70 lawyers, subjects produced much the same probability judgements in both conditions. Bayes's rule puts the ratio of the odds at (.7/.3) squared, or 5.44. Given a description written to carry no information, they answered .5 whichever mix they had been told about. Given no description at all they answered .7 and .3, which is correct. Asked whether a hospital with about 45 births a day or one with about 15 recorded more days on which over 60% of babies were boys, 21 undergraduates said the larger, 21 said the smaller and 53 said about the same. Asked which sample was stronger evidence about an urn, 4 red of 5 drawn or 12 red of 20, most chose the first, though the correct posterior odds are 8 to 1 and 16 to 1. The direct evidence for the mechanism comes from a different design, in which one group ranks outcomes by how far a person resembles each and another group ranks the same outcomes by probability. The 1973 paper reports a correlation of .97 between the mean similarity ranks and the mean likelihood ranks for Tom W., against -.65 between the mean likelihood ranks and the estimated base rates. Kahneman's Nobel lecture repeats the .97 but calls the -.65 a correlation between representativeness ranks and base rates, which is not what the paper's own sentence says it is. The Linda figures belong to a particular version, and are usually quoted without it. In Tversky and Kahneman's 1983 paper, 88 undergraduates at the University of British Columbia ranked eight statements about Linda by resemblance, and 85% produced the order feminist, feminist bank teller, bank teller. Other groups ranked the same eight statements by probability. Violations of the conjunction rule ran at 89% among the statistically naive, 90% among the informed and 85% among the sophisticated, and the correlation between mean probability and mean representativeness ranks was .98 for Linda. Kahneman's lecture gives that correlation as .99, and pairs 85% for representativeness with 89% for probability. The 89% is the naive group's figure in the 1983 table, and the lecture does not say which group it is quoting.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The essay that settles a degree class",
+      "text": "A tutor reads one strong piece of work and predicts a first with the confidence the essay itself invites. The prediction tracks how good the essay looks rather than how much one essay can say about three years, which is resemblance answering a question about probability."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The admired firm taken for a good investment",
+      "text": "An investor rates a well-run company with contented staff a likely winner, because it resembles the idea of one. How good a company is and how well its shares will do are different quantities, and the easier one has been answered in place of the harder."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The symptoms that fit the textbook picture",
+      "text": "A patient's complaints match the description of a rare condition almost point for point, and the closeness of the match is taken as the chance of having it. A good likeness and a high probability are not the same measurement, and the match itself says nothing about how reliable a sign it is."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The chance and sampling problems of 1972 repeat almost intact, eight of nine in a preregistered replication, while the prediction studies of 1973 come apart, with two of the seven supported.",

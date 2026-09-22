@@ -18,6 +18,17 @@
     "note": "The investigation came first. A commission convened by Carl Stumpf reported on 12 September 1904 that no regular signalling could be detected, and Pfungst published his own report on 9 December 1904. The German book preceded Rahn's English translation. The term experimenter expectancy belongs to Robert Rosenthal's programme of the 1960s, which extended the idea from a horse to human research participants."
   },
   "evidence": "Wilhelm von Osten's horse appeared to do arithmetic, spell, read the clock and name musical intervals by tapping a forefoot. Pfungst separated the two things nobody had separated: whether the horse knew the answer, and whether the questioner did. Asked to tap numerals on cards that nobody present could see, Hans was right in 8 percent of 49 tests; when the questioner could see the card, he was right in 98 percent of 42 tests. Across all the series, procedure with knowledge produced 90 to 100 percent correct answers and procedure without knowledge produced at most 10 percent. Blinders settled the channel. In 102 tests with large blinders the questioner was certainly out of sight in 35, seen in 56 and undecided in 11, and Hans scored 6 percent, 89 percent and 18 percent. The cue was a slight forward bend of the questioner's head and trunk, which started the tapping, and a slight upward jerk, which stopped it. Pfungst reproduced it deliberately: of thirty tests in which he simply stooped, twenty-nine set the horse tapping, and it kept tapping until he straightened up. He then reversed the roles and played the horse himself, reading twelve human subjects who were thinking of a word or a number, and averaging 73 percent correct over 350 tests. Rosenthal and Fode's 1963 rat study is the usual citation for the laboratory version of this. Its text is paywalled, so no figure from it appears on this page.",
+  "examples": [
+    { "kind": "everyday",
+      "tag": "Scoring the limp",
+      "text": "A handler judging whether a lame dog is walking better knows which animals were given the new supplement, and the borderline strides go down as improved for those animals. No dishonesty is needed, because the ambiguous cases have to fall somewhere and they fall in the expected direction." },
+    { "kind": "everyday",
+      "tag": "Marking with the names attached",
+      "text": "An examiner who knows which essays came from the top set reads a vague sentence there as compressed insight and the same sentence elsewhere as padding. The remedy is taking the names off the scripts, not resolving to be fairer." },
+    { "kind": "everyday",
+      "tag": "The wine the host poured",
+      "text": "A host who knows which glass holds the good bottle leans in as the guest lifts it and waits through the other one. The guest reads the lean, prefers that glass, and hands the answer back to the person who asked the question." }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "Where the same outcome in the same trial is judged by a blinded and a non-blinded assessor, the non-blinded one reports a bigger treatment effect, in study after study.",

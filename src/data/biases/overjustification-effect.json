@@ -17,6 +17,17 @@
     "note": "Their title carries the word overjustification in quotation marks, and they credit the idea to earlier writers including deCharms, Deci, and Kruglanski, Friedman and Zeevi. Deci had reported a similar result in 1971 with students paid to solve puzzles, which Lepper and his co-authors describe as of only marginal statistical significance and as resting partly on baseline differences between the groups."
   },
   "evidence": "A field experiment at the Bing Nursery School on the Stanford campus, with children aged 40 to 64 months. Teachers set felt-tipped pens on a table in front of a one-way mirror, and two observers timed how much of the available period each child spent drawing. Children who had already shown interest were split three ways: promised a Good Player Award for drawing, given the same award without warning afterwards, or given nothing. The pens returned to the classroom 7 to 14 days later. Of their free-choice time the promised-award children spent 8.59% drawing, against 16.73% for the no-award children and 18.09% for the unexpected-award children, in cells of 18, 15 and 18. Group variances differed, so the analysis ran on log-transformed proportions: F = 3.25 on 2 and 48 degrees of freedom, p < .05, with a planned contrast at F = 6.19, p < .025. Judges blind to condition rated the promised-award drawings lower in quality, 2.18 against 2.85 and 2.69 on a five-point scale.",
+  "examples": [
+    { "kind": "everyday",
+      "tag": "The reading chart",
+      "text": "A boy who read for his own pleasure is promised a sticker for every book finished, and when the chart comes down at the end of term he stops picking books up. The reward supplied a reason he did not have before, and it left when the chart did." },
+    { "kind": "everyday",
+      "tag": "Paid for the baking",
+      "text": "A woman who baked for her friends starts taking orders at a price, and when the orders dry up the oven stays cold. The baking had become the means to a payment, and the older reason for it is harder to find afterwards." },
+    { "kind": "everyday",
+      "tag": "The volunteer put on a stipend",
+      "text": "A man who had turned up at the allotment every Saturday is offered a small monthly payment for the same hours, and stops coming once the funding ends. The work did not change, only the reason he could give himself for doing it." }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Both sides of the argument find that a reward promised in advance for doing an already-interesting task cuts later free-choice engagement; they disagree about everything wider than that.",

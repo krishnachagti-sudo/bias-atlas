@@ -17,6 +17,23 @@
     "note": "Dodge's paper, 'Social cognition and children's aggressive behavior', runs from page 162 to page 170 of volume 51. Later work dates the idea to it, and De Castro and colleagues, reviewing the field in 2002, group Dodge's own result with the studies reporting small effects. A second 1980 paper carries the title 'Attributional bias among aggressive boys to interpret unambiguous social stimuli as displays of hostility', by W. Nasby, B. Hayden and B. M. DePaulo in the Journal of Abnormal Psychology. Neither PubMed nor Crossref carried an abstract for either paper on 21 September 2026, though ERIC holds a two-sentence description of Dodge's. Neither full text was obtained."
   },
   "evidence": "Almost all of it is vignette work. A child hears or reads a short story in which a peer causes a bad outcome for them and the peer's motive is left open, then says why the peer did it. The answers are scored hostile or benign, and that score is set against ratings of the child's aggression by teachers, peers or parents. De Castro, Veerman, Koops, Bosch and Monshouwer pooled 41 such studies with 6,017 participants in 2002. Verhoef, Alsem, Verhulp and De Castro repeated the exercise in 2019 on 111 studies, 219 effect sizes and 29,272 participants. Neither pools experiments. Both took premanipulation data only where a study manipulated anything, and Verhoef and colleagues also excluded studies that measured the two things at different times. Dodge and 17 colleagues added a longitudinal test in 2015, following 1,299 children with a mean age of 8.3 years in the first year across 12 ecological groups in nine countries. Each child rated 10 ambiguous provocation vignettes in year three, and mothers and children rated the child's chronic aggression in years two, three and four. The experimental evidence sits in the intervention literature. Hudley and Graham randomly assigned 101 African-American elementary school boys to attributional retraining, attention training or no treatment in 1993, and the retrained aggressive boys inferred hostile intent less often and endorsed hostile retaliation less often. Teachers rated the intervention group as a whole less aggressive afterwards. Yeager, Miu, Powers and Dweck reported in 2013 that teaching adolescents that personality can change reduced hostile intent attributions in an experiment and reduced attributions and aggressive desires over eight months in an intervention.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The drink knocked over in a crowded bar",
+      "text": "A stranger spills a pint down somebody's sleeve in a room too packed to see what happened. A shove and an accident look identical from inside the sleeve. The person who settles on the shove is the one who squares up, and the cue was ambiguous while the reading was not."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The car that takes the gap",
+      "text": "A driver pulls in close at a junction and the car behind reads it as a deliberate slight rather than a misjudged gap. The horn and the tailgating that follow answer the intent that was inferred, not the manoeuvre that was seen."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The message left unanswered",
+      "text": "A colleague does not reply for two days, which fits a heavy week as well as it fits being frozen out. Landing on the freezing out is the step the claim describes, and it comes easier because the slight, if it is one, falls on the person doing the reading."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "Two meta-analyses seventeen years apart put the association at the same modest size, and neither tested which way it runs.",

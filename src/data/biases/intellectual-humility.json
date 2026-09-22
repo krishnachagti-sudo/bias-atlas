@@ -18,6 +18,17 @@
     "note": "The Comprehensive Intellectual Humility Scale was the first validated general self-report measure. It appeared online in November 2015 and in print in 2016, so much of the literature cites it as 2015. Leary and colleagues published a rival six-item scale in 2017 and stated that the CIHS was the only other validated general measure at the time."
   },
   "evidence": "The CIHS has 22 items and four factors: independence of intellect and ego, openness to revising one's viewpoint, respect for others' viewpoints, and lack of intellectual overconfidence. In a confirmatory sample of 380, the four-factor model fitted well, CFI = .948 and RMSEA = .046, and a one-factor model did not, CFI = .594 and RMSEA = .127. Full-scale alpha was .87. Test-retest was .75 at one month and .70 at three. The scale correlated r = .22 with social desirability. Leary and colleagues built a six-item unidimensional alternative from 23 candidate items, alpha .82, uncorrelated with social desirability at r = .03. Across two samples of 202 and 200 it correlated .33 with openness, .34 with need for cognition, -.32 with intolerance of ambiguity, -.49 with Altemeyer's dogmatism and -.20 with Rokeach's, and -.04 with narcissism. Their Study 4 gave 396 people strong or weak arguments for dental flossing. Among people who flossed rarely, those high in intellectual humility separated strong from weak arguments and those low in it did not, three-way interaction p = .008, change in R2 of .015. Intention to floss did not move. Porter and Schumann built a third scale, nine items, average alpha .74. In their Study 3, 169 adults could click links to read reasons for and against their own position on gun control or capital punishment. Eighty-one read nothing at all. Among the 88 who read something, intellectual humility correlated r = .29 with the proportion of opposing reasons read.",
+  "examples": [
+    { "kind": "everyday",
+      "tag": "The figure quoted from memory",
+      "text": "A committee member states a budget figure he is sure of, then says he may have carried it over from last year and checks the report before the vote goes through. What he is granting is that a belief he holds firmly might not survive checking." },
+    { "kind": "everyday",
+      "tag": "The book kept on the other side",
+      "text": "A woman who has read widely on diet keeps the book that argues against her view, on the grounds that her reasons may be thinner than they feel from inside. The admission concerns the standing of her own evidence, not her manners towards the author." },
+    { "kind": "everyday",
+      "tag": "The objection not yet read",
+      "text": "Two neighbours disagree about a planning decision, and one says he has not read the objections and that his position may not hold once he does. He is reporting a limit on what his own evidence can bear, which is the narrow thing the definition names." }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The scales predict other questionnaires and not much else: across 116 recorded group discussions, the four CIHS subscales correlated .03, .00, -.07 and .05 with intellectual humility that linguists coded from 303 speakers.",
