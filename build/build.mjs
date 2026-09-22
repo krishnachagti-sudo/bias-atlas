@@ -33,7 +33,8 @@ import { loadCorpus, CATEGORIES, REPLICATION_STATES } from './corpus.mjs';
 import {
   verdictHubPage, fieldHubPage, personHubPage, peopleIndexPage,
   aliasIndexPage, timelinePage, effectSizesPage,
-  namedBy, verdictPath, fieldPath, personPath,
+  azPage, fallaciesPage, fallacySlugs, decadePage, decades,
+  namedBy, verdictPath, fieldPath, personPath, decadePath,
 } from '../src/templates/hubs.mjs';
 import { entryMarkdown } from './markdown.mjs';
 import { buildApi } from './api.mjs';
@@ -139,8 +140,19 @@ for (const person of authors) {
   pages[personPath(person.slug)] = personHubPage(person, { base, origin, entries });
 }
 pages['also-known-as/'] = aliasIndexPage({ base, origin, entries });
+pages['a-z/'] = azPage({ base, origin, entries });
 pages['timeline/'] = timelinePage({ base, origin, entries });
 pages['effect-sizes/'] = effectSizesPage({ base, origin, entries });
+// Membership follows Wikipedia's List of fallacies, which the candidate set was
+// drawn from, rather than a judgement made here.
+pages['fallacies/'] = fallaciesPage({
+  base, origin, entries, slugs: fallacySlugs(entries, candidateSet),
+});
+// A decade gets a page once it holds ten entries; below that a verdict split is
+// a picture of noise.
+for (const d of decades(entries)) {
+  pages[decadePath(d)] = decadePage(d, { base, origin, entries });
+}
 
 // ---- dates -----------------------------------------------------------------
 const prev = existsSync(manifestFile)

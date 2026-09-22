@@ -10,8 +10,11 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 
-import { namedBy, people } from '../src/templates/hubs.mjs';
-import { verdictPath, fieldPath, personPath } from '../src/templates/paths.mjs';
+import { readFileSync } from 'node:fs';
+
+import { namedBy, people, fallacySlugs, decades } from '../src/templates/hubs.mjs';
+import { verdictPath, fieldPath, personPath, decadePath } from '../src/templates/paths.mjs';
+import { entryPage, TITLE_VERDICT } from '../src/templates/entry.mjs';
 import { loadCorpus, CATEGORIES, REPLICATION_STATES } from '../build/corpus.mjs';
 
 test('the four verdict hubs partition the corpus exactly', async () => {
@@ -95,5 +98,66 @@ test('the effect-size table only pairs comparable figures', async () => {
   // A d against an r on one axis is a comparison of nothing.
   for (const e of rows) {
     assert.equal(e.replication.original.esType, e.replication.replicated.esType, `${e.slug} pairs two scales`);
+  }
+});
+
+test('the fallacy list comes from the source, not from a guess here', async () => {
+  const entries = await loadCorpus();
+  const cs = JSON.parse(readFileSync(new URL('../src/data/candidate-set.json', import.meta.url), 'utf8'));
+  const slugs = fallacySlugs(entries, cs);
+
+  assert.ok(slugs.size > 100 && slugs.size < 200, `${slugs.size} fallacies is the wrong order of magnitude`);
+  // Every slug must be a real entry, or the hub lists nothing.
+  const known = new Set(entries.map((e) => e.slug));
+  for (const s of slugs) assert.ok(known.has(s), `${s} is not an entry`);
+
+  // The ones nobody would dispute, and which name-matching alone would miss —
+  // these are the reason membership follows the published list.
+  for (const s of ['straw-man', 'ad-hominem', 'red-herring']) {
+    assert.ok(slugs.has(s), `${s} is missing from the fallacy hub`);
+  }
+  // And it must not swallow the corpus: a "fallacies" page holding every entry
+  // would mean the matcher is matching on nothing.
+  assert.ok(slugs.size < entries.length / 2, 'the fallacy matcher is too loose');
+});
+
+test('a decade gets a page only when it has enough entries to show a pattern', async () => {
+  const entries = await loadCorpus();
+  const ds = decades(entries);
+  assert.ok(ds.length >= 5, `${ds.length} decade pages`);
+  for (const d of ds) {
+    const count = entries.filter((e) => {
+      const y = Number(e.origin && e.origin.year);
+      return Number.isFinite(y) && Math.floor(y / 10) * 10 === d;
+    }).length;
+    assert.ok(count >= 10, `the ${d}s would be a page of ${count} entries`);
+    assert.equal(decadePath(d), `timeline/${d}s/`);
+  }
+  // Ascending, so the timeline reads forwards.
+  for (let i = 1; i < ds.length; i++) assert.ok(ds[i] > ds[i - 1]);
+});
+
+test('entry titles carry the verdict and fit the SERP budget', async () => {
+  const entries = await loadCorpus();
+  const seen = new Set();
+  for (const e of entries) {
+    const bare = `${e.name} — ${TITLE_VERDICT[e.replication.state]}`;
+    assert.ok(TITLE_VERDICT[e.replication.state], `${e.slug} has no title verdict`);
+    assert.ok(bare.length <= 60, `${e.slug} title is ${bare.length} chars: ${bare}`);
+    seen.add(bare);
+  }
+  // Every title unique: 544 identical suffixes was the defect this replaced.
+  assert.equal(seen.size, entries.length, 'two entries share a title');
+});
+
+test('every section heading names the bias rather than saying "it"', async () => {
+  const entries = await loadCorpus();
+  const e = entries[0];
+  const html = entryPage(e, { base: '/biases/', origin: 'https://example.com', entries });
+  const heads = [...html.matchAll(/<h2 class="block-h">([^<]*)<\/h2>/g)].map((m) => m[1]);
+  assert.equal(heads.length, 7);
+  for (const h of heads) {
+    assert.ok(h.includes(e.name), `heading does not name the subject: "${h}"`);
+    assert.doesNotMatch(h, /\bit\b/, `heading still leans on a pronoun: "${h}"`);
   }
 });

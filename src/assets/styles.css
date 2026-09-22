@@ -2300,6 +2300,12 @@ html[data-theme="light"] .chip.on{background:var(--accent);border-color:var(--ac
 .aka-a{font-family:var(--serif);font-size:15.5px;color:var(--ink)}
 .aka-s{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint)}
 .aka-l{font-size:14.5px;color:var(--muted);text-decoration:none}
+/* On the A to Z an entry's own name is the primary row and an alias is a
+   pointer to one, so the name takes the weight `.aka-a` carries on the alias
+   index and the pointer stays quiet. Using `.aka-l` for both rendered every
+   real name fainter than the aliases referring to it. */
+.az-name{font-family:var(--serif);font-size:15.5px;color:var(--ink);text-decoration:none}
+.az-name:hover{color:var(--accent)}
 .aka-l:hover{color:var(--accent)}
 @media(max-width:620px){
   .aka-row{grid-template-columns:1fr auto;gap:4px 10px}

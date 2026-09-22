@@ -60,6 +60,14 @@ export const REPLICATION_CLASS = {
 
 const num = (x) => Number(x).toLocaleString('en-US');
 
+/** The verdict as a title suffix. Stated, never editorialised. */
+export const TITLE_VERDICT = {
+  replicated: 'replicated',
+  failed: 'did not replicate',
+  mixed: 'mixed evidence',
+  'none-located': 'no replication found',
+};
+
 // Two decimal places, always. Effect sizes are conventionally reported to two,
 // and JavaScript prints 0.5 for a bound the paper writes as 0.50 — which reads
 // as a different precision from the 0.23 next to it and makes the pair look
@@ -561,6 +569,22 @@ export function entryPage(entry, { base = '/', origin = '', count = 0, entries =
 
   // The body, as blocks. One list drives both the table of contents and the
   // sections, so a heading cannot exist without a link to it or the reverse.
+  // Section headings name the bias rather than saying "it".
+  //
+  // Five of the seven used to: "Where it came from", "The limits of the claim",
+  // "What people get wrong about it". That reads fine top to bottom and badly
+  // to a retrieval layer, which lifts a section out of the page and hands it
+  // over with nothing around it — at which point "the limits of the claim" is a
+  // heading about an unnamed claim. It is also the checklist's own rule, that
+  // each section names its subject explicitly instead of relying on a pronoun.
+  //
+  // They are questions where the section answers one, and a noun phrase where
+  // it does not: a source list is not an answer to a question and dressing it
+  // as one would be the kind of keyword-shaped heading this project refuses.
+  //
+  // The RAIL keeps the short labels. A contents rail is read in context, beside
+  // the thing it indexes, and seven repetitions of the bias's own name down the
+  // left of its own page is noise rather than clarity.
   const blocks = [
     // `lead` only on the first paragraph. It is a larger, lighter face meant to
     // open a section; running 200 words of it is why "What it claims" read as
@@ -569,16 +593,16 @@ export function entryPage(entry, { base = '/', origin = '', count = 0, entries =
       paragraphs(entry.meaning)
         .map((p, i) => `        <p${i === 0 ? ' class="lead"' : ''}>${escapeHtml(p)}</p>`).join('\n') + '\n'],
     ['Does it replicate?', `Has ${entry.name} been retested?`, replicationBlock(r, { base })],
-    ['The experiments', 'What the studies actually did',
+    ['The experiments', `What experiments is ${entry.name} based on?`,
       prose(entry.evidence) + sourceMix(sources)],
-    ['Origin', 'Where it came from', originBlock(entry, r)],
+    ['Origin', `Who first described ${entry.name}, and when?`, originBlock(entry, r)],
     // Two of the seven sections are not prose about the bias; they are warnings
     // about how to use it. `limits` says where the claim stops holding and
     // `misreadings` says what it is routinely taken to mean and does not. Set as
     // running paragraphs they looked like more description, and a reader
     // skimming for the claim skimmed straight past the caveat attached to it.
     // The callout styles came with the stylesheet and had never been used.
-    ['Where it runs out', 'The limits of the claim',
+    ['Where it runs out', `When does ${entry.name} not apply?`,
       // `--info`, not `--warn`. This palette is deliberately cool throughout, so
       // its `--gold` token is a desaturated blue and a warn callout came out
       // almost the same colour as the key one below — two boxes that look alike
@@ -590,10 +614,10 @@ export function entryPage(entry, { base = '/', origin = '', count = 0, entries =
       // the caveat; the rest follows as ordinary prose.
       `        <div class="callout callout--info">${ICON.warn}<p>${escapeHtml(paragraphs(entry.limits)[0] || '')}</p></div>\n`
         + prose(paragraphs(entry.limits).slice(1).join('\n\n'))],
-    ['Commonly misread as', 'What people get wrong about it',
+    ['Commonly misread as', `What is ${entry.name} confused with?`,
       `        <div class="callout callout--key">${ICON.key}<p>${escapeHtml(paragraphs(entry.misreadings)[0] || '')}</p></div>\n`
         + prose(paragraphs(entry.misreadings).slice(1).join('\n\n'))],
-    ['Sources', 'Everything this page rests on',
+    ['Sources', `Sources for ${entry.name}`,
       // `sources-list`, `snum`, `stext`, `stype` and `src-trust`, which are the
       // classes the stylesheet actually defines. This block rendered `src-list`,
       // `vd-st` and `src-note`: a rename that reached the template and never
@@ -669,7 +693,14 @@ ${asideRail(entry, { base, siblings })}    </div>
 
   return (
     head({
-      title: `${entry.name} — What It Claims, and Whether It Replicated`,
+      // The verdict is in the title, because it is the one thing this index has
+      // that the other places a searcher lands do not. All 544 titles used to
+      // read "<name> — What It Claims, and Whether It Replicated": accurate,
+      // identical on every page, and it threw away the differentiator in the one
+      // line a search result actually shows. The phrasing states the finding
+      // rather than editorialising on it — "did not replicate", never "debunked"
+      // — and every one fits the 60-character budget, the longest at 57.
+      title: `${entry.name} — ${TITLE_VERDICT[r.state] || 'what replication found'} | ${BRAND}`,
       description,
       base,
       origin,

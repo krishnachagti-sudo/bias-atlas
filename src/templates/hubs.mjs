@@ -30,9 +30,9 @@ import { entryPath, replicationLabel, REPLICATION_CLASS } from './entry.mjs';
 import { CATEGORIES } from '../../build/corpus.mjs';
 import { LASTMOD_TOKEN } from '../../build/lastmod.mjs';
 import { slugify } from '../../build/slugify.mjs';
-import { verdictSlug, verdictPath, fieldPath, personPath } from './paths.mjs';
+import { verdictSlug, verdictPath, fieldPath, personPath, decadePath } from './paths.mjs';
 
-export { verdictSlug, verdictPath, fieldPath, personPath };
+export { verdictSlug, verdictPath, fieldPath, personPath, decadePath };
 
 const n = (x) => Number(x).toLocaleString('en-GB');
 const pc = (a, b) => (b ? Math.round((a / b) * 100) : 0);
@@ -447,10 +447,11 @@ export function timelinePage({ base = '/', origin = '', entries = [] } = {}) {
   const none = (l) => l.filter((e) => (e.replication || {}).state === 'none-located').length;
   const answer = `The ${n(entries.length)} cognitive biases in this index were first described between ${years[0]} and ${years[years.length - 1]}, and the newest are the least likely to have been retested: ${pc(none(recent), recent.length)}% of those named since 2010 have no located replication, against ${pc(none(older), older.length)}% of everything before.`;
 
+  // Only the decades with a page of their own are linked; the rest are rows.
   const row = ([decade, list]) => {
     const t = split(list);
     return `          <tr>
-            <th scope="row">${decade}s</th>
+            <th scope="row"><a href="${base}${decadePath(decade)}">${decade}s</a></th>
             <td class="num">${n(list.length)}</td>
             <td><span class="tl-bar" style="--w:${Math.round((list.length / max) * 100)}%" role="img" aria-label="${n(list.length)} entries"></span></td>
             <td class="num">${n(t.replicated)}</td>
@@ -585,4 +586,247 @@ ${faq.html}${hubNav('effect-sizes/', { base })}  </div>
       ...(faq.jsonld ? [faq.jsonld] : []),
     ],
   }) + sprite() + header({ base, active: 'browse', count: entries.length }) + section + footer({ base });
+}
+
+// ---- A to Z ---------------------------------------------------------------
+
+/**
+ * /a-z/ — every entry and every alias, alphabetically.
+ *
+ * /browse/ is ordered by entry number, which is how often each bias is looked
+ * up, and that is the right default. It is the wrong order for a reader who
+ * knows the name and wants to find it, and there was no alphabetical way in at
+ * all. Aliases are folded in with a pointer to the entry, so an effect you know
+ * under a different name lands in the right place in the alphabet.
+ */
+export function azPage({ base = '/', origin = '', entries = [] } = {}) {
+  const rows = [];
+  for (const e of entries) {
+    rows.push({ label: e.name, entry: e, alias: false });
+    for (const a of (Array.isArray(e.aliases) ? e.aliases : [])) {
+      rows.push({ label: a, entry: e, alias: true });
+    }
+  }
+  rows.sort((a, b) => a.label.localeCompare(b.label, 'en'));
+
+  const byLetter = new Map();
+  for (const r of rows) {
+    const k = (r.label[0] || '#').toUpperCase();
+    const letter = /[A-Z]/.test(k) ? k : '#';
+    if (!byLetter.has(letter)) byLetter.set(letter, []);
+    byLetter.get(letter).push(r);
+  }
+  const letters = [...byLetter.keys()].sort();
+  const names = rows.filter((r) => !r.alias).length;
+
+  const answer = `Every one of the ${n(names)} cognitive biases in this index, listed alphabetically alongside the ${n(rows.length - names)} other names they go by.`;
+
+  const section = `<section class="sec">
+  <div class="wrap">
+${hubHead({
+    title: 'A to Z',
+    sub: `${n(rows.length)} names`,
+    answer,
+    base,
+    crumbs: [['browse/', 'Browse']],
+    stats: [
+      [n(names), 'entries'],
+      [n(rows.length - names), 'alternative names'],
+      [n(letters.length), 'letters'],
+    ],
+    lede: 'Browse is ordered by how often each bias is looked up. This is the same index by name, with every alias in its own alphabetical place and pointing at the entry that covers it.',
+  })}
+    <nav class="az-nav" aria-label="Jump to a letter">${letters.map((l) => `<a href="#az-${l === '#' ? 'other' : l}">${escapeHtml(l)}</a>`).join('')}</nav>
+${letters.map((l) => `    <div class="aka-grp" id="az-${l === '#' ? 'other' : l}">
+      <h2 class="aka-letter">${escapeHtml(l)}</h2>
+      <ul class="aka-list">
+${byLetter.get(l).map((r) => (r.alias
+    ? `        <li class="aka-row"><span class="aka-a">${escapeHtml(r.label)}</span><span class="aka-s">→</span><a class="aka-l" href="${base}${entryPath(r.entry)}">${escapeHtml(r.entry.name)}</a></li>`
+    : `        <li class="aka-row"><a class="az-name" href="${base}${entryPath(r.entry)}">${escapeHtml(r.label)}</a><span class="badge ${REPLICATION_CLASS[r.entry.replication.state]}">${escapeHtml(replicationLabel(r.entry.replication.state))}</span></li>`)).join('\n')}
+      </ul>
+    </div>`).join('\n')}
+${hubNav('a-z/', { base })}  </div>
+</section>
+`;
+
+  const description = `Every cognitive bias in ${BRAND} listed A to Z, with every alternative name, and the replication verdict on each.`;
+  return head({
+    title: `A to Z — Every Cognitive Bias by Name | ${BRAND}`,
+    description,
+    base,
+    origin,
+    path: 'a-z/',
+    modified: LASTMOD_TOKEN,
+    jsonld: hubJsonLd({ name: 'A to Z', description, path: 'a-z/', origin, base }),
+  }) + sprite() + header({ base, active: 'browse', count: entries.length }) + section + footer({ base });
+}
+
+// ---- fallacies ------------------------------------------------------------
+
+/**
+ * Which entries are logical fallacies rather than cognitive biases.
+ *
+ * This is not a judgement made here. Wikipedia's List of fallacies is one of the
+ * two sources the candidate set was drawn from, and the membership question is
+ * answered by whether an entry appears on it — matched by its own name or one of
+ * its aliases, since only 19 of the 146 rows carry an entry slug. A name
+ * containing "fallacy" is added on top, which picks up four the list does not
+ * carry.
+ *
+ * Fifteen entries are on both lists, and that is correct rather than a bug: the
+ * sunk cost fallacy and survivorship bias are genuinely described as both, and
+ * the hub says so rather than picking a side.
+ */
+export function fallacySlugs(entries, candidateSet) {
+  const fold = (s) => String(s).normalize('NFKD').replace(/[̀-ͯ]/g, '')
+    .toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+  const index = new Map();
+  for (const e of entries) {
+    index.set(fold(e.name), e);
+    for (const a of e.aliases || []) if (!index.has(fold(a))) index.set(fold(a), e);
+  }
+  const out = new Set();
+  for (const f of (candidateSet && candidateSet.fallacies) || []) {
+    const e = (f.entry && entries.find((x) => x.slug === f.entry)) || index.get(fold(f.title));
+    if (e) out.add(e.slug);
+  }
+  for (const e of entries) if (/\bfallac/i.test(e.name)) out.add(e.slug);
+  return out;
+}
+
+/** /fallacies/ — the entries that are errors of reasoning rather than of judgement. */
+export function fallaciesPage({ base = '/', origin = '', entries = [], slugs = new Set() } = {}) {
+  const list = entries.filter((e) => slugs.has(e.slug)).sort((a, b) => a.no - b.no);
+  const t = split(list);
+
+  const answer = `${n(list.length)} of the ${n(entries.length)} entries in this index are logical fallacies — errors in an argument rather than quirks of judgement — and they carry replication verdicts like everything else: ${summarise(t, list.length)}`;
+
+  const faq = hubFaq([
+    {
+      q: 'What is the difference between a cognitive bias and a logical fallacy?',
+      a: 'A bias is a pattern in how people actually judge things, established by experiment. A fallacy is a flaw in the structure of an argument, established by logic. One is a finding about minds and the other is a rule about reasoning, which is why a fallacy can be demonstrated on paper while a bias has to be measured — and why asking whether a fallacy "replicated" only makes sense for the ones somebody has run an experiment on.',
+    },
+    {
+      q: 'Why do some entries appear on both lists?',
+      a: 'Because they genuinely are both. The sunk cost fallacy names an error of reasoning and a measured tendency in how people behave, and the two literatures describe the same thing from different sides. Membership here follows Wikipedia\'s List of fallacies rather than a judgement made by this index, and an entry on both lists is listed on both.',
+    },
+  ], { heading: 'Questions about fallacies' });
+
+  const section = `<section class="sec">
+  <div class="wrap">
+${hubHead({
+    title: 'Logical fallacies',
+    sub: `${n(list.length)} entries`,
+    answer,
+    base,
+    crumbs: [['browse/', 'Browse']],
+    stats: [
+      [n(list.length), 'entries'],
+      [n(t.replicated), 'replicated'],
+      [n(t.failed), 'failed'],
+      [n(t['none-located']), 'none located'],
+    ],
+    lede: 'Membership follows Wikipedia\'s List of fallacies, which is one of the two sources this index\'s candidate set was drawn from, plus any entry whose own name contains the word. It is not a judgement made here, and entries that belong on both lists appear on both.',
+  })}${grid(list, base)}
+${faq.html}${hubNav('fallacies/', { base })}  </div>
+</section>
+`;
+
+  const description = `${n(list.length)} logical fallacies indexed in ${BRAND}, each with what it claims and what happened when it was tested.`;
+  return head({
+    title: `Logical Fallacies — ${n(list.length)} Entries | ${BRAND}`,
+    description,
+    base,
+    origin,
+    path: 'fallacies/',
+    modified: LASTMOD_TOKEN,
+    jsonld: [
+      ...hubJsonLd({
+        name: 'Logical fallacies',
+        description,
+        path: 'fallacies/',
+        origin,
+        base,
+        items: list.map((e) => ({ name: e.name, href: entryPath(e) })),
+      }),
+      ...(faq.jsonld ? [faq.jsonld] : []),
+    ],
+  }) + sprite() + header({ base, active: 'browse', count: entries.length }) + section + footer({ base });
+}
+
+// ---- one decade -----------------------------------------------------------
+
+/** /timeline/<decade>s/ — the effects first described in one decade. */
+export function decadePage(decade, { base = '/', origin = '', entries = [] } = {}) {
+  const list = entries
+    .filter((e) => {
+      const y = Number(e.origin && e.origin.year);
+      return Number.isFinite(y) && Math.floor(y / 10) * 10 === decade;
+    })
+    .sort((a, b) => Number(a.origin.year) - Number(b.origin.year) || a.no - b.no);
+  const t = split(list);
+  const retested = list.length - t['none-located'];
+
+  const answer = `${n(list.length)} of the cognitive biases in this index were first described in the ${decade}s: ${summarise(t, list.length)}`;
+
+  const faq = hubFaq([
+    {
+      q: `Have the biases named in the ${decade}s held up?`,
+      a: `${n(retested)} of the ${n(list.length)} have a located replication, and of those ${n(t.replicated)} replicated, ${n(t.mixed)} give mixed results and ${n(t.failed)} failed. The remaining ${n(t['none-located'])} have never been retested as far as this index has found.`,
+    },
+  ], { heading: `Questions about the ${decade}s` });
+
+  const section = `<section class="sec">
+  <div class="wrap">
+${hubHead({
+    title: `Named in the ${decade}s`,
+    sub: `${n(list.length)} entries`,
+    answer,
+    base,
+    crumbs: [['timeline/', 'Timeline']],
+    stats: [
+      [n(list.length), 'entries'],
+      [n(t.replicated), 'replicated'],
+      [n(t.failed), 'failed'],
+      [n(t['none-located']), 'none located'],
+    ],
+    lede: `Effects whose first published description falls in this decade, oldest first. The date is when the effect was named or first reported, not when it became well known.`,
+  })}${grid(list, base)}
+${faq.html}${hubNav(decadePath(decade), { base })}  </div>
+</section>
+`;
+
+  const description = `${n(list.length)} cognitive biases first described in the ${decade}s, with what happened when each was retested.`;
+  return head({
+    title: `Biases Named in the ${decade}s — ${n(list.length)} Entries | ${BRAND}`,
+    description,
+    base,
+    origin,
+    path: decadePath(decade),
+    modified: LASTMOD_TOKEN,
+    jsonld: [
+      ...hubJsonLd({
+        name: `Named in the ${decade}s`,
+        description,
+        path: decadePath(decade),
+        origin,
+        base,
+        crumbs: [['timeline/', 'Timeline']],
+        items: list.map((e) => ({ name: e.name, href: entryPath(e) })),
+      }),
+      ...(faq.jsonld ? [faq.jsonld] : []),
+    ],
+  }) + sprite() + header({ base, active: 'browse', count: entries.length }) + section + footer({ base });
+}
+
+/** Decades holding enough entries to be worth a page of their own. */
+export function decades(entries, { min = 10 } = {}) {
+  const m = new Map();
+  for (const e of entries) {
+    const y = Number(e.origin && e.origin.year);
+    if (!Number.isFinite(y)) continue;
+    const d = Math.floor(y / 10) * 10;
+    m.set(d, (m.get(d) || 0) + 1);
+  }
+  return [...m].filter(([, c]) => c >= min).map(([d]) => d).sort((a, b) => a - b);
 }

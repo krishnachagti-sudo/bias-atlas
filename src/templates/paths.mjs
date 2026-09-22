@@ -26,3 +26,6 @@ export const verdictSlug = (state) => VERDICT_SLUG[state];
 export const verdictPath = (state) => `verdict/${VERDICT_SLUG[state]}/`;
 export const fieldPath = (cat) => `field/${slugify(CATEGORIES[cat] || cat)}/`;
 export const personPath = (slug) => `named-by/${slug}/`;
+
+/** A decade page under the timeline, e.g. `timeline/1970s/`. */
+export const decadePath = (decade) => `timeline/${decade}s/`;

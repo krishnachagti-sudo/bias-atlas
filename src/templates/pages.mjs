@@ -26,7 +26,7 @@ function cuts(base, entries) {
   return `    <nav class="cuts" aria-label="Standing views of the index">
       <p class="cuts-row"><span class="cuts-k">By verdict</span>${verdicts.join('')}</p>
       <p class="cuts-row"><span class="cuts-k">By field</span>${fields.join('')}</p>
-      <p class="cuts-row"><span class="cuts-k">Other ways in</span><a href="${base}effect-sizes/">Effect sizes</a><a href="${base}timeline/">Timeline</a><a href="${base}named-by/">Named by</a><a href="${base}also-known-as/">Also known as</a></p>
+      <p class="cuts-row"><span class="cuts-k">Other ways in</span><a href="${base}a-z/">A to Z</a><a href="${base}fallacies/">Fallacies</a><a href="${base}effect-sizes/">Effect sizes</a><a href="${base}timeline/">Timeline</a><a href="${base}named-by/">Named by</a><a href="${base}also-known-as/">Also known as</a></p>
     </nav>
 `;
 }
