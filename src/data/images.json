@@ -51,6 +51,19 @@
       "source": "https://commons.wikimedia.org/wiki/File:John_Locke_by_John_Greenhill.jpg",
       "width": 640,
       "wikipedia": "https://en.wikipedia.org/wiki/Argument_from_ignorance"
+    },
+    "argumentum-ad-baculum": {
+      "artist": "missing name",
+      "confirmedVia": "title",
+      "file": "Thorvald_Stauning_at_Desk.jpg",
+      "height": 488,
+      "law": "Argumentum ad baculum",
+      "licence": "Public domain",
+      "licenceUrl": "",
+      "slug": "argumentum-ad-baculum",
+      "source": "https://commons.wikimedia.org/wiki/File:Thorvald_Stauning_at_Desk.jpg",
+      "width": 640,
+      "wikipedia": "https://en.wikipedia.org/wiki/Argumentum_ad_baculum"
     }
   }
 }

@@ -42,6 +42,7 @@ import { contributePage } from '../src/templates/contribute.mjs';
 import { embedCard, embedDocsPage } from '../src/templates/embed.mjs';
 import { printPage } from '../src/templates/print.mjs';
 import { situationsPage, situationsJson } from '../src/templates/situations.mjs';
+import { isItRealPage } from '../src/templates/veracity.mjs';
 import { tensionsPage } from '../src/templates/tensions.mjs';
 import { collections, collectionsPage, collectionPage } from '../src/templates/collections.mjs';
 import { dayIndex } from './quiz.mjs';
@@ -157,6 +158,7 @@ const pages = {
   'credits/': creditsPage({ base, origin, entries, images: IMAGES }),
   'author/': authorPage({ base, origin, entries }),
   'privacy/': privacyPage({ base, origin, entries }),
+  'is-it-real/': isItRealPage(entries, { base, origin }),
 };
 for (const e of entries) {
   pages[entryPath(e)] = entryPage(e, {

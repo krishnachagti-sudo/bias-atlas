@@ -714,6 +714,40 @@ a.stat--link .s-k::after{content:" →";letter-spacing:0;opacity:.55}
 .callout p{margin:0;font-size:16.5px;line-height:1.76;color:var(--read)}
 .callout--key{border-left-color:var(--accent);background:var(--accent-soft)}
 .callout--key .co-ic{color:var(--accent)}
+/* ---- /is-it-real/ ---------------------------------------------------------
+   544 rows on one page, so the row is the whole design. Two lines rather than
+   three columns: the caveat sentences run to 320 characters and a column that
+   narrow turns every one of them into a six-line stack, which is how a scannable
+   list becomes a wall. Name and field on the first line, the entry's own caveat
+   indented under it in a quieter face, so the eye can run down the names alone
+   and stop only where it wants the reason. */
+.ir-all{margin:26px 0 0}
+.ir-grp{margin:0 0 44px;scroll-margin-top:calc(var(--header-h) + 20px)}
+.ir-h{display:flex;align-items:baseline;gap:12px;margin:0 0 6px;
+  border-bottom:1px solid var(--line-strong);padding-bottom:9px}
+.ir-n{font-family:var(--mono);font-size:12px;color:var(--ink)}
+.ir-pc{color:var(--faint)}
+.ir-blurb{font-size:13.5px;line-height:1.6;color:var(--muted);margin:0 0 14px;max-width:78ch}
+.ir-list{list-style:none;margin:0;padding:0}
+.ir-row{padding:9px 0;border-bottom:1px solid var(--line)}
+.ir-row:last-child{border-bottom:none}
+.ir-name{font-family:var(--serif);font-size:16px;color:var(--ink);text-decoration:none;
+  border-bottom:1px solid transparent}
+.ir-name:hover{color:var(--accent);border-bottom-color:var(--accent)}
+.ir-cat{font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--faint);margin-left:10px}
+.ir-lim{display:block;font-size:13px;line-height:1.6;color:var(--muted);margin-top:3px;max-width:84ch}
+/* A filtered-out row is removed from the flow, not dimmed: with 544 of them a
+   dimmed row still costs its height, and the point of the filter is to make the
+   remaining handful visible without scrolling. */
+.ir-row[hidden]{display:none}
+@media(max-width:640px){
+  .ir-h{flex-wrap:wrap;gap:8px}
+  .ir-name{font-size:15px}
+  .ir-cat{display:block;margin:2px 0 0}
+  .ir-lim{font-size:12.5px}
+}
+
 /* ---- verified imagery -----------------------------------------------------
    Every file is harvested and licence-checked by build/fetch-images.py and
    carries its credit in the markup beside it. Greyscale is not a style choice
