@@ -531,6 +531,31 @@ a.badge{text-decoration:none;display:inline-block}
 .answer{padding:15px 16px}
 .answer .answer-v{font-size:16.5px}}
 .dash{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(124px,100%),1fr));gap:12px;margin:26px 0 2px}
+/* The infographic card between "What it claims" and "Does it replicate?".
+   Ported from The Law Tome, where the same two columns break the opening prose;
+   an entry here ran nine unbroken drop-capped sections before it existed.
+   The SVG classes are `gp-` rather than the Tome's `tl-`, because over there
+   `.tl-year` is defined twice — once for the timeline listing and once for this
+   chart — and the second quietly depends on winning. */
+.viz-card{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(230px,100%),1fr));gap:26px;
+  background:var(--surface);border:1px solid var(--line);border-radius:3px;padding:20px 24px;margin:0 0 44px}
+.viz-col{display:flex;flex-direction:column;gap:12px;min-width:0}
+.viz-h{font-family:var(--mono);font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--faint)}
+.viz-note{font-size:12.5px;line-height:1.5;color:var(--muted);margin:2px 0 0}
+.viz-note b{color:var(--ink);font-weight:600}
+.viz-note a{color:var(--accent);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--accent) 40%,transparent)}
+.meter{display:flex;gap:6px}
+/* Every segment is readable, not only the lit one: the point of a scale is that
+   a reader can see what the other answers were. The lit one takes its colour
+   from the badge classes the verdict already uses elsewhere on the page. */
+.mseg{flex:1;min-width:0;text-align:center;font-family:var(--mono);font-size:9.5px;letter-spacing:.03em;
+  text-transform:uppercase;color:var(--faint);border:1px solid var(--line);border-radius:3px;padding:9px 3px}
+.mseg.on{font-weight:700}
+.gap-svg{display:block;width:100%;height:auto;margin-top:4px;overflow:visible}
+.gp-axis{stroke:var(--line-strong);stroke-width:1.5}
+.gp-dot{fill:var(--accent)}
+.gp-year{fill:var(--ink);font-family:var(--mono);font-size:12px}
+.gp-role{fill:var(--faint);font-family:var(--mono);font-size:8.5px;letter-spacing:.06em}
 /* The origin block's fields, and the gap between claim and retest.
    `.field-grid` and `.field` came with the stylesheet and had never been used;
    only the spacing below is new, because the origin block is three short facts

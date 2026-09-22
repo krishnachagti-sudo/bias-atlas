@@ -29,7 +29,8 @@ import {
 } from './partials.mjs';
 import { hubFaq, hubJsonLd } from './hub.mjs';
 import { CATEGORIES } from '../../build/corpus.mjs';
-import { fieldPath } from './paths.mjs';
+import { fieldPath, verdictPath } from './paths.mjs';
+import { VERDICT_ORDER, VERDICT_GLOSS } from './charts.mjs';
 import { correctionUrl } from './contribute.mjs';
 import { LASTMOD_TOKEN } from '../../build/lastmod.mjs';
 
@@ -473,6 +474,83 @@ ${stats.map(([k, v, href]) => (href
 }
 
 /**
+ * The infographic card, between the claim and the verdict.
+ *
+ * Two columns, and both draw facts this corpus already holds. Nothing here is
+ * computed from an assumption, estimated, or rounded into a shape that looks
+ * more decisive than the data: the meter lights the state stored in the entry,
+ * and the timeline plots two years both written in the entry file.
+ *
+ *   THE METER is the four verdicts with this entry's one lit. It is a scale,
+ *   which the badge above is not — a reader who sees "Mixed" alone has no way
+ *   to know what the alternatives were, or that "no replication located" is one
+ *   of them and is not a soft "failed". The count beside it says how many other
+ *   entries landed in the same place, and links to them.
+ *
+ *   THE GAP is the year the claim was first published against the year of the
+ *   retest this entry cites. It is the one fact the prose never states plainly
+ *   and the only chart on the page a reader could not get from a sentence: how
+ *   long the claim stood before anyone checked. It is omitted, rather than
+ *   faked with a placeholder, for the 89 entries where no replication was
+ *   located — there is no second date, and inventing an axis for one year is
+ *   the kind of decoration this project refuses.
+ *
+ * @param {object} entry
+ * @param {{base:string, entries:object[]}} o `entries` is the whole corpus, for the tally
+ */
+function vizCard(entry, { base, entries = [] }) {
+  const r = entry.replication || {};
+
+  const meter = () => {
+    if (!r.state) return '';
+    const segs = VERDICT_ORDER.map(([state, label]) => {
+      const on = state === r.state;
+      return `<span class="mseg${on ? ` on ${REPLICATION_CLASS[state] || ''}` : ''}">${escapeHtml(label)}</span>`;
+    }).join('');
+    const same = entries.filter((e) => (e.replication || {}).state === r.state).length;
+    // "The other N" and not "N entries": the reader is inside one of them, and
+    // a total that silently includes the page you are on is the small kind of
+    // wrong that makes every other number on the site worth doubting.
+    const others = Math.max(0, same - 1);
+    const tally = others
+      ? ` <a href="${base}${verdictPath(r.state)}">The other ${num(others)}</a>.`
+      : '';
+    return `      <div class="viz-col">
+        <div class="viz-h">Verdict</div>
+        <div class="meter" role="img" aria-label="Replication verdict: ${escapeHtml(replicationLabel(r.state))}">${segs}</div>
+        <p class="viz-note">${escapeHtml(VERDICT_GLOSS[r.state] || '')}${tally}</p>
+      </div>`;
+  };
+
+  const gap = () => {
+    const from = Number(entry.origin && entry.origin.year);
+    const to = Number(r.study && r.study.year);
+    if (!Number.isFinite(from) || !Number.isFinite(to) || to <= from) return '';
+    const W = 320;
+    const padX = 26;
+    const X = (yr) => (padX + (W - 2 * padX) * ((yr - from) / (to - from))).toFixed(1);
+    const pts = [[from, 'CLAIMED'], [to, 'RETESTED']];
+    const axis = `<line class="gp-axis" x1="${padX}" y1="42" x2="${W - padX}" y2="42"/>`;
+    const marks = pts.map(([y, role]) => {
+      const px = X(y);
+      return `<g><line class="gp-axis" x1="${px}" y1="38" x2="${px}" y2="46"/>`
+        + `<circle class="gp-dot" cx="${px}" cy="42" r="5"/>`
+        + `<text class="gp-year" x="${px}" y="27" text-anchor="middle">${y}</text>`
+        + `<text class="gp-role" x="${px}" y="60" text-anchor="middle">${role}</text></g>`;
+    }).join('');
+    const years = to - from;
+    return `      <div class="viz-col">
+        <div class="viz-h">The gap</div>
+        <svg class="gap-svg" viewBox="0 0 ${W} 72" width="100%" role="img" aria-label="First published ${from}, retested ${to}">${axis}${marks}</svg>
+        <p class="viz-note"><b>${years} year${years === 1 ? '' : 's'}</b> between the claim and the replication this entry cites.</p>
+      </div>`;
+  };
+
+  const inner = meter() + gap();
+  return inner ? `        <div class="viz-card" data-reveal>\n${inner}\n        </div>\n` : '';
+}
+
+/**
  * The replication block, as a `.block` in the body flow with the two effect
  * sizes rendered as a `.dash` of their own.
  *
@@ -701,7 +779,13 @@ export function entryPage(entry, { base = '/', origin = '', count = 0, entries =
     // the heaviest block on the page rather than the easiest.
     ['What it claims', `What does ${entry.name} mean?`,
       paragraphs(entry.meaning)
-        .map((p, i) => `        <p${i === 0 ? ' class="lead"' : ''}>${escapeHtml(p)}</p>`).join('\n') + '\n'],
+        .map((p, i) => `        <p${i === 0 ? ' class="lead"' : ''}>${escapeHtml(p)}</p>`).join('\n') + '\n',
+      // The card goes here, between the claim and the verdict that judges it,
+      // because that is the one place on this page where a reader has just
+      // finished 200 words of prose and has not yet been given anything to
+      // look at. Measured against the Tome's law page, an entry here ran nine
+      // unbroken drop-capped sections; that page breaks at exactly this point.
+      vizCard(entry, { base, entries })],
     ['Does it replicate?', `Has ${entry.name} been retested?`, replicationBlock(r, { base })],
     ...(examplesBlock(entry, base)
       ? [['Examples', `What are some examples of ${entry.name}?`, examplesBlock(entry, base)]]
@@ -748,7 +832,7 @@ ${sources.map((s, i) => {
   }).join('\n')}
         </ol>
         <p class="src-trust">Every claim on this page was held against these sources on ${escapeHtml(entry.checkedOn)}. Nothing here is written from memory. Written and checked by <a href="${base}author/">Krishna Chagti</a>; <a href="${base}about/">how entries are written and corrected</a>. Found a mistake? <a href="${escapeHtml(correctionUrl(entry, { origin, base }))}" rel="nofollow noopener">Report it</a>, with the sentence and a source.</p>\n`],
-  ].map(([label, h2, body]) => ({ id: `sec-${label.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}`, label, h2, body }));
+  ].map(([label, h2, body, after]) => ({ id: `sec-${label.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}`, label, h2, body, after: after || '' }));
 
   // ONE question, and deliberately only one. An earlier draft asked three, and
   // two of them were headings further up the same page with the same paragraph
@@ -815,7 +899,8 @@ ${blocks.map((b, i) => `          <a href="#${b.id}"><span class="toc-n">${Strin
 ${blocks.map((b) => `        <div class="block" id="${b.id}" data-reveal>
         <div class="lbl">${escapeHtml(b.label)}</div>
         <h2 class="block-h">${escapeHtml(b.h2)}</h2>
-${b.body}        </div>`).join('\n')}
+${b.body}        </div>
+${b.after}`).join('')}
 
         <div class="sk-share">
 ${shareRow({ url: `${origin}${base}${path}`, title: entry.name, text: entry.statement, label: 'Share this entry' })}        </div>

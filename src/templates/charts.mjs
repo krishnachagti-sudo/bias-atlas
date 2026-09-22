@@ -34,6 +34,25 @@ export const VERDICT_ORDER = [
 ];
 
 /**
+ * What each verdict means, in one sentence.
+ *
+ * Here rather than beside either of the two places that print it. /how-solid/
+ * defines the four states in a table and the entry-page meter glosses the one
+ * it lit; when they lived apart, the site was free to define a word twice and
+ * differently, which is the failure this index exists to not commit.
+ *
+ * `none-located` says what it says on purpose. It is a fact about the
+ * literature and not a verdict on the effect, and the sentence has to carry
+ * that or the grey segment reads as a soft "failed".
+ */
+export const VERDICT_GLOSS = {
+  replicated: 'A repeat found the effect again.',
+  mixed: 'Repeats disagree, or the effect holds in some conditions and not others.',
+  failed: 'A repeat looked and did not find it.',
+  'none-located': 'No replication attempt was found. That is a fact about the literature, not a verdict on the effect.',
+};
+
+/**
  * A stacked bar of the four replication verdicts, with a legend that doubles as
  * the way into each verdict hub.
  *

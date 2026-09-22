@@ -28,6 +28,7 @@ import { hubHead, hubNav, hubFaq, hubJsonLd } from './hub.mjs';
 import { entryPath, replicationLabel, REPLICATION_CLASS } from './entry.mjs';
 import { CATEGORIES } from '../../build/corpus.mjs';
 import { verdictPath as VP, fieldPath } from './paths.mjs';
+import { VERDICT_GLOSS } from './charts.mjs';
 import { LASTMOD_TOKEN } from '../../build/lastmod.mjs';
 
 const n = (x) => Number(x).toLocaleString('en-GB');
@@ -93,12 +94,11 @@ function verdictRows(s, base) {
   // Each row links to that verdict's own hub. It used to point every row at
   // /browse/, which made the table a picture rather than a way in.
   const ORDER = ['replicated', 'mixed', 'failed', 'none-located'];
-  const GLOSS = {
-    replicated: 'A repeat found the effect again.',
-    mixed: 'Repeats disagree, or the effect holds in some conditions and not others.',
-    failed: 'A repeat looked and did not find it.',
-    'none-located': 'No replication attempt was found. That is a fact about the literature, not a verdict on the effect.',
-  };
+  // The four definitions live in charts.mjs, because the entry-page verdict
+  // meter glosses the state it lights and this table defines all four. Two
+  // copies of four sentences is a licence to define a word twice and
+  // differently, which on this site of all sites is not a small thing.
+  const GLOSS = VERDICT_GLOSS;
   return ORDER.map((k) => `          <tr>
             <th scope="row"><a class="badge ${REPLICATION_CLASS[k]}" href="${base}${VERDICT_PATH[k]}">${escapeHtml(replicationLabel(k))}</a></th>
             <td class="num">${n(s.state[k])}</td>
