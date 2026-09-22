@@ -40,8 +40,12 @@ The pages a reader actually lands on, and the thickest remaining gap.
   checks rather than the seven a methodologist would, and padding it to eight
   for parity would be repeating facts worse to hit a number. Reopen this only
   with a fact that is NOT elsewhere on the page.
-- **Related entries as cards at the foot** — open. They exist as a rail list;
-  the Tome gives them full cards, which is what makes them get clicked.
+- **Related entries as cards at the foot** — built. Full cards, each carrying
+  the sentence in this entry's own prose that names the other one, which is
+  what makes the link defensible rather than an editorial "see also". The rail
+  list they replaced is gone: a review called the rail's stack of identical
+  link lists its worst problem, and the relationship map above it already
+  carries the same links with more in them.
 - **Previous and next entry** — built. Renders on every entry, by corpus
   number, not wrapped at the ends: № 544 is not next to № 1.
 - **Imagery** — built, blocked on network. The pipeline exists:
@@ -132,25 +136,27 @@ tuning in the dark.
   cannot drift unnoticed. (The old wording here — "429 sources say paywall
   without naming the block" — was wrong: exactly one source mentions a paywall.)
 
-## 9. Two datasets the corpus holds and no page reads
+## 9. Two datasets the corpus held and no page read — both built
 
 Found by auditing fields rather than routes, which is the only way these turn
-up — nothing links to a page that does not exist.
+up: nothing links to a page that does not exist.
 
-- **Where these were first published** — open. `origin.where` is on all 544
-  entries: 276 distinct venues, 24 with four or more. The Journal of Personality
-  and Social Psychology alone accounts for 66. The tempting page is a verdict
-  split by journal, and the spread is real — 13% to 100% held, against 30%
-  corpus-wide. It must not be built as a league table. These 544 were chosen for
-  being notable, not sampled from each journal's output, and a venue with six
-  entries cannot be set beside one with sixty-six. The honest page is about
-  where the ideas came from, with the counts shown and that caveat stated.
+- **`/published-in/`** — built. `origin.where` on all 544 entries: 276 venues,
+  24 with four or more, the Journal of Personality and Social Psychology alone
+  with 66. Deliberately NOT a league table, and the refusal is in the lede
+  rather than a footnote. The verdict spread by journal is real — 13% to 100%
+  held against 30% corpus-wide — and it would be the most shareable page here
+  and the most wrong: these 544 were chosen for being notable, not sampled
+  from what any journal printed, and a six-entry venue at 100% is six entries.
+  The splits are shown per venue because hiding a number for fear of misreading
+  is its own dishonesty; nothing is sorted or ranked by them.
 
-- **The big replication projects** — open, and small. 455 entries cite a study
-  and only five studies cover three or more entries, but the largest is Many
-  Labs 2 at 19. A page per multi-lab project — what it tested, what it found,
-  which entries it settled — is a real cut nobody else publishes, and the
-  `retested-by` edges already exist to build it.
+- **`/projects/`** — built. 12 studies retested more than one of these and
+  account for 63 entries between them; Many Labs 2 settled 22 on its own.
+  Grouped by DOI, and the first version was not: exact string equality on the
+  citation split Many Labs 2 into 19 and 3 and understated the page's own
+  headline by three. (The figures in the old note here — five studies, largest
+  at 19 — were that bug, written down as if it were the corpus.)
 
 ## 8. Decided against
 
