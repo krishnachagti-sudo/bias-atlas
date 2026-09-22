@@ -13,6 +13,23 @@
     "note": "Their paper is titled \"When Choice is Demotivating: Can One Desire Too Much of a Good Thing?\" and reports three studies, on jams, essay topics and chocolates. The phrase \"paradox of choice\" comes from Barry Schwartz's later popular book rather than from this paper."
   },
   "evidence": "The jam study is Study 1, a field experiment at Draeger's Supermarket in Menlo Park, California, run over two Saturdays. A tasting booth displayed either 6 jams or 24, alternating by the hour, and everyone who approached got a coupon for $1 off a jar. The large display stopped a higher share of passers-by: of 242 customers who passed it, 145 (60%) stopped, against 104 of 260 (40%) at the small display, X2(1, N = 502) = 19.89, p < .001. Purchasing ran the other way. Nearly 30% (31) of the limited-choice consumers redeemed the coupon, against 3% (4) of the extensive-choice consumers, X2(1, N = 249) = 32.34, p < .0001. Those denominators are the 249 people who stopped, not the 502 who walked past, and the famous ratio rests on 31 purchases against four. Study 2 gave 197 Stanford students either 6 or 30 optional essay topics for extra credit; 74% of the 70 in the limited condition handed something in, against 60% of the 123 in the extensive condition, X2(1, N = 193) = 3.93, p < .05. Study 3 gave 134 Columbia students a choice of chocolate from 6 or 30 varieties, or no choice at all. Satisfaction with the sampled chocolate was higher after the small array (M = 6.28, SD = 0.54) than the large one (M = 5.46, SD = 0.82). Offered $5 or a $5 box of Godiva chocolates as payment, 48% of the limited-choice group took the chocolates against 12% of the extensive-choice group, X2(1, N = 67) = 10.78, p < .001.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The wall of white paint",
+      "text": "A shopper goes in for one tin of white and finds forty shades of it. The claim is that comparing them costs enough effort, and carries enough risk of getting it wrong, that leaving with nothing becomes the easy way out."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The pension booklet in the drawer",
+      "text": "A new employee is given a form and a list of several dozen funds to split the money across. On the overload account it is the length of the list, rather than anything about the funds, that leaves the form unfilled."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The film chosen from thousands",
+      "text": "A viewer settles on something to watch from a catalogue with no visible end, and spends the first twenty minutes thinking about what was passed over. The second half of the claim is about this: not whether a choice gets made, but how it sits afterwards."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Two meta-analyses of largely the same literature reached opposite verdicts, and neither has been withdrawn.",

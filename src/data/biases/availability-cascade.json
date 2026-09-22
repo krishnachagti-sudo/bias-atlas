@@ -12,6 +12,23 @@
     "note": "The article ran in volume 51, issue 4, pages 683 to 768, and coins the term. Its footnote 3 lists the informational literature it builds on, naming Hirshleifer, Anderson and Holt, Arthur and Lane, Banerjee, Bikhchandani, Hirshleifer and Welch, and Mui, and then the reputational one, naming Akerlof and three earlier Kuran papers. The purpose is a policy argument rather than a finding. Part V proposes peer review, cost-benefit analysis, congressional risk oversight, a stronger role for the Office of Information and Regulatory Affairs, and a trusted Risk Information Site on the World Wide Web. The article wants that site run by a nongovernmental body along the lines of Consumer Reports. It says the federal government should take the lead only if no such body will, because a government-operated one would have a harder time rising above partisan politics. On product disparagement laws it identifies advantages and defends their constitutionality, then writes that doing so \"is not, of course, to prove that on balance they are beneficial or desirable\"."
   },
   "evidence": "The article reports no data of its own. It is eighty-six pages of argument, one table and three narrated cases, and the cases are reconstructions from published accounts rather than measurements. Love Canal gets the longest treatment. Its footnote 19 names four sources, two Lois Gibbs memoirs, Landy, Roberts and Thomas on the Environmental Protection Agency, and Aaron Wildavsky's But Is It True?, then says the authors draw primarily on the two Gibbs memoirs and Wildavsky, with page citations omitted for readability. Alar rests on Wildavsky again. TWA Flight 800 rests on Robert Hahn's 1997 article in the Harvard Journal of Law and Public Policy, which the authors again say they draw on while avoiding a footnote for every fact. The brief for this entry named the Times Beach dioxin case as the third example. It is not one. The string Times Beach does not occur in the article, and dioxin occurs twice, both times inside the Love Canal narrative. The authors are explicit about what the cases are for. Footnote 101 says the examples were chosen because the data \"nicely illustrate the phenomenon of regulatory action prompted by availability cascades rather than sound evidence\", and that \"nothing turns on the selected examples\". A reader who thinks the science justified a given response is told the quarrel is with one interpretation and not with the argument. Footnote 18 makes the point as a joke: in convincing readers of the availability heuristic's significance the authors are exploiting the readers' reliance on it, and they \"plead guilty\". The conclusion lists seven claims the article has \"tried to substantiate\". Each is a proposition about mechanism, and none is attached to a measurement. The single table, headed Acceptability Effects, sets fifteen risk traits against the conditions that make each less acceptable, heavy media coverage among them, and carries no citation of its own beyond a footnote pointing to an alternative table in Margolis.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The climbing frame taken out",
+      "text": "A worry that the school climbing frame is unsafe is raised at one parents' meeting and repeated at the next by people who first heard it there. The few who think it thin keep quiet, because doubting a safety warning about children is the position that costs something. The frame comes out before anybody reads the injury record."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The preservative dropped from the recipe",
+      "text": "A warning that a common preservative is harmful spreads post by post, and each reader counts the shares as separate judgements rather than copies of one. A food scientist who finds the evidence weak keeps it to herself, since contradicting a scare is the expensive thing to do, and manufacturers reformulate."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The bend everyone calls a blackspot",
+      "text": "Local reporting after one bad crash names a stretch of road as notorious, and the description is repeated until objecting to it sounds like indifference to the dead. The safety money goes to that bend rather than to the junction with the worse record."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "No study testing the availability cascade was located. The closest evidence tests its two halves separately, in settings with no risk, no regulator and no press.",

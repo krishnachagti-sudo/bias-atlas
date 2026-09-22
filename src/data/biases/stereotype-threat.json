@@ -15,6 +15,23 @@
     "note": "Four experiments on Black and White Stanford undergraduates taking difficult verbal items. The paper coined the term and set the template every later study follows: one group told the test measures ability, another told it does not."
   },
   "evidence": "Steele and Aronson ran four small experiments. Study 1 recruited 117 undergraduates across three conditions and analysed 114 after three failed to give a SAT score. The analysis was an ANCOVA with self-reported SAT scores as the covariate, and the race-by-condition interaction did not reach conventional significance, p < .19. A weighted contrast dropping the challenge conditions gave F(1, 107) = 3.27, p < .08, which the authors called marginal. Study 2 used 40 female undergraduates, 10 per cell, and there the race-by-diagnosticity interaction on adjusted test performance was significant, F(1, 35) = 8.07, p < .01. Study 3 used 68 students. Study 4 assigned 47 and analysed 44 after three exclusions, and it showed that merely asking students to record their race before the test lowered Black students' scores, F(1, 39) = 7.82, p < .01. Spencer, Steele and Quinn extended the design to women and mathematics in 1999. Their Study 2 gave 30 women and 24 men at Michigan two halves of a hard test, describing one half as producing gender differences, and Study 3 repeated the pattern at Buffalo with 36 women and 31 men on an easier test. That paper is what the schoolgirl literature grew out of. Roughly one hundred research papers and five meta-analyses followed for the gender version alone, by Flore and Wicherts' count. Those five estimated a small to medium effect before moderators, with standardised mean differences from 0.24 to 0.48, as Flore and Wicherts summarise them.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The maths paper introduced as a gender comparison",
+      "text": "A teacher hands out a hard paper and mentions that the exercise is being used to look at how boys and girls differ. On this account the girls now sit the paper with the prospect of confirming a stereotype in mind, and that prospect takes attention the questions needed."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The boxes ticked before the first question",
+      "text": "An assessment opens by asking candidates to record their ethnicity, then describes itself as a measure of raw ability. Nothing about the questions has changed. What is claimed is that the framing alone moves the score of a candidate whose group the test is stereotyped against."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The memory screen at the clinic",
+      "text": "An older patient is told that a short recall task is the standard check for age-related decline. The proposal holds that being measured against the stereotype of the forgetful old takes up part of what the patient needs in order to do the recalling."
+    }
+  ],
   "replication": {
     "state": "failed",
     "headline": "A preregistered test on 2,064 Dutch high-school students found no stereotype threat effect on girls' maths scores, with the Bayes factor favouring the null by 28 to 1.",

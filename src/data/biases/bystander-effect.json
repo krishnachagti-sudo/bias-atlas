@@ -17,6 +17,23 @@
     "note": "The seizure experiment. Its first paragraph retells the New York Times account of the Kitty Genovese murder, citing Rosenthal's book, and its discussion likens the set-up to that case, where spectators knew others were watching but were kept by the walls between them from talking it over. The story the paper opens with has since been shown to be wrong on its central points, which is treated below and does not touch the experiment."
   },
   "evidence": "Fifty-nine female and thirteen male students in introductory psychology at New York University were contacted, and seventy of them supplied the data. They sat in separate rooms and talked over an intercom about problems of college life. One voice, prerecorded, mentioned a proneness to seizures, and later staged one. Only the victim's microphone was live during the fit, so the subject could not see the other listeners or tell what they were doing. The measure was the time from the start of the fit until she left her cubicle, where an assistant sat waiting at the end of the corridor. Two subjects saw through the fit and were dropped. Of those who thought they alone heard it, 85% reported the seizure before the victim's microphone cut off, against 62% in three-person groups and 31% in six-person groups. The time column of the paper's first table reads 52, 93 and 166 seconds, and is not labelled as a mean. The likelihood test gave a chi-square of 7.91, p < .02, and the analysis of variance on speed scores gave F = 8.09, p < .01. Everyone in the two-person condition eventually reported it, against 62% of the six-person condition. Composition mattered less than number. A female subject reported at 62% whether the other bystander was female or male, and all five told he was a premedical student from a hospital emergency ward reported, a cell of five the authors read as showing no detectable effect. Of 16 personality and background measures, only the size of the community the subject grew up in correlated with speed of helping, r = -.26, p < .05. Subjects who did not report were not calm. They had trembling hands and sweating palms, and asked whether the victim was all right.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The request sent to the whole team",
+      "text": "A colleague stuck before a deadline asks a distribution list of twelve for cover, and nobody answers. The same message sent to one person gets a reply within the hour, because there is nobody else it could have been meant for."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The cyclist down at the junction",
+      "text": "A cyclist lies beside his bike on a busy road, and each driver slowing past reckons somebody further up has already rung for an ambulance. A driver who finds the same scene on an empty lane at night stops, because nobody else is there to have called."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The shouting through the wall",
+      "text": "Raised voices carry through a block of flats and nobody rings anyone. Each neighbour within earshot knows the others can hear it too, and the sense that the call is his to make falls as the number of flats that can hear it rises."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "Fischer and colleagues pooled 105 independent effect sizes from more than 7,700 participants and found the effect held, at g = -0.35 in a fixed effects model.",

@@ -17,6 +17,23 @@
     "note": "Their paper is titled \"Power posing: Brief nonverbal displays affect neuroendocrine levels and risk tolerance\". Its abstract ends by claiming that two one-minute poses let a person \"embody power and instantly become more powerful\", with \"real-world, actionable implications\". Gronau and colleagues, in the preprint of their 2017 meta-analysis, called the TED talk built on it the second most popular of all time."
   },
   "evidence": "Forty-two participants, 26 women and 16 men, were posed by an experimenter into two high-power or two low-power positions and held each for one minute. They were told the study was about electrode placement. Saliva was taken before the poses and about 17 minutes after. On testosterone the high-power group rose relative to the low-power group, F(1, 39) = 4.29, p < .05, r = .34. On cortisol it fell, F(1, 38) = 7.45, p < .02, r = .43. Offered $2 or a 50-50 die roll for $4, 86.36% of high-power posers gambled against 60% of low-power posers, chi-square(1, N = 42) = 3.86, p < .05, phi = .30. Asked how powerful and in charge they felt on a scale from 1 to 4, the high-power group averaged 2.57 against 1.83, F(1, 41) = 9.53, p < .01, r = .44. All three original authors, with Caroline Wilmuth, then ran a second experiment. Sixty-six students held a pose while preparing a mock job interview, and coders rated high-power posers higher on performance, F = 8.33, p = .005, d = 0.73, and on hireability, F = 7.22, p = .009, d = 0.68. Their own check on felt power was weaker, 2.47 against 2.04, p = .076. The accepted manuscript prints all three tests as F(1, 60), and a 2018 correction states the degrees of freedom should be 1 and 59.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The two minutes before the interview",
+      "text": "A candidate waiting in the corridor stands with feet apart and hands on hips, then goes in. The claim is that holding the posture, rather than anything it signals to anyone watching, is what changes how he feels and what he is then willing to risk."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The seat taken at full width",
+      "text": "Advice before a negotiation to sit back, spread out and use the whole chair. On this account the arrangement of the body comes first, and the hormone levels, the appetite for a gamble and the sense of being in charge are said to follow it."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The small posture in the waiting room",
+      "text": "Someone waits with shoulders rounded, arms crossed and knees together. The proposal is symmetrical, so a contractive pose is said to push the same measures the other way, towards less testosterone, more cortisol and more caution."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Six preregistered studies put the feelings-of-power effect at 0.22, while the editors of the same set report virtually zero effect on any hormonal or behavioural measure.",

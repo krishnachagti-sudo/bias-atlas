@@ -17,6 +17,23 @@
     "note": "Their monograph is \"The actor and the observer: Divergent perceptions of the causes of behavior\", reprinted the following year as pages 79 to 94 of the Jones and colleagues volume Attribution: Perceiving the Causes of Behavior. They open with anecdotes about a failing student, the Kitty Genovese witnesses and political memoirs. They then call their own proposition an actuarial one, grant that there are undoubtedly many exceptions, and write that it \"has not been fully tested, but there are a few experiments that provide data consistent with it\"."
   },
   "evidence": "The founding evidence is thin by design. Jones and Nisbett cite McArthur's coding of written attributions and two studies by Nisbett and colleagues. In the first, students wrote why they had chosen their major and why they liked the woman they dated most often, then wrote the same for their best friend. Writing about themselves they gave roughly equal numbers of stimulus and person reasons for the major and twice as many stimulus as person reasons for the girlfriend. Writing about the best friend they gave about three times as many person as stimulus reasons for the major and roughly equal numbers for the girlfriend. Measurement later settled on rating scales, which 152 of the 173 studies Malle pooled used. Storms's items, as Malle reproduces them, asked how important the rater's personality, traits, character, style, attitudes and mood had been. The matching items asked about being in an experiment, the getting-acquainted situation, the topic of conversation and the other person's behaviour. Malle quotes Watson's 1982 review calling the asymmetry firmly established, at its page 698. Watson's own conclusion was narrower, that actors and observers differ in their external attributions only. Robins, Spranca and Mendelsohn ran three successive dyadic interactions in 1996 and found the effect held for one external factor, the interaction partner, and one internal factor, personality, but not for situation or mood. They concluded that the effect has limited generality and needs a more complex formulation.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "Two accounts of the same degree",
+      "text": "Asked why he read engineering, a student talks about what the subject leads to and who was teaching it. Asked why his friend read it, he says the friend is that sort of person. One event, two explanations, and the claim is that which causes get named turns on who is explaining whom."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The Saturdays at the food bank",
+      "text": "A volunteer explains her Saturdays by saying the rota is short and nobody else can cover them. Her neighbour explains the same Saturdays by saying she is a generous woman. The asymmetry claimed here is in the explanations, not in who comes out of them well."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Why the job was left",
+      "text": "Someone who has resigned describes the restructure, the new manager and the commute. A former colleague accounting for the same resignation says he was always restless. The hypothesis holds that the actor reaches for circumstances and the observer for character, for one and the same act."
+    }
+  ],
   "replication": {
     "state": "failed",
     "headline": "Across 173 studies and 14,686 people the asymmetry pooled at d = 0.095, and correcting for publication bias put it at d = -0.011.",

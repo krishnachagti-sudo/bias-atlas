@@ -18,6 +18,23 @@
     "note": "Cherry named \"the cocktail party problem\" in this paper and built the shadowing task, but he ran no name experiment. The own-name finding everyone attaches to the phrase is Moray's, published six years later in the Quarterly Journal of Experimental Psychology."
   },
   "evidence": "Cherry fed one spoken message to each ear and had listeners repeat the right-ear message aloud without omission. He then asked four questions about the left ear: was it speech, what was it about, male or female, what language. Listeners always knew it was speech and nearly always caught the change from a male to a female voice. A steady 400-cycle tone was always noticed. Nobody identified a word or phrase, and nobody could make a definite identification of the language as English. When the ignored message changed from English to German partway through, the listener afterwards said he did not know the language and had assumed it was English. Cherry gives no participant counts for these tests and used no listener more than once. Moray had 12 subjects shadow ten short passages of light fiction at about 130 words a minute. Instructions were hidden in the rejected ear, and half of them were prefixed by the listener's own name. Pooled across the 12, named instructions were heard 20 times out of 39 presentations and unnamed ones 4 times out of 30, t = 3.05, beyond the 1% level. On only four of those 20 occasions did a listener obey and change ears. Conway, Cowan and Bunting ran 40 native English speakers through the shadowing task, 17 men and 23 women. Their 20 high and 20 low spans were not a split of those 40 but were recruited from the upper and lower quartiles of a larger pool. The relevant message ran at 60 words per minute for 5.5 minutes, and the first name went into the irrelevant message after four and after five minutes. Twenty per cent of high spans reported hearing their name, against 65% of low spans, Fisher's exact p = .005. Low spans also made more shadowing errors overall, a mean of 20.88 against 10.00, t(32) = 2.18, p = .04.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The name from across the room",
+      "text": "A guest at a party follows one conversation and could not report a word of the group behind him. His own name, spoken in that group, reaches him anyway. For it to reach him, the speech he was not listening to had to be recognised before it was discarded."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The announcement in the concourse",
+      "text": "Station announcements become a noise a traveller has stopped attending to, until one of them reads out his own name and he is listening again. Nothing about the volume changed, only which word was spoken."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The list called in the waiting room",
+      "text": "A patient absorbed in a magazine no longer registers the receptionist calling people through, and still looks up at his own name. The channel he had shut out was carrying meaning the whole time."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "A preregistered replication with 80 participants found 29% noticed their own name in the ignored ear, close to the 34.6% Wood and Cowan reported in 1995, and nowhere near the everybody of the popular claim.",

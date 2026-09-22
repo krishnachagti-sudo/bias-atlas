@@ -17,6 +17,23 @@
     "note": "Their paper, \"Cognitive and attentional mechanisms in delay of gratification\", is the version of the waiting task that the later follow-ups traced back to. The paradigm had appeared two years earlier in Mischel and Ebbesen's \"Attention in delay of gratification\" in the same journal. The long-run claim arrived later, with Mischel, Shoda and Peake in 1988 and Shoda, Mischel and Peake in 1990."
   },
   "evidence": "The individual experiments were small. Mischel and Ebbesen's 1970 study, the earliest of the series, ran 32 children, 8 to each of four conditions, aged 3 years 6 months to 5 years 8 months. That paper places itself at the King Nursery School of Stanford University, while the 1990 follow-up locates the whole series at the Bing School. Shoda, Mischel and Peake describe the waiting experiments as running at Bing over roughly six years, from 1968 to 1974, with 653 children taking part in at least one. Bing served mostly middle-class children of faculty and students in the university community. Rewards were pairs of items varying in desirability, such as one small marshmallow against two, or one pretzel stick against two. Parents were reached by post about a decade later. The first mailing, in 1981 and 1982, went to the 125 parents whose addresses were known and produced 95 respondents, the sample behind the 1988 paper. A second mailing followed in 1984. Of the 653, 103 had not been tested in the standard waiting situation, no address could be found for 114, and materials came back undelivered for another 32. A sample of 185 children ended up with at least one follow-up measure, and parents of 94 reported SAT scores. Mean delay in that sample was 512.8 s, and mean age at the waiting task was 4 years 4 months. The correlations everyone quotes come from one of four conditions, the one in which the rewards sat in view and no coping strategy was suggested. There, preschool delay time correlated .42 with SAT verbal and .57 with SAT quantitative, on 35 children. In the other three conditions every SAT correlation was negative and none was significant. Parent ratings showed the same pattern: 12 of 14 items on the coping questionnaire were significant in the rewards-exposed condition, against 3 of the 42 correlations across the other three. The authors said plainly that even the highest correlations accounted for only about 25% of the variance.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The biscuit left on the table",
+      "text": "A child is told she may eat the biscuit in front of her now, or have two if she sits with it until the adult comes back. The measure is how many seconds she lasts. The claim attached to the task is that those seconds say something about how she will be doing at fifteen."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The waiting game recommended to parents",
+      "text": "A parenting column suggests practising small delays at home, on the grounds that the capacity a child shows at four is what later school results rest on. The advice takes an association between an early behaviour and a later outcome and treats it as something that can be trained."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Two children and the same plate",
+      "text": "One child eats the sweet within seconds, another sits with it for a quarter of an hour, and the difference goes down as a number of seconds. What is claimed is that this one number, recorded before school starts, carries information about how the child reads and reckons a decade later."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "A much larger sample found the achievement association at about half the original size, and controls for background, home and early test scores cut it by two thirds.",
