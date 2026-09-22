@@ -30,6 +30,69 @@ import { LASTMOD_TOKEN } from '../../build/lastmod.mjs';
  * @param {object[]} o.entries the published corpus, in build order
  * @param {number} o.mapped candidate biases identified but not yet written
  */
+
+// ---- what is here, and what is not yet ---------------------------------------
+//
+// The Law Tome's front page lists what the site can do, and it is the single
+// biggest thing this one was missing: a reader who lands on an index of 544
+// entries has no way of knowing there is a quiz, a situation finder, a print
+// edition or an open dataset behind it.
+//
+// The locked tiles are a promise, and promises on a public page are a debt. Each
+// one here is a thing that is designed and not yet built, not a thing that might
+// happen: comparison pages and the tensions hub both have their data derived
+// already. Anything speculative belongs in a backlog file, not on the front page.
+const FEATURES = [
+  ['Browse every entry', 'browse/', 'All 544, filterable by field and by verdict.'],
+  ['Start from what happened', 'situations/', 'Describe the situation, find the name for it.'],
+  ['How solid is any of this?', 'how-solid/', 'What the index says about its own evidence.'],
+  ['Collections', 'collections/', 'Cuts through the index, each computed from a stated rule.'],
+  ['The quiz', 'quiz/', 'Ten questions. The fourth asks whether it replicated.'],
+  ['A timeline of the naming', 'timeline/', 'Every effect placed in the decade it was named.'],
+  ['Every measured effect', 'effect-sizes/', 'Original against replication, in one table.'],
+  ['The dataset', 'data/', 'The whole corpus as JSON, plus a graph and a feed.'],
+  ['Embed a card', 'embed/', 'Any entry on your own site, in one line of HTML.'],
+  ['The printed edition', 'print/', 'The whole index as one document, for paper.'],
+  ['Send a correction', 'contribute/', 'The most useful thing a reader can do.'],
+  ['Saved biases', 'saved/', 'A private shortlist, kept in your browser.'],
+];
+
+const SOON = [
+  ['The pairs that disagree', 'Biases people mix up whose verdicts came out opposite.'],
+  ['Compare two biases', 'Side by side, for the ones that get swapped in an argument.'],
+  ['Portraits and documents', 'The people behind the claims, and the pages they first appeared on.'],
+  ['Cheat sheets', 'One field on one printable page.'],
+];
+
+function featureGrid(base) {
+  const live = FEATURES.map(([t, href, d]) => `      <a class="ft-card" href="${base}${href}">
+        <h3>${escapeHtml(t)}</h3>
+        <p>${escapeHtml(d)}</p>
+      </a>`).join('\n');
+  const soon = SOON.map(([t, d]) => `      <div class="ft-card ft-card--soon" aria-disabled="true">
+        <span class="ft-lock">Coming soon</span>
+        <h3>${escapeHtml(t)}</h3>
+        <p>${escapeHtml(d)}</p>
+      </div>`).join('\n');
+  return `<section class="sec sec--ft">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>What else is here</h2>
+      <span class="sub">${FEATURES.length} ways in</span>
+    </div>
+    <p class="sec-lede">The index is the middle of this, not the whole of it. Everything below reads the same 544 entries a different way.</p>
+    <div class="ft-grid">
+${live}
+    </div>
+    <h3 class="ft-soon-h">Being built now</h3>
+    <div class="ft-grid ft-grid--soon">
+${soon}
+    </div>
+  </div>
+</section>
+`;
+}
+
 export function homePage({ base = '/', origin = '', entries = [], mapped = 0 } = {}) {
   const count = entries.length;
   const n = (x) => Number(x).toLocaleString('en-US');
@@ -203,6 +266,7 @@ ${faq.html}  </div>
     + header({ base, count: count > 0 ? count : null })
     + heroSection
     + body
+    + featureGrid(base)
     + footer({ base, scripts: rotator })
   );
 }

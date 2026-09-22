@@ -41,6 +41,9 @@ import { savedPage } from '../src/templates/saved.mjs';
 import { contributePage } from '../src/templates/contribute.mjs';
 import { embedCard, embedDocsPage } from '../src/templates/embed.mjs';
 import { printPage } from '../src/templates/print.mjs';
+import { situationsPage, situationsJson } from '../src/templates/situations.mjs';
+import { tensionsPage } from '../src/templates/tensions.mjs';
+import { collections, collectionsPage, collectionPage } from '../src/templates/collections.mjs';
 import { dayIndex } from './quiz.mjs';
 import { ROUND, scoreVerdict } from './quiz.mjs';
 import { entryMarkdown } from './markdown.mjs';
@@ -178,6 +181,14 @@ pages['embed/'] = embedDocsPage({ base, origin, entries, count: entries.length }
 // it quotes would be the site cannibalising itself.
 for (const e of entries) pages[`embed/${e.slug}/`] = embedCard(e, { base, origin });
 pages['print/'] = printPage(entries, { base, origin, categories: CATEGORIES, buildDate });
+pages['situations/'] = situationsPage({ base, origin, entries });
+// The tensions hub is built and passing, and held back deliberately: it is
+// listed on the front page as coming soon rather than published half-announced.
+// Publishing it is this one line.
+// pages['tensions/'] = tensionsPage({ base, origin, entries, graph });
+const sets = collections(entries, graph);
+pages['collections/'] = collectionsPage({ base, origin, entries, sets });
+for (const c of sets) pages[`collections/${c.slug}/`] = collectionPage(c, { base, origin, entries });
 pages['quiz/'] = quizPage({ base, origin, count: entries.length, categories: CATEGORIES });
 for (let s = 0; s <= ROUND; s++) {
   pages[`quiz/score/${s}/`] = scorePage({ score: s, total: ROUND, base, origin, count: entries.length });
@@ -383,6 +394,13 @@ for (const [key, label] of Object.entries(CATEGORIES)) {
 
 // The relationship graph, as data. Every edge carries the evidence that
 // produced it, so a consumer can check a link the way they can check a claim.
+// What the situation filter searches. Not in `pages`, so it carries no date
+// and stays out of the sitemap, exactly like search-index.json.
+writes.push(write(
+  join(out, 'situations.json'),
+  `${JSON.stringify(situationsJson(entries))}\n`,
+));
+
 writes.push(write(
   join(out, 'graph.json'),
   `${JSON.stringify(graphJson(graph, { baseUrl: `${origin}${base}` }), null, 1)}\n`,

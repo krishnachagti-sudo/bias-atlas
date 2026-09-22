@@ -814,6 +814,97 @@ html{scroll-behavior:smooth}
 .panel--share .share--compact{margin:0}
 /* The shortlist grid on /saved/, and the empty state that is the first thing
    almost every visitor sees there. */
+/* ---- the front page's "what else is here" grid ----------------------------
+   The locked tiles have to read as not-yet rather than as broken. They keep the
+   card's shape and lose its affordances: no link, no hover lift, reduced
+   contrast, and a badge that says so in words rather than relying on the
+   styling to imply it. `aria-disabled` alone would not reach a reader who
+   cannot see the dimming. */
+.sec--ft{padding-top:8px}
+.ft-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(260px,100%),1fr));gap:14px;margin:6px 0 0}
+.ft-card{position:relative;display:flex;flex-direction:column;border:1px solid var(--line);border-radius:3px;
+  background:var(--surface);padding:18px 20px;text-decoration:none;box-shadow:var(--e1);
+  transition:border-color .18s,transform .18s,box-shadow .18s}
+a.ft-card:hover{border-color:var(--accent);transform:translateY(-3px);box-shadow:var(--e3)}
+.ft-card h3{font-family:var(--serif);font-weight:600;font-size:16px;margin:0 0 6px;color:var(--ink)}
+a.ft-card:hover h3{color:var(--accent)}
+.ft-card p{font-family:var(--serif);font-size:13.5px;line-height:1.55;color:var(--muted);margin:0}
+.ft-soon-h{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--faint);font-weight:400;margin:34px 0 12px}
+.ft-card--soon{background:var(--surface-2);border-style:dashed;box-shadow:none;cursor:default}
+.ft-card--soon h3{color:var(--muted)}
+.ft-card--soon p{color:var(--faint)}
+.ft-lock{display:inline-block;align-self:flex-start;margin:0 0 8px;padding:2px 7px;border-radius:2px;
+  background:var(--accent-soft);color:var(--accent-ink);
+  font-family:var(--mono);font-size:9.5px;letter-spacing:.08em;text-transform:uppercase}
+
+/* ---- /situations/ ---------------------------------------------------------
+   The filter is the point of the page, so it gets the top of it and reads as a
+   field you are meant to type a sentence into rather than a search box for a
+   keyword. The full list underneath is not a fallback: it is the page with
+   JavaScript off, and it is crawlable, which is how 1,632 situation phrases
+   become findable at all. */
+.st-search{margin:0 0 30px;max-width:720px}
+.st-lab{display:block;font-family:var(--mono);font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--faint);margin:0 0 8px}
+.st-in{width:100%;padding:14px 16px;font-family:var(--serif);font-size:16.5px;color:var(--ink);
+  background:var(--surface);border:1px solid var(--line-strong);border-radius:3px}
+.st-in:focus{outline:none;border-color:var(--accent);box-shadow:var(--glow,0 0 0 3px var(--accent-soft))}
+.st-in::placeholder{color:var(--faint);font-style:italic}
+.st-said{font-family:var(--mono);font-size:11px;letter-spacing:.04em;text-transform:uppercase;color:var(--faint);margin:10px 0 0;min-height:1em}
+.st-group{margin:0 0 38px}
+.st-h{font-family:var(--serif);font-weight:600;font-size:18px;margin:0 0 12px;padding-bottom:8px;border-bottom:1px solid var(--line);
+  display:flex;justify-content:space-between;align-items:baseline;gap:14px}
+.st-c{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--faint);font-weight:400}
+.st-list{list-style:none;margin:0;padding:0;display:grid;gap:1px}
+.st-row a{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;padding:7px 0;text-decoration:none;
+  border-bottom:1px solid transparent;transition:border-color .16s}
+.st-row a:hover{border-bottom-color:var(--line)}
+.st-t{font-family:var(--serif);font-size:15px;color:var(--ink)}
+.st-row a:hover .st-t{color:var(--accent)}
+.st-n{font-family:var(--mono);font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--faint);margin-left:auto}
+.st-list--hits .st-row{padding:14px 0;border-bottom:1px solid var(--line)}
+.st-x{font-family:var(--serif);font-size:14px;line-height:1.6;color:var(--muted);margin:4px 0 0;max-width:74ch}
+.st-none{font-family:var(--serif);font-size:15.5px;line-height:1.7;color:var(--muted);padding:22px 0;max-width:62ch}
+
+/* ---- /tensions/ -----------------------------------------------------------
+   Two entries, side by side, the one that held up on the left every time. The
+   order is normalised in the template rather than left to the data, because a
+   reader scanning twenty of these should not have to check which side is which. */
+.tn-h{font-family:var(--serif);font-weight:600;font-size:clamp(19px,2.6vw,23px);margin:34px 0 16px}
+.tn-grid{display:grid;gap:16px;margin:0 0 40px}
+.tn-card{display:grid;grid-template-columns:1fr auto 1fr;align-items:start;gap:16px;
+  border:1px solid var(--line);border-radius:3px;background:var(--surface);padding:20px;box-shadow:var(--e1)}
+.tn-side h3{font-family:var(--serif);font-weight:600;font-size:16.5px;margin:0 0 8px}
+.tn-side h3 a{color:var(--ink);text-decoration:none}
+.tn-side h3 a:hover{color:var(--accent)}
+.tn-say{font-family:var(--serif);font-size:13.5px;line-height:1.6;color:var(--muted);margin:10px 0 0}
+.tn-vs{align-self:center;font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint)}
+.tn-side--ok{border-left:2px solid var(--ok);padding-left:14px}
+.tn-side--no{border-left:2px solid var(--con);padding-left:14px}
+.vtable .tn-x{font-family:var(--serif)}
+@media(max-width:700px){
+  .tn-card{grid-template-columns:1fr;gap:12px}
+  .tn-vs{justify-self:start}
+}
+
+/* ---- /collections/ --------------------------------------------------------
+   Each card leads with its count and ends with its rule, because the rule is
+   what makes these different from somebody's favourites and it should not be
+   something a reader has to click through to find. */
+.cl-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:18px;margin:6px 0 40px}
+.cl-card{display:flex;flex-direction:column;border:1px solid var(--line);border-left:2px solid var(--accent);
+  border-radius:3px;background:var(--surface);padding:20px 22px;text-decoration:none;box-shadow:var(--e1);
+  transition:border-color .18s,transform .18s,box-shadow .18s}
+.cl-card:hover{border-color:var(--accent);transform:translateY(-3px);box-shadow:var(--e3)}
+.cl-n{font-family:var(--serif);font-size:34px;line-height:1;color:var(--ink)}
+.cl-card h2{font-family:var(--serif);font-weight:600;font-size:17.5px;margin:8px 0 8px;color:var(--ink)}
+.cl-card:hover h2{color:var(--accent)}
+.cl-lede{font-family:var(--serif);font-size:14px;line-height:1.6;color:var(--muted);margin:0 0 14px}
+.cl-rule{margin-top:auto;font-family:var(--mono);font-size:10.5px;line-height:1.55;letter-spacing:.03em;color:var(--faint)}
+.cl-rule--full{margin:0 0 26px;padding:12px 14px;border-left:2px solid var(--line-strong);
+  font-size:12px;line-height:1.6;color:var(--muted);max-width:76ch}
+.cl-rule--full b{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--faint)}
+
 /* ---- /contribute/ ---------------------------------------------------------
    Three routes, equal weight, each one saying what it is for before it asks
    for anything. A card that led with its button would be a form; these lead
