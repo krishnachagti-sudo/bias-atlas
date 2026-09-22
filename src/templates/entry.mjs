@@ -660,11 +660,20 @@ ${figures.length ? `        <p class="rep-fig">${escapeHtml(figures.join(' · ')
   // sentence in `misreadings` or `limits`, so the panel is the entry pointing
   // at its neighbour rather than the site guessing at one — which is why a
   // relationship map was declined twice before the derivation existed.
+  // The provenance is stated ONCE, under the heading, rather than under every
+  // item. `why` reads "Named in this entry's misreadings." — true, and the
+  // reason the panel is allowed to exist at all, but it is the same sentence
+  // for every row. Printed per item it stacked three identical grey lines
+  // under three links and read as a template talking to itself. Said once it
+  // is the same guarantee in a quarter of the space.
   if (related.length) {
+    const fields = [...new Set(related.map((r) => (/limits/i.test(r.why) ? 'limits' : 'misreadings')))];
+    const where = fields.length === 1 ? `own ${fields[0]}` : 'own limits and misreadings';
     panels.push(`      <div class="panel panel--rel">
         <h3>Often confused with</h3>
+        <p class="rel-why rel-why--note">Each one is named in this entry's ${escapeHtml(where)}.</p>
         <ul class="cmp-side">
-${related.map((r) => `          <li><a href="${base}bias/${escapeHtml(r.slug)}/">${escapeHtml(r.name)}</a><span class="rel-why">${escapeHtml(r.why)}</span></li>`).join('\n')}
+${related.map((r) => `          <li><a href="${base}bias/${escapeHtml(r.slug)}/">${escapeHtml(r.name)}</a></li>`).join('\n')}
         </ul>
       </div>`);
   }
