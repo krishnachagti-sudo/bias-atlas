@@ -39,6 +39,9 @@ import {
 import { quizPage, scorePage } from '../src/templates/quiz.mjs';
 import { savedPage } from '../src/templates/saved.mjs';
 import { contributePage } from '../src/templates/contribute.mjs';
+import { embedCard, embedDocsPage } from '../src/templates/embed.mjs';
+import { printPage } from '../src/templates/print.mjs';
+import { dayIndex } from './quiz.mjs';
 import { ROUND, scoreVerdict } from './quiz.mjs';
 import { entryMarkdown } from './markdown.mjs';
 import { buildApi } from './api.mjs';
@@ -170,6 +173,11 @@ pages['effect-sizes/'] = effectSizesPage({ base, origin, entries });
 // read the prebuilt search index at runtime, so neither needs a build artefact.
 pages['saved/'] = savedPage({ base, origin, count: entries.length });
 pages['contribute/'] = contributePage({ base, origin, count: entries.length });
+pages['embed/'] = embedDocsPage({ base, origin, entries, count: entries.length });
+// One framed card per entry. Noindex, because a card competing with the entry
+// it quotes would be the site cannibalising itself.
+for (const e of entries) pages[`embed/${e.slug}/`] = embedCard(e, { base, origin });
+pages['print/'] = printPage(entries, { base, origin, categories: CATEGORIES, buildDate });
 pages['quiz/'] = quizPage({ base, origin, count: entries.length, categories: CATEGORIES });
 for (let s = 0; s <= ROUND; s++) {
   pages[`quiz/score/${s}/`] = scorePage({ score: s, total: ROUND, base, origin, count: entries.length });
@@ -345,6 +353,32 @@ for (const [key, label] of Object.entries(CATEGORIES)) {
     dates,
     fallbackDate: buildDate,
   })));
+}
+
+// The entry of the day, for anything that wants one without scraping a page.
+// The pick is dayIndex(), the same function the quiz uses, so two parts of the
+// site can never disagree about which entry today is. `date` is the build date
+// rather than the reader's: a static file cannot know theirs, and saying so is
+// better than implying a freshness it does not have.
+{
+  const e = entries[dayIndex(buildDate, entries.length)];
+  writes.push(write(join(out, 'today.json'), `${JSON.stringify({
+    date: buildDate,
+    note: 'The entry selected for this date. Deterministic: the same date always yields the same entry. Regenerated when the site is built, so a reader in a different timezone may see the previous day\'s pick.',
+    licence: { text: 'CC BY 4.0', url: 'https://creativecommons.org/licenses/by/4.0/', attribution: cfg.brand },
+    entry: {
+      no: e.no,
+      slug: e.slug,
+      name: e.name,
+      field: CATEGORIES[e.category] || e.category,
+      statement: e.statement,
+      verdict: (e.replication || {}).state,
+      headline: (e.replication || {}).headline,
+      url: `${origin}${base}bias/${e.slug}/`,
+      markdown: `${origin}${base}bias/${e.slug}/index.md`,
+      card: `${origin}${base}og/bias/${e.slug}.png`,
+    },
+  }, null, 1)}\n`));
 }
 
 // The relationship graph, as data. Every edge carries the evidence that
