@@ -61,40 +61,66 @@ function classify(text) {
   return { verdict: 'unclear', phrase: '' };
 }
 
-const byDoi = new Map();
-for (const f of fs.readdirSync(DIR).filter(f => f.endsWith('.json'))) {
-  const d = JSON.parse(fs.readFileSync(path.join(DIR, f), 'utf8'));
-  for (const s of d.sources ?? []) {
-    if (!s.doi) continue;
-    const doi = String(s.doi).trim().toLowerCase().replace(/^https?:\/\/(dx\.)?doi\.org\//, '');
-    const c = classify(`${s.text ?? ""} ${s.note ?? ""}`);
-    if (!byDoi.has(doi)) byDoi.set(doi, []);
-    byDoi.get(doi).push({ no: d.no, slug: d.slug, checkedOn: d.checkedOn, ...c, text: s.text ?? '' });
+/**
+ * Every DOI the corpus cites more than once whose access notes disagree: one
+ * entry says the full text was read, another says it was paywalled, 403 or
+ * behind Cloudflare. One of the two is wrong.
+ *
+ * Exported so the build can report the count on every run. It used to exist
+ * only as this script's stdout, which meant the number moved whenever anybody
+ * edited a source note and nobody found out until they thought to run it.
+ *
+ * NOT a page. A reader has no use for "our own notes disagree about whether we
+ * obtained this paper" — it is a fact about the corpus's bookkeeping, not about
+ * any bias — and publishing it would spend trust to say nothing. It is a
+ * signal for whoever is editing.
+ *
+ * @param {object[]} entries
+ * @returns {{doi:string, obtained:object[], notObtained:object[], rows:object[]}[]}
+ */
+export function contradictions(entries) {
+  const byDoi = new Map();
+  for (const d of entries) {
+    for (const s of d.sources ?? []) {
+      if (!s.doi) continue;
+      const doi = String(s.doi).trim().toLowerCase().replace(/^https?:\/\/(dx\.)?doi\.org\//, '');
+      const c = classify(`${s.text ?? ''} ${s.note ?? ''}`);
+      if (!byDoi.has(doi)) byDoi.set(doi, []);
+      byDoi.get(doi).push({ no: d.no, slug: d.slug, checkedOn: d.checkedOn, ...c, text: s.text ?? '' });
+    }
   }
+  const out = [];
+  for (const [doi, rows] of byDoi) {
+    if (new Set(rows.map((x) => x.slug)).size < 2) continue;
+    const obtained = rows.filter((r) => r.verdict === 'obtained');
+    const notObtained = rows.filter((r) => r.verdict === 'not-obtained');
+    if (obtained.length && notObtained.length) out.push({ doi, obtained, notObtained, rows });
+  }
+  out.dois = byDoi.size;
+  out.shared = [...byDoi.values()].filter((v) => new Set(v.map((x) => x.slug)).size > 1).length;
+  out.unclear = [...byDoi.values()].flat().filter((r) => r.verdict === 'unclear').length;
+  return out;
 }
 
-const shared = [...byDoi.entries()].filter(([, v]) => new Set(v.map(x => x.slug)).size > 1);
-const clip = t => (t.length > 110 ? t.slice(0, 110) + '…' : t);
-const out = [];
-out.push(`DOIs total: ${byDoi.size}`);
-out.push(`DOIs shared across 2+ entries: ${shared.length}`);
-const bad = [];
-for (const [doi, rows] of shared) {
-  const yes = rows.filter(r => r.verdict === 'obtained');
-  const no = rows.filter(r => r.verdict === 'not-obtained');
-  if (yes.length && no.length) bad.push([doi, yes, no, rows]);
-}
-out.push(`DOIs with disagreeing notes: ${bad.length}`);
-out.push('');
-for (const [doi, yes, no, rows] of bad) {
-  out.push(`DOI ${doi}`);
-  out.push(`  entries: ${[...new Set(rows.map(r => `#${r.no} ${r.slug} (checkedOn ${r.checkedOn})`))].join(' | ')}`);
-  for (const r of yes) out.push(`  OBTAINED    #${r.no} ${r.slug}: "${clip(r.text)}"  [cue: ${r.phrase}]`);
-  for (const r of no) out.push(`  NOT OBTAINED #${r.no} ${r.slug}: "${clip(r.text)}"  [cue: ${r.phrase}]`);
+// ---- CLI -------------------------------------------------------------------
+if (import.meta.url === `file://${process.argv[1]}`) {
+  const entries = fs.readdirSync(DIR).filter((f) => f.endsWith('.json'))
+    .map((f) => JSON.parse(fs.readFileSync(path.join(DIR, f), 'utf8')));
+  const bad = contradictions(entries);
+  const clip = (t) => (t.length > 110 ? `${t.slice(0, 110)}…` : t);
+  const out = [];
+  out.push(`DOIs total: ${bad.dois}`);
+  out.push(`DOIs shared across 2+ entries: ${bad.shared}`);
+  out.push(`DOIs with disagreeing notes: ${bad.length}`);
   out.push('');
+  for (const { doi, obtained, notObtained, rows } of bad) {
+    out.push(`DOI ${doi}`);
+    out.push(`  entries: ${[...new Set(rows.map((r) => `#${r.no} ${r.slug} (checkedOn ${r.checkedOn})`))].join(' | ')}`);
+    for (const r of obtained) out.push(`  OBTAINED    #${r.no} ${r.slug}: "${clip(r.text)}"  [cue: ${r.phrase}]`);
+    for (const r of notObtained) out.push(`  NOT OBTAINED #${r.no} ${r.slug}: "${clip(r.text)}"  [cue: ${r.phrase}]`);
+    out.push('');
+  }
+  out.push(`Unclassifiable notes (ignored): ${bad.unclear}`);
+  if (process.env.OUT_FILE) fs.writeFileSync(process.env.OUT_FILE, `${out.join('\n')}\n`);
+  console.log(out.join('\n'));
 }
-const unclear = [...byDoi.values()].flat().filter(r => r.verdict === 'unclear');
-out.push(`Unclassifiable notes (ignored): ${unclear.length}`);
-const OUT = process.argv.includes('--json') ? null : null;
-if (process.env.OUT_FILE) fs.writeFileSync(process.env.OUT_FILE, out.join('\n') + '\n');
-console.log(out.join('\n'));

@@ -56,6 +56,7 @@ import { entryMarkdown } from './markdown.mjs';
 import { buildApi } from './api.mjs';
 import { buildFeed } from './feed.mjs';
 import { buildGraph, graphJson, relatedTo } from './graph.mjs';
+import { contradictions } from './contradictions.mjs';
 import { slugify } from './slugify.mjs';
 import { buildLlms, buildLlmsFull } from './llms.mjs';
 import { buildSitemap } from './sitemap.mjs';
@@ -555,6 +556,18 @@ const leaked = Object.keys(pages).filter((p) => stamp(pages[p], dates[p]).includ
 if (leaked.length) {
   console.error(`build FAILED — ${leaked.length} pages still carry ${LASTMOD_TOKEN}`);
   process.exit(1);
+}
+
+// The corpus disagreeing with itself about its own sources: the same DOI
+// recorded as read in full by one entry and as paywalled by another. One of
+// the two is wrong. Reported on every build rather than only when somebody
+// remembers to run `npm run contradictions`, because the number moves whenever
+// a source note is edited and nothing else would say so. A warning, not a
+// failure — it is an editing signal, and a build that refuses to run over
+// bookkeeping helps nobody.
+const conflicts = contradictions(entries);
+if (conflicts.length) {
+  console.warn(`sources: ${conflicts.length} DOIs are recorded as obtained by one entry and not obtained by another (npm run contradictions)`);
 }
 
 const cs = cardStats();
