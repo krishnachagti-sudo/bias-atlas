@@ -44,6 +44,7 @@ import { printPage } from '../src/templates/print.mjs';
 import { situationsPage, situationsJson } from '../src/templates/situations.mjs';
 import { isItRealPage } from '../src/templates/veracity.mjs';
 import { sheetsIndexPage, sheetPage, sheetFields, sheetPath } from '../src/templates/sheets.mjs';
+import { comparePairs, comparePage, compareIndexPage } from '../src/templates/compare.mjs';
 import { tensionsPage } from '../src/templates/tensions.mjs';
 import { collections, collectionsPage, collectionPage } from '../src/templates/collections.mjs';
 import { dayIndex } from './quiz.mjs';
@@ -217,6 +218,12 @@ pages['situations/'] = situationsPage({ base, origin, entries });
 // one; the front page now links it.
 pages['tensions/'] = tensionsPage({ base, origin, entries, graph });
 for (const f of sheetFields(entries)) pages[sheetPath(f.cat)] = sheetPage(f, { base, origin, entries });
+// One page per unordered confused-with pair. 689 directed edges collapse to 611
+// pairs; the slug is the two slugs sorted, so a pair has one address rather
+// than two copies of itself.
+const PAIRS = comparePairs(graph, entries);
+pages['compare/'] = compareIndexPage(PAIRS, { base, origin, entries });
+for (const pr of PAIRS) pages[pr.slug] = comparePage(pr, { base, origin, entries });
 const sets = collections(entries, graph);
 pages['collections/'] = collectionsPage({ base, origin, entries, sets });
 for (const c of sets) pages[`collections/${c.slug}/`] = collectionPage(c, { base, origin, entries });

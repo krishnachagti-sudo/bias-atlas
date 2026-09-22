@@ -714,6 +714,37 @@ a.stat--link .s-k::after{content:" →";letter-spacing:0;opacity:.55}
 .callout p{margin:0;font-size:16.5px;line-height:1.76;color:var(--read)}
 .callout--key{border-left-color:var(--accent);background:var(--accent-soft)}
 .callout--key .co-ic{color:var(--accent)}
+/* ---- /compare/ ------------------------------------------------------------
+   Two columns that must stay legible when the two things in them are unequal:
+   one statement runs to 40 words and the other to 12, one entry has eight
+   sources and the other two. So the columns are independent cards rather than
+   a table with shared rows — a table would stretch every row to its tallest
+   cell and put a lake of white space beside the shorter claim. */
+.cmp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));
+  gap:20px;margin:26px 0 38px}
+.cmp-col{background:var(--surface);border:1px solid var(--line);border-radius:3px;padding:20px 22px}
+.cmp-name{font-family:var(--serif);font-size:20px;margin:0 0 10px}
+.cmp-name a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line-strong)}
+.cmp-name a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+.cmp-claim{font-size:15px;line-height:1.65;color:var(--read);margin:0 0 16px}
+.cmp-facts{margin:0 0 14px;padding:0;border-top:1px solid var(--line)}
+.cmp-f{display:flex;gap:12px;align-items:baseline;padding:7px 0;border-bottom:1px solid var(--line)}
+.cmp-f dt{flex:none;width:14ch;font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--faint)}
+.cmp-f dd{margin:0;font-size:13.5px;color:var(--dim);min-width:0}
+.cmp-head{font-size:13.5px;line-height:1.6;color:var(--muted);margin:0}
+/* The sentences that produced the pair. Quoted, so they are set as quotations. */
+.cmp-why{margin:0 0 34px;padding-left:18px;font-size:14px;line-height:1.65;color:var(--dim);max-width:78ch}
+.cmp-why li{margin:0 0 8px}
+.cmp-index{list-style:none;margin:26px 0 0;padding:0;columns:2;column-gap:34px}
+@media(max-width:720px){.cmp-index{columns:1}}
+.cmp-ix{break-inside:avoid;padding:7px 0;border-bottom:1px solid var(--line)}
+.cmp-ix a{color:var(--ink);text-decoration:none;font-size:14.5px}
+.cmp-ix a:hover{color:var(--accent)}
+.cmp-vs{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);margin:0 3px}
+.cmp-flag{display:block;font-family:var(--mono);font-size:9.5px;letter-spacing:.06em;
+  text-transform:uppercase;color:var(--accent);margin-top:2px}
+
 /* ---- /sheets/ -------------------------------------------------------------
    A field to a page, built to be printed. The claim column carries the whole
    statement, so it is the one that gets the room; the name and the verdict are

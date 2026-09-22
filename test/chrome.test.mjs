@@ -43,7 +43,7 @@ const BUILT = new Set([
   '', 'browse/', 'how-solid/', 'data/', 'quiz/', 'about/',
   'contribute/', 'saved/', 'author/', 'features/', 'sources/', 'manifesto/', 'credits/', 'privacy/',
   'situations/', 'a-z/', 'also-known-as/', 'collections/', 'timeline/', 'named-by/', 'fallacies/',
-  'effect-sizes/', 'embed/', 'print/', 'is-it-real/', 'tensions/', 'sheets/',
+  'effect-sizes/', 'embed/', 'print/', 'is-it-real/', 'tensions/', 'sheets/', 'compare/',
 ]);
 
 test('every nav destination is one the site actually builds', () => {
