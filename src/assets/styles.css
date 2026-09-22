@@ -539,9 +539,9 @@ a.badge{text-decoration:none;display:inline-block}
    The SVG classes are `gp-` rather than the Tome's `tl-`, because over there
    `.tl-year` is defined twice — once for the timeline listing and once for this
    chart — and the second quietly depends on winning. */
-.viz-card{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(230px,100%),1fr));gap:26px;
+.viz-card{display:flex;flex-wrap:wrap;gap:26px;
   background:var(--surface);border:1px solid var(--line);border-radius:3px;padding:20px 24px;margin:0 0 44px}
-.viz-col{display:flex;flex-direction:column;gap:12px;min-width:0}
+.viz-col{display:flex;flex-direction:column;gap:12px;min-width:0;flex:1 1 230px}
 .viz-h{font-family:var(--mono);font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--faint)}
 .viz-note{font-size:12.5px;line-height:1.5;color:var(--muted);margin:2px 0 0}
 .viz-note b{color:var(--ink);font-weight:600}
@@ -553,11 +553,9 @@ a.badge{text-decoration:none;display:inline-block}
 .mseg{flex:1;min-width:0;text-align:center;font-family:var(--mono);font-size:9.5px;letter-spacing:.03em;
   text-transform:uppercase;color:var(--faint);border:1px solid var(--line);border-radius:3px;padding:9px 3px}
 .mseg.on{font-weight:700}
-.gap-svg{display:block;width:100%;height:auto;margin-top:4px;overflow:visible}
-.gp-axis{stroke:var(--line-strong);stroke-width:1.5}
-.gp-dot{fill:var(--accent)}
-.gp-year{fill:var(--ink);font-family:var(--mono);font-size:12px}
-.gp-role{fill:var(--faint);font-family:var(--mono);font-size:8.5px;letter-spacing:.06em}
+/* The field column carries a legend as well as a bar, so it needs more of the
+   card than an even split gives it. */
+.viz-col--wide{flex:1.35 1 260px}
 /* The origin block's fields, and the gap between claim and retest.
    `.field-grid` and `.field` came with the stylesheet and had never been used;
    only the spacing below is new, because the origin block is three short facts
@@ -716,6 +714,16 @@ a.stat--link .s-k::after{content:" →";letter-spacing:0;opacity:.55}
 .callout p{margin:0;font-size:16.5px;line-height:1.76;color:var(--read)}
 .callout--key{border-left-color:var(--accent);background:var(--accent-soft)}
 .callout--key .co-ic{color:var(--accent)}
+/* The design box, at the head of "The experiments". A third box shape rather
+   than a third callout colour: a callout means "read this caveat", and the
+   opening of an evidence field is not a caveat, it is the specification —
+   how many studies there were and what they did. So it reads as a spec panel,
+   with a mono label above the text rather than an icon beside it. */
+.setup{background:var(--surface);border:1px solid var(--line);border-left:2px solid var(--accent);
+  border-radius:3px;padding:14px 18px;margin:0 0 22px}
+.setup-k{display:block;font-family:var(--mono);font-size:9.5px;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--faint);margin-bottom:7px}
+.setup-v{margin:0;font-size:15.5px;line-height:1.66;color:var(--read)}
 .callout--info{border-left-color:var(--line-strong)}
 .callout--info .co-ic{color:var(--muted)}
 .lead{font-family:var(--serif);font-size:21px;line-height:1.55;color:var(--ink)}

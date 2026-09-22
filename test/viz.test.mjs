@@ -4,8 +4,10 @@
 // the Law Tome's law page broke its opening prose with exactly this card. The
 // risk in adding a chart to a site whose whole promise is that it does not
 // assert what it cannot support is that a chart asserts confidently and
-// silently — so both columns draw values stored in the entry file and nothing
-// else, and these tests are mostly about what the card refuses to draw.
+// silently — so the meter lights a state stored in the entry and the bar counts
+// entries in the corpus, and these tests are mostly about what the card
+// refuses to draw: an invented figure, a clipped label, or a second copy of a
+// chart the page already has further down.
 
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -14,6 +16,7 @@ import { join } from 'node:path';
 
 import { entryPage } from '../src/templates/entry.mjs';
 import { VERDICT_GLOSS, VERDICT_ORDER } from '../src/templates/charts.mjs';
+import { fieldPath } from '../src/templates/paths.mjs';
 
 const DIR = 'src/data/biases';
 const entries = readdirSync(DIR).filter((f) => f.endsWith('.json'))
@@ -56,47 +59,61 @@ test('the tally counts the OTHER entries, never including the page you are on', 
   assert.match(render(e), new RegExp(`The other ${total - 1}<`), `expected ${total - 1}, not ${total}`);
 });
 
-test('the gap plots the entry\'s own two years and states the span', () => {
-  const e = entries.find((x) => x.origin.year && x.replication.study
-    && x.replication.study.year > x.origin.year);
+test('the field column splits this entry\'s own field, and names its share', () => {
+  const e = entries.find((x) => x.category === 'belief');
+  const mine = entries.filter((x) => x.category === e.category);
+  const same = mine.filter((x) => x.replication.state === e.replication.state).length;
   const html = render(e);
-  const from = e.origin.year;
-  const to = e.replication.study.year;
-  assert.match(html, new RegExp(`aria-label="First published ${from}, retested ${to}"`));
-  assert.match(html, new RegExp(`<b>${to - from} years?</b> between the claim`));
+  assert.match(html, /The field/);
+  assert.match(html, new RegExp(`${same} of the [\\d,]+ entries in`));
+  // It links to the field hub, so the chart is a way in rather than a picture.
+  assert.match(html, new RegExp(`href="/biases/${fieldPath(e.category)}"`));
 });
 
-test('an entry with no retest year gets no timeline rather than a faked one', () => {
-  // 89 entries have no replication located, so there is no second date. An axis
-  // drawn for one year is decoration standing where a fact should be.
-  const e = entries.find((x) => x.replication.state === 'none-located');
-  const html = render(e);
-  assert.doesNotMatch(html, /gap-svg/, `${e.slug} drew a timeline with nothing to plot`);
-  assert.match(html, /class="meter"/, 'but the verdict meter still applies');
+test('the field bar draws no in-segment labels, which do not fit a third of a page', () => {
+  // The threshold inside verdictSplit is a percentage of the bar, so a share
+  // wide enough at full width overflows its own segment in this column. The
+  // legend carries every figure regardless.
+  const html = render(entries.find((x) => x.category === 'belief'));
+  const card = (html.match(/<div class="viz-card"[\s\S]*?<\/figure>/) || [''])[0];
+  assert.doesNotMatch(card, /vs-lab/, 'in-bar labels clipped in the narrow column');
+  assert.match(card, /vs-key/, 'but the legend is still there');
 });
 
-test('a retest recorded as earlier than the claim draws nothing', () => {
-  // Rather than an axis running backwards, or a negative span rendered as
-  // "-3 years". If the data is wrong the chart declines to have an opinion.
-  const base = entries.find((x) => x.replication.study && x.replication.study.year);
-  const bad = { ...base, origin: { ...base.origin, year: 2020 },
-    replication: { ...base.replication, study: { ...base.replication.study, year: 1999 } } };
-  assert.doesNotMatch(render(bad), /gap-svg/);
-});
-
-test('the card carries nothing that is not in the entry file', (t) => {
+test('the claimed-to-retested gap is drawn ONCE, and not in this card', (t) => {
   if (!BUILT) return t.skip('no dist/ — run `npm run build` first');
-  // Every number inside the card is either one of the two stored years, the
-  // span between them, or a count of entries in the corpus. A figure appearing
-  // here that no entry holds would be this project fabricating quietly.
+  // It lived here briefly and was a duplicate: the Origin section already
+  // draws that span, with its own caption, in the section actually about
+  // dates. Two charts of one fact on one page is how a reader starts
+  // wondering which of them to believe.
+  const html = readFileSync('dist/bias/dunning-kruger-effect/index.html', 'utf8');
+  const card = (html.match(/<div class="viz-card"[\s\S]*?<\/div>\s*<\/div>/) || [''])[0];
+  assert.doesNotMatch(card, /gap-svg|gp-year/, 'the card must not redraw the origin gap');
+  assert.equal((html.match(/class="gap"/g) || []).length, 1, 'the gap is drawn exactly once');
+});
+
+test('every figure in the card is one the corpus can produce', (t) => {
+  if (!BUILT) return t.skip('no dist/ — run `npm run build` first');
+  // The card states two kinds of number: how many other entries share this
+  // verdict, and how this entry's field divides. Both are counts over the
+  // corpus, so both are checkable here. A figure that no count reproduces
+  // would be this project fabricating quietly, which is the one thing it
+  // cannot do.
   for (const e of entries.slice(0, 120)) {
     const html = readFileSync(`dist/bias/${e.slug}/index.html`, 'utf8');
     const card = (html.match(/<div class="viz-card"[\s\S]*?\n        <\/div>/) || [])[0] || '';
     assert.ok(card, `${e.slug} has no card`);
-    const years = [...card.matchAll(/class="gp-year"[^>]*>(\d{4})</g)].map((m) => Number(m[1]));
-    for (const y of years) {
-      assert.ok(y === e.origin.year || y === (e.replication.study || {}).year,
-        `${e.slug} plots ${y}, which the entry does not hold`);
+
+    const others = entries.filter((x) => x.replication.state === e.replication.state).length - 1;
+    if (others > 0) {
+      assert.ok(card.includes(`The other ${others.toLocaleString('en-US')}`),
+        `${e.slug} miscounts the entries sharing its verdict`);
+    }
+    const mine = entries.filter((x) => x.category === e.category);
+    if (mine.length >= 8) {
+      const same = mine.filter((x) => x.replication.state === e.replication.state).length;
+      assert.ok(card.includes(`${same} of the ${mine.length.toLocaleString('en-US')} entries in`),
+        `${e.slug} miscounts its own field`);
     }
   }
 });
@@ -117,19 +134,22 @@ test('the card is not inside a block, so it does not appear in the contents rail
   // no heading listed there would be a contents entry pointing at a picture.
   const html = readFileSync('dist/bias/dunning-kruger-effect/index.html', 'utf8');
   const toc = (html.match(/<div class="toc-links">([\s\S]*?)<\/div>/) || [])[1] || '';
-  assert.doesNotMatch(toc, /viz|Verdict<|The gap/);
+  assert.doesNotMatch(toc, /viz|Verdict<|The field</);
 });
 
-test('every entry renders a card', (t) => {
+test('every entry renders a card, and every entry renders both columns', (t) => {
   if (!BUILT) return t.skip('no dist/ — run `npm run build` first');
   let cards = 0;
-  let gaps = 0;
+  let fields = 0;
   for (const e of entries) {
     const html = readFileSync(`dist/bias/${e.slug}/index.html`, 'utf8');
     if (html.includes('class="viz-card"')) cards++;
-    if (html.includes('gap-svg')) gaps++;
+    if (html.includes('>The field<')) fields++;
   }
   assert.equal(cards, entries.length, 'the meter applies to every entry');
-  const withYear = entries.filter((e) => (e.replication.study || {}).year > e.origin.year).length;
-  assert.equal(gaps, withYear, `${gaps} timelines for ${withYear} entries that have two dates`);
+  // Every field in this corpus holds well over the eight-entry floor, so the
+  // second column is universal too. The floor exists so that a field with
+  // three entries does not get a bar chart of three.
+  const big = entries.filter((e) => entries.filter((x) => x.category === e.category).length >= 8).length;
+  assert.equal(fields, big, `${fields} field splits for ${big} entries in a field big enough`);
 });

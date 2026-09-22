@@ -30,7 +30,7 @@ import {
 import { hubFaq, hubJsonLd } from './hub.mjs';
 import { CATEGORIES } from '../../build/corpus.mjs';
 import { fieldPath, verdictPath } from './paths.mjs';
-import { VERDICT_ORDER, VERDICT_GLOSS } from './charts.mjs';
+import { VERDICT_ORDER, VERDICT_GLOSS, verdictSplit } from './charts.mjs';
 import { correctionUrl } from './contribute.mjs';
 import { LASTMOD_TOKEN } from '../../build/lastmod.mjs';
 
@@ -98,14 +98,20 @@ const ABBREV = /\b(?:et al|e\.g|i\.e|cf|vs|approx|ca|Dr|Prof|Mr|Mrs|Ms|St|Fig|Fi
  *   one <p> silently collapsed every one — the corpus was expressing paragraph
  *   structure the page threw away.
  *
- *   Otherwise group sentences to about 75 words. Sentence boundaries only, so
+ *   Otherwise group sentences to about 58 words. Sentence boundaries only, so
  *   the break always falls where the writing already stopped, and a trailing
  *   runt is merged back rather than left alone.
  *
  * Short fields are left as one paragraph: breaking 150 words into two is fussy
  * rather than readable.
+ *
+ * 58 and 105, down from 75 and 140. These are research paragraphs carrying
+ * test statistics inline, and "F(1, 25) = 6.99, P = 0.01" reads as one unit
+ * but scans as a wall — 58 words of it is heavier on the eye than 58 words of
+ * argument. No word is added, removed or reordered; the breaks just fall more
+ * often, and still only where a sentence already ended.
  */
-export function paragraphs(text, { target = 75, min = 140 } = {}) {
+export function paragraphs(text, { target = 58, min = 105 } = {}) {
   const raw = String(text == null ? '' : text).trim();
   if (!raw) return [];
 
@@ -141,6 +147,24 @@ export function paragraphs(text, { target = 75, min = 140 } = {}) {
     }
     return parts;
   });
+}
+
+/**
+ * The opening of `evidence`, boxed under a mono label.
+ *
+ * Only the first paragraph. A box wrapped round 330 words is not a box, it is
+ * a tinted wall, and the tint stops meaning "start here" the moment it
+ * contains everything. Empty when the field is empty, so nothing renders an
+ * outline round nothing.
+ */
+function setupBox(text) {
+  const first = paragraphs(text)[0];
+  if (!first) return '';
+  return `        <div class="setup">
+          <span class="setup-k">The design</span>
+          <p class="setup-v">${escapeHtml(first)}</p>
+        </div>
+`;
 }
 
 /** Render a prose field as one or more paragraphs, escaped. */
@@ -487,13 +511,16 @@ ${stats.map(([k, v, href]) => (href
  *   of them and is not a soft "failed". The count beside it says how many other
  *   entries landed in the same place, and links to them.
  *
- *   THE GAP is the year the claim was first published against the year of the
- *   retest this entry cites. It is the one fact the prose never states plainly
- *   and the only chart on the page a reader could not get from a sentence: how
- *   long the claim stood before anyone checked. It is omitted, rather than
- *   faked with a placeholder, for the 89 entries where no replication was
- *   located — there is no second date, and inventing an axis for one year is
- *   the kind of decoration this project refuses.
+ *   THE FIELD SPLIT is how this entry's own field divides across the four
+ *   verdicts, with this entry's verdict named. A verdict alone has no scale: a
+ *   reader told "Mixed" cannot know whether that is the usual answer in this
+ *   corner of the literature or an outlier. It is the same `verdictSplit` the
+ *   hubs draw, over this field's entries.
+ *
+ * What is NOT here is the claimed-to-retested gap. It was, briefly, and it was
+ * a duplicate: the Origin section already draws that span with its own caption,
+ * in the section actually about dates. Two charts of one fact on one page is
+ * how a reader starts wondering which of them to believe.
  *
  * @param {object} entry
  * @param {{base:string, entries:object[]}} o `entries` is the whole corpus, for the tally
@@ -522,31 +549,33 @@ function vizCard(entry, { base, entries = [] }) {
       </div>`;
   };
 
-  const gap = () => {
-    const from = Number(entry.origin && entry.origin.year);
-    const to = Number(r.study && r.study.year);
-    if (!Number.isFinite(from) || !Number.isFinite(to) || to <= from) return '';
-    const W = 320;
-    const padX = 26;
-    const X = (yr) => (padX + (W - 2 * padX) * ((yr - from) / (to - from))).toFixed(1);
-    const pts = [[from, 'CLAIMED'], [to, 'RETESTED']];
-    const axis = `<line class="gp-axis" x1="${padX}" y1="42" x2="${W - padX}" y2="42"/>`;
-    const marks = pts.map(([y, role]) => {
-      const px = X(y);
-      return `<g><line class="gp-axis" x1="${px}" y1="38" x2="${px}" y2="46"/>`
-        + `<circle class="gp-dot" cx="${px}" cy="42" r="5"/>`
-        + `<text class="gp-year" x="${px}" y="27" text-anchor="middle">${y}</text>`
-        + `<text class="gp-role" x="${px}" y="60" text-anchor="middle">${role}</text></g>`;
-    }).join('');
-    const years = to - from;
-    return `      <div class="viz-col">
-        <div class="viz-h">The gap</div>
-        <svg class="gap-svg" viewBox="0 0 ${W} 72" width="100%" role="img" aria-label="First published ${from}, retested ${to}">${axis}${marks}</svg>
-        <p class="viz-note"><b>${years} year${years === 1 ? '' : 's'}</b> between the claim and the replication this entry cites.</p>
-      </div>`;
+  // How this entry's own field divides. Drawn with the same verdictSplit the
+  // field hubs use, so a reader who follows the link sees the chart they just
+  // read. The caption names this entry's verdict inside the field rather than
+  // restating the corpus total, which the meter beside it already gives.
+  const fieldSplit = () => {
+    const mine = entries.filter((e) => e.category === entry.category);
+    if (mine.length < 8) return '';
+    const counts = {};
+    for (const e of mine) {
+      const st = (e.replication || {}).state;
+      if (st) counts[st] = (counts[st] || 0) + 1;
+    }
+    const here = counts[r.state] || 0;
+    const name = String(CATEGORIES[entry.category] || entry.category).toLowerCase();
+    const bar = verdictSplit(counts, {
+      base,
+      link: true,
+      labels: false,
+      caption: `${escapeHtml(String(here))} of the ${num(mine.length)} entries in <a href="${base}${fieldPath(entry.category)}">${escapeHtml(name)}</a> share this verdict.`,
+    });
+    if (!bar) return '';
+    return `      <div class="viz-col viz-col--wide">
+        <div class="viz-h">The field</div>
+${bar}      </div>`;
   };
 
-  const inner = meter() + gap();
+  const inner = meter() + fieldSplit();
   return inner ? `        <div class="viz-card" data-reveal>\n${inner}\n        </div>\n` : '';
 }
 
@@ -588,7 +617,7 @@ ${orig ? `          <div class="stat"><span class="s-k">In the original study</s
   const citeText = String(s.cite || '').replace(/\.\s*$/, '');
 
   return `        <p class="lead">${badge} ${escapeHtml(r.headline)}</p>
-${numbers}${effectPlot(r)}${r.detail ? `        <p>${escapeHtml(r.detail)}</p>\n` : ''}        <p class="src-trust">Read off ${cite ? `<a href="${escapeHtml(cite)}" rel="nofollow noopener">${escapeHtml(citeText)}</a>` : escapeHtml(citeText)}${r.indexedBy ? `. Located via ${escapeHtml(r.indexedBy)}, which points at the study; the numbers above are the study's own` : ''}.</p>
+${numbers}${effectPlot(r)}${r.detail ? prose(r.detail) : ''}        <p class="src-trust">Read off${cite ? `<a href="${escapeHtml(cite)}" rel="nofollow noopener">${escapeHtml(citeText)}</a>` : escapeHtml(citeText)}${r.indexedBy ? `. Located via ${escapeHtml(r.indexedBy)}, which points at the study; the numbers above are the study's own` : ''}.</p>
 `;
 }
 
@@ -817,8 +846,17 @@ export function entryPage(entry, { base = '/', origin = '', count = 0, entries =
     ...(examplesBlock(entry, base)
       ? [['Examples', `What are some examples of ${entry.name}?`, examplesBlock(entry, base)]]
       : []),
+    // The longest section in the corpus — `evidence` runs to a median of 330
+    // words and a maximum of 1,058 — and until now the only one of the four
+    // long fields with nothing to break it. `limits` and `misreadings` each
+    // box their opening; this boxes its own, under a mono label, because the
+    // opening of an evidence field is reliably the orienting sentence: how
+    // many studies there were and what they did. A third box style rather than
+    // reusing either callout, since a box that means "read this caveat" and a
+    // box that means "here is the design" should not look the same.
     ['The experiments', `What experiments is ${entry.name} based on?`,
-      prose(entry.evidence) + sourceMix(sources)],
+      setupBox(entry.evidence) + prose(paragraphs(entry.evidence).slice(1).join('\n\n'))
+        + sourceMix(sources)],
     ['Origin', `Who first described ${entry.name}, and when?`, originBlock(entry, r)],
     // Two of the seven sections are not prose about the bias; they are warnings
     // about how to use it. `limits` says where the claim stops holding and

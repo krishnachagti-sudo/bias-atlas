@@ -61,8 +61,13 @@ export const VERDICT_GLOSS = {
  * @param {string} o.base site root
  * @param {string} o.caption the sentence under the bar
  * @param {boolean} o.link whether the legend links to the verdict hubs
+ * @param {boolean} o.labels draw the figure inside each segment. False in a
+ *   narrow column: the threshold below is a percentage of the bar, so a share
+ *   wide enough at full page width is not wide enough at a third of it, and
+ *   the label spills out of its own segment. The legend carries every figure
+ *   either way.
  */
-export function verdictSplit(counts, { base = '/', caption = '', link = true } = {}) {
+export function verdictSplit(counts, { base = '/', caption = '', link = true, labels = true } = {}) {
   const rows = VERDICT_ORDER.map(([state, label, cls]) => [state, label, cls, Number(counts[state] || 0)]);
   const total = rows.reduce((a, r) => a + r[3], 0);
   if (!total) return '';
@@ -75,7 +80,7 @@ export function verdictSplit(counts, { base = '/', caption = '', link = true } =
   const segs = rows.filter((r) => r[3] > 0).map(([, label, cls, v]) => {
     const share = (v / total) * 100;
     return `<span class="vs-seg ${cls}" style="width:${share.toFixed(3)}%"`
-      + `>${share >= LABEL_MIN ? `<span class="vs-lab">${escapeHtml(label)} ${pc(v, total)}%</span>` : ''}</span>`;
+      + `>${labels && share >= LABEL_MIN ? `<span class="vs-lab">${escapeHtml(label)} ${pc(v, total)}%</span>` : ''}</span>`;
   }).join('');
 
   const spoken = rows.filter((r) => r[3] > 0)
