@@ -9,6 +9,7 @@
 
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import { existsSync } from 'node:fs';
 import { readFileSync } from 'node:fs';
 
 import {
@@ -86,10 +87,13 @@ test('the count reads as an em dash before there are entries, never as zero', ()
   assert.match(header({ base: BASE, count: 1116 }), /data-count="1116">1,116</);
 });
 
-test('head emits no link to a feed while no feed is built', () => {
-  // The autodiscovery link is unconditional in the original. Left that way it
-  // is a dead link on every page of the site.
-  assert.doesNotMatch(head({ title: 'x', base: BASE }), /feed\.xml/);
+test('head points at the feed, and the build writes one', () => {
+  // The autodiscovery link is unconditional in the original, and was gated
+  // behind HAS_FEED so it would not be a dead link on every page. The build
+  // emits feed.xml now, so the gate is open and the two must stay in step:
+  // this asserts both halves, because either one alone is a lie.
+  assert.match(head({ title: 'x', base: BASE }), /rel="alternate" type="application\/atom\+xml"[^>]*href="[^"]*feed\.xml"/);
+  assert.ok(existsSync('dist/feed.xml'), 'head offers a feed the build does not write');
 });
 
 test('the FAQ block and its FAQPage say the same thing', () => {

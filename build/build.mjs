@@ -40,6 +40,8 @@ import { quizPage, scorePage } from '../src/templates/quiz.mjs';
 import { ROUND, scoreVerdict } from './quiz.mjs';
 import { entryMarkdown } from './markdown.mjs';
 import { buildApi } from './api.mjs';
+import { buildFeed } from './feed.mjs';
+import { slugify } from './slugify.mjs';
 import { buildLlms, buildLlmsFull } from './llms.mjs';
 import { buildSitemap } from './sitemap.mjs';
 import { buildSearchIndex } from './search-index.mjs';
@@ -297,6 +299,33 @@ writes.push(write(join(out, 'robots.txt'), [
 // fails on. Read off the rendered HTML rather than a list of known exceptions,
 // so a page that gains a `noindex` later drops out of the sitemap by itself.
 const indexable = Object.keys(pages).filter((k) => !/name="robots"[^>]*noindex/.test(pages[k]));
+// Atom feeds. The site-wide one carries the fifty most recent entries by entry
+// number, which is the order they were written; each field gets its own, so a
+// reader who only wants memory research is not made to take all five.
+// `feed.xml` is what the head's `rel="alternate"` points at, so HAS_FEED in
+// partials.mjs and this block have to exist together or one lies about the other.
+const recent = [...entries].sort((a, b) => b.no - a.no);
+writes.push(write(join(out, 'feed.xml'), buildFeed(recent.slice(0, 50), {
+  baseUrl: `${origin}${base}`,
+  title: `${cfg.brand} — latest entries`,
+  subtitle: 'Cognitive biases, each with what happened when the experiments behind it were repeated.',
+  self: 'feed.xml',
+  dates,
+  fallbackDate: buildDate,
+})));
+for (const [key, label] of Object.entries(CATEGORIES)) {
+  const list = recent.filter((e) => e.category === key).slice(0, 50);
+  if (!list.length) continue;
+  writes.push(write(join(out, 'feed', `${slugify(label)}.xml`), buildFeed(list, {
+    baseUrl: `${origin}${base}`,
+    title: `${cfg.brand} — ${label.toLowerCase()}`,
+    subtitle: `Cognitive biases in ${label.toLowerCase()}, with what happened when they were retested.`,
+    self: `feed/${slugify(label)}.xml`,
+    dates,
+    fallbackDate: buildDate,
+  })));
+}
+
 writes.push(write(
   join(out, 'sitemap.xml'),
   buildSitemap(indexable, `${origin}${base}`, dates),

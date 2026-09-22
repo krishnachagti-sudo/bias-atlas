@@ -73,7 +73,7 @@ export const MORE = [
 export const ALL_PAGES = [...NAV, ...MORE];
 
 // Whether build.mjs emits feed.xml. See the autodiscovery link in head().
-const HAS_FEED = false;
+const HAS_FEED = true;
 
 // ---- asset cache-busting ---------------------------------------------------
 // The CSS/JS filenames are stable, so a returning visitor can be served a cached

@@ -244,6 +244,14 @@ ${faq.html}${hubNav(fieldPath(cat), { base })}  </div>
     origin,
     path: fieldPath(cat),
     modified: LASTMOD_TOKEN,
+    // This field's own feed, so a reader who only wants memory research is not
+    // made to subscribe to all five. build.mjs writes one per field at exactly
+    // this path.
+    alternates: [{
+      type: 'application/atom+xml',
+      title: `${label} — latest entries`,
+      href: `${base}feed/${slugify(label)}.xml`,
+    }],
     jsonld: [
       ...hubJsonLd({
         name: label,
