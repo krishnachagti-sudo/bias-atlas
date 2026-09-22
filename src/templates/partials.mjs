@@ -71,6 +71,50 @@ export const MORE = [
   ['privacy', 'privacy/', 'Privacy'],
 ];
 
+
+/**
+ * The footer's three columns.
+ *
+ * One list of every page was right when there were eleven; at twenty-four it is
+ * a wall, and a wall is the same as no navigation. Grouped by what a reader is
+ * trying to do rather than by how the site is built: find an entry, find out
+ * what the index knows about itself, or find out who made it and take the data.
+ *
+ * Every path here is asserted by test against what the build actually emits, so
+ * a column cannot quietly point at a page that was never written.
+ */
+export const FOOT_COLS = [
+  ['Browse', [
+    ['browse/', 'Every entry'],
+    ['situations/', 'Start from what happened'],
+    ['a-z/', 'A to Z'],
+    ['also-known-as/', 'Also known as'],
+    ['collections/', 'Collections'],
+    ['timeline/', 'Timeline'],
+    ['named-by/', 'By who named it'],
+    ['fallacies/', 'The fallacies'],
+  ]],
+  ['Discover', [
+    ['how-solid/', 'How solid is any of this?'],
+    ['effect-sizes/', 'Every measured effect'],
+    ['quiz/', 'Name that bias'],
+    ['embed/', 'Embed a card'],
+    ['print/', 'The printed edition'],
+    ['saved/', 'Saved biases'],
+    ['features/', 'What it does'],
+  ]],
+  ['The project', [
+    ['about/', 'About & method'],
+    ['manifesto/', 'Why this exists'],
+    ['author/', 'Who writes this'],
+    ['data/', 'Download the data'],
+    ['sources/', 'Bibliography'],
+    ['contribute/', 'Send a correction'],
+    ['credits/', 'Credits'],
+    ['privacy/', 'Privacy'],
+  ]],
+];
+
 /** Every page with a URL of its own, for the footer and the hub feet. */
 export const ALL_PAGES = [...NAV, ...MORE];
 
@@ -576,6 +620,60 @@ export function sprite() {
  * @param {string} [o.active]   key of the active nav item
  * @param {number|string} [o.count] published-entry count; em dash when absent
  */
+
+/**
+ * The "More" panel in the masthead.
+ *
+ * The site has twenty-four pages and the masthead holds five. The Tome solves
+ * this with a mega-menu and so does this, with one difference that matters: it
+ * is a <details>, so it opens and closes with no JavaScript at all and is
+ * keyboard-operable for free. A panel that needed a script to open would be
+ * invisible to a reader with JS off and to anything crawling the markup, which
+ * would put nineteen pages behind a door that does not exist for them.
+ *
+ * Each item carries the one-line gloss from the footer's own grouping, because
+ * a bare list of twenty-four names is a puzzle rather than a menu.
+ */
+function moreMenu(base) {
+  const items = FOOT_COLS.flatMap(([, links]) => links)
+    .filter(([path]) => !NAV.some(([, p]) => p === path));
+  const seen = new Set();
+  const uniq = items.filter(([path]) => (seen.has(path) ? false : seen.add(path)));
+  const half = Math.ceil(uniq.length / 2);
+  const col = (list) => list.map(([path, label]) =>
+    `          <a href="${base}${path}"><b>${escapeHtml(label)}</b><span>${escapeHtml(MORE_GLOSS[path] || '')}</span></a>`).join('\n');
+  return `      <details class="navmore">
+        <summary aria-label="More pages">More<svg class="nm-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+        <div class="nm-panel">
+${col(uniq.slice(0, half))}
+${col(uniq.slice(half))}
+        </div>
+      </details>
+`;
+}
+
+/** One line per destination, so the panel is a menu and not a word list. */
+const MORE_GLOSS = {
+  'situations/': 'describe what happened, find the name',
+  'a-z/': 'every entry, alphabetically',
+  'also-known-as/': 'the other names these go under',
+  'collections/': 'cuts through the index, each with its rule',
+  'timeline/': 'decade by decade, and how each held up',
+  'named-by/': 'the researchers who first described them',
+  'fallacies/': 'the reasoning errors in the index',
+  'effect-sizes/': 'original against replication, in one table',
+  'embed/': 'any entry on your own site, one line of HTML',
+  'print/': 'the whole index as one document, for paper',
+  'saved/': 'your shortlist, kept in this browser',
+  'features/': 'everything this index can do',
+  'manifesto/': 'why this exists',
+  'author/': 'who writes and checks it',
+  'sources/': 'every citation, by where it points',
+  'contribute/': 'corrections, gaps, patterns with no name',
+  'credits/': 'what this is built from',
+  'privacy/': 'no ads, no tracking, and what that means',
+};
+
 export function header({ base = '/', active, count } = {}) {
   const nav = NAV
     .map(([key, path, label]) => `        <a href="${base}${path}"${key === active ? ' class="on" aria-current="page"' : ''}>${escapeHtml(label)}</a>`)
@@ -610,7 +708,7 @@ export function header({ base = '/', active, count } = {}) {
     </a>
     <nav class="links" id="primary-nav" aria-label="Primary">
 ${nav}
-    </nav>
+${moreMenu(base)}    </nav>
     <div class="right">
       <a class="count" href="${base}browse/"><span class="count-n"${typeof count === 'number' ? ` data-count="${count}"` : ''}>${c}</span><span class="count-l">entries</span></a>
       <button class="icon-btn" id="theme" type="button" aria-label="Toggle light and dark theme" aria-pressed="false"><svg class="th-ico th-moon" viewBox="0 0 24 24" aria-hidden="true"><use href="#moon"/></svg><svg class="th-ico th-sun" viewBox="0 0 24 24" aria-hidden="true"><use href="#sun"/></svg></button>
@@ -756,10 +854,10 @@ export function footer({ base = '/', scripts = '' } = {}) {
       <p class="foot-conyso">Created by <a href="https://conyso.com/founder/" rel="author">Krishna Chagti</a>.</p>
       <p class="foot-motto">Take nobody’s word for it.</p>
     </div>
-      <nav class="foot-col" aria-label="This site">
-        <h2>This site</h2>
-${ALL_PAGES.map(([, path, label]) => `        <a href="${base}${path}">${escapeHtml(label)}</a>`).join('\n')}
-      </nav>
+${FOOT_COLS.map(([heading, links]) => `      <nav class="foot-col" aria-label="${escapeHtml(heading)}">
+        <h2>${escapeHtml(heading)}</h2>
+${links.map(([path, label]) => `        <a href="${base}${path}">${escapeHtml(label)}</a>`).join('\n')}
+      </nav>`).join('\n')}
   </div>
   <div class="wrap foot-share">
     <span class="fs-lab">Found something worth passing on?</span>

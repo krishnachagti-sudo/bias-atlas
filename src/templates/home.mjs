@@ -31,63 +31,171 @@ import { LASTMOD_TOKEN } from '../../build/lastmod.mjs';
  * @param {number} o.mapped candidate biases identified but not yet written
  */
 
-// ---- what is here, and what is not yet ---------------------------------------
+// ---- the front page's own sections -----------------------------------------
 //
-// The Law Tome's front page lists what the site can do, and it is the single
-// biggest thing this one was missing: a reader who lands on an index of 544
-// entries has no way of knowing there is a quiz, a situation finder, a print
-// edition or an open dataset behind it.
+// Ported section for section from The Law Tome's home page, with two changes
+// that are not cosmetic.
 //
-// The locked tiles are a promise, and promises on a public page are a debt, so
-// two rules. Each one is designed rather than merely wished for — the tensions
-// hub is built and held back, and the comparison pages have their data derived
-// already. And the heading says "not here yet" rather than "being built now",
-// because only one of the four is actually in progress and the other wording
-// would be three quarters false.
+// THE SCALE CLAIM. The Tome leads on being the biggest collection of named
+// laws. The equivalent here is checkable and was checked: Wikipedia's List of
+// cognitive biases carries about 190 names and the Cognitive Bias Codex 188,
+// against 544 here. The counts, their sources and the date they were read live
+// in src/data/comparison.json, and the heading below tracks the data rather
+// than the ambition — if one of them ever overtakes this index the section
+// keeps rendering and stops boasting.
+//
+// AND THE PART THAT IS NOT A COUNT. Being largest is the weaker half. The
+// stronger half is that no public index of cognitive biases says what happened
+// when each one was retested, which is an ABSENCE, and an absence is the
+// hardest thing to assert. So the page does not claim a first. It says what was
+// looked for and links the evidence — a 2020 LessWrong question asking for
+// exactly this list and finding nothing, and FORRT's Replication Database,
+// which is the nearest thing and is organised by study rather than by named
+// effect. A reader can check both in a minute, which is the only version of a
+// superlative this site is entitled to print.
+
+const ICON = (d) => `<svg class="feat-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${d}</svg>`;
+const IC = {
+  feeling: ICON('<path d="M20 14a2 2 0 0 1-2 2H8l-4 4V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2z"/><circle cx="10.5" cy="10" r="2"/><path d="M13.4 12.9l1.8 1.8"/>'),
+  shield: ICON('<path d="M12 3l7 3v5c0 5-3.4 8.2-7 10-3.6-1.8-7-5-7-10V6z"/><path d="M9 12l2 2 4-4.5"/>'),
+  stack: ICON('<path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/>'),
+  clock: ICON('<circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/>'),
+  person: ICON('<circle cx="12" cy="8" r="3.4"/><path d="M5 20c0-3.6 3.1-6 7-6s7 2.4 7 6"/>'),
+  daily: ICON('<circle cx="12" cy="12" r="9"/><path d="M9.2 9.4a2.8 2.8 0 0 1 5.4 1c0 1.8-2.6 2.2-2.6 4"/><circle cx="12" cy="17.5" r="0.6" fill="currentColor"/>'),
+  chart: ICON('<path d="M4 20V10"/><path d="M10 20V4"/><path d="M16 20v-7"/><path d="M22 20H2"/>'),
+  data: ICON('<ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6"/><path d="M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/>'),
+  embed: ICON('<path d="M8.5 8.5L5 12l3.5 3.5"/><path d="M15.5 8.5L19 12l-3.5 3.5"/><path d="M13.5 5l-3 14"/>'),
+  print: ICON('<path d="M7 9V4h10v5"/><rect x="3" y="9" width="18" height="7" rx="1.5"/><path d="M7 16h10v4H7z"/>'),
+  fix: ICON('<path d="M12 3v4"/><path d="M12 17v4"/><circle cx="12" cy="12" r="4"/><path d="M3 12h4"/><path d="M17 12h4"/>'),
+  save: ICON('<path d="M18 7v14l-6-4-6 4V7a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4z"/>'),
+  versus: ICON('<rect x="3" y="5" width="7" height="14" rx="1.2"/><rect x="14" y="5" width="7" height="14" rx="1.2"/><path d="M12 4v16"/>'),
+  tension: ICON('<circle cx="6" cy="6" r="2.3"/><circle cx="6" cy="18" r="2.3"/><path d="M8.3 6H13l3.5 6-3.5 6H8.3"/><path d="M12 12h6"/>'),
+  image: ICON('<rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.6"/><path d="M21 16l-5-5-9 8"/>'),
+  sheet: ICON('<path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4"/><path d="M9 12h6"/><path d="M9 16h6"/>'),
+};
+
 const FEATURES = [
-  ['Browse every entry', 'browse/', 'All 544, filterable by field and by verdict.'],
-  ['Start from what happened', 'situations/', 'Describe the situation, find the name for it.'],
-  ['How solid is any of this?', 'how-solid/', 'What the index says about its own evidence.'],
-  ['Collections', 'collections/', 'Cuts through the index, each computed from a stated rule.'],
-  ['The quiz', 'quiz/', 'Ten questions. The fourth asks whether it replicated.'],
-  ['A timeline of the naming', 'timeline/', 'Every effect placed in the decade it was named.'],
-  ['Every measured effect', 'effect-sizes/', 'Original against replication, in one table.'],
-  ['The dataset', 'data/', 'The whole corpus as JSON, plus a graph and a feed.'],
-  ['Embed a card', 'embed/', 'Any entry on your own site, in one line of HTML.'],
-  ['The printed edition', 'print/', 'The whole index as one document, for paper.'],
-  ['Send a correction', 'contribute/', 'The most useful thing a reader can do.'],
-  ['Saved biases', 'saved/', 'A private shortlist, kept in your browser.'],
+  ['situations/', IC.feeling, 'Describe what happened', 'Don’t know the name? Say what you saw — “we kept paying because we had already spent so much” — and read the closest matches.'],
+  ['how-solid/', IC.shield, 'Replicated, or not?', 'Every entry carries a verdict on the experiments behind it, so you always know whether you are quoting a finding or a story.'],
+  ['collections/', IC.stack, 'Collections', 'Cuts across the index, each computed from a rule printed on the page: the effects that shrank, the ones retested at scale, the failed ones still in circulation.'],
+  ['timeline/', IC.clock, 'A history of the naming', 'Walk the corpus by decade, from the effects named before 1940 to the ones coined in living memory.'],
+  ['named-by/', IC.person, 'By who named it', 'Browse entries under the researchers who first described them.'],
+  ['effect-sizes/', IC.chart, 'Every measured effect', 'The original estimate against the replication, side by side, for every entry where both were reported.'],
+  ['quiz/', IC.daily, 'Test yourself', 'Ten questions a day. Three are recall; the fourth asks what happened when the experiment was repeated, and it is the one that catches people.'],
+  ['data/', IC.data, 'The dataset', 'The whole corpus as JSON, a relationship graph, an Atom feed, and every entry as plain Markdown.'],
+  ['embed/', IC.embed, 'Embed a card', 'Put any entry on your own site in one line of HTML. If the verdict changes, your card changes with it.'],
+  ['print/', IC.print, 'The printed edition', 'The whole index as one document, grouped by field, for paper or a PDF.'],
+  ['contribute/', IC.fix, 'Send a correction', 'The most useful thing a reader can do. Quote the sentence, name a source, and it gets checked.'],
+  ['saved/', IC.save, 'Saved biases', 'A private shortlist kept in your browser. No account, and nothing leaves the device.'],
 ];
 
 const SOON = [
-  ['The pairs that disagree', 'Biases people mix up whose verdicts came out opposite.'],
-  ['Compare two biases', 'Side by side, for the ones that get swapped in an argument.'],
-  ['Portraits and documents', 'The people behind the claims, and the pages they first appeared on.'],
-  ['Cheat sheets', 'One field on one printable page.'],
+  [IC.tension, 'The pairs that disagree', 'Biases people mix up whose verdicts came out opposite — confirmation bias replicated, the backfire effect did not.'],
+  [IC.versus, 'Compare two biases', 'Side by side, for the ones that get swapped in an argument.'],
+  [IC.image, 'Portraits and documents', 'The people behind the claims, and the pages the claims first appeared on.'],
+  [IC.sheet, 'Cheat sheets', 'One field on one printable page.'],
 ];
 
-function featureGrid(base) {
-  const live = FEATURES.map(([t, href, d]) => `      <a class="ft-card" href="${base}${href}">
-        <h3>${escapeHtml(t)}</h3>
-        <p>${escapeHtml(d)}</p>
-      </a>`).join('\n');
-  const soon = SOON.map(([t, d]) => `      <div class="ft-card ft-card--soon" aria-disabled="true">
-        <span class="ft-lock">Coming soon</span>
-        <h3>${escapeHtml(t)}</h3>
-        <p>${escapeHtml(d)}</p>
-      </div>`).join('\n');
-  return `<section class="sec sec--ft">
+/** The scrolling band of names under the hero. */
+function marquee(entries, base) {
+  // Every eighth entry, so the band is a cross-section of the index rather
+  // than the first sixty by number. Duplicated once because a marquee that
+  // does not loop seamlessly reads as a bug.
+  const names = entries.filter((_, i) => i % 8 === 0).slice(0, 60);
+  if (names.length < 8) return '';
+  const run = names.map((e) => `<a href="${base}${entryPath(e)}">${escapeHtml(e.name)}</a>`).join('<span class="mq-dot">·</span>');
+  return `<div class="marquee" aria-hidden="true">
+  <div class="mq-track"><span class="mq-run">${run}</span><span class="mq-run">${run}</span></div>
+</div>
+`;
+}
+
+/** Entry of the day, and the quiz teaser beside it. */
+function daily(entry, base, n) {
+  if (!entry) return '';
+  const r = entry.replication || {};
+  return `<section class="sec home-lotd">
+  <div class="wrap lotd-grid">
+    <div class="lotd">
+      <div class="lotd-eyebrow">Bias of the day</div>
+      <a class="lotd-card" href="${base}${entryPath(entry)}">
+        <div class="lotd-top"><span class="lotd-no">№ ${escapeHtml(String(entry.no))}</span><span class="badge ${REPLICATION_CLASS[r.state] || ''}">${escapeHtml(replicationLabel(r.state) || '')}</span></div>
+        <div class="lotd-name">${escapeHtml(entry.name)}</div>
+        <div class="lotd-say">“${escapeHtml(entry.statement)}”</div>
+      </a>
+      <p class="lotd-aside">A different entry every day.</p>
+    </div>
+    <a class="lotd-daily" href="${base}quiz/">
+      <span class="lotd-eyebrow">Today’s ten</span>
+      <b>Can you say whether it replicated?</b>
+      <span class="lotd-go">Ten questions, the same ten for everybody today. Play →</span>
+    </a>
+  </div>
+</section>
+`;
+}
+
+/** The four things this index claims about itself, each one linked to its proof. */
+function trust(base, count, n) {
+  const cell = (big, label, href) =>
+    `      <a class="ht-cell" href="${base}${href}"><span class="ht-n">${big}</span><span class="ht-l">${label}</span></a>`;
+  return `<section class="sec home-trust">
+  <div class="wrap ht-row">
+${cell(n(count), 'named cognitive biases: more than any other collection we can find', 'browse/')}
+${cell('Retested', 'every entry says what happened when the experiments were repeated', 'how-solid/')}
+${cell('Sourced', 'every claim held against a document that can be fetched and read', 'about/')}
+${cell('Cross-linked', 'a derived graph of what gets confused with what, not a flat list', 'data/')}
+  </div>
+</section>
+`;
+}
+
+/** Scale, as a comparison a reader can check rather than an adjective. */
+function scale(comparison, base, count, n) {
+  const others = (comparison && Array.isArray(comparison.others)) ? comparison.others : [];
+  if (!count || !others.length) return '';
+  const biggest = others.every((o) => count > (o.count || 0));
+  const max = Math.max(count, ...others.map((o) => o.count || 0), 1);
+  const gap = comparison._gap || {};
+  const ev = Array.isArray(gap.evidence) ? gap.evidence : [];
+  const row = (label, v, href, mine, approx) => `        <li class="sc-row${mine ? ' sc-mine' : ''}">
+          <span class="sc-l">${href ? `<a href="${escapeHtml(href)}" rel="nofollow noopener">${escapeHtml(label)}</a>` : escapeHtml(label)}</span>
+          <span class="sc-bar"><i style="width:${Math.max(2, Math.round((v / max) * 100))}%"></i></span>
+          <span class="sc-n">${approx ? 'about ' : ''}${n(v)}</span>
+        </li>`;
+  return `<section class="sec home-scale">
   <div class="wrap">
     <div class="sec-head">
-      <h2>What else is here</h2>
-      <span class="sub">${FEATURES.length} ways in</span>
+      <h2>${biggest ? 'The largest collection of these there is' : 'How this compares'}</h2>
+      <span class="sub">counted ${escapeHtml(String(comparison.checkedOn || ''))}</span>
     </div>
-    <p class="sec-lede">The index is the middle of this, not the whole of it. Everything below reads the same 544 entries a different way.</p>
-    <div class="ft-grid">
+    <ul class="sc-list">
+${row(BRAND, count, '', true, false)}
+${others.map((o) => row(o.name, o.count, o.url, false, o.approx)).join('\n')}
+    </ul>
+    <p class="sc-note">Size is the weaker half of it. The other half is that <b>none of them says whether any of it held up.</b> ${ev[0] ? `Somebody asked for exactly that list <a href="${escapeHtml(ev[0].url)}" rel="nofollow noopener">on LessWrong in 2020</a> and found nothing; the nearest thing is <a href="${escapeHtml((ev[1] || {}).url || '')}" rel="nofollow noopener">FORRT's Replication Database</a>, which this index quotes, and which is organised by study rather than by named effect.` : ''} That is an absence, and an absence is hard to prove — so the evidence is linked rather than asserted, and if somebody points at a prior index that does this, the claim comes off the same day. <a href="${base}how-solid/">How the verdicts work</a>, or <a href="${base}browse/">start reading</a>.</p>
+  </div>
+</section>
+`;
+}
+
+/** The nine ways in, and the four that are not here yet. */
+function featureGrid(base) {
+  const live = FEATURES.map(([href, icon, title, body]) =>
+    `      <a class="feat" href="${base}${href}">${icon}<span class="feat-t">${escapeHtml(title)}</span><span class="feat-b">${escapeHtml(body)}</span></a>`).join('\n');
+  const soon = SOON.map(([icon, title, body]) =>
+    `      <div class="feat feat--soon" aria-disabled="true">${icon}<span class="feat-lock">Coming soon</span><span class="feat-t">${escapeHtml(title)}</span><span class="feat-b">${escapeHtml(body)}</span></div>`).join('\n');
+  return `<section class="sec home-features">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>More than a list</h2>
+      <span class="sub">the things a flat A–Z can’t give you</span>
+    </div>
+    <div class="feat-grid">
 ${live}
     </div>
     <h3 class="ft-soon-h">Not here yet</h3>
-    <div class="ft-grid ft-grid--soon">
+    <div class="feat-grid feat-grid--soon">
 ${soon}
     </div>
   </div>
@@ -95,7 +203,22 @@ ${soon}
 `;
 }
 
-export function homePage({ base = '/', origin = '', entries = [], mapped = 0 } = {}) {
+/** The closing ask. */
+function contributeBand(base) {
+  return `<section class="sec home-cta">
+  <div class="wrap cta-band">
+    <div class="cta-mark" aria-hidden="true">${IC.fix}</div>
+    <div class="cta-body">
+      <h2>Found something here that is wrong?</h2>
+      <p>Quote the sentence and name a source, and it gets checked against that source and fixed. This index is 544 entries written by one person; telling it where it is wrong is the most useful thing a reader can do.</p>
+    </div>
+    <a class="btn solid cta-go" href="${base}contribute/">Send a correction</a>
+  </div>
+</section>
+`;
+}
+
+export function homePage({ base = '/', origin = '', entries = [], mapped = 0, comparison = null, today = null } = {}) {
   const count = entries.length;
   const n = (x) => Number(x).toLocaleString('en-US');
 
@@ -182,7 +305,7 @@ ${searchBox('Search a bias — or describe what you noticed…')}      <button c
     <p class="hero-credit">By <a href="${base}author/" rel="author">Krishna Chagti</a> · <a href="${base}about/">about &amp; method</a></p>
   </div>
 </section>
-`;
+${marquee(entries, base)}`;
 
   const faq = hubFaq([
     {
@@ -212,14 +335,7 @@ ${searchBox('Search a bias — or describe what you noticed…')}      <button c
     : 'nothing published yet'}</span>
     </div>
     <p class="sec-lede">${answer}</p>
-${count > 0 ? verdictSplit(tally, {
-    base,
-    // The single number this index exists to report, and until now the front
-    // page never drew it. The caption names the grey band, because a fourth
-    // colour with no gloss reads as a fourth verdict rather than the absence
-    // of one.
-    caption: `How the ${n(count)} entries stand. "None located" means a search for a replication came up empty, which is a statement about the literature rather than a verdict on the effect.`,
-  }) : ''}${count > 0
+${count > 0
     // `id="grid"` and `data-limit` are what make the search field above this
     // section work. search.js renders its results into `#grid`, and the limit
     // caps the IDLE view at a sample. Every card stays in the markup, so the page
@@ -274,8 +390,12 @@ ${faq.html}  </div>
     + sprite()
     + header({ base, count: count > 0 ? count : null })
     + heroSection
-    + body
+    + daily(today, base, n)
+    + trust(base, count, n)
+    + scale(comparison, base, count, n)
     + featureGrid(base)
+    + body
+    + contributeBand(base)
     + footer({ base, scripts: rotator })
   );
 }

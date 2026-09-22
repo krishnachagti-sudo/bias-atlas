@@ -1,0 +1,38 @@
+{
+  "_note": "The other public collections of cognitive biases, counted so the scale claim on the front page can be checked rather than believed. Every count was read off the source on the date below. These pages grow; when the numbers move, re-count them and change this file rather than the copy that renders it. If any of them ever overtakes this index, the heading stops boasting on its own — see home.mjs.",
+  "checkedOn": "2026-09-22",
+  "others": [
+    {
+      "name": "Wikipedia, List of cognitive biases",
+      "url": "https://en.wikipedia.org/wiki/List_of_cognitive_biases",
+      "count": 190,
+      "approx": true,
+      "note": "Counted across the Estimation, Decision, Hypothesis assessment, Causal attribution, Recall and Opinion reporting sections; the article states no total of its own, and the sections shade into each other, so this is recorded as approximate. Most entries carry a citation. None states whether the finding replicated."
+    },
+    {
+      "name": "The Cognitive Bias Codex",
+      "url": "https://en.wikipedia.org/wiki/List_of_cognitive_biases#Cognitive_Bias_Codex",
+      "count": 188,
+      "approx": false,
+      "note": "Buster Benson's grouping, visualised by John Manoogian III. Listed separately because it is the version most often cited and reproduced, but it is a rendering of the Wikipedia list rather than an independent collection, and it is counted here as one diagram of 188 names with no sources and no verdicts."
+    }
+  ],
+  "_gap": {
+    "claim": "No public index of cognitive biases states what happened when each one was retested.",
+    "evidence": [
+      {
+        "what": "A LessWrong question asking for exactly this and finding nothing",
+        "who": "moderock",
+        "date": "2020-07-04",
+        "url": "https://www.lesswrong.com/posts/YTxfZgNhj7AfKcfZk/replicated-cognitive-bias-list",
+        "quote": "Given the replication crisis in the social sciences, do we have, somewhere, a list of cognitive biases tied to replicated studies? I could be missing something, but I didn't see anything on the Wikipedia page indicating whether or not the results replicated."
+      },
+      {
+        "what": "FORRT's Replication Database, which this index quotes, is the nearest thing and is not an index of biases: it is original findings paired with replications across psychology as a whole.",
+        "url": "https://forrt-replications.shinyapps.io/fred_explorer/",
+        "note": "Its coverage is wider than cognitive bias and it is organised by study rather than by named effect, so it answers a different question."
+      }
+    ],
+    "_discipline": "This is an absence, and an absence is the hardest thing to prove. The page therefore says what was looked for and links the evidence, rather than asserting a first. If somebody points at a prior index that does this, the claim comes off the site the same day."
+  }
+}

@@ -13,7 +13,7 @@ import { existsSync } from 'node:fs';
 import { readFileSync } from 'node:fs';
 
 import {
-  BRAND, NAV, MORE, ALL_PAGES, head, header, footer, clampTitle, escapeHtml, founderNode, founderRef,
+  BRAND, NAV, MORE, ALL_PAGES, FOOT_COLS, head, header, footer, clampTitle, escapeHtml, founderNode, founderRef,
 } from '../src/templates/partials.mjs';
 import { hubFaq, hubNav, hubJsonLd } from '../src/templates/hub.mjs';
 
@@ -36,16 +36,23 @@ test('the title clamp drops the configured brand suffix, not a hardcoded one', (
   assert.doesNotMatch(clamped, new RegExp(BRAND));
 });
 
+// The build emits exactly these page paths. Kept as a literal rather than
+// imported, so adding a nav item without adding the page fails here instead of
+// at deploy time.
+const BUILT = new Set([
+  '', 'browse/', 'how-solid/', 'data/', 'quiz/', 'about/',
+  'contribute/', 'saved/', 'author/', 'features/', 'sources/', 'manifesto/', 'credits/', 'privacy/',
+  'situations/', 'a-z/', 'also-known-as/', 'collections/', 'timeline/', 'named-by/', 'fallacies/',
+  'effect-sizes/', 'embed/', 'print/',
+]);
+
 test('every nav destination is one the site actually builds', () => {
   // The build emits exactly these page paths. Kept as a literal rather than
   // imported, so adding a nav item without adding the page fails here instead
   // of at deploy time.
   // ALL_PAGES rather than NAV: the footer and the hub feet link the pages the
   // masthead has no room for, and a dead link there is just as dead.
-  const BUILT = new Set([
-    '', 'browse/', 'how-solid/', 'data/', 'quiz/', 'about/',
-    'contribute/', 'saved/', 'author/', 'features/', 'sources/', 'manifesto/', 'credits/', 'privacy/',
-  ]);
+
   for (const [, href] of ALL_PAGES) {
     assert.ok(BUILT.has(href), `nav points at ${href}, which nothing builds`);
   }
@@ -63,8 +70,21 @@ test('the masthead stays short, and everything else is still reachable', () => {
     .map((m) => m[1])
     .filter((u) => u.startsWith(BASE))
     .map((u) => u.slice(BASE.length));
-  assert.deepEqual([...new Set(hrefs)].sort(), ['', 'about/', 'browse/', 'data/', 'how-solid/', 'quiz/']);
+  // The masthead now also carries the More panel, so the header holds every
+  // page rather than five. What must stay short is the LINK ROW.
   assert.ok(NAV.length <= 5, `${NAV.length} items in the masthead`);
+  for (const [, href] of NAV) assert.ok(hrefs.includes(href), `${href} missing from the masthead`);
+
+  // Every page in the footer's columns must actually be built, and the More
+  // panel must offer everything the masthead does not.
+  const footPaths = FOOT_COLS.flatMap(([, links]) => links.map(([p]) => p));
+  for (const p of footPaths) assert.ok(BUILT.has(p), `footer points at ${p}, which nothing builds`);
+  const navPaths = new Set(NAV.map(([, p]) => p));
+  const panel = h.slice(h.indexOf('nm-panel'));
+  for (const p of new Set(footPaths)) {
+    if (navPaths.has(p)) continue;
+    assert.ok(panel.includes(`href="${BASE}${p}"`), `${p} is in the footer but not in the More panel`);
+  }
 
   // No page may sit in both lists, or the footer renders it twice.
   const navHrefs = new Set(NAV.map(([, href]) => href));

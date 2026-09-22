@@ -97,6 +97,7 @@ const entries = loadCorpus({ today: buildDate });
 // How the entries connect, derived from what they already say. Built once here
 // because both the per-entry rail and graph.json read it.
 const graph = buildGraph(entries);
+const COMPARISON = JSON.parse(await readFile(new URL('../src/data/comparison.json', import.meta.url), 'utf8'));
 // Biases identified as candidates: the pool the entries are written from.
 //
 // This was the literal `177`, and it went stale in the worst way a number can.
@@ -120,7 +121,16 @@ const MAPPED = new Set(
 // ---- pages -----------------------------------------------------------------
 // path (base-relative, '' for the root) -> rendered HTML, tokens intact.
 const pages = {
-  '': homePage({ base, origin, entries, mapped: MAPPED }),
+  '': homePage({
+    base,
+    origin,
+    entries,
+    mapped: MAPPED,
+    // Counted off the source pages on the date inside the file. See the scale
+    // section in home.mjs for why this is data and not copy.
+    comparison: COMPARISON,
+    today: entries[dayIndex(buildDate, entries.length)],
+  }),
   'browse/': browsePage({ base, origin, entries, mapped: MAPPED }),
   'about/': aboutPage({ base, origin, mapped: MAPPED, count: entries.length }),
   // The pages that are about the index rather than about a bias. Every figure on
