@@ -108,3 +108,39 @@ test('the cross-site link is absolute and points at the Tome', (t) => {
   const html = readFileSync('dist/bias/dunning-kruger-effect/index.html', 'utf8');
   assert.match(html, /href="https:\/\/conyso\.com\/lawtome\/laws\/dunning-kruger-effect\/"/);
 });
+
+test('a shared entry bids for the replication query, not the definition', (t) => {
+  if (!BUILT) return t.skip('no dist/ — run `npm run build` first');
+  // The Tome titles its 131 shared pages "X: Meaning, Examples & Origin". A
+  // title here that also led with the bare name put two sites by the same
+  // author in front of one search. Shared pages lead with the question only
+  // this index answers; the other 413 keep the name, because there is nothing
+  // to cede.
+  const shared = new Set(doc.pairs.map((p) => p.slug));
+  let checkedShared = 0;
+  let checkedSolo = 0;
+  for (const e of entries) {
+    const html = readFileSync(`dist/bias/${e.slug}/index.html`, 'utf8');
+    const title = (html.match(/<title>([^<]*)<\/title>/) || [])[1] || '';
+    if (shared.has(e.slug)) {
+      assert.match(title, /Did It Replicate\?/, `${e.slug} shares with the Tome but bids on the name`);
+      checkedShared++;
+    } else {
+      assert.doesNotMatch(title, /Did It Replicate\?/, `${e.slug} is not shared and needs no hedge`);
+      checkedSolo++;
+    }
+  }
+  assert.equal(checkedShared, doc.pairs.length);
+  assert.ok(checkedSolo > 380, `only ${checkedSolo} unshared entries`);
+});
+
+test('a shared description leads with the verdict, not the statement', (t) => {
+  if (!BUILT) return t.skip('no dist/ — run `npm run build` first');
+  // The Tome's description already opens with the statement. Opening with it
+  // here too is the same snippet twice for the same query.
+  for (const p of doc.pairs.slice(0, 40)) {
+    const html = readFileSync(`dist/bias/${p.slug}/index.html`, 'utf8');
+    const d = (html.match(/name="description" content="([^"]*)"/) || [])[1] || '';
+    assert.match(d, /^Did /, `${p.slug} description opens "${d.slice(0, 40)}"`);
+  }
+});

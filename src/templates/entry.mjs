@@ -763,7 +763,28 @@ ${sources.map((s, i) => {
     },
   ], { heading: `About ${entry.name}` });
 
-  const description = `${entry.statement} ${r.headline}`;
+  // WHAT THE PAGE IS BIDDING FOR, and why it differs on 131 of the 544.
+  //
+  // The Law Tome covers 131 of these entries too, and its pages are titled
+  // "X: Meaning, Examples & Origin" — the definitional query. A title here that
+  // also led with the bare name put two sites by the same author in front of
+  // the same search for the same words, which is the two of them splitting one
+  // result rather than holding two.
+  //
+  // So where the Tome covers it, this page leads with the question only this
+  // index answers: did it replicate. Where it does not — the other 413 — there
+  // is nothing to cede and the name leads, as before. The description follows
+  // the same rule: the verdict first on a shared entry, because the Tome's
+  // description already opens with the statement.
+  //
+  // This is differentiation by INTENT, not by topic. Neither page gives up any
+  // content. It is also a hypothesis that cannot be checked until Search
+  // Console exists, and is written down here so it can be undone if it is wrong.
+  const shared = Boolean(tome && tome.tome);
+  const verdictWord = TITLE_VERDICT[r.state] || 'what replication found';
+  const description = shared
+    ? `Did ${entry.name} replicate? ${r.headline} ${entry.statement}`
+    : `${entry.statement} ${r.headline}`;
 
   // The reading-progress bar. `.progress` has always been in the stylesheet and
   // was never rendered, so entry pages showed no reading position at all. It is
@@ -813,7 +834,14 @@ ${asideRail(entry, { base, origin, siblings, related, tome })}    </div>
       // line a search result actually shows. The phrasing states the finding
       // rather than editorialising on it — "did not replicate", never "debunked"
       // — and every one fits the 60-character budget, the longest at 57.
-      title: `${entry.name} — ${TITLE_VERDICT[r.state] || 'what replication found'} | ${BRAND}`,
+      // "Did <name> replicate?" needs an article for some names and not
+      // others — "did the Barnum effect" but "did sunk cost" — and getting it
+      // wrong on 131 titles is worse than not trying. Colon form sidesteps it,
+      // works for every name, and mirrors the shape the Tome already uses for
+      // the definitional intent ("X: Meaning, Examples & Origin").
+      title: shared
+        ? `${entry.name}: Did It Replicate? | ${BRAND}`
+        : `${entry.name} — ${verdictWord} | ${BRAND}`,
       description,
       base,
       origin,
