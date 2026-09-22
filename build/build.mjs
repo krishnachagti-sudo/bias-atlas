@@ -57,6 +57,7 @@ import { buildApi } from './api.mjs';
 import { buildFeed } from './feed.mjs';
 import { buildGraph, graphJson, relatedTo } from './graph.mjs';
 import { contradictions } from './contradictions.mjs';
+import { unnoted } from './unnoted-sources.mjs';
 import { slugify } from './slugify.mjs';
 import { buildLlms, buildLlmsFull } from './llms.mjs';
 import { buildSitemap } from './sitemap.mjs';
@@ -568,6 +569,16 @@ if (leaked.length) {
 const conflicts = contradictions(entries);
 if (conflicts.length) {
   console.warn(`sources: ${conflicts.length} DOIs are recorded as obtained by one entry and not obtained by another (npm run contradictions)`);
+}
+
+// Entries whose sources say nothing about how they were obtained. The
+// provenance note is what makes a source checkable, and an entry with none is
+// one nobody can audit. Reported, never enforced: closing this means going and
+// getting the document, and writing "read in full" for a paper nobody opened
+// would be the exact fabrication this index exists to refuse.
+const prov = unnoted(entries);
+if (prov.silent.length || prov.partial.length) {
+  console.warn(`sources: ${prov.silent.length} entries note provenance on none of their sources, ${prov.partial.length} on only some (npm run unnoted)`);
 }
 
 const cs = cardStats();

@@ -107,12 +107,30 @@ tuning in the dark.
 
 ## 7. Smaller, known
 
-- **OG cards rebuild on every text change** — open. 33 MB, no input hashing, so
-  deploys get slower as the corpus grows.
-- **37 orphaned CSS classes** — open. `npm run css` reports them.
-- **429 sources in 232 entries say "paywall" without naming the block** — open.
-- **Cross-entry contradictions list** — open. `npm run contradictions` finds 38
-  DOIs whose notes disagree between entries; nothing consumes the output.
+- **OG cards rebuild on every text change** — built. They are cached on a hash
+  of each card's SVG, outside dist/, so a card whose entry or template changed
+  gets a new key and a stale card cannot be served. 27s cold, 9s warm; CI
+  restores the cache. Verified byte-identical against fresh renders.
+- **Orphaned CSS classes** — built, partly. 37 down to 34, and four of the
+  original list were false positives worth recording: `gnode-focus` and
+  `line-tension` exist only at runtime inside graph.js, while `coin` and
+  `hscroll` looked used because the JS contains "coincidence" and the
+  `[data-hscroll]` attribute. The remaining ones are grouped and multi-line
+  rules; the brace-walking pruner that would reach them produced an unbalanced
+  stylesheet and was reverted. Inert rules beat a stylesheet the browser stops
+  parsing halfway down.
+- **Cross-entry contradictions** — built. `npm run contradictions` is now a
+  module and the build warns on every run: 38 DOIs are recorded as obtained by
+  one entry and not obtained by another. Not a page — a reader has no use for
+  the corpus's bookkeeping disagreeing with itself.
+- **Sources with no provenance note** — open, and the one item on this list
+  that code cannot close. 27 entries say nothing about how any source was
+  obtained and 245 say it on some and not others. The note is what makes a
+  source checkable, and filling one means going and getting the document:
+  writing "read in full" for a paper nobody opened is the exact fabrication
+  this index exists to refuse. The build now reports both counts so the number
+  cannot drift unnoticed. (The old wording here — "429 sources say paywall
+  without naming the block" — was wrong: exactly one source mentions a paywall.)
 
 ## 9. Two datasets the corpus holds and no page reads
 
