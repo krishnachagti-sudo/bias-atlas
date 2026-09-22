@@ -873,14 +873,76 @@ ${scripts ? scripts + '\n' : ''}</body>
 `;
 }
 
-// The portrait, credit and figure-strip helpers are NOT here.
+// The portrait, figure and credit helpers. They were deliberately absent until
+// this site had images of its own — copying the Tome's renderer without the
+// credits page it feeds would have breached the terms its files are published
+// under. This corpus now has its own harvested manifest (build/fetch-images.py)
+// and its own credits page, which was the stated condition for their return.
 //
-// They read src/data/images.json, which records a licence, an author and a
-// source URL for each of 1,026 Wikimedia files matched to specific people. None
-// of that transfers: the files depict The Law Tome's namesakes, several are
-// share-alike, and copying the renderer without the credits page it feeds would
-// breach the terms the images are published under. When this site has its own
-// harvested images and its own credits page, the helpers come back with them.
+// WHAT A PORTRAIT HERE IS ALLOWED TO CLAIM, which is narrower than in the Tome.
+// That corpus has `namedAfter`: the law carries the person's name, so a face
+// beside "Goodhart's Law" claims only what the title already says. This corpus
+// has `origin.who` — whoever FIRST DESCRIBED the effect — and /credits/ argued
+// at length that no portrait belonged here at all, because naming and
+// describing come apart: several of these effects were named by one person and
+// demonstrated by another, and a few are named for somebody who never used the
+// term.
+//
+// That argument is right about the caption and wrong about the picture. So the
+// caption says exactly what the corpus holds, "first described by", and never
+// "named after"; the fetcher refuses any portrait whose subject's own article
+// does not name the bias; and a figure — a diagram of the effect itself — makes
+// no authorship claim and carries no such restriction.
+
+/** Fold a person's name to the slug the image manifest is keyed by. */
+export function personSlug(person) {
+  return String(person || '')
+    .normalize('NFD').replace(/[̀-ͯ]/g, '')
+    .replace(/[^a-zA-Z0-9]+/g, '-').replace(/^-+|-+$/g, '').toLowerCase();
+}
+
+/** The manifest entry for a person, or null when there is no verified image. */
+export function personImage(images, person) {
+  const people = (images && images.people) || {};
+  return people[personSlug(person)] || null;
+}
+
+/** The manifest entry for an entry's own figure, or null. */
+export function figureImage(images, slug) {
+  const figures = (images && images.figures) || {};
+  return figures[slug] || null;
+}
+
+/**
+ * A portrait. `alt` names the person: a screen reader announcing "image" beside
+ * a caption that already says who it is has told the reader nothing.
+ */
+export function portrait(img, { base = '/', small = false, alt = '' } = {}) {
+  if (!img) return '';
+  const file = `${img.slug}${small ? '-sm' : ''}.webp`;
+  const w = small ? 72 : (img.width || 320);
+  const h = small ? 72 : (img.height || 320);
+  return `<img class="portrait${small ? ' portrait--sm' : ''}" src="${base}assets/img/people/${escapeHtml(file)}"`
+    + ` width="${w}" height="${h}" loading="lazy" decoding="async"`
+    + ` alt="${escapeHtml(alt || img.person || '')}">`;
+}
+
+/**
+ * The credit a licence obliges us to show: who made it, under what, and where
+ * it came from. Rendered beside every image on the site. A CC-BY or share-alike
+ * file shown without attribution is simply used without permission — and an
+ * index whose whole argument is that claims should be checkable cannot put up a
+ * picture nobody can trace.
+ */
+export function imageCredit(img) {
+  if (!img) return '';
+  const licence = img.licenceUrl
+    ? `<a href="${escapeHtml(img.licenceUrl)}" rel="license nofollow noopener">${escapeHtml(img.licence)}</a>`
+    : escapeHtml(img.licence);
+  const who = escapeHtml(img.artist || 'Unknown');
+  const src = img.source ? ` · <a href="${escapeHtml(img.source)}" rel="nofollow noopener">source</a>` : '';
+  return `<span class="img-credit">${who} · ${licence}${src}</span>`;
+}
 
 /**
  * The share row.

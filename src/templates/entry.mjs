@@ -26,6 +26,7 @@
 
 import {
   head, sprite, header, footer, escapeHtml, shareRow, BRAND, founderRef, asset,
+  personImage, figureImage, portrait, imageCredit,
 } from './partials.mjs';
 import { hubFaq, hubJsonLd } from './hub.mjs';
 import { CATEGORIES } from '../../build/corpus.mjs';
@@ -164,6 +165,32 @@ function setupBox(text) {
           <span class="setup-k">The design</span>
           <p class="setup-v">${escapeHtml(first)}</p>
         </div>
+`;
+}
+
+/**
+ * The entry's own figure: the diagram, plate or apparatus photograph from the
+ * bias's own Wikipedia article, verified and licensed by build/fetch-images.py.
+ *
+ * Placed after "What it claims" and before the verdict card, which is the point
+ * on the page where a reader has just been told what the effect is and has not
+ * yet been told whether it held. A picture of the effect belongs there and
+ * nowhere else: further down it competes with the forest plot, which is a
+ * chart of this corpus's own numbers and outranks an illustration.
+ *
+ * The credit is not optional decoration. Several of these files are CC-BY or
+ * share-alike, and a share-alike image published without attribution is used
+ * without permission.
+ */
+function figureBlock(img, { base, name }) {
+  if (!img) return '';
+  return `        <figure class="entryfig">
+          <img src="${base}assets/img/figures/${escapeHtml(img.slug)}.webp"
+               width="${img.width || 640}" height="${img.height || 640}"
+               loading="lazy" decoding="async"
+               alt="${escapeHtml(`Illustration from the Wikipedia article on ${name}`)}">
+          <figcaption>${escapeHtml(name)} — ${imageCredit(img)}</figcaption>
+        </figure>
 `;
 }
 
@@ -647,7 +674,7 @@ ${numbers}${effectPlot(r)}${r.detail ? prose(r.detail) : ''}        <p class="sr
  * Nothing here repeats the fact strip: verdict, year, field, source count and
  * last-checked date are all already tiles above.
  */
-function asideRail(entry, { base, origin = '', related = [], siblings, tome = null }) {
+function asideRail(entry, { base, origin = '', related = [], siblings, tome = null, images = null }) {
   const s = entry.replication && entry.replication.study;
   const panels = [];
 
@@ -683,6 +710,32 @@ function asideRail(entry, { base, origin = '', related = [], siblings, tome = nu
       ? `<a href="${escapeHtml(href)}" rel="nofollow noopener">${escapeHtml(s.cite)}</a>`
       : escapeHtml(s.cite)}</p>
 ${figures.length ? `        <p class="rep-fig">${escapeHtml(figures.join(' · '))}</p>\n` : ''}      </div>`);
+  }
+
+  // The person who first described the effect, where a verified portrait of
+  // them exists.
+  //
+  // The heading is "First described by" and not "Named after", and the
+  // difference is the whole reason /credits/ spent a paragraph arguing this
+  // panel should not exist. Naming and describing come apart constantly in this
+  // corpus: plenty of these effects were demonstrated by one person and
+  // christened by another, and a few carry the name of somebody who never used
+  // the term. So the caption claims only what `origin.who` claims, which is
+  // authorship of the first description and nothing more.
+  //
+  // Only the FIRST name listed gets a face. `origin.who` runs to eight authors
+  // on some entries, and a rail of eight photographs would be a group portrait
+  // of a paper rather than a way into an idea.
+  const firstAuthor = String((entry.origin || {}).who || '')
+    .split(/,\s*and\s+|\s+and\s+|,\s*/)[0].trim();
+  const face = firstAuthor ? personImage(images, firstAuthor) : null;
+  if (face) {
+    panels.push(`      <div class="panel panel--face">
+        <h3>First described by</h3>
+        ${portrait(face, { base, alt: face.person })}
+        <p class="face-n">${escapeHtml(face.person)}</p>
+        <p class="face-c">${imageCredit(face)}</p>
+      </div>`);
   }
 
   // The entries this one's own prose names. Every item is derived from a
@@ -782,7 +835,7 @@ ${panels.join('\n')}
       </aside>\n`;
 }
 
-export function entryPage(entry, { base = '/', origin = '', count = 0, entries = [], related = [], tome = null } = {}) {
+export function entryPage(entry, { base = '/', origin = '', count = 0, entries = [], related = [], tome = null, images = null } = {}) {
   const path = entryPath(entry);
   const r = entry.replication;
   const field = CATEGORIES[entry.category] || entry.category;
@@ -841,7 +894,8 @@ export function entryPage(entry, { base = '/', origin = '', count = 0, entries =
       // finished 200 words of prose and has not yet been given anything to
       // look at. Measured against the Tome's law page, an entry here ran nine
       // unbroken drop-capped sections; that page breaks at exactly this point.
-      vizCard(entry, { base, entries })],
+      figureBlock(figureImage(images, entry.slug), { base, name: entry.name })
+        + vizCard(entry, { base, entries })],
     ['Does it replicate?', `Has ${entry.name} been retested?`, replicationBlock(r, { base })],
     ...(examplesBlock(entry, base)
       ? [['Examples', `What are some examples of ${entry.name}?`, examplesBlock(entry, base)]]
@@ -969,7 +1023,7 @@ ${b.after}`).join('')}
 
 
 ${faq.html}${prevnext}      </div>
-${asideRail(entry, { base, origin, siblings, related, tome })}    </div>
+${asideRail(entry, { base, origin, siblings, related, tome, images })}    </div>
   </div>
 `;
 

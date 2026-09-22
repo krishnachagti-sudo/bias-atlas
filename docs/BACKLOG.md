@@ -44,9 +44,27 @@ The pages a reader actually lands on, and the thickest remaining gap.
   the Tome gives them full cards, which is what makes them get clicked.
 - **Previous and next entry** — built. Renders on every entry, by corpus
   number, not wrapped at the ends: № 544 is not next to № 1.
-- **Portraits and first-publication scans** — blocked. The corpus holds no
-  images and there is no licensing pipeline. The Tome has 1,026 verified
-  public-domain images and a credits page; that is a project of its own.
+- **Imagery** — built, blocked on network. The pipeline exists:
+  `build/fetch-images.py` harvests from Wikimedia Commons, refuses any licence
+  that does not permit republication, refuses any portrait whose subject's own
+  article does not name the bias, and records author, licence and source for
+  every file. The renderers, the entry-page figure, the rail portrait, the
+  credits table and fifteen tests are all in place, and the site degrades to
+  exactly its previous appearance when the manifest is empty — which it
+  currently is.
+
+  What is blocked is only the harvesting. Wikimedia rate-limits this sandbox's
+  egress to roughly one successful request a minute across every host it
+  serves, and a run needs several thousand. Measured: at twelve seconds between
+  calls, four of five still returned 429. The run checkpoints every success and
+  skips anything already in the manifest, so it can be started, stopped and
+  resumed from any machine with ordinary network access:
+
+      python3 build/fetch-images.py --mode figures   # one per bias, from its own article
+      python3 build/fetch-images.py                  # portraits, from origin.who
+      python3 build/fetch-images.py --mode artifacts # diagrams further down the article
+
+  Commit `src/data/images.json` and `src/assets/img/` when it has run.
 
 ## 3. Comparison pages
 

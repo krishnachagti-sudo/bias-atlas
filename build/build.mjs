@@ -104,6 +104,14 @@ const CROSSWALK = new Map(
   JSON.parse(await readFile(new URL('../src/data/crosswalk.json', import.meta.url), 'utf8'))
     .pairs.map((p) => [p.slug, p]),
 );
+// Verified, licensed imagery. Curated out of band by build/fetch-images.py and
+// committed, because harvesting is slow, heavily rate-limited and must never
+// run inside a deploy. An absent or unreadable manifest is not an error: the
+// site renders without pictures, which is how it rendered before there were
+// any, and a half-written manifest must not be able to fail a build.
+const IMAGES = await readFile(new URL('../src/data/images.json', import.meta.url), 'utf8')
+  .then((t) => JSON.parse(t))
+  .catch(() => ({ people: {}, figures: {} }));
 // Biases identified as candidates: the pool the entries are written from.
 //
 // This was the literal `177`, and it went stale in the worst way a number can.
@@ -146,7 +154,7 @@ const pages = {
   'sources/': sourcesPage({ base, origin, entries }),
   'manifesto/': manifestoPage({ base, origin, entries }),
   'features/': featuresPage({ base, origin, entries }),
-  'credits/': creditsPage({ base, origin, entries }),
+  'credits/': creditsPage({ base, origin, entries, images: IMAGES }),
   'author/': authorPage({ base, origin, entries }),
   'privacy/': privacyPage({ base, origin, entries }),
 };
@@ -164,6 +172,7 @@ for (const e of entries) {
       .filter((x) => x.kind === 'confused-with')
       .map((x) => ({ slug: x.to, name: (graph.bySlug.get(x.to) || {}).name || x.to, why: x.why })),
     tome: CROSSWALK.get(e.slug) || null,
+    images: IMAGES,
   });
 }
 

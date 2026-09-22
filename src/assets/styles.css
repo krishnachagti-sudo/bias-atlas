@@ -714,6 +714,30 @@ a.stat--link .s-k::after{content:" →";letter-spacing:0;opacity:.55}
 .callout p{margin:0;font-size:16.5px;line-height:1.76;color:var(--read)}
 .callout--key{border-left-color:var(--accent);background:var(--accent-soft)}
 .callout--key .co-ic{color:var(--accent)}
+/* ---- verified imagery -----------------------------------------------------
+   Every file is harvested and licence-checked by build/fetch-images.py and
+   carries its credit in the markup beside it. Greyscale is not a style choice
+   made blind: the sources span a century of photographs, engravings and
+   diagrams with wildly different colour casts, and left alone they make a page
+   look like a scrapbook. Desaturating is the one treatment that lets a 1940s
+   plate and a 2019 chart sit in the same column. */
+.entryfig{margin:0 0 36px;background:var(--surface);border:1px solid var(--line);
+  border-radius:3px;padding:16px}
+.entryfig img{display:block;width:100%;height:auto;border-radius:2px}
+.entryfig figcaption{margin-top:11px;font-family:var(--mono);font-size:10px;line-height:1.55;
+  letter-spacing:.02em;color:var(--faint);overflow-wrap:anywhere}
+.portrait{display:block;width:100%;height:auto;border-radius:2px;
+  filter:grayscale(1) contrast(1.02);transition:filter .25s}
+.panel--face:hover .portrait{filter:none}
+.face-n{margin:10px 0 0;font-family:var(--serif);font-size:15px;color:var(--ink)}
+/* `overflow-wrap:anywhere` because a credit carries a Commons permalink, one
+   long token with nothing in it a line may break at — the same thing that set a
+   290px floor on the Tome's entry pages and zoomed them out on a phone. */
+.face-c,.img-credit{display:block;font-family:var(--mono);font-size:10px;line-height:1.5;
+  color:var(--faint);overflow-wrap:anywhere}
+.face-c{margin:5px 0 0}
+.img-credit a{color:inherit;text-decoration:underline}
+
 /* The design box, at the head of "The experiments". A third box shape rather
    than a third callout colour: a callout means "read this caveat", and the
    opening of an evidence field is not a caveat, it is the specification —

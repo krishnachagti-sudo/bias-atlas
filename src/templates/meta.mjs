@@ -505,7 +505,53 @@ ${faq.html}${hubNav('privacy/', { base })}  </div>
  * credits page whose claims cannot be verified is worse than no credits page,
  * because it is the one page whose entire job is being accurate about others.
  */
-export function creditsPage({ base = '/', origin = '', entries = [] } = {}) {
+/**
+ * Every image on the site, with the credit its licence requires.
+ *
+ * This table is not a nicety. Several of these files are CC-BY or share-alike,
+ * and those licences oblige attribution: a file shown without it is used
+ * without permission. It is generated from the manifest rather than written,
+ * so a file cannot be published here and go uncredited, and the count cannot
+ * go stale.
+ *
+ * When there are no images the table is replaced by a plain statement that
+ * there are none, which is the honest thing for a page whose job is to say
+ * what the site is made of.
+ */
+function imageCreditRows(images, base) {
+  const people = Object.values((images && images.people) || {});
+  const figures = Object.values((images && images.figures) || {});
+  const all = [
+    ...figures.map((f) => ['Figure', f.entry || f.slug, f]),
+    ...people.map((p) => ['Portrait', p.person || p.slug, p]),
+  ].filter(([, , img]) => img && img.licence);
+  if (!all.length) {
+    return `    <p class="vd-p">No images are published yet. The harvester
+      (<code>build/fetch-images.py</code>) is written and every file it accepts will
+      be listed here with its author, licence and source before it appears on a page.</p>
+`;
+  }
+  all.sort((a, b) => String(a[1]).localeCompare(String(b[1])));
+  return `    <p class="vd-p">${n(all.length)} image${all.length === 1 ? '' : 's'}, every one from Wikimedia Commons under a licence that permits republication. Author, licence and the file's own page are given for each.</p>
+    <table class="vtable">
+      <caption>Every image published on this site.</caption>
+      <thead><tr><th scope="col">Kind</th><th scope="col">Subject</th><th scope="col">Author</th><th scope="col">Licence</th><th scope="col">Source</th></tr></thead>
+      <tbody>
+${all.map(([kind, subject, img]) => `        <tr>
+          <td>${escapeHtml(kind)}</td>
+          <th scope="row">${escapeHtml(String(subject))}</th>
+          <td>${escapeHtml(img.artist || 'Unknown')}</td>
+          <td>${img.licenceUrl
+    ? `<a href="${escapeHtml(img.licenceUrl)}" rel="license nofollow noopener">${escapeHtml(img.licence)}</a>`
+    : escapeHtml(img.licence)}</td>
+          <td>${img.source ? `<a href="${escapeHtml(img.source)}" rel="nofollow noopener">file</a>` : '—'}</td>
+        </tr>`).join('\n')}
+      </tbody>
+    </table>
+`;
+}
+
+export function creditsPage({ base = '/', origin = '', entries = [], images = null } = {}) {
   const answer = `This site is built from other people's work in four places: two typefaces under the Open Font Licence, an icon set under MIT, the replication database the verdicts are quoted from, and the Wikipedia lists the candidate set was drawn from.`;
 
   const ROWS = [
@@ -580,8 +626,10 @@ ${ROWS.map(([name, use, lic, href, label]) => `          <tr>
       </tbody>
     </table>
 
-    <h2 class="vd-h">About the absence of imagery</h2>
-    <p class="vd-p">A cognitive bias has no portrait. The people who named these effects are mostly living psychologists, and an index that illustrated each entry with a photograph of its author would be making a claim about authorship that the history often does not support — many of these effects were named by one person and demonstrated by another, and several are named after somebody who never used the term. The charts on the entry pages are drawn from the effect sizes in the corpus and are not illustrations; there is nothing decorative on this site to credit.</p>
+    <h2 class="vd-h">Imagery</h2>
+    <p class="vd-p">This page used to argue that a cognitive bias has no portrait, and that illustrating an entry with a photograph of its author would make a claim about authorship the history often does not support: many of these effects were named by one person and demonstrated by another, and several are named after somebody who never used the term. That argument was right about the caption and wrong about the picture, so both have changed rather than only one.</p>
+    <p class="vd-p">A face on an entry is captioned <b>first described by</b>, never <q>named after</q>, because the corpus records the first description and not the christening. A portrait is accepted only when the person's own encyclopedia article names the bias, which is the defence against publishing a photograph of a different person with the same name; where that test fails the entry simply has no face. A figure is a diagram of the effect itself and makes no authorship claim at all.</p>
+${imageCreditRows(images, base)}
 
     <h2 class="vd-h">The text</h2>
     <p class="vd-p">Written by <a href="https://conyso.com/founder/" rel="author">Krishna Chagti</a> and licensed <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">CC BY 4.0</a>. The sources each entry rests on are listed on the entry itself and, in bulk, in <a href="${base}data/">the dataset</a>. Quotations from those sources remain the property of their authors and are used as citations.</p>
