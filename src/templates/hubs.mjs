@@ -31,6 +31,7 @@ import { CATEGORIES } from '../../build/corpus.mjs';
 import { LASTMOD_TOKEN } from '../../build/lastmod.mjs';
 import { slugify } from '../../build/slugify.mjs';
 import { verdictSlug, verdictPath, fieldPath, personPath, decadePath } from './paths.mjs';
+import { verdictSplit, countBars, stackedRowBar } from './charts.mjs';
 
 export { verdictSlug, verdictPath, fieldPath, personPath, decadePath };
 
@@ -159,7 +160,17 @@ ${hubHead({
       [n(byField.size), byField.size === 1 ? 'field' : 'fields'],
     ],
     lede: copy.lede,
-  })}${grid(list, base)}
+  })}${countBars(
+    [...byField].sort((a, b) => b[1] - a[1]).map(([cat, v]) => [CATEGORIES[cat] || cat, v, fieldPath(cat)]),
+    {
+      base,
+      unit: 'Entries',
+      // Says what the shape is NOT, because the obvious misreading of a tall
+      // bar here is "this field is the worst", when the field with the most
+      // entries in the index will tend to have the most in every verdict.
+      caption: `Which fields these ${n(list.length)} come from. The tallest bar is usually the largest field rather than the worst one; the split within each field is on its own page.`,
+    },
+  )}${grid(list, base)}
 ${faq.html}${hubNav(verdictPath(state), { base })}  </div>
 </section>
 `;
@@ -217,6 +228,9 @@ ${hubHead({
       [n(t['none-located']), 'none located'],
     ],
     lede: `Every entry in this field, with what it claims and what happened when the experiments behind it were repeated. The split above is this field's own, not the index's.`,
+  })}${verdictSplit(t, {
+    base,
+    caption: `How ${label.toLowerCase()} held up, as a share of its ${n(list.length)} entries. Each band links to that verdict across the whole index.`,
   })}${grid(list, base)}
 ${faq.html}${hubNav(fieldPath(cat), { base })}  </div>
 </section>
@@ -453,7 +467,7 @@ export function timelinePage({ base = '/', origin = '', entries = [] } = {}) {
     return `          <tr>
             <th scope="row"><a href="${base}${decadePath(decade)}">${decade}s</a></th>
             <td class="num">${n(list.length)}</td>
-            <td><span class="tl-bar" style="--w:${Math.round((list.length / max) * 100)}%" role="img" aria-label="${n(list.length)} entries"></span></td>
+            <td class="bar-col">${stackedRowBar(t, list.length, max, `${decade}s`)}</td>
             <td class="num">${n(t.replicated)}</td>
             <td class="num">${n(t.mixed)}</td>
             <td class="num">${n(t.failed)}</td>
@@ -479,7 +493,7 @@ ${hubHead({
     <table class="vtable">
       <caption>Entries by decade of first description, with their replication verdicts.</caption>
       <thead><tr>
-        <th scope="col">Decade</th><th scope="col" class="num">Entries</th><th scope="col"></th>
+        <th scope="col">Decade</th><th scope="col" class="num">Entries</th><th scope="col" class="bar-col"></th>
         <th scope="col" class="num">Repl.</th><th scope="col" class="num">Mixed</th>
         <th scope="col" class="num">Failed</th><th scope="col" class="num">None</th>
       </tr></thead>
@@ -487,7 +501,7 @@ ${hubHead({
 ${early.length ? `          <tr>
             <th scope="row">Before ${shown.length ? shown[0][0] : years[years.length - 1]}</th>
             <td class="num">${n(early.length)}</td>
-            <td><span class="tl-bar" style="--w:${Math.round((early.length / max) * 100)}%" role="img" aria-label="${n(early.length)} entries"></span></td>
+            <td class="bar-col">${stackedRowBar(split(early), early.length, max, 'Earliest entries')}</td>
             <td class="num">${n(split(early).replicated)}</td>
             <td class="num">${n(split(early).mixed)}</td>
             <td class="num">${n(split(early).failed)}</td>

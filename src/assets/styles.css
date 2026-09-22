@@ -1790,44 +1790,43 @@ html[data-theme="light"] .chip.on{background:var(--accent);border-color:var(--ac
 .hub-faq-a a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--line-strong);text-underline-offset:2px}
 .hub-faq-a a:hover{color:var(--accent);text-decoration-color:var(--accent)}
 
-/* ---- reliability hub: the split, then a shelf per tier --------------------- */
-.rel-bar{display:flex;margin:22px 0 0;height:26px;border-radius:3px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--well)}
-.rel-bar-seg{display:flex;align-items:center;justify-content:center;min-width:0;overflow:hidden;
+/* ---- the verdict split, and labelled count bars ---------------------------
+   Inherited from the Tome as a reliability-tier bar and re-pointed at the four
+   replication verdicts, which is what this index sorts by. The hues are the
+   semantic pair already defined at the top of this file (green replicated, red
+   failed) plus the second accent for mixed and plain muted for the ones nobody
+   has retested — grey because "no replication located" is an absence in the
+   literature, not a bad result, and colouring it like one would be a verdict
+   the corpus does not make. */
+.vs-fig{margin:26px 0 0}
+.vs-bar{display:flex;height:26px;border-radius:3px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--well)}
+.vs-seg{display:flex;align-items:center;justify-content:center;min-width:0;overflow:hidden;
   background:var(--surface-2);border-right:1px solid var(--bg)}
-.rel-bar-seg:last-child{border-right:0}
-.rel-bar-seg.b-emp,.rel-key.b-emp{background:color-mix(in srgb,var(--ok) 34%,transparent)}
-.rel-bar-seg.b-heu,.rel-key.b-heu{background:color-mix(in srgb,var(--gold) 34%,transparent)}
-.rel-bar-seg.b-folk,.rel-key.b-folk{background:color-mix(in srgb,var(--muted) 26%,transparent)}
-.rel-bar-seg.b-con,.rel-key.b-con{background:color-mix(in srgb,var(--con) 34%,transparent)}
-.rel-bar-lab{font-family:var(--mono);font-size:10.5px;letter-spacing:.03em;color:var(--ink);white-space:nowrap;padding:0 8px}
-/* The jump nav doubles as the bar's legend, so it carries the tier's colour and
-   its share. One list of four tiers, not two stacked lists saying the same thing. */
-.az-nav--key a{display:inline-flex;align-items:center;gap:8px}
-/* The generic .az-nav span rules give every span a 32px tap target and dim it
-   to 40% — right for a letter, wrong for a 9px colour chip. */
-.az-nav .rel-key{min-width:0;min-height:0;padding:0;opacity:1}
-.rel-key{width:9px;height:9px;flex:0 0 9px;border-radius:2px;background:var(--surface-2)}
-/* Percentage width is not pixel width: on a phone even a 19% segment is ~70px,
-   too narrow for "Heuristic 19.4%". Below this the legend carries the labels. */
-@media(max-width:720px){.rel-bar-lab{display:none}}
-.rel-sec{margin-top:44px;padding-left:16px;border-left:2px solid var(--line-strong)}
-.rel-sec.b-emp{border-left-color:var(--ok)}
-.rel-sec.b-heu{border-left-color:var(--gold)}
-.rel-sec.b-folk{border-left-color:var(--line-strong)}
-.rel-sec.b-con{border-left-color:var(--con)}
-.rel-sec-head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
-.rel-sec-head h2{margin:0;font-size:inherit}
-.rel-sec-head h2 a{text-decoration:none}
-.rel-sec-n{font-family:var(--mono);font-size:11.5px;color:var(--muted)}
-.rel-sec-n b{color:var(--ink);font-weight:400;font-size:14px}
-.rel-sec-note{margin:10px 0 0;font-family:var(--serif);font-size:16px;color:var(--ink)}
-.rel-sec-test{margin:8px 0 0;font-size:13.5px;line-height:1.6;color:var(--muted);max-width:74ch}
-.rel-test-k{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--faint);margin-right:8px}
-.rel-ex{list-style:none;margin:16px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:7px}
-.rel-ex a{display:inline-block;padding:5px 11px;background:var(--surface);border:1px solid var(--line);border-radius:2px;
-  font-size:13px;color:var(--ink);text-decoration:none;transition:border-color .16s,color .16s}
-.rel-ex a:hover{border-color:var(--accent);color:var(--accent)}
-.rel-sec-more{margin:16px 0 0}
+.vs-seg:last-child{border-right:0}
+.vs-lab{font-family:var(--mono);font-size:10.5px;letter-spacing:.03em;color:var(--ink);white-space:nowrap;padding:0 8px}
+.vs-seg.v-rep,.vs-key.v-rep{background:color-mix(in srgb,var(--ok) 34%,transparent)}
+/* Mixed is the largest band on most of these figures and it sits next to the
+   grey one, so at equal strength the two read as the same colour — checked on
+   the rendered timeline, where the 1960s row was indistinguishable from the
+   1940s. The steel is taken up and the grey down until they separate. */
+.vs-seg.v-mix,.vs-key.v-mix{background:color-mix(in srgb,var(--gold) 52%,transparent)}
+.vs-seg.v-fail,.vs-key.v-fail{background:color-mix(in srgb,var(--con) 40%,transparent)}
+.vs-seg.v-none,.vs-key.v-none{background:color-mix(in srgb,var(--muted) 18%,transparent)}
+/* The legend carries every figure, so the in-bar labels are the copy that can
+   be dropped when a segment is too narrow to hold one. Below 720px they all
+   are, and the bar becomes a pure shape with the numbers underneath. */
+@media(max-width:720px){.vs-lab{display:none}}
+.vs-keys{display:flex;flex-wrap:wrap;gap:8px 20px;margin:12px 0 0}
+.vs-k{display:inline-flex;align-items:center;gap:8px;font-family:var(--sans);font-size:13px;
+  color:var(--muted);text-decoration:none;transition:color .16s}
+a.vs-k:hover{color:var(--accent)}
+.vs-k b{font-family:var(--mono);font-weight:400;font-size:13.5px;color:var(--ink)}
+.vs-kp{font-family:var(--mono);font-size:11px;color:var(--faint)}
+.vs-key{width:9px;height:9px;flex:0 0 9px;border-radius:2px;background:var(--surface-2)}
+.vs-cap{font-family:var(--serif);font-size:13px;line-height:1.6;color:var(--faint);margin:12px 0 0;max-width:68ch}
+.vs-fig .fx-bars{max-width:640px}
+.vs-fig .fx-bl a{color:inherit;text-decoration:none;border-bottom:1px solid transparent;transition:color .16s,border-color .16s}
+.vs-fig .fx-bl a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 
 /* ---- hub cards ------------------------------------------------------------
    A hub card is an object, not a paragraph: an art band of the set's own
@@ -2549,6 +2548,18 @@ html[data-theme="light"] .chip.on{background:var(--accent);border-color:var(--ac
 /* A licence name is a unit — "SIL Open Font License 1.1" broken across two
    lines reads as two licences. */
 .vtable .nowrap{white-space:nowrap}
+/* Seven columns of nowrap figures have a floor: the timeline's decade table
+   cannot compress below about 379px, which on a 390px phone is a hairline of
+   horizontal scroll across the whole page. Trimming the gutters and the figure
+   size on narrow screens buys back more than the shortfall. Applied to every
+   `.vtable` rather than the timeline alone, because the same floor waits in any
+   table that gains a column. Pre-existing, found while adding the verdict bar. */
+@media(max-width:640px){
+  .vtable{font-size:13.5px}
+  .vtable th,.vtable td{padding-right:8px}
+  .vtable tbody th{padding-right:10px}
+  .vtable .num{font-size:11.5px;padding-left:6px}
+}
 /* The replication estimate, when it came out smaller than the original. Marked
    rather than coloured red: a shrunken effect is the ordinary case here, not an
    error, and 63 red cells in an 85-row table would read as a table of faults. */
@@ -2562,12 +2573,21 @@ html[data-theme="light"] .chip.on{background:var(--accent);border-color:var(--ac
   font-variant-numeric:tabular-nums;max-width:22ch}
 .vtable .fx-down{color:var(--ink);font-weight:600}
 .vtable .fx-down::after{content:" ↓";color:var(--accent);font-weight:400}
-/* A count drawn to scale inside a table cell. Width is set per row from the
-   data; the cell itself stays a normal table cell so the column still aligns. */
-.tl-bar{display:block;width:var(--w,0);min-width:2px;height:8px;border-radius:2px;
-  background:var(--accent);opacity:.5}
-.vtable td:has(> .tl-bar){width:22%;padding-right:24px}
-@media(max-width:640px){.vtable td:has(> .tl-bar){display:none}}
+/* A count drawn to scale inside a table cell, segmented by verdict: the width
+   reads as the row's count against the largest row, and the fill carries the
+   split as well. The segments are percentages OF THE BAR, so they divide this
+   row and say nothing about any other — the width is the only cross-row
+   comparison being made. The cell stays a normal table cell so the column
+   still aligns. This replaced a plain `.tl-bar` that drew the count alone. */
+.vs-row{display:flex;min-width:2px;height:8px;border-radius:2px;overflow:hidden}
+.vs-row .vs-seg{border-right:0}
+/* The class goes on the `th` as well as the `td`. Selecting the cell by its
+   content (`td:has(> .vs-row)`) cannot reach the empty header cell above it,
+   so the column header kept holding 30px open on a phone after the bars
+   themselves were hidden — which was most of a seven-pixel horizontal scroll
+   across the whole page. */
+.vtable .bar-col{width:22%;padding-right:24px}
+@media(max-width:640px){.vtable .bar-col{display:none}}
 /* The standing cuts on /browse/. Links, not chips: the chips below them filter
    the grid in place, these go to pages that can be linked to and cited. Kept
    quiet so they read as a directory rather than competing with the controls. */

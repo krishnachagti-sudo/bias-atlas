@@ -21,6 +21,7 @@ import {
   head, sprite, header, footer, escapeHtml, searchBox, BRAND, KICKER, founderRef, biasCard,
 } from './partials.mjs';
 import { hubFaq } from './hub.mjs';
+import { verdictSplit } from './charts.mjs';
 import { entryPath, replicationLabel, REPLICATION_CLASS } from './entry.mjs';
 import { LASTMOD_TOKEN } from '../../build/lastmod.mjs';
 
@@ -45,6 +46,11 @@ export function homePage({ base = '/', origin = '', entries = [], mapped = 0 } =
   // is phrased as a tally; when the corpus is large enough for the proportion
   // to mean something, this is the line that should start claiming it.
   const failed = entries.filter((e) => e.replication.state === 'failed').length;
+  const tally = {};
+  for (const e of entries) {
+    const s = (e.replication || {}).state;
+    if (s) tally[s] = (tally[s] || 0) + 1;
+  }
   const hook = count > 0
     ? `    <p class="hero-hook"><a href="${base}browse/"><b>${n(failed)} of the ${n(count)} entries written so far</b> describe an effect that did not survive being retested. <span class="hh-go">See the index →</span></a></p>\n`
     : '';
@@ -134,7 +140,14 @@ ${searchBox('Search a bias — or describe what you noticed…')}      <button c
     : 'nothing published yet'}</span>
     </div>
     <p class="sec-lede">${answer}</p>
-${count > 0
+${count > 0 ? verdictSplit(tally, {
+    base,
+    // The single number this index exists to report, and until now the front
+    // page never drew it. The caption names the grey band, because a fourth
+    // colour with no gloss reads as a fourth verdict rather than the absence
+    // of one.
+    caption: `How the ${n(count)} entries stand. "None located" means a search for a replication came up empty, which is a statement about the literature rather than a verdict on the effect.`,
+  }) : ''}${count > 0
     // `id="grid"` and `data-limit` are what make the search field above this
     // section work. search.js renders its results into `#grid`, and the limit
     // caps the IDLE view at a sample. Every card stays in the markup, so the page
