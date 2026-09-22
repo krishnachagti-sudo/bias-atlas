@@ -21,6 +21,7 @@ rather than shape.
 | `meaning` | ✔ | what the claim actually says, expanded |
 | `origin` | ✔ | where it came from — see below |
 | `evidence` | ✔ | what the underlying studies actually did and found |
+| `examples` | | what it looks like when it happens — see below |
 | `replication` | ✔ | what happened when they were repeated — see below |
 | `limits` | ✔ | where the idea runs out |
 | `misreadings` | ✔ | what people get wrong about it |
@@ -39,6 +40,50 @@ rather than shape.
 `year` is the year of the publication that established the name or the effect —
 not the year of the earliest possible antecedent. Where the two differ, and they
 often do, the difference belongs in `note` rather than being resolved silently.
+
+### `examples`
+
+Optional, and the most dangerous field on the entry. "Sunk cost fallacy
+examples" is one of the highest-volume things anybody types about this subject,
+and that demand is exactly the pressure that produces a confident anecdote about
+a company that never did the thing. So every example declares which of two
+things it is, and the two have different burdens.
+
+```json
+"examples": [
+  { "kind": "everyday",
+    "tag": "The meal you are too full to finish",
+    "text": "Halfway through an expensive dinner you have had enough, and you keep eating so the money is not wasted." },
+  { "kind": "documented",
+    "tag": "The Stanford prison experiment",
+    "text": "…what actually happened…",
+    "source": { "text": "Haney, C., Banks, C., & Zimbardo, P. (1973). …", "doi": "10.…" } }
+]
+```
+
+**`documented`** says something happened. It is a factual claim and carries the
+same burden as any other on this site: a `source` with a `url` or a `doi`, and
+one that was actually read. The build refuses a documented example with no
+source.
+
+Read that last clause carefully, because the first attempt at this field broke
+it. The sunk cost entry cites Arkes and Blumer (1985) and its own source note
+says the paper is paywalled and could not be retrieved, *"so no figure from it is
+quoted here"*. Writing up its famous theatre-ticket experiment as a documented
+example would have contradicted a note on the same page. **A documented example
+may only come from a document somebody opened.**
+
+**`everyday`** is an illustration. It describes nobody in particular and nothing
+that happened, so there is nothing to cite and attaching a source would misstate
+what it is — the build refuses that too. In exchange it may not smuggle a
+factual claim in, and the build refuses any illustration containing a four-digit
+year, which is how one usually arrives ("in 2016 a study found…"). That catches
+the common case and not the clever one: a proper noun still needs a human to
+notice, so an illustration naming a real company or person is a review failure,
+not a build failure.
+
+An illustration is labelled as one on the page. A reader must never have to work
+out whether the thing they are reading is a case on record.
 
 ### `replication`
 

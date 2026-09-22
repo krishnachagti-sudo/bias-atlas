@@ -39,6 +39,17 @@ export const CATEGORIES = {
 export const REPLICATION_STATES = ['replicated', 'failed', 'mixed', 'none-located'];
 
 /**
+ * What an `examples[].kind` may be, and the whole argument for having two.
+ *
+ * A reader searching for examples of a bias wants both things and they are not
+ * the same: the famous case that actually happened, and the ordinary situation
+ * they might recognise in themselves. Filing them together would mean either
+ * demanding a citation for a hypothetical or letting a real claim travel
+ * without one, and the second is how an index like this starts being wrong.
+ */
+export const EXAMPLE_KINDS = ['documented', 'everyday'];
+
+/**
  * Effect-size metrics we will print. A bare number is not an effect size.
  *
  * `md` is a raw mean difference, and it is here because not every replication
@@ -109,6 +120,56 @@ export function validate(entry, { today = new Date().toISOString().slice(0, 10) 
     if (s && s.url && !/^https?:\/\//.test(s.url)) p.push(`sources[${i}].url is not absolute`);
     if (s && s.doi && !/^10\.\d{4,9}\/\S+$/i.test(s.doi)) p.push(`sources[${i}].doi "${s.doi}" is not a DOI`);
   });
+
+  // --- examples -------------------------------------------------------------
+  // Optional, and validated strictly because this is the field most likely to
+  // be filled with plausible invention. "Sunk cost fallacy examples" is one of
+  // the highest-volume things anybody types about this subject, and that is
+  // exactly the pressure that produces a confident anecdote about a company
+  // that never did the thing.
+  //
+  // So an example declares which of two things it is, and they have different
+  // rules:
+  //
+  //   documented — something that actually happened. It is a factual claim and
+  //     carries the same burden as any other on this site: a source a reader
+  //     can open. No source, no claim.
+  //
+  //   everyday — an illustration. It describes nobody in particular and nothing
+  //     that happened, so there is nothing to cite and citing would misstate
+  //     what it is. In exchange it may not smuggle a factual claim in. A
+  //     four-digit year is how one usually arrives ("in 2016 a study found…"),
+  //     so a year is refused outright. That catches the common case, not the
+  //     clever one: a proper noun still needs a human to notice.
+  const ex = entry.examples;
+  if (ex !== undefined) {
+    if (!Array.isArray(ex)) p.push('examples must be an array');
+    else ex.forEach((x, i) => {
+      if (!x || typeof x !== 'object') { p.push(`examples[${i}] is not an object`); return; }
+      if (!x.tag) p.push(`examples[${i}] has no tag`);
+      if (!x.text) p.push(`examples[${i}] has no text`);
+      if (!EXAMPLE_KINDS.includes(x.kind)) {
+        p.push(`examples[${i}].kind "${x.kind}" is not one of ${EXAMPLE_KINDS.join(', ')}`);
+        return;
+      }
+      if (x.kind === 'documented') {
+        const s = x.source;
+        if (!s || typeof s !== 'object') {
+          p.push(`examples[${i}] is documented but has no source — call it an illustration, or cite it`);
+        } else {
+          if (!s.text) p.push(`examples[${i}].source has no text`);
+          if (!s.url && !s.doi) p.push(`examples[${i}].source has neither url nor doi — a documented example must be openable`);
+          if (s.url && !/^https?:\/\//.test(s.url)) p.push(`examples[${i}].source.url is not absolute`);
+          if (s.doi && !/^10\.\d{4,9}\/\S+$/i.test(s.doi)) p.push(`examples[${i}].source.doi "${s.doi}" is not a DOI`);
+        }
+      } else {
+        if (x.source) p.push(`examples[${i}] is an illustration and carries a source — an illustration describes nothing that happened`);
+        if (/\b(?:1[6-9]|20)\d{2}\b/.test(String(x.text))) {
+          p.push(`examples[${i}] is an illustration but names a year — that is a factual claim, so mark it documented and cite it`);
+        }
+      }
+    });
+  }
 
   // --- replication ----------------------------------------------------------
   const r = entry.replication;

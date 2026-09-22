@@ -1177,6 +1177,21 @@ a.prose-law:hover,a.prose-law:focus-visible{color:var(--accent);border-bottom-co
 @media(max-width:640px){.examples-grid{grid-template-columns:1fr}}
 .examples-grid .example{margin:0;transition:border-color .2s,transform .2s}
 .example .ex-tag{color:var(--accent)}
+/* An example that reports something that happened, and one that only
+   illustrates the pattern, are different claims and must not look alike. The
+   documented one carries an accent edge and its citation; the illustration is
+   labelled as one on its own tag, so a reader never has to work out which they
+   are reading. */
+.example--documented{border-left:3px solid var(--accent)}
+.example--everyday{border-left:3px solid var(--line-strong);background:transparent}
+.example .ex-t{margin:0}
+.example .ex-kind{margin-left:8px;padding:1px 6px;border:1px solid var(--line-strong);border-radius:3px;
+  color:var(--faint);letter-spacing:.06em}
+.example .ex-src{margin:11px 0 0;padding-top:10px;border-top:1px solid var(--line);
+  font-family:var(--sans);font-size:12px;line-height:1.5;color:var(--faint)}
+.example .ex-src a{color:var(--muted);text-decoration:underline;text-underline-offset:2px}
+.example .ex-src a:hover{color:var(--accent)}
+.ex-note{margin:14px 0 0;font-family:var(--sans);font-size:12px;line-height:1.55;color:var(--faint)}
 /* named variants / corollaries as numbered cards (e.g. the four types of Goodhart) */
 .variants{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;counter-reset:variant}
 @media(max-width:640px){.variants{grid-template-columns:1fr}}

@@ -87,8 +87,20 @@ export function entryMarkdown(entry, { baseUrl, fieldLabel }) {
   out.push('');
 
   // ---- the prose, headed by the same questions the page asks ----
+  const examples = Array.isArray(entry.examples) ? entry.examples : [];
+  const exampleBlock = examples.length
+    ? examples.map((x) => {
+      const href = x.source ? (x.source.url || (x.source.doi ? `https://doi.org/${x.source.doi}` : '')) : '';
+      const cite = x.kind === 'documented' && x.source
+        ? ` (${href ? `[${cell(x.source.text)}](${href})` : cell(x.source.text)})`
+        : ' *(illustration)*';
+      return `- **${cell(x.tag)}** — ${String(x.text).trim()}${cite}`;
+    }).join('\n')
+    : '';
+
   const blocks = [
     [`What does ${entry.name} mean?`, entry.meaning],
+    [`What are some examples of ${entry.name}?`, exampleBlock],
     [`Has ${entry.name} been retested?`, r.detail],
     ['What the studies actually did', entry.evidence],
     ['Where it came from', entry.origin

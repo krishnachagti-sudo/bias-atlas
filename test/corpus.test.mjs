@@ -225,3 +225,59 @@ test('the path and the label are stable', () => {
   assert.equal(replicationLabel('none-located'), 'No replication located');
   assert.equal(replicationLabel('nonsense'), 'Unknown');
 });
+
+// ---- examples -------------------------------------------------------------
+// The field most likely to be filled with plausible invention, so the rules
+// that make that harder are pinned here.
+
+test('a documented example must cite something openable', () => {
+  const e = good();
+  e.examples = [{ kind: 'documented', tag: 'A case', text: 'It happened.' }];
+  assert.match(validate(e).join(' '), /documented but has no source/);
+
+  e.examples = [{ kind: 'documented', tag: 'A case', text: 'It happened.', source: { text: 'Paper' } }];
+  assert.match(validate(e).join(' '), /neither url nor doi/);
+
+  e.examples = [{ kind: 'documented', tag: 'A case', text: 'It happened.', source: { text: 'Paper', doi: 'not-a-doi' } }];
+  assert.match(validate(e).join(' '), /is not a DOI/);
+
+  e.examples = [{ kind: 'documented', tag: 'A case', text: 'It happened.', source: { text: 'Paper', doi: '10.1016/0749-5978(85)90049-4' } }];
+  assert.deepEqual(validate(e), []);
+});
+
+test('an illustration may not smuggle in a factual claim', () => {
+  const e = good();
+  // A year is how a real claim usually arrives inside a hypothetical.
+  e.examples = [{ kind: 'everyday', tag: 'A case', text: 'In 2016 a team kept going.' }];
+  assert.match(validate(e).join(' '), /names a year/);
+
+  // And an illustration that cites something is claiming to be a record.
+  e.examples = [{ kind: 'everyday', tag: 'A case', text: 'A team keeps going.', source: { text: 'x', url: 'https://x.test' } }];
+  assert.match(validate(e).join(' '), /describes nothing that happened/);
+
+  e.examples = [{ kind: 'everyday', tag: 'A case', text: 'A team keeps going.' }];
+  assert.deepEqual(validate(e), []);
+});
+
+test('an example must declare which kind it is', () => {
+  const e = good();
+  e.examples = [{ kind: 'anecdote', tag: 'A case', text: 'A thing.' }];
+  assert.match(validate(e).join(' '), /is not one of documented, everyday/);
+
+  e.examples = [{ tag: 'A case', text: 'A thing.' }];
+  assert.match(validate(e).join(' '), /is not one of/);
+
+  e.examples = [{ kind: 'everyday', text: 'A thing.' }];
+  assert.match(validate(e).join(' '), /has no tag/);
+
+  e.examples = 'not an array';
+  assert.match(validate(e).join(' '), /examples must be an array/);
+});
+
+test('examples are optional', () => {
+  const e = good();
+  delete e.examples;
+  assert.deepEqual(validate(e), []);
+  e.examples = [];
+  assert.deepEqual(validate(e), []);
+});

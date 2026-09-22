@@ -155,7 +155,9 @@ test('every section heading names the bias rather than saying "it"', async () =>
   const e = entries[0];
   const html = entryPage(e, { base: '/biases/', origin: 'https://example.com', entries });
   const heads = [...html.matchAll(/<h2 class="block-h">([^<]*)<\/h2>/g)].map((m) => m[1]);
-  assert.equal(heads.length, 7);
+  // Seven sections, or eight once the entry carries examples.
+  const expected = (e.examples || []).length ? 8 : 7;
+  assert.equal(heads.length, expected, `${e.slug} rendered ${heads.length} sections`);
   for (const h of heads) {
     assert.ok(h.includes(e.name), `heading does not name the subject: "${h}"`);
     assert.doesNotMatch(h, /\bit\b/, `heading still leans on a pronoun: "${h}"`);

@@ -64,6 +64,7 @@ export function buildApi(entries, { baseUrl, categories = {} }) {
       'replication.original': 'effect size as reported by the original study, or absent',
       'replication.replicated': 'effect size as reported by the replication, or absent',
       effectSize: '{ esType, es, ci?, ciLevel?, unit?, weighting? } — ci is [low, high]',
+      examples: '{ kind, tag, text, source? }[] — kind is "documented" (it happened, and `source` cites it) or "everyday" (an illustration, describing nothing that happened)',
       sources: '{ text, doi?, url?, type?, note? }[]',
       checkedOn: 'ISO date the entry was last held against its sources',
       url: 'string, canonical HTML page',
@@ -80,6 +81,7 @@ export function buildApi(entries, { baseUrl, categories = {} }) {
         field: categories[e.category] || e.category,
         statement: e.statement,
         origin: e.origin,
+        ...(Array.isArray(e.examples) && e.examples.length ? { examples: e.examples } : {}),
         replication: {
           state: r.state,
           verdict: VERDICT[r.state] || r.state,

@@ -17,6 +17,23 @@
     "note": "Arkes and Blumer's paper is titled \"The psychology of sunk cost\" and is the work the effect is normally credited to. OpenAlex recorded 2,545 citations of it on 17 August 2026. Its full text could not be obtained for this entry, so nothing is quoted from it directly. Ronayne, Sgroi and Tuckwell call it a seminal definition: individuals fall prey to the effect when they continue an endeavour as a result of previously invested resources such as time, money or effort. The idea is older than the name. The vignette Many Labs 1 tested was adapted from Richard Thaler's \"Mental accounting and consumer choice\", Marketing Science 4(3), 199 to 214, and Knox and Inkster's 1968 study of racetrack bettors, \"Postdecision dissonance at post time\", is the work Many Labs 1 cites when defining a sunk cost."
   },
   "evidence": "The effect is usually demonstrated with a vignette rather than a real decision. In the version Many Labs 1 tested, taken from Oppenheimer, Meyvis and Davidenko's 2009 paper and adapted in turn from Thaler, participants imagine they hold tickets to see their favourite football team play an important game and that it is freezing cold on the day. They rate their likelihood of going on a nine-point scale, from 1 for definitely stay at home to 9 for definitely go to the game. Half are told they paid for the ticket; half are told it was free. The prediction is that the people who paid are more willing to sit in the cold. Many Labs 1 says the original participants were only marginally more likely to go, and puts the original at d = 0.23 with a 95% interval running from -0.04 to 0.50, which crosses zero. That interval is the Many Labs authors' own calculation from the original's cell sizes. The 2009 paper itself is paywalled and could not be retrieved for this entry.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The course you stopped enjoying",
+      "text": "You pay up front for a twelve-week evening class, lose interest by the third week, and keep attending because the fee is already gone. The fee is gone whether you attend or not, so the only question the evening should turn on is whether you want to be there."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The meal you are too full to finish",
+      "text": "Halfway through an expensive dinner you have had enough, and you keep eating so the money is not wasted. Eating past the point of enjoyment does not recover any of it; it just adds discomfort to the cost."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The project nobody will cancel",
+      "text": "A team can see that a piece of software will not do what it was commissioned to do, and argues for finishing it anyway because of the months already spent. The months are spent either way, and the argument for continuing has to rest on what the remaining work will produce."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "Repeated across 36 samples and 6,330 people, the football-ticket vignette held, and came out slightly larger than in the original study.",

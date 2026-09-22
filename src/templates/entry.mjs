@@ -367,6 +367,42 @@ ${rows.map(([k, n]) => `            <span class="mix-seg mix-${k}" style="flex:$
 `;
 }
 
+/**
+ * The examples block: what this looks like when it happens.
+ *
+ * Two kinds, rendered differently because they are different claims. A
+ * `documented` example says something happened and carries the source that says
+ * so, printed with it — the citation is part of the example, not a footnote to
+ * it, because an anecdote without one is exactly what this section would
+ * otherwise become. An `everyday` example is an illustration and is labelled as
+ * one, so a reader is never left deciding whether the thing described is a case
+ * on record.
+ *
+ * Returns '' when an entry has none, so the block and its rail link both
+ * disappear rather than standing empty.
+ */
+function examplesBlock(entry, base) {
+  const list = Array.isArray(entry.examples) ? entry.examples : [];
+  if (!list.length) return '';
+  return `        <div class="examples-grid">
+${list.map((x) => {
+    const href = x.source ? (x.source.url || (x.source.doi ? `https://doi.org/${x.source.doi}` : '')) : '';
+    const cite = x.kind === 'documented' && x.source
+      ? `\n          <p class="ex-src">${href
+        ? `<a href="${escapeHtml(href)}" rel="nofollow noopener">${escapeHtml(x.source.text)}</a>`
+        : escapeHtml(x.source.text)}</p>`
+      : '';
+    return `          <div class="example example--${escapeHtml(x.kind)}">
+          <p class="ex-tag">${escapeHtml(x.tag)}${x.kind === 'everyday' ? '<span class="ex-kind">illustration</span>' : ''}</p>
+          <p class="ex-t">${escapeHtml(x.text)}</p>${cite}
+          </div>`;
+  }).join('\n')}
+        </div>
+${list.some((x) => x.kind === 'everyday')
+    ? '        <p class="ex-note">Cases marked as illustrations describe nobody in particular. They are there to make the pattern recognisable, not to report that a particular thing happened.</p>\n'
+    : ''}`;
+}
+
 /** The statement, with its accent phrase marked if the entry names one. */
 function accented(entry) {
   const s = escapeHtml(entry.statement);
@@ -593,6 +629,9 @@ export function entryPage(entry, { base = '/', origin = '', count = 0, entries =
       paragraphs(entry.meaning)
         .map((p, i) => `        <p${i === 0 ? ' class="lead"' : ''}>${escapeHtml(p)}</p>`).join('\n') + '\n'],
     ['Does it replicate?', `Has ${entry.name} been retested?`, replicationBlock(r, { base })],
+    ...(examplesBlock(entry, base)
+      ? [['Examples', `What are some examples of ${entry.name}?`, examplesBlock(entry, base)]]
+      : []),
     ['The experiments', `What experiments is ${entry.name} based on?`,
       prose(entry.evidence) + sourceMix(sources)],
     ['Origin', `Who first described ${entry.name}, and when?`, originBlock(entry, r)],
