@@ -16,6 +16,23 @@
     "note": "Their paper asked the question in its title: \"Ego depletion: Is the active self a limited resource?\" The model became one of the most influential ideas in social psychology, and a 2010 meta-analysis of 83 studies by Hagger, Wood, Stiff and Chatzisarantis in Psychological Bulletin reported a medium-sized effect across the literature."
   },
   "evidence": "Almost every test uses the same shape, the sequential-task paradigm: participants perform an initial task demanding self-control, then a second unrelated one, and the second task's performance is compared against a control group who skipped the first. Hundreds of experiments of this form were published. The 2010 meta-analysis covered 83 studies and drew 198 tests from them. A second strand asked what the resource was made of. Gailliot and colleagues proposed in 2007 that it was blood glucose, reporting that acts of self-control lowered glucose, that low glucose predicted worse performance on the next task, and that a glucose drink removed the impairment. Carter and McCullough reapplied small-study corrections to Hagger's data in 2014 and found what they called very strong signals of publication bias, with an indication that the effect was no different from zero. Their own regression estimate of the underlying effect was -0.10, 95% CI -0.23 to 0.02. That analysis is what prompted the field to test the paradigm directly rather than pool it again.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "An afternoon of holding your tongue",
+      "text": "Someone sits through a long meeting saying nothing about a decision they think is wrong, and afterwards cannot make themselves finish a dull form. The strength model reads the second failure as a consequence of the first, because restraint and concentration are held to draw on one supply."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The biscuit tin and the reply that follows",
+      "text": "A dieter walks past the office biscuits all morning, then answers a provoking email more sharply than intended. What the model predicts is the link between the two: the food had nothing to do with the email, and the restraint is supposed to be what carried over."
+    },
+    {
+      "kind": "everyday",
+      "tag": "An hour of not buying things",
+      "text": "After an hour of putting items back on the shelf to stay within a budget, a shopper gives up on the evening's reading within minutes. The claim is that the shopping cost something the reading then had to do without."
+    }
+  ],
   "replication": {
     "state": "failed",
     "headline": "Twenty-three laboratories ran the same preregistered protocol on 2,141 people and found an effect indistinguishable from zero.",

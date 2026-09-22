@@ -17,6 +17,23 @@
     "note": "They named de-individuation and described it as a state in which members are not seen or paid attention to as individuals, with a consequent reduction of inner restraints. Their paper was not obtained for this entry and its wording is quoted through Postmes and Spears. The framework people actually cite is Philip Zimbardo's 1969 Nebraska Symposium chapter, which listed the input variables and ran the experiments."
   },
   "evidence": "Zimbardo's chapter reports the paradigm the field copied. Thirty subjects took part, in groups of four female introductory psychology students at New York University in the Bronx. Half were put in a size 44 lab coat and a hood, with their names never used. The rest were greeted by name and given large name tags. Each shocked a supposed victim over 20 trials. Mean shock duration was .90 seconds in the deindividuated condition against .47 seconds in the identifiable one, t = 2.89, significant beyond the .01 level. The range of durations was also wider, 1.40 against .91 seconds, t = 2.21, p < .05. How often they shocked did not differ, running at a high average of 17 shocks in 20 trials in both conditions. Zimbardo then tried the design on 102 Belgian soldiers at Louvain, required to take part by the Minister of Defence, pretesting on 54 and running the final study on eight groups of six. It came out backwards. Shock duration was lower under anonymity, 1.35 seconds where subject and victim were both unidentifiable against 2.04 seconds where both were identifiable, Mann-Whitney U = 36.5, p < .05. Zimbardo wrote that the supposedly deindividuated subjects were behaving in a most individuated manner. The field study everybody remembers is Diener, Fraser, Beaman and Kelem's Halloween work. Hidden observers watched 1,352 children at 27 Seattle homes, each told to take one sweet from a bowl set beside a bowl of coins. After dropping the parent-present and crowded conditions, 1,039 remained. Among children in groups, 57.2% of 297 anonymous children took extra against 20.8% of 384 who had been asked their names and addresses. Alone, the rates were 21.4% of 42 and 7.5% of 40. The highest rate, 80.0% of 80, came where the group was anonymous and one child had been named as responsible. With a parent in the room the rate was 8.3%.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The board where nobody signs",
+      "text": "On a forum without names, posters write things they would not put their own name to. What has changed is less restraint in general than which standard is in force in the room, and the anonymous room has one of its own."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The tabards that made stewards gentler",
+      "text": "Stewards in identical tabards, unrecognisable to the crowd, handle a difficult evening more patiently than stewards in their own clothes. Anonymity moved behaviour towards what the uniform stood for, which is the opposite direction from the one the theory was built to explain."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The crowd on the way home",
+      "text": "A large group leaving a match, none of them known to anyone watching, does damage that none of them would do alone. This is the case the theory was written for, and it is one setting rather than the general rule."
+    }
+  ],
   "replication": {
     "state": "failed",
     "headline": "Postmes and Spears pooled 60 studies and found the average effect on antinormative behaviour to be r = 0.09, with no support for a deindividuated state and with anonymous participants following situational norms more closely rather than less.",

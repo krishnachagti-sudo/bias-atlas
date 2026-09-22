@@ -2,7 +2,13 @@
   "no": 343,
   "slug": "cognitive-bias-in-animals",
   "name": "Cognitive bias in animals",
-  "aliases": ["Judgement bias", "Judgment bias task", "Ambiguous cue interpretation task", "Optimism and pessimism in animals", "Cognitive judgement bias"],
+  "aliases": [
+    "Judgement bias",
+    "Judgment bias task",
+    "Ambiguous cue interpretation task",
+    "Optimism and pessimism in animals",
+    "Cognitive judgement bias"
+  ],
   "category": "decision",
   "statement": "Animals kept in worse conditions treat ambiguous cues as predicting the worse outcome, and the size of that shift is used to measure how they feel.",
   "meaning": "The judgement bias task trains an animal on two cues. One cue predicts a good outcome if the animal makes a particular response, the other predicts a poor or aversive outcome if it makes a different one. Once the discrimination is learnt, the animal meets cues that fall between the two. Responding as though the ambiguous cue signals the good outcome is scored as 'optimistic', responding as though it signals the bad one as 'pessimistic'. Lagisz and colleagues describe the original assay as tones of intermediate frequency dropped into a trained tone discrimination. Both labels are operational, and the field applies them without claiming that animals experience optimism the way people do. What makes this bias unusual is the direction of inference. Elsewhere a bias is the thing to be explained or corrected. Here it is the instrument, and the housing, the injury or the drug is what gets read off it, so the question that matters is whether the instrument tracks affect rather than something else.",
@@ -13,6 +19,23 @@
     "note": "Their one-page Brief Communication, 'Cognitive bias and affective state', ran in Nature 427(6972), page 312, and is the paper every later study cites as the source of the method. It sits behind a paywall and was not obtained for this entry, so the design described here comes from Lagisz and colleagues, who call it the seminal paper on animal judgement bias and set out the task it introduced."
   },
   "evidence": "Lagisz and colleagues searched Scopus and Web of Science for work published from 2004, updating the search to March 2019, and extracted 459 effect sizes from 91 experiments in 71 articles on 22 species. Mammals supplied 56 of the 71 studies, and rats, cattle and pigs supplied 15, 11 and 8. Almost all subjects were captive. Their phylogenetic multilevel model gave a pooled Hedges' g of 0.201, 95% CI 0.028 to 0.374. A model without phylogeny gave 0.204, CI 0.087 to 0.320, and a Bayesian version gave 0.206, CI 0.041 to 0.383. The authors read this as a small effect, and argue the full dataset understates matters because it includes the unambiguous training cues, where no bias is predicted. Restricted to the cue with the largest effect in the direction of the mean, they report a Hedges' g of 0.6. A second synthesis, by Neville and colleagues, tested the method rather than the animals: it asked whether drugs that alter human affect shift judgement bias as predicted. From 20 articles and 557 effect sizes, the pooled standardised mean difference across all cues was 0.239, 95% CI -0.047 to 0.525, p = 0.102. At the ambiguous cue with the largest effect in the direction of the mean it was 0.455, CI 0.061 to 0.849, p = 0.024.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The tone between the two trained tones",
+      "text": "A rat learns that one tone brings food if it presses and another brings something bitter if it does not. A tone halfway between is played, and whether the rat presses is scored optimistic or pessimistic. Those words are a scoring rule, not a report of what it feels."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The barren cage and the enriched one",
+      "text": "Two groups housed differently meet the same ambiguous cue, and the group in the poorer housing approaches less often. The housing is what the task is being used to measure, which reverses the usual direction: here the bias is the instrument."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The null read as contentment",
+      "text": "A small study finds no difference between two housing conditions and is taken as evidence that the animals are fine. At the sample sizes usual in this work, a real difference of the size expected is missed more often than found."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "Pooled over 71 studies and 22 species, animals in worse conditions do judge ambiguity more pessimistically, at Hedges' g = 0.201, 95% CI 0.028 to 0.374.",
@@ -25,7 +48,10 @@
     "replicated": {
       "es": 0.201,
       "esType": "g",
-      "ci": [0.028, 0.374],
+      "ci": [
+        0.028,
+        0.374
+      ],
       "ciLevel": 95
     }
   },

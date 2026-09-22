@@ -13,6 +13,23 @@
     "note": "The paper ran in volume 100, issue 5, pages 992 to 1026, and coins the term. It defines an informational cascade as occurring \"when it is optimal for an individual, having observed the actions of those ahead of him, to follow the behavior of the preceding individual without regard to his own information\". Abhijit Banerjee published a model of the same structure in the Quarterly Journal of Economics for August 1992, volume 107, issue 3, pages 797 to 817, under the name herd behaviour. Banerjee's abstract states that optimising individuals will end up \"doing what others are doing rather than using their information\", and that the resulting equilibrium is inefficient. Neither paper reports data."
   },
   "evidence": "The 1992 paper is mathematics. Its binary example has each person receive a high or low signal that is correct with probability p, and the probability that no cascade has begun falls exponentially in the number of people who have already chosen. With a signal barely better than a coin, the paper reports that this probability after only ten individuals is below 0.1 percent. Cascades therefore form almost at once and, absent fresh public information, never end. They are also frequently wrong. At p of 0.75, the model gives 0.81 for the chance of settling into the correct cascade, and the paper's figure 1 is captioned to say that the wrong cascade stays considerable even for large p. Adding public releases repairs this: at the same p, one release per thousand individuals lifts 0.81 to 0.86, and ten releases lift it to 0.98. The laboratory test came five years later. Anderson and Holt recruited 72 undergraduates from economics courses at the University of Virginia, paid $5 for turning up and $2 for each correct prediction, and ran twelve sessions of fifteen periods. Six subjects predicted in random order which of two urns a private draw had come from, each hearing the predictions made before theirs, with a seventh subject serving as monitor. Over all twelve sessions cascades formed in 87 of the 122 periods in which they were possible. Six sessions used symmetric urns and gave 41 of 56; six used an asymmetric design, in which counting the signals and applying Bayes' rule give different answers, and gave 46 of 66. Reverse cascades, where early unrepresentative draws start a run of wrong predictions, made up 13 of the 41 and 18 of the 46. In the symmetric sessions subjects followed their own draw against the Bayesian inference in 26 percent of the cases where the two conflicted, and 4 percent of decisions matched neither. Efficiency, scored so that optimal play is 100 and random play is 0, averaged 91.4 percent under symmetric urns and 67.6 percent under asymmetric ones.",
+    "examples": [
+      {
+        "kind": "everyday",
+        "tag": "The two restaurants on one street",
+        "text": "Both are empty. The first diner has a faint recommendation for the left one and takes it. The next two each have a hint favouring the right, see someone seated on the left, and follow. From then on no private information enters the record."
+      },
+      {
+        "kind": "everyday",
+        "tag": "The paper everyone cites",
+        "text": "An early reader judges a finding solid and cites it. Later readers see the citations and not what any reader thought of the data, and cite it too. The record grows without one further reading of the evidence behind it."
+      },
+      {
+        "kind": "everyday",
+        "tag": "The tool a department standardises on",
+        "text": "Each team can see which tool the teams before it picked and not why. Once two have chosen, a third with a mild preference for something else does better by copying, and the standard rests on two people's reasons."
+      }
+    ],
   "replication": {
     "state": "mixed",
     "headline": "Sequential urn experiments keep producing cascades, and the one direct replication of Anderson and Holt reports cascade behaviour in 77.5 percent of rounds. What fails is the model's account of why: subjects lean far too hard on their own signal, and in long sequences cascades break and re-form instead of lasting.",

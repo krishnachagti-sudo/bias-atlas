@@ -16,6 +16,23 @@
     "note": "Four Dutch studies. The construct is older than the paper, which cites Messick and McClintock (1968) and McClintock (1978) for the definition; what 1997 added was the developmental account and the evidence for it."
   },
   "evidence": "Study 1 measured attachment style in 573 people and classified 458 of them. Prosocials scored higher on secure attachment than individualists and competitors, F(1, 444) = 11.09, p < .001, with means of 6.24, 5.92 and 5.51. Study 2 repeated that on 136 people using measures aimed at a current partner. Study 3 is the one that draws attention. It asked 631 people how many siblings they had, and classified 544, of whom 311 were prosocial, 160 individualistic and 73 competitive. Prosocials reported 2.03 siblings on average, SD 1.56, against 1.63 for individualists, SD 1.00, and 1.71 for competitors, SD 1.35, F(2, 535) = 4.82, p < .01. The planned contrast of prosocials against the other two groups gave F(1, 535) = 9.14, p < .005. Sisters carried most of it, at 1.05 for prosocials against 0.74 and 0.76, F(1, 535) = 12.27, p < .001. Study 4 classified 1,593 of 1,728 people in a Dutch survey panel and found the share of prosocials rising with age, from 55.9% in the youngest group to 67.3%, 77.5% and 81.5% in the older three.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "Three ways to divide a windfall",
+      "text": "Three friends split an unexpected sum. One proposes an even share, one takes the largest amount available to him, and the third prefers the arrangement that leaves him furthest ahead of the others. Change the sum and each keeps to the same pattern."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The rota nobody polices",
+      "text": "On a shared rota some people take shifts that cost them an evening and gain them nothing, and others take only what they must. The same split shows up again in who lends tools and who answers a request for help moving furniture."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Bargaining over the gap",
+      "text": "One side in a negotiation accepts a smaller total in order to keep the other side smaller still. What they are steering by is not the size of their own outcome but the distance between the two."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Many Labs 2 found no sibling correlation in 6,234 people using a different instrument, and a later preregistered study using the original-style measures found it again.",
@@ -33,7 +50,10 @@
     "replicated": {
       "es": -0.03,
       "esType": "d",
-      "ci": [-0.08, 0.02],
+      "ci": [
+        -0.08,
+        0.02
+      ],
       "ciLevel": 95
     }
   },

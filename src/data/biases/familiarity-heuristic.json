@@ -2,7 +2,11 @@
   "no": 256,
   "slug": "familiarity-heuristic",
   "name": "Familiarity heuristic",
-  "aliases": ["Familiarity-based inference", "Familiarity difference cue", "Cue-familiarity heuristic"],
+  "aliases": [
+    "Familiarity-based inference",
+    "Familiarity difference cue",
+    "Cue-familiarity heuristic"
+  ],
   "category": "decision",
   "statement": "When two objects are both recognised, people infer that the more familiar one ranks higher on whatever is being judged.",
   "meaning": "Three different claims travel under this name and they do not share a literature. The first is the one bias lists print. Wikipedia's article of that name says the familiar is favoured over novel places, people or things, and defines the heuristic as judging events more frequent or important because they are more familiar in memory. That definition is the availability heuristic, entry 38. No paper was found that defines or tests the claim under the familiarity name. The second is a rule for binary choice, proposed by Hidehito Honda and colleagues and modelled formally: given two cities, pick the more familiar as the larger. That rule generalises Goldstein and Gigerenzer's recognition heuristic, which can only fire when one of the two objects is unrecognised, and it has been tested against knowledge-based models. The third is the cue-familiarity heuristic in metamemory, where the familiarity of a question, rather than anything retrieved about its answer, drives the feeling of knowing the answer. The second and third claims each have evidence. Neither of them is the first one.",
@@ -13,6 +17,23 @@
     "note": "Their paper is \"The role of familiarity in binary choice inferences\" and it calls the rule familiarity-based inference. Honda's later papers call the same rule the familiarity heuristic. The cue-familiarity heuristic of metamemory is older and separate: Koriat and Levy-Sadot's abstract traces it to Reder's 1987 paper on strategy selection in question answering."
   },
   "evidence": "Honda and colleagues ran two experiments on city populations. In the first, 33 undergraduates, all women, at Japan Women's University rated how familiar city names were and then chose which of two cities was larger. The mean proportion of choices agreeing with familiarity-based inference was 0.791, SD = 0.105. In the second, 81 undergraduates from the same university split into three clusters by how sensitive they were to small differences in familiarity, with mean agreement of 0.865, SD = 0.046, then 0.623, SD = 0.092, then 0.764, SD = 0.058. Their abstract reports that where participants had cue knowledge about population, they used it instead of familiarity. Honda, Matsuka and Ueda then set heuristic models against knowledge-based models on the same kind of task. Their abstract reports that a familiarity heuristic model explained inferences on tasks participants found subjectively difficult, and a knowledge-based model explained the ones they found easy. The metamemory strand is separate work. Metcalfe, Schwartz and Joaquim repeated cue words a varying number of times while holding the memorability of the targets apart from that count. Their paper reports four experiments and the figures here are from the first, run on 30 introductory psychology students at Dartmouth College. Across the A-B A-B, A-B' A-B, A-D A-B and C-D A-B conditions, cued recall ran .39, .33, .17 and .19, and recognition hit rates ran .72, .56, .59 and .48. Feeling-of-knowing ratings tracked neither, following instead the number of times the cue had been shown, F(3, 87) = 12.64, MSe = 83.13.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "Two towns on the same map",
+      "text": "Asked which of two towns has more people, a traveller names the one she feels she knows better, having passed through it often. Both are recognised, so the sense of knowing one better is what settles the comparison."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Which market takes more money",
+      "text": "A shopper asked to say which of two markets is the busier picks the one she visits every week. Her weekly habit, and not anything she knows about either market's trade, carries the judgement."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Two remedies on the shelf",
+      "text": "Asked which of two remedies is more widely used, a customer names the one whose packet feels more familiar. The extra familiarity comes from her own exposure rather than from how many other people buy it."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "An independent laboratory in Ohio reproduced the binary-choice rule with different cities and a formal model, and the more familiar of two invented city names took 62% of choices in one study and 53% in the other.",

@@ -13,6 +13,23 @@
     "note": "\"Mental Accounting and Consumer Choice\" ran in Marketing Science 4(3), 199-214. Its abstract describes a model that starts from the mental coding of gains and losses using the prospect theory value function, then values purchases through the new concept of transaction utility, then folds in the household budgeting process. The name is older than the model. Kahneman and Tversky's 1984 American Psychologist paper uses \"mental account\" throughout and says its analysis \"owes a large debt to the stimulating work of Richard Thaler (1980, in press), who showed the relevance of this process to consumer behavior\". Thaler's 1999 Journal of Behavioral Decision Making review is the version later work replicates against."
   },
   "evidence": "The founding demonstrations are hypothetical questions. Kahneman and Tversky put two theatre problems to separate groups in 1984. In Problem 8, N = 200, respondents had paid $10 for a ticket and lost it at the door; 46 percent said they would buy another and 54 percent said they would not. In Problem 9, N = 183, they had lost a $10 bill on the way in; 88 percent said they would still buy a ticket. The cash loss is not posted to the account for the play, so it does not raise the felt cost of seeing it. The same paper reports a second case. Sixty-eight percent of 88 respondents would drive 20 minutes to save $5 on a $15 calculator, while 29 percent of 93 would make the same trip to save $5 on a $125 one. Li and Feldman trace both problems to Tversky and Kahneman's 1981 Science paper. The house-money evidence is separate, and part of it used real stakes. Thaler and Johnson ran their Experiment 4 in a large introductory economics class at Cornell, where roughly 98 percent of students agreed to take part for money. After a prior gain of $15 shown apart from the gamble, 77 percent of 95 subjects took the risky option; under the one-stage wording, 44 percent of 111 did. Their hypothetical versions gave 70 to 82 percent risk seeking in the two-stage form against 43 to 44 percent in the one-stage form. The 70 percent that later reviews quote is one row of their Table 5: 44 Cornell MBA students told they had just won $30. Thaler and Johnson also describe an independent replication by Battalio, Kagel and Komain, in which 21 of 35 subjects, 60 percent, took a comparable gamble after a $30 endowment. Field tests came later and mostly test the labelling claim rather than the house-money one. Hastings and Shapiro used a panel of gasoline purchases at a grocery retailer. Milkman and Beshears tracked what online grocery customers did with a $10 discount. Abeler and Marklein ran a German restaurant study and a laboratory experiment on labelled budgets. Hastings and Shapiro's later work on food stamps puts the marginal propensity to consume eligible food out of SNAP benefits at 0.5 to 0.6, calls the propensity out of cash much smaller, and rejects the hypothesis that households respect fungibility.",
+    "examples": [
+      {
+        "kind": "everyday",
+        "tag": "The holiday fund and the credit card",
+        "text": "A household keeps savings labelled for a holiday while paying interest on a card. Clearing the card with the savings would leave them better off, and the two balances are kept in separate books instead."
+      },
+      {
+        "kind": "everyday",
+        "tag": "The rebate that buys something else",
+        "text": "A tax refund is treated as money for something extra, while the same sum arriving as wages goes to the bills. What a pound may be spent on is decided by where it came from."
+      },
+      {
+        "kind": "everyday",
+        "tag": "The last week of the month",
+        "text": "A couple turn down concert tickets because the entertainment budget is spent, while the grocery budget still has room in it. Neither shortage is real; the labels are what stop one balance covering the other."
+      }
+    ],
   "replication": {
     "state": "mixed",
     "headline": "A registered replication of the 17 problems in Thaler's review supported 11, the house-money problem came out backwards, and a meta-analysis of that effect falls to nothing once publication bias is corrected.",

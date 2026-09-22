@@ -13,6 +13,23 @@
     "note": "\"Specious reward: A behavioral theory of impulsiveness and impulse control\" is a review of economic, psychoanalytic and behavioural accounts of impulsiveness. Only excerpts could be obtained, from Ainslie's own site at picoeconomics.org, and they cover his survey of Jevons, Mill, Freud and Strotz rather than his own model. Frederick, Loewenstein and O'Donoghue record the function Ainslie proposed as D(t) = 1/t. The year before, Ainslie had reported in the Journal of the Experimental Analysis of Behavior on pigeons given a small immediate food reinforcement for pecking a key and a larger delayed one for not pecking it. Most subjects pecked the key on more than 95% of trials. Three of 10 learned to peck a differently coloured key earlier on, which removed the tempting option. Those pigeon figures are read from the abstract, which is what PubMed Central serves for that article. Laibson's 1997 Quarterly Journal of Economics paper, 'Golden Eggs and Hyperbolic Discounting', carried the idea into economics through a consumer whose only commitment device is an illiquid asset."
   },
   "evidence": "The classic demonstration is an implied discount rate that falls as the horizon lengthens. Thaler asked respondents what sum in one month, one year or ten years would leave them indifferent to $15 now. Frederick, Loewenstein and O'Donoghue give the median answers as $20, $50 and $100, implying annual rates of 345%, 120% and 19%. Those are median answers from one sample under one matching procedure, and Thaler's paper could not be obtained during this check, so the figures are attributed to that review rather than read off the original. The same review reports that fitted hyperbolic functions beat exponential ones on such data, citing Kirby, Kirby and Marakovic, Myerson and Green, and Rachlin, Raineri and Cross. The testable core is the preference reversal, and the review cites four human studies and two pigeon studies for it. A footnote records that all of them are synchronic: the subject holds both preferences at one sitting. The diachronic version, in which subjects brought back 30 days later have switched, follows from the synchronic one only if discounting is stationary. Laibson used the beta-delta form to explain why consumption tracks income, why consumers have asset-specific marginal propensities to consume, and why financial innovation might lower welfare by supplying too much liquidity.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The class booked in January",
+      "text": "In January a course starting in March looks obviously worth the two evenings a week. On the March morning, with the alarm going and rain on the window, the same two evenings lose to a quiet night in. Nothing about either option changed except which one is now immediate."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The raise already spent",
+      "text": "A saver decides that next year's increase goes straight into the pension, and means it. The increase lands and the money goes on a kitchen. The plan made at a distance and the choice made on the day are the same choice, ranked in opposite orders."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Monday morning and Sunday evening",
+      "text": "On Sunday the week ahead is one of early starts and no drinking. By six on Monday the extra hour in bed is worth more than the run, and by Thursday the drink is worth more than the morning after. Each reversal arrives as the nearer option comes into reach."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Two meta-analyses disagree about money, giving beta of 0.97 with 1 not rejected and 0.938 with 1 excluded, and both find more present bias for non-monetary rewards.",

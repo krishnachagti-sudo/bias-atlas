@@ -17,6 +17,23 @@
     "note": "Their paper is \"How accurate are quotations and references in medical journals?\", and Jergas and Baethge call it probably the first study on the subject. Its abstract reports that the original author was misquoted in 15% of all references from six medical journals published in January 1984, and that most of those errors would have misled readers. Errors in citation, meaning bibliographic detail rather than content, occurred in 24%, of which 8% prevented immediate identification of the source. The name \"false attribution\" is not theirs. It comes from fallacy lists rather than from a paper, and no coinage for it could be traced at Crossref or in the searches run for this entry."
   },
   "evidence": "The design is the same everywhere it is used. Take a sample of references from published articles, read the cited work, and judge whether it supports the statement it was attached to. Errors are graded, with a major error meaning the source contradicts, fails to substantiate, or is irrelevant to the claim, and a minor error meaning an inaccuracy that misleads without destroying the meaning. Jergas and Baethge pooled 28 such studies covering 7,321 references and published between 1985 and 2013. Their random-effects estimate was 25.4% of references carrying a quotation error, 95% CI 19.5 to 32.4, with major errors at 11.9%, CI 8.4 to 16.6. The studies themselves ranged from 6.7% to 83.0%, median 22.5%. Mogull reworked 15 of the same studies with quotations rather than references as the denominator and arrived at 14.5%, CI 10.5 to 18.6, of which 64.8% were major. The counts hold outside medicine. Smith and Cumberledge examined 250 random citations in high-impact general science journals and report a total error rate of 25%. Cumberledge, Smith and Riley did the same in five leading history journals and report 24.27%. A second design tracks one paper instead of a sample. Porrino, Tan and Daluiski reviewed 154 articles citing Knirk and Jupiter's 1986 study of distal radius fractures, and 63 of them contained at least one inaccurate reference to it. Citations of the classification system and tables were mostly accurate, 59 of 63, while 43 of the 57 articles addressing the value of 2 mm of articular incongruity got it wrong. The fabricated end of the definition has been measured separately, on language models. Walters and Wilder had GPT-3.5 and GPT-4 write 42 short literature reviews each and checked all 636 citations in the 84 papers against Google Scholar, Scopus, PubMed, WorldCat, publishers' sites and other sources. 55% of the GPT-3.5 citations and 18% of the GPT-4 citations were fabricated, and among citations to works that do exist, 43% of GPT-3.5's and 24% of GPT-4's carried substantive errors. Chelli and colleagues asked three models to reproduce the reference lists of 11 systematic reviews, analysed 471 references, and counted a paper as hallucinated when any two of title, first author and year were wrong: 39.6% for GPT-3.5, 28.6% for GPT-4 and 91.4% for Bard. Linardon and colleagues prompted GPT-4o in June 2025 for six literature reviews on three mental health disorders, extracted 176 citations and verified each one. 35, or 19.9%, were fabricated, and 64 of the 141 real citations, 45.4%, contained errors, most often an incorrect or invalid DOI. Fabrication tracked how well covered the disorder was, at 4 of 68 for major depressive disorder against 17 of 60 for binge eating disorder and 14 of 48 for body dysmorphic disorder.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The citation that does not say it",
+      "text": "A review states that a therapy halves relapse and cites a paper which measured something else and reported no such figure. The reference is typed correctly and supports nothing, which is the failure a reader who never opens it cannot see."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The aphorism with a famous name on it",
+      "text": "A slide closes with a line about failure credited to a scientist who never wrote it. The name is doing the persuading, and there is no source behind it to be checked."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The expert cited on the wrong subject",
+      "text": "A leaflet backs its claim about river water quality with a professor's name, and the professor's field is medieval history. The credentials are genuine, and they are not credentials for this."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "The audit has been run 46 times in medicine on 32,074 quotations, and the pooled rate is 16.9%, with no change over forty years.",

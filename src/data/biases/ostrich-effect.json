@@ -2,7 +2,11 @@
   "no": 118,
   "slug": "ostrich-effect",
   "name": "Ostrich effect",
-  "aliases": ["Selective attention to information", "Information avoidance", "Ostrich problem"],
+  "aliases": [
+    "Selective attention to information",
+    "Information avoidance",
+    "Ostrich problem"
+  ],
   "category": "decision",
   "statement": "People look at information less often when they expect it to be bad news, so investors check their accounts less after the market falls than after it rises.",
   "meaning": "The claim is about attention, not about action. Someone with money in a pension fund can find out what it is worth at any moment for nothing. The ostrich effect says the decision to look is not neutral: it depends on what the answer is likely to be. Karlsson, Loewenstein and Seppi model this by letting information carry utility of its own. Attending to news amplifies its emotional impact, speeds up the updating of the reference point against which future news is judged, and changes exposure to the risk in the news itself. Given plausible parameters, the model predicts asymmetry. Preliminary good news should draw people towards definitive information, preliminary bad news should push them away. The behaviour is a monitoring choice, and nothing in the model says the underlying holding gets changed.",
@@ -13,6 +17,23 @@
     "note": "Their paper is \"The 'Ostrich Effect' and the Relationship between the Liquidity and the Yields of Financial Assets\", on Israeli fixed-income yields. Its abstract, as the publisher deposited it, says Israeli treasury bills paid a higher yield to maturity than equally risky bank deposits. The gap was wider in periods of greater uncertainty, and taxes, risk and transaction costs do not account for it. Karlsson, Loewenstein and Seppi credit the term to the 2003 working-paper version, which they cite as an SSRN paper, and quote its definition, \"avoiding apparently risky financial situations by pretending they do not exist\". The full article was still shut on 21 September 2026, so what it did beyond its abstract is reported here at one remove."
   },
   "evidence": "Karlsson, Loewenstein and Seppi tested the asymmetry on two sets of account records. The first came from the Swedish Premium Pension Authority, which by 2004 held 5.3 million of Sweden's 9 million citizens, covering 7 January 2002 to 13 October 2004. Daily logins averaged 10,903, of which 1,142 involved reallocations, leaving 9,761 informational look-ups. A one percent rise in the averaged prior return on the Stockholm All Shares index went with 120 to 140 extra look-ups, just over 1% of the daily mean. That coefficient reached the 10% level in one specification and the 1% level in the other. The second set came from Vanguard, covering 2 January 2006 to 30 June 2008, with a mean of 416,916 logins a day. There the same one percent rise went with 18,000 to 23,000 extra logins, 5% to 6% of the daily mean, significant at 1% in both specifications. Both are aggregate daily time series with day-of-week and trend controls, not experiments. The Swedish regressions also control for the daily number of reallocations. The Vanguard data carry no transaction counts, so those regressions use S&P 500 trading volume as a proxy instead.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The pension statement left in its envelope",
+      "text": "A statement arrives in a month when the markets have fallen and it stays unopened on the shelf. Opening it changes nothing about the balance and costs nothing, and it is skipped because of what it is expected to say."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The banking app in a bad week",
+      "text": "Someone who checked their balance twice a day while the account was healthy stops looking after an unexpected bill. The account is just as reachable, and the checking has become a decision about what they want to know."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The results page nobody refreshes",
+      "text": "A patient waiting on a scan refreshes the portal hourly until the clinic's tone on the telephone changes. After that the same page is left alone, though the answer is a tap away."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The asymmetry is large and stable in retirement-account data and reverses in a sample of active UK traders, where logins rose after falls as well as rises.",

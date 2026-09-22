@@ -2,7 +2,11 @@
   "no": 258,
   "slug": "gender-schema-theory",
   "name": "Gender schema theory",
-  "aliases": ["Gender-schematic processing", "Gender schemata theory", "GST"],
+  "aliases": [
+    "Gender-schematic processing",
+    "Gender schemata theory",
+    "GST"
+  ],
   "category": "social",
   "statement": "Gender schema theory holds that people who sort the world into masculine and feminine process new information through that sorting, and remember it bent towards the categories.",
   "meaning": "The theory is about where sex typing comes from rather than what it contains. A gender schema is a readiness to sort people, traits, objects and activities into masculine and feminine, and Bem's claim is that this readiness, once the self-concept has been assimilated to it, is what produces the sex-typed person. Her abstract says two studies found sex-typed individuals readier to process information, including information about the self, in terms of the gender schema. Carol Lynn Martin and Charles Halverson published a developmental version in Child Development in December of the same year, treating sex stereotypes as schemas that organise incoming information and arguing that sex stereotyping is an ordinary cognitive process rather than a defect. Because this is a framework and not one effect, its predictions have not been tested equally. The one tested most is about memory. If a schema shapes encoding and retrieval, material that fits the schema should be recalled better, and material that contradicts it should be lost or bent until it fits.",
@@ -13,6 +17,23 @@
     "note": "The paper runs from page 354 to page 364 of volume 88, issue 4. Only its abstract, read at ERIC, could be obtained, and no figure from the two studies it reports is quoted here. The instrument the theory leans on to identify who ought to be schematic is seven years older: the Bem Sex Role Inventory, in the Journal of Consulting and Clinical Psychology in 1974. Martin and Halverson's schematic processing model appeared in Child Development, volume 52, issue 4, pages 1119 to 1134, in December 1981."
   },
   "evidence": "The founding memory study is Martin and Halverson's, in Child Development in 1983. Its abstract reports 48 children aged five and six shown pictures of males and females performing sex-consistent and sex-inconsistent activities, with recall of the activity and of the actor's sex tested a week later, and sex-consistent activities came out more memorable. The paper is closed and none of its numbers appear here. The claim it is usually cited for, that children flip the actor's sex on the inconsistent pictures and not on the consistent ones, is taken from Gülgöz, Alonso, Olson and Martin, whose one sentence on distorted recall cites Signorella and colleagues, Martin and Halverson, and Stangor and Ruble together. The clearest recent primary test in adults is Sebastián-Tirado, Félix-Esbrí, Forn and Sanchis-Segura's, in Sex Roles in 2023. Spanish marks occupational nouns for gender, so a job has a masculine and a feminine form differing in the last letter. Both experiments opened with an Implicit Association Test, which confirmed that these students tied high-status attributes to men. That test measures the association rather than the theory, and only the memory task that follows tests what the theory predicts about processing. Experiment 1 gave an incidental encoding task to 109 undergraduates at the Universitat Jaume I, 52 men and 57 women, with recognition tested 15 minutes later. Feminine forms of high-status professions were forgotten more often than their masculine forms, t(108) = 7.84, Bonferroni p < .001, d = 1.05, 95% CI [0.64, 1.55], while the same contrast for low-status jobs came to nothing, t(108) = 0.17, Bonferroni p = 1.00. The four error categories were not evenly distributed, chi-squared(3) = 61.90, p < .001, and the risk of failing to recognise a feminine high-status form was 2.35 times the masculine risk, 95% CI [1.89, 2.92], Z = 7.76, p < .001. Experiment 2 ran identical materials on 96 students, 49 women and 47 men, who were told a memory test was coming. The same contrast held at about a third of the size, t(95) = 2.59, Bonferroni p = .028, d = 0.38, 95% CI [0.12, 0.66]. Their abstract gives the two samples as 107 and 96 where their method section counts 109 and 96.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The story about the doctor",
+      "text": "A child hears a story in which a doctor visits a farm, and retells it later with the doctor as a man although the story said she. The detail was not simply dropped. It was returned to the category it usually sits in."
+    },
+    {
+      "kind": "everyday",
+      "tag": "A picture of a mechanic",
+      "text": "Shown a photograph of a woman repairing an engine, some children describe a man doing the work when asked about it a week afterwards. The part of the scene that cut across the sorting is the part that shifted."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Reading a page of vacancies",
+      "text": "Someone skims a list of job adverts and later recalls the nursing posts as advertised for women and the engineering posts for men, although neither advert said anything of the kind. The categories filled the gap the reading left."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Repeated on 353 children, the memory advantage for stereotype-consistent pictures did not appear, and free recall ran the other way.",

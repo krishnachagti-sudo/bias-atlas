@@ -2,7 +2,10 @@
   "no": 245,
   "slug": "fluency-heuristic",
   "name": "Fluency heuristic",
-  "aliases": ["Retrieval fluency heuristic", "Fluency as a cue"],
+  "aliases": [
+    "Retrieval fluency heuristic",
+    "Fluency as a cue"
+  ],
   "category": "decision",
   "statement": "When two familiar options are compared, the one retrieved faster is inferred to be the larger, and speed of retrieval stands in for knowledge about either.",
   "meaning": "Two claims sit inside the name and they have different amounts of evidence behind them. The narrow one is a decision rule for paired comparisons: if both objects are recognised and one comes to mind more quickly, choose that one and consult nothing else. Schooler and Hertwig defined it that way, as the successor to the recognition heuristic for the cases the recognition heuristic cannot touch, and they operationalised fluency as recognition latency. The wide one is that ease of processing, from any source, feeds any judgment. Repetition, high contrast, rhyme and simple pronunciation all make a stimulus easier to take in, and the ease is then misread as evidence that the stimulus is true, liked, safe or big. Alter and Oppenheimer's review calls the wide version a ubiquitous metacognitive cue and groups conceptual, perceptual and linguistic fluency together on the grounds that they produce similar judgments. The narrow rule can be measured against a model. The wide claim cannot, and its parts have fared differently.",
@@ -13,6 +16,23 @@
     "note": "Their paper is \"How Forgetting Aids Heuristic Inference\", and it names and formalises the heuristic inside the ACT-R architecture rather than testing it on people. Schooler and Hertwig trace the underlying idea to Jacoby and colleagues, citing Jacoby and Dallas, Jacoby and Brooks, and Kelley and Jacoby. They cite the false fame effect to Jacoby, Kelley, Brown and Jasechko, and the perceived truth of repeated assertions to Begg, Anas and Farinacci, as cases where fluency already acts as a cue."
   },
   "evidence": "The 2005 paper is a simulation. Applied to all pairs of the 83 largest German cities, with ACT-R's default decay rate of -.50, the fluency heuristic answered 62.1% correctly against the recognition heuristic's 61.3%. Fluency validity, the chance of a correct answer when both cities are recognised, was .61, well below the recognition validity of .82. Performance peaked at an intermediate decay rate of -.25, and the fluency rule's own validity peaked at -.42, so forgetting helped by spreading retrieval times far enough apart to be told apart. The human evidence arrived in 2008. Hertwig, Herzog, Schooler and Reimer ran four studies. In the second, 120 students judged which of two names they had recognised faster; for gaps above 100 ms they scored a median .76, and below 100 ms accuracy sat at .53, with a 95% confidence interval from .49 to .58. In the third, 80 students at the Free University of Berlin made 156 paired comparisons. Choices matched the heuristic in .74 of applicable cases for US cities, .63 for German companies and .68 for music artists, against individual baselines that were 16, 11 and 15 percentage points lower, d = 1.03, 0.83 and 1.38. The heuristic was applicable to between 23% and 33% of inferences. In the fourth, 50 students at Basel counted syllables in a set of city names, which raised the chance of picking those cities as larger to .55, SD = .13, 95% CI [.52, .59], t(49) = 2.94, p = .005, d = .37.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "Two rivers on a quiz sheet",
+      "text": "Asked which of two rivers is longer, a quizzer picks the one whose name arrived first. Both names were recognised and neither length is known, so the speed of retrieval has stood in for the fact the question asked for."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Which department is bigger",
+      "text": "A new employee is asked which of two teams has more staff and names the one that came to mind quickest. Both were covered at the induction, so the answer rests on which surfaced sooner rather than on any headcount."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The charity that sprang to mind first",
+      "text": "Deciding which of two charities is the larger, a donor goes with the one whose name arrived faster. Both are recognised, and nothing known about either organisation's size entered the judgement."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The choice pattern reproduces in other laboratories at about two thirds of applicable pairs. Model-based estimates put decisions made on fluency alone at about one in five.",

@@ -16,6 +16,23 @@
     "note": "One three-page report holding 11 studies, with thinking periods of 6 to 15 minutes. The electric-shock study is study 10 of the 11 and occupies two paragraphs. The paper's own summary line is that people prefer doing to thinking."
   },
   "evidence": "Enjoyment was the mean of three nine-point items, on how enjoyable and entertaining the period was and how bored the participant felt, reverse-scored, with an alpha of 0.89. Across studies 1 to 6, run in the laboratory with 146 participants, mean enjoyment was 5.12 (SD 1.77). In those six studies 57.5% put difficulty concentrating at or above the scale midpoint, 89.0% said the same of mind wandering, and 49.3% put enjoyment at or below the midpoint. Study 7 moved the task to the homes of 44 participants, where 32% admitted cheating by using a phone or leaving their chair, and enjoyment fell to 4.35 against the laboratory figure, t(188) = 2.47, P = 0.014. The authors flag that location was not randomly assigned. Study 8 is the comparison the later work turns on. Fifteen participants thought for 12 minutes and 15 chose an external solitary activity, and enjoyment was 3.20 against 6.87, t(28) = 4.83, P < 0.001. Study 9 recruited community members aged 18 to 77 at a farmer's market and a church, with similar results. Letting participants plan their topics in advance changed nothing across studies 1 to 7, with 4.97 against 4.94, t(450) = 0.15. In study 10 participants rated a shock, said how much of $5 they would pay to avoid feeling it again, then sat for 15 minutes with a button that would deliver it. Among the 42 who had said they would pay to avoid it, 12 of 18 men and 6 of 24 women pressed at least once. The men's range was 0 to 4 shocks, mean 1.47, SD 1.46, excluding one man who gave himself 190. The women's range was 0 to 9, mean 1.00, SD 2.32.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The belongings left in a hospital locker",
+      "text": "Told to leave phone and keys outside before a scan, a patient sits for fifteen minutes with nothing to do but think. Asked afterwards, she rates the wait below the magazine she had been reading in the corridor, though nothing unpleasant happened in it."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The unstructured hour on a retreat",
+      "text": "A retreat sets aside an hour in which participants sit in a plain room and entertain themselves with their own thoughts. Most report that the walk earlier in the day was easier and more enjoyable, and several say they could not hold their attention on any chosen topic."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The dead battery on a stalled train",
+      "text": "A passenger with a flat phone picks up a discarded leaflet about ticket refunds and reads it twice. The point is not that thinking was unbearable, but that almost any ordinary activity was preferred to thinking on purpose."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "The doing-versus-thinking comparison came back at r = 0.594 against an original of 0.674, and 2,557 people across 11 countries preferred doing in every one of them.",

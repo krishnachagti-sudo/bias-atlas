@@ -2,7 +2,12 @@
   "no": 457,
   "slug": "metaphoric-structuring-of-time",
   "name": "Metaphoric structuring of time",
-  "aliases": ["Metaphoric structuring", "Metaphoric restructuring", "Ego-moving and time-moving perspectives", "Next Wednesday's meeting effect"],
+  "aliases": [
+    "Metaphoric structuring",
+    "Metaphoric restructuring",
+    "Ego-moving and time-moving perspectives",
+    "Next Wednesday's meeting effect"
+  ],
   "category": "perception",
   "statement": "Priming a spatial perspective changes which day people name when told that next Wednesday's meeting has been moved forward two days.",
   "meaning": "English talks about time in the vocabulary of space. A deadline approaches, a holiday is ahead, a decision is put back. Two of these figures conflict. In one the speaker moves along a timeline towards future events, so moving a meeting forward carries it further ahead, to Friday. In the other events travel towards a stationary speaker, so moving a meeting forward brings it nearer, to Monday. McGlone and Harding built a probe out of that conflict in 1998, asking people which day a Wednesday meeting lands on once it is moved forward two days. Boroditsky put a spatial task in front of the probe and asked whether thinking about motion through space changes the answer. What the paradigm measures is the split between two responses to one ambiguous sentence. The claim built on top of it, that space supplies the structure people use to reason about time, is an interpretation of that split rather than a separate measurement. This entry covers the probe and its priming. The wider embodiment programme in social psychology sits at embodied cognition, which scopes itself to warm cups and heavy clipboards and treats the grounding-in-language work as separate.",
@@ -13,6 +18,23 @@
     "note": "The Wednesday probe is older than the priming result. Boroditsky credits McGlone and Harding (1998) with the disambiguation paradigm and cites McTaggart (1908) for the two perspectives on temporal order; her contribution was showing that a spatial prime placed before the question shifts the answer."
   },
   "evidence": "Boroditsky's Experiment 1 gave 98 Stanford undergraduates a two-page questionnaire. Page one held four true-or-false spatial scenarios, either a stick figure moving past objects or objects moving past a stationary viewer. Page two asked which day next Wednesday's meeting had moved to. Seven people answered the priming questions wrongly and were dropped. Of those primed with the ego-moving scenarios, 73.3% said Friday; of those primed with the object-moving scenarios, 30.8% said Friday and 69.2% said Monday. Prime-consistent answers ran at 71.3% overall, chi-square(1, N = 56) = 5.2, p < .05. A control group that saw no primes split 54.3% Friday to 45.7% Monday. The paper carries two further experiments, on 302 and on 53 undergraduates, which primed in both directions and found that spatial schemas transfer to temporal questions more strongly than temporal schemas transfer to spatial ones. Boroditsky reads that asymmetry as support for a weak version of metaphoric structuring, in which time carries its own schemas imported from space rather than reaching back into space each time.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The meeting that moved forward",
+      "text": "An email says Wednesday's meeting has been moved forward two days. Half the office turns up on Monday and half on Friday, and each half thinks the sentence was plain. The two answers come from two ways of picturing motion along a timeline."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Approaching the deadline that is approaching",
+      "text": "A team says in one breath that the deadline is coming at them and in the next that they are coming up on it. One figure has events travelling towards a still speaker and the other a speaker travelling towards still events, and forward means opposite things in the two."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The traveller at the gate",
+      "text": "Someone who has spent an hour walking an airport concourse, dragging a case towards a gate, reads that the flight has been brought forward and assumes it leaves later. Having just moved themselves through space, they take themselves to be the thing that moves."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Twenty labs repeated the questionnaire on 1,335 primed people and found the effect at 0.26, under half the original, while two later studies varying the spatial prime moved the answer only in one direction or not at all.",
@@ -24,8 +46,25 @@
       "sites": 20,
       "n": 1335
     },
-    "original": { "es": 0.63, "esType": "d", "ci": [0.07, 1.2], "ciLevel": 95 },
-    "replicated": { "es": 0.26, "esType": "d", "ci": [0.15, 0.37], "ciLevel": 95, "weighting": "aggregate" }
+    "original": {
+      "es": 0.63,
+      "esType": "d",
+      "ci": [
+        0.07,
+        1.2
+      ],
+      "ciLevel": 95
+    },
+    "replicated": {
+      "es": 0.26,
+      "esType": "d",
+      "ci": [
+        0.15,
+        0.37
+      ],
+      "ciLevel": 95,
+      "weighting": "aggregate"
+    }
   },
   "limits": "The famous version of this result is not the one that was repeated. Boroditsky and Ramscar took the same question into the field, asking 70 people in a Stanford lunch queue, 333 travellers at San Francisco International Airport and 120 passengers on CalTrain. Position in the queue predicted the Friday answer at r = 0.33, p < .005; 76% of people who had just landed said Friday against 62% of those waiting to depart and 51% of those meeting an arrival; on the train, 77% and 91% said Friday within five minutes of boarding and of arriving, against 55% in the middle of the journey. Those are single-occasion field measurements by one team, mostly correlational, and a search for a repeat of them found nothing. Where the search looked: PubMed, Crossref, general web search, and the 776 works recorded by Semantic Scholar as citing the 2002 paper, whose titles name no replication of it. The baseline the paradigm assumes has also moved. Boroditsky and Ramscar describe a neutral context as producing an even split; Many Labs 3 found 63.3% Friday among unprimed controls, and Stickles and Lewis, pooling previously reported control conditions, conclude that English speakers hold a baseline preference for the Friday reading, stronger when the question is spoken than when it is written. Outside English the probe often stops being ambiguous, which limits how far the priming result can travel.",
   "misreadings": "The first error is to promote a response split into a claim about mental representation. What the studies record is which of two days people name for one ambiguous sentence, and a shift of a few percentage points in that split is the whole observation. Núñez, Motz and Teuscher argue that a Monday answer need not mean the respondent has time moving towards them at all, since ordering events in a sequence without reference to the present produces the same answer. The second is to treat this paradigm as the front line of the linguistic-relativity dispute. That dispute is mostly about a different claim of Boroditsky's, made in 2001, that Mandarin speakers think about time vertically because Mandarin uses vertical spatial metaphors for it. Chen reported that Chinese speakers use horizontal metaphors more often than vertical ones and failed to replicate the experiments in four attempts; January and Kako reported six unsuccessful attempts and concluded that the 2001 paper supports no Whorfian claim; Boroditsky, Fuhrman and McCormick answered in 2011 with new data and maintained the vertical difference. The verdict on this page covers the ego-moving and time-moving priming of the Wednesday probe. It does not cover the vertical-time claim, which has its own record. The third is scale. The original priming demonstration rests on 56 people after exclusions, and the multi-lab repeat put the effect at under half that size.",

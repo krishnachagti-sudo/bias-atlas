@@ -13,6 +13,23 @@
     "note": "Flew names the No-true-Scotsman Move in a single parenthesis on page 104, attached to an argument about Berkeley and Newman on causes. The usual citation is instead to Thinking About Thinking, published by Fontana in 1975, and that book carries the Scotsman anecdote everyone repeats but not the name's first use. Flew had already used the Scotsman in An Introduction to Western Philosophy, published by Thames and Hudson in 1971. The 1966 wording was read twice, once in a scan of the first American edition, Harcourt, Brace and World, and once through Internet Archive full-text search, which returns it from five separate scanned editions."
   },
   "evidence": "There is no experimental record here, and the primary material is three passages by one philosopher. The 1966 parenthesis reads: 'In this ungracious move a brash generalization, such as No Scotsmen put sugar on their porridge, when faced with falsifying facts, is transformed while you wait into an impotent tautology: if ostensible Scotsmen put sugar on their porridge, then this is by itself sufficient to prove them not true Scotsmen.' That is the whole of it. There is no anecdote, no newspaper and no named Scotsman, and the porridge appears only as a specimen sentence inside a chapter on natural theology. The story arrives five years later. An Introduction to Western Philosophy has a generalisation about someone being beaten 'with a blunt instrument', met by 'a falsifying instance: \"Mr Angus McSporran did just that\"', and then 'Instead of withdrawing, or at least qualifying' the claim. Thinking About Thinking gives the version that spread. Its American edition, published as Thinking Straight in 1977, opens the passage: 'Imagine some Scottish chauvinist settled down one Sunday morning with his customary copy of' his paper. He 'reads the story under the headline, \"Sidcup Sex Maniac Strikes Again\"', and is 'agreeably shocked: \"No Scot would do such a thing!\"'. The next Sunday brings McSporran in Aberdeen, and 'what in fact he says is: \"No true Scotsman would do such a thing!\"'. The next paragraph offers what Flew calls a simple but actual example of the move, taken from the Black Power leader Stokely Carmichael, and turning on who counts as truly white. Flew then writes that if all examples of the move were as simple and straightforward as those two, the fallacy would be easier to handle than it is. So the porridge and the sex maniac are different examples in different books, ten years apart, and the popular retelling fuses them. Whether the move is always a fallacy is contested. Robert Anderson argues in a 2017 conference paper that context can explain why it may not always be fallacious, working through the speaker's meaning, the syntactic position of the inserted word true, and dialogues whose subject is classification itself. His abstract was read at his university's repository; the chapter behind it was not obtained.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The members who stayed in out of the rain",
+      "text": "Someone says every member of the club turns out in bad weather. Told that three stayed at home, he answers that no committed member would. The sentence began as a claim about members and is now a rule about whom he will call committed."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The trade body answering a complaint",
+      "text": "A complaint about a member's conduct is met with the reply that a proper practitioner would never behave that way. The complaint was evidence about the trade, and the answer converts it into a question of what the trade is called."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The revision that earns its keep",
+      "text": "A committee meets an awkward case, narrows a rule, says plainly that the rule has changed and gives a reason independent of the case that prompted it. Sharpening a category after a hard instance is ordinary work; presenting the narrowed claim as the original one vindicated is the fallacy."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "No experiment testing whether people commit this fallacy, or how often, was found. Two nearby literatures measure related things, and neither is a test of it.",

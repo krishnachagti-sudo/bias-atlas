@@ -17,6 +17,23 @@
     "note": "Their paper is titled \"Power and perspectives not taken\" and reports four experiments plus a correlational study. It gives prep values rather than p values throughout, a convention the journal pushed briefly in the mid-2000s, so most of its results carry no p value at all. The authors chose a priming procedure over a role manipulation on the grounds that structural manipulations of power add cognitive load."
   },
   "evidence": "Experiment 1 is the one everybody quotes. Fifty-seven undergraduates, 41 women and 16 men with an average age of 20.02, wrote a high-power or low-power recall essay. They then allocated lottery tickets, snapped their fingers five times, and were told to draw a capital E on their forehead with a marker. An E drawn legibly to the writer is backwards to an onlooker. Controlling for handedness and sex, the only reliable predictor was the power condition, B = -1.51, SE = 0.76, prep = .88. Thirty-three percent of high-power participants drew a self-oriented E, 8 of 24, against 12% of low-power participants, 4 of 33. Experiment 2a took a different route with 42 undergraduates. They read that they and a colleague had eaten badly at a restaurant recommended by the colleague's friend. The colleague then emailed the friend to say \"About the restaurant, it was marvelous, just marvelous.\" Asked how the friend would read it on a six-point scale running from sarcastic to sincere, high-power participants answered 3.74, SD = 1.54, against 4.84, SD = 1.30, for low-power participants, t(40) = 2.47, prep = .93, d = 0.77. Experiment 2b reversed which reading the privileged knowledge supported, with 51 subjects, and found the mirror pattern, 3.31, SD = 1.46, against 2.36, SD = 1.35, t(49) = 2.4, prep = .93, d = 0.68. Experiment 3 compared 70 students given the power prime against a control condition who described their previous day, scoring 24 faces from the DANVA2. The high-power group made more errors, M = 4.54, SD = 2.80, than controls, M = 3.11, SD = 1.57, F(1, 66) = 10.81, prep = .98. A correlational study of 32 students regressed a perspective-taking scale on a sense-of-power scale and found B = -0.35, SE = 0.17, prep = .88.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The essay before the task",
+      "text": "Asked to write about a time they had power over somebody, people then do worse on a task needing another person's vantage point than those who wrote about being on the receiving end. The feeling was produced by the writing, and that is what the claim covers."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The note that is clear from one chair",
+      "text": "Someone who has just recalled being in charge writes a message that reads plainly to him and ambiguously to everybody else, because his own view is the one he anchored on. The state lasted minutes and was made by a writing exercise."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The volunteer who outranks nobody",
+      "text": "A student with no authority over anyone recalls an occasion when others depended on her, and then misreads how a note would sound to somebody outside the room. What changed was a primed state, and her standing in any hierarchy is a separate subject."
+    }
+  ],
   "replication": {
     "state": "failed",
     "headline": "Twenty laboratories and an online sample repeated the sarcasm experiment on 2,969 people and got d = 0.03, against 0.77 in the original.",

@@ -12,6 +12,23 @@
     "note": "Their paper is \"The spotlight effect in social judgment: An egocentric bias in estimates of the salience of one's own actions and appearance\", it gave the phenomenon its name, and it opens by placing itself where Ross and Sicoly's work on responsibility allocation left off."
   },
   "evidence": "Five studies, in three paradigms, all reported in the 2000 paper. Study 1 ran 109 Cornell undergraduates: 15 wore the shirt, 64 watched in sessions of two to six, and 30 were controls who saw a videotaped reenactment instead. The shirt carried a 21 cm by 24 cm picture of Barry Manilow, chosen because pretest interviews suggested a majority of Cornell undergraduates would be embarrassed to wear it. The targets estimated that 46% of the room could name him and 23% of the observers could, which the authors call exactly twice. Per session the targets overshot by 23 points, 95% CI 9 to 38, and by 27 points, CI 11 to 43, once the sessions holding two and three observers are dropped. A one-way analysis of variance across the targets and the two control groups gave F(2, 42) = 5.76, p < .01, and the targets sat above the controls who had been told it was Manilow, t(42) = 3.07, p < .005, and above those who had not, t(42) = 2.66, p < .02. Estimates still tracked reality, r = .50, p < .05. A footnote reports men estimating 59% against women's 35%, t(13) = 1.92, p < .10, which the authors call marginal and possibly an anomaly. Study 2 ran 79 people, most of them Cornell undergraduates and the rest school pupils on Cornell's summer session. Its 15 targets picked a shirt they were pleased to wear, bearing Bob Marley, Jerry Seinfeld or Martin Luther King, Jr. They estimated 48% against an actual 8%, a per-session gap of 40 points, 95% CI 21 to 59. Study 3 moved from clothes to talk. It put 193 undergraduates into 42 groups of three to seven, had them discuss inner-city policy, then rank themselves as they thought the group would. Taking the group as the unit of analysis, they were wrong on all six dimensions, hardest on speech errors, where a predicted rank of 2.30 met an actual 2.96, t(41) = 6.84, p < .00001. The last two studies test the mechanism. Study 4 sent 44 Northwestern undergraduates into a room of confederates in a Vanilla Ice shirt, and of the 30 who named one alternative figure before settling, 23 named a higher one, binomial z = 2.74, p < .01. Study 5 gave some of 30 Northwestern undergraduates 15 minutes to get used to the Manilow shirt. They estimated 37% where those sent straight in estimated 51%, t(28) = 2.26, p < .05. Four further participants were run in Study 5 and discarded for confederate errors, so 30 is the analysed sample rather than the recruited one.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The stain noticed on the train",
+      "text": "Someone spots a mark on their shirt on the way to a meeting and spends the morning certain the room is looking at it. Some of the room does notice, and roughly half as many as the wearer assumes."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The stumbled sentence in a presentation",
+      "text": "A speaker who loses a word replays the moment for days. Most listeners registered a pause, some registered nothing, and by the afternoon the few who noticed could not say when it happened."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The haircut that came out short",
+      "text": "A person braces for comment all day and collects two remarks. The discrepancy is not that nobody is looking; it is that their own head has been the most available evidence about where everyone else's attention is."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "No repeat of the estimated-against-actual design was found, and the nearest recent study runs the paradigm in reverse with scent instead of a shirt.",

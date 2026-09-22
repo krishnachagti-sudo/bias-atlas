@@ -16,6 +16,23 @@
     "note": "The paper that fixes the label, in the sentence 'We use the term \"objectivity illusion\" to describe this tendency'. It names naive realism as its starting point and cites two works for that, Robinson and colleagues' 1995 article and Ross and Ward's 1996 chapter. The phrase is older than the paper. Pronin, Gilovich and Ross's 2004 reference list carries a 1999 dissertation abstract by D. A. Armor titled 'The illusion of objectivity: A bias in the perception of freedom from bias'. It was not obtained: Crossref holds no record of it and no open copy was found by plain search, checked on 21 September 2026."
   },
   "evidence": "Study 1 ran on Amazon Mechanical Turk in three stages around the 2016 presidential debates, with 870 people at stage 1, 696 the next day and 509 twenty-four days later. Supporters put their allies at +1.24 on the normative-minus-biased composite, SD = 1.94, and their adversaries at -3.00, SD = 1.89, t(744) = 37.72, P < 0.001, Cohen's d = 1.38. The gap tracked partisanship, r = 0.50, running from d = 0.99 among leaners to d = 1.55 among strong supporters and d = 2.08 among very strong ones. It also held for every one of the seven influences taken separately. Undecided voters rated both camps as driven more by bias than by reason, Trump supporters at M = -1.93 and Clinton supporters at M = -1.52, t(124) = -11.69 and t(124) = -9.14, both P < 0.001. Stage 1 and stage 3 scores correlated at r = 0.82. The predictive results are what the paper was written for. Baseline illusion predicted claiming that one's own candidate won the debates, b = 0.17, 95% CI (0.13, 0.20), t(446) = 9.76, P < 0.001, r = 0.42, with 64% of low scorers and 91% of high scorers saying so. It predicted the strengthening of candidate support over the 24 days, b = 0.05, 95% CI (0.02, 0.07), t(446) = 3.29, P = 0.001, r = 0.15. High scorers had a 1.1% chance of switching allegiance or going undecided against 15.4% for low scorers, and a 15.9% chance of picking a free book favouring the opposing candidate against 40.2%. Both relationships survived controls for initial strength of support and for how badly participants rated the other side's personal traits. Study 2, two days before the election, gave 1,715 participants a fictitious blog post by 'Robert Miles' backing one candidate. Ratings of the author ran +2.66 when he backed the participant's candidate and -1.57 when he backed the other, t(1513) = 38.69, P < 0.001, d = 1.98, while undecided voters rated the two versions alike, t(190) = 0.92, P = 0.36, d = 0.13. Between 13.4% and 17.5% of each side called average supporters of the other candidate very or extremely evil. The attribution does not need politics to appear. Cheek, Blackman and Pronin ran seven experiments on judgements of paintings. In their first, 70 undergraduates, cut from 90 after 16 suspected the deception and 4 were dropped for procedural error, rated a stranger who had picked different paintings as less guided by the works' true quality, t(68) = 4.47, P < 0.001, d = 1.07, and more swayed by social influence, t(68) = -2.51, P = 0.015, d = -0.60.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "Two accounts of the same vote",
+      "text": "A supporter explains his own camp's vote by what the facts showed and the other camp's by what they were fed. Both camps give that answer, and each takes the asymmetry to be a feature of the world rather than of the view."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Why they believe it and why we do",
+      "text": "Asked why they hold their own position, people cite knowledge of the record. Asked why the other side holds its position, the same people cite misinformation and self-interest, and grant neither explanation to themselves."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The colleague who disagreed",
+      "text": "A colleague who agrees with an assessment is described as sensible. Have him disagree on the same point and he is described as having an axe to grind. The only thing that changed was the direction of his answer."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "A preregistered census-matched sample of 1,808 Americans found the measure predicting a fresh partisan bias four years on, but neither 2016 study has been replicated directly.",

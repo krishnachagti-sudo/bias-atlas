@@ -13,6 +13,23 @@
     "note": "The paper is \"Choosing versus rejecting: Why some options are both better and worse than others\", and the custody vignette is the version everyone quotes."
   },
   "evidence": "In the original, 170 people were split between an award group and a deny group. The award group gave custody to the extreme parent 64% of the time, and the deny group denied it to the same parent 55% of the time. The sum is 119%, and Shafir reported the excess over 100 as reliable, z = 2.48, p < .02. Many Labs 2 later converted that result to d = 0.35, with a 95% confidence interval from -0.04 to 0.68.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The flat with the garden and the commute",
+      "text": "One flat is fine on everything and a second has a large garden and an hour's travel. Asked which to take, a viewer names the second; asked which to rule out, another viewer names the second again. Both cannot be the right answer."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Two candidates and two questions",
+      "text": "A panel told to pick names the candidate who is brilliant in places and weak elsewhere, because the strengths are the reasons a choice asks for. A panel told to eliminate names the same person, because the weaknesses are the reasons a rejection asks for."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The holiday crossed off the list",
+      "text": "A couple compare a reliable hotel with a resort that has a famous beach and poor food. Which verb the question uses decides which of the resort's two extremes comes to mind, and so decides the answer."
+    }
+  ],
   "replication": {
     "state": "failed",
     "headline": "Across 7,901 people the two percentages summed to 93 rather than the 119 the original reported, missing the coherent 100 from the other side.",

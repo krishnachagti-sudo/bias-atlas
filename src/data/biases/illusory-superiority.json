@@ -13,6 +13,23 @@
     "note": "Svenson set out to replicate older claims, which he called poorly documented, that 70 to 80% of drivers put themselves in the safer half. He does not use the label \"better-than-average effect\" anywhere in the paper."
   },
   "evidence": "Svenson gave written questions to 161 licensed drivers. Eighty-one answered an advertisement in a University of Oregon student paper, median age 22, and 80 were psychology students at the University of Stockholm, median age 33. Each person judged either skill or safety, not both. Skill was judged by 41 of the Americans and 45 of the Swedes, safety by 40 and 35. Answers were marked on one of ten successive 10% intervals. The comparison group was the other people in the room, named in the question and set explicitly against Eugene, Oregon or against Stockholm and Sweden. On skill, 93% of the American sample and 69% of the Swedish put themselves above the median driver, and 46.3% of the Americans claimed the most skilful fifth. On safety the figures were 88% and 77%. No statistical test appears in the six pages, a point Koppel and colleagues make again when setting up their replication. Zell, Strickhouser, Sedikides and Alicke later pooled 291 independent samples from 124 published articles and 965,307 participants, and put the effect at dz = 0.78, 95% CI [0.71, 0.84]. Five samples supplied most of that total, two of them 805,708 participants between them, and dropping all five leaves 45,160 people across 286 samples, an average of 157.90 each. The six-figure total belongs to the collection rather than to the estimate. Their numbers here are read from the authors' accepted manuscript in the University of Southampton repository, the published version being paywalled.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The show of hands in a training room",
+      "text": "Asked who considers themselves an above-average driver, four fifths of a room of thirty put a hand up. No single hand can be shown to be wrong, and the total cannot be right, which is where the claim lives."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The self-ratings at appraisal time",
+      "text": "Most of a department rates its own performance in the top quarter, and the ratings then have to be fitted to a distribution whose top quarter is the size the word implies. The mismatch is in the aggregate, not in any one rating."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The committee that all listen well",
+      "text": "Every member of a committee rates themselves better than the average member at hearing other people out. Being above average is no error in itself, and the arithmetic only breaks when the share claiming it exceeds the share that can hold it."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "A preregistered replication with 1,203 American drivers found the effect on all three response scales it tried.",

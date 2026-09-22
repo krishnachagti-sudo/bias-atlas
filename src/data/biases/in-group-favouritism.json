@@ -19,6 +19,23 @@
     "note": "The paper reports the first minimal group experiments and supplies the allocation matrices the paradigm still uses. Wiley serves it to no repository. Unpaywall recorded it as closed with no open location on 17 August 2026, and ResearchGate refused the request. The design and results described on this page are read instead from Tajfel's own account of the same experiments, published in Scientific American a year earlier."
   },
   "evidence": "Tajfel's first experiment used 64 boys aged 14 and 15 from a state, or comprehensive, school in a suburb of Bristol, tested in groups of eight. All eight in each group came from the same house and the same form, so they knew each other well before the experiment. They estimated the number of dots in 40 clusters flashed on a screen. Half were then told that people consistently over- or underestimate, half that people differ in accuracy, and the assignment to groups was random either way. Each boy worked alone in a cubicle through a booklet of six matrices, each printed three times, awarding points worth a tenth of a penny to two other boys known only by code number and group. The three printings paired two ingroup members, two outgroup members, or one of each. Nobody could award anything to himself, and each boy went home with about a dollar's worth. Choices were scored as ranks from 1 to 14, with 7.5 the fairness point. The intergroup choices favoured the ingroup, and both kinds of intragroup choice fell at 7.5. A second experiment tested three new groups of 16 boys, shown 12 unsigned reproductions, six by Klee and six by Kandinsky. Stated preference was the ostensible basis of the split and the assignment was random. Its matrices pulled maximum joint profit, maximum ingroup profit and maximum difference apart. Maximum joint profit, in Tajfel's words, exerted hardly any effect. The pull of maximum difference against joint profit and ingroup profit together was strong, so the boys gave up money for their own group in absolute terms to widen the gap. Tajfel reports of later experiments that discrimination rose rather than faded as the situation became familiar, and that most choices are a compromise between fairness and favouring one's own group.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "Teams made by a coin toss",
+      "text": "A training day splits thirty strangers into a blue group and a red group by tossing a coin. Asked to share out a budget, people hand more to their own colour, although the colour was assigned minutes earlier and carries no history."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The shared university on a form",
+      "text": "A reviewer notices that an applicant studied where they did and marks the application a little more warmly. Nothing is done against the other candidates. What moves is the lift given to the one who shares the label."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The badge on the next seat",
+      "text": "A stranger wearing the same club's colours is spoken to first on a long train journey and trusted with a bag. The shared badge stands in for everything a person would ordinarily want to know before either."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "Across 125 effect sizes people cooperate more with ingroup members at d = 0.32, and the effect falls to d = 0.04 when the partner does not know the participant's group.",

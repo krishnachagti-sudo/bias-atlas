@@ -2,7 +2,11 @@
   "no": 458,
   "slug": "vertical-position-and-power",
   "name": "Vertical position and power",
-  "aliases": ["Power is up", "Vertical metaphor of power", "Position and power"],
+  "aliases": [
+    "Power is up",
+    "Vertical metaphor of power",
+    "Position and power"
+  ],
   "category": "social",
   "statement": "A leader drawn higher than others in an organisation chart is judged more powerful, and a longer line above the name was said to raise the judgement further.",
   "meaning": "The claim has two halves, and they have fared differently. The first is about rank order: a manager drawn above others is judged more powerful than one drawn level with them. The second is about magnitude: extra vertical distance should add power beyond rank, so a longer line above a manager's box should lift the rating further. Giessner and Schubert's 2007 paper tested the magnitude version, and that is the version Many Labs 2 repeated. The same paper ran the reverse direction, asking people who had been told a manager was powerful to place his box in a chart themselves. A wider literature attaches verticality to power in reaction times, in visual attention and in metaphoric language. That work uses different tasks and is assessed separately below. The warm-cup and heavy-clipboard studies sit under embodied cognition on this site, which scopes itself to them.",
@@ -13,6 +17,23 @@
     "note": "Their paper is \"High in the hierarchy: How vertical location and judgments of leaders' power are interrelated\", volume 104, pages 30 to 44. Schubert's 1 to 21 page paper in the Journal of Personality and Social Psychology two years earlier had already argued that power is represented as vertical difference, using reaction-time tasks rather than charts."
   },
   "evidence": "Study 1a gave 64 economics and business students at Erasmus University Rotterdam a short text and an organisation chart. Five boxes sat on the lower level and one, labelled Manager A, on the upper level. The only thing that varied was the connecting line, about 2 cm in one condition and about 7 cm in the other, with boxes about 2 cm high. Students then rated the manager on five power items on a seven-point scale. The long-line group gave 5.01, the short-line group 4.62, t(62) = 2.20, p = .03. Many Labs 2 converts that to d = 0.55 with a 95% interval from 0.05 to 1.05. Study 1b repeated it on 50 people approached outside a dining hall in Jena, F(1, 46) = 7.26. Study 1c ran 94 students, F(1, 90) = 4.10, p = .046, and found no matching effect on rated charisma, F(1, 90) = .24, p = .63. Study 2 primed 182 students with long or short lines in a separate estimation task and found the effect for vertical lines, F(1, 178) = 9.14, p = .003, and not for horizontal ones, F(1, 178) = .03, p = .96. Studies 3a and 3b reversed the direction. In 3a, 159 students read that a manager had a lot of power or very little, then placed his box in a chart. The high-power group placed it 128.76 pixels above the starting point against 44.71, F(1, 153) = 26.01, p < .001, with no effect on horizontal placement, F(1, 153) = 1.57, p = .21.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The chart on the wall",
+      "text": "A new starter reads the organisation chart and works out who to be careful with before meeting anybody. The name at the top is taken to be the powerful one, though the drawing says nothing about budgets, hiring or who signs what."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The raised platform",
+      "text": "A speaker addresses a hall from a stage a metre above the floor, and questioners standing below sound like petitioners. The arguments on both sides are unchanged by the height, and the deference in the room is not."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The vocabulary of promotion",
+      "text": "People move up to a senior post, get kicked upstairs, or fall from the top. Rank is described in the language of height throughout, which is the same mapping that lets a chart be read at a glance."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Many Labs 2 ran the line-length study on 7,890 people and found a gap of 0.04 points; a later preregistered study found that being drawn above another leader does move power ratings, and that extra distance does not.",
@@ -24,8 +45,25 @@
       "sites": 61,
       "n": 7890
     },
-    "original": { "es": 0.55, "esType": "d", "ci": [0.05, 1.05], "ciLevel": 95 },
-    "replicated": { "es": 0.03, "esType": "d", "ci": [-0.01, 0.08], "ciLevel": 95, "weighting": "aggregate replication sample, the figure Many Labs 2 also tabulates as its global effect size" },
+    "original": {
+      "es": 0.55,
+      "esType": "d",
+      "ci": [
+        0.05,
+        1.05
+      ],
+      "ciLevel": 95
+    },
+    "replicated": {
+      "es": 0.03,
+      "esType": "d",
+      "ci": [
+        -0.01,
+        0.08
+      ],
+      "ciLevel": 95,
+      "weighting": "aggregate replication sample, the figure Many Labs 2 also tabulates as its global effect size"
+    },
     "indexedBy": "the Bias Atlas supplement of multi-laboratory replications"
   },
   "limits": "Every figure above comes from a rating of a diagram on a screen. Participants saw a box, a line and a sentence about salaries, and answered five agreement items about a manager they never met. That is a narrow measure. A search for a test outside the laboratory, run over web search on real organisation charts, seating and archival firm data, and over the discussion and reference list of the 2019 replication report, turned up no such test. The rank-order finding that survived is small: the contrasts together explained 2% of the variance in power ratings, and the gap was 0.28 points on a seven-point scale. It also comes from one team testing its own paradigm at one Dutch business school. Giessner and Schubert warn in the same paper that their overview of the surrounding evidence is selective, that the field is subject to publication bias, and that true effect sizes are likely smaller than reported. They add that the many earlier studies manipulating rank order were, to their knowledge, not preregistered. The literature also runs power, status, rank, authority and dominance together, which they name as a problem their own studies do not fix.",

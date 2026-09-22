@@ -13,6 +13,23 @@
     "note": "The paper is \"Implicit self-esteem in Japan: Name letters and birthday numbers\", pages 736 to 742 of volume 23. It paired a letter-rating study with a number-rating study. Its question was why Japanese samples show no explicit self-enhancement. The full text was not obtained on 21 September 2026. Sage returned a Cloudflare bot challenge, which blocks automated access and is not the same thing as a paywall. The publisher-deposited abstract was read through Crossref. That abstract says Study 2 covered the numbers of the month and the day of the respondent's birthday. Simonsohn reports that the effect was much smaller, and not significant, for numbers below twelve. Nutt, DiMassimo and Hale describe the same study as covering month, day and year, which the abstract does not carry."
   },
   "evidence": "Bosson, Swann and Pennebaker ran the task on 84 University of Texas undergraduates, 40 men and 44 women, with one excluded. Participants rated every letter of the alphabet and the numbers 0 through 35 on a seven-point liking scale. A birthday-preference score subtracts the number's average popularity across all raters from the owner's own rating of it, so a person born on 19 November is scored on 19. The mean came to 0.73 scale points, SD 1.54, t(80) = 4.28. The initials version of the same task on the same people came to 0.93, SD 1.37, t(80) = 6.13. Nickell, Pederson and Rossow put 83 participants through a variety of dates and objects. They report a more positive evaluation of the birth month and the birth year than of other months and years, which they read as an extension of the mere ownership effect. Stieger and Krizan rated numbers in six countries, N = 657, and found the preference bending to local custom. Whether Christmas falls on 24 or 25 December moved the liking of those two numbers, and numerals used for good school grades were liked above numerals used for bad ones. Where grades are letters rather than numbers, no such effect appeared. The field claim starts elsewhere. Pelham, Mirenberg and Jones asked in their Study 6 whether people live in a city whose name begins with their birthday number. They used Social Security Death Index records, seven birth dates from 2 February to 8 August, and city names from Two to Eight. Of 485 people, 19.4% lived in a matching city against a chance value of 14.5%, chi-square(1) = 9.13, p = .003. Simonsohn restates the same table as a ratio of actual to expected frequency of 1.33.",
+    "examples": [
+      {
+        "kind": "everyday",
+        "tag": "The list of numerals to be rated",
+        "text": "Shown the numbers one to thirty-one and asked how much each appeals, a respondent rates the day of her own birth above its neighbours. Nothing in the task mentions birthdays, and she offers no reason for the gap."
+      },
+      {
+        "kind": "everyday",
+        "tag": "The numbers written on a raffle line",
+        "text": "Asked to pick six numbers, a player puts down the day and the month of his birth first and finds the rest harder to settle. The claim is about which numerals feel agreeable, not about which of them win."
+      },
+      {
+        "kind": "everyday",
+        "tag": "The door code that feels right",
+        "text": "Offered a choice of four-digit codes, a tenant prefers the one containing the month he was born in, and says only that it looks better than the others. A preference reported without a reason is what the effect is measured as."
+      }
+    ],
   "replication": {
     "state": "replicated",
     "headline": "The rating-task preference repeats in fresh samples; the archival claims built on it do not.",

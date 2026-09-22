@@ -13,6 +13,23 @@
     "note": "Their paper is \"The affect heuristic in judgments of risks and benefits\". Slovic and colleagues set out the general account seven years later in the European Journal of Operational Research under the bare title \"The affect heuristic\"."
   },
   "evidence": "Finucane and colleagues ran two experiments, only the first of which used time pressure. Study 1 had 54 first-year psychology students at the University of Western Australia rate 23 hazards for risk and for benefit, 28 of them against a clock and 26 with as much time as they wanted. Correlations calculated on each person's ratings across 21 items averaged -0.45 under time pressure and -0.33 without it, and the gap between the two means gave t(52) = 1.64, p = 0.05 one-tailed, which the authors called approaching significance. Study 2 gave undergraduates at the University of Oregon vignettes designed to raise or lower the perceived risk or benefit of nuclear power, natural gas and food preservatives. The attribute nobody had manipulated moved in the affectively matching direction, and the correlation across the resulting 12 data points was -0.75. That paper's method section reports 213 participants and its results section counts 219. Rottenstreich and Hsee supplied the probability prediction, offering 40 people a choice between a kiss from a favourite film star and fifty dollars, either as a certainty or at a 1% chance. Many Labs 2's account of that study gives 35% taking the kiss under certainty and 70% under the long shot.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The technology that feels exciting",
+      "text": "Someone taken with a new form of power generation rates it high in benefit and low in risk, while someone it unsettles rates it the other way on both counts. The two ratings move together because one feeling is answering both questions."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The food you are fond of",
+      "text": "A cook who loves a particular cheese judges it both more nourishing and less of a problem for the heart than any evidence gives reason to. Liking has supplied the answer to a question about nutrition."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The prize you can picture",
+      "text": "Offered a one in a million chance of a described holiday or the same chance of the cash it would cost, many people take the holiday. The odds are identical, and the difference is that one of them can be felt."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Finucane's risk-benefit experiment held in two preregistered repetitions, while the long-odds prediction reversed direction across 7,218 people.",

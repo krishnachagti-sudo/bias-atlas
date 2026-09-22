@@ -2,7 +2,11 @@
   "no": 478,
   "slug": "readiness-potential",
   "name": "Readiness potential",
-  "aliases": ["Libet experiment", "Bereitschaftspotential", "Libet clock"],
+  "aliases": [
+    "Libet experiment",
+    "Bereitschaftspotential",
+    "Libet clock"
+  ],
   "category": "decision",
   "statement": "Brain activity preceding a voluntary movement starts several hundred milliseconds before the moment people report deciding to move.",
   "meaning": "Two things are being measured and they are easy to confuse. The first is the readiness potential, a slow negative shift in scalp voltage that appears when many trials of a self-paced movement are aligned on the movement and averaged. The second is W, the time a person says they first felt the urge or intention to move, obtained by asking them to recall where a revolving spot sat on a clock face at that instant. Libet's result is that the first precedes the second. The claim usually attached to it is stronger: that the brain has already decided, and that awareness arrives after the decision. The gap between the measurement and that claim is where forty years of argument sit.",
@@ -13,6 +17,23 @@
     "note": "The potential itself was not theirs. Libet's own review credits Kornhuber and Deecke in 1965 with its discovery, and what the 1983 paper added was the timing of the conscious intention against it."
   },
   "evidence": "Five subjects, each in six or more separate sessions, made a quick flexion of the right hand or wrist whenever they felt like it. Each series ran 40 trials, and in any one series a subject reported only W, or M, the time they became aware of actually moving, or S, the time they felt a near-threshold skin stimulus delivered at random. The S series gave each subject's own reporting bias, since the true time of the stimulus was known. Zero on every measure is the start of muscle activity in the electromyogram. Across all series the grand mean W was about 207 ms before the muscle signal and M about 86 ms before it. In series where subjects reported all 40 acts as spontaneous and unplanned, the main negative shift of the readiness potential began about 535 ms before the muscle signal, and it preceded the mean W in those series by about 350 ms on average and by about 150 ms at minimum. Where subjects reported preplanning on some trials, the potential began about 1,025 ms before the movement and preceded W by about 800 ms, or by about 500 ms if onset is taken at 90 per cent of the potential's area. Correcting W by each subject's S bias moved the difference to about 400 ms rather than shrinking it.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The moment somebody says they decided",
+      "text": "Asked when they decided to get up from a chair, a person names an instant. The instant is a report made afterwards about an event with no outward mark, and that report is what any recording of the brain gets compared against."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The kerb",
+      "text": "Somebody waiting to cross finds they have stepped off the kerb, and says the decision arrived just as the foot moved. Whether the feeling came before or after anything measurable is not something the person's own report can settle."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Moving a finger at no particular time",
+      "text": "Told to flex a finger whenever they feel like it, somebody finds that no clean starting point presents itself, and that the urge seems to surface rather than to be issued. The surfacing is the thing a recording gets aligned to."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "The timing pattern holds up in meta-analysis, on a startlingly thin base of six studies and 53 people, and what the pattern means is the part in dispute.",
@@ -23,12 +44,25 @@
       "year": 2021,
       "n": 804
     },
-    "original": { "es": -350, "esType": "md", "unit": "ms", "weighting": "Libet's type II series, readiness potential onset relative to mean W" },
-    "replicated": { "es": -479, "esType": "md", "unit": "ms", "ci": [-614, -344], "ciLevel": 95 }
+    "original": {
+      "es": -350,
+      "esType": "md",
+      "unit": "ms",
+      "weighting": "Libet's type II series, readiness potential onset relative to mean W"
+    },
+    "replicated": {
+      "es": -479,
+      "esType": "md",
+      "unit": "ms",
+      "ci": [
+        -614,
+        -344
+      ],
+      "ciLevel": 95
+    }
   },
   "limits": "Schurger, Sitt and Dehaene proposed that the shape of the potential is a consequence of how it is built. Their leaky stochastic accumulator treats the moment of movement as the moment ongoing noisy activity happens to cross a threshold, so aligning trials on movement is aligning them on crests in autocorrelated noise, and the average of those crests is a slow rise. Fitted to 14 subjects on the classic task, the simulation matched the recorded potential over -3.0 to -0.15 s with r2 = 0.96. The model made a further prediction, tested on 13 subjects in a variant where a click sometimes forced an immediate response: fast responses should be preceded by a negative drift that slow ones lack, and they were, p < 0.005 by signed rank test. On that reading the onset of the potential marks no event at all, and comparing it with W is comparing a self-report with an artefact of averaging. The evidence is not one-sided. Travers, Khalighinejad, Schurger and Haggard searched background EEG for the potential's signature and found plenty of matches, equally common in epochs where action was not permitted, but events matching its time course were a poor match for its scalp distribution and the reverse, so they read the matches as false positives rather than as the loose readiness potentials the model predicts. The potential is also not confined to movement. Alexander and colleagues recorded it in the absence of movement and found motor variables did not modulate it. Maoz, Yaffe, Koch and Mudrik got the usual potential before arbitrary choices and none before deliberate ones, in a task donating $1,000 to charities, which limits how far the paradigm reaches into decisions anyone cares about.",
-  "misreadings": "The experiment is routinely reported as showing that free will is an illusion. It does not settle that, and the researchers closest to the data say so. Schurger and colleagues argue the stochastic account strips away the basis for relating the potential to the timing of awareness, and note the implications for free will run in several directions at once depending on the philosophy brought to them. Braun and colleagues say plainly that a meta-analysis of one paradigm cannot establish what that paradigm reveals about free will. The second error is treating W as an observation. It is a retrospective report of a clock position, and Danquah, Farrell and O'Boyle ran Libet's own control condition and found the judgements shifted with the sensory modality of the stimulus and with the speed of the clock, which is why they call the reliability of the original W estimates questionable. The meta-analysis found the same sensitivity in the instructions, with reported times moving according to whether subjects were asked about an urge or an intention and whether they answered verbally. Third, the potential is a timing signal, not a readout of the choice. The studies that decode which option a person will pick are functional MRI, not EEG, and Soon, Brass, Heinze and Haynes report the outcome of a decision encoded in prefrontal and parietal activity up to 10 seconds before awareness, at accuracies that Schurger and colleagues describe as marginally better than a random guess. Fourth, on the veto. Libet's own veto series used acts prearranged for a preset time rather than spontaneous ones, and he wrote that vetoing a self-initiated act after its potential had begun was not technically feasible. Schultze-Kraft and colleagues later did it, recruiting 12 subjects, 10 of whom played on against a brain-computer interface trained to catch the potential in real time and flash a stop signal. Movements could be cancelled after the potential began, up to a point of no return about 200 ms before movement onset. That rescues less than it looks. Schurger and colleagues point out that the window closes at roughly the moment Libet said conscious control opened, and that vetoed decisions carry a readiness potential of their own."
-  ,
+  "misreadings": "The experiment is routinely reported as showing that free will is an illusion. It does not settle that, and the researchers closest to the data say so. Schurger and colleagues argue the stochastic account strips away the basis for relating the potential to the timing of awareness, and note the implications for free will run in several directions at once depending on the philosophy brought to them. Braun and colleagues say plainly that a meta-analysis of one paradigm cannot establish what that paradigm reveals about free will. The second error is treating W as an observation. It is a retrospective report of a clock position, and Danquah, Farrell and O'Boyle ran Libet's own control condition and found the judgements shifted with the sensory modality of the stimulus and with the speed of the clock, which is why they call the reliability of the original W estimates questionable. The meta-analysis found the same sensitivity in the instructions, with reported times moving according to whether subjects were asked about an urge or an intention and whether they answered verbally. Third, the potential is a timing signal, not a readout of the choice. The studies that decode which option a person will pick are functional MRI, not EEG, and Soon, Brass, Heinze and Haynes report the outcome of a decision encoded in prefrontal and parietal activity up to 10 seconds before awareness, at accuracies that Schurger and colleagues describe as marginally better than a random guess. Fourth, on the veto. Libet's own veto series used acts prearranged for a preset time rather than spontaneous ones, and he wrote that vetoing a self-initiated act after its potential had begun was not technically feasible. Schultze-Kraft and colleagues later did it, recruiting 12 subjects, 10 of whom played on against a brain-computer interface trained to catch the potential in real time and flash a stop signal. Movements could be cancelled after the potential began, up to a point of no return about 200 ms before movement onset. That rescues less than it looks. Schurger and colleagues point out that the window closes at roughly the moment Libet said conscious control opened, and that vetoed decisions carry a readiness potential of their own.",
   "sources": [
     {
       "text": "Libet, B., Gleason, C. A., Wright, E. W., & Pearl, D. K. (1983). Time of conscious intention to act in relation to onset of cerebral activity (readiness-potential). The unconscious initiation of a freely voluntary act. Brain, 106(3), 623-642.",

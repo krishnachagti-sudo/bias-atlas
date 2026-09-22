@@ -16,6 +16,23 @@
     "note": "The paper ran three studies. Two tested misprediction of happiness and the third tested mischoice under tradeoffs. The full article was not obtained. APA sells it, and the only open copy any index lists is a submitted version at SSRN. On 21 September 2026 SSRN met the landing page, the delivery route and the API with a Cloudflare bot challenge, which is not a paywall. Two things were read from the paper itself: the abstract PubMed holds, and the opening of the 2006 Cambridge reprint. Every other detail of the 2004 studies given below is read off the 2021 replication paper's account of them. The abstract offers salary as its example of an attribute and places the work in the literatures on experienced utility, affective forecasting and happiness."
   },
   "evidence": "Study 1 asked people to imagine that writing poems was their hobby and that they had tried selling a book of them. They rated how happy they would be, from 1 to 9, at selling no copies, 80, 160 or 240. One group rated all four scenarios. Four other groups rated one scenario each. Zero buyers is the natural reference point, so the step from 0 to 80 is qualitative and the steps between 80, 160 and 240 are quantitative. The joint group's ratings rose at every step. The separate groups did not differ across 80, 160 and 240, and did differ between 0 and 80. Study 2 replaced scenarios with a task, reading a list of 25 negative, 10 negative, 10 positive or 25 positive words, and added groups who performed one task and reported how they actually felt. Hsee and Zhang report the same pattern there: joint evaluation inflated the quantitative gaps and not the shift from negative to positive words. Study 1 ran 249 people across five conditions and Study 2 ran 360 across nine. The paper gives cell means, no standard deviations and no per-cell sample sizes, which the replicators say left too little detail for a direct comparison of effect sizes. One set of Study 2 results was thinner still. For the separate groups who predicted rather than performed, the original printed no inferential statistics and gave a line graph with no error bars, which the replicators read by eye.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "Two flats seen the same afternoon",
+      "text": "One flat is a little larger than the other and both are comfortable. Side by side the extra space looks decisive. A year into living in either, it has stopped registering, because nothing is standing beside it to measure it against."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Two salaries on one spreadsheet",
+      "text": "Two offers, both enough to live on, sit in adjacent columns and the higher looks like a different life. Once one of them is the only figure arriving each month, the gap flattens. A wage too low to cover the rent is a different matter."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Headphones on the shop's test bench",
+      "text": "Heard one after the other, the costlier pair sounds plainly better and the choice turns on that. At home, with nothing to compare against, the difference the decision rested on is rarely noticed again."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "One close replication has been located. It put both prediction studies to 824 people, and the poem-book study replicated in full while the word-reading study did not.",

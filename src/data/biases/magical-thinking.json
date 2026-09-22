@@ -18,6 +18,23 @@
     "note": "Frazer and Mauss named the two laws at the turn of the twentieth century to describe ritual in traditional cultures. The 1986 paper took them into a laboratory room in Philadelphia and tested them on Americans, which is the move that made the idea a psychological finding rather than an ethnographic one."
   },
   "evidence": "Fifty people from the University of Pennsylvania community sat through a single session, 17 men and 33 women, aged 17 to 50 with a mean of 23.6, about half of them students. Each rated items on a 200 mm line anchored at 'dislike extremely' and 'like extremely'. A dried, sterilised cockroach about 4 cm long was dropped into a glass of juice, stirred for five seconds and removed with a new spoon; a plastic birthday candleholder went into the other glass as a control. Ratings of the roached juice fell 102 points against 3 points for the control, a net drop of 98.82 with a standard deviation of 71.62, p < .001, in the predicted direction for 46 of 49 subjects. Fudge moulded into the shape of dog faeces was rated 47.18 points below the same fudge shaped as a disc, and rubber imitation vomit 49.26 points below a rubber sink stopper. Two bottles of sucrose were labelled by the experimenter, one Sucrose and one Sodium Cyanide, with the subject told in advance that both held sugar. Forty-one of 50 preferred to drink from the sucrose bottle, a mean gap of 30.58 points, and only one subject suggested the cyanide bottle might actually hold cyanide. When subjects stuck the labels on themselves the gap fell to 16.5 points, t = 2.60, p < .02. That test ran on 38 subjects rather than 50, because 12 were dropped on the strength of their first cyanide result. Forty-seven subjects threw darts at photographs: accuracy dropped 11.32 mm for John F. Kennedy and 11.02 mm for the face of the person they liked most, p < .02 in both cases. The paper also reports the measures that did not work. Darts at Hitler and at a disliked person moved 2.11 mm and 4.91 mm, neither reaching significance. A toothbrush used by the person the subject was most attracted to was predicted to gain value and lost it, 19.68 points in the wrong direction, p < .01. Serving fresh juice of the kind that had been roached moved ratings 11.33 points, t = 1.74, p < .05 one-tailed, with only 30 of 49 subjects going the predicted way.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The coat that belonged to someone terrible",
+      "text": "A charity shop jumper turns out to have belonged to a man convicted of something awful. It has been cleaned twice and nobody will wear it. Asked whether the wool carries anything, the same people say no, and they still will not put it on."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The grandmother's ring",
+      "text": "A plain ring worth very little is treated as irreplaceable because she wore it for fifty years. An identical ring bought new would not do, which is the same rule about contact running in the pleasant direction."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The marzipan slug",
+      "text": "A cake is decorated with a fat marzipan slug, and guests who watched the sugar go in eat around it. They know what it is made of and can say so. The resemblance is enough to stop the fork, which is the law of similarity doing work in a kitchen."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "Contagion reappears among Hadza hunter-gatherers and Tannese subsistence farmers, at a mean rejection rate of 94% for contaminated food, but no preregistered direct replication of the 1986 session was located.",

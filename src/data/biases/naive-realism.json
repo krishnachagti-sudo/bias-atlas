@@ -16,6 +16,23 @@
     "note": "Their title carries the term, and their paper is the empirical anchor of the account. Robinson and colleagues credit the name to Griffin and Ross, and to a Ross and Ward chapter then in press. That chapter appeared in 1996 as 'Naive realism in everyday life', and it is the one that sets out the three convictions. Pronin, Gilovich and Ross later cite Ross and Ward's 1995 and 1996 chapters together as the account's source. The hostile media study that the framework is best known for came ten years earlier, and entry 205 covers it."
   },
   "evidence": "Vallone, Ross and Lepper showed 144 Stanford students 36 minutes of network news on the Sabra and Chatilla massacre, taken from six segments broadcast between 15 and 24 September 1982. Sixty-eight described themselves as pro-Israeli, 27 as pro-Arab and 49 as neutral. On a nine-point scale where 5 meant fair and impartial, pro-Arab viewers rated the same tapes at 6.7 and pro-Israeli viewers at 2.9, F(1, 141) = 98.70, p < .001. The two groups also reported different content. Pro-Arab viewers said 42% of references to Israel were favourable and 26% unfavourable; pro-Israeli viewers said 16% and 57%, F(1, 141) = 54.84, p < .001. Each side expected neutrals to be swayed against it, with pro-Israelis putting the figure at 68% and pro-Arabs at 37%, F(1, 141) = 34.02, p < .001. Controlling for perceived content left the bias difference intact, F(1, 92) = 30.89, p < .001. Within each partisan group the better-informed saw more bias, r = .31 among pro-Israelis and r = -.41 among pro-Arabs. Robinson and colleagues then measured the second prediction. Twenty-seven pro-choice and 25 pro-life students rated six abortion scenarios and estimated how each side would rate them. Real differences existed, t(49) = 5.19, p < .001 on the composite, and both groups had presumed them larger, t(49) = 3.46 for pro-choice raters and t(49) = 3.10 for pro-life. A second questionnaire on the same topic went to an introductory psychology class, 66 of whom called themselves strongly pro-choice and 22 strongly pro-life. Their second study gave 23 liberals, 20 conservatives and 16 neutrals a synopsis of the Howard Beach case. The real gap between liberal and conservative readings was 9 points on a 100-point construal scale, 63.2 against 54.2, t(41) = 3.14, p < .01, and all three groups put it far wider. Every group also thought both partisan camps had been driven more by ideology than the camps themselves claimed, in all but one case at p < .01. Each group thought both camps had leaned less on evidence than they claimed, though that fell to p < .10 where conservatives judged conservatives. Liberals and conservatives differed little in what they said about their own reasoning.",
+    "examples": [
+      {
+        "kind": "everyday",
+        "tag": "The meeting everyone left differently",
+        "text": "Two colleagues leave the same meeting and each concludes the other was not paying attention, since the meeting plainly went one way. Neither treats his own account of it as an account rather than the thing itself."
+      },
+      {
+        "kind": "everyday",
+        "tag": "The refereeing decision on the replay",
+        "text": "Supporters of both sides watch the same replay, see the obvious call, and conclude that anyone taking the other view is either blind or dishonest. The diagnosis of the dissenter is the part that does the damage."
+      },
+      {
+        "kind": "everyday",
+        "tag": "The rota one flatmate calls fair",
+        "text": "A flatmate draws up a cleaning rota he considers evidently even, and reads the objection to it as laziness. The explanation for the disagreement comes from the objector's character rather than from the rota."
+      }
+    ],
   "replication": {
     "state": "replicated",
     "headline": "Two preregistered experiments reproduced the hostile media prediction on samples of 817 and 819 Americans, and it went missing in the one condition where the story was not contested.",

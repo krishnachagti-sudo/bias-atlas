@@ -15,6 +15,23 @@
     "note": "The advice is far older than the finding. Besken and Mulligan trace it to the Ad Herennium, which they date at 90 BCE, by way of Yates, and to modern memory-training manuals. Riefer and Rouder write that most early experimental work found bizarre imagery no more memorable than common imagery and sometimes worse, naming Wollen, Weber and Lowry, Cox and Wollen, and Bergfeld, Choate and Kroll. What the 1986 paper contributed was the boundary, as Burns, Geraci and colleagues and Robinson-Riegler and McDaniel all describe it: the advantage holds when bizarre and common sentences are mixed in one list, and not when a list is pure. The paper itself was not obtained, and the limits field says where the search looked."
   },
   "evidence": "Riefer and Rouder ran three experiments on 95 students at the University of California, Irvine, 33 in the first, 32 in the second and 30 in the third. Each participant saw 12 sentences, six of them randomly assigned to bizarre form, imagined each one and rated its vividness, then took a surprise free-recall test followed by a cued-recall test. Free recall of noun pairs ran .58 bizarre against .47 common in the first experiment, t(32) = 2.37, and .62 against .51 in the third, t(29) = 2.82. The second gave .59 against .54 and was not reliable, t(31) = 1.17. Cued recall differed in none of the three. Their multinomial model put the benefit in retrieval rather than storage. Bizarre sentences were also rated less vivid than common ones in all three experiments, on an analysis over the 12 sentences rather than over subjects. Burns tested whether the participant has to be caught unawares, using McDaniel and Einstein's own sentences with 24 people per condition in one experiment and 16 in the other. Under incidental instructions his participants accessed 3.96 bizarre sentences against 2.42 common ones; under intentional instructions the same comparison gave 3.71 against 3.50, F < 1. Items recalled per sentence went the other way in his first experiment, 2.39 for bizarre sentences against 2.65 for common ones, F(1,46) = 5.83. Geraci, McDaniel, Miller and Hughes separated study from test with 192 Texas A&M students, 96 in each recall condition. Each person studied eight common sentences in one room under one cover story and eight bizarre sentences in another room on a different floor under another, so both lists were pure. Recall was then either of both sets together or of each set separately. Together, bizarre nouns came back at .38 and common nouns at .28, F(1, 190) = 18.17. Separately, the figures were .34 and .33, with F < 1 and a posterior probability of .91 for the null.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The list with one odd item on it",
+      "text": "A shopping list holds a dozen ordinary items and one instruction to post a letter from the roof. Asked hours later to write the list out from memory, the strange line comes back and several ordinary ones do not."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The briefing that sticks",
+      "text": "A safety briefing runs through routine steps and one image of a kettle wearing a hat. Days later, staff asked what was covered reach the kettle first, while the ordinary steps come back at their usual rate."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The set where everything is strange",
+      "text": "Among ordinary sentences, the fish reading a newspaper is recalled and the fish swimming past a rock is not. Put every sentence in the set beyond the plausible and the advantage goes, because nothing stands out from anything else."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "Besken and Mulligan obtained the effect on sentence access in all four of their experiments, and their single-paper meta-analysis puts that advantage at .31, 95% CI .21 to .42.",

@@ -16,6 +16,23 @@
     "note": "The paper is \"Moral typecasting: Divergent perceptions of moral agents and moral patients\", and it sits inside their broader dyadic account of moral cognition."
   },
   "evidence": "The paper reports seven studies. Study 1a is the one with a replication record. Sixty-nine people, recruited in dining halls, shopping centres and train stations, saw pictures of Sam and Roger, each of whom was either 5 or 25 years old. They read one sentence, in which Sam pushes a tray of glasses off a table and a shard cuts into Roger's leg. They then rated Sam's responsibility, how intentional his behaviour was, and how much pain Roger felt, each on a seven-point scale. The paper prints test statistics and nothing else for this study: t(68) = 3.32 for responsibility, t(68) = 2.20 for intentionality and t(68) = 3.49 for pain. It gives no means, no standard deviations and no effect sizes for Study 1a. The figures usually quoted for it, 5.29 against 3.86 and d = 0.80 for responsibility, 4.05 against 3.07 and d = 0.53 for intentionality, and 4.63 against 5.76 and d = 0.85 for pain, come from Many Labs 2's account of the study rather than from the paper. Responsibility was the measure carried forward for replication.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The collision in a doorway",
+      "text": "A small child and a grown woman walk into each other and a tray goes over. Whichever of them ends up cut, onlookers put the responsibility on the adult, so the role each has been cast in is doing work the description does not support."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The neighbour who has had a bad year",
+      "text": "After a run of misfortunes the street has rallied round, that neighbour starts a boundary dispute. Others find it oddly hard to see them as the one in the wrong, because they have been filed as someone things happen to."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The person who always organises things",
+      "text": "Whoever runs the committee and chases every decision is assumed to be behind whatever has happened. When they are the one harmed, it takes longer for anybody to notice, because the other role is already occupied."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "Across 8,002 people the asymmetry came back slightly larger than the original, at d = 0.95.",

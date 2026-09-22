@@ -13,6 +13,23 @@
     "note": "The paper is \"What is beautiful is good\", and its title became the name of the effect. It asked whether attractive targets are assumed to hold more socially desirable personality traits and expected to lead better lives, and tested for a sex of subject by sex of target interaction. The published abstract reports results with 30 male and 30 female undergraduates and no sex of judge by sex of stimulus interaction. The full text was not obtained for this entry, so no figure from inside the paper is quoted here."
   },
   "evidence": "The quantitative record starts with two meta-analyses published a year apart. Feingold retrieved 30 stereotyping studies meeting his criteria, yielding 35 independent experiments that were decomposed by sex of subject and target into 78 experiments on 4,727 people and 212 effect sizes. His weighted mean ds for attractive against unattractive targets were 0.88 for social skills, 95% CI 0.72 to 1.04, and 0.78 for sexual warmth, CI 0.65 to 0.92. Sociability came out at 0.46, dominance at 0.54, general mental health at 0.50 and intelligence at 0.31. Character, covering honesty, sincerity, trustworthiness, morality and kindness, came out at -0.04, CI -0.13 to 0.05, across 40 effect sizes and 1,964 people. Modesty ran the other way at -0.34, the one attribute ascribed more often to unattractive targets. Eagly, Ashmore, Makhijani and Longo reached the same shape from an independent search. Their abstract reports the beauty-is-good effect as moderate on average and varying by the content of the inference: largest for social competence, intermediate for potency, adjustment and intellectual competence, and near zero for integrity and concern for others. That article stayed behind a paywall on this pass, and no effect size from it is quoted here. Langlois and colleagues then ran 11 meta-analyses over 919 usable effect sizes. Judgements of adults gave a weighted d+ of 0.50, CI 0.41 to 0.59, over 30 independent samples and 1,880 people, with occupational competence the largest subcategory at 0.96 and adjustment the smallest at 0.25.",
+"examples": [
+  {
+    "kind": "everyday",
+    "tag": "The photograph clipped to the application",
+    "text": "A panel that sees the picture before the notes rates the candidate as more outgoing and easier to work with. A photograph carries neither of those things, and the ratings arrive regardless."
+  },
+  {
+    "kind": "everyday",
+    "tag": "The traits the guess does not reach",
+    "text": "Two portraits draw very different guesses about how sociable each person is, and much the same guess about how honest they are. The stereotype is uneven across traits, and honesty is where it thins to nothing."
+  },
+  {
+    "kind": "everyday",
+    "tag": "The strikingly good-looking new neighbour",
+    "text": "Residents who have exchanged nothing but a nod agree that the new arrival seems confident and well-adjusted. They agree strongly, and none of it rests on anything any of them has seen him do."
+  }
+],
   "replication": {
     "state": "replicated",
     "headline": "The rating effect reproduces in every large test located, including one across 45 countries, and it is smaller and more trait-dependent than the slogan suggests.",

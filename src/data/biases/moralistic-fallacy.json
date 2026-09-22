@@ -12,6 +12,23 @@
     "note": "A one-page item at Nature 272(5652), page 390, issue date 30 March 1978, whose standfirst says Davis of the Bacterial Physiology Unit, Harvard Medical School, discusses whether or not scientific inquiry should be blocked on moral grounds. It is closed at the publisher and was not obtained here. The phrase is older than that article: Edward C. Moore published 'The Moralistic Fallacy' in the Journal of Philosophy 54(2), pages 29-42, in January 1957, and this entry does not say what he meant by it, because that article was not obtained either. Nature's byline reads Bernard B. Davis, while PubMed and Davis's own later reference list give Bernard D. Davis."
   },
   "evidence": "What Davis meant by the name is read here from his own restatement of it, published in 2000 and adapted from a chapter of the unfinished book he left at his death in 1994. He gives the is-from-ought formula, cites his 1978 article and pages 30 to 33 of his 1986 book Storm over Biology, and names the occasion: a lecture in which George Steiner proposed that certain kinds of studies should not be pursued, his example being the identification of genetic components of human behaviour, since these might differ statistically among races. The experimental literature does not use the name. What it measures is the inference's signature, which is whether judgements of evidence move with the moral desirability of the conclusion. Colombo, Bucher and Inbar built their materials from a pre-study in which 40 Tilburg undergraduates rated 18 testable hypotheses for moral offensiveness and for credibility, then selected items matched on prior credibility. In their first study 101 Mechanical Turk participants rated six fictitious research reports on five dimensions. Reports carrying a morally offensive hypothesis were rated lower on every one: plausible d = 0.36, convincing d = 0.38, well conducted d = 0.38, provides good evidence d = 0.24, should be funded d = 0.22, all with df = 100 and p between < .001 and .029. Liu and Ditto's three studies are described here from their published abstract, which reports that the more an act was deemed inherently immoral the more it was seen as unlikely to produce benefits and likely to involve costs, and that reading essays on the inherent morality of capital punishment changed beliefs about its costs and benefits though no information about consequences was supplied. Winegard, Clark, Hasty and Baumeister ran eight studies on 3,274 participants in which the same fictitious finding was presented with the groups reversed, and report that in every study liberal participants rated the version favouring a higher-status group less credible than the version favouring a lower-status one.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The gap nobody wants to believe",
+      "text": "A study reports a wide gap in outcomes between two groups. A reader who holds that such a gap ought not to exist concludes that the measurement must be flawed, without having looked at how it was taken. The wish has been used as a finding."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The research that should not be done",
+      "text": "A funding panel rejects a proposal on the ground that either result would be misused. That may be a case about what to study. Offered as a reason the effect is not there, it runs from ought to is."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The temperament said to run in families",
+      "text": "Told that a temperament runs in families, a teacher replies that believing it would let schools write children off, so it cannot be true. Whether it runs in families and what schools should do about it are separate questions."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "A preregistered experiment found the same effect twice in different countries, d = 0.50 then d = 0.47, while the study that repeated its own procedure under an accuracy incentive held on one of its five measures.",

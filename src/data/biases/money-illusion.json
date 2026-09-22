@@ -13,6 +13,23 @@
     "note": "The book grew out of lectures given in the summer of 1927 at the Geneva School of International Studies. Fisher defines the illusion in its first chapter as \"the failure to perceive that the dollar, or any other unit of money, expands or shrinks in value\", and his evidence is anecdote rather than measurement. The experimental literature dates instead from Shafir, Diamond and Tversky's 1997 paper in the Quarterly Journal of Economics, which recast the term as a framing effect and supplied the survey problems used ever since."
   },
   "evidence": "Fisher's case was a travelogue. Touring Germany in 1922 with Frederick W. Roman, he talked at length with twenty-four men and women met by chance, and only one of them had any idea that the mark had changed in value. A shopkeeper on the outskirts of Berlin told him the shirt she had just sold him would cost as much to replace as she had charged, and then said she had made a profit on it because she had bought it for less. By then, Fisher writes, the mark had depreciated by more than ninety-eight per cent. Shafir, Diamond and Tversky replaced the anecdotes with four survey problems, whose original figures are quoted here from the tables of Ziano and colleagues' replication rather than from the 1997 paper, which could not be obtained. Asked about Ann, who got a 2% raise with no inflation, and Barbara, who got a 5% raise with 4% inflation, 71% of 150 respondents said Ann was doing better in economic terms, but only 36% of 69 thought her happier and 65% of 139 thought her more likely to leave her job. Ranking three men who bought and sold a house, 47% put first the seller with a 23% nominal gain and a 2% real loss, and 54% put last the seller with a 23% nominal loss and a 2% real gain. Told that all prices and salaries had risen 25%, 38% said they were less likely to buy an armchair and 43% said they were more likely to sell one. Offered two sale contracts, 81% of 47 chose the one that was riskless in real terms when the choice was described in real terms, against 59% of 49 in nominal terms and 54% of 43 in neutral terms. Fehr and Tyran took the question into a paid pricing game with 130 subjects at the University of Zurich. A fully anticipated monetary shock moved the average equilibrium price from 18 to 6. Against computers that best-replied, subjects seeing real payoffs adjusted at once, and subjects seeing nominal payoffs mostly did too, with 80% fully adjusting and the average price 2.1 units too high. Against other humans the gap was far larger. Average prices stood 3.1 units above equilibrium in the first period after the shock under the real frame and 7.1 units above it under the nominal frame, and the nominal groups took eight periods to fall to the real frame's opening deviation. Prices were significantly out of equilibrium for 12 periods under the nominal frame and 2 under the real one. Nominal groups lost 26% of their potential payoff over the first ten post-shock periods, against slightly under 14% for real groups. A further 96 subjects faced a positive shock instead, and the nominal groups were out of equilibrium for only three periods.",
+    "examples": [
+      {
+        "kind": "everyday",
+        "tag": "The rise that is not a rise",
+        "text": "A worker offered two percent while prices climb four percent feels better treated than a worker offered a cut of one percent while prices are flat. The second is better off in what the pay actually buys."
+      },
+      {
+        "kind": "everyday",
+        "tag": "The price that will not come down",
+        "text": "A shop would rather let stock sit, or quietly shrink the packet, than print a lower price, even where a lower price is what demand is asking for. Resistance to falling nominal numbers is the field half of the claim."
+      },
+      {
+        "kind": "everyday",
+        "tag": "The house sold above what it cost",
+        "text": "An owner counts any sale above the purchase price as a gain, without setting it against what the same money would have bought over the time it was tied up. Face value is doing the arithmetic."
+      }
+    ],
   "replication": {
     "state": "mixed",
     "headline": "All four survey problems replicated at N = 604, but a redesigned re-run of the strongest laboratory experiment found no first-order money illusion at all.",

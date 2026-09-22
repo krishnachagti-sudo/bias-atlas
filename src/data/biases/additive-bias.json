@@ -13,6 +13,23 @@
     "note": "Their paper is titled \"People systematically overlook subtractive changes\" and reports eight experiments. The name \"additive bias\" is not the paper's own label, which is the overlooking of subtractive changes."
   },
   "evidence": "The Nature paper sits behind a subscription and this entry has read only its abstract. On 21 September 2026 the full text was refused at nature.com and at rd.springer.com, was absent from PubMed Central and Europe PMC, and was returned as closed by Unpaywall. The authors' own laboratory page at Ole Miss carries the abstract alone, and their Open Science Framework deposit holds data and code but no manuscript. What follows therefore separates the abstract from descriptions given by later papers. The abstract states the finding as three contrasts: participants were less likely to identify advantageous subtractive changes when the task did not cue them to consider subtraction, when they had only one opportunity rather than several to see the shortcomings of an additive search, and when they were under higher cognitive load. Meyvis and Yoon, writing the News and Views piece that ran alongside it, describe the first task. A Lego roof rests on a single corner pillar with a figurine underneath, each added block costs ten cents, and the cheap answer is to remove the pillar and let the roof sit on the base. Most participants added pillars instead. Fischer and colleagues describe the grid task from the later experiments: four ten-by-ten grids of white and green squares, made symmetrical by toggling squares either way. Fillon, Girandola, Bonnardel and Souchet, who replicated experiments 2 to 4, describe those as online tasks in which participants listed ideas to improve a drawing of a golf hole or to make it worse. In their summary table, the original's rate of participants producing at least one subtractive idea rose from 28 percent to 43 percent with a cue in experiments 2 and 3, from 21 percent to 48 percent in the improve condition of experiment 4, and from 28 percent to 50 percent in the make-worse condition. Those three pairs are quoted from Fillon and colleagues rather than read off the Nature paper.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The agenda that only grows",
+      "text": "Asked to improve a weekly meeting, a team proposes a new standing item and a pre-read. Nobody proposes dropping the report that has gone unread for months, though dropping it costs nothing and gives the hour back."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The sauce that gains an ingredient",
+      "text": "A cook whose sauce is not right reaches for another spice rather than leaving out the one already fighting the rest. The additive answer arrives first, it is good enough, and the search stops there."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The form with another help note",
+      "text": "Asked to make a form easier, a designer writes help text beside the confusing question instead of deleting the question. Told to look for things to remove, the same designer finds several at once, which is the test that separates late search from real preference."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The idea-generation experiments replicated in a large preregistered French sample. The grid task did not reproduce on neutral patterns, and the Lego task reproduced only in part.",

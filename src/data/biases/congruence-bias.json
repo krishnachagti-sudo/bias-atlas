@@ -15,6 +15,23 @@
     "note": "Six experiments on the evaluation of yes-or-no questions, three of which concern congruence bias. None of the six is a rule-discovery task, and the paper's reference list carries Wason's 1968 chapter rather than his 1960 experiment. A footnote records that the phrase confirmation bias has been used for what they call congruence bias. It has also been used for two other things. One is choosing a question unlikely or unable to falsify a favoured hypothesis. The other is being unresponsive to evidence against one."
   },
   "evidence": "In Experiments 1 to 3 people read short scenarios, such as a child covered in red spots, and rated three questions on a scale from 0 to 100 for how much each would help find the cause. They then supplied their own prior and conditional probabilities, so a normative value could be computed from their own beliefs. Ratings were regressed on that model, and the leftover residual was correlated with two quantities. The hit rate is the probability of a yes answer if the favoured hypothesis is true. The false-alarm rate is the probability of a yes answer if it is false. The mean hit-rate correlation was 0.30 in Experiment 1 and 0.33 in Experiment 2, t = 7.23 and t = 6.74, both p < .001 one-tailed. Fourteen people sat Experiment 1 and nine were analysed, because the rest gave more than one hypothesis or did not return. Ten were analysed in Experiment 2. The paper prints those t values without their degrees of freedom. The false-alarm correlations were 0.03 and -0.04, neither reliable. A separate item made the preference concrete. Given a patient with a 0.8 chance of one disease and 0.2 of another, 12 of 22 undergraduates chose the test that would come back positive for the likelier disease, although the other test was the better one. Wason's 2-4-6 task, which later summaries attach to this bias, is a different demonstration, and its rule-discovery figures sit under confirmation bias, entry 5.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The boiler that might be the thermostat",
+      "text": "A plumber suspects the thermostat and checks whether the radiators are cold, which they would be on that hypothesis and on three others. The check that would separate a failed thermostat from a failed pump is never the one chosen."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Diagnosing a slow laptop",
+      "text": "Convinced the machine is short of memory, someone tests whether it slows down with many tabs open. It would slow down whatever the real cause is. A question whose answer is likely under every hypothesis buys nothing."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Asking a referee the wrong question",
+      "text": "A manager who believes an applicant is a natural leader asks the referee whether she takes charge in a crisis. A yes fits that belief and fits several rival descriptions equally well, so it cannot tell them apart."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "An independent Italian sample 22 years later showed the same preference, choosing 375 positive questions against 105 negative ones.",

@@ -2,7 +2,13 @@
   "no": 348,
   "slug": "mood-congruent-memory",
   "name": "Mood-congruent memory",
-  "aliases": ["Mood congruence", "Mood-congruent recall", "Mood-congruent memory bias", "Affect congruence in memory", "MCM"],
+  "aliases": [
+    "Mood congruence",
+    "Mood-congruent recall",
+    "Mood-congruent memory bias",
+    "Affect congruence in memory",
+    "MCM"
+  ],
   "category": "memory",
   "statement": "People remember material whose emotional tone matches their mood, an effect that is reliable but small in depression and absent from about a third of induced-mood experiments.",
   "meaning": "The claim is about the content of what comes back, not about the conditions of retrieval. A sad person recalls more sad material and a happy person more happy material. The mood can be present at learning, at retrieval or at both, and the material can be a word list, a set of faces, or an episode from the rememberer's own life. Two literatures test this. One induces a mood in healthy volunteers using music, film clips or autobiographical instruction, then measures what they recall. The other compares people who are depressed with people who are not, and treats depressed mood as the naturally occurring version of the same manipulation. The pooled numbers come from the clinical literature; the experimental control comes from the induction literature. Faul and LaBar set out the standard explanation, which is Bower's associative network. Moods and events sit as linked nodes, activating a mood node spreads activation to the events attached to it, and congruent material is therefore easier to reach.",
@@ -13,6 +19,23 @@
     "note": "\"Mood and memory\", volume 36, issue 2, pages 129 to 148. The paper is paywalled and was not read for this entry. Faul and LaBar describe what it proposed: an associative network in which affect exists as nodes, and four hypotheses derived from it, covering mood-dependent memory, mood-congruent retrieval, mood-congruent encoding, and a scaling of the effect with the intensity of the mood. They also record that Bower could cite only a few published results when he proposed the model. Blaney's 1986 review in Psychological Bulletin is the assessment that followed."
   },
   "evidence": "The largest pooled estimate is Everaert, Vrijsen, Martin-Willett, van de Kraats and Joormann's, from two three-level meta-analyses of explicit memory bias in depression. Their first model covered 686 contrasts from 153 studies and gave Hedges' g = 0.24, 95% CI [0.18, 0.30], p < .001. Effects were signed so that a positive g means greater mood congruence, meaning more negative or less positive recall. The 95% prediction interval ran from -1.05 to 1.54. Moderators move the estimate further than the average suggests. Free recall gave g = 0.289 and recognition 0.104. Verbal stimuli gave 0.272 and non-verbal stimuli 0.092, the latter not distinguishable from zero. Self-referential conceptual encoding gave 0.367 against 0.150 for perceptual encoding. Clinical depression gave 0.233 and subclinical depression 0.278, with no reliable difference between them. Remitted depression gave 0.050, p = .623. Their second meta-analysis pursued that null across 80 contrasts from 21 studies of remitted depression and pooled to g = 0.13, 95% CI [-0.05, 0.31], p = .136. Within it, the seven studies that added a mood or stress induction gave g = 0.273, p = .048, and the authors warn that seven is below the ten they treat as a minimum for a moderator level. Induced mood in healthy adults has been reviewed rather than pooled, and the reviews have grown less confident. Faul and LaBar record that 25 of the 29 mood-induction articles Blaney reviewed in 1986 reported evidence of mood-congruent memory. Faul and LaBar themselves screened 702 unique articles for studies that induced and measured a mood state in healthy adults. Among laboratory encoding and retrieval studies they found mood-congruent memory for at least one mood in 41 of 66 experiments, from 34 of 48 articles. Twenty-four experiments across 15 articles reported no interaction between mood and emotional memory. They summarise the recognition studies that reported discriminability as giving congruent over incongruent values of d' in the range 0.85 to 1.17, and the free-recall studies as boosting accurate recall of congruent material by 5% to 30%. Autobiographical studies came out weaker. Mood-congruent recall appeared in 20 of 54 experiments, 17 more produced congruent and incongruent effects depending on the moderator tested, eight produced only mood-incongruent recall, and nine produced neither. Implicit memory has a meta-analysis of its own. Gaddy and Ingram reviewed 20 studies of implicit memory for emotionally valenced words in dysphoria and clinical depression. Their abstract reports that depressive groups showed preferential implicit recall of negative information and non-depressed groups preferential implicit recall of positive information, moderated by self-relevance and by whether encoding and retrieval matched in perceptual or conceptual demands.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The evening that rewrites the week",
+      "text": "Someone low after a bad day brings back the week's setbacks readily and has to work to reach the good parts of it. What matches here is the mood and the tone of the material, not the mood at learning and the mood at recall."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The holiday that will not come back",
+      "text": "A person in a low mood asked to describe a good holiday produces a thin account with little in it. The effect shows up more as difficulty reaching the good material than as a flood of the bad."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The neutral list that can show nothing",
+      "text": "Someone cheered by music recalls more of the cheerful words from a mixed list. Had every word been neutral, no congruence could appear, because there would be nothing for the mood to match."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Explicit memory bias in depression pools to a small g = 0.24 across 153 studies, while a quarter of laboratory mood inductions produce no mood-congruent effect at all.",
@@ -23,7 +46,16 @@
       "year": 2022,
       "n": 686
     },
-    "replicated": { "es": 0.241, "esType": "g", "ci": [0.179, 0.304], "ciLevel": 95, "weighting": "weighted" }
+    "replicated": {
+      "es": 0.241,
+      "esType": "g",
+      "ci": [
+        0.179,
+        0.304
+      ],
+      "ciLevel": 95,
+      "weighting": "weighted"
+    }
   },
   "limits": "Four of the sources behind this literature could not be opened. Matt, Vázquez and Campbell's 1992 meta-analysis, Bower's 1981 paper, Blaney's 1986 review and Gaddy and Ingram's 2014 meta-analysis are all paywalled, and searches of Crossref, PubMed, OpenAlex, Semantic Scholar and Unpaywall returned no open copy of any of them. No pooled effect size from Matt or from Gaddy and Ingram is quoted here for that reason. The figures attributed to Matt and to Blaney on this page arrive through later papers that describe them, which is stated where they appear. The pooled g = 0.24 is an estimate for explicit memory in depression and nothing else. It says nothing about induced mood in healthy people, where the evidence is a count of studies rather than an effect size, and nothing about implicit memory. Everaert and colleagues coded a positive effect as more negative or less positive recall, so their figure merges two directions of bias that need not have the same cause. The induction evidence has no meta-analysis at all. Faul and LaBar report tallies of experiments, not a pooled estimate, and a tally weights a study of twenty people the same as a study of two hundred. Their review also excludes children, clinical samples and studies using acute stress or sleep manipulations. No registered or multi-site replication of any mood-congruent memory paradigm was located in searches of Crossref, PubMed and the published literature these reviews cite. Faul and LaBar name a further gap: few mood-congruent memory studies separate encoding and retrieval by as much as a day, so almost nothing is known about whether the bias survives consolidation.",
   "misreadings": "Mood-congruent memory is not mood-dependent memory, and the two are confused often enough that Faul and LaBar open by separating them. Mood dependence is about a match between the mood at learning and the mood at retrieval, whatever the material was. Mood congruence is about a match between mood and the emotional content of the material, at a single point in time. A neutral word list can show mood dependence and cannot show mood congruence. The depression finding is usually described as a pull towards negative memories, and the numbers point elsewhere. In Everaert and colleagues' analysis the effect for positive material, g = 0.375, was larger than the effect for negative material, g = 0.201, an estimated difference of 0.17, 95% CI [0.019, 0.328], p = .028. Depressed people fall short on the good things more than they gain on the bad. Threat-related material gave g = 0.050 and was not distinguishable from zero. The effect is also test-dependent in a way summaries drop. Free recall gave 0.289 and recognition 0.104, and recognition of verbal stimuli was not reliably different from zero. A claim that depressed people misremember faces has thin support: non-verbal stimuli gave g = 0.092, p = .210. The bias does not obviously mark a person for life either. Everaert and colleagues found g = 0.050 in remitted depression, p = .623, and their follow-up meta-analysis of remitted samples pooled to a nonsignificant g = 0.13. Their title states that the bias persists beyond an episode, and the ground for that is the seven remitted-sample studies using a mood or stress induction, not the remitted samples at rest. Demand characteristics are the standing objection to induced-mood work, and Eich and Macaulay tested it directly. Students who only acted as if they were happy or sad still showed mood-congruent effects, though Eich and Macaulay report those effects as qualitatively different from the ones real inductions produce, and only genuine moods produced mood-dependent effects.",

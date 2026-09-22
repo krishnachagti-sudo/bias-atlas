@@ -18,6 +18,23 @@
     "note": "Their article ran in volume 37, issue 11, pages 2098 to 2109, and was read in full here from the scanned reprint at fbaum.unc.edu. A total of 151 undergraduates answered an in-class questionnaire on capital punishment, and 48 were brought back two to four weeks later, 24 proponents and 24 opponents. Each read one purported study confirming and one disconfirming the deterrent effect of the death penalty, and rated how well each was conducted and how convincing it was. On the difference between the two convincingness ratings the analysis of variance gave a main effect of initial attitude, F(1, 44) = 32.07, p < .001. Taber and Lodge's two experiments on affirmative action and gun control arguments, with 126 and 136 Stony Brook students, are the political version most often cited in between. Ditto and colleagues excluded that paper from their meta-analysis because the arguments the two sides read differed in content rather than being matched."
   },
   "evidence": "Ditto and colleagues meta-analysed 51 experimental studies with 18,815 participants, all using the matched-information design on American samples. Their searches returned more than 1,500 articles, chapters and dissertations. Forty-eight articles met all four inclusion criteria, and the 51 studies in the final set came from 38 articles, 42 of them published and 9 unpublished. Mean overall partisan bias was r = .245, 95% CI [.208, .280], p < .001, and the effect cleared significance in 39 of the 51 samples. Split by side, liberals gave r = .235 and conservatives r = .255, 95% CI [.205, .304]. The difference between the two was r = .009, p = .55, 95% CI [-.020, .038]. The liberal interval appears twice in the manuscript read here and the two do not agree, .192 to .296 in the text and .192 to .276 in Table 2, so the table value is the one printed above. Guay and Johnston put the same question to two national survey experiments. Their 2018 Lucid study recruited 2,085 US adults and analysed the 1,816 who passed two attention checks. The probability of correctly interpreting numeric evidence rose by 10 to 20 percentage points when the evidence favoured the respondent's own side. In their second experiment, judgements of a study's sample size and of its warrant for causal conclusions moved by 0.15 to 0.30 standard deviations in the same direction. A second sample, also of 1,816 US adults, drawn from the 2018 Cooperative Congressional Election Study, repeated the pattern.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "One crime figure, two verdicts",
+      "text": "A report showing crime falling under the current government is called solid by its supporters and thin by its opponents, and both sides have read the same pages. The gap between the two verdicts is the measure, and neither verdict is the accurate one by default."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The sample size that only matters sometimes",
+      "text": "A reader waves through a survey of two hundred people when the result suits them and asks pointed questions about the sample when it does not. The scrutiny is genuine. What switched it on was the conclusion rather than the method."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The same expenses claim",
+      "text": "A councillor's travel claim is described as an administrative oversight by her own party and as a scandal by the other, on identical paperwork. The paperwork is the matched information, and the difference is what the design is built to catch."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "The bias repeats across topics, samples and study designs at r = .245. Whether it is larger on the right is disputed, and the meta-analysis reporting no difference has been attacked on its inputs.",

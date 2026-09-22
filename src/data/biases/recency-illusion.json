@@ -15,6 +15,23 @@
     "note": "Zwicky introduced the Recency Illusion and the Frequency Illusion in one post, 'Just between Dr. Language and I', which he describes as a lightly edited version of a message sent to the American Dialect Society mailing list that day. A follow-up on 17 August added the Adolescent Illusion and the Out-Group Illusion. His fullest statement is the abstract 'Why are we so illuded?', dated September 2006, which sets out five illusions and traces them to Language Log postings of the previous two years. Neither text reports a measurement."
   },
   "evidence": "The 2005 post answers a usage columnist at yourdictionary.com who wrote that American speakers began switching 'me and X' to 'X and I' in every position about 20 years earlier. James Cochrane's book Between You and I dates the same shift to the previous twenty or so years. Zwicky replies from the Oxford English Dictionary and Merriam-Webster's Dictionary of English Usage. The rise of 'between you and I' in Late Modern English goes back at least 150 or 160 years, and earlier uses go back about 400. His second case is a linguist rather than a columnist. Charles Hockett called 'I'm going home and eat' a recent colloquial pattern in 1958, and David Denison had collected examples from roughly 30 years before that. The follow-up post adds retro-'not', which people report as recent and as teenage speech, and cites Larry Horn's 1992 paper against both impressions. The 2006 abstract supplies a mechanism, and it is not the one the 2005 post gives. There Zwicky assigns selective attention and confirmation bias to the Frequency Illusion and to the two group illusions, and not to the Recency Illusion. He says instead that in the Recency and Out-Group Illusions a feature is salient because it is judged bad, innovation being read as laziness, ignorance and putting on airs. Neither text counts anything. The term reached peer review two years later. Rickford, Buchstaller, Wasow and Zwicky apply it in American Speech to Waksler's treatment of intensifier 'all' as new, and set against it examples from Aelfric's Lives of Saints dated 990 and 1000. The one quantitative survey located is van der Meulen's, on Dutch prescriptive writing. He searched a database of 5,678 entries from publications dated 1910 to 2018, the range his methods section gives; his abstract says 1900. Of those, 238 entries carry at least one recency statement, and they target 341 usage items, 230 of them lexical and 98 grammatical. Claims about recent origins, the strictly Zwickian kind, account for 80.9% of statements, or 276. He dated the forms against four secondary works, three of them dictionaries and one a history of twentieth-century Dutch, and against Delpher, a repository of over 120 million pages of Dutch newspapers, books and magazines. A form first attested more than 30 years before the statement counted as an illusion, a threshold taken from Zwicky's Hockett example. Sampling was random, at most two lexical and two grammatical items per decade. Of the 23 lexical recency statements checked, 20 are illusions, 87%, and three are not. For 17 of them the earliest occurrence predates the claim by more than 50 years. Thirteen grammatical statements across eight usage items are almost all illusions, with the relative pronoun 'wat' rated a maybe.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The word a reader has just met",
+      "text": "A reader comes across a usage for the first time in a novel and assumes it arrived in the language within the last decade or two. Dictionaries record it centuries earlier. What was new was the noticing, not the word."
+    },
+    {
+      "kind": "everyday",
+      "tag": "A letter to the paper about slang",
+      "text": "Somebody writes in to complain that a construction has crept into everyday speech recently and should be resisted. The date the complaint assumes is the date the writer first heard it, which is a fact about the writer."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Blaming a turn of phrase on the internet",
+      "text": "A parent hears an unfamiliar phrase from a teenager and puts it down to talk online. Some such forms genuinely are new. The confidence arrives long before anybody has gone looking for an earlier use."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "No replication was located, and there is no original experiment to repeat: the effect was named in a blog post that measures nothing.",

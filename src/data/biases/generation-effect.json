@@ -18,6 +18,23 @@
     "note": "The paper is \"The generation effect: Delineation of a phenomenon\", and it names the effect. Slamecka and Graf described their own purpose as empirical rather than theoretical, writing that a search of the journals had uncovered no thoroughgoing treatment of the question and no cumulative body of literature. They raised four interpretations, listed three more in a sentence, wrote that the list was not exhaustive, and declined to press for any of them until the analytic studies were done."
   },
   "evidence": "Slamecka and Graf ran five experiments on University of Toronto undergraduates. Experiment 1 used 24 subjects and a 100-item list, 20 items under each of five rules: associate (lamp-light), category (ruby-diamond), opposite (long-short), synonym (sea-ocean) and rhyme (save-cave). Generation errors ran at a median 6%, and those items were dropped from scoring. Generated words were recognised more often, F(1, 20) = 9.68, MSe = .07, and were rated with higher confidence, F(1, 20) = 6.92, MSe = 1.04. Pacing did nothing: timed and self-paced means of .75 and .79, F < 1. Rules mattered for overall level, F(4, 80) = 5.28, because rhyme responses sat lowest, but rules did not interact with generating, F(4, 80) = 2.09. Experiment 2 moved the contrast inside the subject, 12 people seeing both conditions, and the effect held at F(1, 10) = 27.17, MSe = .04. Warning subjects about the test changed nothing, with informed and uninformed means of .72 and .77, F < 1. Asked to label each recognised word as generated or read, subjects were right 74% of the time against a chance value of 50%, t(11) = 6.00, SE = .04. Experiment 3 asked whether the benefit spreads to the cue. Twenty-four subjects saw 66 rhyme pairs and were tested on either the stimulus or the response side, with the untested member always supplied. Recognition gave a main effect of generating, F(1, 20) = 26.19, MSe = 50.99, and an interaction with the tested side, F(1, 20) = 10.75, MSe = 50.99. A t test found the effect on responses, t(20) = 5.94, SE = 2.92, and none on stimuli, with no statistic printed. The confidence ratings were analysed separately and gave t(20) = 4.82, SE = .10, on the response side against t < 1 on the stimulus side. Experiment 4 put 12 subjects through five cycles of study and free recall of 60 responses. Generated words won, F(1, 11) = 19.84, MSe = .05, and the two curves converged over the last two trials, F(4, 44) = 4.47. Output position ruled out one artefact: generated items were not recalled earlier, with mean output positions of 13.45 against 12.74 across all trials. Experiment 5 ran 24 subjects through five cycles of cued recall on the 66 rhyme pairs. Response recall was .68 generated against .61 read, and stimulus recall was .53 against .51, F(1, 22) = 6.19, MSe = .02. The response-side selectivity found in Experiment 3 did not reach significance here, F(1, 22) = 1.82. The generate and read condition means for the recognition experiments are printed in figures rather than in the text, so those proportions are not quoted here.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The covered column",
+      "text": "A learner covering the translation and producing it from the first letter remembers more of the list than one reading both columns. The words are identical. What differs is whether the word arrived from the page or came out of the learner's own memory at the moment of first study."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Working out the missing ingredient",
+      "text": "Someone who reads a method and works out which ingredient must be missing from the list remembers it later; someone who reads the finished list does not. This is not practice after learning, because both met the recipe once."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Filling in the drug name",
+      "text": "A student given the class of a drug and its first two letters, and asked to supply the rest, recalls the name better than one who reads the chart. The gain lands on the word that was produced, not on the cue that prompted it."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "McCurdy and colleagues pooled 1,653 estimates from 310 experiments and found generated items remembered .102 more often than read items, 95% CI [.087, .117].",
@@ -31,7 +48,10 @@
       "es": 0.102,
       "esType": "md",
       "unit": "proportion of items remembered",
-      "ci": [0.087, 0.117],
+      "ci": [
+        0.087,
+        0.117
+      ],
       "ciLevel": 95,
       "weighting": "pooled across 1,653 estimates from 310 experiments"
     }

@@ -2,7 +2,11 @@
   "no": 463,
   "slug": "temporal-distancing-bias",
   "name": "Temporal distancing bias",
-  "aliases": ["Subjective temporal distance", "Distancing bias", "Temporal self-appraisal"],
+  "aliases": [
+    "Subjective temporal distance",
+    "Distancing bias",
+    "Temporal self-appraisal"
+  ],
   "category": "social",
   "statement": "People report feeling further from past experiences that reflect badly on them than from equally distant ones that flatter them, so a failure feels long ago and a success feels recent.",
   "meaning": "What is measured is a rating, not a recollection. A participant names a past event and then marks on a scale how near or far it feels, and the bias is the gap between that mark and the calendar. Ross and Wilson's temporal self-appraisal theory holds that a favourable view of the present self is easier to keep if unflattering pasts are pushed away and flattering ones pulled close. Two separable claims sit inside that. The first is a main effect of valence: negative events feel more remote than positive events matched for elapsed time. The second is a moderation by self-esteem, since people with high self-esteem are taken to have more to protect and so should show the wider gap. The moderation is what makes the account motivational, and the two claims have fared differently under replication. Nothing here concerns whether the content of the memory is accurate. The corpus's self-consistency-bias entry covers recollections pulled towards a person's present position; felt distance is a different judgement, collected on a different scale, and the two can move independently.",
@@ -13,6 +17,23 @@
     "note": "The paper is titled 'It feels like yesterday' and reports three studies. Its own term for the finding is the distancing bias. Temporal self-appraisal theory was set out a year earlier by Wilson and Ross in the same journal, in a paper on how people appraise their earlier and present selves. The 2002 full text could not be obtained, so its studies are described here from its abstract at PubMed and from Ebersole and colleagues' account of Study 2."
   },
   "evidence": "The 2002 abstract reports that in three studies participants felt further from former selves and experiences with unfavourable implications for their current self-view than from equally distant selves and experiences with flattering implications. It states that the pattern held when assignment to a negative or positive past was random, for achievement outcomes and for social outcomes, and for single episodes as well as longer-term experiences. It reports the distancing bias as stronger among high than low self-esteem participants, and as occurring for personal events but not for acquaintances' events. Frequency of rehearsal and ease of recall also predicted feelings of distance, and by that abstract's account did not explain the Self-Esteem by Valence interaction. Study 2 is described by Ebersole and colleagues, who repeated it. It assigned 357 students to recall either the best or the worst grade they received in the previous semester, then asked how distant the course felt and how often they had thought about it since. Actual time since the class entered a hierarchical regression at step 1, so elapsed time was controlled statistically rather than held equal by design. The Self-Esteem by Condition interaction was t(352) = 1.98, p = .0485, beta = -.136, d = 0.21, 95% CI [.001, .418]. High self-esteem participants felt more distant from the course in which they got their worst grade, t(352) = 3.57, beta = -.31, p = .0002. Low self-esteem participants showed no reliable relation between grade and subjective distance, t(352) = 0.83, beta = -.07, p = .204.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The interview that went badly",
+      "text": "A failed interview from last spring feels like something out of an earlier life, while a prize won the same month feels like last week. The calendar puts the two days apart and the feeling does not."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The old argument",
+      "text": "Someone can date a bitter row with a sibling to the month it happened and still call it ancient history. Getting the date right and feeling far from it are separate things, and only the second is what this bias describes."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Two results from one term",
+      "text": "A student recalls the paper she scraped a pass in as belonging to a younger and less capable version of herself, while a good mark from the same term stays close at hand. The arrangement keeps the present self looking better than the transcript does."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Many Labs 3 found the valence effect across 20 sites and did not find the self-esteem moderation that makes the account motivational, and a later six-experiment paper reports no motivated component at all.",

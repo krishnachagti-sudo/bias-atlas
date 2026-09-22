@@ -12,6 +12,23 @@
     "note": "Dickson and Kelly's review records Snyder and Larson as the first to test whether labelling a general personality interpretation \"specifically for them\" raises acceptance, against the same interpretation labelled \"generally true of people\". Their paper was not obtained for this entry and that description is the review's. The phrase \"subjective validation\" is usually credited to Marks and Kammann's 1980 book, whose bibliographic record Dickson and Kelly print. No source fetched for this entry uses the phrase, so the credit is recorded as unverified rather than repeated as fact."
   },
   "evidence": "Dickson and Kelly date empirical work on the acceptance of general profiles to Forer in 1949, and the standard procedure has hardly moved since: administer something that looks like an assessment, return the same sketch to everyone, and collect accuracy ratings. Subjective validation is tested by a narrower manipulation inside that procedure. Snyder ran the clearest version in 1974. Twenty-one female undergraduates acted as pseudo-astrologers, each recruiting three acquaintances and assigning them at random across three conditions, 21 people per condition. Everyone received the same handwritten horoscope, taken from general statements in Linda Goodman's Sun Signs. One group was told the interpretation was \"generally true of people\". A second was told it came from their birth year and month, a third from their birth year, month and day. Mean accuracy ratings on a five-point scale ran 3.24, 3.76 and 4.38 in that order, F = 7.56, df 2/60, p < .0002. A planned contrast for the predicted ordering gave F = 15.05, df 1/60, p < .0001, and the residual variance was not reliable, F = .01. The text never changed. What changed was the reader's belief about where it came from.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The wrong column in the paper",
+      "text": "Someone reads the horoscope under the sign next to their own by mistake and finds it strikingly apt. The words were written for people born in other months, and the sense of a match came from the reader's own week rather than from the page."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The profile everyone got",
+      "text": "A team away day ends with each person handed a personality summary, and the room agrees the descriptions are uncanny. Every sheet carries the same paragraph. Each reader has picked out the lines that fit and taken the picking as confirmation."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Handwriting said to be yours",
+      "text": "A visitor at a fair is told a character reading has been worked up from the note they wrote at the door. The reading is the one given to everybody. Being told it was derived from something of theirs is what turns an ordinary paragraph into a hit."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "Labelling identical feedback as personally derived raises accuracy ratings, and a review counts six studies reproducing it against two null results whose trends run the same way.",

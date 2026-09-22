@@ -2,7 +2,11 @@
   "no": 560,
   "slug": "garden-of-forking-paths",
   "name": "Garden of forking paths",
-  "aliases": ["Forking paths", "Researcher degrees of freedom without fishing", "Data-contingent analysis"],
+  "aliases": [
+    "Forking paths",
+    "Researcher degrees of freedom without fishing",
+    "Data-contingent analysis"
+  ],
   "category": "belief",
   "statement": "The garden of forking paths is the claim that an analysis chosen in light of the data carries a multiple-comparisons problem, even when only one test is run.",
   "meaning": "Gelman and Loken set out four ways of arriving at a test. The first is a single classical test fixed in advance. The second picks from a preregistered set of options, covering control variables, transformations, coding and exclusion rules. The third computes one test on the observed data, in an environment where different data would have prompted a different test. The fourth is fishing, running many tests and reporting the best one. Their claim is that researchers do the third and hear an accusation of the fourth. A p value describes what would have happened across data sets that never occurred, so an analysis contingent on the data breaks it whether or not anybody went looking. The Texas sharpshooter fallacy, entry 52, covers the wider habit of drawing the target around the shots. This page covers the narrower claim, which is that one honest analysis is enough to do it. The name comes from the Borges story quoted at the head of the paper.",
@@ -13,6 +17,23 @@
     "note": "The paper that carries the phrase in its title is an unpublished working paper dated 14 Nov 2013, titled 'The garden of forking paths: Why multiple comparisons can be a problem, even when there is no \"fishing expedition\" or \"p-hacking\" and the research hypothesis was posited ahead of time'. Its own first footnote says a slightly edited version appeared in American Scientist as 'The Statistical Crisis in Science'. That 2014 article is the peer-reviewed citation, and it carries the phrase in its standfirst rather than its title. Two versions of the working paper sit on Gelman's site under different filenames, and the one without the American Scientist footnote is the earlier of them."
   },
   "evidence": "The working paper argues from published studies rather than from an experiment. Petersen and colleagues reported that men's arm circumference interacted with socioeconomic status to predict attitudes to redistribution, with no main effect, and their supplement records dropping two survey items after finding them unreliable, at which point 'the interaction effect becomes significant'. Gelman and Loken note that a main effect in either direction would also have had a story ready. Beall and Tracy reported that women at peak fertility were three times more likely to wear red or pink. The comparison used days 6 to 14 of the cycle; Durante and colleagues, publishing in the same journal in the same year on a similar hypothesis, used days 7 to 14 against days 17 to 25 and excluded the rest. Both sets of authors replied that they had tested one pre-formed hypothesis, and Gelman and Loken take them at their word, since the objection is about what would have been done with other data. Their summary is that multiple comparisons 'does not have to come from \"fishing\" but can arise more generally from reasonable processing and analysis decisions that are contingent on data'. The measured evidence comes from crowdsourced analysis. Silberzahn and colleagues gave 29 teams of 61 analysts one data set and one question, whether football referees give more red cards to dark-skinned players. Estimates ran from 0.89 to 2.93 in odds-ratio units with a median of 1.31, 20 teams (69%) found a statistically significant positive effect and nine (31%) did not, and the 29 analyses used 21 unique combinations of covariates. Botvinik-Nezer and colleagues gave one functional MRI data set and nine hypotheses to 70 teams, and report that no two teams chose identical workflows. Breznau and colleagues put 161 researchers in 73 teams on one hypothesis about immigration and support for social policy, and more than 95% of the variance in their numerical results was left unexplained after every identifiable workflow decision was coded. Gould and colleagues ran the largest version, recruiting 174 analyst teams of 246 analysts on two ecological data sets. For the blue tit data the mean effect was negative, Zr = −0.35 with a 95% interval of ±0.06, and the 141 usable effects ran from −1.55 to 0.38. Total I² was 97.61% for the blue tit effects and 98.59% for the Eucalyptus effects, and reviewer ratings of the analyses did not predict how far a result sat from the meta-analytic mean.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The subgroup the data suggested",
+      "text": "An analyst looks at a trial's results, sees that the effect sits among the older participants, and reports one comparison for that group. A single test was run, and the data chose which test it would be, so the p value is not the one it appears to be."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The cut-off decided after the fact",
+      "text": "A researcher inspects the response times, decides to drop everything above three seconds, and runs one analysis on what remains. A different scatter of times would have prompted a different cut-off, and that branching is what the lone p value ignores."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The composite that assembled itself",
+      "text": "A team collects five wellbeing items, combines the three that move together and reports the composite. Nobody went fishing for significance, and the measure was still chosen after the data had been seen."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "The crowdsourced-analysis demonstration has been run in psychology, neuroimaging, sociology, finance and ecology, and the spread of estimates appeared every time. The largest run put 174 teams on two data sets and found total I² above 97%.",

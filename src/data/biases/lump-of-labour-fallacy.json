@@ -2,7 +2,12 @@
   "no": 456,
   "slug": "lump-of-labour-fallacy",
   "name": "Lump of labour fallacy",
-  "aliases": ["Lump of labor fallacy", "Lump of work fallacy", "Theory of the Lump of Labour", "Fixed amount of work fallacy"],
+  "aliases": [
+    "Lump of labor fallacy",
+    "Lump of work fallacy",
+    "Theory of the Lump of Labour",
+    "Fixed amount of work fallacy"
+  ],
   "category": "belief",
   "statement": "The claim names a belief that a fixed quantity of work exists, so that a person who works more, or a worker who arrives, must take employment from someone else.",
   "meaning": "Two separate claims travel under this name and the entry keeps them apart. The first is psychological: that ordinary people hold a fixed-work belief and reason from it to policy. The second is economic: that hours cuts, later retirement, immigration and automation do not move employment one for one, so the belief is wrong. Neither claim settles the other. Schloss, who named the theory, described it as the view that there is a certain fixed amount of work to be done, and that each worker should take care not to do too much, so that the Lump of Labour may be spread out thin over the whole body of work-people. That wording is identical in his 1891 article and in the 1894 book chapter. His target was restriction of output by workers on piece-wage, and his analogy was the popular objection to machinery. Daniel Kinderman, quoted by Walker, notes that the fixed amount can mean two different things, a ceiling on labour demand or an assumption that labour demand does not respond to labour cost, and the two carry different arguments. This collection covers the general part-to-whole error at entry 450 and the wider fixed-pie belief at entry 105. The lump of labour is narrower than either. It is a claim about one market, and it is usually deployed against a named policy rather than as a description of reasoning.",
@@ -13,6 +18,23 @@
     "note": "Walker traces the earliest known reference to a fallacious theory of the lump of labour to Schloss's article 'Why Working-Men Dislike Piece-Work'. Walker gives its pages as 1(3), 312 to 326, and Wels and Macnicol give 311 to 326. The article was read here from the Internet Archive scan of volume I. Its index entry, its opening page and its closing page all give 311 to 326, so Walker is out by one page at the start. Chapter V of the second edition of Schloss's book repeats the passage at pages 43 to 47. The argument that shorter hours rest on a fixed-work belief was made three years later by John Rae, in Eight Hours for Work. Walker records that Rae favoured the eight-hour day, denied it would relieve unemployment, and wrote that reducing hours to create jobs was not a simple sum in arithmetic. Charles Beardsley answered him in the Quarterly Journal of Economics in 1895, arguing that Rae relied on the wages-fund doctrine he attributed to others. Walker records that a 1901 London Times series and a 1904 National Association of Manufacturers pamphlet turned the phrase against the eight-hour day itself."
   },
   "evidence": "The psychological claim has been measured by survey. Achim Kemmerling used Eurobarometer data on agreement that people in their late 50s should give up work to make way for the young and unemployed, and reports about a quarter agreeing in the United Kingdom against more than 90% in Greece. Those two country figures are read from his own summary of the article rather than from the article, which is closed access and was not obtained. His abstract states that voters in some European countries do not think an employment trade-off between older and younger workers exists while in others it is the dominant view, and that the belief tracks policy preferences on early retirement. Special Eurobarometer 469, on the integration of immigrants, put a flat statement to respondents. 39% agreed that immigrants take jobs away from workers in their country and 57% disagreed, against 72% who agreed that immigrants make it easier to fill jobs for which it is hard to find workers. Bryan Caplan measured the gap between the public and economists on related items in the Survey of Americans and Economists on the Economy. Ordered logits on an economist dummy give a coefficient of -2.77, z = -17.50, for whether technology displacing workers is a reason the economy is not doing better, and -2.72, z = -18.54, for company downsizing. On the twenty-year outlook for new technology, foreign competition and downsizing, economists averaged 1.92 on a scale where 2 is good, and Caplan writes that the public remained neutral. The economic claim has been tested against particular episodes and the results do not point one way. Simonetta Longhi, Peter Nijkamp and Jacques Poot pooled 165 estimates from nine studies of regional labour markets and found an unweighted mean elasticity of native employment to immigration of -0.024, meaning a 1% rise in immigration lowers local native employment by 0.024%. The mean was -0.005 on United States data and -0.032 on European and Israeli data. They read their own result as settling the question, writing that the idea of fixed aggregate employment in a given area can be considered as a fallacy. Jennifer Hunt used 30 German manufacturing industries from 1984 to 1994. Actual hours fell by 0.88 to 1 hour for each one-hour cut in standard hours, and the straight-time hourly wage rose 2% to 2.4%. Her employment estimates are imprecise, and the point estimates indicate that employment of men fell. Bruno Crepon and Francis Kramarz studied the French cut from 40 hours to 39 in February 1982 and found the same sign. Workers on 40 hours or more in March 1981 became less likely to be employed in 1982 than comparable workers on 36 to 39 hours, with estimated effects between 2.6% and 3.9%, and a lower bound of 4.1% in their second design. Their table 4 gives one-year employment losses in 1982 of 8.2% for workers on 40 hours against 6.6% for those on 39, and two-year cumulated losses of 16.5% against 12.6%.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The pace the crew agrees on",
+      "text": "A crew paid by the piece agrees that nobody should lay more than a set number of bricks a day, on the grounds that a fast worker uses up the work and leaves the others short. The reasoning treats the week's bricks as a fixed heap to be shared out."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The retirement argument at the dinner table",
+      "text": "Someone argues that older staff should be made to leave at sixty so that young people can have their jobs. The argument works only if the number of jobs is settled in advance and each departure frees exactly one of them."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The newcomers in a small town",
+      "text": "Residents object to a group of arrivals on the grounds that the town has only so much work to go round. The arrivals also rent homes, buy food and need dentists and buses, and the count of jobs does not hold still while they do."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The belief is found wherever it is looked for, and the economic proposition the fallacy label asserts comes out differently across immigration, hours and retirement.",

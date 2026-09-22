@@ -13,6 +13,23 @@
     "note": "Their paper is \"Assimilation and contrast effects in part-whole question sequences: A conversational logic analysis\", volume 55, pages 3 to 23. It circulated first as ZUMA-Arbeitsbericht 90/01 in Mannheim in 1990, and the copy read for this entry is the published reprint deposited in that series at SSOAR. Order effects in surveys were documented long before it. The paper says of its own central result that it replicates Strack, Martin and Schwarz (1988); what it added was the conversational mechanism and a test of it."
   },
   "evidence": "The study was a self-administered survey run in the pedestrian mall of a German city, on a convenience sample of 456 adults, of whom about 20% of those approached took part. Demographic questions were left off the form by mistake, so the paper cannot describe its own sample. The design was 2 by 4 with a control group, giving nine conditions of about 50 people each, one of 56. Satisfaction was rated from 1 to 11. The famous pair of numbers is a comparison of two of those cells. Where the general question came first, relationship and life satisfaction correlated r = 0.32; where one specific question came first, r = 0.67, z = 2.32, p < 0.01. A footnote states that all reported tests are one-tailed unless otherwise indicated. The rest of Table 1 is the part the retellings drop. Introducing the same two questions with a joint lead-in, so that they read as one exchange, gave r = 0.18, and an explicit instruction to leave the relationship aside gave r = 0.20; neither is marked significant. Putting three specific questions before the general one instead of one gave r = 0.46, and the paper reports that increase as not significant, z = 0.803. Many Labs 2 computed the original effect as Cohen's q = 0.48, 95% CI 0.07 to 0.88, from the reported correlations. The antecedent the paper credits, Strack, Martin and Schwarz on American students and dating frequency, gave r = -0.12 with the general question first and r = 0.66 with it second; that pair is quoted here from Schwarz and Strack's own later chapter rather than from the 1988 article, which was not obtained.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The manager asked about first",
+      "text": "A staff survey asks how satisfied people are with their manager, then how satisfied they are with the job overall. The manager is loaded and ready, and the second answer comes out looking much like the first."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The wait before the hospital",
+      "text": "Patients asked to rate the wait in casualty and then the hospital as a whole give two closely matching scores. Asked about the hospital first, the overall rating draws on far more than the wait and the two come apart."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The general question read as everything else",
+      "text": "A pupil asked about maths and then about school in general may take the second question to mean the rest of school, since the first has been answered already. The two answers then diverge, and nothing about the pupil's view has changed."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The part-whole correlation prediction reversed across 7,460 people in Many Labs 2, while question order kept moving answers in 70 national surveys and in a 2025 field experiment.",

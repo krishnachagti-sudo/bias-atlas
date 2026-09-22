@@ -2,7 +2,9 @@
   "no": 531,
   "slug": "mind-projection-fallacy",
   "name": "Mind projection fallacy",
-  "aliases": ["Mind-projection fallacy"],
+  "aliases": [
+    "Mind-projection fallacy"
+  ],
   "category": "belief",
   "statement": "The physicist Edwin Jaynes's name for treating a feature of one's own state of knowledge, a probability above all, as though it were a property of the world.",
   "meaning": "Jaynes separates two levels of proposition. Physical prediction describes the real world; inference describes only a state of knowledge about the world, which he calls the ontological and the epistemological level. The fallacy is the collapse of the second into the first. He sets out two forms of it, written as arrows: one's own imagination becomes a real property of Nature, and one's own ignorance becomes indeterminacy in Nature. The second form, he says, arose out of quantum theory, where whatever a pure state leaves undetermined is held to be unknown to Nature herself and not only to the physicist. His image for the error is a movie projector, which makes marks on a strip of film appear to be objects moving across a screen. The consequence he draws is narrow and strong: a probability is a theoretical construct on the epistemological level, so there can be no statistical test for randomness or disorder, for the same reason that there is none for ugliness or foolishness.",
@@ -13,6 +15,23 @@
     "note": "The paper is \"Clearing up Mysteries - The Original Goal\", the opening talk at the eighth International MAXENT Workshop at St John's College, Cambridge, from 1 to 5 August 1988, printed in the proceedings at pages 1 to 27. Its section headed The Mind Projection Fallacy carries the naming sentence, that claiming one's probability equations describe the real world is claiming something one could never know to be true, \"we call it the Mind Projection Fallacy\". Jaynes's talk at the ninth workshop, at Dartmouth College in August 1989, opens by referring back to the 1988 meeting as the occasion where the fallacy was named. That talk dates the insight behind it to late 1987 and describes the search for a term that would carry the idea without wrong connotations."
   },
   "evidence": "What Jaynes offered was argument and example, not experiment. His cases in the 1988 talk are from physics: the textbook derivation of Bose and Fermi statistics from the premise that an observer cannot tell two particles apart, and the account of the uncertainty principle he was given as an undergraduate, which he paraphrases as \"The momentum of the particle is unknown; therefore it has a high kinetic energy.\" The 1989 talk extends the charge to statistics, objecting to gaussian, stochastic, stationary and disorderly being treated as properties that data can be tested for. No participants appear anywhere in either paper. Two later measurements sit close to the claim, and the connection to Jaynes is drawn here rather than by their authors. Gigerenzer, Hertwig, van den Broek, Fasolo and Katsikopoulos surveyed 750 paid pedestrians in the autumn of 2002 in New York (103), Amsterdam (117), Berlin (219), Milan (203) and Athens (108), asking what \"There is a 30% chance of rain tomorrow\" refers to. The three options were 30% of the region, 30% of the time, and 30% of the days like tomorrow, the last being the meaning meteorologists intend. About two-thirds of the New Yorkers chose it, against a third to a fifth of respondents in the four European cities, where it was also the option most often marked least appropriate, and the favoured reading was time. Both readings that won in Europe put the number into tomorrow's weather rather than into a class of days. In free response, several people in New York and Berlin said the forecast meant that 3 of 10 meteorologists believe it will rain. Individual exposure to probabilistic forecasts related to the days reading at r = 0.2, p = 0.0001, which the authors call small. Umbrella thresholds moved little across readings: 55.9% for days, 53.5% for time and 50.6% for region, with d = 0.25, p = 0.05 between the first and the last and d = 0.11 between the first and the second. Ülkümen, Fox and Malle took the other side of the distinction. They pulled 965 statements of uncertainty from two years of the New York Times, 361 using sure, confident or certain and 604 using chance, likely, likelihood or probability. Two hypothesis-blind judges, who agreed on 78% of their initial coding, marked whether the locus of uncertainty appeared to sit inside the speaker or outside. Statements coded internal were carried by confidence language 62% of the time, statements coded external by likelihood language 73% of the time, chi-squared(1) = 107.73, p < .001. Control worked the same way: speakers who appeared to have no sway over the event used likelihood language 69% of the time, against 21% for those who could influence it.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The coin already under the cup",
+      "text": "A coin lands under a cup and a bystander says the result is fifty-fifty. The result is fixed. The even odds describe what he knows about it, and calling the coin undecided has put his ignorance into the world."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The queue called random",
+      "text": "A supervisor describes the order in which calls arrive as random, meaning that nobody on the desk can predict it. Every call has its own cause, and randomness here is a fact about the desk's information rather than about the callers."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The button that is obvious",
+      "text": "A designer says the purpose of the button is obvious, having built it himself. Obviousness is a relation between the object and somebody who already knows the system, and it is being reported as a property of the button."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "No study testing the error under Jaynes's name was located. A phrase search of Europe PMC returns three records, on information theory, mammal ecology and mechanical characterisation, and none is an experiment on the fallacy.",

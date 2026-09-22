@@ -19,6 +19,23 @@
     "note": "The thesis is 'A comparison of individual and group decisions involving risk', read here in full from MIT's repository. Stoner set out to test the belief that groups are more cautious than individuals, and found the reverse. One hundred and one graduate students answered twelve choice-dilemmas problems alone, seventy-eight of them then met a week later in thirteen six-man groups and worked to a unanimous decision on each problem, and twenty-three served as controls. Twelve of the thirteen groups shifted risky on more questions than they shifted cautious, which a two-tailed sign test put at p = .0005. One problem, question 12, moved the other way, and that single item is what later work on cautious shifts was built on. The name came later and from other people. Myers and Lamm credit the term to Moscovici and his colleagues, whose 1969 paper is titled 'The group as a polarizer of attitudes', and their own 1976 review turned it into a general hypothesis."
   },
   "evidence": "The choice-dilemmas task asks for the lowest probability of success at which a character should attempt a risky option, on a scale from 1 in 10 to 10 in 10. Myers and Lamm report that groups came out riskier than the average of their members, generally by about one scale unit or less, and that the result was found in a dozen different nations. They also report that group decision making is not needed for it: a short discussion followed by private answers shifts the average too. Then the direction reversed on some items. Stoner's study of widely held values, read here as the MIT working paper of October 1967 rather than as the 1968 journal article, sorted life-situation items by the values his participants held and by how risky they rated themselves against other people like them. It ran 212 subjects, of whom 190 met in 33 groups of four to seven members. On all six items whose widely held values favoured risk, the unanimous group decisions came out riskier than the members' individual average, and the gap reached significance on every one. Four of the five items classified as caution-oriented shifted cautious, and only two of those four shifts reached significance. Myers and Lamm treat the reversal as settled and call the risky-shift label a misnomer. What replaced it was an item-level regularity. Across items, the mean initial response and the mean shift correlate at generally .70 to .90, a figure Myers and Lamm attribute to Teger and Pruitt. Stoner's own twelve items give r = -.89, negative because a lower probability stands for a riskier choice. Items starting below about 6 in 10 tend to shift risky, and items starting above 7 in 10 often shift the other way. Myers and Lamm add two cautions of their own. The same correlation taken across groups within a single item is near zero, and fixing a neutral point by post hoc regression and then testing the hypothesis against it is circular. Moscovici and Zavalloni had already found the same shape outside risk, with French students' positive view of De Gaulle and negative view of Americans both strengthening after discussion, as Myers and Lamm describe it. Two mechanisms carried the later literature: comparison with the positions of others, and the pool of arguments a discussion brings out.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The residents' meeting about a new road",
+      "text": "Everyone arrives already mildly against the scheme. After an hour the average opposition is stronger, and the one member who came strongly against it has softened towards the rest. The mean has moved without anyone dividing."
+    },
+    {
+      "kind": "everyday",
+      "tag": "A book group that liked the novel",
+      "text": "Members rate the book warmly before the discussion and more warmly after it. Nobody has split off into a rival camp. The shift is in where the average sits, which is the only thing the claim is about."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The investment club that played safe",
+      "text": "A club whose members individually lean towards the cautious option settles, after talking it through, on something safer than the average member first proposed. The discussion moved the group further along the way it already leaned."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The original claim, that groups decide more riskily than their members, did not survive the 1960s; the restated claim about shifting toward the pre-existing lean holds in most tests, though its own reviewers call the shift small and often absent.",

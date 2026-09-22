@@ -17,6 +17,23 @@
     "note": "Their paper is titled 'Writing About Testing Worries Boosts Exam Performance in the Classroom' and reports two laboratory studies and two randomised field experiments. Its closing line is that simply writing about one's worries before a high-stakes exam can boost test scores."
   },
   "evidence": "Four experiments, two in a laboratory and two in a school. In study 1, 20 college students took two short tests of modular arithmetic. After the first they were given a high-pressure scenario built from a cash reward, a partner whose share depended on them, and videotaping for teachers and students to watch. They then spent ten minutes either sitting quietly or writing about their thoughts and feelings on the problems ahead. Pretest accuracy did not differ, t(18) = 1.14, P = 0.27. On the posttest the writing group beat the control group, t(18) = 5.55, P < 0.01, Cohen's d = 2.48. Controls dropped 12% from pretest to posttest, t(9) = 4.87, P < 0.01, d = 1.14, while writers gained 5%, t(9) = 2.74, P < 0.03, d = 0.58. A further 20 students who skipped the pressure scenario showed no drop and no writing effect. Study 2 ran 47 students in three groups, adding one that wrote about an unrelated, unemotional event. Posttest accuracy differed by group, F(2,44) = 5.56, P < 0.01. The control and unrelated writing groups lost 7%, t(30) = 3.35, P < 0.01, d = 1.17, and the expressive writing group gained 4%, t(15) = 2.09, P = 0.05, d = 0.47. Studies 3 and 4 ran in one school on separate ninth-grade cohorts a year apart, 51 students then 55, all sitting the first biology final of their high-school career. Test anxiety was measured six weeks earlier. Immediately before the exam students opened an envelope telling them either to write about their thoughts on the exam or to think about a topic the exam would not cover. In the control condition, the more test-anxious a student was, the lower the final exam score, combined r(56) = -0.51, P < 0.01. In the writing condition that relationship was absent, combined r(50) = -0.14, P = 0.33, and the two correlations differed, Z = -2.09, P < 0.04. Splitting at the median, higher-test-anxious writers beat higher-test-anxious controls by 6% on the final, t(52) = 2.08, P < 0.05, d = 0.57, while lower-test-anxious students showed no difference, t(50) = 0.09, P = 0.93.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The ten minutes before the paper",
+      "text": "Students are handed a sheet in the exam room and told to write out what they are feeling about the paper they are minutes from opening. The claim is confined to that one session, on that subject, at that moment."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The pupil who always dreads exams",
+      "text": "A pupil who goes blank in tests writes the dread down beforehand, and the argument is that the worry stops occupying the memory the paper needs. A classmate untroubled by exams is not predicted to gain anything from the same ten minutes."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The wellbeing exercise that is a different one",
+      "text": "A staff programme asks people to write about a past upset once a week for a month, and measures how they feel later. That is another paradigm with other outcomes, and it shares only two words with the sheet handed out before a paper."
+    }
+  ],
   "replication": {
     "state": "failed",
     "headline": "Pooling 21 studies and 1,457 participants, single-session expressive writing shifts test performance by r = .09, which falls to a non-significant .06 once one outlier is removed.",

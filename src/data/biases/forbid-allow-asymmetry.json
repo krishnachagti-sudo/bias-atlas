@@ -13,6 +13,23 @@
     "note": "The two-page report is \"Experiments in wording questions: II\", pages 91 to 92, written while Rugg was a research assistant on the Princeton Public Opinion Research Project. It asked one half of a sample whether the United States should allow public speeches against democracy and the other half whether it should forbid them. The original is behind a paywall at Oxford Academic and was not read for this entry; its record was verified at Crossref, and the figures below are quoted from three later papers that reproduce them."
   },
   "evidence": "Two renderings of Rugg's table circulate, and they agree once the undecided are accounted for. Reuband keeps them in: 21% would allow the speeches and 62% would not, while 46% would forbid them and 39% would not, with 17% and 15% respectively undecided or without opinion. Holleman prints the same experiment with the undecided dropped, giving 54% yes-forbid against 46% no, and 25% yes-allow against 75% no. The gap that made the case famous is the one between the two restrictive answers, 62% and 46% in Reuband's version, for what is logically the same refusal. Klein and colleagues describe Rugg the same way, at 62% and 46%. Rugg's sample size is not given by any of those three accounts. Holleman lists later demonstrations in the United States, Germany, Belgium and the Netherlands, and Reuband adds New Zealand, across telephone, face-to-face and self-administered surveys and across a range of topics.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The two versions of one survey",
+      "text": "Half a sample is asked whether fireworks should be allowed in the park and half whether they should be forbidden there. More refuse permission on the first wording than grant it on the second, although the two refusals come to the same rule."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The word that sounds harsher",
+      "text": "Someone mildly against a rule can say that he would not allow it and stop short of saying he would forbid it. On that account the gap between the two ballots is a fact about the weight of a verb rather than an inconsistency in the public."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The respondent with no strong view",
+      "text": "A person indifferent about a proposal tends to take the negative option on whichever form reaches him, and so counts against allowing it on one ballot and against forbidding it on the other. Nobody sees both, so nobody has contradicted himself."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "Many Labs 1 put Rugg's two questions to 36 samples, and the proportion finding the gap in the same direction was .97, with none finding it reversed.",

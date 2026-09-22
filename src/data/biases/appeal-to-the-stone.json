@@ -15,6 +15,23 @@
     "note": "The anecdote appears in the first volume of the first edition, read here in a scan of the 1791 printing. Boswell and Johnson were at Harwich, and Boswell's own dating puts the day after Friday 5 August 1763. Boswell writes that he observed of Bishop Berkeley's doctrine 'that though we are satisfied his doctrine is not true, it is impossible to refute it', and that Johnson answered 'striking his foot with mighty force against a large stone, till he rebounded from it', with the words 'I refute it thus'. Who turned the story into a Latin fallacy label, and when, was not established here."
   },
   "evidence": "The record for the name is textual, and the measured part sits one step away from it. Boswell reports no argument on either side: Johnson's six words and his foot are the whole of the case as printed. Massin sets out the reading the label assumes, in three steps. The stone feels solid, so some sensible things seem solid, so some sensible things are mind-independent. He calls the last step unwarranted and traces the reading to Kearney's editorial note in the Malone edition, which says Johnson 'seems to have been imperfectly acquainted with Berkeley's doctrine' because the experiment 'only proves that we have the sensation of solidity, which Berkeley did not deny'. The nearest measured neighbour tests the rule the move breaks rather than the move. Van Eemeren, Garssen and Meuffels gave 70 Dutch secondary-school pupils aged 17 and 18 a set of 32 short dialogues, each preceded by a sketch of the dispute, and asked them to rate the last speaker's turn on a seven-point reasonableness scale with 1 low and 7 high. Sixteen dialogues ended with a speaker refusing to defend his own standpoint and telling his opponent to prove the opposite. Ten unproblematic dialogues served as fillers and scored a mean of almost 5.7, standard deviation .55. The paper reports the evasion turns as unreasonable in an absolute sense whatever the standpoint, and reports pupils judging less harshly where the evading party had presumption on his side, as an accused person does. None of the pupils had been taught argumentation theory.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The plan called absurd",
+      "text": "A committee member answers a costed plan to move the depot with the single word absurd, and the chair moves to the next item. The verdict is a position of its own, and it has arrived with nothing behind it."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The one-line referee report",
+      "text": "A reviewer returns a paper saying that the hypothesis is not worth taking seriously, and names no fault in the method or the data. Calling a claim unserious is itself a claim, and it owes what the paper owed."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The idea dismissed at the kitchen table",
+      "text": "Told that the roof could be paid for by letting the hall on weekday evenings, a partner says the idea is silly and says nothing further. Nothing has been offered that the other person could answer."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "No experiment on this fallacy was found. The closest measured work asks how ordinary arguers rate a speaker who refuses to defend a standpoint, which is a different move.",

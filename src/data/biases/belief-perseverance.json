@@ -18,6 +18,23 @@
     "note": "Their paper reported two experiments in a debriefing paradigm and concluded that process debriefing, unlike standard outcome debriefing, generally eliminated the erroneous self-perceptions. The phrase in the title is \"perseverance in self-perception and social perception\"; Anderson, Lepper and Ross called it theory perseverance in 1980, and Anderson used the words belief perseverance in 1983."
   },
   "evidence": "Ross, Lepper and Hubbard ran Experiment 1 on 60 female high school juniors and seniors recruited by newspaper advertisement for $2. Each examined 25 cards, each carrying one real and one fictitious suicide note, and was told she had scored 24 (success), 17 (average) or 10 (failure). After a delay of 5 or 25 minutes the experimenter explained that the score had been fixed in advance. Estimates of past and future performance still tracked the discredited feedback, F(1, 54) = 16.07 for own past performance minus estimated average performance. Experiment 2 used 144 female Stanford undergraduates, 72 acting and 72 watching as yoked observers, with data from a further 24 unobserved actors set aside. Actors given no debriefing estimated 22.75 correct after success feedback and 9.50 after failure. Outcome debriefing moved those to 18.33 and 12.83. Process debriefing, which added a discussion of the perseverance mechanism itself, moved them to 16.50 and 15.17. Anderson, Lepper and Ross switched the object from self-image to a social theory. Seventy Stanford undergraduates read two case studies suggesting that risk taking either predicted or undermined success as a firefighter. Before debriefing the manipulation produced F(1, 63) = 20.21 on a composite belief measure. After subjects were told the cases were fictitious it produced F(1, 63) = 17.43, and the reduction was not statistically reliable, F(1, 63) = 1.59. Their second experiment ran 62 subjects and analysed 60, in cells of ten. Within its no-explanation conditions debriefing did dampen the beliefs, interaction F(1, 54) = 23.31. It still left them apart in both the debriefing-explanation, F(1, 54) = 69.74, and debriefing-no-explanation, F(1, 54) = 19.24, conditions.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The scores that were never real",
+      "text": "Someone tries a puzzle in a training session, is told they scored near the top, then is told plainly that the feedback was generated at random and had nothing to do with their answers. They still think they have a knack for puzzles. The only ground the belief ever had has been withdrawn."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The email that was about somebody else",
+      "text": "A manager reads a complaint about sloppy work and forms a view of the person named. The sender writes back to say the complaint concerned a different team entirely. The manager accepts the correction and stays reluctant to hand that person anything important."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The study the journal pulled",
+      "text": "A parent reads that a way of teaching reading works well and comes to believe it. The write-up is withdrawn as invented, which the parent repeats to friends. Their view of the method stays higher than it was before they read anything."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "Siebert and Siebert re-ran the firefighter paradigm on 366 people and found opinions still displaced from baseline after retraction, d = 0.80.",

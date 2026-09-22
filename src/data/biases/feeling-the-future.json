@@ -14,6 +14,23 @@
   },
   "evidence": "Four time-reversed effects across nine experiments: precognitive approach to erotic images and avoidance of negative ones, retroactive priming, retroactive habituation, and retroactive facilitation of recall. In Experiment 1, 100 Cornell undergraduates guessed which of two curtains hid a picture, and on erotic trials they were right 53.1% of the time against a chance rate of 50%, t(99) = 2.51, p = .01, d = 0.25. Their hit rate on nonerotic trials was 49.8%. Experiment 2 gave 51.7% across 150 participants, t(149) = 2.39, p = .009, d = 0.20. The strongest result was Experiment 9, retroactive facilitation of recall: 50 undergraduates saw 48 words, tried to recall them, and only afterwards did the computer randomly pick 24 of the words to be rehearsed. Recall favoured the words that would later be rehearsed, mean differential recall 4.21%, t(49) = 2.96, p = .002, d = 0.42. The one experiment that missed was the retroactive induction of boredom, p = .096, d = 0.09. Bem's Table 7 gives a mean d of 0.22 across the nine and 0.43 for participants scoring above the midpoint on a two-item stimulus-seeking scale. Significance levels are one-tailed throughout. A section headed The File Drawer names three sets of pilot findings omitted from the report, including individual-difference measures that failed to predict psi performance."
   ,
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The extra participants that made it work",
+      "text": "A researcher runs forty people, sees nothing, adds twenty more and tests again, then reports the analysis that finally passed. Every step looked ordinary from inside. The result is a product of where the testing stopped, and a procedure like that will support a claim that cannot be true."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The measure chosen after the data",
+      "text": "Four outcome measures are collected, one of them produces a clean result, and the write-up presents that measure as the outcome of interest. Nothing is invented and nothing is concealed. The paper still reports a significance level that the flexible route through the data has quietly emptied."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The review that finds nothing to object to",
+      "text": "Reviewers check the design, the statistics and the reporting, find each of them standard for the field, and recommend publishing a conclusion the reviewers themselves think impossible. An episode of that shape is a test of the tools rather than of the claim they were pointed at."
+    }
+  ],
   "replication": {
     "state": "failed",
     "headline": "Three preregistered close replications and seven larger ones found nothing, and across seventeen independent experiments the pooled effect is 0.02.",

@@ -13,6 +13,23 @@
     "note": "Six studies introducing the Grit Scale. Their abstract states the claim in full: grit \"did not relate positively to IQ but was highly correlated with Big Five Conscientiousness\", and \"nonetheless demonstrated incremental predictive validity of success measures over and beyond IQ and conscientiousness\"."
   },
   "evidence": "The 2007 paper reports that grit accounted for an average of 4% of the variance in success outcomes. Its samples were two of adults, of 1,545 and 690, and Ivy League undergraduates given as 138 in the abstract and 139 in the method section. It also covered two West Point classes of 1,218 and 1,308 cadets, and 175 finalists in the National Spelling Bee. The overlap with existing measures was visible from the start and reported plainly. In the 690-adult sample, grit correlated with Big Five Conscientiousness at r = .77, far above its correlations with neuroticism at -.38, agreeableness at .24, extraversion at .22 and openness at .14. Among the undergraduates, grit correlated with grade point average at r = .25, rising to .34 with SAT scores held constant, against an SAT to grade point average correlation of .30.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The scale added to the application form",
+      "text": "A school adds a perseverance questionnaire to its selection process, having already collected a conscientiousness measure. Whether the new form earns its place turns on what it predicts beyond the old one, and that is the claim the critical literature goes after."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The pupil who works hard and changes course",
+      "text": "A student puts in long hours and switches subject twice in three years: high on perseverance of effort, low on consistency of interest. Almost all the prediction sits in the first half, and the second is the half that made the idea distinctive."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The story told after the success",
+      "text": "A profile explains an achievement by the subject’s refusal to give up, and the explanation sounds complete. Nobody disputes that persistent people do better. The question is whether a score for it adds anything to traits that were already being measured."
+    }
+  ],
   "replication": {
     "state": "failed",
     "headline": "Grit predicts performance modestly and reliably, and adds almost nothing once conscientiousness is in the model, which is the claim that was being made.",

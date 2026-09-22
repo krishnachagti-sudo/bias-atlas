@@ -16,6 +16,23 @@
     "note": "The 2000 studies did not use the graphical program that now carries the name. Study 1 asked 1,486 participants from 62 countries to use mental visualisation while playing a tossing game over the Internet. The program called Cyberball was published by Williams and Jarvis in Behavior Research Methods in 2006."
   },
   "evidence": "The abstract of the original paper reports that the more participants were ostracised, the more they said they felt bad, had less control and were losing a sense of belonging, and that ostracised participants in Study 2 were more likely to conform on a later task. Its full text was not obtained, so no figure from inside it is quoted here. The quantitative record is Hartgerink, van Beest, Wicherts and Williams, who preregistered their selections and hypotheses and collated 120 Cyberball experiments with 11,869 participants. They took the first and the last dependent measure of each study and excluded manipulation checks. On the first measure the random-effects estimate is d = -1.36, p < .001, 95% CI -1.54 to -1.18, with Q(119) = 1395, p < .001, I-squared of 92.99% and tau-squared of 0.90, 95% CI 0.70 to 1.24. On the last measure, taken a mean of 4.85 minutes later, the mixed-effects intercept is d = -0.76, p < .001, 95% CI -0.91 to -0.61, and estimated time since the game did not predict it, b = 0.0069, p = .187. A subset of 19 studies matching the standard recipe, three players, 30 throws, under five minutes, immediate need measures, gave d = -2.05, 95% CI -2.44 to -1.65. Meta-regressions on country, proportion male, mean age, number of players, game length, number of throws and which needs scale was used produced no overall moderation on either measure, Q_M(11) = 10.75, p = .465 on the first and Q_M(11) = 6.00, p = .873 on the last. The three needs scales did not differ from each other.",
+"examples": [
+  {
+    "kind": "everyday",
+    "tag": "The group chat that plans lunch around one person",
+    "text": "Three colleagues arrange where to eat without replying to the fourth message in the thread. The exclusion lasts minutes and costs nothing, and the person left out still closes the app feeling less sure of their place than when they opened it."
+  },
+  {
+    "kind": "everyday",
+    "tag": "The kickabout that keeps the ball between two players",
+    "text": "Two players pass only to each other for the rest of a casual game in the park. The game means nothing and ends in ten minutes, and the third leaves feeling ignored and oddly diminished."
+  },
+  {
+    "kind": "everyday",
+    "tag": "Being told in advance that it is random",
+    "text": "A player is told before a training drill that the passing order is set by a machine and means nothing about them. Being passed over still lowers how included and how in control they report feeling straight afterwards."
+  }
+],
   "replication": {
     "state": "replicated",
     "headline": "Across 120 Cyberball experiments with 11,869 participants the pooled immediate effect is d = -1.36, and country, age, gender and the structure of the game did not predict it.",

@@ -13,6 +13,23 @@
     "note": "Their paper names the effect in its title, in quotation marks, which is how a phrase enters a literature. The best-known scenario asks whether you would walk around campus wearing a sandwich board reading REPENT."
   },
   "evidence": "320 Stanford undergraduates, 80 to each of four stories, read a hypothetical situation ending in a two-way choice. They estimated what percentage of their peers would take each option, then stated their own choice. Averaging the four stories unweighted, the 186 who picked the first option put its popularity at 65.7%, and the 134 who picked the second put it at 48.5%, F(1,312) = 49.1, p < .001. Many Labs 2 converts that statistic to d = 0.79, 95% CI [0.56, 1.02]. A meta-analysis of 115 hypothesis tests eight years later put the effect at r = 0.31 across a range of paradigms. That figure is quoted here from Many Labs 2, because Mullen and colleagues' paper is paywalled and was not read for this entry. Whether the effect survives correction is disputed. Krueger and Clement ran three experiments in 1994 and found the bias held among participants who had been taught about it and among those given feedback on the real consensus. Engelmann and Strobel paid subjects for accurate estimates and separated the two readings. Eighty participants in five sessions of 16 chose between two options and then estimated eleven other subjects' choices, having been shown four of those choices in half the rounds. On the classical comparison a consensus effect appeared in 29 of the 32 cells that allowed one. On the stricter comparison it did not: the regression weight on a subject's own choice was 1.33 against 1.73 on the information about others, which is underweighting rather than overweighting.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "Two people counting the same room",
+      "text": "One guest decides to leave a party early and reckons most people want to go; another settles in and reckons most people want to stay. They are describing one room, and the two estimates cannot both be right."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The proposal before a committee",
+      "text": "Each side of a split committee expects the wider membership to back them, and each is drawing the estimate from the most available case it has, which is its own view. The gap between the two forecasts is the effect."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The radio station in the workshop",
+      "text": "Whoever likes the station playing assumes the rest of the workshop is happy with it, and whoever finds it grating assumes most colleagues would switch it off. Neither has asked, and both have used themselves as the sample."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "Many Labs 2 ran two of the original scenarios across 125 samples in 36 countries and found the effect larger than the original both times.",

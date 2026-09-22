@@ -12,6 +12,23 @@
     "note": "The monograph is Lynne S. Lees's English translation of Duncker's 1935 book Zur Psychologie des produktiven Denkens, prepared after his death. Wolfgang Köhler's introductory note records that the German original had become 'virtually unobtainable'. Duncker's own foreword is dated Berlin, February 1935. Chapter VII names and tests functional fixedness. The candle problem everyone quotes is Duncker's box problem, and in his version three candles are fixed to a door using three small pasteboard boxes."
   },
   "evidence": "Duncker ran five problems: gimlet, box, pliers, weight and paperclip. In each, the crucial object was either used first in its ordinary function or not, and it lay among a clutter of other objects, none better suited to the solution. He alternated the two settings within each person, one half taking the series as without, after, without, after, without, and the other half in the reverse, so that the comparison did not ride on differences between individuals. The arithmetic mean of the five solution rates was 97.1% without prior use and 58.2% with it. The box problem showed the widest gap, 7 of 7 against 3 of 7, and the weight problem the narrowest, 12 of 12 against 9 of 12. Cell sizes ran from 7 to 15 people. A second experiment, on the box and on a sixth cork problem, reversed Duncker's own prediction. He expected that filling the boxes with buttons rather than with the candles, matches and tacks the problem needed would loosen the fixedness, since the prior function would then be peripheral to the situation. Solutions fell instead, from 3 of 7 to 1 of 7 for the box and from 1 of 7 to 0 of 7 for the cork. Duncker attributed the reversal to contact: the box holding the candles is emptied first, and that handling partly offsets the fixing. The developmental result is the one that constrains theory. Tim German and Margaret Anne Defeyter gave 60 children a box that had to become a step rather than a container. Seven-year-olds produced the box solution 40% of the time when the other objects had been presented inside it and 89% when they sat beside it, Fisher's exact test p = .04. That 89% is 8 of 9, one child's data having been dropped for experimenter error. Five-year-olds showed no gap in solution time, U = 21, not significant, and solved the primed version faster than either older group. Defeyter and German repeated this with 120 children on a tube task and again with 120 more on objects the children had never seen, whose functions were taught in the session. With novel objects, 6-year-olds chose the target object first 35% of the time when its taught function had been shown and 95% when it had not, and 7-year-olds 40% against 80%. Five-year-olds sat at 75% in both conditions. Equalising experience did not remove the age difference, which is evidence against experience alone as the cause. German and Barrett took the box task and a spoon task to 29 Shuar aged 12 to 25 in two Ecuadorian villages, a setting with few specialised artefacts. Withdrawals left 28 people analysed on the box problem and 27 on the spoon. On the spoon task the primed group was slower both to pick up the spoon and to finish, U = 51.0 and U = 47.5, one-tailed ps < .05. On the box task the selection difference reached U = 63, p = .056 one-tailed, and the solution-time difference did not separate the groups, U = 71.5.",
+    "examples": [
+      {
+        "kind": "everyday",
+        "tag": "The ruler that was just measuring",
+        "text": "Someone measures a shelf, sets the ruler down, and then needs something flat to steady a wobbling table leg. Having just used the ruler as a ruler makes it the last object in the room she considers."
+      },
+      {
+        "kind": "everyday",
+        "tag": "The mug holding the pens",
+        "text": "A mug in use as a pen pot is not seen as the thing to weigh down loose papers, while an identical empty mug on the same desk is. Recent function rather than shape decides which one comes to mind."
+      },
+      {
+        "kind": "everyday",
+        "tag": "The coin that just paid for coffee",
+        "text": "A screw needs turning and there is no screwdriver to hand. The coin handed over as money a minute earlier is slower to suggest itself as a blade than a coin found loose in a drawer."
+      }
+    ],
   "replication": {
     "state": "replicated",
     "headline": "Robert Adamson repeated three of Duncker's problems with 57 people and proper control groups, and 41% solved the box problem after using the boxes as containers against 86% who had not.",

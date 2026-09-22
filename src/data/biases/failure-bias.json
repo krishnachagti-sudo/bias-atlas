@@ -12,6 +12,23 @@
     "note": "The paper uses failure bias for a model weight rather than for a habit of mind, and pairs it throughout with a success bias. Its logistic model came from Busse and colleagues' 2011 study of contrast detection in mice, whose PubMed Central full text carries neither term. The Wikipedia article that holds the other meaning was created on 25 April 2018 by an editor whose edit summary described it as a lesser known variation of the survivorship bias, and it carried no citation of any kind until 9 October 2025."
   },
   "evidence": "Thirty-six subjects at RIKEN, Stanford and University College London judged whether a grating sat to the left or the right of fixation, with contrast varied to move the task between easy and hard. Trial order was random, so the last trial said nothing about the next. Subjects used it anyway. In that control condition the mean failure weight was −0.55 and the mean success weight 0.27, both P < 0.01 after Bonferroni adjustment, meaning the average subject switched after an error more strongly than it stayed after a hit. Simulating each subject's psychometric curve with and without the history terms gave a significant loss of visual sensitivity in 24 of the 36, or 67%, with a mean loss of 4.7%, 95% CI 3 to 7%. For 19% of subjects the decline ran from 10% to 20%. The rest of the paper changed the trial statistics so that history paid. When failure predicted a switch of side, failure weights shifted in the paying direction by 0.45, t(13) = 3.00, P = 0.02, 95% CI 0.13 to 0.78. When success predicted a stay, success weights shifted by 1.04, t(13) = 6.61, P < 0.01, 95% CI 0.70 to 1.38. Pushed the other way, against the natural switch-after-failure tendency, failure weights barely moved: 0.06, t(15) = 0.59, P = 0.99, 95% CI −0.29 to 0.17. All of those intervals are Bonferroni adjusted. Debriefed at the end, no subject noticed that staying or switching was contingent on previous choices, although their weights showed they had picked the contingency up.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The two faint patches",
+      "text": "A volunteer judging which of two dim patches is brighter gets one wrong, and answers the other side on the next trial. The order was shuffled, so the previous error says nothing about the next pair, and following it costs some of the sensitivity the volunteer had."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The tone in the hearing booth",
+      "text": "A listener saying whether a faint tone came in the first or the second interval hears the buzz that marks a wrong answer, and picks the other interval next time. The habit shows up in a fitted history term rather than in anything the listener reports."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The inspector corrected on the line",
+      "text": "An inspector sorting parts as pass or fail is told the last call was wrong, and sends the next borderline part the other way. Nothing about that part has changed. The correction is aimed at the previous answer instead of at the evidence in hand."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Dependence on the previous trial turns up again across six independent datasets, and the switch-after-failure direction does not.",

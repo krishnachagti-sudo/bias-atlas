@@ -16,6 +16,23 @@
     "note": "The chapter reanalysed four word-cued datasets covering nominal ages 12 to 70, including 20 Duke undergraduates of mean age 19.6 and 20 community-dwelling older adults of mean age 71.2 run in Nebes's laboratory in February and March 1978. Its conclusion names three components: retention, childhood amnesia and reminiscence. The chapter cites earlier sightings it is building on, notably a U-shaped function reported by McCormack in 1979 and bimodal distributions reported by Franklin and Holding in 1977."
   },
   "evidence": "Rubin, Wetzler and Nebes state the finding in a single line: their figures 12.1 to 12.4 'clearly show nonmonotonically decreasing functions for subjects over 40 with the increase in memories occurring at the time when the subjects were approximately 10 to 30 years old'. They add two boundary conditions that later summaries drop. Reminiscence is fixed by the age of the person at encoding rather than by how old the memory is. And it appears only once the person is older than about 35 to 45, after which their age stops mattering. Rubin and Schulkind cued memories with words from 20- and 70-year-olds. Both groups showed a drop across childhood and a power-function retention curve over their most recent 10 years, and only the older group showed an increase across ages 10 to 30. The pattern held for individual participants and whether 124 or 921 memories were cued. Janssen, Chessa and Murre ran the cue-word task online with almost 2,000 people in the United States and the Netherlands, aged 11 to 70, ten cue words each. They put the peak at ages 15 to 18 for men and 13 to 14 for women. The elicitation method moves the peak. Koppel and Berntsen reviewed the literature and found the mean range of the bump running from 8.7 to 22.5 years of age for word-cued memories against 15.1 to 27.9 for important memories. The mean midpoints, 15.5 and 21.5, differ at t(51) = 4.84, p < .001, d = 1.37. They weighed all studies equally rather than all participants, because five cue-word studies have samples at least four times larger than any other in their table. Koppel and Rubin give the same figures rounded to beginning and ending ages of 9 and 23 against 15 and 28, a gap of about five years, from more than 50 studies. Odour cues push it earlier still. Willander and Larsson gave 93 older adults word, picture or odour cues, and odour-cued memories fell mostly in the first decade of life while word- and picture-cued memories peaked at 11 to 20. Munawar, Kuhn and Haque screened 523 studies, kept 68, and report roughly 10 to 30 years for important events, roughly 5 to 30 for word-cued memories and 6 to 39 for life-script studies. Valence splits the effect. Berntsen and Rubin asked 1,241 Danes aged 20 to 93 for their happiest, saddest, most traumatic, most important and most recent involuntary memory. Older respondents showed a clear bump in their 20s for the most important and happiest memories, while saddest and most traumatic memories decayed monotonically. Happy involuntary memories were over twice as common as unhappy ones, and only the happy ones bumped. Rubin and Berntsen repeated the design with 1,307 respondents aged 20 to 94 asked when they were most afraid, proud, jealous, in love and angry, and again found a bump for positive but not negative events.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The playlist that stops in one decade",
+      "text": "A woman in her sixties writes out her favourite songs and nearly all of them come from her late teens and early twenties. Little from the past two decades makes the list, though she has been listening throughout."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The stories told at every family dinner",
+      "text": "A grandfather's stories cluster around a first job, a first flat and the years just after school. The later decades hold plenty of events and produce far fewer of the stories, which is more than ordinary forgetting predicts."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The photographs picked out",
+      "text": "Asked to choose a handful of pictures that matter, an older adult reaches past the recent albums for the ones from early adulthood. The choosing is not even across a life, and what is dense there is mostly the good."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "The bump turns up across dozens of studies, several countries and every major elicitation method, but its location shifts by about five years between methods and it is largely absent for negative events.",

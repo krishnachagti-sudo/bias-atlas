@@ -16,6 +16,23 @@
     "note": "The paper is titled \"Dealing with betrayal in close relationships: Does commitment promote forgiveness?\" and reports three studies. Only the first is an experiment, and its authors describe it as the first attempt to manipulate commitment level in an ongoing relationship."
   },
   "evidence": "Study 1 primed 89 undergraduates at the University of North Carolina at Chapel Hill, 22 men and 67 women, each in a dating relationship of at least a month. Five open-ended prompts pushed one group towards dependence and commitment and the other towards independence, presented as a separate pilot study so that nobody would link it to what came next. All ratings ran from 0 to 8. The prime raised reported commitment from 5.73 to 7.06, F(1, 85) = 11.79. Exit fell from 2.51 to 1.85, F(1, 85) = 13.15, and neglect from 3.92 to 3.50, F(1, 85) = 6.94. Voice rose from 4.95 to 5.39 and loyalty from 3.80 to 4.10, neither reliably, though the authors had predicted movement on all four measures. The other two studies in the paper are not experiments: a cross-sectional survey of 155 undergraduates, and a two-week interaction record from 78 people, of whom 64 reported a betrayal.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The morning after the slight",
+      "text": "A partner repeats something told in confidence. One person, having spent the evening thinking about how much of a life the two of them share, raises it at breakfast. Another, having spent it listing grievances, stops speaking for a week."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The missed deadline",
+      "text": "A business partner of six months who misses an important deadline is confronted or dropped. A partner of twenty years is asked what happened. The provocation is the same and the weight of what would be lost is not."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The sibling who hosts anyway",
+      "text": "An old insult resurfaces between two brothers. The one who has been thinking about the parent they look after together invites the other to Sunday lunch. Attention to what depends on the relationship pulls the response away from the cold shoulder."
+    }
+  ],
   "replication": {
     "state": "failed",
     "headline": "Sixteen laboratories ran the priming protocol on 2,284 people, and the prime moved neither forgiveness nor commitment itself.",

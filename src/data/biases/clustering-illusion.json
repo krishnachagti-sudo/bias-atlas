@@ -17,6 +17,23 @@
     "note": "\"Subjective probability: A judgment of representativeness\" is where the effect is set out as a consequence of representativeness, using both a sequence and a spatial case. The name is not theirs and no peer-reviewed source coining the phrase \"clustering illusion\" was located. A Europe PMC search for the exact phrase returns five papers, in trauma surgery, addiction, artificial intelligence, complementary medicine and infection prevention, none of them defining or introducing it."
   },
   "evidence": "Kahneman and Tversky asked 52 people which of two allocations of 20 marbles among five children happens more often across many rounds. A significant majority, 36 of 52 at p < .01 by a sign test, chose the uneven split 4-4-5-4-3. The even 4-4-4-4-4 is the more probable of the two. They give the reasoning: a locally representative sample contains too many alternations and too few clusters. For the spatial case they take Feller's account of the bombing of London, where a few sections were hit several times and many not at all, and the pattern was widely held to be non-random. The original test is R. D. Clarke's one page in the Journal of the Institute of Actuaries. Clarke selected 144 square kilometres of south London where the mean density was nearly constant, divided it into 576 squares of a quarter square kilometre, and counted the flying bombs in each. There were 537 bombs. Against the Poisson expectation he observed 229 empty squares to 226.74 expected, 211 to 211.39, 93 to 98.54, 35 to 30.62, 7 to 7.14, and 1 square with five or more to 1.57. The chi-square statistic is 1.17 on four degrees of freedom, p = .88. Clarke writes that the closeness of fit lends no support to the clustering hypothesis. The laboratory figures come from Falk and Konold, whose Table 1 carries eighteen rows of alternation rates generated or preferred in earlier work. The nine generation rows run from .56 to .63 and the nine perception rows from .57 to .65, with Gilovich, Vallone and Tversky's .7 to .8 the one row outside those bands. Falk and Konold then pooled randomness ratings from three studies, their own Experiments 1 and 3 and Falk's of 1975, using sequences of length 21 and 41. That aggregate rests on 491 raters, peaks at P(A) of .60 and .70, and correlates .62 with second-order entropy, the objective measure, which is symmetric about .50 and which the ratings are not.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The shuffle that sounds broken",
+      "text": "A music player picks tracks at random and plays two songs by the same artist within a quarter of an hour, so the listener decides the shuffle is weighted. True randomness produces repeats at about that rate, and a shuffle that never repeats would be the one doing extra work."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The coin sequence written from imagination",
+      "text": "Asked to write down how forty tosses of a fair coin might come out, most people alternate far more often than a coin does and cross out any run of five. A real coin delivers those runs regularly, and the invented sequence is the one that looks wrong to a statistician."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Three resignations in one term",
+      "text": "Three teachers leave a school within a few weeks and the staff room settles on a cause: the new timetable, the head, the pay review. With that many staff and that much ordinary turnover, clumps of three arrive on their own, and an explanation is being fitted to a lump in the calendar."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "The over-alternation bias turns up again across colours, shapes, tones, temporal streams and spatial grids, and once in preregistered work, though the modern estimates are smaller than the classic .6 and depend on where the task starts.",

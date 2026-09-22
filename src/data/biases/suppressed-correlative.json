@@ -17,6 +17,23 @@
     "note": "Essay II of the book is titled \"Errors of Suppressed Correlatives\" and runs from page 43 to page 65 in the Appleton edition. Its opening footnote gives the Fortnightly Review, October 1868, as first publication; the title that article carried was not verified for this entry. Bain also writes of \"a fallacy of the suppressed relative\", using the two words for one idea. Feinberg's application to psychological egoism came much later, in an essay his own footnote-writers date to 1958 and which was printed in his anthology Reason and Responsibility from 1965 onward."
   },
   "evidence": "Bain argues from worked cases rather than from data, and most of them are about rhetoric. To praise simplicity of style is a merit only where the prevailing manner is artificial. To extol knowledge is to reprobate ignorance, and the same speakers who praise the enlightened man also praise the untaught sagacity of the people, which is the correlative statement suppressed. Authority is cited with a flourish when it agrees and pitied as half-informed when it does not. On the dignity of labour he is blunt: \"Make all labour alike dignified, and nothing is dignified; you simply abolish dignity by depriving it of the contrast that it subsists upon.\" On the seventeenth-century theory of occasional causes, in which the Deity acts by a perpetual miracle, he writes that \"The very idea of miracle is abolished if every act is to be alike miraculous.\" The longest case is mystery, a term he says supposes certain things that are plain, intelligible, knowable, and refers by contrast to things that are not. Feinberg's essay makes the argument about one word. Section 19 is titled \"The Fallacy of the Suppressed Correlative\", and it lists selfish-unselfish beside good-bad, large-small and mental-physical as pairs that operate together. On the psychological egoist's usage he writes that there are not only no actual cases of unselfish voluntary action, there are \"not even any theoretically possible or conceivable\" ones, so the theory reduces to a tautology that is \"empty, uninteresting, and trivial\". His summary is that the egoist \"has so blown up the sense of\" selfish that \"like inflated currency, it will no longer buy anything\". He then grants that the redefinition could be adopted, and predicts we would coin \"selfitic\" and \"unselfitic\" to do the old work, which is his reason for calling the manoeuvre useless rather than false. The Stanford Encyclopedia of Philosophy makes the same point without the name: if self-interest is identified with the satisfaction of all of one's preferences then psychological egoism \"turns out to be trivially true\", and on that version the soldier who smothers a grenade and the soldier who pushes someone onto it come out equally selfish.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The blood donor called selfish",
+      "text": "Told that a friend gave blood for nothing, a man replies that she did it for the good feeling, so that was selfish too. Once every act counts as selfish the word marks nothing off, and the claim has become one that no case could contradict."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Everything is political",
+      "text": "Answering an objection, a colleague widens 'political' until the choice of a font on a poster counts. With nothing left outside the category, saying that a decision is political has stopped carrying information."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The charge that all advertising manipulates",
+      "text": "Shown a plain listing of a product's price and weight, a critic says that presenting anything at all is manipulation. The term has been stretched past the point where an honest advertisement could exist, so it no longer divides good practice from bad."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "No study measuring this fallacy, or measuring how people respond to a term redefined until its opposite is empty, was found.",

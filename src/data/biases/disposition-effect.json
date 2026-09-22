@@ -2,7 +2,11 @@
   "no": 209,
   "slug": "disposition-effect",
   "name": "Disposition effect",
-  "aliases": ["Selling winners too early", "Riding losers too long", "Reluctance to realise losses"],
+  "aliases": [
+    "Selling winners too early",
+    "Riding losers too long",
+    "Reluctance to realise losses"
+  ],
   "category": "decision",
   "statement": "Investors sell shares that have risen since purchase at a higher rate than shares that have fallen, and the gap survives in tax years where the opposite would pay.",
   "meaning": "The claim is about rates, not counts. An investor holding twenty rising stocks and two falling ones will sell more winners than losers whatever their preferences, so the measure has to condition on opportunity. Odean's version divides realised gains by realised plus unrealised gains, and realised losses by realised plus unrealised losses. The two proportions are then compared. A ratio above one says that a position in profit is more likely to be closed on a given day than a position at a loss of the same age. Three quantities in this literature look alike and are not the same: the proportion of gains realised, the proportion of losses realised, and the gap between them. A paper reporting one of them has not reported the others. Three claims are also often run together under the one name. The first is the trading pattern itself, which is a fact about records. The second is that the pattern costs money, which needs a return comparison. The third is that prospect theory explains it, which is a claim about mechanism and is the weakest of the three.",
@@ -13,6 +17,23 @@
     "note": "\"The Disposition to Sell Winners Too Early and Ride Losers Too Long: Theory and Evidence\" supplied the name. Its own contribution is a framework rather than a dataset. Only the abstract could be read for this check, and it starts from Kahneman and Tversky's aversion to loss realisation. Around that it sets four elements: mental accounting, which entry 182 covers, regret aversion, self-control and tax considerations. Tax considerations sit inside the framework rather than outside it, which is easy to misreport. Shefrin and Statman argue that tax considerations alone cannot explain the observed patterns of loss and gain realisation. They also argue that the concentration of loss realisations in December is inconsistent with fully rational behaviour. The measurement that made the claim testable on trading records came thirteen years later, from Odean."
   },
   "evidence": "Odean obtained the 1987 to 1993 trading records of 10,000 accounts at a large discount brokerage. Of those accounts, 6,380 traded stocks carried in the CRSP file, for 97,483 transactions, and that is the sample analysed. Aggregated over the whole period, the proportion of gains realised was 0.148 and the proportion of losses realised 0.098. Odean puts the ratio of the two at a little over 1.5. The one-tailed test that gains are realised no faster than losses is rejected with a t-statistic above 35. Odean also ran the test at account level rather than trade level, which weakens the independence assumption. Average account PGR was 0.57, average PLR 0.36, and the mean difference of 0.21 gives t = 19. December runs the other way. In December the proportion of losses realised was 0.128 against a proportion of gains realised of 0.108, and from January to November the figures were 0.094 and 0.152. Tax selling appears, and only in the last month. Grinblatt and Keloharju repeated the question on the Finnish Central Securities Depository register, the official daily record of holdings and trades of virtually all Finnish investors from 27 December 1994 to 10 January 1997. Their logit of sell against hold carries 244 regressors. Among them are 87 stock dummies, 25 month dummies and 22 past-return variables covering 11 horizons, entered separately for positive and negative returns. For households, on 122,765 observations, an extreme capital loss of more than 30 percent makes a sale 0.32 less likely than a capital gain at a predicted logit of zero, and a moderate loss 0.21 less likely. The equivalent OLS figures are 0.17 and 0.12.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The winners go first",
+      "text": "A small investor holds twelve shares. Of the four standing at a profit, three are sold within the year; of the five standing at a loss, none are. Counting the sales alone says little, and the rates are what make the pattern."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Waiting for it to come back",
+      "text": "A holder of a share well below what they paid says they will sell once it returns to that price, and sells a different holding the week it moves into profit. No new money is being spent on either, so nothing here is about protecting an outlay."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The two flats",
+      "text": "A landlord with one flat worth more than they paid and one worth less sells the first and keeps the second, though the tax position that year would favour the opposite. What sets the choice is which side of the purchase price each sits on."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "The pattern reappears in the near-complete register of Finnish share ownership, in a second US brokerage sample and in retail records from several other markets, which is a stronger record than most entries on this site can show.",

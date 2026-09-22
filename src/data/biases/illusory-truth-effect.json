@@ -13,6 +13,23 @@
     "note": "The paper is \"Frequency and the Conference of Referential Validity\", and it uses the term referential validity rather than illusory truth. The name in current use came later, and the entry keeps 1977 because that is the study the effect is built on."
   },
   "evidence": "Hasher, Goldstein and Toppino ran 50 college students and analysed 40, discarding ten who missed a session. Each heard 60 plausible assertions on three occasions two weeks apart and rated validity on a seven-point scale. The 140-item pool was culled from reference works on ten topics including history, sports, demography and the arts, seven true and seven false per topic, written to be plausible without being known. Twenty items recurred at every session. Mean ratings for the repeated items ran 4.35, 4.67 and 4.74 across the three sessions; for the non-repeated ones they ran 4.25, 4.22 and 4.16. The repetition by session interaction held, F(2, 78) = 11.80, p < .01, with a rise for repeated items, F(2, 78) = 16.34, and no change for the rest, F < 1. Actual truth or falsity entered no interaction, so repetition moved true and false statements alike. At session one the items due to recur and those not did not differ, F(1, 39) = 1.69, p > .05. Later work pushed on the assumption that knowledge blocks the effect. Fazio, Brashier, Payne and Marsh's first experiment gave 40 Duke undergraduates statements drawn from general-knowledge norms and checked afterwards what each participant knew. Repeated falsehoods scored 3.53 against 3.26 for new ones, F(1, 39) = 13.06, p = .001, partial eta-squared = .25, and knowledge did not interact with repetition, F(1, 39) = 1.21, p = .28. For contradictions of facts the participant demonstrably knew, repeated statements still scored 2.93 against 2.59, t(39) = 2.93, p = .006.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The rule of thumb heard three times",
+      "text": "A claim about how long meat can be left out is mentioned by a friend, then a podcast, then a relative. No new evidence has arrived, and the claim sits easier each time, which gets read as a sign that it is sound."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The line in the induction pack",
+      "text": "A sentence explaining why a procedure exists is read out at every intake for years. Staff come to rate it as well established, though nobody has ever produced the study behind it."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The figure repeated through a campaign",
+      "text": "A number quoted often enough begins to feel settled even to people who once looked it up and found it wrong. The shift is in how true the claim is rated, and not a conversion of disbelief into belief."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "A 2026 meta-analysis of 182 studies and 31,184 people put the effect at g = 0.37 after correcting for small-study bias, and a 2026 registered replication found it again.",

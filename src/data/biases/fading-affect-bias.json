@@ -2,7 +2,10 @@
   "no": 210,
   "slug": "fading-affect-bias",
   "name": "Fading affect bias",
-  "aliases": ["FAB", "Fading affect"],
+  "aliases": [
+    "FAB",
+    "Fading affect"
+  ],
   "category": "memory",
   "statement": "The emotion attached to an unpleasant personal memory fades faster over time than the emotion attached to a pleasant one.",
   "meaning": "The bias is a difference between two difference scores. A person names an autobiographical event, rates how pleasant or unpleasant it felt at the time, and rates how it feels now. Subtracting one rating from the other gives the fading for that event. The fading affect bias is the finding that this drop is larger for unpleasant events than for pleasant ones. It is a claim about emotion rather than about recall. Walker and Skowronski's review says the founding studies found positive and negative events remembered with almost equal clarity while their emotions diverged. The 1997 abstract is weaker, reporting a modest memory advantage for pleasant events. Ritchie and colleagues split the outcome four ways in a 2009 study, which the same review describes: affect that stays fixed, fades, grows more intense, or flips valence. Only the second is fading in the literal sense, and the bias is a pattern across all four.",
@@ -13,6 +16,23 @@
     "note": "Three diary studies in which participants recorded unique events and rated their pleasantness as they happened, then rated the same events again in the laboratory. Walker and Skowronski's 2009 review calls this paper the start of the modern era of the effect and names two earlier sightings it builds on, Cason in 1932 and Holmes in 1970. The 1997 full text was not obtained, so the design here comes from that review and from Walker, Skowronski and Thompson's 2003 account. Both give the retention intervals as 3.5 months, one year and 4.5 years, where the published abstract says 3 months, one year and 4.5 years."
   },
   "evidence": "Walker and Skowronski summarise the 1997 diary data as two trends: longer retention intervals produced more fading, and unpleasant affect faded more than pleasant affect at every interval. Their account of the sample is not self consistent, giving 38 participants at the 3.5-month interval in the text and 43 in the caption of the figure that plots it. Independent laboratories have since produced the same asymmetry with much larger samples. Marsh, Hammond and Crawford collected 2,368 memories from 296 students at Victoria University of Wellington, half positive and half negative, rated on a scale from -3 to +3 at occurrence and at recall. Positive affect faded less than negative affect, with a multilevel coefficient of -0.680 and a 95% interval from -0.743 to -0.617. Gibbons and four colleagues ran the same comparison on 284 in-person and 157 online participants at an American university. In the in-person study, with initial intensity held constant, the adjusted mean drop was 0.050 scale points for pleasant events against 2.001 for unpleasant ones, F(1, 2116) = 1048.833, p < 0.001, partial eta squared 0.331. The online study gave 0.416 against 2.243. Hoehne and Zimprich took 12,314 memories from 2,163 German-speaking adults aged 18 to 98. Scoring change from the rating difference, 39.7% of negative memories faded against 14.8% of positive ones. Scoring it from what participants said had happened to the memory, the figures were 30.5% and 10.3%. Ritchie and seven colleagues report the bias in each of 10 cultural samples, drawn from 2,439 events rated by 562 participants. The largest sample was 180 Germans and the smallest 14 Ghanaians, with African American, Caucasian American, Native American, New Zealand European, Maori and Pasifica, British, Black British and Irish samples between.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The presentation that went wrong",
+      "text": "A talk that fell apart stings for weeks and is told as a funny story a few years later. A talk that went well still gives a small lift when it comes to mind. Both are recalled clearly, and only the feelings have moved apart."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The miserable walk",
+      "text": "A day in horizontal rain on a hill is described afterwards as a good day out, with the cold no longer attached to it. A warm day on the same hill is remembered warmly still, which is the asymmetry the claim is about."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The row with a brother",
+      "text": "An argument that was unbearable at the time is retold at a family lunch without much heat left in it. For many memories the feeling does not shift at all in either direction, and the pattern shows up in the average rather than in every case."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "The asymmetry turns up in every large sample that has looked for it, including all 10 samples of a pancultural study and independent laboratories in New Zealand, Germany and the United Kingdom, though its size varies with who is tested and one sample lost it under statistical control.",
@@ -26,7 +46,10 @@
     "replicated": {
       "es": -0.68,
       "esType": "beta",
-      "ci": [-0.743, -0.617],
+      "ci": [
+        -0.743,
+        -0.617
+      ],
       "ciLevel": 95
     }
   },

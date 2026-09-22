@@ -19,6 +19,23 @@
     "note": "The monograph is the full report of work Asch had already described in a 1951 book chapter and in Scientific American in November 1955. Bond, reviewing the same experiments in 2005, found that the reports disagree with each other about how large the majority was and about which majority sizes were run."
   },
   "evidence": "Asch gathered seven to nine male college students in a classroom for what he presented as an experiment in visual discrimination. All but one had been briefed beforehand. The series ran to 18 comparisons, and on 12 of them the briefed majority called out the same wrong number in unison. The uninstructed member was seated so that he answered next to last, hearing all but one of the others before speaking. Subjects were white men aged 17 to 25, mean age 20, drawn from three institutions Asch declined to name, none of them his own Swarthmore. Sessions lasted about 20 minutes. Table 3 of the monograph sets 123 experimental subjects against 37 controls who judged alone. The controls erred on 0.7% of critical estimates, and 35 of the 37 made no error at all. The experimental group erred on 36.8%. Asch's own phrasing is that the majority distorted one third of the reported estimates, and that its effect was considerable but by no means complete, or even the strongest force at work. The spread matters more than the mean. Twenty-nine of the 123, or 24%, never once agreed with the majority. About the same share, 27%, took the majority answer on eight to twelve of the twelve trials. Half the group sat between those extremes with one to seven errors, and the median was three. Among those who erred at all, more than half did so by the second critical trial, and 76% of the 123 erred at least once. Asch then varied the situation, and the number moved a long way. Against a single opponent the subject erred 3.6% of the time, against two 13.6%, against three 31.8%. Beyond three it flattened: 35.1% against four, 35.2% against six, 37.1% against seven, 31.2% against fifteen. Unanimity did more work than size. Giving the subject one truthful partner cut his errors to a quarter of their level under a unanimous majority. A partner who broke with the majority while also disagreeing with the subject, always naming the line furthest from the standard, cut errors to 9%. When an instructed partner answered correctly for six trials and then defected, errors rose to about the unanimous level; when he instead left the room, they rose by less. Widening the gap between the lines to seven inches did not free everybody. Asch interviewed each subject afterwards. Some who yielded had concluded that they were wrong and the group right, some yielded so as not to spoil the results, and all of them underestimated how often they had gone along.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The gauge everyone else reads wrong",
+      "text": "Six people read a dial in turn and the first five give a figure that is plainly not what the needle shows. The sixth, who can see it perfectly well, says the same figure aloud. The fact is clear, the answer is public, and the others all agree with each other."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The tasting panel that agrees",
+      "text": "Each taster calls the second sample the saltier one, though it is not, and the last says it too. Afterwards some report they had decided the group must be right and others that they went along while sure it was wrong. The spoken answer does not say which."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The one colleague who says otherwise",
+      "text": "In the same room, one person breaks ranks before the last answer is given, and the last answer goes back to what the eyes report. Unanimity is the condition the effect runs on, and a single dissenter removes most of it."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "Pooling 125 runs of the line task, Bond found a weighted mean effect of g = 0.89 against the no-pressure control, and a 2021 Swiss replication put the error rate at 33% against Asch's 36.8%.",

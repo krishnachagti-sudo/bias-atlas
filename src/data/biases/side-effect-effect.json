@@ -16,6 +16,23 @@
     "note": "The paper is short and reports two questionnaire studies run on people in a Manhattan public park, 78 subjects in the first and 42 in the second. It became one of the founding results of experimental philosophy."
   },
   "evidence": "In the first experiment 82% of the harm group said the chairman brought the side effect about intentionally, and 77% of the help group said he did not, χ2(1, N = 78) = 27.2, p < .001. Many Labs 2 states the same result as 23% calling the help intentional. The second experiment swapped the corporate story for a lieutenant sending a squad into or out of enemy fire. There 77% called the harmful side effect intentional and 70% said the helpful one was not, χ2(1, N = 42) = 9.5, p < .01. Knobe then pooled the two experiments to compare blame with praise. Blame in the harm conditions averaged 4.8 and praise in the help conditions 1.4, t(120) = 8.4, p < .001, and the rating correlated with the intentionality judgement at r(120) = .53, p < .001. That correlation is the link the effect turns on, and it rests on the two experiments together rather than on the chairman vignette alone. Knobe prints those praise and blame scales as running from 0 to 6; Many Labs 2 describes them as running from 1 to 7.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The shortcut through the village",
+      "text": "A driver with no view either way takes a lane that runs past houses. When residents are woken, neighbours say he did it deliberately; when the lane eases their traffic instead, nobody credits him with meaning to."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The rota change nobody consulted on",
+      "text": "A manager who says plainly that childcare arrangements are not their concern moves the shifts. Staff describe the disruption as intended, and had the new times happened to suit families better, the same indifference would have been called luck."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The hedge cut back for light",
+      "text": "A gardener wanting more sun says the birds in the hedge are not their problem and cuts it anyway. If the birds abandon it, neighbours call the loss deliberate; if they nest more thickly next spring, nobody says the gardener intended that."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "Across 7,982 people in the 59 Many Labs 2 samples that contributed the asymmetry came back larger than in the original park questionnaire.",

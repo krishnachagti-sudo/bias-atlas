@@ -16,6 +16,23 @@
     "note": "The paper is titled \"Investigating the Not Invented Here (NIH) syndrome: A look at the performance, tenure, and communication patterns of 50 R & D Project Groups\", at 12(1), 7-20. Katz and Allen circulated it in April 1980 as MIT Sloan working paper 1114-80, under the different title \"An Empirical Test of the Not Invented Here (NIH) Syndrome\". The measured variables in that text are group tenure, communication counts and manager ratings of technical performance. The name sits in the title as the explanation the authors offer for a decline they found."
   },
   "evidence": "Katz and Allen worked in the R&D facility of one large American corporation, which employed about 735 people, and studied its 345 professionals. Complete data came back for 50 project groups. Each professional named everyone he or she had spoken to about work on one randomly chosen day a week for 15 weeks, and the response rate over those weeks was 93 percent. Seven departmental managers and two laboratory directors rated the projects they knew on a seven-point scale, an average of 4.7 raters per project, with a Spearman-Brown reliability of 0.81. Mean group tenure was 3.41 years, with a standard deviation of 2.67, and mean performance was 4.59. Split into five tenure bands of ten projects each, mean performance ran 4.29 below 1.5 years, then 4.89, 4.87 and 4.82, then 4.07 at five years or more, F(4,45) = 2.89, p < 0.05. Among the 30 projects averaging at least 2.5 years, mean project tenure correlated -0.39 with performance, -0.39 with communication inside the project and -0.32 with communication to professionals outside the firm, each at p < 0.05. Those figures are read from the 1980 working paper. The published article's abstract puts the rise at 1.5 years of tenure and the decline by five. Later work measures the attitude instead of the group. Antons, Declerck, Diener, Koch and Piller built an implicit-association measure and a survey measure across four studies and 1,238 subjects, and report evidence for reliability and for construct and criterion validity. Hannen, Antons, Piller, Salge, Coltman and Devinney surveyed 565 global R&D projects, a 12 percent response rate, and found the attitude negatively associated with absorption of external knowledge, b = -0.338, p < 0.01, with a bootstrapped indirect effect on project success of -0.077, interval -0.123 to -0.038. Mean attitude in that sample was 2.23 on a scale from 1 to 7, with a standard deviation of 1.10. Ismail, Bello-Pintado, García-Marco and Lazzarotti surveyed 250 firms in France, Italy, Spain and Sweden. The direct path from the syndrome to the innovation performance of a collaborative project was β = -0.139, p < 0.05, and it went to non-significance once external social capital entered the model. Hussinger and Wastyn report that internal resistance is likelier when knowledge is acquired from competitors than from suppliers, customers or universities, and likelier again in successful companies acquiring from competitors. That last result is read from its abstract.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The library the team rewrote",
+      "text": "A well-tested tool already does the job and the team builds its own instead, listing reasons afterwards: the licence, the dependencies, the shape of the interface. Each reason arrives once the decision has been taken, and none of them was weighed before it."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The scheme of work from the school down the road",
+      "text": "A department is offered a complete scheme of work that another school spent two years refining, and writes its own over a summer. The one they write is not better. It came from inside, which is the part that made it acceptable."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The proposal that needed a different author",
+      "text": "A consultant sets out a change to the intake process and the room finds it naive. Four months later a colleague proposes the same change in almost the same words and it is adopted. Nothing in the proposal moved between the two meetings."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The same authors failed to reproduce their own 1982 tenure result on 181 teams, and the controlled tests of the underlying claim point in opposite directions.",

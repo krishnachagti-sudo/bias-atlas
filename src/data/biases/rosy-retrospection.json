@@ -13,6 +13,23 @@
     "note": "The chapter \"A theory of temporal adjustments of the evaluation of events: Rosy prospection & rosy retrospection\" runs from page 85 to page 114 of volume 5, published by JAI Press. It is a theory piece with no results section. The field evidence arrived three years later in Mitchell, Thompson, Peterson and Cronk's 1997 paper in the Journal of Experimental Social Psychology, which is what the effect is normally cited to."
   },
   "evidence": "Mitchell, Thompson, Peterson and Cronk followed people through three real events: a trip to Europe, a Thanksgiving vacation and a three-week bicycle trip in California. Each group rated the event in anticipation, during it, and in recollection. The abstract reports expectations more positive than the experience, recollection also more positive than the experience, and a rise in negative thoughts during the event traced to distraction, disappointment and a less positive view of the self. It adds that these effects are short-lived and that people hold much more positive evaluations within days of the event. That summary was read off the abstract at PubMed. The full text is closed at Elsevier, so the sample sizes, the rating means and any disagreement between the three studies are not stated here. The 1994 chapter describes the same three studies while they were still running, and calls the European group senior citizens who went to Austria for a week. It reports only that initial analyses suggested the rosy phenomenon does occur. Wirtz, Kruger, Napa Scollon and Diener ran a three-phase design on an American spring break. Their abstract reports predicted and remembered experience both more positive and, in their own word, paradoxically more negative than the on-line reports, with remembered experience alone predicting the wish to repeat the trip. Later work compares in-the-moment ratings with later recall without the three-phase structure, and finds no general lift. Neubauer, Scott, Sliwinski and Smyth ran two experience sampling studies with end-of-day recall, on 242 and 175 adults. Retrospective negative affect ran above the aggregated momentary average in both, the rating-type coefficient being 3.052 on a 0 to 100 scale in the first study and 0.139 on a 1 to 7 scale in the second, each at p < .001. For positive affect the coefficient was 0.406 and not significant in the first study, and 0.050 at p < .05 in the second. Anvari, Moeck, Franco, Elson and Schneider gave 399 British adults five experience sampling surveys a day for a week, then asked them at the end of the week to rate each day from memory. Ratings made from memory sat below the ratings given on the day.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The camping weekend in the rain",
+      "text": "Asked on the Saturday how it is going, everyone says it is wet, cold and a mistake. Asked in the autumn, the same group calls it the best weekend of the summer and starts planning another. The rating made during the trip and the rating made after it are different numbers about one event."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The year of the long commute",
+      "text": "At the time it was two hours a day and complaints every evening. Years later it is remembered as the period when the reading got done. Nothing new arrived to improve it; the account written afterwards simply sits above the ones written at the time."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The project everyone moaned about",
+      "text": "During the work the team said the deadline was absurd and the brief kept changing. A year on the same people describe it as the best thing they ever shipped. The daily verdicts were recorded in the chat log and they do not match the story."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "No direct repeat of the 1997 field studies was located, and independent tests of the same momentary-versus-recall comparison disagree on the direction of the gap as well as its size.",

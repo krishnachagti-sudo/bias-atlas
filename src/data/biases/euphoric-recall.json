@@ -12,6 +12,23 @@
     "note": "No source claiming to have coined the phrase was located. The earliest dated use found is the chapter title 'Blackouts, repression, and euphoric recall'. It appears in the contents note of one Internet Archive catalogue record for the 1980 revised edition, 182 pages. Two further Internet Archive items for that edition carry no contents note at all, so the chapter title rests on a single record. Open Library records a first edition of 1973 at 168 pages, and the Internet Archive holds a scan of it. That scan is lending restricted, its plain text answers HTTP 401, and its search inside route answers 403 with a page headed 'Item not available'. The 1973 edition therefore could not be searched, and the phrase may be older than the year given here. On 21 September 2026 the Internet Archive full-text hosts failed at this session's proxy with a 502 on connect. HathiTrust full-text search answered a Cloudflare challenge under a 403, and the Google Books API returned 429 for exceeded daily quota. So no earlier print use could be searched for in books."
   },
   "evidence": "No study measuring euphoric recall was located. The clinical sources make the claim by description and offer no ratings, no control condition and no comparison against what people said at the time. The nearest measured work sits one step away and asks a different question. Carter and Tiffany's meta-analysis of 41 cue-reactivity studies compared responses of alcoholics, cigarette smokers, cocaine addicts and heroin addicts to drug-related against neutral stimuli. Across all groups the effect size for self-reported craving was +0.92. Alcoholics gave a significantly smaller craving effect size of +0.53 against +1.18 to +1.29 for the other groups. The physiological effect sizes were smaller again, and the abstract gives them across all groups rather than for alcoholics alone: heart rate +0.26, sweat gland activity +0.40, skin temperature -0.24. Those figures are read from the structured abstract at Europe PMC, and they measure craving elicited by a cue, not the content of a remembered episode. The nearest theoretical treatment is Bornstein and Pickard's review in Neuropsychopharmacology, which proposes that drug choices are biased by selective sampling of individual episodic memories at the moment of decision. It is a framework paper reporting no new data, it takes its title from addiction folklore rather than from a measurement, and the word euphoric does not appear anywhere in its text as searched for this entry. Its own statement of the position is that despite evidence linking the hippocampus to addiction-related behaviours, 'the role of memory retrieval remains less well-understood, and potentially crucial'.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The night that comes back in pieces",
+      "text": "Someone giving up drinking thinks back to an evening in the pub and reaches the warmth and the company first. The sickness of the next morning belongs to the same evening and does not arrive with the rest of it."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Passing the old off-licence",
+      "text": "Walking past a familiar shop brings back the ease the first drink used to give, while the arguments that followed stay out of view. The half of the memory that survives is the half that pulls towards use."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Telling the story of a bad year",
+      "text": "A man in treatment retells a period of heavy use as a run of funny episodes, and the debt and the lost job sit outside the telling. He is not lying. The costs are simply not what the memory hands back."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "Nothing was found to replicate. Euphoric recall is a piece of clinical vocabulary with a long life in treatment settings and no experiment behind it that this search could find.",

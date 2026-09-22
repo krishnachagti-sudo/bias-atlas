@@ -19,6 +19,23 @@
     "note": "\"Status quo framing increases support for torture\" is the earliest experiment located for this entry that varies how long a practice has been in place. Its published abstract describes a representative sample of United States adults randomly assigned to read that the practices were new or that they had been used for more than 40 years. The term longevity bias belongs to Eidelman, Pattershall and Crandall's \"Longer is better\", in the Journal of Experimental Social Psychology in 2010, whose text and abstract could not be obtained here. The fallacy label is older than either paper and no source read here dates it."
   },
   "evidence": "What follows was read from published abstracts. Every experimental paper behind this entry is closed access, so no means, test statistics or effect sizes are quoted. Crandall and colleagues had a representative sample of United States adults read about torture in the questioning of detainees, described either as new or as having been used for more than 40 years. The abstract reports that torture described as a long-standing practice had more support and was seen as more effective and justifiable than the same torture described as new. It adds that characterising practices as long-standing enhances their support even when the practice is unpopular or disgraceful. The sibling claim is about existence rather than duration. Eidelman, Crandall and Pattershall ran five studies in the Journal of Personality and Social Psychology. Studies 1 and 2 report an existing state evaluated more favourably than an alternative. Study 3 reports that imagining an event raises estimates of its likelihood, which in turn raises how favourably it is evaluated. Study 4 reports that the more a form is described as prevalent, the more attractive it is judged, in a domain with no choice between alternatives. Study 5 extends the effect to taste and reports that valence does not moderate it. The paper usually cited for the duration version is \"Longer is better\", and neither its text nor its abstract was reached through the routes tried, so nothing from it appears here. The most recent test by the same group varies a timeline. Eidelman and five colleagues showed 433 American adults one of two versions of a timeline of medical events, with the creation of mRNA vaccines placed at the left or the right end. Their abstract reports that the left-end placement led the vaccines to be judged older and, once vaccination status was accounted for, better, and that vaccination status did not moderate the effect of longevity on support.",
+"examples": [
+  {
+    "kind": "everyday",
+    "tag": "The item that is always first on the agenda",
+    "text": "A committee keeps a standing item at the top because it has always been at the top, and nobody present can say what the placement achieves. Long use is being offered in the place where a reason was wanted."
+  },
+  {
+    "kind": "everyday",
+    "tag": "The label that mentions generations",
+    "text": "Two jars hold the same thing, and the one whose label says the method has been handed down for generations sells faster. Nothing inside differs, so the age of the method is what moved the shopper."
+  },
+  {
+    "kind": "everyday",
+    "tag": "The society's dress requirement",
+    "text": "Members defend a rule about what is worn by saying it is part of what the society has always been. The practice may carry something nobody can put into words, and saying that it is old is not that statement."
+  }
+],
   "replication": {
     "state": "mixed",
     "headline": "The nearest independent test found the bias among people who resist change and found it reversed among people who accept change.",

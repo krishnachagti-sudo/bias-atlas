@@ -15,6 +15,23 @@
     "note": "Simonson predicted the effect from an account of choice as a search for reasons, and reported it alongside a replication of the attraction effect. The paper's abstract states that brands tend to gain share when they become compromise alternatives, and that both effects are stronger among subjects who expect to justify their decisions to others. Simonson and Tversky supplied the extremeness aversion framing three years later, and reanalysed some of Simonson's own choice sets."
   },
   "evidence": "Simonson's pilot put choice sets to 147 marketing students and found a compromise effect at t = 4.27, p < 0.001. Study 1 used 372 business students at three southeastern universities, choosing among apartments, calculators, calculator batteries, mouthwash and televisions. Shares were on average 17.5 percent larger when a brand was the compromise, and nine of the 11 comparisons were statistically significant. One apartment went from 50% to 66% when an added option made it the middle choice. A multinomial logit with estimated utility, a compromise dummy and an interaction gave the compromise dummy a coefficient of 0.63 with a standard error of 0.08, t = 7.9, p < 0.001. Simonson and Tversky ran 22 experiments with 100 to 220 participants each, students at three West Coast universities, with several problems repeated on business executives. Their cleanest case used real catalogue cameras. A Minolta X-370 at $169.99 and a Maxxum 3000i at $239.99 split 50-50 among 106 respondents. Adding a Maxxum 7000i at $469.99 for 115 further respondents lifted the 3000i's share against the X-370 from 50% to 72%, a difference of .22 with a standard error of .068, t = 3.2, p < .01. Portable grills gave the same pattern across three overlapping sets, with relative shares of .58 against .38 and .62 against .36, both p < .05.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The third bottle on the wine list",
+      "text": "With two bottles listed, orders split about evenly between them. Add a dearer third and the middle bottle takes a larger share than it did as the expensive option. The bottle has not changed; its position in the set has, and the comparison between sets is the finding."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The donation ladder with a rung added",
+      "text": "A charity offers monthly amounts of five and fifteen, then adds thirty. The fifteen rises, because it is now the moderate choice rather than the generous one. Thirty is a real option that some donors take, so nothing here depends on an alternative nobody is meant to pick."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The policy that became the moderate one",
+      "text": "An insurer lists two policies, one cheap with a high excess and one dear with a low one. Adding a cheaper policy with a higher excess still leaves the old cheap one selling better than before, because it now sits between its neighbours instead of at an end."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "A meta-analysis of 142 experimental observations reports that middle options are chosen more often than others, and field data from 88,113 restaurant orders put the gain at about five percentage points.",

@@ -17,6 +17,23 @@
     "note": "Their paper is titled \"Explaining the 'Identifiable Victim Effect'\" and opens with an epigraph from Thomas Schelling's 1968 discussion of the individual and the statistical life. They write that they have seen no explicit treatment of the effect in the helping literature or the empathy literature. Jenni and Loewenstein took the effect as given and tested four candidate causes; the effect itself was not what they set out to demonstrate."
   },
   "evidence": "Jenni and Loewenstein ran two hypothetical scenario studies. The first went to 70 undergraduates at Carnegie Mellon, 30 visitors to a mall south of Boston and 27 visitors to two student centres. The second went to 121 adult visitors to Pittsburgh International Airport. Nothing was donated. Respondents rated how important an intervention was, or how responsible they would feel. Only one of the four candidate causes came through. People gave higher priority to a safety programme saving 25 of 25 people at risk than to one saving 25 of 50,000, which is proportion of the reference group. Vividness did nothing. In the second study a victim trapped after an earthquake was described generically, described in detail, or described with a picture. Respondents said they cared least when the picture was included, F(2, 111) not significant. Small, Loewenstein and Slovic put real money on the table ten years later. Participants at a university in Pennsylvania completed an unrelated survey, were paid five one-dollar bills, and could seal any of it into an envelope for Save the Children. The money went to the charity. Study 1, on 121 people, found an identifiable victim raised donations to $2.12 against $1.21 for statistics, F(1, 115) = 6.75, p < .05, partial eta squared .06. Study 3, on 159 people, produced the pair everyone quotes, and it is printed only in a bar chart: $2.38 for Rokia, a seven-year-old girl from Mali shown with a photograph, against $1.14 for four sentences of famine statistics about Malawi, Zambia, Angola and Ethiopia. The text reports the test as F(2) = 5.67, p < .01, partial eta squared .07, with no second degrees-of-freedom figure. Presenting Rokia together with the statistics dropped giving to $1.43, and the paper's argument is about that drop rather than about the gap. Kogut and Ritov added the singularity claim, that the effect holds for one victim and not for a group. Their Study 2 in the Journal of Behavioral Decision Making ran 112 Hebrew University undergraduates in a two-by-two design, and identification interacted with singularity, F(1, 108) = 7.12, p < 0.009. Majumder and colleagues recompute that interaction as partial eta squared .062, 90% CI .01 to .15. The name singularity effect comes from the title of Kogut and Ritov's second 2005 paper, in Organizational Behavior and Human Decision Processes, which used real money. Its Experiment 1 paid 153 Hebrew University students 20 shekels each and let them give any of it away. The interaction again held, F(1, 149) = 13.036, p < .001, with the identified single child drawing a mean of 10.71 shekels against 5.03 for the identified group of eight. Majumder's group define the singularity effect as the tendency to give more aid to a single victim than to a group of victims facing the same need.",
+    "examples": [
+      {
+        "kind": "everyday",
+        "tag": "The named child in the appeal",
+        "text": "A letter gives a girl's name, her age and what a donation would buy her, and raises more per reader than a letter reporting how many children are in her position. The need described is the same in both."
+      },
+      {
+        "kind": "everyday",
+        "tag": "The appeal read on its own",
+        "text": "A donor reads one appeal for a named person and gives generously. Put beside an appeal for a hundred people, the same appeal draws less, because the comparison supplies a scale the single case never offered."
+      },
+      {
+        "kind": "everyday",
+        "tag": "The rescue against the safety rule",
+        "text": "A fund for one trapped worker fills in a day, while a levy that would prevent such accidents every year attracts little support. The levy saves more people and nobody can say which people they are."
+      }
+    ],
   "replication": {
     "state": "failed",
     "headline": "Three preregistered tests of the seminal paradigms found nothing, and a bias-corrected reanalysis of the only meta-analysis puts the pooled effect at r = 0.002.",

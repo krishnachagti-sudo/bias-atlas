@@ -15,6 +15,23 @@
     "note": "The paper reports three studies. In the field study, 81 male dormitory residents watching a television show with three attractive women in the lead were asked to rate a photograph of an average woman described as a possible blind date for another resident. The abstract says they rated her less attractive than a comparable control group did, and reports that difference as significant. Two further studies with 146 undergraduates are described as showing analogous effects in a controlled laboratory setting. Only the abstract was read, from the Arizona State University record. The full text was not obtained on 21 September 2026. Unpaywall lists no open copy, Semantic Scholar records the digital object identifier as closed, and the PsycNet record page serves no text at all. No condition means or test statistics from the 1980 paper appear here. The name is older than the paper. Sherif, Taub and Hovland used it for anchored psychophysical judgements in 1958, and their PubMed record carries no abstract."
   },
   "evidence": "The field evidence is stronger than the laboratory evidence, which is unusual. Bhargava and Fisman analysed 16 speed dating sessions run in the New York area between 2002 and 2004, in which nearly 500 participants made over 7,000 yes or no decisions. A one point rise in the previous partner's attractiveness on a 1 to 10 scale cut the chance of a yes for the current partner by 1.9 percentage points. That is against an overall willingness to date of 42%. The authors put the pull at 18% of the pull of the same change in the current partner's own attractiveness, and at 31% for male evaluators, who drove nearly all of it. Only the first lag mattered. Attractiveness two and three partners back did not predict the current decision, and a placebo test on future partners found nothing. Hartzmark and Shue applied the same logic to share prices, using 75,897 unique earnings announcements between 1984 and 2013. Moving yesterday's salient surprise from the average of the worst decile to the average of the best was associated with a 55 basis point lower return reaction to today's announcement, holding today's news constant. One standard deviation of yesterday's surprise was worth 16 basis points. In the laboratory, Pegors, Mattar, Bryan and Epstein recruited 32 undergraduates and analysed 30, who rated faces one at a time, alternating attractiveness ratings with hair darkness ratings. The attractiveness of the previous face pushed the current rating down (t(29) = -4.92, p < 0.001) while the previous response pulled it up (t(29) = 2.73, p = 0.011). The contrast came from the stimulus and the assimilation from the response, in the same data.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The candidate after the strong one",
+      "text": "An interview panel scores a solid candidate low because the person before them was outstanding. Seen first thing the next morning, after a weak start to the day, the same answers would have read as impressive. Nothing about the candidate changed between the two slots."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The second flat of the afternoon",
+      "text": "A flat viewed straight after a bright one with a garden looks meaner than it did in the photographs. Shown before that one instead, it looks reasonable. The judgement is pushed away from whatever was seen immediately before it."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Marking after a bad run",
+      "text": "An essay marked at the end of a pile of poor ones gets a higher grade than the same essay would get after a run of strong ones. The marker is comparing with what they just put down, not with the standard in the rubric."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The sequential judgement effect holds in large pre-registered field data, and the attractiveness branch the name was coined in does not. Radbruch and Schiprowski found the previous candidate's influence across about 37,000 interviews, while Balzarini and colleagues met a pooled effect of d = 0.02 in three pre-registered replications.",

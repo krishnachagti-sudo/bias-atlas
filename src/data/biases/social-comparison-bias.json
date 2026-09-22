@@ -2,7 +2,9 @@
   "no": 242,
   "slug": "social-comparison-bias",
   "name": "Social comparison bias",
-  "aliases": ["Tainted recommendations"],
+  "aliases": [
+    "Tainted recommendations"
+  ],
   "category": "social",
   "statement": "Someone with high standing on one dimension tends to recommend the candidate who will not beat them on that dimension, whatever the group needs.",
   "meaning": "The claim is narrow and it is about recommenders, not about envy in general. Garcia, Song and Tesser argue that a person's standing is defined by the people they are compared with, so admitting a stronger rival on a prized dimension costs them something. The prediction is a reversal rather than a general preference for weak candidates. A professor known for volume of output should favour the candidate strong on prestige, and a professor known for prestige should favour the candidate strong on volume. Neither is choosing the worse applicant overall. Each is choosing the applicant whose strength sits somewhere other than their own.",
@@ -13,6 +15,23 @@
     "note": "The paper is \"Tainted recommendations: The social comparison bias\", received 3 June 2007 and accepted 30 June 2010. It names the effect and reports three studies, of 29, 40 and 55 participants. No pooled total appears in the paper."
   },
   "evidence": "Study 1 gave 29 undergraduates at a Midwestern university a scenario called \"Law School Faculty\". Each imagined being a Harvard professor with either the most Harvard Law Review articles, 25, or the most publications in total, 95, and chose between Prof. Jones with 75 publications including 30 in the Law Review and Prof. Smith with 100 including 20. The scenario stated that the faculty already held a full range of complementary interests, which is how the paper rules out team balance as the motive. When the participant's own strength was prestige, 69% recommended Smith, the candidate ahead on volume. When it was volume, 31% did, chi-square 4.14, p < .05. Study 2 asked for a choice the participants believed was real. Forty undergraduates answered verbal and maths questions, then got false percentile feedback, either 82nd verbal and 68th maths or 68th verbal and 82nd maths. They picked a teammate for a purported coordination exercise that involved throwing a tennis ball. The two candidates were Hardy, 95th percentile verbal and 64th maths, and Walker, 65th verbal and 94th maths. Told they were high on verbal, 74% took Walker. Told they were high on maths, 62% took Hardy, chi-square 5.1, p < .05. Neither skill bore on tennis balls, which is the paper's second argument against complementarity. The exercise never existed, and a research assistant said so when paying participants for the survey. Study 3 used 55 full-time employees of a Midwestern university, 29 women and 26 men, split between a recommendation question and a self-esteem question. Both were vignettes. Employees imagining they were the highest paid but average in decision-making power advised giving a new recruit more decision-making power, mean 3.15 on a seven-point scale where 1 favoured decision power, against 4.29 for those imagining the reverse, F(1, 25) = 4.64, p < .05. On the self-esteem item the same split appeared, 4.80 against 3.46, F(1, 26) = 8.19, p < .01. The paper reports chi-square and F values throughout, and no standardised effect size appears in its results sections.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "Two juniors up for the same post",
+      "text": "A partner known in the firm for winning clients backs the applicant with the careful drafting, and a partner known for drafting backs the rainmaker. Each recommends real ability, placed safely away from the ground their own standing rests on."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Choosing a new committee member",
+      "text": "An officer of a society whose reputation rests on raising funds argues for the candidate who is good at minutes and administration. The recommendation is sincere, and the strength it declines to admit is the one the officer is compared on."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Hiring a second chef",
+      "text": "A chef known for inventive menus prefers the candidate praised for speed and consistency over the one full of new ideas. Neither candidate is weak, and the one passed over is strong on exactly the dimension the kitchen judges the chef by."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "No direct replication of the three studies was located, and the closest independent work tests when the bias shrinks rather than whether it holds.",

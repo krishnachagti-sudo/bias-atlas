@@ -2,7 +2,12 @@
   "no": 203,
   "slug": "jumping-to-conclusions",
   "name": "Jumping to conclusions",
-  "aliases": ["JTC bias", "Jumping-to-conclusions bias", "Hasty data-gathering bias", "Reduced data gathering"],
+  "aliases": [
+    "JTC bias",
+    "Jumping-to-conclusions bias",
+    "Hasty data-gathering bias",
+    "Reduced data gathering"
+  ],
   "category": "belief",
   "statement": "People with psychosis decide on the basis of less evidence than other people on the beads task, the probabilistic reasoning test used to study delusions.",
   "meaning": "The bias is defined by a task rather than by the everyday complaint that somebody assumed too much. In the beads task a participant is told that beads are being drawn from one of two hidden jars, which hold coloured beads in equal but opposite ratios. Beads appear one at a time, and the participant says when they know which jar was chosen. The measure is draws to decision, the number of beads a person asks to see before committing. Taylor, Hutton and Dudley describe easy versions at 85:15, 90:10 or 80:20, and hard versions at 60:40. A decision taken on two beads or fewer counts as extreme responding. Two claims rest on that measure and they are usually run together. One is that people with psychosis ask for fewer beads than other people do. The other is that the hasty style helps to form or sustain delusions, which is what makes the measure interesting to clinicians. The evidence behind the two claims is not the same strength.",
@@ -13,6 +18,23 @@
     "note": "Their paper, 'Probabilistic judgements in deluded and non-deluded subjects', runs from page 801 to page 812 of volume 40. PubMed holds no abstract for it, and indexes it under delusions, judgement, probability learning and schizophrenic psychology. Taylor, Hutton and Dudley date the beads task in psychosis to this study, calling it the first published use. Dudley, Taylor, Wickham and Hutton cite it as the source of the paradigm without saying so in those words."
   },
   "evidence": "Three meta-analyses published within two years cover most of the field. Dudley, Taylor, Wickham and Hutton identified 55 studies and obtained unpublished data from 16 authors, comparing people with psychosis to healthy people, to people with non-psychotic mental health problems, and to each other by delusion status. So, Siu, Wong, Chan and Garety examined 6,864 articles published between 1990 and 2015 and meta-analysed 46 of them, in two separate analyses: 40 effect sizes for psychosis against healthy controls, and 18 for non-psychotic disorders against healthy controls. McLean, Mattiske and Balzan pooled 35 jumping-to-conclusions studies alongside 8 on bias against disconfirmatory evidence, 7 on bias against confirmatory evidence and 6 on liberal acceptance, sorting groups by whether delusions were present at the time of testing. Ross, McKay, Coltheart and Langdon took a different route, collecting individual participant data from 38 clinical and non-clinical samples with 2,237 people and correlating draws to decision against scores on the Peters et al Delusions Inventory. Beyond the group comparisons, Jolley and 10 colleagues gave three probabilistic reasoning tasks to 204 people with schizophrenia spectrum psychosis to see what hasty deciders actually get wrong. Tripoli and the EU-GEI case-control team ran the beads task alongside IQ testing and polygenic scoring in 817 people with first-episode psychosis and 1,294 population controls.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "Which jar the sweets came from",
+      "text": "Two jars hold the same sweets in opposite proportions, and someone draws from one of them. Most people ask to see six or seven before naming the jar. Some name it after two. What is measured is how much evidence was asked for, not how sure anyone sounds."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The inspector and the two lines",
+      "text": "A batch of parts came off one of two machines that fail at opposite rates. An inspector who calls the machine after examining a single part has gathered less evidence than colleagues who want a handful, which is the whole of what the measure records."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Naming the deck after two cards",
+      "text": "In a game with two shuffled decks of opposite composition, a player calls which deck is in play on the second card. Where the decks are lopsided enough, two matching cards already make one of them much likelier, so speed here is not by itself an error."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The group difference between psychosis and everyone else holds across three meta-analyses. What fails is the link to delusion severity, and to delusion-proneness outside the clinic.",
@@ -23,7 +45,15 @@
       "year": 2016,
       "n": 1935
     },
-    "replicated": { "es": -0.53, "esType": "g", "ci": [-0.69, -0.36], "ciLevel": 95 }
+    "replicated": {
+      "es": -0.53,
+      "esType": "g",
+      "ci": [
+        -0.69,
+        -0.36
+      ],
+      "ciLevel": 95
+    }
   },
   "limits": "The measure is less stable than the literature built on it assumes. McLean, Mattiske and Balzan gave 212 healthy participants either ten standard beads trials or trials seeded with distractor sequences, and report that the standard task may not be reliable over repeated measures. Adding distractor sequences and dropping the first trial as practice improved repeatability. Two later studies using that better task in healthy samples found the association running the wrong way. In one, 203 participants completed the distractor-sequences task and the Peters et al Delusions Inventory, and those who decided on two draws or fewer scored lower on delusion-proneness. In the other, with 167 participants, delusion-proneness and draws to decision were again positively correlated, and the authors suggest anxiety and the risk aversion that goes with it, rather than odds literacy, as the reason. General ability may account for most of the clinical finding. Tripoli and colleagues estimate that 79% of the total case-control difference in draws to decision was mediated by IQ. A polygenic score for IQ predicted the number of beads drawn, B = 0.51, 95% CI 0.25 to 0.76, p < 0.001, while a polygenic score for schizophrenia did not, B = 0.47, 95% CI -0.21 to 1.16, p = 0.17. In the controls the bias tracked psychotic-like experiences even with IQ held constant, B = -1.7, 95% CI -2.8 to -0.5, p = 0.006. So and colleagues found marked heterogeneity and evidence of publication bias in the non-psychotic disorders analysis, and conclude the bias is not transdiagnostic beyond psychosis. Moritz and colleagues, arguing that the beads task is hard to interpret and hard to understand, built a box task in its place and identify two routes to a premature decision: a lower decision threshold, or higher initial probability estimates for the favoured option.",
   "misreadings": "The name invites the everyday reading, and the everyday reading is not what is measured. Nothing in this literature concerns leaping to social conclusions or assuming the worst of someone. It concerns how many coloured beads a person asks to see. The nearest the corpus comes to the everyday claim is entry 238, on conservatism in belief revision, which runs the same two-jar paradigm with healthy adults and finds them updating too little rather than too much. Calling a short sequence irrational is also doing more work than the arithmetic allows. Ross and colleagues point out that at an 85:15 ratio, two beads of the same colour put the posterior probability of the matching jar at 0.97, so a decision at that point is not obviously premature. The causal story is the weakest part. Ross, Freeman, Dunn and Garety compared 34 people with delusions against 34 non-clinical controls, then randomly assigned the clinical group alone to a session of reasoning training or attention control. Training raised data gathering, the change in flexibility about delusions was not statistically reliable, and the authors report that the severest form of the bias resists change. Jolley and colleagues found that hasty deciders did make more false conclusions, and that only 37% of their reasoning errors were consistent with the limited evidence they had gathered. The rest contradicted all of it, which points at how evidence is used rather than at how much is collected. Penney and colleagues reviewed 43 studies of metacognitive training for psychosis and pooled 40 reports covering 1,816 participants. Delusions improved by g = 0.69, 95% CI 0.45 to 0.93, while the cognitive biases the training targets moved by g = 0.16, 95% CI 0.03 to 0.29. A treatment can help without the mechanism it names being the reason.",

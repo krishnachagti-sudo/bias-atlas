@@ -18,6 +18,23 @@
     "note": "The paper introduced the dot probe. It could not be read for this audit, so its results are not described here. Bar-Haim and colleagues, whose 2007 review was read in full, say MacLeod and colleagues built the task to answer the objection that slow responses to threat words reflect response bias or arousal rather than attention. Because the participant responds to a neutral probe, that reading is closed off. Bar-Haim also cites the 1986 paper for the finding that non-anxious people shift attention away from mild threat."
   },
   "evidence": "Bar-Haim and four colleagues pooled the field in 2007. Their meta-analysis covers 172 samples in 142 journal articles, 4,031 participants, published between February 1986 and May 2005, yielding 323 effects under a random-effects model. Threat-related bias was significant within anxious participants, k = 112, n = 2,263, d = 0.45, 95% CI 0.40 to 0.49, p < .01. It was absent in non-anxious controls, k = 87, n = 1,768, d = -0.007, 95% CI -0.06 to 0.05, p = .85. The between-groups comparison gave d = 0.41, 95% CI 0.34 to 0.48. The bias held for subliminal exposures, k = 20, d = 0.32, 95% CI 0.20 to 0.44, and for supraliminal ones, k = 90, d = 0.48, 95% CI 0.42 to 0.54, with no significant difference between them. By paradigm the anxious-group figures were d = 0.49 for the emotional Stroop, k = 70, d = 0.37 for the dot probe, k = 35, and d = 0.43 for emotional spatial cuing, k = 7. Among clinically diagnosed participants specifically, the dot-probe estimate was d = 0.34, 95% CI 0.22 to 0.46, k = 16. Blocked emotional Stroop designs gave d = 0.69, k = 31, against d = 0.35 for randomised designs, k = 30. Blocked designs were the one condition in which controls showed any bias, d = 0.21, 95% CI 0.10 to 0.31. The authors calculate that the anxious-group result could not be reduced to insignificance by the next 11,339 null studies. On the treatment side, Hakamata and seven colleagues pooled 12 randomised trials of attention bias modification from 10 publications, 467 participants, searched in MEDLINE from January 1995 to February 2010. The accepted manuscript, which is the version open at PubMed Central, reports a medium effect on anxiety, d = 0.61, 95% CI 0.42 to 0.81, p < .001, with a fail-safe N of 54. PubMed's record prints that figure as d = .51, marked as corrected, and lists an erratum at Biological Psychiatry 2012, volume 72, issue 5, page 429. The manuscript's own sensitivity check cuts as deep as the erratum does. Dropping the three trials with the largest effects leaves d = 0.36, k = 9, 372 participants, and a fail-safe N of 7. The effect on the bias index itself was large, d = 1.16, 95% CI 0.82 to 1.50, but it rests on seven of the twelve trials and 207 participants, none of them patients. Only three of the 12 trials used anxiety-disorder patients, and none used children.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The one frowning face",
+      "text": "Someone with social anxiety walks into a room and their eye lands on the person who looks unimpressed before they have taken in anyone else. Nothing was decided. The look had already gone there by the time the room registered."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Dog-shaped at the end of the street",
+      "text": "A person afraid of dogs picks out the dog before they pick out the car or the person holding the lead. A walker with no fear of dogs shows almost none of this, which is why the claim is about anxious attention rather than about attention."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Losing the line on the page",
+      "text": "A health-anxious reader working through a leaflet finds their eye pulled to a frightening word and has to find their place again. The cost is the fraction of a second it took, and it is measured in exactly that."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Bar-Haim's meta-analysis puts dot-probe bias in clinically anxious people at d = 0.34; pooling the baseline measures of 1,005 diagnosed patients in treatment trials puts it at 1.8 milliseconds, d = .05.",

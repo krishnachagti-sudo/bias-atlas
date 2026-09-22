@@ -18,6 +18,23 @@
     "note": "Simon put two questions to 490 college students: write down a number between 0 and 9, and write down the name of a colour. His abstract reports that 7 and blue were by far the most frequently written, and that sex differences appeared on both. It prints no percentages. Saito's 2015 encyclopedia entry puts Simon's result at over 40% for blue and over 30% for seven, and those two figures are quoted here from her, not from him. The paper itself was not read. Its abstract was read at Crossref on 21 September 2026, the day SAGE answered every attempt with a Cloudflare bot challenge and PsycNET with a refusal."
   },
   "evidence": "Simon and Primavera put the same two questions to 533 elementary and junior high school children the following year. Seven and blue were again the most frequent, each at p < .001. Silver and six colleagues asked 582 undergraduates for a favourite colour and a number from 0 to 9, and report blue and seven leading among both sexes and both racial groups in their sample. Knowles ran three studies setting free choice against 109 respondents' favourite colour and number, and reports that the preference for blue and seven repeated. Trueman collected written answers from 145 Australian university students, 118 men and 27 women of mean age 19.5, and found both phenomena present, with partial change in behaviour after respondents were told about the bias. Kubovy and Psotka asked instead for the first digit that comes to mind, and 28.4% said 7. Away from questionnaires, Wang, Potter van Loon, van den Assem and van Dolder hold 5,108,343 Dutch Lotto combinations of six numbers from 1 to 45. Random picking would give each number 13.3%. Seven was picked in 16.3% of combinations, second to 11 at 16.5%. Lotto players also choose one jackpot colour from six, and blue led there at 22.2%, ahead of red at 18.9%. In a separate Dutch casino game of 568,987 predictions of four numbers from 0 to 36, where chance gives 2.70%, 7 was the most popular at 4.19%.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The digit that sounds least like a choice",
+      "text": "Asked on the spot for a number from zero to nine, a person skips zero and five as too round and lands on seven, because seven sounds like the answer of somebody choosing freely. That is a deliberate choice, and it is the commonest one."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Naming a colour with no object attached",
+      "text": "Asked simply to say a colour, more people at a counter say blue than say any other, and most of them still say something else. A plurality is not a majority, and the rest of the palette takes the larger share between them."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The example that spoils the answer",
+      "text": "A quizmaster asks for a number and adds, not seven, for instance. Naming the digit in the question moves people off it, which is hard to square with the idea that anybody was picking at random."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Blue and seven both lead in American, Australian and Japanese samples, and neither leads in Niger, Congo, Transkei, the Netherlands or Turkey.",

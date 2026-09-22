@@ -17,6 +17,23 @@
     "note": "\"A psychological law of inertia and the illusion of loss aversion\" set the argument out in that journal's first issue, pages 23 to 32. It closed by asking that the loss aversion principle be abandoned. Gal's own term is the Psychological Law of Inertia. The phrase \"psychological inertia\" is how Alós-Ferrer, Hügelschäfer and Li refer to his proposal."
   },
   "evidence": "Gal's paper is mostly argument, with two short experiments attached. In the first, 110 undergraduates at a large west coast university imagined owning a quarter minted in Denver or in Philadelphia. They were asked whether they would swap it for a quarter minted in the other city, with time and effort assumed away. Over 85 percent in either condition kept their own coin. Gal quotes Kahneman, and Novemsky and Kahneman, as holding that loss aversion does not apply to an exchange of essentially identical goods. Whatever holds people in place there is therefore something else. The second experiment used 133 undergraduates. Asked for the smallest X that would make a 50-50 bet of losing $100 or winning X acceptable, under 2 percent took an even bet and the median X was $500. Earlier in the same session those people split a hypothetical $100 between a sure 3 percent return and an even chance of doubling or losing the stake. Gal reports that nearly 80 percent put something into the bet, 23 percent all of it and 55 percent part of it. Those who had demanded the largest premiums put more into the safe asset, 64 percent against 46 percent, t(131) = 2.71, p < 0.01. Neither task was played for money. The repeated-choice strand is incentivised and looks nothing like this. Alós-Ferrer, Hügelschäfer and Li had students at the University of Cologne make the same two-draw urn decision 60 times, paying 18 euro cents a winning ball. Study 1 analysed 45 of them, three more having been dropped for missing data. Where repeating the first draw conflicted with Bayes' rule, the mean error rate was 21.98 percent, against 10.18 percent where the two agreed, z = 3.79, p < 0.001. Second draws were slower where repeating conflicted with Bayes' rule, means of 1,119 ms against 1,001 ms, z = 2.13, p = 0.033. Akaishi, Umeda, Nagase and Sakai report that in perceptual judgements without feedback a decision on an ambiguous stimulus is repeated on the next trial more often than a decision on a salient one. Biases in motor response, sensory processing and attention did not account for it. That sentence is the abstract's, because the article itself could not be opened. Suri, Sheppes, Schwartz and Gross built a laboratory analogue of patient inertia. Students waited through 14 trials for a shock calibrated to the most they could tolerate. In Study 1 a button cut 10 seconds off the wait. The 20 students forced to choose each trial pressed it on 74.7 percent of trials, the 21 who had to act unprompted on 40.7 percent, t(39) = 3.2, p = .003. In Study 2 the button cut the chance of being shocked by 90 percent. Forty students split 20 and 20 gave 85.3 percent against 52.1 percent, t(38) = 3.3, p = .002.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The savings account nobody moves",
+      "text": "A saver knows another bank pays a little more, feels nothing much either way about the two, and leaves the money where it is for another year. Nothing has pushed against staying, and staying needs no reason of its own."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The sandwich ordered every Tuesday",
+      "text": "At a counter offering forty fillings, a customer asks for the one they had last week. The preference between the options is fuzzy rather than settled, and a fuzzy preference supplies no motive to move."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The seats in a lecture hall",
+      "text": "By the third week students are returning to the same seats in a room where no seat is better than another. Nobody is protecting a loss. They are simply not being pushed anywhere else."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "The identical-goods result has been repeated once, by Gal himself with 149 participants, and the repeated-choice work that shares the name holds up in other laboratories.",

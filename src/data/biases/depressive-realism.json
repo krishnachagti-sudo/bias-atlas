@@ -13,6 +13,23 @@
     "note": "The paper is titled \"Judgment of contingency in depressed and nondepressed students: Sadder but wiser?\" and it does not contain the phrase \"depressive realism\" anywhere. The question mark in the title is the authors'."
   },
   "evidence": "Four experiments on University of Pennsylvania undergraduates, paid volunteers, who pressed or did not press a button across 40 trials and then rated how much control they had over a green light. Students scoring 9 or above on the Beck Depression Inventory went into the depressed group and 8 or below into the non-depressed group. Experiment 1, with 96 students and a real contingency in every problem, found no difference between the mood groups, and both groups were accurate. The famous result is Experiment 2, with 64 students and no contingency in either problem. Where the light came on 75% of the time, non-depressed women rated their control at 51.4 out of 100 against 13.1 for depressed women. The figures for men were 30.3 and 21.2. Experiment 3, also 64 students and also with no contingency, attached money to the light. Non-depressed students rated their control at 49.4 (men) and 64.4 (women) when winning, and at 6.9 and 21.2 when losing. Depressed men gave 17.2 and 21.2, depressed women 36.0 and 11.4, and the paper reports the depressed group's judgements as not differing between the two problems. Experiment 4, 64 students again, gave everyone real 50% control and varied whether money was won or lost. The non-depressed group judged it had less control in the losing problem than in the winning one, F(1, 48) = 19.60, p < .001, while the depressed group's judgements did not differ.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The button that may or may not work",
+      "text": "Two people press a button while a lamp lights on a schedule of its own. The one in low mood puts their control near zero, the other, having pressed often and seen the lamp light often, says they had some. The claim concerns that rating and nothing wider."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The strong quarter explained",
+      "text": "A sales representative in good spirits credits a good quarter to their own effort, while a colleague in low mood credits the market. The weaker version of the claim says only that the second shows less bias, not that the second is right."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The good set of results",
+      "text": "A teacher in good spirits reads a strong set of exam results as evidence of their teaching, where a dysphoric colleague puts it down to the cohort. What the laboratory measures is this gap in rated control, and a lower rating is not automatically a truer one."
+    }
+  ],
   "replication": {
     "state": "failed",
     "headline": "Pooled across 75 studies the effect sits below the conventional threshold for small, a 2026 meta-analysis of 151 samples finds the opposite sign, and a preregistered replication found no realism in either sample.",

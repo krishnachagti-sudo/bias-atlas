@@ -9,8 +9,7 @@
   ],
   "category": "decision",
   "statement": "Adding a third option that is plainly worse than one of two existing options is supposed to pull choices towards the option that beats it.",
-  "meaning": "Three options, two attributes. The target and the competitor each win on one attribute, so choosing between them needs a trade-off. The decoy is worse than the target on both attributes and worse than the competitor on only one, which makes the dominance asymmetric. Nobody is meant to pick the decoy. Its job is to give the target something to beat. If the target's share rises when the decoy is added, the choice set has broken regularity, the rule that adding an option cannot raise the probability of choosing an option already there. Huber, Payne and Puto note in a later commentary that Luce had declared regularity the one axiom of rational choice that had not been violated. That is why the finding travelled: it was aimed at choice theory, not at pricing pages. The commercial reading came afterwards, and the evidence for it is much weaker than the evidence for the axiom violation."
-  ,
+  "meaning": "Three options, two attributes. The target and the competitor each win on one attribute, so choosing between them needs a trade-off. The decoy is worse than the target on both attributes and worse than the competitor on only one, which makes the dominance asymmetric. Nobody is meant to pick the decoy. Its job is to give the target something to beat. If the target's share rises when the decoy is added, the choice set has broken regularity, the rule that adding an option cannot raise the probability of choosing an option already there. Huber, Payne and Puto note in a later commentary that Luce had declared regularity the one axiom of rational choice that had not been violated. That is why the finding travelled: it was aimed at choice theory, not at pricing pages. The commercial reading came afterwards, and the evidence for it is much weaker than the evidence for the axiom violation.",
   "origin": {
     "year": 1982,
     "who": "Joel Huber, John W. Payne and Christopher Puto",
@@ -18,6 +17,23 @@
     "note": "The paper's abstract states the whole claim: an asymmetrically dominated alternative is dominated by one item in the set but not by another, and adding it can raise the probability of choosing the item that dominates it. The full text is behind a paywall and could not be retrieved for this entry. In their 2014 commentary the three authors describe the study as a demonstration built to test regularity, not to supply a marketing tool. They say the decoy took about 2% of choices. They also say their first experiments worked for some choice sets and not for others, until they identified the ones that produced replicable demonstrations."
   },
   "evidence": "The clean modern demonstrations come from the paper that set out to bury the effect. Frederick, Lee and Baskin ran 38 studies in 2014. Where both attributes were bare numbers in a matrix, the effect appeared in four of five instances. Their Study 2a gave 507 people a choice between a 73% chance of $197 and a 28% chance of $516. Adding a dominated 23% chance of $507, with the odds written as numbers, took the risky gamble from 14% to 28% (chi-square 7.22, p < .01). Study 2b, with 791 people and a different pair of gambles, went from 21% to 37% (chi-square 11.55, p < .001). In Study 3a, 240 respondents choosing televisions by price and a numeric picture-quality rating moved the target from 33% to 57% (chi-square 6.60, p < .05). The commercial showcase is older and smaller. Kivetz, Netzer and Srinivasan report an Economist subscription choice put to an MBA class. With a $125 print-only option sitting beside it, 72%, or 21 of 29 students, took the $125 print-and-web subscription. Without it, 43%, or 13 of 30, did (t = 2.4, p < .02). They present it in a commentary as a classroom observation, not as a designed experiment.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The medium coffee nobody orders",
+      "text": "A cafe lists a small coffee at two pounds, a large at four, and a medium at four pounds twenty. The medium costs more than the large and holds less, so nobody takes it. Its job is to give the large something it plainly beats."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The third flat on the viewing list",
+      "text": "An agent shows a small flat near work and a large one an hour out. A third is added: smaller than the first and the same distance from work. Nobody takes it, and the flat it is plainly worse than starts to look like the obvious answer."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The membership that exists to lose",
+      "text": "A gym offers off-peak access at twenty pounds, full access at thirty-six, and full access with a weekly class at thirty-five. The plain full plan costs more and gives less, and its presence is what makes the class plan feel like the sensible choice."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The effect holds with two-attribute numeric matrices and disappears with real products. Frederick, Lee and Baskin found it in four of five abstract numeric conditions and in none of 27 studies where an attribute could be seen, tasted or touched.",

@@ -13,6 +13,23 @@
     "note": "Their paper proposed diagnostic criteria for malingered neurocognitive dysfunction, and 28 of the 46 cohorts in the 2025 pooled prevalence estimate rest on it. The word exaggeration is far older than any of this work and no paper coined it. Two earlier dates matter for the claim rather than the name. Binder and Rohling pooled the financial-incentive literature in 1996, and Mittenberg, Patton, Canyock and Condit put the phrase symptom exaggeration in a title in 2002. Crossref renders that 2002 title as 'Base Rates of Malingering and Symptom Exeggeration', which is a typographical error in the metadata rather than in the journal."
   },
   "evidence": "The pooled figure comes from a 2025 systematic review by Andrea Darzi and thirteen colleagues, who searched CINAHL, EMBASE, MEDLINE and PsycINFO from inception to 8 July 2024. Of 20,405 unique citations, 44 studies met their criteria, reporting 46 cohorts and 9,794 patients, all of them independent medical evaluations in North America. Thirty-one cohorts were traumatic brain injury, eleven were chronic pain, and the median of the mean ages was 40, with an interquartile range of 38 to 42. Prevalence of symptom exaggeration ran from 17% to 67% across studies, median 33%, and the pooled estimate was 35%, with a 95% confidence interval of 31% to 39%. The authors rate that low certainty evidence under GRADE. Their one subgroup result concerns sex. Studies in which women were 40% or more of the sample gave 46.9%, 95% confidence interval 35.6% to 58.3%, from 9 studies and 1,137 patients, against 31.4%, 28.1% to 34.6%, from 33 studies and 7,891 patients, with a test of interaction at p = 0.02. No subgroup effect appeared for type of clinical condition, at p = 0.95, for confidence in the reference standard, at p = 0.84, or for similar age and education between the groups, at p = 0.47. Egger's test gave p = 0.13 overall. A survey reached a similar place two decades earlier by a different route. Mittenberg, Patton, Canyock and Condit asked members of the American Board of Clinical Neuropsychology to estimate rates across 33,531 annual cases, and got 29% of personal injury cases, 30% of disability, 19% of criminal and 8% of medical. Broken out by claim, they report 39% of mild head injury, 35% of fibromyalgia or chronic fatigue, 31% of chronic pain, 27% of neurotoxic and 22% of electrical injury. The evidence the respondents said they relied on was cumulative: severity of impairment inconsistent with the condition in 65% of cases, pattern of impairment in 64%, scores below cutoffs on forced-choice tests in 57%, and discrepancies among records, self-report and observed behaviour in 56%.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The easy test failed in a claim",
+      "text": "An examinee pursuing compensation scores below chance on a memory task built so that almost everyone passes it. The score says the performance does not match what the records document, and it establishes nothing about what the examinee intended."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The stairs described twice",
+      "text": "A claimant tells the physiotherapist he manages the stairs slowly and tells the assessor he cannot leave the house. The discrepancy between what is claimed, what the notes hold and what the examiner sees is the signal, and a real injury can sit underneath all three accounts."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The one failed screen treated as settled",
+      "text": "A report notes a single failed validity test and the file is closed on it. At the base rates these assessments run at, one failure leaves the question genuinely open, which is why the guidance is to use several instruments rather than one."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "Both halves of the claim have come back in independent samples: the rate sits near a third in medico-legal settings, and it tracks the incentive rather than the setting.",

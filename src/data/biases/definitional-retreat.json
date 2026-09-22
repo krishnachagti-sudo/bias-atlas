@@ -2,7 +2,9 @@
   "no": 570,
   "slug": "definitional-retreat",
   "name": "Definitional retreat",
-  "aliases": ["Definitional retreat fallacy"],
+  "aliases": [
+    "Definitional retreat fallacy"
+  ],
   "category": "belief",
   "statement": "A definitional retreat answers an objection by changing what a key word means, so the sentence survives as a different claim from the one that was attacked.",
   "meaning": "Madsen Pirie's definition is narrow and mechanical. A definitional retreat takes place when someone changes the meaning of the words in order to deal with an objection raised against the original wording, and by changing the meaning turns it into a different statement. His first example is a claim that a man has never once been abroad, met with the fact that he has been to Boulogne, met in turn with the reply that visiting Boulogne cannot be called going abroad. The fault Pirie names is not the revision. It is the surreptitious substitution of one concept for another under the guise of explaining what the words really mean, since the support advanced for the first position need not apply to its replacement. Two things follow. The retreat is available for any word, not only for the name of a class, so it reaches 'drinking', 'growth' and 'experience' as readily as 'Scotsman'. And the speaker ends up defending a claim he did not make, while behaving as though the first one had held. That is where the neighbouring entries part company. No true Scotsman keeps the original sentence and narrows the category until the counterexample falls outside it, leaving a tautology. Moving the goalposts leaves the words alone and raises the test. The motte-and-bailey fallacy keeps a bold claim and a modest one in play under one wording and moves between them. Equivocation needs no objection at all, because the shift of sense already sits inside the argument as first stated.",
@@ -13,6 +15,23 @@
     "note": "The entry runs from page 77 to page 79 and cites no earlier source for the name. The imprint page of the second edition records first publication in 2006 by Bloomsbury and the second edition in 2015, and the 2006 printing was not seen, so whether the entry stood in it is unverified. Pirie's earlier fallacy book, The Book of the Fallacy, published in 1985, was not seen either. Internet Archive and Open Library full-text search, which would settle both questions, reset the connection on every attempt during this work. The year given here is therefore the year of the edition that was read, not a claim about when the name was coined."
   },
   "evidence": "The primary material is three pages of a trade paperback and there is no study behind it. Pirie gives four specimen exchanges. A claim about never having been abroad, defeated by Boulogne. A driver who says that when he told the officer he had not been drinking, he meant he had not had more than he gets through in a normal social evening. A charge of having no experience of dealing with terrorism, answered with four years at the US anti-terrorist academy and service as adviser to the governments of Malaysia and Singapore, and answered in turn with 'I meant you have no experience of dealing with terrorists in England'. And a subject who explains that when he called his rulers tyrants he was referring to the tax-collectors and administrators rather than to His Majesty. Pirie calls the move a favourite recourse of philosophers, whose proposed definitions of virtue, the good and meaning itself get re-erected in a slightly different place when a counterexample scatters the stumps. He closes the entry with Humpty Dumpty on 'glory'. Earlier in the same book he reports that opponents of the global warming thesis alleged that the switch to 'climate change' was a definitional retreat, and he presents that as an accusation traded in a bad-tempered dispute rather than as his own verdict. Outside the book the term lives on fallacy lists. Fallacycheck.com defines it as escaping a valid counter-argument by redefining a key term without acknowledging that this changes the nature of the debate, gives an example about the running times of fantasy films, and sends the reader on to no true Scotsman. The Adam Smith Institute carries a post dated 23 January linking a Pirie video on the definitional retreat, the third in a series, alongside a pre-order link for the new edition. No use of the phrase in a scholarly source was located, and the places searched are named below.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The teetotaller and the trifle",
+      "text": "A man says he never drinks, is reminded of the sherry trifle at Christmas, and answers that eating is not drinking. The claim that survives is narrower than the one he made, and the credit it carries was earned by the first."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The department that never misses a deadline",
+      "text": "Confronted with three late projects, a manager replies that those were re-baselined and so were never late. The word 'deadline' has been given a new sense to absorb the counterexample, and the record now describes something other than what was boasted."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The diet that was never broken",
+      "text": "Asked about the biscuits, a dieter explains that what she meant by the diet was the evening meal. The rule she is now keeping is not the rule she announced, and the announcement is what she is still taking credit for."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "No experiment on the manoeuvre was found. The nearest measured work is on concepts that widen by themselves, which is not a speaker redefining a word to escape an objection.",

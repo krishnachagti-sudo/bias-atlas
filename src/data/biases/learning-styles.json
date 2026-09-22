@@ -13,6 +13,23 @@
     "note": "The idea is much older than the paper. Coffield, Moseley, Hall and Ecclestone report that Rita and Kenneth Dunn began their work in the 1960s. What Pashler and colleagues supplied in 2008 was the name meshing hypothesis and a stated test for it, which is why the entry dates from their review rather than from the practice it examines."
   },
   "evidence": "Pashler and colleagues set out what would count. Students are sorted into groups by learning style, randomly assigned to one of several instructional methods, and then given the same final test. The result has to be a crossover interaction: the method that works best for one style group is not the method that works best for the other. Plot the style groups on the horizontal axis and, in their words, a crossover interaction is both sufficient and necessary. They then searched. Their finding was not that nobody had run the design. It was that they found only one study that could be described as even potentially meeting the criteria, Sternberg, Grigorenko, Ferrari and Clinkenbeard, who gave 324 gifted high school students a triarchic abilities test, selected 112 of them, and reported that matched students outscored mismatched students on two of three assessments after the data were screened for deviant scores. Pashler and colleagues call that tenuous, note that the interaction appeared only in derived measures and only after unexplained exclusions, and add a second candidate in a footnote, Bostrom, Olfman and Sein on end-user training. Against that they set three studies they judged methodologically strong and negative. Massa and Mayer built a 31-frame computer lesson on electronics with help screens in either text or pictures, sorted learners with 14 cognitive measures across three experiments, and report that verbalisers and visualisers did not differ on the learning test and that almost all the measures failed to produce significant interactions. Cook, Thompson, Thomas and Thomas randomised 123 internal medicine residents across four web modules in problem-first and information-first formats: knowledge scores were 83.0 against 82.3, p = .42, and the interaction with format gave p = .59. Constantinidou and Baker found no relationship between visualiser-verbaliser scores and free recall of words presented in different modalities.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The pupil who asks for diagrams",
+      "text": "A student says she takes things in best from pictures, and says the same thing a month later. The preference is real and stable. Whether she learns more from a diagram than a classmate who prefers words does is a separate question, and it is the one at stake."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The induction sorted by questionnaire",
+      "text": "New staff fill in a modality questionnaire and are split into a visual course and a spoken one. Showing that both groups did well proves nothing. The test needs each group put through both formats, so that the matched and mismatched scores have a chance to cross."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The animation that suits everybody",
+      "text": "A department finds that pupils taught with animations outscore pupils taught with text, and concludes that its visual learners were being served at last. A single method can simply be better for everyone, which produces that result with no crossover and no support for matching."
+    }
+  ],
   "replication": {
     "state": "failed",
     "headline": "Later studies built to Pashler's specification keep missing the crossover. Rogowsky, Calhoun and Tallal ran it twice, and in the school version only 34 of 107 children could be sorted into a distinct style at all.",

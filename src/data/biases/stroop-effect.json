@@ -18,6 +18,23 @@
     "note": "The paper is \"Studies of interference in serial verbal reactions\", submitted as a doctoral thesis at George Peabody College and received by the journal on 15 August 1934. Stroop was writing about interference in general and gave his materials no name; the label came from later authors."
   },
   "evidence": "Stroop ran three experiments with printed cards, not single trials, and timed each card with a stop watch. The colours were red, blue, green, brown and purple, arranged so that no word appeared in the colour it named. Experiment 1 asked 70 undergraduates, 14 men and 56 women, to read colour names aloud, once printed in conflicting inks and once in black. Each subject read two sheets of each test, 200 reactions per test, and the times are quoted per 100 words. The conflicting inks cost 2.3 seconds, 5.6% of the black-print time, which Stroop called not reliable at D/PEd = 3.64. MacLeod's table of that experiment gives 43.30 seconds against 41.00. Experiment 2 switched the task to naming the ink colours, with solid colour squares as the control, and used 100 students: 88 undergraduates, 29 men and 59 women, and 12 graduate students, all women. Mean time for 100 responses rose from 63.3 seconds to 110.3, an increase of 47.0 seconds or 74.3%, with medians of 61.9 and 110.4. The standard deviation rose from 10.8 to 18.8, leaving the coefficient of variability unchanged at .171. The gap of 47 seconds was 4.35 standard deviations of the control condition and 2.5 of the interference condition. Stroop added twice the average time per word for each uncorrected error, a correction he called arbitrary, which moved the two means from 108.7 and 63.0. Experiment 3 recruited 32 University of Arizona undergraduates, 17 men and 15 women, for eight days of practice at naming ink colours, 200 reactions a day. Three of them are absent from the results: two were dropped for not keeping to the schedule, and one woman's data were discarded after Ishihara testing showed red-green trouble. The control card changed too, from solid squares to swastikas, so that white would appear beside the colour as it does in print. Colour naming under conflicting words improved by 16.8 seconds, 33.9% of the first day's mean, while the plain colour-naming control improved by only 4.0 seconds or 13.9%. Those third-experiment times are for cards of 50 words rather than the 100 of the first two experiments, so the gain runs from 49.6 seconds to 32.8, on MacLeod's reading of Stroop's tables. Practice also made reading harder. Taking the same figures from MacLeod, reading words in conflicting colours went from 19.4 seconds before the practice series to 34.8 seconds after, and back to 22.0 seconds after one day of reading practice. Those are card times, not interference scores.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The slide where the word fights the ink",
+      "text": "A trainer puts up colour words printed in mismatched inks and asks the room to call out the colours. Everyone slows and several people say the word instead. Asked to read the words and ignore the ink, the same room runs through the list at normal speed."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The status board with the wrong colour",
+      "text": "A monitoring screen marks a failing service with the word healthy while shading the row red. Staff have to hold the word back to act on the colour, and the pause is the whole cost of putting a practised reading response against a deliberate one."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The child who cannot yet be tripped",
+      "text": "A five-year-old who is still sounding words out names the ink colours on a card without difficulty. The cost arrives later, once reading has become something that happens whether she intends it or not. The interference is a mark of skill rather than of weakness."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "Many Labs 3 obtained the effect in every one of its 21 samples, d = 0.88 across 3,337 people, with heterogeneity between sites near zero.",

@@ -15,6 +15,23 @@
     "note": "Work from the Cornell psychology laboratory, where Titchener and Perky took the threshold readings themselves, and where Nigel Thomas describes her as his student. The imagery-and-projection work is the first of ten experiments in a paper that also covers auditory and olfactory images and the affective side of memory."
   },
   "evidence": "Observers sat in a lit room about 8 m from a ground-glass window set into the wall of a dark room, fixated a white point at its centre, and were asked to imagine a coloured object there. Behind the glass a projection lantern raised a faint patch of colour from below threshold to a moderately supraliminal value, shaped into a familiar form by cut cloth screens with gauze-softened edges. Six objects went in a fixed order: a tomato, a book, a banana, an orange, a leaf and a lemon. Three experimenters ran it, one of them sitting with the observer to give instructions and take reports, signalling to the dark room on concealed wiring. No blank trials were included, because Perky feared they would reveal that the images were really percepts. Experiment I used three children, two girls of 13 and 14 and a boy of 10. Experiment II used 27 observers, 19 of them sophomores and 8 graduate students. Three undergraduates were ruled out early by an error of technique, which they reported at once, and the remaining 24 invariably mistook the perceptual for the imaginative consciousness, in Perky's phrase. Asked afterwards whether they were sure they had imagined it all, they showed surprise and at times indignation. Every observer noticed that the banana stood on end rather than lying flat as they had been trying for, and none of them drew any conclusion from it. Experiment III repeated the work a year later with five graduate students. The paper reports no statistics, and states that the stimuli could not be expressed in quantitative terms.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The kettle at the edge of hearing",
+      "text": "Asked to picture the sound of a kettle coming to the boil, a listener does so while one is in fact just audible two rooms away. The sound is reported as part of the mental image, because vividness carries no label saying where it came from."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The faint patch on a dim wall",
+      "text": "A person sitting in a dark room is told to imagine a red square on the wall ahead, and a dim red patch is thrown onto it. She says the image came unusually easily, and describes a real light without knowing she is doing so."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The confidence that arrives later",
+      "text": "Someone who imagines an argument with a neighbour and weeks afterwards half believes it took place has made a different mistake. Here the stimulus is present at the moment of the report, and the question is what produced the experience, not what happened last month."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "A preregistered study of 272 people found that imagining a stimulus made a faint real one more likely to be judged real, which is the opposite of the mechanism Perky is credited with.",

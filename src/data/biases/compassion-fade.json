@@ -16,6 +16,23 @@
     "note": "Their paper carries the name and the one-versus-two data. The finding itself was in print seven years earlier as a figure: Slovic's 2007 essay shows mean affect and mean donations for Rokia, Moussa and the pair, credited to Västfjäll, Peters and Slovic, in preparation, with no numbers attached and the comment that perhaps the blurring of individuals begins at two. Markowitz and colleagues cite the same work in 2013 as a Decision Research white paper titled \"Compassion fatigue: Donations and affect are greatest for a single child in need\"."
   },
   "evidence": "Västfjäll and colleagues ran five experiments, four of them on Swedish undergraduates and the last on 559 students at the University of Oregon. Study 1a, on 208 people, gave hypothetical donations of 37.7 SEK in the single-child conditions against 26.3 SEK for two children, t(205) = 5.88, p < .001, with affect ratings of 3.7 against 3.3, t(205) = 2.87, p < .01. Study 1b put real money on it. Its 168 participants could give their earnings to Save the Children for Rokia (n = 47), for Moussa (n = 51), or for both (n = 70), and gave 24.5 SEK to one child against 21.5 SEK to two, t(166) = 1.67, p < .05, with affect at 3.5 against 3.0, t(166) = 2.81, p < .01. Study 2, on 107 people, measured facial muscle activity while donations fell across one, two and eight children, 24.9, 23.4 and 21.3 SEK, linear trend F(1,103) = 12.01, p < .001. Zygomaticus activity, which tracks positive affect, ran .41, .12 and .09 across the same conditions, F(1,103) = 8.90, p < .001. Cameron and Payne supplied the mechanism study. Their Experiment 1 showed one or eight children from Darfur to 120 students at Chapel Hill, of whom 118 were analysed, and told half that a donation question was coming. Compassion showed no main effect of help request, F(1, 116) = 1.15, p = .29, none of victim number, F(1, 116) = 0.34, p = .56, and an interaction at F(1, 116) = 4.61, p = .03, partial eta squared .04. Markowitz, Slovic, Västfjäll and Hodges carried the pattern to animals. Their Study 3 paid 171 students $5 in single dollar bills and asked for a real donation to panda conservation. Non-environmentalists gave $3.50 for one panda, $2.83 for two and $2.25 for eight, linear contrast F(1, 82) = 5.29, p = .02, r = -.25, while environmentalists gave $2.50, $3.30 and $2.93 with no linear effect, F(1, 85) = .68, p = .41. Across the whole sample neither the number of pandas nor environmentalism produced a main effect, both Fs below 1. Butts, Lunt, Freling and Gabriel pooled 41 studies, 95 independent samples and 13,259 participants, and their abstract reports that victim group size negatively affects helping intent, helping behaviour, anticipated positive affect and perceived impact, but not empathic concern.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "One child on the card, or eight",
+      "text": "An appeal card carries a named, photographed child, and a second version of the card carries eight children named and photographed the same way. The claim is that the second raises less. Identifiability has been held still and only the count has moved, which is where the fade is supposed to live."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The second name on the collection sheet",
+      "text": "A street collection for one neighbour whose flat flooded is said to bring in more per household than the same sheet raising money for three. The claimed decline begins at the second person rather than at some crowd too large to picture."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Six dogs at the shelter",
+      "text": "A shelter posts a photograph and a history of one dog waiting for a home, then a post built the same way for six dogs. If feeling scales with the number, the six should move readers six times as far, and the claim on this page is that it moves them less than the one."
+    }
+  ],
   "replication": {
     "state": "failed",
     "headline": "The origin's own experiments were rerun on 1,207 people and the fade did not appear, and the largest test of the mechanism found more compassion for eight children than for one.",

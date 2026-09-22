@@ -17,6 +17,23 @@
     "note": "Laplace describes the error in the chapter translated as \"Concerning Illusions in the Estimation of Probabilities\". Dating it is awkward. Miller and Gelman report that Laplace's first full presentation of that chapter came in the fourth edition of 1819, and they quote it from the 1825 fifth edition, while Croson and Sundali date the first published account to Laplace (1820). The essay itself first appeared in 1814. Neither priority claim is flat: Croson and Sundali write that the first published account is Laplace's, Miller and Gelman write that it is the first they have seen, and Miller and Gelman name d'Alembert, who argued that tails was likelier after three heads, as the case that may have prompted Laplace's explanation. The representativeness account comes much later, from Tversky and Kahneman in 1971, who treated the name as already current and wrote that the pattern \"has been called the gambler's fallacy\"."
   },
   "evidence": "Laplace was writing about people he had watched. Punters in the French state lottery, he reports, piled stakes on numbers that had not come up for a long time, judging that such a number ought to be drawn in preference to others. In the same chapter he describes men who wanted sons and who heard of a month full of boys with anxiety, imagining that the ratio of births had to balance by month's end and that girls were therefore due. His diagnosis was that people are carried back involuntarily to the origin of events. He also entered a caveat that later writers usually drop. A long run of heads is weak evidence that the coin favours heads, so the past is not always uninformative. Drawing a white ball from an urn holding limited numbers of white and black balls does raise the chance of a black one next, and Laplace writes that this ceases to hold once the urn is unlimited, which is the case the births have to be compared with. Clotfelter and Cook put the claim to a field test in 1993 using the Maryland daily numbers game. Money bet on a particular number falls sharply as soon as that number is drawn, then recovers to its former level over the course of several months.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "Numbers thought to be due",
+      "text": "A lottery player avoids the combination that came up last week and picks one that has not appeared for years, calling it due. Every ball goes back in the machine each draw, so nothing about the machine records what it did before."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The raffle drum at a fete",
+      "text": "Tickets are put back after each draw, and one row of seats wins twice. The rest of the hall feels certain that row cannot win a third time, which is a claim about a drum that cannot remember."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The fourth child",
+      "text": "Parents of three daughters talk about a boy being overdue. The odds on the fourth are what they were on the first, and the sense that a run has to be corrected is exactly the error."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Betting against a streak turns up again in roulette, in lotteries, in asylum courts and in baseball, and the opposite bias turns up in a casino game with 18 million hands.",

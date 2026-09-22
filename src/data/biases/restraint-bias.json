@@ -13,6 +13,23 @@
     "note": "The paper ran in volume 20, issue 12, pages 1523 to 1528, was received on 28 February 2009 and accepted in revision on 21 April 2009. It coins the term and reports four studies. An earlier three-study version appears as chapter 5 of Nordgren's 2008 Amsterdam doctoral thesis, credited there to Nordgren, van der Pligt and van Harreveld and marked under review. Its second study is a sexual-arousal experiment that does not appear in the published paper, and the published paper's two smoker studies do not appear in it."
   },
   "evidence": "Study 1 gave 72 Amsterdam students a memory task lasting about 20 minutes or a two-minute version of the same task. The long version left them more fatigued, 5.17 against 3.87 on a seven-point scale, F(1, 70) = 41.84, p < .001, eta squared .34. Fatigued students then rated their control over mental fatigue lower, 5.09 against 5.60, F(1, 70) = 8.17, p = .005, eta squared .09, and planned to leave less of next semester's studying to the final week, 52.68% against 59.38%, F(1, 70) = 4.51, p = .04, eta squared .05. Study 2 was a field experiment at a cafeteria. Seventy-nine people ranked seven snacks, chose one, and were told they would earn four euros and keep the snack if they brought it back uneaten a week later. People entering the cafeteria were hungrier than people leaving, 4.88 against 2.43, and rated their control over hunger lower, 4.32 against 4.91, F(1, 77) = 6.86, p = .01, eta squared .08. The satiated picked a more tempting snack, mean rank 6.21 against 5.47, F(1, 77) = 10.76, p = .002, eta squared .12, and stronger control beliefs went with a more tempting choice, r(79) = .35, p = .002. Thirty-nine snacks came back. The return rate was 60.5% in the hungry condition against 39.0% in the satiated one, which the paper reports as not reaching significance, chi-square(1, N = 79) = 3.65, p = .06. Study 3 gave 53 student smokers a bogus implicit test and told half of them they had a high capacity for impulse control and half that they had a low one. They then watched a film for money, choosing how close a cigarette would be: in another room for two euros, on the desk for four, in their hand for six, in their mouth for eight. High-control smokers chose closer, 3.00 against 2.38, F(1, 51) = 5.54, p = .02, eta squared .09, and 33.33% of them smoked during the film against 11.52% of the low-control group, chi-square(1, N = 51) = 3.59, p = .06. Study 4 followed 55 smokers who had been abstinent for three weeks in a cessation programme. Those with stronger impulse-control beliefs reported avoiding smoking cues less, r(55) = -.32, p = .02, and less avoidance predicted heavier smoking four months later, beta = -.76, SE = .29, t(55) = -2.61, p = .01. About a third of the sample, 32.71%, were still abstinent at follow-up.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The biscuit tin on the desk",
+      "text": "Just after lunch, someone agrees to keep the office biscuits beside the keyboard, certain they can be ignored. The confidence was formed while full, and what it decided was how much temptation the afternoon would contain."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The quitter who keeps going to the pub",
+      "text": "A fortnight into stopping smoking, a man carries on meeting friends who smoke, on the grounds that the hard part is behind him. The belief shows up first as less avoidance, and that is the step the claim is clearest about."
+    },
+    {
+      "kind": "everyday",
+      "tag": "An hour in the shops to prove a point",
+      "text": "Someone saving for a deposit browses the shops on a free afternoon to show the budget is under control. Judging one's own restraint from a calm moment is what arranges the exposure that tests it."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "No replication of any of the four studies was found. What independent scrutiny exists is a statistical audit, which concluded that the four results are too uniformly successful for their own sample sizes.",

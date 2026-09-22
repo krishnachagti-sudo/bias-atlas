@@ -18,6 +18,23 @@
     "note": "The article is \"Do Incomplete Comparisons Mislead?\", Journal of Advertising Research 18(6), pages 21 to 27. Unpaywall records it as closed with no repository copy, and no abstract for it is deposited at Crossref or held by Semantic Scholar, so this entry names the paper rather than reporting what it did. The grammatical objection is older than the marketing literature and belongs to usage guides rather than to psychology."
   },
   "evidence": "The experimental work sits in marketing journals and most of it cannot be opened. Gita Venkataramani Johar ran two experiments on implied claims and reported them in the Journal of Marketing Research in 1995. Her abstract, deposited by the publisher at Crossref, says that consumers highly involved in processing an advertisement make invalid inferences from incomplete-comparison claims while they read, and are deceived by them. It also says that less involved consumers may be induced to complete such claims at the moment they are asked, which makes them look deceived when the deception happened in the questionnaire. Her second experiment separates that case from inconspicuous qualification, where only the less involved were misled. Michael Barone and Paul Miniard studied advertisements that mix comparative and non-comparative copy, again in the Journal of Marketing Research. Their abstract describes deceptive beliefs about the non-comparative information caused by processing of the comparative information, an interaction they call copy by copy, and reports tests of its robustness across moderators. Neither full text was obtainable here and no figure from either study appears above. Two further studies are named in the sources and were closed on every route tried: Rita Snyder on implied-superiority claims in the Journal of Advertising in 1989, and R. G. Wyckham in the Journal of Advertising Research in 1987. Regulators treat the form as a disclosure problem rather than a psychological one. The Federal Trade Commission's policy statement, at 16 CFR 14.15, says the Commission has supported brand comparisons where the bases of comparison are clearly identified, and requires clarity and, where needed, disclosure to avoid deceiving the consumer. Food labelling is stricter. Under 21 CFR 101.13(j) a relative claim such as \"less\", \"fewer\" or \"more\" must state the identity of the reference food. It must also give the percentage or fraction by which the nutrient differs, immediately adjacent to the most prominent claim.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The powder that washes whiter",
+      "text": "A box promises whiter results and names nothing to compare against, and the shopper hears 'whiter than the brand she buys now'. The maker can point to its own earlier formula, and the sentence was never complete enough to be false."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The promise of lower taxes",
+      "text": "A leaflet says taxes will be lower, without saying lower than what. Readers take it as lower than they are today; the drafter keeps the right to say the comparison was with a forecast nobody has seen."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The more effective tablet",
+      "text": "A pharmacy leaflet calls a painkiller more effective, with no rival named, and the patient reads it as stronger than the one she takes. Nothing has been claimed that could be checked, and her belief has moved all the same."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "No repeat of any incomplete-comparison experiment was found, and the original experiments are behind paywalls, so the size of the effect is not available at any remove.",

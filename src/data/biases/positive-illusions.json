@@ -16,6 +16,23 @@
     "note": "The paper reviews existing work rather than reporting a study. Its target is the position, which it attributes to Jahoda and to Jourard and Landsman, that contact with reality is a criterion of mental health."
   },
   "evidence": "Taylor and Brown ran no experiment. They assembled evidence that most people hold overly positive self-evaluations, exaggerated perceptions of control or mastery, and unrealistic optimism, then asked whether those beliefs meet the criteria clinical writers use for mental health. Their method for the second step is stated openly. They take the criteria from Jahoda's 1958 review and from Jourard and Landsman, remove accurate self-perception from the list on the grounds that it is the thing in dispute, and keep three of what remains: happiness or contentment, the ability to care for and about others, and the capacity for creative and productive work. They then review studies linking each illusion to each criterion. Their own summary concedes that the research does not systematically address every illusion against every criterion and calls the evidence suggestive. Colvin and Block replied in 1994 that the logic and the studies failed to substantiate the thesis. The closing line of their abstract says the thesis remains unproven, but their own conclusion goes further, calling it unproven at best and possibly seriously wrong in many circumstances. Taylor and Brown's reply in the same issue narrowed the claim in three ways. The benefits are asserted for moderate illusion only, extreme illusion may be maladaptive, and illusion is not claimed to be necessary for mental health.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The student who expects the top band",
+      "text": "A first-year rates their ability above most of the cohort, expects to finish near the top and works with confidence. Most of a cohort cannot be above most of it. Whether holding the belief helps is a separate question from whether it is accurate."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Our marriage is not the statistic",
+      "text": "A couple can quote the divorce rate and put their own chance well below it, and they plan on that basis. The estimate of the world is fine and the estimate of themselves is not, and the two sit together without friction."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Steering the recovery",
+      "text": "Someone convalescing believes their own discipline about exercise is driving the recovery more than the medicine or the passage of time. The belief keeps them at the exercises, which is the claim about usefulness rather than the claim about truth."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "A meta-analysis of 299 samples puts self-enhancement at r = 0.18 with self-reported adjustment and at r = -0.01 with how favourably informants judge the person overall.",

@@ -13,6 +13,23 @@
     "note": "Wald's work is a series of eight memoranda written in 1943 for the Statistical Research Group at Columbia University, under the National Defense Research Committee. The Center for Naval Analyses reprinted them in July 1980 as Research Contribution CRC 432, and the Defense Technical Information Center holds that reprint as ADA091073. Wald did not name the bias. The phrase survivorship bias appears nowhere in the reprint, and his contribution was a method for recovering the distribution you cannot see from the one you can. The reasoning is older. Francis Bacon's Novum Organum of 1620, book I aphorism XLVI, has a man shown votive tablets hung in a temple by those who escaped shipwreck, and pressed to acknowledge the power of the gods. His reply, in Joseph Devey's translation, is a question: 'But where are the portraits of those who have perished in spite of their vows?' Bacon files the story under the mind's preference for affirmatives over negatives, not under sampling."
   },
   "evidence": "The reprint's own abstract describes methods for estimating the vulnerability of various parts of an aircraft from damage to surviving planes. Armour appears once, at the end of the eighth memorandum, where Wald writes that the table of vulnerabilities and the other conclusions drawn from it \"can be used as guides for locating protective armor and can be used to make a prediction of the estimated loss of a future mission\". The aircraft is never called a bomber, and the worked example is explicitly a set of hypothetical data for a mission of 1,000 planes, of which 634 attacked the objective and 32 were lost. Wald also set out the limit the popular telling drops. Survivor damage alone cannot separate two explanations for an area with few recorded hits: that the area is rarely hit, and that hits there stop a plane returning. He assumed the distribution of hits across areas was known in advance, from the dispersion of the guns, or established by firing dummy bullets and recording where they struck. The finance literature supplies the measured examples. Elton, Gruber and Blake began from 361 funds listed as common stock in the 1977 Wiesenberger directory, which reports 1976 data. Returns were computed only for the 207 holding $15 million or more at the end of 1976, less 19 restricted funds, leaving 188; survival rates used all 361. They tracked those funds to December 1993 and defined bias as the average alpha of surviving funds minus the average alpha of all funds. Their Table 7, for a three-index model, gives the bias by assumed length of study. At 20 years the four estimates run from 0.896% to 1.108% a year, and at 10 years from 0.348% to 0.489%. Table 8 repeats the exercise for a one-index model, where the 20-year estimates run from 0.034% to 0.923%, and the authors say they do not consider the two no-reinvestment cases there appropriate.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "Advice from the ones who stuck at it",
+      "text": "A would-be freelancer collects habits from those who made a living at it and finds they all rose early and turned down cheap work. Everyone who did the same and ran out of money went back to a salary and was never asked."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The old cottage that proves they built things to last",
+      "text": "Standing in a cottage four centuries old, it is easy to conclude that building was better then. The badly built houses of the same decade fell down long ago, so the sample on the street is the sample that survived."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Asking the patients who are still on the drug",
+      "text": "A clinic surveys people currently taking a medicine and finds high satisfaction with it. Those who stopped because it did nothing, or because they could not stand the side effects, are not on the list being surveyed."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Experiments on whether people discount a sample they know was selected find the neglect repeatedly, and disagree about whether telling people about the selection fixes it.",

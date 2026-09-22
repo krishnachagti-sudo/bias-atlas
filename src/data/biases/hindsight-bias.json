@@ -13,6 +13,23 @@
     "note": "Three experiments from a Hebrew University doctoral dissertation. Students read 150-word accounts of the 1814 British campaign against the Gurkas of Nepal, a 1967 near-riot in Atlanta and two clinical cases, each with four possible outcomes, and rated how likely each outcome was. Groups told which outcome had happened raised its probability, and could not undo the shift when instructed to answer as though they did not know."
   },
   "evidence": "Fischhoff's Experiment 1 gave 24 chances to test the prediction, four outcomes across six subexperiments. Reporting an outcome raised its rated probability in all 24, by between 3.6 and 23.4 percentage points, mean 10.8. Converted to odds, the report roughly doubled an outcome's perceived likelihood, with likelihood ratios from 1.2 to 3.5 and a mean of 1.96. Experiment 2 asked 80 students to answer as they would have without outcome knowledge; the gap against the uninformed groups was still 9.2 points. Experiment 3 asked 94 students to guess what outcome-ignorant students elsewhere had said, and the gap was 8.7 points. Fischhoff also read the relevance ratings: which sentences of the passage looked important depended on which ending the reader had been given. Applied work finds the same pattern outside the laboratory. Banham-Hall and Stevens gave 93 clinicians identical case notes for a fictional governance meeting and randomised the ending. Care for a patient with a swollen leg scored a median of 4 out of 5 when the patient recovered and 2 when the patient died the next day, p < 0.00001; a headache case scored 3 against 2, p = 0.0003; a chest pain case scored 4 against 3, p = 0.1074.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The result everybody saw coming",
+      "text": "Before kick-off the supporters give the away side little chance, and after it wins they recall having thought the home side looked fragile all week. The earlier judgement is not merely revised, it has become unrecoverable."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The incident review",
+      "text": "A panel reading the report of a failure finds the warning signs obvious and marks the team that missed them as careless. Those signs sat among a hundred others that led nowhere, and the panel cannot now put the outcome back out of view."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The fund that was always going to double",
+      "text": "Someone who bought on a whim and watched the value double describes the reasoning they say they applied at the time. Knowledge of how it turned out has been credited to the earlier self as foresight."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "A preregistered replication half a century later reproduced the effect in the same materials, smaller than the original and clearly present.",

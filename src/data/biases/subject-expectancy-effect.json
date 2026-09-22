@@ -18,6 +18,23 @@
     "note": "The name is later than the finding, and this check located no single coinage for it. Beecher's paper 'The Powerful Placebo' put a number on the idea and is the reference the field grew from. A scan of the JAMA article was read for this check, after the publisher's own page refused the fetcher on 21 September 2026. Orne set out the laboratory version in 1962, calling it the demand characteristics of the experimental situation, and credits his own 1959 conference paper with the label. The term pairs with Rosenthal's experimenter expectancy, which this atlas carries as the observer-expectancy effect, no. 136."
   },
   "evidence": "Beecher pooled 15 studies, 7 of them his own, covering 1,082 patients. He reported that placebos relieved 35.2 percent of cases, a figure he printed with a margin of 2.2 points. Kienle and Kiene reanalysed the same 15 and found no evidence of a placebo effect in any of them, because none was built to isolate one. Improvement inside a placebo arm can come from spontaneous recovery, fluctuating symptoms, regression to the mean, additional treatment, scaling bias, answers of politeness or experimental subordination, and they list those and more. One trial on Beecher's list did carry an untreated control group, and that group showed the same result as the placebo group. Kienle and Kiene call placebo against no treatment a design that might be valid rather than one that settles the question, since politeness and subordination survive it. Orne described a different problem, in the laboratory rather than the clinic. He gave the name demand characteristics of the experimental situation to the totality of cues which convey an experimental hypothesis to the subject, and argued that a volunteer has a stake in the outcome and wants to be a good subject. Pilot studies run by Thomas Menaker looked for a task people would refuse. Volunteers were handed a stack of some 2,000 sheets of random digits and told to add each adjacent pair, 224 additions to a sheet. One session ended after five and a half hours, when the experimenter gave up. A harsher version came next, in which a card picked up after each finished sheet ordered the subject to tear it into at least 32 pieces and start the next. Volunteers kept at that for hours with little sign of hostility, and afterwards described the work as an endurance test. Amanzio and colleagues came at the clinical question from the other side, hiding the treatment instead of the hypothesis. Buprenorphine, tramadol, ketorolac and metamizol were given either in full view of the patient or by hidden infusion. Hidden injections were less effective and less variable than open ones. A second experiment, in healthy volunteers given ischaemic arm pain, added naloxone to an open injection of ketorolac and reproduced the loss, which points at endogenous opioids. Only the abstract of that paper could be read, and it carries no dose figures.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The remedy that works by the evening",
+      "text": "Someone who trusts a herbal syrup takes it for a sore throat and reports by the evening that the pain has halved. The expectation has moved what the patient says about the symptom, and a swab taken at the same moment would read as it always would have."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The volunteer who guesses the hypothesis",
+      "text": "A student in a study on music and concentration works out which condition is meant to win, and tries harder in it. The scores now carry the volunteer's reading of the experiment as well as whatever the music did."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The mattress bought after long deliberation",
+      "text": "After a costly purchase, a sleeper says the first week has been the best rest in years. The tracker beside the bed logs the same hours and the same waking as the month before, and only the report has changed."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Expectation moves what patients report about pain and leaves instrument readings alone, while the separate demand-characteristics literature pools small and runs both ways.",

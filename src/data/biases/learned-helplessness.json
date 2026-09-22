@@ -13,6 +13,23 @@
     "note": "Overmier and Seligman had reported the escape failure earlier the same year in the Journal of Comparative and Physiological Psychology, but without isolating control as the cause. The 1967 Seligman and Maier paper added the escapable-shock group that made the isolation possible, and it is the paper that puts learned \"helplessness\" in quotation marks in its own abstract."
   },
   "evidence": "Experiment I used 30 mongrel dogs, of which six were discarded and 24 remained, eight per group. Dogs in the Escape group got 64 unsignalled 6.0 mA shocks in a hammock at a mean interval of 90 seconds, and could end each one by pressing a panel with the head. Each dog in the Yoked group was paired to one in the Escape group and got shocks of the same duration that its own pressing did not affect, totalling 226 seconds. A Normal control group got no shock in the hammock. All three then had ten escape-avoidance trials in a shuttle box the next day. Mean latency to jump the barrier was 27.00 seconds in the Escape group, 25.93 in the Normal control group and 48.22 in the Yoked group. Mean failures to escape out of ten trials ran 2.63, 2.25 and 7.25. The proportion failing on nine or more of the ten trials was 0% in the Escape group, 12.5% in the Normal control group and 75% in the Yoked group. Yoked dogs differed from both other groups on latency and on failures at p < .05 by Duncan's multiple-range test, and the Escape and Normal groups did not differ. Six yoked dogs failed on nine or more trials, and seven days later five of those six still failed on every trial.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The faults that stopped being reported",
+      "text": "A tenant reports a leak for eight months to a landlord who never acts, then says nothing when a new manager arrives who would fix it in a week. The comparison that shows anything is a tenant with the same leak who could get it dealt with throughout."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The pupil who stops starting",
+      "text": "A child given a run of problems set well above his level stops attempting them, and goes on not attempting the ones he can do once the level drops. The events were the same in both cases. What differed was whether anything he did made them stop."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The proposals nobody writes",
+      "text": "After a year in which every suggestion was overruled whatever it said, a team drafts nothing when a decision is genuinely open to them. Passivity of that kind is better described than explained, since the originators have withdrawn the expectancy account of it themselves."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "The escape deficit holds and is a standard laboratory model, while the explanation attached to it was withdrawn by Maier and Seligman in 2016.",

@@ -2,7 +2,9 @@
   "no": 518,
   "slug": "historians-fallacy",
   "name": "Historian's fallacy",
-  "aliases": ["Historians' fallacy"],
+  "aliases": [
+    "Historians' fallacy"
+  ],
   "category": "belief",
   "statement": "Writing about people in the past as though they saw their situation the way a later historian sees it, knowing which way it turned out.",
   "meaning": "Fischer's definition is a transposition of one William James made about psychologists. It is \"the error of assuming that a man who has a given historical experience knows it, when he has it, to be all that a historian would know it to be, with the advantage of historical perspective\". The commonest form, he writes, is the tendency of historians \"to forget that their subjects did not know what was coming next\". Put abstractly the error looks silly. Fischer's illustration is a letter written in France on 24 May 1337 announcing that \"the Hundred Years' War began here today\". In practice it hides, because the information somebody did not have leaves no trace in the record. This is a charge about a piece of writing, not a measurement of a mind. Its measured neighbour is hindsight bias, which this site treats separately.",
@@ -13,6 +15,23 @@
     "note": "The name is Fischer's. It appears in chapter VII, \"Fallacies of Motivation\", on pages 209 to 213 of the Harper edition, and the index lists it at those pages. Fischer says the fallacy \"is suggested by William James's 'psychologists' fallacy'\", citing volume I, page 196 of the Principles of Psychology. His running example is Pearl Harbor, where the signals that in retrospect announced the attack came, on Roberta Wohlstetter's account, mixed with contradictory ones. Fischer spells it as a plural possessive through most of the section and as a singular possessive once, which is the form that has stuck."
   },
   "evidence": "The book argues by specimen. Fischer names offenders and quotes them, and the sample in this section runs to five. Louis Hartz's The Liberal Tradition in America supplies the full-blown case: Hartz writes of Hamilton, Adams and the Whigs that \"their crime was not villainy but stupidity\", which Fischer reads as an indictment of the founders for failing to read the future. Marvin Meyers is charged with the opposite version, crediting John Adams with the clarity we have in retrospect. Two further specimens are borrowed from other people's book reviews, Donald Fleming on Philip Ritterbush and Ramsay MacMullen on Jack Lindsay, and a fifth, George Dangerfield on Andrew Jackson, Fischer calls a borderline case. There is no experiment, no sample and no rate anywhere in the section. The nearest measured thing is Fischhoff's 1975 hindsight experiment, which ran on historical narratives. His main passage was lifted from E. L. Woodward's Age of Reform and described the 1814 British campaign against the Gurkas of Nepal, with four candidate endings. Telling readers which ending occurred raised their probability for it and also changed which of the twelve numbered facts in the passage looked important. The datum that British officers \"learned caution only after sharp reverses\" was rated most relevant by those told the British won and rather irrelevant by those told the Gurkas won. Fischhoff reached for historians to describe this, quoting R. H. Tawney on the way historians drag the winning forces into prominence, and quoting the same Wohlstetter book Fischer had used. He also wrote that a decision maker \"second-guessed by a hindsightful observer\" has his misfortune made to look like \"incompetence, folly, or worse\", which is Fischer's complaint about Hartz arrived at from the other direction. Numbers for the hindsight effect are on this site's hindsight-bias entry rather than repeated here.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The drainage board and the flood",
+      "text": "A review criticises a drainage board for not raising the wall, writing as though the scale of the storm was plain beforehand. The board had the forecasts that existed then, and the review has the flood."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The memo read backwards",
+      "text": "An inquiry treats one early warning note as the moment the danger became obvious, though it sat among forty other notes warning of other things. Knowing which one mattered is what the inquiry has and what the person filing it did not."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The move to the coast",
+      "text": "Relatives say the move was clearly a mistake, describing the decision as though the illness that followed was visible when the house was chosen. The record keeps what was decided and keeps no trace of what was unknown."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "No study was found that measures the fallacy in historians. It is a charge about how history is written, and nothing located turns it into a rate.",

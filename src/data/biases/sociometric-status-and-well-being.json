@@ -2,7 +2,11 @@
   "no": 452,
   "slug": "sociometric-status-and-well-being",
   "name": "Sociometric status and well-being",
-  "aliases": ["Local-ladder effect", "Local ladder effect", "Sociometric status effect"],
+  "aliases": [
+    "Local-ladder effect",
+    "Local ladder effect",
+    "Sociometric status effect"
+  ],
   "category": "social",
   "statement": "Respect and admiration in one's face-to-face groups predicts subjective well-being more strongly than income and education do.",
   "meaning": "Anderson and colleagues split social standing in two. Socioeconomic status is money, education and occupation, and it is defined against a whole country. Sociometric status is the respect, admiration and influence a person holds inside the small groups they actually meet, such as a workplace, a sorority or a friendship circle. Their claim is that the local ladder is the one that moves happiness, because standing among peers feeds the sense of power and the sense of social acceptance, and both of those feed well-being. The comparative half is what makes the claim interesting. Nobody doubts that being respected feels good. The paper says the local measure beats the national one when the two are entered against each other.",
@@ -13,6 +17,23 @@
     "note": "The paper is titled \"The Local-Ladder Effect: Social Status and Subjective Well-Being\". An earlier version circulated in October 2011 as Institute for Research on Labor and Employment working paper 110-11 at UC Berkeley, under a three-author byline that omits Galinsky, though the manuscript inside it carries all four names."
   },
   "evidence": "Four studies, and they do not all carry the same weight. Study 1 was correlational, with 88 members of 14 college groups, of whom 80 in 12 groups were analysed after two groups gave unreliable peer ratings. Sociometric status was built from peer ratings, self-ratings and leadership positions held. It predicted well-being at beta = .35, p = .002, while family income relative to the group did not, beta = .02, p = .85. Study 2 was correlational, with 315 American adults recruited on Amazon Mechanical Turk, and added the sense of power and social acceptance as mediators. Study 3 was the experiment, with 228 Mechanical Turk participants in a two by two design who compared themselves against someone high or low on either sociometric or socioeconomic status. The interaction was F(1, 224) = 4.73, p = .03, the sociometric contrast t(115) = 3.05, p = .003, and the socioeconomic contrast t(109) = 0.06, p = .96. Study 4 was longitudinal, following 156 MBA students a month before graduation and 116 of them nine months after, and found that changes in sociometric status tracked changes in well-being, beta = .22, p = .02. Well-being throughout was a composite of the Satisfaction with Life Scale and the positive and negative affect scales of the PANAS, with negative affect reverse scored. The figures here are read off the 2011 working paper, which is fetchable; the published article is paywalled. Study 3's figures also appear in Many Labs 2, quoted from the published version, and match.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The well-paid junior on the team",
+      "text": "Someone earns more than most people in the country and spends every day on a team where their opinion is asked for last. The salary sits in the background. What they think about on the way home is their standing in that room."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The volunteer fire crew",
+      "text": "A retired man on a modest pension is the one the crew calls when a decision has to be taken fast. His income places him low against the country and his standing places him high in the shed, and it is the shed he measures himself against."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The move that was a promotion",
+      "text": "A teacher takes a better-paid post at a larger school and arrives without the deference the old staffroom gave her. Pay went up and respect among the people she sees each day went down, and she reports feeling worse than before."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The one experiment in the original failed in a 64-sample multi-laboratory replication, and a later two-experiment paper using a different manipulation found the effect again.",
@@ -23,11 +44,27 @@
       "year": 2018,
       "n": 6905
     },
-    "original": { "es": 0.57, "esType": "d", "ci": [0.2, 0.93], "ciLevel": 95 },
-    "replicated": { "es": -0.04, "esType": "d", "ci": [-0.09, 0.004], "ciLevel": 95 }
+    "original": {
+      "es": 0.57,
+      "esType": "d",
+      "ci": [
+        0.2,
+        0.93
+      ],
+      "ciLevel": 95
+    },
+    "replicated": {
+      "es": -0.04,
+      "esType": "d",
+      "ci": [
+        -0.09,
+        0.004
+      ],
+      "ciLevel": 95
+    }
   },
   "limits": "Many Labs 2 tested one study out of four, and it tested a priming manipulation rather than the correlational and longitudinal designs that carry most of the original's argument. It also dropped the socioeconomic arm, so it says nothing about the comparison the paper is named for. The 2024 experiments recover an effect of status on well-being, but through a different manipulation, in a student sample, in one laboratory, with an original author involved. Neither project re-ran Study 1, Study 2 or Study 4. Anderson and Hildreth name their own limits as undergraduate samples, a Western setting and possible demand effects. A search of Crossref for replications of the correlational and longitudinal comparison, and of Many Labs 2 for any second sociometric effect, turned up nothing further; that is where this entry looked.",
-    "misreadings": "The heaviest misreading is that money does not matter for happiness. Anderson and colleagues never wrote that. Their abstract says socioeconomic status only weakly predicts well-being, and their own Studies 2 and 4 measure it alongside sociometric status rather than dismissing it. The null in Study 1 rests on 80 people in 12 college groups whose average household income sat between $75,000 and $100,000, which is a narrow band and a small sample. Set against it is a body of work on much larger samples. Kahneman and Deaton analysed more than 450,000 Gallup responses and found life evaluation rising steadily with log income, with emotional well-being flat above roughly $75,000. Killingsworth collected 1,725,994 experience-sampling reports from 33,391 employed American adults and found experienced well-being rising with log income with an equally steep slope above $80,000. Killingsworth, Kahneman and Mellers then ran an adversarial collaboration on the two datasets and located the flattening in the least happy fifth of the distribution, with happiness continuing to rise with income among happier people. A small null against that literature settles nothing. The second misreading is that subjective well-being is one thing. The original combines life satisfaction with momentary positive and negative affect into a single score, Kahneman and Deaton show those components behave differently against income, and a claim about one is not a claim about the other. A third is treating the 2024 paper as a direct replication. It is a conceptual replication with a different manipulation, and its authors call it that.",
+  "misreadings": "The heaviest misreading is that money does not matter for happiness. Anderson and colleagues never wrote that. Their abstract says socioeconomic status only weakly predicts well-being, and their own Studies 2 and 4 measure it alongside sociometric status rather than dismissing it. The null in Study 1 rests on 80 people in 12 college groups whose average household income sat between $75,000 and $100,000, which is a narrow band and a small sample. Set against it is a body of work on much larger samples. Kahneman and Deaton analysed more than 450,000 Gallup responses and found life evaluation rising steadily with log income, with emotional well-being flat above roughly $75,000. Killingsworth collected 1,725,994 experience-sampling reports from 33,391 employed American adults and found experienced well-being rising with log income with an equally steep slope above $80,000. Killingsworth, Kahneman and Mellers then ran an adversarial collaboration on the two datasets and located the flattening in the least happy fifth of the distribution, with happiness continuing to rise with income among happier people. A small null against that literature settles nothing. The second misreading is that subjective well-being is one thing. The original combines life satisfaction with momentary positive and negative affect into a single score, Kahneman and Deaton show those components behave differently against income, and a claim about one is not a claim about the other. A third is treating the 2024 paper as a direct replication. It is a conceptual replication with a different manipulation, and its authors call it that.",
   "sources": [
     {
       "text": "Anderson, C., Kraus, M. W., Galinsky, A. D., & Keltner, D. (2012). The local-ladder effect: Social status and subjective well-being. Psychological Science, 23(7), 764-771.",

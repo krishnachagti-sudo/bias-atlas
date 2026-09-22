@@ -2,7 +2,12 @@
   "no": 353,
   "slug": "psychological-essentialism",
   "name": "Psychological essentialism",
-  "aliases": ["Essentialism", "Essentialist beliefs", "Social essentialism", "Genetic essentialism"],
+  "aliases": [
+    "Essentialism",
+    "Essentialist beliefs",
+    "Social essentialism",
+    "Genetic essentialism"
+  ],
   "category": "belief",
   "statement": "Psychological essentialism is the claim that people treat some categories as having a hidden inner nature that fixes membership and explains what members are like.",
   "meaning": "The claim is about how people represent categories, not about whether essences exist. On this construal a category such as tiger, gold or girl is taken to have an inner nature shared by all its members, causing their visible features and holding membership steady when appearances change. Medin's version makes the essence a placeholder: people hold the belief without knowing what the essence is. Gelman's 2025 review states that the essence in this sense is not a definition and does not specify which features are necessary for membership. Because a placeholder cannot be asked about directly, essentialism is measured through tasks. Her review lists five standard ones. A porcupine is made to look like a cactus and the child is asked what it is now. A property learned about a flamingo is extended to a blackbird that looks like a bat. A newborn rabbit is raised by monkeys and the child is asked whether it will want carrots or bananas. A visitor from far away calls a cat and a dog the same kind of animal and the child is asked whether he could be right. The insides are taken out of a dog and the child is asked whether it can still bark. The tasks measure different components, and the components need not move together.",
@@ -13,6 +18,23 @@
     "note": "The piece everyone cites for the term is a commentary rather than a report of studies. Crossref titles it 'Comments on Part I: Psychological essentialism' and gives pages 179 to 196. Neither it nor Medin's American Psychologist paper of the same year, 'Concepts and conceptual structure', volume 44, issue 12, pages 1469 to 1481, could be read; both are verified here at bibliographic level only, and the placeholder formulation is attributed to Gelman's review of the field."
   },
   "evidence": "Gelman and Wellman's five studies are the developmental starting point. Their abstract reports 3- to 5-year-olds tested on insides, on whether insides matter more than surfaces, and on innate potential, and concludes that by age 4 children have a firm grasp of both insides and essences. The paper itself is closed and no figure from it appears here. The switched-at-birth task it introduced has the sharpest recent test. Peretz-Lange and Kaebnick preregistered an adoption task with 95 children aged 4 to 8, of whom 30 had been adopted or donor-conceived and 65 traditionally conceived, across five trials covering hair colour, spoken language, personality, interests and intelligence. Adopted and donor-conceived children gave essentialist answers on 32% of trials against 60% for traditionally conceived children, and with age, trial type and the parent's own essentialism held constant the odds of an essentialist answer were 3.18 times higher in the traditionally conceived group. Their abstract gives the group effect as partial eta squared of .07. Responses varied more by trait than by group: 85% essentialist on hair colour, then 41% on interests, 36% on intelligence, 35% on personality and 27% on spoken language, with hair colour above every other trial at p < .001 after correction. On the social side the measurement paper is Haslam, Rothschild and Ernst's. Its abstract reports 40 social categories rated on nine elements of essentialism, which formed two independent dimensions rather than one, naturalness and reification. Reification was negatively associated with a category's evaluative standing, most among categories treated as natural kinds. The correlation with prejudice is easy to reproduce. Gross, Fine, Gülgöz, Olson and Gelman measured 204 children aged 6 to 10, mean 8.35 years, and found gender essentialism correlated with prejudice against gender-nonconforming targets at r = .48, p < .0001, with both falling as age rose, r = -.32 and r = -.19.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The chick raised in the wrong nest",
+      "text": "Told that an egg was moved to the nest of another species, a child says the bird will still sing its own song. Something on the inside is taken to settle what the animal is, and where it grew up is not thought to touch it."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The placeholder nobody can fill",
+      "text": "People are confident that gold has an inner nature that makes it gold, and few can say what that nature is. The belief holds the place a definition would occupy without supplying one, and it is held just as firmly for that."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The category treated as deeper than it is",
+      "text": "A group of people is talked about as sharing an inner nature that explains how its members behave. What the nature consists of never gets stated, and the category has nothing like the structure being imputed to it."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Across 298 correlational effects essentialism and ethnoracial bias correlate at r = 0.25, and across 22 experimental effects manipulating essentialism does not move bias, g = 0.21, p = .181.",

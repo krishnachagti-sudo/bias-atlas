@@ -17,6 +17,23 @@
     "note": "Their paper \"Living with Television: The Violence Profile\" ran in volume 26, pages 172 to 199, and set out the Cultural Indicators approach of pairing content counts with viewer surveys. The phrase \"mean world syndrome\" is not in that paper. It is in print by 1980, in Violence Profile No. 11, where the Annenberg group write that examples of mainstreaming appear in \"questions relating to what we have called the 'mean world syndrome'\". The same paper names a Mean World Index, three interpersonal mistrust items from the 1975 and 1978 General Social Surveys. Gerbner was still using the phrase in 1994, when an essay in In Context described three consequences of heavy viewing that \"in combination, I call the 'mean world syndrome'\", the third being a pervasive sense of insecurity and vulnerability. No earlier printed use was found on 21 September 2026 in the 1976 paper, in Violence Profile No. 6, in the 1981 reply to Hirsch or in open web search."
   },
   "evidence": "Two halves, counted separately and then joined. Message system analysis coded network drama for violence, defined as the \"overt expression of physical force against self or other, compelling action against one's will on pain of being hurt or killed, or actually hurting or killing\". Violence Profile No. 6, filed with ERIC in December 1974, gives the arithmetic. A programme score adds the percentage of programmes containing violence to twice the rate of violent episodes per programme and twice the rate per hour. A character score adds the percentage of characters involved in violence to the percentage involved in killing. The Violence Index is the two scores added together. Gerbner and Gross wrote in the same document that these composites \"are not statistical findings in themselves, and should not be treated as such\". The survey half asked a national sample of adults whether their chances of being involved in some type of violence in any given week were one in ten or one in a hundred. One in ten was the television answer. Among all respondents, 52 percent of heavy viewers gave it against 39 percent of light viewers, a cultivation differential of thirteen points on the authors' own definition. Heavy viewers watched four hours a day or more, light viewers two hours a day or less.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The estimate of being burgled",
+      "text": "A viewer of many hours of drama and rolling news puts his chance of being burgled this year at one in four. The figure for his street is a fraction of that. The estimate has been built up over years of watching rather than by anything that happened locally."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The limits set on where children go",
+      "text": "A parent who watches a great deal of crime drama will not let a twelve-year-old walk the ten minutes to school alone, while a neighbour on the same street does. Both read the same local paper, and one of them has been absorbing a much meaner world all decade."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The guess at how many police there are",
+      "text": "Asked what share of the workforce is in law enforcement, heavy viewers give numbers several times the real one. Screen stories need crimes and people to solve them, and a lifetime of them leaves a population estimate shaped by the casting rather than the census."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The pooled correlation across fifty years sits near a tenth, and it falls close to zero under simultaneous controls, in the critics' reanalyses and in the Annenberg group's own table.",

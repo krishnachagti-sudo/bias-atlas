@@ -16,6 +16,23 @@
     "note": "Ten studies using one-shot public goods games, on Amazon Mechanical Turk and in a Harvard laboratory. The Social Sciences Replication Project, reading the same paper, records studies 1 to 5 as correlational and studies 6 and 7 as the time-pressure experiments. Rand's 2016 meta-analysis attributes the name 'social heuristics hypothesis' to the later Rand et al. (2014) paper in Nature Communications."
   },
   "evidence": "The opening study gave 212 Mechanical Turk workers 40 cents and a one-shot four-person public goods game. Contributions were higher in the faster half of decisions, rank sum P = 0.007, and a Tobit regression on decision time gave a coefficient of -15.84, P = 0.019. Four earlier laboratory datasets, re-analysed for decision time, went the same way. The causal test came next. Another 680 workers were told either to decide within 10 seconds or to wait at least 10 seconds, and the time-pressure group contributed more, rank sum P < 0.001. Study 7 repeated that with 211 Boston-area students at tenfold stakes and reached rank sum P = 0.032, with no difference in what participants predicted others would give, P = 0.360. A priming study on 343 workers, which asked for a paragraph about a time when intuition or careful reasoning had served well or badly, found higher contributions after the intuition prime, P = 0.011. Two further studies tested the conditional part. Among 256 workers the priming effect appeared only in those with no prior experience of the task, and among 341 workers faster decisions were more cooperative only among those reporting mainly cooperative daily-life partners.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The ten seconds on the clock",
+      "text": "Players in a one-shot game must decide how much to put into the common pot within ten seconds. The prediction is that contributions rise against a group made to wait and think. Speeding a decision up is one operationalisation of the idea rather than the idea itself."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The collection taken in the corridor",
+      "text": "Someone catches a colleague in the corridor and asks for a contribution to a leaving present there and then. She gives more than she does when handed the envelope with a day to consider it. Deliberation recalculates for the situation in front of her, and that calculation favours keeping the money."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The default built by the people around you",
+      "text": "Someone whose daily dealings are with reliable neighbours has generosity as a first move, and someone whose dealings are not does not. The prediction is conditional on that history, so a cooperative default is never claimed for everybody."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Two large preregistered replications came out null, and the laboratory effect survives mainly under the exclusion rule that started the argument.",

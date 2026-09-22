@@ -2,7 +2,11 @@
   "no": 460,
   "slug": "moral-foundations-theory",
   "name": "Moral foundations theory",
-  "aliases": ["MFT", "Moral foundations hypothesis", "Individualizing and binding foundations"],
+  "aliases": [
+    "MFT",
+    "Moral foundations hypothesis",
+    "Individualizing and binding foundations"
+  ],
   "category": "social",
   "statement": "Liberals rest moral judgement mainly on harm and fairness, while conservatives spread it more evenly across those two plus loyalty, authority and purity.",
   "meaning": "Graham, Haidt and Nosek call this the moral foundations hypothesis. It names five sets of moral intuitions: Harm/care, Fairness/reciprocity, Ingroup/loyalty, Authority/respect and Purity/sanctity. The first two are grouped as individualizing, the last three as binding. The prediction is not that conservatives are more moral or liberals less so. It is that the gap between the two groups of foundations is wider on the left than on the right. Two claims live under the one name and they carry separate evidence. The first is the political difference, measured as a correlation between where someone places themselves on a liberal to conservative scale and how morally relevant they rate each set of concerns. The second is the measurement model, the assertion that five distinct factors sit behind the items. A reader can accept the first and reject the second, and several research groups do.",
@@ -13,6 +17,23 @@
     "note": "Volume 96, issue 5, pages 1029 to 1046. The article presents four studies and credits the underlying theory to Haidt and Joseph (2004) and Haidt and Graham (2007), which it describes as work on moral differences across cultures rather than across a political spectrum. The 30-item Moral Foundations Questionnaire that later critics test came two years afterwards, in Graham, Nosek, Haidt, Iyer, Koleva and Ditto (2011). Study 1 here used 15 moral relevance items, and the 2009 paper says explicitly that developing or validating a scale was not its intention."
   },
   "evidence": "Study 1 gave 15 moral relevance items on a 6-point scale to 1,613 adults registered at Project Implicit, of whom 902 called themselves liberal, 366 moderate and 264 conservative. Sixty-five, 4.0%, were dropped for rating belief in astrology as morally relevant. Cronbach's alphas were .62 for Harm, .67 Fairness, .59 Ingroup, .39 Authority and .70 Purity. With age, gender, education and income in the model, political identity predicted all five foundations in the predicted direction, average absolute beta .25, range .16 to .34. Aggregated individualizing ratings exceeded binding ratings, F(1, 1207) = 1,895.09, partial eta-squared .61, and politics moderated that gap, F(1, 1207) = 224.34, partial eta-squared .16. Study 2 added moral judgement items for 2,212 United States volunteers. Political identity predicted judgements for Harm at beta -.32, Fairness -.43, Ingroup .67, Authority .62 and Purity .57, all p < .001. Study 3 asked 8,193 visitors to yourmorals.org what they would take to violate each foundation, with analyses on the 6,619 who placed themselves on the 7-point scale. Politics predicted Ingroup at beta .42, Authority .31 and Purity .11, and predicted Harm at .06 and Fairness at .07 in the direction opposite to prediction, all p < .001. Study 4 ran a 295-word dictionary over 69 Unitarian and 34 Southern Baptist sermons. Raw word counts contradicted the prediction for Ingroup, which liberal preachers used more. Four raters, reliability .79, scored 3,281 uses of the 23 most discriminating words in context, and that scoring reversed the Ingroup result.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "Two objections to one policy",
+      "text": "A plan to house arrivals in a disused barracks draws two complaints at the same meeting. One is that the rooms are unsafe and the allocation unfair. The other is that the town's own people come first and that the council has been overruled."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Standing for the anthem",
+      "text": "A row about whether pupils should stand divides into arguments about whether standing harms anyone and arguments about the respect a country is owed. The two sides are weighing different things rather than weighing the same thing differently."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The appeal that reads as incomplete",
+      "text": "A fundraising letter built entirely on suffering and unequal treatment strikes some readers as covering the whole case. Others finish it waiting for a word about duty, loyalty or what is sacred, and give less for its absence."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Many Labs 2 repeated the questionnaire finding worldwide at about half the original size. A high-powered repeat of the sermon text analysis did not hold.",
@@ -23,8 +44,24 @@
       "year": 2018,
       "n": 6966
     },
-    "original": { "es": 0.52, "esType": "d", "ci": [0.4, 0.63], "ciLevel": 95 },
-    "replicated": { "es": 0.29, "esType": "d", "ci": [0.25, 0.34], "ciLevel": 95 }
+    "original": {
+      "es": 0.52,
+      "esType": "d",
+      "ci": [
+        0.4,
+        0.63
+      ],
+      "ciLevel": 95
+    },
+    "replicated": {
+      "es": 0.29,
+      "esType": "d",
+      "ci": [
+        0.25,
+        0.34
+      ],
+      "ciLevel": 95
+    }
   },
   "limits": "The measurement model is where the argument is hottest, and it is a separate argument from the political one. Iurino and Saucier tested the 20-item short questionnaire across 27 countries and report that it is difficult to specify the items in a five-factor model that converges without problems across a wide range of populations. Harper and Rhodes ran the full 32-item questionnaire plus Iyer and colleagues' liberty items on British voters. A parallel analysis on 428 respondents pointed to five factors, but exploratory analysis yielded three usable clusters, which they named traditionalism, compassion and liberty. In an independent sample of 322 their three-factor model fitted at CFI .87, TLI .85, RMSEA .07, against CFI .73, TLI .70, RMSEA .08 for the five-factor questionnaire and CFI .66, TLI .64, RMSEA .08 for the six-factor version. They call the work exploratory, note that both samples were British, and cite Brandt, He and Bender for the position that failures of measurement invariance do not upset conclusions about ideological differences. The five-factor model has defenders. Davies, Sibley and Liu tested it in a New Zealand national probability sample of 3,994 against single-factor, two-factor, three-factor and hierarchical rivals, and report that it provided a reasonable fit. Wormley, Scott, Grimm and Cohen, across five samples totalling 464,229, report improved fit from a bifactor model separating judgement items from relevance items, and recommend that model rather than dropping items. Kivikangas and colleagues report that the association varies by region, by country and between White and Black respondents, and that it depends on whether the political scale is labelled social or economic. Their samples came overwhelmingly from the United States and Europe. Graham, Haidt and Nosek's own limitations section says Studies 1 to 3 were self-selected internet samples and not representative, so slopes and means should not be read as population estimates.",
   "misreadings": "The commonest error is treating the questionnaire's factor structure and the political difference as one claim. They are tested by different studies, and Harper and Rhodes' three-factor revision still separated Conservative from Labour voters. A disputed measurement model is a different situation from a failed effect. The second error is reading the headline as a within-person ranking. What Many Labs 2 tested is the correlation between self-placed ideology and the relevance of binding concerns, not whether any conservative weights five things equally. The third is assuming the whole pattern came out clean in the original. Study 3's own model gave harm and fairness betas running opposite to prediction, and Study 4's raw word counts put loyalty on the wrong side. The fourth is treating this as the same claim as partisan bias, which is measured by a different design and has its own entry. The fifth is counting the foundations as fixed at five. Iyer, Koleva, Graham, Ditto and Haidt wrote liberty items after libertarians objected that their core value was missing, and a principal component analysis of 3,732 responses split those items into economic liberty and lifestyle liberty rather than one factor. Atari, Haidt, Graham, Koleva, Stevens and Dehghani then revisited the theory using 25 populations, and their questionnaire treats equality and proportionality as distinct foundations alongside care, loyalty, authority and purity. That is six foundations, and liberty is not among them. The sixth is generalising the size of the difference from convenience data. Kivikangas and colleagues found the yourmorals.org estimates larger than those from representative samples on every foundation.",

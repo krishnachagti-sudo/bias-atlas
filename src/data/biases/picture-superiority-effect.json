@@ -16,6 +16,23 @@
     "note": "The paper is titled 'Picture superiority in free recall: Imagery or dual coding?' and it put the name and the dual-coding explanation into the same title. Its design and result are described by McBride and Dosher: participants studied pictures, concrete words and abstract words under incidental or intentional instructions, and free recall was higher for pictures than for either kind of word. The demonstrations came earlier. Standing reports that Shepard in 1967 extended a 1965 study by Nickerson. The other name for the effect comes from the title of Nelson, Reed and Walling's 1976 paper, which is simply 'Pictorial superiority effect'."
   },
   "evidence": "Standing's 1973 paper is the one everybody cites and almost nobody reads. Subjects saw a single pass of slides at 5 seconds each and then took a two-alternative forced-choice recognition test. The interval was two days, except in the 4,000 and 10,000 item conditions, where the learning was spread over several days and two days is an average. With 10,000 normal pictures and 160 test trials the mean error count was 27.2, and Standing's guessing-corrected estimate is 6,600 pictures retained. Words topped out at a learning set of 1,000, where the same correction gives 615 retained, which Standing prints as 62%. Vivid pictures were run only as far as 1,000 items, and beat normal pictures at each of the six set sizes where both were used. Each cell of that table rests on five subjects, ten for vivid pictures. Standing also tested recall. Ten subjects studied 200 items and then wrote down everything they could for 40 minutes: 51.6 pictures recalled against 24.5 visually presented words, 37.5 spoken words and 11.25 nonsense syllables. Forty recognition trials on the same 200 items gave estimates of 175 pictures against 134.5 visual words. The often-quoted 98% is Shepard's, not Standing's, and it is a different design. Standing describes it as one exposure of 612 pictures at about 6 seconds each, after which subjects picked the old item in two-alternative tests with 98% success, against 90% for single words and 88% for short sentences. Ensor, Surprenant and Neath describe the same study as 612 colour pictures and 540 words, with 96.7% correct for pictures and 88.4% for words. Shepard's own paper could not be read here, so the two second-hand accounts stand unreconciled. Cherry and colleagues ran the largest modern test located here. They gave 160 adults in four age bands a list of pictures and matching words, scored free recall as a proportion of 16 items, and found 0.52 for pictures against 0.36 for words, F(1, 156) = 117.91, p < 0.001. Corrected recognition was 0.94 against 0.80, F(1, 156) = 112.88, p < 0.0001.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The diagram beside the fire door",
+      "text": "A notice describes the route to the exit in three sentences. The same route drawn as a floor plan with an arrow is what people can reproduce a week later, from the same few seconds of attention."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The slide with one photograph",
+      "text": "A presentation makes one point in a line of text and the next in a single image. Weeks later the audience can say what the picture showed and not what the line said, although both were on screen for the same time."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The shopping list drawn",
+      "text": "Ten items sketched as small pictures are recalled more completely than the same ten written out as words. The items are identical and the only difference is the form they were studied in."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "The effect reproduces across the adult lifespan and in patients with Alzheimer's disease, though the reason for it is still argued over.",

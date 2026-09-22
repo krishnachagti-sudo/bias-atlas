@@ -17,6 +17,23 @@
     "note": "His article ran in volume 47, pages 1 to 15, and states the hypothesis on page 3: \"people will tend to overestimate the influence that mass communications have on the attitudes and behavior of others\". Its abstract offers \"four small experiments that tend to support this hypothesis\". Davison also named censorship as the most interesting field for speculation about the effect, and closed the paper by asking whether people overestimate effects on others or underestimate effects on themselves."
   },
   "evidence": "Davison opens with a story he heard in 1949 or 1950 from a Princeton historian. A service unit of black troops with white officers on Iwo Jima was leafleted by Japanese aircraft with the theme that this was a white man's war, and the unit was withdrawn the next day. Davison's own footnote records that the historian, Jeter Isely, died shortly afterwards, and that the resulting book makes no reference at all to Japanese leaflets. His four tests were small and he said so: \"All these tests have been conducted with small groups under informal conditions. Elegant experiments they were not.\" The first put 33 Columbia graduate students in 1978 on a nought to seven influence scale, asking about Governor Carey's attacks on Mr Duryea's undisclosed tax returns. The mean for New Yorkers in general was 3.4 and the mean for self 2.26, with 48% seeing more influence on others, 6% on themselves, 36% the same and 9% giving no answer. The second asked 25 graduate students in the spring of 1981 whether television made them ask their parents for products as children, and whether it does so to other people's children: 32% said quite a lot for themselves against 68% for other children. The third asked 25 adults at the Museum of Broadcasting about the 1980 New Hampshire primary, where none said it would influence their own vote quite a lot while 52% said it would do quite a lot for Reagan's political fortunes. That other-directed question is about a candidate's fortunes rather than about other voters, and Davison grants in the same paragraph that the questions were not strictly comparable. A fourth trial, on charges that Reagan would be hawkish, reports only that about twice as many respondents thought others would be swayed more than they would. Two further experiments in 1981 and 1982 are mentioned without numbers.",
+    "examples": [
+      {
+        "kind": "everyday",
+        "tag": "The advertising nobody admits works",
+        "text": "A viewer says the betting adverts between matches have no pull on him, and that they are exactly why his neighbours gamble too much. His estimate of the effect on others sits well above his estimate for himself."
+      },
+      {
+        "kind": "everyday",
+        "tag": "The leaflet through the door",
+        "text": "A voter reads a campaign leaflet, calls it transparent nonsense, and worries it will sway less careful readers on her street. The gap is between the two judgements, not between the leaflet and the truth."
+      },
+      {
+        "kind": "everyday",
+        "tag": "The call to take the posts down",
+        "text": "A parent judges misleading health posts harmless to herself and dangerous to everyone else, and on that ground backs a ban. Supporting the restriction is the behavioural half of the claim, and it is the half that is tested least."
+      }
+    ],
   "replication": {
     "state": "mixed",
     "headline": "The perceptual gap is one of the better-replicated findings in communication research at d = 0.646, and the behavioural claim it was built to support does not hold up in the same way.",

@@ -17,6 +17,23 @@
     "note": "The name is from this paper, and Peer and the Eriksson group both credit it with coining the term. The effect is older. Svenson's abstract points back to his own 1970 paper in the Journal of Experimental Psychology, which reported that estimated time savings follow the Proportion heuristic. The 1970 paper was not obtained on 21 September 2026, and the block met was a bot challenge at the publisher's front end rather than a paywall. Crossref, OpenAlex and PubMed hold no abstract for it, and the Internet Archive's microfilm copy of the issue is lending restricted. What it did is reported here from Svenson's 2008 abstract and from Eriksson, Svenson and Eriksson's 2013 description of it."
   },
   "evidence": "Svenson's 2008 abstract describes three studies. The first asked people to choose between road improvement plans and found that a Ratio rule, the choice form of the Proportion heuristic, predicted the wrong decisions. The second moved the problem to health care, asking which of two clinics to reorganise to free up more doctors' time. The third used a matching procedure in which participants equated two alternatives, and the results supported the Ratio rule. The body of the paper was not obtained, so the example that runs through the later literature is taken here from Peer. Peer reports that Svenson's participants preferred a plan raising mean speed from 70 to 110 kph to one raising it from 30 to 40 kph, and works the arithmetic over 10 km, where the first saves 3 minutes and the second about 5. Peer put the same claim through three studies in Judgment and Decision Making. Study 1, with 79 licensed drivers, found the bias whether people estimated time saved, distance coverable in a fixed time, or the speed needed to complete a distance in shrinking times. Study 2, with 139 drivers, found no major difference between a numeric response scale and a visual analogue one. Study 3 reclassified 159 drivers' answers from the first two studies against three models rather than two. More answers fitted a Differences pattern than the Proportion heuristic in all three questions, but the models overlapped on about 40% of them, and Peer declines to name a winner.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The last ten on the motorway",
+      "text": "A driver with thirty miles left lifts from 70 to 80 to make up time and gains about three minutes. From that starting speed the road is nearly out of minutes to give, and the expectation of arriving noticeably earlier comes from treating the gain as if it tracked the extra ten."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The slow end of the delivery round",
+      "text": "A driver averaging 15 mph through town over six miles dismisses lifting it to 20 as a waste of effort. It saves six minutes, more than the same increase buys anywhere on the fast roads. Gains are largest where the starting speed is lowest, which is where people expect least."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Two broadband upgrades",
+      "text": "Moving a household from 5 to 20 megabits cuts a large download from about half an hour to seven minutes. Moving it from 100 to 200 is a far bigger step in the numbers on the bill and saves under a minute. The bill scales with speed and the waiting does not."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "Found again by independent groups, in a national quota sample, in a driving simulator, and in taxis on the road.",

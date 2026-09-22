@@ -19,6 +19,23 @@
     "note": "The paper was a lecture given to the Section of Psychology on 19 November 1945 and illustrated with lantern slides. Allport and Postman set out the terms while reporting wartime rumour work, and their book The Psychology of Rumor followed in 1947. They credit Bartlett's Remembering of 1932 in their conclusion, noting that the same threefold change had been described in his memory experiments on individuals and groups, and that no agreement existed on which terminology to use."
   },
   "evidence": "The method was a laboratory version of the party game. A slide showing a detailed scene was projected. Six or seven subjects who had not seen it waited next door. One entered, stood where the screen was hidden, and heard a member of the audience describe the picture in about twenty details while looking at it. A second subject then heard the first repeat what he had heard, a third heard the second, and so on. Every subject was told to report as accurately as possible. Allport and Postman report running this with over forty groups, among them college undergraduates, Army trainees, community forum members, patients in an Army hospital, a teachers' round table, police officials in a training course, and schoolchildren from the fourth grade through the ninth. The levelling curve is drawn from 11 experiments and takes the number of items in the description from the screen as 100%. About 70% of the details were gone after five or six transmissions, with the sharpest fall at the start and the last two reports more alike than any earlier pair. Sharpening showed up as reduplication and emphasis. A single Black figure in one picture was reported as four Negroes or as a gigantic statue, and a stationary subway train was described as moving. The famous result is the subway scene of Figure 1, in which a white man holds a razor while arguing with a Black man. Allport and Postman write that in more than half of their experiments the razor moved in the telling from the white man's hand to the Negro's, and that he was several times said to be brandishing it wildly. They did not claim this proved hatred. Their own text says they cannot definitely say whether the distortion reflects fear of Negroes, that it may occur in subjects with no anti-Negro bias, and that it may reflect assimilation to a verbal cliché rather than to hostility. They also listed five ways their setup differed from real rumour, four of which they expected to make their subjects more accurate than people gossiping, not less.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The notice passed down the shift",
+      "text": "A works notice listing twenty points about a new procedure reaches the fourth person in the chain as three. Those three are now the whole procedure, and each is heard by the next listener as the important part rather than as one item among twenty."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The complaint that arrives as a headline",
+      "text": "A customer describes a late delivery, a missing item and a rude phone call. By the time the account reaches the manager only the phone call survives, and it has grown into the reason the customer is leaving."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The evening retold twice",
+      "text": "A story about a long queue, heavy rain and a cancelled train is passed on and passed on again. The rain goes, the queue goes, and the cancellation becomes the whole evening, told with a vividness the first teller never gave it."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "Levelling and the relative sharpening that follows from it reproduce cleanly in modern transmission chains, while the razor result that made the work famous has no replication this entry could find.",

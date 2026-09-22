@@ -17,6 +17,23 @@
     "note": "The published study is 1995, and the procedure is older. Loftus and Pickrell credit an earlier case, reported as Loftus and Coan, in which a 14-year-old called Chris was fed a false memory of being lost at the University City mall in Spokane by his older brother. Crook and Dean's abstract dates the paradigm to five pilot experiments in 1991, involving three children and two adults. It gives 10 August 1992 as the date the University of Washington's Human Subjects Committee approved the study, and says the preliminary results from the five pilot subjects were announced four days later. James Coan, the student who ran the family pilot, published his own account in Ethics and Behavior in 1997."
   },
   "evidence": "Loftus and Pickrell ran 24 people, 3 men and 21 women, aged 18 to 53. Each was mailed a five-page booklet holding four one-paragraph stories from their childhood, three true and one crafted by the researchers. The relative was asked to name where the family shopped when the participant was about five, which stores would have drawn the child's interest, and to confirm the participant had never been lost in a mall. The false narrative was assembled from five fixed elements: lost for an extended period, crying, lost in a mall or large department store at about the age of five, found and helped by an elderly woman, and reunited with the family. Participants were interviewed twice, one to two weeks apart. They remembered something about 49 of the 72 true events, 68%. Seven of the 24 wrote something about the mall event in the booklet. At the first interview one of the seven decided she did not remember it, leaving 6 of 24, or 25%, claiming full or partial memory, and the figure held at the second interview. The false reports were thinner than the true ones, with a mean of 49.9 words against 138.0. At debriefing 19 of the 24 picked the mall event as the fabricated one. The paper's own summary of what it had shown is narrow: Loftus and Pickrell wrote that they made no claims about the percentage of people who might be misled this way. In the earlier family case, Chris rated his three true memories 1, 10 and 5 for clarity on an 11-point scale and the mall memory 8, and when told which event was false he had trouble believing it.",
+"examples": [
+  {
+    "kind": "everyday",
+    "tag": "The story an older sister keeps telling",
+    "text": "A sibling repeats an account of a childhood afternoon that never happened, alongside three that did. Asked about it again months later, the younger one supplies details nobody gave her. The plausibility and the vouching relative are doing the work."
+  },
+  {
+    "kind": "everyday",
+    "tag": "The second time of asking",
+    "text": "A relative's account of a mishap on a family holiday is put to a man who does not recall it, and put to him again a fortnight later. By the second interview he is describing the weather and what he had been wearing."
+  },
+  {
+    "kind": "everyday",
+    "tag": "Accepting it against picturing it",
+    "text": "A man agrees he must have been lost in a market as a child because his mother says he was, and never pictures any of it. Accepting that something happened is not remembering it, and the coding keeps the two apart."
+  }
+],
   "replication": {
     "state": "replicated",
     "headline": "A preregistered repeat with five times the sample coded 35% of participants as having a false memory, against 25% in 1995, and a reanalysis of those same transcripts by stricter rules put the figure at 4%.",

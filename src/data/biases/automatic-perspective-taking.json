@@ -17,6 +17,23 @@
     "note": "The paper reports three reaction-time experiments on adults and four looking-time experiments on 7-month-olds, and argues that beliefs about others are held in a format close enough to representations of the environment that both can move behaviour."
   },
   "evidence": "Experiment 1 put 24 adults through 40 animated movies. Against the P-A- baseline, detection was faster when both parties expected the ball, t(23) = 3.47, P = 0.002, and when only the participant did, t(23) = 3.43, P = 0.002. The critical comparison was P-A+, where only the agent expected it, t(23) = 2.42, P = 0.02. Responses in that condition did not differ from responses when only the participant expected the ball, t(23) = 0.99, P = 0.33, which the authors read as the two kinds of belief carrying similar weight. Experiment 2 replaced the returning agent with a pile of boxes for a fresh 24 people, and the agent-only advantage held at t(23) = 2.1, P = 0.04. Experiment 3 removed the agent from the movies entirely for another 24, leaving the ball's motion unchanged; the two conditions that had been P-A- and P-A+ now differed by t(23) = 0.76, P = 0.45, with a likelihood ratio the paper puts at about three to one for the null. Four looking-time experiments followed on 56 seven-month-olds, 14 in each. Infants looked longer at an empty occluder when only the agent expected a ball, F(1,13) = 7.29, P = 0.01, and showed no difference when the occluder was never lowered, F(1,13) = 0.05, P = 0.81. The running text of the original gives test statistics rather than condition means in milliseconds.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The shelf and the stock-taker",
+      "text": "A worker presses a buzzer faster when a box appears if a colleague beside him had last seen a box there, and slower when the colleague had seen the shelf empty. What the colleague saw is no use for the buzzer and shows up in the timing anyway."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The passenger watching the kerb",
+      "text": "A driver reacts to a cyclist sooner when the passenger has been watching that side of the road. Reading this as the driver having worked out what the passenger expects assumes the very thing the experiments are arguing about."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The door nobody was asked about",
+      "text": "Someone waiting on a door reacts to it opening faster when a person standing with her had reason to expect it, though her own view gave her none. Nothing in her task called for her to consider anybody else's expectation."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Run as published, the effect repeats every time: 95 people gave r = 0.586 against 0.450 in the original. Experiments that strip out a timing confound disagree about whether anything is left.",

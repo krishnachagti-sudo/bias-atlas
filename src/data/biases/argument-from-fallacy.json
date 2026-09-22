@@ -18,6 +18,23 @@
     "note": "Fischer closes his chapter on fallacies of substantive distraction, at page 305, by naming 'the fallacist's fallacy' and setting out five propositions he calls profoundly wrong. He offers it as a warning to readers of his own book. The modern label 'argument from fallacy' is later and this entry could not trace who coined it, nor find the Latin tag argumentum ad logicam in any scholarly source it opened."
   },
   "evidence": "There are no experiments here, and the record is a philosophical one. Fischer lists five propositions. A partly fallacious argument is fallacious throughout. A structurally false argument is substantively false in its conclusion. A fallacy signals its author's depravity. Sound thinking is merely thinking that is not fallacious. Fallacies exist independent of particular purposes and assumptions. His argument against the first is a picture: most extended arguments are not single chains but chain mail, which can fail in one part and keep its shape, though failure at a vital point still lets in the spear. Against the second he gives an eighteenth-century New England physician who worked out that American Indians were of Mongol extraction by reasoning from Noah's three sons and the absence of Negro slaves among the Indians. Fischer's judgement on it is that the conclusion is right and that every one of its premises is false, and the method of inference as well. He takes the anecdote from Namier. The formal version of the second move is Gerald Massey's asymmetry thesis, which David Botting reconstructs in six steps. An argument is valid if there is some valid logical form of which it is an instance, so showing one valid translation settles the matter for good, while showing that a translation is invalid never completes the enumeration of translations. Validity can be demonstrated and invalidity cannot, and Massey concluded from this that no theory of fallacy is possible. Botting accepts the asymmetry and denies the conclusion. On his account a formal paraphrase that comes out invalid is inductive evidence that the argument is invalid, strong or weak according to the case, and he prices two examples. 'Roses are red, so Einstein was a genius' has the form p therefore q and little else, so the invalid form is strong evidence. 'Roses are red and Einstein was a genius, so Einstein was a genius' can also be read as p therefore q, and there the same observation is worth almost nothing, because a valid reading is available and wins.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The bad case for a true fact",
+      "text": "A neighbour argues that the footbridge is unsafe because the engineer who passed it is a man he dislikes. The reasoning is worthless, and what follows is that he has given no reason, not that the bridge is sound."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The essay marked on its form",
+      "text": "A student spots a circular step in an essay arguing for a higher minimum wage and writes that a rise would therefore do harm. Finding the circle shows the essay establishes nothing; it establishes nothing about wages either."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The witness who overreaches",
+      "text": "A witness supports her account of the collision by saying that everybody in the street knows what happened there. Dismissing the account because that support is a bare appeal to numbers treats a bad reason as evidence against the thing it was offered for."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "No study of this move was found, and the nearest measured thing is a different fallacy in the same stage of a discussion.",

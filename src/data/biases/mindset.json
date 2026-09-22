@@ -18,6 +18,23 @@
     "note": "\"A social-cognitive approach to motivation and personality\" set out the model linking implicit theories to goals and to mastery-oriented or helpless responses. The classroom claims that made the idea famous came later, in Mueller and Dweck's 1998 praise studies and Blackwell, Trzesniewski and Dweck's 2007 longitudinal study and intervention."
   },
   "evidence": "Mueller and Dweck ran six studies with fifth graders. Children praised for intelligence after success cared more about performance goals than learning goals, and after a subsequent failure they persisted less, enjoyed the task less, attributed failure to low ability more, and performed worse than children praised for effort. Blackwell, Trzesniewski and Dweck followed 373 seventh graders across the junior-high transition. Holding an incremental theory predicted rising grades over two years, while an entity theory predicted a flat trajectory. Their Study 2 was the intervention: 48 seventh graders taught an incremental theory against 43 controls. The control group's grades kept falling and the taught group's decline reversed. That reversal, in a sample of 91, is the study most often cited as showing the intervention works.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The same mark read two ways",
+      "text": "Two pupils get thirty-eight per cent on the same paper. One takes it as a reading of how good she is at the subject and starts steering away from it. The other takes it as a list of the things she has not practised yet. The mark is identical; what it is treated as evidence of is not."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The child told she is a natural",
+      "text": "A girl praised for being clever whenever she does well begins picking the pieces she can already play. Every failure now carries information about her rather than about the piece, which makes harder work a risk to something she would rather protect."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The plateau in the evening language class",
+      "text": "An adult who made fast progress for six months stalls and concludes he does not have an ear for languages. The plateau is where every learner slows. What the belief about fixed ability changes is whether he treats it as a stage or as a verdict."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The correlation is real and small, at r = .10; the intervention gave lower-achieving American teenagers 0.10 of a grade point and nothing to higher achievers, and moved none of three national tests in an English trial of 101 schools.",

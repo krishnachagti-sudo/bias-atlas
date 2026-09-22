@@ -13,6 +13,23 @@
     "note": "The paper is a clinical report, not an experiment. It opens by describing five years of individual psychotherapy, theme-centred groups and college classes with over 150 highly successful women. Across its six pages it reports no measurement, no comparison group and no test statistic. The word 'syndrome' does not appear in it. The title spells the word 'imposter'; the body of the paper spells it 'impostor'."
   },
   "evidence": "Clance and Imes list the groups their observations came from: 95 undergraduate women and 10 PhD faculty women at a private Midwestern college, 15 undergraduates, 20 graduate students and 10 faculty at a large southern urban university, six medical students, and 22 professional women in law, anthropology, nursing, social work and other fields. Those numbers sum to 178, against the 'over 150' in the text. Approximately one-third were therapy clients; the rest were in growth-oriented interaction groups or classes taught by the authors. All were women, primarily white and middle to upper class, aged 20 to 45. A footnote reports the authors' clinical impression that the phenomenon occurs with much less frequency and much less intensity in men, and says the observation needs to be researched. Measurement arrived later. Clance published the 20-item Impostor Test in her 1985 book, and the copy reprinted on her own site carries her scoring bands: 40 or less means few impostor characteristics, 41 to 60 moderate, 61 to 80 frequent, and above 80 intense. Chrisman and colleagues compared the scale with the Perceived Fraudulence Scale in 1995, found three components they named Fake, Discount and Luck, and reported that impostor feelings were related to but discriminable from depression, self-esteem, social anxiety and self-monitoring. Their sample is given as 269 undergraduates in Mak, Kleitman and Abbott's review table, which is where this entry read it, the paper itself being closed at the publisher. Mak and colleagues appraised 18 validation studies covering four scales in 2019 and found the position weaker than its use suggests. The Clance scale, the Harvey Impostor Scale and the Perceived Fraudulence Scale rest on multidimensional definitions of the construct yet calculate overall total scores and define no subscale scores, which their review says appears to contradict the theoretical conceptualisation. It is premature, they conclude, to select a gold standard measure.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The promotion read as an administrative error",
+      "text": "A lawyer made partner decides the committee had a thin year and will notice its mistake at the first difficult case. The record says the work was good, and the belief explains the record away, which is how it survives the next promotion too."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The praise that gets re-explained",
+      "text": "A researcher whose paper is cited widely concludes the topic was fashionable and the reviewers lenient. Each success is fed to the same machinery that disposed of the last one, so nothing in the record can ever count as evidence against the belief."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The seminar prepared four times over",
+      "text": "A doctoral student reads far more than the seminar needs, gets through it well, and credits the preparation rather than any ability. The hard work confirms the belief instead of unsettling it, because the performance is booked as effort spent hiding a gap."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The correlates reproduce, including across two independent meta-analyses that agree closely, and the prevalence claim does not: the widely quoted 70% traces to a newspaper feature, while Bravata's review puts prevalence anywhere between 9% and 82% depending on the cutoff.",

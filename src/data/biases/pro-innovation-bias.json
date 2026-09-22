@@ -15,6 +15,23 @@
     "note": "The section \"The Pro-Innovation Bias of Diffusion Research\" is listed in the chapter 3 contents at page 92, first of four criticisms, and the next of them, the individual-blame bias, is listed at page 103. The third edition carries copyright dates of 1962, 1971 and 1983, and is a revised edition of Communication of Innovations, second edition, 1971. Rogers dates the recognition earlier than the analysis: he writes that the problem \"was one of the first biases to be recognized (Rogers with Shoemaker, 1971, pp. 78-79)\". That 1971 volume was not opened for this entry, so whether the phrase itself appears in it is unsettled."
   },
   "evidence": "Rogers offers reasons and a tally rather than a measured effect. The tally is Table 2-3 of the third edition, a content analysis of 6,811 generalisations drawn from the 1,084 empirical diffusion publications available in 1968. Variables related to individual innovativeness account for 58% of those generalisations. Consequences of an innovation account for 0.2%. Communication channel use takes 7%, earliness of knowing 5%, opinion leadership 3%, the rate of adoption of innovations across different social systems 2%, the rate of adoption of different innovations within one system 1%, and who interacts with whom less than 1%. Rogers reports 3,085 diffusion publications available in 1981 and gives his impression, from reading them, that the shares had not moved much since 1968. Part of his explanation is historical. Ryan and Gross studied Iowa hybrid corn, and Rogers writes of that innovation's \"overwhelming relative advantage\" over open-pollinated seed, arguing that copying the design fixed the assumption that other innovations would be similarly beneficial. He then names two causes. Change agencies fund much of the research and are in the business of promoting innovations. And a successful diffusion leaves a rate of adoption that can be investigated afterwards, while an unsuccessful one leaves no visible traces. The choice of innovation is the route by which the bias creeps in, and there he gives two ways: a sponsor arrives with an innovation already in mind, or the researcher picks one with a relatively rapid rate of adoption, because such innovations look noteworthy and are more likely to carry policy implications. The one direct test located is Karch, Nicholson-Crotty, Woods and Bowman's pooled event history analysis of interstate compacts in the United States. Compacts open to all fifty states give an entire universe of cases, with unusually wide variability in adoption patterns. Their abstract reports that limiting diffusion research to widely adopted policies affects the results of previous studies. Scholars are led to overestimate geographic diffusion pressures and policy attributes, and to underestimate professional associations and the chance to learn from previous adoptions. They conclude that the longstanding concerns seem warranted. The article is closed at the publisher, so nothing beyond that abstract is quoted here.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "Case studies drawn from the places it worked",
+      "text": "A report on how a new farming method spread takes its cases from the districts that took it up. Districts that looked at the method and declined leave no adoption curve behind, so nothing about them reaches the sample."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The pilot nobody wrote up",
+      "text": "A hospital ward drops a scheduling tool after six months and publishes no account of it, while the wards that kept the tool appear in the literature. The published record fills with the things that took."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The users who quietly changed it",
+      "text": "A study credits a new tool for the gains at a site where staff had rewritten how it was used within a week. Re-invention leaves no trace in a design that counts adopters and asks nothing else."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "There is no experiment to repeat. Rogers named a habit in a research literature, and the one direct test located, on United States interstate compacts, reports that the habit changes what diffusion studies conclude.",

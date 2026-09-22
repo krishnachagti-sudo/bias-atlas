@@ -2,7 +2,12 @@
   "no": 561,
   "slug": "argumentum-ad-crumenam",
   "name": "Argumentum ad crumenam",
-  "aliases": ["Appeal to wealth", "Argument to the purse", "Argumentum ad lazarum", "Appeal to poverty"],
+  "aliases": [
+    "Appeal to wealth",
+    "Argument to the purse",
+    "Argumentum ad lazarum",
+    "Appeal to poverty"
+  ],
   "category": "belief",
   "statement": "Wealth is offered as evidence that a claim is right, and poverty as evidence that it is honest; only the first half has been measured.",
   "meaning": "Two Latin tags name one move in opposite directions, and both are covered here. Ad crumenam argues from a speaker's money to the truth of what he says. Ad lazarum, its mirror, argues from his lack of money to his honesty or his virtue. The logical complaint and the psychological finding are different claims and this page keeps them apart. A logician objects that a bank balance is not a premise about the world, and says so about an argument written out in full. The measured literature asks something narrower: whether an economic cue attached to a stranger moves the traits that stranger is credited with. It does, reliably, and the trait it moves most is competence. Nothing located here tests the inference in its stated form, with a claim, a premise about the arguer's wealth, and a rated conclusion. What is tested is the perception such an inference would have to rest on. Argument from authority is the neighbouring entry for credentials, and halo effect for the general spread of one impression into judgements it has no bearing on.",
@@ -13,6 +18,23 @@
     "note": "The tag has a literary paper trail and no located coinage in logic. It appears twice in Sterne's novel. In the first passage Tristram decrees that his invented Argumentum Fistulatorium shall \"rank hereafter with the Argumentum Baculinum and the Argumentum ad Crumenam\", which treats the name as already in circulation. The second passage shows what it then meant: Walter Shandy, \"making use of the argument Ad Crumenam\", offers to lay twenty guineas to a single crown-piece that Stevinus was an engineer. That is money staked on a bet, not money offered as a credential, and the modern reading of the tag is not Sterne's. The text was read in the Project Gutenberg edition, which carries no imprint date; the Internet Archive catalogue dates a Dodsley printing of Volume I to 1760. An earlier use was not traced. The Oxford English Dictionary has an entry headed \"ad crumenam, adv.\", dated 2023 in its Crossref record, which was not read because the dictionary is behind a subscription."
   },
   "evidence": "The strongest test of the underlying perception is Oh, Shafir and Todorov, who ran nine studies pairing the same faces with upper-body clothing that independent judges had rated richer or poorer. The manipulation was subtle by design: no one in a separate group described the clothes as notably rich or poor, and descriptions of the richer and poorer items did not differ in valence, F(2, 4893) = 1.57, p = .208. Faces in richer clothes were rated more competent in every rating study. Generalised eta squared ran from .03 to .37: study 1, 24 undergraduates, F(1, 23) = 70.52, p < .001, .37 with a 90% interval of .31 to .45; study 2, 52 older participants, F(1, 51) = 73.95, p < .001, .15 [.12 to .18]; study 6, 200 participants, F(1, 199) = 151.96, p < .001, .03 [.03 to .04]. The measures taken against the effect did not remove it. Telling participants to focus on the person and ignore features such as the clothes left it standing, F(1, 35) = 56.52, p < .001. Telling them the pictured people all worked in sales and earned around $80,000 left it standing, F(1, 35) = 79.32, p < .001. Replacing every suit and tie with plain shirts left it standing, F(1, 35) = 36.62, p < .001. Offering a $100 prize for the most accurate ratings left it standing, F(1, 62) = 24.29, p < .001, and the authors note the effect size was almost identical to study 7, which used the same images without the reward. In study 9, 64 participants chose between pairs of faces previously rated equally competent, and picked the one in richer clothes 69% of the time, t(63) = 11.56, p < .001, 95% CI 66% to 72%. Half of them had been warned that clothing bears no relation to competence, and the warning changed nothing, F(1, 62) = 0.49, p = .486. Qi, Li and Du took the question into money. In their second experiment 33 students played a trust game against faces labelled with a monthly income of about 2,000 yuan or about 10,001 yuan. Partners labelled high income received more of the 10-yuan stake, 5.19 against 4.89, F(1, 32) = 5.96, ηp2 = .132, a difference of about 0.3 yuan. The rating effect was narrower: income raised trustworthiness ratings for Caucasian faces, t(31) = 3.39, p = .002, and not for Asian faces, t(34) = 1.33, p = .193, in a Chinese sample. In their first experiment the same design labelled faces with a country instead, and national wealth moved neither ratings nor money. Kraus, Torrez, Park and Ghayebi carried the question into hiring using speech rather than clothes. Their abstract reports that brief speech identifies a speaker's social class above chance, that pronunciation carries the cue over and above content, and that people with hiring experience judged the fit, competence, starting salary and signing bonus of higher-class applicants more favourably. The full text was not obtained and no figure from that paper appears here.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The tax rule at dinner",
+      "text": "A guest who arrived in an expensive car is believed about a tax rule the rest of the table doubts, because he has plainly done well for himself. Doing well is no reason to think the rule works the way he describes."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The two builders and the damp wall",
+      "text": "Two builders give the same diagnosis of rising damp, and the householder believes the one with the newer van. Success at running a business is being read as evidence about a wall."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The trustee on the literacy scheme",
+      "text": "A trustee who made a fortune in property is deferred to on how children learn to read, since somebody that wealthy must know what works. The fortune was earned elsewhere, and it carries no information about the reading scheme."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "The perception holds wherever it has been looked for. Across 32 societies and 5,504 people, a wealthy target was rated 1.19 points more competent than a poor one on a seven-point scale, 95% CI 1.15 to 1.23.",
@@ -27,7 +49,10 @@
       "es": 1.19,
       "esType": "md",
       "unit": "points on a seven-point competence scale",
-      "ci": [1.15, 1.23],
+      "ci": [
+        1.15,
+        1.23
+      ],
       "ciLevel": 95
     }
   },

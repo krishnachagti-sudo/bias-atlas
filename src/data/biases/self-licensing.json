@@ -18,6 +18,23 @@
     "note": "Study 1 approached 202 Princeton undergraduates on campus and analysed 200, after two failed to finish. They judged five negative statements about women, worded as either \"most\" or \"some\" women, then rated a cement company job. The credentials main effect ran across the whole sample, F(2, 194) = 4.4, p < .05, with means of 4.8 in the \"most\" condition against 4.3 and 4.5 in the \"some\" and base-rate conditions. Only men moved, but that is the unpredicted Gender by Credentials interaction, F(2, 194) = 3.7, p < .05, not the main effect. The 2001 paper already carries a section headed \"Self-Licensing Through Moral Credentials\", so the word is not a later coinage. Merritt, Effron and Monin's 2010 review is where it becomes the standard label."
   },
   "evidence": "Study 2 of the original paper is the design later replications went after. 132 Princeton undergraduates chose one of five applicants for a starting position at a large consulting firm, where the star candidate was a White woman, an African American man or a White man depending on condition. They then read a second hiring dilemma, set in a cement factory or in a racist police force, and said whether the job suited one gender or ethnicity better. The paper describes the answer scale as seven points running from -3 to 3 with a labelled midpoint, and prints the means on a 1 to 7 recoding. Those who had the chance to pick a woman or a Black candidate favoured a White man more, F(1, 124) = 6.3, p < .05, with means of 4.8 against 4.4. Dropping the 22 participants who did not pick the star candidate raised it to F(1, 102) = 9.6, p < .005, on means of 4.9 against 4.3. Two later demonstrations carried the idea outside prejudice. Sachdeva, Iliev and Medin had people copy a list of positive or negative trait words and write a story about themselves using them, then measured the sum people said they would give to a charity, and cooperation in a third experiment. Mazar and Zhong had people shop in a green or a conventional online store, then measured cheating for money. Blanken, van de Ven and Zeelenberg pooled 91 comparisons and 7,397 participants in 2015 and reported d = 0.31, 95% CI [0.23, 0.38].",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "Credit from the weekend rota",
+      "text": "Someone who has just put their name down for two weekend shifts feels entitled to duck the committee nobody wants to sit on. The shifts do not staff the committee. They work as a credential, so the refusal no longer reads as shirking."
+    },
+    {
+      "kind": "everyday",
+      "tag": "After the good appointment",
+      "text": "A manager who has just promoted the strongest candidate, who happens to be a woman, says something in the next meeting they would otherwise have kept to themselves. The appointment has changed how the remark can be read rather than what it is."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The green trolley",
+      "text": "A shopper who has filled the basket with the low-impact brand takes the car for the short trip afterwards without the usual twinge. The first choice is spent on the second, and the two are never set side by side."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The founding paper's first study met a 21-sample replication that scored its preregistered test a failure while its main effect held at a fraction of the original size, its second study failed a registered replication and reversed, and bias correction cuts the meta-analytic effect to somewhere between d = -0.05 and d = 0.18.",

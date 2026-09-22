@@ -13,6 +13,23 @@
     "note": "Six studies covering a romantic breakup, a tenure decision, a lost election, negative personality feedback, a story about an infant's death, and a job rejection. The paper names the durability bias and immune neglect; the phrase impact bias appears nowhere in it."
   },
   "evidence": "Study 1 surveyed 571 undergraduates at the University of Texas at Austin and analysed 532. Students who had never been through a breakup predicted their happiness two months after one at 3.89 on a seven-point scale. Students who had actually been through one sat at 5.46 if it was old and 5.42 if it was recent, against 5.27 for those who had not, F(1, 529) = 125.76 and 40.70 for the two comparisons with the forecast, both p < .001. The matching positive forecast was accurate: students expecting to be lovers guessed 5.79 and lovers reported 5.71 and 5.91, both contrasts null. Study 2 posted questionnaires to faculty and got 33 forecasters, 47 who had won tenure and 20 who had not. Forecasters put their happiness at 3.42 in the five years after being denied tenure. The seven recent denials reported 4.71, F(1, 38) = 4.36, p = .04, and the 13 older denials matched the forecast, F(1, 44) = 0.20. Study 3 stopped 57 voters leaving a polling station in the 1994 Texas gubernatorial election and reached 25 of them a month later, 10 losers and 15 winners. Losers predicted 4.90 and reported 4.40, F(1, 23) = 7.84, p < .02; winners were accurate. Across the first three studies the paper reports a mean effect size for the negative durability bias between r = .38 and .41, and between r = .02 and .12 for the positive one. Studies 4 to 6 staged failure in a laboratory. Study 4 gave 70 analysable students a mundane personality classification from a fallible or an infallible source. Among the 32 with positive self-views, forecasts ignored the source and experiences did not, interaction F(1, 30) = 5.26, p < .03, though the three-way interaction that defines the design was F(1, 62) = 3.37, p = .071. Study 5 gave 143 women at the University of Virginia a fabricated newspaper story about an infant suffocating in a playpen, blamelessly or through negligence. Forecasters, 114 of them, expected equal upset; the 29 experiencers were less upset by the blameworthy version, F(1, 139) = 3.84, p = .05. Study 6 rejected 78 analysable women for a mock job by a fair or an unfair procedure. The 39 who both forecast and experienced predicted the same misery either way and, ten minutes later, the unfairly rejected felt better, F(1, 37) = 6.14, p = .018.",
+    "examples": [
+      {
+        "kind": "everyday",
+        "tag": "The promotion that was going to change everything",
+        "text": "Before the interview a candidate expects a year of feeling transformed. Three weeks into the job the feeling has settled back to ordinary. The forecast was right about the direction and wrong about the strength and the length."
+      },
+      {
+        "kind": "everyday",
+        "tag": "The move to the coast",
+        "text": "Someone predicts that living by the sea will lift her mood for years. It lifts it for a season, after which life resumes its usual level, and the error sits in how long the lift was expected to last."
+      },
+      {
+        "kind": "everyday",
+        "tag": "The result dreaded for a fortnight",
+        "text": "A student expects a poor grade to ruin her summer. It ruins an afternoon, and within a week she has an account of why the module never suited her. Predicted feeling outran felt feeling in both intensity and duration."
+      }
+    ],
   "replication": {
     "state": "mixed",
     "headline": "The overestimation is large and reliable when people are later asked how they feel in general, and about zero when they are asked how they feel about the event.",

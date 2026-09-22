@@ -20,6 +20,23 @@
     "note": "Brock's chapter set out commodity theory, of which the scarcity effect is the best known prediction. The demonstration usually cited is seven years later, Worchel, Lee and Adewole's cookie experiment of 1975. The route into marketing practice runs through Cialdini's Influence, which both meta-analyses below cite for the claim itself rather than for evidence."
   },
   "evidence": "The cookie experiment is described here from its abstract, because no open copy of the paper exists. Across two experiments 200 female undergraduates rated the value and attractiveness of cookies held either in abundant or in scarce supply. Supply was either constant or changing, and a change was attributed either to an accident or to demand from other participants. These conditions were crossed with what participants believed about how many more people were still to take part. Cookies in scarce supply were rated as more desirable than cookies in abundant supply. Cookies whose supply fell from abundant to scarce were rated as more valuable than cookies that had been scarce throughout, and cookies scarce through demand beat cookies scarce through an accident. The abstract carries a fourth result the retellings drop: among the abundant conditions, constantly abundant cookies were rated higher than cookies that began scarce and later became abundant. The authors read the results as an extension of commodity theory and hypothesised reactance as an intervening process behind some of them. A second study was run to rule out demand characteristics. The 200 is the combined total for both experiments, and it is the only number from that paper quoted here. No mean or test statistic from it appears on this page. Lynn pooled the first two decades of the literature: 41 studies containing 51 tests of the scarcity principle, combined by the Stouffer method to z = 8.39. The mean effect size was r = 0.12, rising to 0.17 once five significant reversals were dropped as outliers, and individual effects ran from -0.54 to 0.43 with significant heterogeneity, chi-squared(48) = 190.22, p < 0.005. Tests of the uniqueness explanation gave a combined z = 3.59 while reaching significance in only 4 of 11 tests.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The biscuit being discontinued",
+      "text": "A shop puts a card on the shelf saying a biscuit is being dropped and this is the last of the stock. Regulars who bought a packet a month buy four, and describe the biscuit as better than they had remembered. Nothing about the biscuit changed."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Two places left on the sign-up",
+      "text": "A talk at the library sits half booked for a fortnight and stirs nobody. The sign-up page then reads two places left, and both go within the hour to people who had passed it over. The shortage, not the speaker, did the persuading."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The allotment with a waiting list",
+      "text": "Plots on the site with the four-year waiting list are spoken of as the good ground, by people who have never dug either site. Unavailability is being read as a report on quality, which is the whole of the effect and not much of it."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "Two meta-analyses thirty years apart both find a positive pooled effect, and the modern one puts it at 0.31 on purchase intentions across 193 effect sizes.",

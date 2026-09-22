@@ -13,6 +13,23 @@
     "note": "The paper is \"Lessons from a real world evaluation of anti-phishing training\", which carried the PhishGuru embedded training system out of the laboratory and into a Portuguese company. It divided 311 employees into 111 controls, 100 given generic training and 100 given spear-phishing training. Of participants who clicked a link, 88% went on to hand personal information to the fake site. The headline result is a within-group contrast: in the generic condition the share who clicked and gave information fell from 42% on day 0 to 15% on day 2, paired t-test p < 0.01, and in the spear condition from 39% to 12%, also p < 0.01. The paper's own Table 4 puts the untrained control at 19% on day 2 and 15% on day 7, against 15% and 12% for the generic condition. Its Table 6 reports that 73.4% of untrained participants identified both test emails correctly, against 70.4% of the generic trained and 58.2% of controls, and the authors write that untrained participants identified phishing emails better than trained ones."
   },
   "evidence": "Phishing is one of the few things in this area measured at scale on real people doing real work. Lain, Kostiainen and Čapkun ran a 15-month experiment inside a partner company between July 2019 and October 2020. Their participants clicked 6,680 of 117,864 simulated phishing emails, 5.67%, and 4,729 of 14,733 participants, 32.10%, clicked at least one. Ho and colleagues ran ten campaigns over eight months at UC San Diego Health, ending with 19,789 active full-time employees after cleaning. Their strongest single result is not about people at all. The lure decides the outcome: an Outlook password message drew a 1.82% failure rate and a vacation policy message drew 30.80%, in the same organisation. Across eight months 11,077 of 19,789 employees, 56%, clicked at least one phishing link. Rozema and Davis found the same gradient at a United States financial technology firm using the NIST Phish Scale to grade lures in advance, with click rates of 7.0% on easy lures, 8.7% on medium and 15.0% on hard, F(2, 12086) = 41.415, p < 0.001, eta squared 0.007. On who is susceptible, Lain and colleagues report that age matters, F(5, 14710) = 4.70, p < 0.001, with 18 to 19 year olds the most likely to click and 50 to 59 year olds also at raised risk. Gender does not, F(2, 14710) = 0.23, p = 0.63; the apparent gender gap in their data tracked which jobs men and women held. Their one intervention that worked was a banner on the suspicious email. Participants shown no warning clicked 3,964 times, against 1,427 with a short warning and 1,289 with a detailed one, F(2, 7485) = 564.71, p < 0.001. Their Tukey test found no difference between the short and detailed versions.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The employee who clicks twice",
+      "text": "A member of staff clicks a simulated lure, is shown a page explaining the warning signs, and clicks the next one a month later. The practice assumes the missing ingredient was knowledge, delivered at the moment of the mistake."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Two lures sent the same week",
+      "text": "One simulated message announces a change to holiday entitlement and another asks for a password reset. Failure rates differ by more than tenfold, which makes the wording of the message, rather than the character of the reader, the thing the exercise measured."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The strip across the top of the message",
+      "text": "A banner marks an email as coming from outside the organisation and names what to check before clicking. Warning somebody while they are reading is a different intervention from teaching them after they have already clicked."
+    }
+  ],
   "replication": {
     "state": "failed",
     "headline": "Four field experiments, the largest on 19,789 employees, find embedded phishing training close to useless, and in one of them the trained group clicked more.",

@@ -12,6 +12,23 @@
     "note": "Their free-recall paper is the one the free-recall literature cites for the effect. It was still closed on 21 September 2026 at Elsevier, at OpenAlex and at Unpaywall, so what appears here about it is taken from later papers that describe it. Conrad and Hull had published the same asymmetry for serial recall a year earlier in Psychonomic Science. They tested 20 Naval ratings on seven-digit sequences at two digits a second, and the visual and auditory error curves separated reliably only at the last position, p < .001. Their auditory condition was the participant reading each digit aloud rather than hearing it. Crowder and Morton's precategorical acoustic storage paper, which supplied the explanation the effect carried for a decade, appeared in the same year as Murdock and Walker."
   },
   "evidence": "Roediger and Crowder set out the three findings the sensory-echo account rested on: the auditory advantage for the last few items of a list, the suffix effect, and the partial-report advantage in multichannel listening. Their experiment tested the second. 160 Yale undergraduates heard 16 lists of 12 words at one word a second, with half the lists followed by the spoken word 'Recall' and half by a tone sounded twice in rapid sequence. Averaged over serial positions 7 to 12, the spoken cue cost .10 of the proportion recalled under serial-recall instructions, .09 under free recall, .09 under free position recall, and .04 when subjects were told to recall the last few items first. The authors attribute that .04 to a ceiling effect. The same suffix raised recall of the first three positions under the two order-based instructions, F(1, 32) = 4.09, p < .05. The rough equality across the four instruction types, once allowance was made for ceilings, was the problem the authors named: the conditions imposed different delays between the last word and its recall, and a store they say is usually assumed to last about 2 sec should have produced suffix effects of different sizes. Grenfell-Essam, Ward and Tan then ran the comparison across tasks. Forty participants at Essex in each of two experiments took lists of two to twelve words, split between immediate free recall and immediate serial recall. The auditory advantage appeared in both tasks at every list length except two words. In the second experiment it also failed at a list length of eight under free recall, where the authors write that the analysis just failed to reach significance. On short lists it was large and limited to the final serial position, the shape Conrad and Hull had reported for serial recall. On longer lists it was smaller and spread back over the last two or three positions, the shape reported for free recall. Visual advantages appeared at early positions on the longer lists in both tasks. Comparing the magnitude of performance for the two tasks at matched list lengths and serial positions gave r(44) = 0.858 in the first experiment. It gave 0.709 in the second, where the spoken condition was reading each word aloud rather than listening.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The phone number read out",
+      "text": "A number spoken aloud is easier to repeat straight back than the same number seen on a screen, and the gain sits in the last digits. The digits at the start are no better for having been heard, and are often worse."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Taking down a shopping list",
+      "text": "A list called across the kitchen is repeated back with its final items intact, while a list glanced at on a note loses its tail. Through the middle of either list the two ways of taking it in do about the same."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Directions given at the door",
+      "text": "Told four turnings aloud, a walker sets off with the last turning clear in mind. Reading the same four from a sign leaves the end of the sequence weakest, and the difference does not reach back to the beginning."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "Pazdera and Kahana analysed 1,469 people tested online with presentation modality varied between subjects, and found the auditory advantage at the end of the list and the visual advantage at the start of it in the same data.",

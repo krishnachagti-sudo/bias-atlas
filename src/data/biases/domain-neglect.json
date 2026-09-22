@@ -15,6 +15,23 @@
     "note": "The article carries a 2022 DOI and ran in the June 2023 issue, volume 66, issue 3, pages 226-233; Crossref created its record on 7 November 2022. The name is older than the article. It is defined, and the experiment reported, in Jacob Mike's Technion doctoral thesis of May 2022, which lists the article as under revision. Koby and Jacob are the same person. Every figure below is read from that thesis, because the article is closed at IEEE and was not obtained."
   },
   "evidence": "The bias was noticed in a project course before it was tested. Mike worked with Shira Nemirovsky-Rotman on fourth-year electrical engineering students building biomedical signal processing projects at the Technion. Students from earlier years judged processed medical images by mathematical fidelity criteria, and learned only after the algorithm ran that radiologists look for something else. Eight students who took an intervention programme built around radiologist meetings rated cooperation with radiologists 4.62 on a five-point scale as a project success factor; four students from earlier years rated it 2.5. The experiment that followed put two multiple-choice questions to learners in introduction to machine learning courses. The traffic light question describes two classifiers for red and green lights. Machine A is always right on red and wrong on green with probability 0.001. Machine B is always right on green and wrong on red with probability 0.0001. Machine B makes a tenth of the errors, and the error it makes is calling a red light green. Of 222 answers, 46% picked Machine A, 26% picked Machine B, 4% called them equal, 20% said data was missing and 4% did not know. Of 197 written explanations, 62% reasoned from the domain, 30% from the arithmetic alone and 8% weighed the two without settling. The carcinoma question holds the arithmetic fixed. Two classifiers confuse basal cell and squamous cell carcinoma in opposite directions, each with probability 0.001, and the two cancers differ in severity. Of 205 answers, 41% said data was missing, 17% did not know, 37% called the machines equal and a few picked one of them. Domain explanations fell to 48% and mathematical ones rose to 45%, which Mike puts down to students not knowing medicine. Among 170 participants who explained both answers, 41 of the 47 who reasoned mathematically about traffic lights did so again about carcinomas, while 28 of the 109 who reasoned from the domain about traffic lights switched to arithmetic for the carcinomas. The journal abstract, which is the only part of the article read here, sums the result up as one third of students failing to recognise the outperforming algorithm.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The two classifiers ranked on error rate",
+      "text": "Asked which of two models is better, a student picks the one that is wrong less often. The other is wrong more often and wrong in the direction that harms nobody, and the question on the table was which to deploy."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The screening test with two kinds of mistake",
+      "text": "A learner compares a test that misses cases against one that raises false alarms, and reports only the combined accuracy. Missing a case and calling in a healthy person carry different costs, and the arithmetic has no way of saying so."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The seasons nobody asked about",
+      "text": "A model of crop yields is fitted to the last few harvests and reported as accurate. Whether those harvests were typical is a question for an agronomist, and the learner had no reason to suspect one was needed."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "No repeat of the traffic light or carcinoma questions by anyone was found: the experiment has been reported once, in a 2022 doctoral thesis and a closed 2023 article by the same two authors."

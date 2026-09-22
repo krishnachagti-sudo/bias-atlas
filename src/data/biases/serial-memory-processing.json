@@ -2,7 +2,11 @@
   "no": 342,
   "slug": "serial-memory-processing",
   "name": "Serial memory processing",
-  "aliases": ["High-speed memory scanning", "Serial exhaustive search", "Sternberg memory-scanning task"],
+  "aliases": [
+    "High-speed memory scanning",
+    "Serial exhaustive search",
+    "Sternberg memory-scanning task"
+  ],
   "category": "memory",
   "statement": "The time to judge whether a probe was in a memorised set rises by about 38 milliseconds per item, which Sternberg read as a serial search through memory.",
   "meaning": "This names a claim about how memory is searched, not a claim that anybody judges anything wrongly. Sternberg's task shows a person a short series of digits, waits about two seconds, then shows one test digit. The person pulls one lever if the digit was in the series and the other lever if it was not. Mean reaction time rises in a straight line with the number of items held. Sternberg read that straight line as the trace of a serial comparison process, the probe checked against each stored item in turn at a rate no introspection reports. The slopes for present and absent probes came out equal, and he read that as showing the search runs to the end of the list even after a match is found. A search that stopped at the match would need, on average, half as many comparisons on present trials, and so half the slope. Neither half of this describes an error, a norm, or a shortfall against one. The phrase covers the architecture claim and also the primacy and recency effects measured in the same task, and this entry is about the architecture claim. The recall pattern is treated separately under the recency effect, entry 90.",
@@ -13,6 +17,23 @@
     "note": "The two-page report in volume 153, issue 3736, pages 652 to 654, is where the paradigm and the serial-exhaustive reading were set out. Sternberg does not use the phrase serial memory processing, and it appears in none of the four papers read for this entry. His own terms are serial-comparison process and exhaustive scanning, and his 2016 review calls the mechanism serial exhaustive search."
   },
   "evidence": "Experiment 1 showed eight subjects a random series of one to six different digits, each displayed for 1.2 seconds, followed by a 2.0-second delay, a warning signal and the test digit. Linear regression accounted for 99.4 percent of the variance in the overall mean latencies, with about 95 observations behind each point. The fitted slope was 37.9 plus or minus 3.8 milliseconds per symbol and the zero intercept 397.2 plus or minus 19.3 milliseconds. Lines fitted separately to positive and negative responses differed in slope by 9.6 plus or minus 2.3 milliseconds per symbol, and Sternberg attributed almost all of that to set size one, where positive responses ran 50.0 plus or minus 20.1 milliseconds faster. Across set sizes two to six the slope difference was 3.1 plus or minus 3.2 milliseconds per symbol, which he called insignificant. Experiment 2 fixed the positive set for 120 test trials at a time and held both stimulus and response entropy constant while set size varied. Six subjects gave a slope of 38.3 plus or minus 6.1 milliseconds per symbol and an intercept of 369.4 plus or minus 10.1 milliseconds, again with linear regression accounting for 99.4 percent of the variance in the overall means. They pulled the wrong lever on 1.0 percent of test trials. Sternberg put the implied scanning rate at between 25 and 30 symbols per second, about four times the fastest rate of subvocal speech for digit names, and concluded that the silent rehearsal his subjects reported maintains the memory rather than doing the scanning. He also noted that a self-terminating search could be the inefficient option, if deciding whether a match had occurred were slow and could not run alongside the scan.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The digit that follows the list",
+      "text": "Someone holds four numbers in mind, is shown a fifth, and says whether it was among them. They are right on almost every trial, and the only thing that varies is how long the answer takes."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The cost of two more items",
+      "text": "Holding six items instead of four adds a steady amount to every answer, whether the probe was in the set or not. That cost per item is the whole measurement, and nothing in it names a mistake or a standard anyone fell short of."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The search that does not stop at the match",
+      "text": "A person asked whether a name was on a short guest list feels they recognised it at once. The timings say the comparison ran on through the rest of the list, because a search that halted at the match would show half the cost on those trials."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Donkin and Nosofsky fitted the three rival architectures to full reaction-time distributions and the serial exhaustive model lost heavily under fast presentation and drew level under slow presentation, so the architecture the linear function is supposed to reveal depends on how the list was shown.",

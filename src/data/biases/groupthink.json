@@ -16,6 +16,23 @@
     "note": "The evidence was a set of qualitative readings of American policy decisions. The preface names four fiascoes given intensive case study, the failure to prepare for Pearl Harbor, the invasion of North Korea, the Bay of Pigs and the escalation of Vietnam, and two contrasting cases of careful decision, the Cuban missile crisis and the Marshall Plan. Janis writes that the case studies rest mainly on secondary sources, memoirs and published documents, and that the book belongs to the stage of hypothesis construction. A revised second edition appeared in 1982 as Groupthink: Psychological Studies of Policy Decisions and Fiascoes. Tetlock and colleagues worked from six groupthink cases in that edition, the Chamberlain cabinet, Admiral Kimmel's command, the Truman cabinet, the Kennedy cabinet over the Bay of Pigs, Johnson's Tuesday Lunch Group and the Nixon Watergate group, against the two vigilant cases. Chamberlain and Watergate are not among the 1972 case studies."
   },
   "evidence": "Janis worked backwards from outcomes he already knew were bad, reading histories of each group for the symptoms his model named. He said as much. His conclusion states that until the account is supported by controlled experiments and systematic correlational research, as well as by case studies, any prescriptions drawn from it are speculative inferences. No group was measured before its decision, and no comparison group was sampled at random. Turner and Pratkanis, introducing a special issue on the model's first 25 years, count fewer than two dozen empirical investigations in that period. That is roughly one a year, against the volume of work on cognitive dissonance or attribution over the same span. They also separate three readings of the theory. A strict reading requires all the antecedent conditions to be present. An additive reading makes groupthink more pronounced as more antecedents accumulate. A liberal reading lets the outcome depend on which particular antecedents are in play. Of the first two they write that no published studies provide evidence for either. On the chain as a whole their verdict is flat: no research has supported the hypothesised links among the five antecedents, the seven groupthink symptoms and the eight defective decision making symptoms. Those two counts are theirs, not Janis's, and the 1972 book gives eight symptoms and six defects. Esser's review of the same 25 years is titled 'Alive and Well'. Its abstract claims considerable heuristic value for the model and a small but growing body of empirical literature. The sentence usually quoted against Esser, that the small number of laboratory tests is not enough to evaluate each antecedent let alone the complete theory, is reproduced by Baron from page 133 and does not appear in the abstract. Park's earlier review reached the same place from the other side, finding few empirical studies of groupthink alongside many criticisms of it, and faulting those studies for testing a limited set of the model's variables. Henningsen and colleagues later turned an experiment on the method rather than the model. Their abstract argues that the symptoms reflect two processes rather than one, and that qualitative work can manufacture a correlation among the symptoms through retrospective sensemaking once people know the decision went badly.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The board that hears no outside valuation",
+      "text": "A close-knit board whose chairman states his preference early commissions no independent view of an acquisition, and the two directors with doubts keep them for the corridor. Each reads the silence as agreement, so nobody learns the doubts were shared."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The memo the office stops",
+      "text": "A private secretary holds back a paper questioning the department’s plan, on the ground that the minister has enough to worry about. Nothing has been overruled, and the dissent simply never reaches the table, which is the link in the chain that does the damage."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The trustees with no procedure",
+      "text": "A charity’s board has served together for a decade, meets without outside advisers and votes on one option at a time. The conditions produce the procedure: no alternatives weighed, no reappraisal, no outside estimates, and a decision that fails for those reasons."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Independent historians describe Janis's cases much as he did, and the antecedent conditions that were supposed to cause the trouble do not predict it.",

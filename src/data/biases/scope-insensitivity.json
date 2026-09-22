@@ -2,7 +2,11 @@
   "no": 186,
   "slug": "scope-insensitivity",
   "name": "Scope insensitivity",
-  "aliases": ["Scope neglect", "Insensitivity to scope", "Quantity insensitivity"],
+  "aliases": [
+    "Scope neglect",
+    "Insensitivity to scope",
+    "Quantity insensitivity"
+  ],
   "category": "decision",
   "statement": "People are said to state the same price for saving 2,000 things as for saving 200,000, but most split-sample surveys that vary quantity do find a difference.",
   "meaning": "The claim is about what a stated valuation tracks. Ask one group what it would pay to fix a problem, ask a matched group the same question with the problem ten or a hundred times larger, and the two answers are held to come out the same. If that were general, a survey-based value would measure the topic rather than the amount, and any figure derived from one could be set by whoever wrote the questionnaire. Economists call the comparison a scope test, and the term comes from the 1993 NOAA panel that reviewed the method after the Exxon Valdez spill. Three explanations compete. Kahneman and Knetsch argued that respondents are buying moral satisfaction, a warm glow whose size does not depend on how much good the money does. Baron and Greene argued for prominence, that the type of good is easy to attend to and its quantity is not. Contingent-valuation practitioners argued that flat answers come from bad instruments, and that a survey which holds attention produces answers that move.",
@@ -13,6 +17,23 @@
     "note": "The monograph carries a 1992 Exxon Corporation copyright and was written while RTI was retained by Exxon during the Exxon Valdez litigation. It appeared as an institutional monograph rather than in a journal. RTI Press reissued it in 2010 with the original text unchanged and no new analyses. Kahneman and Knetsch published their embedding paper the same year, and the word scope entered the debate a year later through the NOAA panel."
   },
   "evidence": "The bird experiment ran in two Atlanta shopping malls between 17 May and 5 June 1991. Recruiters intercepted adults over 19 who were not full-time students, and the questionnaires were self-administered, with 1,205 completed across the three migratory-waterfowl versions. Respondents read that waterfowl drown in uncovered waste-oil holding ponds in the Central Flyway, and were asked the most their household would agree to pay each year in higher prices for wire-net covers. The only difference between versions was the number of birds. Protest zeros, outliers and responses above a quarter of income were dropped. Table 5-1 then gives mean willingness to pay of $80 for 2,000 birds, $78 for 20,000 and $88 for 200,000, with N of 288, 286 and 281 and a median of $25 in all three. Wilcoxon rank sum tests gave p-values of 0.178, 0.457 and 0.145 for the three pairwise comparisons. Tobit models put the predicted means at $59, $59 and $71 under a linear specification and $81, $80 and $123 under a log specification. A second experiment in the same monograph asked about preventing damage from small oil spills or from all oil spills, and the larger programme drew a lower mean, $95 against $144. Kahneman and Knetsch ran a different design. Three telephone samples in greater Vancouver, of 66, 78 and 74 adults, were asked to price public services at nested levels of inclusiveness. Median willingness to pay for the first good named was $25 at the narrowest level and $50 at the two wider ones, a difference their Mann-Whitney test did not find. Asked instead to allocate down from a broader total, the same rescue-equipment good drew a median of $1.00 in their Table I. The running text gives that figure as $1.50 and the ratio as about 16, so the paper disagrees with its own table. In a separate survey of 14 nested pairs of causes, rank correlations between mean moral-satisfaction ratings and median willingness to pay were 0.78 and 0.62. Baron and Greene ran 11 experiments, on students at the University of Pennsylvania and on adults stopped in Philadelphia's main railway station, and reported that contribution, warm glow and budget constraints did not fit the data, while prominence did.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The appeal that changes its number",
+      "text": "One mailing says a reserve loses a few hundred birds a year to polluted water, another says tens of thousands. Readers of each pledge about the same amount. The pledge is set by how much the problem matters to them, not by how much harm the money stops."
+    },
+    {
+      "kind": "everyday",
+      "tag": "What a household would pay for the rivers",
+      "text": "A council survey asks one half of the town what it would pay to clean a single stretch of river and the other half what it would pay to clean every stretch in the county. The two figures come back close together, so the answer is about rivers rather than about how many."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Beds in one ward or in twelve",
+      "text": "Donors told a hospice appeal will fund one extra bed give much what donors told it will fund a dozen give. Each group is pricing the idea of a hospice bed, and the count of beds barely enters the sum."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The bird result held when the same questionnaire was rerun aloud with an interviewer present, and failed to appear in the large surveys that vary quantity under better conditions.",

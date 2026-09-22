@@ -13,6 +13,23 @@
     "note": "Their questionnaire study put the same auto insurance choice to subjects under two framings, and it preceded the Pennsylvania law. The two-state comparison they are remembered for is not their own data collection. They cite the Insurance Information Institute for it, and call it a natural quasi-experiment. New Jersey motorists had to acquire the full right to sue at extra cost and about 20 percent did. In Pennsylvania the full right was the default and about 75 percent kept it. The article is open on Johnson's Columbia Business School page, which was read here; Springer sells it."
   },
   "evidence": "The quantitative core is a meta-analysis. Jachimowicz, Duncan, Weber and Johnson searched the literature and pooled 58 datasets from 55 studies in 35 articles, with a pooled n of 73,675. The base model gives d = 0.68, 95% CI [0.53, 0.83]; a three-level model that allows for datasets nested in studies gives d = 0.63, 95% CI [0.47, 0.80]. For the binary outcomes, which are most of them, Cramér's V is 0.29, 95% CI [0.21, 0.37], and the absolute difference in take-up between default conditions averages 27.24 percentage points. One domain moderator comes out: consumer settings, b = 0.73, SE = 0.23, p = 0.003. Environmental settings run the other way but only marginally, b = -0.47, SE = 0.27, p = 0.08. Of the three proposed routes, two moderate the effect and one does not. Endorsement gives b = 0.32, SE = 0.15, p = 0.038 and endowment b = 0.31, SE = 0.15, p = 0.044, while ease gives b = -0.05, SE = 0.15, p = 0.75. Re-run with robust variance estimation, endowment drops to p = 0.081. The field evidence is larger than the laboratory evidence in every sense. Carroll, Choi, Laibson, Madrian and Metrick studied a firm that briefly required new hires to state a 401(k) decision rather than leaving non-enrolment as the default. Three months after hire, 69 percent of the active-decision cohort had enrolled against 41 percent of the standard-enrolment cohort, a gap of 28 percentage points, and the savings distribution reached at three months would have taken thirty months to reach under the ordinary default. Liebe, Gewinner and Diekmann report two Swiss field studies covering over 200,000 households and 8,000 enterprises whose suppliers made renewable electricity the standard package. Around 80 percent of customers in both sectors stayed with the green default, and the effect was stable over at least four years. Electricity consumption had only a weak effect on acceptance, and accepting the default did not raise consumption afterwards.",
+    "examples": [
+      {
+        "kind": "everyday",
+        "tag": "The pension rate the new starter never chose",
+        "text": "Staff are enrolled at a set contribution unless they say otherwise, and most stay at it for years. Move the set rate and most of them sit at the new one instead, having again done nothing."
+      },
+      {
+        "kind": "everyday",
+        "tag": "The tariff that comes with the flat",
+        "text": "A tenant moves in and keeps the supplier already connected, because keeping it takes nothing and changing it takes an afternoon. No option was removed and no price changed."
+      },
+      {
+        "kind": "everyday",
+        "tag": "The box already ticked on a form",
+        "text": "A charity's form arrives with the monthly gift selected. Far more donors take it than would tick the same box on a blank form, and part of that gap is a reading of what the charity thinks the right amount is."
+      }
+    ],
   "replication": {
     "state": "replicated",
     "headline": "Fifty-eight default studies pool to d = 0.68, and the spread around that figure is wider than the figure.",

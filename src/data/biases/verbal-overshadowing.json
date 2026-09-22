@@ -16,6 +16,23 @@
     "note": "Six experiments across faces, colours and a spoken statement. The paper's own footnote records that Experiments 1 to 5 came from Schooler's doctoral dissertation at the University of Washington and Experiment 6 from Engstler-Schooler's undergraduate honours thesis."
   },
   "evidence": "Experiment 1 showed 88 undergraduates a 30-second bank robbery video, gave them a 20-minute filler task, then five minutes either to write a detailed description of the robber's face or to do an unrelated activity. Asked to pick the robber from a slide of eight similar faces, 38% of the describers were correct against 64% of controls. Experiment 2 repeated that with 104 people and added a group who visualised the face instead: 27% correct after describing, 58% after visualising, 60.6% for controls. Experiment 3 ran the same logic on colour with 30 people, at 33%, 64% and 73%. Experiment 4 moved the description to just after the video and put the 10-minute filler afterwards, with 117 people, and found 49% against 71%; the same experiment had a third group recall the robber's spoken words, and their memory for the statement ran the other way, 46% against 32% for controls, which did not reach significance. Meissner and Brigham later pooled 29 effect-size comparisons covering 2,018 people and reported a small negative effect, Fisher's Zr of -0.12, with the impairment larger when the identification followed the description without delay.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The description written before the identification",
+      "text": "A shop worker sees a thief, writes a full account of the face while it is fresh, and then cannot pick the man out of a set of photographs. The written account becomes the easier thing to retrieve, and it is a poor guide to what the face looked like."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The walker reported to a search party",
+      "text": "A volunteer describes a missing walker in detail over the radio, then fails to recognise him when the group passes him on the path. Putting a face into words does not preserve it. It supplies a competing record that the eyes then have to work against."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The witness who talked it through first",
+      "text": "Two people see the same driver. The one who spends ten minutes describing him to a neighbour does worse at the identification than the one who says nothing. What separates them is the describing, since both watched for the same length of time."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "Thirty-one laboratories reran the study and found the effect, at 4 percentage points; the 22 that reran it again in the original task order found 16.",

@@ -15,6 +15,23 @@
   },
   "evidence": "The most cited demonstration is Ariely and Loewenstein's arousal study. Thirty-five male Berkeley undergraduates were recruited by campus advertisements, paid $10 a session, and given a laptop to use at home. In the arousal sessions they masturbated and could answer questions only once they moved a slider past 75 on a self-reported arousal scale. Answers ran from 0 to 100. Eleven men did a non-aroused session only and drop out of the main comparison, which therefore rests on 24 men, t(23) throughout. Of 20 questions on the appeal of sexual activities, 16 shifted upward with arousal: anal sex from 46 to 77, tying up a partner from 47 to 75, attraction to a 12-year-old girl from 23 to 46, arousal by contact with an animal from 6 to 16. All five questions about procuring sex shifted: slipping a woman a drug from 5 to 26, continuing after a date says no from 20 to 45. Of eight questions on unsafe sex, the four that name a condom shifted and the other four did not. Sayette, Loewenstein, Griffin and Black ran the only test here in which a prediction is scored against the same person's later valuation. Ninety-eight smokers, mean age 27.1 and 17.2 cigarettes a day, were assigned to a hot condition, a cold condition or a comparison group that attended one session. In session one the hot group had abstained 12 hours and held a lit cigarette while the cold group had smoked normally and held a roll of tape. Urge ratings were 75.9 against 26.7, F(1, 73) = 61.03, p < .0001. Each man or woman named the smallest sum they would accept to delay smoking five minutes in session two a week later, then revised it in session two while craving. The cold group moved from $8.18 to $9.33, p < .05. The hot group moved from $9.53 to $8.77, not significant. The interaction is F(1, 72) = 7.83, p < .007. Van Boven and Loewenstein tested the version about other people. Their first study showed 39 students three hikers whose food a bear had eaten, in country the scenario says holds plenty of water. Most reported mentally trading places with them, 79% in open description and 87% when asked directly. A second study put 47 people before or after exercise on a stationary bicycle, a rowing machine or a stepping machine, and gave them different hikers, lost with no food and no water. Those who had just exercised were thirstier, 6.88 against 3.65, and more likely to say both they and the hikers would be more bothered by thirst than by hunger, all four comparisons at p < .05 or better."
   ,
+    "examples": [
+      {
+        "kind": "everyday",
+        "tag": "The shopping list written after lunch",
+        "text": "A full shopper plans a week of modest meals and buys to the list. Hungry on Thursday evening he wants none of it, because the list was drawn up by someone who could not feel hunger at the time."
+      },
+      {
+        "kind": "everyday",
+        "tag": "The friend who says just stop",
+        "text": "A non-smoker tells a smoker that the craving is only a habit. He is not withholding sympathy; he cannot summon the state he is being asked to picture, so he judges it from a theory of it instead."
+      },
+      {
+        "kind": "everyday",
+        "tag": "The appointment booked while the pain has passed",
+        "text": "A patient whose back has stopped hurting cancels the physiotherapy he arranged during the worst week. Free of pain he cannot recover the state that made the booking seem necessary, and he reads his earlier self as having overreacted."
+      }
+    ],
   "replication": {
     "state": "replicated",
     "headline": "Two German-language studies by authors with no tie to Loewenstein reproduced the arousal effect in men and found it in women, with 84 and 86 participants, though the second holds only after 19 of the 86 are dropped.",

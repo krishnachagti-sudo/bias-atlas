@@ -14,6 +14,23 @@
     "note": "Three cross-sectional studies that built the scale and mapped its correlates. The term was already in circulation: the paper cites two 2011 and 2012 trend reports by the marketing agency JWT and columns in the New York Times and San Francisco Chronicle as the writing it drafted its items from."
   },
   "evidence": "Study 1 gave 32 candidate items to 1,013 Mechanical Turk workers, 672 men and 341 women, aged 18 to 62, of whom 41.1% lived in the United States and 35.9% in India. An iterative confirmatory factor analysis cut the pool to 25 items, and item response theory picked the final ten. Their combined test information peaked at a latent trait level of .51, and the ten items gave an alpha of .87. Study 2 ran the scale on a Harris Poll panel in Great Britain over two weeks in late September 2011, yielding 2,079 working-age adults, 1,040 men and 1,039 women aged 22 to 65. FoMO correlated −.37 with age, −.29 with psychological need satisfaction, −.24 with general mood, −.19 with life satisfaction and .40 with social media engagement. Engagement was measured by five questions about using social media around waking, meals and sleep. Mediation analysis found that need satisfaction, mood and life satisfaction predicted social media engagement only through FoMO, the direct paths falling to b = .003, b = .001 and b = .013, none of them significant. Study 3 tested 87 first-year students, 20 men and 67 women. FoMO predicted Facebook engagement at b = .41, negative affect while using Facebook at .40, positive affect at .31, Facebook use during lectures at .27, p = .013, and self-reported distracted driving at .28, p = .029. The driving figure rests on the 62 participants who were regular drivers rather than on all 87, and 64 of the 87 reported using Facebook in no lectures at all. All three studies were one-time surveys, and the authors say so, writing that future work in experimental settings would allow causal models to be evaluated.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The phone checked at the table",
+      "text": "Someone out with friends keeps opening the feed to see what other friends are doing, and enjoys the evening less for it. The apprehension is that the rewarding thing is happening somewhere else, which is the state the scale asks about."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The invitation accepted without wanting to go",
+      "text": "A person tired at the end of the week says yes to a party they would rather skip, because of what might be said there afterwards. What drives the yes is absence from the event rather than any attraction to it."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The walk interrupted to post",
+      "text": "A traveller stops to put the view online and then waits for replies before carrying on. Two of the scale’s ten items ask about behaviour of this kind rather than about fear, which is one reason its link with social media use is hard to read."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The correlation with social media use reproduces at .38 to .41 across two large meta-analyses, close to the original .40, while the scale's structure and the causal reading of it do not hold up.",

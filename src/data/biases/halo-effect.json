@@ -13,6 +13,23 @@
     "note": "The paper is \"A constant error in psychological ratings\". Officers rated their subordinates on physical qualities, intelligence, leadership and personal qualities using a scale devised by Walter Dill Scott, with a fifth section for general value to the service, and instructions that required each qualification to be considered on its own. One flight commander rating 137 aviation cadets correlated intelligence with physique at .51, with leadership at .58 and with character at .64. Across the three raters Thorndike studied next, the average correlations were .31 for physique with intelligence, .39 for physique with leadership and .28 for physique with character. Those three figures are averages over raters, not single coefficients. Thorndike traces the observation back to a 1915 study of employees at two industrial corporations."
   },
   "evidence": "The original evidence is correlational and comes from rating data. Thorndike's sharpest case sits outside the four-way scale. He correlated the total Scott rating of aviation officers with a separate rating of technical ability as a flyer, a quality he argued was specialised, and the eight raters he studied gave .74, .85, .52, .91, .63, .72, .47 and .53, an average of .67. He carried the argument into teaching through Knight's study of 129 teachers rated by their superior officer on the Boyce score card, where general merit correlated .68 with intellect, .79 with power in discipline and .63 with voice, and voice itself correlated .63 with intelligence. Nisbett and Wilson supplied the experimental version. They showed 118 University of Michigan students, 62 men and 56 women, one of two videotaped interviews of about seven minutes with the same instructor, a native French-speaking Belgian who spoke English with a fairly pronounced accent. In one interview he was warm and flexible, in the other cold and doctrinaire. Liking moved as intended, 5.48 against 3.18 on an eight-point scale, t = 8.62, p < .00001. Ratings of features he had not altered moved with it: physical appearance t = 4.71 and p < .00001, mannerisms t = 4.06 and p < .0001, accent t = 3.78 and p < .0002, each on df of 1/117. The paper states that all its p values are two-tailed. A follow-up showed 34 further students the tapes without the sound, and appearance and mannerisms came out only trivially higher in the warm version, t below 1 for both, which is the paper's ground for treating the attributes as constant. Subjects denied the influence. Of 34 asked whether their liking had shifted their attribute ratings, a majority said it had not, and the paper reports all six one-sample t tests as not significant. Of 56 asked the reverse question, those who had seen the cold instructor said their view of his appearance, mannerisms and accent had lowered their liking, t = 3.28, 2.80 and 2.74, all p < .01. The physical attractiveness branch is a separate and larger literature with meta-analyses of its own, and it is set out at the physical attractiveness stereotype, no. 505, rather than repeated here.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The appraisal where every line agrees",
+      "text": "A manager fond of one of their team scores them high on punctuality, judgement, technical skill and tact. The form asked four separate questions, and one impression of the person has been written into all four answers."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The tidy van",
+      "text": "A tradesman arrives with clean tools and a swept van, and the householder concludes the wiring will be sound. Tidiness and competence are different properties, and the second has not been observed at all."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The speaker who sounds sure",
+      "text": "A panellist who talks fluently is rated better informed than one who hesitates, by an audience that cannot check either claim. Fluency was the only quality on show, and it has coloured the ratings of everything else."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "The experimental effect has been repeated, once against subjects who were told what it was, and the index built from it for workplace ratings is what has been attacked.",

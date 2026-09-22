@@ -17,6 +17,23 @@
     "note": "The line is spoken by Sir Arnold Robinson to Sir Humphrey Appleby in 'Power to the People', the fifth episode of the second series, first broadcast on 7 January 1988. It names the reasoning 'politician's logic'. The quasi-formal titles 'politician's syllogism' and 'politician's fallacy' are later coinages, and this entry located no source that dates or credits them."
   },
   "evidence": "There is a script and there is a paraphrase, and they differ. The broadcast transcript held for this entry has Sir Arnold calling it the old logical fallacy, giving the cats and dogs illustration, and then saying that his colleague suffers from politician's logic, something must be done therefore we must do it. The middle premise, this is something, is absent from that line. The transcript is a rendering of the broadcast captions rather than the published script, and the point it settles is only what that rendering carries. A search of the same archive's transcripts for all 16 episodes of Yes, Prime Minister, all 20 episodes of Yes Minister and the 8 episodes of the 2013 revival found the phrase in this episode alone. The paraphrase is what circulates. A search of the Hansard API for the exact phrase 'politician's syllogism' returned four contributions, no two of them quoting the same words. George Freeman gave it in 2014 as we must do something, this is something, ergo we should do it. Andrew Lewer gave it in 2018 as there is a problem, something must be done, this is something, so let's do this, and attributed it to Yes, Minister. He gave it again in 2021 with different wording and attributed it to the 1988 edition of Yes, Prime Minister. Lord Maude gave it in 2024 as something must be done, this is something, therefore we must do it, and attributed it to Sir Humphrey, who in the episode is the character being diagnosed rather than the one diagnosing. A fifth instance, Julian Huppert in 2013, was read off the TheyWorkForYou reproduction of Hansard and did not come back in that API search, so the count of four is what one query returned rather than a count of the record. What has been measured is the behaviour the joke is about. Luca, Malhotra and Poliquin assembled every state firearm bill and every mass shooting in the United States over 25 years, 20,409 bills and 3,199 laws across the fifty states, and estimated the effect of a shooting by difference in differences. Mass shootings were 0.13 percent of gun deaths and 0.34 percent of gun murders across the period. A single mass shooting raised firearm bills introduced in a state by 15 percent the following year, about 2.4 extra bills for the average state, with each additional death worth 2.3 percent. Direction followed the legislature rather than the event. Republican-controlled legislatures introduced 48 percent more bills and enacted 32 percent more laws, and the number of enacted laws loosening gun restrictions rose by 115 percent. The Democrat figures, 11 percent more bills and 7 percent more laws, were not statistically significant, and the paper reports no significant effect on laws that tighten restrictions. Chen and Kappelman looked at the same question from the voting record, estimating gun-policy positions for 14,585 state legislators from roll calls between 2011 and 2022, and found that a shooting inside a legislator's own district did not measurably move how that legislator voted.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The road markings after the crash",
+      "text": "A cyclist is hurt on a fast road, a committee agrees that something must be done, and it votes to repaint the markings because repainting is something. Agreeing that a response is needed does not show that this response reduces the danger."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The merger of two teams",
+      "text": "A department is losing money, the board accepts that it cannot carry on as it is, and it merges two teams. Being a change is not what makes a change work, and nobody has argued that this one touches the loss."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The extra hour of revision",
+      "text": "A student failing his mocks decides he must do more, and adds an hour of rereading his notes each night. The need to act is real, and rereading notes is the method that produced the failed mocks in the first place."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "No study testing whether people accept this argument was found, and the two political-science findings quoted here have been examined by later work that reaches different conclusions.",

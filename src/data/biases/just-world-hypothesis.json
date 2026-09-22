@@ -13,6 +13,23 @@
     "note": "Their paper is \"Observer's reaction to the 'innocent victim': Compassion or rejection?\". Its reference list cites Lerner's own 1965 paper in the same journal, on evaluation of performance as a function of the performer's reward and attractiveness, as the source of the theory it tests. He set the theory out at length in a 1980 book."
   },
   "evidence": "Lerner and Simmons recruited 75 female students, run in groups of four to ten. Three were dropped for having learned the setup in advance, leaving 72 spread across six conditions of 9 to 14 observers. Each watched a ten-minute videotape of a peer, in fact a confederate, appearing to take painful electric shocks for errors on a paired-associate learning task. Observers then rated her on 15 evaluative bipolar scales, with each rater's own self-rating subtracted, so lower scores mean a harsher judgement. What changed the ratings was what observers were told came next. Those who voted to move her into a rewarded second session, and were told the vote had carried, gave -5.07. Those told the experiment was over gave -12.85, and those shown her afterwards, unharmed and paid, gave -11.10. Those who voted but were not told the outcome gave -25.18. Those told they would watch her suffer again gave -25.78. Harshest were observers in the martyr condition, who had seen her reluctantly agree to be shocked so that they could earn their course credit, at -34.00. The overall test was F(5, 66) = 4.00, p < .005. A second measure, five questions on the victim's social stimulus value, gave F(5, 66) = 3.86, p < .005; a similarity measure gave F(5, 66) = 1.08 and no reliable differences.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The appeal you can do nothing about",
+      "text": "A reader learns about a family who lost everything in a fire, with no way to help and no prospect of one. By the end of the page they have decided the family were careless, which is a judgement about character rather than about the fire."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The colleague let go",
+      "text": "Staff who cannot change the decision start remembering the work as weaker than they thought it at the time. The rating of the person moves because the outcome cannot, and the harshness comes easiest to those who can do least."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The report of a mugging",
+      "text": "Readers ask what the victim was doing on that road at that hour. The question arrives before any thought about the attacker, and it keeps a fair world intact at the victim's expense."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Pooling 55 experiments run between 1966 and 2016, derogation of an innocent victim came to d = 0.15, and how vividly the suffering was shown predicted how large it was.",

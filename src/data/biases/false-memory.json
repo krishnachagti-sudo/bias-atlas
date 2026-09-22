@@ -17,6 +17,23 @@
     "note": "The 1974 paper on leading questions is the experiment the field is built on, but it is not the earliest antecedent and it did not use the term. Deese published the word-list result in 1959 and it sat unused for 36 years. Loftus and Pickrell's implanted childhood event, the study known as lost in the mall, came in 1995."
   },
   "evidence": "Loftus and Palmer ran two experiments. In the first, 45 students watched seven films of traffic accidents and were asked how fast the cars were going when they hit each other, with nine students receiving each of five verbs. Mean estimates ran from 31.8 mph for contacted through 34.0 for hit, 38.1 for bumped and 39.3 for collided, to 40.8 for smashed, quasi F(5, 55) = 4.65, p < .005. In the second, 150 students watched one film of a multiple-car crash. Fifty were asked the speed question with smashed, fifty with hit, and fifty were not asked. A week later all were asked whether they had seen any broken glass, of which the film contained none. Sixteen of the smashed group said yes against seven of the hit group and six of the controls, chi-squared(2) = 7.76, p < .025. Roediger and McDermott revived Deese's word lists. Thirty-six students heard six lists of 12 associates of an unpresented critical word. They recalled the critical word on 40% of lists, against a 14% intrusion rate for every other word in English. On recognition, the critical lures were called old at .84 against a .86 hit rate for studied words, and were rated sure old .58 of the time. A second experiment with 30 students and 24 lists of 15 words raised false recall to 55%. Loftus and Pickrell gave 24 people booklets describing three true childhood events supplied by a relative and one fabricated event of being lost in a shopping mall at about age five. Sixty-eight percent of the true events were remembered. Seven people remembered the false event in the booklet and six of the 24, or 25%, still did at both interviews. Their false memories were thinner than their true ones: a mean of 49.9 words against 138.0, and clarity ratings of 2.8 against 6.3. At debriefing 19 of the 24 picked the mall event as the false one. Wade, Garry, Read and Lindsay ran the same idea with a doctored photograph. Twenty subjects aged 18 to 28, mean 20.2, were pasted into a prototype picture of a hot air balloon ride a relative had confirmed they never took. Across three interviews with guided imagery, five trained raters classified the reports and agreed on 85% of cases. By the end of the first interview 7 of the 20, or 35%, remembered the ride partly or clearly. By the third, 10 of 20, or 50%, did. That 50% counts partial memories alongside clear ones, and at the first interview only one of the seven was clear. The same subjects recalled 58 of their 60 true events. Those who accepted the balloon ride were 44.5% confident it had happened, against 90.8% for the true events they recalled.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The detail supplied by the question",
+      "text": "A neighbour asked which way the burglar’s van turned answers north, and by the second interview recalls a white van clearly, although no vehicle was ever established. The question supplied the detail and the record of the evening absorbed it."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The family story remembered from the inside",
+      "text": "An adult hears an older sibling describe getting lost at a fair, and over a few retellings acquires a first-person memory of the crowd and the lost shoe. The event never happened, and the recollection feels no different from one that did."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The deadline nobody set",
+      "text": "A colleague insists a date was agreed in the room, and within a fortnight others recall the moment it was said. Memory is rebuilt at retrieval, so information arriving after the meeting can enter the record and be experienced as original."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The word-list effect and the mall study both repeat, but the rate at which a suggested childhood event becomes a false memory is reported anywhere from 4% to 47% depending on who scores the transcripts.",

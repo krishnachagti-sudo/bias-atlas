@@ -13,6 +13,23 @@
     "note": "In May 1964 the pupils of Oak School, an elementary school in South San Francisco where Jacobson was principal, sat the Tests of General Ability. Their own teachers administered it, and were told it was a Harvard test that predicted which children were about to spurt. That autumn each of the 18 teachers was handed a list of the children said to have scored in the top 20 percent, picked from a table of random numbers. Spitz and Rosenthal both record that the pretest was given a school year before the grade labels used in the results, so the children reported as first-graders sat it in kindergarten. The reasoning came from Rosenthal's earlier work on experimenter expectancy, where an experimenter's belief about a hypothesis shifts the results they obtain."
   },
   "evidence": "Teachers were given the names, the school year ran, and everyone was tested again. Both groups gained, the bloomers about 12 IQ points and the controls about 8. Jussim and Harber put numbers on the gap between them. It corresponded to an effect size of 0.30, a correlation of r = .15, and a mean difference in IQ gain of about four points. The effect was concentrated: significant in two of six grades in the first year and one of five in the second, which is to say absent in eight of the eleven grades examined. Thorndike's 1968 review reprints Rosenthal and Jacobson's own first-year table, and it shows where the concentration sits. Grade 1 gained 27.4 points for 7 bloomers against 12.0 for 48 controls, grade 2 gained 16.5 for 12 against 7.0 for 47, and the differences in grades 3 to 6 were 0.0, 3.4, minus 0.1 and minus 0.7. The first-year result therefore rests on 19 children. It also rests on a shrunken school. Elashoff and Snow counted 478 children given the pretest and 382, or 80 percent, present for at least one posttest and so counted as being in the experiment.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The note in the handover file",
+      "text": "A teacher reads that a quiet pupil is expected to come on strongly this year and, without deciding to, gives them harder questions, longer to answer and fuller corrections. The claim is that the pupil's measured score then rises to meet a belief that started as an invention."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The recruit described as promising",
+      "text": "A supervisor told that a new starter has unusual potential hands them the interesting work and checks in more often. A year later the appraisal confirms the forecast, and the forecast was the thing that arranged the year."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The child said to have a good ear",
+      "text": "Given that description, a music teacher sets harder pieces, waits longer for a phrase to come right and corrects more patiently. The improvement that follows is real, and its cause sits in the lesson rather than in the child."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Eighteen experiments pooled to almost nothing, and the effect survives only where teachers had not yet met the children.",

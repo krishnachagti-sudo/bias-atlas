@@ -12,6 +12,23 @@
     "note": "The paper that attached the phrase to experts misjudging novices. Two later literatures took the same title for different claims, Fisher and Keil in 2016 for self-assessment and Ottati and colleagues from 2015 for closed-mindedness, so the year of the name and the year of each claim come apart."
   },
   "evidence": "No open copy of Hinds's paper was found, and what follows is its own abstract. In Study 1, experts, intermediate users and novices predicted how long novices would take on a complex task. Study 2 manipulated expertise instead of measuring it. Both studies found that more expertise made predictions of novice times worse, and that debiasing techniques aimed at the underestimation did not shift it. The abstract concludes that intermediates may predict novice performance more accurately than experts do. It carries no sample sizes and no effect sizes, so none are quoted here. The figures usually attached to the study, novices needing about 30 minutes against salespeople's estimate of under 13, reach this entry through a 2011 Psychology Today post by Sian Beilock and not through anything it could open. Hinds, Patterson and Pfeffer followed in 2001 with an electronic circuit-wiring task. Their abstract reports experts giving more abstract and advanced instructions and fewer concrete ones, and novices taught by beginners outperforming novices taught by experts on the target task. On a different task in the same domain the ranking reversed. Fisher and Keil tested self-assessment using the illusion-of-explanatory-depth procedure on Mechanical Turk. In Experiment 2a, 115 graduates rated how well they could explain a topic, wrote a full explanation, then rated themselves again. The drop was larger for topics inside the respondent's college major, d = 0.68, than outside it, d = 0.43. Experiment 3a, with 71 graduates, traced the gap to unnoticed forgetting since the point of peak knowledge. Ottati, Price, Wilson and Sumaktoyo ran six Mechanical Turk experiments. They recruited 34, 48, 50, 50, 31 and 59 people, and print a final sample only for the last two, 28 and 50. Five of the six are reported as supporting earned dogmatism. Experiment 2 is the exception the paper itself marks. Its effect appears only in a reduced sample of 34, obtained by dropping participants who scored well on the test meant to make them fail. In the full sample the two conditions did not differ, and the authors say the exclusion confounds perceived expertise with actual expertise. In Experiment 4 an easy trivia test lowered open-minded cognition relative to a difficult one, t(48) = 2.328, p < .03, eta-squared = .10.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "How long the apprentice will take",
+      "text": "A fitter of thirty years says the apprentice will have the panel wired in twenty minutes. It takes over an hour. A colleague two years into the trade guesses much closer, because the fumbling steps are still within reach of memory and the veteran has stopped performing them."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The explanation that falls apart",
+      "text": "A graduate asked how well they could explain how the kidneys clear a drug rates themselves high. Asked to write the explanation out, they stall at the second step and rate themselves much lower. The drop is steepest for the topic they studied hardest and longest ago."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Instructions written by the person who wrote the software",
+      "text": "A developer writes a setup guide that begins at step four, because the first three steps are things he has not had to think about for years. Readers stop at the first gap. He is not withholding anything; he cannot see that the steps are there."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Hinds's prediction studies have no located replication, and the one preregistered replication programme in this family split, holding for earned dogmatism's scenario manipulations and coming out at zero for its task-difficulty ones.",

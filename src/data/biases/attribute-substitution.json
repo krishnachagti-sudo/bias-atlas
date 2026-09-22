@@ -15,6 +15,23 @@
     "note": "Their chapter, \"Representativeness Revisited: Attribute Substitution in Intuitive Judgment\", occupies pages 49 to 81 of the volume edited by Gilovich, Griffin and Kahneman for Cambridge University Press. The chapter itself was not opened during this check. Its definition and its evidence are quoted here from Kahneman's restatement in American Psychologist the following year, which cites it."
   },
   "evidence": "Kahneman calls a categorical prediction study by Kahneman and Tversky the most direct evidence. Three groups saw the same nine fields of graduate specialisation. One estimated the relative frequency of students in each, giving means from 20% for humanities and education to 3% for library science. One ranked how far a description of a fictitious student, Tom W., resembled a typical student in each field. One ranked how likely Tom W. was to have specialised in each, having been told the sketch came from personality tests of dubious validity. The description was written to fit the smaller fields, and the correlation between representativeness rankings and estimated base rates was -0.62. Mean probability rankings correlated 0.98 with mean similarity rankings and -0.63 with base rates. The same design run on Linda had 85% of the similarity group and 89% of the probability group put the conjunction item above its constituent. Kahneman calls that ordering reasonable for a judgement of similarity, and only the probability ranking a conjunction fallacy. Tversky and Koehler had people rate the probability that the home team would win each of 20 basketball games and later rate the relative strength of the teams, and obtained a correlation of 0.99. In a survey by Strack, Martin and Schwarz the correlation between reported happiness and number of dates last month was negligible in that order and rose to 0.66 when the dating question came first. Every figure in this paragraph is read off Kahneman's 2003 article rather than the papers reporting the studies. The second line of evidence is the bat-and-ball problem. Frederick built it into the three-item Cognitive Reflection Test and gave that test to 3,428 respondents across 35 studies over 26 months from January 2003. The mean score was 1.24 out of 3, with 33% scoring zero and 17% scoring three, and location means ran from 2.18 at the Massachusetts Institute of Technology to 0.57 at the University of Toledo. De Neys, Rossi and Houdé supplied the substitution reading of the error: the relational clause \"the bat costs $1 more than the ball\" is read as the absolute \"the bat costs $1\".",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "How likely is this business to last",
+      "text": "Asked whether a new firm will still be trading in five years, a listener answers how closely the founder matches their picture of a successful founder. Resemblance is easy to judge and survival rates are not, and the answer to the easy question is given to the hard one."
+    },
+    {
+      "kind": "everyday",
+      "tag": "How dangerous is the town",
+      "text": "A resident asked how much crime there is answers with how readily an incident comes to mind. Ease of recall stands in for frequency, and the swap is not noticed, though people are often a little less sure of themselves when they make it."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Will the policy work",
+      "text": "Asked whether a scheme will cut waiting times, a voter answers how they feel about the scheme. Nothing about queueing has been considered. The reply is fluent because the question that got answered was the easier one."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The one substitution prediction with a direct replication behind it held at 264 people, while five studies on the same problem found that most correct answers were never corrected at all.",

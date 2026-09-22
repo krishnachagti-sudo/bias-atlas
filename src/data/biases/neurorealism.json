@@ -18,6 +18,23 @@
     "note": "Their paper is a content analysis of 132 non-redundant press articles published between January 1991 and June 2004, 79 from general sources and 53 from specialised ones. They spell the term neuro-realism and set it beside two others they name in the same paper, neuro-essentialism and neuro-policy. No experiment appears in it. The measurable claim now attached to the word comes from two papers published three years later."
   },
   "evidence": "McCabe and Castel ran three experiments. In the first, 156 Colorado State undergraduates read three fictional articles about brain imaging whose conclusions did not follow from the data, each shown with a brain image, a bar graph or no image. Articles carrying a brain image drew the highest ratings of scientific reasoning, above the control condition, F(1, 155) = 5.87, and above the bar graph, F(1, 155) = 8.38. In the second, 128 undergraduates rated articles with a brain image above the same articles with a topographical map of activation, t(127) = 1.85. In the third, 108 undergraduates from Colorado State and UCLA read a BBC News article headlined 'Brain Scans Can Detect Criminals' and rated their agreement with its conclusion on a four-point scale. Agreement was higher when the brain image was present, F(1, 104) = 4.60. The paper reports that its statistical tests were significant at p < .05. Weisberg, Keil, Goodstein, Rawson and Gray tested the verbal claim on descriptions of 18 psychological phenomena. Each was followed by a real explanation or by a circular restatement, with or without an added sentence of brain talk. Three cognitive neuroscientists had confirmed beforehand that the added sentence contributed nothing. Eighty-one novices rated explanations containing neuroscience as more satisfying, F(1, 79) = 6.5, and the gain fell mainly on the bad explanations, F(1, 79) = 18.8. Twenty-two students in a cognitive neuroscience class showed the same pattern, F(1, 21) = 47.1, and a semester of teaching did not shift it, F(1, 21) = 0.13. Forty-eight neuroscience experts showed no main effect of neuroscience, F(1, 46) = 1.3. The experts did show an interaction, F(1, 46) = 8.9, because brain talk made their good explanations less satisfying, F(1, 46) = 8.5.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The scan beside the article",
+      "text": "A news piece about willpower runs with a coloured brain image. The argument in the text is word for word the same as it was without the picture, and readers rate the reasoning as sounder with the picture there."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The clause about frontal circuits",
+      "text": "An account of why people put things off is judged more satisfying once a sentence about frontal brain circuits is added, even where that sentence does nothing to explain the delay it sits next to."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The treatment sold with a picture of the brain",
+      "text": "A clinic says its programme works on the brain and shows an image of it doing so. What the image supplies is not evidence about whether the programme works, but the sense that a machine has already settled the matter."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The brain picture does not survive replication, the brain sentence does, and a meta-analysis of 60 experiments rates the text effect the stronger.",

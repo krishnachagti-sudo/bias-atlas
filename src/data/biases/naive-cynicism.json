@@ -2,7 +2,9 @@
   "no": 240,
   "slug": "naive-cynicism",
   "name": "Naive cynicism",
-  "aliases": ["Naïve cynicism"],
+  "aliases": [
+    "Naïve cynicism"
+  ],
   "category": "social",
   "statement": "People expect other people's judgements to be driven by self-interest, and the expectation runs ahead of how self-interested those judgements turn out to be.",
   "meaning": "Kruger and Gilovich named the effect for a two-part pattern. Their participants divided responsibility for joint outcomes, then predicted how the other party would divide it. The predictions attributed motivated bias to the other party and not to the self, and they did so whether or not the other party's allocations were in fact biased. The claim is about the accuracy of a forecast, not about whether anyone is self-serving. It is testable in one shape: collect what people do, collect what other people guess they will do, and subtract. Miller and Ratner had run that subtraction a year earlier on self-interest rather than on responsibility, and their version is the one with a preregistered replication behind it.",
@@ -13,6 +15,23 @@
     "note": "Four studies on married couples, video game players, debaters and darts players. The paper is where the term was attached to the finding; the closely related claim about self-interest was published by Miller and Ratner in 1998."
   },
   "evidence": "The founding article could not be read for this entry. Kruger and Gilovich report four studies in which people divided responsibility for desirable and undesirable joint outcomes and estimated how others would divide it. Their abstract states that participants expected the allocations of others, and not their own, to be motivationally biased, and that this held whether or not the allocations actually were biased. In Studies 3 and 4 participants expected teammates to be less biased than opponents, which the authors read as motivation moderating the effect. That is the whole of what this entry can report about the paper. Unpaywall and OpenAlex both record it as closed with no repository copy, and on 21 September 2026 PsycNet answered every request with an Incapsula block and ResearchGate with a 403 of its own. The abstract quoted here was read at OpenAlex. Miller and Ratner's paper is closed on the same terms, and its abstract was read at PubMed. It reports that participants overestimated how much a financial reward moved their peers' willingness to donate blood, and overestimated how much group membership moved peers' attitudes in Studies 2 to 4 and their behaviour in Study 5. The tendency to overestimate the impact of self-interest on others was largely unrelated to the impact it had on participants' own attitudes and behaviours. Brick and colleagues, who worked from the original, print its samples as 54 for Study 1 and 81 for Study 4, and record that it reported no standard deviations, so no effect size can be recovered from it. Their table of the original descriptives puts the gap in self-reported willingness to donate at 10.7 percentage points and the gap in estimates of others at 29.9. Both are the original's numbers as reprinted by the replicators, not figures read from Miller and Ratner.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The colleague you expect to grab credit",
+      "text": "Two people split a report, and each privately expects the other to claim the larger share of the work when it is presented. Both then describe their own part modestly. The forecast of self-interest was confident, and the behaviour it predicted never arrived."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Guessing who will give to a collection",
+      "text": "Organisers of a leaving present assume nobody will contribute unless the list of donors is visible to everyone. Most contribute quietly in any case. The estimate of how much recognition drives giving ran well above what the giving showed."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The neighbour objecting to a car park",
+      "text": "Residents assume that anyone opposing a development does so because their own view or parking space is at stake. Several objectors live streets away. The private motive was read into the objection before anybody checked whether one existed."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "Two preregistered close replications reproduced the self-interest version of the claim, on 1,598 adults in the donation study and 605 in the smoking study, while Kruger and Gilovich's own four studies have no repeat this entry could find.",
@@ -23,7 +42,15 @@
       "year": 2021,
       "n": 1598
     },
-    "replicated": { "es": 0.58, "esType": "d", "ci": [0.53, 0.63], "ciLevel": 95 }
+    "replicated": {
+      "es": 0.58,
+      "esType": "d",
+      "ci": [
+        0.53,
+        0.63
+      ],
+      "ciLevel": 95
+    }
   },
   "limits": "No repeat of Kruger and Gilovich's four studies was located. On 21 September 2026 Semantic Scholar's list of 142 citing papers, Crossref, PubMed and general web search returned citing work and no repetition of the responsibility allocation design; OpenAlex answered the same query with HTTP 429 that day. Brick and colleagues do not cite the paper at all. The clearest opposing result is Epley and Dunning's. Their abstract reports four studies in which people overestimated their own generosity while predicting others fairly accurately, which puts the error in self-prediction rather than in cynicism about others. That article is closed too, and only the PubMed abstract informs this page. Brick and colleagues write that their results appeared to contradict it, while agreeing with Vuolevi and Van Lange, and note that both of those studies measured behaviour rather than stated willingness. They put the discrepancy down to differences in measures or topics and ask for work on consequential behaviour. Their own caveats matter as much. The measures were self-reported willingness and policy support rather than observed behaviour, and they note the results are also consistent with accurate estimates paired with inaccurate self-reports, while calling their own reading the more plausible one. Policy endorsement ran near ceiling in Study 4. Both samples were Western. Communal orientation, tested as a moderator of overestimation, predicted nothing, r(797) = -.02, p = .53 in Study 1 and r(397) = .02, p = .72 in Study 4. The extension grading smoking status five ways drew 15 light, 18 moderate and 6 heavy smokers, too few for a test.",
   "misreadings": "Naive cynicism and naive realism are separate claims from separate groups, and this site carries them separately, at no. 165 and here. Naive realism, as Ross and Ward set it out, is a stance about one's own perception being an unmediated reading of events. Naive cynicism is a forecast about what drives other people's judgements, and someone can make that forecast without holding the stance. Neither is the bias blind spot, no. 133, which measures how people rate their own bias against other people's. The effect is also not a finding that other people are unbiased. Kruger and Gilovich's abstract says the expectation of motivated bias appeared whether or not the allocations were biased, which makes the claim one about calibration. Miller and Ratner's smokers did oppose smoking restrictions more than nonsmokers, and the estimates put that gap well above where it sat. The replicators' donation study shows the same point from the other side. Participants underestimated how many people would give blood in the paid condition and in the unpaid one alike, so what they got wrong was the size of the gap rather than the level. Nor is the pattern confined to hypothetical questionnaires. Martuza, Thorbjørnsen and Sjåstad pooled 31 belief-behaviour comparisons from 11 experiments in which participants could lie anonymously for money, and found beliefs about others' dishonesty running 13.6 percentage points above the behaviour, g = 0.61. That pooling covers 8,126 belief reports from 7,340 people, since some designs collected two reports each. Giving managers the real honesty rates reduced their support for surveillance and other freedom-restricting measures, N = 741. Those figures were read from the authors' accepted manuscript. They file their work behind Kruger and Gilovich, whom they describe as having studied strategic settings such as trust games and negotiations. The 1999 abstract describes something else, the division of responsibility between partners, teammates and opponents.",

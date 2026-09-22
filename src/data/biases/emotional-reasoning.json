@@ -2,7 +2,10 @@
   "no": 244,
   "slug": "emotional-reasoning",
   "name": "Emotional reasoning",
-  "aliases": ["Ex-consequentia reasoning", "Emotion-based reasoning"],
+  "aliases": [
+    "Ex-consequentia reasoning",
+    "Emotion-based reasoning"
+  ],
   "category": "belief",
   "statement": "Anxious people read their own anxiety as evidence that a situation is dangerous, so the feeling of threat becomes a reason to believe in the threat.",
   "meaning": "The claim is about the direction of an inference. Fear normally follows danger, and the reasoning under test runs the other way, from the feeling back to the world. Arntz, Rauner and van den Hout called it ex-consequentia reasoning, inferring the premise from the consequence. Its clinical interest is the loop it implies. Anxiety indicates threat, the inferred threat sustains the anxiety, and the person never finds out that the situation was safe. The task built to test it separates two sources of information, what a scene objectively contains and what the person feels, then asks which one the danger rating follows.",
@@ -13,6 +16,23 @@
     "note": "The abstract opens by saying the idea had already been suggested, that neurotic patients draw invalid conclusions from their own emotional response. Gangemi, Dahò and Mancini trace the description to Beck, Emery and Greenberg's 1985 book on anxiety disorders and quote it from page 198; that book was not read here."
   },
   "evidence": "The 1995 experiment gave people short scripts and asked how dangerous the situation was. Each script crossed two factors: objective safety against objective danger, and an anxious response against a calm one. Gangemi and colleagues quote the panic script from page 919. The reader is in a crowded lift, and the ending either has a passenger falling into their arms as a welcome chance, or has the lift stuck between floors with two people fainting, each version running with or without the line that the reader suddenly becomes anxious. A danger rating that rises with the anxious ending counts as emotional reasoning. The abstract reports 52 spider phobics, 41 panic patients, 38 social phobics, 31 other anxiety patients and 24 normal controls. Patients' ratings followed the anxiety information as well as the objective information, and the controls' ratings followed the objective information alone. The abstract adds that the effect was neither situation-specific nor confined to panic patients, so patients did it on scripts unrelated to their own diagnosis.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The safe route that feels wrong",
+      "text": "A cyclist takes a lit, busy road home, feels frightened anyway, and concludes from the fear that the road must be dangerous. What the street actually contains points one way, and the feeling is allowed to settle the question instead."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Dread before a meeting",
+      "text": "Someone feels a wave of dread before speaking at a meeting and takes it as a sign the talk will go badly. Nothing about the slides or the audience has changed. The forecast is read off the nerves rather than off the situation."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The child at the sleepover",
+      "text": "A child feels uneasy at a friend's house and decides the house is unsafe rather than that she is homesick. Because she goes home, she never finds out the evening would have been fine, and the next invitation feels worse."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The danger-inflating effect turns up again in anxious and fearful samples, and the result that separated patients from everybody else does not.",

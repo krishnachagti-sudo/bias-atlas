@@ -16,6 +16,23 @@
     "note": "The paper mailed abstract, simplified liability cases to legislators, judges, oil and chemical executives, environmentalists and economists. Its abstract states that \"A bias was found toward complete clean-up of some sites, or 'zero risk.'\" The full text was not obtained. Wiley answers with a Cloudflare challenge rather than a paywall, Baron's own Pennsylvania pages return a bare 403 to every user agent tried, and Unpaywall, OpenAlex and Semantic Scholar each record no open copy. Checked 21 September 2026. The abstract at Crossref is therefore all this page rests on for the origin. The behaviour predates the name. Viscusi, Magat and Huber reported certainty premiums in 1987, and Tversky and Kahneman set out the reasoning in 1981."
   },
   "evidence": "Tversky and Kahneman derived the prediction from the shape of the probability weighting function. An action that cuts the chance of a harm from one per cent to zero, they write, will be valued above one that cuts the same harm from two per cent to one. They note the same pattern in insurance: probabilistic cover that halves the chance of a loss is judged to be worth less than half the price of cover that removes the risk. Their note for that points to Kahneman and Tversky's own 1979 paper in Econometrica. They then report an unpublished study by Slovic, Fischhoff and Lichtenstein in which a vaccine cutting the chance of a disease from .20 to .10 was less attractive when described as effective in half of cases than when described as fully effective against one of two equally likely virus strains. No sample size and no percentages accompany it. Viscusi, Magat and Huber put risk-dollar tradeoffs to a sample of over 1,500 consumers over the risks of using an insecticide and a toilet bowl cleaner. Every subject started from 15 injuries per 10,000 bottles on each of two risks and priced six changes. Among subjects with young children, cutting both insecticide risks by a third was worth $1.84 on average, the next third $0.54, and the last third $5.71. Clearing both risks outright drew $8.09, against $2.38 for cutting each by two-thirds. Their abstract reports diminishing valuation as a reduction grows, certainty premiums for the total elimination of one risk, and no strong evidence of further premiums for eliminating several at once. Three of the four additivity tests pointed towards subadditivity and none reached significance at 5 per cent. Increases in risk were valued much more greatly than decreases. Cantarelli, Belle and Belardinelli describe the same study as finding parents willing to pay $2.38 more to cut two insecticide risks by two-thirds and $8.09 to remove them, and their description matches the paper's own table.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "Clearing the small store first",
+      "text": "A safety budget can remove the whole of a small asbestos store or fix most of a much larger roof hazard. The store goes, and one line comes off the risk register. Fewer injuries are prevented by that choice, and everyone involved can read the figures."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The last part of the contamination",
+      "text": "A council pays more to take a site from a trace of contamination to none than it paid for the far larger cut that got it down to a trace. The final step buys the word safe, and the earlier steps bought most of the harm reduction."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The allergen that is gone altogether",
+      "text": "A parent pays a premium for a brand certified free of one allergen and buys the cheaper option on everything else in the trolley, though the other items carry more risk between them. One worry has been closed rather than reduced."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Where the design has been repeated the zero-risk option took 29 per cent of Italian nursing staff, then 90.7 per cent of 54 formulary directors in one scenario and 32.1 per cent of 53 in the next.",

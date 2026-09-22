@@ -17,6 +17,23 @@
     "note": "\"On the Psychology of Prediction\" reported the engineer-lawyer problem, in which descriptions were said to be drawn at random from a panel of either 30 engineers and 70 lawyers or 70 engineers and 30 lawyers. The 1973 paper could not be obtained during this check, at APA PsycNET, CiteSeerX, Unpaywall, OpenAlex, the Internet Archive or four university mirrors, so every figure attributed to it here is at one remove. Chan's summary table gives its third study as 171 people, 86 in the high-engineer condition and 85 in the low, with mean judgments of 55% against 50%, t(169) = 3.23, p < .01. Gigerenzer, Hell and Blank report the same 5-point gap and add that the median judgment for the deliberately uninformative description of Dick was .50 in both groups. The gap was significant and was called small. The medical version arrived separately and is the one that travels."
   },
   "evidence": "The mammography problem is the canonical case. A woman of forty has a 1% chance of breast cancer, the test catches 80% of cancers, and it fires on 9.6% of women without one. Gigerenzer and Hoffrage state the Bayesian answer as 7.8%, and report that Eddy's 1982 chapter found 95 of 100 physicians putting it between 70% and 80%. Eddy's chapter was not obtained during this check, so that figure reaches this page at one remove. Casscells, Schoenberger and Graboys ran a shorter version at four Harvard Medical School teaching hospitals: a disease with a prevalence of 1 in 1,000, a false-positive rate of 5%, and a positive result. Their 1978 report is a three-page letter and could not be obtained either, at the New England Journal of Medicine, PubMed, PubMed Central, Unpaywall or Semantic Scholar. Manrai and colleagues reproduce both the question and the sample, 20 medical students, 20 house officers and 20 attending physicians, and give 11 of 60 correct, which is the 18% Gigerenzer and colleagues also quote, with 27 of 60 answering 95%. The cab problem made the point without medicine. Bar-Hillel sets out the version she credits to Kahneman and Tversky: 85% of a city's cabs are Blue, a witness right about 80% of the time identifies a Green cab, and Bayes gives 41%. Of her 52 respondents, 36% answered 80%, which was also the median, and only about 10% came near 41%. Her respondents were mostly Hebrew University applicants answering inside their entrance exams.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The screening result",
+      "text": "A patient told the test is right 95 times in 100 reads a positive result as a 95% chance of having the disease. Where one person in a thousand has it, the positives are dominated by healthy people the test got wrong, and the answer is nearer 2%."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The alarm at the security gate",
+      "text": "A scanner that flags one bag in twenty and catches almost every real threat goes off, and the officer treats the alarm as near-certainty. Real threats are rare enough that nearly every alarm is a false one, and the rarity is the term that gets dropped."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The flagged transaction",
+      "text": "A bank’s model marks a payment as fraud and the analyst treats the mark as proof. With genuine fraud rare and the model wrong a few times in a hundred, most flagged payments are honest, and the prior is exactly what the analyst’s confidence has left out."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The diagnostic version repeats almost exactly across four decades and rewriting it as counts of people roughly triples the number of correct answers, while the engineer-lawyer version has now failed in two large modern samples.",

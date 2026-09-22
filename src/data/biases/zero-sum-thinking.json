@@ -2,7 +2,12 @@
   "no": 105,
   "slug": "zero-sum-thinking",
   "name": "Zero-sum thinking",
-  "aliases": ["Zero-sum bias", "Belief in a zero-sum game", "Fixed-pie bias", "Zero-sum mindset"],
+  "aliases": [
+    "Zero-sum bias",
+    "Belief in a zero-sum game",
+    "Fixed-pie bias",
+    "Zero-sum mindset"
+  ],
   "category": "social",
   "statement": "People judge that one party's gain must come at another's expense, including in situations where nothing fixes the total available.",
   "meaning": "Two claims travel under this name and they are measured with different instruments. The perceptual claim is that people misread particular situations, inferring that a resource is capped when it is not. The attitudinal claim is that people differ in how readily they agree with statements such as 'if someone gets richer it means that someone else gets poorer', and that this agreement can be scored and correlated with politics, trust and income. Shai Davidai and Stephanie Tepper, reviewing the field for Nature Reviews Psychology, separate a general mindset about how social relations work from domain-specific beliefs about trade, immigration, race, gender and status. They note that the second approach has produced work in contexts as far apart as college grades, corporate profits, LGBTQ rights and romantic relationships. Almost all of the large-scale evidence concerns agreement with statements rather than misperception of a situation.",
@@ -13,6 +18,23 @@
     "note": "The paper is \"Zero-Sum Bias: Perceived Competition Despite Unlimited Resources\", article 191 in the journal's first volume, published on 5 November 2010. Its 28 references contain no work by George Foster and its text never uses the phrase 'image of limited good'; the link between zero-sum thinking and Foster's 1965 account of peasant societies is drawn later, by Davidai and Tepper and by Chinoy and colleagues, who open their paper with it. The belief-scale tradition runs separately. Joanna Różycka-Tran, Paweł Boski and Bogdan Wojciszke published the 37-nation study in 2015, and the 43-nation paper's reference list gives an earlier Polish-language scale paper by Różycka and Wojciszke in Studia Psychologiczne in 2010."
   },
   "evidence": "Meegan ran three experiments at the University of Guelph, whose regulations bar instructors from grading to a fixed distribution. Participants saw the grades of the first 19 presenters in a 20-student course and predicted the 20th. In Experiment 1, 556 undergraduates saw either a negatively skewed distribution or a symmetrical one, 278 in each condition. The skew pushed predictions down, χ²(4) = 50.30, p < 0.001, with D predictions more frequent, χ²(1) = 30.56, p < 0.001, and A predictions less frequent, χ²(1) = 5.63, p < 0.05. Experiment 2 reversed the skew for 308 students, 154 per condition, and its overall test was significant, χ²(4) = 13.77, p < 0.01. No matching rise in high-grade predictions followed. Its one significant cell ran the way a normative reading predicts, with D predictions more frequent in the positively skewed condition, χ²(1) = 7.20, p < 0.01. Experiment 3 gave half of 368 students the text of the grading policy, χ²(4) = 18.28, p < 0.005, which cut D predictions, χ²(1) = 5.77, p < 0.05, and F predictions, χ²(1) = 9.00, p < 0.005. Samuel Johnson, Jiewen Zhang and Frank Keil found the same error in ordinary trade. They recruited 100 people and analysed 86, dropping 14 who missed more than a third of the comprehension questions. Shown 12 everyday transactions, 94.2% said at least one party was left worse off somewhere, and 88.4% called at least one transaction zero-sum or negative-sum. Buyers were judged worse off about five times as often as sellers, 2.53 transactions of 8 against 0.49, t(85) = 7.55, p < 0.001, d = 1.11. Sahil Chinoy, Nathan Nunn, Sandra Sequeira and Stefanie Stantcheva surveyed roughly 20,400 US residents in seven waves between October 2020 and July 2023, scoring agreement with four statements about ethnic groups, citizenship, trade and income classes. Those four correlated between 0.29 and 0.57 and loaded on one component with an eigenvalue of 2.30.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The colleague praised in a meeting",
+      "text": "A manager singles out one team member's work and another hears it as a mark taken off their own standing. Praise in that meeting was not rationed, and nothing about the compliment reduced what anyone else could be given."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The second bakery on the street",
+      "text": "A baker watches a rival open two doors down and assumes every loaf it sells is one lost. A second shop can also make the street worth a journey, so the customers are not a fixed pile being divided."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The friend who was promoted",
+      "text": "Someone hears that a friend at another firm has moved up and feels their own prospects narrow. The two careers run in different organisations and neither draws on a common stock of advancement."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The eight-item belief scale holds its one-factor shape in all of 36 countries, while agreement with logically equivalent zero-sum statements changes when the two halves are swapped.",

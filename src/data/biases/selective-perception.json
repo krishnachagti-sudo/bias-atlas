@@ -12,6 +12,23 @@
     "note": "A five-page note that put the term on the phenomenon in the form management and popular writing still use. The demonstration everyone cites is four years older and does not use the term: Hastorf and Cantril's study of a football game appeared in 1954."
   },
   "evidence": "McGinnies ran the perceptual-defence experiment at the University of Alabama on eight male and eight female undergraduates. Eleven neutral and seven taboo words were flashed at .01 second, then at longer steps, until the viewer read each one aloud. Mean thresholds were higher for the taboo words by .045 second, t = 3.96 for 15 degrees of freedom, P < .01. Skin-resistance readings taken before recognition differed by 1.98 microamperes, t = 5.10 for 15 degrees of freedom, P < .01. The guesses viewers made before recognising a word also fell differently across four categories, chi-square 31.26, P < .01. Hastorf and Cantril studied the Dartmouth against Princeton game of 23 November 1951 at Palmer Stadium. Princeton won, and the official statistics recorded 70 penalty yards against Dartmouth and 25 against Princeton. A week later they gave a questionnaire to psychology students at both colleges, 163 at Dartmouth and 161 at Princeton. Of the Princeton students 93 percent called the game rough and dirty and none called it clean and fair. Among Dartmouth students 42 percent said rough and dirty and 13 percent clean and fair, while 39 percent wrote in a category of their own, rough and fair. Asked who started the rough play, 86 percent of Princeton students blamed Dartmouth, against 36 percent of Dartmouth students. Then a film of the game was shown to two Dartmouth fraternities on 7 December and to two Princeton undergraduate clubs early in January. Watching it, 48 Dartmouth students marked a mean of 4.3 infractions by Dartmouth and 4.4 by Princeton. The 49 Princeton students marked 9.8 by Dartmouth and 4.2 by Princeton. The paper reports one test, a footnote to the table saying the Dartmouth-team counts differ at the .01 level. Dearborn and Simon gave 23 middle managers from one manufacturing firm a 10,000-word teaching case about the Castengo Steel Company and asked each to write down the most important problem a new president should tackle first. Five of the six sales executives named sales, against five of the other 17, which the authors report as 83 percent against 29 percent and significant at the 5 percent level. Four of the five production executives named organisation, 80 percent against 22 percent, again at the 5 percent level. Three of the four accounting executives named sales too, and the authors fold them in with sales to reach eight of ten against two of the remaining 13. No test statistic is printed for either comparison.",
+    "examples": [
+      {
+        "kind": "everyday",
+        "tag": "The report three departments read",
+        "text": "One long account of a struggling firm goes to every manager. The one from sales names a sales problem and the one from accounts names a costs problem. Each picked out the part his own day is made of."
+      },
+      {
+        "kind": "everyday",
+        "tag": "The match both sets of supporters watched",
+        "text": "Two people watch the same game and come away with different counts of fouls by the other side. Neither invented an incident; the ambiguous ones were resolved in opposite directions and then remembered as seen."
+      },
+      {
+        "kind": "everyday",
+        "tag": "The row overheard by two friends",
+        "text": "Two friends hear the same argument between a couple they both know, and each returns with an account favouring the one they like better. Both kept accurate parts of it, and they kept different parts."
+      }
+    ],
   "replication": {
     "state": "mixed",
     "headline": "Rival fans still report different games, d = 0.83 on a judgement made ten days later, while the gaze and the recall of those same fans showed nothing.",

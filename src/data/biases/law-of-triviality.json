@@ -18,6 +18,23 @@
     "note": "The law is named and stated in the third chapter, 'High Finance, or the Point of Vanishing Interest'. The copy read for this entry is the Houghton Mifflin printing copyrighted 1957, Library of Congress catalog card number 57-9981, described on its own title page as the seventeenth printing. Parkinson's preface thanks the editor of The Economist as the journal in which Parkinson's law was first revealed, and for permission to reprint the essays on 'Directors and Councils' and 'Pension Point'. This chapter is not among the three, and the preface adds only that certain other articles had appeared in Harper's Magazine and The Reporter."
   },
   "evidence": "Parkinson reports no data. The chapter is a scripted committee meeting written to illustrate the law, and every number in it is invented. A finance committee of eleven, the chairman included, reaches Item Nine, an atomic reactor costed at $10,000,000. Four members, one of them the chairman, do not know what a reactor is. Three more do not know what it is for. Two have some idea what it should cost, and one of those proposes different contractors and is told it is late in the day to call in new advisers. The other, Mr Brickworth, distrusts the round figure and the sum set aside for contingencies, cannot see where to begin explaining, and says 'I have no comment to make.' The item passes in two and a half minutes. Item Ten is a bicycle shed for the clerical staff at $2,350, which draws arguments about aluminium against asbestos against galvanised iron, and about whether the staff need a shed at all. In Parkinson's words, 'A sum of $2350 is well within everybody's comprehension. Everyone can visualize a bicycle shed.' The debate runs forty-five minutes and saves about $300. Item Eleven is refreshments for the Joint Welfare Committee at $4.75 a month, or $57 a year. Coffee is a subject every member commands, so that debate runs an hour and a quarter and ends with the matter held over to the next meeting. Parkinson then concedes that the bottom of the curve is unknown, and puts the time a committee needs for $10,000,000 and for $10 at somewhere between two and four and a half minutes in both cases. One measured result sits near the law without testing it. Ambroise Descamps, Sébastien Massoni and Lionel Page paid 162 students at a large Australian university to choose between two options while buying costly signals about which was better. Each did 80 rounds, in a two by three between-subject design crossing the framing of the task with the cost of a signal. From 100,000 simulations of the optimal rule, the ideal number of signals is 19.1 when a signal costs $0.10, 3.84 at $0.50 and 1 at $1. Participants stopped after about nine draws, seven draws and four draws. Median stopping times were 9.26, 7.11 and 4.82, each different from the optimum on a Wilcoxon signed-rank test at p < 0.001, and the same null was rejected for 142 of the 162 individuals. The deviations cost participants between 10 and 25% of their potential payoff. People bought too little information when it was cheap and too much when it was dear. That is a result about the price of information rather than the size of the sum at stake, and the paper does not mention Parkinson.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The coffee order and the building contract",
+      "text": "A committee approves a seven-figure refurbishment in four minutes and then argues for fifty over which brand of coffee the office should buy. Nobody in the room can price a refurbishment and everybody can price coffee, so the small sum is where the discussion has somewhere to go."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The roof and the bin shed",
+      "text": "Residents of a block pass the roof replacement on the surveyor’s recommendation and spend the rest of the evening on the colour of the bin shed. The cheap item takes the time because it is the one every owner can argue about on equal terms."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The sum too small to mention",
+      "text": "The same committee waves through a few pence of bank charges without comment, because the amount sits below the level at which anyone thinks an objection worth making. The law needs a floor: interest rises as the sum falls, until the sum is beneath notice."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "No measurement of the law was located: nothing found times the items of a real agenda against the sums they involve, and the two figures Parkinson gives are figures he made up."

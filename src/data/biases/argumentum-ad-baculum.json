@@ -2,7 +2,12 @@
   "no": 541,
   "slug": "argumentum-ad-baculum",
   "name": "Argumentum ad baculum",
-  "aliases": ["Appeal to force", "Appeal to the stick", "Ad baculum", "Argument from threat"],
+  "aliases": [
+    "Appeal to force",
+    "Appeal to the stick",
+    "Ad baculum",
+    "Argument from threat"
+  ],
   "category": "belief",
   "statement": "Backing a demand with a threat is a fixture of the fallacy lists, and the standard treatments make it a fallacy only when the threat is offered as a reason to believe something.",
   "meaning": "The Latin means appeal to the stick. Hansen's survey of the fallacies gives the shape: if you do not join our demonstration against the expansion of the park, we will evict you from your apartment, so you should join. Hansen calls it one of the most controversial fallacies, because it is hard to see that it involves bad reasoning at all. Threats do give people reasons to act. In labour disputes, and perhaps in international relations, he writes, threats such as going on strike or cutting off trade routes are not normally treated as fallacies. The charge bites when the conclusion is about what to believe. Being told to believe that candidate X is best suited for office on pain of eviction is, in Hansen's words, a good instance of irrelevant evidence. Pragma-dialectics files the move somewhere else again. Van Eemeren and Garssen count it a violation of the Freedom Rule, because a threat stops the other party advancing a standpoint or casting doubt, and a discussion that never opens cannot be resolved on the merits.",
@@ -13,6 +18,23 @@
     "note": "Walton's later account of that paper says the two of them surveyed the logic textbooks and concluded that none had explained why the argument is fallacious. They analysed its form as a disjunctive syllogism of a prudential kind, and added that in many instances such an argument could be seen as reasonable. The label is much older than the paper. Snoeck Henkemans's review of Walton's Scare Tactics reports that the book's second chapter surveys the treatment of ad baculum in logic textbooks and manuals in English from 1906 to 1995. Who coined the phrase was not traced for this entry."
   },
   "evidence": "The distinction the charge rests on is drawn as a difference between speech acts. Walton, following Searle, gives four conditions for warning and four for making a threat. Warning requires that the speaker believes the hearer will benefit from knowing in advance, and that telling the hearer offers a way of avoiding the event. The essential condition of a threat is that the speaker commits to seeing to it that the bad consequences occur unless the hearer does what the speaker wants. Unless that condition is present, Walton writes, the speech act has to be classified as a warning rather than a threat. Van Eemeren, Garssen and Meuffels draw the same boundary by responsibility. In an advice or a warning the other party carries full freedom and responsibility for whether the consequence happens; in a threat the speaker can be held responsible for it. Their account of the disguised form follows from that: the threatener hints that some party or event outside the discussion will bring the harm about. The measurement comes from one research programme. Conceptions of Reasonableness ran at Amsterdam from 1996 to 2008 and showed people three-turn dialogues in domestic, political or scientific settings, built as paradigm cases and written without loaded content. Participants rated the reasonableness of the last contribution on a seven-point scale, where 1 is the strongest unreasonable rating, 4 neutral and 7 the strongest reasonable rating. Van Eemeren and Garssen's 2023 table of 24 fallacy types carries four ad baculum rows. The physical variant scored 2.04 and the non-physical 2.91, against 5.64 for their non-fallacious counterpart. The direct variant scored 1.86 and the indirect 3.72, against 5.41. That 1.86 is the lowest score in the table, and the 2014 paper by the same group says the ad baculum was judged the least reasonable of the 24 fallacies studied. What threats do, as against how they are rated, is measured elsewhere. Fehr and Rockenbach ran a trust game with 238 students at Bonn in which the investor could impose a fine of 4 monetary units for a shortfall. Trustees returned 30.3% of the tripled investment when the fine was imposed and 47.6% when the investor waived it. A regression controlling for the transfer and the desired repayment put the cost of using the fine at 4.56 units, t = 2.380, P = 0.020. Where the investor asked for a lot and fined, back-transfers fell to 22% against 60.1% for asking a lot without fining. Tornatzky and Geiwitz record that the bargaining literature had already split. Deutsch and Krauss found that gates in a trucking game decreased coordination. Shomer, Davis and Kelley used a modified trucking game and found that financial threats increased cooperation.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The batch that failed the tolerance test",
+      "text": "An engineer reports that a batch failed the tolerance test, and her manager replies that people who make trouble at this stage tend not to be renewed. The threat gives her a reason to stay quiet and no reason at all to think the batch passed."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The tenant who raises damp",
+      "text": "A tenant reports damp and is told that tenants who complain find their agreements are not extended. Whether the wall is wet is untouched by that, and she now has a reason to act against what she believes."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The strike notice",
+      "text": "A union tells an employer that pay talks must move by Friday or the depot stops. The threat is a reason to act, and nobody calls it a fallacy, which marks off the cases where a threat is put forward as a reason to believe something instead."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "The reasonableness experiment was repeated with different messages and different participants, and both runs put a plain threat near 2.8 on a seven-point scale and the same threat dressed as advice around the neutral midpoint.",

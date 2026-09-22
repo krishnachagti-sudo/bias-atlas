@@ -15,6 +15,23 @@
     "note": "No source claiming to have coined the phrase was located. The earliest dated use found is the German form, Truthahn-Illusion, in Der Spiegel of 17 March 2013. The standfirst of the interview 'Winchester unterm Christbaum' says Gigerenzer warns of the traps of the 'Truthahn-Illusion'. The next dated use found is the headline of an interview with him by Heike Littger in managerSeminare, issue 182, of May 2013, which opens at page 48. Both accompanied his book 'Risiko: Wie man die richtigen Entscheidungen trifft', which the German National Library catalogue records as Munich, Bertelsmann, 2013, 396 pages, translated from the English by Hainer Kober. The English text appeared in 2014 as 'Risk Savvy: How to Make Good Decisions', whose chapter 2, 'Certainty Is an Illusion', begins at page 17. Neither book's text was obtained, so this entry does not claim the phrase appears in either, and the German edition's table of contents names no chapter for the turkey. Gigerenzer uses the term in print in the 2020 chapter cited below and again in 2025, and in neither place does he claim it as his own."
   },
   "evidence": "No experiment on the turkey illusion was located. Gigerenzer presents it as the third of three criticisms of choice axioms, alongside a descriptive and a prescriptive objection, and offers no data for it. Its support in the section at page 586 is the worked parable and one historical case. He writes of 'the increasing confidence of financial institutions in the stability of the financial market in the years before the crisis of 2007-2008, up to shortly before the breakdown', and adds that the rating agencies calibrated their models on the past years and predicted that the future resembles the past. No figure, dataset or named agency accompanies that claim. Taleb's Las Vegas casino belongs to the chapter's opening pages on risk and uncertainty, six pages earlier, and not to the turkey section. There Gigerenzer writes that the owner could calculate the gambling odds, yet 'the main losses occurred through unforeseeable events': a tiger attacking the star artist, a disgruntled former contractor attempting to dynamite the casino, and an employee who failed to file tax reports for a long period. He cites Taleb 2007, pages 129 to 130. Taleb's own account of that casino is longer than the paraphrase, and entry 177 sets it out from the book. The measured work the chapter attaches to the risk and uncertainty distinction sits one step away from the illusion. It reports that Ellsberg showed people's preferences over gambles to be sensitive to whether the probabilities are known or ambiguous. Ellsberg's paper was read for this entry, and it rests on the considered choices of colleagues and other individuals rather than on a controlled experiment. He concludes at page 669 that for such people the Bayesian or Savage approach 'gives wrong predictions and, by their lights, bad advice'. The chapter also lists the 1/N rule, allocating resources equally across N alternatives, with the note that it can outperform optimal asset allocation portfolios, citing DeMiguel, Garlappi and Uppal. That paper was not obtained for this entry.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The charity that budgets from its own history",
+      "text": "A small charity has five steady years of donations and sets next year's budget as a narrow band around them. The band is calculated from a stretch in which nothing changed, and it carries no line for the grant programme closing. Confidence in the figure is highest the week before the letter arrives."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The supplier that has never failed",
+      "text": "A team estimates the chance of a supply failure from a log in which the supplier never failed, so the estimate tightens with every quiet quarter. What the log cannot hold is the outcome it has no row for, and the tightest number is the one printed last."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The tenant of eight years",
+      "text": "A landlord who has been paid on the first of the month for eight years writes the rent into next year's figures as settled. The record supports a probability, and the situation it was drawn from is one where the outcomes were never the only two on offer."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "No replication attempt was found, because there is no original study to repeat. The turkey illusion is a name for a way of modelling badly, and nobody appears to have turned it into a claim about people that could pass or fail.",

@@ -15,6 +15,23 @@
     "note": "The paper coined the term and built the Life Events Inventory procedure the field still uses. It borrowed the idea from work on future events, where Carroll had shown in 1978 that imagining an election result raised belief in it."
   },
   "evidence": "Garry and colleagues pretested 46 students at the University of Washington on a 40-item Life Events Inventory, and 38 finished the study. Each item asked how certain they were that an event had happened before the age of 10, from 1, definitely did not happen, to 8, definitely did happen. Eight items were targets, split into two subsets of four. Two weeks later each person imagined one subset in guided steps lasting about two minutes an item, while the other subset went unimagined. The experimenter then claimed the original forms had been misplaced and handed out a second copy. Analysis was confined to items first rated 1 to 4, which was 76% of the responses and gave 112 imagined and 119 not-imagined items. Most ratings did not move, 57% in the imagined condition and 65% in the control. Confidence rose for 34% of imagined items against 25% of control items. A paired t test treating the eight events as cases put the gap at 8.2 percentage points, t(7) = 5.48, p = .0009. Jumps straight to 8 were rare, six of the 112 imagined items and two of the 119 controls, and removing them left a gap of 6.55 points, t(7) = 3.02, p = .01. On the broken window item, 24% of those who imagined it grew more confident against 12% of those who did not. Heaps and Nash repeated the design at the University of Tennessee with 55 students and a 42-item inventory adapted from Garry's, seven of whose eight target items were new. The item-level gap came to 8.1 percentage points, t(7) = 1.94, p < .047, one-tailed. Averaging within people instead of within events, confidence rose 0.44 scale points for imagined events and 0.18 for controls, t(54) = -1.89, p < .032, one-tailed. Hypnotic suggestibility, r = .35, and dissociativity, r = .34, predicted who inflated, while imagery vividness and interrogative suggestibility did not. Goff and Roediger ran a version with actions rather than childhood events. Forty-four Rice University undergraduates took part and 40 entered the analysis of the first experiment. They heard simple statements such as break the toothpick, and performed, imagined or merely heard each one. In a second session they imagined some actions once, three times or five times. At test they judged whether each action had been heard, imagined or performed in the first session. Claiming to have performed an action that was never mentioned in the first session rose from .02 at zero imaginings to .04, .07 and .13 at one, three and five, F(3, 117) = 8.81, with a linear trend, F(1, 39) = 15.93.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The party nobody can recall",
+      "text": "Asked to picture a childhood birthday she cannot remember, a woman builds the room, the cake and the guests in detail, and afterwards is a shade less sure it never happened. The rating moves, and it stays in the lower half of the scale."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The trip described by relatives",
+      "text": "Cousins describe a day at the sea, a man pictures the beach while listening, and the event slides from definitely not to possibly. No recollection with images and a narrative has arrived, and the shift is in how likely the day now seems."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The interview that asks a witness to imagine",
+      "text": "An officer asks a witness who cannot remember an evening to picture how it might have gone. Doing so raises her confidence in the picture without adding anything at all to what is known about that evening."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "Imagining moves confidence and the move is small: in 13 of the 14 datasets with usable means, the gain over not imagining was one point or less on the rating scale, and ratings stayed in the lower half.",

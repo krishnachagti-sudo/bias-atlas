@@ -13,6 +13,23 @@
     "note": "\"Bad Is Stronger Than Good\" ran to 48 pages and gathered findings from everyday events, trauma, close relationships, social networks and learning. Crossref dates it to December 2001 and dates Rozin and Royzman's taxonomy in Personality and Social Psychology Review to November 2001, a month earlier, and Baumeister and colleagues cite it on their first page as in press. Neither paper coined the phenomenon; both were attempts to give a scattered literature one name."
   },
   "evidence": "Both founding statements are reviews rather than meta-analyses, and Baumeister and colleagues set their own method apart from both. They write that \"Unlike more focused narrative reviews or meta-analyses, we were unable to conduct a systematic search using keywords such as good or bad\". A request to the Society for Personality and Social Psychology list-serve drew roughly 100 responses, and those responses were the starting point for the search. They also state their priority plainly: \"The consistency of conclusions across each area is more important than the robustness or methodological strength of evidence in each specific area.\" Their abstract concludes that hardly any exceptions, meaning findings of greater power of good, can be found. The string \"effect size\" appears nowhere in the 48 pages, and the review reports no pooled estimate. Rozin and Royzman's abstract describes a review of literary, historical, religious and cultural sources alongside the psychological literatures on learning, attention, impression formation, contagion, moral judgement, development and memory; their full text could not be obtained here. Brannon and Gawronski open their 2018 paper by citing Pratto and John's automatic-vigilance work as their example of the attention finding and Kanouse and Hanson as their example of the impression-formation one.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The one bad line in an appraisal",
+      "text": "A review with nine praising sentences and one criticism is remembered as a bad review. The criticism does not merely count for more, it recolours the nine, which is the sharper version of the claim: the combination is worse than the sum of its parts."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The cutting remark at dinner",
+      "text": "An evening with old friends goes well until one guest says something unkind, and the evening is afterwards filed as the one that went wrong. Good and bad of similar size do not cancel, and the bad sets the label."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The single furious review",
+      "text": "A diner scanning forty warm reviews and one angry one gives most of the weight to the angry one and books elsewhere. The claim is about weighting, not about which of the forty-one reports carries more information."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "A registered report on 12,448 randomised headline trials found negative words raise clicks, while a preregistered replication of the cross-national physiological result missed significance.",

@@ -17,6 +17,23 @@
     "note": "The label appears in chapter 2, 'Good Design', where Dawkins writes that Bishop Hugh Montefiore 'makes heavy use of what may be called the Argument from Personal Incredulity'. He does not claim to have coined it, and he writes that it is 'an extremely weak argument, as Darwin himself noted'. The index of the scanned 1986 edition read for this entry lists the term at page 38. Whether the phrase was in print before 1986 is not settled here. The three book-wide full-text searches that would settle it were all unavailable on 17 August 2026: HathiTrust returned 403, Open Library's search inside returned a search-engine error, and the Google Books API returned a daily quota error."
   },
   "evidence": "The record is textual, and it starts before the name. Darwin put the incredulity in his own mouth in the first edition of the Origin: to suppose that the eye could have been formed by natural selection 'seems, I freely confess, absurd in the highest possible degree'. He then answers it. Given gradations, heritable variation and usefulness at each step, the difficulty of believing it is one 'though insuperable by our imagination, can hardly be considered real', and the reader's 'reason ought to conquer his imagination'. Dawkins builds the modern case as a list. He collects a run of phrases from a single chapter of Montefiore, from 'there seems no explanation on Darwinian grounds' through 'I cannot see how' to 'It is difficult to see', and says most modern biologists would not find it difficult to explain every one of the Bishop's 35 examples, though not all are as easy as the polar bears. His handling of that one shows what the objection is: he translates the Bishop's puzzlement about white polar bears into a first-person sentence about a man sitting in his study, never having visited the Arctic, educated in classical literature and theology. Where measurement comes closest is in judgements of probability rather than of argument. Tversky and Kahneman's 1974 paper has a section headed 'Biases of imaginability'. Ten people can form 45 distinct committees of two and 45 of eight; the median estimate was 70 for committees of two and 20 for committees of eight. They write that the risk in an undertaking may be underestimated 'if some possible dangers are either difficult to conceive of, or simply do not come to mind'. Sherman, Cialdini, Schwartzman and Reynolds tested that in 1985 with a disease described as having easy-to-imagine or hard-to-imagine symptoms. Their abstract reports that subjects who found the symptoms hard to imagine judged the disease less likely, and that trying to imagine cognitively inaccessible events reduces likelihood estimates. Only the abstract was obtained and no figure from it is quoted.",
+"examples": [
+  {
+    "kind": "everyday",
+    "tag": "The councillor who cannot see how the junction would work",
+    "text": "A member votes against a road scheme because he cannot picture the new layout carrying the traffic. What he has reported is the limit of his own imagining, and the modelling sits on the table unread."
+  },
+  {
+    "kind": "everyday",
+    "tag": "The outage nobody can connect to the change",
+    "text": "A reviewer says there is no way that edit could have caused the failure, so it did not. The premise is about what the reviewer has managed to think of, and the logs have not been opened."
+  },
+  {
+    "kind": "everyday",
+    "tag": "The bill that seems impossible",
+    "text": "A householder cannot imagine how the meter could have recorded twice the usual reading, and concludes the meter must be faulty. The inference runs from the limits of her picture of the house to a claim about the hardware."
+  }
+],
   "replication": {
     "state": "none-located",
     "headline": "No experiment on the inference itself was found. The nearest measured effects concern how likely something feels, not whether an argument from not being able to imagine it is any good.",

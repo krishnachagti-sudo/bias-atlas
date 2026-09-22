@@ -16,6 +16,23 @@
     "note": "The paper is \"Transmission of Aggression Through Imitation of Aggressive Models\", volume 63, pages 575 to 582, received on 2 December 1960. It calls the toy a 5-foot inflated Bobo doll in its method section. The name the study now travels under came later, and this entry could not establish who coined it."
   },
   "evidence": "Seventy-two children at the Stanford University Nursery School, 36 boys and 36 girls, aged 37 to 69 months with a mean of 52 months. Twenty-four watched an aggressive adult model, 24 watched a subdued model who assembled tinker toys and ignored the doll, and 24 saw no model. The eight model conditions held six children each, divided by sex of child and sex of model. Children were rated beforehand on four five-point aggression scales by their teacher and the experimenter, arranged in triplets on the composite score and assigned at random, with an interrater correlation of .89. Exposure lasted ten minutes. Every child, the control group included, was then frustrated on purpose: the experimenter let them start on a set of attractive toys, then said those were her best toys and were being kept for other children. The test room held a 3-foot Bobo doll, a mallet and peg board, two dart guns and a tether ball, alongside a tea set, dolls, bears, crayons and farm animals. Behaviour was scored through a one-way mirror in 5-second units for 20 minutes, giving 240 units per child, with interscorer correlations in the .90s. All but two children in the aggressive condition performed the model's novel acts, and about 70% of children in the other two conditions scored zero on those measures. Two measures moved with condition and two did not. Imitative physical aggression, imitative verbal aggression and the model's non-aggressive lines all separated the groups, and roughly a third of the aggressive-condition children repeated lines such as \"He sure is a tough fella\". Ordinary punching of the Bobo doll and aggressive gun play did not differ by condition at all.",
+"examples": [
+  {
+    "kind": "everyday",
+    "tag": "The jammed drawer and the exact phrase",
+    "text": "A child nobody has taught to be angry kicks a stuck drawer shut and mutters the same words in the same order as the adult who did it last week. The copying is precise, which is what marks learning a routine rather than being wound up."
+  },
+  {
+    "kind": "everyday",
+    "tag": "The coach's celebration",
+    "text": "A squad of eight-year-olds picks up a coach's particular fist-pump and shout after a goal. None was asked to, none was praised for it, and all of them have the sequence whole."
+  },
+  {
+    "kind": "everyday",
+    "tag": "The cloth held the way an adult held it",
+    "text": "A toddler who watched somebody clean a table picks up the cloth in the same grip and wipes in the same order. Nothing rewarded the watching, and the behaviour came back intact the first time she had a table of her own."
+  }
+],
   "replication": {
     "state": "replicated",
     "headline": "The same three authors ran the paradigm again in 1963 with 96 new children and the imitation effect came back; the repetitions this entry could read are all theirs.",

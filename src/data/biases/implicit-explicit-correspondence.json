@@ -2,7 +2,11 @@
   "no": 471,
   "slug": "implicit-explicit-correspondence",
   "name": "Implicit-explicit correspondence",
-  "aliases": ["Implicit-explicit consistency", "Implicit-explicit relations", "Implicit-explicit dissociation"],
+  "aliases": [
+    "Implicit-explicit consistency",
+    "Implicit-explicit relations",
+    "Implicit-explicit dissociation"
+  ],
   "category": "social",
   "statement": "Indirect and direct measures of the same attitude correlate positively but weakly on average, and the size of that correlation depends on the object being rated.",
   "meaning": "The prediction belongs to the implicit cognition programme, which has its own entry here and carries the meta-analytic averages near r = .2. This entry is about what an average across objects hides. Nosek measured implicit and explicit preferences for 57 object pairs in one large sample, put the mean correlation at r = .36, and found 52 of the 57 pairs positive and significant, with the size varying by object. Attitudes towards mathematics sit high in that range, and they are the case a multi-laboratory replication has tested directly. The same original studies carried a second claim: that women hold more negative implicit attitudes towards mathematics than men. A correlation between two measures and a group difference on one of them rest on different evidence, and the two came through replication at different strengths.",
@@ -13,6 +17,23 @@
     "note": "Two laboratory studies of Yale undergraduates on mathematics attitudes, identity and gender stereotypes, pooled for the correspondence analysis. The correspondence question is one section of a paper whose main argument is about how group membership shapes preference."
   },
   "evidence": "Study 1 tested 83 undergraduates and dropped four for error rates above 20%, leaving 79, of whom 40 were women. On the mathematics-versus-arts Implicit Association Test both sexes evaluated mathematics negatively, men at d = -0.80 and women at d = -2.06, and the gap between them was t(77) = 4.42, d = 1.01. Study 2 tested 97 and kept 91, 46 of them women, giving t(89) = 4.26, d = 0.90 on the same comparison. Combining across studies, the implicit mathematics attitude score correlated with the matching self-report at r = .42, n = 243, p < .0001, and with explicit mathematics identity at r = .48, n = 132. Nosek, Banaji and Greenwald expected correspondence here for a stated reason: people voice dislike of mathematics without embarrassment, so self-presentation, the factor usually invoked to explain divergence, has little to work on. The same paper reports about 19,000 visitors to a demonstration website, among whom negativity towards mathematics ran at d = 0.82 overall, d = 0.99 for women and d = 0.58 for men, F(1, 18587) = 539.00.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The subject nobody hides a view about",
+      "text": "A woman says plainly that she disliked mathematics at school, and a timed sorting task puts her in the same place. Where there is no reason to conceal an opinion, the quick measure and the stated one sit close together."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The gap read as a confession",
+      "text": "A voter states mild approval of a party and produces a different pattern on a timed task. The gap is taken as the hidden truth behind the statement, though it is also what two noisy measures of two different things look like."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Why one average will not do",
+      "text": "Asked about fizzy drinks, stated and indirect measures of preference track each other closely. Asked about ethnic groups, they barely do. A single correlation averaged across every object describes neither of those cases."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "Many Labs 1 repeated both effects across 35 samples: the implicit-explicit correlation came back at r = .38 against the original .42, and the sex difference at about half its original size.",
@@ -23,8 +44,25 @@
       "year": 2014,
       "sites": 35
     },
-    "original": { "es": 0.93, "esType": "d", "ci": [0.77, 1.08], "ciLevel": 95 },
-    "replicated": { "es": 0.79, "esType": "d", "ci": [0.63, 0.96], "ciLevel": 99, "weighting": "unweighted" }
+    "original": {
+      "es": 0.93,
+      "esType": "d",
+      "ci": [
+        0.77,
+        1.08
+      ],
+      "ciLevel": 95
+    },
+    "replicated": {
+      "es": 0.79,
+      "esType": "d",
+      "ci": [
+        0.63,
+        0.96
+      ],
+      "ciLevel": 99,
+      "weighting": "unweighted"
+    }
   },
   "limits": "The mathematics figure is not the general figure. Nosek's 57-object study puts the mean at r = .36 and reports that the relationship varies as a function of the objects assessed, with self-presentation, evaluative strength, dimensionality and distinctiveness moderating it. That figure was read off the abstract at PubMed and confirmed against the PMC record; the participant count was not obtained and is not printed here. The spread shows inside one research programme. Across the half million gender-science tests behind Nosek and colleagues' 34-nation analysis, the implicit stereotype correlated with its self-report counterpart at r = 0.22. Age matters too. Cvencek, Brečić, Gaćeša and Meltzoff gave implicit and explicit measures to 391 Croatian children in grades 1 and 5, mean age 9.56 years, and got r = .16, p < .01, between implicit and explicit mathematics attitude, against r = .70 between the two explicit measures. In the same sample the sex difference on the implicit measure reached d = 0.41 in grade 5 and did not reach significance in grade 1, p = .054. Where the search stopped: Crossref and PubMed queries for cross-national tests of the sex difference in implicit mathematics attitude returned nothing on that scale, and a 2022 registered report by Schmidt, Buchanan and Hall on moderators of implicit-explicit correspondence sits behind a paywall and was not read.",
   "misreadings": "The two claims get merged. Many Labs 1 lists them as separate effects and they behaved differently, holding in 0.94 and 0.71 of samples. A weak correlation is also read as concealment, and mathematics is the counter-example the original authors picked on purpose, because dislike of mathematics is not something people hide. The sex difference shrank across measurements. Nosek, Banaji and Greenwald obtained d = 1.01 in 79 Yale undergraduates; Nosek and Smyth obtained d = .44, t(2924) = 11.87, in 5,139 Project Implicit volunteers who took part between October 2001 and January 2003; Many Labs 1 obtained an unweighted 0.56. The three point the same way and the first is the largest. The cross-national work quoted in this area measures something else again. Nosek and colleagues' 34-nation study used the gender-science stereotype, an association between a field and a group rather than an attitude towards mathematics, and its result is a country-level correlation of r = 0.60, 95% CI [0.31, 0.77], between national implicit stereotyping and the sex gap in eighth-grade science scores. That is a relation between country averages, not a test of whether individual women like mathematics less than individual men do.",

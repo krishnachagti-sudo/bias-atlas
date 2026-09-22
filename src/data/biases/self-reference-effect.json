@@ -2,7 +2,13 @@
   "no": 233,
   "slug": "self-reference-effect",
   "name": "Self-reference effect",
-  "aliases": ["SRE", "Self-referential encoding", "Self-referential encoding effect", "Self-reference encoding effect", "Self-referent encoding effect"],
+  "aliases": [
+    "SRE",
+    "Self-referential encoding",
+    "Self-referential encoding effect",
+    "Self-reference encoding effect",
+    "Self-referent encoding effect"
+  ],
   "category": "memory",
   "statement": "A word judged for whether it describes oneself is recalled better than the same word judged for its meaning.",
   "meaning": "The paradigm is the depth-of-processing task with one question added. A learner sees a trait adjective under a question about its typeface, its sound, its meaning, or whether it describes them, and an unexpected recall test follows. Self-reference wins. Two comparisons travel under the one name and they give different numbers. Self against a semantic judgement is the large one, and self against the same judgement made about another person is the small one. The second matters because it separates two accounts. If the self is a privileged structure, reference to anybody else should lose badly. If the advantage comes from a rich, well-practised body of knowledge that organises material and elaborates it at the same time, then reference to a familiar other should close most of the gap, and the size of the effect should track how good the comparison task is. Symons and Johnson's meta-analysis was built to test that, and it comes down on the second side. The same paradigm travels under the name self-referential encoding, which is what Liu and colleagues call it when they pool its use in classrooms.",
@@ -13,6 +19,23 @@
     "note": "The paper is \"Self-reference and the encoding of personal information\", and its abstract reports two experiments in which subjects rated adjectives under structural, phonemic, semantic and self-reference tasks, with incidental recall best for the self-reference task. Its conclusion is that the self \"appears to function as a superordinate schema that is deeply involved in the processing, interpretation, and memory of personal information\". Symons and Johnson call it a seminal pair of studies, record that its four tasks were the standard depth-of-processing set plus \"Does the word describe you?\", and place the \"superordinate schema\" phrase on its page 686. The paper ran in the September 1977 issue, volume 35, number 9, pages 677 to 688, and the two experiments used 59 undergraduates between them. That participant count is from the PsycINFO record reproduced by Ovid, which carries a longer abstract than PubMed does. The full text is paywalled and was not obtained, and no result on this page is read off it."
   },
   "evidence": "What the underlying literature looks like is documented in Symons and Johnson's meta-analysis, which read 129 studies located through PsycLIT for 1974 to 1994 and through the reference lists of retrieved articles, limited to work available as of June 1994. The median publication year was 1985. Studies tested 38.75 participants on average, 106 of the 129 drew on college undergraduates, and 126 were journal articles or book chapters against three unpublished reports. Trait words were the stimulus in 90 studies and nouns in 37. Free recall was the dependent measure in 105, recognition in 22 and cued recall in 2. Designs were within-subjects in 97 of 129, and 112 studies used an incidental paradigm in which participants did not expect a memory test. Average memory load was about 54 words. Self-descriptiveness was the self-reference task in 42 of the 60 self-versus-semantic studies and in 39 of the 69 self-versus-other studies. Bentley, Greenaway and Haslam later rebuilt the paradigm for unsupervised online testing. Their participants answered 30 questions drawn from Anderson's likeableness norms, 10 self-referential (\"Does the following word describe yourself?\"), 10 semantic and 10 structural, then had 120 seconds for a surprise recall test. Every analysis was run twice, on all recalled words and again with the first three and last three list positions dropped to control primacy and recency. Collins and Winer took the same paradigm to depression, where it is called the self-referential encoding task and participants judge positive and negative trait adjectives for self-descriptiveness before recalling them after a distractor. Their PsycINFO search returned 3,055 reports. Twenty-six met the eligibility criteria and yielded 31 studies or samples. Three further studies were found to share samples with studies already in the set, and only one of each overlapping pair was kept. The protocol was registered on PROSPERO and the review followed PRISMA-P.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The words you checked against yourself",
+      "text": "A workshop runs through a list of qualities, asking of some whether they describe you and of others what they mean. Days later the ones you measured yourself against are the ones you can still list. Both questions were about meaning, and only one ran the word past a life you know well."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Learning adjectives the long way",
+      "text": "A language learner who decides for each new adjective whether it fits him keeps more of them than one who writes out a definition for each. The second task handles the meaning too, so what is doing the work is the store of knowledge the first task reaches into."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The safety briefing that stuck",
+      "text": "Two workers sit through the same list of hazards. One follows along, the other pictures himself at each step of his own shift, and a month on can name the hazards the first has lost. The difference lies in what each did with the list, not in how long either sat there."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "Symons and Johnson pooled 129 studies and found self-referential encoding ahead of the comparison task by d = 0.50, 95% CI 0.45 to 0.54.",
@@ -25,7 +48,10 @@
     "replicated": {
       "es": 0.5,
       "esType": "d",
-      "ci": [0.45, 0.54],
+      "ci": [
+        0.45,
+        0.54
+      ],
       "ciLevel": 95,
       "weighting": "weighted mean across 129 studies"
     }

@@ -16,6 +16,23 @@
     "note": "The trait questionnaire was run earlier by Nisbett and Caputo and circulated as an unpublished 1971 Yale manuscript titled \"Personality Traits: Why Other People Do the Things They Do\". Jones and Nisbett describe it in their monograph under the heading \"Personality Traits Are Things Other People Have\", and it reached print as one of the studies in the 1973 paper."
   },
   "evidence": "Jones and Nisbett report the design in full. Twenty polar adjective dimensions, such as reserved against emotionally expressive and lenient against firm, each came with a third option reading \"depends on the situation\". Male college students checked one of the three for each pair for five people: themselves, their best friend, an age peer they liked but did not know well, their father, and the television commentator Walter Cronkite. Subjects took the situational option for themselves and assigned traits readily to the other four. Neither acquaintance nor similarity in age moved the result much, and traits went to the four others in about equal numbers. Kammer separated intensity from variability in 1982 and found that 56 people judged their friends' behaviour more consistent than their own while giving themselves the higher trait intensities. Baxter and Goldberg had subjects rate themselves and a same-sex peer they knew well on 60 adjectives, from -3 to +3 with four middle options including \"depends on the situation\", and then rate the consistency of the behaviour behind each judgement. For 72% of the 60 traits the majority of subjects described themselves as more variable than the other person. Pronin and Kugler asked 58 Princeton undergraduates to draw box models predicting behaviour, sizing a box for each of four predictors. Own personality took 21% of the predictive weight against 32% for a roommate's, F(1, 54) = 24.42, p < 0.0001, while own desires and intentions took 36% against 27%.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The form with a third option",
+      "text": "Asked whether a colleague is cautious or bold, a respondent picks one of the two. Asked the same about herself, she ticks the box reading depends on the situation. The claim is about that choice of description, not about explaining why anybody acted."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Introducing two people at a party",
+      "text": "A man calls his friend shy, and says of himself that he is quiet with strangers and loud at home. One person has been handed a trait and the other a range, in consecutive sentences."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The reference letter",
+      "text": "A manager writes that a candidate is highly organised, and would say of her own record-keeping that it varies with how busy the month is. The gap between the two descriptions is small when anybody measures it, and it runs in that direction."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The self-other gap in trait ascription turned up again in 878 people at Cohen's f = 0.10 against the original 0.35, while the trait asymmetry measured through behaviour explanations pools at d = 0.09 and misses significance.",

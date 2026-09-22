@@ -18,6 +18,23 @@
     "note": "The paper is \"The role of category accessibility in the interpretation of information about persons: Some determinants and implications\", pages 1660 to 1672 of volume 37. Its abstract describes two experiments of 96 undergraduates each, one activating hostility and one activating kindness through a sentence construction task."
   },
   "evidence": "Srull and Wyer's abstract reports that participants built sentences from scrambled word sets, then read a description of behaviours ambiguous with respect to hostility as part of an ostensibly unrelated impression formation study, and rated the target on trait dimensions. Ratings rose with the number of prior activations of the concept and fell as the interval between those activations and the description grew. The second experiment repeated the design with kindness on 96 fresh participants. The full text was not obtained for this entry, so what follows is McCarthy and colleagues' account of Experiment 1. They describe a two by two by three by two between-participants design with four people per cell: 30 or 60 scrambled sentences, 80 percent or 20 percent of them hostile, rating immediately or after one hour or after 24 hours, and two versions of the vignette. The man in the vignette is called Donald. Participants rated him on 12 traits from 0 to 10, and six of those ratings were averaged into a hostility index after three were reverse-scored. They then rated the hostility of 15 behaviours, five of which were ambiguous and were averaged into a second index. Reading Srull and Wyer's own figures for the 30-sentence, no-delay cells, McCarthy and colleagues put the 80 percent group about three scale points above the 20 percent group on both measures: 8.57 against 5.56 for Donald, and 7.49 against 4.50 for the behaviours, with eight people on each side.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The neighbour described in a letter",
+      "text": "After an hour reading angry complaints from a residents' group, a committee member reads a flat account of a man who refused to move his van and rates him as aggressive. The account has not changed; the trait category reached for first has."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The reference read after a difficult morning",
+      "text": "A recruiter who has spent the morning on a harassment dispute reads that a candidate pushed hard for her budget. Pushed hard files under aggression rather than under drive. The sentence is the same sentence either way, and what moved is the rating attached to it."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The vague message from a colleague",
+      "text": "Someone who has just been arguing online opens a short email asking to talk about yesterday, and reads it as a threat. What the claim covers is that reading of an ambiguous description, not whether the reader then behaves badly."
+    }
+  ],
   "replication": {
     "state": "failed",
     "headline": "Twenty-two laboratories and 5,610 people moved the hostility rating by 0.08 points on an 11-point scale, against roughly three points in the original.",

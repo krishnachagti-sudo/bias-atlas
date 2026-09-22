@@ -17,6 +17,23 @@
     "note": "One paper of three experiments, at 79(5), 690-700. It opens on a Bertrand Russell epigram, cited as 1947/1997, pages 86 to 87, in which Russell says he cannot attribute the cruelty of history to a being who is wise, beneficent and omnipotent. The three attributes the studies test are drawn from that sentence. The authors state on page 690 that they do not deny the existence of God, and that they are arguing for a mechanism by which people may wrongly conclude that something other than themselves arranged their fate."
   },
   "evidence": "Each study set up an agent already known to have two of the three attributes, then measured whether participants granted it the third. All three ran on undergraduates at the University of Texas at Austin for course credit.\n\nStudy 1 tested influence. Seventy-seven women chose a teammate by picking one of four folders, all of which in fact held the same autobiography. Control participants had rated the four candidates first; optimizing participants had not, and so had made no prior commitment about which was best. Everyone was then told that a flash of light during an earlier task had subliminally primed the symbol on the best-matched folder. Ten participants were removed for suspicion, procedural error, or having spotted which folder was which, leaving 67. Optimizing participants liked their teammate more, 6.03 against 5.70 on a seven-point scale, F(1, 65) = 7.55, p = .008. They were also readier to believe the subliminal message had steered them, 4.00 against 3.18, F(1, 65) = 4.07, p = .048.\n\nStudy 2 tested insight, and used a choice rather than a rating. Sixty-seven students, 23 men and 44 women, were told that a device called a SmartRadio had picked one of two songs for them to hear three times through. It always picked the song pretested as the worse of the pair. Optimizing participants learned that verdict before hearing the excerpts; control participants heard the excerpts first. Six were removed, leaving 61. The measure was whether participants let the same device choose again on a second trial. Six of 31 control participants did, 19%, against 13 of 30 optimizing participants, 43%, chi-square(1, 61) = 4.09, p = .042. Asked which device they would buy, 5 control participants said the chosen one, 16%, against 15 optimizing participants, 50%, chi-square(1, 61) = 7.94, p < .005.\n\nStudy 3 tested benevolence and is the smallest. Forty-nine women were assigned to be either the recipient of a gift or an observer of somebody else receiving it, and either learned which gift had been picked before rating the two options or after. The gift was always the stuffed animal, pretested as the less desirable of the pair against a voucher for a tank of petrol. Cells held 12, 13, 12 and 12 people. The headline test is a planned weighted contrast setting the optimizing recipients against the other three cells combined. On how considerate they judged the giver, that contrast gave F(1, 45) = 16.33, p < .001, with optimizing recipients at 6.58 and control recipients at 5.68. Against control recipients alone the contrast was F(1, 45) = 5.09, p = .028. Among observers, who had no stake in liking the gift, the two conditions did not differ, reported as F < 1.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The flat that was meant to be",
+      "text": "Someone loses the flat they wanted, takes the second choice and talks themselves round within a month. Looking back they say the market knew better than they did. The contentment was their own work, and it is being read as evidence of somebody else's judgement."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The reshuffle that came out right",
+      "text": "A department hands people roles they did not choose, and after a term most say the manager saw something in them they had not seen. For that to follow, the manager would have to know, want and arrange it. What is known is only that people came round."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The introduction the relatives take credit for",
+      "text": "An arranged introduction leads to a marriage that settles happily, and the relatives who made it are credited with insight. Satisfaction that the couple generated themselves is not evidence about the people who set the thing up."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "No replication attempt of any of the three studies was found. Semantic Scholar lists 77 papers citing the original, and none of them repeats the experiments.",

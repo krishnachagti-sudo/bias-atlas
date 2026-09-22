@@ -17,6 +17,23 @@
     "note": "The paper is \"Forming impressions of personality\". Participants heard short lists of traits and described the person they had pictured, and Asch argued that an impression is a structured whole in which each trait changes the reading of the others. His Study VI reversed the order of a list, running from intelligent to envious or from envious to intelligent, which is where the order effect comes from. Asch's own text was not obtained for this entry. Nauts and colleagues, who repeated the studies most relevant to how he is now cited, count 10 studies in the paper with a combined 834 participants, and Sullivan gives Study VI an n of 58. The face-based literature that the phrase usually means today begins sixty years later."
   },
   "evidence": "Willis and Todorov ran five experiments, one trait each, on 117 Princeton undergraduates, with 20 to 25 per experiment. A separate 128 participants rated the same faces on paper with no time limit, and those ratings were the criterion. The faces were 66 photographs of amateur actors, 33 male and 33 female, with neutral expressions, shown for 100, 500 or 1,000 milliseconds. Participants pressed yes or no, then rated their confidence. Each reported correlation is between the proportion of yes answers a face drew and that face's mean untimed rating, so it is computed across 66 faces and not across people. At 100 milliseconds the correlations were .73 for trustworthiness, .69 for attractiveness, .59 for likeability, and .52 for both competence and aggressiveness. At 1,000 milliseconds they were .74, .66, .63, .59 and .59, and none of the changes across exposure reached significance on Williams's test. A regression of the untimed judgements on the timed ones gained 2.2% of variance between the shortest and longest exposure, reaching 74.9%. Longer exposure did change the judgements themselves. From 100 to 500 milliseconds every trait was rated more harshly, with d above 0.85, and confidence rose for four of the five. Todorov, Pakrashi and Oosterhof repeated the design with a perceptual mask after each face and a criterion drawn from 129 raters. In their first experiment, 83 participants judging trustworthiness produced face-level correlations of .55 at 50 milliseconds, .81 at 100 and .89 at 500. Scored one rater at a time rather than pooled, the same correlations averaged .18, .36 and .43. Their second experiment used eight exposures on 43 participants: nothing distinguishable from zero at 17 milliseconds, .22 at 33, .72 at 100, and .79 at both 167 and 500.",
+"examples": [
+  {
+    "kind": "everyday",
+    "tag": "The applicant judged before the first answer",
+    "text": "An interviewer's view of a candidate has settled before the opening question is finished, and forty minutes of answers leave it where it was. The extra time raised his confidence rather than moving his verdict."
+  },
+  {
+    "kind": "everyday",
+    "tag": "Six people describing the same photograph",
+    "text": "Shown one portrait, six viewers call the person trustworthy in much the same words. They agree because they are all reading the same cue the same way, which is a different thing from being right."
+  },
+  {
+    "kind": "everyday",
+    "tag": "The doctor assessed in the doorway",
+    "text": "A patient has formed a view of a new doctor before either of them has spoken, and reads the rest of the appointment through it. The view arrived too quickly to rest on anything the doctor had done."
+  }
+],
   "replication": {
     "state": "mixed",
     "headline": "The speed and the agreement hold at large samples. The accuracy comes out at r = .14 across faces, and the two findings are usually quoted as one.",

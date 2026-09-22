@@ -17,6 +17,23 @@
     "note": "The cold-pressor paper names the pattern and tests it against a direct choice. Its companion, Fredrickson and Kahneman in the Journal of Personality and Social Psychology four months earlier, established duration neglect with film clips and is the paper the 2022 meta-analysis credits for both ideas."
   },
   "evidence": "Thirty-two male University of California students, aged 19 to 39, held one hand in water at 14 °C for 60 seconds. On another trial they held the other hand in 14 °C water for 60 seconds, then kept it in for 30 seconds more while the temperature rose to about 15 °C. Three further subjects were run and replaced, one for a temperature-control fault and two for inconsistent choices. The long trial contained all the pain of the short one and then more. Told they would repeat one of the two, 22 of 32 chose the long trial, z = 2.15, p < .05 by sign test. The choice tracked whether the ending improved. Of the 21 subjects whose discomfort fell by 2 points or more, 17 chose the long trial, while the 11 who felt little or no relief split 6:5 for the short one. A version with the moment-by-moment discomfort meter removed found 24 of 37 choosing the long trial. On the rating scales most subjects said the long trial had caused less overall discomfort, M = -0.91, t(31) = 2.12, p < .05. Choice correlated .80 with that comparison of remembered discomfort and .16 with the comparison of durations. The pattern then held in a hospital. Redelmeier and Kahneman recorded real-time pain in 154 colonoscopy patients and 133 lithotripsy patients, and found remembered total pain correlated with peak intensity and with intensity over the last three minutes, both at P < 0.005, while long procedures were not remembered as worse. A 2003 randomised trial manipulated the ending. Of 733 patients approached, 682 agreed, and half of those had the colonoscope left resting in the rectum for up to three minutes. Mean pain over the final three minutes fell from 2.5 to 1.7 on a ten-point scale, P < 0.001, the global rating from 4.9 to 4.4 on a 10 cm scale, P = 0.006, and the ranking against seven other unpleasant events from 4.6 to 4.1, P = 0.002. In that trial the global rating correlated 0.56 with average pain across the whole procedure, above 0.44 for the peak and 0.33 for the final three minutes.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The two dental appointments",
+      "text": "One patient has a short filling that ends at the sharpest moment. Another has a longer one with the worst part in the middle and a gentle finish. The second sat in the chair for twice as long and describes it as the easier visit."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The queue that speeds up at the end",
+      "text": "Forty minutes at a check-in desk are judged tolerable if the last few minutes move briskly, and grim if the delay lands at the window. The total wait is the same. What gets stored is the worst stretch and the last one."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The swimming lesson that ended in tears",
+      "text": "A child enjoys most of an hour in the pool and then swallows a mouthful of water getting out. Asked that evening whether she wants to go back, she says no. The fifty good minutes are in the account, weighted near zero."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "A meta-analysis of 174 effect sizes puts the peak–end effect at r = 0.581, and finds the plain average of the whole episode predicting just as well.",

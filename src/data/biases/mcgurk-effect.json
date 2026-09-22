@@ -16,6 +16,23 @@
     "note": "A three-page letter from the Department of Psychology at the University of Surrey, received 15 July and accepted 11 November 1976. MacDonald wrote in 2018 that the dubbed tapes were made for a planned study of infants' audio-visual coordination, and that the illusion was noticed by accident when he previewed them; the model was Susan Ballantyne, recruited because she had amateur dramatic experience and a southeast of England accent."
   },
   "evidence": "A woman was filmed repeating ba-ba, ga-ga, pa-pa and ka-ka, one utterance per second with about 0.5 s between repetitions. Four dubbed video-records were cut from the master: ba-voice with ga-lips, ga-voice with ba-lips, pa-voice with ka-lips, and ka-voice with pa-lips. Twenty-one pre-school children, given as 3 to 4 years in the text and 3 to 5 in the table, 28 primary school children aged 7 to 8 and 54 adults aged 18 to 40 saw all four in counterbalanced order. Each did so twice, once watching the monitor and once facing away from it. Auditory-only accuracy averaged 91% for the pre-school group, 97% for the school group and 99% for adults, with errors the authors call unsystematic. With the picture visible the error rate rose to 59%, 52% and 92% for the three groups. Table 2 gives the percentage of responses in each category. Auditory ba-ba with visual ga-ga produced fused responses on 81% of pre-school trials, 64% of school-age trials and 98% of adult trials. Auditory pa-pa with visual ka-ka produced fusions on 52%, 50% and 81%. The two reversed pairings produced no fusions in adults and combination responses instead, 54% for ga-voice with ba-lips and 44% for ka-voice with pa-lips. The paper reports no test statistic, no variance and no per-subject data, saying only that appropriate analyses confirm the effects are statistically reliable, and that the data alone fail to testify to the power of the illusions.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The badly dubbed film",
+      "text": "A film dubbed into another language shows lips that do not match the words, and the dialogue turns oddly hard to follow. The eyes are contributing to what is heard, and here what they contribute belongs to a different sentence."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The call that drifts out of step",
+      "text": "When the picture on a video call lags behind the voice, listeners start mishearing words they would have caught on the telephone. A mouth is not a neutral thing to watch while listening."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The classroom demonstration",
+      "text": "A class watches a clip in which the sound and the lips disagree, and the room reports a syllable carried by neither. Played again with eyes shut, the same clip gives a different answer, and the sound has not changed."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Visual speech does alter what listeners report hearing, and the 98% does not travel: with the stimuli held fixed, fusion rates ran from 10% to 60% across tasks and testing settings.",

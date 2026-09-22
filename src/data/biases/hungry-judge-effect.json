@@ -2,7 +2,10 @@
   "no": 96,
   "slug": "hungry-judge-effect",
   "name": "Hungry judge effect",
-  "aliases": ["Hungry judges", "Judicial decision fatigue"],
+  "aliases": [
+    "Hungry judges",
+    "Judicial decision fatigue"
+  ],
   "category": "decision",
   "statement": "Israeli parole judges ruled for the prisoner in about 65% of cases at the start of a session and in almost none by its end.",
   "meaning": "The finding has a mechanism attached, and the mechanism is the contested part. Danziger, Levav and Avnaim-Pesso proposed that making one ruling after another depletes a judge's mental resources, and that a depleted judge falls back on the easier option. In a parole hearing the easier option is to deny, because denial preserves the status quo and takes less writing. A food break restores the resource and the grant rate jumps back. The popular version drops the mechanism and keeps the meal, which is how a paper about position in a queue became a paper about breakfast. What the authors measured was the ordinal position of a case within a session.",
@@ -13,6 +16,23 @@
     "note": "Their paper is titled \"Extraneous factors in judicial decisions\" and opens by naming the caricature it sets out to test, that justice is what the judge ate for breakfast. It records the timing and length of two daily breaks, calls the morning one a snack of a sandwich and fruit served to the judge at the bench, and states that the data cannot test the breakfast claim directly."
   },
   "evidence": "1,112 rulings by eight Jewish-Israeli judges sitting on two parole boards, collected over 50 days in a 10-month period. The boards handle about 40% of parole requests in the country. A judge heard 14 to 35 cases a day, an average of 22.58, each taking about six minutes. A morning snack and a lunch break split the day into three sessions, the first break falling after 7.8 cases on average and the second after 11.4. Overall 64.2% of requests were rejected, a figure that pools outright refusals with deferrals to a later hearing; deferrals are 48.4% of the reject category. The 65% and the near-zero endpoint appear in the abstract and in the sentence describing Figure 1, and both are given as approximations rather than as measured quantities. That graph plots the proportion of favourable rulings against ordinal position, and is drawn from the first 95% of each session because the later positions hold few cases. A fixed-effects logistic regression controlling for offence severity, months served, previous imprisonments, rehabilitation programme, sex and ethnicity put the coefficient on the first decision of the third session at 2.873 (SE 0.425) and the coefficient on overall decision count at -0.078 (SE 0.020). Favourable rulings took longer than unfavourable ones, 7.37 minutes against 5.21, and their written verdicts ran 89.61 words against 47.36.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The interview slot late in the day",
+      "text": "A panel scores candidates one after another from morning to late afternoon. By the final slots the easy answer is no, because declining a candidate needs no argument with the rest of the panel. What moved was position in the queue, not the candidate."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The stack of grant applications",
+      "text": "A reviewer works through forty proposals in one sitting. The ones near the bottom meet someone who has been making judgements for hours, and a decision to fund has to be written up while a decision to decline does not."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The break that resets the rate",
+      "text": "A committee hears planning applications all morning and defers more of them as the morning runs on, then grants several in a row after lunch. The applications heard first after the break are no better than the ones heard just before it."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "A large American arraignment court shows a decline of about 6 percentage points across the hours before a meal and no rise after it, and an Arkansas traffic court shows a decline in arraignments but not in trials.",

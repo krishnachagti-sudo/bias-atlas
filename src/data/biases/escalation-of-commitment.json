@@ -17,6 +17,23 @@
     "note": "The paper is \"Knee-deep in the big muddy: a study of escalating commitment to a chosen course of action\", volume 16, pages 27 to 44. Sleesman and colleagues note that the title borrows from Pete Seeger's 1967 Vietnam protest song \"Waist Deep in the Big Muddy\". Staw's own framing was the war: he quotes a July 1965 memo from George Ball to Lyndon Johnson, taken from the Pentagon Papers, warning that heavy casualties would start a well-nigh irreversible process."
   },
   "evidence": "Staw recruited 240 undergraduates from the College of Commerce and Business Administration at the University of Illinois, Urbana-Champaign. Playing a financial vice president in 1967, subjects sent 10 million dollars of research funding to one of two divisions of the Adams & Smith Company, Consumer Products or Industrial Products. Five years on in the case, with 20 million dollars now to split as they liked, they allocated again. Half were shown figures in which the division they backed had recovered, half figures in which it had gone on losing. Half never made the first decision at all: they were told a previous officer had made it. One subject could not pick a division at the first step and was dropped, leaving 239 in the analysis and 235 degrees of freedom for error. The two halves were not built the same way. The 120 low-responsibility subjects were assigned 30 to each of four cells, while the 120 high-responsibility subjects chose their own division, 64 taking Consumer Products and 55 Industrial. The measure was money sent to the previously chosen division. Under high personal responsibility subjects gave it 11.08 million on average, against 8.89 million under low responsibility. Under negative consequences they gave 11.20 million, against 8.77 million under positive consequences. Both main effects were significant, F(1, 235) = 14.40 and F(1, 235) = 17.93, p < .001, and so was the interaction, F(1, 235) = 5.56, p < .019. The cell that carries the paper is high responsibility with negative consequences, where the average allocation was 13.07 million, and Staw reports it as the only cell differing significantly from the other three.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The contract the manager argued for",
+      "text": "A manager pushed for a supplier over two rivals, and the deliveries are late. He extends the contract and funds a recovery plan. His successor, handed the same supplier and the same record a year on, cancels within a month. The evidence was identical; only the authorship of the first decision differed."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The fundraiser that stopped working",
+      "text": "A committee member invented the summer format and it has lost money three years running. She argues for a fourth run with better publicity. The newcomer who never proposed it looks at the same three years and suggests something else entirely."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The builder you picked yourself",
+      "text": "You chose the builder against your partner's advice, and the work is late and wrong twice over. You keep paying him to put it right. A landlord who inherited the same builder from the previous owner would have replaced him after the first mistake."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Pooled across 54 samples and 8,625 units the responsibility effect holds, and both direct repeats of Staw's own experiment failed to reproduce the interaction it was built on.",

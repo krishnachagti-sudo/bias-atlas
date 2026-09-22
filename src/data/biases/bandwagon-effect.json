@@ -13,6 +13,23 @@
     "note": "Leibenstein defined the bandwagon effect as \"the extent to which the demand for a commodity is increased due to the fact that others are also consuming the same commodity\", one of three kinds of nonfunctional demand alongside the snob and Veblen effects. The paper is pure demand theory with diagrams and no data, prompted by Oskar Morgenstern's 1948 argument that collective demand curves are not additive. The political usage runs on a separate track: Herbert Simon paired bandwagon and underdog effects in the title of a 1954 paper in Public Opinion Quarterly."
   },
   "evidence": "The load-bearing studies are web experiments that manipulated the popularity signal directly. Salganik, Dodds and Watts built an artificial music market with 14,341 participants and 48 songs by unknown bands. Arrivals were assigned either to an independent condition, which showed song and band names only, or to a social influence condition, which also showed download counts. Social influence participants were split across eight parallel worlds that could not see each other. In both of the two experiments run, all eight social influence worlds had a higher Gini coefficient of download share than the single independent world, and the same song varied more in market share between worlds than between random halves of the independent condition, with P < 0.01. Raising the salience of the signal, by listing songs in descending order of downloads rather than in a random grid, raised inequality and unpredictability further. The best songs rarely did badly and the worst rarely did well, and almost anything else happened. Salganik and Watts then inverted the displayed download counts for 12,207 participants and found that most songs' falsely reported popularity became real, though the best songs recovered in the long run. Muchnik, Aral and Taylor moved the design onto a live social news site, randomly assigning 101,281 comments over five months to a first up-vote, a first down-vote or nothing. To match the site's natural rates, 4,049 were up-treated and 1,942 down-treated. Those comments were viewed more than 10 million times and rated 308,515 times. The up-vote raised the chance that the first viewer also up-voted by 32% over control, and the final mean score of up-treated comments ran 25% above control. Up-treated comments were 30% more likely to reach a score of 10, 6.4% against 4.9%. The down-vote behaved differently. It raised the chance of a further down-vote from 0.007 to 0.014, and that was swamped by correction: the chance of a down-treated comment being up-voted was 0.099 against 0.054 for control, and the final mean scores of down-treated comments were not statistically different from control. Positive herding that accumulates against negative herding that gets corrected is the paper's headline finding.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The petition already at four thousand names",
+      "text": "Two identical petitions go up about the same planning application. The one showing four thousand signatures collects hundreds more that afternoon; the one showing forty collects two. Nothing about the argument changed between the pages, only the number printed above it."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The queue outside one of two restaurants",
+      "text": "Two places sit side by side and one has six people waiting. Passers-by join that queue and the empty room next door stays empty all evening. The wait is being read as information, and each person who joins makes the signal stronger for the next."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The optional module everyone picked",
+      "text": "A student choosing between two third-year modules sees that one has ninety names down and the other eleven, and picks the full one without reading either outline. The count did the choosing, and next year's cohort will see a gap that is wider still."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The manipulated-popularity experiments repeat in new media and on new platforms. Whether the up-vote and the down-vote work asymmetrically depends on the site, and the claim that polls push voters towards the leader does not repeat reliably.",

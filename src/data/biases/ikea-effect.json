@@ -15,6 +15,23 @@
     "note": "The paper is titled \"The IKEA effect: When labor leads to love\", and the name honours the Swedish manufacturer whose products arrive with some assembly required. It appeared online on 9 September 2011 and in print in 2012, at 22(3), 453-460. The underlying idea is older, and the authors take care to separate it from effort justification: in Aronson and Mills's 1959 initiation experiment every participant was admitted to the group, so the success of the effort was never varied, which is the variable this paper claims matters."
   },
   "evidence": "Four experiments, each with real money at stake through the Becker, DeGroot and Marschak bidding procedure or a sealed auction. In Experiment 1A, 52 students either assembled a plain black IKEA storage box or inspected one already built. Builders bid $0.78 (SD 0.63) against $0.48 (SD 0.40) from non-builders, t(50) = 2.12, p < .05, a premium of 63%. Experiment 1B moved to origami and 106 participants. Builders bid $0.23 (SD 0.25) for the frog or crane they had folded, while other participants bid $0.05 (SD 0.07) for those same creations and $0.27 (SD 0.26) for origami folded by experts, F(2, 100) = 5.34, p < .01. Builders' bids for their own work and outsiders' bids for expert work did not differ, t < 1, p > .45. Experiment 2 gave 118 people Lego sets of 10 to 12 pieces and had each bid on their own set and a partner's. Bids ran $0.84 against $0.42 in the build condition, $0.32 against $0.26 when the set came prebuilt, and $0.43 against $0.29 for people who built the set and then took it apart. Only the build condition produced a reliable gap, t(39) = 3.08, p < .01. Experiment 3 gave 39 people an IKEA box and asked some of them to stop before the last two steps. Those who finished bid $1.46 (SD 1.46) and those who did not bid $0.59 (SD 0.70), t(37) = 2.35, p < .05.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The bookcase assembled on a Sunday",
+      "text": "Someone who spent an afternoon putting up a flat-pack bookcase would not take for it what they would pay for the same model delivered built. The premium attaches to the assembly, and nothing about the wood has changed."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The shed left at the frame",
+      "text": "A shed abandoned once the frame was up carries no premium at all, and its owner talks it down. Labour raises valuation when the labour finishes the job, and stops raising it when the job is left undone."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The deck built overnight",
+      "text": "A manager rates the slides he made himself above the identical set an agency supplied, and argues longer for their structure. Neither set is his property and neither is customised, so what separates them is who did the work."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "An independent meta-analysis of 55 studies and 5,454 people puts the effect at d = 0.57, and every replication located is conceptual rather than a direct repeat of the original experiments.",

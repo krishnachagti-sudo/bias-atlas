@@ -15,6 +15,23 @@
     "note": "A one-page item in the Scientific Correspondence section, published on 19 February 1998, from the Department of Psychiatry at the University of Pittsburgh and the Department of Psychology at Carnegie Mellon."
   },
   "evidence": "Each of ten subjects sat with the left arm on a small table, hidden behind a standing screen, while a life-sized rubber left hand and arm sat directly in front of them. Two small paintbrushes stroked the rubber hand and the hidden hand, with the timing synchronised as closely as possible. After ten minutes subjects completed a two-part questionnaire: an open-ended description of the experience, then nine specific perceptual effects rated on a seven-step visual-analogue scale running from 'agree strongly' to 'disagree strongly'. Three of the nine described the predicted phenomena, two of referred touch and one of ownership. Those three are underlined in the paper's figure, which reports for them a significant tendency to evoke affirmative responses, P<0.002, and P<0.018 after correcting for multiple comparisons. Eight of ten subjects used terms of ownership unprompted in their free descriptions. A second experiment exposed subjects to the same conditions for a longer period and probed position sense with three intermanual reaches before and after. With eyes closed the right index finger was drawn along a straight edge below the table until judged in line with the left index finger. Reaches after the viewing period were displaced rightward towards the rubber hand, and the size of that shift rose with the reported duration of the illusion, least-squares fit y = 0.09x - 1.4, r2 0.47, p<0.03. A control group was given a small asynchrony between the two brushes. It reported the illusion for a mean 7% of the exposure period against 42% for the synchronous group, P<0.01. Its reaches moved a mean 13 mm away from the rubber hand, against 23 mm towards it in the experimental group, P<.04. The report gives ten subjects for the first experiment and no sample size for the second experiment or the control group.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "What the sheet asks",
+      "text": "When the stroking stops, a participant is handed a form asking whether the false hand felt like their own, and agrees that it did. What has been recorded is agreement with a sentence, and the sentence has told them which experience was on offer."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Pointing at the hidden hand",
+      "text": "Asked with eyes closed to point at their own hidden hand, a participant points some centimetres towards the false one. That shift is a separate measurement from the sentence they agreed with, and the two do not have to move together."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The demonstration at a science fair",
+      "text": "A visitor watches a false hand stroked in time with her own out of sight, and pulls back when it is struck. The reaction is plain. Whether it shows ownership or a well-signposted expectation is where the two measures part company."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The questionnaire contrast between synchronous and asynchronous stroking reproduces in samples of hundreds, and what it measures is disputed, while proprioceptive drift behaves differently from ownership.",

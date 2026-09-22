@@ -13,6 +13,23 @@
     "note": "McGinnies was at the University of Alabama and the paper is the one that attached the phrase to the tachistoscope result. Cable's 1969 paper, a two-page experimental report rather than a review, credits the concept itself to Bruner and Postman in 1947. McGinnies cites their work in his opening paragraph."
   },
   "evidence": "McGinnies showed 11 neutral and 7 taboo words to 16 undergraduates, 8 men and 8 women, on a Gerbrand's mirror tachistoscope. Each word was exposed once at .01 second, once at .02 second, and so on until the observer read it correctly. Electrodes on both palms fed a potentiometric circuit, and the experimenters noted the largest needle deflection in the six seconds after each exposure. Mean recognition thresholds were higher for the taboo words in every observer, with a mean difference of .045 second, t = 3.96 on 15 degrees of freedom, p < .01. Mean palm-current readings on the exposures before recognition were higher for the taboo words by 1.98 microamperes, t = 5.10, p < .01. Guesses offered before recognition also differed by word type, chi-square 31.26, p < .01, with more nonsense and structurally unlike guesses to the taboo words. Men had lower thresholds than women for both kinds of word, though McGinnies notes that visual acuity was not controlled and calls that difference no more than suggestive. The gap between the two kinds of word did not differ by sex. Two features of the procedure matter later. Observers were told to fix their guess when the word appeared and hold it until the experimenter signalled. The paper then contradicts itself about order: Table 1 lists the 18 words in the order of presentation to each observer, starting with apple and running the taboo words through the list, while the summary calls them randomly ordered. McGinnies also printed the rival account and rejected it. Jerome Bruner had put it to him that taboo words are rarer in print and that the extra effort of reading a rare word would raise conductance too. McGinnies answered that the words are common in speech, and that correlations between mean conductance and mean threshold were -.002 for neutral words and +.077 for taboo words, so effort could not be the link.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The word that needs another flash",
+      "text": "A reader sees words flashed one at a time, each exposure a little longer than the last, and says what he sees. He reads the neutral words at a shorter exposure than the words he would be embarrassed to say aloud, and that gap is the whole of what was measured."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The reader who has already seen it",
+      "text": "The same gap appears in someone who read the word on the first flash and waited for a second before saying it in front of the experimenter. The delay then sits in the reporting rather than in the seeing, which is the objection the claim has never fully shaken off."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The rare word with nothing shocking about it",
+      "text": "A term a reader has hardly ever met in print takes a longer flash to recognise, and nothing about it is indecent. Taboo words are also rare in print, so a threshold gap alone does not say which of the two produced it."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The threshold gap itself repeats, and a signal-detection version of the task finds taboo words easier to see than neutral ones, F(1, 26) = 35.84, which is the opposite of a defence.",

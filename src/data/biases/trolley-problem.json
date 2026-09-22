@@ -13,6 +13,23 @@
     "note": "Foot's essay on abortion introduced the runaway tram case as an argument about the doctrine of double effect, not as a stimulus. Judith Jarvis Thomson's 1976 paper in The Monist carries the trolley problem in its title, and her 1985 paper in the Yale Law Journal bears it alone. The 1967 essay has no DOI; the source listed here is its reprint in Virtues and Vices, and its journal details are as cited by Hauser and colleagues and by Bauman and colleagues."
   },
   "evidence": "Hauser, Cushman, Young, Jin and Mikhail put four scenarios on the Moral Sense Test website between September 2003 and January 2004, drawing some 5,000 respondents from 120 countries with a strong bias toward English-speaking nationalities. Analyses used first-trial responses only, so the comparisons are between subjects. In the first pair, Denise turning the train was judged permissible by 89% and Frank shoving the man by 11%, N = 2,646, w = 0.78. In the second pair, which varies only whether the harm is the means, Ned throwing the switch was judged permissible by 56% and Oscar by 72%, N = 2,612, w = 0.17. The split held in every subpopulation with the power to detect it: 33 subsets defined by nationality, ethnicity, religion, education, age, gender and exposure to moral philosophy for the first pair, and 11 for the second. Justifications were then coded. Of 597 subjects who judged the first pair differently, 267 were discounted for blank or embellished answers, and of those left 70% gave a justification that identified no factual difference between the cases.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The drug sent to the busier ward",
+      "text": "A hospital manager sends a scarce drug to a ward where it saves five people, knowing one patient elsewhere will die without it. Most people judge that less harshly than taking the drug from that patient so his dose treats the five, though the deaths and the numbers match."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The flood barrier and the farm",
+      "text": "Closing a barrier to save a town floods one farm as a consequence. Pumping water onto the same farm deliberately, because the flooded land is what holds the river back, is the same loss to the same family and reads worse to most people."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The team whose jobs pay for the rest",
+      "text": "Closing a loss-making branch keeps a company alive and one team loses its jobs as a side effect. Cutting that team in order to fund the rest, so their wages are what saves the firm, is judged more harshly, although the team and the loss are identical."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "Many Labs 2 repeated both dilemma pairs and both held, at d = 1.35 and d = 0.25 against originals of 2.50 and 0.34.",

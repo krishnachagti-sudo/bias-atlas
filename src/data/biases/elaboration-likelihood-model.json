@@ -17,6 +17,23 @@
     "note": "Crossref records their chapter, titled The Elaboration Likelihood Model of Persuasion, at Advances in Experimental Social Psychology in 1986, pages 123 to 205. That chapter was not read here and is cited from its Crossref record alone. The two-route claim was in print before the chapter named it. Petty, Cacioppo and Goldman set it out in 1981, and the introduction to Cacioppo, Petty and Morris, which was read in full, credits Petty and Cacioppo's 1979 experiment with showing that argument quality mattered more to recipients told the recommendation would affect them personally than to those told it would not."
   },
   "evidence": "Petty, Cacioppo and Goldman gave undergraduates a counterattitudinal message carrying strong or weak arguments from a source of high or low expertise, under high or low personal relevance. Their abstract reports that attitudes tracked argument quality under high relevance and source expertise under low relevance. The study this site's replication record points at is Experiment 1 of Cacioppo, Petty and Morris. Five hundred and twenty-seven students were pretested on the 34-item need for cognition scale and on campus attitudes. From that pool 114 were recruited, 53 men and 61 women, taken from the top and bottom thirds of the scale and matched on their initial attitude to senior comprehensive exams. Each read an editorial of about 300 words carrying six strong or six weak arguments for those exams, then rated it on five 9-point scales that were averaged into a message evaluation index. Strong arguments were rated well above weak ones, F(1, 110) = 160.86, p < .001, with means of 5.86 and 2.26. The predicted interaction with need for cognition also appeared, F(1, 110) = 22.45, p < .001. Experiment 1 carried no attitude measure. The post-message attitude test that the model is usually described by arrived in Experiment 2, on a different topic and with a different cover story.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "Two tenants reading one notice",
+      "text": "A block receives a proposal to change the heating. The tenant whose bills it will alter reads the costings and objects to a figure in the second table. The one moving out next month notices only that an engineer signed it."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The mortgage and the toaster",
+      "text": "Someone compares mortgage offers line by line for a fortnight, then buys a toaster because the box lists six features. The decision that matters gets the arguments. The one that does not gets the count of them."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The last paper at a long meeting",
+      "text": "A committee running late approves a paper because a respected member speaks for it. Taken first, with an hour in hand, the same paper draws an argument about whether its figures hold."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Many Labs 3 recovered the argument-quality main effect across 20 university samples and found nothing where the model's own prediction sits, in the interaction with need for cognition. A meta-analysis of 134 studies and a later single-laboratory study point the other way.",
@@ -31,13 +48,19 @@
     "original": {
       "es": 0.17,
       "esType": "eta2",
-      "ci": [0.06, 0.29],
+      "ci": [
+        0.06,
+        0.29
+      ],
       "ciLevel": 95
     },
     "replicated": {
-      "es": 0.0000546,
+      "es": 5.46e-05,
       "esType": "eta2",
-      "ci": [0, 0.002],
+      "ci": [
+        0,
+        0.002
+      ],
       "ciLevel": 95
     }
   },

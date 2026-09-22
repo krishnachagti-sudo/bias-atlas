@@ -16,6 +16,23 @@
     "note": "Three of Hsee's scenarios are the ones usually retold. Study 1 put a $45 scarf from a $5 to $50 range against a $55 coat from a $50 to $500 range, and the scarf giver was judged more generous. Study 2 priced 7 oz of ice cream overflowing a 5 oz cup above 8 oz filling a 10 oz cup. Study 4 priced a 24-piece dinnerware set above a 40-piece set holding the same three kinds of intact pieces plus 8 cups and 8 saucers, nine of which were broken. The 2023 replication team left out Hsee's Study 3 as close in design to Study 2. No copy of the 1998 paper was obtained for this entry, and every figure below from the 1998 studies is read off later papers that reprint it. Hsee had set out the evaluability hypothesis two years earlier in Organizational Behavior and Human Decision Processes, where 116 students priced second-hand music dictionaries."
   },
   "evidence": "The 1996 dictionary study is the cleanest statement of the mechanism, and it is weaker than the retellings suggest. Hsee gave students Dictionary A, 10,000 entries and like new, or Dictionary B, 20,000 entries with a torn cover, or both. Judged together, B drew the higher price (t = 7.11, p < .001). Judged apart, A drew the higher price, but that half of the pattern did not reach significance (t = 1.69, p = .1). The reversal itself was significant (t = 4.56, p < .001). The 1998 gift study, as Many Labs 2 reports it, put 83 people in one of two conditions and found the scarf giver rated more generous than the coat giver, 5.63 against 5.00, t(82) = 3.13, p = 0.002, d = 0.69, 95% CI [0.24, 1.13]. The dinnerware study, as the 2023 replication reports it, ran 104 people and split both ways at once: judged separately the 40-piece set drew $23.25 against $32.69 for the 24-piece set (t = 3.91, p < .001), and judged jointly the same 40-piece set drew $32.03 against $29.70 (t = 2.15, p = .039). The 2023 team's supplement says Hsee printed neither the condition sizes nor the degrees of freedom for that study, so it assumed an even split across the three conditions and derived the rest. The effect sizes it attributes to Hsee's Study 4 rest on that assumption, and this page does not carry them.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "Two boxes of second-hand tools",
+      "text": "One buyer is offered a box of twenty sound tools, another a box of thirty that includes those twenty and ten with snapped handles. Alone with a box, nobody can say whether thirty is a lot, and anybody can see a snapped handle. The larger box fetches less."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The tray of seedlings",
+      "text": "A stall sells a tray of twelve healthy seedlings and a tray of twenty in which six have gone leggy. Shoppers who see only one tray pay more for the smaller. Put the trays side by side and the bigger one wins, which is the arrangement that makes the count readable."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The team with three who cannot drive",
+      "text": "A coordinator told about six volunteers who can all drive rates the group better than a coordinator told about nine, six of whom drive. Group size means nothing on its own, and three people who cannot get to the site means something at once."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "The separate-evaluation half of the effect is among the better-replicated findings in judgement research. Many Labs 2 ran the gift scenario on 7,646 people and got d = 0.78, 95% CI [0.74, 0.83], slightly larger than the original.",
@@ -29,13 +46,19 @@
     "original": {
       "es": 0.69,
       "esType": "d",
-      "ci": [0.24, 1.13],
+      "ci": [
+        0.24,
+        1.13
+      ],
       "ciLevel": 95
     },
     "replicated": {
       "es": 0.78,
       "esType": "d",
-      "ci": [0.74, 0.83],
+      "ci": [
+        0.74,
+        0.83
+      ],
       "ciLevel": 95
     }
   },

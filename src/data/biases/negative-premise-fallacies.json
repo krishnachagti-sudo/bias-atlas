@@ -21,6 +21,23 @@
   },
   "evidence": "The record comes from the task in which people see two premises and choose or produce a conclusion. Khemlani and Johnson-Laird pooled six such experiments, all using the same 64 premise pairs, and their Table 6 gives the percentage of each of the nine possible responses to each pair. No source read here labels its items by the traditional rules, so the sorting below applies those rules to the premise pairs they print. Forty-eight of the 64 pairs carry at least one negative premise, and every affirmative conclusion to any of them breaks the first rule. The largest such response anywhere in the table is 24%. It occurs twice. Given 'All B are A' and 'Some C are not B', 24% concluded 'Some C are A', against 37% for 'Some C are not A' and 17% who answered that nothing follows. Given 'Some A are not B' and 'Some B are C', 24% concluded 'Some A are C', against 25% for 'Some A are not C' and 36% who answered that nothing follows. Every other affirmative response to a negative-premise pair is smaller. The second rule is kept more tightly still. Sixteen pairs have two affirmative premises, and the largest negative response to any of them is 4%, for 'None of the A is C' given 'Some B are A' and 'Some B are C'. The largest 'some are not' response to any of the sixteen is 3%. Both rules survive the sterner test as well. Across all 64 pairs, the response people give most often never breaks either rule, and neither does the most frequent conclusion once the answer that nothing follows is set aside."
   ,
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The advance ticket that is not refundable",
+      "text": "No cheap ticket is refundable, and every advance ticket is cheap. A traveller concludes that advance tickets are refundable. A denial in the premises has to survive into the conclusion, and an affirmative conclusion cannot be drawn where one premise denies."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The induction register",
+      "text": "All the trainees attended the induction, and everyone at the induction signed the register. The office manager concludes that some trainees did not sign. Two affirmative premises cannot yield a denial, whatever the register turns out to show when it is checked."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Grants in the handbook",
+      "text": "Some grants are not open to first-year students, and every grant is listed in the handbook. A reader concludes that some entries in the handbook are open to first-year students. The conclusion affirms where a premise denied, so it is not carried by the premises even if it is true."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "Six experiments run in the United States and Italy agree that these are the two syllogistic rules people keep, with the worst single violation at 24% and most of them in the low single figures.",

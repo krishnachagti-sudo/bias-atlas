@@ -18,6 +18,23 @@
     "note": "The name is Aristotle's and far older than this edition, which is dated here because it is the standard treatment that was read in full for this entry. No publication establishing the modern sense was located. Aristotle lists accident first among the seven kinds of fallacy independent of language in Sophistical Refutations, and his account is not the modern one. Fallacies that depend on accident, he writes, 'occur whenever any attribute is claimed to belong in like manner to a thing and to its accident', and his example is that Coriscus, being different from 'man', is different from himself, since he is a man. Hans Hansen calls it the most elusive fallacy on Aristotle's list and ties it to a distinction between counterpredicable properties and accidents, citing SR 5 166b28. The modern reading, a rule meeting an exceptional case, is closer to the second item on Aristotle's list, the use of an expression absolutely or with some qualification of respect, place, time or relation, which he illustrates with the man who is black and yet white in respect of his teeth. Allan Bäck's 2015 article in Vivarium argues that the fallacy lost the original justification for its name in the late Greek period, and that the medieval reading which replaced it 'has led to confusion over the fallacy of accident in millennia of logic books'."
   },
   "evidence": "The evidence here is textual, and the texts do not agree. Copi, Cohen and McMahon place accident as the first of three fallacies of presumption and gloss it in the glossary as a generalisation applied to individual cases that it does not properly govern. Their worked case is a person fined for ignoring a 'No Swimming' sign while jumping in to rescue someone from drowning. They also distinguish it from division, which argues from a whole to its parts, and they state the direction that separates accident from its converse: converse accident, which they equate with hasty generalisation, moves carelessly from individual cases to a generalisation, while accident moves from a generalisation to particulars it does not cover. Bradley Dowden's list at the Internet Encyclopedia of Philosophy defines accident as reasoning with a generalisation as if it had no exceptions, calls it the fallacy of sweeping generalisation, and sends the reader from 'secundum quid' to accident and converse accident as its two versions. Curtis is blunter about the history: he says several distinct fallacies have been discussed under the name, that the examples Aristotle gives do not seem to have anything in common, and that the reading he sets out 'has little except an historical relationship to Aristotle'. Hansen's Stanford Encyclopedia article reports that Copi's 1961 edition put accident and converse accident among the fallacies of relevance, where the fourteenth edition splits them between presumption and defective induction. That 1961 edition was not obtained. The scholarly literature on the Aristotelian fallacy is substantial and separate, running from Philoponus through the medieval controversy over the dictum de omni to Bäck, Bueno, Botting and Ferreira. No experiment on the fallacy under any of its names was located, and the nearest measured work is described below.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The rule about running by the pool",
+      "text": "A lifeguard's rule that nobody runs by the pool is turned on a colleague sprinting to reach a child in the water. The rule is there to prevent injury, and this is the case its exceptions exist for."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The knife returned on request",
+      "text": "A friend holds that borrowed things must be given back when asked, and hands a carving knife to an owner who is in a rage and demanding it. The rule is sound in general, and this case falls outside what makes it sound."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The quiet carriage",
+      "text": "A guard enforces silence in the quiet carriage against a passenger relaying a medical emergency to a call handler. The rule holds for ordinary conversation, and applying it here applies it past its edge."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "No experiment on the fallacy itself was located. The nearest measured effect, the tendency to call a case a rule violation when the rule's text covers it and its purpose does not, replicated across 15 countries and reversed in two of them.",

@@ -20,6 +20,23 @@
     "note": "The paper is \"The Framing of Decisions and the Psychology of Choice\". The reversal is explained by prospect theory, which they had published two years earlier: people are risk-averse about gains and risk-seeking about losses, so which side of the reference point a frame puts you on decides which way you lean."
   },
   "evidence": "Participants read one version of the problem and pick an option. In the 1981 paper 152 respondents saw the gain frame, and 72% chose the certain programme that saves 200 people. Another 155 saw the loss frame, and 22% chose the certain programme in which 400 people die, leaving 78% on the gamble. Respondents were students at Stanford University and the University of British Columbia answering brief questionnaires in class. The literature that followed is large. Kühberger pooled 136 papers reporting risky-choice framing experiments, with nearly 30,000 participants and 230 effect sizes, and concluded that framing is reliable but small to moderate, with features of the research design mattering more than the topic. Steiger and Kühberger later reanalysed that data pool using p-curve, which corrects an effect size from the distribution of significant p-values alone. Their corrected estimate was d = 0.52, against the d = 0.31 they attribute to the 1998 analysis, and they reported no evidence of intense p-hacking. A fresh meta-analysis of risk framing experiments published in 2016 gave them d = 0.56.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The operation described two ways",
+      "text": "A patient told that nine in ten people come through an operation takes it; told that one in ten do not, the same patient chooses the slower drug. The two sentences carry the same figure, so the preference has attached itself to the phrasing."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The redundancy plan put to a board",
+      "text": "A plan that keeps four hundred of a thousand jobs for certain is approved without argument. Described as a plan under which six hundred go, it sends the same board looking at the riskier option that might save everyone or nobody."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Two accounts of a flood defence",
+      "text": "Councillors choose the scheme that certainly protects a third of the homes at risk when the officer's paper counts homes protected. When the paper counts homes still flooded, they lean towards the gamble that might protect all of them."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "Two multi-laboratory projects re-ran two different framing scenarios from the 1981 paper, and both found the effect at roughly half the originally reported size.",

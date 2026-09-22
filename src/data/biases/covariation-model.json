@@ -13,6 +13,23 @@
     "note": "Kelley's 1967 chapter carries no DOI and was not read for this entry. The model is quoted here from his 1973 American Psychologist paper, which opens by saying it summarises his 1967, 1971 and 1972 papers, and in which he writes that he developed the analysis of variance analogue in the 1967 one. He traces the idea to Heider's remark that causal analysis is 'in a way analogous to experimental methods', and states the covariation principle as: an effect is attributed to the one of its possible causes with which, over time, it covaries."
   },
   "evidence": "The model was tested in full the year before Kelley's restatement. McArthur gave 95 Yale male undergraduates a 16-item questionnaire, each item reporting an event such as 'Sue is afraid of the dog' or 'George translates the sentence incorrectly'. Sixty-four took an experimental form pairing every item with one of the eight combinations of high and low consensus, distinctiveness and consistency. Twenty-three took a control form carrying no information, and eight were dropped for incomplete data. Subjects chose the person, the stimulus, the circumstances or a combination, giving 1,024 experimental attributions. All three information variables shifted attributions in the predicted direction. Their weights did not match. Across attribution loci, consistency accounted for 20.03% of the total variance, distinctiveness for 10.16% and consensus for 2.90%. For person attributions the three ran 15.76%, 21.72% and 6.25%. For stimulus attributions they ran 5.88%, 12.12% and 5.17%. For circumstance attributions consistency took 41.36%, distinctiveness 7.58% and consensus 0.30%. McArthur obtained these as variance components from expected mean squares, each divided by the total variance, and she says exact F and p values are generally omitted from her text. Whole patterns moved attributions hard. Low consensus with low distinctiveness and high consistency drew person attributions on 86% of occasions against 24% under no information at all. Kelley, reporting the same data, gives the stimulus-pointing pattern as drawing an entity explanation from 61% of subjects and a person explanation from 12%. McArthur presented her consensus manipulation in what she calls about the strongest possible form, 'almost everyone' against 'hardly anyone else', and still found it the weakest of the three.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The colleague who missed a deadline",
+      "text": "Nobody else on the team missed it, he misses most deadlines, and he missed this one last quarter as well. Low consensus with low distinctiveness and high consistency is the cell of the cube that points at the person."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The meal everybody complained about",
+      "text": "Other diners disliked the food, this diner enjoys most restaurants, and the last visit here was as bad. High consensus with high distinctiveness and high consistency sends the explanation to the restaurant rather than to the diner."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The one late morning",
+      "text": "A punctual colleague arrives late on a day when half the office was late and is on time everywhere else. Low consistency is what sends the explanation to the circumstances, which is the third answer the arrangement can give."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Every located test finds all three variables moving attributions, and the tests disagree about how much weight consensus carries.",

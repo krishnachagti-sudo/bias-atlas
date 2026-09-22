@@ -19,6 +19,23 @@
     "note": "Their paper \"Masked priming with graphemically related forms: Repetition or partial activation?\" holds the earliest transposed-letter test in Perea and Lupker's table of this literature, run as masked priming with lexical decision. Perea and Lupker give the first cross-position priming result to Humphreys, Evett and Quinlan (1990), who used four-field masking and target identification. They trace the idea that transposed-letter nonwords resemble their base words to Chambers (1979) and O'Connor and Forster (1981). The label came from later authors."
   },
   "evidence": "Perea and Lupker summarise Experiment 1 of Forster and colleagues as follows: six-letter targets, a 60 ms prime-target SOA, and mean latencies of 486 ms for identity primes (sailor-SAILOR), 487 ms for transposed-letter primes (salior-SAILOR), 500 ms for one-letter-different primes (sanlor-SAILOR) and 550 ms for unrelated words (cheese-SAILOR). Those figures are quoted here from Perea and Lupker's table, because the 1987 paper stayed behind a Cloudflare challenge on 21 September 2026 and only its publisher-deposited abstract was read. Perea and Lupker then supplied the two-letter substitution control the earlier work lacked, in three experiments at the University of Western Ontario with a 40 ms prime followed by a 40 ms pattern mask. Experiment 1 used 36 students and 120 five-letter targets. Primes with two internal letters exchanged (uhser-USHER, 556 ms) beat their substitution control (ufner-USHER, 586 ms) by 30 ms, F(1,30) = 18.92, p < .001, while primes with the last two letters exchanged (ushre-USHER, 554 ms) beat ushno-USHER (567 ms) by 13 ms, F(1,30) = 3.53, p < .07. Identity primes were worth 47 ms in their table and 45 ms in their text. Experiment 2 used 30 students and added unrelated baselines: 22 ms for internal transpositions, F(1,24) = 11.77, p < .001, and 11 ms for final ones, F(1,24) = 2.42, p > .10. Experiment 3 used 32 students and 160 six-letter targets, giving 44 ms for internal transpositions, F(1,24) = 85.19, p < .001, and 12 ms for final ones, F(1,24) = 4.27, p = .05. Measured instead against unrelated controls the two came out at 44 and 39 ms, and the authors say the internal advantage rests on the internal substitution control being slow rather than on the transposed prime being fast. The letters need not be neighbours. In Spanish, Perea and Lupker found that caniso primed CASINO 21 ms faster than caviro did, F1(1,24) = 13.00, with 28 students, and 17 ms faster in a second group of 28, F1(1,24) = 7.47. Vowels behaved differently: with 24 students, anamil-ANIMAL came out 9 ms slower than anomel-ANIMAL, and with 62 students and words of seven to ten letters the consonant effect was 18 ms, F1(1,60) = 32.29, against 6 ms for vowels, F1(1,60) = 2.19, p > .10, interaction F1(1,60) = 4.37.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The typo that survives proofreading",
+      "text": "A club newsletter goes out with 'trian' where it should say train, and nobody catches it, though the same paragraph's 'troin' was spotted at once. Swapping two letters leaves the word still recognisable; replacing the same two does not."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The name that looks right in the column",
+      "text": "Scanning a list of members for Hutchings, the eye settles happily on Hutcihngs and passes over it as found. Had the same two letters been replaced rather than exchanged, the entry would have looked wrong immediately."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Typing adn for and",
+      "text": "Fingers land out of order and produce adn, which reads straight past on the screen and has to be caught by a spellchecker. The letters are all present and nearly in place, which is close enough for the reading system and not for the keyboard."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "A 14-site study of over 1,000 readers put medial transposed-letter priming at 31.42 ms, in an experiment precise enough to call 2.90 ms reliable.",

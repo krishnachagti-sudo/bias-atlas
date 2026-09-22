@@ -16,6 +16,23 @@
     "note": "Their paper is titled \"Do those who know more also know more about how much they know?\". It was not obtained. Elsevier keeps it closed, and on 21 September 2026 Unpaywall, OpenAlex and Semantic Scholar all recorded no open copy. The Internet Archive holds no item for it, and DTIC answered a plain request with a block and a browser-like one with a maintenance page. Its finding is reported here from Juslin, Winman and Olsson. They write that Lichtenstein and Fischhoff found overconfidence for item sets with a proportion correct below about .75, and underconfidence above it. The same effect travels as the difficulty effect, after Griffin and Tversky, and as the discriminability effect, after Ferrell and McGoey."
   },
   "evidence": "Juslin, Winman and Olsson assembled the data available to them in June 1998 from studies using two-alternative general knowledge items and the half-range confidence scale. They had 95 independent data points from selected item samples and 35 from representative samples, where items were drawn at random from a defined natural environment. Mean confidence was .73 under both methods, with 95% confidence intervals of plus or minus .01 and .02. Proportion correct was .64 for selected samples and .72 for representative ones. Over/underconfidence was .09 for selected samples and .01 for representative ones, each with a 95% interval of plus or minus .02. Regressing over/underconfidence on proportion correct gave a slope of -.72 for the selected samples, with proportion correct accounting for 70% of the variance, and -.53 for the representative samples, accounting for 58%. That downward slope is the hard-easy effect, and it appears under both methods of choosing items.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "Two rounds of the same quiz",
+      "text": "A team reports high confidence on an obscure history round and gets a third of it right, then reports modest confidence on an easy round and gets nearly all of it. One team looks overconfident and underconfident in one evening."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Marking your own mock paper",
+      "text": "A student predicts her score on each paper, landing above her mark on the hard one and below it on the easy one. Neither gap says much about her judgement, because difficulty sits on both sides of the comparison."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The driving theory questions",
+      "text": "A learner feels sure on the trickiest hazard items and gets many of them wrong, then answers routine signage items correctly while feeling unsure. The direction of the error follows the difficulty of the set rather than the learner."
+    }
+  ],
   "replication": {
     "state": "failed",
     "headline": "The pattern in raw data is not in dispute, and correcting for both artefacts leaves a slope that is not reliably different from zero.",

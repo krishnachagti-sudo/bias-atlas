@@ -17,6 +17,23 @@
     "note": "The manual names the argument rather than inventing it. Its own footnote calls the discussion a favourite subject with earlier writers on methodology, one that was formerly much used in religious history and still takes up considerable space in Charles de Smedt's Principes de la critique historique. What the chapter fixes is the set of conditions later writers argue about. The year here is that of the preface by F. York Powell to G. G. Berry's English translation, dated Oxford, July 1898. The copy read for this entry is a Henry Holt printing that the Internet Archive dates 1913; McGrew cites the 1898 and 1904 printings at the same page 256 for the same sentence."
   },
   "evidence": "Langlois and Seignobos restrict the negative argument to two cases. In the first, the author of the document meant to record every member of a class and knew them all, their examples being Tacitus setting out to enumerate the peoples of Germany and the Notitia dignitatum listing the provinces of the Empire. In the second, the fact must have struck the author so forcibly that it entered his conceptions, as regular assemblies of the Frankish people would have entered Gregory of Tours. They warn that the argument should be used the more rarely the more documents have been lost, so it is of less use in ancient history than in dealing with the nineteenth century. They also trace to it the sophism of the good old times: no document relates any abuse of power by officials, therefore everything was regular and nobody was suffering. McGrew supplies the condition the older rules leave out, that a record which was made must also have survived and come to notice, and then works out what uncertainty costs. If two of the three factors stand at .7 and the third is granted as certain, conditionalising moves the probability of the negative conclusion from .5 to not quite .67. If each of the three stands at .9, it moves .5 to about .79. If each stands at .67, it will not carry .5 as far as .6. He then assembles cases in which silence would have misled. Herodotus and Thucydides do not mention Rome, Thucydides does not mention Socrates, and Pliny the Younger and Suetonius both write about the eruption of Vesuvius without naming Herculaneum or Pompeii, which Dio Cassius names about a century later. His proposal is that anyone advancing such an argument should argue the three points separately, and that the standard is high, because otherwise the argument will be weaker than almost any other kind of historical evidence.",
+"examples": [
+  {
+    "kind": "everyday",
+    "tag": "The diary that says nothing of a storm",
+    "text": "A farmer records the weather most days and leaves one day blank. Silence here counts for something, because a writer who noted every shower would probably have noted a gale."
+  },
+  {
+    "kind": "everyday",
+    "tag": "The reference that omits why somebody left",
+    "text": "A letter praises reliability and never mentions the dismissal. References of that kind almost never mention one, so the omission is close to worthless as evidence that no dismissal occurred."
+  },
+  {
+    "kind": "everyday",
+    "tag": "The minutes with no vote in them",
+    "text": "A committee's minutes record every decision it takes and contain nothing about a proposal that was circulated. Whether that shows the proposal was never put depends entirely on how complete the minutes usually are."
+  }
+],
   "replication": {
     "state": "none-located",
     "headline": "No study of how people weigh a source's silence was located; what the searches returned is philosophical analysis and historical case work, and where they looked is set out under limits.",

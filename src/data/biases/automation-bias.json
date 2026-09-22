@@ -2,7 +2,11 @@
   "no": 104,
   "slug": "automation-bias",
   "name": "Automation bias",
-  "aliases": ["Automation-induced complacency", "Over-reliance on automation", "Algorithmic over-reliance"],
+  "aliases": [
+    "Automation-induced complacency",
+    "Over-reliance on automation",
+    "Algorithmic over-reliance"
+  ],
   "category": "decision",
   "statement": "People treat an automated aid as a substitute for checking, so they follow its wrong advice and miss the problems it never flags.",
   "meaning": "The claim splits into two errors that are usually reported together and are not the same thing. A commission error is acting on advice the automation got wrong, against evidence the operator had and could read. An omission error is failing to act on a problem the automation did not raise, because nothing prompted attention to it. Both are comparative claims: the aided operator does worse than the unaided one on the subset of cases the aid gets wrong, even where overall aided performance is better. That last clause is what makes the effect hard to measure, because the cases where the aid helps and the cases where it hurts are mixed together in the same session.",
@@ -13,6 +17,23 @@
     "note": "The naming chapter is \"Human decision makers and automated decision aids: Made for each other?\". Goddard, Roudsari and Wyatt cite it as the source of the definition of automation bias, the use of automated cues as 'a heuristic replacement of vigilant information seeking and processing'. The chapter was not obtained for this entry and the definition is quoted from the review. Mosier, Skitka, Heers and Burdick print the same definition with 'for' in place of 'of' in their own abstract. That paper, in The International Journal of Aviation Psychology, is the earliest journal report located, and Crossref dates it 1998 while PubMed dates the same volume and pages 1997."
   },
   "evidence": "The founding studies are flight simulations run by Mosier, Skitka and colleagues, in which participants flew scenarios containing planted automation events. Their full texts were not obtained here, so their error rates are quoted at one remove from Goddard, Roudsari and Wyatt's review, which reports 55% omission and 0% commission rates in a study by Mosier and colleagues and commission errors exceeding omission errors in two studies by Skitka and colleagues. The healthcare evidence is better documented. That review screened 13,821 papers and included 74. Four of them measured what happens when a clinical decision support system gives bad advice, and pooling them by a Mantel-Haenszel random effects model gave a risk ratio of 1.26 (95% CI 1.11 to 1.44, p < 0.0005) for an incorrect decision against a control group with no system. The clearest single measure is the negative consultation, a correct unaided answer changed to a wrong one after the machine speaks. Across four studies it ran from 6% of cases in Friedman and colleagues to 11% in McKibbon and Fridsma. Berner and colleagues found 21 such changes in 272, which the review reports as 8% negative consultations. Friedman's system also produced positive consultations in 12% of cases, so the net gain was 6% and the harm was real at the same time.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The satnav and the closed road",
+      "text": "A driver passes a diversion sign, sees cones ahead, and turns where the screen says to turn. The evidence against the instruction was in the windscreen, and the instruction won because it arrived from a system."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The monitor that stays quiet",
+      "text": "A ward relies on a scoring tool to flag patients who are deteriorating. One patient's breathing changes in a way the score does not capture, and nobody looks, because nothing on the screen asked anyone to."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The spellchecker that finds nothing",
+      "text": "A report goes out with 'form' where 'from' was meant. Both are real words, so no flag was raised, and the person proofreading skimmed a page they had already been told was clean."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "The direction reproduces in new domains and in randomised trials, and the size of the effect does not travel at all.",
@@ -23,7 +44,10 @@
       "year": 2023,
       "n": 27
     },
-    "replicated": { "es": 0.92, "esType": "r" }
+    "replicated": {
+      "es": 0.92,
+      "esType": "r"
+    }
   },
   "limits": "Three of the founding papers stayed shut, and not for the reason this entry gave until August 2026. Skitka, Mosier and Burdick's 1999 study and Mosier and colleagues' 1998 cockpit study are posted as full-text PDFs on Skitka's University of Illinois Chicago faculty page, so they are not paywalled; the network policy in force for this check blocked that host and both were still unread. Parasuraman and Manzey's 2010 review was read only as its PubMed abstract. The 55% omission and 0% commission figures are Goddard's account of Mosier, not Mosier's own text, and they are not in the structured fields for that reason. That 1998 abstract also reports that the experimentally manipulated accountability demands did not affect performance, and that the accountability finding people cite came from a post-hoc analysis. Searches of Europe PMC, PubMed, Crossref and the web on 17 August 2026 turned up no estimate of an automation-bias rate from accident or incident reports: the aviation evidence located here is simulator work. Magnitudes are not portable. Goddard's four pooled healthcare studies put the extra risk at 26%, while Dratsch's readers went from four in five correct to one in five, and both are labelled automation bias. Dratsch's design has no unaided arm, which its authors give as their first limitation, so that fall compares right machine advice with wrong machine advice rather than with reading alone. Goddard's own verdict on the wider literature is that the effect is postulated frequently and lacks clear empirical evidence, because it usually turns up in a post-hoc analysis of a study designed for something else.",
   "misreadings": "Omission and commission are routinely averaged into one error rate, which hides the finding that they move apart. Goddard reports one aviation study with 55% omission and no commission at all, and two others where commission was the larger. Parasuraman and Riley's 1997 paper is often cited as the source of the term, and it is not: its abstract describes the same behaviour as automation 'misuse' and does not use the phrase. Automation bias is also read as evidence that decision aids make users worse, which the same studies contradict, since aided performance is usually better on balance and Friedman's system helped twice as often as it harmed. Vaccaro, Almaatouq and Malone put numbers on that in a meta-analysis of 106 experiments reporting 370 effect sizes. Human and machine together beat humans alone at Hedges' g = 0.64 (95% CI 0.53 to 0.74), and lost to whichever of the two was better alone at g = minus 0.23 (95% CI minus 0.39 to minus 0.07). Whether the bias can be trained away is unsettled rather than known. Parasuraman and Manzey conclude that it occurs in naive and expert users alike and cannot be prevented by training or instructions, while Goddard suggests training may help users spot machine error and so reduce commission errors. Romeo and Conti's review of 35 studies published between 2015 and 2025 finds that explanations often raise a system's perceived acceptability without improving decision accuracy. Qazi and colleagues' 2026 nudge trial reports a gain: 72 AI-trained physicians scored 7.6 percentage points higher on diagnostic reasoning with a calibration cue than without it (95% CI 1.4 to 13.9, P = 0.016). The 2023 mammography result says nothing about any particular product, because the AI in that experiment did not exist.",

@@ -16,6 +16,23 @@
     "note": "Their paper is \"Some evidence for heightened sexual attraction under conditions of high anxiety\", and it reports three studies rather than one. The theory it draws on is twelve years older: Schachter and Singer's 1962 Psychological Review paper, which introduced the arousal-plus-label account and is described in the evidence below."
   },
   "evidence": "Schachter and Singer injected male introductory psychology students at the University of Minnesota with epinephrine or saline, calling it a vitamin compound named Suproxin, then left each man with a confederate acting euphoric or angry. All but one of 185 agreed to the injection. Eleven were dropped as too suspicious and five more because the drug produced no symptoms. On the euphoria self-report index the means ran 0.98 for men correctly told what they would feel, 1.78 for those told nothing, 1.90 for those misinformed and 1.61 for placebo, with 25 or 26 per condition. The behavioural activity index ran 12.72, 18.28, 22.56 and 16.00. Placebo against any epinephrine condition was not significant on either measure. Only in the anger conditions did the injected men differ from placebo, on the observers' anger index, 2.28 against 0.79, p < .05. The paper calls the placebo pattern \"a particularly troubling pattern\" that \"raises serious questions about our entire theoretical structure\". It then rescues the comparison twice over. Men who had linked their symptoms to the shot were dropped, and placebo men were split on whether their pulse rose. Dutton and Aron's own paper could not be obtained for this entry, and the figures that follow are quoted from Szczucka's reanalysis, which prints them with page citations to the original. On the Capilano suspension bridge, 450 feet long and 230 feet above a canyon, a female interviewer approached 33 men and 23 filled in her questionnaire; on a low stable bridge 22 of 33 did. Stories written on the suspension bridge scored higher for sexual imagery, 2.47 against 1.41, t = 3.19, df = 36. Eighteen of 23 took her telephone number against 16 of 22, and nine of the 18 rang her against two of 16. A male interviewer produced no bridge difference, t = 0.36.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The introduction after the stairs",
+      "text": "Somebody climbs six flights, arrives with their heart going, and is introduced to a stranger. They come away thinking the stranger made an unusual impression on them. The stairs do not appear anywhere in the account they give."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The remark after the near miss",
+      "text": "A driver brakes hard to avoid a cyclist and, a minute later, finds a passenger's remark unbearable. The anger is real enough. The remark is doing less of the work in it than it seems to be."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The frightening film",
+      "text": "Two people watch something alarming together and each reads a racing pulse as interest in the other. The cause of the pulse is in plain sight on the screen, which is exactly the part that a theory requiring an unclear cause does not allow."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Four studies including an exact copy of Dutton and Aron's laboratory experiment found no effect of fear on attraction, while a roller-coaster field study found the transfer at d = 0.45.",

@@ -13,6 +13,23 @@
     "note": "Her review is titled \"The case for motivated reasoning\", and it gathered scattered findings under one mechanism rather than reporting a new experiment. The studies it draws on are older, including Lord, Ross and Lepper's 1979 work on biased assimilation. Kunda's contribution was the distinction between accuracy goals and directional goals, and the argument that a directional goal biases which beliefs and rules get accessed."
   },
   "evidence": "Lord, Ross and Lepper screened 151 undergraduates and selected 48, half proponents and half opponents of capital punishment. Each read two invented studies of deterrence, one supporting their position and one opposing it, with procedures and results counterbalanced. On scales running from -8 to 8, proponents rated the prodeterrence study 1.4 for convincingness and the antideterrence study -1.8; opponents rated the same pair -2.1 and 0.1. The gap in these difference scores gave F(1, 44) = 32.07, p < .001. Taber and Lodge ran the same logic on political arguments with 126 and 136 students from introductory political science courses at Stony Brook. Participants rated arguments agreeing with them as stronger, spent longer counterarguing the ones that did not, and chose more congenial sources when free to choose. Kahan and colleagues took a different route with 1,111 US adults, giving them one two-by-two table of numbers labelled either as a trial of a new skin rash cream or as a study of a city ban on carrying concealed handguns. Their finding was that political polarisation on the same arithmetic rose rather than fell among the most numerate.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The test result you did not want",
+      "text": "A screening letter comes back abnormal and the first questions are about how often the test is wrong and whether the sample was handled properly. A clear result would have been filed without a single one of those questions. The scrutiny is real work, and it is aimed at one side."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The supplier the manager chose",
+      "text": "A report says the supplier a manager argued for is the slowest of the three. He reads the method section closely, finds the sample of deliveries small and the period unrepresentative, and asks for the work to be redone. His objections are the ones he would not have raised about a favourable report."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The referee and the penalty",
+      "text": "Supporters of both clubs watch the same replay and each side finds the detail that makes its reading the fair one. Neither is inventing what they see. Each is searching for the rule of judgement that would deliver the answer they came in wanting, and stopping once one is found."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The lopsided evaluation of evidence repeats readily. The attitude polarisation it was supposed to cause mostly does not.",

@@ -13,6 +13,23 @@
     "note": "McGlone published two papers on the subject in 2005. The Journal of Communication paper, 55(2), 330-346, reports the experiment. The Media, Culture and Society paper, 27(4), 511-522, analyses the quotation of Martin Luther King by conservative politicians campaigning against affirmative action. The word is older than both. Michael Quinion's word column credits it to the historian Milton Mayer in 1966, writing about the misquotation of the Torah in Julius Streicher's Der Stürmer. Neither Mayer's text nor McGlone's papers could be opened here, so the coinage is recorded as Quinion's attribution rather than as verified."
   },
   "evidence": "The experiment is described here from its published abstract, because both of McGlone's 2005 papers are closed at their publishers. Participants read fabricated quotes about affirmative action and judged how far the sources supported the policy. One quotation was excerpted from a neutral paragraph so that it portrayed the source as either favouring or opposing affirmative action. Participants then read the full paragraph. Those encouraged to infer attitude-related characteristics of the source revised their judgements less than those prompted to infer unrelated characteristics. The abstract of the companion paper states the general form of the claim: a contextomized quotation prompts a false impression of the source's intentions and can contaminate later interpretation of the quote once it is restored to its original context. No sample size, condition mean or effect size from either paper appears on this page, because the method sections could not be read. The other body of measurement is a counting exercise rather than an experiment. Song, Han and Park assembled 381,206 Korean news stories published before 2019 through the Naver aggregator, across six sections of eight mainstream outlets, each carrying a direct quotation in the headline. They sampled 3,000 at random, leaving out articles whose headline quote also appears identically in the body, and had three annotators with journalism expertise label each one against guidelines drafted by a mass communication academic. After eight training sessions over two weeks the coders reached a Krippendorff's alpha of 0.93, and the labelled set came out at 1,344 contextomized against 1,656 modified, where a modified quote keeps the meaning of the original in different words. Their earlier paper sampled 2,000 articles the same way and labelled 814 contextomized and 786 modified in the 1,600 that remained. On the production side, Lauri Haapanen played recordings of journalistic interviews back to the journalists who conducted them, running stimulated recall sessions with 11 of his 16 informants. His conclusion is that quoting in written journalism aims neither at replicating the quoted text verbatim nor at holding its exact meaning, but at serving the objectives of the article.",
+"examples": [
+  {
+    "kind": "everyday",
+    "tag": "The pull quote on the poster",
+    "text": "A review says the play is never dull once the cast find their footing, and the poster prints the words 'never dull'. Every word belongs to the reviewer and the clause that carried the judgement has gone."
+  },
+  {
+    "kind": "everyday",
+    "tag": "The clip that ends where the answer begins",
+    "text": "A speaker lists the arguments against her own position before answering them, and the excerpt that circulates stops at the end of the list. Watching the whole answer afterwards leaves the first impression less changed than it ought to."
+  },
+  {
+    "kind": "everyday",
+    "tag": "The warning quoted as a finding",
+    "text": "A paper states a result it goes on to reject, and a later article quotes that sentence as the paper's conclusion. The words are reproduced correctly and the citation sends every reader the wrong way."
+  }
+],
   "replication": {
     "state": "none-located",
     "headline": "No repeat of McGlone's experiment was found. What cites him counts how often headline quotes shift meaning, which is a different measurement.",

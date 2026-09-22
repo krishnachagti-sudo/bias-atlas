@@ -18,6 +18,23 @@
     "note": "Their article ran in volume 49, issue 3, pages 577 to 585. They showed 144 Stanford students 36 minutes of network news on the Sabra and Chatilla massacre, cut from six segments broadcast between 15 and 24 September 1982. Sixty-eight described themselves as pro-Israeli, 27 as pro-Arab and 49 as neutral. On a nine-point scale where 5 meant fair and impartial, pro-Israelis rated the coverage 2.9 and pro-Arabs 6.7, F(1, 141) = 98.70, p < .001. Each side is past the midpoint in the direction hostile to itself, so this is the absolute form of the claim. An earlier version of this page called the article closed, said Unpaywall recorded no repository copy, and reported it through later papers instead. It is closed at the publisher, but a copy sits on an open course server at the University of Maryland, and it was read there on 21 September 2026."
   },
   "evidence": "Gunther and Schmitt ran the study that separates the effect from the medium. They recruited 64 anti-GM foods partisans at a natural foods co-op meeting and 87 pro-GM partisans at a biotechnology conference, plus 86 neutral controls. Each group read one text on genetically modified foods in two dressings. Half read it as a newspaper story clipped from USA Today, half as a composition-class essay by a university senior, with three typos added to the essay. On the six-item bias index the news article split the partisans: pro-GM readers saw it as tilted against GM foods at -0.32 and anti-GM readers saw it as favouring GM foods at 1.03, t(71) = 3.74, p < .001. The essay did not split them, at 0.60 and 0.23, t(74) = 1.01, not significant, and the source by group interaction was F(1, 142) = 11.7, p < .01. Controls rated the article -0.21 and the essay 0. Adding demographic covariates left the article result at F(1, 67) = 11.39, p < .01 and the essay result at F(1, 64) = 0.19. Their second measure asked the same people about influence on themselves and on a neutral reader. In the article the content read as neutral for one's own opinion at 0.03 and disagreeable for neutral others at -0.37, t(71) = 2.99, p < .001. In the essay it read as agreeable for both, at 0.74 and 0.33, t(75) = 4.02, p < .001. Christen, Kannaovakun and Gunther took the effect off campus, to the 1997 Teamsters strike against United Parcel Service. They posted questionnaires over a fortnight after a tentative settlement was announced but before the members voted on it. Of 92 managers and 100 Teamsters who consented, 84 and 51 returned them, alongside 54 students screened as neutral. All read one constructed Associated Press story dressed as a Los Angeles Times clipping. On an 11-point scale the Teamsters saw it as biased towards UPS at 1.1 and the managers saw it as biased towards the Teamsters at 1.2. The neutrals sat at -0.4 and 0.4, F(2, 184) = 27.77 and F(2, 185) = 23.95, both p < .001.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The road scheme report",
+      "text": "Campaigners for and against a bypass read the same council summary. Each side says the writer gave more room to the other and buried their own evidence. Residents with no stake in it put the summary near the middle of the scale."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The match report",
+      "text": "Supporters of both clubs read the same account of a disputed penalty. Each set says the reporter clearly favoured the other side. The paragraphs are fixed; what differs is which sentences each reader counts as the report's own view."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The newsletter on uniform",
+      "text": "Parents who want the uniform rule relaxed and parents who want it kept read one school newsletter and each write in about its slant. Both may agree the piece leans one way, and each still sees more of the lean than the other side does."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "The founding result holds, two field experiments on other issues repeat it, and two preregistered experiments on 1,636 Americans found the relative form for contested stories only.",

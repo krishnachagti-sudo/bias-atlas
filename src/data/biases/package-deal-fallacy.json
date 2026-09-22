@@ -2,7 +2,9 @@
   "no": 556,
   "slug": "package-deal-fallacy",
   "name": "Package-deal fallacy",
-  "aliases": ["False conjunction"],
+  "aliases": [
+    "False conjunction"
+  ],
   "category": "belief",
   "statement": "Things that custom groups together are treated as necessarily belonging together, so holding one of them is taken to commit a person to the rest.",
   "meaning": "The claim has two halves. The first is descriptive, that some things travel together by convention rather than by necessity, such as the positions a party label collects or the components a seller prints inside one price. The second is normative, that moving from the customary grouping to a necessary one is invalid, because the parts can come apart. Stated that way it is a rule about arguments rather than a finding about people. To become a psychological claim it needs a rate: how often, and under what conditions, a conventional bundle gets treated as a fixed one. This entry located no study that supplies that rate, and the places it searched are named below.",
@@ -13,6 +15,23 @@
     "note": "The label is standard on fallacy lists and this entry could not establish who put it there. The earliest use it could open is a 2011 interview with Sternberg, a literary theorist at Tel Aviv University, who calls the package-deal fallacy his own coinage and applies it to the habit of pairing one literary form with one function. The Wikipedia article on the fallacy cites his 1998 book \"Hebrews between Cultures\" at page 158 for the same coinage, and that book was not opened here. Ayn Rand's fallacy of package-dealing is a separate term with a separate meaning, quoted by the Ayn Rand Lexicon from her essay \"The Metaphysical Versus the Man-Made\" in \"Philosophy: Who Needs It\", at page 24."
   },
   "evidence": "The label rests on examples. Sternberg's own use is a complaint about scholarship rather than about ordinary reasoning: he objects that Jakobson tied the poetic function to equivalence and self-expression to exclamation, when a function can be served by many forms. The political case that fallacy lists reach for first, where a voter's position on tax is read off the label attached to their position on abortion, has been measured, and the measurement is old. Converse compared candidates for the United States Congress in 1958 with a national cross-section from the same year, using tau-gamma coefficients between issue positions. Average constraint within domestic issues was .53 for the candidates and .23 for the public. Between issues and party preference it was .39 for the candidates and .11 for the public. Those figures were read from the 2006 Critical Review reprint of the 1964 chapter. Baldassarri and Gelman ran the same measure over National Election Studies data from 1972 to 2004, covering 47 issues. The average correlation between a pair of issues was .15, with a standard deviation of .11, and it split into .23 for pairs inside one domain and .12 for pairs across domains. That average rose by .02 per decade. The correlation of issues with party identification rose more than twice as fast, at .05 per decade, which they read as voters being sorted by party labels rather than growing more consistent.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The broadband and the landline",
+      "text": "A tariff has always included a telephone line, so a customer concludes that the broadband cannot run without one. The two have been sold together for as long as he can remember, and that is a fact about the price list rather than about the cable."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The manifesto read as a set",
+      "text": "Someone who agrees with a party's housing policy is taken to accept its position on defence as well. The positions arrived in one document, and arriving together is not the same as belonging together."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The friend who stopped attending",
+      "text": "A woman stops going to Sunday services, and her family treat her as having given up the beliefs too. Practice and belief travel as a pair by custom in that family, and the step from one to the other has nothing behind it."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "No empirical test of the package-deal fallacy under that name was found. Three neighbouring effects have been tested, and each measures the pull of a grouping rather than the inference from one.",

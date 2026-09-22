@@ -18,6 +18,23 @@
     "note": "The paper is \"Compliance without pressure: The foot-in-the-door technique\", 4(2), 195-202, received August 1965. It reports two field experiments and no theory of its own. Its discussion offers three candidate mechanisms, involvement with the requester, involvement with the issue, and a change in how the person sees their own willingness to act, and says the studies cannot choose between them."
   },
   "evidence": "Experiment 1 was a telephone study in Palo Alto. Housewives drawn at random from the directory were asked eight questions about household soaps, and three days later asked whether five or six men could spend two hours in their home going through the cupboards. Agreement with the large request was 52.8% among those who had answered the soap questions and 33.3% among those who agreed to answer but were never asked. It was 27.8% after a first call that made no request, and 22.2% with no first call. Each group held 36 women. The paper also states a total of 156 subjects, which is twelve more than four groups of 36, and twelve is the number it says could not be reached for the second call. The gap between the performance group and the one-contact group was reported at p < .02, and against the familiarisation group at chi-squared 3.70, p < .07. Experiment 2 went door to door and used a different person for the second request, who did not know which condition a household was in. The first request was a small window sign or a petition, on safe driving or on keeping California beautiful. The second was always to put a large, poorly lettered \"Drive Carefully\" sign on the front lawn. Compliance was 76.0% when both requests shared issue and task, 47.8% when they shared issue only, 47.6% when they shared task only, 47.4% when they shared neither, and 16.7% in the untouched control. The five group sizes were 25, 23, 21, 19 and 24, so each percentage rests on about two dozen households. Freedman and Fraser found the similar-issue and similar-task comparisons ranged from chi-squared 3.67, p < .07 to 15.01, p < .001, and the group sharing nothing still beat the control at chi-squared 3.40, p < .08. That last result is why they proposed a general change in willingness to act rather than issue-specific involvement.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The clipboard and the standing order",
+      "text": "A volunteer asks a passer-by to sign a petition, which costs nothing, and returns a fortnight later asking for a monthly donation. More of those who signed agree than of those approached for the donation cold."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The favour that grew",
+      "text": "A neighbour asks to borrow a ladder for an afternoon. A week later he asks for a hand clearing the roof. The ladder was never the point; having agreed once was."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The survey that opened with three questions",
+      "text": "A caller asks three quick questions, thanks the respondent, and then asks for twenty minutes. The short opening is built to be agreed to, and the long request arrives at somebody who has already said yes."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Pooled across 77 published comparisons the effect is real and small, worth about twelve percentage points. A direct field replication of the 1966 procedure in two countries came out null in three of its four attempts.",

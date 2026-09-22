@@ -13,6 +13,23 @@
     "note": "The phrase appears on page 367 of \"The Reflex Arc Concept in Psychology\", in volume III, number 4, dated July 1896, an article running from page 357 to page 370 under the DOI 10.1037/h0070405. It occupies four sentences and no more. Dewey neither defines the two names he pairs nor separates them, and he does not return to the phrase in the rest of the article. He restated the same error thirty years later under a third name, calling it in Experience and Nature \"the common philosophic fallacy of converting an eventual function into an antecedent force or cause\"."
   },
   "evidence": "The 1896 article is an argument, with no experiment, no sample and no rate. Dewey's target is the reflex arc as an organising idea for psychology, and his complaint is that it leaves stimulus and response as \"disjointed fragments\" rather than phases of one coordination. His worked case is borrowed from William James, the baby who sees a candle flame, reaches for it and is burnt, cited as \"James, Psychology, Vol. I, p. 25\". Dewey's reading is that the seeing is already a sensori-motor act, so the sensation does not precede the movement as its cause. The fallacy passage arrives late, after Dewey has argued that considerations valid of an attained organisation get used to describe a process which only occurs because such an organisation is not yet at hand. James is named once in the article, for that diagram, and not in connection with the fallacy. Dewey used the same charge elsewhere under adjacent names. In Essays in Experimental Logic he writes that to treat the mutual reference of earth and sun \"as if it were simply a case of conjunction of mental events produced by psycho-physical irritation and association is a profound case of the psychological fallacy\". In Experience and Nature the generalised form is called the philosophic fallacy, and Dewey applies it to the idealist account of consciousness as a power that modifies events. The APA Dictionary's worked example is likewise invented rather than observed: a man loses his wallet, finds it in the first place he looks, and concludes he knew where it was, whereas the knowledge is a product of the search.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "Cook by feel",
+      "text": "A cook who has made the same stew for years no longer measures anything, and beginners are told to cook by feel. Working without a scale is a condition of the finished skill. It was produced by years of measuring, so it cannot be the method that produces it."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Teaching reading as whole words",
+      "text": "A fluent reader takes in a familiar word at a glance, which is offered as a reason to teach children whole words rather than letters. Recognition at a glance is what practice leaves behind. Describing the learning in its own outcome's terms removes the work that got there."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The essay that reads as a straight line",
+      "text": "A finished paper runs from premise to conclusion without a wasted paragraph, and the writer is congratulated on having thought it out in that order. The order is the residue of the drafts that were cut. Had it been available at the start, the drafting would have had nothing to do."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "No study was found that measures Dewey's fallacy or turns it into a rate. The searched indexes return the phrase only in unrelated uses and in dictionary definitions.",

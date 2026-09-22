@@ -2,7 +2,9 @@
   "no": 451,
   "slug": "disgust-sensitivity-and-moral-judgement",
   "name": "Disgust sensitivity and moral judgement",
-  "aliases": ["Amplification hypothesis"],
+  "aliases": [
+    "Amplification hypothesis"
+  ],
   "category": "social",
   "statement": "People who report being more easily disgusted judge moral transgressions more harshly, and the association is strongest for purity violations.",
   "meaning": "Two separate claims travel together under this heading and the evidence for them differs. The first is correlational. Disgust sensitivity is a trait measured by questionnaire, and people who score high on it rate transgressions as more wrong than people who score low. The second is experimental. Incidental disgust, induced by a bad smell, a dirty room or a bitter drink, is said to make the moral judgements a person then makes harsher. A correlation between a scale and an attitude is not the same claim as an experiment that manipulates a feeling, and the two literatures have come apart. The verdict recorded here is on the correlational claim, and on one 2009 study of it in particular. The experimental claim is described separately below and has fared worse.",
@@ -13,6 +15,23 @@
     "note": "Two studies reporting that scores on a disgust sensitivity questionnaire predicted intuitive but not explicit disapproval of gay men. The questionnaire itself is older: Haidt, McCauley and Rozin published the Disgust Scale in Personality and Individual Differences in 1994, and the 2009 paper used a short form of it in Study 1 and a 32-item version in Study 2."
   },
   "evidence": "Inbar, Pizarro, Knobe and Bloom ran two studies. Study 1 tested 44 undergraduates at the University of California, Irvine, 30 of them women, aged 18 to 33, during two mass testing sessions. Half read a vignette about a director whose music video had the side effect of encouraging gay men to French kiss in public; the other 22 read a version about couples, whom the vignette did not describe as heterosexual. Participants rated how intentionally the director had encouraged the kissing, answered yes or no to whether there was anything wrong with the kissing itself, and rated how wrong it was of the director to make the video. They then completed the eight-item short form of the Disgust Scale, with the two items about unusual sexual practices removed, leaving a six-item index with a Cronbach's alpha of .62.\n\nThe director's action was rated more intentional in the gay kissing condition, mean 4.36 against 2.91, beta = .41, t(39) = 3.39, p < .01. Disgust sensitivity interacted with condition, beta = .37, t(39) = 3.06, p < .01. Within the gay kissing condition disgust sensitivity predicted intentionality ratings, beta = .79, t(19) = 4.49, p < .001, and within the control condition it did not, beta = -.20, t(19) = -.88. Explicit judgements were unrelated to disgust sensitivity in either condition, all ps above .20. Seventy-three percent of participants said there was nothing wrong with gay men kissing in public, against 55% for straight couples, a difference the paper reports as not significant, chi-square(1, N = 42) = 1.57.\n\nStudy 2 tested 82 Cornell students, 52 of them women, aged 18 to 45, on an Implicit Association Test pairing images and words for gay and straight with pleasant and unpleasant words. Disgust sensitivity was measured with the 32-item second version of the scale, again with the sexual items removed, leaving 24 items and an alpha of .71. Mean IAT D was -.37, t(81) = -7.85, p < .0001, indicating less favourable automatic associations with gay people than with straight people across the sample. Higher disgust sensitivity went with lower IAT D scores, beta = -.30, t(79) = -2.44, p < .01.\n\nThe wider correlational claim rests on larger samples. Wagemans, Brandt and Zeelenberg ran five studies with 1,104 participants in the Netherlands and the United States, the fifth preregistered with 451 workers recruited on Amazon Mechanical Turk. Disgust sensitivity was measured with the revised Disgust Scale, and moral judgements with 60 transgressions drawn from six moral domains. Their internal meta-analysis found a relationship across all domains, r = .26, and a stronger one for purity than for any other domain: purity .40, care .27, loyalty .24, authority .19, fairness .11, liberty .07. Adding moral domain as a moderator improved the model, which their preregistration had predicted.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The juror who cannot watch surgery",
+      "text": "Two jurors read the same account of a man who interfered with a corpse. The one who looks away during medical programmes calls it far worse than the one who does not. Nothing in the evidence differs between them; a standing squeamishness does."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The harmless taboo",
+      "text": "A questionnaire asks how wrong it is to eat a pet that died of natural causes, an act that injures nobody. Answers sort with how readily a respondent says they gag at foul smells, and they sort much less clearly on questions about theft or a broken promise."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The ethics committee and the tissue study",
+      "text": "A hospital committee weighs a proposal to use tissue from the dead, consented to in advance. Members who describe themselves as easily revolted object hardest, and the same members raise no special objection to proposals carrying a financial risk."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The specific 2009 finding did not survive Many Labs 2, where the difference between conditions fell from q = 0.70 to q = 0.05 across 7,117 people, while the broader link between disgust sensitivity and moral condemnation holds in larger samples.",

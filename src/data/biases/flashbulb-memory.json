@@ -16,6 +16,23 @@
     "note": "Brown and Kulik surveyed 80 Americans about nine public events of the period and sorted the free recalls into six recurring attributes they called canonical categories: place, activity, informant, aftermath, own affect and others' affect. They held that such memories are fixed for a very long time and possibly permanently. Their design tested nobody twice, so it could not show whether an account given years later matched the one the same person would have given at the time. The article itself could not be obtained during this check. The description above is read from Frinco and colleagues' 2024 review, which quotes it with page numbers, and the bibliographic record was verified at Crossref."
   },
   "evidence": "The test-retest studies are the ones that can settle anything, because only they hold a late account against an early one. Talarico and Rubin ran the design that adds a control. On 12 September 2001, 54 Duke students recorded their memory of hearing about the attacks and also a memory of an everyday event from the days before. Three groups of 18 were retested at 7, 42 or 224 days. Consistent details fell over time for both kinds of memory and the fall did not differ between them, with the memory type by session interaction at F = 0.45 for consistent details and F = 0.04 for inconsistent ones, against degrees of freedom of 1 and 51. Ratings behaved differently. Recollection, belief in accuracy, remember-know and vividness stayed flat for the September 11 memory and dropped for the everyday one, with memory type by session interactions of F = 5.13, 8.29, 9.20 and 10.67. Participants rehearsed the attack more than the everyday event, mean 5.23 against 2.46. Hirst and fifteen colleagues ran the large version. More than 3,000 people in seven American cities answered a survey one week after the attack, and follow-ups went out at 11 and 35 months; 391 answered all three. Their consistency with the first-week account, averaged over six canonical features, was 0.63 (SD 0.20) at 11 months and 0.57 (SD 0.23) at 35 months, t(390) = 5.21, p < .01, d = .28. Confidence over the same features was 4.41 (SD 0.64) then 4.25 (SD 0.93) on a five-point scale, and the drop between the two follow-ups was not significant, p > .30. Consistency correlated with emotional intensity, media attention and later conversation at between -.10 and .04; confidence correlated with media attention and conversation. Accuracy for facts about the attack itself, which can be scored against the news record, was 0.88 at one week, 0.77 at 11 months and 0.78 at 35 months. Schmolck, Buffalo and Squire questioned students three days after the O. J. Simpson verdict and again at 15 or 32 months. At 15 months, 50% of recollections were highly accurate and 11% carried major errors or distortions. At 32 months, 29% were highly accurate and more than 40% carried major distortions. Kopp, Sockol and Multhaup pooled 16 studies, N = 1,898, comparing adults under 40 with adults over 60. After one outlier was excluded, older adults scored lower on flashbulb memory, k = 14, Hedges' g = -0.30, 95% CI [-0.45, -0.15], p < .001, and were less consistent over time, k = 7, g = -0.29, CI [-0.47, -0.11], p = .002.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "Where you were when you heard",
+      "text": "Someone can describe the kitchen, the radio and who called up the stairs on the morning a disaster was announced, and can recall almost nothing of the ordinary morning before it. What is held is the circumstance of hearing, not the news."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The detail that moved and the certainty that did not",
+      "text": "A man tells the story of learning of a death and places himself at work. Telling it again long after, he places himself at home. Both tellings come with the same confidence, and confidence is not what changed."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Two siblings in one hallway",
+      "text": "Two siblings describe hearing the same announcement and disagree about who told whom. Neither account can be checked, because nobody wrote down what happened in that hallway, and each has only the other's word against their own."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Ten years after the attack, 202 people were still confident to about 4.5 out of 5 in memories that matched their own first-week account roughly six times in ten, and the two measures were unrelated, r = .07.",

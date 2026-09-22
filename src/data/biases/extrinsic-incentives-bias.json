@@ -13,6 +13,23 @@
     "note": "The paper names the bias and reports three laboratory studies and one field study. Its abstract also claims the bias is separable from a self-serving bias and runs counter to the usual actor-observer effect."
   },
   "evidence": "Heath's paper is closed at Elsevier and could not be read for this entry. On 21 September 2026 the publisher answered this session with a Cloudflare bot challenge rather than a paywall notice, and an archived 2018 copy of the same page offers unsubscribed readers the abstract alone. That abstract, read at PubMed, says people predict that others are more motivated than themselves by extrinsic incentives such as job security and pay, and less motivated by intrinsic ones such as learning new things. The figures usually quoted come at one remove, from DeVoe and Iyengar's description of the paper. On their account Heath found 73% of survey respondents agreeing that large differences in pay were needed to get people to work hard, and 67% agreeing that people would not take extra responsibility at work unless paid extra for it. Those same respondents ranked pay third among aspects of their own jobs, and important work ranked first for 50% of them. In one laboratory study, again on that account, participants ranked an extrinsic item most important only 22% of the time. The prediction figures count predictors rather than targets: 32% of participants predicted that classmates would name an extrinsic item first, against 54% for bank managers and 85% for bank employees.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The retention plan and the manager's own answer",
+      "text": "A manager designing a scheme to keep staff builds it around a bonus, and says of himself that he stays for the work. One office, one question, and two answers depending on whose motives are being described."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Why the volunteers turn up",
+      "text": "A committee budgets for vouchers to keep its volunteers coming, while every volunteer asked says she comes for the company. Nothing here shows that vouchers fail. The point is that the plan rests on a belief about other people."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Explaining a colleague's resignation",
+      "text": "A colleague leaves for another firm and the office settles on the salary as the reason. Her own account is the chance to learn a part of the trade she has never done."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The self-other gap reappears in North American samples using other methods, while the one large cross-cultural field test finds Asian managers drawing no such distinction and Latin American ones reversing it.",

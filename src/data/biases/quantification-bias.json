@@ -17,6 +17,23 @@
     "note": "Wang used the phrase in a talk recorded on 29 September 2016 and posted by TED in July 2017, defining it in the transcript as 'the unconscious belief of valuing the measurable over the immeasurable'. She presented no study. Claire Maiers's 2018 conference paper attributes the term to Wang and is the sole reference behind the bias's line in Wikipedia's list of cognitive biases; that paper argues ethnographers produce predictions in their own right and reports no experiment. Max Boholm reached the same two words in Risk Analysis in 2019 for a narrower claim. Wang's earlier essay on thick data could not be retrieved, so whether the phrase appears there is unchecked."
   },
   "evidence": "The claim has been tested under the name quantification fixation. Linda Chang, Erika Kirgios, Sendhil Mullainathan and Katherine Milkman ran 21 preregistered experiments, 8 in the main text with 9,303 participants and 13 in the supplement with 13,936. Each gave people two options trading off two attributes and randomised which attribute appeared as a number and which as a bar graph, an icon row or a word. Choosing between hotels, 51.6% picked the higher rated and pricier one when the rating carried the number, against 33.0% when the price did, χ²(1) = 34.68, P < 0.001, h = 0.379. Hiring a real Prolific worker for cash, 66.5% picked the candidate with the better maths score when maths was quantified, against 54.5% when the angles score was. Maths predicted the bonus task better, so the angles-quantified group earned 6% less, $0.26 against $0.28, t(996.41) = 3.49, P < 0.001. Choosing which charity received a real $1, 701 people tested in person split 56.7% against 41.4%, t(697) = 4.09, P < 0.001. A nationally representative sample of 602 US adults split 56.0% against 25.9%, χ²(1) = 55.22, P < 0.001, h = 0.623. Boholm's evidence is of another kind, and his abstract is all that could be read of it. He counted over 16,000 uses of the noun risk across four Swedish and English corpora in 14 samples, and reports the word mostly used without a quantity attached, and seldom with a numeral even when quantified.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "Two sides of three carrying numbers",
+      "text": "Two flats are compared on rent, on floor area and on how pleasant the street is. The first two arrive as figures and the third does not, so the choice turns on them, even where the buyer would say the street matters most."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The review that runs on tickets closed",
+      "text": "A performance review counts tickets closed and cannot count the colleague who unblocks everyone else. The countable half of the job is what the decision ends up resting on, because it is the half that can be argued about."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The school judged on its table position",
+      "text": "Parents comparing two schools have exam results as numbers and how the children are treated as description. The ranking does the deciding, including for parents who say the treatment is what they care about."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "No replication of quantification bias was located, because neither Wang nor Boholm ran a study that could be repeated. The nearest measurement is quantification fixation, 21 preregistered experiments from one team that no independent group has yet repeated."

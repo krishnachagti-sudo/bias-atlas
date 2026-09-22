@@ -16,6 +16,23 @@
     "note": "Four experiments in a three-page report. Experiment 1 used a colour-naming task and found slower responses to computer words after hard trivia questions. Experiment 2 had people type 40 trivia statements and told half that the computer had saved them; those told the statements were erased recalled more. Experiment 3 tested recognition, and people recognised erased statements best while remembering folder names poorly. Experiment 4 tested recall of the folder against recall of the statement. The words 'digital' and 'amnesia' appear nowhere in the report."
   },
   "evidence": "Experiment 1 rests on a colour-naming comparison. After the hard question block, computer words took 712 ms (SD 413) against 591 ms (SD 204) for general words, t(68) = 3.26, P < 0.003, and that is the test the replication project targeted. A second and separate analysis of brand names gave an interaction with question difficulty, F(1,66) = 5.02, P < 0.03. It uses four words, Google, Yahoo, Target and Nike, out of the 24 in the task, and Hesselmann calls that selection post hoc and reports that the paper's own supplement prints the same interaction as F(1,66) = 5.52. The sample is disputed. Camerer and colleagues and Hesselmann both record that the supplement states 46 participants and that the authors said 69 after the replication was run, and Hesselmann adds that the printed degrees of freedom, 68 for the t tests and 66 for the analysis of variance, fit neither figure. Experiment 2 is the one the popular account rests on. People typed 40 trivia statements in a between-subjects design crossing saved against erased with explicit instructions to remember against none. Proportion recalled was 0.31 (SD 0.04) in the erase condition and 0.29 (SD 0.07) in erase-plus-remember, against 0.22 (SD 0.07) in the save condition and 0.19 (SD 0.09) in save-plus-remember, omnibus F(3, 56) = 2.80, P < 0.05. Only the saved-erased manipulation mattered; telling people to try to remember did not. In Experiment 4, where every statement was filed in a named folder, people recalled the folder better than the statement, 0.49 (SD 0.26) against 0.23 (SD 0.14), t(31) = 6.70, P < 0.001. The report gives degrees of freedom for Experiments 2 to 4 and no participant counts.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The number never learnt",
+      "text": "Someone can call a close friend daily for years without knowing the digits. What is held instead is the route to them: the app, the letter to scroll to, the position in the list."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The recipe saved rather than learnt",
+      "text": "A dish made a dozen times from a bookmarked page still sends the cook back to the page each time. The quantities were never encoded strongly, because the page was never going anywhere."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The decision in the shared drive",
+      "text": "A meeting agrees something and the notes go into a folder everyone can reach. Weeks later people can name the folder and not the decision, and the file becomes the only copy of it."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The priming experiment failed twice at high power. The forgetting effect held up, but only when people had seen the saving work.",

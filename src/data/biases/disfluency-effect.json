@@ -13,6 +13,23 @@
     "note": "Their paper is \"Overcoming intuition: Metacognitive difficulty activates analytic reasoning\". Two of its four experiments used a font; the others used difficult-to-read lettering and a furrowed brow. Meyer and colleagues counted it in over 133 academic articles and in three bestselling trade books, Gladwell's \"David and Goliath\", Alter's \"Drunk Tank Pink\" and Kahneman's \"Thinking, Fast and Slow\"."
   },
   "evidence": "The two font experiments were small and ran at the same place. Experiment 1 gave the three-item Cognitive Reflection Test to 40 Princeton undergraduates recruited at the student campus centre; the hard-to-read group scored 2.45 correct against 1.90, t(38) = 2.25, p = .03. Experiment 4 gave six syllogisms to another 41 Princeton undergraduates and analysed only the two rated moderately difficult, dropping two easy and two very difficult items for ceiling and floor effects. That group answered 64% correctly against 43%, t(39) = 2.01, p < .05, with eta squared of .09. Both used black Myriad Web 12-point against 10% grey italicised Myriad Web 10-point. The paper reports eta squared throughout and prints no confidence interval for any result. Many Labs 2 restates the syllogism comparison as 64% against 42% with p = 0.051, and computes the original effect as d = 0.63, 95% CI -0.004 to 1.25 in its summary table and d = 0.64, 95% CI -0.004 to 1.27 in its running text.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The handout that came out faint",
+      "text": "A tutor photocopies a problem sheet badly and the questions arrive in pale, cramped type. The hypothesis says the class answers them better, because the effort of reading is misread as difficulty in the problem and the checking habit switches on."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The instructions in tiny grey print",
+      "text": "Someone assembling a cupboard has to hold the sheet up to the light to read a step. The claim is that they then follow the step more carefully, though the typeface knows nothing about cupboards."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The form nobody can skim",
+      "text": "A benefits form set in an awkward face is slower to get through, and the prediction is that fewer boxes are ticked without thought. A purely cosmetic change to the page is supposed to change the quality of the reasoning done on it."
+    }
+  ],
   "replication": {
     "state": "failed",
     "headline": "In 2,580 people tested in laboratories in English, the hard-to-read group answered no more syllogisms correctly than the easy-to-read group.",

@@ -13,6 +13,23 @@
     "note": "Their paper set out the procedure and the shifting balance between exploration and attachment behaviour. The three groups had been distinguished earlier, from Ainsworth's Baltimore families. She first called them prematurely independent, secure and disturbed; Bowlby objected in 1967 that the names were shot through with value judgements, and proposed the labels A, B and C instead. The coding manual is the 1978 book Patterns of Attachment."
   },
   "evidence": "The classification came out of a very small sample. Ainsworth's Baltimore study followed 26 families, fifteen observed from 1963 to 1964 and eleven from 1966 to 1967. Twenty-three of those 26 dyads were seen in the Strange Situation, and the three groups were drawn from those 23: six prematurely independent, thirteen secure, four disturbed. Patterns of Attachment, in 1978, pooled Ainsworth's samples with doctoral projects by Silvia Bell and Mary Main and reported on 106 infants, of whom 66% were secure, 21% avoidant and 13% resistant. Forty-two percent of the 106 fell into the B3 subgroup alone. Duschinsky's archival history records that the Baltimore sample was described in print as randomly selected, and that Ainsworth said in a late interview that the paediatricians who recruited for her tended to pick mothers who interested them. She applied repeatedly for funding to re-run the study without changes, and was turned down each time. Where modern cohorts report coding agreement it is high. In the Minnesota Longitudinal Study of Risk and Adaptation, inter-rater agreement on the three-way classification was 89% at 12 months and 92% at 18 months, and 86% for disorganisation. In the NICHD Study of Early Child Care and Youth Development, agreement on the four-way system was 83% at 15 months, with kappa of 0.69; at the 36-month assessment in the same cohort it was 75.7%, kappa 0.58.",
+"examples": [
+  {
+    "kind": "everyday",
+    "tag": "The toddler seen with each parent in turn",
+    "text": "A child watched through the procedure with one parent is placed in one group, and a fortnight later with the other parent falls into a different one. What has been coded is the relationship in the room, so the two need not agree."
+  },
+  {
+    "kind": "everyday",
+    "tag": "The settling-in visit at nursery",
+    "text": "Staff watch how a child greets a parent coming back after twenty minutes and treat what they saw as a reading of the child's character. They have watched one reunion on one afternoon with one adult."
+  },
+  {
+    "kind": "everyday",
+    "tag": "The afternoon the child is coming down with something",
+    "text": "A toddler who usually goes straight to a returning parent is feverish and hangs back. The same three minutes coded on a different day can fall on the other side of a category boundary."
+  }
+],
   "replication": {
     "state": "mixed",
     "headline": "The coding is consistent and the distribution reproduces widely, but the prediction to later behaviour is small, and registered analyses of the two landmark cohorts found it smaller still.",

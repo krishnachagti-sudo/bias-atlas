@@ -2,7 +2,11 @@
   "no": 515,
   "slug": "appeal-to-probability",
   "name": "Appeal to probability",
-  "aliases": ["Appeal to possibility", "Possibiliter ergo probabiliter", "Possibility fallacy"],
+  "aliases": [
+    "Appeal to possibility",
+    "Possibiliter ergo probabiliter",
+    "Possibility fallacy"
+  ],
   "category": "belief",
   "statement": "Treating a likely claim as a settled one, so that 'probably P' is carried into the next step of an argument as though it were P.",
   "meaning": "Two things share this name and only one of them has been measured. The first is a charge in informal logic, that an arguer has moved from what is probable, or in some versions merely possible, to what is the case. The second is a finding about inference: when people reason onward from an uncertain belief, they tend to drop the uncertainty and reason from the leading hypothesis alone. The second is what can be tested, and this page is mostly about it. The formal version of the complaint is older than the label and sharper. Kyburg's lottery paradox sets a rule that licenses belief at high probability against the principle that beliefs can be conjoined, and shows the two cannot both hold. In the Stanford Encyclopedia's wording, Kyburg poses a dilemma: either reject agglomeration or reject rules that license belief for a probability of less than one. None of that concerns how people weight probabilities when choosing between gambles, which is a separate literature with a separate record.",
@@ -13,6 +17,23 @@
     "note": "Their paper 'Predictions from uncertain categorizations' is the measured effect's anchor, and its abstract reports that across eleven experiments, with one exception, subjects did not generally alter their predictions as a function of information outside the most likely target category. The name on this page has a different and thinner history. Wikipedia's article defines it as the move from possible to probable, gives the Latin tag 'possibiliter ergo probabiliter', and rests on two citations: Bo Bennett's self-published web dictionary and pages 26 to 29 of Richard Carrier's 2012 book 'Proving History', neither obtained here. The phrase appears nowhere in Hansen's Stanford Encyclopedia entry on fallacies or in the Internet Encyclopedia of Philosophy's fallacy article, both of which were downloaded and searched in full, the second of which carries an alphabetical list with many separate 'appeal to' headings. Gettys, Kelly and Peterson's 1973 'best guess hypothesis' paper is an earlier antecedent for the measured effect; it is named by Dewitt and colleagues and was not read here."
   },
   "evidence": "The clearest test is Johnson, Merchant and Keil's, published in the Journal of Experimental Psychology: General and read here from the accepted manuscript. Eight studies, 120 participants recruited for each from Amazon Mechanical Turk, gave people two competing explanations for an observation and then asked for a downstream prediction. The design varied, separately, how strongly each explanation implied the predicted event. Participants tracked the strength of the link running from the favoured explanation and ignored the link running from the other. Study 4 removed the obvious objection by asking for the probabilities instead of a forced choice. Among those who rated the simple explanation higher, the mean estimate was 65.9 per cent for it and 34.1 per cent for the rival, and the rival's predictive link still moved nothing, t(71) = -0.33, p = .74. The authors' comment is that a one-third probability is an awfully big chance to ignore. Study 6 cut the leading hypothesis to a bare plurality, 50 per cent against two rivals at 25 per cent each, and the pattern held, t(78) = -0.04, p = .97 on the rival link. Their internal meta-analysis, over more than 500 participants, found heavy use of the likelier hypothesis, z = 10.84, p < .001, and none of the less likely one, z = -1.21, p = .23, with a Bayesian version putting the odds at 12.7 to 1 in favour of the null there. The authors call the effect belief digitization: probabilities are converted to ones and zeros when they are used.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The connection that usually holds",
+      "text": "The connecting train waits on most days, so a traveller books a meeting for the minute the second train arrives and makes no plan for a miss. A one-in-ten chance of failure was dropped between one step of the plan and the next."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The cough reasoned onward from",
+      "text": "A clinician judges a cough most likely viral, then reasons about recovery time and follow-up as though viral were established. Every later decision inherits a certainty that the first step never had."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The candidate assumed to accept",
+      "text": "A manager judges the favoured applicant likely to say yes, cancels the remaining interviews and tells the others the post is filled. Likely to accept has been carried into the plan as accepted, and the fallback is gone."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "An independent laboratory found about a third of participants updating as though the likelier account were certain, another third refusing to update at all, and the effect vanishes once the downstream probabilities are supplied as numbers.",

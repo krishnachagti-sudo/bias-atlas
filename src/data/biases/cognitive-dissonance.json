@@ -16,6 +16,23 @@
     "note": "The book set out the theory and named it. The experiment usually cited as its demonstration came two years later, in Festinger and Carlsmith's 1959 paper on forced compliance. The theory's other workhorse design predates the book: Brehm's 1956 free-choice study of post-decision changes in desirability."
   },
   "evidence": "Seventy-one male students spent an hour turning pegs and stacking spools, a task built to be dull. Each was then asked to tell the next participant, waiting outside, that the work had been interesting, and was paid either one dollar or twenty dollars to say it. A control group told nobody anything. Eleven participants were dropped for reasons including suspicion about the payment, leaving twenty per condition. Asked afterwards how enjoyable the tasks had been, on a scale running from -5 to +5, the control group averaged -0.45 and the twenty-dollar group -0.05. The one-dollar group averaged +1.35, differing from the control at t = 2.48, p = .02, and from the twenty-dollar group at t = 2.22, p = .03. A footnote states that every test in the paper is two-tailed. A second question, about wanting to take part again, ran the same way and landed short of those levels, p = .08 against the control and p = .15 against the twenty-dollar group.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The favour done for nothing",
+      "text": "Someone spends a Saturday helping a group they have always found tiresome, and is offered no thanks and no reward. By the evening they find they think rather better of the group, because the day cannot be undone and the opinion can."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The employer defended at dinner",
+      "text": "Asked to justify a firm they privately resent, a worker argues its case well and is paid nothing for doing so. Afterwards the resentment has cooled, since nothing outside the argument explains why they made it."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The rule broken at a party",
+      "text": "A person keeping strictly to a diet eats what is served rather than explain, and concludes over the next week that the rule was too strict anyway. The meal is eaten either way, so the rule is what moves."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "A 39-lab preregistered replication of the induced-compliance experiment found nothing, while a corrected version of the free-choice experiment still finds a small effect. Four commentaries and the authors' reply followed in 2024, and one of them reanalyses the data and reads it the other way.",

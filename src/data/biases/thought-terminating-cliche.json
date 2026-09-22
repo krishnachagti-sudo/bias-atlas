@@ -17,6 +17,23 @@
     "note": "The research was conducted in Hong Kong in 1954-55 and covered 25 Western and 15 Chinese subjects, all of whom had been through thought reform. The copyright page of the 1989 University of North Carolina Press edition, in which the book was read here, records the original Norton publication of 1961. The phrase appears once in the whole book, on page 429, in the first line of the section 'Loading the Language'. Two of the ideas around it are borrowed and credited by Lifton: 'ultimate terms', 'god terms' and 'devil terms' are Richard Weaver's, and 'the language of nonthought' is Lionel Trilling's."
   },
   "evidence": "The eight themes are a distillation of interviews, not a measurement. Lifton introduces them as criteria against which any environment may be judged, answering the question 'Isn't this just like brainwashing?', and he says each theme requires rather than causes the others. No participant's thinking was measured before or after exposure to any phrase. Later instruments have picked up the language theme in passing. The Group Psychological Abuse scale, built from a factor analysis of 308 former members rating their groups on 112 items, reduced to 28 items and four subscales named Compliance, Exploitation, Mind Control and Anxious Dependency, with an alpha of .81 for the summary scale and .81, .75, .70 and .72 for the subscales, and four factors accounting for 42% of the variance. Its published account carries no subscale for language. The newer Psychological Abuse Experienced in Groups Scale does. Its item 12 reads 'I had to use a special group jargon that altered the normal meaning of words', and it sits in the component called control and manipulation of information. In the development sample of 138 former members of groups they called abusive, the scale came out one-dimensional, with the retained factor accounting for 45.7% of the variance and an alpha of .94. Item 12 has a mean of 3.00 on a 0 to 4 scale, 95% CI 2.72 to 3.28, a factor loading of .49 against a range of .46 to .80, and a corrected item-total correlation of .38, the second lowest of the 31 items. Its component, the only one below the .70 criterion, has an alpha of .67. The other operationalisation is textual. The propaganda technique corpus of Da San Martino and colleagues annotates news articles for 18 techniques, one of them named thought-terminating cliché, defined from a 2015 thesis on large group awareness training rather than from Lifton. Across 21,230 sentences the annotators marked 7,485 technique instances, of which 95 were thought-terminating clichés, averaging 34.85 characters; loaded language, the most common technique, was marked 2,547 times. Inter-annotator agreement for span selection was low, at gamma 0.30 and 0.34 for the two teams, and slightly lower when the label was included. In the SemEval-2020 shared task built on that corpus, the best of 32 systems reached an F1 of 62.07 overall and 42.55 on the thought-terminating cliché class, against 77.17 on loaded language.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The phrase that closes every meeting",
+      "text": "In one company any objection to a plan is answered with the line that it is not the mindset the firm hires for. The phrase settles nothing about the plan, and over months the objections stop being raised in a form anyone can argue with."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The word that covers every doubt",
+      "text": "A group answers questions about its money, its leaders and its timetable with the same short formula about commitment. Three unrelated problems arrive at one phrase, and the phrase is where the discussion stops rather than where it starts."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The vocabulary a family shares",
+      "text": "Relatives who disagree about care for an ageing parent settle every argument by saying that blood is blood. The phrase decides nothing about nursing costs or visiting rotas, and its work is to make those questions feel already answered."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "No experiment was found testing whether a cliché reduces thinking, and the original claim was never framed as one.",

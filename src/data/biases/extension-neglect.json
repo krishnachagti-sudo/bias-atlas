@@ -2,7 +2,11 @@
   "no": 549,
   "slug": "extension-neglect",
   "name": "Extension neglect",
-  "aliases": ["Judgement by prototype", "Prototype heuristic", "Valuation by prototype"],
+  "aliases": [
+    "Judgement by prototype",
+    "Prototype heuristic",
+    "Valuation by prototype"
+  ],
   "category": "decision",
   "statement": "Kahneman treats scope, duration, base-rate and sample-size neglect as one bias, the substitution of an average for a sum, and the family has never been tested as one claim.",
   "meaning": "The unit of the claim is a family, not a result. An extensional attribute of a set behaves like a sum: the total discomfort of a medical procedure, the worth of saving a number of birds, the evidence carried by a sample. A prototype attribute behaves like an average: how bad a typical moment was, how appealing a typical bird is. Kahneman, Ritov and Schkade argue that the average comes to mind and the sum does not, so the average is what gets answered. Extension neglect is what follows. Unless attention is directed to it, the size of the set has little influence on the judgement. The umbrella is the part worth arguing about. Insensitivity to scope in surveys, duration neglect in remembered pain, base-rate neglect in prediction and insensitivity to sample size are held to be one error in four costumes, produced by one mechanism, which is a stronger claim than any of the four on its own. Kahneman's Nobel lecture draws out what that buys: an account that reaches all of them at once, where the rival accounts of scope, of base rates and of duration are each built for a single task.",
@@ -13,6 +17,23 @@
     "note": "Section 3 of their paper sets out judgement by prototype in numbered propositions and names extension neglect as the bias it produces. The name is older than the paper. Their own reference list gives it as the title of Kahneman's 1995 Bartlett Lecture to the Experimental Psychology Society, 'Extension Neglect and Violations of Monotonicity in Judgment and Preference: Three Examples'. Kahneman's curriculum vitae lists that lectureship at Birmingham on 13 July 1995 under a different title, 'When parts are larger than wholes: Violation of monotonicity in judgments and decisions'. The lecture itself was not published. The fuller statement of the framework is the chapter Kahneman wrote with Shane Frederick in 2002, at pages 49 to 81 of the Gilovich, Griffin and Kahneman volume, which could not be opened for this entry."
   },
   "evidence": "The 1999 paper argues the umbrella rather than testing it. Its three worked examples are statistical inference, where neglect takes the form of insensitivity to sample size, personality-sketch prediction, where it takes the form of neglected base rates, and continuous reports of discomfort, where it takes the form of duration neglect. Contingent valuation is added as a fourth, and the authors conclude that inadequate sensitivity to scope in such surveys is inevitable, being an instance of a broad class of effects observed in diverse contexts and explained by a single psychological principle. The same section then limits the claim. Extension neglect, they write, is neither universal nor absolute. Where the size of the set is salient and easy to read, an additive extension effect appears: the value of the prototype and the size of the set contribute to the judgement separately and are added, when the logic of the task requires them to be combined multiplicatively. Their evidence for that pattern is a species study by Kahneman and Ritov, labelled in their own paper as unpublished research, together with work by Novemsky and Kronzon and by Schreiber and Kahneman. Schreiber and Kahneman's abstract describes their sounds experiments as a test of a general model of judgement by prototype applied elsewhere, with the third experiment confirming that duration and intensity combine additively and the fourth confirming a preference for aversive episodes improved by an added period of lower intensity. Kahneman's Nobel lecture sets out the two predictions the model makes: extension neglect, and violations of monotonicity, where adding to a set lowers the judgement. It also concedes the shape of the first. Neglect has the character of a null hypothesis, strictly true only if nobody in the sample responds to extension at all, so a large enough study will reject it, and complete neglect is called an unreasonably strict test of prototype heuristics. The lecture adds that the within-subject factorial design is inappropriate for testing hypotheses of neglect, because it signals to participants that every manipulated variable matters.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The appeal that pictures one bird",
+      "text": "A donor offers the same sum to save two thousand oiled seabirds as to save two hundred thousand, because what comes to mind in both cases is one bird. The image is an average, and the quantity that ought to be summed does no work."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The two dental appointments",
+      "text": "A patient recalls a long uncomfortable appointment as no worse than a short one, and chooses between them on how bad the worst moment felt. Duration is the quantity being dropped, and the typical moment is what gets answered instead."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The taste test with eight customers",
+      "text": "A shop owner drops a product after eight customers dislike it, and would have felt no more confident had eight hundred said the same. The size of the sample is what carries the evidence, and it plays no part in the conclusion."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "No test of the family as one claim was located. Where two members were measured in the same 331 people, they moved in opposite directions.",

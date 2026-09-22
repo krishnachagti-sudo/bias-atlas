@@ -17,6 +17,23 @@
     "note": "The move is the subject of the book's first chapter, \"The Right to Your Opinion\", which opens on page 1. Whyte did not coin the saying, which he describes as so often repeated that a modern Westerner could hardly avoid absorbing it, and no coinage or first use was located for this entry. The piece that carried the argument furthest was Patrick Stokes's \"No, you're not entitled to your opinion\", published in The Conversation on 4 October 2012."
   },
   "evidence": "The primary texts are arguments, not studies, and they were read in full. Whyte works through candidate duties that a right to an opinion would impose and rejects each. A duty to agree fails because the right is universal and two people who disagree cannot both discharge it. A duty to listen fails on grounds of time. The weakest candidate, a duty to let a person keep an opinion, is the one he thinks most speakers mean, and he rejects it with the case of a friend stepping into the road in front of a car, where the correct response is to change her opinion at once. His summary is that if the opinions people are entitled to might still be false, the entitlement cannot settle a dispute, because it adds no information about the original matter. Stokes separates opinions of taste, on which he says argument is pointless, from views about policy and from views resting on technical expertise, and argues that the second and third are often treated as unarguable in the way the first is. His example is Australian television coverage of a measles outbreak that balanced medical practitioners against an anti-vaccination campaigner with no medical qualifications. Nothing located for this entry measures the move itself. What has been measured is the neighbouring question of which claims people treat as admitting of a correct answer at all. Goodwin and Darley put 26 statements to 50 Princeton undergraduates, then told each participant that another person in the study disagreed, and scored whether they said the other party must be mistaken. Objectivism fell across categories: factual statements 2.91, ethical 2.56, social convention 2.00, taste 1.34 on a three-point scale, F(3, 102) = 39.54, p < .001. Their second experiment, on 71 undergraduates and five seminarians, reproduced the ordering with one change, in that ethical statements at 2.60 were treated no less objectively than factual ones at 2.70, F(1, 66) = 1.21, p > .2, while both beat convention at 1.97 and taste at 1.43. Variation within the ethical set was wide. In the first experiment 5.86 mean agreement on the wrongness of conscious racial discrimination came with 54% calling it true, while agreement of 4.12 on the permissibility of abortion came with 2%. Only 13 of 50 participants gave the same answer for all eight ethical statements they rated.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The crime figures at the bar",
+      "text": "A drinker is shown local figures that contradict what he said about burglary, and replies that he is entitled to his opinion. Nobody had disputed the entitlement, and it leaves the figures standing precisely where they were before he spoke."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The parent at the clinic",
+      "text": "A nurse explains why the vaccination schedule is timed as it is, and the parent answers that everyone has a right to their own view. A right to hold a view is not a reason for holding it, so the explanation is still unanswered."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The costing nobody will defend",
+      "text": "Asked what supports the figure in a budget line, a committee member says it is his opinion and he is allowed one. Being permitted to believe something supplies none of the support the question asked for."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "No study was found that tests the move itself, meaning what happens to an argument after somebody claims a right to their opinion.",

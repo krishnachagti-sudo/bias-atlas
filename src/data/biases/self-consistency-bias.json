@@ -2,7 +2,11 @@
   "no": 350,
   "slug": "self-consistency-bias",
   "name": "Self-consistency bias",
-  "aliases": ["Consistency bias", "Consistency of attitudes bias", "Cognitive autobiography revision"],
+  "aliases": [
+    "Consistency bias",
+    "Consistency of attitudes bias",
+    "Cognitive autobiography revision"
+  ],
   "category": "memory",
   "statement": "People recall their earlier opinions as closer to their current ones than the record shows, so a mind that changed is remembered as a mind that held steady.",
   "meaning": "Testing this needs three numbers and not two. An attitude is measured, time passes, it is measured again, and then the person is asked what they used to think. The bias is the gap between that third number and the first one, and its direction is the point: the recollection sits nearer the present position than the past one did. Ordinary forgetting would scatter recollections around the truth. Michael Ross's account, published in Psychological Review in 1989, is that people reconstruct the past from their current state plus a belief about whether that sort of attribute stays put. Where the belief says opinions are stable, recall shows stability. Where it says a person has improved, the same machinery makes the past look worse than it was, which is why the general claim is about theory-guided reconstruction and the narrower one about consistency. Daniel Schacter calls the narrower version consistency bias and defines it as rewriting the past to fit current knowledge, beliefs and feelings.",
@@ -13,6 +17,23 @@
     "note": "The recall question was a side-test inside a forced-compliance dissonance experiment. Attitudes were collected a week before the session in what participants took to be an unrelated survey, then measured again after they wrote a counterattitudinal essay, then asked for from memory. Bem and McConnell's paper was not obtained in this search, and everything stated about it here is taken from Markus's 1986 description of it, including his quotation of their conclusion on page 28 that premanipulation attitudes 'are recalled as identical to postmanipulation attitudes'. Ross's 1989 review supplied the general theoretical account and Schacter's label of consistency bias came later still."
   },
   "evidence": "The strongest design puts the earlier measurement years out of anybody's reach. Gregory Markus used the Jennings-Niemi political socialisation panel, which began in 1965 with 1,669 American high school seniors and at least one parent in nearly every case. Complete three-wave data existed for 898 parents and 1,135 offspring. Positions on six seven-point scales were recorded in 1973, recorded again in 1982, and in 1982 respondents were also asked where they had stood nine years earlier. Nobody in 1973 knew the recall question was coming. Recollections matched the 1973 self-placements poorly. Correlations between recalled and actual 1973 positions ran from .29 to .56 for parents and .33 to .60 for offspring, and on average only about a third of recollections coincided with what had been said. Correlations between those same recollections and the respondent's current 1982 position ran from .69 to .83 for parents and .45 to .69 for offspring. Across the six items an average of 73% of parents said their 1973 position had been no different from their present one, against 48% of offspring, while Markus's Table 2 shows the two cohorts about equally stable in fact. Regressing recalled change on observed change, a one-position shift on a seven-point scale produced a recalled shift of one-tenth to two-tenths of a position among parents and about a third of a position among offspring. Asked to explain changes they believed they had undergone, no more than 5% to 10% of respondents failed to supply a story, even where the change they described ran opposite to the change on record.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The opinion nobody remembers changing",
+      "text": "Someone who came round to a new way of working over two years says they always thought it sensible. The objections they raised in meetings at the time are remembered as mild reservations."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The three numbers it takes to see it",
+      "text": "Showing this needs a record of what a person thought then, what they think now, and what they say they used to think. Only the distance between the first and the third is the bias, and without the first there is nothing to hold the memory against."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The course that makes the past look worse",
+      "text": "Someone finishing a training programme rates their skill beforehand as lower than they rated it at the time. Where a person believes they have improved, the same reconstruction pushes the remembered past away from the present rather than towards it."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "Panel studies with a blind baseline keep finding recollections pulled towards the present position, but the pull is not always towards consistency, and one preregistered test found a measure where it ran the other way.",

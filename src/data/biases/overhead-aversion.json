@@ -13,6 +13,23 @@
     "note": "One paper carrying a laboratory experiment with 449 undergraduates and a field experiment of 40,000 mailed solicitations. Funding came from the John Templeton Foundation through the Science of Philanthropy Initiative. The partner foundation is unnamed: the authors record a nondisclosure agreement limiting what they could report about the field procedure."
   },
   "evidence": "The laboratory experiment recruited 449 undergraduates at a public university in southern California in spring 2014, 35.19% of them female, mean age 21.56. Each was asked which of two real charities should receive $100, with one participant's decision drawn and paid, so the choice was consequential. Kids Korps carried no overhead. The overhead on charity: water was set at nothing, 5% or 50%, and in two further treatments the same 5% and 50% were described as already paid by someone else. The share choosing charity: water was 73.33% at no overhead, 66.67% at 5% (z = 0.98, P = 0.33) and 49.43% at 50%, below both the no-overhead treatment (z = 3.27, P < 0.01) and the 5% treatment (z = 2.32, P = 0.02). At 50% overhead covered by a third party the share returned to 71.43%, indistinguishable from the no-overhead treatment (z = 0.29, P = 0.77) and above the uncovered 50% treatment (z = 3.00, P < 0.01). The field experiment mailed 40,000 letters on a single day in spring 2013 for a foundation that funds education projects, to people who had given to similar causes in the preceding five years, 10,000 per treatment. Every letter said each project costs $20,000 and asked for $20, $50 or $100. Three letters added a sentence about a private donor's $10,000: seed money already secured, a $1:$1 matching grant, or a grant covering all the overhead of raising the money. Donation rates were 3.36% for the control, 4.75% for seed, 4.41% for match and 8.55% for overhead, the last above all three others (z = 15.51, 10.78 and 11.89, all P < 0.001). Totals raised were $8,040, $13,220, $12,210 and $23,120, or $0.80, $1.32, $1.22 and $2.31 per solicitation. The overhead letter beat seed by 75% (t(19998) = 8.30) and match by 89% (t(19998) = 9.26), both P < 0.001. Wider evidence exists for the preference, most of it hypothetical. Caviola and colleagues paid 94 people on Mechanical Turk to state a donation between $100 and $500. Shown one charity alone, they gave more to a charity with a 5% overhead ratio saving two lives than to one with a 60% ratio saving five, $254.31 against $156.37 (t(54) = 2.38, p = .021), and the ranking reversed when both were shown together, $101.87 against $309.68 (t(52) = 5.24, p < .001). Their second study, on 201 people, found donations in isolation tracking the overhead ratio and ignoring lives saved: two charities with the same 5% ratio and different effectiveness drew statistically indistinguishable amounts (t(54) = 0.69, p = .496). Hung, Hager and Tian pooled 30 studies and 244 effect sizes and report a negative association between overhead spending and donations, stronger in experiments than in other designs, and stronger among amateur donors than professionals. Both figures come from those papers' own text and abstract respectively.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The two appeal letters",
+      "text": "One letter says a gift goes straight to the cause because a single large donor has already paid the running costs. The other promises to match gifts pound for pound. The charity's books are identical under both, and more people answer the first."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The question at the door",
+      "text": "Asked to give, a man wants to know what share goes on salaries and offices, and gives less when told a quarter. Told that a company has already covered that quarter, he gives without the question arising, although the quarter is still being spent."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The extra donors rather than the larger cheque",
+      "text": "An appeal promising that no money goes on administration does not collect bigger gifts from the people who give. It collects more people giving, and that is where the whole of the difference sits."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "The Social Sciences Replication Project retested one laboratory comparison at 407 subjects against the original 178, and it held at 82% of the original size. The mailing has never been repeated.",

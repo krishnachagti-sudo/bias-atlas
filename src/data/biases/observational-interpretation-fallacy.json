@@ -12,6 +12,23 @@
     "note": "The authors are at the department of anaesthesia and intensive care at the IRCCS San Raffaele Scientific Institute in Milan. Their abstract states that they searched PubMed, Cochrane and Embase up to March 2024 for occasions when associations from observational studies were deemed causal, and that they found 16. The article appeared online on 29 December 2024 and in the February 2025 print issue, volume 31, issue 1, article e14288, so sources date the term to either year. Its full text is paywalled and only the abstract could be read for this entry."
   },
   "evidence": "The coining paper is a search of the literature for reversals, not a study of readers. Its abstract gives the databases, the March 2024 cutoff and the count of 16, and says those cases prompted revisions to clinical practice. The 16 themselves could not be read here. Two reversals of the shape it describes can be read off their own papers. Grodstein and colleagues followed 59,337 women in the Nurses' Health Study for up to 16 years and reported an adjusted relative risk of major coronary heart disease of 0.39, 95% confidence interval 0.19 to 0.78, among women taking oestrogen with progestin. The Women's Health Initiative then randomised 16,608 postmenopausal women to that combination or to placebo, and stopped the arm early after a mean of 5.2 years. Its hazard ratio for coronary heart disease was 1.29, nominal 95% confidence interval 1.02 to 1.63, on 286 cases, and its hazard ratio for stroke was 1.41, nominal 95% confidence interval 1.07 to 1.85. The Alpha-Tocopherol, Beta Carotene study randomised 29,133 Finnish male smokers aged 50 to 69, having opened by noting that diets rich in carotenoids were associated with lower lung cancer risk. Lung cancer incidence ran 18% higher among the men given beta carotene, 95% confidence interval 3 to 36%, and total mortality 8% higher, 95% confidence interval 1 to 16%. Neither pair is known to be among D'Amico and colleagues' 16, because their list could not be obtained.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The supplement that went into the protocol",
+      "text": "Records show that patients given a vitamin recovered faster, so it is added to the ward routine. The patients who got it were the ones well enough to swallow it, and a trial that assigns it at random finds no benefit."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The breakfast club made compulsory",
+      "text": "Pupils who attend the breakfast club score higher, and the club is extended to everyone. The families who used it differed from the families who did not in ways the scores were also tracking."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The trial that reports too late",
+      "text": "By the time a randomised trial finds no benefit, the practice has sat in guidelines for years, and withdrawing it is the move that now needs justifying. The sequence rather than the statistics is what the name labels."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Pooled across hundreds of topics, observational and randomised estimates agree; individual pairs diverge often enough that agreement on average is no guarantee for any one question.",

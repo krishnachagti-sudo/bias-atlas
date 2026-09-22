@@ -2,7 +2,10 @@
   "no": 251,
   "slug": "defensive-attribution-hypothesis",
   "name": "Defensive attribution hypothesis",
-  "aliases": ["Defensive attribution", "Defensive attribution of responsibility"],
+  "aliases": [
+    "Defensive attribution",
+    "Defensive attribution of responsibility"
+  ],
   "category": "social",
   "statement": "Observers blame the person behind an accident more as its consequences worsen, and blame that person less when they see themselves as similar to him.",
   "meaning": "Two claims travel under this name and they pull in opposite directions. The first is Elaine Walster's: an accident that could have happened to anyone is frightening, so the worse the outcome, the more an observer wants somebody to have caused it. Blame rises with severity. The second is Kelly Shaver's amendment. An observer who resembles the person who caused the accident, and who might plausibly be in that position one day, has a competing motive, because blaming a person like oneself invites blame for one's own future mistakes. Such an observer should assign less responsibility as severity rises, not more. The hypothesis therefore predicts a main effect for one kind of observer and its reverse for another, and the two predictions were not made at the same time. Shaver proposed the second after the first failed to repeat.",
@@ -13,6 +16,23 @@
     "note": "Walster's paper is \"Assignment of responsibility for an accident\" and does not use the phrase defensive attribution. The name comes from the title of Shaver's 1970 paper in the same journal, which added the similarity variables after failing to repeat Walster's severity effect. Burger's 1981 review describes the joint position of the two papers as what became known as the defensive-attribution hypothesis."
   },
   "evidence": "Walster played 88 introductory psychology students, 44 women and 44 men, a tape of neighbours and teachers describing a young man called Lennie whose parked car rolled down a hill in Duluth after a rusted brake cable broke. Lennie's behaviour was identical on all four tapes. Only the outcome changed: a dented bumper, a wrecked car, or a car through a shop window that hurt a child and put the grocer in hospital for a year. Students rated responsibility on a four-point scale. Means were 2.5 and 3.0 where Lennie alone suffered, and 2.6 and 3.2 where others could suffer, F(1, 84) = 8.73, p < .01. The mechanism mattered as much as the result. Ratings of Lennie's carelessness did not move, F(1, 84) = 1.06, so students were not reinterpreting what he did. What moved was the standard they applied. Asked how often a person is morally obliged to have the brakes checked, students in the mild conditions said every 11.3 and 7.8 months and those in the severe conditions said every 9.0 and 7.1 months. A combined strictness index rose with severity, F(1, 68) = 5.62, p < .05. Walster also reported that sex of student interacted with severity where bystanders were at risk, F(1, 40) = 4.25, p < .05. Men rated Lennie 3.4 when he hit the grocer and 2.3 when he nearly did. Women rated him 3.0 either way.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The same dropped cigarette, two outcomes",
+      "text": "Told that a discarded cigarette scorched a hedge, a neighbour calls it careless. Told the identical act burned a house down, the same neighbour judges the smoker far more harshly. Nothing about the carelessness itself has changed."
+    },
+    {
+      "kind": "everyday",
+      "tag": "A driver judging another driver",
+      "text": "Reading about a crash caused by a moment's inattention, someone who covers the same mileage every week assigns less responsibility as the injuries grow worse. Blaming a person in his own position invites blame for a mistake he could make."
+    },
+    {
+      "kind": "everyday",
+      "tag": "A fall at the playground",
+      "text": "Told a toddler was hurt while a parent glanced away, other parents blame the parent less as they picture themselves doing the same thing. Onlookers who could never be in that position blame more as the injury described worsens."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Across 22 experiments the severity effect averaged d = 0.27, and dropping the single strongest study takes it to 0.09.",
@@ -22,12 +42,18 @@
       "doi": "10.1037/0033-2909.90.3.496",
       "year": 1981
     },
-    "original": { "es": 0.64, "esType": "d" },
-    "replicated": { "es": 0.27, "esType": "d", "weighting": "unweighted" }
+    "original": {
+      "es": 0.64,
+      "esType": "d"
+    },
+    "replicated": {
+      "es": 0.27,
+      "esType": "d",
+      "weighting": "unweighted"
+    }
   },
   "limits": "The d of 0.64 for Walster's own study is Burger's estimate, reconstructed from her reported p level and sample size, and it does not appear in her paper. Burger's method is a combination of p levels rather than of effect sizes, it treats every unreported null as p = .50, and it produces no confidence interval, so the pooled figures here carry none. Walster's 1967 follow-up was read in full from a scan on her own site, and is reported here from the paper rather than from Burger. One thing that reading changes is the direction: Burger's summary of it reads as a null, and the paper reports a significant reversal in its first experiment. That experiment was the one Burger could not enter in his table, because gains and losses were not reported separately, so the reversal is absent from every pooled figure above. Shaver's 1970 experiments were not obtained. Ovid marks the full text as paid, and the publisher's own record answered a bot challenge on 21 September 2026, so what Shaver found is reported here as Burger reports it, with the abstract read from Ovid. The same holds for the individual studies in Burger's table. Robbennolt published a later meta-analysis of outcome severity and responsibility judgements in 2000, whose abstract says the direction holds across methods while the strength varies by the judgement asked for. Its estimates were not retrieved, so no figure from it appears here. The severity manipulation is confounded with how likely the outcome seems, a point Burger discusses at length and does not resolve. Searches of Crossref, PubMed, the Open Science Framework registries and the open web on 21 September 2026 found no preregistered or multi-laboratory repeat of Walster's 1966 procedure. They did find a preregistration of a replication and extension of Shaver's second experiment, registered on the Open Science Framework in April 2024. No published report of it was found. Later work using the name tests something adjacent rather than the 1966 design: Salminen interviewed victims, co-workers and foremen after 99 serious occupational accidents in Finland. Pinciotti and Orcutt modelled whether blaming a rape victim lowers a person's own sense of vulnerability, which it did among 618 undergraduates for women and not for men.",
-  "misreadings": "The version that circulates is the severity half on its own, which is the half that held up worst. Walster's own next study did not merely fail to find it. She described a house purchase whose outcome was a large, moderate or small gain or loss. Among 153 high-school juniors the effect ran backwards, and less responsibility was assigned as the consequences grew, F(1, 123) = 8.27, p < .01. Her second experiment found no trend of any shape. Walster called the failure to repeat disturbing and wrote that she could not explain it. Shaver then failed to find it too, which is why the similarity variables exist at all. Readers also take the hypothesis to predict more victim blaming among people who feel at risk. It predicts the opposite for observers who could see themselves in the position of causing the harm, and the mechanism runs through blame avoidance rather than through indifference. Burger's headline verdict is often quoted as support for the hypothesis without the sentence that follows it, where he shows the pooled effect falling to 0.09 when one study is removed. Walster's data are also read as showing that people rewrite what the careless person did. Her carelessness ratings did not shift. Only the moral standard shifted. The idea is close enough to the just-world hypothesis that Burger, following Chaikin and Darley, judged the two to spring from the same assumptions and doubted that a situation could be designed where they predict different things."
-  ,
+  "misreadings": "The version that circulates is the severity half on its own, which is the half that held up worst. Walster's own next study did not merely fail to find it. She described a house purchase whose outcome was a large, moderate or small gain or loss. Among 153 high-school juniors the effect ran backwards, and less responsibility was assigned as the consequences grew, F(1, 123) = 8.27, p < .01. Her second experiment found no trend of any shape. Walster called the failure to repeat disturbing and wrote that she could not explain it. Shaver then failed to find it too, which is why the similarity variables exist at all. Readers also take the hypothesis to predict more victim blaming among people who feel at risk. It predicts the opposite for observers who could see themselves in the position of causing the harm, and the mechanism runs through blame avoidance rather than through indifference. Burger's headline verdict is often quoted as support for the hypothesis without the sentence that follows it, where he shows the pooled effect falling to 0.09 when one study is removed. Walster's data are also read as showing that people rewrite what the careless person did. Her carelessness ratings did not shift. Only the moral standard shifted. The idea is close enough to the just-world hypothesis that Burger, following Chaikin and Darley, judged the two to spring from the same assumptions and doubted that a situation could be designed where they predict different things.",
   "sources": [
     {
       "text": "Walster, E. (1966). Assignment of responsibility for an accident. Journal of Personality and Social Psychology, 3(1), 73-79. Source for the design, the condition means, the F tests and the sex interaction. Read in full on 21 September 2026 from a copy hosted at elainehatfield.com, and every figure above was checked against it.",

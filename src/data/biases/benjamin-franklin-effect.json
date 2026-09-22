@@ -16,6 +16,23 @@
     "note": "The name comes from an anecdote of the 1730s and the experiment is from 1969. Franklin was chosen clerk of the Pennsylvania General Assembly in 1736, and the year after a new member spoke at length against him. Franklin heard the man owned a scarce book, asked to borrow it, returned it in about a week with a warm note, and reports that the two became friends. He wrote this down in 1788, at home, in the third part of the autobiography. Who first attached his name to the laboratory effect was not traced in this search."
   },
   "evidence": "The 1969 paper is the whole of the experimental basis, and it could not be read for this entry. Crossref records it as Jecker and Landy, \"Liking a Person as a Function of Doing Him a Favour\", Human Relations 22(4), 371-378, dated August 1969. What stopped this session was not a paywall. On 21 September 2026 the SAGE article page answered every request with a Cloudflare bot challenge, under a plain and a browser-like user agent alike, so no subscription page was ever reached. Unpaywall, OpenAlex and Semantic Scholar all record the article as closed with no repository copy, and Semantic Scholar notes the abstract as withheld by the publisher. So this page carries no sample size, no condition means and no effect size from it. Two scholarly descriptions of the study were obtained instead. Orehek's chapter says participants who performed a favour for someone they had previously seen negatively or neutrally came to like that person more. Nguyen and Nguyen say participants asked by the experimenter himself to return prize money liked him more than those asked through an intermediary or not asked at all. Both sentences are the citing authors' summaries rather than Jecker and Landy's wording, and neither could be checked against the paper. The fuller account that circulates, which adds a student count and a quiz contest, was found only in encyclopedia entries and popular essays, none of them citing a page. It is not repeated here as fact. What can be read is Franklin. He asked for the loan of \"a certain very scarce and curious book\", the member \"sent it immediately\", and at the next sitting he spoke to Franklin \"(which he had never done before), and with great civility\". Franklin presents the episode as \"another instance of the truth of an old maxim I had learned\", and quotes the maxim: \"He that has once done you a kindness will be more ready to do you another, than he whom you yourself have obliged.\"",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The borrowed ladder",
+      "text": "A neighbour you have never warmed to asks to borrow your ladder, and you lend it. The claim is about what happens in you rather than in him. Having gone out of your way for someone you do not much like is easier to settle by liking him more."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The shift somebody covered",
+      "text": "Asked to take a shift for a colleague she finds tiresome, a nurse agrees. A week later she describes him more warmly than before. Nothing he did changed in the meantime. The change is in the person who did the favour."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The afternoon of unthanked help",
+      "text": "A senior engineer spends an afternoon on a junior's problem and hears nothing back. Reciprocity predicts the junior warming to him. This effect predicts the other leg: the engineer ends up thinking better of the junior he helped."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "No repeat of the 1969 experiment was found. One later experiment tested the same claim by a different route and supported it.",

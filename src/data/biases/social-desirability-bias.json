@@ -18,6 +18,23 @@
     "note": "Their paper is \"A new scale of social desirability independent of psychopathology\", and the title states its purpose. The article was read in full from the Internet Archive's scan of the August 1960 issue. Earlier scales took their items from clinical inventories: Allen Edwards drew his 39-item scale from the MMPI validity scales and the Manifest Anxiety Scale. Crowne and Marlowe object that a student who denies fitful sleep may simply be well rather than flattering himself. Their own items come from behaviours \"culturally sanctioned and approved but which are improbable of occurrence\", on page 350. An item analysis on 76 students cut 47 candidates to the 33 that survive, 18 keyed true and 15 false."
   },
   "evidence": "The evidence that carries weight compares answers with records. Ansolabehere and Hersh matched 26,181 respondents in the 2008 Cooperative Congressional Election Study against commercial voter files across fifty states. Reported turnout was 84.3% and validated turnout 68.5%. Among respondents validated as non-voters, 52.0% said they had voted, against 25.3% in 1988, 27.7% in 1984 and 27.4% in 1980 in the validated National Election Studies. Error in the other direction was almost absent, with 99.1% of validated voters reporting a vote. Experiments agree. Holbrook and Krosnick asked a national telephone sample of 898 American adults about the 2000 presidential election either directly or through an item count list, a design that lets a respondent report a vote without naming it. Direct questioning yielded 72.0% turnout and the item count technique 52.4%, a one-tailed difference at z = 1.66. Three parallel internet surveys showed no such gap. Administration mode moves disclosure the same way. Gnambs and Kaspar pooled 460 effect sizes from 48 samples and found more admission of sensitive behaviour on computer than on paper. The corrected odds ratio was 1.19, with a 95% interval on the log odds ratio of 0.10 to 0.25, and it reached 1.29 for sexual behaviour.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The question asked out loud",
+      "text": "A doorstep interviewer asks how many drinks a week the household gets through. The same question on a form filled in alone at a kitchen table collects a larger number from the same person."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The show of hands",
+      "text": "A chair asks who has read the papers before the meeting. Hands go up around the table, and the count measures what is comfortable to admit in that room rather than who read anything."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The turnout question after polling day",
+      "text": "A survey asks whether the respondent voted. The question is also an invitation to say what sort of citizen they are, and the answer is given to a listener as much as to a researcher."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "Across 124 samples, shielding the answer raises reported rates of sensitive behaviour by 8.5 percentage points, and yet the correction cannot be relied on in any single study.",

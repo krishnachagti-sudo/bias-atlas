@@ -17,6 +17,23 @@
     "note": "Gelles reviewed a decade of family violence research and described claims that had gained standing through repeated citation rather than through new data. His paper was not obtained, and that account comes from Nielsen's 2014 article. Nielsen says Gelles popularised the concept and credits the term woozle effect to Beverly Houghton, whose paper 'Review of research on women and abuse' was given at the American Society of Criminology national conference in Philadelphia in November 1979. The woozle is from chapter three of Milne's Winnie-the-Pooh, in which Pooh and Piglet circle a spinney of larch trees after paw marks that multiply as they walk. Christopher Robin, watching from an oak tree, counts off the circuits they made, and Pooh then fits his own paw into one of the tracks."
   },
   "evidence": "The measured case is Steven Greenberg's 2009 citation network. He took the claim that beta amyloid is produced by and injures muscle in sporadic inclusion body myositis, collected every English language PubMed paper carrying a statement about it, and recorded which paper cited which for that statement. The network held 242 papers and 675 citations, of which 636 were supportive, 18 neutral and 21 critical. Counting chains rather than single links, 220,553 citation paths supported the claim against 28 that weakened it. Between 1996 and 2007 supportive citations grew sevenfold and supportive paths 777-fold. Six primary data papers held results that weakened or refuted the claim and were barely cited. Three of them, from independent laboratories, covered 35 patients: 28 had no affected muscle fibres and the other seven had five or fewer, in sections that hold thousands. Seventeen animal and cell culture papers made 32 citations to primary data, 31 of them to the four supportive papers and one to the six critical ones. One review paper carried 63% of all citation paths and four reviews by a single research group carried 95%. Greenberg also traced invention. One subclaim about timing appeared in 27 papers on 37 citations, nine of which pointed at papers saying nothing about timing. Seven papers made 17 citations to 12 conference abstracts dressed as peer reviewed papers. Rebuilding the network with the bias against critical content removed gave authority status to five of the six neglected papers. Vedrana Pavlovic and colleagues measured citation accuracy directly, asking the authors of cited papers to check. Across 2,526 citations to 14 heavily cited papers, and a verification set of 4,912 citations to 13 more, at least one inaccurate citation appeared in 11.1% and 15.0% of citing articles. Taking both sets together, the commonest fault at 38.4% was citing a finding the source did not contain. Chains in which an error was copied from an earlier citing paper carried 24% of the inaccurate citations in the first set and 19.3% in the second. Tzu-Kun Hsiao and Jodi Schneider looked at what happens after a paper is withdrawn: of 13,252 citation contexts written after a retraction, 722, or 5.4%, mentioned the retraction.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The figure in every charity briefing",
+      "text": "A campaign report states that a third of cases go unreported, citing a newspaper feature. The feature cited a press release. The press release cited nothing. Six briefings later the figure carries a page of references and no measurement sits under any of them."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The rule in the style guide",
+      "text": "A team's writing guide forbids a construction and cites an internal wiki page, which cites a talk, which cites a post by somebody who said he preferred it. Each citation is accurate about what it points to, and the pile is still not evidence."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The claim two reviews deep",
+      "text": "A textbook states a figure and cites a review. The review cites an earlier review. The earlier review cites a conference abstract that reported it as preliminary. Nobody in the chain did anything wrong, and the literature now holds a fact it never measured."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "Greenberg's network design has since been run on six other biomedical questions, and four of the six showed citation bias.",

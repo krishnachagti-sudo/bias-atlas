@@ -2,7 +2,11 @@
   "no": 192,
   "slug": "continued-influence-effect",
   "name": "Continued influence effect",
-  "aliases": ["CIE", "Continued influence of misinformation", "Misinformation persistence"],
+  "aliases": [
+    "CIE",
+    "Continued influence of misinformation",
+    "Misinformation persistence"
+  ],
   "category": "memory",
   "statement": "People go on using a piece of information in their reasoning after it has been clearly retracted, even when they remember the retraction.",
   "meaning": "The claim is about inference, not belief. A participant reads a short news story that unfolds in numbered messages. One message carries a detail that a credible source in the story later corrects. Afterwards the participant answers questions about why things happened. The effect is the gap between people given the corrected detail and a control group never given it. Recall of the correction is checked separately, and the effect survives in people who remember it. Johnson and Seifert named the effect in 1994, on Ecker, Lewandowsky and Tang's account. The original measure counts references to the corrected detail in open-ended explanations. Later online work also uses closed-ended questions, and the two outcomes need not move together. What the literature argues about is the size of the shortfall a correction leaves, not its failure.",
@@ -13,6 +17,23 @@
     "note": "Laurent, Kosinski and Rusinek record five experiments on American psychology students, run in groups from paper booklets for course credit, averaging 49 participants each. They also record that the narrative of Experiment 1A took its content from Wilkes and Leatherbarrow's 1988 study of how people edit episodic memory after an error is identified."
   },
   "evidence": "The paradigm is a short news story told in about fifteen separate messages. Ecker, Lewandowsky and Tang describe the original as a fictitious warehouse fire, blamed on volatile materials stored carelessly in a closet, with participants later told the closet had been empty. Laurent and colleagues set out the design of Experiment 1A in detail. One group read the version carrying the false detail, corrected at message thirteen by a police investigator. A control group read the true version from the start, with the closet described as empty and the later message carrying unrelated news. Both groups then answered recall and inference questions. Recall was comparable and the misinformed group referred to the retracted detail more often. Ecker, Lewandowsky and Tang ran a related design with 125 undergraduates, five conditions of 25, and a minibus accident whose passengers were described as elderly and then not. Against the no-retraction baseline, a planned contrast found that a bare retraction did not cut references at the conventional level, F(1,120) = 2.29, p = .13. Among those who recalled the retraction the same contrast gave F(1,88) = 1.48, p = .23. A specific warning and a plausible alternative account, taken together, did beat retraction alone, F(1,120) = 10.25, p = .002.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The supplier who was never late",
+      "text": "A note says a project slipped because the supplier missed a delivery. A follow-up confirms the delivery arrived on time and the slip was internal. Staff who can repeat the correction still explain the overrun by the supplier when asked what went wrong."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The parcel and the courier",
+      "text": "A household is told a parcel went missing with a particular driver, then told he never carried it. They agree he never carried it, and when they talk about the loss they still reach for how careless he had seemed. The retracted detail keeps doing the explaining."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Matches in the playground",
+      "text": "An early message to staff says a pupil was seen with matches near the bins. It is withdrawn the next morning as a mix-up. At the review, staff asked how the fire started describe the pupil, while agreeing the sighting never happened."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "A French replication of Johnson and Seifert's Experiment 1A found the effect at d = 0.688, and online runs and a pooled analysis both leave a residue after correction.",
@@ -23,7 +44,15 @@
       "year": 2023,
       "n": 44
     },
-    "replicated": { "es": 0.688, "esType": "d", "ci": [0.075, 1.294], "ciLevel": 95 }
+    "replicated": {
+      "es": 0.688,
+      "esType": "d",
+      "ci": [
+        0.075,
+        1.294
+      ],
+      "ciLevel": 95
+    }
   },
   "limits": "The direct replication is small. Forty-four participants gave 80% power to detect d = 0.397 on the authors' own sensitivity analysis, and the lower bound of their interval sits at 0.075. Their scoring was closed-ended, so it does not copy the original's coding of written explanations. No multi-laboratory project has taken the effect on. Searches of Europe PMC and of the open web on 21 September 2026 found none. The original authors published further experiments in 1998, which this audit could not obtain. Connor Desai and Reimers' preregistered open-question experiment found no difference between the corrected and uncorrected groups, at F(2, 154) = 0.62, p = .54. A group never shown the misinformation, but shown a correction that named it, referred to the detail about as often as the misinformed group. The authors take this to mean the effect may reflect recall stripped of its context rather than a failure to update a mental model. Their four studies lost 13% of starters, 375 down to 323, and 41% of those who left did so before being assigned to a condition. Chan and colleagues' estimates are heterogeneous, with I squared near 99% on all three effects, and trim and fill added nineteen records to the left of the persistence funnel. They report large effects across estimation methods except for the fixed-effects model of persistence, which gives d = 0.09 with a 95% interval of 0.07 to 0.12. Their 52 samples come from only eight reports and differ in scenario, delay and measure, and the paper is not a replication project.",
   "misreadings": "The finding is not that corrections fail. Chan and colleagues put debunking at d = 1.14 in their random-effects model against a residual persistence of d = 0.97 in the same model. The correction moves people a long way and then stops short, and quoting the residue without the correction inverts the result. The ranges in their abstract, 1.14 to 1.33 and 0.75 to 1.06, run across the random-effects, three-level and weighted fits, with and without outliers. They are not intervals around a single estimate, and they leave out the fixed-effects fits, which are d = 0.88 for debunking and d = 0.09 for persistence. The effect is also not the backfire effect. Entry 157 carries that literature, whose replication record runs the other way. Nor is it belief perseverance in the Ross, Lepper and Hubbard sense, which is entry 187. Motivated reasoning is a fourth thing. The warehouse fire and the minibus crash carry no political stake, and the effect appears in participants who remember the retraction. The original measure counts references in written explanations, not ratings of how true the misinformation seems.",

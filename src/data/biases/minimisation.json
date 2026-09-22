@@ -2,7 +2,9 @@
   "no": 336,
   "slug": "minimisation",
   "name": "Minimisation",
-  "aliases": ["Minimization"],
+  "aliases": [
+    "Minimization"
+  ],
   "category": "social",
   "statement": "Minimisation is the claim that playing down the seriousness of an act changes what follows, whether the act is played down by the person who did it or by the person questioning them.",
   "meaning": "One word carries three claims that share a verb and nothing else. In the interrogation literature it names a tactic performed on a suspect: the questioner offers sympathy, face-saving excuses and moral justification, blames a victim or an accomplice, and plays down the charge. In sex-offender treatment it names something the offender does, usually paired with denial, and it is treated both as a target of therapy and as a sign of risk. In cognitive therapy it names a distortion in which a person discounts their own good qualities, which reverses the other two in who gains from the discounting. Bollen and six colleagues list 'magnification and minimization' among twelve standard distortion types in a corpus study of historical language. Two of the three claims have been measured, and they were measured in different ways. The interrogation work is experimental, with random assignment and known ground truth. The offender work is observational, following convicted men for years and asking whether those who denied or minimised were reconvicted more often. This entry keeps them apart because their answers point in different directions.",
@@ -13,6 +15,23 @@
     "note": "Kassin and McNall attached the label to one of two families of tactics they read out of the Inbau interrogation manual, writing of 'what we call minimization, a \"soft-sell\" technique'. The word was already in use in writing on sexual offending. Yates cites Abel, Becker and Cunningham-Rathner in 1984 and Barbaree in 1991 for minimisation as a cognitive distortion, and neither was obtained here, so 1991 is the year of the naming that the measured interrogation work descends from rather than the first use of the word."
   },
   "evidence": "Kassin and McNall named the tactic and tested what it communicates. Their subjects read interrogation transcripts in which the questioner used one of five methods: a promise of leniency, a threat of punishment, minimisation, maximisation, or none of these. Maximisation communicated high sentencing expectations, as an explicit threat did, and minimisation implied low sentencing expectations, as an explicit offer of leniency did. In a third experiment mock jurors discounted a confession that followed a threat, while their conviction rate rose after confessions that followed a promise or minimisation. Russano, Meissner, Narchet and Kassin then put the tactic in front of people who had done something. Three hundred and thirty undergraduates were accused of sharing an answer on a problem they had been told to solve alone, and 296 remained after exclusions. Half had in fact shared an answer, at a confederate's request. Minimisation raised the confession rate from 34.5% to 57.4%, d = 0.57. Broken out, true confessions ran at 46% with no tactic and 81% with minimisation, and false confessions ran at 6% and 18%. Diagnosticity, the ratio of true confessions to false ones, fell from 7.67 to 4.50, and an explicit deal on top of minimisation took it to 2.02. The offender literature asks whether minimising predicts reoffending, and gets a null. Hanson and Morton-Bourgon pooled 82 recidivism studies, 1,620 findings from 29,450 sexual offenders. Denial of the sexual crime gave a mean d of .02, with a 95% confidence interval of plus or minus .17, from 9 studies and 1,780 men. Their clinical presentation category, which pools denial, minimisation, lack of victim empathy, low motivation for treatment and poor progress, gave a mean d of -.02 with an interval of plus or minus .09 for sexual recidivism, across 24 studies and 5,094 men. They file denial among what they call potentially misleading risk factors.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The sympathetic questioner",
+      "text": "An interviewer tells a suspect that anyone would have snapped in that position and that the charge is not the serious kind. The tactic raises admissions from the guilty and from the innocent, so what it buys in confessions it loses in what a confession tells anyone."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The smaller story the offender tells",
+      "text": "A man convicted of an assault describes it as a misunderstanding that got out of hand. Services treat that as denial to be worked on, though the record on whether it predicts reoffending is thinner than the confidence around it."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The compliment waved away",
+      "text": "Someone told their presentation went well says the audience was easy and the slides did most of it. Here the discounting runs on the speaker's own good qualities, which reverses who gains by it compared with the other two senses of the word."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Minimisation in an interrogation raises confessions from the guilty and the innocent alike, though pooled estimates for the tactic on its own are imprecise, and minimisation by a convicted offender does not predict reoffending.",

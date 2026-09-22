@@ -19,6 +19,23 @@
     "note": "Their paper proposed system justification partly to account for the prevalence of outgroup favouritism among low-status groups, which they argued social identity theory handled badly. The term is older than the theory, and they cite eight earlier sources who had already noted the gap. The paper also carries Jost's reorganisation of the studies in Mullen, Brown and Smith's 1992 meta-analysis. Eighty-five per cent of the low-status groups made trait evaluations favouring the higher-status outgroup, and no high-status group favoured the outgroup. The index count often quoted alongside this paper is a later one. Jost, Banaji and Nosek tabulated 11 books on intergroup relations published between 1981 and 2000 and found 142 entries for ingroup favouritism against 12 for outgroup favouritism, 8 of the 12 in a single chapter by Hinkle and Brown."
   },
   "evidence": "Nosek, Banaji and Greenwald harvested over 600,000 tasks from a demonstration website between October 1998 and April 2000. On the race task using faces, White respondents showed an implicit preference for White over Black at d = 0.83, n = 103,316. Black respondents showed d = 0.16 in the same direction, n = 17,510. The self-reports ran the other way: White respondents preferred White at d = 0.59, Black respondents preferred Black at d = 0.80. Their table by ethnicity gives the face task as 0.83 for White respondents, 0.78 for Asian, 0.66 for Hispanic and 0.16 for Black, and the name task as 1.04, 0.91, 0.88 and 0.28. Age was the flatter and larger effect. On the age face task every ethnic group scored between 0.96 and 1.10 for young over old. Jost, Banaji and Nosek collected three further comparisons from a public site between 2001 and 2003 and reported them in the same units, with positive values meaning ingroup favouritism. White respondents scored 1.06 implicitly, n = 15,229, and Black respondents 0.04, n = 2,011, while explicitly Black respondents scored 0.79 and White respondents 0.62. Respondents aged over 50 scored -0.87 implicitly, n = 815, against 0.99 for the young, n = 12,610. Gay and lesbian respondents scored 0.11 implicitly, n = 3,354, against 1.10 for straight respondents, n = 14,619. The same review reports Rudman, Feinberg and Fairchild's status ranking, in which the widest status gaps carried the strongest reversals: rich 1.73 against poor -1.14, and slim 0.78 against overweight -0.34. Narrower gaps left both sides favouring their own group, white 0.92 against Asian 0.27 and Christian 1.22 against Jewish 0.41.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "What the questionnaire does not reach",
+      "text": "A member of a lower-status group ticks a strong preference for their own group on a survey, and scores near zero on a timed sorting task. Near zero is the absence of a preference on that measure, not a preference for the other side."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The older worker and the word-sorting task",
+      "text": "An employee in her sixties says plainly that she enjoys the company of people her own age, and on a rapid pairing task she is quicker to put youth beside pleasant words. Age is the domain where the two measures come apart most cleanly."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The pattern that is not learnt at work",
+      "text": "Children from a lower-status group name their own group first when asked outright, and show no such advantage when the measure is how fast they answer. Whatever produces the gap is in place long before anybody has a career to absorb."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Implicit preference for the young holds into people's sixties across 49,014 participants, and the race version reverses when all four racial groups are compared in one task.",

@@ -2,7 +2,11 @@
   "no": 264,
   "slug": "pseudocertainty-effect",
   "name": "Pseudocertainty effect",
-  "aliases": ["Isolation effect for probabilities", "Illusory certainty", "Conditional framing"],
+  "aliases": [
+    "Isolation effect for probabilities",
+    "Illusory certainty",
+    "Conditional framing"
+  ],
   "category": "decision",
   "statement": "An outcome that depends on clearing an earlier uncertain stage is treated as though it were guaranteed, so it beats an identical option stated as a flat probability.",
   "meaning": "Two gambles can be identical in their final outcomes and probabilities and still be described in ways that produce opposite choices. Put the choice inside a game with a preliminary stage that both options share, and the second-stage prize starts to feel like a sure thing. It is not one, because reaching the second stage is itself uncertain. Tversky and Kahneman proposed that people evaluate the problem conditionally, as if the first stage had already been cleared, which deletes the shared contingency from the calculation. The same trick works through causal contingencies rather than a sequence of stages, by naming a specific hazard the option fully covers and leaving the rest of the risk unmentioned. Insurance is the standing example. Cover against fire but not flood can be read either as complete protection against fire or as a partial cut in the chance of losing the house, and the two readings do not rank it the same way.",
@@ -13,6 +17,23 @@
     "note": "The name appears in \"The Framing of Decisions and the Psychology of Choice\", in a section on the framing of contingencies covering problems 5 to 7. The demonstration is older than the name. Kahneman and Tversky's 1979 prospect theory paper ran the same two-stage game as Problem 10 and filed it under the isolation effect, alongside a second demonstration about outcomes that the 1981 name does not cover."
   },
   "evidence": "Tversky and Kahneman put three problems to separate groups of students at Stanford University and the University of British Columbia. Each group was told that one respondent in ten, chosen at random, would play for money, with chance events settled in the room by drawing a ball from a bag and winners paid on the spot. Problem 5 offered a sure win of $30 against an 80 per cent chance of $45, and 78 per cent of 77 respondents took the sure $30. Problem 6 wrapped the identical second-stage choice in a game with a 75 per cent chance of ending at stage one with nothing, and required the choice before the first stage was resolved. There, 74 per cent of 85 respondents took the $30. Problem 7 stated the same two prospects as flat probabilities, a 25 per cent chance of $30 against a 20 per cent chance of $45, and 58 per cent of 81 respondents took the $45. Problems 6 and 7 are the same gamble, since 0.25 times 0.80 is 0.20. The 1979 pair ran larger and in Israeli pounds. Of 95 respondents given the flat version, 65 per cent chose the 20 per cent chance of 4,000 over a 25 per cent chance of 3,000; of 141 given the two-stage version, 78 per cent chose the 3,000. Tversky and Kahneman also report a version with lives. Respondents were told that risk to life arose only if the disease was carried by one particular virus, with probability .10. Two programmes were said to give a sure loss of 75 lives or an 80 per cent chance of losing 100 lives if that virus was involved. The real choice was between a 10 per cent chance of losing 75 lives and an 8 per cent chance of losing 100, and preferences matched the unconditional version. The paper further cites an unpublished study by Paul Slovic, Baruch Fischhoff and Sarah Lichtenstein. A vaccine cutting the chance of a disease from .20 to .10 was less attractive described as effective in half of cases than as fully effective against one of two equally likely strains with identical symptoms. No figures for that study are given in the 1981 paper or in Kahneman and Tversky's 1984 restatement of it.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The scholarship with a first round",
+      "text": "Applicants are told that anyone who clears the sift is guaranteed the funding. The guarantee holds only for whoever clears it, and most of the money is spoken of as certain by people still waiting on the first stage."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Cover against one named risk",
+      "text": "A policy pays in full if a flood damages the house and nothing if a fire does. Read as complete protection against flood it sounds like a sure thing, and read as a partial cut in the chance of losing the house it does not."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The prize in the final round",
+      "text": "A raffle promises a certain prize to anybody drawn into the final round, which most entrants never reach. Entrants compare that against a flat one-in-ten chance and prefer the sure-sounding version, though the two pay out alike."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "A preregistered study in 19 countries reran the 1979 two-stage game and the gap held, though the plain-probability half of the pair has drifted to a coin flip since 1979.",

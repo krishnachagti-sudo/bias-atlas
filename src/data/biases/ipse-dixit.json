@@ -17,6 +17,23 @@
     "note": "The phrase itself is far older than this date, which is the earliest publication read for this entry that falls inside the range the atlas records. Cicero has it in De Natura Deorum, book 1, section 10, written in the first century BC. Bowring's 'History of the Greatest-Happiness Principle', pages 287 to 332 of the 1834 volume, is where the English derivatives are coined: 'the ipse-dixit root should not produce all the branches necessary to discourse, as ipse-dixitists, and ipse-dixitism' (page 321). The section speaks of Bentham in the third person, so the printed coinage is his editor's."
   },
   "evidence": "The textual record is firm and the measurement record is thin. Cicero's passage is a criticism of deference in argument, and its context is his own preface: 'non enim tam auctoritatis in disputando quam rationis momenta quaerenda sunt', in disputation the weight of reason is to be sought rather than of authority. He then reports what he will not endorse, that the Pythagoreans, asked in debate why a thing was so, used to answer 'ipse dixit', and 'ipse autem erat Pythagoras'. Diogenes Laertius records the Greek form as a proverb at Lives 8.46, where the Perseus text reads that of this Pythagoras 'τὸ Αὐτὸς ἔφα παροιμιακὸν εἰς τὸν βίον ἦλθεν'. Bowring's 1834 gloss traces the term the same way, to 'the principle recognised (so Cicero informs us) by the disciples of Pythagoras', and turns it into the antagonist of the greatest-happiness principle. The phrase entered American evidence law through General Electric Co. v. Joiner, 522 U.S. 136 (1997): nothing in Daubert or the Federal Rules of Evidence 'requires a district court to admit opinion evidence which is connected to existing data only by the ipse dixit of the expert'. That is a rule about what a judge may exclude, not a finding about what listeners believe. The measurement comes from persuasion research, which asks the same question in reverse: what does a message gain by spelling out its support instead of asserting its conclusion? O'Keefe's meta-analysis sorts that literature into three manipulations, argument completeness, information-source citation and quantitative specificity, and codes each comparison as r, positive where the more explicit message won.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The safety review with no method",
+      "text": "A consultant's report concludes that the site is safe, and the section that should show how she got there says only that it is her professional judgement. The reader has a verdict and no way to check it, so the assertion is standing where a reason belongs."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The line that ends the meeting",
+      "text": "Asked why the department must cut its opening hours, a manager answers that the decision has been taken and that it is the right one. Nothing has been put forward that could be weighed, so agreement can only be deference."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The revision guide's bare claim",
+      "text": "A study guide states that the treaty caused the famine, with no evidence and no citation. A pupil who repeats it in an essay is passing on an assertion, not a finding, and the essay inherits the gap."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "No experiment under this name was located. On the nearest measured question, whether spelling out the support for a claim beats asserting it, the pooled advantage is r = 0.138 across 18 experiments on 2,845 people, and the prediction interval for a fresh experiment runs from -0.113 to 0.372.",

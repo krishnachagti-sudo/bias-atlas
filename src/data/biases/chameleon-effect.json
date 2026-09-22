@@ -19,6 +19,23 @@
     "note": "The paper is \"The chameleon effect: The perception-behavior link and social interaction\", pages 893 to 910 of volume 76, reporting three experiments run at New York University. Chartrand and Bargh chose the chameleon over the monkey of \"monkey see, monkey do\", on the ground that aping means imitating on purpose. They cite Woody Allen's film Zelig and an epigraph from Georges Simenon's Inspector Maigret."
   },
   "evidence": "Experiment 1 ran 39 students through two 10-minute sessions, each with a confederate posing as a second participant. One confederate smiled and shook a foot, the other kept a neutral face and rubbed a face, with the pairing and the order counterbalanced. Four participants were dropped, three for declining to release the videotape and one for suspicion, leaving 35. Participants smiled 1.03 times a minute with the smiling confederate against 0.36 with the neutral one, F(1, 34) = 20.31, p < .0001. The mannerism interaction was weaker, F(1, 34) = 9.36, p = .004, made up of face rubbing at F(1, 34) = 5.71, p < .025 and foot shaking at F(1, 34) = 3.76, p = .06. A minute alone in the room before the first session gave a baseline covariate. At debriefing one participant of 35 mentioned a confederate's hand motions and two mentioned slouching, and none mentioned the foot or the face. Experiment 2 carries the liking claim. Seventy-eight students had one 15-minute session with a confederate who either mirrored their posture and mannerisms or sat in a different relaxed position, and 6 were dropped, leaving 37 mimicked and 35 controls. On nine-point scales the mimicked group rated the confederate 6.62 for likability against 5.91, F(1, 70) = 5.55, p = .02, and the interaction 6.76 for smoothness against 6.02, F(1, 70) = 4.08, p = .05. Judges blind to condition coded 22 taped sessions for the confederate's eye contact, smiling, friendliness and apparent liking, and found no difference between conditions, all ps > .20. One participant of 37 in the mimicking condition noticed a shared mannerism. Experiment 3 split 50 students at the median of the perspective-taking subscale of the Interpersonal Reactivity Index. High scorers mimicked more, F(1, 48) = 3.85, p = .05, while empathic concern did not moderate, F < 1.",
+"examples": [
+  {
+    "kind": "everyday",
+    "tag": "The folded arms that travel round a table",
+    "text": "One person crosses their arms while listening and within a minute two others at the meeting have done the same. Nobody has agreed to anything, and nobody notices having moved, which separates copying a posture from taking on an opinion."
+  },
+  {
+    "kind": "everyday",
+    "tag": "The shaking foot in a waiting room",
+    "text": "Two strangers sit waiting, one jiggling a foot. The other begins to do it too and would deny it if asked. The behaviour watched and the behaviour produced are the same behaviour, with nothing in between."
+  },
+  {
+    "kind": "everyday",
+    "tag": "The interview that felt easy",
+    "text": "A candidate leaves saying the conversation flowed, without being able to name anything the interviewer did. The interviewer had been holding their posture and gestures close to the candidate's own throughout, which is the half of the claim about liking."
+  }
+],
   "replication": {
     "state": "mixed",
     "headline": "That people copy each other holds up; whether being copied produces liking depends on what the copying is compared against.",

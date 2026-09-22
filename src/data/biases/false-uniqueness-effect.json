@@ -16,6 +16,23 @@
     "note": "Their title is In search of the false-uniqueness phenomenon, and the search is the point: they report that the social perception literature to that date yielded little evidence for it. They credit the idea to Valins and Nisbett (1972) and argue that earlier work missed the effect by rarely scoring estimates for accuracy. They name two studies that did score it, by Tabachnik, Crocker and Alloy and by Sanders and Mullen, both 1983."
   },
   "evidence": "Suls and Wan gave respondents an abbreviated fear survey and asked them to estimate consensus. Both high-fear and low-fear respondents overestimated how common high fear was among their peers, and the high-fear group was further out. The false uniqueness came from the low-fear group, who underestimated how many peers were also low in fear. Suls, Wan and Sanders ran the same logic on health behaviours in college-aged men the following year. Their abstract reports strong support for false consensus and for overestimation by people behaving undesirably, and only some support for false uniqueness. Campbell had already separated the attribute types in 1986. Students rated themselves on seven opinion and ability dimensions, estimated what percentage of other students held each position, and were scored against the sample's real percentages. They overestimated consensus for their opinions and for their low abilities, and underestimated it for their high abilities. Two meta-analytic integrations by Mullen and Hu pooled the earlier consensus-estimation studies and found that majorities underestimate their own size while minorities overestimate theirs, with the minority's error the larger of the two. Because desirable behaviours tend to be common, that alone can produce what looks like self-serving uniqueness. Mullen and Goethals then reanalysed the same database and reported that overestimation of consensus fell as the positivity of the behaviour rose, independently of and additively with actual consensus.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The donor who thinks he is rare",
+      "text": "A man who gives blood twice a year guesses that perhaps one adult in fifty does the same, and the register puts the rate several times higher. The error is measured against a figure somebody counted, which is what makes it this effect and not a ranking of himself against others."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Revising early",
+      "text": "A student who starts revising six weeks out assumes most of her year will leave it to the last fortnight. The course survey shows about half started when she did. She was not comparing herself with anybody; she was estimating a rate, and the estimate came in low."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The recycling on the street",
+      "text": "Someone who sorts their waste carefully puts the proportion of neighbours doing the same at a third. The collection figures for the street put it near three quarters. Underestimating how common the good habit is, against a rate that was measured, is the whole of the claim."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The pattern turns up in a field study of a real shower ban, and a preregistered replication with 1,005 people found no false uniqueness where a 2014 paper had reported it.",

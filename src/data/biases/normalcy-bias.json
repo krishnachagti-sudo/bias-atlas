@@ -18,6 +18,23 @@
     "note": "The phrase appears in the English abstract of a laboratory experiment on how fast a subject, left alone after working under different styles of leadership, responded to an unexpected alarm bell. That is the earliest journal article located, not a coinage. Two fire-safety documents read for this entry, Kuligowski's NIST Technical Note 1619 and Kinateder, Kuligowski, Reneke and Peacock's 2015 review, both credit the term to Keizo Okabe and Shunji Mikami, in a paper on the socio-psychological effect of a false warning of the Tokai earthquake given at the Tenth World Congress of Sociology in Mexico City in August 1982. That paper was not obtained and is known here only through those two citations of it. Yamori's 2009 review traces the Japanese concept, 正常化の偏見, to Hiroyoshi Hirose's 1984 book 生存のための災害学, which was not obtained either. Who first put the English phrase in print could not be established."
   },
   "evidence": "The sociology of warning response does not use the term, and the fire-safety engineering literature does. Mileti and Sorensen's 1990 review for Oak Ridge National Laboratory synthesised more than 200 studies, and the Department of Energy catalogue record for it gives 235 references. Its third major conclusion, stated in those words, is that confirmation of warnings underlies the entire warning response process: most people answer a first warning by seeking more information, calling friends and relatives, and waiting to hear the message again. The report lists that fifth among the myths in a section headed Myths That Confuse Goals, whose first item is that the public panics. Drabek had described the same sequence in 1969 from interviews with 278 families evacuated before a Denver flood in June 1965, separating warning, confirmation and evacuation as distinct processes. Averill and colleagues found it again at the World Trade Center. Their NIST investigation ran 803 telephone interviews with survivors, 427 from WTC 1 and 376 from WTC 2. In WTC 1 the most common reported delay before leaving the floor was one minute or less in all three zones; the median was three minutes below floor 43 and on floors 43 to 76, and five minutes on floors 77 to 91. Seventy percent of WTC 1 survivors and 75 percent of those in WTC 2 talked to others before leaving. The causal model gave an adjusted explained variance in evacuation delay of 49 percent in WTC 1 and 56 percent in WTC 2. Its largest path in both towers was taking pre-evacuation actions, at .47 and .51. The three strongest direct effects after that were environmental cues, floor, and information received without being sought. Seeking further information had a small direct effect on delay, .10 in WTC 1 and .11 in WTC 2, and worked instead through the actions people took to get ready. Kuligowski and Mileti published the path analysis separately in 2009. The phrase normalcy bias occurs in none of those documents. It does occur in the fire-safety literature, where Kuligowski's 2008 NIST technical note and the 2015 review define it as the predisposition to read a cue as though nothing is wrong.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The alarm everybody sits through",
+      "text": "A fire alarm sounds in an open-plan office. People look up, then carry on typing while they wait for somebody to say it is a test. The alarm is read as the thing alarms usually are, and that reading decides how long the room takes to move."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The smell explained away",
+      "text": "Smoke reaches a flat at night and the first account reached for is a neighbour's cooking or a lorry outside. The ordinary explanation fits the evidence well enough and costs nothing to believe, so it is held until it cannot be."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The river that has never reached the door",
+      "text": "A flood warning tells a street to leave. Residents who have watched the water rise and fall for years pack slowly, because the warning is being measured against every previous year in which nothing happened."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Nothing repeats the bias under its own name, and the evacuation experiments that test the same mechanism agree that a calm bystander stops people leaving and disagree about whether it slows down those who do.",

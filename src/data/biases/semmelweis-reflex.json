@@ -15,6 +15,23 @@
     "note": "The definition sits in a footnote on page 43 and is presented as an entry from a fictional reference work, 'Webster's Galactic Dictionary, 23rd Edition': 'Mob behavior found among primates and larval hominids on undeveloped planets, in which a discovery of important scientific fact is punished rather than rewarded.' The book is a treatment of the Tarot as a map of evolution. Its title page credits Leary as author and Wilson with its historical and scholarly scripts, and the copyright page goes further: it lists the pages Wilson wrote, and page 43 is among them. That line, not the general credit, is why the definition is Wilson's. The copy read for this entry is the 1993 New Falcon printing, copyright 1979."
   },
   "evidence": "Semmelweis was appointed in 1846 to the Vienna Maternity Hospital, which ran two clinics. The first taught doctors and medical students, the second trained midwives, and women were admitted on alternate days with no clinical selection. Loudon calls that a controlled trial by accident rather than design. From 1840 through 1846 the two clinics recorded 42,795 births and 2,977 maternal deaths. Over those years mortality ran at 98.4 per 1,000 births in the first clinic against 36.2 per 1,000 in the second. Loudon gives that pair in his own text and cites his two books for it, not the treatise. In May 1847 Semmelweis required students to wash in chloride of lime before entering the first clinic. In 1848 the first clinic recorded 12.7 maternal deaths per 1,000 births, against 13.3 in the second. Table XXIV of Semmelweis's treatise is the source of a different and longer series, which Loudon reprints for 1784 to 1859 and which this entry uses only for the period rates. La Rochelle and Julien used the monthly series instead. Average monthly mortality was 10.65% from January 1841 to May 1847 and 1.98% from the introduction of handwashing to February 1849, a risk ratio of 5.38. Their interrupted time-series model put the handwashing coefficient at -0.0887 with a standard error of 0.0310, p = 0.0042, which they describe as an absolute reduction of 8.87% and as one death avoided for every eleven women examined. Semmelweis held that childbed fever was caused by decaying animal-organic matter absorbed through the placental bed or through injuries sustained in delivery. Bacteria had no part in it. Pasteur's work was still a decade off.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The audit nobody opens",
+      "text": "A junior nurse counts infections on a ward and finds the rate high. The figures are set aside as a recording problem before anyone has looked at how they were collected, and the nurse is told to concentrate on the job."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The reading that must be an error",
+      "text": "A technician's measurement contradicts the result the laboratory has published for years, so the instrument is blamed. Nobody calibrates it, which is the step that would settle the question either way."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The complaint closed as user error",
+      "text": "A support team receives repeated reports that a product fails in one particular way. The reports are attributed to users and closed, because the alternative is that a design everyone signed off is wrong."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "No study measuring the Semmelweis reflex as named was found; the two nearest measured things are an 8.6% rise in outside publications after an eminent scientist dies, and 2,034 citations to papers that had already been retracted.",

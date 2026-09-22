@@ -2,7 +2,9 @@
   "no": 559,
   "slug": "psychologists-fallacy",
   "name": "Psychologist's fallacy",
-  "aliases": ["Psychologists' fallacy"],
+  "aliases": [
+    "Psychologists' fallacy"
+  ],
   "category": "social",
   "statement": "William James's name for the observer's confusion of his own standpoint with that of the mental fact he is reporting on.",
   "meaning": "James names the error twice over, and the two versions are not the same. The one he marks \"par excellence\" is a confusion between an observer and a mental state: the psychologist knows the object of a thought in his own way, and then supposes the thought knows it that way too. The second variety is the assumption \"that the mental state studied must be conscious of itself as the psychologist is conscious of it\". James's own gloss on the difference is that the mental state \"is aware of itself only from within\", while the psychologist \"is aware of it from without, and knows its relations with all sorts of other things\". Both are charges about how a scientific report gets written rather than measurements of a mind. Its measured neighbours are the curse of knowledge and the illusion of transparency, which this site treats separately and whose figures are on those pages.",
@@ -13,6 +15,23 @@
     "note": "The name appears in chapter VII, \"The Methods and Snares of Psychology\", on pages 196 and 197, under the running head \"'The Psychologist's Fallacy.'\" James's cross-references to it later in the work give the page as 196. The chapter's own summary calls it \"a disastrous fallacy in the science\", and its table of contents lists the section as \"Sources of error. The 'Psychologist's fallacy'\"."
   },
   "evidence": "James argues by specimen, and the specimens are other philosophers. Having named the error he applies it six more times across the two volumes. In chapter VIII he charges those who hold that a thought must distinguish itself from its object with substituting one particular object for all others. In chapter X the associationist philosophy founded on Hume is said to be work in which \"the psychologist's fallacy (p. 196 ff.) bore the brunt\", turning an idea of A followed by an idea of B into an idea of B after A. Chapter XIII carries two, the first against \"treating an inferior state of mind as if it must somehow know implicitly all that is explicitly known about the same topic by superior states of mind\", the second against Lotze and Stumpf, who he says \"allow their later knowledge of the things felt to be foisted into their account of the primitive way of feeling them\". Volume II adds a footnote on the ubiquity of the fallacy in T. H. Green's Introduction to Hume, and a passage on Bain and Schopenhauer denying that movement can be an immediate sensation. There is no experiment, no sample and no rate in any of it. The nearest measured thing is Orne's account of the pilot work behind his 1962 paper on demand characteristics. Trying to build a task waking subjects would refuse, he gave them sheets of random digits requiring 224 additions each, from a stack of some 2,000 sheets, took away their watches and left. Five and a half hours later the experimenter gave up. A second version instructed subjects by card to tear each completed sheet into at least thirty-two pieces and start the next. \"Our expectation was that subjects would discontinue the task as soon as they realized that the cards were worded identically\", Orne writes; instead they persisted for hours, and in the postexperimental inquiry \"would invariably attribute considerable meaning to their performance, viewing it as an endurance test or the like\". The experimenters had designed a meaningless task and the subjects were not in one. Orne calls this work \"highly informal and based on samples of three or four subjects in each group\".",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The child pointing at a sheep",
+      "text": "A parent hears a toddler say 'dog' at a sheep and reports that the child has confused two animals. The two animals are separate in the parent's mind, and the report has quietly credited the child with a distinction it has not yet drawn."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The call described as a warning",
+      "text": "An observer who knows that a certain call precedes the arrival of a hawk writes that the bird is warning the flock. The link between call and hawk is the observer's knowledge, and the report has handed it to the bird."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The transcript written up as a symptom",
+      "text": "A researcher who reads a patient's fear as a symptom of a named disorder writes the patient up as experiencing that symptom. What the patient knows from within is the fear; the classification belongs to the view from outside."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "No study was found that measures the fallacy as an effect. Two recent studies measure the gap it names on particular instruments, and neither yields a rate for the error itself.",

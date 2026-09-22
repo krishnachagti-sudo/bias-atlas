@@ -17,6 +17,23 @@
     "note": "Murdock's paper is the one the field cites for the free-recall serial position curve, but the curve was already in the literature: Glanzer and Cunitz's reference list carries Deese and Kaufman's 1957 serial-effects paper and Raffel on primacy from 1936. The mechanism paper is Glanzer and Cunitz in 1966, which separated the two ends of the curve by manipulating each independently."
   },
   "evidence": "Glanzer and Cunitz ran the two experiments that made the curve into an argument. In the first, 240 Army enlisted men heard eight 20-word lists at one word every 3, 6 or 9 seconds. Slower presentation raised recall across the first fifteen positions and did nothing to the last five. Summing correct responses in blocks of five gave F of 23.46, 16.21 and 22.00 for the first three blocks, all p < .001 on 2 and 235 degrees of freedom. For the last block F was 1.71, p > .10. In the second, 46 enlisted men saw fifteen 15-word lists and were then shown either a cross-hatch, meaning write, or a digit, meaning count aloud from that number until told to write. Ten seconds of counting removed most of the end peak and thirty seconds left no trace of it. Delay was significant only in the last five positions, F(1,45) = 22.42, p < .001, against F = 3.60, p > .05, for the first five and F = 1.44, p > .10, for the second five. A pilot using thirty seconds of empty delay with no task did cut the end peak, F(1,233) = 37.00, p < .001, but a clear end peak survived, which is why the counting task was added. A footnote records Postman and Phillips reporting similar results in 1965. Their abstract, deposited at Crossref, reports lists of 10, 20 and 30 words read at a word a second. Recall was tested after 0, 15 or 30 seconds of counting, and the loss fell mainly on the terminal items while the early positions held steady. Bjork and Whitten then broke the explanation. Twenty paid undergraduates at Michigan studied four lists of ten word pairs, with 12 seconds of arithmetic before and after every pair and 20 seconds after the last one. Both primacy and recency appeared anyway. Forty more undergraduates saw four kinds of list. On lists with no interpolated arithmetic, adding 30 seconds of arithmetic before recall flattened recency, as Glanzer and Cunitz had found. On lists with 12 seconds of arithmetic around every pair, the same 30 seconds did nothing to the recency portion of the curve. A word in the latter lists waited seven times as long for recall as its counterpart in an immediate list, and recall was about the same at every position except the last few.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The list called out from the kitchen",
+      "text": "Someone reads nine items down the hall and the shopper gets to the door with the last three and nothing from the middle. Primacy leaves the first item or two as well, and the tail is the larger of the two bulges."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The directions and the phone call",
+      "text": "A stranger gives five turns and the last two are still there at the corner. Take a call for half a minute on the way and the tail advantage is gone, which is why the effect was read for years as a small store being emptied."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The eight introductions at a reception",
+      "text": "Someone is walked round a circle of eight and, released at the end, can produce the last two names and the first one. The six in the middle went past at the same speed and with the same attention."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "Healey and Kahana gave 126 people 112 lists each and found that 90% of them showed recency individually, not merely in the group average.",

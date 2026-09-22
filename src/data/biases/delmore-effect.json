@@ -13,6 +13,23 @@
     "note": "'The Maieutics of Goal Articulation: Motivating the Choices of Highest Import', submitted to the Department of Psychology in March 2000, with Mark Lepper as advisor and James March as committee chair. It reports three experiments. The abstract labels the pattern found in Experiment I 'the Delmore Effect' and calls it robust. The document read here is the copy Whitmore posted on his Stanford page as PhDraft.pdf, recovered from the Internet Archive."
   },
   "evidence": "Experiment I drew 67 Stanford undergraduates from Introductory Psychology, aged 17 to 22, of whom 20 were female, 44 male and 3 unstated. Each ranked their top four domains from a list of nine, including career preparation, friendships, academic success, romantic relationship, family contact, physical fitness and spiritual life, then listed and elaborated goals for the first-ranked and fourth-ranked domain. In the control group of 43, who wrote no affirmation essay first, the mean goal count for the fourth-ranked domain was 2.60 with SD 1.21 against 2.17 with SD 0.99 for the top-ranked domain, t(40) = 1.81, p = .077. Pooling both conditions gave 2.94 with SD 1.33 against 2.50 with SD 1.40, t(64) = 1.91, p = .061. Whitmore checked that goal counts did not differ across which domain a participant chose, F(7, 104) = 1.58 for top domains and F(8, 104) = 1.20 for fourth domains, both p > .05. The second aim failed. Writing an essay about a supportive family member raised goal counts in both domains, F(1, 63) = 14.16, p < .001, without narrowing the gap, and only 9 of those 24 participants had ranked family first. Experiment II ran 47 students from the same course, all of whom wrote a self-affirmation essay about a personal accomplishment. No control condition was run, on the grounds that Experiment I had already shown the effect. The fourth-ranked domain drew 3.45 goals with SD 1.80 against 2.55 with SD 1.38 for the top-ranked domain, t(46) = 3.15, p < .05, and again the affirmation did not interact with the effect. Experiment III emailed all 114 earlier participants with an offer of $10, and 39 took part, 22 female and 17 male, up to six months later. Counts were 2.64 with SD 1.46 against 2.21 with SD 1.42, t(38) = 1.73, p = .092. Rankings had moved in the interval: 54% kept the same top priority, 82% kept the original top domain somewhere in their top four, and the originally fourth-ranked domain reappeared in the top four only 49% of the time. Whitmore split the sample on that. The 19 whose affirmed domain was still in their top four listed 2.89 goals with SD 1.59 for their top domain and 2.89 with SD 1.82 for their fourth. The other 20 listed 1.53 with SD 0.77 against 2.40 with SD 0.99, F(1, 36) = 3.37, p = .083. That contrast is the basis for the advice that oblique affirmation defeats the effect. No effect size is reported for any of these comparisons, so the structured fields here are empty.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The review that plans the fourth priority",
+      "text": "Asked to rank what matters and then write goals for each, someone puts family first and running fourth, and produces six specific running goals against one vague line about family. The count runs backwards from the ranking, and the domain that matters most is the one left unplanned."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The side project with a schedule",
+      "text": "A researcher keeps a dated plan for a minor paper and leaves the central chapter as a single heading. Writing that chapter down as a set of targets would create a standard the work could visibly fall short of, so the smaller task gets the detail."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The letter nobody drafts",
+      "text": "A person keeps a careful list of steps for learning an instrument and none at all for repairing a broken friendship, though he would name the friendship as the more important of the two. What gets written down tracks what is safe to state rather than what is wanted most."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "No independent test was found. The founding experiment's own control condition gave p = .077, and the term returns no record in Crossref, PubMed, Europe PMC or DOAJ.",

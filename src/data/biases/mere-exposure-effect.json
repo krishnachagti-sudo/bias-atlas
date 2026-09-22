@@ -13,6 +13,23 @@
     "note": "The monograph is \"Attitudinal effects of mere exposure\", issued as a Monograph Supplement, volume 9, number 2, part 2, pages 1 to 27. Its abstract names four kinds of supporting evidence, two correlational and two experimental. It opens with a newspaper story about a student who attended an Oregon State University speech class inside a black bag."
   },
   "evidence": "The standard procedure shows a set of unfamiliar items varying numbers of times, then asks how much the participant likes each one. Liking rises with the number of prior showings. The paradigm is easy to run, has been used for over fifty years, and appears across pictures, words, sounds and faces. A copy of Zajonc's monograph was obtained for this pass, so its own figures can be given rather than described. Experiment I counterbalanced twelve seven-letter \"Turkish\" words against six frequencies of 0, 1, 2, 5, 10 and 25, across 86 trials at about two seconds a card. Seventy-two subjects were run one at a time, and rated goodness rose with frequency, F = 5.64, df = 5/355, p < .001. All twelve words showed the rise, which Zajonc put at a chance likelihood of .00024. Experiment II replaced the words with Chinese-like characters taken from Hull's 1920 study and dropped the pronouncing, giving F = 4.72, p < .001, with every stimulus but one showing the effect. A further study used photographs of male Michigan State University graduates, presented to Michigan students as a test of visual memory: F = 9.96, df = 5/355, p < .001, though only 9 of the 12 faces showed the rise. Experiment IV measured skin conductance instead of liking. Fifteen subjects were run, data for one were lost to an apparatus failure, and reactivity fell as prior exposure rose, F = 4.01, df = 4/117, at the .05 level. The correlational half includes a rank correlation of .96 between 1963 farm production figures for seven vegetables and how much students said they liked them. Zajonc also reports a null he did not treat as a threat: Amster and Glasman found no exposure effect for meaningful English words, which he attributes to the words already having been seen thousands of times.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The song on the shop radio",
+      "text": "A shop assistant hears the same track four times a shift for a month and comes to like it. Nobody told them anything about the band, and no reward attached to any of the hearings."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The mural on the walk to work",
+      "text": "A commuter thinks a new painting on a gable end is ugly, and by the autumn looks out for it. The painting did not change and no argument for it was made, so the repetition is all that stands between the two opinions."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The face in the lift",
+      "text": "Two people share a lift most mornings and have never spoken. Asked later which colleagues they warm to, each names the other, without a single fact about them to go on."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "A meta-analysis of 268 curve estimates found an inverted U, so more exposure stops helping and starts hurting. Four later face experiments found no effect at all.",

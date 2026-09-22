@@ -16,6 +16,23 @@
     "note": "Three experiments at Plymouth Polytechnic. The paper lists eleven earlier claims of the effect, the oldest by Wilkins in 1928, and argues that most were open to criticism for weak effects, poor wording or uncontrolled carryover, so it set out to show the effect under controls for premise conversion and for two response biases."
   },
   "evidence": "Participants read a syllogism and judged whether the conclusion followed. Each experiment crossed validity with believability, giving four problem types. In Experiment 1, with 24 participants, the percentages accepting the conclusion were 92 for valid and believable, 46 for valid and unbelievable, 92 for invalid and believable, and 8 for invalid and unbelievable. Validity made no difference at all on believable material in that experiment. Participants were correct on 92% of problems where logic agreed with belief and 27% where the two conflicted. Experiment 2, with 64 participants in four groups of 16, gave 86, 62, 66 and 13, and correctness of 87% against 48%. Experiment 3, with 32 participants, gave 91, 53, 67 and 6, and correctness of 97% against 43%. Belief and validity were both significant in all three experiments. The interaction was significant in the first two and fell short in the third at p = .067. Verbal protocols were recorded from every group but one, a group of 16 in Experiment 2 given no instruction to verbalise. Protocols that ran from premises to conclusion carried the least belief bias on the two conflicting problem types. The authors warn against reading that as two kinds of people, because most participants scored both ways somewhere across their own problems, and almost every logical error on invalid and unbelievable problems came from a premise-to-conclusion protocol.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The proof that reaches the right answer",
+      "text": "A tutor marking a proof knows the theorem is true, reads to the end, and ticks it. The third line does not follow from the second. The question on the paper was whether the steps hold, and the answer given was about the destination."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Scrutiny that arrives late",
+      "text": "A committee hears two arguments built the same way, one for closing a site and one for keeping it. Members who want it kept find the flaw in the first within a minute and let the second pass. The logic was identical; only the conclusions differed."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The conclusion that sounds absurd",
+      "text": "Somebody lays out two premises a listener accepts and draws a conclusion the listener finds ridiculous, and is told the reasoning is nonsense. The step is sound and the objection is to where it lands. Calling that a fault in the argument is the same error running the other way."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The endorsement pattern comes out the same way wherever the task asks for a verdict on one argument; whether it shows belief damaging reasoning or only lowering the bar for saying \"valid\" is still argued.",

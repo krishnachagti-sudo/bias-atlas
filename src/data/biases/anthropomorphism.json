@@ -18,6 +18,23 @@
     "note": "\"On seeing human: A three-factor theory of anthropomorphism\" gave the field its framework rather than its subject. Merriam-Webster dates the first known English use of the word to 1650 and traces it to the Greek anthropomorphos, having human form."
   },
   "evidence": "Epley, Waytz and Cacioppo set out the three factors in a 2007 review in Psychological Review. That article argues from existing literature and reports no experiment of its own. The empirical arm arrived alongside it. Epley, Akalis, Waytz and Cacioppo ran three studies in Psychological Science on the sociality leg. Study 1 was an online survey of twenty volunteers, 14 women and 6 men, who read descriptions of four gadgets, among them a wheeled alarm clock that runs away from the sleeper and a torso-shaped pillow that hugs. They rated each gadget on five anthropomorphic items and then completed a three-item loneliness scale. Loneliness correlated with the anthropomorphic ratings at r(18) = .53, p = .02, prep = .93, and the correlation held with the non-anthropomorphic ratings controlled, r(17) = .49, p = .03. Study 3 moved from correlation to induction, showing 57 Harvard undergraduates a three-minute clip from Cast Away, The Silence of the Lambs or Major League. A companion paper in Social Cognition found the same pattern for pets in 166 Harvard undergraduates, r(164) = -.18, p = .02, and had 132 laboratory visitors rate a predictable or an unpredictable dog, F(1, 130) = 11.50, p = .001. Waytz, Morewedge, Epley, Monteleone, Gao and Cacioppo tested the effectance leg across five studies in the Journal of Personality and Social Psychology, manipulating how unpredictable an agent seemed or how much a person stood to gain from predicting it, and reported neuroimaging alongside the behaviour. The measurement arm is the Individual Differences in Anthropomorphism Questionnaire. Waytz, Cacioppo and Epley built it from 348 people drawn from the University of Chicago population and 609 from the general population, settling on 15 items whose factor structure separates animal from non-animal targets. Retested after 12 to 19 weeks it gave r(67) = .55, p < .0001. It predicted attributing secondary emotions to animals, beta = .61, t(38) = 4.71, p < .0001, and trust in technology, beta = .30, t(51) = 2.29, p < .05. The applied case people cite most is Waytz, Heafner and Epley's driving simulator. One hundred participants drove a normal car, an autonomous one, or the same autonomous car named Iris and given a female voice. Overall trust rose from the agentic to the anthropomorphic condition, t(97) = 2.34, p = .02, d = .48. Cullen, Kanai, Bahrami and Rees scanned 83 healthy young adults and found anthropomorphism of animals correlated with grey-matter volume in the left temporoparietal junction.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The engine that is being difficult",
+      "text": "A driver whose car stalls on cold mornings decides it is sulking and speaks to it before turning the key. The attribution follows from needing to predict the thing, because a machine with moods is one that can be reasoned about when the manual has not helped."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The cleaner apologised to",
+      "text": "A household names the robot vacuum and says sorry when it gets stuck under a chair. It has no face and nobody believes it minds, and the treatment survives the disbelief, which is why the tendency is measured rather than argued away."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The radio answered aloud",
+      "text": "Someone living alone replies to the presenter and finds the voice good company through the evening. Sociality is the third of the theory’s proposed causes: company is wanted, and it is found in a thing that cannot supply it."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "A registered report with 885 participants found a correlation of .02 between loneliness and anthropomorphism of gadgets, where the original found .53, while the design and measurement findings have held.",

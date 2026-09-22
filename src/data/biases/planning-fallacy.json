@@ -17,6 +17,23 @@
     "note": "The standard citation is \"Intuitive prediction: Biases and corrective procedures\", volume 12, pages 313-327, which was not opened during this check. The same paper circulated two years earlier as Decision Research technical report PTR-1042-77-6, dated June 1977, and that version was read. It carries the phrase in quotation marks: \"Although this 'planning fallacy' is sometimes attributable to motivational factors such as wishful thinking, it frequently occurs even when underestimation of duration or cost is actually penalized.\" It also sets out the singular and distributional distinction, and recommends the adoption of what it calls an 'external approach', which treats the specific problem as one of many."
   },
   "evidence": "Buehler, Griffin and Ross supplied the numbers everyone quotes, in five studies in 1994. Study 1 telephoned 37 psychology students in the final semester of the honours thesis course at the University of Waterloo and asked when they would submit. Four had still not submitted when the records closed two semesters later, so every figure below rests on the other 33. Their best estimate averaged 33.9 days; they took 55.5, t(32) = 3.43, p < .002. Fewer than a third, 29.7%, finished by the date they had named. Asked to assume everything went as badly as it possibly could, they said 48.6 days against the same 55.5, and the paper reports that remaining gap as not significant, t(32) = 1.03. Only 48.7% finished by that worst case. Predictions were informative despite the bias: predicted and actual times correlated at .77. Study 2 recruited 104 undergraduates to name one academic and one non-academic project they meant to finish within a week. Three could not be reached afterwards, and the means come from the 91 academic and 62 non-academic projects that were finished by the follow-up. Academic projects were predicted at 5.8 days and reported at 10.7, F(1, 87) = 20.00, non-academic at 5.0 and 9.2, F(1, 58) = 6.65, with 37.1% and 42.5% finished on time. Participants told outright that the researchers would compare their predictions against their completion times were no less optimistic than those who were not told. Study 4 gave 123 students a computer tutorial assignment whose finishing time the machine recorded without their knowledge. Its 41 controls predicted 5.5 days and took 6.8. The 40 students first made to describe past assignments and then to write a scenario connecting that history to this assignment predicted 7.0 days and took 7.0, and 60.0% of them finished within their prediction against 29.3% of controls. Study 5 turned the task over to strangers. Its 123 observers, three yoked to each of the 41 controls and given that person's details, deadline and self-prediction, forecast 8.5 days where the actors forecast 5.5 and the true figure was 6.8. The field counterpart is Flyvbjerg, Skamris Holm and Buhl's sample of 258 transportation infrastructure projects worth $90 billion, completed between 1927 and 1998 in 20 countries. Actual costs exceeded the estimate in 86% of them. Averaged across all 258 projects, including those that came in under, costs ran 27.6% above estimate: 44.7% for rail, 33.8% for bridges and tunnels and 20.4% for roads.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The tax return blocked out for Saturday morning",
+      "text": "Someone sets aside a morning for a return that has taken a full day every year, building the estimate from how the paperwork will go if nothing is missing. The record of the previous years is available and plays no part."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The kitchen that will take a fortnight",
+      "text": "A couple plan a two-week refit from a schedule in which every trade arrives on the day booked. Comparable jobs on the same street ran to a month, and that distribution is left out of the forecast entirely."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The chapter promised for Friday",
+      "text": "A student who has missed the last three deadlines they set themselves promises the next chapter by Friday, and means it. The prediction is built from a clean run at the work rather than from how the last three went, and the misses have not dented the confidence."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The finding holds where people predict their own real deadlines and dissolves elsewhere: observers overshoot, brief laboratory tasks show no bias or overestimation, and the megaproject overruns that made the idea famous have a rival explanation its own author prefers.",

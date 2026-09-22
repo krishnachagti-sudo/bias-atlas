@@ -2,7 +2,13 @@
   "no": 467,
   "slug": "response-scale-range-effect",
   "name": "Response scale range effect",
-  "aliases": ["Response alternatives effect", "Frequency scale effect", "Low versus high category scales", "Category range effect", "Informative functions of response alternatives"],
+  "aliases": [
+    "Response alternatives effect",
+    "Frequency scale effect",
+    "Low versus high category scales",
+    "Category range effect",
+    "Informative functions of response alternatives"
+  ],
   "category": "belief",
   "statement": "Reported frequencies follow the response options: the same question draws higher reports when its categories run high than when they run low.",
   "meaning": "This is a survey methodology finding before it is anything else. Two matched halves of a sample get the same question about how often they do something, and the halves differ only in the range of the numbers printed beside the boxes. One version runs from half an hour to more than two and a half hours of television a day; the other starts where that one stops. The reports move with the range. Schwarz and his colleagues explain it by what a respondent takes the scale to mean rather than by any error of reasoning. A scale is assumed to have been built by someone who knows the distribution, so its middle marks the usual amount and its ends mark the extremes. A respondent who cannot count the behaviour uses that as a frame of reference. Two consequences follow that a simple bias account would not predict. The range changes what the question is taken to be asking, so the two halves may be reporting on different behaviours. And the answer to a following comparative question moves the other way, because a report that lands low on a high scale places the respondent below average.",
@@ -13,6 +19,23 @@
     "note": "The paper is \"Response scales: Effects of category range on reported behavior and comparative judgments\", volume 49, pages 388 to 395. It reports two experiments on daily television use. It is paywalled at Oxford Academic and was not obtained; its record was verified at Crossref and its abstract read at the publisher. Schwarz's own later reference lists give the title as \"Response categories: Effects on behavioral reports and comparative judgments\", which is not the title Crossref and Oxford Academic carry."
   },
   "evidence": "The original table is reprinted, by permission, in a 2012 chapter by Schwarz, and the figures here are read off that reprint rather than off the 1985 article. It gives N = 132 and does not say which of the two experiments it comes from. On the low range, 7.4% of respondents chose the bottom category of up to half an hour and 16.2% chose the top category of more than two and a half hours. On the high range, which begins where the low one ends, 62.5% chose the bottom category of up to two and a half hours, 23.4% the next, and none at all the top category of more than four and a half hours. The published abstract adds the rest of the design. Respondents on the low range reported less television use, estimated the average person's use to be lower, rated television as more important in their lives in Experiment 1, and reported less satisfaction with the variety of their leisure activities in Experiment 2. Later split-ballot work found the same direction with smaller and less stable shifts. Gaskell, O'Muircheartaigh and Wright asked about vaguely defined events such as feeling annoyed and report that the shifts ran \"from zero to 13 percent\" and depended on priming questions and on the orientation of the scale. Their article was read only as the abstract at Oxford Academic. Lorenzi-Cioldi, Iacoviello and Kulich ran seven studies on French-speaking Swiss samples. In their first, with 171 participants, behavioural estimates were higher on the high frequency scale than on the low one, with means of 2.42 and 1.27.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "Two versions of the television question",
+      "text": "Two halves of a survey are asked how much television they watch. One form's boxes stop at two and a half hours and the other's start there. The half given the higher boxes reports watching more, and nobody sees both forms."
+    },
+    {
+      "kind": "everyday",
+      "tag": "What the boxes tell the respondent",
+      "text": "A form asking how often somebody loses their temper offers options beginning at several times a day. A reader who loses hers twice a month reads the menu as a statement about what is usual, ticks near the bottom, and afterwards describes herself as even-tempered."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The staff survey that flatters the workload",
+      "text": "A questionnaire asks how much overtime staff work, with categories topping out at four hours a week. Replies gather in the middle of that range and the report concludes that overtime is modest. The range printed on the form did much of the deciding."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "Many Labs 1 put the television question to 36 samples and got d = 0.51, against the 0.50 it computed for the original.",
@@ -24,8 +47,25 @@
       "sites": 36,
       "n": 5899
     },
-    "original": { "es": 0.50, "esType": "d", "ci": [0.15, 0.84], "ciLevel": 95 },
-    "replicated": { "es": 0.51, "esType": "d", "ci": [0.42, 0.61], "ciLevel": 99, "weighting": "unweighted" }
+    "original": {
+      "es": 0.5,
+      "esType": "d",
+      "ci": [
+        0.15,
+        0.84
+      ],
+      "ciLevel": 95
+    },
+    "replicated": {
+      "es": 0.51,
+      "esType": "d",
+      "ci": [
+        0.42,
+        0.61
+      ],
+      "ciLevel": 99,
+      "weighting": "unweighted"
+    }
   },
   "limits": "The account predicts its own boundary. A scale informs an estimate only where the respondent has to estimate, so the effect should shrink for behaviours that can be counted or derived from a rate. Schwarz and Oyserman report a test of that in a study of 60 patients at a German mental health clinic who rated 17 symptoms on a high or a low frequency scale. Across the symptoms, 62% reported an average frequency above twice a month on the high scale against 39% on the low one, a mean gap of 23 percentage points. On the ill-defined symptom of responsiveness to changes in the weather the split was 75% against 21%, and on the better defined excessive perspiration it was 50% against 42%. Those figures come from Schwarz and Oyserman's description of Schwarz and Scheuring (1992), which was not obtained, so they are quoted at one remove and appear in no structured field here. The same review and Schwarz's 2012 chapter both attribute the general moderation to Menon, Raghubir and Schwarz, whose framework holds that context information is used in inverse proportion to the diagnosticity of what memory offers; their article was found only as a scan without extractable text, so nothing numeric from it is used. Size is the other limit. Gaskell and colleagues found shifts as small as zero on some items. Both remedies in the literature are recommendations rather than tested fixes. Schwarz and Oyserman advise an open response format naming the unit, such as times a week, and reject vague quantifiers on the ground that words like 'sometimes' track expectation rather than frequency. A search at Crossref and through the reviews and articles cited here did not turn up a split-ballot experiment testing the open format against the closed one on this effect.",
   "misreadings": "The first error is folding this into anchoring. An anchor is a single number attached to a comparison the respondent is asked to make, and it works on a quantity estimate. Here the number is a menu of options, and the menu does two things an anchor does not. It changes what the question is taken to mean: Schwarz, Strack, Müller and Chassein asked respondents to describe a typical irritation after the frequency question, and those given the high frequency scale described less extreme ones, as Schwarz and Oyserman report. And it reverses the sign of what follows, since the same high scale that raises the reported symptom count raises reported health satisfaction with it. Many Labs 1 ran four anchoring scenarios in the same sessions, with unweighted mean effects of d = 2.60, 2.45, 2.05 and 1.27, against 0.51 here, so the two paradigms did not behave alike even under one protocol. The second error is reading the result as a change in behaviour. Nobody watched more television. What moved was the report, and the design compares two groups of people, so it says nothing about any individual contradicting themselves. The third is treating it as a failure of self-knowledge in general. It is strongest where memory offers least, and Schwarz's own account expects little of it from someone who knows the answer. The fourth is filing it with the judgement biases. This effect sits in the survey methodology literature, where it is one of a family of instrument effects alongside response order and the forbid/allow asymmetry, and the evidence covers questionnaires rather than reasoning.",

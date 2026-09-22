@@ -18,6 +18,23 @@
     "note": "The 1987 paper reports the white bear experiments and calls the result paradoxical rather than ironic. It opens with the story of the young Dostoyevski being challenged not to think of a white bear. The theory that supplies the name and the cognitive-load precondition came seven years later, in Wegner's 1994 Psychological Review article."
   },
   "evidence": "Wegner, Schneider, Carter and White ran two experiments on undergraduates at Trinity University. Experiment 1 used 34 volunteers, 14 men and 20 women, 17 to each order. Suppression was never complete: participants signalled a white bear more than once a minute while trying not to have one. Summed thought tokens averaged 19.22 in expression periods against 6.78 in suppression periods, F(1, 32) = 41.01, p < .0001. The rebound is the interaction, F(1, 32) = 4.79, p < .05, carried by the expression period alone, F(1, 32) = 5.05, p < .05. In the suppression period the two groups did not differ, F(1, 32) < 1, so this experiment shows no immediate enhancement. Tokens in the two periods correlated at .55 for the initial expression group and at -.10 for the initial suppression group, a difference at p < .01. Bell rings per minute rose across the expression period only after suppression, a three-way trend interaction at F(1, 31) = 7.02, p < .02. Experiment 2 recruited 54 students, 16 men and 38 women, and dropped 5 for inaudible tapes, leaving 15 in one group and 17 in each of the others. Thought occurrences during expression ran 15.47 after initial expression, 34.05 after initial suppression and 21.00 in a group told to distract itself with a red Volkswagen, F(2, 46) = 4.62, p < .02. Here the suppression period did differ, 4.13 against 9.17, F(2, 46) = 4.54, p < .02, and the authors write that this did not occur in the prior study and that it is not clear why it appeared. The load version of the claim rests on Wegner and Erber's 1992 hyperaccessibility experiments, which this entry did not obtain. The team preparing a multilab replication of them reports the original immediate enhancement as d = -0.82, interval -1.36 to -0.27, under low time pressure and d = 0.54, interval 0.01 to 1.07, under high time pressure. The same protocol gives the 1987 rebound as d = 0.77, interval 0.07 to 1.47.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The word that must not be said",
+      "text": "Told before a meeting not to mention the redundancies, a manager finds the topic arriving in his head more often through that half hour than it would have had nobody warned him. The instruction to keep something out is what puts it within reach."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The tune after the instruction lifts",
+      "text": "Someone spends five minutes trying not to think about a song, then is told they may think about whatever they like. The song comes back more often over the next five minutes than it does for someone who never tried to hold it off."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The secret kept while exhausted",
+      "text": "A person holding back the same piece of news manages it easily on a rested morning and badly at the end of a long night shift. Capacity is the precondition: the process that watches for the thought needs less of it than the process that pushes the thought away."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Three meta-analyses find a rebound after suppression, the most recent putting it at d = 0.19, and two of the three find that people report the thought less often, not more, while they are suppressing it.",

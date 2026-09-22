@@ -16,6 +16,23 @@
     "note": "Five studies in a four-page report. Study 1 correlated a three-problem reasoning task against three belief scales in Canadian undergraduates. Studies 2 to 5 manipulated analytic thinking three ways: viewing Rodin's The Thinker, unscrambling sentences seeded with words such as 'reason' and 'ponder', and printing the belief questionnaire in a hard-to-read font."
   },
   "evidence": "Study 1 sampled 179 Canadian undergraduates. The reasoning task correlated negatively with all three belief measures: intrinsic religiosity r = -0.22, P = 0.003; intuitive religious belief r = -0.15, P = 0.04; belief in supernatural agents r = -0.18, P = 0.02. The four experiments are summarised in the paper's Table 2. Study 2 showed 26 people four images of Rodin's The Thinker and 31 people the Discobolus of Myron, then asked belief in God on a 0 to 100 scale. Means were 41.42 and 61.55, t(55) = 2.24, P = 0.03, d = 0.59. Study 3 gave 50 undergraduates scrambled sentences carrying the words think, reason, analyze, ponder and rational, against 43 controls, t(91) = 2.11, P = 0.04, d = 0.44. Study 4 ran that prime on American adults recruited online and measured intrinsic religiosity, t(143) = 2.20, P = 0.03, d = 0.36. Study 5 printed the questionnaire in a hard-to-read font, t(177) = 2.06, P = 0.04, d = 0.31. All four P values in Table 2 fall between 0.03 and 0.04. Francis, Tanzman and Matthews later applied a test for excess significance to Science psychology articles reporting four or more studies, flagged 15 of 18, and put this paper at 0.051 against their stated criterion of 0.1. Simonsohn argues that the test cannot be read at the level of one article.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The survey that finds a pattern",
+      "text": "A questionnaire measures who overrides the tempting wrong answer on reasoning problems and also asks about religious belief, and the two run in opposite directions across the sample. That is a claim about differences between people and needs no experiment at all."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The puzzle set before the question",
+      "text": "The same people are given reasoning problems first and the belief questions immediately afterwards, on the proposal that being pushed into a reflective mode lowers what they then report. What the design measures is reported belief, minutes later, in students and online panels."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The form printed in hard-to-read type",
+      "text": "A study sets its questions in a difficult font, expecting the effort of reading to push respondents into analytic mode. One manipulation failing says something about that manipulation, and the original report rested on more than one of them."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The Thinker priming failed at high power and the original authors withdrew confidence in it. The correlation the paper opened with survived a meta-analysis of 15,078 people.",

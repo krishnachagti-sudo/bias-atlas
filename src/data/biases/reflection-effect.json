@@ -15,6 +15,23 @@
     "note": "The name and the table are from \"Prospect theory: An analysis of decision under risk\", where the reflection effect is one of the paper's demonstrations alongside the certainty effect and the isolation effect. Kahneman and Tversky do not claim the observation as new. They write that risk seeking in choices between negative prospects was noted early by Markowitz. They cite Williams for a translation of outcomes producing a shift from risk aversion to risk seeking, and a review by Fishburn and Kochenberger for its prevalence."
   },
   "evidence": "The demonstrations are hypothetical choices by students and university faculty, answered anonymously on questionnaires carrying at most a dozen problems each. Outcomes are in Israeli pounds against a median net monthly family income of about 3,000. Kahneman and Tversky report that some problems were also put to groups at the University of Stockholm and the University of Michigan, with results essentially identical to the Israeli ones. Their Table I holds four pairs. An 80 per cent chance of 4,000 against 3,000 for certain drew 20 per cent for the gamble. Negated, the 80 per cent chance of losing 4,000 drew 92 per cent against the certain loss of 3,000. Each was answered by 95 respondents. A 20 per cent chance of 4,000 against a 25 per cent chance of 3,000 drew 65 per cent for the first; negated, it drew 42 per cent, again with 95 respondents. A 90 per cent chance of 3,000 against a 45 per cent chance of 6,000 drew 86 per cent for the first; negated, 8 per cent, with 66 respondents. A 0.2 per cent chance of 3,000 against a 0.1 per cent chance of 6,000 drew 27 per cent for the first; negated, 70 per cent, with 66 respondents. Kahneman and Tversky mark with an asterisk each preference reliable at the .01 level. Seven of the eight problems carry one. The exception is the negated 20 versus 25 per cent problem, where the majority went the predicted way at 58 per cent and no asterisk is printed on either side. Two further problems put a bonus in front of the gamble. Given 1,000, 84 per cent of 70 respondents took 500 for certain over an even chance of 1,000. Given 2,000, 69 per cent of 68 took an even chance of losing 1,000 over losing 500 for certain. The two problems describe the same final wealth. For evidence at the level of individuals the paper points outside itself. Fishburn and Kochenberger analysed utility functions elicited from thirty decision makers in business across five earlier studies. Most were concave for gains and most convex for losses, and only three of the thirty were risk averse in both domains. That count is reported here from Kahneman and Tversky's description, not from the review itself.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The claim settled and the claim defended",
+      "text": "Offered a certain sum rather than a hearing that might pay more, a claimant takes the certain sum. Facing a certain payment rather than a hearing that might cost more, the same person takes the hearing. Nothing about the wording changed. The sign of the outcome did."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The bonus and the shortfall",
+      "text": "A manager accepts a guaranteed smaller bonus over a likely larger one, then refuses a guaranteed smaller pay cut in favour of a risky larger one. Caution above the reference point and risk-taking below it are the same person on the same afternoon."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The rebate and the repair bill",
+      "text": "A household takes a certain refund rather than a chance at a bigger one, and gambles on a tribunal rather than pay a certain charge, even where the gamble is the worse bet. Weighing losses more heavily than gains is a separate property and does not produce this on its own."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The reversal survives a preregistered test in 19 countries as the weakest of the effects tested there, and counted person by person it is a minority pattern that halves again when the money is real.",

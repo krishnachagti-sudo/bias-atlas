@@ -2,7 +2,14 @@
   "no": 555,
   "slug": "illicit-major",
   "name": "Illicit major",
-  "aliases": ["Illicit process", "Illicit process of the major term", "Illicit major term", "Illicit minor", "Illicit process of the minor term", "Illicit minor term"],
+  "aliases": [
+    "Illicit process",
+    "Illicit process of the major term",
+    "Illicit major term",
+    "Illicit minor",
+    "Illicit process of the minor term",
+    "Illicit minor term"
+  ],
   "category": "belief",
   "statement": "An argument whose conclusion speaks about all of a term that its premise spoke about only part of proves nothing, and most people accept it anyway.",
   "meaning": "A categorical syllogism has three terms. The two that appear in the conclusion are the major term, its predicate, and the minor term, its subject. A term is distributed in a proposition when the proposition speaks about every member of it. 'All A are B' distributes A alone. 'No A is B' distributes both. 'Some A are B' distributes neither, and 'Some A are not B' distributes B alone. The fourth of Stock's seven rules forbids distributing in the conclusion any term that was not distributed in the premises. Break that rule on the major term and the result is called illicit major; break it on the minor term and it is illicit minor. The two are one rule and travel together as illicit process. 'All B are A, all B are C, therefore all A are C' is the standard illicit minor, because A is the predicate of an affirmative premise and so covers only part of its class, while the conclusion speaks about all of it. 'All B are A, no C is B, therefore no C is A' is the standard illicit major. In both, the term shared by the premises is properly distributed, which is what separates these from the undistributed middle. Psychology does not study the fallacy under this name. Its measured record sits inside the task that presents all 64 pairs of syllogistic premises, which the Atlas describes on the entry for the fallacy of the undistributed middle.",
@@ -13,6 +20,23 @@
     "note": "The name is scholastic and no publication established it. Stock's textbook is the earliest full statement obtained for this entry, and it was read in full. It lays down seven primary rules of the syllogism, of which the third guards the middle term and the fourth guards the terms of the conclusion, and it names both species of the violation. Stock's ground for the rule is that a term used in its whole extent in the conclusion, having been used in part in its premise, argues from the part to the whole. His illicit minor is 'All Radicals are covetous, all Radicals are poor, therefore all poor men are covetous'. The oldest psychological account of why such conclusions get accepted is the atmosphere paper of 1935, which the Atlas covers on the undistributed-middle entry."
   },
   "evidence": "The record comes from the task in which people see two premises and choose or produce a conclusion. Khemlani and Johnson-Laird pooled six such experiments, all using the same 64 premise pairs, and their Table 6 gives the percentage of each of the nine possible responses to each pair. None of those sources labels its items by the traditional rule, so the sorting below applies Stock's rule to the premise pairs they print. Take the illicit minor first. Given 'All B are A' and 'All B are C', the valid conclusions are 'Some A are C' and 'Some C are A', and 16% gave one of them. 49% concluded 'All A are C' and 10% concluded 'All C are A'. Each of those distributes in the conclusion a term its own premise left undistributed. 22% answered that nothing follows. The illicit-major pairs are worse, and they are the hardest in the whole set. Given 'All B are A' and 'No C is B', 1% produced the valid 'Some A are not C', while 53% concluded 'No C is A' and 26% concluded 'No A is C'. That pair ranks 64th of 64 for accuracy. Given 'No A is B' and 'All B are C', 3% produced the valid 'Some C are not A' and 71% concluded 'No A is C'. That pair ranks 63rd. The five pairs ranked 60th to 64th are all ones whose commonest answer breaks the rule for the conclusion rather than the rule for the middle term. 'All B are A' with 'No B is C' drew 51% for 'No A is C' against 8% correct. 'No A is B' with 'Some B are C' drew 53% for the same conclusion, again against 8% correct. 'No B is A' with 'All B are C' drew 45% for 'No A is C' and 21% for 'No C is A', against 9% correct. The same participants scored 78% on 'No B is A' with 'All C are B'.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The badges at the counter",
+      "text": "All the staff are wearing badges, and nobody in the queue is staff, so nobody in the queue is wearing a badge. The premise speaks about all the staff and only some of the badge-wearers, and the conclusion helps itself to the rest."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The second table",
+      "text": "Everyone who ordered the pie is vegetarian, nobody at the second table ordered the pie, therefore nobody at the second table is vegetarian. Being vegetarian was never said to require ordering the pie."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The first-aid certificate",
+      "text": "Everyone who finished the course is a qualified first-aider, the new starters have not finished it, so none of them is qualified. The premise says where those who finished the course ended up, and says nothing about the other routes to the certificate."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "Six experiments run in the United States and Italy agree that these premise pairs are the hardest of the 64, and on the two worst of them 1% and 3% of answers are the valid one.",

@@ -12,6 +12,23 @@
     "note": "The phrase appears in section 1.19, headed \"An automatic door does not replace a doorman: why efficiency doesn't always pay\", on pages 126 and 127. Sutherland writes \"the 'doorman fallacy', as I call it\", claiming the coinage. Read in the Internet Archive's scan of the first United States edition, ISBN 978-0-06-238841-4. The same book was published in the United Kingdom by WH Allen in 2019 under the title Alchemy: The Surprising Power of Ideas that Don't Make Sense."
   },
   "evidence": "The passage carries no study. Sutherland names no hotel, prints no figure, and cites nothing; the book's endnotes run to pages 66, 105, 116, 121, 161, 222, 224, 240, 295, 297 and 299, so the doorman pages have no note against them. That text was downloaded twice from the Internet Archive and the two copies matched on checksum. Searching the scanned text of the whole book for Goodhart, Campbell, Ridgway and Bainbridge returned nothing. What has been measured is a different mechanism. Bevan and Hood describe governance by targets as resting on synecdoche, taking a part to stand for a whole, which is the doorman's structure stated in a peer-reviewed abstract, and they draw their evidence from the English public health service. Jacob and Levitt built an algorithm to detect teacher cheating from Chicago Public Schools test data. It puts serious cases at 4 to 5% of elementary school classrooms a year, running from 3.4 to 5.6% across the 3 x 3 grid of cutoffs they report. This site's surrogation entry covers the accounting experiments in which a measure a manager is paid on displaces the goal it stands for. None of these tests the doorman claim. All of them turn on somebody responding to a measure, and the doorman fallacy needs nobody to respond to anything.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The receptionist and the tablet",
+      "text": "A firm defines its receptionist as the person who signs visitors in, installs a sign-in tablet and books the salary as saved. Nobody had written down that she noticed when a delivery went to the wrong floor or when a visitor was lost."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The school crossing warden",
+      "text": "A council costs its crossing warden as a device for stopping traffic and fits a signalled crossing instead. The warden also knew which children walked alone and which drivers took the bend too fast, and neither appeared in the job description."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The ward cleaner",
+      "text": "A hospital contracts out cleaning at a lower hourly rate, on the definition that the work is mopping floors. The cleaners who came to the same ward each day had been noticing which patients had had no visitors, and that was not part of what was bought."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "No test of the doorman fallacy was found. The phrase appears in one indexed scholarly document, a 2025 commentary that argues from news reports rather than from data.",

@@ -16,6 +16,23 @@
     "note": "The paper that names the effect and reports six studies, five on person perception and one on groups. Its samples run from 17 dyads to 200 students. It prints t and F statistics and no standardised effect size for any of its self-other comparisons."
   },
   "evidence": "The six studies ran on undergraduates at Williams College, the University of Illinois and Stanford. In Study 1, 125 students rated a close friend on 11-point scales. They said they knew the friend, M = 8.89, better than the friend knew them, M = 8.64, t(124) = 2.26, p < .03, and 48 claimed the advantage against 24 who claimed the reverse, Z = 2.83, p < .005. Asked to circle one of ten partly submerged icebergs, they placed themselves deeper, 7.67 against 8.02 for the friend, t(124) = 3.19, p < .003. Study 2 gave 45 same-sex roommate pairs a 12-item composite on 9-point scales. Participants rated their knowledge of the roommate at 5.74 and the roommate's knowledge of them at 5.50, t(44) = 2.96, p < .005, and their own self-knowledge at 7.39 against the roommate's 6.70, t(44) = 5.54, p < .0001. The gap between their own self-knowledge and their roommate's knowledge of them, 1.89, exceeded the mirror-image gap of 0.97, t(44) = 5.51, p < .0001. That asymmetry was wider for private domains, 0.33, than public ones, 0.06, t(44) = 2.26, p < .05, and wider among pairs who were not close friends, 2.16 against 1.53, F(1, 42) = 5.04, p < .05. In Study 3, 200 students completed the sentence 'I am most like myself when I ...' for themselves and once for a friend. Two blind raters coded 72% of the completely private answers as being about the self and 66% of the answers naming contexts visible to intimates as being about the friend, chi-square(1, N = 200) = 17.45, p < .001. Study 4 brought together 17 previously unacquainted same-sex dyads. After a minute of conversation the asymmetry was marginal, 3.04 against 2.90, t(16) = 2.01, p < .10. After a 20-question exchange it reached 5.30 against 5.05, t(16) = 3.35, p < .005, and participants wrote 14.6 lines on what they had learned against 11.0 lines on what their partner had learned, t(16) = 4.93, p < .0001. Study 5 recruited 21 male and 13 female Stanford undergraduates, 18 of whom completed and rated their own word fragments first and 16 of whom rated a peer's first. They rated the peer's completions as more revealing than their own, t(30) = 2.29, p < .03 on the 21-item composite. Explaining their inferences, they quoted 3.94 of the partner's completions on average and 1.23 of their own, t(30) = 4.02, p < .0001. Study 6 asked 80 students about liberals and conservatives, pro-choice and pro-life advocates, and women and men. Each pairing produced a difference between the two groups' answers in the predicted direction, F(1, 65) = 6.22, F(1, 74) = 7.09 and F(1, 77) = 4.04.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "Two flatmates and the washing up",
+      "text": "Each flatmate is sure they can read the other's moods from how the kitchen gets left, and each is sure their own quiet evenings are misread, because what counts is going on inside where the other cannot see. Neither claims sharper eyes. Each claims to be the harder one to read."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Ten minutes in the interview room",
+      "text": "A panel feels it has the measure of a candidate after ten minutes of answers. The same panellists would object to being judged on ten minutes of their own, on the ground that their behaviour in a room says little about them. Other people's conduct counts as evidence and one's own does not."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Two departments at the away day",
+      "text": "Finance explains what sales are really after, and sales explains what finance is really protecting, and each room leaves certain it has the other worked out and certain the other has missed its reasoning. The asymmetry each side reports is not one that both can be right about."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "The asymmetry turned up again in Korean and American samples, both read only through their abstracts, and neither a preregistered attempt nor a reported failure was located.",

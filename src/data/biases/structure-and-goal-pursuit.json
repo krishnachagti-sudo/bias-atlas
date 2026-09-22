@@ -2,7 +2,11 @@
   "no": 461,
   "slug": "structure-and-goal-pursuit",
   "name": "Structure and goal pursuit",
-  "aliases": ["Structure-seeking", "Exposure to structure", "Structure promotes goal pursuit"],
+  "aliases": [
+    "Structure-seeking",
+    "Exposure to structure",
+    "Structure promotes goal pursuit"
+  ],
   "category": "belief",
   "statement": "Reminders that the world runs on orderly patterns rather than randomness are held to raise willingness to work towards unrelated personal goals.",
   "meaning": "The claim comes in a narrow form and a broad one. The narrow form is experimental. Show someone a passage, a word task or a questionnaire that presents the world as patterned, and they report more willingness to spend effort on a goal that has nothing to do with the passage. The broad form is dispositional. People who believe their actions reliably produce outcomes are said to pursue goals harder than people who do not. Only the narrow form has been tested at scale, and the verdict below is about that form alone. The reasoning behind both is the same. Effort is a bet on a link between what a person does and what happens next, and a world with no reliable patterns pays nothing on that bet. The idea sits inside compensatory control theory, whose better-known claim runs the other way: that threats to personal control push people towards order-providing beliefs. That second claim is separate and is not assessed here. Just-world belief and system justification are neighbours in the same tradition, and both have their own entries.",
@@ -13,6 +17,23 @@
     "note": "The paper is a brief report, \"A functional basis for structure-seeking: Exposure to structure promotes willingness to engage in motivated action\", published online first on 23 September 2013 and in the February 2014 issue. Its authors describe it as the first test of an assumption they trace to Lerner's just-world theory, to Heine, Proulx and Vohs's meaning maintenance model, and to their own 2008 compensatory control work. Three different manipulations run across its five studies, and the phrase \"exposure to structure\" covers all three."
   },
   "evidence": "Five experiments used undergraduates or American workers on Amazon Mechanical Turk, and three separate manipulations. Studies 1 to 3 had people read a short article about how trees grow leaves, framed either as an orderly pattern or as natural randomness. In Study 1, 103 undergraduates rated willingness to work and make sacrifices for four assigned long-term goals. The structure condition averaged 5.65 against 5.16 for the random condition, t(67) = 2.33, p < .03, Cohen's d = 0.57, with a neutral condition at 5.45 in between and different from neither. Study 2 ran the same articles on 67 online participants using goals they named themselves, and got 5.26 against 4.72, t(65) = 2.00, p = .05, d = 0.50. Study 3 repeated Study 2 on 66 people and added timing measures. Its motivation index came to 5.59 against 4.88, t(62) = 2.13, p = .04, d = 0.55, planned time on a rating scale to 5.30 against 4.38, t(64) = 2.36, p = .02, d = 0.60, and planned minutes to 1,721 against 792, t(64) = 2.36, p = .02, d = 0.60. Study 4 swapped the article for a scrambled-sentence task built from structure words or randomness words, then told 67 people to stop and spend a minute doing something towards a goal they had listed. Of those primed with structure 94% reported acting, against 76% primed with randomness, chi-square(1, N = 67) = 4.02, p < .05. Study 5 dropped the randomness condition for a baseline and induced structure by asking people to rate how patterned ten world events are, five of them chosen as orderly. Of 132 participants, 83% in the order condition acted against 65% at baseline, chi-square(1, N = 132) = 5.70, p < .02. Study 5 also measured generalised contingency belief with two items and found the effect only among people low on it, B = 1.86, Wald = 8.52, p = .004, and absent among people high on it, B = -0.03, Wald = 0.003, p = .96.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The briefing on the tides",
+      "text": "Staff sit through a short talk on how reliably the tides run, then are asked to sign up for a training course that has nothing to do with the sea. More of them sign up than after a talk on how unpredictable the weather is."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The piece about migrating birds",
+      "text": "Someone reads that swifts arrive within the same week each spring, puts the magazine down, and works longer at an unfinished application than they had planned. The article said nothing about applications. It said the world runs to a pattern."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The parking spaces drawn from a hat",
+      "text": "An office announces that parking will be allotted at random, with no rule behind it. An unrelated funding bid gets less effort that afternoon. Effort is a bet on actions leading to outcomes, and a world of draws pays nothing on the bet."
+    }
+  ],
   "replication": {
     "state": "failed",
     "headline": "Many Labs 2 repeated Study 2 in 6,506 people and got d = -0.02, with not one sample in the project returning a significant difference in either direction.",
@@ -26,13 +47,19 @@
     "original": {
       "es": 0.49,
       "esType": "d",
-      "ci": [0.001, 0.973],
+      "ci": [
+        0.001,
+        0.973
+      ],
       "ciLevel": 95
     },
     "replicated": {
       "es": -0.02,
       "esType": "d",
-      "ci": [-0.07, 0.03],
+      "ci": [
+        -0.07,
+        0.03
+      ],
       "ciLevel": 95,
       "weighting": "global effect size pooling all samples in the slate"
     }

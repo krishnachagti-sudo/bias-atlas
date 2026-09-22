@@ -17,6 +17,23 @@
     "note": "\"Odds Adjustments by American Horse-Race Bettors\" tallied winners and entries at each odds level for 519 races from the 1947 spring meets at Churchill Downs, Belmont and Hialeah. It added selected odds groups from 867 further races over the first eight days of August 1947, weighted to represent 1,386 races. Griffith computed the average take as 13 percent and the average field as nine horses. After correcting the posted odds for take and breakage, the product of winners and odds exceeded the number of entries at short odds and fell below it at long odds. Linear interpolation put the crossover at odds of 6.1, a probability of 0.16. He framed the exercise as a field test of Preston and Baratta's laboratory finding that people overvalue small probabilities and undervalue large ones, and used neither the name the effect now carries nor a rate-of-return table. A footnote added after the manuscript was submitted reports his own repeat on all the races of August 1934, where the indifference point fell at 0.18 against 0.16, which he read as constancy across very different economic conditions."
   },
   "evidence": "The modern statement of the pattern comes from Snowberg and Wolfers, who obtained Jockey Club records of every horse start from 1992 to 2001. Their text places those starts in the United States and their data appendix places them in North America, and the records reached them through Axcis Inc., a Jockey Club subsidiary. The primary sample is 6,403,712 starts in 865,934 races, reduced by their cleaning rules to 5,606,336 win-bet observations from 678,729 races. The rate of return on horses at odds of 100/1 or longer is about minus 61 percent. Betting at random returns about minus 23 percent, which the authors put down to the track's cut. Betting the favourite in every race loses 5.5 percent. Between 4/1 and 9/1 the return is close to flat at minus 18 percent. The same shape appears in 2,725,000 starts in Australia and 380,000 starts in Great Britain. British odds are set by bookmakers and Australian odds by bookmakers competing with a state-run pool, so the pattern is not an artefact of parimutuel pricing. Snowberg and Wolfers then used compound bets to separate the two explanations. Exactas, quinellas and trifectas price combinations of the same horses, so a theory fitted to win bets makes a testable prediction about them. On 197,551 exactas the misperceptions class was closer to the actual price in 57.9 percent of cases against 42.1 percent for risk-love, and its mean absolute percentage error was 28.0 against 34.3. On 137,756 trifectas the split was 71.1 against 28.9, with errors of 57.4 percent against 100 percent. The quinella pool is the weakest of the three: on 70,169 quinellas the split is 54.0 against 46.0, with errors of 36.3 against 39.0. Relaxing the conditional-independence assumption behind those predictions moved the numbers without changing the order, and misperceptions still won all three pools.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "Two friends and a season of racing",
+      "text": "One backs the favourite in every race for a season, the other backs the rank outsider. Both finish the year down, because the track takes its cut from each. The outsider backer finishes much further down, and that gap between the two rates, not the losing, is the effect."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Where the margin sits on the board",
+      "text": "A bookmaker's prices do not carry the same margin all the way down the card. The price beside the outsider sits further from its real chance than the price beside the favourite, so it is the long shots that carry most of what the book keeps."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The small stake on a good name",
+      "text": "Casual punters at a race day put a pound each on horses whose names they like, and those tend to be the ones nobody else fancies. Money arriving that way shortens the outsiders' prices below what their chances warrant, and returns are measured off those prices."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The pattern is close to settled in horse racing, where it reappears in samples of millions across three countries and both pricing systems, and it reverses in betting markets with only two outcomes.",

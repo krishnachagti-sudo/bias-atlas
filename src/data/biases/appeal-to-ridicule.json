@@ -12,6 +12,23 @@
     "note": "Shaftesbury argued the reverse of the fallacy, and the fallacy is the denial of his thesis. His essay's title page in the collected Characteristicks reads \"Printed first in the Year M.DCC.IX\", and the text used here is the Liberty Fund edition of the 1732 setting. He makes ridicule a criterion: \"Truth, 'tis suppos'd, may bear all Lights: and one of those principal Lights or natural Mediums, by which Things are to be view'd, in order to a thorow Recognition, is Ridicule it-self.\" He puts the test in its strongest form later in the same treatise, writing that \"nothing is ridiculous except what is deform'd: Nor is any thing proof against Raillery, except what is handsom and just\", and that one may defy the world to turn real bravery or generosity into ridicule. The 1708 Letter concerning Enthusiasm, printed as the first treatise of the same volume, asks \"what Ridicule can lie against Reason?\" Who first turned the denial of that thesis into a named fallacy was not established here."
   },
   "evidence": "The measurable neighbour is humour and satire in persuasion, not ridicule isolated from them. Walter, Cody, Xu and Murphy meta-analysed 89 studies and put humour's effect on persuasion at r = .13, on knowledge at r = .23, on attitudes at r = .12 and on behavioural intent at r = .09. Burgers and Brugman pooled 70 experiments on satirical news covering 22,969 participants, 62 of them run in the United States, in a three-level random-effects model. Satire beat a control message on persuasion by a mean d of 0.073, p = .078, and regular news by 0.074, p = .088, which they call a trend and a small message-consistent effect. The entertainment effects were larger: positive affect d = 0.902, p < .001, and message discounting d = 0.617, p = .041, both against regular news, while negative affect gave d = 0.321, p = .107. Learning beat a control message at d = 0.504, p < .001, and did not beat regular news, d = -0.107, p = .456. Persuasion effects were larger in student samples than general-population ones, larger for television satire than for online or print, larger in samples holding more Republicans and smaller in samples holding more Independents, and larger for satire aimed at a person than at an issue. How the joke lands depends on the listener. LaMarre, Landreville and Beam showed 332 undergraduates a three-minute clip of Stephen Colbert interviewing Amy Goodman. Conservatism predicted the reading that Colbert meant what he said about liberals, B = 0.377, SE = 0.077, p < .001, that he was socially conservative, B = 0.119, SE = 0.043, p < .01, and that he disliked liberals, B = 0.246, SE = 0.044, p < .001. It did not predict thinking him funny, B = 0.017, SE = 0.044, p > .1. Both sides saw the comedy and disagreed about who was being mocked. Ridicule of politicians also moves less than it appears to. Mendiburo-Seguel, Vargas and Rubio showed 94 participants one of three videos and measured trust in politicians at baseline, straight after and a week later. The group given political disparagement humour fell from 30.23 to 23.56 and the group given a non-humorous political video fell from 30.20 to 23.25, while the group given disparagement humour aimed at non-politicians did not fall. By the third measure all three groups sat together again. Their second study sent 146 participants cartoons or headlines twice a day for a week and found no effect of condition, F(2, 143) = 0.226, no effect of time and no interaction.",
+"examples": [
+  {
+    "kind": "everyday",
+    "tag": "The impression of the person who asked",
+    "text": "A costing question is answered with an impression of the questioner. The room laughs, the exchange moves on, and not one figure in the estimate has been touched."
+  },
+  {
+    "kind": "everyday",
+    "tag": "The suggestion read back in a silly voice",
+    "text": "A manager reads a colleague's proposal aloud in a mocking tone and the meeting moves to the next item. Nothing has been said about why the proposal would not work."
+  },
+  {
+    "kind": "everyday",
+    "tag": "The sketch both sides claim",
+    "text": "A satirical sketch about a policy leaves its supporters sure it mocked the critics and the critics sure it mocked the policy. Ridicule that lands settles nothing, because the audience decides for itself who the target was."
+  }
+],
   "replication": {
     "state": "mixed",
     "headline": "Repeated tests disagree. A meta-analysis of humour puts the persuasion effect at r = .13, a meta-analysis of satirical news finds only a trend near zero, and six experiments on 3,139 people found no direct effect on attitudes twice.",

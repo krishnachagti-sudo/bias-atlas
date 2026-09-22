@@ -17,6 +17,23 @@
     "note": "The studies came first and the name came later. Western Electric and the National Research Council planned the illumination work in November 1924, and Roethlisberger and Dickson date its end to April 1927, two and a half years. Elton Mayo joined as a consultant in 1928 for the second series, which Levitt and List say ran until June 1932. Roethlisberger and Dickson report the relay assembly test room only for its first thirteen periods, 1927 to 1929, and note that the room itself ran five years and that T. N. Whitehead analysed the whole of it in The Industrial Worker in 1938. McCambridge, Witton and Elbourne date the term's first use to 1953, in John R. P. French's chapter 'Experiments in field settings' in Festinger and Katz's Research Methods in the Behavioral Sciences. Wickström and Bendix name the same source and quote French on 'a marked increase in production related only to special social position and social treatment'."
   },
   "evidence": "The illumination experiments ran from 1924 to 1927 under two Western Electric engineers, George Pennock and Clarence Stoll, working with the National Research Council committee. Three departments of women inspecting parts, assembling relays and winding coils had their light varied and their output counted. Roethlisberger and Dickson quote the committee's own man, C. E. Snow, on what came out. In the first experiment the intensities were 3, 6, 14 and 23 foot-candles in one department, 5, 12, 25 and 44 in the second, and 10, 16, 27 and 46 in the third. Output there 'bobbed up and down without direct relation to the amount of illumination'. The second experiment gave a test group 24, 46 and 70 foot-candles against a control held near 16 to 28, and both rose by almost identical amounts. The third took the test group from 10 foot-candles down to 3 in one-candle steps, and both groups improved until the operatives protested at 3 that they could not see. Two operators were then moved to a locker room that could be blacked out and worked at 0.06 of a foot-candle, about moonlight, without losing efficiency. In a further test an electrician swapped bulbs for bulbs of the same size while the women watched, and their production 'did not materially change at any stage'. Levitt and List worked from the archived series instead. They describe a baseline of 4 foot-candles with manipulations up to 36, and a final phase with the windows taped black in which light was stepped down to 1.4 foot-candles for a single day. Changes were made on Mondays, because Sunday was the only day the factory was idle, and workers were told when a new period began. These data were never formally analysed at the time. The relay assembly test room that followed held six women, five assembling and a sixth laying out work, and was built by inviting two experienced operators to pick the rest. Operators 1A and 2A were transferred out for talking too much and replaced early in Period VIII. The popular account, which Levitt and List quote from textbooks, holds that every change in light raised output, including the changes that darkened the room.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The week the auditor is on the ward",
+      "text": "Hand hygiene on a hospital ward rises while somebody with a clipboard is present and settles back within days of their leaving. The figure collected that week describes the watching as much as the practice."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The food diary",
+      "text": "Asked to write down everything eaten for a week, people eat differently during the week they are recording. What the diary measures is partly the act of keeping it."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The lesson observation",
+      "text": "A teacher plans more carefully for the lesson a colleague will sit in on, and the class behave better than usual. A second class observed for comparison is being watched too, so the comparison does not remove the problem."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The original illumination records were found again in three archives and the famous pattern is not in them, while two meta-analyses of purpose-built tests find a pooled effect that fades in the better-designed studies.",

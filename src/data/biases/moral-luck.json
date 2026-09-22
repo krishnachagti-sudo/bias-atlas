@@ -16,6 +16,23 @@
     "note": "A two-paper symposium under the shared title 'Moral Luck' in volume 50. Williams runs from page 115 to page 135 and Nagel from page 137 to page 151, as the scanned symposium itself shows. Crossref and the publisher give the joint range as 115 to 152. The papers set the problem for later philosophy and supplied the label that the experimental work borrowed."
   },
   "evidence": "Fiery Cushman ran the comparison in 2008. He crossed what an agent believed, what the agent wanted and what actually happened, giving eight combinations across eight scenario contexts and 64 vignettes, with 160 people per condition and seven-point scales. For judgements of wrongness, belief explained 62% of the within-context variability, desire 21%, and the consequence 3%. For blame the consequence explained 22%. Permissibility behaved like wrongness at 3%, punishment like blame at 20%. Outcome moved blame and punishment and barely touched whether the act counted as wrong. Markus Kneer and Izabela Skoczen later ran ten preregistered experiments on 2,043 people. Their farmer, Ms Russel, spends the flood budget on refurbishing her workers' kitchens, and the season either passes quietly or the lodgings flood and a worker and his two children die. In the first experiment, which compared separate groups, the harmful ending raised blame by d = 0.70 and deserved punishment by d = 1.18.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "Two drivers who glance at a phone",
+      "text": "Two people look down at a message for the same three seconds on the same road. One arrives home. The other looks up to a cyclist already on the bonnet. The act and the risk were identical and the judgements are not."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The inspection that was skipped",
+      "text": "A builder signs off scaffolding without the check they are meant to make. On most sites nothing happens and the shortcut stays invisible. On one site a board gives way, and the same omission is called gross negligence."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The parent who went to the door",
+      "text": "A parent leaves a toddler near the stairs to answer the door. Almost always the child is where they were left. How the parent is judged turns on which ending happened, not on how long the door took."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The outcome effect on blame holds when different people see different endings, and shrinks when one person sees both, where most participants rate the two agents alike.",

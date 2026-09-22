@@ -15,6 +15,23 @@
   },
   "evidence": "The record comes from the task in which people see two premises and choose or produce a conclusion. Khemlani and Johnson-Laird pooled six such experiments, all using the same 64 premise pairs, and their Table 6 gives the percentage of each of the nine possible responses to each pair. No source read here labels its items by the traditional rule, so the sorting below applies that rule to the premise pairs they print. Across the sixteen pairs with two negative premises, the share answering that nothing follows runs from 28% to 76%. These pairs sit at the easy end of the invalid set rather than the hard end. Six of the 37 invalid pairs rank in the top 15 of all 64 for accuracy, and five of the six are negative on both sides. Where people do answer, the wrong answer tracks the mood of the premises. Given 'No A is B' and 'No B is C', 46% concluded 'No A is C' against 44% who answered that nothing follows. Given 'No B is A' and 'No B is C', 22% concluded 'No A is C' and 66% answered that nothing follows. Given 'Some B are not A' and 'Some B are not C', 21% concluded 'Some A are not C' and 66% answered that nothing follows. Two pairs break the pattern. Given 'Some A are not B' and 'Some B are not C', 47% concluded 'Some A are not C' and 37% answered that nothing follows, which is the only one of the sixteen where a conclusion beats the correct response. Given 'No A is B' and 'Some B are not C', 24% concluded 'Some A are not C', 19% concluded 'No A is C', 10% concluded 'All C are A' and 28% answered that nothing follows. That pair carries the highest response entropy printed in the table, 2.64 bits, and it ranks 47th of 64 for accuracy."
   ,
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "Permits and the side gate",
+      "text": "Nobody on the late shift holds a parking permit, and no permit holder uses the side gate. The tempting conclusion is that nobody on the late shift uses the side gate. Both premises say only where permit holders are not, and neither places the late shift with respect to the gate."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Nothing from the allotment reaches the stall",
+      "text": "No nut tree grows on the allotment, and nothing grown on the allotment is sold at the Saturday stall. Concluding that no nut is sold at the stall goes beyond the premises. They leave nuts and the stall each outside the allotment and say nothing about the pair."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The reading list and the loans desk",
+      "text": "None of the reading list is shelved at the local branch, and no book shelved at the local branch is out on loan. The student concludes that no book on the reading list is out on loan. Two denials about the branch decide nothing about the list."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "Six experiments run in the United States and Italy agree that these premise pairs are among the easier invalid ones, and in an independent online sample the traditional rule predicts where people answer that nothing follows without a single false alarm.",

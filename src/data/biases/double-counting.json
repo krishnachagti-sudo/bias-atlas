@@ -17,6 +17,23 @@
     "note": "Their paper models what they call persuasion bias, the failure to adjust for possible repetition in the information a person receives. Their example is two people who each spoke to a common third party and then to each other, and who therefore double-count that third party's opinion. It is a theory paper, and the experiments measuring the bias came later."
   },
   "evidence": "The clean measurement is Enke and Zimmermann's laboratory task. Subjects estimated an unknown quantity from four computer-generated signals, paid for accuracy, with the data-generating process explained and tested by a quiz. One condition delivered four independent signals. The other delivered four messages, each of which averaged the common signal of computer A with one independent signal, so the rational belief was the same in both. It was not what people reported. A total of 234 subjects took part in the individual belief formation treatments, 94 in the baseline, 94 in a high stakes version and 46 in a reading time version. In nine of the ten estimation tasks beliefs differed between conditions on a Wilcoxon rank-sum test, in the direction double counting predicts. Baseline subjects in the correlated condition earned about 2.70 euros less than the uncorrelated group, p = 0.0025, and tripling the stakes changed nothing, with the gap at 5.40 euros and p = 0.0887. The distribution of the naivety parameter in the correlated condition has two peaks, one at rational updating and one at full neglect, so the average conceals two ways of doing the task rather than one middling error. The social version has been tested with news articles. Yousif, Aboody and Keil gave 240 Mechanical Turk participants five fake reports on the Japanese economy, four positive and one negative, and varied whether the four positive articles cited four different experts or the same one. Confidence that the economy would improve rose 15 points on a 100-point scale against a two-article baseline when the sources were separate, d = 0.74, and 13 points when the four articles all cited one expert, d = 0.61. The gap between the two was 2 points and not significant, t(158) = 0.69. Participants were not confusing the sources: a signal detection analysis put source identification above chance in every condition. Foster, Huthwaite, Yesberg, Garry and Loftus separated repetition from sources in an eyewitness design. Sixty-four students watched a filmed crime and read three reports carrying misleading details, attributed either to one witness or to three. Repeated misinformation cut accuracy from 0.63 to 0.49, t(62) = 2.53, Cohen's d = 0.64, and the number of witnesses made no difference. In their second experiment 96 students who had not seen the film rated repeated specific claims at 4.44 on a five-point confidence scale, against 3.80 for unrepeated ones, t(94) = 4.50, d = 0.92. Again the number of witnesses did nothing. Weaver, Garcia, Schwarz and Miller reported six experiments on the same point for opinions, and their abstract states that a familiar opinion is inferred to be a prevalent one even when its familiarity comes from one group member repeating it.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "Four sites, one wire report",
+      "text": "A claim turns up on four news sites the same morning and feels settled by the fourth. Each of them is rewriting one agency dispatch. Belief has moved four times on a single piece of evidence, and the right count of independent reports is one."
+    },
+    {
+      "kind": "everyday",
+      "tag": "References that share a source",
+      "text": "Three former colleagues call a candidate reliable, and the panel treats the agreement as strong. Each of the three worked under the same head of department and is repeating what she said. The corroboration is one opinion arriving by three routes."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The referral letter that copies the last one",
+      "text": "A second letter about a patient repeats the first letter's working diagnosis, and the clinician takes the pair as agreement between two assessors. The second author read the first and examined nothing further. Two documents carry one examination, and treating them as two raises confidence that no new evidence supports."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The updating bias holds up in preregistered work with 1,999 subjects. The consensus version shrinks or disappears once the relationship between the sources is made plain.",

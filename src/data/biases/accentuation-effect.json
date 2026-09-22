@@ -21,6 +21,24 @@
   },
   "evidence": "Eight lines differed from each other by a constant ratio of about 5% of length. The shortest was 16.2 cm; the text gives the longest as 22.9 cm while the table of actual values ends at 22.8. Each line was drawn diagonally on a sheet of white cardboard 63.5 cm by 50.8 cm, and a separate sheet was made for every presentation. Sixty-one volunteers from Oxford University, Westminster Training College and Manchester University took part in the first two experiments, and 54 came back a week later. Group C, twelve people, saw the four shorter lines labelled A and the four longer labelled B. Group R, thirteen people, saw the same letters alternating at random. Group U, twelve people, saw no letters. A second experiment repeated the classified and unlabelled conditions with twelve people each under a different mode of prior presentation. Lines were shown one at a time, six times, in successive random orders, at about 8 ft, with judgements called out in centimetres. The boundary sat between stimuli 4 and 5. In the first sessions the apparent difference there was 100% greater than the actual difference for the classified groups and 11% greater for the controls; in the second sessions, 122% and 44%. Fitting a linear function to each subject's judgements within each class gave mean inter-class differences of 1.9 for the classified groups against 1.1 for both control groups, rising to 2.1 against 1.4 and 1.1 a week later. The analysis of variance gave F = 6.12, P < 0.025 for the classification in the first sessions and F = 4.40, P < 0.05 in the second. Two controls rule out the letters themselves. In group R the mean judgements of a stimulus labelled A and labelled B were practically identical. Mean adjacent differences were 1.07 when both items carried the same letter and 1.12 when they carried different ones. The effect appeared at one place only. An analysis run on the other point where the classified groups exaggerated a gap, between stimuli 1 and 2, gave F = 0.47 for the classification."
   ,
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The lines labelled A and B",
+      "text": "Eight lines grow steadily in length, and the four shorter ones carry one label while the four longer carry another. Asked to estimate each line, people leave a bigger gap between the fourth and the fifth than between any other neighbouring pair."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The mark either side of a pass",
+      "text": "Marks run in a smooth series and a pass mark cuts them in two. Two scripts a single point apart are judged far apart in quality when the line falls between them, and much alike when it does not. Nothing about the scripts has changed."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The towns either side of a county line",
+      "text": "Two towns twenty miles apart on the same side of a boundary are described as neighbours. Two towns the same distance apart with the line running between them are placed in different parts of the country."
+    }
+  ]
+  ,
   "replication": {
     "state": "mixed",
     "headline": "Direct line-judgement replications in 2002 and 2021 found the between-class stretch, but only under uncertainty about the judgement scale, and the within-class half appeared in the original only after repeated judging.",

@@ -17,6 +17,23 @@
     "note": "The paper that puts the theory's name in a title runs from page 331 to page 338 of volume 7, issue 3. It rated 34 years of transcribed interviews with 28 women and 22 men from the Child Guidance Study and found interaction with acquaintances and close friends declining from early adulthood while emotional closeness with relatives and close friends rose. It is about social networks and says nothing about attention or memory. The full statement of the theory is Carstensen, Isaacowitz and Charles in American Psychologist in 1999, and the memory prediction was tested by Charles, Mather and Carstensen in 2003."
   },
   "evidence": "Charles, Mather and Carstensen ran the founding memory studies in 2003. Study 1 showed 32 images, 16 neutral and 8 each positive and negative, to 144 adults split into three groups of 48 aged 18 to 29, 41 to 53 and 65 to 80. They were told to watch as they would a television, then spent about 15 minutes on questionnaires and cognitive tasks before writing down every image they could recall. The Emotional Valence by Age Group interaction was significant, F(4, 139) = 4.03, p < .001, eta squared = .05. Middle-aged and older adults recalled more positive than negative images while younger adults recalled similar numbers of each. Study 2 gave 32 younger adults aged 19 to 30 and 32 older adults aged 63 to 86 a self-paced run through 78 images, F(2, 61) = 6.19, p < .001, eta squared = .09, and the shape was different: younger adults recalled 13.09 negative against 9.97 positive, while older adults recalled 6.91 negative and 6.13 positive. Barber, Opitz, Martins, Sakaki and Mather tested the motivational mechanism in 2016, in two experiments. In the first, 77 younger and 76 older adults wrote about a future holding either six more months of life or a life lasting to 120, then tried to recall 70 pictures. The limited horizon raised positivity in both age groups, F(1, 149) = 5.17, p = .024, partial eta squared = .03, alongside the usual age effect, F(1, 149) = 10.04, p = .002, partial eta squared = .06. That experiment told participants their memory would be tested, which is the constraint Reed and colleagues find suppresses older adults' bias. The second experiment dropped the warning and added a condition that said nothing about time. It ran 111 adults recruited online, averaging 31.88 years and not split into age groups, so it is not an age comparison. Positivity differed across the three conditions, F(2, 108) = 3.17, p = .046, partial eta squared = .06. The limited condition beat the control, t(70) = 2.50, p = .015, but its margin over the expansive condition was t(70) = 1.93, p = .057.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The last months of a posting",
+      "text": "Somebody with a year left in a city stops going to the events where useful contacts are made and spends the evenings with the two friends they like most. Nothing about them has aged. The future in that place got short, and the goals reordered themselves around it."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The final term of a degree",
+      "text": "A student who spent two years chasing modules that would look good on a record spends the last term on the seminar they enjoy and the people they will miss. The shift arrives in a person of twenty-one, which is the point: the horizon is doing the work, not the years lived."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Two accounts of the same trip",
+      "text": "A grandmother describing a family holiday dwells on the afternoon at the harbour, while her grandson describes the delayed ferry. The difference is a lean on each side rather than a rosy old age, and it shows up in the gap between the two accounts, not in either one alone."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Two meta-analyses agree the pooled effect is real and disagree about which age group carries it, and for older adults it vanishes in tasks that tell them how to process the material.",

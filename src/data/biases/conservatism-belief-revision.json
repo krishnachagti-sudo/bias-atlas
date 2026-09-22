@@ -18,6 +18,23 @@
     "note": "\"Conservatism in a simple probability inference task\" introduced the exponent model and reported three experiments in which chips were drawn from bags of stated composition. The paper is paywalled and could not be opened during this check. What it contains reaches this page through Benjamin, who names it as the source of the model, and through Corner, Harris and Hahn, who quote its page 353. The name travelled on Edwards's 1968 review chapter \"Conservatism in Human Information Processing\", which was also not obtained."
   },
   "evidence": "Edwards illustrated the effect with two urns of poker chips, one 70% red and one 70% blue. A dozen chips are drawn from one urn and eight come up red. Benjamin quotes the passage from pages 20 and 21 of the 1968 chapter and reports that most people answer roughly 70% or 80%. The correct posterior is 97%. That chapter was not opened here, so the example arrives at one remove. Dozens of experiments ran the same structure with real bags and real chips, which is why the paradigm is named bookbag-and-poker-chips. Benjamin assembled the 16 papers he could find that pose two-state, binomial, symmetric problems and report enough to reconstruct the right answer. Regressing participants' log posterior odds on the correct log posterior odds across those problems gives a slope of 0.20, standard error 0.063. Restricting to incentivised experiments gives 0.38, standard error 0.028. Both sit far below the Bayesian value of 1. The discount grows with the difficulty of the aggregation: underinference is worse at larger sample sizes, and worse the further the diagnosticity parameter sits from a half. Even at a sample size of one it is present, with a mean problem-level estimate of 0.70, standard error 0.057, and 0.86 across the seven incentivised problems, standard error 0.078. Benjamin's summary of the literature is that underinference is by far the dominant direction of bias.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "Four late deliveries out of six",
+      "text": "A manager who rated a supplier dependable sees four of the last six orders arrive late, and comes away calling it probably a bad patch. The belief moved the right way. It moved a fraction of the distance six deliveries can carry it, which is the shape of the finding."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Three blank trips to the river",
+      "text": "An angler sure a stretch holds fish comes home empty three times and still puts its chances well above the next stretch along. Nothing about the direction of the change is wrong. The evidence is being discounted rather than ignored."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Six out of twenty, twice",
+      "text": "A student who believes he has the topic covered scores six out of twenty on two practice papers and concludes he needs a bit more work on it. The second paper should have moved him further than the first did, and instead the step got smaller."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Underinference holds across the 16 papers of the classic paradigm, and the sign flips to overinference once the signal is weaker than any of those papers made it, with the crossover measured at a signal precision of 0.64.",

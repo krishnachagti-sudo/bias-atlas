@@ -18,6 +18,23 @@
     "note": "Mizrahi's six-page paper is the earliest journal article located whose title is the charge, and it treats the objection as already common rather than introducing it. Springer's article page prints volume 28, pages 353 to 358, and the year 2013; the Crossref record dates it to 30 November 2012, which is the online-first date. The move itself is far older than any of that. The Stanford Encyclopedia's timeline puts Anselm's Proslogion at 1078 with Gaunilo's critique On Behalf of the Fool following soon after, and that critique carries the standard first example. Who attached the English name, and whether the Latin tag qui nimium probat nihil probat has any traceable author, could not be established here."
   },
   "evidence": "There are no experiments here, and the record is a philosophical one. Gaunilo's reply to Anselm is the case every later discussion starts from. In David Burr's translation he reports that people speak of an island in the ocean, called the lost island because of the impossibility of finding what does not exist, which has all manner of riches and delights, more of them than the Isles of the Blest, and which having no owner or inhabitant is superior in the abundance of its riches to all other lands. Gaunilo says he can understand that description without difficulty. He then imagines the arguer adding, as if stating a logical consequence, that the island must therefore exist, since it is more excellent to exist in reality than in the mind alone. His answer is that he would either think the arguer joking, or have a hard time deciding who was the bigger fool, himself for believing it or the arguer for thinking it proved. The Stanford Encyclopedia's entry on ontological arguments sets the two arguments out premise by premise, in six steps each, differing only in that every occurrence of the thing than which no greater can be conceived is replaced by the island than which no greater island can be conceived. Its reading of the structure is the general form of the move: since the arguments have the same logical form, either they are both valid or they are both invalid, and if they are both valid then a defender must find a premise pair whose first member an atheist would accept and whose second member the same atheist would reject. The entry works through the four candidate pairs and finds none. Andre Juthe's paper in Argumentation is the closest thing located to a general treatment of the technique. Its abstract describes it as the method by which an argument is refuted by a parallel argument, since the flaw of the parallel argument is clearly displayed, and says the method is explicated, examined and compared with two other general methods. The charge also has a place in fallacy compendia. Wiley's Bad Arguments, subtitled 100 of the Most Important Fallacies in Western Philosophy, gives it chapter 41, pages 201 to 203, written by Kimberly Baltzer-Jaray.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The parallel built at the club meeting",
+      "text": "Told that members who joined recently should not vote on the constitution because they lack experience, one answers that the same argument would bar anyone from voting in their first year of anything, including the committee that wrote the rule. No premise has been disputed; the shape has."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The rule that would empty the timetable",
+      "text": "A head argues that a subject should be dropped because most pupils will not use it after school. A colleague points out that the argument removes almost everything on the timetable. That shows the argument fails, and leaves the case for the subject where it was."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The test turned on the tester",
+      "text": "A reviewer rejects a finding because the researcher chose which measures to report. The reply builds the same argument against the reviewer's own published work. If the form condemns both, it was never a reason to reject the first."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "No experiment on this move was found, and the nearest measured thing is a different move in the same family of ratings.",

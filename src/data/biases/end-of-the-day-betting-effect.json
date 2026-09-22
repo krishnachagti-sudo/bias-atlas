@@ -14,6 +14,23 @@
     "note": "\"Stability of Choices among Uncertain Alternatives\" analysed 9,605 races run at several American tracks between 1947 and 1953, and found longshot betting rising in the eighth race alone rather than across the card. McGlothlin wrote that horses with a high probability of winning and low payoffs \"become even more unpopular in the last race\". The paper was not obtainable on 21 September 2026. JSTOR answered with a script challenge rather than a paywall, and the World Scientific volume that reprints it answered with a Cloudflare interstitial. Its sample, its dates and that sentence are taken from McKenzie and colleagues, who quote it from page 611 of the published article."
   },
   "evidence": "Four further field studies are named in the literature, and all of them are described here as McKenzie and colleagues describe them, because none was readable during this check. Ali compared the last race with the first two across 20,247 harness races at three New York tracks between 1970 and 1974. Asch, Malkiel and Quandt took the 1978 thoroughbred season at one New Jersey track, 729 races, and found a larger longshot bias in the last two races combined than across all races. Metzger is described by them as examining 11,313 American races run in 1978, with more longshot betting in the last race and an anomalous result for the first. Her own abstract at Crossref gives the sample as 12,316 races and calls the finding an increasing risk preference within the day. Her paper could not be read here, so the two accounts are left standing apart. Kopelman and Minkin used 286 races at a New York track in 1986 and found posted odds less favourable for favourites in the last race. Add McGlothlin's 9,605 races and McKenzie and colleagues put the five samples at more than 42,000 races. None of them can say whether a given bettor was ahead or behind. McKenzie and five co-authors built the missing measurement in the laboratory. Their first experiment gave 140 undergraduates eight rounds of a choice between two gambles. The favourite paid one point half the time, the longshot nine points a tenth of the time, and each lost one point otherwise. Both had an expected value of zero. Longshot choices were 19 percentage points higher in the last round than in the others, with a standard error of 0.04 across 1,120 choices. Adding a linear trend left a last-round effect of 11 points on top of it. The share of participants in the loss domain fell across rounds, from 66 percent before round two to 55 percent before round eight, while longshot betting rose.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The last race on the card",
+      "text": "Money moves towards the outsiders in the final race of a meeting and not in the first. The horses are no different. What has changed is that no race follows, so nothing lost can be recovered later in the afternoon."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The round announced as the last",
+      "text": "Players in a card room take on worse odds in the round they are told is the final one. Leave the round unlabelled and the extra risk does not appear, so the label rather than the tiredness is carrying it."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The closing lot at an auction",
+      "text": "A charity auction's final lot draws bids nobody would have made an hour earlier. With no later lot to wait for, bidders treat the evening as an account being closed rather than as one chance among many."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Three laboratory experiments produce the last-round shift reliably, and the largest racetrack sample ever assembled shows no significant version of it.",

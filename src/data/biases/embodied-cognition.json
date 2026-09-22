@@ -13,6 +13,23 @@
     "note": "Their paper is \"Experiencing Physical Warmth Promotes Interpersonal Warmth\". The wider embodiment programme in cognitive science is older, and this date marks the demonstration that made temperature and weight priming a standard social-psychology paradigm rather than the programme's founding."
   },
   "evidence": "Two paradigms carried most of the weight, and each original test sat just under the conventional threshold. Williams and Bargh recruited 41 undergraduates who briefly held a hot or iced coffee in a lift and then rated a stranger. The hot group rated the target 4.71 on the warm-cold traits against 4.25 for the iced group, F(1, 39) = 4.08, P = 0.05, an effect Chabris and colleagues put at r = 0.31. A separate group of 53 evaluated a hot or cold therapeutic pad and then chose a reward for themselves or a friend. The paper reports that 75% of the cold-primed group chose for themselves against 46% of the warm-primed group, and gives its test as a logistic regression interaction with the reward framing, B = 2.85, P < 0.05. Lynott and colleagues restate that comparison as an odds ratio of 3.52, 95% interval 1.06 to 11.73, on an analysed sample of 50, and record that the original result held in one framing condition and not the other. The clipboard line ran in parallel. Jostmann, Lakens and Schubert had 51 Dutch students, 28 heavy and 23 light, complete a questionnaire on a 2.25 lb or a 1.45 lb clipboard. Those on the heavy board rated it more important that a university committee hear students out, 5.27 against 4.21, t(49) = 2.08, p = .043, d = .59 with a 95% interval from .01 to 1.16. The 2009 paper is paywalled at Sage and no open copy was found through Unpaywall or Semantic Scholar, so those figures are quoted from Many Labs 3's report of it. Ackerman, Nocera and Bargh then had 54 passersby review a job candidate's resume on a 340.2 g or a 2,041.2 g clipboard. The heavy group rated the candidate better overall, F(1, 52) = 4.08, P = 0.049, and as showing more serious interest in the post, F(1, 52) = 4.40, P = 0.041. Rabelo, Keller, Pilati and Wicherts later pooled the published weight-to-importance experiments and found d = .57, 95% interval 0.47 to 0.67, on a homogeneity test of Q = 4.70 with 24 degrees of freedom and p = .999993. They read that excess homogeneity as publication bias, confirmed it with p-uniform at L = 5.1, p < .001, and report that the bias-corrected estimate came out negative.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The warm cup before an interview",
+      "text": "An interviewer holds a hot drink while reading a candidate’s file. On the warmth hypothesis they should rate the candidate as friendlier than one read over an iced drink, and that prediction is what the large replications went looking for and did not find."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The heavy clipboard",
+      "text": "A questionnaire handed over on a weighty board should, on this account, make the issue it asks about seem more important than the same questionnaire on a light one. The metaphor buried in the language is what the prediction rests on."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The chilly waiting room",
+      "text": "A visitor kept in a cold room should, if abstract thought runs on bodily experience, find the people in it more distant. Claims of this shape are cheap to test and easy to repeat, which is why this wing of the programme has a replication record at all."
+    }
+  ],
   "replication": {
     "state": "failed",
     "headline": "Twenty labs repeated the heavy-clipboard study, and the 2,285 people in the analysis rated the issue 6.16 against 6.14 on a seven-point scale.",

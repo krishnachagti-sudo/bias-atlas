@@ -12,6 +12,23 @@
     "note": "A two-page report at pages 227 and 228 of volume 4, issue 6. Aronson was at the University of Texas, Willerman at the Social Science Research Council and Floyd at the University of Utah. The work was run at the University of Minnesota on two National Science Foundation grants, NSF GS 202 and NSF GS 750. The title is \"The effect of a pratfall on increasing interpersonal attractiveness\", and retellings routinely print \"increased\"."
   },
   "evidence": "The 1966 paper was read in full from the publisher's PDF. Forty-eight male sophomores from an introductory psychology course at the University of Minnesota heard one of four tapes of a student trying out for the College Quiz Bowl team. The stimulus person answered 92% of 50 difficult questions or 30% of them, and on two of the four tapes he clumsily spilled a cup of coffee over himself near the end. Each rater then answered eight questions about him, marking each on a scale from -7 to +7, and the eight were summed into a composite attractiveness score. Mean scores were 30.2 for the superior blunderer, 20.8 for the superior person who did not blunder, -2.5 for the average blunderer and 17.8 for the average person who did not. Ability gave F = 14.90, df = 1/40, p < .001, and the ability by pratfall interaction gave F = 10.33, df = 1/40, p < .01. The pratfall on its own did nothing, and the paper reports no interviewer effects. Inside the average-ability pair the blunder cost 20.3 points, t = 3.15, p < .01. Inside the superior-ability pair it gained 9.4 points, t = 1.45, p < .18, which the paper states does not reach significance. A manipulation check on rated intelligence gave M = 5.73 against M = 0.83, t = 6.89, p < .005. The paper prints no effect size and no confidence interval, and the error term of 40 is what it gives rather than the 44 four cells of 48 would imply.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "Two speakers who knock over a glass",
+      "text": "A speaker the audience already rates highly spills a glass at the lectern and comes across as more human for it. A speaker the same audience found ordinary does the same thing and drops in their estimation. The blunder is identical and the standing it lands on is not."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The specialist who forgets a name",
+      "text": "A visiting expert who has answered every question forgets the host's name, laughs at it, and is warmer for the lapse. Competence was already established, and the slip only removed the distance."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The colleague who is merely adequate",
+      "text": "Someone whose work is thought passable fumbles the projector at the start of a meeting. Nothing in the room's view of them improves, and a stumble does not humanise a reputation that was not high to begin with."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The paradigm was re-run through the 1970s and the later readable results do not line up, and the half of the effect everyone quotes missed significance in the original at p < .18.",

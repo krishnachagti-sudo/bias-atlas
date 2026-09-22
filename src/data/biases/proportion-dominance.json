@@ -2,7 +2,12 @@
   "no": 193,
   "slug": "proportion-dominance",
   "name": "Proportion dominance",
-  "aliases": ["Proportion responding", "Reference group effect", "Psychophysical numbing", "Drop-in-the-bucket thinking"],
+  "aliases": [
+    "Proportion responding",
+    "Reference group effect",
+    "Psychophysical numbing",
+    "Drop-in-the-bucket thinking"
+  ],
   "category": "decision",
   "statement": "People value a fixed saving more when it is a larger share of the group at risk, and some will take the larger share even when it saves fewer lives.",
   "meaning": "The claim is about the denominator. Saving 4,500 refugees is the same saving whether the camp holds 11,000 people or 250,000, and the number rescued is what a life-saving budget buys. People rate the first as the better use of the aid. The weak form of the claim is a framing effect: a fixed benefit is judged larger against a smaller background. The strong form is a preference reversal that costs lives, where someone shown both options picks 225 of 300 over 230 of 920. Only the strong form conflicts with the arithmetic, and it is the rarer of the two. The idea travels under several names. Jenni and Loewenstein called it the reference group effect, Fetherstonhaugh and colleagues called it psychophysical numbing, and Bartels credits the label used here to Finucane, Peters and Slovic.",
@@ -13,6 +18,23 @@
     "note": "Volume 14 issue 3 carried three papers on the same pattern: Fetherstonhaugh and colleagues at pages 283 to 300, Baron at 301 to 309, and Jenni and Loewenstein on the identifiable victim effect. Baron's own paper says his results are consistent with the other two and argues for a different reading of them, a general confusion of proportions with differences rather than a psychophysical value function. The name proportion dominance came later."
   },
   "evidence": "Fetherstonhaugh and colleagues ran three studies. In Study 1, 54 undergraduate volunteers from two sections of an economics statistics course compared government programmes in pairs, two domestic and two supplying clean water to camps of 11,000 and 250,000 Rwandan refugees in Zaire. Both camp programmes were stated to save 4,500 lives. The small camp was preferred, F(1, 52) = 8.24, p < .01, with mean preference 0.45 against -0.20. Study 2 paid 162 Oregon students to rate the benefit of sending a water-purifying plane, and the analysis dropped the 17% who thought the small camp would save more lives. Benefit was rated 6.46 for the small camp and 4.54 for the large one, F(1, 132) = 160.5, p < .001. Study 2 also found respondents rated the plane more beneficial when the camp already had most of its water need met, 5.73 against 5.27, F(1, 132) = 15.35, p < .001. Study 3 paid 165 Oregon students to say how many lives a treatment must save to merit $10 million. Asked one disease at a time, 65% raised their threshold as the disease grew, with median demands of 9,000, 60,000 and 100,000 lives for diseases killing 15,000, 160,000 and 290,000 a year. Shown all three side by side with the lives each treatment saved, 60% ranked by lives saved and 16% by proportion. Baron put willingness to pay on a similar question, as an extra premium on a government insurance package. His 95 respondents gave geometric mean payments of $143 to cure 900 people and $74 to cure 90, t = 9.03, and $129 when the cure rate was .90 against $89 when it was .09, t = 5.29, both p < .0005. The two effects correlated negatively across subjects, r = -.22, p = .031, so people divide into those watching the number and those watching the ratio. In his second experiment, 29 respondents allocated a hypothetical budget surplus across 18 causes of death, once for a 5% cut and once for a cut of 2,600 lives. The median within-subject correlation between the two allocations was .80, and 26% of respondents gave answers correlating at 1.00. Bartels forced the tradeoff. Across his first three studies participants chose between saving 225 of 300 and 230 of 920. With 44 Northwestern undergraduates rating one option at a time, willingness to support ran at .88 for the small reference group and .76 for the large, t(43) = 4.85, p < .001, eta squared .353. Shown both options together, 48% of responses fell on the half of the scale favouring the smaller reference group. Asked afterwards which attribute should count, 70 participants rated the absolute difference more important than the relative one, .74 against .52, t(69) = 4.39, p < .001. Study 4 dropped human lives entirely and asked 168 participants to set a rebate that would make a discount on a $100 jacket as attractive as $10 off a $20 calculator. Responses shifted with which item carried the unknown on all three such items, smallest chi-squared(2) = 12.25, p = .002.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "Two water schemes",
+      "text": "A donor compares a scheme that reaches 300 of the 400 people in one village with one that reaches 500 of the 5,000 in a nearby town. The village scheme is chosen because it nearly finishes the job. Two hundred fewer people get clean water."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Where the safety money goes",
+      "text": "A plant manager can remove most of the exposure in a small workshop or a slice of it across the main floor. The workshop wins the budget. The number of workers protected is what the money buys, and it is the smaller of the two."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The ward and the city",
+      "text": "A health board offered cover for nine in ten children in a small district or two in ten across a city takes the district, calling it the job done properly. The count of children vaccinated is higher under the option it turned down."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Five preregistered replications recruiting 4,799 people split down the middle: the benefit-rating study reproduced at partial eta squared 0.62, and the programme-choice study reversed three times.",
@@ -23,8 +45,24 @@
       "year": 2021,
       "n": 4799
     },
-    "original": { "es": 0.55, "esType": "eta2", "ci": [0.45, 0.62], "ciLevel": 90 },
-    "replicated": { "es": 0.62, "esType": "eta2", "ci": [0.58, 0.66], "ciLevel": 90 }
+    "original": {
+      "es": 0.55,
+      "esType": "eta2",
+      "ci": [
+        0.45,
+        0.62
+      ],
+      "ciLevel": 90
+    },
+    "replicated": {
+      "es": 0.62,
+      "esType": "eta2",
+      "ci": [
+        0.58,
+        0.66
+      ],
+      "ciLevel": 90
+    }
   },
   "limits": "Nothing in this literature has money on it. Baron, Fetherstonhaugh, Bartels, Mata and Ziano all asked for ratings, rankings, choices or hypothetical allocations, and no participant's answer moved a real budget. The samples are narrow at the origin. Bartels ran all four studies on Northwestern undergraduates, Fetherstonhaugh used Oregon students and two sections of an economics statistics course, and Mata's first study used 100 psychology undergraduates, split between two conditions so that only half met the tradeoff. The effect also depends on how the question is put, by the original authors' own account. Fetherstonhaugh got 65% proportion-driven answers when diseases were presented one per page and 16% when the three were laid out together, and attributed the gap both to which magnitude the wording emphasised and to ease of comparison. Bartels found the opposite pattern in his own Study 1, where the individual-differences correlation appeared in joint evaluation but not in separate evaluation, r(43) = .050, p = .746, which he reads as the two being dissociable effects. Ziano's extensions found no moderation by geographic closeness of the target country, tested by swapping Rwanda for Haiti, and none by political ideology or preference for domestic over foreign aid. Familiarity with refugee crises was flat on every measure but one, where the authors call the association very small and the p value very close to their alpha. Those individual-difference tests were exploratory, and the paper says they were not preregistered. This entry located no meta-analysis of proportion dominance. Crossref, Europe PMC and a web search on 21 September 2026 returned none, and OpenAlex refused the query that day on a rate limit, so the largest body of evidence remains Ziano's five collections. Where the effect comes from is also unsettled: Fetherstonhaugh's group favour a psychophysical value function, Baron argues in the same volume for a general confusion of proportions with differences, and Mata's data point to a failure of deliberation rather than a taste for proportions.",
   "misreadings": "Proportion dominance is not the identifiable victim effect, though it is often offered as an explanation of it. The two make different predictions and have different evidence behind them, and this atlas records the pooled identifiable victim effect as near zero at entry 179. Second, the direction is not fixed. Ziano's three replications of the refugee-camp study found people preferring the larger camp, which is the opposite of numbing, so the pattern is not a law about denominators. Third, Baron's experiment is sometimes cited as showing that proportion beats number. It shows both mattering, and Baron says plainly that the ratio effect is the smaller of the two. Fourth, Bartels's 48% is a share of item responses on one half of a rating scale, not a count of people who chose to save fewer lives. Fifth, two of these papers disagree with themselves. The Fetherstonhaugh manuscript gives 65% of respondents, n = 107, showing numbing in Task 1, while its discussion says over 67%, and its method reports 165 respondents against 164 in the Task 2 table. Ziano's abstract puts the third Study 1 replication at partial eta squared 0.13, 90% CI 0.08 to 0.17, a figure no results section carries: the paper's own comparison table says 0.12 on that interval, and 0.12 is the effect of which domestic programme served as the comparison, not of camp size.",

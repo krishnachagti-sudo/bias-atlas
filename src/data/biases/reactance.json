@@ -17,6 +17,23 @@
     "note": "Brehm set out the theory in a book, A Theory of Psychological Reactance. Experiments testing it appeared the same year, one of them by Brehm with Lloyd Stires, John Sensenig and Janet Shaban on the attractiveness of an eliminated choice alternative."
   },
   "evidence": "The first experiments took an option away and measured what happened to its appeal. Brehm, Stires, Sensenig and Shaban tested the attractiveness of an eliminated choice alternative. Hammock and Brehm tested the same thing when the freedom to choose was removed by another person. Both appeared in 1966, and neither those papers nor Brehm's book could be obtained for this entry, so nothing is taken from them beyond their titles and their records at Crossref. Reactance was then treated for decades as a state that could not be measured directly. Dillard and Shen changed that in 2005 by treating it as an amalgam of anger and negative cognitions, captured with rating scales and thought-listing. In two studies, one advocating flossing and one urging students to drink less, a composite index of anger and negative cognitions fully mediated the effects of threat to freedom and trait reactance on attitude and intention. Rains later pooled the literature and reported that this intertwined model, with reactance as a latent factor and anger and counterarguments as its indicators, fitted better than the alternatives. His paper is paywalled, and both its scope and its coefficients are quoted here from Reynolds-Tylus: 20 studies and 4,942 participants, loadings of 0.62 for anger against 0.52 for negative cognitions, correlations with attitude of 0.20 and 0.16, and a correlation between anger and negative cognitions of 0.31. Trait reactance is measured separately, usually with the Hong Psychological Reactance Scale. Shen and Dillard tested its 11-item version on three samples of 188, 200 and 233 people and found four first-order factors that could be treated as one factor at the second order.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The banned book on the shelf",
+      "text": "A teenager who had walked past the same novel for two years is told it is not suitable and reads it that week. The interest was created by the ban, and it is specific to the freedom the ban touched rather than a general appetite for disobedience."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The mug with the note on it",
+      "text": "A note appears in the office kitchen saying one mug is not to be used by anyone else. It had sat unused for months. By Friday four people have drunk from it, and none of them wanted that mug in particular."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The phone ban in the break room",
+      "text": "A firm tells staff they may not use phones during breaks, and the loudest objections come from people who rarely looked at theirs. What was taken was a freedom they believed they held, and the size of the reaction tracks that rather than the size of the loss."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Controlling language reliably raises anger and counterarguing, and the reversal it is supposed to cause often fails to arrive.",

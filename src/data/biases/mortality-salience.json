@@ -17,6 +17,23 @@
     "note": "Their paper, \"Role of consciousness and accessibility of death-related thoughts in mortality salience effects\", ran four studies. Study 1 is the one later chosen for large-scale replication. The theory itself is older: Many Labs 4 traces it to a 1986 chapter by Greenberg, Pyszczynski and Solomon in Baumeister's Public Self and Private Self, which is a book chapter rather than a journal article and is cited here from that description rather than read."
   },
   "evidence": "The 1994 abstract says subtle mortality salience inductions raise prejudice, nationalism and intergroup bias, and reports that Study 1 reproduced the increased preference for a pro-US author over an anti-US author. It also reports that the effect weakened when participants were led to think more deeply about mortality, and that later studies found the effect appears only once attention has been drawn away from death. Study 1 assigned 59 introductory psychology students in the United States across five conditions. Many Labs 4 describes the two conditions it targeted, subtle own-death salience against a television control, and prints the comparison as a mean difference of 12.25 against 1.64, t(53) = 4.87, p < .001, Cohen's d = 1.34. That d is quoted from Many Labs 4, not read off the 1994 paper. The literature that grew from this is large. Burke, Martens and Faucher pooled 164 articles and 277 experiments in 2010 and reported r = .35, which their own abstract calls moderate, across worldview and self-esteem outcomes. They also report that effects were larger for American participants, for students, and when a longer delay separated the death prompt from the measure. Writing about one's own death was the manipulation in 79.8% of the field's studies, a figure Many Labs 4 attributes to that meta-analysis.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The funeral and the flag",
+      "text": "Leaving a burial, a mourner finds herself unusually warm towards a speaker praising the country and unusually sharp about one criticising it. The prediction is about the gap between those two reactions widening, not about either rating moving on its own."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The scan result and the congregation",
+      "text": "After a frightening letter from the hospital, a man defends his congregation more fiercely than he did a week earlier and takes criticism of it personally. Belonging to something that outlasts the body is what the theory says is being held on to here."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The prompt buried in a questionnaire",
+      "text": "A survey asks people to write a few lines about what will happen to them as they physically die, then asks them to rate two essays about their country. A control group writes about television instead. The difference between the two groups is the whole of the test."
+    }
+  ],
   "replication": {
     "state": "failed",
     "headline": "Seventeen laboratories pooled 1,550 participants and found a worldview-defence effect of g = 0.07, with an interval running from -0.03 to 0.17.",

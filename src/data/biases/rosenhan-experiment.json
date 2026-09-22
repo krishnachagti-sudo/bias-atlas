@@ -17,6 +17,23 @@
     "note": "The paper is \"On being sane in insane places\", Science 179(4070), 250 to 258, published on 19 January 1973. Rosenhan was the first pseudopatient and the only one whose presence was known to a hospital administration. Footnote 6 records a ninth pseudopatient whose data were excluded for falsifying marital status and parental relationships."
   },
   "evidence": "The paper reports eight pseudopatients and 12 admissions to hospitals in five states on the East and West coasts. Each telephoned for an appointment and said he heard unfamiliar voices saying \"empty\", \"hollow\" and \"thud\". Beyond the voices and a false name, vocation and employer, life histories were given as they were. Of the 12 admissions, 11 were diagnosed schizophrenic and one, at the sample's only private hospital, manic-depressive psychosis. Stays ran from 7 to 52 days and averaged 19. Rosenhan reports that every pseudopatient was discharged with the entry diagnosis qualified \"in remission\", and that no member of staff raised the possibility of simulation. Other patients did: during the first three hospitalisations, when counts were kept, 35 of 118 patients on admissions wards voiced suspicion. The paper then describes a second study at a research and teaching hospital whose staff doubted such an error could happen there. Staff were told that over the next three months one or more pseudopatients would seek admission, and were asked to rate each arrival on a 10-point scale. Judgements were obtained on 193 patients. Forty-one were called pseudopatients with high confidence by at least one staff member, 23 by at least one psychiatrist, and 19 by a psychiatrist and one other staff member. Rosenhan writes that no genuine pseudopatient from his group presented during the period.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The notebook read as a symptom",
+      "text": "A patient on a ward keeps a diary of the day, and a staff member records the writing itself as part of the condition. The same behaviour in a visitor would be unremarkable. Once the label is attached, it rather than the behaviour decides how the behaviour is read."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The file that arrives before the pupil",
+      "text": "A new teacher reads a record of past trouble before meeting the child, and then reads ordinary restlessness as confirmation of it. Little the pupil does can count against the record, because the record supplies the frame the conduct is read in."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The label that follows you out",
+      "text": "Someone discharged in good health carries a note saying the condition is in remission rather than absent. The exit route preserves the original judgement, so a discharge is not evidence that the judgement was ever tested."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "No independent repeat of the admission design was located. The one published attempt at the underlying claim, Lauren Slater's visits to nine psychiatric emergency rooms, was contradicted by a vignette study of emergency psychiatrists.",

@@ -12,6 +12,23 @@
     "note": "The paper introduces the flicker paradigm and calls the effect induced change blindness. It treats the phenomenon as already documented in two older traditions it cites, brief-display work running back to Phillips in 1974 and saccade-contingent work running back to the 1970s, and asks whether one attentional mechanism explains both. Simons and Levin's review in Trends in Cognitive Sciences the following month carries the bare phrase as its title."
   },
   "evidence": "The laboratory version alternates an original image and a modified one with blank fields between them. Rensink and colleagues used 48 colour images of real-world scenes, each carrying a single change of colour, location or presence, with images shown for 240 ms and blanks for 80 ms. Ten naive observers took part in each experiment. Changes to areas that five independent describers had not mentioned took an average of 17.1 alternations, 10.9 s, to identify. Changes to areas three or more of them had mentioned took 7.3 alternations, 4.7 s. Removing the blanks dropped identification to 1.4 alternations, 0.9 s, so the changes were plainly visible. A valid verbal cue naming the changing part also sped identification sharply, which rules out poor visibility as the cause. The field version is the door study. Simons and Levin ran two experiments on the Cornell campus, in which an experimenter with a map asked a pedestrian for directions and was swapped for a second experimenter while two people carrying a door passed between them. The door blocked the view for about one second, and the two experimenters wore different clothing, differed in height by about 5 cm and had distinguishable voices. In Experiment 1, 7 of 15 pedestrians reported the change. Those who noticed were all roughly the experimenters' own age, and those who missed it were older, which the authors read after the fact as an in-group and out-group difference. Experiment 2 tested that reading by dressing the same two experimenters as construction workers and approaching 12 students from the group that had always noticed in Experiment 1. Four of the 12 reported the switch. A further 3 said they had noticed nothing unusual, then claimed the switch when asked directly, and could not name any difference between the two men.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The assistant behind the counter",
+      "text": "Two people carry a board between a customer and the desk, and a different assistant is standing there when it has passed. The customer carries on talking. The swap produced no local motion to mark the moment, so the two views were never compared."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The cut between camera positions",
+      "text": "In a film a character’s glass is full in one shot and half empty in the next. Viewers watching closely still miss it, because the cut hides the change and the comparison has to be made from what was held in memory."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The figure edited while you looked down",
+      "text": "A colleague alters a number on the screen while everyone is glancing at their notes, and nobody spots it afterwards. This needs two displays and something holding the first, which is what separates it from failing to see a thing that was there all along."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "Levin, Simons, Angelone and Chabris repeated the real-world person swap three times, and 34 of the 75 people in the closest repeat of the door scenario missed it.",

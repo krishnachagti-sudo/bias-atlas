@@ -13,6 +13,23 @@
     "note": "Their paper is \"The effects of feedback interventions on performance: A historical review, a meta-analysis, and a preliminary feedback intervention theory\". The phrase \"feedback fallacy\" is not in it. That name comes from a 2019 Harvard Business Review article by Marcus Buckingham and Ashley Goodall, which argues a much stronger thesis and cites no study for it."
   },
   "evidence": "Kluger and DeNisi screened the feedback literature and kept 131 papers, from which they extracted 607 effect sizes based on 12,652 participants and 23,663 observations. The average sample behind an effect was 39 participants. Weighted by sample size, the mean d was 0.41, and over 38% of the effects were negative. The weighted variance was 0.97 against an expected sampling error variance of 0.09. One author, Mikulincer, supplied 91 of the effects, and his studies used extreme negative feedback and averaged d = -0.39; dropping them raised the mean to 0.47 and left 33% of the remainder negative. After removing those effects, trimming outliers and dropping 17 time-series estimates, 470 effects survived, 32% of them negative, with a mean of 0.38. The moderator table is where the theory lives. Feedback that supplied the correct solution ran at 0.43 against 0.25 without it, and velocity feedback at 0.55 against 0.28. Praise ran at 0.09 against 0.34, feedback designed to discourage at -0.14, and the quartile of studies whose feedback most threatened self-esteem at 0.08 against 0.47 for the least threatening quartile. Feedback on physical tasks came out at -0.11.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The grade at the top of the page",
+      "text": "An essay comes back with a mark at the top and a paragraph of advice below. The mark tells the student where she stands, and the advice about structure goes unread. Attention has been sent to the self and away from the work the advice describes."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The review that opens with a ranking",
+      "text": "A manager begins the annual conversation by saying the employee came sixth of nine. Everything said afterwards about how to run a handover lands on somebody defending their standing. The useful half of the meeting is delivered to a person no longer listening for it."
+    },
+    {
+      "kind": "everyday",
+      "tag": "What a coach shouts from the bank",
+      "text": "A rower is told she has no sense of rhythm, and her next ten strokes are worse. The message names her rather than the stroke. Telling her to hold the catch a beat longer would point at something she can move."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The shape of the finding repeats, a positive average over a wide spread with a negative minority, and the size of that minority moves from 38% to 17% between the two largest meta-analyses.",

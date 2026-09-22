@@ -17,6 +17,23 @@
     "note": "Crossref gives volume 64, issue 5, pages 482 to 488, published in November 1962, and that record is what the phrase is usually attached to. The paper itself was not read for this entry. Unpaywall lists it as closed with no open location, and downloads attempted at three hosts returned 403, 404 or an error page, so nothing about its own list lengths or presentation rates is quoted here. The curve is older than the paper. Cortis Mack and colleagues cite Deese in 1957 and Jahnke in 1965 beside Murdock when they name the U-shaped serial position curve."
   },
   "evidence": "Ward, Tan and Grenfell-Essam ran the demonstration that shows both what the curve is and what governs it. Fifty-five participants at Essex and City studied 45 lists drawn from the Toronto Word Pool at one word a second, with list lengths of 1 to 15 in random order within blocks, and wrote down as many words as they could in any order. At four words recall was flat and high, mean .81, with no effect of position, F(3,162) = 0.802, p > .05. At eight words position mattered, F(7,378) = 10.21, MSE = .090, p < .001, with primacy and recency of about equal size. At fifteen words it mattered again, F(14,756) = 20.50, MSE = .069, p < .001, and the end of the list beat the start. Their second result constrains the first. The proportion of trials on which recall began with the first word fell as lists lengthened, F(14,756) = 127.5, MSE = .048, p < .001, most steeply between four and six words, where each added item cut it by about 17 percentage points. Splitting six-word lists by where recall started, the 35 participants who began at position 1 gave means of 1.00, .67, .59, .59, .46 and .53, positions 2 to 6 not differing, F(4,136) = 1.15, p > .05. The 43 who began in the last four positions gave .48, .32, .44, .54, .79 and .88, F(5,168) = 16.61, MSE = .120, p < .001, which is one item of primacy and extended recency. The familiar U is what those two output strategies look like once they are averaged. On mechanism, Tan and Ward ran seven experiments recording rehearsal out loud. Their abstract reports that primacy items were rehearsed more often and further towards the end of the list than middle items, more so at a slow presentation rate and with high-frequency words. It also reports that a filled delay cut recency and not primacy, and that recency survived a filled retention interval when a fixed rehearsal schedule was imposed.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The shopping list left at home",
+      "text": "Setting off without the list, a shopper comes back with the bread that was named first and the milk that was named last, and has forgotten the four items in the middle. The two ends of the list survive the walk and the middle does not."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The eight items at the stand-up",
+      "text": "A team hears eight items at a morning stand-up and by the afternoon can produce the one it opened with and the one it closed on. The items in between were heard just as clearly and are gone."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The names round the table",
+      "text": "Going round a table of ten new colleagues, a newcomer can name the first two people and the last one and is lost in between. The early names got the rehearsal the middle ones did not, and the final name is still in mind."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "Hoffmann and Hosch found the curve again in three experiments with number sequences, one of them preregistered, and recency was the half that always appeared.",

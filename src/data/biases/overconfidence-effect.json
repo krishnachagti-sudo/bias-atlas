@@ -13,6 +13,23 @@
     "note": "The split is a reorganisation of a literature that was already three decades old. Moore and Healy searched PsycINFO for \"overconfidence\" and got 365 hits, 72% of them empirical. Roughly 64% of the empirical studies measured overestimation, roughly 31% measured overprecision and roughly 5% measured overplacement. A search on \"better-than-average\" returned another 146 articles, so that last figure understates how much the comparison had been studied under a different name. The calibration tradition they were tidying runs back to Lichtenstein, Fischhoff and Phillips's 1982 review and to Alpert and Raiffa's interval task in the same volume."
   },
   "evidence": "Moore and Healy put 82 Carnegie Mellon students through 18 trivia quizzes of ten items each, three quizzes on each of six topics, one easy, one medium and one hard. Pay was $25 times a participant's percentile rank, belief reports were scored by a quadratic rule, and earnings averaged $20.23 for about 90 minutes. Beliefs were elicited three times per round: before the quiz, after taking it, and after the answers were shown. The figures below are the interim ones, taken after the quiz and before feedback, which is how the paper's two results tables are labelled. Actual scores were 8.86 on easy quizzes, 5.92 on medium and 0.71 on hard. Estimated scores moved much less, at 8.64, 5.93 and 1.50. Participants therefore underestimated themselves on easy quizzes by 0.22 points and overestimated on hard ones by 0.79, which Moore and Healy identify as the hard-easy effect on estimation. Overplacement ran the other way, at plus 0.48 on easy quizzes and minus 1.36 on hard. Across the 18 quizzes the two measures correlated at r(18) = -.64, p = .004. Overprecision alone pointed one way throughout. Intervals representing 90.5% confidence held the true score 73.1% of the time, a rate pooled across the three phases and produced by none of them separately, since hit rates ran 55.1% before the quiz, 85.6% after it and 84.4% after feedback. Confidence exceeded accuracy at every difficulty, every round and every phase. Eighteen rounds of full feedback did not teach participants to make fewer errors estimating their scores.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The forecast range nobody widens",
+      "text": "A team is asked for a range it is ninety per cent sure will contain next quarter's sales, and offers a band of five per cent either side. Over three years the true figure lands outside that band far more often than one quarter in ten. The estimate was not too high; the band was too narrow."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The date on the wedding",
+      "text": "Someone states flatly that a friend's wedding was in the June of her second year, and is happy to bet on it. The invitation puts it in the September before. Being wrong is ordinary. The thing at issue is how little room she left for being wrong."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The saver who knows where returns will land",
+      "text": "An investor says the fund will return between six and eight per cent, and sets out the reasoning. The reasoning is sound and the interval is a guess dressed as a measurement. A wide honest range and a narrow confident one can sit on exactly the same evidence."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The verdict is about overprecision, which survives at scale in the field and does not survive a change of elicitation, while overestimation and overplacement reverse direction with task difficulty.",

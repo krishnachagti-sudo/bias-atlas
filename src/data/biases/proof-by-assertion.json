@@ -18,6 +18,23 @@
     "note": "Their six experiments established the part of the idea that is specific to a single asserter: familiarity built by one repeating speaker is read as prevalence. Where the English name came from was not established here. Neither of the two standard philosophical surveys of fallacies carries it. The Stanford Encyclopedia article by Hansen and the Internet Encyclopedia article by Dowden, which lists 231 fallacies, were each read in full twice for this check, and neither contains proof by assertion, ad nauseam or ipse dixit. The one named treatment located is a four-page chapter by Leigh Kolb, \"Argument by Repetition\", at pages 215 to 218 of a Wiley collection of a hundred fallacies."
   },
   "evidence": "Weaver, Garcia, Schwarz and Miller tested whether a repeated opinion reads as a shared one. In Study 1A, 177 people read views on a fictitious New Jersey land-use question. Reading one homeowner make the same point three times raised estimated focus-group support to 5.43 on a seven-point scale, against 4.66 when the same homeowner made it once, F(1, 174) = 19.71, p < .001, d = 0.74. Three different homeowners raised it to 6.22, d = 1.60. Study 2 removed the group setting. 305 people read one party member's e-mail with the identical comment copied twice more at the foot of the page, laid out to look like an artefact of the mail software. Estimated support for the position rose from 38.26% to 44.18%, F(1, 303) = 5.96, p < .05, d = 0.28. Whether repetition carries a bad argument was tested by Moons, Mackie and Garcia-Marques in three studies, read here from the published abstract. Repetition raised the persuasiveness of weak and strong arguments alike where little processing of the content occurred, and controlled processing removed the gain for the weak ones. The cost of leaving support out has been pooled. O'Keefe's meta-analysis of support articulation covers 27 argument-completeness cases and 5,808 participants, and messages that spelled out their premises were more persuasive at a mean r of .116, 95% CI .052 to .180. Naming the source of the information gave r = .064 across 23 cases and 5,358 participants, 95% CI .014 to .114. Confidence is a third channel and it is conditional. Sah, Moore and MacCoun had 184 people take weight-estimation advice with accuracy feedback, and confident but inaccurate advisors drew the lowest credibility ratings, 2.23 against 2.84 for the diffident inaccurate ones, F(1, 180) = 14.29, p < .001. In their second study, 377 people faced free, absent or costly feedback. Where no feedback came, confidence alone raised credibility from 3.20 to 3.54, F(1, 127) = 7.82, p = .006, and people bought feedback on confident advisors less often, 35% against 53%.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The line repeated at every meeting",
+      "text": "A department head states at each monthly meeting that the new rota has improved cover, and by the fourth meeting nobody asks for figures. Nothing has been measured in between. Only the count of statements has risen."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The single caller on the phone-in",
+      "text": "One listener rings a radio programme three mornings running with the same complaint about bin collections, and the host begins describing it as what residents think. One voice repeating has produced the look of a crowd."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The answer that restates the position",
+      "text": "A committee meets an objection to its plan by setting out the plan's merits in the same words it used before the objection was raised. Restating a position is not answering it, though an audience hearing the words a third time finds them easier to accept."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "Three preregistered experiments on 718 people found repetition raised judged truth by about d = 0.3, and a claim repeated by one source did as much work as the same claim from three.",

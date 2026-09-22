@@ -18,6 +18,23 @@
     "note": "Triplett studied competition and pacemaking, not social facilitation, and never used the term. McHugh and colleagues date the name to Floyd Allport in 1920, two decades later. Gordon Allport's 1954 handbook chapter is what installed Triplett as the first social psychology experiment, and Stroebe argues that attribution is wrong on every count."
   },
   "evidence": "Triplett started from bicycle records. Official League of American Wheelmen figures to the close of the 1897 season put paced competition races ahead of paced races against time by an average of 5.15 seconds per mile up to 25 miles. His laboratory version had children turn a fishing reel until a small flag had made four circuits of a four-metre course. Records were taken from nearly 225 people of all ages, and every table in the paper rests on 40 children, split into two groups of 20 running different orders of alone and competition trials. Triplett sorted them by eye into 20 stimulated positively, 10 overstimulated and slower in competition, and 10 barely affected. He reported probable errors and no significance test, because the modern ones did not exist. His conclusion was that the bodily presence of another contestant \"serves to liberate latent energy not ordinarily available\". Zajonc, Heingartner and Herman later moved the question to an animal with no reputation to protect. Their Experiment 1 ran 72 adult female Blatta orientalis cockroaches away from a floodlight, down a straight runway or through a maze, alone or in company. Each roach ran ten trials and its median time was the score. Company took two forms, coaction and an audience of roaches held in boxes whose air holes lined up with holes in the walls of the apparatus. The coaction comparison had 8 roaches per cell and the audience comparison 10. Average median runway times fell from 62.65 seconds alone to 39.30 seconds with an audience, while maze times rose from 221.35 to 296.64. The paper pooled coaction and audience into a social condition and reported a significant conditions by tasks interaction on running time, df = 1/64, p < 0.01. Maze times got worse in company and runway times got better. The quantitative record is Bond and Titus, who pooled 241 studies, 23,970 subjects and 742 separate effects. Presence made simple performance faster, d = 0.32 across 154 effects, and complex performance slower, d = -0.20 across 54. It made complex work less accurate, d = -0.36 across 147 effects, the largest mean effect in the analysis. It barely touched the accuracy of simple work, d = 0.11 across 112 effects.",
+    "examples": [
+      {
+        "kind": "everyday",
+        "tag": "The scales played for a listener",
+        "text": "A pianist runs through scales she has practised for years and plays them faster with someone in the room. She then tries a piece learned that week and fumbles passages she managed alone."
+      },
+      {
+        "kind": "everyday",
+        "tag": "The kitchen at service",
+        "text": "A cook plates the dish she has made a thousand times more quickly with the room watching, and makes more errors on the special she has cooked twice. Presence strengthens whatever response is already the habit."
+      },
+      {
+        "kind": "everyday",
+        "tag": "Typing up notes against writing a hard paragraph",
+        "text": "In an open office the routine typing goes faster with colleagues nearby, and the difficult paragraph goes worse. The complexity of the task, not the worker's mood, decides which way the presence of others pushes."
+      }
+    ],
   "replication": {
     "state": "mixed",
     "headline": "Two preregistered direct replications came out on opposite sides: 445 children reproduced Triplett's speed-up in company, while the cockroach experiment produced the impairment half of the effect and no trace of the facilitation half.",

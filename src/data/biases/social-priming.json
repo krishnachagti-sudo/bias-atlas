@@ -19,6 +19,23 @@
     "note": "Their paper, \"Automaticity of social behavior\", ran three experiments and gave the field its founding demonstrations. Priming as a term is older and belongs to cognitive psychology, where Meyer and Schvaneveldt had shown word-recognition facilitation in 1971. Bargh and colleagues moved the dependent variable from perception to action."
   },
   "evidence": "Bargh, Chen and Burrows used a scrambled-sentence task of 30 items as the prime. In Experiment 1, 34 New York University students were primed with rude words, polite words or neither, then had to interrupt an experimenter who was busy talking. Experiments 2a and 2b are the famous ones. Thirty students took part in each, half getting a version of the puzzle seeded with 28 elderly-stereotype words including Florida, bingo, wrinkle and forgetful. A confederate sitting in the corridor with a hidden stopwatch timed the walk from the laboratory door to a strip of tape 9.75 metres away. In 2a the primed group took 8.28 seconds against 7.30 for controls, t(28) = 2.86, p < .01. In 2b it was 8.20 against 7.23, t(28) = 2.16, p < .05. A separate check on 19 students found one who noticed any link between the words and old age, and that one could not say which way it would push. Experiment 3 flashed subliminal photographs of young African American or Caucasian faces to 41 participants during a tedious computer task, then staged a data-loss error and rated the reaction: hostility 2.79 against 2.13, F(1, 39) = 6.95, p < .05. Two years later Ap Dijksterhuis and Ad van Knippenberg reported four experiments in which asking people to think about a professor raised general-knowledge scores and asking them to think about a soccer hooligan lowered them. Shanks and colleagues put the effect sizes in those original experiments at 0.83 to 1.35.",
+    "examples": [
+      {
+        "kind": "everyday",
+        "tag": "The word puzzle before the walk home",
+        "text": "A trainer hides words about age and frailty in a warm-up exercise, then times how long the group takes to leave the room. The claim is that the hidden words alone slow the walk, minutes later, in a task nobody connects to the puzzle."
+      },
+      {
+        "kind": "everyday",
+        "tag": "The crossword before the quiz",
+        "text": "Staff fill in a crossword seeded with words about scholarship and then sit a general-knowledge round. Social priming says the crossword raises their scores, not because it taught them anything, but because thinking of scholars makes people behave like one."
+      },
+      {
+        "kind": "everyday",
+        "tag": "The article left in a waiting room",
+        "text": "A magazine carries a piece about courtesy, and readers who happen on it are held to interrupt the receptionist less afterwards. The input is incidental, the output is conduct, and the person reports no link between them."
+      }
+    ],
   "replication": {
     "state": "failed",
     "headline": "Twenty-three laboratories ran the professor prime on 4,493 people and the gap in trivia score was 0.14 percentage points.",

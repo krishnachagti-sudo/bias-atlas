@@ -13,6 +13,23 @@
     "note": "A one-page Brevia report titled \"Washing Away Postdecisional Dissonance\", which itself calls the result a \"clean slate\" effect and treats it as a test of whether cleansing works outside morality."
   },
   "evidence": "Two experiments, both run in individual sessions under cover of a consumer survey. In the first, 40 undergraduates browsed 30 CD covers, picked 10 they wanted and ranked them, then were offered their fifth-ranked or sixth-ranked disc as a gift. An unrelated-looking product survey followed, in which half examined a bottle of liquid soap and half tested it by washing their hands. After a filler task they ranked the 10 discs again. Among those who only examined the soap, the rank gap between chosen and rejected rose from 0.14 (SD 1.01) before the choice to 2.05 (SD 1.96) after it, F(1, 38) = 20.40, P < 0.001. Among those who washed, it moved from 0.68 (SD 0.75) to 1.00 (SD 1.41), with F below 1. The interaction was F(1, 38) = 6.74, P = 0.01. The second experiment gave 85 students a choice between two fruit jams and an antiseptic wipe to examine or use, then asked how good each jam would taste on a 0 to 10 scale. Those who did not clean their hands expected 8.00 (SD 1.65) from the chosen jam against 6.43 (SD 1.81) from the rejected one, F(1, 83) = 27.54, P < 0.001. Those who cleaned expected 7.63 (SD 1.56) against 7.23 (SD 1.25), F(1, 83) = 1.79, P = 0.19, with the interaction at F(1, 83) = 7.80, P = 0.006.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The two jars of jam",
+      "text": "Having chosen between two jams they had rated alike, most people afterwards rate the one they took higher and the one they left lower. The claim on this page is that washing the hands in between keeps that gap from opening."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The basin between two flats",
+      "text": "A couple pick one of two flats they liked equally, and the claim is that a trip to the basin leaves them less inclined to talk up their choice. Nothing wrong was done by anybody, which is what makes this the non-moral branch of the cleansing work."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The holiday not chosen",
+      "text": "A shopper who has just booked one holiday over another washes before dinner and afterwards describes the rejected one no worse than he did before booking. What the soap is supposed to remove is the pull of the previous act, not any guilt about it."
+    }
+  ],
   "replication": {
     "state": "failed",
     "headline": "One preregistered replication has been run, on 286 students at a single university, and it found the difference on the wrong side of zero.",

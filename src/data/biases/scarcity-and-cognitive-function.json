@@ -17,6 +17,23 @@
     "note": "Their paper, \"Some Consequences of Having Too Little\", ran five experiments on scarcity and borrowing, and its first experiment carried the cognitive claim. The field result readers remember arrived a year later in the same journal, when Mani, Mullainathan, Shafir and Zhao compared Indian sugarcane farmers with themselves before and after harvest."
   },
   "evidence": "Shah's experiment 1 gave participants a Wheel of Fortune word game with rationed guesses. Poor participants had 84 guesses in total, six per round, and rich participants had 280, twenty per round. Everyone then did a Dots-Mixed task, identical for both groups, as a measure of cognitive fatigue. Poor participants got fewer correct responses, mean 45.12 with a standard deviation of 15.87, against 52.93 and 12.79 for the rich, F(1, 54) = 4.16. Mani and colleagues ran four laboratory experiments on shoppers at a New Jersey mall, with 101 participants in experiment 1, 100 in experiment 3 and 96 in experiment 4. Median household income was roughly $70,000, and rich and poor were split at the median of income divided by the square root of household size. Participants read hypothetical money problems set either high or low, a car repair at $1500 or at $150, then did Raven's matrices and a spatial compatibility task. Experiment 1 gave an income by condition interaction of F(1, 97) = 5.12, P = 0.03 on Raven's and F(1, 97) = 7.86, P < 0.01 on cognitive control. The poor were unaffected in the easy condition and worse in the hard one. The authors report Cohen's d between 0.88 and 0.94 across that experiment and their own follow-ups. The field study surveyed 464 sugarcane farmers in 54 villages around Villupuram and Tiruvannamalai in Tamil Nadu, twice each over four months in 2010, before and after a harvest whose date the sugar mills stagger across farmers. Farmers scored 4.35 items correct on Raven's pre-harvest and 5.45 post-harvest out of ten, n = 460, took 146 seconds against 131 on a numerical Stroop, n = 452, and made 5.93 errors against 5.16, n = 453. The paper reports pawning at 78% pre-harvest against 4% after, and loans outstanding at 99% against 13%.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The form filled in twice",
+      "text": "A man completes a complicated benefits form in the week after payday and makes few mistakes, then struggles through a similar form in the week before the next one. The task has not changed and neither has his reading; what has changed is how much attention the rent is taking."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The repair bill in the background",
+      "text": "A woman sits a training exam a fortnight after an unexpected car bill and scores below her practice papers. The claim is about the capacity the bill is occupying while she works, not about whether she wants to pass."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The evening after the arithmetic",
+      "text": "A parent works out that the month does not add up, then tries to help a child with homework and cannot hold the steps in mind. The sum is finished and the shortfall is still being carried, which is where the cost sits."
+    }
+  ],
   "replication": {
     "state": "failed",
     "headline": "A high-powered preregistered replication of the founding experiment on 619 people returned r = -0.015 where the original had 0.267.",

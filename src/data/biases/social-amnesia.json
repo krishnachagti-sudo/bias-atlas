@@ -16,6 +16,23 @@
     "note": "The Open Library record for ISBN 0807029645 gives Beacon Press, Boston, 1975, and a collation of xxiii plus 191 pages. Later printings changed the subtitle: Crossref's record for the Routledge issue of 2018 carries the title Social Amnesia with the subtitle A Critique of Contemporary Psychology. The copy read for this entry is the Transaction reprint, whose added introduction Jacoby signed at Los Angeles in March 1996, and whose page numbers are cited throughout. Crossref's chapter record for the 2018 issue gives chapter I, \"Social Amnesia and the New Ideologues\", as pages 1 to 18, which matches the pagination read here. The introduction to the main text is by Christopher Lasch."
   },
   "evidence": "Jacoby argues from quotation. Nothing in the text read for this entry is a measurement, and it carries no sample, no count and no table. Chapter I assembles the sentences that place Freud in the past instead of answering him. Karen Horney, on page 2: \"Not even a genius can entirely step out of his time.\" Clara Thompson on the same page: \"Although a genius, Freud was in many respects limited by the thinking of his time, as even a genius must be.\" Patrick Mullahy and Betty Friedan supply two more in the same paragraph. Jacoby's reply is to date the insight. He quotes Freud in 1914 already batting away the claim that psychoanalysis was a projection of peculiar Viennese conditions, and calls that criticism \"as recent as 1914, when it was already old\". Chapter III turns on the post-Freudians. Abraham Maslow prefers \"a direct study of good, rather than bad human beings, of healthy rather than sick people\", which Jacoby reads on page 56 as a discipline losing sight of the damaged. He tracks the case material from Freud's patients, the sexually unfree with deep anxiety and phobias, to Olympic gold-medal winners, a polar explorer and a Harvard president. Viktor Frankl's \"height psychologist\", quoted on convictions strong enough to lift people clear out of themselves, turns out on page 57 to be the astronaut Lieutenant Colonel John H. Glenn Jr. Seven chapters run from Adler's break with Freud through Marxism and subjectivity to R. D. Laing and David Cooper. The finding at each stop is the same shape: the successor school kept the therapeutic promise and let the theory go. Jacoby states the general law in the first line of chapter I, borrowed from Adorno, that the history of philosophy is the history of forgetting.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The thinker who is dated rather than answered",
+      "text": "A course introduces an earlier school through its period and its founder's circumstances, and students leave able to place the argument without ever meeting the objection to it. Situating a claim in its time is offered where a reply was owed."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The rota that looks like nature",
+      "text": "Staff treat the shift pattern as a fact about the work. It was settled in a dispute their predecessors fought and partly lost, and forgetting that it was made by anyone is what leaves it looking unchangeable."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The finding that arrives as a discovery",
+      "text": "A field announces a result about early attachment that an older tradition argued at length. Nobody refuted the older argument. It fell off the reading lists, and its absence is what allows the result to be new."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "There is no experiment to repeat. Jacoby wrote a polemic about a discipline's memory, and no study measuring social amnesia in his sense was located.",

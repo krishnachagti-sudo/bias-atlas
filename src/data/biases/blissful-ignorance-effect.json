@@ -15,6 +15,23 @@
     "note": "The paper names the effect. Its abstract reports three experiments and states that the pattern arises from the interplay of a directional goal, arriving at a desired conclusion, and an accuracy goal."
   },
   "evidence": "What the original paper did could not be read at first hand for this entry. Oxford Academic answered every request on 21 September 2026 with a Cloudflare bot challenge, not a paywall page, so even the publisher's abstract could not be seen this time. Unpaywall, queried the same day, returns oa_status closed with no repository copy, and OpenAlex and Semantic Scholar record the article as closed too. No participant counts, condition means, test statistics or effect sizes are quoted here. The abstract was read at IDEAS/RePEc, which carries it in full. It says this: across three experiments, individuals given vague information are more optimistic of outcomes post-action compared to pre-action, and this difference is attenuated with precise information. The abstract does not name the products or the measures. A press release issued by University of Chicago Press Journals on 15 September 2008 says the three studies had participants deciding about chocolates, hand lotions and animated movies. It quotes the authors saying that people tend to expect more favourable outcomes with vague information after taking an action than before taking it. It gives incomplete nutritional information and sketchy reviews as examples of the vague material. Those design details are at one remove from the paper, and the release sets up no contrast with precise information given before the decision. Figures quoted in later popular summaries, including specific probabilities and percentage gaps, were not found in any document reached for this entry.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The wording read after the money is spent",
+      "text": "Told a machine usually lasts many years, a buyer who has already paid expects longer service than a buyer told it lasts eight on average. Before paying, the two forms of words produce forecasts much closer together."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The prospectus phrase",
+      "text": "A line saying graduates do well produces a brighter forecast in the student who has enrolled than in the one still choosing, while a printed employment rate moves the two of them alike."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The builder's loose estimate",
+      "text": "Once the deposit has gone, the job should be quick is read as a week. A firm quote of three weeks leaves no room to read it kindly. Nobody chose what to be told, and only the precision of the wording differs."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "No repeat of the three experiments was found, and the paper has been cited about thirty times in eighteen years.",

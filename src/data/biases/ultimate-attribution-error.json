@@ -17,6 +17,23 @@
     "note": "The abstract outlines the cognitive contentions of Allport's The Nature of Prejudice, extends them with attribution theory, and proposes the error in two numbered predictions. It also says predictions are advanced about which of the four ways of discounting a positive outgroup act will be adopted and when the phenomenon will be magnified. Only that abstract was read, at Crossref and in the Wayback Machine's copy of the Sage article page, both on 21 September 2026. Sage itself answered every request with a Cloudflare bot challenge that day, under a browser user agent and a plain curl one alike, so the full text is unread and nothing here describes its argument beyond the abstract. Taylor and Jaggi's study in southern India came five years earlier, and the evidence section below rests on it."
   },
   "evidence": "Taylor and Jaggi asked Hindu participants to explain the behaviour of Hindu and Muslim actors performing socially desirable and socially undesirable acts, scoring internal against external causes. Their abstract reports internal attributions for ingroup actors doing desirable things and external attributions for ingroup actors doing undesirable things, with the converse for the same acts by Muslims. Sage answered every request for the article with a Cloudflare bot challenge on 21 September 2026, so no means, cell sizes or test statistics from it appear on this page. Hewstone reviewed the literature eleven years after Pettigrew named the error. His abstract counts 19 studies across three paradigms, explanations for positive and negative outcomes, explanations for success and failure, and explanations for group differences, and says the ingroup-favouring tendency appears in most of them. It also says the evidence gives only limited support to Pettigrew's error, and that in any given study the bias is confined to particular dimensions. The three findings he calls strongest are more internal attribution for ingroup positive acts and less for ingroup negative acts, more attribution of outgroup failure to lack of ability alongside explaining outgroup success away as luck or effort or an easy task, and a preference for ingroup-serving accounts of group differences.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "One player, two explanations",
+      "text": "A supporter who dislikes the visiting club calls a foul by their defender the sort of thing that club breeds, and a fine goal by the same defender a deflection. The bad act gets his nature and the good act gets his luck."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The department across the corridor",
+      "text": "Staff who resent another team explain its missed deadline as how they operate and its delivered project as an easy brief. Both explanations are available at once, and which one gets used depends on whether the news is good."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The newcomers on the estate",
+      "text": "A resident hostile to a group of new arrivals treats a noisy night as what they are like and a neighbour clearing the gutters as one decent one among them. The exception is granted precisely so the rule survives it."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Pettigrew's two predictions come apart under direct test. The positive-behaviour half survives, the negative-behaviour half does not, and one Delhi study was corrected to report no bias at all.",

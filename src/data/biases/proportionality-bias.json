@@ -18,6 +18,23 @@
     "note": "The paper that gave the idea its slogan. Its abstract, read from the Semantic Scholar record because no full text could be had, reports 64 participants reading one of four variations on a vignette about the assassination or attempted assassination of a hypothetical president, then rating how likely each of eight statements was. Endorsement of a conspiracy account was higher when the president died than when he survived. Levels of belief in real-world conspiracy theories did not relate to that inference, though high believers were more likely to doubt the reported details of the event. The earlier antecedent is McCauley and Jacques, in the Journal of Personality and Social Psychology in 1979. Neither paper's full text was obtained for this entry."
   },
   "evidence": "The largest reported effects are in the causal-judgement literature rather than the conspiracy one. Spina's 2009 Queen's University dissertation, published the following year with Ji, Guo, Zhang, Li and Fabrigar, gave 59 European-Canadian and 60 Chinese students a disease outbreak that either killed people or hospitalised them, followed by a highly infectious or a standard strain of bacteria. Participants tied the high-magnitude effect to the high-magnitude cause, 7.73 against 4.05 on a nine-point scale, and the low-magnitude effect to the low-magnitude cause, 6.82 against 3.72, an interaction of F(1, 115) = 160.18, p < .001, partial eta squared = .58. A negotiation scenario gave F(1, 140) = 133.36 and .49, and pictures of basketball players and tornadoes gave F(1, 134) = 50.20 and .27. Each of the three analyses also carries a three-way interaction with culture, .11, .13 and .05, with Canadians matching more strongly than Chinese. In the picture study that cultural gap rests on follow-up tests Spina himself calls marginal, at p < .07 and p < .09. LeBoeuf and Norton ran the consumer version. A computer crash was attributed to a worldwide virus rather than a cooling fan by 73% of participants when the student lost his job and 56% when he graduated on time, chi-square(1, N = 129) = 4.14, p = .04. A zoo disease was blamed on a bear rather than a rabbit by 36% against 20%, chi-square(1, N = 130) = 4.28, p = .04. Of the tests in their first set of experiments, the two conspiracy ones return the smallest chi-squares. An assassination in a small country was attributed to a conspiracy by 76% when war followed and 54% when peace did, chi-square(1, N = 74) = 3.80, p = .05, and a conceptual replication using the Kennedy assassination gave 75% against 64%, chi-square(1, N = 224) = 3.69, p = .055. A later experiment primed how predictable the world seems. Matching held among participants who first wrote about unpredictability, 43% against 18%, chi-square(1, N = 80) = 5.55, p = .02, and was no longer reliable among those who wrote about predictability, 51% against 43%, chi-square(1, N = 93) = 0.61, p = .44.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The power cut that emptied a district",
+      "text": "A fault leaves a whole district dark for a day, and residents assume something major failed at the substation. A loose connection can do the same. The scale of the disruption carries no information about the scale of the fault."
+    },
+    {
+      "kind": "everyday",
+      "tag": "A place lost over a late form",
+      "text": "A student loses a university place because one form went in a day late, and looks for a deeper reason behind it. The consequence was heavy and the cause was clerical, and nothing requires the two to match in size."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The vote decided by a handful",
+      "text": "A referendum turns on a narrow margin and commentators reach at once for deep historical forces. A close result is equally compatible with small and accidental causes, which the weight of what follows cannot rule out."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The magnitude-matching inference reproduces across scenarios and two countries with large effects, while the conspiracy version of it holds in one of the four studies that varied or measured consequence size, and only among people asked to take the victims' side.",

@@ -18,6 +18,23 @@
     "note": "Jones's book Ingratiation set the research programme, and this entry takes its account of the book from Gordon's 1996 meta-analysis rather than from the book, which was not obtained. Gordon reports Jones restricting the term to tactical impression management whose goal is increased liking, and reports his description of the ingratiator's dilemma. The imprint and the date are read from the reference list of Higgins, Judge and Ferris. The fallacy label is older and its scholarly footing is thin. A Crossref bibliographic search for the phrase with the word fallacy returned entries on the appeal to nature, the appeal to pity and the appeal to popularity, and nothing on this one, and a Europe PMC search for the exact phrase returned no records. Hansen's Stanford Encyclopedia survey of the fallacies, read here in full, contains no occurrence of \"flattery\", \"vanity\" or \"superbiam\" while treating ad misericordiam, ad baculum and ad populum at length."
   },
   "evidence": "Three meta-analyses pool the measured version. Gordon assembled 69 effect sizes covering 6,509 people. The mean weighted effect, corrected for sample-size bias, was d = 0.20, 95% CI 0.16 to 0.24, and the individual effects ran from -1.33 to 3.64 with a significant homogeneity test, Qw(68) = 700.19, p < .00001. Of the 69, 36 were significantly positive and 23 were not significant. What the moderators do to that average matters more than the average. Liking gave d = 0.51 and ratings of competence or performance gave d = 0.11. Targets of the flattery gave d = 0.36 and bystanders who merely watched it gave d = -0.01. Laboratory studies gave d = 0.38 and field studies gave d = -0.07, both significant and opposite in sign. Rated transparency of the attempt accounted for 14.4% of the variance in effect size, more than any other moderator, and the relationship had a significant quadratic term. Higgins, Judge and Ferris pooled ingratiation against work outcomes across 50 correlations and 6,065 people, giving an observed r of 0.17 and a corrected estimate of 0.23, 95% CI 0.20 to 0.26. Split by criterion, ingratiation tracked performance assessments at 0.35, 95% CI 0.31 to 0.39, and extrinsic success at 0.11, 95% CI 0.06 to 0.16. Peck and Levashina, updating the interview literature, put other-focused tactics against interview ratings at a corrected 0.17 across 12 correlations and 1,277 people, 95% CI 0.08 to 0.26, and against job performance ratings at 0.25 across 4 correlations and 4,113 people, 95% CI 0.23 to 0.28. Their credibility intervals are wide in most cells, which is their own reason for reporting moderators. The study usually cited for flattery working on a target who has seen through it is Chan and Sengupta. Fifty-five students read a leaflet from a fictional store telling them their dress sense was classy and chic, then rated the store either under a five-second deadline or with unlimited time. A pretest of 25 others found 19 of them, 76%, describing the leaflet as flattery with an ulterior motive. Speeded ratings were higher than unhurried ones, 5.71 against 5.02 on a nine-point scale, F(1, 53) = 4.03, p < .05, with sincerity showing the same gap, 5.35 against 4.55, F(1, 53) = 6.17, p < .05. Delayed purchase intention correlated .75 with the speeded rating and .14 with the unhurried one. A within-subjects run on 66 people gave 5.06 against 4.33, F(1, 64) = 17.14, p < .001, in both measurement orders. In a third study with 200 people in total, 80% chose the flattering store's coupon after three days against 64% immediately, and 59% in a control group who saw the leaflet with the compliments removed. A fourth study on 105 people found the gap only among those asked first to write about a flaw, 5.14 against 4.32, and not among those asked to write about a strength, 4.19 against 4.41. Two studies reach past liking towards assent. Park, Westphal and Stern surveyed 451 American chief executives, drawn from 572 respondents at a 42% response rate, alongside 3,135 directors and managers who might flatter them, running from 2001 to 2007. Flattery and opinion conformity aimed at the chief executive predicted self-enhancing views of his own strategic judgement, and those views predicted persisting with a strategy after poor performance. Bjarnøe, Hansen, Schraff and Thau ran survey experiments in Denmark and the United States in which respondents received appeals to their self-identified social class with different kinds of flattery attached. Their abstract reports that adding flattery boosted the appeals among strong class identifiers, and that high-status and low-status groups responded similarly.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The compliment before the request",
+      "text": "A colleague opens by saying that nobody understands the budget as well as the finance manager does, then asks her to approve the line she had queried. The praise is pleasant and it contains no answer to the query."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The discerning audience",
+      "text": "A speaker tells a room that they are far too intelligent to be taken in by the official figures, and then offers figures of his own. Being called discerning is not evidence, and his numbers still have to stand on their own."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The essay and the marker",
+      "text": "A student praises a lecturer's course at length before arguing that his essay deserves a higher mark. Nothing in the praise bears on the essay, and the inference runs from the lecturer's pleasure to the grade."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Ingratiation pools to d = 0.20 across 69 effect sizes and 6,509 people, and the setting decides the sign: d = 0.38 in the laboratory against d = -0.07 in the field.",
@@ -31,7 +48,10 @@
     "replicated": {
       "es": 0.2,
       "esType": "d",
-      "ci": [0.16, 0.24],
+      "ci": [
+        0.16,
+        0.24
+      ],
       "ciLevel": 95,
       "weighting": "sample-size weighted and corrected for sample-size bias, across 69 effect sizes"
     }

@@ -16,6 +16,23 @@
     "note": "The comic \"No, We Won't Calm Down – Tone Policing Is Just Another Way to Protect Privilege\", dated 7 December 2015, is the widely cited vector by which the term spread. It did not coin it, and this entry could not establish who did or when. The phrase circulated in activist writing before that date, and the Oxford English Dictionary published an entry for the noun on 10 July 2025 whose dating evidence sits behind a subscription these checks did not pass."
   },
   "evidence": "The term has an activist rather than an academic origin, and the empirical literature attached to it grew up separately under other names. The closest thing to a direct measurement is a field and experimental study by Lee and colleagues of a neighbourhood social media platform. Five toxicity classifiers rated 1,025 disclosures of racial discrimination against 1,009 disclosures of negative interpersonal experience. All five flagged the discrimination posts more often. Rates ran from 4.59% for Google's Perspective API to 59.61% for ChatGPT, against 1.39% and 41.82% for the comparison set. Human neighbours flagged 36.10% of the discrimination disclosures, 95% CI [33.27, 39.12], against 13.68% of the comparison posts, 95% CI [11.60, 16.06]. Negative-emotion words predicted human flagging for the discrimination disclosures but not for the comparison posts, which is the paper's ground for the term: readers appeared to use tone as a non-racial reason to remove race talk. Explicit mention of white identity predicted flagging, b = 0.57, p < .001, and language marking the poster's belonging in the neighbourhood predicted less of it, b = -0.42, p < .05. The older literature is about the speaker's emotion rather than the critic's response to it. Brescoll and Uhlmann ran three experiments on adults recruited by flyer in a Connecticut public park and paid a dollar or a lottery ticket. In the first, 69 people watched a videotaped job interview in which a professional described feeling angry or sad. Status conferral showed a gender by emotion interaction, F(1, 64) = 16.38, and the angry man scored 6.47 against the angry woman's 3.75 on an 11-point composite, with suggested salaries of $37,807 and $23,464. The second study used 180 people and the third 133. Salerno and Peter-Hagene put the same question to a scripted mock jury, where a lone holdout dissenter expressed no emotion, anger or fear under a male or a female name. Their abstract reports that anger from male holdouts lowered participants' confidence in their own verdict while anger from female holdouts raised it. Salerno and colleagues later repeated the paradigm across gender and race, and separately tested attorneys expressing anger in a closing argument on samples of 120, 294 and 273. Motro and colleagues tested the same backlash for black women in the workplace across two studies totalling 555 people. A related literature points the other way about emotion in general. Nitschke, McKimmie and Vanman's meta-analysis of 20 effect sizes on 3,128 people found that visibly distressed rape complainants were judged more credible than controlled ones, g = 0.38, 95% CI [0.25, 0.51], with a p-curve analysis giving no sign of reporting bias.",
+"examples": [
+  {
+    "kind": "everyday",
+    "tag": "The complaint about the complaint",
+    "text": "A resident raises a repair that has been outstanding for months and is told to put it less aggressively. The meeting now turns on how she spoke, and the repair is no longer what anybody is discussing."
+  },
+  {
+    "kind": "everyday",
+    "tag": "The reply that grades the message",
+    "text": "An employee reports that the rota leaves a shift uncovered and is told the tone of the email was unhelpful. Whether the rota is wrong is a separate question and it has stopped being asked."
+  },
+  {
+    "kind": "everyday",
+    "tag": "The same objection, two receptions",
+    "text": "Two colleagues put an identical objection with identical heat and only one is asked to calm down. The words did not differ, so what changed the response was not the tone."
+  }
+],
   "replication": {
     "state": "mixed",
     "headline": "The nearest measurable claim, that anger costs a woman influence, held in some repeats and came out backwards in others.",

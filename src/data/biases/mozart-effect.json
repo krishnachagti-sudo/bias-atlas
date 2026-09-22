@@ -17,6 +17,23 @@
     "note": "Their paper is a one-page letter titled \"Music and spatial task performance\", Nature 365, page 611. Rauscher and Hinton wrote in 2006 that the popular media coined the term \"Mozart effect\" after it, citing a 1993 piece by Knox. The letter itself sits behind a paywall and was not read for this entry."
   },
   "evidence": "Rauscher and colleagues described their own 1993 study the following year, in a paper given to the American Psychological Association and deposited with ERIC. Thirty-six undergraduates from the psychology department at the University of California, Irvine scored 8 to 9 points higher on the spatial reasoning subtest of the Stanford-Binet Intelligence Scale after listening to 10 minutes of Mozart's Sonata for Two Pianos in D major, K. 448, than after taped self-hypnosis instructions or silence. In their words the facilitation lasted only ten to fifteen minutes. The same 1994 paper reports a follow-up on 84 college students, 79 of whom finished, using paper folding and cutting items. A two by two analysis of variance gave a main effect for day, F(1, 51) = 28.211, p < .001, and an interaction between listening condition and day, F(1, 51) = 11.17, p < .01. Chabris later recomputed the original comparisons for his meta-analysis and put the paper folding and cutting effect against silence at d = 1.389, with N = 8 and P = 0.140. Against relaxation instructions he gives d = 1.622, N = 8, P = 0.094. Those two figures are Chabris's arithmetic on the original data, not numbers printed in the 1993 letter.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The sonata played to the cot",
+      "text": "Parents play classical recordings to a newborn in the belief that it raises intelligence. What was published was a gain by undergraduates on one spatial subtest, which had run out within a quarter of an hour. The step from that to babies and to intelligence was made by other people."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The playlist before the exam",
+      "text": "A candidate plays ten minutes of the sonata on the way in, expecting sharper thinking across the paper. The measured task involved mental imagery and temporal ordering, and other music produced about the same lift, so the particular composer is doing little of the work."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The recording left running all day",
+      "text": "A manager pipes the same sonata through an office from nine until five to keep staff sharp. Whatever the lift is, it was measured over minutes, and nothing in the report speaks to a working day or to any task other than a spatial one."
+    }
+  ],
   "replication": {
     "state": "failed",
     "headline": "The largest meta-analysis puts Mozart ahead of other music by d = 0.15, and reports that studies from Rauscher's own lab return the highest effects of all.",

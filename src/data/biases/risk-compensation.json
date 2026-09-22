@@ -17,6 +17,23 @@
     "note": "Peltzman's paper is about American car safety regulation, and the names attached to it came later from other people. The Peltzman effect stands for his result. Risk homeostasis comes from Gerald Wilde's 1982 paper in Risk Analysis, which made it a general theory of behaviour."
   },
   "evidence": "Only Peltzman's abstract could be read for this audit, the article being closed at every location tried. It sets out the claim in four sentences. Technological studies imply annual highway deaths would be 20 per cent greater without the mandated safety devices. That literature ignores non-regulatory demand for safety and drivers' response to the devices. The article states that these offsets are virtually complete, so regulation has not decreased highway deaths. Time-series data, though not cross-section data, imply some saving of car occupants' lives at the expense of more pedestrian deaths and more non-fatal accidents. Peltzman calls that pattern consistent with optimal driver response to regulation, which is the mechanism: drivers protected inside the car shift risk to people outside it.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "Winter tyres on an icy road",
+      "text": "A driver fits tyres that grip better in ice, finds the car steadier, and carries more speed into the bends. Part of the grip the tyres bought has been spent on going faster rather than banked as safety."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The harness on the roof",
+      "text": "A roofer clipped to an anchor line leans further over the edge than they would unclipped. The harness is not wasted, and the fall it prevents is partly a fall the worker would not have risked without it."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The armbands in the pool",
+      "text": "A child in armbands goes out of their depth and the adult watching relaxes for the same reason. Two people have adjusted their behaviour to one piece of equipment, and the margin it created is smaller than it looks."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Tested properly, the offset is usually small or absent, but it is not absent everywhere, and the domains have to be judged separately.",

@@ -18,6 +18,23 @@
     "note": "The paper is \"The Doctor Fox Lecture: A Paradigm of Educational Seduction\". A professional actor was introduced as Dr Myron L. Fox of Albert Einstein College of Medicine and gave a lecture on mathematical game theory and its application to physician education, coached to use double-talk, neologisms, non sequiturs and contradicting statements. The phrase \"style over substance\" is not the paper's; it names a family of findings rather than a single experiment."
   },
   "evidence": "The 1973 article itself was paywalled on this pass, and its design is described here from two documents that were read. Robert Kaplan's 1974 letter to the same journal records 55 psychiatrists, psychologists, medical educators and educational administrators, an eight-item questionnaire of which seven were yes or no, and chi-square tests comparing favourable with unfavourable answers for each of three audiences. Kaplan notes there was no control group, that several respondents said yes when asked whether they had read Fox's publications, and that no item on the questionnaire asked about learning. Peer and Babad give the same count of 55 respondents and list the questions, which cover whether the speaker dwelt on the obvious, seemed interested, used enough examples, was well organised, stimulated thinking and was interesting. The 39-minute recording holds about 19 minutes of lecture and 20 minutes of discussion. Ware and Williams tested the idea properly two years later. Their abstract reports 207 students who each saw one of six lectures varying in substantive teaching points covered and in seductiveness, then rated the presentation and took a 26-item achievement test. Ratings reflected differences in content coverage only under low seduction, and were not sensitive to content when the lecture was highly seductive. Achievement was higher after high-seduction lectures and after high-content lectures. The modern version uses the same speaker twice. Carpenter, Wilford, Kornell and Mullaney filmed one instructor explaining why calico cats are usually female, once standing upright with eye contact and no notes, once slumped, looking away and speaking haltingly. Forty-two undergraduates saw one version. The fluent instructor was rated more organised, knowledgeable, prepared and effective, with ts above 8.77 and ds above 2.70, and viewers rated their own learning at 3.48 against 1.76, d = 1.78. Recall did not differ, t below 0.50, and overconfidence was 0.22 against 0.03, d = 0.93. In their second experiment, 70 students given the script to study scored 0.44 against 0.40, t(68) = 0.81, p = .42, and spent 1.39 against 1.43 minutes reading it.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "Two readings of one seminar paper",
+      "text": "The same paper is read aloud at two seminars, once haltingly from a script and once with pauses, eye contact and a joke in the third minute. The second audience rates the argument clearer and better evidenced, although not a word of the argument differs between the rooms."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The pitch with the borrowed numbers",
+      "text": "Two teams pitch the same forecast to the same committee, working from one shared spreadsheet. The team that speaks without hedging is described afterwards as rigorous. Fluency has been read as a property of the figures, which were the same figures in both rooms."
+    },
+    {
+      "kind": "everyday",
+      "tag": "An interview answer rehearsed until smooth",
+      "text": "A candidate gives the same answer at a second interview, having practised it until it runs without hesitation. The panel scores the reasoning higher than the first panel did. Nothing in the reasoning changed; only the delivery did, and the score followed the delivery."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The rating effect survived an almost exact repeat 40 years on, and the illusion of learning it was famous for did not.",

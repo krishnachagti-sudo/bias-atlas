@@ -19,6 +19,23 @@
     "note": "The paper is \"The norm of reciprocity: A preliminary statement\", 25(2), 161-178. It contains no experiment. Gouldner wrote it as an attack on functionalism, specifically on that school's failure to handle power and unequal exchange, and he said so in a 1979 note on the paper for Current Contents. The first experiment on reciprocity as a compliance lever is Regan's, eleven years later, and the door-in-the-face technique was named by Robert Cialdini and five colleagues in 1975."
   },
   "evidence": "Regan recruited 81 male Stanford freshmen for a study advertised as being about aesthetics, and analysed 77. A confederate either brought the subject an unrequested Coca-Cola, or the experimenter handed out Cokes to both, or nobody received anything. The confederate later passed a note asking the subject to buy raffle tickets at 25 cents each toward a new gym, the prize a Corvette. Mean purchases were 1.73 tickets after the confederate's favour, 1.08 after the experimenter's, and 0.92 after none, t = 2.28 and t = 3.11 against the two controls. The two control conditions did not differ, which rules out mood or modelled generosity. Liking for the confederate correlated with compliance among control subjects at r = .46, and among subjects who had received the favour at r = .14, not significant. Cialdini and colleagues introduced the door-in-the-face procedure in 1975: refuse a large request first, and compliance with the smaller one that follows rises. In their Study 3, on 24 subjects per condition, 54.1% agreed to the smaller request after rejecting the extreme one, against 33.3% in each of two controls. Field work followed the same logic. Strohmetz, Rind, Fisher and Lynn had two waiters in Ithaca give each diner a foil-wrapped chocolate with the bill, and 92 dining parties tipped 17.8% with the chocolate against 15.1% without, t(90) = 5.25. Armin Falk ran the largest test. A children's charity in Zurich sent 9,846 Christmas solicitation letters for a school project in Dhaka, randomly assigning each to no gift, one postcard, or four postcards. Donation rates were 12%, 14% and 21%, giving 397, 465 and 691 donors from 3,262, 3,237 and 3,347 letters. The economic literature reaches the norm from the other direction, by watching people pay to punish or repay strangers. Oosterbeek, Sloof and Van De Kuilen pooled 75 results from 37 ultimatum-game papers and found that proposers offer 40% of the pie on average and responders reject 16% of offers.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The sample handed over at the counter",
+      "text": "A shopper accepts a taste of cheese they did not ask for and finds it awkward to walk away without buying any. Nothing was agreed and no trade was made, yet the request that follows lands on someone who has already received something."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The neighbour who took in a parcel",
+      "text": "Someone signs for a delivery for the flat upstairs. When that neighbour later asks for a lift to the station, refusing feels heavier than it would have done a week earlier."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The collector who asks for less",
+      "text": "A fundraiser asks for a monthly standing order, is turned down, and then asks for a single five pounds. The retreat is read as a concession, and the smaller request is granted more often than it would have been on its own."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "A preregistered replication of the 1975 door-in-the-face study 45 years later found 51.3% compliance against 33.6% in the controls, and the meta-analytic effect across 89 comparisons is r = .14.",

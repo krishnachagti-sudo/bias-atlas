@@ -2,7 +2,9 @@
   "no": 101,
   "slug": "cheerleader-effect",
   "name": "Cheerleader effect",
-  "aliases": ["Group attractiveness bias"],
+  "aliases": [
+    "Group attractiveness bias"
+  ],
   "category": "perception",
   "statement": "The same face is rated as more attractive when seen in a group than when seen alone, by about one and a half to two and a half points on a hundred-point scale.",
   "meaning": "The claim is narrow. A rater sees one photograph of a person alone and another of the same person flanked by others, and gives an attractiveness rating for the target both times. The rating in the group condition comes out slightly higher. Everything about the comparison is within-subject and within-face, so the effect is a shift in a judgement about one individual, not a claim that groups are attractive. Walker and Vul's abstract explains it by ensemble coding. The visual system computes an ensemble representation of faces presented in a group, individual members are biased towards that average, and average faces are attractive. That is the hierarchical encoding of their title. The name is borrowed from a line in the sitcom How I Met Your Mother, in the 2008 episode 'Not a Father's Day' written by Robia Rashid and directed by Pamela Fryman, as Ojiro and colleagues record.",
@@ -13,6 +15,23 @@
     "note": "'Hierarchical encoding makes individuals in a group seem more attractive' ran online on 25 October 2013 and in the January 2014 issue. Its abstract reports five experiments in which subjects rated faces presented either alone or in a group of the same gender. The article is closed access and was not read for this entry. Unpaywall, OpenAlex and Semantic Scholar all record no repository copy, Vul's laboratory publication page returned a server error, and the Internet Archive was offline on the day of checking. Its abstract, the publisher's own press release and later papers that describe or replicate it are the sources for everything said about it here."
   },
   "evidence": "The Association for Psychological Science's release on the paper says five experiments used over 130 undergraduates rating pictures of 100 people. Sometimes the target sat in a group portrait with two other people, and sometimes the picture was cropped to show the person alone. Other experiments used collages of 4, 9 and 16 pictures. The release puts the benefit at enough to move someone from the 49th to the 51st percentile of attractiveness, and quotes Vul saying the effect is definitely small. Experiment 4 is the one later work has chased. Ojiro and colleagues describe it as 37 undergraduates at the University of California, San Diego, 13 men and 24 women, rating targets surrounded by 0 to 16 other faces, with ratings higher whenever any surrounding face was present and no effect of how many there were. They give its partial eta squared as .197. Those figures are read off Ojiro and colleagues, not off Walker and Vul. The best-measured version of the effect comes from Flinders University. Carragher, Lawrence, Thomas and Nicholls recruited 64 and then 66 participants and analysed 50 and 60, after excluding left- and mixed-handers and a few outliers. Ratings ran along a visual analogue scale from 'Very Unattractive' at 0% to 'Very Attractive' at 100%. All six of their group conditions were reliable, with Cohen's d from 0.46 to 0.67 and 95% intervals on the gain running from [0.49, 2.09] to [1.32, 3.00] percentage points. They summarise the effect as an increase within the range of 1.5 to 2%. Carragher, Thomas, Gwinn and Nicholls analysed 28, 31, 31 and 29 participants across three experiments and found the same band, for example 1.64% with d = 0.71 and a 95% interval of [0.79, 2.48] percentage points. Kramer, Javorková and Jones put the gain at 2.54% and 2.10% in two Bayesian experiments of 71 and 70 people.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The photograph cropped from a group",
+      "text": "The same picture of a person is shown twice, once alone and once still flanked by the friends it was taken with. Raters give the group version the higher mark, though the face is the same one in both."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The row of staff portraits",
+      "text": "A firm shows its team as a grid of faces. Any one of those faces, lifted out and shown on its own, is rated a shade lower than it was inside the grid. The shift concerns one individual, not the group."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The profile picture chosen for company",
+      "text": "Someone picks the group shot over the solo one, believing the company flatters them. What the effect supports is narrower: a small upward shift in ratings of the same face, not a different verdict about the person."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Faces gain roughly 1.5 to 2.5 points on a hundred-point scale in a group, in laboratory after laboratory, while the group-size manipulation of the original's fourth experiment failed twice in Japanese samples.",

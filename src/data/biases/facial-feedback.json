@@ -16,6 +16,23 @@
     "note": "Their paper is titled \"Inhibiting and facilitating conditions of the human smile: A nonobtrusive test of the facial feedback hypothesis\". The replicators describe it as commonly discussed in introductory psychology courses and textbooks, and counted 1,370 Google Scholar citations in May 2016."
   },
   "evidence": "The 1988 paper reports two studies, and the famous number comes from the first. Study 1 tested 92 undergraduates at the University of Illinois in three conditions: pen in the teeth, pen in the lips, pen in the nondominant hand. Mean funniness ratings were 5.14 for teeth, 4.77 for the hand and 4.32 for the lips, on a scale from 0 to 9, so the quoted gap of 0.82 is the distance between the two extremes of a three-condition design. The test the authors report for it is a linear contrast across all three, t(89) = 1.85, p = .03, a directional result close to the conventional threshold. Study 2 tested 83 students at Mannheim University and split the humour response in two. There the pen left funniness ratings alone, with all ps above .20, and moved only the separate amusement rating, which ran 6.43 in the teeth condition against 5.40 in the lips condition, t(75) = 1.78. The replication report gives that gap as 1.03. The authors also note that the group codings for Study 1 were lost through a clerical oversight. The replicators state that the study had not been replicated directly using the same design and the same dependent variable, and searches of Crossref, OpenAlex, Semantic Scholar and Europe PMC in August 2026 found no earlier direct repeat.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The hairgrip held in the teeth",
+      "text": "Someone pins up their hair with a grip held between their teeth while a comedy plays on the radio, and finds the programme funnier than usual. The teeth have pulled the face into something near a smile, and the hypothesis says that arrangement feeds back into the amusement."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Reading in bright sun",
+      "text": "A reader squints into glare on a bench and finds the article more irritating than it reads indoors. The glare has set the brow into a frown, and the claim is that some of the irritation comes from the face rather than from the writing."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The dentist's chair and the small talk",
+      "text": "A patient held open-mouthed cannot arrange their face at all while the hygienist chats. The hypothesis predicts that the jokes land flatter than they would over a coffee, because the muscles that normally accompany amusement are unavailable."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Two preregistered multi-lab tests found nothing for the pen, while smaller studies run without a camera, or in a classroom, still get the original effect.",

@@ -16,6 +16,23 @@
     "note": "The post is dated 24 December 2006 and is still online at ScienceBlogs, where it was read in full twice, and mirrored at Freethought Blogs. Myers writes that a common refrain in criticisms of Dawkins's The God Delusion is one he has taken to filing under 'my own private title', and then names it: 'I call it the Courtier's Reply. It refers to the aftermath of a fable.' The post names neither Hans Christian Andersen nor 'The Emperor's New Clothes'. It names H. Allen Orr's review of The God Delusion in the New York Review of Books as the piece that prompted it."
   },
   "evidence": "There is no experimental literature under this name, so the record is textual. Myers's post is satire followed by two sentences of argument: reading Orr's review, he writes, put a two-word rebuttal in his head, and many anti-Dawkins arguments file under the same heading. Orr's review carries the New York Review's issue date of 11 January 2007, and Myers wrote on 24 December 2006. Orr's complaint is that Dawkins, once labelled a professional atheist, is 'actually more an amateur', and that the book's most disappointing feature is 'Dawkins's failure to engage religious thought in any serious way'. The sharper version of the move predates both. Terry Eagleton, in the London Review of Books of 19 October 2006, asked what Dawkins's views were on the epistemological differences between Aquinas and Duns Scotus, and whether he had read Eriugena on subjectivity, Rahner on grace or Moltmann on hope. The counter-charge is also in print. Edward Feser, writing in the American Enterprise Institute's magazine The American on 26 March 2010, called the label a question-begging pseudo-defence 'tarted up with a clever marketing tag', said a listener would be baffled at how shouting 'Courtier's Reply!' excuses not knowing what one is talking about, and named the move back: 'Call it the Myers Shuffle.' Three days after Myers posted, Jason Rosenhouse quoted John Lynch making the structural objection, that the label works only once the equivalence between theology and fairyology has been established, which requires reading the theology. Those quotations were read on Rosenhouse's page rather than at their sources, and the Dawkins comment he prints, congratulating Myers on the satire, was read the same way.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The reading list in place of an answer",
+      "text": "A parent asks why a new timetable is expected to raise attainment and is told that she has not read the literature on curriculum design. No part of that literature is named, and the question is untouched."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The six books on the forum",
+      "text": "A poster points out that a diet plan's arithmetic does not add up, and the reply lists six books he should read before commenting. The arithmetic is still there, and none of the books is said to fix it."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The question ruled out of order",
+      "text": "A councillor asks how a scheme will be funded and the officer answers that the question shows unfamiliarity with local government finance. The critic has been disqualified and the criticism has not been met."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "No study of this move was found. On the nearest measured question, telling readers that a scientist trained at an institution with low standards shifted their attitude to the claim by d = 0.05 in 439 people and d = 0.06 in 199, neither different from zero.",

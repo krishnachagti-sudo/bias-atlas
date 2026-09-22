@@ -17,6 +17,23 @@
     "note": "The paper is a review rather than an experiment. Its abstract says the term phantom is of recent vintage, that psychological reactions to unavailable alternatives had been studied for almost 60 years, and that the paper reviews 13 domains of research to identify seven empirical generalisations about phantoms. The seven are not listed in the abstract, and the full text could not be retrieved for this entry. Pettibone and Wedell credit this paper with introducing the phantom decoy. Farquhar and Pratkanis made the applied case a year later in Management Science, arguing that phantoms should be handled openly in decision structuring because they can produce bias, deception and suboptimal decisions."
   },
   "evidence": "The fullest test varies where the phantom sits. Pettibone and Wedell gave 439 undergraduates 20 consumer choice sets, with each of five conditions using a different phantom position. Every set appeared for three seconds, after which one alternative was declared unavailable and its label blinked. The measure is the share choosing the target when the phantom favours it, minus the share when the phantom favours its rival. A phantom placed above the target on the target's better attribute gave 0.20, 95% interval 0.12 to 0.26. Moving that phantom further out on the same attribute gave 0.14, 0.08 to 0.20. Two positions that also lifted the target's weaker attribute gave 0.09 and 0.10. A phantom that matched the target's better attribute and lifted only its weaker one gave 0.04 and was not significant. Position mattered, F(4, 434) = 2.56, p < 0.05. Experiment 2 put all five positions inside subjects, with 262 students choosing among products described by price and a quality rating. The same two positions worked, at 0.10 and 0.05, and the other three did not. Averaged over positions the shift was about 4 points, against about 11 points in the between-subjects design. Trueblood and Pettibone report that in Pettibone and Wedell's 2000 consumer experiment the target was chosen 57% of the time when a phantom targeted it and 43% when it did not, and those two figures are quoted here from that later paper. Scarpi ran the design on cats: close phantoms shifted them towards the available food more similar to the phantom, and distant phantoms did nothing.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The flat let that morning",
+      "text": "An agent shows two flats, then mentions a third that was bigger and cheaper than one of them and went yesterday. The viewer takes the flat the missing one beat on both counts, rather than its rival. The option that pulled the choice was the one that could not be had."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The seminar group already full",
+      "text": "A student finds that the group with the better tutor and the better hour is closed. She signs up for the group that lost to it on both counts, not for the one that lost on a single count. An option nobody can take still moved the choice."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The advertised bargain that ran out",
+      "text": "A shopper comes in for a washing machine priced below the rest and larger than them, is told the last one went, and leaves with the nearest model instead. Retailers know the shape of this, and it works because the shopper hears about the shortage before deciding."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Direction depends on the materials and on when the shopper learns the option is gone. Pettibone and Wedell moved choice towards the target at four of five phantom positions, at 0.20 of a choice share at best. Trueblood and Pettibone, using rectangles instead of products, moved it towards the competitor.",

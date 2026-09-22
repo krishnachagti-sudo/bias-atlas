@@ -18,6 +18,23 @@
     "note": "Gettier's three-page 1963 paper in Analysis supplied the cases and made no empirical claim. Weinberg, Nichols and Stich put one of them to students in lower-division classes and large lectures at Rutgers, sorted the answers by ethnicity and by years of education, and reported that the answers came apart. Their paper is the one the later cross-cultural literature answers."
   },
   "evidence": "The 2001 probe was a car case. Bob thinks his friend Jill drives an American car because she has driven a Buick for years, unaware that the Buick was stolen and that she has replaced it with a Pontiac. Western respondents split 17 for really knows against 49 for only believes. East Asian respondents split 13 against 10, Fisher's exact p = 0.006414, and respondents from the Indian subcontinent 14 against 9, p = 0.002407. Each non-Western group was 23 people. Weinberg and colleagues describe their East Asian subjects as Chinese, Japanese and Korean, some tested in Asia and others students or immigrants in the United States. Their two socioeconomic comparisons used different stories, a zebra-in-the-zoo case and a cancer conspiracy case, on adults approached near shops in downtown New Brunswick.\n\nTurri, Buckwalter and Blouw ran a different family of case in 2015. Darrel, an ecologist, sees a small creature with red markings and records a red speckled ground squirrel in Zone 3. In the Gettier version an almost identical prairie dog has invaded the park, and the animal Darrel is looking at is a squirrel anyway. 135 participants on Mechanical Turk each read one of three versions. Knowledge was attributed by 81% in the no-threat control, 67% in the Gettier version and 16% where the threat succeeded and Darrel was looking at a prairie dog, χ²(2, N = 135) = 39.63, p < .001, Cramér's V = .542. The Gettier version did not differ from the control, Fisher's exact p = .164, and the authors concluded that a salient but failed threat to the truth of a judgement leaves knowledge attribution unchanged. Their Experiment 2 swapped the threat for an unnoticed replacement, and there the gap opened: 88% against 66%, N = 141, Fisher's p = .017, Cramér's V = .254.\n\nMachery and colleagues took the opposite approach in 2017, running one case in many places. Their protagonist Paul rushes to the wrong hospital after a caller confirms that a Mary Jones has been admitted, while his wife Mary is being treated elsewhere. They collected 2,838 participants at 24 sites in 23 countries and 17 languages. Asked to choose between knew and thought he knew but did not actually know, a majority denied knowledge at 23 of the 24 sites, at rates between 70 and 90%, the exception being a small Bedouin sample in Israel. Asked the plainer question, did he know, answers differed from an even split at only 11 of the 24 sites. With more than 2,000 participants they found no difference between men and women.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The stopped clock",
+      "text": "A woman glances at a wall clock reading ten past three and believes it is ten past three, which it is, though the clock stopped a day earlier. Asked whether she knows the time or only believes it, respondents divide, and the count of their answers is what gets reported."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The car in the drive",
+      "text": "A man sees what he takes to be his colleague's car outside the office and concludes she is at work. The car belongs to somebody else, and she is at work, having come in by train. The belief is true and the reason for it has nothing to do with why."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The right answer from the wrong page",
+      "text": "A student reads a misprint in a textbook and gives a correct date in an exam because the misprint happens to state it. Whether that counts as knowing is a question about the concept; how many people say it does is a question a survey can answer."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "A 37-site replication found the effect Turri's experiment had missed, an odds ratio of 1.86, and then split over whether an effect that size counts as people denying knowledge.",

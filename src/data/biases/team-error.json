@@ -16,6 +16,23 @@
     "note": "The paper is 'Team errors: definition and taxonomy', volume 65, issue 1, pages 1 to 9, published in June 1999. Sasou was at the Human Factors Research Center of the Central Research Institute of Electric Power Industry in Tokyo and Reason at the University of Manchester, according to the affiliations held in the Unpaywall record. The abstract also says the paper relates team errors to Performance Shaping Factors."
   },
   "evidence": "The evidence under the label is incident review, and it reads as such. The Joint Commission's 2024 annual review covers 1,575 sentinel events reported by American healthcare organisations during that year. Team failures appear in its lists of contributing factors. Of the 1,472 factors recorded for unintended retention of a foreign object, a lack of shared understanding or mental model across the care team accounts for 14 per cent, and inadequate team communication before, during or after a shared task for 6 per cent. Of the 1,520 factors recorded for wrong surgery, a time-out that was not performed or was incomplete accounts for 10 per cent, and the shared mental model item for another 10 per cent. Of the 7,774 factors recorded for patient falls, the shared mental model item accounts for 7 per cent and inadequate staff-to-staff communication during handoffs for 6 per cent. Reporting to the Joint Commission is voluntary, and the review states that no conclusions should be drawn about the actual relative frequency of events. Direct observation gives a firmer count. Lorelei Lingard and colleagues watched 48 surgical procedures over 90 hours, involving 94 team members, and recorded 421 procedurally relevant communication events. They classed 129 of those as failures, about 30 per cent of exchanges, and 36.4 per cent of the failures had visible effects on system processes, among them delay, tension, resource waste and procedural error. The taxonomy itself has been carried to a fresh corpus once. Renli Lu, Yan Zhou and Mu Zhou applied the Sasou and Reason framework, with Threat and Error Management, to operating errors held in an air traffic control voluntary safety reporting system, and their abstract puts team errors at 31 per cent of the reported air traffic control errors. Their paper is a conference presentation and the underlying count is not in the abstract.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The trainee who says nothing",
+      "text": "A trainee sees the senior reach for the wrong dose and stays quiet. Tracing the error to the trainee's silence or to the senior's hand misses what the category names, which is the gradient between them that made the silence likely."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The check nobody owned",
+      "text": "Two people are each entitled to verify a figure before a payment goes out, and each assumes the other has done it. The error belongs to neither alone. It belongs to a division of the task that left the check unassigned."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Too polite to query the specialist",
+      "text": "A crew member doubts the course the navigator has set and treats questioning it as rudeness towards a colleague's speciality. Professional courtesy is one of the four conditions named for team errors, and it works by making a correction feel like an insult."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "No repeat of Sasou and Reason's coding of industrial events was found, and the measured work sits in the adjacent literature, where the pooled link between teamwork and clinical performance is r = 0.28.",

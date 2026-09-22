@@ -18,6 +18,23 @@
     "note": "The hospital problem appears in \"Subjective Probability: A Judgment of Representativeness\", which Sedlmeier and Gigerenzer place at page 443. The 1974 Science review carries the version that is quoted, and the counts quoted with it. The 1972 paper was tried again on 21 September 2026 at ScienceDirect, Elsevier's linking hub, Unpaywall, OpenAlex, Semantic Scholar and two course-page copies, and none served it; entries 248 and 145 record the same failure across a longer list of venues on the same day. Figures attributed to it here come from the supplement to the 2025 replication."
   },
   "evidence": "The 1974 review states the case in a paragraph. Told that a larger hospital delivers about 45 babies a day and a smaller one about 15, and asked which recorded more days on which more than 60% of babies were boys, 21 undergraduates chose the larger, 21 the smaller and 53 said about the same, within 5 percent of each other. The review adds that this notion of statistics \"is evidently not part of people's repertoire of intuitions\". Two other results sit beside it. Asked which sample argued more strongly that an urn was mostly red, 4 red out of 5 drawn or 12 red out of 20, most people picked the first, though the correct posterior odds are 8 to 1 and 16 to 1. Asked for the probability that average height in a sample exceeds 6 feet, subjects gave the same answer for samples of 1,000, 100 and 10. The review also points to a study of experienced research psychologists, which is the 1971 paper. That paper asked 84 respondents at meetings of the Mathematical Psychology Group and the American Psychological Association what chance a fresh group of 10 subjects had of repeating a significant result found on 20. The median answer was .35, and only 9 of the 84 answered between .40 and .60, against the .48 the authors call the more reasonable estimate. The review's gloss is that such researchers put too much faith in small samples and grossly overestimate how well their results will repeat. The design behind the hospital counts is not in the review. The supplement to the 2025 replication reports that problems 7 to 9 went to Stanford undergraduates with no background in probability or statistics, split across two versions, one asking about days above 60% and one about days below it. In the first, 12 chose the larger hospital, 10 the smaller and 28 the same. In the second, where the larger hospital is the correct answer, 9 chose the larger, 11 the smaller and 25 the same. The supplement puts 97 participants in the two versions together and prints counts totalling 95.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The village school at the top of the table",
+      "text": "A school with eleven pupils in the year heads the county table, and two years later sits near the bottom. Parents read both as reports on the teaching. A cohort that small swings that far on one child, which is arithmetic rather than news."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Crime up by half in the parish",
+      "text": "A parish newsletter reports that recorded crime rose by half on last year, from four incidents to six. The same rise in a city of a million would take a year of effort to produce. Small counts produce extreme percentages without anything having changed."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The test that ran for a morning",
+      "text": "A team tries two versions of a sign-up page, gets thirty visitors on each, and keeps the one that did better. Thirty visitors will separate the two whatever is true of them. The result is read as though the number underneath it made no difference."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The preregistered replication reproduced the low rate of correct answers on the hospital problem, and its own test against chance found nothing in either version of the question.",

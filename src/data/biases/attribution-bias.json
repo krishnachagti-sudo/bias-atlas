@@ -2,7 +2,11 @@
   "no": 221,
   "slug": "attribution-bias",
   "name": "Attribution bias",
-  "aliases": ["Attributional bias", "Attribution biases", "Causal attribution bias"],
+  "aliases": [
+    "Attributional bias",
+    "Attribution biases",
+    "Causal attribution bias"
+  ],
   "category": "social",
   "statement": "Attribution bias is a family label rather than one effect, and its members are measured apart, tested apart, and land anywhere from d = 0.095 to d = 1.82.",
   "meaning": "The label covers any claim that people assign causes in a slanted way. Its members share no measure and no common prediction. Malle separates two senses of the word attribution: explaining a behaviour, which answers a why question, and inferring a quality of the agent from the behaviour. Correspondence bias and hostile attribution belong to the second sense. The actor-observer hypothesis and the self-serving pattern belong to the first. What holds the family together is a scoring convention. An answer is coded as internal or external, and a bias is a departure from the split that some norm treats as correct. Members disagree about which way the departure runs. This page is a map of the members that have their own entries here, because that is the level at which the evidence exists.",
@@ -13,6 +17,23 @@
     "note": "Malle calls Heider the undisputed founder of attribution work and argues that the person and situation dichotomy credited to him is not his. On Malle's reading Heider applied internal and external factors only to the 'can' forces that let an action outcome succeed, and explained intentional action by the actor's reasons instead. Malle quotes Kelley's 1967 paper for the general form, that in the attribution process 'the choice is between external attribution and internal … attribution', and reports that it is generally considered the first systematic and general treatment of lay causal explanation. Heider's book is cited here from its Crossref record and from Malle's account of it; Kelley's paper carries no DOI and is quoted at one remove through Malle. No single publication defines the umbrella term."
   },
   "evidence": "The family has been counted once at family level. Richard, Bond and Stokes-Zoota sorted 474 meta-analytic effects, resting on 33,912 primary estimates, into 18 topics, and report an overall mean of r = .21 with an across-literatures standard deviation of .15. Their attribution row holds 36 meta-analytic conclusions over 1,929 estimates at a mean of r = .14, with a mean corrected standard deviation of .14. Only social influence, at r = .13, is smaller. Inside their attribution appendix the two halves of the same claim come apart: people attributing successes to ability sits at r = .29 over 69 estimates and to internal factors at r = .26 over 49, while failures to bad luck sits at r = .10 over 69, failures to external factors at r = .09 over 42, and failures to task difficulty at r = .05 over 69. Those rows are Richard and colleagues summarising other people's meta-analyses, so they are quoted here at one remove and none is placed in a structured field. The method base is narrow across the family. In his 2006 meta-analysis Malle puts about 95% of all data on the fundamental attribution error in tightly controlled laboratory experiments rather than surveys, observations or archival studies. Verhoef and colleagues report that almost 98% of their 219 hostile-attribution effect sizes came from studies using hypothetical stories.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The debrief with two boxes",
+      "text": "A review of a missed deadline asks whether the cause lay with the person or with the circumstances. The honest answer, that a supplier changed a specification and the plan carried no slack for it, is neither, and the form makes somebody push it into one column."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Two questions logged as one",
+      "text": "Asking why a volunteer stopped coming and asking what the stopping says about her are different questions with different answers. Both get written down as an attribution, and the family label then covers work that was never measured the same way twice."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Six months in the last job",
+      "text": "A hiring panel reads a short spell in a previous job as restlessness, or as a bad employer, and the record before them supports either. Whichever they choose is scored as internal or external, and the label on the choice is the scoring convention rather than a finding."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "No replication of attribution bias exists, because no experiment by that name exists. Five members have been tested and their results run from d = 0.095 to d = 1.82.",

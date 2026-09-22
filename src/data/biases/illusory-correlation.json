@@ -17,6 +17,23 @@
     "note": "\"Genesis of popular but erroneous psychodiagnostic observations\" reports six studies in which undergraduates viewed Draw-a-Person drawings paired at random with symptom statements. Loren Chapman published a single-author word-pair study under the same name in the Journal of Verbal Learning and Verbal Behavior four months earlier. Mullen and Johnson treat that paper as the original demonstration, and write that subjects consistently overestimated how often the two longest words in the list had been paired together. Neither 1967 paper was obtained; both are cited here from the descriptions given by Watts, Smith and Lilienfeld and by Mullen and Johnson."
   },
   "evidence": "The clinical findings are quoted here at one remove. Watts, Smith and Lilienfeld report that in the Chapmans' survey 91% of clinicians said atypical eyes on the Draw-a-Person test indicate suspiciousness, and 82% said a large or emphasised head indicates intelligence. In the experiment that followed, drawings were paired with symptom statements so that each statement appeared once with each drawing, and undergraduates recovered the same pairings the clinicians named. The 1969 follow-up repeated the design with Rorschach protocols and signs of homosexuality, and the same account reports that undergraduates named the signs clinicians named, with actual correlations of zero in the materials. The minority-group paradigm is documented in Mullen and Johnson's meta-analytic table. Hamilton and Gifford's Experiment 1 used 39 statements split 18 desirable and 8 undesirable for the majority against 9 and 4 for the minority, with 33 participants, and gave t(32) = 2.57 on the assignment measure and t(32) = 1.92 on estimation. Their Experiment 2 made desirable behaviour the rare kind, used a 36-statement array with cells of 16, 8, 8 and 4 and 52 participants, and gave t(51) = 3.04 and t(51) = 1.75. Hamilton repeated the paradigm himself with Dugan and Trolier in 1985, and the same table records estimation tests of t(39) = 2.46 on 40 people and t(23) = 2.98 on 24. Mullen and Johnson pooled 14 articles reporting 23 studies. Across 28 estimation tests the combined effect was r = 0.344, and across 23 assignment tests r = 0.259, which they call moderate and small-to-moderate. Their diffuse comparisons of significance levels gave chi-square 53.208 on 27 degrees of freedom and 46.222 on 22, and they describe both sets as significantly heterogeneous. The valence of the rare behaviour separated the studies sharply. Where it was negative the pooled effects were r = 0.460 over 17 tests and r = 0.385 over 13; where it was not, r = 0.213 over 11 and r = 0.156 over 10, and the focused comparisons gave z = 3.436, p = .00030 and z = 2.984, p = .00142. Mullen and Johnson note that the studies which had varied valence directly, Hamilton and Gifford among them, had suggested it makes little or no difference, and they present their own result as the first demonstration of the pattern.",
+    "examples": [
+      {
+        "kind": "everyday",
+        "tag": "The small team and the rare mistake",
+        "text": "One department of four people and one of forty make errors at the same rate. The few errors in the small team are doubly unusual, are noticed together, and the team acquires a reputation the rates do not contain."
+      },
+      {
+        "kind": "everyday",
+        "tag": "The sign a marker is sure about",
+        "text": "An examiner becomes convinced that candidates who write in very large hand are the anxious ones. The pairing occurs no more often than chance allows, and the conviction survives because the striking cases are the ones recalled."
+      },
+      {
+        "kind": "everyday",
+        "tag": "The newcomers in a small town",
+        "text": "Newcomers are a tenth of a town's residents and account for a tenth of its offences. Both the group and the offences are uncommon, so the pairs stand out, and residents report a link the rate does not hold."
+      }
+    ],
   "replication": {
     "state": "mixed",
     "headline": "Four preregistered experiments, each analysing between 1,395 and 1,551 people, found the effect on self-reported evaluation whenever the rare behaviour was undesirable, at d = 0.20 to 0.33, and none of it on three implicit measures.",

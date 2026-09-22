@@ -13,6 +13,23 @@
     "note": "\"Prospect Theory: An Analysis of Decision under Risk\" introduced the kinked value function, steeper for losses than for gains. The familiar coefficient came thirteen years later, from Tversky and Kahneman's 1992 paper in the Journal of Risk and Uncertainty, which reports lambda = 2.25. Walasek, Mullett and Stewart describe that estimate as one of the first attempts to fit lambda. It came from 25 graduate students in one-hour sessions, choosing between hypothetical lotteries and sums of money for certain. They also report that of the prospects used, 28 were pure gains, 28 pure losses and eight mixed, and only the eight mixed ones bear on lambda. The 1992 paper is paywalled and no open copy was located during this check, so its sample and design are attributed to them rather than read off the original."
   },
   "evidence": "Three separate bodies of work sit under the one name. In risky choice, lambda is fitted to accept-or-reject decisions over 50-50 gambles mixing a gain and a loss. Stake size moves the result. Ert and Erev put the same bet to 46 undergraduates for real money at two magnitudes. An even chance of winning or losing 100 Sheqels drew 22 percent takers, well below half at p < .001. The same bet at 10 Sheqels drew 48 percent, which is chance. In riskless choice, Kahneman, Knetsch and Thaler reported that sellers of a university mug demanded more than buyers would pay. That is the endowment effect. Samuelson and Zeckhauser reported a preference for whichever option was labelled current, the status quo bias. Xiao, Lam, Piara and Feldman replicated that paper twice on Mechanical Turk, both runs preregistered, with 311 and 316 participants. They found the bias in three of its four scenarios, with the smallest odds ratio in the first scenario at 2.47, 95% CI [1.37, 4.44], and no support in the wagon-colour scenario. In the field, Pope and Schweitzer analysed over 2.5 million putts on the PGA Tour with laser measurements. Professionals, Tiger Woods included, putt better for par than for birdie from the same distance. They read that as loss aversion around the reference point of par.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The coin flip nobody takes",
+      "text": "A colleague offers to toss a coin for £50. Almost nobody accepts, and many still refuse when the prize is raised to £80 against the same £50 stake. The refusal prices a loss above a gain of the same size, which is what the ratio is meant to measure."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The bonus with a clawback",
+      "text": "A scheme pays £2,000 for a good quarter and deducts £1,000 for a bad one. Staff treat the deduction as the larger number and play safe, although the arithmetic favours taking the chance. The asymmetry sits in the weighting rather than in the odds."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The side protecting a one-goal lead",
+      "text": "A team a goal ahead with twenty minutes left drops deep instead of pressing for a second. Conceding is felt as worse than scoring is felt as good, so two outcomes of the same size are not treated as the same size."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Two meta-analyses published in the same year put the coefficient at 1.96 and at 1.31, and a re-analysis finds the higher figure comes from gambles where the losses on offer were smaller than the gains.",

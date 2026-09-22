@@ -2,7 +2,11 @@
   "no": 337,
   "slug": "vaticinium-ex-eventu",
   "name": "Vaticinium ex eventu",
-  "aliases": ["Vaticinium post eventum", "Vaticinia ex eventu", "Prophecy after the event"],
+  "aliases": [
+    "Vaticinium post eventum",
+    "Vaticinia ex eventu",
+    "Prophecy after the event"
+  ],
   "category": "belief",
   "statement": "A prophecy composed after the events it claims to foretell, a verdict textual critics reach about a document rather than a measured tendency of minds.",
   "meaning": "The Latin means prophecy from the event. Böcher defines it, quoting Oßwald, as a feigned prophecy made on the basis of events that have already happened, and notes that vaticinium post eventum is sometimes used instead. Two parties stand behind any such text and only one of them is what the term describes. A writer who knows how something turned out puts that knowledge into the mouth of a figure placed earlier in time. Crabbe states the structure plainly: the prophecies describe events lying in the future from the perspective of the text and in the historical past from the perspective of its readers. The charge is about composition, and it attributes design rather than error. Scholars also use it as a dating tool. Segal gives the rule. Where a prophecy is correct across extensive details it was likely written after those events, and where it begins to diverge from what is known to have happened it was composed at the point where the divergence starts.",
@@ -13,6 +17,23 @@
     "note": "The phrase was already settled scholarly Latin before this, and its coinage was not traced for this entry. Oßwald's article, \"Zum Problem der Vaticinia ex eventu\", volume 75, pages 27 to 44, is the earliest publication located that takes the category itself as its subject rather than applying it to a text. It was not obtained. Böcher's 1999 study of Revelation draws its definition from a later Oßwald reference article of 1966, cited there at column 2072. The reading the term supports is older than the term. Scolnic records that Porphyry, in the third century CE, identified the little horn of Daniel 7 as the Seleucid king Antiochus IV, that all modern scholars agree with him, and that many of Porphyry's interpretations are reported by Jerome."
   },
   "evidence": "The evidence is philological. Nobody has run a study; scholars argue case by case from the text and the historical record, and the strongest arguments turn on where a prediction stops being right. Segal calls Daniel 11 the best example in the entire Bible. Its account of dealings between the Ptolemies and the Seleucids is accurate through verse 39 and diverges at verse 40, which places the writing just after the events described up to that point. Scolnic reports that the consensus treating the book as a vaticinium ex eventu, written about 165 BCE as though foretold in the sixth century, has held for over a century since S. R. Driver's 1900 commentary, and that Daniel 7 to 12 is dated to the persecution of 167 to 164 and before Antiochus IV's death in 164 or 163. The same reading is applied well beyond Daniel. Böcher argues that the author of Revelation used the device repeatedly to structure his material, so that the catastrophes preceding salvation are retrospective interpretation of the present rather than genuine foretelling. Bracht notes that Hippolytus did not know Luke 21:20 was a vaticinium ex eventu, the Gospel of Luke having been written after 70 CE. Crabbe reads the prophecies in Books 1, 6 and 8 of the Aeneid the same way, including the parade of Roman figures Anchises shows Aeneas in the underworld at 6.752 to 892, in a poem written between Actium and Virgil's death in 19 BCE. Both writers name the same purpose. Correctly predicting what the reader already knows has happened buys credit for the predictions that remain outstanding, which Segal describes as raising the predictive value of the revelation in the reader's eyes. The category is not confined to antiquity. Böcher's opening example, from Peuckert, is a Silesian prophecy that claimed to date from 1630 and was in truth written in the early summer of 1813, covering Napoleon's campaign against Prussia in 1806 and 1807, the peace, and the coalition of 1813.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The prophecy put in an ancestor's mouth",
+      "text": "A family chronicle has a great-grandfather foretelling the flood that took the mill, in wording that matches what the water did. The chronicle was written by a grandson afterwards, and the foresight belongs to him."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The warning written for the audience",
+      "text": "A commemorative play has a general warning his officers of the defeat that arrives in the third act. Everyone watching knows how it ended, and the speech is composed to be recognised rather than to inform the officers."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The point where the accuracy stops",
+      "text": "A text predicts a run of events in close detail and then goes wrong. Scholars place its composition at the divergence, because the accurate part was written with the outcomes already in hand and the rest is where the author was guessing."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "No empirical study of the term was found. It labels a compositional act by a writer, and nothing located turns it into a claim about people that could pass or fail.",

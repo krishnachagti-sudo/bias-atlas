@@ -18,6 +18,23 @@
     "note": "Pages 1 to 28 of volume 80, issue 1, introducing the I-E scale. Crossref, PubMed, OpenAlex, Unpaywall and Semantic Scholar all record the monograph as closed, and no repository copy was found, so it was not read for this entry and nothing is quoted from it."
   },
   "evidence": "The scale was built as one dimension, and the first challenges to that came within a decade. Hanna Levenson told the 1973 American Psychological Association convention that lumping fate, chance and powerful others together under one heading was the problem, and she split externality in two. Her I, P and C scales carry eight items each in a Likert format, presented to the respondent as a single 24-item attitude scale. She reports Kuder-Richardson reliabilities in the mid .60s and high .70s for a student group, Spearman-Brown split-half figures in the mid .60s for an adult sample, and one-week test-retest figures in the .60s and .70s. In a college sample of 75 the P and C scales correlated with Rotter externality at .25 and .56, and the I scale at -.41. Two principal component analyses, one on 329 college males and one on 165 psychiatric inpatients, produced I, P and C as the first three factors, together accounting for 60% of the total variance. Levenson also reports that the P and C scales correlate with each other between .23 and .59 and are usually unrelated to the I scale, which is not what a bipolar dimension predicts. Marsh and Richards reviewed 20 published factor analyses of Rotter's own scale and counted six distinguishable factors across them. Their confirmatory analysis found that a five-factor model fitted adequately while models with fewer factors or a simpler structure did not, and that a single higher-order factor still explained much of the variance in the lower-order factors. Beretvas and colleagues later ran a reliability generalisation study across published uses of Rotter's scale and of the Nowicki-Strickland scale. They found no statistically significant difference between the two scales in predicted internal consistency, and only the percentage of women in a sample predicted variation in internal consistency estimates. Testing interval length explained variation in the test-retest coefficients.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "Two people passed over for the same promotion",
+      "text": "One spends the evening working out which parts of her case were thin. The other concludes the decision was settled before the interviews. The difference is not about this one panel; each is applying a standing expectancy about whether results follow from what a person does."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The diagnosis and the diet sheet",
+      "text": "A patient handed advice on salt and exercise either treats his blood pressure as something his habits move, or as something set by his family history and his luck. The reading decides whether the advice is information or decoration, and it tends to be the same reading he gives everything else."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The exam paper that was unfair",
+      "text": "A student who misses the grade can place the cause in the revision she skipped or in a paper that asked for the one topic she was told to leave out. External is not automatically the wrong answer, and some papers are unfair. What the construct measures is which answer a person reaches for across years of results."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The correlates reproduce at modest size, around r = .30 for depression symptoms across 28,490 people, while the scale's single dimension and its separateness from neighbouring traits do not.",

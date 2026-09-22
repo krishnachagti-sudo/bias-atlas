@@ -18,6 +18,23 @@
     "note": "Their paper \"A verbal illusion\", volume 31, issue 4, pages 591 to 597, sets out the analysis and reports one experiment. The head injury sentence was not one of the items in that experiment."
   },
   "evidence": "Wason and Reich's abstract describes the whole of their experimental design: four pragmatic and four non-pragmatic sentences were paraphrased, and the prediction was confirmed that the pragmatic sentences were paraphrased more accurately. A sentence counts as pragmatic when its compositional injunction agrees with ordinary belief. No missile is too small to be banned amounts to ban all missiles, which is unremarkable. No error is too gross to be overlooked amounts to overlook all errors, which is not. The numbers behind that comparison are quoted here from Mark Liberman's 2009 Language Log summary of the paper rather than from the paper itself. Liberman reproduces the eight items, the instruction given to subjects, and the results table: 64 subjects, arranged as 16 pairs by two orders by two replications, each paraphrasing one sentence of each type. The four pragmatic sentences were paraphrased correctly on 51 of 64 occasions, or 80%. The four non-pragmatic sentences were paraphrased correctly on 27 of 64, or 42%. Item variation was wide, from 16 correct out of 16 for the missile sentence down to 3 out of 16 for No error is too gross to be overlooked. Wason and Reich also ran a pilot with content words removed. Shown No WUG is too DAX to be ZONGED, six of ten subjects took it to imply that WUGS should be ZONGED, which Wason and Reich treat as correct, and four of ten concluded the opposite. Paape, Vasishth and von der Malsburg report the same four out of ten. The head injury sentence itself was tested on nobody. Wason and Reich collected its misconstrual from letters sent by psychologists and linguists and from conversations, showing people the target on one side of a card and No head injury is too trivial to be noticed on the other. The paper itself could not be read on 21 September 2026. Taylor and Francis and SAGE both answer its PDF with a bot challenge rather than a paywall, and Unpaywall, OpenAlex and Semantic Scholar all record it closed. The Internet Archive holds the 1979 volume's contents, which confirm the title and pagination, but not the issue. Crossref carries the publisher's own abstract, and that is what is quoted above.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The notice in the corridor",
+      "text": "A sign reads 'no head injury is too trivial to be ignored'. Everyone who passes takes it as an instruction to treat every injury, which is the reverse of what the words compose to, and nobody stops long enough to notice."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The correction that sounds wrong",
+      "text": "Shown the version that does say what readers thought the first one said, they object that it is badly written. The sentence they found sensible is the broken one, and the repaired one is the one that grates."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The line in the quality handbook",
+      "text": "A handbook carries the line 'no mistake is too small to be overlooked', and staff read it as a demand for care. Composed out, it licenses overlooking every mistake. The sensible meaning arrives so fast that the sentence is never read."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "The inversion reappears in German, English, Danish and Greek, and German readers judged the depth charge condition the second most sensible of four conditions when it is the least sensible of them.",

@@ -17,6 +17,23 @@
     "note": "Merriam-Webster traces the German Pareidolie to Kahlbaum's \"Die Sinnesdelirien\" in Band 23 (1866), pages 76-77 and 81, where he offered it as a better label for illusory phenomena than partial hallucination. The same dictionary dates the first known use of the English pareidolia to 1962, so the word is far older than the research programme now attached to it."
   },
   "evidence": "Hadjikhani and colleagues recorded MEG from nine volunteers viewing 123 images: 40 real faces, 41 face-like objects and 42 control objects. Two of the nine could not be analysed because they moved, leaving seven. Face-like objects produced activation of ventral fusiform cortex at about 165 ms that did not differ from the response to real faces, while control objects did. Only real faces produced an earlier peak near 130 ms. Wardle and colleagues later combined fMRI in 16 people with MEG in 22, using 32 illusory faces, 32 matched objects and 32 human faces. Representation of illusory faces was confined to face-selective occipital-temporal cortex, decoding became reliable from 130 ms, peaked near 160 ms, and by roughly 250 ms the illusory faces were represented like ordinary objects. Proverbio and Galli recorded ERPs from 26 students and found the N170 over the right hemisphere larger for faces and for faces-in-things than for objects. The illusion is not confined to people. Taubert and colleagues gave rhesus monkeys a visual preference task, and the monkeys looked longer at objects that elicit illusory faces in humans and fixated the illusory features. Liu and colleagues took the illusion away from objects entirely. Twenty adults were shown pure-noise images and told half contained a face or a letter, and they reported a face on 34% of trials and a letter on 38%. The right fusiform face area responded when they reported a face rather than a letter. The largest behavioural work concerns what viewers read into the illusion. In the first of a series of experiments running to 3,815 adults in total, Wardle and colleagues had 800 people rate 256 illusory-face images, 100 ratings each. Of the images, 90% carried a male mean rating and 9% a female one, and 80% of those raters were male-biased against 3% female-biased.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The face on the front of a car",
+      "text": "Headlights and a grille resolve into eyes and a mouth, and some models look cheerful while others look angry. Nobody concludes the car is watching, which is the point: the error sits in detection rather than in anything anybody believes."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The socket on the wall",
+      "text": "Two round holes above a slot snap into a startled face the moment they are noticed. The resemblance is at its strongest in the first fraction of a second and fades on inspection, without ever becoming a claim about the socket."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The knot in the door",
+      "text": "A grain pattern in a wooden door reads as a watching face in poor light, and it stays a face after the wood has been identified. Detection does not wait for belief to agree with it, and knowing better does not switch the percept off."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The early face-like brain response to illusory faces has held across labs, while the attention findings and the monkey single-neuron findings built on top of it have not.",

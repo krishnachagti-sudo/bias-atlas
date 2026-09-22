@@ -15,6 +15,23 @@
   },
   "evidence": "The 2003 paper assembles other people's results. Sackett and Torrance are quoted as finding that non-patients rate chronic dialysis at 0.39 on a scale where 0 is as bad as death and 1 is perfect health, while dialysis patients rate their own state at 0.56. Van Boven, Dunning and Loewenstein's mug study is quoted with an average selling price of $6.37 against an average buying price of $1.85. Sellers guessed buyers would pay $3.93 and buyers guessed sellers would charge $4.39, each estimate falling between the two real figures. Table I of the paper reproduces Read and van Leeuwen's snack choices for delivery a week later. Of office workers who were hungry and expected to be hungry, 78% chose the unhealthy snack. The other three cells gave 56% for satiated people expecting hunger, 42% for hungry people expecting satiation and 26% for satiated people expecting satiation. The first field test came from Conlin, O'Donoghue and Vogelsang, two of whom wrote the model. A US outdoor apparel and gear company gave them every order in weather-related categories from January 1995 to December 1999, over 12 million items. That was cut to 2,200,073 orders across gloves and mittens, winter boots, hats, sports equipment, parkas and coats, vests and jackets. Return rates ran from 6.6% for sports equipment to 22.2% for parkas and coats. A fall of 30°F in the temperature on the order date raised the probability of a return by 0.57 percentage points, which is a 3.95% rise in the return rate. By category the effect ran from 1.44 percentage points for vests to 0.27 for parkas and coats, and was significant in six of eight specifications. Fitting the model to the same data put alpha between 0.31 and 0.50 in every category the authors could estimate except vests. Predicted tastes sat roughly a third to a half of the way from true future tastes back towards current tastes. Acland and Levy took the bias to a gym. They paid 120 students and staff at the University of California, Berkeley to attend, keeping 54 treated and 57 control people after attrition, and elicited predictions of later attendance before and after the incentive month. Attendance after the incentive ended rose by 0.188 visits per week. Treated people revised their predictions down by 0.421 visits per week less than controls in weeks carrying no extra incentive, which the authors read as a failure to foresee the habit they had just formed."
   ,
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The coat bought in a cold snap",
+      "text": "During a freezing week a shopper buys the heaviest coat in the shop and a second pair of lined boots. She knows perfectly well that spring is coming. What she gets wrong is the size of the change, so the purchase is tilted towards the person standing in the cold."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The diagnosis that feels unliveable",
+      "text": "Told he will lose most of his hearing, a man says he could not bear such a life and settles his affairs on that basis. The direction of his forecast is right and the magnitude is not, because adaptation runs further than anyone predicting from today’s state allows for."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The saving rate set by today’s tastes",
+      "text": "A young worker sets aside little, budgeting on the assumption that what she enjoys now is what she will want at fifty. Tastes built by habit keep moving, and the plan underweights the distance, so early spending runs high and later provision runs short."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "Three independent teams found the same over-influence of current conditions in cars, cinema tickets and health insurance, and none of them could separate projection bias from salience.",

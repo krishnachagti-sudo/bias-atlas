@@ -13,6 +13,23 @@
     "note": "The argument is far older than the paper. Hahn, Oaksford and Bayindir date it to John Locke and note that it still appears in logic textbooks as an example of incorrect reasoning. What 2004 marks is the Bayesian treatment and the first experiment. Stephens credits Oaksford and Hahn in 2004 and Hahn and Oaksford in 2006 as the first to apply a Bayesian approach to arguments from ignorance. The 2004 paper is paywalled and was not obtained here; its abstract was read at Birkbeck's repository, and it states that the textbook examples are inductive arguments that are not unsound but simply weak."
   },
   "evidence": "The experimental record is small and it is mostly one group. The 2004 experiment is described by its own authors in their 2005 conference paper: positive arguments were viewed as more convincing than their negative counterparts, participants were sensitive to whether one or 50 studies had failed to find an effect, and they were sensitive to how strongly a character in the dialogue already believed the conclusion. That experiment used two topics, and no figure from it is quoted here. Hahn, Oaksford and Bayindir then ran two studies. The first gave 73 Cardiff University students and staff dialogues on four topics, privatising public transport, clone technology, international environmental law, and nature versus nurture in language acquisition, rated 0 to 10 for how convinced the listener should be. Positive arguments scored 4.53, SE 0.08, against 4.27, SE 0.08, for negative ones, F(1,72) = 11.58, p = .001, MSE = 40.35. Source reliability mattered far more than polarity: a non-governmental research body scored 5.58, SE 0.07, against 3.21, SE 0.07, for a television street interview, F(1,72) = 198.63, p < .0001. Prior belief moved ratings from 4.32 to 4.47, F(1,72) = 5.96, p = .017. The second study, with 72 undergraduates and a Latin square design, varied epistemic closure across a library catalogue, hospital notes, a newspaper archive and a train timetable, crossed with four structural variants. Topic and structural variant both mattered, F(3,217) = 35.55 and F(3,217) = 19.05, both p < .0001, and they interacted, F(9,217) = 3.71, p < .0001, MSE = 5.59. Both negative-evidence variants scored below plain positive evidence. The ghost-shaped variant, where absent denial is offered as reason to believe something exists, still scored 3.36, SE 0.37, significantly above zero, t(71) = 9.16, p < .0001. For the library topic it beat the ordinary negative form, 6.16, SE 0.65, against 4.0, SE 0.64, t(34) = 2.39, p < .05, so structure alone does not order the two. The one independent test located comes at the question sideways. Marin, Lindeman and Svedholm-Häkkinen gave 1,325 Finns ten fallacies and four strong arguments on five contested topics, rated 1 to 5 for how well justified they were. Appeals to ignorance drew 2.61, SD 0.47, the highest of the five fallacy types apart from slippery slopes at 2.67, SD 0.52, and far above ad hominem at 1.71, SD 0.59. Ratings tracked the reader's own position: fallacies aligned with a participant's attitude scored 2.63, SD 0.55, against 1.98, SD 0.41, for those opposing it, F(1,1155) = 1295.15, p < .001.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The screen that found nothing",
+      "text": "A material is called safe because a screening test showed no harmful effect. What the clean result is worth depends on whether that test would have caught the harm it was looking for, which is a question about the instrument rather than the argument."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The timetable and the newspaper archive",
+      "text": "A train absent from the timetable almost certainly does not run. A person absent from a newspaper archive may have done a great deal. The same silence is worth different amounts because one record would have listed the thing and the other would not."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The search nobody carried out",
+      "text": "A claim survives on the ground that nothing contradicts it, and nobody has yet looked. A failed search lowers the probability of what was sought; a search never conducted leaves it where it was."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "The pattern the Bayesian account predicts has been found again, though almost all of the direct tests come from the group that proposed it.",

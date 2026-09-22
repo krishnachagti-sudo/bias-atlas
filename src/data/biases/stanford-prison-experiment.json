@@ -13,6 +13,23 @@
     "note": "The study itself ran in August 1971 in a basement corridor of the Stanford psychology building, and the first academic account appeared two years later as \"Interpersonal dynamics in a simulated prison\". The same three authors published a second account in September 1973 in Naval Research Reviews, the study having been funded through the Office of Naval Research. The two 1973 papers share most of their text and disagree on their own headcount."
   },
   "evidence": "The prison occupied a 35-foot section of basement corridor, partitioned into cells. Seventy-five men answered a newspaper advertisement offering $15 a day for a study of prison life. Twenty-four were picked as the most stable, most mature and least involved in anti-social behaviour, then assigned at random, half to guard and half to prisoner. Two stand-by prisoners were never called and one stand-by guard withdrew just before the start, so the analysis rests on ten prisoners and eleven guards. Prisoners stayed in the mock prison around the clock. Guards worked three-man eight-hour shifts and went home between them. The contract ran for up to two weeks and the study was stopped after six days. Five prisoners were released before that: four with extreme emotional depression, crying, rage and acute anxiety, the pattern starting as early as the second day, and a fifth after treatment for a psychosomatic rash. The published abstract puts it as half the prisoners developing acute emotional disturbance severe enough to warrant early release. It adds that at least a third of the guards became far more aggressive and dehumanising than a simulation would ordinarily predict. Commands were the most frequent form of verbal behaviour throughout. Exchanges carried few references to individual identity. When prisoners' private cell conversations were monitored, 90% of what they discussed concerned immediate prison conditions rather than their lives outside. The paper advances no specific hypothesis beyond the general one that assignment to guard or prisoner would produce different reactions, and neither 1973 account prints an effect size or a significance test.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The steward briefed to stay in control",
+      "text": "A volunteer marshal is told beforehand to be firm, to allow no exceptions and to keep the queue in hand, and then behaves harshly all afternoon. Reading that as proof of what the armband does to a person leaves the briefing out of the account."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The supervisor who was shown how",
+      "text": "A new shift supervisor is taken through how latecomers get handled here, copies it, and is later cited as evidence that the job makes people strict. The claim under test is that the role alone does the work, and instruction is exactly what has to be absent for it to hold."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The rules borrowed from the last run",
+      "text": "An exercise takes most of its rules from an earlier version run elsewhere, hands them out, and then reports the resulting conduct as something the situation produced. What the participants do is partly the script, and a script supplied by the organisers is not a finding."
+    }
+  ],
   "replication": {
     "state": "failed",
     "headline": "The nearest thing to a re-run went the other way: in the BBC prison study the guards would not take up the role, and the prisoners overturned them.",

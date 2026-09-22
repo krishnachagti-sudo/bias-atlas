@@ -2,7 +2,12 @@
   "no": 474,
   "slug": "bilingual-advantage",
   "name": "Bilingual advantage",
-  "aliases": ["Bilingual executive function advantage", "Bilingual advantage hypothesis", "Bilingual cognitive advantage", "Bilingual advantage in executive control"],
+  "aliases": [
+    "Bilingual executive function advantage",
+    "Bilingual advantage hypothesis",
+    "Bilingual cognitive advantage",
+    "Bilingual advantage in executive control"
+  ],
   "category": "memory",
   "statement": "Bilinguals are said to have stronger executive control from managing two languages, and pooled estimates fall to zero once publication bias is corrected.",
   "meaning": "The claim comes with a mechanism attached. A bilingual keeps both languages active and has to suppress the one not in use, so the argument runs, and that constant suppression trains a general control system which then shows itself on tasks containing no language at all. The tasks are the standard set: Simon, flanker, Stroop and task switching. What gets measured is usually the conflict cost, the extra time an incongruent trial takes over a congruent one, and a smaller cost is read as better inhibitory control. Two claims travel under the same banner and this entry covers only the first. One is that healthy bilinguals of any age outperform monolinguals on those tasks. The other is that lifelong bilingualism delays the onset of dementia symptoms. They rest on different literatures with different records, so the verdict below is about executive function alone and the dementia strand is handled separately under limits.",
@@ -13,6 +18,23 @@
     "note": "The paper opens by saying that previous work had already shown more effective controlled processing in bilingual children, and that the assumption is that managing two competing languages enhances executive functions. What 2004 added was the adult and ageing case, which is the version the popular claim rests on."
   },
   "evidence": "Bialystok and colleagues ran three Simon-task studies. Study 1 used 40 participants, 20 aged 30 to 54 and 20 aged 60 to 88, split evenly between English monolinguals living in Canada and Tamil-English bilinguals living in India, each monolingual matched to a bilingual of exactly the same age. The Simon effect, incongruent reaction time minus congruent, was 535 ms for the younger monolinguals against 40 ms for the younger bilinguals, and 1,713 ms against 748 ms for the older pair. Study 2 used 94 participants, monolinguals in Canada against bilinguals speaking English and Tamil in India or English and Cantonese in Hong Kong. In its two-colour side condition the Simon effect ran 123 ms for younger monolinguals, 8 ms for younger bilinguals, 583 ms for older monolinguals and 212 ms for older bilinguals. Groups were matched on vocabulary and on a fluid intelligence test, and all Study 1 participants held bachelor's degrees. They were not matched on country. Study 3 repeated the task for ten blocks of 24 trials and the groups converged with practice. De Bruin, Treccani and Della Sala later put the Simon effect sizes in the 2004 paper at Cohen's d of 1.08 to 2.99; that range is quoted here from their description, because the 2004 paper reports milliseconds. Paap and Greenberg made the first sustained negative case in 2013 with three studies and 15 indicators of executive processing. There was no main effect of language group on any indicator, and the group by condition interaction reached significance on one, in the direction of a bilingual disadvantage. Matching subsets on parental education, or restricting to highly fluent bilinguals, gave the same pattern.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The advice given to parents",
+      "text": "A nursery tells parents that raising a child in two languages will make her better at concentrating in general, not only better at speaking. The claim on offer is not about vocabulary. It is about a benefit turning up on tasks containing no words."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The switch at the front door",
+      "text": "Someone speaks one language at work and another at home, and suppresses the wrong one dozens of times a day. The argument holds that the suppression trains a general control system, which should then show itself on something like sorting arrows."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The job advertisement",
+      "text": "A post is advertised as suiting bilingual applicants because they are said to be better at holding several things in mind. The languages themselves are not the qualification being claimed. A transferable mental habit is."
+    }
+  ],
   "replication": {
     "state": "failed",
     "headline": "Lowe and colleagues pooled 1,194 effect sizes from 23,414 children and got g = 0.08, which falls to g = -0.04 once publication bias is corrected for.",
@@ -23,7 +45,15 @@
       "year": 2021,
       "n": 23414
     },
-    "replicated": { "es": 0.08, "esType": "g", "ci": [0.01, 0.14], "ciLevel": 95 }
+    "replicated": {
+      "es": 0.08,
+      "esType": "g",
+      "ci": [
+        0.01,
+        0.14
+      ],
+      "ciLevel": 95
+    }
   },
   "limits": "The verdict covers executive function in healthy people. The dementia strand is a different literature with a better record and it is not settled by any of the above. Bialystok, Craik and Freedman drew 184 dementia patients from the records of a memory clinic, 51% of them bilingual, and report symptom onset 4 years later in the bilinguals with the same rate of decline in Mini-Mental State Examination scores afterwards. Li and Coretta's Bayesian meta-analysis of 18 age-at-onset studies puts the delay at 3.45 years, 95% credible interval 2.8 to 4.1, and reports that years of education shifted it only slightly. Anderson, Hawrylewicz and Grundy give Cohen's d = 0.32 for age of onset and d = 0.10 for incidence, and write that their result is not explained by socioeconomic status, education or publication bias. The prospective evidence does not follow the retrospective evidence. Mukadam, Sommerlad and Livingston pooled prospective studies covering 5,527 bilingual participants and got an odds ratio for incident dementia of 0.96, 95% CI 0.74 to 1.23, and Li and Coretta's six incidence studies gave no robust effect either. Later symptoms with no change in who develops the disease is a coherent position, and it is not the executive-function claim. Structured fields carry only the child meta-analysis, because no single original supplies a standardised estimate to sit opposite it: the 2004 paper reports reaction times, and the d range of 1.08 to 2.99 attached to it here comes from de Bruin and colleagues rather than from Bialystok and colleagues. Two author corrections to the Dick paper were published in September and October 2019. PubMed carries their titles and points readers to the article itself; their content was not obtained for this entry.",
   "misreadings": "The de Bruin result is the one most often stated loosely. The familiar shorthand, that positive studies were published at 63% against 36% for negative ones, merges categories. The 63% covers abstracts fully supporting the advantage together with mixed abstracts judged on balance supportive, and the 36% covers mixed abstracts judged partly challenging together with the no-advantage group. The unmerged endpoints are 68% and 29%. De Bruin and colleagues also wrote plainly that a publication bias does not imply bilingualism has no effect on executive functions, and that the small number of disadvantage abstracts could mean the advantage is genuine but smaller and less stable than the literature presents. Leivada went back to their dataset and disputes the reading. Separating null from negative results and applying Bayesian tests, she reports BF10 = 0.109 across the pooled data, favouring the null; BF10 = 1.891 for the positive category, which she calls anecdotal; and post-hoc comparisons in which the robust difference is positive against null, BF10 = 9.297, rather than positive against negative, BF10 = 0.513. She also lists abstracts counted as unpublished that had by 2014 appeared as doctoral theses, book chapters or conference proceedings, formats the original count excluded. The second error is to treat the comparison as clean. Bilingualism travels with immigration, income and schooling, and the meta-analyses can see it. In Lowe and colleagues, the effect was present among studies that did not objectively measure socioeconomic status, g = 0.13, 95% CI 0.04 to 0.22, and indistinguishable from zero among those that did, g = 0.04, 95% CI -0.03 to 0.12; effects also shrank as study quality rose, beta = -0.03, 95% CI -0.05 to -0.008, and study quality was the only moderator to survive when all were entered together. Their largest single source of variance was research group. Dick and colleagues report the English vocabulary deficit usually found in bilingual children and note it is much reduced once socioeconomic status or intelligence is accounted for. Lehtonen and colleagues tested immigrant background as a moderator and found no moderation across domains, QM(2) = 2.89, p = .235. Bialystok and colleagues in 2004 compared monolinguals living in Canada with bilinguals living in India and Hong Kong. Third, a failed advantage is not a demonstrated absence of any consequence. Lehtonen and colleagues found a small bilingual disadvantage in verbal fluency, which they read as less exposure to each language, and Lowe and colleagues found a corrected estimate of -0.19, 95% CI -0.30 to -0.08, for non-verbal working memory.",

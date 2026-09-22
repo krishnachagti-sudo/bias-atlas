@@ -18,6 +18,23 @@
     "note": "\"Illusions of causality at the heart of pseudoscience\", volume 102, pages 392 to 405, argues that quackery and superstition run on ordinary causal learning, and reports an experiment in which testimony from fictitious patients who say they feel better produces the illusion. Its abstract names two manipulations that reduced it: showing testimony from people who improved without the treatment, and asking participants to think in causal terms rather than in terms of effectiveness. Only the abstract, at PubMed, was read for this entry. The Wiley full text is paywalled, and the repository copy at the University of the Basque Country reset the connection on each of three attempts. The density effects are older than this paper. Moreno-Fernández, Blanco and Matute's review traces outcome density to Alloy and Abramson in 1979, and that attribution is quoted here from the review rather than from the 1979 paper. Where the Latin tag and the English label come from was not chased here."
   },
   "evidence": "Blanco, Matute and Vadillo crossed the two frequencies in a design that holds Δp at zero throughout. P(C) and P(O) took values of .80 or .20, giving four groups whose 100 trials divided among the four cell types as 4, 16, 16 and 64, rearranged per group. Experiment 1 ran over the internet with 106 participants judging whether a fictitious medicine, Batatrim, relieved a fictitious Lindsay Syndrome. P(O) gave F(1, 102) = 67.80, p < .001, ηp2 = .40. P(C) gave F(1, 102) = 4.70, p = .033, ηp2 = .04, and the two interacted, F(1, 102) = 4.50, p = .036, ηp2 = .04. A high P(O) was needed for the cue-density effect to appear at all: with P(O) low, the two P(C) groups did not differ. Experiment 2 repeated the design in a laboratory with 160 Deusto University students, swapped the medicine for triangles and squares, and swapped the 0 to 100 scale for one running from -100 to +100. P(O) again dominated, F(1, 156) = 17.58, p < .001, ηp2 = .10, while P(C) fell short of significance, F(1, 156) = 1.47, p = .23. Analysed together the two experiments gave ηp2 = .22 for P(O) and .02 for P(C). Barberia, Blanco, Cubillas and Matute measured the same illusion in adolescents with an active task, in which the participant decides which of 40 patients to treat. In their zero-contingency problem six of every eight patients felt relief whatever the participant did. Untrained participants rated that medicine at 61.69 out of 100 for effectiveness, against 70.28 for a second medicine whose contingency was .625. Chow, Colagiuri and Livesey replaced the present-or-absent outcome with a recovery score from 0 to 100. With 112 participants in Experiment 1, high outcome density raised efficacy ratings, F(1, 108) = 11.3, p = .001, ηp2 = .094, and did so equally for fixed and variable outcome magnitudes. With 56 participants in Experiment 2, whose outcome distributions clustered ambiguous values near the midpoint, the density effect held, F(1, 54) = 4.54, p = .038, ηp2 = .078, with mean ratings of 33.6 against 16.5.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The tincture and the cold",
+      "text": "Most colds clear within a week, a sufferer takes a herbal tincture and recovers, and counts the recovery as evidence for the tincture. Recovery is common with the tincture and just as common without it, so the pairing supports nothing."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The lucky shirt",
+      "text": "A supporter notices how often his team wins when he wears a particular shirt and rates the shirt as helping. The team wins often, and it wins at the same rate on the weekends the shirt stays in the drawer."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The training course with high pass rates",
+      "text": "Nine in ten staff who took a new course passed their assessment, so a manager calls the course effective. Nine in ten of those who never took it passed as well, and the high rate of passing is what is doing the persuading."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "Two groups working independently of the Spanish labs that built the paradigm reproduce the illusion and the outcome-density effect at large effect sizes, and a school intervention against it held on 1,668 students with a six-month follow-up.",

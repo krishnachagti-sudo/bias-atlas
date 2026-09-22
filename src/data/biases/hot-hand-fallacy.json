@@ -13,6 +13,23 @@
     "note": "Their paper is \"The hot hand in basketball: On the misperception of random sequences\". They found no dependence between successive shots and concluded that the widespread belief in streak shooting was, in words Miller and Sanjurjo quote from page 313, \"a powerful and widely shared cognitive illusion\"."
   },
   "evidence": "Three datasets and two surveys, described by Tversky and Gilovich in Chance in 1989. For nine Philadelphia 76ers across 48 home games of the 1980-81 season, the chance of a hit was .51 after a hit and .54 after a miss, with eight of the nine players shooting better after a miss. Free throws for nine Boston Celtics over the 1980-81 and 1981-82 seasons showed no dependence between the first shot and the second. In the controlled experiment, 14 men and 12 women from the Cornell varsity teams each took 100 shots from a distance where they made about half, giving .47 after a hit and .48 after a miss, with a mean serial correlation of .02. One of the 26 produced a significant positive correlation, r = .37, which the authors put down to chance. Against that, a sample of 100 avid fans from Cornell and Stanford was near unanimous: 91% said a player has a better chance after making his last two or three shots, and for a hypothetical 50% shooter they put the figure at 61% after a make and 42% after a miss. A separate group of 100 knowledgeable fans judged sequences of 21 hits and misses, and classified a perfectly random one as streak shooting 65% of the time. The 1985 paper is closed at Elsevier and had no open copy at Unpaywall or Semantic Scholar when this was checked, so the figures above are read off the authors' own 1989 account; Miller and Sanjurjo reproduce the Cornell table from the raw data.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The player everybody passes to",
+      "text": "A team-mate has made his last four attempts, so the ball goes to him on the next possession. Whether the run carries any information is the disputed half of the question, and the pass is made on the assumption that it does."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The stake raised on a winning run",
+      "text": "A player at a chance game wins four times and raises the stake, reading the run as a property of the run. Nothing in the machine changes between throws, so here the belief is an error about where the streak lives."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The manager with three good years",
+      "text": "Money moves to a fund manager who has beaten the index three years running, on the reading that the sequence is skill and will carry into a fourth. The question is whether the sequence carries information at all, and a process with no serial dependence supplies none."
+    }
+  ],
   "replication": {
     "state": "failed",
     "headline": "The 1985 finding of no hot hand did not survive: the statistic it rested on is biased downwards, and correcting it reverses the result.",

@@ -16,6 +16,23 @@
     "note": "Brenner's four-page paper \"The next-in-line effect\" named the phenomenon and supplied the turn-taking word-reading paradigm every later study modifies. His abstract calls the resulting recall curve a scallop effect."
   },
   "evidence": "Brenner's own abstract, read from the University of Michigan Deep Blue record because the article itself could not be obtained, describes a free recall task with subjects seated in a square. Alternate subjects turned over a word card and read the word aloud to the group, the rest listened, and everyone was tested for recall. Subjects who performed tended not to recall words read nine seconds before and after their performance, which Brenner calls a scallop effect, and that loss grew with the difficulty of the performance. He also reports high recall for the material a subject performed, which he calls a peak effect. Forrin, Ralph, Dhaliwal, Smilek and MacLeod describe the same study in 2019 as 22 participants sitting in pairs around a table, one member of each pair reading and the other listening, with the words going round twice. Their retelling puts the dip at three words before a reader's turn, where Brenner's abstract puts it on both sides of the turn. A conference paper by Ovid Tzeng at Ohio State in 1974 ran the same idea with sentences. Forty-five undergraduates in three groups of 15 sat in a circle and took turns reading a sentence card aloud, over three trials of 21 sentences each. Recall peaked for the sentence a student read and fell from two positions before it to one position after. Tzeng reports a figure rather than a test statistic. The sharpest numbers in the classic paradigm come from Adnan Omar and Charles Bond's 1989 conference paper, which seated 96 Texas Christian University students at 24 numbered desks over four sessions and had half of each group read words aloud in a predictable order. Splitting participants at the median of the Social Anxiety Scale, high-anxiety readers recalled 10.6% of words at the position before their turn against 25.7% at positions two to six back, F(1, 46) = 11.90, p < .001. Low-anxiety readers recalled 23.3% against 26.5%, F(1, 48) = 0.46, not significant. That eight-page paper was read in full and does not say how many readers fell on each side of the median.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The round of introductions",
+      "text": "In a circle where everyone gives a name, a woman cannot afterwards recall the name said immediately before her own, while names from the far side of the room come back. The rehearsal that would have fixed it went to her own coming sentence."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Reading aloud in class",
+      "text": "A pupil following a passage read around the room loses the lines just before his paragraph. Prompting him later with the topic does not bring them back, because the words were heard and never encoded rather than encoded and mislaid."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The speech waiting on a folded card",
+      "text": "A speaker at a wedding laughs at the joke in the speech before his own and cannot repeat a word of it an hour later. Nerves make the gap worse without being the step that fails."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "The pre-performance dip has been found outside Brenner's laboratory since 1974, though four of the studies come from Charles Bond's group and the 2019 and 2021 ones share two authors.",

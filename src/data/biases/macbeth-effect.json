@@ -13,6 +13,23 @@
     "note": "Their report is \"Washing Away Your Sins: Threatened Morality and Physical Cleansing\", and the Macbeth name comes from Lady Macbeth scrubbing at a spot nobody else can see. Its abstract announces three studies and its closing paragraph counts four."
   },
   "evidence": "The report runs to two pages and carries four experiments. Study 1 had 60 people recall an ethical or an unethical deed and then complete six word fragments, three of which could be made into wash, shower or soap. Unethical recall produced more cleansing words, 1.43 against 0.90 on 30 people a side, F(1, 58) = 4.26, P = 0.04. Study 2 is the one that was retested. 27 participants hand-copied a first-person account of either helping or sabotaging a colleague, told they were in a handwriting study, and then rated how much they wanted five cleaning products and five other products. The figure gives the two groups as 16 and 11. Those who copied the unethical account rated the cleaning products higher, F(1, 25) = 6.99, P = 0.01, and ratings of the other products did not differ, F(1, 25) = 0.02, P = 0.89. The report gives these F tests in its text and the means only in its figure, so the values of 4.95 and 3.75 quoted here, and the effect of d = 1.02, are read off Many Labs 2's account of the original. Study 3 offered 32 people a choice between an antiseptic wipe and a pencil after the recall task, and 66.7% of the unethical group took the wipe against 33.3% of the ethical group, χ² = 4.57, P = 0.03. Study 4 turned the arrow round. Of 45 people who had recalled an unethical deed, 40.9% of those who cleansed their hands then volunteered for a further study, against 73.9% of those who did not, χ² = 5.02, P = 0.025. Its emotion result is the thinnest and is usually quoted flat. Moral emotions after cleansing were 1.75 against 2.23, F(1, 41) = 2.94, P = 0.047, and a note in the paper records that the tests of cleansing on emotional state were one-tailed.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The lie told to a friend",
+      "text": "Having remembered a lie told the week before, someone finds the hand soap in the shop unexpectedly appealing and buys it. The proposal is that the moral discomfort is looking for physical relief, because the mind treats the two kinds of dirt as near neighbours."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The kitchen scrubbed after an argument",
+      "text": "An hour after saying something cruel, a person is cleaning surfaces that were already clean. The effect predicts that the urge arrives with the memory of the remark rather than with any mess."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The claim signed off",
+      "text": "A clerk approves an expenses claim they are fairly sure is inflated, and wants a wash before lunch. Nothing has touched their hands, and the claim is that the wanting comes from the signature."
+    }
+  ],
   "replication": {
     "state": "failed",
     "headline": "Across 7,001 people the two groups wanted cleaning products equally: 3.95 against 3.95, an effect of exactly zero.",

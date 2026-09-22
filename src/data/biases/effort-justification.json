@@ -16,6 +16,23 @@
     "note": "The paper is titled \"The effect of severity of initiation on liking for a group\" and ran at 59(2), 177-181. It cites one work, Festinger's 1957 book, and calls the prediction a consequence of dissonance theory rather than a new idea. The name effort justification is not used anywhere in it. Aronson and Mills call the claim the hypothesis that an unpleasant initiation raises liking, and later writers, including Lodewijkx and Syroit, label it the severity-attraction hypothesis."
   },
   "evidence": "Sixty-three college women were told they were joining an ongoing discussion group on the psychology of sex, 21 to each of three conditions. Thirty-three volunteered and 30 were recruited later from a psychology course, and the two samples were pooled. Women in the severe condition read twelve obscene words and two vivid passages of sexual writing aloud to a male experimenter as an admission test. Women in the mild condition read five words related to sex but not obscene, among them prostitute and virgin. Controls read nothing. One woman declined the test and one guessed the procedure, and both were excluded. All three groups then heard the same tape, built to be as dull as the authors could manage, of three women discussing secondary sex behaviour in lower animals. They rated the discussion and the members on 17 scales running from 0 to 15, fourteen written and three answered aloud. Summed, the control group averaged 166.7, the mild group 171.1 and the severe group 195.3. Severe beat control at t = 3.32, p < .01, and mild at t = 2.33, p < .05, on two-tailed tests. Control and mild did not differ, t = 0.49. The gap sat mostly in the nine scales about the discussion, 97.6 against 80.2 in the control group, t = 3.66, p < .001, rather than the eight about the participants, 97.7 against 89.9, t = 2.03, p < .05.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The club with the tedious induction",
+      "text": "Members who sat through a long and awkward joining process rate the meetings as more interesting than members who were simply waved in. The meetings are the same meetings. What has been revalued is what the induction bought, not the induction itself."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The view at the top of the climb",
+      "text": "Two people look at the same valley, one after four hours of ascent and one after a cable car. The walker calls it the finest view of the year. The rating belongs to the person who did the work and does not transfer to anyone watching."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The course with the brutal entrance exam",
+      "text": "Graduates of a programme with a punishing entrance test speak more warmly of the teaching than graduates of a similar programme that admitted anyone who applied. The weeks of revision cannot be taken back, so the teaching improves instead."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Two later attempts to raise liking by making entry unpleasant found no difference, and the one modern paper to test the mechanism head on found the effect without the dissonance.",

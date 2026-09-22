@@ -17,6 +17,23 @@
     "note": "Merton opens by crediting W. I. Thomas with the theorem 'If men define situations as real, they are real in their consequences', and says the same thought had been set out by Bossuet, Mandeville, Marx, Freud and Sumner before him. His illustration is fiction. In 1932 a solvent bank called the Last National fails after its depositors queue on a Black Wednesday. He then applies the pattern to the exclusion of black workers from American trade unions."
   },
   "evidence": "Merton ran no experiment. Two sets of figures in the paper come from outside the parable. Bank suspensions in the United States averaged 635 a year through the 1920s and 2,276 a year in the four years around the Crash, then fell to 28 a year in the twelve years after the Federal Deposit Insurance Corporation was set up. In a biracial housing project in Pittsburgh, one white resident in 25 had expected relations between the races to run smoothly, and three of every four of the most apprehensive later reported that the races got along fairly well. The laboratory version arrived thirty years later. Snyder, Tanke and Berscheid paired 51 male with 51 female undergraduates at Minnesota and gave each man a Polaroid photograph of the woman he was about to telephone. The photographs were prepared in advance and assigned to pairs at random, so they carried no information about the woman on the line. Each pair talked for ten minutes, with the two voices recorded on separate channels. Twelve judges heard only the women's channel and knew nothing of the photographs. Women whose partners had been shown an attractive photograph came to behave in a friendly, likeable and sociable manner. Eden and Shani applied the same logic to 105 male Israeli military trainees, matched on aptitude and assigned at random to high, regular and unspecified instructor-expectancy conditions. The economic case is a model rather than a measurement. Diamond and Dybvig show that a demand deposit contract has more than one equilibrium, one of which is a run, and that anything which causes depositors to anticipate a run will produce one, including a bad earnings report, a run somewhere else, or sunspots.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The rumour about a supplier",
+      "text": "Word spreads that a solvent supplier is about to fold, so customers stop ordering and lenders pull their credit, and it folds. The belief was false when it started, and what people did about it made it true."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The queue at the pumps",
+      "text": "A false report of a fuel shortage sends drivers out to fill up, and the stations run dry by the afternoon. Nothing was wrong with supply until a belief about supply changed what people did."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The evening that was going to be stiff",
+      "text": "Someone told beforehand that their date is cold and guarded arrives wary and gives little away, and the evening is exactly that. The description was wrong at the start, and neither party need notice which of them produced the behaviour."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The effect reproduces. Its size does not: estimates run from a correlation of about .2 across experiments to 73 percent of the variance in one military course.",

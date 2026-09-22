@@ -16,6 +16,23 @@
     "note": "The paper reports work on a single infant it calls Albert B., whose mother was a wet nurse at the Harriet Lane Home for Invalid Children, a paediatric facility attached to Johns Hopkins Hospital. Ben Harris records it as the last published project of Watson's academic career."
   },
   "evidence": "The paper's laboratory notes are printed in full and they are the best guide to what happened. At eight months 26 days Albert was startled by a hammer struck on a suspended steel bar four feet long and three quarters of an inch thick, and cried on the third blow. Conditioning began at 11 months three days with two pairings of a white rat and the bar. Five more came a week later, and the paper states that seven joint stimulations in all brought about the complete reaction, after which the rat alone made him cry and crawl away. At 11 months 15 days he reacted to a rabbit, a dog, a sealskin coat and, less strongly, to cotton wool. He was negative to Watson's hair and to a Santa Claus mask, and he played with the hair of two other observers and with his blocks throughout. At 11 months 20 days the reactions were weaker, so the rat was paired with the bar again, and the rabbit and the dog were each paired with it directly for the first time. Moved that same day to a large lecture room, the reactions weakened again and the rat was paired with the bar once more. The dog then barked three times about six inches from the infant's face, which the paper records as frightening the adult observers too. A final session 31 days later found the reactions present and less intense, with the infant reaching out to touch the rabbit's ear after about a minute. Albert left the hospital that day. The paper says the interval was capped at one month because his departure was expected, and it lists four methods the authors would have tried to remove the fear had they had the time.",
+"examples": [
+  {
+    "kind": "everyday",
+    "tag": "The hand dryer in the café toilet",
+    "text": "A toddler is startled by a dryer roaring the moment she reaches the basin. After two such visits she cries at the door of the toilet. Nothing about the door frightened her; it was simply there when the noise arrived."
+  },
+  {
+    "kind": "everyday",
+    "tag": "The vacuum cleaner and the cupboard it lives in",
+    "text": "A baby who screams at the vacuum begins whimpering when the cupboard is opened, and then at the upright mop kept beside it. The fear spreads to things resembling the first, and not to everything in the house."
+  },
+  {
+    "kind": "everyday",
+    "tag": "The smell of a dental surgery",
+    "text": "An adult who had a painful extraction as a child finds his chest tightening at the smell of the waiting room. No pain has ever come from the smell, and it was present when the pain was."
+  }
+],
   "replication": {
     "state": "failed",
     "headline": "Every attempt located to condition fear in infants by Watson's method failed, and no modern repeat was found.",

@@ -17,6 +17,23 @@
     "note": "The chapter runs from page 422 to 444 and is the citation the training literature returns to. Its text could not be obtained for this entry, so nothing here is quoted from it. Cambridge Core answers the chapter with an access-options page, and no open copy was found on 21 September 2026. Morewedge and colleagues call the start it describes rocky."
   },
   "evidence": "Morewedge and colleagues ran the two experiments the modern claim rests on. Everyone was trained. Each person was randomly assigned to play a computer game or to watch a 30-minute video. Both groups filled in a bias-commission scale before training and again straight after. A third scale followed online, eight weeks later in Experiment 1 and twelve weeks later in Experiment 2. Experiment 1 covered bias blind spot, confirmation bias and the fundamental attribution error, with 243 people finishing the laboratory session and 196 the follow-up. Overall bias fell for the game, d pre-post = 1.68 and d pre-followup = 1.11, and for the video, 0.69 and 0.66. Experiment 2 covered anchoring, projection and representativeness, with 238 in the laboratory and 192 at follow-up, and both were large: game 1.74 and 1.16, video 1.75 and 1.07. The confirmation-bias scale tested six facets and the game taught three. At follow-up the untrained facets sat at d = 0.65 and the trained ones at 0.24, a gap the paper reports as not significant, t < 1. Sellier, Scopelliti and Morewedge took the same game into a business school. Two hundred and ninety graduate students at HEC Paris solved an unannounced case modelled on the Challenger launch, some before their training session and some after. Trained students picked the inferior hypothesis-confirming option 58.8% of the time against 72.2% untrained, Wald chi-square(1) = 5.23, p = .022, odds ratio 0.549, 95% CI [0.33, 0.92]. Chang, Chen, Mellers and Tetlock randomly assigned forecasters in four nine-month geopolitical tournaments to a training module of under an hour or to none. Mean Brier scores improved by 10% and 11% in year 1, 12% in year 2, 6% in year 3 and 7% in year 4, and trained forecasters led controls at both the start and the end of each year. Heerma van Voss and colleagues ran a preregistered test on 56 national risk analysts and 116 masters students, using a 15-minute scripted lecture and a group case, about 40 minutes in all. Confirmation bias fell in both groups, F(1, 168) = 104.579, partial eta-squared = 0.384 in the general domain and F(1, 168) = 45.999, partial eta-squared = 0.215 in the risk domain. The analysts began with less confirmation bias than the students, F(1, 169) = 25.928, p < 0.001. Training helped both alike, and posttest scores did not differ by group once pretest scores were controlled.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The workshop and the decision a month later",
+      "text": "A team sits through a session on confirmation bias, solves the practice case, and applies none of it to a live decision four weeks on. The claim being tested is transfer, and a correct answer on the drilled problem does not show it."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The prompt inside the task",
+      "text": "Before signing off a plan, an engineer writes out the strongest case that it will fail. Considering the opposite is a prompt used at the moment of judging, which is a different thing from a course that claims to change the judge."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The analyst who feels immune",
+      "text": "Somebody leaves a training session able to name six biases in colleagues and none in himself. A person convinced he is already unbiased has nothing he thinks needs correcting, and the training does least for him."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Scores move on the tasks that were trained, and the pooled estimate from randomised trials is about a fifth of what the best-known single studies report.",

@@ -2,19 +2,38 @@
   "no": 528,
   "slug": "fallacy-of-the-undistributed-middle",
   "name": "Fallacy of the undistributed middle",
-  "aliases": ["Undistributed middle", "Undistributed middle term", "Fallacy of the undistributed middle term"],
+  "aliases": [
+    "Undistributed middle",
+    "Undistributed middle term",
+    "Fallacy of the undistributed middle term"
+  ],
   "category": "belief",
   "statement": "When the term shared by two premises is undistributed in both, nothing follows about the other two terms, and people draw a conclusion anyway.",
-  "meaning": "A categorical syllogism links two end terms through a middle term that appears in both premises and not in the conclusion. A term is distributed when the premise says something about every member of it. 'All A are B' distributes A and not B. 'No A is B' distributes both. 'Some A are B' distributes neither. 'Some A are not B' distributes B alone. If the middle term is undistributed in both premises, the premises never speak about the same members of it, so the end terms are never brought into contact and no conclusion about them is licensed. The textbook case is 'All A are B, All C are B, therefore all C are A', where B is the predicate of two universal affirmatives and so is undistributed twice. Psychology does not study the fallacy under this name. It studies the 64 pairs of syllogistic premises together, and the pairs with an undistributed middle sit among the 37 that support no conclusion interrelating the end terms. What the experiments measure is how often people say nothing follows, and what they conclude instead when they do not."
-  ,
+  "meaning": "A categorical syllogism links two end terms through a middle term that appears in both premises and not in the conclusion. A term is distributed when the premise says something about every member of it. 'All A are B' distributes A and not B. 'No A is B' distributes both. 'Some A are B' distributes neither. 'Some A are not B' distributes B alone. If the middle term is undistributed in both premises, the premises never speak about the same members of it, so the end terms are never brought into contact and no conclusion about them is licensed. The textbook case is 'All A are B, All C are B, therefore all C are A', where B is the predicate of two universal affirmatives and so is undistributed twice. Psychology does not study the fallacy under this name. It studies the 64 pairs of syllogistic premises together, and the pairs with an undistributed middle sit among the 37 that support no conclusion interrelating the end terms. What the experiments measure is how often people say nothing follows, and what they conclude instead when they do not.",
   "origin": {
     "year": 1935,
     "who": "R. S. Woodworth and S. B. Sells",
     "where": "Journal of Experimental Psychology",
     "note": "The name belongs to scholastic logic and no experiment established it. The 1935 paper, 'An atmosphere effect in formal syllogistic reasoning', volume 18, pages 451 to 460, is the oldest psychological account of why such conclusions are accepted, and it is cited that way throughout the modern literature. It is closed at the American Psychological Association, has no repository copy in Unpaywall, OpenAlex or Semantic Scholar, and was not obtained for this entry. What appears below about its claim is quoted from Khemlani and Johnson-Laird's review, which was read in full."
   },
-  "evidence": "The record comes from studies in which participants see two premises and produce or select a conclusion. Khemlani and Johnson-Laird pooled six such experiments, all of which used all 64 premise pairs. The samples were 20 students at Teachers College, Columbia University, tested twice, 20 undergraduates at Milan, 20 high school pupils in Florence, 20 undergraduates in Florence, and 56 undergraduates at the University of Florida. Their Table 6 gives, for each premise pair, the percentage of each of the nine possible responses. Take the canonical form first. Given 'All A are B' and 'All C are B', 31% answered that no valid conclusion follows, 47% concluded 'All A are C' and 7% concluded 'All C are A'. Other pairs with an undistributed middle came out worse. Given 'All A are B' and 'Some B are C', 16% answered that nothing follows and 70% concluded 'Some A are C'. Given 'Some B are A' and 'All C are B', 12% answered that nothing follows and 52% concluded 'Some C are A'. That last pair is the hardest of all 37 invalid syllogisms in the pooled data, and the authors name it as such. Given 'Some A are B' and 'Some B are C', 33% answered that nothing follows and 61% concluded 'Some A are C'. The same participants are accurate elsewhere. The valid syllogism 'All A are B, All B are C' drew 88% correct responses, and the easiest invalid pair, 'No A is B, No C is B', drew 76%."
-  ,
+  "evidence": "The record comes from studies in which participants see two premises and produce or select a conclusion. Khemlani and Johnson-Laird pooled six such experiments, all of which used all 64 premise pairs. The samples were 20 students at Teachers College, Columbia University, tested twice, 20 undergraduates at Milan, 20 high school pupils in Florence, 20 undergraduates in Florence, and 56 undergraduates at the University of Florida. Their Table 6 gives, for each premise pair, the percentage of each of the nine possible responses. Take the canonical form first. Given 'All A are B' and 'All C are B', 31% answered that no valid conclusion follows, 47% concluded 'All A are C' and 7% concluded 'All C are A'. Other pairs with an undistributed middle came out worse. Given 'All A are B' and 'Some B are C', 16% answered that nothing follows and 70% concluded 'Some A are C'. Given 'Some B are A' and 'All C are B', 12% answered that nothing follows and 52% concluded 'Some C are A'. That last pair is the hardest of all 37 invalid syllogisms in the pooled data, and the authors name it as such. Given 'Some A are B' and 'Some B are C', 33% answered that nothing follows and 61% concluded 'Some A are C'. The same participants are accurate elsewhere. The valid syllogism 'All A are B, All B are C' drew 88% correct responses, and the easiest invalid pair, 'No A is B, No C is B', drew 76%.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The four-legged conclusion",
+      "text": "All dogs have four legs and all cats have four legs, so a child announces that cats are dogs. Four legs is said of every dog and of every cat, and neither premise says the two are the same animals."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The grant panel's shortcut",
+      "text": "Every project funded last year was led by senior staff, and this application is led by senior staff, so the panel files it with the ones that will succeed. Senior leadership is shared by both groups and therefore sorts neither."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The auditor mistaken for an objector",
+      "text": "Everyone campaigning against the plan says the costings are wrong, the auditor says the costings are wrong, and she is put down as a campaigner. Saying the costings are wrong is a thing both sets of people do."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "The pattern holds across six experiments in two countries and again in an independent online sample: most people answer these premise pairs with a conclusion rather than with nothing.",

@@ -18,6 +18,23 @@
     "note": "Their paper \"When corrections fail\" reports four experiments in which undergraduates read a mock news article carrying a politician's dubious claim, with or without a paragraph correcting it. The paper coined the label, quoting it on first use and dropping the quotation marks thereafter. Nyhan wrote in 2021 that he and Reifler ran five experiments in 2005 and 2006 with undergraduates at a Catholic university in the Midwest."
   },
   "evidence": "The four published experiments used a five-point agreement scale. Each looked for an interaction between the correction and a seven-point ideology scale. Study 1, run in autumn 2005 with 130 participants, corrected the claim that Iraq had weapons of mass destruction before the 2003 invasion. The correction by ideology interaction was 0.359 with a standard error of 0.127, and the marginal effect of the correction was positive and significant for subjects right of centre. In the raw data, agreement among conservatives went from 32% in the control condition to 64% with the correction, against 22% to 13% for everyone else. Study 2, run in spring 2006, fielded three experiments on 197 respondents, of whom 195 entered the models. The tax cut experiment produced the second reversal, an interaction of 0.198 with a standard error of 0.089, and agreement among conservatives rising from 36% to 67% against 31% to 28% for the rest. The second Iraq experiment went the other way. Its interaction was -0.258 with a standard error of 0.097, meaning the correction worked on conservatives. Nyhan and Reifler then ran what they call a post hoc model on the 34 people who named Iraq the most important problem facing the country, eight of them right of centre. The three-way interaction was significant, but the marginal effect for the most committed conservatives was null, and in their own words just missed significance at the 0.10 level. The stem cell experiment found no reversal, only a correction that worked on conservatives and moderates and not on liberals. Two of the four backfired, one corrected conservatives as intended, and one did neither.",
+    "examples": [
+      {
+        "kind": "everyday",
+        "tag": "The corrected rumour at a residents' meeting",
+        "text": "A council officer presents figures refuting a rumour about a new development. Afterwards the residents most opposed to the plan believe the rumour more firmly than they did before. Belief moving up, rather than merely failing to move, is what the name claims."
+      },
+      {
+        "kind": "everyday",
+        "tag": "The leaflet that hardens its reader",
+        "text": "A health leaflet sets out the evidence against a myth about a vaccine. Under the backfire claim the parents most hostile to that vaccine come away more convinced of the myth than parents shown no leaflet at all."
+      },
+      {
+        "kind": "everyday",
+        "tag": "The fact-check a supporter reads",
+        "text": "A supporter reads a correction of a statement by the candidate he backs, and rates the false statement as more accurate than he did beforehand. Holding to it would not count; the correction has to push belief upward."
+      }
+    ],
   "replication": {
     "state": "failed",
     "headline": "Wood and Porter tested 52 issues on more than 10,100 subjects and found no correction that triggered a backfire.",

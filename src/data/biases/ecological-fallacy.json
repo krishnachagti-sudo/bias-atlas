@@ -13,6 +13,23 @@
     "note": "\"Ecological correlations and the behavior of individuals\", American Sociological Review 15(3), 351 to 357, reprinted in the International Journal of Epidemiology in 2009. Robinson gave the mathematics and the census figures and did not use the phrase 'ecological fallacy'. Subramanian, Jones, Kaddour and Krieger attribute the term to Selvin's 1958 paper on Durkheim, where it names the invalid transfer of aggregate results to individuals."
   },
   "evidence": "Robinson worked the 1930 US Census for the population 10 years old and over, 97,272,000 people in his Table 1. Colour and illiteracy give an individual fourfold-point correlation of 0.203. The ecological correlation on the Census Bureau's nine geographic divisions is 0.946 weighted and 0.944 unweighted, and 0.773 when the areas are the 48 states. Those agree in sign. His second pair does not. Nativity and illiteracy give an individual correlation of 0.118 across 13,217,000 foreign-born and 84,055,000 native-born people, against an ecological correlation of -0.619 on divisions and -0.526 on states. Robinson also showed why the coefficient grows as areas are consolidated, a pattern Gehlke and Biehl had noted in 1934. He concluded that ecological correlations cannot validly be used as substitutes for individual correlations. Freedman repeated the exercise on data where both levels were known. Using the March 1995 Current Population Survey for people aged 25 and over, and counting family income of $50,000 or more in 1994 as high, the correlation across the 50 states between the fraction foreign-born and the fraction with high incomes is 0.52. The individual correlation is -0.05. About 35% of the native-born had high incomes against 28% of the foreign-born, so the ecological figure points the wrong way. Subramanian, Jones, Kaddour and Krieger returned to Robinson's own census tables with multilevel logistic models. Adding state laws mandating racially segregated education, they found an odds ratio of 1.92 for being illiterate, 95% CI 1.81 to 2.03, controlling for individual race and nativity. Predicted probability of illiteracy for blacks was 0.04 outside those states, 95% CI 0.033 to 0.049, and 0.132 inside them, 95% CI 0.123 to 0.141. State variation fell by 70% for native whites and for blacks once the laws were in the model. Their appendix reports individual correlations running from near zero in Nevada and Connecticut to 0.31 in Alabama, against the national 0.20 Robinson published.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The districts with the older population",
+      "text": "Districts with more residents over seventy record more use of a council's online services, and a report concludes that older residents use them more. The two figures are district totals, and one set of totals is consistent with interiors that run either way."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The wards with more graduates",
+      "text": "Wards with a higher share of graduates have a higher share of votes for one party, so a campaign targets graduates. Nothing in the ward figures identifies the graduates as the voters. It says only that both counts are high in the same places."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The schools and the free meals",
+      "text": "Schools with more pupils on free school meals report more absence, and a paper reads that as poorer pupils missing more days. Both numbers are percentages of a school, and the pupils who missed the days are named by neither of them."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "The reversal Robinson found in 1930 census data appears again in 1995 survey data where the individual-level answer is known.",

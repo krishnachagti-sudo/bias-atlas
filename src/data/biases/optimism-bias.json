@@ -19,6 +19,23 @@
     "note": "Weinstein's paper named the effect and set the method every later study copied, though he cites earlier surveys about car accidents, crime and disease pointing the same way."
   },
   "evidence": "Weinstein asked 258 students at Cook College how their own chances of future life events compared with those of classmates of the same sex, on a fifteen-point scale from 100% less to 400% more. The 42 events were split at random across two rating forms, so each event was judged by 123 to 130 students rather than by all of them. Means ran in the optimistic direction for 37 of the 42 events, p < .001 by the binomial test. Averaged over the 18 positive events the mean comparative judgement was 15.4%, t(255) = 6.8; over the 24 negative events it was -20.4%, t(255) = 13.9, both p < .001. The extremes were liking your postgraduation job at 50.2% and having a drinking problem at -58.3%. The updating version comes from Sharot, Korn and Dolan, who scanned 19 participants estimating their risk of 80 adverse events, then gave them the average probability and asked again. Mean absolute update was 11.2 when the news was better than expected and 7.7 when it was worse, t(18) = 4.4, p < 0.001, a pattern present in 79% of participants.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The show of hands on divorce",
+      "text": "A room of newly engaged couples puts its own chance of divorcing well below the rate it attributes to couples in general. Everyone cannot be below average on the same risk, so the group is collectively wrong whatever any single answer is worth."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The smoker’s arithmetic",
+      "text": "A smoker accepts the published risk of lung disease and places their own risk below the average smoker’s, on the strength of exercise and good genes. The bias lives in the comparison, not in the estimate of the population rate."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The new café on the high street",
+      "text": "Someone opening a café agrees that most close within a few years and puts their own chance of lasting above the rest. The claim is not that people expect good things, but that they expect better than their own circumstances warrant."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The data pattern reproduces reliably. Whether it shows optimism, or shows what an unbiased reasoner would produce in the same task, is still disputed in print.",

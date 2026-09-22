@@ -2,7 +2,10 @@
   "no": 459,
   "slug": "construing-actions-as-choices",
   "name": "Construing actions as choices",
-  "aliases": ["Construal of choice", "What counts as a choice"],
+  "aliases": [
+    "Construal of choice",
+    "What counts as a choice"
+  ],
   "category": "social",
   "statement": "Americans construe more of their own and other people's ordinary actions as choices than Indians do, which makes choice a culturally particular frame rather than a universal one.",
   "meaning": "The claim is about construal, not about options. People in both places select among alternatives all day, and the question is which of those selections get filed under the word choice. Savani and colleagues set the question inside two models of agency. In the disjoint model, which they describe as prevalent in middle-class American contexts, an action expresses a separate individual and reads as a choice. In the conjoint model, which they describe as prevalent in Indian contexts, an action is responsive to other people and reads as something done rather than something chosen. The prediction is a difference in counting. Shown the same stream of behaviour, participants in the two contexts should mark different amounts of it as choice, and the difference should survive when the behaviour is staged so that both groups do exactly the same things. The wider argument attached to it is that arrangements built on maximising personal choice may travel badly, because the category itself is not shared.",
@@ -13,6 +16,23 @@
     "note": "\"What counts as a choice? U.S. Americans are more likely than Indians to construe actions as choices\", Psychological Science 21(3), 391 to 398. Five studies, four of which staged or scripted the behaviour being categorised. Savani's Stanford dissertation reports twelve studies and states that versions of its Study 1 and Studies 3 to 6 were published in the article."
   },
   "evidence": "The published article is paywalled, so the figures below are read from Savani's dissertation, which contains the same studies under its own numbering. Study 1 gave 79 students at Stanford University and 100 at St Xavier's College in Mumbai ten minutes to list either every choice they made the day before or everything they had to do without a choice. The interaction was F(1, 175) = 5.56, p < .02, partial eta squared .031. Americans listed more in the choice condition, t(86) = 3.72, p < .001, d = 0.80, and the two groups did not differ in the no-choice condition, t < 1. That is a recall task rather than a diary. Study 3 walked 36 European American and 34 Indian students, all at Stanford, through twelve staged actions, among them picking an identity number from a bowl, a cubicle, a consent form and a pen. Americans named more of them as choices in free recall, 6.23 against 3.48, z = 3.67, p < .001, d = 1.04, and again when handed the list of all twelve, 7.33 against 5.82, z = 3.32, p < .001, d = 0.84. Study 4 is the observation study. A six-minute video of a young man in an apartment was shown to 60 students at Stanford and 68 at the M.S. Ramaiah Institute of Technology, with instructions to press a button whenever the actor made a choice, or in the control condition whenever he touched an object. The culture by condition interaction was F(1, 120) = 5.69, p < .02, Indians pressed less often in the choice condition, t(32) = 4.25, p < .001, d = 1.03, and the two groups did not differ in the control condition. Studies 5a and 5b moved from mundane actions to consequential ones such as which college to attend, and 5b held the number of options available constant, beta = -0.44, OR = 0.65, t(101) = 2.20, p = .03. The study later repeated by others is the article's Study 5, the dissertation's Study 6. It asked 90 European American students at Stanford and 128 at Apeejay College of Engineering in Haryana to recall eight personal actions or eight matched interpersonal ones and to say of each whether it was a choice. Indians construed fewer actions as choices overall, beta = -1.07, OR = 0.34, t(101) = 5.70, p < .001. Condition made no difference across cultures, beta = -0.13, OR = 0.88, t(101) = 0.71, p = .48, which under the dummy coding means Americans treated personal and interpersonal actions alike. The culture by condition interaction, beta = 0.53, OR = 1.70, t(101) = 1.98, p < .05, is the finding that Indians construed interpersonal actions as choices more often than personal ones.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The same lunch, two descriptions",
+      "text": "Two colleagues eat the same sandwich at the same desk. Asked about the morning, one lists a run of choices down to which chair he took, and the other describes what the day required of her. Neither had more options than the other."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The week written up",
+      "text": "A student records a week of study and marks the points where she made a decision. A second student on an identical timetable marks almost none, filing the same acts as things expected of him. The behaviour matches and the count of choices does not."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The family meal",
+      "text": "A parent serves what the household eats on a certain evening. Asked afterwards, she may call it her choice of menu or call it the meal that goes on the table that day. The plates are the same under either description."
+    }
+  ],
   "replication": {
     "state": "failed",
     "headline": "Many Labs 2 repeated the article's Study 5 and found the pattern the original saw only in Indians in its WEIRD samples, and not in its Indian one.",
@@ -23,7 +43,16 @@
       "year": 2018,
       "n": 5882
     },
-    "replicated": { "es": -0.18, "esType": "d", "ci": [-0.21, -0.16], "ciLevel": 95, "weighting": "aggregate" }
+    "replicated": {
+      "es": -0.18,
+      "esType": "d",
+      "ci": [
+        -0.21,
+        -0.16
+      ],
+      "ciLevel": 95,
+      "weighting": "aggregate"
+    }
   },
   "limits": "The structured comparison a reader expects is missing on purpose. Many Labs 2 reports two original effect sizes for this finding, one per cultural group, and one global replication estimate pooled across every sample, so pairing them in the fields would put an Indian-only original against an all-country replication. Both numbers are in the detail above instead. The replication also tested one of five studies, and tested it in a design with no culture term, so nothing here bears directly on Studies 1 to 5b. A null in one country is not a test of a difference between two. Its Indian arm was 122 people in university labs, and Many Labs 2 drew 5 of its 125 samples from India. The original's own sampling is narrow in the other direction: every American sample came from Stanford, the Indian ones from four colleges, and all participants were students. Provenance is uneven. The published article could not be obtained, and its study descriptions and figures are read from Savani's dissertation at Stanford Digital Repository, whose account of the Study 5 design and coefficients matches the independent description in Many Labs 2. The Many Labs 2 copy at the publisher returns HTTP 403 from a Cloudflare bot challenge. The published article was read in the Vrije Universiteit Amsterdam repository on 21 September 2026, and every Many Labs 2 figure above was checked against it. Two small discrepancies sit inside the published text. Its narrative gives the original American simple effect as d = 0.04 where Table 2 gives 0.08, and Table 2 notes that original confidence intervals were reconstructed from cell sample sizes. Later work from the same group changed the question rather than retesting it. Nanakdewa, Madan, Savani and Markus report four studies with 1,288 participants in the United States, Singapore and India, and find that making choice salient shifts people towards independence in all three, which speaks to the consequences of the frame rather than to how often each group applies it. Searches of Crossref, OpenAlex and the open web in August 2026 turned up no further multi-site test of the American against Indian construal comparison itself.",
   "misreadings": "The first error is hearing American exceptionalism. What was compared is two sets of students, at one American university and at four Indian colleges, and the paper's own account of the mechanism is exposure: Indian students at Stanford for 20 months or more named 4.41 staged actions as choices against 2.60 for those there under ten months. The second error is reading the replication as evidence that Indians and Americans construe alike. Many Labs 2 never put the two side by side. It found a personal against interpersonal gap almost everywhere it looked, including in the WEIRD samples where the original reported none, and no gap in the Indian samples where the original reported one, which is a failure of the pattern rather than a measured convergence. The third error is treating the WEIRD-samples critique as settled against one side. Schimmelpfennig and colleagues, writing with Heine, Norenzayan, Henrich and Muthukrishna, argue that Many Labs 2 had little power to detect cultural moderation and that its binary WEIRDness split discards most of the variation. Their reanalysis using cultural distance rather than the split marks this effect at p < .05 without correction for multiple comparisons, though they conclude that the reanalysis does not substantially alter the project's conclusions. The same critique applies to the original, whose samples are as tied to particular institutions as any in the literature. Entry 279 covers the general question of what an unusual sample does and does not license. The fourth error is filing this with the choice literature it sounds like. It is not about having too many options, entry 153, and not about the verb used to pose a decision, entry 16.",

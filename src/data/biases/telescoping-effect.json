@@ -2,7 +2,12 @@
   "no": 236,
   "slug": "telescoping-effect",
   "name": "Telescoping effect",
-  "aliases": ["Telescoping bias", "Forward telescoping", "Backward telescoping", "Temporal telescoping"],
+  "aliases": [
+    "Telescoping bias",
+    "Forward telescoping",
+    "Backward telescoping",
+    "Temporal telescoping"
+  ],
   "category": "memory",
   "statement": "People misdate remembered events, often placing them nearer the present, so a survey question about a fixed recent period collects events from outside it.",
   "meaning": "An event can be remembered clearly while its date is not. Asked when something happened, or how many times it happened since a given date, a respondent has to reconstruct the timing, and the reconstruction carries a bias. Forward telescoping pulls an event towards the present, so it is counted inside a reference period it fell outside. Backward telescoping pushes it away, so a genuine event is left out. The two errors do not cancel in practice, and the survey-methods literature is mainly concerned with the forward kind, because it inflates counts of things like purchases, crimes and doctor visits. The correction Neter and Waksberg proposed is bounded recall: interview the household once to fix the start of the period, then ask at the next visit only about what has happened since, reading back what was reported before.",
@@ -13,6 +18,23 @@
     "note": "Their article, \"A Study of Response Errors in Expenditures Data from Household Interviews\", reports a Census Bureau experiment on reported spending on alterations and repairs to dwellings. It is the source usually credited both with identifying telescoping as a survey problem and with the bounded interview that answers it."
   },
   "evidence": "The 1964 article sits behind a paywall and was not obtained for this entry. A 2003 National Research Council workshop summary reproduces its result in a table headed \"Ratio of Events Reported: Unbounded over Bounded\", giving 1.40 for expenditures and 1.55 for jobs. The same table lists five experiments by Loftus and Marburger from 1983, in which the start of the recall period was marked by a public event such as the eruption of Mount St Helens or New Year's Day rather than by an earlier interview. Those ratios run from 1.22 to 6.15. Both sets of figures are quoted here from the workshop summary rather than from the papers that produced them. Huttenlocher, Hedges and Bradburn tested where the forward bias comes from in 1990. They report that \"reported times are less than actual times\", and trace it to two features of how an answer is built rather than to a distorted memory of duration: respondents impose an upper limit on what counts as a reasonable answer, which truncates the distribution, and they answer in rounded values whose spacing widens as the values grow, so more estimates round down than up. Direction is not fixed. Gaskell, Wright and O'Muircheartaigh asked 2,136 respondents on a British national omnibus survey to date two events. Margaret Thatcher's resignation, 19 months earlier, drew 39.4 per cent forward telescoping against 30.6 per cent backward. The Hillsborough disaster, 37 months earlier, reversed it: 28.5 per cent forward against 42.2 per cent backward. Correct answers, meaning within one month of the true date, ran at 15.2 per cent for Thatcher and 10.2 per cent for Hillsborough.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "Appointments in the last twelve months",
+      "text": "A health questionnaire asks how many times you saw a doctor in the past year, and the visit about the shoulder goes on the list. That was fourteen months ago. The visit happened and the count is still wrong, because the date was reconstructed and the reconstruction pulled it forward."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The boiler and the receipt",
+      "text": "Asked when the boiler was replaced, a householder says a couple of years back and produces a receipt dated four years earlier. Nothing about the day itself is in doubt, down to the engineer parking on the verge. Only its distance from now has shrunk."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The wedding that felt far off",
+      "text": "A guest placing a friend's wedding some years ago is corrected by a photograph from the spring before last. Misdating runs both ways, and a survey asking what happened in a set window loses the events pushed out of it as surely as it gains the ones pulled in."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "A randomised trial in Addis Ababa in 2020 found reported weekly food consumption 16 per cent higher under unbounded recall than under bounded recall, about one extra day of food in seven.",
@@ -26,7 +48,10 @@
       "es": 54.41,
       "esType": "md",
       "unit": "birr of weekly food consumption per capita",
-      "ci": [25.5, 83.3],
+      "ci": [
+        25.5,
+        83.3
+      ],
       "ciLevel": 95
     }
   },

@@ -14,6 +14,23 @@
     "note": "'Value and need as organizing factors in perception' reported that children matched a circle of light to coins as larger than to grey cardboard discs of the same size. Firestone and Scholl describe it as the landmark that ignited the New Look movement in perceptual psychology. The modern vocabulary of top-down effects and cognitive penetrability is later, and Firestone and Scholl count more than 175 papers reporting such effects since 1995."
   },
   "evidence": "Bruner and Goodman tested 30 ten-year-old children in three groups of ten. Each child sat in front of a wooden box with a ground-glass screen carrying a patch of light, and turned a knob that moved an iris diaphragm from an eighth of an inch to two inches. Twenty children judged coins from a penny to a half dollar, first from memory in ascending then descending order, then with the coin held six inches to the left of the light patch, four judgments per coin. The remaining ten judged grey cardboard discs of the same sizes with no mention of money. Coins were judged larger than the discs, and the overestimation grew with the value of the coin apart from the half dollar. Ten children came from a progressive school serving prosperous families and ten from a settlement house in a Boston slum, and the poor group overestimated more. The paper reports no effect sizes and no intervals. It gives F scores from a Postman and Bruner analysis of variance, converted to P values below .01 for coin value, for coins against discs, and for the rich against poor difference, with the interaction between economic status and coin value between .05 and .01. For the rich group a half dollar was overjudged by 17.4 per cent with the coin in view and by 34.7 per cent from memory. The modern revival rests on the same shape of demonstration. Bhalla and Proffitt reported in 1999 that wearing a heavy backpack makes hills look steeper; that paper is closed at the publisher and is described here from Durgin and colleagues, who state that the only justification given to participants for the backpack was that its weight also had to be estimated. Balcetis and Dunning's abstract reports five experiments in which desirable objects, a water bottle for a thirsty person, money that could be won, favourable feedback, were seen as physically closer, measured by verbal report and by underthrowing a beanbag. Banerjee, Chatterjee and Sinha reported in 2012 that recalling an unethical deed made a room look darker and made lamps, candles and torches more desirable.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The slope at the end of a long walk",
+      "text": "A walker carrying a heavy pack calls the hill ahead steeper than the same hill looked that morning. The steepness is a spoken number, produced by somebody who has both looked at the slope and thought about the climb ahead."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The coins counted by a child saving up",
+      "text": "A child saving for something judges the coins in her hand larger than matching discs of card. Whether the coins looked bigger or were simply described more generously is what a size report on its own cannot separate."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The bakery noticed first",
+      "text": "A hungry shopper spots the bread counter before anything else and walks towards it. Attention going somewhere is one of the pedestrian senses the dispute sets aside, and it is not evidence that the bread looked different."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Four preregistered replications of the moral-darkness effect found nothing, and a meta-analysis including the originals put it at d = 0.14, 95% limits -0.002 to 0.28.",

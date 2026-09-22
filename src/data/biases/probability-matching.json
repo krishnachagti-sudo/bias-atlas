@@ -13,6 +13,23 @@
     "note": "Their paper is \"Acquisition and extinction of a verbal conditioned response with differing percentages of reinforcement\", and it is the earliest experiment in Vulkan's survey of repeated binary-choice studies. Vulkan's table records 37 subjects over 60 trials choosing the alternative that was correct 75% of the time on 85% of trials. Those figures are read off Vulkan's table, not off the 1951 paper, which was not obtained. Vulkan also lists an earlier item, Humphreys (1939), in his references without discussing it in the text; that paper was not obtained either, and nothing on this page rests on it."
   },
   "evidence": "Vulkan's survey gathers the group means from the probability learning experiments of the 1950s and 1960s and sorts them by whether money was at stake. Without payment the means sit close to the outcome rate: Neimark and Shuford's 36 subjects chose a 0.67 alternative on 0.63 of trials, and Suppes and Atkinson's 30 subjects chose a 0.60 alternative on 0.59. Payment moves them up. Myers and colleagues in 1963 report 0.75 for a 0.70 alternative unpaid and 0.87 for the same alternative when a correct guess paid one cent. Siegel and Goldstein's groups faced a 0.75 alternative and chose it on 0.75 of trials for nothing, 0.86 for five cents a hit, and 0.95 when a miss also cost five cents. Vulkan's reading of his own tables is that matching is not robust, that it falls as rewards and trials grow, and that group averaging biases the estimate towards it. Edwards's 1000-trial study, which he tabulates per subject, makes the last point concrete: 7 of 80 subjects chose the better side on every one of the last 80 trials, and only 16 of 80 chose it at or below its actual rate. Shanks, Tunney and McCarthy then built the conditions the survey pointed at. Their participants got 5 pence a hit and lost 5 pence a miss, an accuracy score against an optimal algorithm every 50 trials, and up to 1,800 trials. Six of 16 maximised after 300 trials, 8 of 12 after 1,800, and 9 of 12 in the paid group with feedback after 1,500. Pooling the last two gives 71% of participants maximising, with 95% limits of 18 points either side. How the task is described matters, though not in every way. Koehler and James gave one group of 158 students the two strategies in words before playing a ten-guess version of the game, and asked which would win more money. Strict maximising ran at 53% in that group against 35% in the group given no such hint, chi-square 5.14, p = .023. Among the participants who picked maximising as better when asked after the game, the hint lifted maximising from 44% to 69%, chi-square 7.99, p = .005. An earlier manipulation by the same pair did nothing. Telling participants the totals rather than showing them draws one at a time, and asking for a count of guesses rather than a sequence, left the choice index flat, F(1,98) = 0.003 for the learning change and F(1,98) = 0.45 for the test change. Naming the better strategy works. Removing the chance to hunt for patterns does not.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The bus that is late three mornings in ten",
+      "text": "A commuter asked each morning whether the bus will be on time answers late on about three mornings in ten, spreading the guesses to match. Saying on time every single morning would be right more often over the month."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The weather game in the staffroom",
+      "text": "Colleagues predicting rain in a place where it rains on a third of days call rain on about a third of days, and finish the term behind the one who said dry every morning without thinking about it."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Calling a coin that is not fair",
+      "text": "Told a coin lands heads on seven throws in ten, a player still calls tails sometimes, to catch those throws. Spreading the calls in that proportion is right fifty-eight percent of the time. Calling heads throughout is right seventy."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The behaviour survives in the simplest version of the task and disappears from most variants of it, so what replicates depends on which version is run.",

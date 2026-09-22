@@ -2,7 +2,11 @@
   "no": 335,
   "slug": "rationalisation",
   "name": "Rationalisation",
-  "aliases": ["Rationalization", "Post-hoc justification", "Post hoc rationalisation"],
+  "aliases": [
+    "Rationalization",
+    "Post-hoc justification",
+    "Post hoc rationalisation"
+  ],
   "category": "social",
   "statement": "The reasons a person gives for a judgement are said to be built after the judgement was reached, to justify it rather than to explain it.",
   "meaning": "The claim is about the order of events inside one head. A judgement arrives, and the reasoning that follows is recruited to defend it. Ernest Jones put it as a felt need for a theory of oneself: nobody admits to an irrational act, so the act is fitted with a plausible reason. Jonathan Haidt turned the same idea into a testable model of moral judgement, in which intuition comes first and reasoning is a lawyer's brief written afterwards. The experimental case in this entry is moral dumbfounding, because that is where the claim has been tested and argued over. Two neighbouring entries carry evidence that is often lent to rationalisation and is not repeated here. Choice blindness, in which the outcome of a choice is switched and the person explains the option they rejected, belongs to confabulation. The claim that acting against a belief changes the belief belongs to cognitive dissonance. Rationalisation as stated above is narrower than either: it says the reason follows the verdict, not that the verdict moves.",
@@ -13,6 +17,23 @@
     "note": "Jones's nine-page essay names the mechanism and contains no data. Its examples are a man raised among Baptists who reviews the evidence and converts to the belief he already held, and the continued prescription of valerian for hysteria after the reason for prescribing it was abandoned. Jones split false explanations into 'evasions', made for oneself, and 'rationalisations', made for one's circle, then wrote that one term would probably serve for both. He presents the principle as Freud's rather than his own. The modern experimental claim is separate and dates from Haidt's 2001 review."
   },
   "evidence": "Haidt's review states the hypothesis in one line: moral reasoning is usually a post hoc construction, generated after a judgment has been reached. It contains no new experiments. Its illustration is the Julie and Mark vignette, in which siblings on holiday have sex once, using two forms of contraception, and keep it secret. Haidt writes that on being asked to justify their condemnation people become a lawyer building a case rather than a judge searching for the truth, and end up saying they cannot explain it. The study behind that description is Haidt, Björklund and Murphy's, cited in the review as an unpublished manuscript of the University of Virginia. It ran 30 participants. It has never appeared in peer-reviewed form, and later authors report that it names no measure by which a participant counts as dumbfounded. The first published attempt to elicit the effect is McHugh and colleagues' four studies, combined N = 276. In their interview study of 31 people, dumbfounded responses were recorded for 58.06% on Incest and 35.48% on Cannibal, against 9.68% on Trolley and none on Heinz, and dumbfounded responding was more common on the two intuition scenarios than on the two reasoning scenarios, 29 instances against three, chi-square(2, N = 124) = 38.17, p < .001. Moving the task to a computer, they recorded 20% dumbfounding in a college sample of 72 and 16% in an MTurk sample of 101, rising to 32% and 24% when unsupported declarations written into open-ended answers were counted.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The verdict that arrives before the argument",
+      "text": "A reader finishes an application and knows within seconds that this candidate will not do, then spends ten minutes assembling the gaps in the record that support the view. The verdict did not wait for the ten minutes."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The reasons that fall away without the judgement",
+      "text": "Someone says a harmless private act is wrong, is shown that nobody is hurt by it, and holds the judgement while each reason offered for it is taken apart. The judgement is not what those reasons were holding up."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The flat that was always the right one",
+      "text": "A buyer settles on one of two flats during the first viewing and afterwards builds the case from the commute, the light and the neighbours. The same three facts would have supported the other flat had the first minute gone the other way."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "People do say they have no reason, and a preregistered study of 1,686 raises the rate under cognitive load. Whether that means the judgement came first is disputed: applying Royzman's screens for belief about harm, the incidence falls to one person in 53.",

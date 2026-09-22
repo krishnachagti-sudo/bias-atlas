@@ -12,6 +12,23 @@
     "note": "The essay opens by saying that the same two authors had already argued the point in \"a short article entitled 'Intention' for a dictionary of literary criticism\" but could not pursue it at length there. Hirsch's 1960 footnote records the reprint in Wimsatt's The Verbal Icon, Lexington, Kentucky, 1954, and library catalogue records give the same year and the University of Kentucky Press."
   },
   "evidence": "There is no study. The intentional fallacy is an argument about critical method, and the 1946 essay proceeds by five propositions and a series of worked examples. Judging a poem, the authors write, \"is like judging a pudding or a machine. One demands that it work. It is only because an artifact works that we infer the intention of an artificer.\" They set poetry against \"practical messages, which are successful if and only if we correctly infer the intention.\" The central case is a line near the end of Eliot's \"The Love Song of J. Alfred Prufrock,\" \"I have heard the mermaids singing, each to each,\" which resembles a line in a song by Donne. Two ways of asking whether it is an allusion are set out. One is exegesis, which asks whether the poem makes sense if Prufrock is thinking about Donne. The other, available because Eliot was then alive, is to write to him and ask what he meant. The first is called \"the true and objective way of criticism.\" The second is refused in the closing sentence: \"Critical inquiries are not settled by consulting the oracle.\"",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The poet's letter",
+      "text": "A reviewer defends an obscure stanza by quoting a letter in which the poet explains what he was trying to do. Whether the stanza works is a question about what is on the page, and a statement of aim is not proof the aim was reached."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The seminar settled by an interview",
+      "text": "A class disagrees about what a novel's closing scene achieves, and settles it by playing a recording of the novelist saying what she meant. Evidence of intention has replaced the argument about the work, which is the substitution the charge names."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The tedium that was deliberate",
+      "text": "A director answers criticism of a slow middle hour by saying the tedium was planned. Intending an effect is not the same as producing one, and the audience's hour is no different for having been designed."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "The thesis is a rule for critics rather than an empirical claim, and no attempt to test or replicate it was found.",

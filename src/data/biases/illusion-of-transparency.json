@@ -2,7 +2,9 @@
   "no": 194,
   "slug": "illusion-of-transparency",
   "name": "Illusion of transparency",
-  "aliases": ["Transparency illusion"],
+  "aliases": [
+    "Transparency illusion"
+  ],
   "category": "social",
   "statement": "People overestimate how far their inner states leak out, so a lie, a rush of nerves or a flash of disgust feels visible to a room that mostly cannot see it.",
   "meaning": "The claim compares two quantities. One is how strongly a person feels something, the other is how much of it another person can actually read off their face and voice. The gap opens because the feeling is the most vivid thing in its owner's head, and the correction for the fact that nobody else has access to it is too small. Gilovich, Savitsky and Medvec call that anchoring on one's own experience and adjusting too little. A design can only test it by measuring the belief and the reality in the same room, which is why the paradigms all pair a performer with observers who are questioned separately.",
@@ -13,6 +15,23 @@
     "note": "Their paper is \"The illusion of transparency: Biased assessments of others' ability to read one's emotional states\", and it named the effect and set out the anchoring account."
   },
   "evidence": "The 1998 paper reports three sets of studies, and its full text was read for this entry from the authors' own Cornell page through the Wayback Machine. Studies 1a, 1b and 1c show that liars overestimate the detectability of their lies. In Study 1a, 39 Cornell undergraduates played a round-robin lie detection game in groups of five. Liars guessed that 48.8% of their fellow players would pick them out, when 25.6% did, paired t(7) = 5.41, p < .001. Study 1b repeated the game with 40 students and found estimates of 50% against an actual 27%, paired t(7) = 6.56, p < .0005. The same players expected fewer others to suspect them when telling the truth, 34% against 49%, and the authors use that gap to rule out a plain self-as-target bias. Studies 2a and 2b, on 25 and 52 undergraduates, show that people believe their disgust at a foul drink is more apparent than it is. Studies 3a and 3b carry the idea into reluctance to intervene in emergencies. All three sets are read as insufficient adjustment from the anchor of one's own phenomenological experience. Savitsky and Gilovich extended the idea to public speaking in 2003, and that full text came by the same route. In Study 1, 40 Cornell students delivered extemporaneous speeches in pairs. They felt nervous at 5.95 on a scale running to ten, believed they had appeared nervous at 6.55, and were rated by their counterpart at 5.25. A follow-up with 42 Williams College students, 17 of them speakers, put speakers' self-ratings at 5.71 against observers' 4.24, t(16) = 2.94, p < .01. Study 2 gave 117 students, 77 of them speakers, a three-minute speech on race relations after being informed about the illusion, reassured, or given nothing. Observers rated the informed speakers as more composed and their speeches as better.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The gift you did not want",
+      "text": "Someone opening a present they have no use for is sure their face gave it away in the first second. The giver, asked afterwards, saw nothing. The disappointment was the loudest thing in the room to one person and invisible to the other."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Nerves at the lectern",
+      "text": "A speaker whose heart is going and whose hands are damp is certain the room can see it. The audience rates the talk as composed. Something does carry across, so the error is in the size of the leak rather than in there being one."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The small lie about being late",
+      "text": "A guest gives a tidied-up reason for arriving an hour late and feels the untruth sitting on their face for the rest of the evening. The host notices nothing, having no access to the version that was left out."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Independent samples reproduce the gap between felt and visible nerves, while two unpublished theses miss it on the lying version and on the speech-anxiety remedy, the second on 31 speakers.",

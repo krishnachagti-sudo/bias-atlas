@@ -17,6 +17,23 @@
     "note": "Rosset's paper reports three studies. Participants read sentences describing actions that could be done on purpose or by accident, such as 'He set the house on fire', and chose an interpretation. Half judged under speeded conditions, and that group judged more sentences intentional. A second study collected free descriptions and found more intentional readings even for prototypically accidental actions. A third found that people asked to sort sentences as intentional or unintentional later remembered more of the unintentional ones than a control group sorting sentences as pleasant or unpleasant. The article is closed access and no open copy was found, so the abstract is all that was read for this entry."
   },
   "evidence": "Two later teams rebuilt the task without sentences, which matters because Rosset noted that wording alone might invite intentional readings. Moore and Pope showed 35 undergraduates 24 clips of a hand with a finger strapped into a key. Participants were told the movements would be a mixture of active presses and passive pulls by a pulley under the keyboard. Every clip was in fact the same passive pull. They called 64.2% of them intentional, SD 17.6, t(34) = 4.76, p < .001 against a test value of 50, and the score rose with schizotypy on both the Cardiff Anomalous Perceptions Scale, r = .534, p = .001, and the Peters Delusion Inventory, r = .451, p = .006. A later study using the same apparatus and the same perceptions scale found no overall correlation, and it is described under replication.\n\nSlavny and Moore ran Rosset's sentences online on 59 people at the timing of his unspeeded condition. Intentional judgements ran at 65.95%, SD 23.00, for neutral and prototypically intentional sentences and 20.12%, SD 11.87, for prototypically accidental ones. Self-reported cognitive empathy predicted the accidental-sentence score, F(2,56) = 5.06, p = .010, R² = .15, carried by perspective taking, and affective empathy did not.\n\nThe drinking study is the strongest support for the process claim. Bègue, Bushman, Giancola, Subra and Rosset used a balanced placebo design in a field experiment disguised as a food tasting, with a target blood alcohol content of 0.10%, and report that intoxicated people read more acts as intentional than sober people did. Their abstract was read; the article was not opened, and no figures from it appear here.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The shoulder in a narrow corridor",
+      "text": "Knocked as somebody passes, a man's first reading is that it was meant. The thought that the corridor is simply too narrow for two arrives second, and has to be reached for rather than supplied."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The message left unanswered",
+      "text": "A text that goes a day without a reply is read as a decision not to answer rather than as a phone left at the bottom of a bag. Both readings fit what happened, and only one of them comes first."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The door that swings shut",
+      "text": "A door closes as a visitor reaches the porch, and she takes it as a slight. Ambiguity is what the claim needs: where an act is plainly an accident, most people say so, and the proportion is nothing like fixed."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Endorsement sits above chance in three samples of the video task, a fourth shows it tracking the actor's posture, and speeding and memory load moved nothing.",

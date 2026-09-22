@@ -14,6 +14,23 @@
     "note": "Pai, Suris and North date the introduction of post-traumatic stress disorder as a psychiatric diagnosis to DSM-III in 1980, and write that its criteria have changed substantially at each revision since. The debriefing intervention this entry tests is younger. Stileman and Jones's reference list gives its founding description as Mitchell, J. T. (1983), 'When disaster strikes: the critical incident stress debriefing process', Journal of Emergency Medical Services 8, 36-39, which was not read for this entry."
   },
   "evidence": "The trials that made the reputation of debriefing were small and their results pointed the other way from the outset. Bisson, Jenkins, Alexander and Bannister randomised 133 adult burn patients to an individual or couple debriefing session or to no intervention, and 110 of them, 83%, were interviewed by an assessor blind to allocation at three and 13 months. Sixteen of the debriefed group, 26%, had PTSD at 13 months, against four of the controls, 9%. The authors note that the debriefed group started with higher questionnaire scores and more severe burns, both of which predicted worse outcome, so the comparison is not clean. Mayou, Ehlers and Hobbs followed the Oxford road-accident trial of 106 patients out to three years and reassessed 61 of them, 30 debriefed and 31 controls. Overall there was no effect of the intervention on intrusion and avoidance scores at three years, F(1,58) = 2.03, P = 0.16. Splitting by initial symptom severity changed the picture. Among patients whose baseline Impact of Event score was 24 or above, the debriefed group did worse, t(14) = 2.56, P = 0.023, observed difference 0.74 on log-transformed scores, 95% CI 0.11 to 1.28. Those high scorers went from a mean of 34.9 to 25.9 with the intervention and from 31.3 to 11.8 without it. The largest test of the seven-phase protocol is Adler and colleagues' platoon-randomised trial of 952 US peacekeepers, which reports that debriefing did not hasten recovery relative to a stress management class or to survey only, and that soldiers liked it more than the class and were not distressed by it. The trauma exposure these trials sit on is common. Kessler and colleagues, pooling 68,894 respondents across 24 countries in the WHO World Mental Health Surveys, report that 70.4% had experienced a lifetime trauma, at an average of 3.2 traumas per person.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The single session after a robbery",
+      "text": "A firm brings in a counsellor the day after a raid, and staff spend an afternoon describing what happened, saying what they felt and hearing which reactions are normal. Everyone finds it valuable, which is a rating of the session rather than a measure of what it prevented."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The recovery credited to the assembly",
+      "text": "A school holds an assembly after a fatal crash and finds that pupils settle over the following weeks. Most people exposed to a shocking event do not go on to meet criteria for a disorder, so settling afterwards is what an uncontrolled before-and-after look would show either way."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The failed trial read as a failed diagnosis",
+      "text": "A manager reads that early debriefing did not work and concludes that post-traumatic stress is invented. One intervention delivered soon after an event was tested and did not deliver, which is a verdict on the intervention and not on the condition."
+    }
+  ],
   "replication": {
     "state": "failed",
     "headline": "Pooled across controlled studies, debriefing does not reduce later post-traumatic stress symptoms, and the separate claim that it causes harm is weaker than the claim it does nothing.",

@@ -13,6 +13,23 @@
     "note": "Barrett's review of the new cognitive science of religion is where the device gets its name. The idea is older. Stewart Guthrie's Faces in the Clouds, published by Oxford University Press in 1993, argued that people take the human model as a default and read humanness into the world. Maij, van Schie and van Elk trace the lineage and record that Barrett in 2000 proposed an agent detection device, renamed an agency detection device in 2004 to cover the intentional aspect. Barrett's own 2000 abstract does not mention the device, and the full text could not be opened on 21 September 2026, so the naming is stated on Maij and colleagues' authority rather than read at source."
   },
   "evidence": "The laboratory basis is Heider and Simmel's 1944 film of two triangles and a disc moving around a rectangle. Three groups of undergraduate women watched it, 34 in the first experiment, 36 in the second and 44 in the third. Given only the instruction to write down what happened, all but one of the 34 read the movements as actions of animate beings, in most cases persons and in two cases birds. The exception described the shapes almost entirely in geometrical terms. Even her report slipped into calling the large triangle 'he', which the authors mark with a 'sic'. The paper's summary adds that every subject in the second group, and all but two in the third, saw animated beings as well. The attribution of purpose to moving geometry is the most robust thing in this literature.\n\nThe belief link was then tested in two directions. Van Elk's 2013 study used a point-light biological motion task on skeptics and paranormal believers. Believers had lower perceptual sensitivity, driven by a bias to answer yes when no agent was present, and the difference held only at low to intermediate ambiguity. The same paper reports that illusory agency detection was unrelated to traditional religious belief and to belief in witchcraft. Riekki, Lindeman and Raij scanned 12 believers and 11 skeptics watching moving shapes, and believers rated random movement as more intentional with stronger activation in medial prefrontal circuitry.\n\nVan Elk, Rutjens, van der Pligt and van Harreveld ran five experiments priming people with words for supernatural agents before biological motion or face and house judgements, with 40, 35, 35, 20 and 36 students plus 60 visitors to a Dutch paranormal fair. Human primes helped agency detection. Supernatural primes produced no general effect, and moderation by religiosity appeared in three of the experiments.\n\nAndersen, Pfeiffer, Müller and Schjoedt put people in a virtual forest in a preregistered study and told them to detect beings. Participants expecting a high probability of an encounter made many more false detections than those expecting a low probability, and degrading sensory reliability raised the false detection rate by much less. Expectation, not threat, moved the needle.",
+    "examples": [
+      {
+        "kind": "everyday",
+        "tag": "The noise downstairs at night",
+        "text": "A house settles and the sleeper hears someone moving about. What arrives is not a face or a pattern but a being with intentions, and it arrives before any of the ordinary causes are considered."
+      },
+      {
+        "kind": "everyday",
+        "tag": "The shapes moving on a screen",
+        "text": "Two triangles and a circle move about a diagram, and viewers describe a chase, a bully and an escape. Purpose attributed to bare motion is the settled half of the claim, and the easiest half to reproduce."
+      },
+      {
+        "kind": "everyday",
+        "tag": "The undergrowth that shifts in a wood",
+        "text": "A walker sees a branch move and reacts as though something is there, then finds the wind. The false alarm costs a moment of fright, and the account is built on how much the opposite error would cost."
+      }
+    ],
   "replication": {
     "state": "mixed",
     "headline": "Six experiments designed to make people over-detect agents failed to do so, and neither religiosity nor paranormal belief predicted the response bias, while one earlier study of paranormal believers had found exactly that bias.",

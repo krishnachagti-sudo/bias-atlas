@@ -2,7 +2,12 @@
   "no": 184,
   "slug": "ambiguity-aversion",
   "name": "Ambiguity aversion",
-  "aliases": ["Ambiguity effect", "Ellsberg paradox", "Uncertainty aversion", "Knightian uncertainty aversion"],
+  "aliases": [
+    "Ambiguity effect",
+    "Ellsberg paradox",
+    "Uncertainty aversion",
+    "Knightian uncertainty aversion"
+  ],
   "category": "decision",
   "statement": "People are said to prefer a bet whose odds are known to an otherwise identical bet whose odds are unknown, and to pay to avoid the unknown one.",
   "meaning": "Two urns hold red and black balls. One is known to hold fifty of each. The other holds a hundred balls in a proportion nobody has stated. A bet on red pays the same either way, and someone who prefers the known urn for red and also prefers it for black cannot hold consistent probabilities for the unknown urn. Daniel Ellsberg set out that pattern in 1961 and a three-colour version with it: thirty red balls, sixty black and yellow in unstated proportion, where the common preferences are red over black and then black-or-yellow over red-or-yellow. Both patterns break Savage's sure-thing principle. Ambiguity aversion is the name for the preference, ambiguity neutrality for the indifference that subjective expected utility requires, and ambiguity seeking for the reverse. The claim worth testing is not that the pattern exists but how many people show it, and in which situations.",
@@ -13,6 +18,23 @@
     "note": "\"Risk, Ambiguity, and the Savage Axioms\" reports no experiment. Ellsberg writes that he judges \"from a large number of responses, under absolutely nonexperimental conditions\", addresses the reader directly as a respondent, and names the colleagues he questioned. Those who did not violate the axioms include G. Debreu, R. Schlaifer and P. Samuelson. Those who violated them \"cheerfully, even with gusto\" include J. Marschak and N. Dalkey. Savage himself violated them when Ellsberg last tested him. Ellsberg gives no counts and no sample. He does claim persistence: \"the choices themselves do not appear to be careless or random. They are persistent, reportedly deliberate, and they seem to predominate empirically\". He also predicts that repenting of a violation on reflection \"would be exceptional\". He does point at an experiment, and it is not his. Footnote 8 describes John Chipman's work as \"done independently and largely prior to mine\" and his experimental results as \"both pertinent and favorable to the hypotheses below\". A later note calls the two-colour version \"Chipman's almost identical experiment\", whose results \"do give strong support to this finding\"."
   },
   "evidence": "The experimental record runs from before Ellsberg's paper to the present, and it does not agree with itself. Machina and Siniscalchi's handbook chapter names Chipman's experiments of 1958 and 1960 as the earliest reported, and Fellner's of 1961, which put versions of the two-urn problem to Yale undergraduates and found an overall tendency to prefer the fifty-fifty odds. Becker and Brownson in 1964, MacCrimmon in 1968, and Slovic and Tversky in 1974 followed, and the same chapter traces the work out of the laboratory into insurance and medical decisions and onto business owners, trade union leaders, actuaries, managers and executives. Oechssler and Roomets surveyed 40 experiments using Ellsberg's two-colour and three-colour problems and recorded the share of subjects each classified as ambiguity averse. Their own experiment built the ambiguity mechanically, so that no experimenter knew the composition either. Subjects hammered nails into a plywood board, which then became the back wall of a Galton box. Bouncy rubber balls were dropped through it, and each ball landing in a white or black bin added a yellow or blue marble to the urn, so the split was unknown to everyone in the room. Charness, Karni and Levin ran the three-colour urn but let subjects choose which colour to bet on, which removes the suspicion that the experimenter has stacked the urn against the one colour on offer. They then let subjects consult in pairs, with and without a payment for reaching agreement. Kocher, Lahno and Trautmann ran the same elicitation across four domains: gains and losses, at probabilities of one half and one tenth. Dimmock, Kouwenberg, Mitchell and Peijnenburg put an incentivised urn task to a national sample of American households rather than to students. Anantanasuwong, Kouwenberg, Mitchell and Peijnenburg dropped the urn altogether and elicited attitudes towards four real assets, a familiar company stock, a domestic index, a foreign index and Bitcoin. Fox and Tversky proposed a different explanation, the comparative ignorance hypothesis, under which the aversion is produced by evaluating the vague bet alongside a clear one and fades when the vague bet is priced alone.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "Two contractors, one with a record",
+      "text": "A tender comes down to a firm whose defect rate is published and a new firm with no record at all. The buyer takes the published rate even after being told the new firm is as likely to be better as worse. What is avoided is the missing figure, not a worse figure."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The trial that has not reported",
+      "text": "A patient offered two jabs takes the one whose effectiveness has been printed, over one whose trial is finished but unreported. Both are described as equally likely to work. The preference is for a stated number rather than for the higher chance of protection."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Betting on the league you follow",
+      "text": "Asked to back a result in a division they read about every week or one in a league they have never followed, someone picks the familiar division at the same odds. They would rather know what the odds are worth than find out afterwards."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Across 40 Ellsberg experiments the share of subjects classed as ambiguity averse runs from 8 percent to 93 percent, and averages 56.6 percent, so the pattern is real and is not what most people do in every setting.",

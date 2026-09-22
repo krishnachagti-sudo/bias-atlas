@@ -13,6 +13,23 @@
     "note": "Their review gathered attitude, self-esteem and stereotype findings under one heading and imported the implicit-explicit vocabulary from memory research. A footnote lists the overlapping dichotomies it stands in for, among them unaware-aware, direct-indirect and automatic-controlled, and says the pair was chosen for its prominence in memory work."
   },
   "evidence": "Greenwald and Banaji argued that direct measures, which presume accurate introspection, are inadequate for studying implicit cognition, and that indirect measures are therefore theoretically essential rather than merely convenient. The correspondence prediction was tested first. Hofmann, Gawronski, Gschwendner, Le and Schmitt pooled 126 independent study correlations, drawn from 517 single correlations and 12,289 participants, between the Implicit Association Test and matching self-reports. The mean uncorrected correlation was .191. Corrected for measurement error it came to .240, with an estimated standard deviation of .140, giving a 90% credibility interval from .011 to .471. About 44% of the observed variance was sampling error. Correspondence rose with the spontaneity of the self-report and with conceptual correspondence between the two instruments. The social desirability of the topic did not moderate it, which is the opposite of what the concealment reading of low correlations predicts. Cameron, Brown-Iannuzzi and Payne then ran the same test on a different family of instruments, the sequential priming tasks, across 167 independent studies.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The reaction-time score read as the real answer",
+      "text": "Someone scores differently on an indirect timed task from what he wrote on the questionnaire and decides the task found what he truly thinks. The word implicit records how the measure was taken, not that the content was beyond reach."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The retest a fortnight later",
+      "text": "A person sits the same indirect measure twice and gets a noticeably different score each time. Instruments at that level of precision are serviceable for comparing groups and poor for saying anything about the individual in the chair."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Two measures of one attitude",
+      "text": "A team runs two instruments both described as implicit and finds that the rankings they produce barely agree. That is a fact about the instruments, and it is why the field still defines the category by listing which tasks have been called implicit."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Two meta-analyses on unrelated instrument families put implicit-explicit correspondence near r = .2, so the dissociation is real; the claim that implicit measures predict what self-report misses did not survive the same test.",

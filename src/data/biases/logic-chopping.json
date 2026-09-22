@@ -19,6 +19,23 @@
     "note": "The earliest scholarly appearance of the label found in this work's searches. Gensler's dictionary carries an entry treating logic chopping as a fallacy at page 124. That entry was not obtained. Its existence and its page number are read off Hans V. Hansen's review in Informal Logic, which lists among the things one can learn from the book \"that logic chopping is considered a fallacy (p. 124)\". The review gives the imprint as Lanham, Toronto and Oxford, The Scarecrow Press, 2006, xvii + 306 pages, ISBN 0810855311. The words are far older than the fallacy label. Merriam-Webster defines the phrase \"chop logic\" as \"to argue with sophistical reasoning and minute distinctions\" and dates its first known use to 1533. Bennett's fallacy entry gives one reference, Henry Byerly's A Primer of Logic, Harper & Row, 1973, which could not be opened during this work."
   },
   "evidence": "There is no experiment behind this entry, and the honest description of the label is where it lives. It lives on fallacy lists. Bennett's Logically Fallacious carries it with two invented dialogues, one about pushing a broken-down car and one about a tyre salesman, and lists quibbling, nit-picking, smokescreen, splitting-hairs and trivial objections as other names for the same move. Wikipedia's List of fallacies carries a one-line bullet reading \"Logic chopping fallacy (nit-picking, trivial objections)\", placed among the red herring fallacies, and cites Bennett and Byerly. That bullet has a traceable birth. It was added in revision 1025709660, made on 29 May 2021 by the editor Libertarianandy2, with the summary \"added a logic chopping fallacy, could be moved into another category\". Both citations were in it from that first revision, and the Byerly reference was carried across from Bennett's page. A raw fetch of the Wikipedia title \"Logic chopping\" returns a Wikimedia error page rather than an article, and an insource search of the encyclopaedia for the phrase returns nine articles, List of fallacies among them. The one treatment of any length is Pirie's, which runs from page 199 to page 201 of the second edition of How to Win Every Argument under the heading Trivial objections. Pirie calls the fallacy \"akin to that of the straw man\", on the ground that only a few aspects of the opposing case are confronted, and notes that trivial objections \"tend to appear when the central thrust of the argument is difficult to oppose\". His examples are a new road opposed because it dates the town maps and a land war opposed for its effect on long-life milk supplies. His practical advice is the giveaway: list the objections, because \"your audience will be impressed more by their weight of numbers than by their lack of substance\". Neither the phrase logic chopping nor pooh-pooh appears anywhere in his book.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The ladder that failed three checks",
+      "text": "A safety report recommends scrapping a ladder that failed three inspections, and the reply disputes whether the third check was a formal inspection or a walk past. Grant the point and two recorded failures remain. The objection is accurate and too small to carry the weight it is being given."
+    },
+    {
+      "kind": "everyday",
+      "tag": "An afternoon spent on a footnote",
+      "text": "A trustee meeting convened to decide on a grant spends most of it on a rounding error in a footnote of the applicant's accounts. The error is real and it moves the total by eleven pounds. The question of whether to fund the work is never reached."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Four breakdowns, or three",
+      "text": "A tenant writes that the boiler has broken four times this winter and asks for it to be replaced. The reply is that the first failure was in October, so it belongs to autumn. The count falls to three and the flat is still cold every fortnight."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "No study measuring the move was found. The nearest measured work sits on the other side of the exchange, where listeners judge replies that are fluent and unresponsive, and it finds them rated as well as responsive ones.",

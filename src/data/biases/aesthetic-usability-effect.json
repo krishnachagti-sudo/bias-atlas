@@ -16,6 +16,23 @@
     "note": "A two-page short paper at pages 292 and 293, which could not be obtained for this entry. Tractinsky, who worked from its materials, describes it as setting apparent usability, a rating of how easy a screen looks, against inherent usability, which was seven features of the layout rather than any measurement of use."
   },
   "evidence": "Kurosu and Kashimura had people rate 26 ATM screen layouts on how easy each looked to use and on how beautiful it was. Nobody operated an ATM. Their two pages could not be obtained, so everything here about that study is read off Tractinsky (1997), who used their materials and thanks Kurosu for his help. Tractinsky's Table 1 gives their aesthetics to apparent usability correlation as 0.589, and his text as 0.59. He records that the 26 layouts were solicited from 26 people: 9 GUI designers, 6 industrial engineers, 8 engineers and 3 secretaries. Those are the designers, not the raters, and his paper nowhere gives the number of Japanese raters. Tractinsky obtained the layouts from Kurosu and rebuilt them in Hebrew, swapping a bowing figure for an hourglass and the yen symbol for the Hebrew word for confirmation. Experiment 1 showed them to 104 first-year engineering students on an overhead projector for about 20 seconds each, on two scales of 1 to 10. Averaged across the 26 designs, aesthetics and apparent usability correlated at 0.921, and a test for the difference against the Japanese figure gave Z = 3.09, p = 0.001. Experiment 2 separated the two ratings into different rounds for 81 students and returned 0.832. Experiment 3 sat 108 third-year students at individual computers with the order randomised and returned 0.920. Mean ratings tracked the Japanese ones, 5.9 against 6.0 for aesthetics and 5.4 against 5.8 for apparent usability. The Israeli spread was wider. Aesthetics ran 3.5 to 8.5 against 5.2 to 6.8, and apparent usability 2.7 to 8.5 against 4.4 to 6.5. Of the seven inherent usability features, only keypad type and grouping tracked apparent usability in Israel. The Japanese associated ease of use with the horizontal keypad and the Israelis with the telephone keypad. Israelis rated designs with fewer groups as more usable, against the advice in the usability literature.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "Two ticket machines at the station",
+      "text": "Asked which of two ticket machines looks easier to use, travellers pick the one with the cleaner screen and the better type. Timed at the platform, they take about as long on either, and hit the same wrong menu. The rating moved with the look; the fumbling did not."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The redesign nobody has used yet",
+      "text": "A committee shown mockups of a new booking system calls it simpler than the old one before a single button works. Nothing has been clicked, so the judgement is about how the layout reads, not about how the booking goes."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The rota nobody can fill in",
+      "text": "Volunteers praise a new shift rota as obvious and calm to look at, then keep ringing the coordinator to book a slot. Their verdict on the design and their behaviour with it are two measurements, and only the first tracks the styling."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The rating-to-rating correlation repeats every time it is attempted; the experiments that manipulate beauty and then measure behaviour disagree with each other.",

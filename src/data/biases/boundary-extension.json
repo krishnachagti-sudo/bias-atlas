@@ -16,6 +16,23 @@
     "note": "The paper named the effect and reported two experiments, a memory drawing task and a boundary rating task. Its full text is closed at APA. Its abstract was read at PubMed and Europe PMC, and gives 37 undergraduates in the drawing experiment and 85 in the boundary recognition experiment."
   },
   "evidence": "Intraub and Richardson's abstract reports 37 undergraduates who viewed 20 pictures for 15 seconds each. It states that 95% of their drawings included information that had not been physically present but would have lain just outside the camera's field of view. A second experiment had 85 undergraduates rate targets and distractors on a boundary-placement scale, and they rated the target pictures as closer up than before. The full article is closed at APA, so the rest of the 1989 work is described here from Gagnier and Intraub's Scholarpedia article, which Intraub curates. Their Figure 1 shows a close-up and a wide-angle photograph of the same scene beside drawings made from memory of each, and in both cases the drawings run past all four edges of the photograph. Intraub and Bodamer then tested whether the error is an artefact of not knowing what is coming. Eighty-one subjects viewed 12 photographs of simple scenes for 15 seconds each under one of three instructions: remember the picture in detail, the same plus a warning about the tests to come, or the same plus a demonstration of boundary extension and an instruction to guard against it. A drawing task and a boundary recognition test followed. Warning sometimes reduced the distortion and never removed it. McDunn, Siddiqui and Brown stripped the scenes of meaning, building close-angle and wide-angle displays from irregular geometric shapes that independent raters found unrecognisable, on random-dot or blank backgrounds. Boundary extension appeared in every condition, which puts object recognition and scene schemas outside the list of things it requires. Hafri, Wadhwa and Bonner ran seven experiments with 1,100 adults recruited, using tilt shift, a photographic trick that makes a real place look like a scale model by cutting apparent viewing distance while leaving the rest of the image alone. Their first experiment recruited 100 and analysed 93 after preregistered exclusions. Viewers called the probe the closer view on 69.3% of fake-miniaturised trials against 51.7% of original trials, odds ratio 2.32, 95% interval 1.88 to 2.86. The effect ran the same way for 73 of the 93 people and for 30 of the 32 scenes, and it held for a second, unrelated distance manipulation. Pullinen, Mononen, Simola and Henriksson took the effect out of the picture frame. Sixty people wearing a virtual reality headset looked freely around each of 20 rooms, then returned and walked to the spot they thought they had viewed from. They stopped too far back, so that their field of view was wider than the original, for close-up views, t = 4.29, p < 0.001, and across all conditions, t = 3.26, p = 0.001. For the far views the error did not differ from zero, t = 1.44, p = 0.156. Nothing in that display had a visible border, so borders are not what the effect needs.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The photograph that lost its edges",
+      "text": "Asked to draw a snapshot of a cat on a doorstep, someone draws the whole step, a stretch of path and a strip of sky the camera never held. Shown the original again, he rates it as a closer view than the one he was given."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The hall that shrinks in memory",
+      "text": "A wide shot of an empty hall runs the other way. Asked to recall it, people picture less of the hall than the picture showed, which is why the error is not the mind simply adding more of everything it sees."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The copy made with the picture still there",
+      "text": "Copying a photograph that has not been taken away, a person still adds ground beyond the frame. Nothing has been forgotten, so the extra cannot be the edges slipping quietly out of memory."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "Boundary extension repeats across laboratories, response measures and virtual reality, but only for close views: across 1,000 photographs judged by 2,000 people, object-centred images extended 93.2% of the time while wide scene images split evenly between extension and contraction.",

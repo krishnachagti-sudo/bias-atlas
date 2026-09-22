@@ -20,6 +20,23 @@
     "note": "Quattrone and Jones' 'The perception of variability within in-groups and out-groups: Implications for the law of small numbers' is the demonstration the field dates itself from. Park and Rothbart's 1982 title carries the phrase 'out-group homogeneity' and their abstract calls it the out-group homogeneity principle. Ostrom and Sedikides trace the underlying accentuation argument to Tajfel in 1969. The 1980 article is closed at its publisher and was not obtained on 21 September 2026."
   },
   "evidence": "Quattrone and Jones' article could not be obtained, so its design is described here from Ostrom and Sedikides' review. Princeton and Rutgers undergraduates rated the average undergraduate man at their own and at the other university on bipolar scales tied to the two schools' stereotypes, and the stereotype rating was stronger for the out-group. Ostrom and Sedikides also record that the paper examined how far people generalise from the behaviour of a single member to the group as a whole, which is the law-of-small-numbers argument in the title. Three of its experiments used similarity ratings, and by their account two reached significance, premedical against nursing students and students of rightist against leftist politics, while Princeton against Rutgers did not. Two of the three original authors repeated the effect a year later. Jones, Wood and Quattrone tested members of four undergraduate clubs in 1981, and their abstract reports that each club rated its own members as more heterogeneous on a series of personal characteristics than it rated the three other clubs. The tendency was unrelated to how many in-group or out-group members a rater knew, and unrelated to preference for the in-group. Ostrom and Sedikides count that study among three natural-group range experiments that all found significant support, and record its design as Princeton undergraduates rating their own and three other eating clubs on eight scales. Park and Rothbart ran four experiments, and their abstract was read at OpenAlex. Men and women estimated the proportion of men or of women who would endorse personality and attitude items, and out-group judges saw a group as endorsing more stereotypic and fewer counterstereotypic items than in-group judges did. Because the pattern held across items varying in social desirability, the authors argued it was independent of ethnocentrism. Experiment 3 asked members of three campus sororities to judge intragroup similarity for their own group and two others, and each group judged its own members more dissimilar than out-group judges did. Experiment 4 found men and women remembered the subordinate attributes of an in-group member better than those of an out-group member. Mullen and Hu pooled the literature in 1989 and called the tendency significant but small. Boldry, Gaertner and Quinn pooled it again with 177 effect sizes from 173 independent samples and 12,078 participants.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "Our section and theirs",
+      "text": "A choir member can name a dozen sorts of singer in their own section and describes the rival choir as all much of a muchness. Nothing in the description is unkind. The estimate concerns how much spread there is, not how much anyone is liked."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Clinicians and managers",
+      "text": "A nurse of twenty years sees endless variety among nurses and thinks of the management floor as interchangeable. Someone on the management floor reports the reverse about nurses, with the same warmth towards them in both directions."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The other end of the country",
+      "text": "A visitor describes the people of another region as all alike while insisting their own town holds every type there is. Both claims are about variety, and only one of the two groups has been watched for long enough to show any."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Pooled over 173 samples the effect is real and small, d = -0.20, 95% CI [-0.26, -0.13], but only two of the eleven measures used to detect it found anything on their own, and the sign reverses between measures once the perceiver's status is accounted for.",

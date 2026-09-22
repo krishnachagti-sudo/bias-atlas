@@ -16,6 +16,23 @@
     "note": "The paper is titled \"The relation of strength of stimulus to rapidity of habit-formation\" and studies forty dancing mice learning to avoid a black box under electric shock. It never uses the word arousal, stress, performance, motivation, emotion or law. Those words appear nowhere in the transcription of pages 459 to 482 held for this entry."
   },
   "evidence": "Each mouse chose between a white box and a black one, and entering the black box brought a shock from an induction coil. Ten tests were given a day until the animal chose correctly on thirty consecutive tests across three days, and the score was the number of tests to that point. Three sets differed in how much the two boxes differed in brightness. Set I was of medium difficulty and used three roughly measured strengths, 125 plus or minus 10 units, 300 plus or minus 25, and 500 plus or minus 50, with four mice at each. Set II was easy and used five calibrated strengths from 135 to 420 units, again four mice each. Set III was difficult and used four strengths from 135 to 375, with one male and one female at each. Table 15 gives the general averages. In set I they run 187+, 80 and 155 tests for the weak, medium and strong shocks. In set III they run 255, 120, 155 and 195 across the four strengths, so the fastest learning came at 195 units. In set II they run 82.5, 65, 50, 55 and 42.5, falling as the shock grew stronger, with no downturn at all. Yerkes and Dodson wrote that they did not find the point where learning begins to slow in set II because they did not care to subject their animals to injurious stimulation. The difficulty claim therefore rests on comparing the best strength in each set, 420 for easy, 300 for medium and 195 for difficult, across three experiments run with different apparatus. They flagged the weakness themselves, noting that only three strengths were used in set I so the most favourable one may never have been tried.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The sprinter and the snooker player",
+      "text": "Both feel the same surge before a final. The sprinter runs faster for it and the snooker player misses a fine cut. The level of arousal that helps a simple burst of effort is above the level a delicate task can carry."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Cramming for two papers",
+      "text": "A student crams for a vocabulary test in the hour before it and does well. Trying the same thing for a proof-heavy paper, the pressure that sharpened the first leaves her unable to hold the steps in order."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The kitchen at the wrong hour",
+      "text": "A cook who is slow and careless through an empty lunchtime works well once the room fills, and starts dropping plates when every table orders at once. Both ends of the curve appear in a single shift."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The two nearest early repeats, in chicks and in kittens, did not produce the curve. Modern human work with pupil diameter does, in 28 people over about 3,570 trials each, on tasks whose difficulty was deliberately held equal.",

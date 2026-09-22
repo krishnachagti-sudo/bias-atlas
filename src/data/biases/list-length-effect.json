@@ -16,6 +16,23 @@
     "note": "Strong showed Columbia students six series of magazine advertisements, of 5, 10, 25, 50, 100 and 150 items, at one a second, then handed them a set twice as large and asked which ones they had just seen. His summary score fell from 86.2 per cent at five advertisements to 46.8 per cent at 150. Each series was tested immediately after it ended, so the longer series also carried the longer average delay, which is the confound the modern argument turns on."
   },
   "evidence": "The free recall version is not in dispute. Ward ran overt rehearsal free recall with lists of 10, 20 and 30 words and obtained what he calls the standard list length effects: as the list grew, the number of words recalled rose and the proportion recalled fell. His own reading of that is not item competition. He replotted recall against when each word was last rehearsed, and the curves for the three list lengths lay on top of one another. Ward takes that as evidence that length works through how recently unrehearsed words were last thought about. The recognition version is where the argument sits. Dennis and Humphreys named four ways a length effect could appear with no interference from the studied items. They are unequal retention interval, lapses of attention across a long list, rehearsal displaced into the filler task, and failure to reinstate the study context. They then built the controls in. Their first experiment set short lists of 24 words against a long list of three 24-word blocks, separated by three minutes of a sliding tile puzzle. There were 30, 30 and 42 subjects in the three conditions, study was incidental, and every word carried a pleasantness rating. The largest difference in hit or false alarm rates was 0.025 in the retroactive design and 0.023 in the proactive design, and neither was significant. Their second experiment ran short, long and mixed conditions within subjects, at two blocks of 20 words against four. Differences ran from 0.019 to 0.028 and none was significant, in a design powerful enough to show a low frequency advantage in hits minus false alarms at p = .028.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The share of the list that comes back",
+      "text": "Someone given forty words to learn produces a smaller proportion of them than someone given ten. That much of the claim is not in dispute anywhere in the literature."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Telling a studied word from a new one",
+      "text": "Asked whether a particular word was in the set, a person who studied eighty may do no worse than one who studied twenty. What that comparison tests is where the interference comes from, and the answer is not settled."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The delay hidden in the longer list",
+      "text": "A long list takes longer to study, so more time passes between its early items and the test. Controlling that is most of the work in this paradigm, and recognition results turn on how it was done."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The recognition effect appears or disappears depending on which controls are used, and the two camps have swapped positions since 2015.",

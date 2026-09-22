@@ -15,6 +15,23 @@
     "note": "This is the paper that coined the term. Its own account of the antecedent is wrong. It describes Ringelmann as a German psychologist who never published, where he was a French agricultural engineer whose report appeared in 1913, covering work done between 1882 and 1887."
   },
   "evidence": "Latané, Williams and Harkins measured sound. In Experiment 1, groups of six male undergraduates at Ohio State, recruited on eight separate occasions, clapped and cheered for five seconds at a time. Two-person groups produced 71% of the sum of their individual capacity, four-person groups 51% and six-person groups 40%. Experiment 2 put six groups of six men in blindfolds and headsets so nobody could see or hear anyone else. Real pairs reached 66% and real sixes 36%. The same men also shouted alone while believing others were shouting with them: 82% of their solo output when they thought one other person was yelling, 74% when they thought five were. Since nothing can be mis-synchronised in that condition, the authors concluded that half the loss in real groups is faulty coordination and half is reduced effort. The quantitative record is Karau and Williams. They drew 78 studies from 59 documents, split them into 166 units and 178 once male and female subjects were separated, and computed 163 effect sizes for objective effort. The mean weighted d was 0.44, 95% CI 0.39 to 0.48, with an unweighted mean of 0.48 and a median of 0.41. Of the 163 comparisons, 128, or 79%, ran in the loafing direction. The effects were not homogeneous, Q = 964.70, p < .001. Dropping 39% of them made them so, and the weighted mean then fell to 0.24, 95% CI 0.19 to 0.29.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The report with one name on it",
+      "text": "Five students write a single document submitted under the group’s name, and each puts in less than when the same five wrote separate essays in the same room. They were equally surrounded by other people in both cases, so being watched is not what changed."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The envelopes counted in one pile",
+      "text": "Volunteers stuffing envelopes into a shared box work more slowly than volunteers whose own boxes are counted at the end. Nobody decides to slack. What has gone is the link between the effort and anything that can be traced back to the person making it."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The section that carries an initial",
+      "text": "The same group is told each chapter will be marked separately and initialled by whoever wrote it, and the gap closes. Making a contribution visible is one of the conditions that restores effort, and so is giving people a task they care about."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The pooled estimate across 163 comparisons is d = 0.44, but it is 0.76 in the studies whose authors predicted loafing and -0.01 in the studies whose authors did not.",

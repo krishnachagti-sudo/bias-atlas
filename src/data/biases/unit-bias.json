@@ -16,6 +16,23 @@
     "note": "The paper names the heuristic and supplies its only evidence, three observational snack studies run in two Philadelphia buildings. It was received in May 2005 and accepted in July 2005."
   },
   "evidence": "The paper reports three studies, all of them free snacks left out in public and weighed at the end of the day. In the pretzel study, soft pretzels were left in an apartment lobby on Mondays, Wednesdays and Fridays, either whole at 3 oz. or cut in half at 1.5 oz., with the number offered doubled to 120 when they were halved. This ran for 12 weeks, giving 18 days for each size, with pretzels put out at 8:00 a.m. and leftovers counted at 4:00 p.m. In the Tootsie Roll study, a bowl in an office building held either 80 small 3-g sweets or 20 large 12-g ones, always 240 g in total, on alternating days for 10 working days. In the M&M's study, a 1-lb. bowl at the same apartment building carried a sign reading 'Eat Your Fill' and a chained scoop, either a tablespoon or a quarter-cup four times its size, alternating daily for 10 working days. The basic datum in each case was weight taken per day: 10 days for the sweets, 10 for the M&M's, 36 for the pretzels. The authors paired matching weekdays and ran one-tailed t tests on the ratio of large-unit to small-unit intake, against 1.00. Pretzels gave a mean ratio of 1.69, t(17) = 10.21, p < .001, d = 2.41. M&M's gave 1.67, t(4) = 7.56, p = .001, d = 3.38. Tootsie Rolls gave 2.27, t(4) = 1.92, p = .064, d = 0.86, which the authors attribute to one outlying ratio of 4.8. Every ratio in all three studies exceeded 1.00, with binomial p values of .031, .031 and less than .001. Complete control by unit size would have predicted ratios of 2.00 for pretzels and 4.00 for the two sweets, and the authors note that the observed ratios fall well short of that.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The biscuits that come wrapped in twos",
+      "text": "A packet holds its biscuits in small wrappers. Whoever opens one treats that wrapper as the serving and stops, where the same biscuits loose in a tin end at no particular point. The wrapper is doing the deciding, not the weight."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The serving spoon in the canteen",
+      "text": "Everyone in the queue takes one spoonful of rice, and the spoon settles how much that is. Swap it for a larger one and the plates come out heavier, though nobody in the queue decided on a bigger meal."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Where one is not enough",
+      "text": "Offered sweets a tenth of the usual size, few people take one and stop. Intake rises with the size of the unit without following it, which is why the stronger claim, that a unit is taken and the eating ends, does not survive contact with the data."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Larger units do raise intake, but the specific unit-bias claim fails: in the study that measured individuals rather than daily totals, a quarter of participants ate exactly one unit.",

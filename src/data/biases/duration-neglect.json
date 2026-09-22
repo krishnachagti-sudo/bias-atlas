@@ -16,6 +16,23 @@
     "note": "The paper names the phenomenon and defines it as little or no independent effect of duration on retrospective evaluations of affective episodes. The first demonstration was Varey and Kahneman in 1992, where people judged another person's discomfort from written lists of ratings. Fredrickson and Kahneman report that duration was significant there and added 3% of additional variance, and that study is described here through their account of it."
   },
   "evidence": "Thirty-two students at the University of California, Berkeley, aged 16 to 35, watched six pleasant and six aversive film clips, each in a short or a long version, and marked a 100-mm line after each one. Aversive clips ran 28.8 seconds on average when short and 84.2 seconds when long. Mean evaluations of the aversive clips moved from 55.18 to 65.33 with length, and the mean within-subject biserial correlation between duration and evaluation was .26. Duration correlated .41 with peak affect and .32 with end affect, so length shifted the moment-by-moment experience more than it shifted the verdict. With the sum of peak and end affect held constant, the mean partial correlation between duration and the evaluation of aversive clips was -.02, t(30) = 0.18. Pleasant clips showed no reliable duration effect, and the long versions of the puppy film and the waves film were rated below the short ones. At the close of that session the same subjects estimated the long versions at about twice the length of the short ones, so they knew what they were setting aside. Study 2 showed the same clips to 96 students who ranked them at the end of the session. Duration correlated .24 with the rankings of aversive clips when people knew the ranking task in advance and .12 when they ranked from memory, a difference at t(94) = 1.90, p < .10. One number from the colonoscopy work reached print only later. Eighty-nine of the colonoscopy patients were re-interviewed about a month later and asked to choose between a future colonoscopy and a stomach X-ray. Ariely, Kahneman and Loewenstein report that the biserial correlation between that choice and the duration of the procedure was .01, and that the result was left out of the 1996 paper by oversight.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "Two appointments at the same dentist",
+      "text": "One appointment is uncomfortable at a steady level for ten minutes and another for half an hour. Asked afterwards how bad each was, the patient rates them much alike, although one held three times as much discomfort."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The long film and the short one",
+      "text": "Two films are equally dull at every minute, one running ninety minutes and the other nearly three hours. A week later the verdicts barely separate them, and a viewer choosing by memory may sit through the longer one again."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The shift that felt the same",
+      "text": "A nurse rates a steady, difficult eight-hour shift and a steady, difficult twelve-hour shift as about equally bad. She knows perfectly well which was longer. The length does almost nothing to the verdict she gives."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Duration comes out near zero when episodes are rated one at a time, and carries about the weight of the ending when the same sounds are judged by a decision.",

@@ -2,7 +2,12 @@
   "no": 339,
   "slug": "climate-change-denial",
   "name": "Climate change denial",
-  "aliases": ["Psychology of climate change denial", "Climate scepticism", "Climate change scepticism", "Global warming denial"],
+  "aliases": [
+    "Psychology of climate change denial",
+    "Climate scepticism",
+    "Climate change scepticism",
+    "Global warming denial"
+  ],
   "category": "belief",
   "statement": "Climate change denial is a topic rather than one effect, and its largest measured correlate is political affiliation at r = .30, ahead of education at r = .12.",
   "meaning": "The phrase names a research area, not a laboratory result. Three questions get run together under it. The first is who disbelieves, which is answered by surveys correlating stated belief with demographics and values. The second is why, which is answered by experiments that manipulate something and watch stated belief move. The third is what changes it, which is answered by message tests with belief, policy support or behaviour as the outcome. The measures differ across all three. Some studies ask whether warming is happening, some whether humans cause it, some how serious the risk is, and Hornsey and colleagues found that the choice between a general and a causal wording moderated six of their twenty-seven correlations. This page maps the claims that carry numbers rather than defining a single effect, because that is the level at which the evidence exists.",
@@ -13,6 +18,23 @@
     "note": "Their paper analysed 14 integrated-assessment focus groups run in German-speaking Switzerland between 1997 and 1999, with about six to eight people each, drawn by stratified random dialling and made heterogeneous for gender, age, education and environmental attitudes. Participants were alarmed by high-energy futures and still built what the authors call socio-psychological denial mechanisms to justify not acting. The denial they recorded was of mitigation measures rather than of the science, which is the distinction the later experimental work turns on. No single publication defines the topic, and the phrase is older than this paper."
   },
   "evidence": "The correlates have been counted once. Hornsey, Harris, Bain and Fielding meta-analysed 27 variables across 25 polls and 171 academic studies in 56 nations. Political affiliation was the largest demographic correlate of belief at r = .301 over 20 datasets, against political ideology at .149, education at .117, income at .057, race at .032 and sex at .029. Among the psychological antecedents, endorsement of the new ecological paradigm reached .493, trust in scientists .365, perceived scientific consensus .349, free-market ideology -.296, objective knowledge .253 and subjective knowledge .182. Experience of extreme weather sat at .052. Kahan and colleagues surveyed 1,540 US adults and found the deficit prediction reversed: science literacy correlated with climate-risk concern at r = -0.05 and numeracy at r = -0.09. Splitting by cultural worldview, the composite science literacy and numeracy scale correlated with concern at 0.08 among egalitarian communitarians and -0.12 among hierarchical individualists, so the gap widened as comprehension rose. Campbell and Kay ran four studies on the idea that the aversion is to the solution rather than the problem. In their Study 2, 121 Mechanical Turk workers read the same IPCC figure attached either to emissions regulation or to profiting from green technology. Self-identified Republicans agreed with the science at 55% under the free-market framing and 22% under the regulatory one, while Democrats sat at 68% under both. Study 4 reversed the politics, with gun-control supporters rating intruder violence more severe when the proposed remedy was gun control, F(1, 174) = 16.42.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "Two neighbours with the same schooling",
+      "text": "Two people with the same degree and the same income disagree about whether warming is human-caused. Which way they vote predicts the split better than anything on their qualifications, and by a wide margin."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The leaflet aimed at the weaker correlate",
+      "text": "A campaign assumes disbelief comes from not knowing the science and spends its budget on explanatory leaflets. Education tracks belief at a fraction of the strength that political affiliation does, so the effort is aimed at the smaller of the two."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Three questions counted as one number",
+      "text": "A poll asks whether warming is happening, whether humans are causing it and how serious the risk is, and gets three different figures from the same respondents. A report quoting one of them as the rate of denial is not describing the other two."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The deficit account has failed repeatedly in United States samples. The cultural-cognition account that replaced it explains little outside them.",

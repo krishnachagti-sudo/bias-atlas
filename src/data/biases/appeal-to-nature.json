@@ -13,6 +13,23 @@
     "note": "The paper that set the design the field still uses: stipulate that the natural and the manufactured option are equally healthy, equally effective and finally chemically identical, then see who still prefers the natural one. Ji and colleagues name Baron, Holzman and Schulkin's 1998 survey of obstetricians as the first formal examination of the preference, and that paper was not read here. Moore's Principia Ethica of 1903, which supplies the phrase naturalistic fallacy, is about a different claim and is discussed above."
   },
   "evidence": "Rozin and colleagues ran two questionnaire studies. In the first, 173 University of Pennsylvania undergraduates rated 19 foods and medicines, with 166 giving a complete set. Preference for the natural version fell steadily across categories: 75% for four raw foods, 32% for three processed foods, 28% for six food-medicines and 18% for six medicines. Across the 19 substances, rated healthiness or effectiveness correlated with natural preference at 0.86. A twentieth item described two pure drugs stipulated to be chemically identical, one extracted from a plant leaf and one synthesised in a laboratory. Of the respondents, 63% preferred the natural one, 19% were indifferent and 18% preferred the synthesised one, chi-square(2) = 63.987, p < .001. Study 2 compared 144 undergraduates with 144 adults drawn from the Philadelphia County jury pool. Jurors chose natural in 63% of cases against 9% commercial; students gave 47% and 18%. Stipulating chemical identity moved the jurors to 57% and the students to 32%, so a majority of those preferring natural held the preference after being told the two things were the same. Ideational reasons outnumbered instrumental ones when participants were asked why natural is a good thing, 34% against 30% for jurors and 45% against 19% for students, with the rest unclassifiable. The process finding comes from a second study by Rozin, run on 196 adults waiting at Philadelphia's 30th Street station, 97 on a water form and 99 on a tomato paste form. Each form presented triads: a natural starting entity, the same entity after one transformation adding or removing a natural component, and then the reverse transformation, which restores the original composition. Naturalness was rated from 0 to 100. Across the four triads the twice-transformed entity was rated 29.0, 31.3, 19.5 and 21.2 points less natural than the chemically identical original, t values 8.669, 8.980, 6.666 and 7.192, all p < .001. The twice-transformed entity was also rated less natural than the once-transformed entity, which differs in composition, by 2.1, 7.0, 6.6 and 5.3 points; two of those four met the paper's p < .01 criterion. Naturalness and acceptability correlated at a mean Pearson r of .56 across 11 exemplars, range .48 to .70. The PubMed abstract of Rozin's 2005 Psychological Science paper reports the same ordering on a wider set of transformations. Insertion of a gene from another species produced the biggest drop in naturalness. Domestication, which changes genotype and phenotype far more, was considered much less damaging.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The two identical bottles",
+      "text": "Two supplements hold the same molecule, one drawn from a plant and one made in a factory, and shoppers pay more for the extracted one. The contents are the same, so what the extra money buys is the process the substance came through."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The remedy chosen for a child",
+      "text": "A parent picks a herbal cough syrup over a pharmacy one and rates it as both safer and likelier to work. Some of the preference is those safety ratings, and a good deal of it remains after being told the two are equivalent."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The label on the cleaning spray",
+      "text": "A spray marked as naturally derived is judged gentler than the same formulation marked as laboratory made. This is a preference people act on in a shop, and not a claim about how the word good is to be defined."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "Told that a natural and a synthetic drug were equally effective and had identical side-effect rates, 90.4% of 260 Americans and 85.5% of 249 Chinese chose the natural one.",

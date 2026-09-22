@@ -13,6 +13,23 @@
     "note": "The text states the defensive version plainly. Unconscious hostility towards the dead, Freud writes, 'is projected from our inner perception into the outer world and is thereby detached from our own person and attributed to the other', leaving the survivor to face an evil demon instead of an unwelcome feeling. He does not confine the word to defence. A page later he writes that projection 'is not specially created for the purpose of defence, it also comes into being where there are no conflicts', and calls the outward casting of inner perceptions a primitive mechanism that shapes the ordinary world. Both senses the entry separates are already in the founding text. Freud's preface says the essays first appeared in the journal Imago, and the book carries four. It refers back to his account of the paranoiac Schreber, so the idea predates this printing. The year given is the year of A. A. Brill's translation, published in London by Routledge, which is the text read for this entry."
   },
   "evidence": "David Holmes reviewed the experimental literature twice, in Psychological Bulletin in 1968 and again in 1978, and reported that the classical form had no support. Govorun, Fuegen and Payne summarise the 1968 review as finding evidence for projection only where people were aware of the trait in themselves, which is the condition the defensive account excludes. Baumeister, Dale and Sommer, surveying seven Freudian defences in 1998, record that Holmes concluded defensive projection should be regarded as a myth, and add that it was never clear how seeing dishonesty in another person would help anyone avoid seeing it at home. Newman, Duff and Baumeister rebuilt the claim in 1997 on thought suppression rather than the unconscious. Trying not to think about a trait makes the category accessible, and an accessible category gets applied to other people. Their abstract reports six studies: repressors who denied traits their acquaintances credited them with read those traits into ambiguous behaviour, and participants handed bad feedback and told to put it out of mind then attributed it to somebody else. Schimel, Greenberg and Martens tested the defensive half directly in 2003. Their abstract reports two experiments, and the two measure different things. In the first, people told they were high rather than low in repressed anger rated an ambiguous target especially high on anger, and those allowed to project showed the lowest anger accessibility on a word completion exercise. The second swapped in dishonesty and measured denial directly, by self-attribution rather than by accessibility: those who received high dishonesty feedback and were allowed to project reported an especially low level of dishonesty in themselves.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The accusation across the table",
+      "text": "A colleague who talks over everybody complains that nobody lets him finish. Everyday use asserts the Freudian version here, that the trait is denied at home and found abroad, and that is the version the experiments have struggled to establish."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The guess about what the guests want",
+      "text": "A host who dislikes loud music assumes the other guests will want it turned down, and is surprised when they do not. Social projection needs no denial and no unconscious, because the estimate is an inference drawn from a sample of one."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The doubts heard in the room",
+      "text": "A team lead who goes into a review unsure the plan will hold hears the questions as scepticism and answers them defensively. His own state is colouring his reading of everyone else, and the Freudian version would additionally require him not to know his own doubt."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The social sense of the word survives a meta-analysis at a large effect size; the defensive sense was reviewed away in the 1960s and 1970s and rebuilt on a different mechanism.",

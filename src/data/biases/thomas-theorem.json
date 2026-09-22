@@ -16,6 +16,23 @@
     "note": "The sentence closes a paragraph on the evidential value of subjective records, in a chapter on research method. Its illustration is an inmate of Dannemora prison who had killed several people who talked to themselves in the street, because he read insults off the movement of their lips and behaved as if that were true. The eponym is Merton's. He wrote of 'W. I. Thomas' sociological theorem' on pages 331 to 332 of a 1938 paper in Philosophy of Science, and used 'the Thomas theorem' in his 1948 paper on the self-fulfilling prophecy."
   },
   "evidence": "There is no study behind the theorem. It is one sentence, supported by one anecdote, in a chapter about research method. The anecdote is the refusal of the warden of Dannemora prison to send an inmate out under a court order, and the book does not say where the Thomases got it. Merton's first use of the eponym, in 1938, called the theorem repeatedly verified and cited nothing for it. His 1948 use added no data either: his illustration is a fictional bank called the Last National, and his point is that the same thought had been set down before Thomas by Bossuet, Mandeville, Marx, Freud and Sumner, whose agreement he takes as reason to attend to it. In 1995 he added Epictetus and Schopenhauer, and noted that George Herbert Mead had told his Chicago classes that 'If a thing is not recognized as true, then it does not function as true in the community', a formulation published in 1936 which then sank. What has been measured is the sentence's circulation. Merton reports that none of the reviews of The Child in America in the American Journal of Sociology, Social Forces or Sociology and Social Research took any notice of the theorem. Kimball Young made it a chapter epigraph in his Social Psychology in 1930 and in Social Attitudes in 1931, both times without a source reference, and Merton calls those epigraphs an early conduit for its spread. R. S. Smith surveyed well over 100 introductory sociology textbooks and found 40 that quoted or paraphrased the theorem, of which one cited the book and page it came from. Those figures are Merton quoting the conference paper Smith gave in 1993, not the article Smith published in 1995. By Merton's count W. I. Thomas put the sentence in print three times in his career: the 1928 book, an essay in a 1931 Brookings Institution symposium, and Blumer's 1939 appraisal of The Polish Peasant. He never developed it.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The silence read as a snub",
+      "text": "A tenant decides that a neighbour's quiet nod means a grudge, and stops using the shared garden. The garden goes unused whatever the nod meant. What governed the behaviour was the meaning the tenant gave the situation, and the empty garden is real either way."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The letter taken as bad news",
+      "text": "A routine recall letter from a clinic is read as a warning of something serious, so a holiday is cancelled and savings go on travel to the appointment. The appointment may be nothing at all. The cancelled holiday and the spent savings stand."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Nerves taken for guilt",
+      "text": "Jurors treat a defendant's shaking hands as a sign of guilt rather than of fear, and convict. Whether the reading was right does not change the sentence, which is served. A definition of the situation became a consequence nobody can take back."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "No replication or direct empirical test of the theorem was located. The nearest experimental evidence belongs to the self-fulfilling prophecy, which is a narrower claim and has its own entry.",

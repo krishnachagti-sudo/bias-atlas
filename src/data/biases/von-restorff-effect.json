@@ -2,7 +2,10 @@
   "no": 111,
   "slug": "von-restorff-effect",
   "name": "Von Restorff effect",
-  "aliases": ["Isolation effect", "Distinctiveness effect"],
+  "aliases": [
+    "Isolation effect",
+    "Distinctiveness effect"
+  ],
   "category": "memory",
   "statement": "An item that differs from the others in a list is recalled better than the same item sitting in a list where nothing stands out.",
   "meaning": "The test is the isolation paradigm. One item in a list differs from the rest on some dimension, by material, colour, category or size, and memory for that isolate is compared with memory for the same item in a control list. Which control list is used decides what the comparison means. Against a homogeneous list, where every item is of one kind, the isolate wins by a wide margin. Against an unrelated list, where every item differs from every other, the isolate still wins, and that second comparison is the one that carries the theory. Two readings of the result exist and they are testable apart. Either isolation lifts the odd item above what it would otherwise reach, or the similarity of the surrounding items drags them down, or both happen at once. Von Restorff's own data show both, and her explanation favoured the drag.",
@@ -13,6 +16,23 @@
     "note": "The paper is her Berlin dissertation, printed as pages 299 to 342 of volume 18. Those pages carry the joint heading 'Analyse von Vorgängen im Spurenfeld' with Köhler named alongside her, and Crossref holds a later instalment under that same joint title at volume 21, pages 56 to 112, in 1937. MacLeod records that the work was done with Köhler and that she took the doctorate magna cum laude on her birthday at 27. No English translation has ever been published, and the German original was not obtained for this entry. Everything attributed to her here is read off an unpublished translation by Andrea Dorsch, which MacLeod cites as Köhler and von Restorff (1995)."
   },
   "evidence": "MacLeod tabulates nine main experiments from the dissertation with samples between 4 and 84. The first showed five lists of eight paired associates built from five kinds of material: nonsense syllables, numbers, letters, keyboard characters and colours. Four pairs in a list came from one kind, and the remaining four were each the only pair of their kind. Pairs appeared for 2 seconds, three times over, and recall followed a 6-minute conversation. Massed pairs came back at a little over 40%, isolated pairs at almost 80%. A control run over 22 subjects gave 189 hits from 440 for massed pairs against 328 from 440 for isolated ones. The experiment that carries the argument came later. Fifteen subjects saw three ten-item lists, one card every 1.5 seconds, then read a text for ten minutes and wrote down what they could recall. Two lists held nine syllables and one number, or the reverse, with the odd item in the second or third position. The third list held ten unrelated things: a number, a syllable, a colour, a letter, a word, a photograph, a symbol, a button, a punctuation mark and the name of a chemical compound. Massed items were recalled at 22% and the isolate at 70%. For the same critical items inside the unrelated list the translation prints no percentage, giving a mean of 6 against 6.5, or 43%, for the other items in that list. The .40 usually quoted for that condition is Hunt's figure, not hers. The translation's tables sit on the page as placeholders, so every figure above comes from its running text, and MacLeod's Table 2 gives .22 and .70 for the same experiment. Von Restorff placed the isolate early on purpose, writing that at the second and third positions the subjects 'could not know anything about the contents of the whole list', so the item 'was not perceived as unusual and was not particularly salient'.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The one word in capitals",
+      "text": "A shopping list is written in the same hand throughout except for one item in block capitals. That item is the one recalled at the till, and the ones around it fare slightly worse for its presence."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The slide with a different background",
+      "text": "A deck of twenty slides in one template carries a single slide in another colour. A week later that slide is the one people can describe, whether or not it held the point that mattered."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The notes highlighted everywhere",
+      "text": "A student marks most of a chapter in yellow. Nothing now differs from anything else, and the advantage one highlighted sentence would have had disappears once highlighting is the norm."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "Hunt repeated von Restorff's own early-isolate procedure with 40 undergraduates and recalled the isolate at .70 and .80, against .40 and .30 for the same item in unrelated control lists.",

@@ -13,6 +13,23 @@
     "note": "Two experiments. Currently clinically anxious, recovered clinically anxious and control participants were presented with a mixture of unambiguous and ambiguous sentences. A recognition-memory test showed the currently anxious group more likely than the other two to have taken the ambiguous sentences in a threatening sense, which the authors read as a property of anxious mood state rather than of the people. The second experiment established that the difference was not response bias and that the bias was, in their words, 'a reasonably general one'. The same group had reported the effect two years earlier using homophones, where clinically anxious participants wrote the threatening spelling more often than controls and recovered participants came out in between."
   },
   "evidence": "Everaert, Podina and Koster pooled the depression literature in 2017. Across 87 studies and 9,443 participants, a random-effects model gave g = 0.72, 95% CI 0.62 to 0.82. Diagnosed patients gave g = 0.60, 95% CI 0.37 to 0.75, remitted patients g = 0.59, 95% CI 0.33 to 0.86, and undiagnosed people with elevated symptoms g = 0.66, 95% CI 0.47 to 0.84. Self-referential stimuli raised the estimate to g = 0.90, 95% CI 0.78 to 1.01, while mental imagery instructions made no difference, g = 0.74 with them and g = 0.72 without. A negative bias, g = 0.58, 95% CI 0.40 to 0.75, and a missing positive bias, g = 0.60, 95% CI 0.36 to 0.85, came out the same size. Chen, Short and Kemps did the same job for social anxiety, meta-analysing 44 of the 46 studies they found, N = 3,859, and report g = 0.83. Subjective measures and verbal stimuli detected the bias best, and the authors say the heterogeneity between studies likely reflects some publication bias and that the pooled figure may be inflated. The causal test is training. Mathews and Mackintosh reported five experiments in 2000 in which exposure to a run of ambiguous passages resolved one way shifted how later ambiguity was read. Inducing the bias did not require participants to generate the meanings themselves, but that active processing was needed before state anxiety moved with the induced bias. Menne-Lothmann and eight colleagues pooled the training literature in 2014: 42 articles reporting 59 independent studies, 125 samples and 2,526 adults. After benign training the gap between endorsement of positive and negative interpretations was 1.33, 95% CI 1.11 to 1.55, across 75 samples from 34 studies. Negative mood fell by 0.25, 95% CI 0.14 to 0.36, across 90 samples from 42 studies, where positive values mean a decrease in negative mood. Negative training moved it the other way, -0.20, 95% CI -0.35 to -0.05. Their abstract records that these effects 'were not consistently different from control conditions with no or neutral training'.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The one-line message from a manager",
+      "text": "A message reading 'can we talk tomorrow' admits a promotion and a reprimand equally well. The anxious reader settles on the reprimand, and the settling rather than the noticing is what the bias names."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The friend who has not replied",
+      "text": "Two days of silence after a message could be a busy week or a friendship cooling. The depressed reading takes the second and treats an open question as one that has been answered."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The cough at the back of the room",
+      "text": "A speaker hears a cough mid-sentence. It supports a reading about a dry throat and a reading about a bored audience. The anxious speaker leaves the room certain it was the second, having chosen without noticing there was a choice."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Pooled across 87 depression studies the bias is g = 0.72, but it is g = 0.88 on measures that ask people what they made of an ambiguous event and g = 0.04 on measures that infer it.",

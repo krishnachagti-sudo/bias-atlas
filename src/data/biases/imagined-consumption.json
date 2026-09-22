@@ -17,6 +17,23 @@
     "note": "The abstract at PubMed reports five experiments and says people who repeatedly imagined eating a food ate less of it than people who imagined eating it fewer times, imagined eating a different food, or imagined no food at all. It attributes the drop to reduced desire rather than to reduced palatability. The article is closed at the publisher and was not read for this entry."
   },
   "evidence": "Nothing below is quoted from the Science article's own text. It is closed at AAAS, and Unpaywall, OpenAlex and Semantic Scholar all record no open copy anywhere.\n\nThe replication team's report describes Experiment 1 directly, from the original materials and the supporting online material, with the original authors' agreement. Participants imagined 33 repetitive actions in total. The control group imagined feeding 33 coins into a machine. A 3-repetition group imagined 30 coins and then 3 M&Ms. A 30-repetition group imagined 3 coins and then 30 M&Ms. Everyone was then given 40 g of M&Ms as a taste test and the bowl was weighed after they left. The control group ate 4.08 g, SD 0.33, and the 30-repetition group 2.21 g, SD 0.48. The published analysis pools variance across all three conditions and reports F(1, 46) = 4.50, p = 0.0393 for that contrast and F(1, 46) = 5.81, p < 0.05 for 30 repetitions against 3. An independent-samples t-test on the two conditions, supplied by the original authors and not printed in the paper, gives t(30) = 2.78, p = 0.0092.\n\nFrancis, Tanzman and Matthews read the article and its supplement for a test of excess success, and their account is the source for the other experiments here. Their supplement counts six, numbering them 1, 2, 3, 4, 4b and 5, where the abstract says five. Table S13 gives cell sizes of 17, 16 and 16 in Experiment 1; 13, 13, 13 and 12 in Experiment 2; 17 in each of four cells in Experiment 3; 10, 10, 10 and 11 in Experiment 4; 80 in Experiment 4b; and 34 and 34 in Experiment 5. Experiments 1 to 3 used M&Ms as both the imagined and the eaten food, Experiment 3 contrasting imagining eating them with imagining moving them. Experiment 4 is the specificity test: participants imagined eating cheese or M&Ms and the measure was cheese eaten, with the 3-against-30 contrast significant for imagined cheese and not for imagined M&Ms. Experiment 4b asked 80 people to predict that result and they predicted it backwards, t = 3.09, p = .002. Experiment 5 measured liking of cheese before and after within subjects, F = 4.82, p = .032. Multiplying the estimated success probabilities across the set gives P(TES) = .012, under their .1 threshold, which they read as a run of results too uniform to believe. They also record that the means and standard deviations in the paper's Table 1 do not match its reported F statistics, and they recovered the pooled standard deviations from the F values by algebra instead.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The thirty imagined mouthfuls",
+      "text": "Someone is asked to picture eating one square of chocolate, then the next, thirty times over, and afterwards takes less from a bowl of it. The count is not incidental, since a handful of repetitions has been found to push intake the other way."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The food that was not imagined",
+      "text": "The fall is supposed to attach to the sweets that were rehearsed and not to appetite in general, so the same person should take a normal quantity of crisps afterwards. That narrowness is what separates the claim from ordinary fullness."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The bowl weighed afterwards",
+      "text": "A volunteer who has rehearsed eating sweets is left with a full bowl and told to try as many as he likes, and the bowl is weighed when he leaves. What the claim is about is how much he takes, not how much he says he enjoys it."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "One preregistered high-powered repetition of Experiment 1, on 89 students in an Innsbruck laboratory, found the effect at about four-fifths of its original size: r = 0.355 against 0.453, p = 0.0006.",

@@ -20,6 +20,23 @@
     "note": "The practice is far older than the evidence for it. Anderson and Simester date the interest of economists back over 65 years to Ginzberg in 1936, whose mail-order test they describe as producing varied results, with demand rising for some items and falling for others. Their own paper is the first set of large randomised field experiments on the question, and it is what most later citation rests on. The name 'left-digit effect' comes from Thomas and Morwitz two years later."
   },
   "evidence": "Anderson and Simester ran three split-sample experiments with two mail-order women's clothing catalogues owned by one company. Customers were randomised by zip+4 postal code and mailed catalogues identical except for price endings. The counts below are customers mailed; each model is fitted to item-by-version demand rows, 219 in Study 1, 422 in Study 2 and 924 in Study 3. Study 1 sent three versions to 20,000 customers each and varied 27 items in $1 steps; the $9 coefficient was 0.341 with a standard error of 0.170, about 35% more demand, or 0.9 extra units per item. Study 2 sent two versions to 31,250 customers each across 211 items and got 0.143 with a standard error of 0.039, worth 1.3 units on a base of 8.7, about 15%. Study 3 sent three versions to 90,000 customers each across 308 items and got 0.071 with a standard error of 0.030 for items with no sale sign, worth 1.2 units on a base of 16.9, about 7%. Strulov-Shlain later estimated the bias from retail scanner data on about 3,500 products sold by 25 United States chains, and found consumers respond to a one-cent rise from a 99-ending price as if it were more than a twenty-cent rise, with an average bias parameter of 0.22, a median of 0.21 and an interquartile range of 0.04 to 0.40. Thomas and Morwitz report five experiments whose abstract states that nine-ending prices are perceived as smaller only where the leftmost digits of the two prices differ, as in $2.99 against $3.00.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The shelf edge at four ninety-nine",
+      "text": "A shopper scanning a shelf takes in the leading digit first and files the item near four pounds rather than five. The penny between the two prices does almost nothing and the digit at the front does the work."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The ending that says reduced",
+      "text": "A shop prices most of its stock in round pounds and one line at nineteen ninety-nine. The odd ending reads as a deal even where nothing has been discounted, because the shape of the number has become a signal about the offer."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The rent that will not take a nine",
+      "text": "A flat is advertised at eleven hundred and ninety-nine pounds a month. A tenant working out whether that clears their salary handles the exact figure, and a price somebody calculates with is a price the ending cannot fool."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The catalogue experiments found the effect. The meta-analysis of the laboratory and online literature puts it at g = 0.13, and at g = -0.01 once publication bias is corrected, and two preregistered high-powered experiments since found nothing.",

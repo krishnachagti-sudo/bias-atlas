@@ -2,7 +2,11 @@
   "no": 558,
   "slug": "ergo-decedo",
   "name": "Ergo decedo",
-  "aliases": ["Argumentum ergo decedo", "Traitorous critic fallacy", "Love it or leave it"],
+  "aliases": [
+    "Argumentum ergo decedo",
+    "Traitorous critic fallacy",
+    "Love it or leave it"
+  ],
   "category": "belief",
   "statement": "Answering criticism by telling the critic to leave puts group membership where the reply should be, and the same criticism is rated worse when an outsider makes it.",
   "meaning": "The move has two steps. The critic's standing in the group is questioned, and the remedy offered is departure rather than an answer. 'If you dislike it here, go somewhere else' is the everyday form. Textbooks would call it a fallacy because whether a criticism is true does not depend on who is entitled to make it. What earns it an entry is that the assumption underneath it is measurable and holds up: whether criticism is accepted does turn on whether the critic belongs. Psychologists call that the intergroup sensitivity effect, and it has been tested at scale. The atlas covers the personal attack under ad hominem, the pre-emptive discredit under poisoning the well, the imputed interest under appeal to motive, the counter-accusation under whataboutism, and the diagnosis offered in place of a refutation under bulverism. This entry takes the demand to leave.",
@@ -13,6 +17,23 @@
     "note": "The Latin tag could not be traced to any scholarly source. The earliest use this entry could date is the English Wikipedia article 'Ergo decedo', created on 8 April 2015 in revision 655490851 by an account named Esidov, read once through the MediaWiki API and again through the XTools page service. The article's two references are books given without page numbers, Irving Copi's Introduction to Logic for the label 'traitorous critic fallacy' and Charles Taylor's Philosophical Arguments for the definition. Neither could be checked here; the copies of Copi on the Internet Archive are lending items whose full-text search returned 'Item not available', and Google Books and HathiTrust were both unavailable on this pass. Searches that produced no occurrence of the phrase covered the whole text of the Stanford Encyclopedia of Philosophy entry on fallacies, the whole text of the Internet Encyclopedia of Philosophy entry on fallacies, Crossref and Europe PMC. Web results were fallacy-list sites, blogs and Wikipedia mirrors. The Latin is odd on its own terms. Dictionaries head the verb at decedo, the first person singular, which Lewis and Short gloss as to go away, depart, withdraw, so the tag says 'therefore I leave' while the move it names tells somebody else to go. Wikipedia's own lead translates it that way, and an anonymous comment on the article's talk page has raised the point since 2018."
   },
   "evidence": "No experiment on the move itself was located under any of its names. The measured neighbour is the intergroup sensitivity effect, the finding that group members take criticism of their group from an insider and reject the same words from an outsider. Hornsey, Oppes and Svensson ran the first experiments on Australians and on university students, and their abstract reports that ingroup criticisms were tolerated well while outgroup criticisms met defensiveness, with perceived legitimacy and constructiveness as the mediators. Hornsey and Imani then asked whether the outsider's problem is inexperience. Their abstract reports three experiments in which foreigners who criticised Australia met more defensiveness than Australians who did, whatever their experience of the country, while Experiment 3 found that a lack of experience does damage an ingroup critic. Neither paper was obtained, and nothing beyond those abstracts is taken from them. The studies read in full here reproduce the pattern in three settings. Adelman and Verkuyten showed a poster about the refugee crisis to 808 ethnic Dutch respondents, varying whether the critic was ethnic Dutch or Middle Eastern and whether the target was the Dutch or refugees. Agreement carried a critic by target interaction, F(1, 800) = 25.45, p < .001, partial eta squared = .031: a Dutch critic was agreed with more when he criticised the Dutch than when he criticised refugees, means 3.75 against 2.96, t(800) = -5.17, p < .001, d = -.37. Their third measure is the closest thing in the literature to the move this entry describes. Asked whether the poster should be taken down, participants wanted it removed more when the critic was Middle Eastern than when he was Dutch, means 4.80 against 4.53, F(1, 800) = 8.23, p = .004, partial eta squared = .010. Thürmer, Stadler and McCrea moved the design to diet, with 260 meat eaters reading a call for a plant-based diet attributed either to a fellow meat eater or to a vegan. The vegan's comment was rated less constructive, means 5.36 against 4.58, F(1, 256) = 35.33, p < .001, eta squared = 0.12, more threatening, 4.63 against 3.20, F(1, 256) = 86.88, eta squared = 0.25, and its author was rated lower, 3.86 against 2.93, F(1, 256) = 40.53, eta squared = 0.14. Engagement followed: 45% of those criticised by a meat eater actively sought to join the Veganuary campaign against 32% of those criticised by a vegan, chi-squared (2, N = 260) = 4.66, p = .031, phi = 0.134. Video watch time did not move, F(1, 248) = 0.23, p = .633.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The new member and the accounts",
+      "text": "A member who joined last season points out that the subscription money is badly managed, and is told that if she dislikes it she can find another club. The state of the accounts does not depend on how long she has belonged."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The handover on the ward",
+      "text": "A junior nurse says the night handover is unsafe, and is answered with the remark that nobody is forcing her to work there. Whether the handover is unsafe is a question about the handover."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The incomer and the parking scheme",
+      "text": "A reader who moved to the town two years ago criticises the parking scheme, and is told to go back where she came from. The invitation to leave takes the place of a reply, putting her standing in the group where the argument should be."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "The effect underneath the move holds in a pre-registered experiment on 2,207 people in Canada, China and Japan, and in two pre-registered US studies by another group, at effect sizes well below the ones the older literature reports.",
@@ -26,7 +47,10 @@
     "replicated": {
       "es": 0.32,
       "esType": "d",
-      "ci": [0.28, 0.36],
+      "ci": [
+        0.28,
+        0.36
+      ],
       "ciLevel": 95,
       "weighting": "full sample, constructiveness rating, within-participants contrast"
     },

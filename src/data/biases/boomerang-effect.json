@@ -16,6 +16,23 @@
     "note": "Their field experiment in San Marcos, California gave households weekly feedback on their electricity use against a neighbourhood average, and reported that below-average households consumed more afterwards. The label is older than the paper. Allcott credits it to Clee and Wicklund in 1980, and Byrne and Hart's 2009 review in Communication Yearbook collects boomerang findings from across communication research."
   },
   "evidence": "The authors' own 2018 retrospective in Perspectives on Psychological Science records how the 2007 study was run. 290 households were selected and 3 opted out. The local utility refused to release consumption data as proprietary, so the research team read the meters itself, and the campus ethics board would approve an opt-out protocol only for meters visible from the street. Households received weekly hand-delivered feedback comparing their consumption with that of similar households in the neighbourhood. In the second condition that feedback carried a hand-printed smiley face for low users or a frowny face for high users. The abstract of the 2007 paper reports that the descriptive message produced either savings or the boomerang depending on whether a household was already consuming at a low or a high rate, and that adding the injunctive message eliminated the boomerang. The full text was not obtained for this entry. Unpaywall lists one open copy, at the California State University repository, and it returned HTTP 403 to every request made here, so the condition means are not printed on this page. Allcott, who read the paper, records two things about the smiley-face condition. The low users who got it did not use less energy than the low users who did not by a statistically reliable margin. Their own increase in usage was not distinguishable from zero either.\n\nA second strand of the claim sits in public health campaigning. Hornik, Jacobsohn, Orwin, Piesse and Kalton evaluated the US National Youth Anti-Drug Media Campaign. Three nationally representative cohorts of young people were surveyed at home four times between September 1999 and June 2004. Numbers ran from 8,117 respondents in the first round to 5,126 in the fourth. Most analyses showed no effect of the campaign. At one round, more advertising exposure predicted weaker intention to avoid marijuana at the following round, at a coefficient of -0.07 with a 95% confidence interval of -0.13 to -0.01, and weaker antidrug social norms, at -0.05 with an interval of -0.08 to -0.02. Exposure at round three predicted marijuana initiation at round four, at 0.11 with an interval of 0.00 to 0.22. The authors concluded that the campaign was unlikely to have had favourable effects and may have had delayed unfavourable ones.",
+"examples": [
+  {
+    "kind": "everyday",
+    "tag": "The energy statement read as permission",
+    "text": "A household using far less electricity than its neighbours is shown the comparison, and its consumption rises towards the average. The letter asked everyone to cut, and the number sitting above their own use read as an invitation."
+  },
+  {
+    "kind": "everyday",
+    "tag": "The poster reporting how common fly-tipping is",
+    "text": "A campaign tells an area that most people there dump rubbish on the verge, and dumping increases. The message meant to shame and announced instead that the behaviour is what everybody does."
+  },
+  {
+    "kind": "everyday",
+    "tag": "The charity that names the average gift",
+    "text": "Regular donors are told what the typical donation is, and the ones already giving most reduce theirs. Failing to persuade would not count; finishing further from what the letter asked for is the effect."
+  }
+],
   "replication": {
     "state": "mixed",
     "headline": "Descriptive norm feedback produced no boomerang across 600,000 households, and a controlled test found the same rise-and-fall pattern in people who were sent nothing at all.",

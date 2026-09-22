@@ -16,6 +16,23 @@
     "note": "Fiske's own curriculum vitae lists Fiske, S. T., & Taylor, S. E. (1991), Social cognition (2nd ed.), New York: McGraw-Hill, the edition the term is normally placed in. No copy of that edition was opened for this entry, and no source read here shows the phrase inside it. The Internet Archive holds two scans of it, both under controlled lending, and both answer this session with an item-not-available notice rather than a paywall. What was read is the authors' fourth edition, which says the 1990s view of the social perceiver 'might best be termed the motivated tactician', and their 2020 retrospective, which makes the Motivated Tactician the second of four phases after the Cognitive Miser. Both trace the slogan that thinking is for doing to William James, and cite Fiske's 1992 Journal of Personality and Social Psychology centennial article for it, the fourth edition adding her 1993 paper alongside. That article is closed at the publisher and was checked only against its Crossref record, which confirms the volume, issue and pages."
   },
   "evidence": "The framework's evidence is the evidence for its members. Neuberg and Fiske ran three experiments in which participants expected to interact with a young man formerly hospitalised as a schizophrenic. In the first, short-term task-oriented outcome dependency led participants to base impressions on the man's particular attributes rather than on the label, and to spend more time attending to those attributes. The second showed that the attention effect was not merely a matter of impression positivity. The third manipulated an accuracy goal instead and produced the same shift. The paper's abstract, which is what is open, reports no effect sizes. Fiske and Neuberg then set out the continuum model across 74 pages of Advances in Experimental Social Psychology. Fiske and Taylor's own account of the second wave is that it addressed replicability by identifying moderator variables, primarily goals and motivations; their abstract names interdependence and threat, and the body of the same essay adds power. Three things complicate that account. Kunda and Thagard report two sets of meta-analyses inside a theory paper. Studies of individuating information average r = .71, against r = .25 for stereotypes in the absence of individuating information, and across the 40 studies that varied both orthogonally the averages are r = .69 and r = .19, which the authors restate as 48% of the variance in target evaluations against 4%. They argue that a parallel constraint-satisfaction network needing little conscious inference reproduces most impression-formation findings. Reynolds and Oakes manipulated interdependence in one experiment and accuracy goals in another, and read their results as showing that whether the salient self-other categorisation is interpersonal or group-based explains variability in impression formation. Carpenter ran a series of meta-analyses of the elaboration likelihood model's argument quality by processing type predictions, k = 134, and reports the data as generally consistent with the predicted interaction.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "Two ways of reading an application",
+      "text": "A manager skimming forty applications sorts them by what the first line suggests. Handed the three people she will work beside, she reads every line. Nothing about the applicants changed, only what she needs the judgement for."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The stranger you will see again",
+      "text": "A guest at a party places another guest in a type and moves on. Told he is to be her partner on a long piece of work, she starts collecting the details the type does not cover. The framework predicts the switch and says nothing about which reading is fairer."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The purchase that has to be explained",
+      "text": "Choosing a kettle for oneself takes a moment. Choosing one that will have to be justified to a committee takes an afternoon of comparison. The goal decides how much thinking happens, and the kettles are the same either way."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "No replication of the motivated tactician was located, because there is no motivated-tactician experiment to repeat. The tested claims sit one level down, and they disagree.",

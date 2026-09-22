@@ -15,6 +15,23 @@
     "note": "The paper is \"The inverse gambler's fallacy: the argument from design. The anthropic principle applied to Wheeler universes\", Mind 96(383), 331-340. Its target was cosmological rather than psychological. Goff records that Hacking aimed the charge at John Wheeler's oscillating-universe theory, in which universes succeed one another in time. The Stanford Encyclopedia's fine-tuning entry states that Hacking counted only those versions of the argument guilty which infer a temporal sequence of universes. Roger White extended the charge to multiverses of every kind in 2000. The Mind paper could not be obtained for this entry, so both of those descriptions of it are read off Goff and the encyclopedia rather than off Hacking."
   },
   "evidence": "The fallacy was named by a philosopher and measured by psychologists twenty-two years later. Oppenheimer and Monin ran three studies. In Study 1, 108 Stanford undergraduates imagined walking into a room where a man was flipping a coin five times. Told that all five came up heads, they put the number of flips before they entered at a mean of 16.2; told of three heads and two tails, at 8.7. That gap gave t(106) = 2.17, p < .05, d = .42, after one outlier was dropped. Study 2a moved the scene to a casino and used 80 undergraduates. Three dice all showing six drew a mean estimate of 34.2 earlier rolls, two dice both showing six drew 10.6, and three dice showing two sixes and a three drew 3.2. The omnibus test was F(2, 77) = 4.8, p < .05, with pairwise ds of .56, .67 and .69. Study 2b put two of those outcomes to the same 31 people; 28 gave usable numbers, the means were 20.4 and 12.7, and a paired test on log-transformed data gave t(27) = 2.67, p < .05, d = .88. Half of that sample gave the same answer to both. Study 3 carried the design into everyday stories, from a lottery ticket to a dog bite. Sixteen were written and 15 analysed, 31 Princeton participants took part and 30 entered the model, which fitted 435 usable answers. The rare version of a story drew larger estimates of how often the protagonist had done the thing before, b = 0.74, SE 0.27, t = 2.73, p = .006 by Markov chain Monte Carlo. Rated unlikelihood accounted for the gap: with the likelihood rating in the model, the rare against common contrast fell to t = 0.58, p = .54. The casino scenario is close to the case Hacking argued from, a gambler who sees a double six and asks how long the dice have been rolling.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The first pull on the machine",
+      "text": "A player walks into an arcade, sees a stranger hit three matching symbols on the machine by the door, and decides the stranger must have been feeding it for hours. Earlier pulls cannot make this pull more likely to have matched."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The twins in the ward",
+      "text": "A visitor glances into a maternity ward, sees twins, and concludes the ward must have been busy all week. A busy week raises the chance that twins were born somewhere in it. It does not raise the chance that this birth was twins."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The rare bird at the feeder",
+      "text": "A birdwatcher sees an unusual visitor on her first morning at the feeder and infers that the bird has been coming for weeks. That would need something about the bird's habits, and a single sighting supplies none of it."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "The dice scenario went to 36 samples and 5,942 people in Many Labs 1 and came back at about six-tenths of a standard deviation, a little under the original estimate.",
@@ -29,13 +46,19 @@
     "original": {
       "es": 0.69,
       "esType": "d",
-      "ci": [0.16, 1.21],
+      "ci": [
+        0.16,
+        1.21
+      ],
       "ciLevel": 95
     },
     "replicated": {
       "es": 0.59,
       "esType": "d",
-      "ci": [0.49, 0.7],
+      "ci": [
+        0.49,
+        0.7
+      ],
       "ciLevel": 99,
       "weighting": "unweighted"
     }

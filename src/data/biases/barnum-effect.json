@@ -13,6 +13,23 @@
     "note": "Forer gave the 39 students of his introductory psychology class his Diagnostic Interest Blank, then a week later handed every one of them the same typed 13-statement sketch with the student's own name written on it. A footnote says the statements came largely from a newsstand astrology book. Asked to rate on a scale of zero, poor, to five, perfect, how far the sketch revealed basic characteristics of their personality, 16 gave a five and 18 a four, and five rated it below four. Paul Meehl proposed the label in 1956, crediting the underlying phrase to his colleague Donald G. Paterson, who called such writing \"personality description after the manner of P. T. Barnum\". Meehl quotes no words of Barnum's."
   },
   "evidence": "The paradigm has barely changed in seventy-five years, which is part of why it is so easy to run. Administer something that looks like an assessment, return identical feedback to everyone, and ask how well it describes them. Ratings come back high, and participants do not notice the sketch is generic until they see someone else's copy. Forer's class realised it when he read the first sketch item aloud and every hand went up. His students accepted 10.2 of the 13 statements as true on average, and they judged the test more kindly than the sketch: only one rating of the Diagnostic Interest Blank fell below four, against five for the sketch. Three weeks later he asked the 32 students then present to write down the ratings they remembered giving. Seven ratings of five came back as four and one as three, none rose, and Forer reports the fall as significant at the 1 per cent level. Three reviews of this literature were located: Snyder, Shenkel and Lowery in 1977, Dickson and Kelly in 1985, and Furnham and Schofield in 1987.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The profile handed round at a training day",
+      "text": "A report tells a manager they are decisive but sometimes second-guess themselves, and sociable in company while needing time alone. They recognise it at once, and so does every colleague holding a copy of the same paragraph."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The star sign in a magazine",
+      "text": "A reader finds the week's forecast oddly apt, keeping the half that matches their week and passing over the half that does not. The neighbouring column would have fitted just as well, and is written so that it can."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The reading at the fete",
+      "text": "Told they have ability they have not yet put to use, and that they are harder on themselves than others are, a visitor comes away impressed. Both sentences are true of nearly everyone in the queue behind them."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "Repeated for decades with the same result, and a review of the literature reports that acceptance depends on how relevant and how flattering the description is.",

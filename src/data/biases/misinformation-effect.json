@@ -17,6 +17,23 @@
     "note": "The paper is 'Semantic integration of verbal information into a visual memory'. It fixed the three-stage procedure and the stop sign against yield sign materials that the field reused for decades. Its text, searched here, does not contain the word misinformation; it calls the manipulation misleading information. Loftus and Palmer's 1974 speed-estimate study came four years earlier and is covered in the false memory entry."
   },
   "evidence": "A total of 1,242 subjects, across five experiments and a pilot, saw slides of an auto-pedestrian accident. In the pilot the final test was yes-no. Subjects given misleading information scored 71% hits against 70% false alarms, which Loftus, Miller and Burns read as no ability to tell the two signs apart. Experiment 1 switched to forced choice between the two signs. Of 195 University of Washington students, 95 got a question presupposing the sign they had seen and 100 got a question presupposing the other. Correct selection was 75% and 41%, Z = 4.72, p < .001. Against a 50% chance baseline the consistent group was above it, Z = 5.10, p < .001, and the misled group below it, Z = 1.80, p < .05 one-tailed. Experiment 2 tested whether subjects were simply obliging the experimenter. Ninety subjects were split three ways between a consistent, a misleading and a sign-free question, and 53 chose the correct sign. A debriefing form invited them to say which sign they saw and which their questionnaire had mentioned. Of those who chose correctly 43% got both right, against 14% of those who chose wrongly, Z = 2.96, p < .01, and of the 17 misled subjects who chose wrongly only 12% reported both. Experiment 3 varied timing. 648 students were tested at 20 minutes, 1 day, 2 days or 1 week, 144 at each interval, with a further 72 tested immediately. Collapsed over the four delayed intervals, misleading information given straight after the slides left 46% correct, and the same information given just before the test left 31.5%, Z = 2.06, p < .05. The no-information groups were at chance by 2 days.",
+"examples": [
+  {
+    "kind": "everyday",
+    "tag": "The question that supplies the postbox",
+    "text": "A witness is asked how fast the car was going as it passed the postbox, and there was no postbox on that corner. Weeks later a postbox is part of what she describes seeing."
+  },
+  {
+    "kind": "everyday",
+    "tag": "The version agreed on the walk home",
+    "text": "Two friends talk over a scuffle they watched. One mentions a bottle and the other's later account contains a bottle. Reporting it does not show the first memory was destroyed; the borrowed detail may simply be the one she trusts."
+  },
+  {
+    "kind": "everyday",
+    "tag": "Somebody else's photographs of the same trip",
+    "text": "A family looks through a friend's pictures of a holiday they were both on, and months afterwards recounts a scene from those pictures as something they stood and watched."
+  }
+],
   "replication": {
     "state": "replicated",
     "headline": "A contemporary online replication of the 1978 experiment found the effect again, and across 44 tests built to exclude response bias misled recognition ran at 71.7% against 75.8% for controls.",

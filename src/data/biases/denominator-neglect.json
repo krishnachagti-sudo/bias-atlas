@@ -13,6 +13,23 @@
     "note": "Three experiments on 1,331 people had participants choose between two bowls offering equivalent chances stated with different absolute numbers, such as 1 in 10 against 10 in 100. The paper is closed at the publisher and only its abstract was read, from Europe PMC on 21 September 2026. Denes-Raj and Epstein's jelly-bean study, the one everybody cites, came two years later and made the large bowl strictly worse. Lefebvre's group trace the paradigm back to Miller, Turnbull and McFarland in 1989, on how suspicious a coincidence feels. Passerini's group, and a footnote in Dale's paper, trace it further, to Piaget and Inhelder's two-urn task with children in 1975. Neither of those was opened during this check."
   },
   "evidence": "Denes-Raj and Epstein paid participants $1 for each red jelly bean drawn and let them pick their bowl. Their abstract reports that people often took the bowl holding more red beans and a smaller share of them, 7 in 100 against 1 in 10, and said afterwards that they knew the odds were against them but felt they had a better chance with more red beans on show. The rates usually quoted, 61% taking the large bowl at 9 in 100 and 40% at 7 in 100, are not read off that paper here. Both figures come from Dale, Rudski, Schwartz and Smith describing it, and Lefebvre, Vieider and Villeval give a range of 54% to 61% for the 9-in-100 case. Dale's group put the effect on a computer and ran it 300 rounds deep on 171 students across six sessions, with the large urn better in some rounds and worse in others. One participant was dropped as an outlier and the tests rest on 162 subject averages per condition. When the large urn was worse, participants chose correctly 59.0% of the time. When it was better, they chose correctly 75.5%. That gap is the bias, and the 25% error rate in the easy direction is the reason the older studies overstate it. The one within-subject test of incentive compared the two sessions paying 10 cents a red marble for half their rounds and nothing for the other half, and accuracy was better in the paid half, t(54) = 2.90, p = .0054. The paper's discussion states plainly that the bias itself was not reduced by incentive. In health framing, Bonner and Newell gave 48 Australian undergraduates eleven causes of death a week apart, once per day and once per year. Every cause scored higher risk in the year frame, mean 14.53 against 13.23 on a 26-point scale, F(1, 45) = 6.17, p = .017, and 30 of the 48 rated the year version higher. The sharpest health figure in this literature is Yamagishi's, and it arrives here through Bonner and Newell and through Lefebvre's group, both of whom report that his participants rated cancer as riskier described as killing 1,286 people out of 10,000 than as killing 24.14 out of 100. Yamagishi's paper was not opened during this check.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "Two barrels at the fair",
+      "text": "One barrel holds one winning ticket in ten, the other seven winners in a hundred. A large minority reach into the barrel with seven winners in it, and many of them will say out loud that the odds there are worse."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The risk quoted per ten thousand",
+      "text": "A leaflet saying a side effect strikes ten people in every ten thousand reads as more alarming than the same risk written as one in a thousand. Nothing about the risk has changed except the size of the numbers describing it."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Two raffle stalls side by side",
+      "text": "A stall advertising twenty prizes across two thousand tickets draws a longer queue than one offering two prizes across a hundred, though the second is the better bet by a factor of two. The top number is read first."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The standard task reproduces at 68% to 75% across three countries, and falls to chance once the leading sentence goes, an indifference option is added, or real money is paid in randomised order.",

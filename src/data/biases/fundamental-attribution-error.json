@@ -13,6 +13,23 @@
     "note": "Their paper is \"The attribution of attitudes\" and it reports three experiments. Its stated main hypothesis was that choice would matter more when the position argued was improbable. The abstract says that hypothesis was confirmed in all three experiments, while the text of the first says it was not confirmed and that the predicted difference did not approach significance. The result everyone now cites appears in the abstract as the first of four other findings of interest. Lee Ross named the fundamental attribution error a decade later, in his 1977 chapter on the intuitive psychologist."
   },
   "evidence": "In Experiment I, 51 Duke undergraduates read an essay on Castro's Cuba and estimated the writer's true attitude on a scale running from 10, extreme anti, to 70, extreme pro. Told the writer had chosen the position, they rated the pro essayist at 59.62 and the anti essayist at 17.38. Told a course instructor had assigned it, they still rated the pro essayist at 44.10 and the anti essayist at 22.87, a difference at t = 5.32, p < .001. Cells held 10 to 15 people. Experiment II ran 97 volunteers from the same course and Experiment III ran 125, four of whom were dropped. In Experiment II the assigned pro-Castro writer was rated 41.33 and the assigned anti-Castro writer 23.74 on the same scale. Experiment III replaced the essays with taped speeches on segregation, and the direction of the speech moved the ratings in every condition. Nalipay ran the same design in the Philippines in 2017 with 145 students and essays on the Philippine reproductive health law. Behaviour direction moved the attitude estimates, F(1) = 162.997; in the no-choice conditions the pro writer was rated 52.752 and the anti writer 31.500 on the same 10 to 70 scale.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The debater handed a side",
+      "text": "A class watches a student argue against a policy, having just been told the sides were drawn from a hat. Asked afterwards what the student really thinks, the room still leans towards the position they were assigned to defend."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The refusal read from a script",
+      "text": "A caller knows the agent has no discretion and is reading an approved refusal aloud. The call still leaves an impression of an unhelpful person rather than of a rule, and the constraint was in plain view throughout."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The manager who announced the cuts",
+      "text": "Staff who know the decision was taken two levels above come away thinking the manager who delivered it is hard. The speech was required and the wording was supplied, and the trait is read off it anyway."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "The attitude-attribution effect came back at d = 1.82 across 7,197 people in Many Labs 2. The actor-observer asymmetry it is routinely merged with pooled at d = 0.095 across 173 studies.",

@@ -13,6 +13,23 @@
     "note": "Her article is a condensed version of a longer German paper in a Festschrift for Arnold Gehlen, which carried 33 tables of survey results. The English-language book, The Spiral of Silence: Public Opinion, Our Social Skin, followed from the University of Chicago Press in 1984, translated from Die Schweigespirale."
   },
   "evidence": "Noelle-Neumann drew on Allensbach institute surveys run mostly in 1971 and 1972, each with 1,000 to 2,000 structured interviews on representative cross-sections of the population. Twelve controversial topics were put to respondents between January 1971 and November 1972, from abortion law to keeping Willy Brandt as Chancellor. Willingness to speak was measured by asking people to imagine a conversation among passengers on a long train journey and to say whether they would enter it. Her first table pools 9,966 interviews and reports that 36% would discuss the topic, 51% would not and 13% were undecided. That table's footnote names four topics only: socialism, a ban on the Communist Party, Chancellor Brandt and unmarried couples living together. It is not a figure for all twelve. The central table concerns socialism in August 1972. Among people who thought socialism would establish itself and welcomed it, 53% would join the train conversation; among those who thought the same and feared it, 28% would, on bases of 229 and 388. The pattern held separately among the politically interested and the uninterested. Two of the twelve topics ran the other way. On the treaties with Moscow and Warsaw, and on more influence for Franz Josef Strauss, minorities of 17 to 25% were at least as willing to speak as majorities of 53 to 61%. Noelle-Neumann read that as a hard core who will not conform, some of whom may have grown used to isolation.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The rota meeting",
+      "text": "Someone who thinks the new shift pattern is a mistake counts the nods around the table, decides she is alone and says nothing. Two other people were doing the same arithmetic. The room leaves with a stronger impression of agreement than any individual held."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The street group on the planning application",
+      "text": "A neighbourhood message thread fills with support for the development, and the people who object read the thread and write nothing. The next reader sees an even longer run of support, and the majority that is visible keeps growing faster than the one that exists."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The seminar question nobody asks",
+      "text": "A student who did not follow the argument looks around at a room of people writing confidently and lets it go. Every additional silent student makes the next one more certain that the confusion is his alone."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The individual-level correlation turns up again and again and is tiny; the spiral itself is rarely tested, and where it has been it runs in opposite directions in different countries.",

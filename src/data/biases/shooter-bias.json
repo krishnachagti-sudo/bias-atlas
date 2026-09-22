@@ -18,6 +18,23 @@
     "note": "Four studies written in the wake of the 1999 shooting of Amadou Diallo, who was hit by 19 of 41 rounds fired by four New York officers and was unarmed. The paper asks whether a target's ethnicity changes the decision to shoot, and the videogame was built to make that question testable."
   },
   "evidence": "Keith Payne's weapon-identification task came a year earlier and set the pattern. A Black or a white face flashed, an object followed, and participants classified it as a gun or a hand tool. Payne's abstract reports that Experiment 1 found guns identified faster after a Black face. Experiment 2 imposed a response deadline, the bias moved from speed into accuracy, and tools were called guns more often after a Black face. Payne's own 2006 review gives that deadline as half a second and says accuracy was high regardless of race when participants worked at their own pace. Correll's videogame put a whole man in a photographed scene and asked for the shoot decision itself. Study 1 ran 40 undergraduates at the University of Colorado at Boulder through 80 trials, 20 in each cell of a two by two design crossing target ethnicity with object type. Twenty models, 10 African American and 10 white, appeared against 20 photographic backgrounds. Hits paid 10 points, correct rejections 5, false alarms cost 20 and misses cost 40. The response window was 850 ms. Correct decisions to shoot took 544 ms for African American targets and 554 ms for white ones. Correct decisions not to shoot took 634 ms for African American targets and 623 ms for white ones. The ethnicity by object interaction was F(1, 39) = 21.86, p < .0001, and both simple effects held, F(1, 39) = 10.89 and F(1, 39) = 9.77, both p < .005. Errors averaged 4% of trials. Study 2 cut the window to 630 ms and paid participants by the point. Five of 44 were dropped for exceeding 10 timeouts, and the reported analyses also drop six target images that had produced unusually high error rates. Errors per 20 trials ran 3.29 for unarmed African American targets against 2.40 for unarmed white ones, and 1.48 for armed African American targets against 2.46 for armed white ones, F(1, 38) = 17.83, p < .0001. There were no effects in the latencies at that window. Signal detection put sensitivity at 2.48 for African American targets and 2.47 for white, F(1, 38) = 0.01, p = .93, and the decision criterion at -0.24 against 0.03, F(1, 38) = 22.21, p < .0001. Participants were not worse at seeing the object. They demanded less certainty before firing. Study 3 repeated Study 1 with 45 students and added a questionnaire. The bias score correlated .37 with participants' estimate of the cultural stereotype that African Americans are dangerous, violent and aggressive, and .38 with self-reported contact with African Americans, both p < .01. The Modern Racism Scale gave .15, the Discrimination Scale .16, the Diversity Scale .05, a composite of the three .14, and personal endorsement of the violent stereotype .05. None of those five reached significance. Study 4 took the game to bus stations, malls and food courts in Denver and tested 25 African American and 21 white adults. The interaction held, F(1, 45) = 14.75, p < .001, and its size did not depend on the participant's own ethnicity, F(1, 44) = 0.10, p = .75.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The object in the hand",
+      "text": "Someone watching a doorway camera has under a second to call an object a weapon or a phone. What the effect names is not how often he calls it a weapon. It is how much certainty he wants first, and that requirement moves with the race of the person holding it."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The player who endorses none of it",
+      "text": "A participant who rejects the stereotype, and who belongs to the group it targets, shows the same shift on the task as anyone else. What the measure picks up is knowing what the culture associates with whom, not agreeing with it."
+    },
+    {
+      "kind": "everyday",
+      "tag": "What the clock lets through",
+      "text": "Given a generous deadline the difference comes out as speed, with accuracy level. Tighten the deadline and the speeds even out while the errors split. One threshold sits behind both, and a study reading a single measure can miss it."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The reaction-time signature pools across 42 studies at about a tenth of a standard deviation, and a close replication in Germany found it again; the pooled threshold estimate is larger and far less precise, and police samples disagree over whether the threshold moves at all.",

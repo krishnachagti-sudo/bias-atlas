@@ -16,6 +16,23 @@
     "note": "Levy's book runs to 547 pages and was not read for this entry, so the attribution rests on two later sources. Wu and Dunning credit the coinage to Levy in 1973. Jason Throop, writing in Ethos in 2005, quotes Levy's phrase 'hypocognized emotions' from page 287 and his account of Tahitian responses to loss from page 305. Both quote the adjective. Whether the noun hypocognition itself appears in the 1973 text was not established here."
   },
   "evidence": "The paper everyone cites carries no data. Wu and Dunning's 2018 article in Review of General Psychology is a review, and the abstract deposited with Crossref says so in its third sentence. The experiments sit in an unpublished manuscript the same two authors posted to PsyArXiv in October 2019, six studies with 2,085 participants. Study 1 put 20 unfamiliar concepts to 302 American adults, among them benevolent sexism and vocal fry, and asked how often they had met each over the previous two weeks. People who did not know a concept reported fewer encounters with it, b = 0.82, 95% confidence interval 0.53 to 1.10, t(78.85) = 5.92, p < .001. Study 2A showed 212 Americans a basket of five common and five exotic fruits for ten seconds, then tested recognition after a two-minute distraction task. Sensitivity was d' = 1.38 for the familiar fruits and 0.79 for the unfamiliar ones. Studies 3 and 4 moved to counting. Shown fruits or foods at set frequencies, 196 Americans tracked exotic fruits less well than common ones, and in Study 4 the 189 British participants tracked cheese better than dumplings, slope 0.40 against 0.21, while the 212 Chinese participants showed the reverse. Study 5 gave 702 Americans rotated cursive letters accompanied by no sound, a nonsense sound, or the sound the letter makes. A nonsense label helped less than a label carrying the concept, interaction b = 0.05, standard error 0.02, p = .023, which is the authors' evidence that hypocognition is more than a missing word. Their 2020 chapter applies the idea to what men and white Americans fail to generate and recall about discrimination. It tells those studies as prose and prints no test statistic for any of them, though one graph shows an intervention result.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The two reds that taste the same",
+      "text": "Someone with no vocabulary for tannin, acidity or finish drinks two very different wines and files both as red. The differences reached the tongue. Without a structure to hold them nothing is sorted, and the next day neither wine comes back as distinct."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The bird at the feeder",
+      "text": "A gardener who holds only the concept bird watches the feeder and remembers a bird. A neighbour who holds concepts for finch, tit and warbler watches the same feeder and comes away with three. The gap is in what each could file, not in what reached the eye."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The clause nobody reads",
+      "text": "A tenant signs a lease containing a break clause with no concept of what a break clause does. She looks straight at the sentence, has nowhere to put it, and later remembers the lease as having said nothing about leaving early."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "No independent test of the hypocognition experiments was found: seven years on the six studies remain an unpublished 2019 preprint, and the three works Semantic Scholar records as citing it include the authors' own book chapter."

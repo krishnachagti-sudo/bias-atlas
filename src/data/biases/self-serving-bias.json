@@ -16,6 +16,23 @@
     "note": "Their review did not discover the pattern, which was already in source books and textbooks under labels such as ego-defensive and ego-biased attribution. It named the claim, split it in two and found only half of it supported."
   },
   "evidence": "Miller and Ross reviewed the attribution experiments then available and treated the principle as double-edged, requiring evidence on both sides. They found some support for self-enhancing attributions after success and minimal evidence for self-protective attributions after failure. They then argued that the success half need not be motivational, offering three information-processing routes: people accept responsibility for expected outcomes and generally expect success rather than failure; covariation between behaviour and outcome is easier to see under improving performance than under constant failure; and a faulty idea of contingency ties control to the desired outcome. Their conclusion was that existing data read readily in information-processing terms, while calling it premature to deny self-serving attribution outright. Their review also splits by setting, and the split survives into the later literature. Studies in which the participants' outcomes were independent gave no indication of self-serving interpersonal attributions. Three studies in which the outcomes were directly related did obtain self-enhancing attributions, because success was self-attributed, and even there Miller and Ross record no strong tendency to blame the other person or the situation for failure. Two later meta-analyses measured the size of the laboratory effect. Campbell and Sedikides pooled 70 experiments, 6,949 participants and 163 effect sizes, taking only laboratory studies that manipulated both success and failure. Across the 153 effect sizes from participants in the actor condition they obtained d = 0.467, 95% CI [0.416, 0.518], with heterogeneity Q(151) = 829.63, p < .001. Mezulis, Abramson, Hyde and Hankin pooled 266 studies yielding 503 independent effect sizes, reported an average d of 0.96, and record the bias as present in nearly all samples.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "Two explanations of one exam",
+      "text": "A student who does well describes the weeks of work behind it. The same student, after a poor mark, describes a badly set paper and a noisy hall. Either account might be true alone. The bias is that the two are not reached for equally."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The quarter that went badly",
+      "text": "A sales team puts a strong quarter down to the new pitch and a weak one down to the market. The market was there in both quarters, and so was the pitch."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The dish that came out well",
+      "text": "A cook complimented on a meal talks about the technique. When the same cook burns a tray, the oven runs hot. Both sentences are about one evening's cooking and only one of them credits the cook."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "Three meta-analyses find the pattern, the largest pooling 266 studies at d = 0.96, while the one preregistered replication located found none.",

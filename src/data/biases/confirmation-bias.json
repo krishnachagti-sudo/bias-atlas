@@ -13,6 +13,23 @@
     "note": "Wason's paper is \"On the Failure to Eliminate Hypotheses in a Conceptual Task\", and it reports the 2-4-6 task. It does not contain the phrase confirmation bias. Wason writes about enumerative and eliminative induction, and about Bacon's induction by simple enumeration. The phrase itself appears in the title of Mynatt, Doherty and Tweney's 1977 paper in the same journal. The observation is older than either: Nickerson quotes Francis Bacon describing the habit in the Novum Organum of 1620."
   },
   "evidence": "Wason's task gives the sequence 2-4-6, says it follows a rule, and asks the participant to work the rule out by proposing further triples. The rule is three numbers in increasing order of magnitude. People guess something narrower, such as ascending even numbers, and then test triples that fit the guess, which can only ever return a yes. Twenty-nine psychology undergraduates took part, 17 men and 12 women. Six announced the correct rule with no wrong announcement before it, 13 announced one wrong rule, nine announced two or more, and one announced no rule at all. The four-card selection task is a separate experiment. Wason reported it as a pilot study in 1966 and published tests of it in 1968, on 36 first-year students at University College London and 26 at Edinburgh. He summarised the usual pattern as nearly all participants turning the card named in the antecedent, 60 to 75 per cent turning the one named in the consequent, and only a minority turning the card that could falsify the rule. The selective-exposure branch of the literature runs on a different task. Participants choose which articles to read from a set that varies in whether it agrees with a position they hold, and the measure is what they pick. Hypothesis testing, biased evaluation and selective exposure carry separate evidence, and a result in one does not settle the others.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The symptom typed into a search box",
+      "text": "A worried person searches for the illness they already suspect, reads the pages that match, and closes the ones describing something duller. Nothing here involves rejecting evidence; the evidence that would have argued otherwise was never opened."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The appraisal of a colleague already written off",
+      "text": "A manager who thinks a new hire is weak notices every late arrival and reads their quiet as disengagement. The same quiet in a colleague they rate highly reads as concentration, and both readings come off the same behaviour."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The recipe rule that never gets tested",
+      "text": "A cook who believes cold butter is what makes pastry work only ever tries it with cold butter, and counts each good result as proof. Testing the rule would mean using warm butter once, which is the case that could show it wrong."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "A meta-analysis of 91 studies and just under 8,000 people found a moderate average preference for information that agrees with you.",

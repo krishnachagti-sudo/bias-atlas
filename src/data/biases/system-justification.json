@@ -17,6 +17,23 @@
     "note": "Their paper is \"The role of stereotyping in system-justification and the production of false consciousness\". Its abstract defines system-justification as psychological processes contributing to the preservation of existing social arrangements even at the expense of personal and group interest, and says the idea is needed to account for the participation by disadvantaged individuals and groups in negative stereotypes of themselves. The sharp prediction that the disadvantaged legitimise the system more than the advantaged came nine years later, in Jost, Pelham, Sheldon and Ni Sullivan's survey paper, whose abstract calls the dissonance-based version the strongest form of the hypothesis. The 1994 text was not retrieved here. It is paywalled at Wiley and no open copy was listed at Unpaywall, OpenAlex, Europe PMC or Semantic Scholar on 21 September 2026, so the account above is read from the abstract at Crossref."
   },
   "evidence": "The status-legitimacy hypothesis was set out by Jost, Pelham, Sheldon and Ni Sullivan across five US national survey studies, published in the European Journal of Social Psychology in 2003. Their abstract reports six results. Low-income respondents and African Americans were more likely than others to support limits on the right of citizens and the media to criticise the government. Low-income Latinos trusted US government officials more, and were more likely to say the government is run for the benefit of all, than high-income Latinos. Low-income respondents were more likely to say large pay differences are needed to motivate effort. Southerners endorsed meritocratic belief systems more than Northerners, and poor Southern African Americans more than affluent Northern ones. Low-income respondents and African Americans were more likely to call economic inequality legitimate and necessary. Stronger meritocratic belief went with greater satisfaction with one's own economic situation. The full text was not obtained on 21 September 2026. Wiley and the SSRN copy of the submitted version each answered with a bot challenge rather than a paywall notice, and Unpaywall, OpenAlex, Europe PMC and CORE listed no other open copy, so no coefficient from the paper is quoted here. The experimental branch of the literature ran separately, using manipulations meant to raise system-justifying motivation, including system threat, system dependence, complementary stereotypes and meritocracy primes.",
+    "examples": [
+      {
+        "kind": "everyday",
+        "tag": "The rota the newest staff defend",
+        "text": "A rota gives the worst shifts to those with least seniority, and the newest workers argue for it hardest, on the ground that it teaches people the job. The defence comes from those the arrangement costs most."
+      },
+      {
+        "kind": "everyday",
+        "tag": "The tenant who explains the market",
+        "text": "A renter handing over half his income describes the level as what the market has to charge, and treats a proposal to change it as naive. Explaining the arrangement is work his own position does not require of him."
+      },
+      {
+        "kind": "everyday",
+        "tag": "The selection test that failed him",
+        "text": "A candidate rejected by an entrance exam defends it as the fairest method available, because it treats everyone alike. Rationalising the arrangement one lives under is the claim, whatever that arrangement has cost the person making the case."
+      }
+    ],
   "replication": {
     "state": "failed",
     "headline": "In 66 samples across 30 countries, higher subjective status went with seeing the system as more legitimate, and the association was positive in every country.",

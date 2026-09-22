@@ -13,6 +13,23 @@
     "note": "Zeigarnik ran the experiments in Berlin between 1924 and 1926 as her dissertation under Lewin. She had enrolled at the Friedrich Wilhelm University in 1922 and graduated in 1925. The paper occupies pages 1 to 85 of volume 9, published inside Lewin's series 'Untersuchungen zur Handlungs- und Affektpsychologie'."
   },
   "evidence": "Every figure below is read off the abridged English translation, which is the document fetched for this entry. The German original was not obtained. MacLeod's reference list places the translation at pages 300 to 314 of Ellis's source book of Gestalt psychology, published in 1938. It reports 164 individually tested participants, described as students, teachers and children, plus two group experiments of 47 adults and 45 children. Each participant was given 18 to 22 short tasks, half of them stopped before completion. The translation names constructing a cardboard box, modelling clay figures, puzzles and arithmetic; MacLeod, reading the German, adds thread winding, paper folding, multiplication, drawing a vase and counting backwards. Zeigarnik timed each interruption for the moment the participant was most engrossed. Among the first 32 participants, recall favoured the interrupted tasks at IR/CR = 1.9, with 26 recalling interrupted tasks best, 3 level and 3 recalling completed tasks best. Of the 22 tasks used, 17 were better recalled when interrupted. A repeat with 15 new participants and a new task set gave 2.0, and the two group experiments gave 1.9 for adults and 2.1 for children. Interrupting tasks and then allowing them to be resumed wiped out the advantage, which she read as ruling out the shock of interruption, and telling participants that a task would or would not be resumed left ratios of 1.7 and 1.8. Her quantitative results count only the tasks named before a participant's first hesitation, which she treated as spontaneous recall. MacLeod cites page 13 of the German for her statement that pre-hesitation and total recall did not differ, and that sentence is not in the translation.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The half-written message",
+      "text": "Someone starts a long reply, is called away mid-sentence, and hours later can still recite the wording they had reached, while the three messages they sent complete have gone. The claim is about memory for the unfinished item, not about the urge to go back and finish it."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The drama that stops mid-scene",
+      "text": "An episode breaks off before the rescue, and its details stay sharp for a week while the episodes that resolved blur together. On this account the memory holds because the intention to know the ending never discharged."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The chapter abandoned halfway",
+      "text": "A student drops a chapter part-written when supervision changes direction, and a year later recalls its argument better than the chapters that were finished and handed in. What is claimed is sharper recall, not a stronger pull to return to the work."
+    }
+  ],
   "replication": {
     "state": "failed",
     "headline": "A 2025 meta-analysis of 38 publications puts recall of interrupted against completed tasks at a ratio of 0.99, against 1.61 for Zeigarnik's own study on that measure.",

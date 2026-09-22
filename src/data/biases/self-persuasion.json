@@ -17,6 +17,23 @@
     "note": "The paper is titled \"The influence of role playing on opinion change\" and ran at 49(2), 211-218. It was read in full from the Internet Archive's scan of the 1954 volume. Ninety male college students sat in threes, each giving one of three prepared talks as a sincere advocate and listening while the other two gave theirs. Active speakers lowered their estimates further than passive listeners on two of the three topics, at p = .01 on the sizable-change measure. On the third topic, a cure for the common cold, the two groups moved about the same. The name self-persuasion belongs to Elliot Aronson's 1999 article in American Psychologist, 54(11), 875-884, which is closed."
   },
   "evidence": "King and Janis tested the improvisation account two years later, and that paper was read from the Internet Archive's scan of the 1956 volume. Thirty-two students gave a talk on military service from memory, 23 read the same script aloud, and 20 read it silently. The improvisers shifted further than the script readers on a combined index of five opinion items, p = .01, and further than the silent readers, p = .03. The script readers differed from the silent readers on no item, and ran the other way on the combined index, p > .30. They also rated their own performance more favourably, which rules out satisfaction as the reason. Greenwald and Albert had students improvise arguments on general against specialised undergraduate education, then copy out another student's arguments for the other side. Of 198 recruited, 181 were analysed. Opinions moved towards the side each student had been assigned at random, F(1, 177) = 7.42, p < .01. Own arguments were recalled far better than the other student's, F(1, 177) = 168.10, p < .001, and were rated more original, t(180) = 4.31, p < .001. Lemmen, Keizer, Bouman and Steg ran the comparison at Apenheul, a Dutch primate park. Signs at the entrance to the free-ranging enclosure either carried three arguments for not luring the squirrel monkeys, or asked visitors why they should not lure them, or carried both, or said nothing. Three observers dressed as visitors watched a marked area of 4 by 15 metres and recorded who broke the rule. Of 2,264 visitors, 17% lured the monkeys in the control condition, 7% where the arguments were given, z = 4.82, p < .001, and 7% where the question was asked, z = 4.82, p < .001. The two interventions did not differ, z = 0.09, p = .928, across the 1,013 visitors who saw one of them. Visitors given both signs broke the rule more often, at 11%, than visitors given the question alone, z = 2.12, p < .05. A questionnaire at the exit reached 350 visitors. Asking the question raised how important the rule was rated, from 5.73 to 6.03 on a seven-point scale, F(1, 345) = 6.48, p < .05, partial eta squared 0.018. Providing arguments did not, F(1, 345) = 0.69, p = .408. Damen, Müller, van Baaren and Dijksterhuis gave 120 Radboud University students either arguments for a clean local environment or the task of writing those arguments themselves. Neither the persuasion type nor a preceding manipulation of felt agency moved attitudes on its own, both F values below 1. The two interacted, F(1, 116) = 9.20, p = .003, partial eta squared 0.07, and generating the arguments beat receiving them only among students who had just been made to feel in control, F(1, 116) = 7.35, p = .008.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The safety briefing that asks for reasons",
+      "text": "Instead of listing why the guard rail matters, a supervisor asks each worker to say what could go wrong without it. The claim is about who produced the argument: a reason a worker states himself is meant to shift his behaviour more than the same reason on a laminated card."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The essay for the side you did not pick",
+      "text": "A tutor asks a student to write the strongest case for a policy she opposes. What is supposed to move her is not the content of the argument, which she could have read anywhere, but the fact that she assembled it."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The recruit who explains the rule",
+      "text": "A volunteer coordinator asks a new recruit to explain to the next intake why shifts start on time. The rule is unchanged and so are the reasons for it. The difference the claim rests on is that the recruit now spoke them."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Meta-analysis finds that advocating a behaviour, on its own, does not reliably beat doing nothing, while preregistered laboratory studies find an advantage over supplied arguments when generating them feels easy.",

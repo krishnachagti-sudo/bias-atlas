@@ -13,6 +13,23 @@
     "note": "Malpass and Kravitz's 'Recognition for faces of own and other race' is the paper the field cites as its starting point. The article could not be obtained at Unpaywall, Crossref, OpenAlex, Semantic Scholar, PubMed or general web search, and the PubMed record carries no abstract, so nothing on this page rests on its contents. Crossref and OpenAlex both give the second author's forename as Jerome; PubMed records only the initial. The modern evidence base dates from Meissner and Brigham's 2001 meta-analysis in Psychology, Public Policy, and Law, which gave the effect its standing in law as well as in psychology."
   },
   "evidence": "The largest count of the literature is Lee and Penrod's three-level meta-analysis. It took in 159 journal articles published between 1969 and 2021 and 747 effect sizes: 205 for hit rates, 125 for false alarm rates, 261 for discriminability and 158 for response criterion. Across within-subject designs the pooled Hedges' g for discriminability was 0.54, 95% CI [0.49, 0.60]. Hits favoured own-race faces at g = 0.30 [0.22, 0.38], and response criterion came out at g = 0.30 [0.21, 0.39], with own-race faces judged against a stricter standard. The six between-subject effect sizes for discriminability gave a smaller and looser estimate, g = 0.36 [0.06, 0.66], and the seven for false alarms gave g = -0.22 [-0.39, -0.05]. No pooled within-subject figure for false alarms appears here. The authors' OSF project posts forest plots for six of the eight measure-by-design cells, and the two it omits are hit rates between subjects and false alarms within subjects, so that estimate could not be read. Splitting by design rather than by measure, the authors report pooled Hedges' gav for two-way designs of 0.37 for hits, -0.46 for false alarms, 0.51 for discriminability and 0.14 for criterion, on 88, 52, 129 and 74 effect sizes; for one-way designs the figures are 0.26, -0.61, 0.57 and 0.40, on 117, 73, 132 and 84. Participant race, white against non-white, and the interval between study and test were the two moderators that held up. Meissner and Brigham's 2001 meta-analysis analysed 39 research articles, 91 independent samples and nearly 5,000 participants, examined eight moderators, and reported the mirror pattern together with an own-race bias in aggregate measures of discrimination accuracy and response criterion. That is its abstract, read at OpenAlex. Its own pooled figures could not be read, because the article is closed access and the repository copy listed at the University of Texas at El Paso returned 403 on every attempt.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The introductions at a conference abroad",
+      "text": "A delegate meets a dozen local colleagues in one morning and by lunch can separate three of them. She meets the same number of visitors from home and has no such trouble. The difficulty is in telling the faces apart, and it says nothing about what she thinks of anybody."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The greeting given to the wrong person",
+      "text": "A teacher new to a school greets a parent warmly as someone he met at the gate the week before, and it is not the same man. That is the second half of the pattern. Accuracy falls through false alarms as well as through missed recognitions."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The first weeks in a new country",
+      "text": "Someone who moves abroad finds colleagues' faces running together for a month or two and then stops noticing the problem. The effect is about how well a face is encoded and discriminated, and it moves with practice rather than with attitude."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "The recognition-memory finding is one of the sturdier results in the field: a meta-analysis of 159 articles spanning 1969 to 2021 puts the own-race advantage in discrimination at Hedges' g = 0.54, 95% CI [0.49, 0.60].",

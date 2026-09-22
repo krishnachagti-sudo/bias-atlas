@@ -12,6 +12,23 @@
     "note": "Krueger and Acevedo credit Allport with introducing the idea that people generate predictions about others from what they know about themselves, and name Asch, Heider and Cronbach as the later hands on it. That attribution is theirs and is quoted from their chapter. Allport's book was not obtained here: the Internet Archive holds a 1924 copy whose text is lending-restricted, and its metadata and download endpoints refused the request. The measuring apparatus arrives much later than the idea."
   },
   "evidence": "Krueger and Zeiger gave 18 statements from the Minnesota Multiphasic Personality Inventory to 100 Brown undergraduates, 46 men and 54 women, with six statements typed masculine, six feminine and six neither. Real consensus came from the inventory's norms, which rest on samples of 1,462 women and 1,138 men, a procedure they credit to Robyn Dawes. Projection, the within-person correlation between own endorsements and consensus estimates, averaged .34. The overshooting part, correlating endorsements with estimated minus actual consensus, averaged .26 and was positive for 86% of respondents. Estimates for the population as a whole tracked the real rates not at all, r = -.07. Split by target, the overshoot ran .36 for the respondent's own sex and .07 for the other sex, with an interaction of F(1, 96) = 27.35. Clement and Krueger timed the judgements. Thirty-seven psychology students judged 60 person-descriptive words under three prompts, one perceptual, one about the self and one about consensus. Endorsements came faster than consensus estimates at both presentations, d = .78 and d = .65, and a consensus estimate came faster after an endorsement than after the perceptual control, F = 16.81, d = .58. Krueger and Chen measured projection and accuracy in the same people, 127 respondents approached on a university campus, 65 women and 62 men, judging 10 inventory items. Projection averaged .47 and accuracy, the correlation between estimates and real rates, averaged .36. Holding each respondent's own endorsements constant cut accuracy to .23, t(126) = 6.73, d = .60, and it stayed above zero. Respondents who projected more were a little more accurate, r(125) = .15.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The meeting time nobody was asked about",
+      "text": "An organiser who dislikes early starts assumes her colleagues dislike them too, and fixes the meeting for the afternoon. Her own preference is a single case, and she has treated it as a reading of the room."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The joke inside the club",
+      "text": "A member of a cycling club finds a running joke funny and expects the other members to enjoy it, while assuming nothing of the visitors at the open day. The self is the evidence, and it is used hardest where the others count as fellow members."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The strike ballot",
+      "text": "A nurse who means to vote for action puts turnout among nurses at three in four, and guesses far lower for the hospital's administrators. His own answer supplies the first figure and not the second, which is the shape the effect takes."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "A meta-analysis of 19 reports, 48 hypothesis tests and 5,053 participants put projection to ingroups at r = .46 and projection to outgroups at r = .13.",
@@ -22,7 +39,16 @@
       "year": 2005,
       "n": 5053
     },
-    "replicated": { "es": 0.46, "esType": "r", "ci": [0.42, 0.5], "ciLevel": 95, "weighting": "sample-weighted Fisher Z" }
+    "replicated": {
+      "es": 0.46,
+      "esType": "r",
+      "ci": [
+        0.42,
+        0.5
+      ],
+      "ciLevel": 95,
+      "weighting": "sample-weighted Fisher Z"
+    }
   },
   "limits": "The figures measure covariation and not correctness. A projection correlation of .46 says two judgements move together, and says nothing about whether either matches the world. Hoch's 1987 paper is the source of the result that stronger projection raises accuracy where a person's own responses are representative of the group. It is paywalled, Unpaywall lists no free copy, and it was not read here; the statement of it on this page is Krueger and Chen's, who cite it while running that analysis on their own data. Dawes's 1989 paper and Dawes and Mulford's 1996 paper are paywalled too and were not read, so the inductive argument is reported as Krueger and Clement's published abstract and Krueger and Acevedo's chapter describe it. Projection also varies by target. In Ames's first study, 74 students read scenes about a medical student, a lawyer and a fraternity member, and attributes shared with the target raised projection and lowered stereotyping, F(1, 103) = 4.66, p = .03. His standardised projection weights averaged .06 in the fraternity scene against .35 and .39 in the other two. Searches at Crossref, PubMed and OSF located no meta-analysis of social projection later than Robbins and Krueger's.",
   "misreadings": "The rational reading of projection is often put in Krueger's mouth, and his own claim is narrower. Krueger and Clement's abstract states that consensus bias looks statistically appropriate on Dawes's argument, and that on their egocentrism hypothesis it merely mimics normative inductive reasoning. Their three experiments found the bias in respondents who had been taught about it, in respondents given the real rates, and in respondents shown unanimous information from 20 randomly chosen others. The inductive defence belongs to Dawes; what Krueger reports is a residue that survives correction. Krueger and Zeiger's split is the sharper form of the same point, because the residue appeared for the respondent's own sex and not for the other sex, which is where the inference from a sample of one has least warrant. This is not the false consensus effect, entry 10, which compares the population estimates of two groups who chose differently on a single item. It is not assumed similarity bias, entry 321, which correlates a self-description with a description of one named person. It is not the Freudian sense of projection, entry 43, which requires the projector to deny the trait. Nor is it ingroup projection in Wenzel and Mummendey's sense. Bianchi, Machunsky, Steffens and Mummendey report that projecting ingroup attributes onto a wider category behaves differently from projecting one's own: theirs was stronger for typical ingroup attributes and weakened when the ingroup's image was made less positive, while social projection held steady.",

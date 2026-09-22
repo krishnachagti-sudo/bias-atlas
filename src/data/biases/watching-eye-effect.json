@@ -19,6 +19,23 @@
     "note": "Their dictator-game paper, \"Nobody's watching?\", put stylised eyespots on a computer desktop and reported more giving. The demonstration that made the idea famous came a year later, when Bateson, Nettle and Roberts ran the honesty box in a Newcastle coffee room."
   },
   "evidence": "Bateson, Nettle and Roberts hung a notice above an honesty box in the coffee room of the Division of Psychology at Newcastle University. Its 150 by 35 millimetre banner alternated each week between a pair of eyes and an image of flowers, over ten weeks. Tea, coffee and milk cost 30, 50 and 10 pence. The paper describes a population of 48 members of the division, 25 women and 23 men, who had the option to pay, and it records no individual decisions. Milk consumption served as the index of how much was drunk. People paid 2.76 times as much per litre of milk in the eyes weeks, 0.417 pounds plus or minus 0.081 against 0.151 plus or minus 0.030. A general linear model on log-transformed data explained 63.8 percent of the variance, with a main effect of image type, F(1,7) = 11.551, p = 0.011, and no effect of week, F(1,7) = 0.074, p = 0.794. The unit of analysis was the week, so the result rests on ten numbers. Haley and Fessler's earlier dictator game used five conditions, combining a stylised image of eyes on the computer desktop with sound-deadening earmuffs meant to cut the sound of other people in the room. That paper was not obtained for this entry. Northover and colleagues, who pooled its three cue conditions against its two control conditions, put it at 124 participants and score it at Hedges' g = 0.30, 95% confidence interval -0.06 to 0.67 for the amount given, and a log odds ratio of 1.21, 95% CI 0.42 to 2.01, for the proportion who gave anything. Nettle and colleagues, replicating it in 2013, stress that two logically separable effects were present in the original: eyes raised the mean donation, and eyes also raised the probability of donating something rather than nothing.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The honesty box in the staff kitchen",
+      "text": "A tin for tea money sits under a poster. In the weeks when the poster shows a pair of eyes, more money goes in than in the weeks when it shows a plant. Nobody is checking either way, and the eyes on paper can report to no one."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Eyes on the recycling point",
+      "text": "A bottle bank with a face printed on the panel collects less rubbish dumped at its foot than the identical bank on the next estate. A photograph cannot see who left the bag, which is what makes the change odd rather than obvious."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The screen at the self-service till",
+      "text": "A checkout screen that shows a pair of eyes while items are scanned is followed by fewer unscanned items than one that shows a logo. The store is no better informed, since nothing about the picture records anything."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Pooled across 26 experiments, eye images moved the amount people gave by Hedges' g = 0.03; separate pools on antisocial behaviour and on whether a person gives anything at all report reductions and increases that hold.",

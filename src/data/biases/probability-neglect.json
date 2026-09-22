@@ -2,7 +2,9 @@
   "no": 191,
   "slug": "probability-neglect",
   "name": "Probability neglect",
-  "aliases": ["Neglect of probability"],
+  "aliases": [
+    "Neglect of probability"
+  ],
   "category": "belief",
   "statement": "When an outcome stirs strong feeling, people attend to how bad it would be rather than how likely it is, and their valuations move little with the probability.",
   "meaning": "Cass Sunstein's claim is about emotion, not about arithmetic. People can handle probabilities when the outcome is dull, and stop handling them when the outcome is frightening or thrilling. His formulation is that when intense emotions are engaged, people focus on the adverse outcome and not on its likelihood. He separates this from a second and broader pattern he also describes, general insensitivity to differences among small probabilities, which does not need any emotion at all. Probability neglect proper is the emotional case, and Sunstein says it applies to large probability variations as well as small ones. The psychology he draws on is Yuval Rottenstreich and Christopher Hsee's distinction between affect-rich and affect-poor outcomes. Two prizes can be worth the same money and feel entirely different, and their argument is that prospect theory's weighting function is more S-shaped for the affect-rich one. That predicts a probability-outcome interaction: bigger jumps at the ends of the probability scale for affect-rich outcomes, and a flatter middle. Rottenstreich and Hsee never use the phrase probability neglect, and their prediction is that probability is weighted differently, not that it is disregarded.",
@@ -13,6 +15,23 @@
     "note": "Sunstein named the effect in an essay at 112 Yale L.J. 61, writing of \"this phenomenon, which I shall call 'probability neglect'\". The experimental work he leans on is a year older: Rottenstreich and Hsee's 2001 paper in Psychological Science, which he calls the clearest empirical confirmation of the basic point and quotes in his epigraph."
   },
   "evidence": "Rottenstreich and Hsee ran three hypothetical studies. Experiment 1 gave 40 Rice University undergraduates a choice between meeting and kissing a favourite movie star and $50 in cash, 20 under certainty and 20 at a 1 per cent chance of each. Under certainty 70 per cent took the cash; at 1 per cent, 65 per cent took the kiss lottery, chi-squared (1, N = 40) = 4.91, p < .05. Experiment 2 priced two $500 coupons against each other with 138 University of Chicago undergraduates paid $2, one redeemable toward a European holiday and one toward tuition. At a 1 per cent chance of winning, the median price was $20 for the holiday coupon and $5 for the tuition coupon, ns = 54 and 27, p < .05 by Mann-Whitney. At 99 per cent the order reversed, $450 against $478, ns = 39 and 18, p < .05. A separate 33 undergraduates confirmed the manipulation, with 88 per cent saying they would react more emotionally to the holiday coupon. Experiment 3 is the one that gets quoted. Some of 156 Chicago undergraduates, paid $1, imagined an experiment carrying a chance of a short, painful, but not dangerous electric shock, and the others a chance of a $20 cash penalty. Median willingness to pay to avoid a 1 per cent chance was $7 for the shock and $1 for the penalty, ns = 34 and 27, p < .05 by Mann-Whitney. At 99 per cent it was $10 for the shock, n = 39, and $18 for the penalty, n = 26. A certainty condition was run for the shock only, at a median of $19.86 with 24 of 30 participants paying $20 or less. Nobody was shocked and no money changed hands. Sunstein ran his own study on 83 University of Chicago law students. Each stated a maximum willingness to pay to eliminate a cancer risk of either 1 in 1,000,000 or 1 in 100,000. The cancer was described either plainly or, in the vivid conditions, as \"very gruesome and intensely painful\". Mean willingness to pay was $71.25 and $194.44 in the plain conditions and $132.95 and $241.30 in the vivid ones. The tenfold rise in risk lifted the mean from $103.57 to $220.73, F(1,81) = 7.6, p < 0.01, so a factor of ten bought barely a doubling. The vivid wording alone lifted the mean from $129.61 to $188.33, F(1,81) = 1.8, p = 0.19.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "Two figures, the same fear",
+      "text": "A parent told the side effect runs at one in a million and a parent told it runs at one in ten thousand describe the same dread and want the same reassurance. What is being weighed is the picture of a child harmed, and the figure barely moves the answer."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Insurance against the frightening thing",
+      "text": "Someone compares excess and cover to the pound on a phone policy, then buys a policy against a named and terrifying illness without asking what the chance of it is. The dull risk is priced carefully and the vivid one is priced by how it feels."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The shark and the drive",
+      "text": "A swimmer who checks reports of attacks before a holiday and thinks nothing of the drive to the coast is not misreading either number. The frightening outcome fills the whole of the judgement, while the likelier one attaches to nothing worth picturing."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Many Labs 2 repeated the kiss-versus-cash study on 7,218 people and the preference reversal came out backwards, while the wider finding that affect-rich outcomes dull probability sensitivity holds up in other laboratories.",
@@ -23,8 +42,19 @@
       "year": 2018,
       "n": 7218
     },
-    "original": { "es": 0.74, "esType": "d" },
-    "replicated": { "es": -0.08, "esType": "d", "ci": [-0.13, -0.03], "ciLevel": 95 }
+    "original": {
+      "es": 0.74,
+      "esType": "d"
+    },
+    "replicated": {
+      "es": -0.08,
+      "esType": "d",
+      "ci": [
+        -0.13,
+        -0.03
+      ],
+      "ciLevel": 95
+    }
   },
   "limits": "Every number in the founding studies is hypothetical. No shock was delivered, no coupon was awarded and no cancer risk was real, and willingness to pay for an imagined shock is a report about an imagined shock. The samples are undergraduates at Rice and Chicago and law students at Chicago. Rottenstreich and Hsee omitted the certain-cash cell of Experiment 3, on the ground that nobody should pay more than $20 to avoid a certain $20 penalty. That leaves the affect-poor comparison resting on two points rather than three. Their certain-shock median of $19.86 sits against the same $20 landmark. Sunstein's arsenic experiment is his own unpublished data, cited in the essay as a file note dated 17 October 2001, and its seven fixed response options top out at \"$800 or more\". His central prediction there, that probability would matter less in the vivid conditions than the plain ones, was in the predicted direction and not statistically significant, which he says plainly. The Swiss repeat is an undergraduate course project written up on a personal blog. Its Open Science Framework project at osf.io/y5b43 is private, and OSF asked for a sign-in on 21 September 2026. Its preregistration at osf.io/m842k is public, registered on 31 October 2022 under the standard pre-data-collection form, and the pre-registration document it points to sits inside the private project, so that text was not read. The blog labels it German. The blog also names no university for the students, and Schulte-Mecklenbeck's own pages place him at the University of Bern. Searches of Crossref, PubMed, Europe PMC and the open web on 21 September 2026 found no multi-laboratory test of the shock study and no meta-analysis of probability neglect. The strategy figures usually quoted from Pachur, Hertwig and Wolkewitz, 73 per cent following expected value in the monetary problems and 76 per cent following minimax in the medical ones, are Suter, Pachur and Hertwig's rounding of that paper's Study 3, which prints 72.9 and 76.0 per cent.",
   "misreadings": "The name promises more than the data deliver. Probability is discounted rather than dropped. The shock arm of Experiment 3 moved from $7 at 1 per cent to $10 at 99 per cent. Sunstein's vividly described cancer moved mean willingness to pay from $132.95 to $241.30 across a tenfold rise in risk. Both fall far short of what expected utility requires. Neither is neglect. Rottenstreich and Hsee's own claim is narrower still. They predicted a more S-shaped weighting function for affect-rich prizes, which requires probability to keep working, and they never wrote the phrase. Sunstein is where the phrase comes from, and legal and policy writing that cites his $7 and $10 figures is citing his summary of their page 188 rather than the study. Many Labs 2's own summary of the original garbles it. It reports 70 per cent and 35 per cent preferring the kiss, where the paper gives 65 per cent choosing the kiss lottery at 1 per cent and 70 per cent choosing cash under certainty. Both tables yield the same chi-squared of 4.91, so the error is invisible from the statistic. Three neighbouring ideas get merged. The certainty effect is the finding Sunstein describes as a change from 0.01 to zero producing far more enthusiasm than a change from 0.04 to 0.03, and it turns up with plain money in the Allais problems, no emotion required. Zero-risk bias is the related willingness to pay more to eliminate a risk than to cut a larger one by the same amount. Both are about where on the probability scale a change sits. Probability neglect is about what is at the other end of the scale: Sunstein sets it apart as the case where strong emotion crowds out attention to probability, high or low. A risk-neutral reading of any of the three is wrong, and using them interchangeably hides the fact that only one of them makes a prediction about feelings. Finally, the affect gap and probability neglect are not the same claim. Suter, Pachur and Hertwig treat them as rival explanations of the same gap, distorted probability weighting against a rule that ignores probability, and found the second describing about a third of participants in affect-rich choices and none in affect-poor ones.",

@@ -17,6 +17,23 @@
     "note": "Kaplan names and states the law on page 28: 'I call it the law of the instrument, and it may be formulated as follows: Give a small boy a hammer, and he will find that everything he encounters needs pounding.' The book is not the first printing of the idea. Quote Investigator's earliest strong match is a June 1962 report in the Journal of Medical Education on an American Educational Research Association meeting held that February, giving Kaplan's spoken version as 'Give a boy a hammer and everything he meets has to be pounded'. Kenneth Mark Colby printed 'The First Law of the Instrument' in 1963, and Silvan Tomkins wrote 'If one has a hammer one tends to look for nails' in the same 1963 volume, three years before Maslow. None of those three documents was opened for this entry, and the 1962 report does not resolve at Crossref."
   },
   "evidence": "Nothing in the literature tests the law as Kaplan stated it. The nearest measured thing is the Einstellung effect, the mental set Abraham Luchins reported in 1942. Luchins gave water-jar problems solvable either by a long method learned on earlier items or by a short direct one. Across his six college groups, 70% to 100% of those who had worked through the long-method series used it again on the critical problems, against 0% in the two classes that served as controls, which used the direct method every time. Merim Bilalic, Peter McLeod and Fernand Gobet carried the paradigm into chess. Shown a position holding a familiar five-move smothered mate and an unfamiliar three-move mate, all six Grandmasters found the three-move mate, against 50% of six International Masters, 18% of 11 Masters and none of 11 Candidate Masters. A drop of 100 Elo points cut the odds of finding it by a factor of 3.67, B = .013, SE = .005, Z = 8.4, p = .004. Every one of those players found the three-move mate once the smothered mate was disabled by moving one bishop. Twelve other experts, mean Elo 2231, predicted that 86% of International Masters, 74% of Masters and 59% of Candidate Masters would find it, against actual figures of 50%, 18% and 0%. The familiar solution cost the experts about three standard deviations of playing strength. A companion study tracked the eyes of ten Candidate Masters, five per group. Players who had spotted the smothered mate all reported hunting for something shorter, and their gaze stayed on the squares belonging to the solution they already had, F(5, 20) = 0.6, not significant. Players given the version without the smothered mate shifted their gaze towards the squares that mattered, F(5, 20) = 11.9, p < .001, partial eta-squared .75. Heather Sheridan and Eyal Reingold ran the eye-tracking design again on 17 experts and 17 novices and found where it stops. Where the familiar move was merely suboptimal, 8 of 17 experts and 8 of 17 novices chose it, and neither group looked away from it as the trial ran on. Where the familiar move was a blunder, every expert and most novices avoided it, and both groups disengaged over time.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The department that runs surveys",
+      "text": "A team is good at surveys, so every question that reaches it becomes a questionnaire. Questions that a survey cannot answer, about why people leave or what they would do differently, stop being asked. The tool has quietly settled which problems the department has."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The dispute turned into a model",
+      "text": "Someone fluent in spreadsheets responds to a disagreement about fairness in the rota by building a model of shift allocation. The model is careful and the disagreement was never about allocation. The problem was reshaped until it fitted the technique available."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The teacher whose every lesson is group work",
+      "text": "A teacher is excellent at running discussion, so the drilling and the silent practice that some topics need are steadily crowded out. She is not misjudging those topics. She is choosing the topics that reward what she does well, which is where the cost sits."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "No test of the law of the instrument was found, because nobody has turned it into a hypothesis; the nearest measured thing is the Einstellung effect, which is narrower than the law.",

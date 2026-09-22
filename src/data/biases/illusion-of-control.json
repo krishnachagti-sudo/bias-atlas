@@ -2,7 +2,10 @@
   "no": 100,
   "slug": "illusion-of-control",
   "name": "Illusion of control",
-  "aliases": ["Illusory control", "Illusion of controllability"],
+  "aliases": [
+    "Illusory control",
+    "Illusion of controllability"
+  ],
   "category": "belief",
   "statement": "People treat purely chance events as if skill mattered, and feel likelier to win when the game lets them choose, compete, practise or take part.",
   "meaning": "Langer's definition is narrow and worth keeping: an expectancy of a personal success probability inappropriately higher than the objective probability would warrant. The claim is not that people say the wrong thing about probability. It is that cues borrowed from skill settings, choice, competition, familiarity and involvement, raise confidence in a setting where nothing a person does can change the odds. Two separate literatures now carry the name. One is Langer's, about gamblers and lottery tickets. The other is the contingency-judgement paradigm, where participants press a button and rate their control over a light, and which this atlas covers under depressive realism. A third neighbour is the causal illusion, in which the candidate cause is something outside the person, a medicine rather than a keypress, and the error is rated effectiveness rather than personal confidence. Clark and Wohl treat that associative-learning work as a separate account of illusory control, and this atlas covers it under questionable cause.",
@@ -13,6 +16,23 @@
     "note": "Her paper is titled \"The Illusion of Control\" and reports six studies. It is based on a doctoral dissertation submitted to Yale, and the journal received it on 3 May 1974."
   },
   "evidence": "The famous study is the second of the six. Langer sold $1 lottery tickets to office workers at an insurance agency and a manufacturing firm, using football cards, with a pot of about $50. Twenty-seven people picked their own card and 26 were handed one. Asked before the draw what they would sell it back for, the choosers named $8.67 on average and the others $1.96, t = 4.33, p < .005. Fifteen said at first that they would not sell at all, ten of them choosers, which Langer reports at p < .10. The other five studies vary the skill cue rather than the price. In Study 1, 36 male Yale undergraduates bet more against an awkward opponent than a confident one, 16.25 cents against 11.04, t = 2.39, p < .025. Study 3 crossed choice with familiar or unfamiliar ticket symbols and found both mattered, Z = 1.83, p < .05, one-tailed. Study 4 put 15 telephone company employees in each of four conditions on a path-tracing box and crossed practice with whether they moved the stylus themselves. Both main effects on pretrial confidence gave F(1, 56) = 4.71, p < .05, and the cell means run from 3.80 with neither cue to 6.07 with both. Study 5 tracked confidence among racetrack customers across an evening, F(2, 403) = 4.09, p < .05, with women more confident than men, F(1, 403) = 7.58, p < .01. In Study 6, 63.6% of office workers who received their lottery number one digit a day kept it, against 31.6% of those given all three digits at once, chi-square 4.19, p < .05. Langer also reports two studies that did not confirm the prediction, one in which choice mattered only for women, and a questionnaire version of the competition study whose significant results ran opposite to the prediction.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The numbers filled in by hand",
+      "text": "A lottery player writes in family birthdays rather than taking the machine's random ticket, and will not swap the slip for another. The draw takes no notice of who chose the numbers, and the confidence tracks the choosing."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The dice thrown hard",
+      "text": "A player at a board game throws firmly when a high number is wanted and lets the dice drop gently for a low one. The throw is being handled as a skill in a setting where nothing about it shifts the odds."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The raffle against a nervous rival",
+      "text": "Two colleagues hold tickets in an office draw, and the one whose rival seems hesitant feels better placed. A raffle has no opponent to beat, yet a cue that would matter in a contest of skill lifts confidence anyway."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Seventeen preregistered experiments on 10,825 people found no evidence that choice causes an illusion of control, while a preregistered replication of the coin-toss study and a meta-analysis of the wider literature both come out positive.",
@@ -23,7 +43,15 @@
       "year": 2021,
       "n": 10825
     },
-    "replicated": { "es": 0.04, "esType": "d", "ci": [-0.16, 0.23], "ciLevel": 95 }
+    "replicated": {
+      "es": 0.04,
+      "esType": "d",
+      "ci": [
+        -0.16,
+        0.23
+      ],
+      "ciLevel": 95
+    }
   },
   "limits": "A direct repeat of Langer's selling-price procedure was not found. Searches at Crossref, Europe PMC, Unpaywall and open web search turned up work that engages with Study 2 rather than work that re-runs it. Klusowski and colleagues re-tested the choice mechanism with new materials and new measures, and their objection to the 1975 result is that it admits other readings, not that they re-ran it and got nothing: choosers may have liked their football player, or anticipated regret at selling a ticket that then won. The regret account has its own evidence. Bar-Hillel and Neter handed 61 students tickets that nobody chose and offered a swap plus a sweet, and only 41% took it, while 80% said every ticket was equally likely to win. Langer reports no effect sizes and no intervals anywhere in the paper, which was read in full for this entry, so her test statistics are quoted as printed. Her Study 3 also contradicts itself on sample size, giving 13 subjects per condition in the text and 15 per cell in the table note. Presson and Benassi's 1996 meta-analysis in the Journal of Social Behavior and Personality could not be obtained. No DOI for it appears at Crossref, and searches at Unpaywall, Europe PMC, Semantic Scholar and open web search found no readable copy, so no figure is quoted from it here. The D of .89 for outcome sequences that is sometimes attached to Stefan and David is reported by Eben and colleagues, who note it rests on four studies and 312 participants in total. What survives the scrutiny is thin but real. Hayes, Walasek, Browne and Newall had 1,692 people shake a phone to roll digital dice over 24 trials and found they shook 4.1% harder when aiming for a six than for a one, F(1, 3718.75) = 63.11, p < .001. Their two other preregistered hypotheses failed: the effect did not grow with gambling experience, and it did not track Problem Gambling Severity Index scores.",
   "misreadings": "The textbook line, that the illusion afflicts gamblers and executives, is a claim about the world that rests on laboratory work about lottery tickets. Clark and Wohl, writing on gambling, note both the replication trouble and the fact that illusory control beliefs still correlate with disordered gambling. Correlation between a questionnaire and a diagnosis is a different finding from an experiment showing that choice manufactures the belief. The second confusion is direction. Thompson, Armstrong and Thomas titled their review of the field \"Illusions of control, underestimations, and accuracy\", because people also get control wrong the other way, and their control heuristic explains overestimation and underestimation with one mechanism. Third, the effect is often described as universal. In Klusowski's data a large majority of participants were correct that identical options were identical, and the aggregate effects came from a minority who thought otherwise before choosing anything. Langer's own paper is also less tidy than its reputation. It names two studies that did not work, and Study 2's headline gap of $8.67 against $1.96 comes from 53 office workers, six of them women.",

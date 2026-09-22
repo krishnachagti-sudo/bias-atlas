@@ -13,6 +13,23 @@
     "note": "Cronbach did not coin the phrase. His own reference list gives Fiedler's 1954 paper on assumed similarity measures as the example of the formula, and he notes Fiedler's ASo variant, computed between two others rather than between self and other. Fiedler's own report confirms it, defining ASo as assumed similarity between opposites, taken across a judge's predictions for his liked and disliked choices. What Cronbach added was the algebra that took the score apart. The version read for this entry is the August 1954 technical report, no. 10 of the Group Effectiveness Research Laboratory at the University of Illinois, written under an Office of Naval Research contract with Fiedler as principal investigator. Its title drops the words 'scores on' that the published article carries."
   },
   "evidence": "Cronbach defines the squared assumed similarity score as the sum, over items, of squared differences between a judge's rating of another person and that judge's rating of himself. He splits it into four terms: assumed elevation, assumed dispersion in elevation, assumed self-typicality, and assumed dispersion within items. Assumed elevation asks whether the judge places others at his own average level on the scale. Assumed self-typicality asks whether the judge treats his own profile shape as typical. The two dispersion terms measure how far the judge expects others to differ from one another, and Cronbach recommends pairing each with its neighbour. The same components sit inside accuracy scores, so a correlation between measured empathy and measured projection follows from the arithmetic. Cronbach's verdict on one published set of such correlations is that they would arise even where both sets of responses are determined strictly by chance, and that they have no psychological meaning. His illustrative decomposition uses eight judges and eight others. Hughes, Flournoy and Srivastava tested the modern version in 2021. 322 previously unacquainted people self-reported on the Big Five Inventory 2, met a stranger at least a day later for a 20-minute art gallery task, and afterwards rated that stranger. Their model estimates the direct path from a perceiver's own trait to their perception of the partner, holding the coded behaviour of both people constant. That path was positive in all five domains and in 9 of 15 facets. Agreeableness was the largest, an unstandardised 0.197 with a 95% interval of 0.116 to 0.285, standardised at .25. The other four ran from .16 for neuroticism down to .10 for extraversion.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The stranger rated from your own answers",
+      "text": "A man who describes himself as anxious and orderly fills in the same questionnaire about someone he met for ten minutes, and the two sets of answers line up more closely than ten minutes could account for."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The quiet colleague who must dislike crowds",
+      "text": "Someone who avoids large gatherings assumes a quiet new colleague avoids them too. He may well be right, which is the awkward part of the name: where the other person really is alike, a self-anchored guess is a good guess."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The panel that agrees with itself",
+      "text": "Interviewers who describe themselves as direct tend to describe candidates as direct. What is shared across all of one interviewer's ratings is a feature of the rater, which is why the effect shows up in an average rather than in one judgement."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "A preregistered dyadic study of 322 strangers found assumed similarity in all five Big Five domains, largest for agreeableness at a standardised path of .25, with both people's coded behaviour held constant.",

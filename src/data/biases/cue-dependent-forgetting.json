@@ -17,6 +17,23 @@
     "note": "The article \"Cue-Dependent Forgetting\", volume 62, number 1, pages 74 to 82, carries the subtitle \"When we forget something we once knew, it does not necessarily mean that the memory trace has been lost; it may only be inaccessible\". It gathers three experimental demonstrations under one heading rather than reporting new data, and Tulving notes it is an updated version of a paper read at the 19th International Congress of Psychology in London in 1969. The pair of terms is older than the article: Tulving and Psotka, writing in 1971, attribute \"trace-dependent\" and \"cue-dependent\" forgetting to Tulving and Madigan (1970)."
   },
   "evidence": "Three paradigms carry the case, and all three are Tulving's. Tulving and Pearlstone tested 948 high-school students on a single presentation of a categorised word list, with or without the category names printed on the answer sheet. Nineteen protocols were incomplete, so the analysis rests on 929. Cued recall beat uncued recall on all nine lists, and the gap grew with list length. The smallest gap, on the 12-word list with one item per category, did not reach significance, t = 1.88, while the other eight differences were reliable at better than the .01 level. For the 48-word list with one item per category the difference was 19.8 items, or 126 per cent. Subjects first tested without cues were then tested again with them, and their scores rose on eight of the nine lists, though on no list did they reach the level of the groups cued from the start. Tulving and Psotka then applied the idea to retroactive interference. Subjects learned between one and six categorised 24-word lists, and free recall of a given list fell from about 70 per cent of its words when nothing followed it to under 30 per cent when three or more lists did. Handing subjects the category names removed almost all of that. Mean cued recall was 18.0 words for the last list each group learned and 17.6 for lists followed by at least one further list, against 15.7 and 11.1 for those two classes in the first free recall test. For the first list learned by the groups that learned three or more, the gap was wider still, 16.0 words cued against 7.4 free. The third demonstration is the strangest. Tulving and Thomson had 40 subjects study 24 pairs such as glue-CHAIR, remembering only the capitalised word. Subjects then free-associated to strong extralist cues such as table, and among their responses were on average 17.7 of the 24 targets, 74 per cent of them. Asked to circle the words they recognised from the study list, they got 24 per cent, with 4.5 per cent false positives. Given the original input cues instead, they recalled 63 per cent. Experiment 2 repeated it with 22 subjects: 22 per cent recognition against 59 per cent cued recall. A third experiment with 14 subjects swapped the free-choice recognition test for a four-alternative forced choice, in case the subjects were simply setting a high criterion. They circled 118 of 221 generated targets, a hit rate of 53 per cent, or 38 per cent after the standard guessing correction. Subjects were producing the target word, failing to identify it as the studied word, and then recalling it when the pair mate was restored.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The name that arrives with the office",
+      "text": "Someone cannot produce a former colleague's name until the office they shared is mentioned, and then it comes at once. The name was never lost. What was missing sat in the surroundings at the moment of trying."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Going upstairs for something",
+      "text": "A man walks into the bedroom with no idea what he came for, goes back down, and remembers as soon as he reaches the kitchen. The kitchen holds the information the intention was encoded alongside."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The definition that returns later",
+      "text": "A student blanks on a definition in an exam, then recovers it when a later question names the study it came from. Treating the blank as knowledge never learnt misreads a cue that happened to be absent."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "Recognition failure of recallable words fitted one curve across 40 conditions in 12 experiments and kept turning up for two decades after, and the dispute is over what produces it rather than whether it happens.",

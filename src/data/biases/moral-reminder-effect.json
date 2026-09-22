@@ -18,6 +18,23 @@
     "note": "Their six-experiment paper set out the theory of self-concept maintenance. Experiment 1 is the Ten Commandments recall task and Experiment 2 the honour code signature. The signature-placement version arrives four years later, in a three-study paper by Shu, Mazar, Gino, Ariely and Bazerman in PNAS, which PNAS retracted in 2021."
   },
   "evidence": "In Experiment 1 of the 2008 paper, 229 students first wrote down either ten books read in high school or the Ten Commandments. They then had four minutes on a sheet of twenty matrices, each holding two numbers that sum to ten. Half handed in both the test and the answer sheet. Half recycled the test sheet and reported their own score, with two participants to be drawn for 10 dollars per matrix claimed. The reminder made no difference where nobody could cheat, means of 3.1 and 3.1, F(1,225) = 0.012, p = .91. Where they could, the books group claimed 4.2 and the Commandments group 2.8, F(1,225) = 5.24, p = .023. Verschuere and colleagues put that gap at 1.45 matrices and Cohen's d = 0.48. Experiment 2 used 207 students and swapped the recall task for a line above the matrices reading that the survey fell under the university's honour system, with a printed and signed name below it. The recycle groups claimed 5.5 against 3.3 in the control groups. The honour code groups claimed 3.0, indistinguishable from control at F(1,201) = 0.19, p = .66, and apart from the recycle groups at F(1,201) = 19.69, p < .001. Neither institution operated an honour system, so signing carried no threat of punishment. The 2012 PNAS paper moved to signature placement, on a mock tax return where participants reported matrix earnings and travel expenses. In its Experiment 1, 101 people, 37 per cent overclaimed income after signing at the top against 79 per cent signing at the bottom and 64 per cent signing nothing, chi-squared(2, n = 101) = 12.58, P = 0.002. Its Experiment 2, 60 people, gave 37 against 63 per cent, chi-squared(1, n = 60) = 4.27, P < 0.04, and a word-fragment task on which top-signers produced more ethics words, 1.40 against 0.87, F(1,58) = 4.22. Its Experiment 3 was a field audit at a motor insurer, 13,488 policies covering 20,741 cars. Customers signing at the top reported 26,098.4 miles driven against 23,670.6 at the bottom, F(1,13485) = 128.63, P < 0.001. The gap is 2,427.8 miles, or 10.25 per cent. That paper has been retracted and the figures in this paragraph from it are given as what it reported.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The declaration moved to the top",
+      "text": "An expenses form carries its honesty statement above the boxes rather than under them, on the claim that signing first makes the standard salient while the figures are being entered. The wording and the figures are unchanged, and only the position of the signature moves."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The rules written out before the test",
+      "text": "Pupils sit an unsupervised test after being asked to write down as many of the school’s conduct rules as they can remember. The proposal is that the question of honesty, once raised, no longer lets a small amount be taken without the taker noticing."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The note above the honesty box",
+      "text": "A tea room with no staff puts a line about honesty on the tin rather than a price list alone. On this account most people take a little rather than everything, and what holds that compromise in place is simply not thinking about it."
+    }
+  ],
   "replication": {
     "state": "failed",
     "headline": "Twenty-five labs and 5,786 people put the Ten Commandments effect at d = -0.04, and six studies on 5,794 people found no effect of signing at the top rather than the bottom.",

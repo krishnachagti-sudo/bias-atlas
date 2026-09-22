@@ -17,6 +17,23 @@
     "note": "\"Omission and commission in judgment and choice\" ran six experiments and named the effect. Ritov and Baron's vaccination paper reached print a year earlier and cites this one as in press."
   },
   "evidence": "The naming paper held intention and outcome fixed and varied only the route. In Experiment 1, 57 students at the University of Pennsylvania read a scenario in which John wants a tennis rival to eat a dressing that will make him ill. In one ending John recommends it, in another he watches the rival order it and says nothing. Thirty-seven subjects, 65 percent, rated every omission as less bad than every matching commission, and one subject went the other way. A second scenario gave 39 subjects, 68 percent, with none reversed. Among those who drew a distinction the gap averaged 27.6 points on a 100-point scale. Experiment 4 dropped the moral frame. Forty-eight subjects, after ten more were dropped for incomplete answers or added assumptions, rated treatment decisions where doing nothing carried a 20 percent risk of brain damage and treating carried 15 percent, and the reverse. Inactions were rated 16 points higher than actions on a scale from -100 to 100, F(1,46) = 10.2, p < .005. In the cases where the omission was the more harmful option, 19 of 144 comparisons, 13 percent, still favoured it; in the mirror cases only 3 of 144, 2 percent, favoured the more harmful commission. Ritov and Baron gave 53 undergraduates a disease killing 10 children in 10,000 and a vaccine with fatal side effects. Asked the highest side-effect death rate a compulsory programme should tolerate, 23 percent said none at all. Told the children who would die of the vaccine were the same children who would otherwise die of the flu, 47 percent accepted the maximum offered risk, against 9 percent in the basic condition. Baron and Ritov later ran the design with the response scale made symmetric between the two options. Across 105 subjects the mean bias was 0.11 on a scale running from -1 to 1, t(104) = 4.67, p = .0000 as printed, with 58 percent leaning towards omission and 22 percent the other way. Field work is correlational. Meszaros and colleagues mailed 500 subscribers of Mothering magazine and got 294 back, and a stated preference for errors of omission over errors of commission predicted refusing pertussis vaccine. DiBonaventura and Chapman surveyed 270 university faculty and staff and report that those showing the bias in hypothetical scenarios were less likely to take a flu vaccine.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The jab and the illness",
+      "text": "A parent declines a vaccine carrying a small risk of harm and accepts a larger risk from the disease itself. The harm they would have brought about weighs more than the greater harm they let stand, although the child is the same child either way."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Keeping the player who is out of form",
+      "text": "A selector who leaves an under-performing player in the side draws less blame after a defeat than one who brings in a replacement who then plays badly. The team loses both matches, and only one of the two decisions is treated as a mistake."
+    },
+    {
+      "kind": "everyday",
+      "tag": "What the seller did not mention",
+      "text": "Someone selling a bicycle who says nothing about a cracked frame feels cleaner than one who says the frame is sound. The buyer ends up equally misled and equally out of pocket, and most people rate the silence as the lesser wrong."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "A preregistered meta-analysis finds the moral judgement effect and fails to find the choice effect it is usually invoked to explain.",

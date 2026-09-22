@@ -10,8 +10,7 @@
   ],
   "category": "social",
   "statement": "People passively presume that what others tell them is honest, and abandon that presumption only when something triggers suspicion.",
-  "meaning": "Two claims travel under this heading and they are not the same claim. Truth-bias is a measurement: the proportion of messages a judge calls honest when a researcher asks. The truth-default is a claim about what happens when nobody asks, namely that the possibility of deception does not come to mind at all. Levine's theory joins them to a third idea, that the default is worth having. If most of what people hear is honest, believing it produces correct beliefs most of the time, and the cost of checking every utterance is higher than the cost of the lies that get through. Around that core sit a set of separate modules, each with its own evidence: that a few prolific liars tell most lies, that accuracy is higher for truths than for lies, that accuracy tracks the truth-lie base rate in a straight line, that some senders look honest whatever they are doing, and that lies are caught through evidence and confession rather than through reading behaviour. The theory is a package, and the parts have been tested to very different depths."
-  ,
+  "meaning": "Two claims travel under this heading and they are not the same claim. Truth-bias is a measurement: the proportion of messages a judge calls honest when a researcher asks. The truth-default is a claim about what happens when nobody asks, namely that the possibility of deception does not come to mind at all. Levine's theory joins them to a third idea, that the default is worth having. If most of what people hear is honest, believing it produces correct beliefs most of the time, and the cost of checking every utterance is higher than the cost of the lies that get through. Around that core sit a set of separate modules, each with its own evidence: that a few prolific liars tell most lies, that accuracy is higher for truths than for lies, that accuracy tracks the truth-lie base rate in a straight line, that some senders look honest whatever they are doing, and that lies are caught through evidence and confession rather than through reading behaviour. The theory is a package, and the parts have been tested to very different depths.",
   "origin": {
     "year": 2014,
     "who": "Timothy R. Levine",
@@ -19,6 +18,23 @@
     "note": "The article calls itself an initial sketch. It defines the truth-default as a passive presumption of honesty, arising either from never considering deceit or from falling back after failing to find evidence of it, and sets out the theory's modules and propositions. Levine credits the older observation that people are truth-biased to McCornack and Parks and to Zuckerman and colleagues, and says what is new is the argument that the presumption is adaptive rather than a flaw."
   },
   "evidence": "Bond and DePaulo's meta-analysis pooled 206 documents and 24,483 judges, covering 6,651 messages from 4,435 senders. Across 292 receiver samples the unweighted mean was 53.98% correct, and weighted methods gave 53.46%, 95% confidence interval 53.31% to 53.59%. Their own wording is that 54% is a reasonable estimate for the grand mean. The split behind the average carries more information than the average. In 207 samples, judges classified 61.34% of truthful messages correctly and 47.55% of deceptive ones. Receivers called 56.86% of messages honest on unweighted analysis and 55.23% weighted, 95% confidence interval 54.99% to 55.46%. Across studies the proportion of truth judgements was unrelated to the proportion correct, r = -.008. Levine, Kim, Park and Hughes tested the Park-Levine model against point predictions. Fifty participants judged interviews at an even base rate: they called 66.1% of messages true, got 67.1% of truths and 34.3% of lies right, and scored 50.7% overall, which did not beat chance. A separate 413 participants were assigned to eight base rates running from no honest messages to all of them. Accuracy rose with the proportion of honest messages, eta-squared .24 for the induction, slope 0.316, and the deviation from a straight line was not significant. Predictions built from the first group's truth and lie accuracy correlated .97 with the eight obtained means and missed them by 2.6 percentage points on average, the largest miss being 4.5 points. Levine, Park and McCornack's own third study, read here off the scan, recruited 177 students and analysed 174. Accuracy was 59.48% where 75% of messages were honest, 51.88% at 50% and 39.83% at 25%. Clare and Levine ran two experiments in which thought-listing came before or after a prompted truth-lie judgement, one with video and one face to face. Absent prior prompting, receivers mentioned the veracity of what they had heard less than 10% of the time. Serota, Levine and Boster asked 1,000 US adults how many lies they had told in a day. Sixty percent reported none, and almost half of all reported lies came from 5% of respondents.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The reason given for a missed delivery",
+      "text": "A courier explains a missed slot by saying the van broke down, and the customer reschedules without once weighing whether it is true. The possibility of a lie is not considered and rejected. It never comes up at all."
+    },
+    {
+      "kind": "everyday",
+      "tag": "A new colleague's account of an old job",
+      "text": "Over lunch someone describes the work they used to do, and the listener files all of it as fact. Checking every claim would cost far more than the occasional false one gets through, which is the argument for the default."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The moment the presumption breaks",
+      "text": "A friend's account of his weekend contradicts a photograph seen the day before, and only then does the listener start weighing everything else he said. Suspicion needed a trigger, and until the trigger came nothing was being assessed."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "The truth bias and the veracity effect hold in a large independent reanalysis, which at the same time found no trace of the sender differences the theory uses to explain low accuracy.",

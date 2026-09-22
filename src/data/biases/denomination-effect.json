@@ -16,6 +16,23 @@
     "note": "The name comes from this paper. The finding does not: Mishra, Mishra and Nayakankuppam had reported a 'bias for the whole' in the same journal in 2006, across four experiments on spending intentions. Raghubir and Srivastava's contribution was to test actual purchases rather than intentions, and to argue for a different mechanism."
   },
   "evidence": "Raghubir and Srivastava report three studies. Study 1 has three parts. In 1a, 89 undergraduates at two American universities were given $1, either as four quarters or as a note, and offered candy. About 63% (27/43) bought in the quarters condition against 26% (12/46) with the note, chi-square(1) = 12.16, p < .001. Mean spending was $0.56 against $0.30. In 1b, 75 drivers at a filling station in Omaha were given $5 as five $1 notes, five $1 coins, or one $5 note. Non-fuel purchase rates were 24%, 12% and 16%. The denomination coefficient was marginal, b = -0.70, Wald = 3.20, p < .07, and the authors state that combining the two five-dollar-in-ones conditions leaves no reliable difference against the $5 note. In 1c, 150 women aged 25 to 45 in Xiangtan, China, were handed RMB 100 as one note or as five, and offered soap, shampoo, bedding, and pots and pans. Non-spending doubled from 9.3% (7/75) to 20% (15/75) under the single note, Fisher's exact test p < .05. Tests on the likelihood of spending were one-tailed. Study 2 asked 79 students to imagine a $100 focus-group payment; 73.81% chose five $20 notes when the scenario gave them no savings goal to protect, against 21.62% when it did. Study 3 gave 119 students the same choice and split them on the tightwad-spendthrift scale. Tightwads' choice of the single note rose from 20% (5/25) to 57.6% (19/33) with the need for self-control; spendthrifts sat at 51.4% and 50%.",
+    "examples": [
+      {
+        "kind": "everyday",
+        "tag": "The note that survives the week",
+        "text": "A worker paid in one large note buys nothing from the kiosk all week, while a colleague given the same sum in small notes has spent it by Wednesday. The purchasing power is identical and the barrier is the breaking."
+      },
+      {
+        "kind": "everyday",
+        "tag": "The gift kept because it is whole",
+        "text": "A child given a single large note puts it away, and a child given the same amount in coins spends it in the shop. Neither is deciding about the sweets; each is deciding whether to break what they hold."
+      },
+      {
+        "kind": "everyday",
+        "tag": "What happens once the note is broken",
+        "text": "The large note finally goes on a sandwich, and the change leaves the wallet faster than the small notes would have. The effect governs whether spending starts, and it works the other way once it has."
+      }
+    ],
   "replication": {
     "state": "mixed",
     "headline": "Two independent tests exist. An Indonesian experiment with 240 students and 120 shoppers found no denomination effect on spending. An American field study of 154 people found one, but its p = .056 belongs to a three-condition test of payment form, not to denomination alone.",

@@ -13,6 +13,23 @@
     "note": "Their paper is titled \"Unskilled and Unaware of It: How Difficulties in Recognizing One's Own Incompetence Lead to Inflated Self-Assessments\". The phrase \"Dunning-Kruger effect\" appears nowhere in it. The label came later, and this entry could not verify who coined it."
   },
   "evidence": "Four studies, on 65, 45, 84 and 140 Cornell undergraduates, testing humour, logical reasoning and English grammar. Participants took a test and then estimated their standing against their classmates. The famous pair of figures, a 12th percentile score against a 62nd percentile self-rating, is the abstract's summary across all four studies. The individual studies differ. In the humour study the bottom quartile scored at the 12th percentile and claimed the 58th. In the logical reasoning study they scored at the 12th, rated their general ability at the 68th and their test score at the 62nd. In the grammar study they scored at the 10th and claimed the 67th and the 61st. The fourth study repeated the logical reasoning test, with the bottom quartile at the 13th percentile claiming the 55th and the 53rd, and then trained half the sample in logical reasoning. Kruger and Dunning later summarised that training as taking the bottom quartile from a 36 point percentile overestimate to a 17 point one. The picture that made the finding famous is the graph, which plots self-assessment against measured ability in four quartiles and shows the two lines converging as ability rises.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The beginner in the language class",
+      "text": "A student six weeks into a new language puts themselves a little above the middle of the class. Hearing their own errors would take the grammar they have not learned yet, so the tool for judging the work is the tool they are missing."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The first year of driving",
+      "text": "A driver a few months past the test rates their own road sense as better than most. Spotting what a skilled driver does differently takes the skill itself, so the gap between the rating and the ability is widest exactly here."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The strong candidate who expects company",
+      "text": "Someone who finishes an exam quickly and correctly assumes the paper was easy for everybody and marks their own standing down. The error at the top is different in kind: they are wrong about other people rather than about themselves."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Both camps draw the same quartile graph, and simulated data holding no metacognitive deficit draw it too, which is what the argument is about.",

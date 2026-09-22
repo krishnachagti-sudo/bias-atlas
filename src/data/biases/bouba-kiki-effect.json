@@ -17,6 +17,23 @@
     "note": "The names in the modern retelling are not Köhler's. On page 242 of the 1929 first edition, read directly for this entry, he shows two figures and asks which the reader would rather call 'takete' or 'maluma', adding that the reader 'will probably be able to decide with ease'. No participants, counts or statistics accompany it. Bouba and kiki arrive 72 years later, in Ramachandran and Hubbard's 2001 paper, which is where the effect got its usual name."
   },
   "evidence": "The founding text carries no data, and the popular revival carries almost none. Ramachandran and Hubbard asked people which of two figures was a 'bouba' and which a 'kiki' in Martian, and reported that 95% picked the same way. Their paper gives no sample size and no procedure for that figure. Their footnote also misdates the stimulus names, saying Köhler called them 'takete' and 'baluma' in 1929 and renamed the second to 'maluma' in 1947, where the 1929 text already reads 'maluma'. Ćwiek and colleagues repeat the same slip in a third form, giving 1929 as 'baluba'. Usable numbers start with Styles and Gawne's meta-analysis. Pooling 13 published datasets, about 558 adults, in which participants heard a pseudoword and chose between a curvy and a spiky shape, they put the congruent response rate at 89%, 95% CI 84 to 94, for pseudowords that are phonologically legal in the participants' language. That figure is the honest baseline for the classic experiment, and it is measured on English, French and Italian speakers.",
+"examples": [
+  {
+    "kind": "everyday",
+    "tag": "Two invented names for one pudding",
+    "text": "A kitchen tests two made-up names on diners and asks which belongs to the soft domed dessert and which to the brittle shard. The votes fall the same way every evening, although neither name means anything and both puddings taste alike."
+  },
+  {
+    "kind": "everyday",
+    "tag": "Naming a pair of soft toys",
+    "text": "A family invents nonsense names for two toys, one a lumpy cushion and one a spiked star. The rounder-sounding name goes to the rounder toy, and nobody in the room can say what made the pairing obvious."
+  },
+  {
+    "kind": "everyday",
+    "tag": "The guessing game in a language class",
+    "text": "Learners are shown two unfamiliar shapes and two words from a language none of them speaks, then asked which goes with which. They agree far more often than chance allows, on words that carry no meaning for them at all."
+  }
+],
   "replication": {
     "state": "replicated",
     "headline": "The largest test, 917 speakers of 25 languages, found 72% congruent matching, and 17 of the 25 languages were reliably above chance rather than all of them.",

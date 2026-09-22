@@ -17,6 +17,23 @@
     "note": "The paper coined the name and appeared in volume 11, issue 1, pages 21 to 33. Its data are older than its date: YouGov administered the questions on 12 and 13 October 2016. The authors posted a preprint on 14 December 2022, and its repository record is titled 'Motornomativity'. The document itself spells the word correctly, so the slip belongs to the record rather than to the paper."
   },
   "evidence": "2157 UK adults answered, 1053 given the motoring form of the questionnaire and 1104 the non-motoring form. Four of the five pairs produced different response patterns across forms. The fumes pair was the widest: 17% agreed that people should not drive in populated areas where others breathe the car fumes, against 75% for the same sentence about cigarette fumes, χ2(1) = 671.11, p < .001, φ = .64. The theft pair gave φ = .53, the risk pair φ = .35 and the drive-less pair φ = .23. The fifth pair, on whether a delivery driver or a chef may bend a few rules to stay profitable, showed no difference at all, χ2(1) = 1.45, p = .23, φ = .03. Drivers and non-drivers answered the non-motoring questions almost identically, and differed on only two of the motoring ones, including 18.0% against 31.4% agreement on the driving fumes item. Overall agreement percentages for the other four pairs appear only in the paper's Figure 1, which carries no text layer. Its prose gives percentages for those pairs only split by sex or by social grade. These figures were read off the authors' December 2022 preprint, which is open. The journal version was still closed on 21 September 2026, and its abstract, read at the publisher's own article page that day, carries the same sample size and the same 17% and 75%.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "Idling at the school gate",
+      "text": "Parents at a residents' meeting treat engines left running outside the school as one of those things. The same meeting would not let somebody stand at the gate smoking beside the queue. Both put fumes where children are waiting, and only one of them draws an objection."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The pavement and the sofa",
+      "text": "A car left across the pavement for a week goes unremarked by the neighbours who step around it. A sofa left in the same spot for one afternoon is photographed and reported. The obstruction is the same obstruction, and the verdict moves with what is doing the obstructing."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Two ways of counting the dead",
+      "text": "Deaths on the roads are reported as accidents and totalled once a year. The same number of deaths from a contaminated water supply would bring an inquiry and resignations. What changed is the source of the harm, not its size."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "The gap reappeared in an American sample, in a second British poll and in a three-country study, was smallest in the Netherlands, and a Canadian survey found the same asymmetry over speed limits.",

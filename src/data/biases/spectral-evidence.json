@@ -16,6 +16,23 @@
     "note": "The commission creating the court was issued on 27 May 1692, and instructed it to hear and determine all manner of crimes according to the law and custom of England and of the province. The phrase is the participants' own. Governor Sir William Phips, writing to London on 12 October 1692, described prisoners with only spectre evidence against them, and Robert Calef used spectre evidence for what the January 1693 juries asked the bench about. The doctrine is older than the outbreak: the principle Hale places first was, by Burr's note, the answer the Connecticut ministers gave their court in 1669 in almost the same words."
   },
   "evidence": "The court's record is the evidence, and it runs one way until the rule changes. Calef's session by session account has Bridget Bishop condemned first and executed on 10 June. Five were tried on 30 June and these were all condemned that Sessions. Six were tried on 5 August and these were all brought in Guilty and Condemned. Six more were tried on 9 September and nine on 17 September, all sentenced to death. Nineteen were hanged. Giles Corey was pressed to death on 16 September for refusing to plead, which Linder describes as a man of over eighty pressed under heavy stones for refusing to submit to trial. What happened when a jury did acquit is on the record too. The jury returned not guilty for Rebecca Nurse and the accusers in court cried out. One judge said he was not satisfied, the chief judge pointed the jury back to a remark of hers, and the jury went out again and convicted. The foreman Thomas Fisk set his reasons down in writing on 4 July 1692. Phips ended that court on 29 October. The General Court created a Superior Court of Judicature on 25 November and, by a supplementary act of 16 December, sent it to Essex on 3 January 1693. Calef reports the result at Salem: ignoramus was returned on the bills against thirty, billa vera against twenty six more, and of all these three only were found Guilty by the Jewry upon Trial. When the jurors asked the bench what account they ought to make of the spectre evidence, the answer was as much as of Chips in Wort. At Charlestown at the end of January, Calef writes, the Spectre-Evidence was not made use of in these Tryals, so that the Jewry soon brought her in not Guilty, and the rest tried with Sarah Daston were acquitted as well. Phips gave London his own count on 21 February 1692/3: all that were brought to tryall to the number of fifety two, were cleared saving three. He reprieved those three and five condemned by the earlier court, on the Attorney General's advice that there was the same reason to clear the three condemned as the rest. Stoughton left the bench and came no more that Court.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The torment nobody else can see",
+      "text": "A witness says the accused's shape pinched her through the night while the accused sat in plain view across the room. Nothing the accused does can count against the account, because the account already places her body elsewhere."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The alibi that cannot help",
+      "text": "An accused establishes that she slept at home with her family at the hour named, and her household will swear to it. The charge never claimed her body was present, so the proof leaves the testimony exactly where it stood."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The premise doing all the work",
+      "text": "Whether such testimony identifies anybody turns on a prior claim about what the tormenting spirit is permitted to do. Grant that it can wear only a guilty face and the account convicts; deny it and the same words say nothing about whose face was worn."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "No replication record exists for a seventeenth-century rule of evidence, and none was found. What the page rests on is the court record, which is a single documented case rather than a repeated measurement.",

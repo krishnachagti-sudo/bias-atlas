@@ -18,6 +18,23 @@
     "note": "Slamecka set out to confirm the associationist doctrine that learning a list forms direct bonds between its words, and expected the cued group to do better. Writing about the paper sixteen years later he said the first experiment failed to show any advantage for the cued group and revealed a small but reliable inhibitory effect, that he ran six experiments in all, and that each told the same story: provision of free words did not aid memory performance."
   },
   "evidence": "Slamecka's six experiments were not read for this entry and are described here through Nickerson's 1984 review. Participants heard 30-item lists read twice and then recalled them. The cued group received a written subset and was asked for the remainder, and the number of cue words ranged from 5 to 29. Rarity of the words and the strength of associations between them were varied. Cued participants recalled a smaller proportion of the non-cue items than controls whatever the composition of the list and whatever the number of cues. The last two experiments matter and are rarely quoted. Slamecka suspected the cued group was penalised by having to scan the cue sheet while controls began recalling at once, so he equalised the head start, and the inhibiting effect disappeared. He put the earlier result down to what he called a tangential procedural artifact affecting short-term memory, and rested his conclusion on the absence of facilitation rather than on the presence of harm. Nickerson reviewed the two decades of work that followed and found no explanation adequate and compelling. Bäuml and Aslan later separated the instruction from the exposure. They tested 108 students at Regensburg University in three groups of 36, on six twelve-item categorised lists holding eight target and four non-target items. The four non-target items were shown again as retrieval cues, shown again for relearning, or retrieved from word stems. Every condition was tested with category-plus-first-letter probes in a random order, which forces the same recall sequence on cued and control participants. Cuing dropped target recall from a control level of 77.3% to 70.8% and 70.7%, differences of 6.5 and 6.6 points, F(1, 35) = 7.2 and F(1, 35) = 10.5. Relearning moved it from 74.0% to 73.6% and 72.9%, differences of 0.4 and 1.1 points, both F < 1. Retrieving the same four items dropped it from 75.2% to 67.9% and 67.2%, differences of 7.3 and 8.0 points, F(1, 35) = 14.2 and F(1, 35) = 10.7. Cuing and relearning differed, F(1, 70) = 4.6, p = .035, while cuing and retrieval did not, F(1, 70) < 1. Reading the words as hints cost as much as retrieving them; reading the same words to learn them cost nothing.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The shopping list half recovered",
+      "text": "Someone who has mislaid the list is reminded of four things that were on it and then tries for the rest. They come away with fewer of the remaining items than if nobody had reminded them of anything."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The revision prompts that cost marks",
+      "text": "A student given half the terms from a lecture as prompts recovers fewer of the other terms than a classmate handed a blank sheet. Both are marked only on the terms nobody was given."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The witness read their own statement",
+      "text": "A witness is read back part of what they said earlier and asked what else happened. The reading looks like help, and the part supplied is not the part anyone needed."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "Pooled across 96 samples the impairment is medium sized, g = -0.55 between subjects and -0.45 within, and it survives most changes to the procedure.",

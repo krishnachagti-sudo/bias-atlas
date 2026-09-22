@@ -16,6 +16,23 @@
     "note": "The paper names the effect and credits the phrase to Robin Hogarth in a footnote. It treats the phenomenon as already established in psychology, citing Fischhoff's 1975 hindsight work, and asks the economic question instead: whether incentives, feedback and markets clear the bias away."
   },
   "evidence": "The economics experiment ran in two stages. In the first, 51 Wharton students read Value Line reports and predicted eight companies' 1980 earnings. In the second, run two months later, groups of nine Wharton students who had traded in earlier market experiments saw the identical reports with the actual 1980 earnings filled in, then traded assets whose dividend was the first group's mean prediction. Pricing the asset correctly required ignoring the true earnings. Equilibrium prices settled between the no-bias and full-bias predictions, and the authors report rejecting both hypotheses strongly. Judgements by Chicago MBA students given incentives (n = 19) or incentives plus feedback (n = 13) showed more bias than judgements made inside the markets, which the paper summarises as the market reducing bias by about half. That reduction reached significance at 5% for three of the eight companies. Feedback on its own did nothing, and the incentives and feedback groups were pooled because their biases did not differ. The famous demonstration is a different study and is described below.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "Directions to your own house",
+      "text": "A resident tells a visitor to turn at the old bakery, which closed years ago and now sells phone cases. The turning is obvious from inside a head that has taken it a thousand times, and the visitor has no way to find it."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The handover note",
+      "text": "An analyst leaving a job writes down the steps for a monthly report and omits the two only they knew about, because those steps no longer feel like knowledge. The successor is left reading a document that assumes them."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The family card game",
+      "text": "Someone teaching a game they learned as a child gives the rules in three sentences and cannot understand the blank looks. The conventions they skipped were never stated to them either, which is why they are invisible now."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Two large replication efforts disagree. Seven experiments on 3,074 people put the false-belief effect at d = 0.20, which their authors call a failure to replicate. Three later experiments on 1,308 people put it at d = 0.314, and at d = 0.407 for an in-group protagonist.",

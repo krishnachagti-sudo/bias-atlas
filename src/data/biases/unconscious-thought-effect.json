@@ -13,6 +13,23 @@
     "note": "The paper reports four studies and gives the effect its \"deliberation-without-attention\" name. The paradigm itself is older, introduced by Dijksterhuis in the Journal of Personality and Social Psychology in 2004, and the theory behind it was set out separately by Dijksterhuis and Nordgren in Perspectives on Psychological Science in 2006."
   },
   "evidence": "Studies 1 and 2 were laboratory tasks about four hypothetical cars, described by four attributes each in the simple condition and twelve in the complex condition. Study 1 asked for a choice and reported the crucial interaction as F(1,76) = 4.85, P < 0.04, with 18 to 22 participants per cell. Study 2 asked instead for attitudes and used the gap between ratings of the best and worst car, F(1,47) = 5.63, P < 0.03, with 12 to 14 per cell. Study 3 asked 49 students about a product they had recently bought, and found that self-reported amount of thought correlated with satisfaction at r(15) = 0.57, P < 0.03 for simple products and at r(16) = -0.56, P < 0.03 for complex ones. Study 4 stopped shoppers leaving two Amsterdam shops, IKEA for furniture and the Bijenkorf for clothes and accessories. Each was asked how much thought the purchase had taken, then telephoned weeks later about satisfaction. Splitting each sample of 27 at the median gave F(1,25) = 6.52, P < 0.02 for the Bijenkorf, where more thought went with more satisfaction, and F(1,25) = 6.12, P < 0.02 for IKEA, where the relation ran the other way. The paper reports no effect sizes for its own studies.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The flat list and the crossword",
+      "text": "Someone reads the details of four flats, each with a dozen features, then does a crossword for four minutes before choosing. The prediction is that this beats four minutes spent thinking about the flats. The gap is minutes long, and what matters is where attention sat rather than sleep."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The shortlist left for a meeting",
+      "text": "A panel reads four candidate files, goes off to an unrelated meeting, and decides on return without discussing them in between. The claim is that the interruption improves the choice when the files carry many attributes, because attention was elsewhere while the choice settled."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The prospectus and the word puzzle",
+      "text": "A school leaver reads the full description of four courses, then spends a few minutes on a word puzzle rather than weighing them up. On this theory conscious comparison disturbs the weighting of what matters, and the distraction leaves that weighting alone."
+    }
+  ],
   "replication": {
     "state": "failed",
     "headline": "A 399-person study built to the proponents' own list of optimal conditions found no advantage, and the pooled estimate from earlier work falls to almost nothing once small-study bias is corrected.",

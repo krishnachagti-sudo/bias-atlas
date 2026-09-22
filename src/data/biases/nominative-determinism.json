@@ -13,6 +13,23 @@
     "note": "Two columns did the work, and both were read for this entry on the New Scientist site. On 5 November 1994 Feedback paired a book on the polar regions by Daniel Snowman with a guide to subterranean London co-written by Richard Trench, then quoted Jen Hunt of the University of Manchester in The Psychologist: \"Authors gravitate to the area of research which fits their surname.\" Her example was a paper in the British Journal of Urology by Splatt and Weedon, and readers were invited to send more. The name arrived six weeks later. The column of 17 December 1994 reports \"evidence supporting the hypothesis (which C. R. Cavonius suggests should be called Nominative Determinism) continues to pour in from readers\", and refers back to items of 5 November and 3 December. John Hoyland, who created Feedback, is widely named as the coiner; the column credits a reader. The psychological claim is eight years younger than the phrase and comes from Pelham, Mirenberg and Jones in 2002."
   },
   "evidence": "Pelham, Mirenberg and Jones ran ten archival studies in 2002, mostly on the Social Security Death Index and on professional directories. Deceased women named Mildred and Virginia were distributed across Milwaukee and Virginia Beach in the predicted direction, chi-square(1) = 38.25, and the men named Jack and Philip across Jacksonville and Philadelphia more strongly still, chi-square(1) = 202.05. Across 35 American city names beginning with Saint, 445 women lived in the city matching their first name against 308.8 expected, 44% above chance, chi-square(1) = 41.97; for men the figures were 3,956 against 3,476.0, or 14% above, chi-square(1) = 58.63. The career studies are the famous ones and the smallest. Comparing dentists with lawyers in eight states, the female result reached chi-square(1) = 4.72 and the male result did not reach significance at chi-square(1) = 2.14. A supplementary national count found 482 dentists named Dennis against 257 named Walter and 270 named Jerry, three names of near-identical census frequency, an odds ratio of 1.83. Among published geoscientists there were 93 called George or Geoffrey against 65.5 expected, chi-square(1) = 4.58.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The dentist called Dennis",
+      "text": "The strong claim predicts a countable excess: more Dennises among dentists than the name’s share of the population allows. The weak claim only collects the coincidences, and nobody is writing down the dentists called Lawrence."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The list of tradesmen with fitting surnames",
+      "text": "A list of roofers named Slater and builders named Mason circulates and is read as evidence of something. It is evidence of nothing until the names that do not fit are counted as well, and those are never collected."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The move to a town of the same name",
+      "text": "Implicit egotism holds that a person whose surname matches a town’s should be slightly more likely to settle there. That is a causal claim about letters tipping one of the largest decisions a person makes, and only an excess over the base rate could show it."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Simonsohn reproduced the original patterns and then found confounds large enough to account for all of them, in marriage, occupation and moving alike.",

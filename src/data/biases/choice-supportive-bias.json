@@ -18,6 +18,23 @@
     "note": "The paper named choice-supportive source monitoring and supplied the paradigm still in use. Mather and Johnson published the companion ageing study in Psychology and Aging the same year. The 2000 paper places itself after older work on selective memory for decision-supporting information, citing Davidson and Kiesler's 1964 job-candidate study and Greene's 1981 detective-story study, and notes that neither asked which option a remembered fact belonged to."
   },
   "evidence": "Four hypothetical scenarios were run as questionnaires: two job candidates, two blind dates and two roommates, the last in a choice version and a rejection version. Each option carried a list of positive and negative features, pretested so that on average 21 of 22 raters agreed on the valence of each. Participants picked one option, spent 5 to 45 minutes on unrelated tasks, then saw the features intermixed with new ones and said which option each had belonged to, or that it was new. Scores were normalised within each scenario, so a participant counted as biased only relative to other participants facing the same lists. Mean asymmetry scores were 0.22 for job candidates, t(141) = 2.73, p < .01, with 142 participants; 0.22 for dating, t(74) = 1.99, p < .05, with 75; 0.35 for the first roommate scenario, t(76) = 3.26, p < .01, with 77; and 0.44 for the second roommate choice, t(171) = 5.76, p < .001, with 172. The 207 people asked to reject a roommate rather than choose one scored 0.28, t(206) = 4.56, p < .001. The bias was carried by positive features. Pooling the choice and rejection groups of the second roommate scenario, it reached 0.39 for positive items and 0.16 for negative ones, F(1, 377) = 15.76, p < .001. Features that had belonged to neither option were also attributed asymmetrically, though significantly so in only three of the five scenarios. That is the finding the authors use to place part of the distortion at source attribution rather than at encoding.",
+    "examples": [
+      {
+        "kind": "everyday",
+        "tag": "The flat that was chosen",
+        "text": "Two flats were viewed, one with damp and one with a dark kitchen. Months later the tenant remembers both faults as belonging to the flat she turned down, though one of them is in the room she is standing in."
+      },
+      {
+        "kind": "everyday",
+        "tag": "The job offer that was refused",
+        "text": "Both posts came with long hours and one came with a good pension. Recalling the decision a year on, the long hours attach to the post declined and the pension to the post taken. The features have swapped places, not changed value."
+      },
+      {
+        "kind": "everyday",
+        "tag": "The module picked over the other one",
+        "text": "A student compares two courses, each with a strong reading list and a heavy assessment. By the end of term the heavy assessment is remembered as the other course's. The error is about where a fact belongs, not about how good the course was."
+      }
+    ],
   "replication": {
     "state": "replicated",
     "headline": "Groups sharing no author with the original have found the misattribution effect with source-recognition tests, and a false reminder about which option was picked carries the bias with it. Free recall is where it breaks, and the ageing claim has not held.",

@@ -2,7 +2,11 @@
   "no": 255,
   "slug": "information-bias",
   "name": "Information bias",
-  "aliases": ["Information heuristic", "Pursuit of noninstrumental information", "Information bias (psychology)"],
+  "aliases": [
+    "Information heuristic",
+    "Pursuit of noninstrumental information",
+    "Information bias (psychology)"
+  ],
   "category": "decision",
   "statement": "People rate a diagnostic test as worth doing when no result it could return would change the treatment they would give.",
   "meaning": "Two unrelated concepts carry this name, and this entry is about the one from decision research. Baron, Beattie and Hershey set out a normative rule for when a question is worth asking. A question earns its keep only if some possible answer would lead to a different action. Their subjects rated tests as worth doing when no answer could change the treatment. Two patterns produced that result. In the first, the test reports on a possibility that would not be treated whatever it showed. In the second, the test moves the probability of a diagnosis that will be acted on either way. The other information bias belongs to epidemiology, where Althubaiti gives it as a synonym for misclassification and defines it as error arising from how study measurements are obtained. Recall bias sits inside that second concept as a form of self-reporting bias, and selection bias is its counterpart, covering error introduced when subjects enter the study rather than when data are collected. Nothing about the epidemiological term concerns what a decision maker chooses to find out. The mirror image of the decision-research sense, refusing to look at information that could change something, is filed here under the ostrich effect.",
@@ -13,6 +17,23 @@
     "note": "The second of two 1988 papers on diagnostic reasoning. Six experiments named three biases, congruence, information and certainty. Crossref's record carries only the main title and drops the subtitle that names them."
   },
   "evidence": "Experiment 4 asked subjects to rate medical tests for choosing between three diseases, A, B and C, with prior probabilities fixed at .64, .24 and .12. The instructions said that the most likely disease would be treated whether or not the test was done, and that a wrong choice would not be caught in time to switch. Ratings ran from 0, meaning worthless, to 100. Fourteen subjects were tested and twelve were analysed. Of ten cases, only two had a normative value above zero, and those two drew the highest mean ratings, 61 and 75. Six of the worthless cases drew mean ratings between 25 and 48. Cases 4 and 6 gave information about diseases that would not be treated whatever the result, and they were rated above the matched worthless Case 10, t(11) = 3.30, p < .005. Cases 5 and 7 could shift the probability of disease A, which would be treated in any case, and were rated above Cases 3 and 8, t(11) = 3.86, p < .005. Four subjects gave ten zero ratings between them across Cases 3 to 8, one writing that the patient has to be treated for disease A either way. The three earlier experiments show the same gap between what the model priced at nothing and what subjects paid attention to. In Experiment 1 the expected utility of the question was zero for a mean of 36 of the 60 questions, and the mean number of zero ratings was five. In Experiment 2 the figures were 24 of 45 and six. Thirty-three subjects were given two further worthless-test problems and asked to justify their answers aloud. A majority answered correctly, and the paper prints transcripts of subjects who defend a useless test, are asked what they would do with each result, and then abandon the defence. A separate effect from the same family is Bastardi and Shafir's. Their subjects were paid Princeton and Stanford undergraduate volunteers. They gave 140 of them a course to register for, taught by a professor the student had just learned was the less popular one, and 82 percent registered. Another 149 got the same choice with the professor unknown until the next day, and 56 percent waited to find out. Since more than four in five register under the worse outcome, the information was worthless for most of them. Of the 56 percent who waited, 27 percentage points then declined the course, so 29 percent of the uncertain group turned it down against 18 percent of the simple group, chi-square(1, N = 289) = 4.86, p < .03. In their admissions scenario, 261 students in the simple version and 278 in the uncertain version, rejection ran at 54 percent after pursuit against 43 percent without it, chi-square(1, N = 539) = 6.15, p < .02. Redelmeier, Shafir and Aujla surveyed 1,206 clinicians, 171 dialysis nurses, 461 practising urologists and 574 academic physicians, splitting each scenario into a version where the information was already in hand and a version where it had to be sought. Among the nurses, 65 percent were willing to donate a kidney after choosing to be tested and being found suitable, against 44 percent who knew they were suitable from the start, P = 0.007.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The scan that changes nothing",
+      "text": "A patient asks for a scan although the treatment will be the same whatever it shows. The result would be interesting and it would not move a single decision, which is the test a question has to pass to be worth asking."
+    },
+    {
+      "kind": "everyday",
+      "tag": "One more reference for a done deal",
+      "text": "A hiring panel has settled on making the offer and asks for a third reference anyway. No answer it could come back with would stop the offer, so the week of waiting buys reassurance rather than information."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Measuring a tyre due for replacement",
+      "text": "A driver books a tread measurement on a tyre he has already decided to change this month. Whatever the number turns out to be, the tyre comes off, and the appointment answers a question with no action behind it."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "No repeat of the diagnostic-test experiment was found, so the size of the original effect rests on twelve subjects rating ten cases.",

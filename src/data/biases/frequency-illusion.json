@@ -13,6 +13,23 @@
     "note": "Zwicky named the Frequency Illusion in \"Just between Dr. Language and I\", which closes by calling itself a lightly edited version of a posting to the American Dialect Society mailing list of the same day. The older name is 11 years older and comes from a reader item in the Bulletin Board column of the St Paul Pioneer Press, 16 October 1994, signed with the pen name 'Gigetto on Lincoln'. Neither text is peer reviewed, and neither reports a measurement."
   },
   "evidence": "Three documents carry the origin of the idea and none of them counts anything. The 1994 Bulletin Board item states a rule: the first time you learn a new word, phrase or idea, you will see it again in print within 24 hours, topical things excepted. It supports the rule with one anecdote about the Baader-Meinhof gang. Zwicky's 2005 post offers a demonstration rather than an experiment. A Stanford group studying the quotative 'all', as in the song title \"I'm like 'yeah' and she's all 'no'\", believed the form was common in the speech of young Californians, and the undergraduates on the project reported friends who used it \"all the time\". Those friends were recorded, the conversations transcribed and the quotatives extracted. Quotative 'all' turned out to be very low in frequency while quotative 'like' was common. The post gives no rates, no sample size and no test. The counts reached print two years later, in a paper Zwicky co-wrote with John Rickford, Thomas Wasow and Isabelle Buchstaller. Their 2005 Stanford Tape-Recorded Corpus yielded 544 quotatives, of which 23, or 4.2%, were 'all', against 375 tokens of 'like'. His 2006 abstract restates the definition and credits selective attention and confirmation bias, again with no data. The one quantitative survey located tests a different population. Van der Meulen searched a database of 5,678 entries from Dutch prescriptive publications dated 1900 to 2018. It holds 238 entries carrying recency statements about 341 usage items, and 1,249 entries carrying 1,786 frequency statements. He checked 18 lexical frequency claims against usage corpora and rated all but one an illusion, the exception being meer of mindere mate, whose condemned variant took 76.7% of its variable. Seven grammatical items drew 24 statements, of which 21 fell below his threshold. That threshold is 73%, the mean reading Dutch respondents gave the word vaak, or 'often', in a survey by Willems, Albers and Smeets.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The name heard twice in a week",
+      "text": "A couple settle on an unusual name for a child, then meet two children who have it and conclude the name has become popular. The new attention is doing the work, and whether the name is actually rising is a separate question nobody checks."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The word learnt on Tuesday",
+      "text": "Someone looks up a word they have never met and finds it three times before Sunday, in a newspaper and twice in a podcast. The second half of the illusion is the conclusion drawn: that the word is suddenly in fashion rather than suddenly noticeable."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The roadworks on the commute",
+      "text": "A driver who reads about a pothole programme starts counting cones on the way to work and decides the council has stepped up its digging this month. Counting began when the noticing did, so there is no earlier count for the judgement to rest on."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "No replication attempt was found, and there is no original experiment to repeat: the effect was named in a blog post that reports no measurements.",

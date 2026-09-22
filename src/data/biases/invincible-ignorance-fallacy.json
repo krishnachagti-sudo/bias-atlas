@@ -2,7 +2,10 @@
   "no": 537,
   "slug": "invincible-ignorance-fallacy",
   "name": "Invincible ignorance fallacy",
-  "aliases": ["Invincible ignorance", "Apriorism"],
+  "aliases": [
+    "Invincible ignorance",
+    "Apriorism"
+  ],
   "category": "belief",
   "statement": "Refusing to look at any evidence against a position is named as a fallacy, though the book credited with naming it treats it as a cast of mind rather than a fault in an argument.",
   "meaning": "The charge is about a person, not about a piece of reasoning. Fearnside and Holther put it in Part II of their book, under psychological fallacies, and the introduction to that part says plainly that if fallacy is going to mean faulty reasoning in argument, then these appeals and devices are not real fallacies. The section it sits in is called Biased Misconstructions, and the group is defined by the speaker having already deceived himself, so that anyone he beguiles he beguiles incidentally. Their own summary of the phenomenon is a cast of mind which seems peculiarly closed to evidence, where the facts are ignored or brushed aside as somehow deceptive and the principles reaffirmed. That is a claim about a disposition. It fixes what a test of the fallacy would have to measure, which is whether counter-evidence moves the person, and no test under that name was found.",
@@ -13,6 +16,23 @@
     "note": "The book lists it as fallacy 28, \"Apriorism: invincible ignorance\", and the running head in its table of contents pairs the two names. The authors do not present the phrase as their own. Their text reads that one seems confronted with what has been called invincible ignorance, which records a usage already in circulation rather than coining one. The theological sense is centuries older and means something close to the opposite."
   },
   "evidence": "The book argues its case from worked examples rather than from data. The chapter opens with Galileo inviting learned men to look at the moons of Jupiter, and their refusal on the ground that anything they saw would be an illusion, since astronomy had already fixed the number of the heavenly bodies. Three further examples are set out with commentary. A woman told that ten years of fluoridation cut tooth decay in schoolchildren by 60% replies that she opposes experimentation on human beings, children especially. A speaker declares that government regulation is a noose around the neck of initiative and that he is not even interested in hearing the reasons for uniform accounting rules. A union member deduces from the principle that companies exist to make money that three more weeks of negotiation would be wasted. The theological term the phrase came from is documented independently. Aquinas, in the Summa Theologiae, writes that ignorance of what a man is unable to know is called invincible because it cannot be overcome by study, and that no invincible ignorance is a sin. The 1910 Catholic Encyclopedia gives the same division, calling ignorance invincible when a person cannot rid himself of it despite moral diligence, and adding that such ignorance is involuntary and therefore not imputable. In that literature the word excuses the person. In the fallacy literature it accuses him.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The meter that is always faulty",
+      "text": "Shown three separate meter readings against his estimate, a landlord says that all three meters must be broken and declines to look at a fourth. No reading is allowed to count, so nothing could shift the position."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The date that moves",
+      "text": "A member of a group predicts that the scheme will collapse by spring. Spring passes, and he explains that the figures are being held back. Each result that goes the wrong way is re-described, and the position survives on the handling rather than on anything found."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The remedy that works either way",
+      "text": "A practitioner takes improvement as proof that the remedy works and deterioration as proof that it was started too late. Both outcomes are absorbed in advance, which is a cast of mind rather than a step in an argument."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "No study measuring this fallacy under its own name was found. The nearest measured thing is belief perseverance, where a retraction moved opinions back by d = 0.46 and still left them d = 0.80 from where they started.",

@@ -12,6 +12,23 @@
     "note": "The paper names the paradox and reports four experiments under three study numbers. Study 1 asks students to rate imagined transgressions; Studies 2a, 2b and 3 stage an insult in the laboratory. It was received in March 2001 and its revision accepted in January 2003."
   },
   "evidence": "Study 1 asked 98 students, 57 men and 41 women, to imagine nine transgressions, from a polite rejection to a hit-and-run dent in their car. They rated how they would feel about the culprit at the moment and one week later. Intensity and duration estimates correlated at r = .88, p < .01, with no curvilinear component. The paper words that as a correlation across participants and prints nine scenario means in Table 1. Correlations computed within each participant had a mean of .65, SD .30, and a median of .75, with one of the 98 dropped for giving the same duration rating nine times. Study 2a insulted 26 students by having a supposed other participant rate their personality as the worst of three profiles. Students who expected to meet that rater moved further from baseline across eight 125 mm lines than students who did not, a mean change of 28.8 against 13.5, t(24) = 2.075, p < .05. The eight scales had alphas of .82 at baseline and .81 after the insult. Study 2b ran the same insult on 29 students split between forecasting and experiencing. Forecasters expected to like an insulting partner less than an insulting non-partner, 2.83 against 4.57 on a seven-point scale. Five minutes after the insult, experiencers reported the reverse, 4.57 against 3.33. The weighted contrast across the four cells gave t(27) = 3.17, p < .005, and Table 2 marks both cell differences at p < .05. Study 3 added bystanders who saw the same insult delivered to somebody else, 58 students in four cells of 11 to 20. Forecasters expected victims to like the rater less than bystanders would, 3.15 against 3.83. Experiencing victims liked the rater more than bystanders did, 4.33 against 3.36. The weighted contrast gave t(56) = 3.24, p < .01, while Table 3 marks the forecasters' gap at p < .10 and the experiencers' at p < .05.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The job that is merely dull",
+      "text": "A mildly unsatisfying job is endured for years, because nothing about it is bad enough to force a decision. Someone made redundant from the same desk starts looking, rethinks what the work is for, and is often settled elsewhere within months."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The ache too small to report",
+      "text": "A knee that hurts a little is lived with for a decade and never examined. A knee that gives way in the street is treated the same afternoon. The worse injury crosses the line that sets the machinery going and the milder one never does."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The relationship nobody ends",
+      "text": "A partnership that is disappointing rather than painful can run on for years. One that ends in a bad row starts the grieving, the talking and the rebuilding at once. Distress has to reach a level before the defences against it switch on."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "No repetition of the paper's four experiments was located, though three later literatures test the intensity and duration relation under other names and point different ways.",

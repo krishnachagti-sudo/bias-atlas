@@ -2,7 +2,12 @@
   "no": 97,
   "slug": "implicit-association-test",
   "name": "Implicit-association test",
-  "aliases": ["IAT", "Implicit association test", "Race IAT", "Implicit bias test"],
+  "aliases": [
+    "IAT",
+    "Implicit association test",
+    "Race IAT",
+    "Implicit bias test"
+  ],
   "category": "social",
   "statement": "The Implicit Association Test times how fast people pair social categories with good and bad words, and reads the difference as an attitude they might not report.",
   "meaning": "Four separate claims travel under one name, and they have four different answers. The first is that the test measures something stable: that the speed gap between pairing Black faces with pleasant words and White faces with pleasant words is a real individual difference rather than noise. The second is that the score predicts how a person behaves towards the group in question. The third is that the score reports something the person cannot introspect. The fourth is that the score can be moved, and that moving it moves behaviour. Reliability is evidence for the first claim only. It says nothing about the other three, and the popular case for the test rests on all four at once.",
@@ -13,6 +18,23 @@
     "note": "Three experiments, on flowers against insects and instruments against weapons (32 subjects), Japanese against Korean names (31 subjects) and Black against White names (26 White students). Only the third became famous."
   },
   "evidence": "In the 1998 race experiment, White students sorted names and evaluative words. Responses were faster when White names shared a key with pleasant words than when Black names did, by an average of 179 ms across four contrasts. Effect sizes were d = 1.30 with male names and d = 1.03 with female names, in 26 subjects. What made the result travel was the mismatch with self-report. Nineteen of the 26 rated Black and White as equal or rated Black higher on a semantic differential, and all but one of those nineteen still produced a pro-White test score. Only one subject of 26 scored pro-Black. The average correlation between the test and the explicit measures was r = .14, which the authors read as a divergence between constructs rather than as a failure of convergence.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The training day that hands back a label",
+      "text": "Staff sit the test at a diversity session and each receives a band, from slight to strong preference. The band records one timed performance on one morning, and it is read in the room as a standing fact about the person."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The same person, sorted twice",
+      "text": "Someone takes the test, comes out with a moderate preference, and takes it again weeks later with a different result. A score that moves between sittings can still be treated as the thing that finally settled the question."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The question it was not built to answer",
+      "text": "A manager wants to know which of two candidates would treat staff fairly, and reaches for the test. It reports how fast the taker sorted words on a screen. What the manager needs to know is how the person behaves at work."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The speed effect itself reproduces reliably; what it predicts about behaviour is disputed, and the two meta-analyses of race studies differ by roughly a third.",
@@ -23,7 +45,15 @@
       "year": 2013,
       "n": 17470
     },
-    "replicated": { "es": 0.14, "esType": "r", "ci": [0.1, 0.19], "ciLevel": 95 }
+    "replicated": {
+      "es": 0.14,
+      "esType": "r",
+      "ci": [
+        0.1,
+        0.19
+      ],
+      "ciLevel": 95
+    }
   },
   "limits": "Reliability and validity come apart here, and the numbers point in different directions. Greenwald and Lai's 2020 meta-analysis of implicit measures puts the test's internal consistency at alpha = .80, 95% CI [.78, .81], from 89 articles and 257 effects, and its test-retest correlation at r = .50, 95% CI [.45, .55], from 26 articles and 58 effects. The Affect Misattribution Procedure came out at .81 and .52 on the same two measures. For the race version specifically, Gawronski, Morrison, Phills and Galdi retested 116 people about a month apart and got r = .44, against .88 and .81 for the two explicit measures in the same session. Their survey of earlier race retests runs from .01 to .72. Schimmack reviewed the multimethod evidence in 2021 and found little sign of discriminant validity, estimating that about 20% of variance in the race test reflects racial preference, against 64% for the political-orientation version. Greenwald, Banaji and Nosek accept the consequence: with test-retest between .5 and .6 and small predictive correlations, using a score to classify an individual as likely to discriminate risks high rates of error. Their defence of the test is about aggregates, not people. The change literature is separate again. Forscher and colleagues synthesised 492 studies and 87,418 participants in 2019 and found that implicit measures move. Seven procedure categories shifted them, the largest a goal-inducing procedure at g = -.29, 95% CI [-.37, -.21], and the authors call every one of the seven small. Behaviour did not follow. Two categories moved behaviour: threat, at g = .39, 95% CI [.14, .64], and weakening associations directly, at g = -.10, 95% CI [-.20, -.01], which the authors call trivial. Change in implicit measures did not mediate change in behaviour, and the overall implicit-behaviour correlation in their own data was r = .09, k = 80, 95% CI [.07, .14].",
   "misreadings": "The score is widely read as a diagnosis, which is the use its own defenders rule out. It is also read as a window onto something unconscious. Hahn, Judd, Hirsh and Blair asked people to predict their own results for five social groups across four studies and found the predictions accurate, despite the usual weak agreement between the test and self-report questionnaires. Goedderz, Rahmani Azad and Hahn pooled 17 exact replications in 2024, all run by or under the supervision of the original author, and participants predicted their own pattern of results in every one, at a corrected average within-subjects correlation of r = .56. Accuracy was lower online, at r = .37, than in the laboratory, at r = .61. Morris and Kurdi ran an adversarial collaboration of eight preregistered studies with 8,011 participants. People predicted their own implicit scores across a broad range of targets, and more accurately than observers given only their demographics. Accuracy varied across individuals and targets, and explicit attitudes explained more of the variance in those predictions than implicit attitudes did. Knowing one's own bias and endorsing it are different things, and only the second is measured by a questionnaire. The training claim is the third confusion. Lai and 23 colleagues ran a contest of 17 interventions across four studies and 17,021 participants, and eight worked; no intervention consistently shifted explicit racial preferences. The follow-up tested nine interventions, one of them a sham, on 6,321 participants. All nine reduced implicit preferences immediately and none survived a delay of several hours to several days. A reduced score after a workshop is therefore not evidence that anything about the person has changed by the next morning. Finally, the headline figures are not comparable as usually quoted. The 2009 review's r = .274 covers nine domains including consumer and political preferences, where correlations reach .32 and .48; its race figure is .236, and that is the number the 2013 review's Black-versus-White estimate of .15 should be set against.",

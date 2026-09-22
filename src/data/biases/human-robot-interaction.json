@@ -13,6 +13,23 @@
     "note": "The essay ran in a Japanese journal called Energy, volume 7, number 4, pages 33 to 35, and drew almost no attention for decades. It contains a hand-drawn graph and no measurements. The English text now quoted is the 2012 translation by Karl MacDorman and Norri Kageki, described by IEEE Spectrum as the first publication of an English translation authorised and reviewed by Mori."
   },
   "evidence": "Mori argued from examples rather than data: prosthetic hands, bunraku puppets and corpses. His Figure 1 is a sketch of a proposed relation. The first attempt to estimate the curve from a large stimulus set is Mathur and Reichling's, who had subjects rate 80 real-world robot faces chosen objectively rather than digitally blended. They report an uncanny valley in explicit likability, and an investment game in which the same dip showed up in decisions about whether to trust a robot with money. Their multisite follow-up is the strongest direct test of the shape located here. Twelve authors at six sites in four countries collected data from 358 subjects rating a validated corpus of 182 real robot and human faces, with methods and analyses preregistered. On scales running from -100 to 100, likability climbed from the most mechanical faces to an initial apex of -18.0 at a mechano-humanness score of -80.9, dropped to a low of -67.4 at -23.6, then rose to a maximum of 59.6 at 93.2. The paper states that all key features of the theorised Uncanny Valley were apparent in these stimuli. One feature did not match the drawing. The first apex sat below zero, so even the plainly mechanical robots were disliked, which the authors read as a problem for the design strategy of avoiding the valley by staying mechanical. The same study tested the mechanism most often offered for the effect. Mouse trajectories supplied three implicit measures of confusion between the categories robot and human, and the indirect effects ran from -0.6 (95% CI -3.6 to 2.1) to 2.8 (95% CI -1.9 to 15.4) against direct effects of 30 to 32.7, so confusion did not carry the dip.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The greeter with a moulded face",
+      "text": "A reception robot with skin, eyes and a near-human mouth unsettles visitors, while the plainly mechanical trolley on the next floor does not. That is a contrast between two machines, and it does not show that affinity falls and then recovers as likeness increases."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The curve put on a slide",
+      "text": "A presentation shows the valley as a smooth line with a trough and a recovery, and cites the essay it came from. The essay offers a proposal and a drawing, and reports no measurements at all."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The movement added to sharpen the dip",
+      "text": "A designer gives an almost-human robot lifelike motion, expecting discomfort to deepen because the original essay says movement steepens the curve. That part of the proposal is a prediction, and it is not carried by the pooled ratings."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Pooled across 72 studies the dislike effect is large, and the meta-analysis that went after the shape of the curve found the rise, a plateau and no valley.",

@@ -17,6 +17,23 @@
     "note": "\"The Role of Deliberate Practice in the Acquisition of Expert Performance\" reported two interview studies of German musicians and set out the framework. The figure everyone quotes is not in it. The paper's headline number is 7,410 hours by age 18, and the 10,000-hour rule is Gladwell's formulation from Outliers in 2008."
   },
   "evidence": "Study 1 took 30 violin students at the Music Academy of West Berlin, in three groups of 10: faculty-nominated \"best\" students with soloist potential, \"good\" students matched to them by sex and age, and a less accomplished group headed for teaching careers. Ten middle-aged professional violinists were interviewed as well. Students estimated their weekly practice alone for every year since starting, and those estimates were summed. By age 18 the best had accumulated 7,410 hours, the good 5,301 and the future music teachers 3,420. The professionals' 7,336 hours did not differ reliably from the best students. Study 2 compared 12 expert pianists from a Berlin academy with 12 amateurs of the same mean age, 24.3 years. By age 18 the experts had accumulated 7,606 hours against the amateurs' 1,606, F(1, 22) = 26.29, p < .001. From this the authors concluded on page 392 that \"individual differences in ultimate performance can largely be accounted for by differential amounts of past and current levels of practice\", and that their framework gives \"a sufficient account of the major facts about the nature and scarcity of exceptional performance\".",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The pianist who plays through",
+      "text": "An adult learner sits down for an hour and plays pieces she can already play. That is not the activity in question. The activity is a teacher setting a target at the point where she breaks down, and feedback arriving straight away on that passage."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The club player and the coached one",
+      "text": "Two chess players put in the same hours. One plays games, the other works through positions a coach picked out for a known weakness. Games take up most of the first player’s time and return less rating per hour than the second player’s drills."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The streak on the language app",
+      "text": "A learner logs three hundred sessions of easy review and keeps a perfect run going. Hours accumulate and difficulty does not. The definition excludes practice that is comfortable, so a long log is not by itself a measure of the thing being claimed."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "A double-blind repeat of the violinist study did not reproduce its ordering, and the share of variance that hours of practice explain is put at 12% by one research group and 29% by the other, from the same underlying studies.",

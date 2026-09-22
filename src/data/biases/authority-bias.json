@@ -19,6 +19,23 @@
     "note": "The 1963 paper reports a single condition. Milgram's pilot studies were completed in the winter of 1960, and the 23 conditions of the programme ran from August 1961 to May 1962. The famous paper is one slice of a series whose other 22 conditions were published later or not at all."
   },
   "evidence": "Milgram's 1963 report covers one condition. Forty men aged 20 to 50 from the New Haven area, paid $4.50, were told to shock a learner for each wrong answer, one 15-volt step at a time, to a maximum of 450 volts. Twenty-six of the 40 went to the top of the board. Not one stopped before 300 volts, the point at which the learner gave up answering and pounded on the wall. Fourteen Yale seniors asked in advance to predict the outcome gave estimates between 0 and 3%, class mean 1.2%. Fourteen of the 40 subjects showed nervous laughter and three had uncontrollable seizures.\n\nThe 1965 paper reports the variations, and each condition described in it used 40 fresh subjects. Defiance rose as the learner was brought closer: 34% in Remote, 37.5% in Voice Feedback, 60% in Proximity, 70% in Touch-Proximity. Moving the experimenter out of the room and onto the telephone cut the number of fully obedient subjects from 26 to 9, chi-square 14.7 on 1 d.f., p < .001. Rerunning the study in a Bridgeport office with no visible tie to Yale gave 48% delivering the maximum shock against 65% in the corresponding Yale condition. When two confederate teachers broke off, 90% of subjects followed them. When the subject read the word pairs and a confederate pressed the switches, only three of 40 broke off. Forty psychiatrists at a leading medical school had predicted that a little over one-tenth of one per cent would reach the highest shock.\n\nHaslam, Loughnan and Perry pooled 21 of the 23 conditions, 740 of the 780 participants, and report an overall rate of 43.6%, or 323 of 740. They dropped two conditions in which reaching 450 volts meant disobeying the experimenter. Their condition-by-condition table runs from 1 obedient subject of 40 in Carte blanche, where the teacher chose the shock level, to 37 of 40 in Non-trigger position, where a confederate pressed the switches. Eight of 14 coded properties predicted obedience in a logistic regression with a Nagelkerke R-squared of 0.30: the experimenter's directiveness, legitimacy and consistency, group pressure to disobey, the indirectness, proximity and intimacy of the teacher-learner relation, and the experimenter-teacher distance. The setting's prestige, the Bridgeport variable, was not associated with obedience at all.\n\nOutside the laboratory, St Pierre and colleagues put 59 physicians and 18 nursing staff through a simulated rapid sequence induction in which a familiar attending physician created seven critical situations, including two potentially fatal drug orders. Participants identified a situation needing spoken intervention in 66% of cases, and 72% stayed silent. They challenged the attending in 28% of situations, and of those challenges 35% were oblique and 25% raised the problem without pursuing it.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The jacket and the clipboard",
+      "text": "A man in a high-visibility jacket waves pedestrians off a pavement and they cross the road without asking who he is or what he is doing. The instruction is followed because of the role it seems to come from."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The dose that looked wrong",
+      "text": "A junior nurse reads a prescription that seems too high and gives it because the consultant wrote it. The doubt was correct and was not enough, because the answer to it was the seniority of whoever had signed."
+    },
+    {
+      "kind": "everyday",
+      "tag": "What a room says it would do",
+      "text": "Asked in advance, people say they would refuse an instruction like that, and say it with confidence. The distance between that prediction and what happens on the day is as much a part of the effect as the compliance."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The laboratory paradigm held up when Burger repeated it in 2006: 70% of his base condition went past the 150-volt point against 82.5% of Milgram's, chi-square 1.10, p = .29. The 1966 hospital field version was repeated in 1977 under the title 'a failure to replicate', but neither hospital paper could be read for this entry.",

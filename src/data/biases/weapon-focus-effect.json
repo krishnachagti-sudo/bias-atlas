@@ -13,6 +13,23 @@
     "note": "'Some facts about \"weapon focus\"' put subject-witnesses in front of slides of a fast-food restaurant. Half saw a customer point a gun at the cashier, half saw him hand over a cheque. The paper's own abstract calls the result 'the first direct empirical support for weapon focus', so the phenomenon was already named and argued about before this paper measured it."
   },
   "evidence": "Loftus, Loftus and Messo ran two experiments on University of Washington students, 36 in the first and 80 in the second. Experiment 1 recorded eye movements. Subjects made an average of 3.72 fixations on the gun against 2.44 on the cheque, t(34) = 2.63, p < .01, and those fixations lasted 242.0 milliseconds against 200.3, t(34) = 2.24, p < .025. Its memory results were weaker than its reputation. On the 20-item questionnaire the gun group scored 45.8% against 50.3%, t(34) = 1.37, with a one-tailed p between .05 and .10. On the seven questions about the robber the split was 45.5% against 51.1%, t(34) = 1.03, p > .10. Two of 18 gun subjects picked the right man from a 12-photo lineup, or 11.1%, against seven of 18 controls, or 38.9%, and the authors call that difference marginally significant, chi-square 3.71 with p between .05 and .06. Experiment 2 dropped the eye tracking, ran 40 subjects per condition and found the effect. Gun subjects answered 56% of the seven questions correctly against 67%, t(78) = 2.04, p < .05, and identified the robber 15% of the time against 35%, chi-square 4.27, p < .05. Steblay's meta-analysis pooled 19 tests. Its abstract reports a small effect of 0.13 for lineup identification and a moderate one of 0.55 for feature accuracy, and that is the split the whole literature has argued over since. Fawcett, Russell, Peace and Christie's meta-analysis is the large one. Its abstract gives an overall effect of weapon presence of g = 0.53, moderated by retention interval, exposure duration and threat, and not moderated by whether the event happened in a laboratory, a simulation or the real world. Kocab and Sporer's meta-analysis, run on person identifications and descriptions separately, found no significant effect on correct identifications from target-present lineups, none on false identifications from target-absent lineups, and none on overall identification decisions. It found a significant medium effect on the accuracy of descriptions, and reports that unusualness behaved the same way, affecting descriptions but not identifications.",
+    "examples": [
+      {
+        "kind": "everyday",
+        "tag": "The knife on the shop counter",
+        "text": "A shop assistant is robbed, and afterwards can describe the blade in detail and the man holding it hardly at all. The claim is about where her looking time went, not about how frightened she was."
+      },
+      {
+        "kind": "everyday",
+        "tag": "The description that will not fill in",
+        "text": "Asked for the robber's hair, build and jacket, a witness to an armed raid gives less than a witness to the same scene without a weapon. Description accuracy is the measure on which the effect is steadiest."
+      },
+      {
+        "kind": "everyday",
+        "tag": "The lineup a fortnight later",
+        "text": "The same witness views a lineup and either picks nobody or picks the wrong man. Whether the weapon made that outcome likelier is a separate claim from whether it thinned her description, and the two are usually told as one."
+      }
+    ],
   "replication": {
     "state": "mixed",
     "headline": "Three meta-analyses report an effect on descriptions and split over identification, and five preregistered experiments with 1,316 participants produced one marginal result and nothing else.",

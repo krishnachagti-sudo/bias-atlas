@@ -17,6 +17,23 @@
     "note": "Three experiments. Young participants who imagined talking to an elderly person showed less bias than participants who imagined an outdoor scene, and less than participants who merely thought about elderly people, which the authors read as ruling out priming. In the third, heterosexual men who imagined talking to a homosexual man evaluated homosexual men more positively, and reduced intergroup anxiety mediated the change. Crisp and Turner set the idea out for a general readership in American Psychologist in 2009, and that article is what drew the published objections."
   },
   "evidence": "The study the replicators took is Husnu and Crisp's, published in the Journal of Experimental Social Psychology in 2010. Klein and colleagues describe its first experiment this way. British non-Muslim participants either imagined interacting with a British Muslim stranger or imagined walking outdoors. They imagined for one minute and described their thoughts for another, then rated their interest and willingness to interact with British Muslims on four items. Kvarven, Strømland and Johannesson record that experiment as N = 33 with d = 0.86, standard error 0.365, 95% CI [0.145, 1.575], p = 0.018. Thirty-three people is the whole of the original evidence for the effect that was then tested on 6,336.\n\nThe wider case rests on Miles and Crisp's meta-analysis, published in Group Processes & Intergroup Relations in 2014. Its abstract reports more than 70 studies and an overall d+ = 0.35 across attitudes, emotions, intentions and behaviour, significant among published and unpublished studies alike. It also reports the effect as equally strong on explicit and implicit attitude measures, stronger on intentions than on attitudes, stronger for children than for adults, and stronger the more elaboration the imagining instructions demanded. Valence, the type of control condition and time spent imagining made no difference. Only that abstract was obtainable.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The minute before the questionnaire",
+      "text": "Asked to picture a friendly chat with someone from a group they rarely meet, and then asked how willing they would be to have such a chat, people say slightly more willing. No meeting took place, and the answer is collected minutes after the imagining."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The exercise at the start of a training day",
+      "text": "A workshop opens by asking staff to imagine a pleasant conversation with a colleague from another department. What the technique claims to move is a rating given shortly afterwards, and not contact itself, which is a separate and much larger literature."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The imagined neighbour",
+      "text": "A man who avoids a neighbouring family pictures a friendly exchange over the fence and afterwards reports being readier to speak to them. Whether that readiness survives the walk to the gate is a different question from the one the studies asked."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Thirty-six samples and 6,336 people put the effect at about a seventh of the original: weighted d = 0.13, 99% CI [0.07, 0.19], with 4 of the 36 samples reaching significance in the right direction.",

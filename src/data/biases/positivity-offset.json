@@ -16,6 +16,23 @@
     "note": "The abstract of \"Beyond bipolar conceptualizations and measures\" names the \"positivity offset and negativity bias principles\" as the distinct activation functions its review argues for. The model it formalises comes from Cacioppo and Berntson's 1994 Psychological Bulletin review, which Norris and colleagues credit as the source of the model's figure, though this check did not obtain the 1994 text and cannot say whether the phrase appears in it. The fullest statement is the 1999 Journal of Personality and Social Psychology paper, which supplies the definition quoted above."
   },
   "evidence": "The 1999 paper is a theoretical review, and it rests the offset on two studies. One is Gardner's \"Biases in impression formation: A demonstration of a bivariate model of evaluation\", listed in its reference section as an unpublished doctoral dissertation at Ohio State University. Cacioppo and colleagues report that Gardner found an offset in four studies of impression formation, in judgements of human targets and of novel fish and insects. Searches of the OhioLINK electronic thesis archive, the Ohio State University Libraries catalogue and the open web on 21 September 2026 did not locate that dissertation. The other is Ito, Cacioppo and Lang, who collected positivity and negativity ratings for 472 photographs from the International Affective Picture System. Of it the 1999 paper says \"Analyses revealed that the intercept was significantly higher for ratings of positive than for negative stimuli\". Norris, Gollan, Berntson and Cacioppo later gathered the supporting literature: spinal extensor responses at low stimulus intensity, mere exposure, mild liking of unknown others, optimistic forecasts, and Harinck and colleagues' finding that gains loom larger than losses for small sums. Their own summary of the state of the field is that \"little research has directly examined individual differences in these proposed operating characteristics of the affect system\". The individual-differences study they point to, Ito and Cacioppo's 2005 paper, was not read here. Taylor and Francis returned 403 to every request made on 21 September 2026, and Unpaywall and Semantic Scholar both record no open copy. Norris and colleagues describe it as finding the offset normally distributed and stable over about two weeks.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The bare room",
+      "text": "Put somebody in an empty room with nothing happening and the reading is not indifference. It is a mild pull towards looking around and touching things, and that pull at zero input is what the offset names."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The fork in an unfamiliar path",
+      "text": "A walker reaching a fork with nothing known about either route tends to take one rather than turn back. The lean towards going on is small, and it sits where there is nothing in particular to approach or avoid."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The stranger at the next table",
+      "text": "With nothing said and nothing known, the default towards a stranger is a faint willingness rather than a faint wariness. The same person will react far harder than that to a real threat, and the model expects both at once."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Independent labs recover the offset from arousal ratings, a 261-person German sample putting it at beta = 0.98, while a study of Twitter and Weibo text found the reverse sign.",

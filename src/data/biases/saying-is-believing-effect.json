@@ -17,6 +17,23 @@
     "note": "The paper titled the effect and ran at 14(4), 363-378. Its text is closed at Elsevier and Unpaywall, OpenAlex and Semantic Scholar all record no repository copy, so nothing about its design or its numbers is reported here from the paper itself. Its abstract at ERIC says it examined \"whether modifying a message about a stimulus person to suit the listener has a lasting effect on the communicator's own recall and evaluation of this person\"."
   },
   "evidence": "Echterhoff, Higgins and Groll ran three experiments at the University of Cologne and set out to break the effect. In the first, 65 students described a target called Michael to an absent audience called Armin, then heard ten minutes later that Armin either had or had not picked Michael out from the description. Recall valence, coded by two blind raters on a scale from -5 to +5, split by audience attitude only after success feedback: 0.84 against -0.63, F(1, 61) = 13.41, p < .01, d = 1.23. After failure feedback the means were 0.16 and 0.00, F(1, 61) < 1, and the interaction was reliable, F(1, 61) = 5.44, p < .05. The second experiment gave 66 students an audience who was either a fellow Cologne student or a trainee at a hairdressing school. Both groups tuned their messages. Only the in-group group showed the recall bias, 0.91 against -0.82, F(1, 62) = 16.78, p < .001, d = 1.21, while the out-group means were 0.75 and 0.29, F(1, 62) = 1.17, ns. Trust was measured by asking whether Armin's judgment of other people can be trusted. It was higher for the in-group audience, F(1, 62) = 3.99, p < .05. With trust in the regression the coefficient for group membership fell from a reliable .26 to .17, p = .16, while trust held at .38, p < .01. The authors call that partial mediation, and their Sobel test of it was marginal, z = 1.70, p < .09. The third experiment crossed both manipulations across 127 students. Only the in-group audience with success feedback gave a reliable recall bias, F(1, 119) = 18.02, d = 1.40. The out-group audience with success feedback reached d = 0.62 at p < .07, and the two failure-feedback cells gave d = 0.08 and d = 0.02. Trust mediated the feedback effect there, Sobel z = 1.99, p < .05. Echterhoff, Higgins, Kopietz and Groll later put the same argument to a motivational test. Their abstract at Europe PMC reports four experiments. The memory bias was larger when tuning served shared reality than when it served politeness towards a stigmatised-group audience, an incentive, entertainment or a blatant demand. That abstract attributes the mediation to epistemic trust rather than to rehearsal, retrieval of the original input, source discrimination or contrast.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The reference written for a friendly reader",
+      "text": "Told the reader already thinks well of a former colleague, a referee writes up his mixed record warmly. Asked a week later what that record actually said, she reports it warmer than it was."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The same record given to a sceptic",
+      "text": "The identical behaviour, described to somebody known to dislike the person, comes out unflattering. The tuning is unremarkable. What the effect names is the tuned version replacing the original in the teller's own memory."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The listener nobody takes seriously",
+      "text": "A speaker who thinks the listener is not worth squaring an account with tunes the message all the same and recalls the original intact. The memory shift needs an audience whose view is worth holding in common."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Message tuning reproduces every time it is looked for. The memory bias that names the effect is conditional, absent in one online study of 165 people and weaker, on a 2025 meta-analysis, with out-group audiences and identity-threatening topics.",

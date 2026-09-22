@@ -14,6 +14,23 @@
     "note": "The paper runs to pages 78 to 92 of volume 48 and is the study the field dates itself from. Its full text could not be obtained for this entry, so no figure from it is quoted here. Crossref titles it \"Effects of fear-arousing communications\" and PubMed titles it \"Effect of fear-arousing communications\", from the same DOI and page range. The fallacy label is much older than the experiment: Hansen's survey places ad metum among the labels Bentham attached to his political fallacies in 1824."
   },
   "evidence": "Four meta-analytic teams have pooled this literature and all four report a positive average. Witte and Allen found 98 studies meeting their criteria, 93 of which entered the main effects analysis. The correlation between the strength of the fear manipulation and attitude change was .147 across 34 studies and 7,514 participants, .126 for intentions across 43 studies and 9,686 participants, and .158 for behaviour across 28 studies and 4,666 participants. They tested the shape of the relationship and found it linear and positive, t = 5.09, p < .0001, with no support for an inverted U, t = -.054, p = .999. Tannenbaum and colleagues assembled the largest database, 127 articles of which 9% were unpublished, giving 248 independent samples and 27,372 participants. The average random-effects effect on a composite of attitudes, intentions and behaviours was d = 0.29, 95% CI 0.22 to 0.35, with Q(247) = 1,287 and I-squared of 85.11. Across the 71 samples carrying a manipulation check, treatment groups reported more fear than comparison groups at d = 1.00, 95% CI 0.83 to 1.18. Three of their moderators separated. Messages with efficacy statements gave 0.43, 95% CI 0.31 to 0.55, k = 92, against 0.21, 95% CI 0.13 to 0.29, k = 154 without. One-time behaviours gave 0.43, 95% CI 0.30 to 0.56, k = 82, against 0.21, 95% CI 0.14 to 0.29, k = 166 for repeated ones. Messages high on both depicted susceptibility and severity gave 0.39, 95% CI 0.28 to 0.50, k = 78, against 0.12, 95% CI -0.03 to 0.27, k = 17 for messages high on neither. Comparing moderate with high depicted fear across 21 samples gave d = -0.05, 95% CI -0.34 to 0.24, which the authors read as diminishing returns rather than a backfire. A metaregression on the percentage of the sample that was female gave b = 0.0031, SE 0.0012, 95% CI 0.0007 to 0.0055, which they translate as about d = 0.03 for each 10 percentage points. Sheeran, Harris and Epton approached the same question through risk appraisal rather than fear. Their published abstract reports d+ = .31 across 217 comparisons for intention and d+ = .23 across 93 for behaviour. Raising risk appraisal, response efficacy and self-efficacy together gave .98 and .45. Bigsby and Albarracín pooled 158 comparisons and 19,736 participants and put the overall effect at d = 0.31 with I-squared of 22.94. Splitting by content, fear appeals carrying positive response efficacy information gave .35, 95% CI 0.33 to 0.37, against .18, 95% CI 0.08 to 0.27, without it, while adding self-efficacy information made no difference, .29 against .31.",
+"examples": [
+  {
+    "kind": "everyday",
+    "tag": "The leaflet about break-ins on the street",
+    "text": "A leaflet describing local burglaries sells an alarm to a householder. The burglaries may be real and the alarm may be worth having, and the fright the leaflet raised is not what shows either."
+  },
+  {
+    "kind": "everyday",
+    "tag": "The photographs of somebody else's ceiling",
+    "text": "A trader shows a homeowner pictures of a collapsed ceiling in another house and asks for a decision the same day. The pictures raised alarm and carry no information about the state of this roof."
+  },
+  {
+    "kind": "everyday",
+    "tag": "The talk that opens on the stroke ward",
+    "text": "A clinic begins its blood pressure session with the worst outcome, and attendance at follow-up checks rises a little. Frightening the room did shift behaviour, by a small amount, which is the honest size of the claim."
+  }
+],
   "replication": {
     "state": "mixed",
     "headline": "The small positive average reproduces in four independent meta-analyses, and two tests applying stricter criteria find no effect of threat by itself.",

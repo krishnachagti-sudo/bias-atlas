@@ -2,7 +2,11 @@
   "no": 123,
   "slug": "rhyme-as-reason-effect",
   "name": "Rhyme-as-reason effect",
-  "aliases": ["Keats heuristic", "Rhyme as reason", "Eaton-Rosen phenomenon"],
+  "aliases": [
+    "Keats heuristic",
+    "Rhyme as reason",
+    "Eaton-Rosen phenomenon"
+  ],
   "category": "belief",
   "statement": "A saying that rhymes is rated as a more accurate description of human behaviour than the same saying reworded so that it does not rhyme.",
   "meaning": "The claim is about a rating, not about conduct. A participant reads a saying and marks on a scale how accurately it describes people. Replace one rhyming word with a synonym, so the line no longer rhymes, and the mark falls, although the two versions assert the same thing. The account offered for this is misattribution. Rhyme makes a sentence quicker and smoother to take in, and that ease gets read as a signal that the content is sound. None of the sayings used is checkable against anything, so what the scale records is how true a line feels.",
@@ -13,6 +17,23 @@
     "note": "Their paper is \"The Keats heuristic: Rhyme as reason in aphorism interpretation\", and it carries the whole original experiment. The better-known publication is their 2000 paper in Psychological Science, \"Birds of a feather flock conjointly (?): Rhyme as reason in aphorisms\", which most secondary accounts cite as the source of the effect. Both authors were at Lafayette College, and the work was first presented at an American Psychological Society convention in May 1998."
   },
   "evidence": "The 1999 experiment took 50 rhyming aphorisms from two printed dictionaries and cut them to 30 after 20 students confirmed they were unfamiliar and that the rewrites did not change the meaning. Each aphorism had two non-rhyming versions, made by swapping either the first or the second rhyming word for a synonym, so \"Woes unite foes\" became \"Misfortunes unite foes\" and \"Woes unite enemies\". Sixty further undergraduates were given one of three lists, each holding 10 aphorisms in rhyming form and 20 in modified form, and rated all 30 on two 9-point scales. Mean accuracy was 6.38 for the rhyming forms against 5.15 and 5.33 for the two modified forms, Fp(2,118) = 9.15, p < .01, Fi(2,58) = 4.77, p < .02. The planned comparison of rhyming against modified gave Fp(1,118) = 7.54, p < .01 and Fi(1,58) = 3.91, p < .05, so the test treating aphorisms as the random factor is the weaker of the two. Comprehensibility was 7.06, 6.83 and 7.11, with no reliable difference, so the rhyming versions were not rated truer because they were easier to follow. Asked at the end whether rhyming aphorisms describe behaviour more accurately, all 60 said no. The 2000 Psychological Science paper was not obtained and only its abstract was read. That abstract reports the same accuracy advantage and adds that it was attenuated when participants were cautioned to separate a saying's poetic qualities from its semantic content, a caution the 1999 experiment does not contain. No sample size, mean or test statistic from the 2000 paper is quoted here.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The proverb on the kitchen wall",
+      "text": "'Haste makes waste' is taken as a sound description of how people behave. 'Hurrying causes waste' asserts the same thing and is marked down. Nothing about the claim changed except how easily the line goes in."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The slogan that scans",
+      "text": "A public health line that rhymes is treated as better founded than a plainer sentence carrying the same instruction. The rhyme makes the line quick to take in, and that ease is read as a sign the content has been checked."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The saying passed round a family",
+      "text": "A rule about weather or health circulates for years because it sits well in the mouth. Its standing comes from its form, and none of the people repeating it could say what it rests on."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "No independent repeat of the aphorism experiment was found. The finding rests on 60 undergraduates at one American college rating 30 antique English proverbs.",

@@ -17,6 +17,23 @@
     "note": "Merton's footnote 8 gives Warnotte, 'Bureaucratie et Fonctionnarisme', Revue de l'Institut de Sociologie, 1937, 17, 245, alongside Kenneth Burke's Permanence and Change of 1935. That footnote is the whole basis for the attribution, and Warnotte's article was not obtained during this audit, so none of his wording is quoted. The phrase is older than 1937 in French, and it started out literal. Morel-Lavallée used it as a title in 1887 for a cobbler of 23 whose upper incisors carried notches cut by the tacks he held in his mouth while nailing soles. Merton is where the figurative sociological sense enters English."
   },
   "evidence": "Nothing measures déformation professionnelle under that name. What is measured is a narrower thing the idiom describes: put one clinical problem to two professions and watch them answer differently. Fowler and colleagues mailed a questionnaire to American specialists in 1998. Urologists returned 504 replies, a 64% response rate, and radiation oncologists 559, a 76% rate. For a man with a moderately differentiated, clinically localised cancer and more than ten years of life expectancy, 93% of urologists chose radical prostatectomy as the preferred option. Among radiation oncologists, 72% believed surgery and external beam radiotherapy were equivalent treatments. The groups also split on screening: 43% of radiation oncologists and 16% of urologists would recommend routine PSA testing for men aged 80 and over. Their conclusion is that specialists overwhelmingly recommend the therapy they themselves deliver. Delaney and colleagues then took the vignette away. They re-analysed a decision-aid trial of 208 men, keeping the 108 who saw both a urologist and a radiation oncologist about their own case. Mean age was 61.9 years, range 43 to 82. The visits were audio-recorded, transcribed and coded with an adapted PhyReCS scheme. Urologists named surgery in 79% of their recommendations, and radiation oncologists named radiation in 68% of theirs. Those denominators are recommendations and not patients. A doctor could rank several treatments as equally good, so the columns pass 100% and none of these figures is a share of the 108 men. Read whole, the table is less lopsided than the headline. Radiation oncologists still named surgery in 57% of their recommendations, urologists named radiation in 31%, and the two professions named active surveillance at rates that did not differ, 31% against 35%, p = .332. The pair matched exactly for 33 of the 108 patients, 30.6%. Treatment at six months was known for 105 men. Of those, 62, or 59%, took a treatment both doctors had recommended, and about 35% took one that a single doctor had recommended, 21% the radiation oncologist's and 14% the urologist's. Six men, 6%, took a treatment neither had recommended. An older line of work asks the same question of managers rather than doctors, running from Dearborn and Simon's 1958 note on executives through Walsh's 1988 study to Beyer and colleagues' 1997 replication, which attributes the disagreement between the first two to differences in procedure. None of those three papers was read for this entry, and they are treated under selective perception.",
+    "examples": [
+      {
+        "kind": "everyday",
+        "tag": "The editor reading a menu",
+        "text": "An editor sits down to dinner and reads the menu for its punctuation before its food. Nothing about the evening asks for that reading, and the trade supplies it anyway."
+      },
+      {
+        "kind": "everyday",
+        "tag": "The lawyer and the dinner invitation",
+        "text": "An invitation to a friend's house is read for its conditions: what has been promised, and what happens if the date moves. The habit is not applied on purpose and it does not switch off outside working hours."
+      },
+      {
+        "kind": "everyday",
+        "tag": "The surveyor on a country walk",
+        "text": "A walk through a strange town becomes an inspection of roof lines and damp courses, and the companion's remarks about the view go unanswered. What a trade trains a person to notice becomes what that person notices."
+      }
+    ],
   "replication": {
     "state": "replicated",
     "headline": "The finding that each specialty recommends its own treatment has been repeated in four further samples across three countries, and it held every time.",

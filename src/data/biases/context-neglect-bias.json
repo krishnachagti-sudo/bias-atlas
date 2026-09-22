@@ -15,6 +15,23 @@
     "note": "The article was published online on 5 January 2024 and ran in volume 29, issue 11, pages 14245 to 14260. The bias name is not the article's. It entered the English Wikipedia List of cognitive biases on 25 February 2024 in revision 1210165483, made by the account K.mike.1111, whose user page identifies Koby Mike, the article's third author. The edit summary reads 'The context neglect bias was added to the biases list.' The same account had added the domain neglect line in December 2022, and has twelve edits in total."
   },
   "evidence": "What the study did cannot be reported in detail, because the article is closed at Springer and was not obtained. The publisher's abstract, read from ERIC, carries this much. The authors collected data from questionnaires distributed to undergraduate science and engineering students. They report that students tend to neglect the context when attempting to solve data science questions, and they set this beside earlier work finding that students neglect ethical concerns in their data analysis. Their argument is that gaps in understanding the context of the data produce gaps in the analysis and in the interpretation. The conclusion is a teaching proposal, anthropological thinking, offered to overcome the context neglect. No sample size, no response counts, no conditions and no statistics appear in the abstract, so none are quoted here. Whether the full article reports any is unknown.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The file with no questions asked about it",
+      "text": "A student handed a table of hospital readmissions builds a model and reports its accuracy, without asking who entered the rows or which patients never reached the table at all."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The app users taken for the town",
+      "text": "A class analyses responses gathered through one app and reports what the town thinks. Who had the app and who did not is a question about where the numbers came from, and the analysis holds nothing that could answer it."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The column of zeros",
+      "text": "A zero in the treatment column is read as no treatment given. On the ward it meant the form went unfilled during the night shift. The arithmetic runs the same either way, which is what makes the omission easy."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "No repeat of the study by anyone was found. OpenAlex records four works citing the article, and the three Semantic Scholar lists are not replications by title.",

@@ -2,7 +2,9 @@
   "no": 566,
   "slug": "retrospective-determinism",
   "name": "Retrospective determinism",
-  "aliases": ["Bound to happen"],
+  "aliases": [
+    "Bound to happen"
+  ],
   "category": "belief",
   "statement": "Because something happened, it was bound to happen: reading an outcome's occurrence as proof that the circumstances made it necessary.",
   "meaning": "The claim is about the world rather than about memory. Retrospective determinism takes an event that did occur and treats the occurrence itself as evidence that nothing else could have occurred. Bergson's version is that reality, once it appears, projects its possibility backwards, so the past acquires a shape it did not have at the time. He wrote that an event can always be explained after the fact by antecedents, and that a wholly different event would have been explained as well by the same antecedents cut up, distributed and noticed differently by retrospective attention. Two neighbouring entries on this site are not the same claim. Hindsight bias, entry 48, is a finding about what people believe they believed before the outcome. The historian's fallacy, entry 518, is a charge about writing past agents as though they knew what was coming. This page is about the third thing, the modal claim that the outcome had to happen, which psychologists measure as an inevitability impression and which has its own items and its own results.",
@@ -13,6 +15,23 @@
     "note": "The idea is Bergson's and the English name is not. His essay 'Le possible et le réel' appeared in the Swedish journal Nordisk Tidskrift in November 1930, on the book's own dating, and sits in La Pensée et le mouvant beside an introduction headed 'Croissance de la vérité. Mouvement rétrograde du vrai'. That heading names his term: to every true statement, he writes, we attribute a retroactive effect, or rather we impress on it a retrograde movement. His examples are literary and political rather than logical. Romanticism, once it existed, created its own prefiguration in the classics and an explanation of itself by its antecedents. Ordinary logic, he adds, is a logic of retrospection. The scan used here is the Presses Universitaires de France printing dated 1938."
   },
   "evidence": "Fischhoff supplied the psychological name in 1975. He called the tendency to perceive reported outcomes as having been relatively inevitable 'creeping determinism', and set it against philosophical determinism, which he defined as the conscious belief that whatever happens has to happen. His own figures show how far the two sit apart. No outcome was judged inevitable by any reader in the uninformed groups, and among readers told that an outcome had occurred only 2.1% gave it 100%. Informed readers were readier to rule the other endings out, marking 11.5% of unreported outcomes impossible against 8.0% among uninformed readers. Blank, Nestler, von Collani and Fischer later argued that hindsight bias holds three separable components, memory distortions, impressions of foreseeability and impressions of necessity, and that the components are close to uncorrelated. Nestler, Blank and Egloff renamed the third inevitability and report dissociations in both directions: varying the number of reasons supplied for an outcome moved inevitability impressions and left memory distortion alone, while a memory encoding manipulation did the reverse. Roese and Vohs place inevitability between the other two levels and gloss it 'It had to happen', with the rating item running 'Under the given circumstances, no different outcome was possible'. The claim has also been tested on written history. Meuer, Nestler and Oeberst took 40 German Wikipedia articles about real events and pulled three versions of each from the revision history, the last one written before the event and two written after. Coders blind to the question, 124 of them, rated how far each version implied the event was inevitable. Versions from eight weeks after the event implied more inevitability than the same articles before it, F(1, 38) = 53.69, p < .001, partial eta squared .59. How much explanatory content an article had gained tracked how far its inevitability rating had risen, r(38) = .56, p < .001.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The couple who met on a delayed train",
+      "text": "A couple who met by chance on a platform describe the meeting as something that was always going to happen. The only thing offered for the inevitability is that it did happen."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The business that could never have worked",
+      "text": "After a firm collapses, commentators explain that its model was doomed from the start, and the ground for saying so is the collapse. Firms running the same model are still trading, which the inference leaves no room for."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The disorder nobody could have prevented",
+      "text": "An inquiry reports that a night of disorder was the inevitable product of conditions in the town, having started from the fact that it occurred. The same conditions were in place through years when nothing happened."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "Inevitability has been measured in its own right, and outcome knowledge raises it in accounts of real events while lowering it in imagined everyday scenarios.",

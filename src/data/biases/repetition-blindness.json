@@ -13,6 +13,23 @@
     "note": "Kanwisher named the effect and reported three experiments testing it against four rival accounts. She credits the observation to Helene Intraub and Mary Potter, who noticed it in pilot work on a different problem, citing a 1984 personal communication, and cites her own 1986 work for the finding that repetition detection is easy below about five words per second."
   },
   "evidence": "Kanwisher's Experiment 1 gave 40 MIT-community subjects 30 lists of seven nouns, one of which appeared twice, in different case. Subjects named the repeated word, guessing if unsure, and rated their confidence. At 250 ms per word they were correct on 91% of trials averaged over lags one to four; at 117 ms per word, 45%. Confidence collapsed further. Correct-and-confident responses ran at 72% for the slow rate and 8% for the fast one, and most subjects said they rarely saw a repetition at all. Detection improved as more words intervened between the two occurrences, F(1, 108) = 10.8, p < .01 on a linear trend, which rules out the account that the first occurrence is simply forgotten. Experiment 2 put the repetition inside a sentence read at 117 ms per word, with 36 subjects recalling the sentence aloud. The second occurrence was recalled on 22% of repeated trials against 79% of trials where the earlier word had been swapped for a synonym, min F'(1, 40) = 74.5, p < .0001. Recall of the first occurrence was untouched at 90% against 94%. Subjects were willing to produce an ungrammatical sentence rather than say the word twice, and on control sentences with the second occurrence deleted they never inserted it. Experiment 3 tested whether the second occurrence is seen at all. Eighteen subjects named the last word of a list of varying length, shown for 67 ms and masked. Naming was better when that word had already appeared earlier in the list, 59% against 41%, min F'(1, 38) = 7.7, p < .01. A prior occurrence helps recognition, so no refractory period is closing down the word's detector. Kanwisher and Potter later found no equivalent deficit when the same sentences were heard as compressed speech, and found the visual deficit surviving when the two occurrences appeared in different places on the screen.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The departure board cycling too fast",
+      "text": "A board flicking through services names one town twice inside half a second, and a traveller asked what appeared reports it once. The entries either side of the repeat are reported correctly, which is what makes the gap odd."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The word flashed twice in a title sequence",
+      "text": "A title card that shows one word at a time repeats a word, and the viewer's account of the line has it once. The word was recognised both times. Only one token was built to hold two separate events."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The party game with flashing letters",
+      "text": "Players watch letters appear one at a time at eight a second and write the sequence down. The letter that occurred twice goes missing from the answer sheets far more often than any other letter in that position."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "In a task where subjects only counted targets, and where repeated and unrepeated trials sat in separate blocks, accuracy still fell from 0.84 to 0.58 when the two targets were identical.",

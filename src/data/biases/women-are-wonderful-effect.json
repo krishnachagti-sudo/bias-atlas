@@ -13,6 +13,23 @@
     "note": "Later cross-cultural work credits the name to this review, whose text is paywalled and was not read here. The findings behind it are two Purdue studies, from 1989 and 1991, and the conference version of the second closes by saying people evidently think communal qualities are wonderful human attributes."
   },
   "evidence": "The 1989 study was within subjects: each respondent rated women, men, Democrats and Republicans, which risks telling people what is being compared. Eagly, Mladinic and Otto then ran it between subjects on 324 Purdue students, 162 of each sex, each rating one target group. On a five-item semantic differential from +3 to -3, women scored 2.22 (SD 0.84) and men 1.73 (SD 0.98), with the target-group effect at F(3, 323) = 26.98, p < .0001. Beliefs volunteered about each group, weighted by how typical the respondent thought them, favoured women too, 0.97 against 0.46. The two emotion measures did not separate the sexes: free-response emotions came out at 0.67 for women and 0.65 for men. Those figures are read from the conference-paper version lodged with ERIC in 1990, because the journal version is paywalled.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The two halves of the same questionnaire",
+      "text": "Asked which group is kinder and more helpful, respondents of both sexes put women well ahead. Asked on the next page which group is more ambitious and more forceful, the ordering turns over. The advantage belongs to particular traits and not to the category as a whole."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The strangers in the photographs",
+      "text": "Participants rate a series of faces for likeability in a task that never mentions gender, and the women come out slightly higher. Ratings of how capable the same faces look sit level. Nothing in the task asked about men and women, and the gap appears anyway."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The warm rating and the pay figure",
+      "text": "The same respondent scores women above men on a scale of general favourability and, three questions later, reports accurately that women in his own firm earn less. Both answers are his. A favourable view of a category is not a report on how its members are treated."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "A 44-culture reanalysis of 4,519 people puts the effect at d = 0.16, and near zero in the ten most gender-egalitarian countries.",

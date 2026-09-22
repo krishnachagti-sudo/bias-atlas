@@ -13,6 +13,23 @@
     "note": "No coining publication was located in the indexes searched, and 2006 is the date the label entered Wikipedia rather than a proven first use. Wikipedia cites a 1997 cognitive therapy volume at the page where the phrase would sit, and Google Books would not show that page, so an earlier print use is neither confirmed nor ruled out. The first revision of the Wikipedia article, timestamped 7 March 2006, carried no citations and was tagged as a psychology stub. It defined the term as ordinary propaganda \"done to oneself\" and said the person \"will go over every aspect of their side of the 'argument'\" and \"refuse to look at any alternatives\". The article has carried a \"more citations needed\" banner dated May 2010 since then. It sits in Wikipedia's Category:Cognitive biases, and the word does not appear in Wikipedia's own List of cognitive biases."
   },
   "evidence": "Nothing below is a measurement of self-propaganda, because there is none. The article carries ten citations. Two are Google Books links, to a cognitive therapy volume and to a book on propaganda in the helping professions, and a third is a Skeptic's Dictionary entry. Then come a political theory piece reachable only through a university proxy, a doctoral thesis, a dead CiteSeerX link and a peer-reviewed article on memory for personality feedback. The last three are a newspaper opinion column and two magazine pieces. Not one is a study of self-propaganda, and none was obtained for this entry. What has been measured is selective exposure, the preference for information that agrees with one's existing position. Hart, Albarracin, Eagly, Brechan, Lindberg and Merrill collected 67 eligible reports containing 91 studies, which supplied 300 statistically independent groups and just under 8,000 participants. The average effect was d = 0.36, 95% CI [0.34, 0.39] by fixed-effects analysis and d = 0.38, 95% CI [0.32, 0.44] by random effects, with an unweighted mean of 0.38. Effect sizes were heterogeneous. The preference weakened where participants' views had been supported before they chose, where those views were not tied to their values or held with conviction, where the available information was of low quality, and where their confidence was high. It reversed into a preference for disagreeable information when that information helped accomplish a current goal. Their paper opens by noting that diverse information in an environment does not guarantee that a person's views will be equally diverse.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The case built for oneself",
+      "text": "Someone leaning towards a purchase spends an evening assembling reasons for it and looks for none against. He ends more certain than the evidence he gathered would carry, and the argument that convinced him was his own."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The feed that only agrees",
+      "text": "A reader follows the accounts that say what he already thinks and reads the resulting agreement as independent support. Nothing in that is separable from selective exposure and communal reinforcement, which each have a name and a literature of their own."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The quarrel rehearsed in advance",
+      "text": "A man goes over his side of a dispute until every objection has an answer waiting. By the time the other person speaks, whatever they offer arrives at a position built in order to refuse it."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "No study of self-propaganda was found, because nothing is operationalised under the name. Its components are measured, and two of those measurements cut against the popular account.",

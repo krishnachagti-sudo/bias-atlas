@@ -2,7 +2,11 @@
   "no": 110,
   "slug": "illusion-of-explanatory-depth",
   "name": "Illusion of explanatory depth",
-  "aliases": ["IOED", "Knowledge illusion", "Illusion of understanding"],
+  "aliases": [
+    "IOED",
+    "Knowledge illusion",
+    "Illusion of understanding"
+  ],
   "category": "belief",
   "statement": "People rate their understanding of how everyday things work higher than they can demonstrate, and the rating falls once they try to write the explanation out.",
   "meaning": "The claim is narrower than it sounds. It is not that people are generally overconfident about what they know. It is that one particular kind of knowledge, the causal mechanism by which something works, invites a confidence that other kinds do not. Rozenblit and Keil's method is three steps: rate your understanding of a zip fastener or a flush toilet on a seven-point scale, write out how it works, then rate yourself again. The gap between the two ratings is the illusion. Their explanation is that a device offers visible parts, a familiar function and a name, and people mistake the availability of those cues for possession of the mechanism. Their Study 12 supports the first of those, with the ratio of visible to hidden parts the best predictor of how far a rating fell.",
@@ -13,6 +17,23 @@
     "note": "Their paper is \"The misunderstood limits of folk science: an illusion of explanatory depth\", volume 26, pages 521 to 562. It reports twelve studies and coins the name."
   },
   "evidence": "Study 1 asked 16 Yale graduate students to rate 48 phenomena, 40 distracters and eight test items, most of them taken from a CD-ROM version of The Way Things Work. Ratings came five times: before explaining, after explaining, after a diagnostic question, after reading an expert account, and once more for what the account had just taught them. Time was reliable, F(4, 56) = 16.195, p < .001, eta-squared = .536, and the contrasts from Time 1 to Times 2, 3 and 4 all held at p < .002. Study 2 repeated it on 33 Yale undergraduates, F(4, 124) = 38.9, p < .001, eta-squared = .555, with no interaction between study and time. Study 3 ran the same materials on 16 students at a regional non-selective state campus, F(3, 42) = 23.557, p < .001, eta-squared = .627. Study 5 gave the Study 2 explanations to 12 fresh raters, whose mean judgement of them was 2.72 against self-ratings of 3.89 before explaining and 3.10 after. Study 6 warned 31 undergraduates in advance that they would be tested, which shrank the fall without removing it. Studies 7 to 10 swapped the material, testing 52 people on capital cities, 37 on procedures, 39 on film plots and 31 on natural phenomena, against a devices group of 97 pooled from Studies 1 to 4. Table 7 gives the average Time 1 minus Time 2 drop by domain: .918 for devices, .860 for natural phenomena such as tides and rainbows, .351 for the plots of popular films, .291 for the capital cities of countries and minus .173 for procedures such as baking chocolate chip cookies. The rise for procedures did not reach significance, F(2, 70) = 1.598, p = .210.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The zip that will not be described",
+      "text": "Someone asked how a zip fastener works rates their understanding high, because zips are handled daily and the parts are in plain sight. Asked to write the steps out, the account stops at the slider, and the second rating comes in lower."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The fridge in the corner",
+      "text": "A householder is sure they know how a fridge makes cold. Asked to set out the stages, the account reaches something about a pump and stops. Familiarity with the object had been standing in for possession of the mechanism."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The broadband that arrives somehow",
+      "text": "A customer complains with confidence about the connection and could not say what carries a signal from the street to the router. The confidence was about using the thing and the question was about how it works."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The rating drop repeats wherever it is tried. The political version of the finding, which is the one that made the idea famous, has failed or reversed more often than it has held.",

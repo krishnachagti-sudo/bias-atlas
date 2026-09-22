@@ -17,6 +17,23 @@
     "note": "\"Availability: A heuristic for judging frequency and probability\" ran ten studies. The reformulation tested by most later replications is Schwarz, Bless, Strack, Klumpp, Rittenauer-Schatka and Simons in 1991, which is a different claim about a different mechanism."
   },
   "evidence": "Study 3 of the 1973 paper asked 152 people whether each of the letters K, L, N, R and V appears more often first or third in English words. All five are commoner in third position, by the word count of Mayzner and Tresselt that the authors used. Of the 152, 105 chose first position for most letters and 47 chose third, and the median estimated ratio was 2:1 for every letter. Study 5 asked 118 people how many committees of r members can be drawn from a group of ten. The true count peaks at 252 for committees of five and is symmetric, so committees of two and of eight are equally numerous. Median estimates fell steadily as r rose. Study 8 played recorded lists of 39 names, each list pairing 19 famous names of one sex with 20 less famous names of the other. Recall favoured fame: across the 86 people in the four recall groups, 12.3 of the 19 famous names came back against 8.4 of the 20 less famous. So did frequency judgement. Of 99 people asked which sex appeared more often, 80 named the sex with the famous names, which was in every list the smaller group. Schwarz and colleagues then asked 40 female German students, nine or ten to a cell, to describe either 6 or 12 examples of their own assertive or unassertive behaviour, and to rate themselves afterwards. Twelve examples were rated harder to produce than six, 7.2 against 5.1, F(1, 36) = 4.2, p < .05. Those describing assertive behaviour rated themselves 6.3 after six examples and 5.2 after twelve; those describing unassertive behaviour rated themselves 5.2 after six and 6.2 after twelve. More recalled content produced a weaker effect, which is the reversal the amount-of-recall account cannot give.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "Flying against driving",
+      "text": "Asked which is riskier, a traveller tries to bring accidents to mind and produces three crashes from the past decade and no road deaths at all, because a crash is national news and a road death rarely leaves the local paper. The estimate is read off the retrieval."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Who contributes in meetings",
+      "text": "Asked which of her team speak up most, a manager brings instances to mind and returns the two who spoke last Thursday. A question about frequency is being answered by a search of memory, and recency has governed what the search returned."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The break-in down the street",
+      "text": "After a neighbour is burgled, residents put the rate of break-ins in the area far above last year’s, though one has occurred. The single instance is the only thing the search returns, and the estimate is taken from that retrieval rather than from a count."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The letter-position demonstration did not come back, the ease-of-retrieval reformulation failed in two preregistered replications of 273 and 661 people, and the fame demonstration survived at about half its original size.",

@@ -15,6 +15,23 @@
     "note": "\"Lost in Translation: The Effects of Incentive Compensation on Strategy Surrogation\" runs to pages 1135 to 1163 of volume 87, issue 4. It names the phenomenon and reports the first two experiments on it. What this entry rests on is the authors' accepted manuscript, deposited at BYU ScholarsArchive under a 2011 date, where the repository record lists Choi and Hecht at Emory University and Tayler at Brigham Young University. The published article has not been opened. On 21 September 2026 the publisher's page answered a Cloudflare bot challenge, and the repository refused the manuscript file the same way."
   },
   "evidence": "Both original experiments ran in the creature-design module of the computer game Spore. Participants built a creature under a stated strategy of maximising its social ability, which four equally weighted measures captured: sing, dance, charm and pose. A quiz forced everyone to state that all four abilities mattered equally before they could continue. Pay for the design task was a flat $10, or $2 for each level of sing alone, or $2 for each level of sing, dance and charm together. Participants then viewed 18 pairs of modification packages for other creatures and chose one from each pair. No money rode on those choices. The surrogation score is the share of choices favouring the previously paid measures over the creature's overall social ability. The main experiment had 79 students from graduate business courses at a highly ranked United States business school, average age 29 and 61% male, split 27 flat wage, 26 single measure and 26 multiple measure. Mean comprehensive surrogation score was 0.59 under single-measure pay against 0.39 under a flat wage, a difference of 0.20, t = 4.56, p < 0.01. Multiple-measure pay gave 0.46 against the single measure's 0.59, a difference of 0.13, t = 2.15, p = 0.02, but on the subset of choices that cost overall social ability the gap was 0.34 against 0.29, t = 0.58, not significant. Multiple-measure pay did not separate from a flat wage, 0.46 against 0.40, t = 1.16, not significant. A follow-up experiment paid participants for the package choices as well, and 24 single-measure participants still scored 0.61 against 26 multiple-measure participants at 0.46, t = 2.31, p = 0.01. The authors report one-sided p-values for their directional predictions and two-sided p-values otherwise. Every figure above was read from the accepted manuscript at the check of 10 August 2026. BYU ScholarsArchive answered a Cloudflare bot challenge on 21 September 2026, so none of them could be read off the document again.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The satisfaction score that became satisfaction",
+      "text": "Staff paid on a survey score start asking which option raises the score rather than which option helps customers. Later, choosing between two projects with no bonus attached, they still pick the one the survey would have rewarded."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Counting sessions instead of recovery",
+      "text": "A clinic measures its physiotherapy service by appointments delivered and rewards the team on that count. Staff come to speak of a busy clinic as a good clinic, and rank an unrelated proposal by its appointment count alone."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Minutes logged instead of reading",
+      "text": "A school tracks reading by the minutes pupils log at home and praises the highest totals. Teachers begin treating the minutes as the thing they wanted, and choose books by how easily they fill a log rather than by what they teach."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "The core effect has come back three times on the same task in papers sharing an author with the original, and once in an independent experiment on 80 Mechanical Turk workers using a different task.",

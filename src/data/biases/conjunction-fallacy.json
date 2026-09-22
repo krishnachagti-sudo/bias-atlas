@@ -17,6 +17,23 @@
     "note": "\"Extensional Versus Intuitive Reasoning: The Conjunction Fallacy in Probability Judgment\" ran the problem across domains, from Linda and Bill to medical prognosis, Wimbledon finals and suspicion of criminal acts. The paper says the first studies of the conjunction rule were conducted in 1974 and that the project tested more than 3,000 subjects."
   },
   "evidence": "Eighty-eight UBC undergraduates first ranked the eight statements for each description by how far Bill and Linda resembled the class. The predicted order came out for 87% of them on Bill and 85% on Linda, which was the expected result. Ranking the same statements by probability produced almost the same pattern. Across three groups, statistically naive students, students with a statistics course and doctoral students in decision science, direct-test violations ran 92%, 86% and 83% for Bill and 89%, 90% and 85% for Linda. The overall rate in direct tests was 88%, and the correlation between mean probability and mean representativeness ranks was .96 for Bill and .98 for Linda. Statistical training made no difference. Tversky and Kahneman then stripped the problem down. Given only the two statements and asked which was more probable, 85% of 142 UBC undergraduates picked the conjunction. Asked to rate both on a nine-point scale, 82% of 119 rated the conjunction higher, with means of 3.5 and 5.6. Replacing \"bank teller\" with \"bank teller whether or not she is active in the feminist movement\" left 57% of 75 still committing the fallacy, on mean ratings of 5.1 for the conjunction and 3.8 for the wider statement. Offered $10 to bet on one statement, 56% of 60 bet on the conjunction. The one manipulation that worked on Linda was expertise plus transparency: among 64 graduate students in the social sciences with credit for several statistics courses, 36% committed the fallacy. Wording mattered more in a problem built from classes rather than personality. Asked what percentage of surveyed men had had a heart attack and what percentage both were over 55 and had had one, 65% of 147 gave the second a higher figure. Adding a prior estimate of the percentage over 55 cut that to 31% of 159. Asking how many of 100 participants fell in each class cut it to 25% of 117, and adding the prior estimate as well cut it to 11% of 360.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The man who loves the hills",
+      "text": "Told about someone who walks every weekend, owns three sets of boots and reads maps for pleasure, people judge it likelier that he is a mountain rescue volunteer who works in insurance than that he works in insurance. Every insurance-working volunteer is already inside the second group."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The forecast with the extra clause",
+      "text": "A supporter rates it more probable that the pitch floods and the match is called off than that the match is called off. The flood makes the story easy to see, and each thing added to a prediction can only narrow the set of ways it comes true."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The government that loses the by-election",
+      "text": "Asked what happens next, people rate a tax rise after a lost by-election as likelier than a tax rise. The defeat supplies a reason, and a reason makes a claim feel probable while making it, as a claim, strictly smaller."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "Linda holds under real-money bets on unresolved future events and in a representative survey, frequency wording has cut it to near zero in some studies and left it standing in others, and the famous 85% is one sample's figure.",

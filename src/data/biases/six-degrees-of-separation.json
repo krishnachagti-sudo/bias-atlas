@@ -17,6 +17,23 @@
     "note": "The popular article in the magazine's first issue reported the Nebraska study and the anecdote of a folder reaching a Cambridge target through two intermediaries. The technical report came two years later, by Jeffrey Travers and Milgram in Sociometry. Neither text uses the phrase 'six degrees of separation'. Backstrom and colleagues trace the phrase to John Guare's 1990 play and the underlying idea to Frigyes Karinthy's 1929 story 'Láncszemek'."
   },
   "evidence": "Travers and Milgram recruited 296 starters: 100 Nebraska owners of blue-chip stocks, 96 other Nebraskans, and 100 people answering a Boston newspaper advertisement. The target was a stockbroker who lived in Sharon, Massachusetts, and worked in Boston. Of the 296, 217 posted the folder on and 64 reached the target, which the paper reports as 29 per cent of those sent out by starting persons. Completed chains ran a mean of 5.2 intermediaries, with a median of five. Boston starters averaged 4.4 intermediaries against 5.7 for the Nebraska random group, a difference the paper reports as significant by a one-tailed Mann-Whitney U test. Completion rates by group were 24, 31 and 35 per cent, and the differences were not significant. Convergence was heavy: three penultimate links delivered 48 per cent of all completions, and one clothing merchant in the target's home town delivered 16. A footnote credits Harrison White with a correction for dropout, which on an assumed 25 per cent random dropout rate raises the median completed length from five to seven.",
+"examples": [
+  {
+    "kind": "everyday",
+    "tag": "The two strangers at a wedding",
+    "text": "Guests seated together find a shared acquaintance inside three names. Both grew up near the same small town, which is why the link was easy to find. Pairs with nothing in common are the ones who never get connected at all."
+  },
+  {
+    "kind": "everyday",
+    "tag": "The request passed by hand towards a hiring manager",
+    "text": "Someone wanting to reach a manager sends the request to the best-placed friend they have, who sends it on. Most such chains stop at the second or third person, and only the ones that arrive leave any record of their length."
+  },
+  {
+    "kind": "everyday",
+    "tag": "The cousin traced through a village",
+    "text": "A woman looking for a distant relative asks the one person in the village who knows everybody, and reaches him after two more calls. The path was short and it was found by a hub, not by an ordinary acquaintance."
+  }
+],
   "replication": {
     "state": "mixed",
     "headline": "A global email replication recovered the median, at five to seven steps, while 384 of its 24,163 chains reached a target; the number survives, the routing does not.",

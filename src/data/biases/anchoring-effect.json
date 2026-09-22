@@ -18,6 +18,23 @@
     "note": "Anchoring is one of three heuristics described in \"Judgment under Uncertainty: Heuristics and Biases\". The standardised procedure that later work replicates comes from Jacowitz and Kahneman in 1995, which is why the replication below tests their version rather than the 1974 demonstration."
   },
   "evidence": "The 1974 anchoring section is a paragraph long. A number between 0 and 100 came off a wheel of fortune spun in front of the participants, who said whether a quantity was above or below it and then estimated the quantity. Median estimates of the percentage of African countries in the United Nations were 25 and 45 for the groups given 10 and 65. That passage reports no sample size and no test statistic. Jacowitz and Kahneman built the measurable version: a calibration group estimates fifteen quantities unaided, and each anchor is set at the 15th or the 85th percentile of what that group said. Estimates followed the anchor. The Many Labs replication took four of those questions, on the distance from San Francisco to New York, the population of Chicago, the height of Mount Everest and the number of babies born daily in the United States, and ran them across 36 samples.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The suggested amounts on a donation form",
+      "text": "A charity form prints boxes for five, ten and twenty pounds, and the sums written on the blank line sit near those figures. A form printing twenty, fifty and a hundred collects larger blanks from a similar crowd, though neither set of numbers says what the cause needs."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The guess that follows the one read aloud",
+      "text": "At a fete, people write down how many sweets are in a jar after hearing the previous guess called out. That figure is somebody else's guess and carries nothing about the jar, and the estimates that follow still cluster around it."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The first quote for a repair",
+      "text": "A householder with no idea what a leaking roof costs is quoted a figure by the first firm to visit, and judges every later quote as high or low against it. The first number was one firm's price rather than a measurement of the work."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "All four anchoring questions came back across 36 samples, each significant in every sample, and each larger than the 0.93 the original reported.",

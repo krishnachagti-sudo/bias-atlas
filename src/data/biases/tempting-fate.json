@@ -13,6 +13,23 @@
     "note": "The paper is \"Why people are reluctant to tempt fate\", and it argues the effect survives in people who explicitly reject the belief, which is what makes it a bias rather than a doctrine."
   },
   "evidence": "Risen and Gilovich ran six studies, and two of them have since been retested. Study 2 gave 120 Cornell undergraduates one of four scenarios in which they, or a classmate named Jon, had done the reading for a class or had not. Each rated the chance that the professor would call on the protagonist, from 0 to 10. Unprepared drew 3.43, prepared 2.53, F(1, 116) = 4.60, p < .05, d = 0.39. Whether the protagonist was the participant or Jon made no difference and did not interact with preparation, both Fs below 1. Study 6 added cognitive load. Of 122 students, two were dropped for not counting backwards as instructed, leaving 120. Without load the unprepared gave 2.93 against 1.90 for the prepared, d = 0.58. Under load the gap widened to 5.27 against 2.70, and the interaction was F(1, 116) = 4.15, p < .05. Both of those tests are reported as p < .05 rather than to a figure. The interval of 0.03 to 0.75 around the Study 2 d comes from Many Labs 2's restatement; the results section of Study 2 gives the F, the p and the d without one.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The umbrella left by the door",
+      "text": "Having decided not to carry it, a commuter judges rain likelier than the forecast says. Nothing about the sky changed when the umbrella was put down; what changed is how readily the soaking comes to mind."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The topic skipped in revision",
+      "text": "A student who leaves one chapter unread feels sure that chapter will be on the paper. Asked directly, they will say the examiner cannot know what they revised, and the feeling survives the admission."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Saying out loud how well the car runs",
+      "text": "A driver remarks that the old car has not missed a beat in years, and at once feels a breakdown is closer. The ironic version of the journey has become vivid, and vividness is doing the work usually blamed on a belief about fate."
+    }
+  ],
   "replication": {
     "state": "mixed",
     "headline": "The classroom scenario came back across 8,000 people at less than half its original size, while a four-site retest of the cognitive-load version found neither effect.",

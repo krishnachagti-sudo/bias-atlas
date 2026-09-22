@@ -18,6 +18,23 @@
     "note": "A short essay under the title 'Knowing is Half the Battle'. It reports no data and carries no references, though it names Paul Rozin's work on disgust and labels the mechanisms it invokes as left-digit anchoring, ego depletion and implicit bias. Its illustrations are the price 19.99 dollars against 20 dollars, a parole decision after a snack, a resume read with implicit bias, and fudge shaped like dog faeces."
   },
   "evidence": "The coinage carries no experiment of its own. The one sustained treatment is a Harvard Business School working paper by Kristal and Santos, number 21-084, which reviews existing findings and reports no new data. It opens with Daniel Kahneman on his own book: 'It's not a case of: Read this book and you'll think differently. I've written this book, and I don't think differently.' Its clearest experimental case is the halo effect, where Wetzel, Wilson and Kort forewarned participants about the effect and taught them about it, to no avail. That paper is titled 'The halo effect revisited: Forewarned is not forearmed', and this entry takes its outcome from Kristal and Santos rather than from the paper, which could not be obtained. Outside the review, the claim has been tested most directly on nudges, by telling people what a nudge is doing while it does it. Loewenstein, Bryce, Hagmann and Rajpal told people about the default options in a hypothetical advance medical directive, either before or after they filled it in, then had them fill it in again with no defaults. The defaults moved the choices on five specific treatments, and not the broad goal of care, where a preference for comfort held in every condition. Warning people first weakened the pull of the default without removing it, and that comparison reached significance only on the average of the five treatments and on dialysis alone. The authors call it premature to conclude that nudges will always survive awareness. Bruns, Fillon, Maniadis and Paunov later pooled 23 publications built to compare transparent nudges against covert ones, holding 117 effect sizes. They report a positive effect of transparency on behavioural outcomes and no effect on non-behavioural ones. Default nudges supply 88% of those effects, and all but two of the studies ran online or in a laboratory.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The illusion you have measured yourself",
+      "text": "Someone shown that two lines are the same length, holding the ruler that proves it, still sees one as longer. The knowledge is complete and correct, and it does nothing at all to the seeing."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The afternoon everybody passed",
+      "text": "A firm runs a session on bias, everyone leaves able to define it, and the shortlists look the same next quarter. The second half of the error is the firm's expectation that an afternoon of knowing would be enough."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The biscuit at nine o'clock",
+      "text": "A dieter can name the state he is about to enter and describe what it will do to his resolve, in the right terms, and eats the biscuit anyway. Knowing which state is coming does not reach inside it."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "No study testing the general claim was located. Its authors set that test as future work, and say that for some of the biases they cover they have only an anecdotal sense that knowing does not help.",

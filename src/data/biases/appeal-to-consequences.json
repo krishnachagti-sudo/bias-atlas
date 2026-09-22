@@ -17,6 +17,23 @@
     "note": "Douglas Walton traced the modern textbook genesis of the fallacy to McCosh, citing an 1879 printing, and reports that Aristotle treated the argument as reasonable rather than as a fallacy. The passage is section 110, headed \"Argument from Consequences\", at page 189. Two scans carry it word for word, an 1883 Robert Carter and Brothers printing and Charles Scribner's Sons' revised edition of 1891, and both register copyright in 1870. The 1870 first edition itself was not seen. Walton's article is paywalled, so the dating and the reading of Aristotle come from its published abstract."
   },
   "evidence": "McCosh's section states the distinction the fallacy turns on, and states it under an English heading rather than the Latin one. Argument from consequences \"is allowable in questions of pure expediency\", his instance being whether a proposed law against intemperance, gambling or licentiousness would achieve its end. \"But when the question is one of truth or right, we should not in the first instance appeal to results.\" He names the case he had in mind: rejecting a new scientific truth because it might undermine religious belief or good social sentiment. Consequences may be traced once truth or falsehood has been settled on independent evidence. Hans Hansen's Stanford Encyclopedia article draws the same line for two neighbours of this fallacy. Ad misericordiam and ad baculum arguments have their natural home in practical reasoning, he writes, and fallacy becomes more likely when they are used in theoretical, doxastic argumentation. Walton's own scheme keeps consequences on the practical side. Argument from positive consequences runs from a premise that good consequences will plausibly occur if A is brought about to the conclusion that A should be brought about, and the negative form mirrors it. The conclusion is about an action. The measured work comes from one place. Van Eemeren, Garssen and Bert Meuffels showed ordinary readers paradigmatic fallacies alongside their non-fallacious counterparts. The exchanges were domestic, political or scientific, and written without loaded content. Readers rated reasonableness on a seven-point scale, with 1 the strongest unreasonable rating, 4 neutral and 7 the strongest reasonable rating. Van Eemeren and Garssen's 2023 overview of 24 fallacy types gives the argumentum ad consequentiam two rows. The pragmatic variant scored 2.96 against 5.03 for its reasonable counterpart. The logical variant, which imitates reductio ad absurdum by swapping \"Y is not true\" for \"Y is not desirable\", scored 3.92 against 4.39. That gap of 0.47 is the narrowest of the 24 rows in their table. Van Eemeren's own gloss on the programme records the failure from both sides. Ordinary arguers hardly ever see the reductio ad absurdum as a type of sound argumentation, and hardly ever see the logical variant of the argumentum ad consequentiam as a fallacy.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The diagnosis nobody wants",
+      "text": "Told that a relative's tremor points to a degenerative illness, a family decides the test must be wrong because the alternative is unbearable. Whether the tremor has that cause does not depend on how the answer would feel to hear."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The survey that would sink a purchase",
+      "text": "A surveyor reports subsidence, and the buyer reasons that the report cannot be right, since being right would end a purchase two years in the making. The cost of a finding is a reason to check the survey, not a reason to think the ground is sound."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The forecast the board rejects",
+      "text": "A budget officer's model shows the fund running dry within four years. The board rules the model wrong on the ground that accepting it would mean closing two services. What the services need is a question about spending; when the money runs out is a question about the money."
+    }
+  ],
   "replication": {
     "state": "none-located",
     "headline": "One experimental measurement was found, rating the pragmatic variant 2.96 against 5.03 and the logical variant 3.92 against 4.39, and no independent repeat of either test was located.",

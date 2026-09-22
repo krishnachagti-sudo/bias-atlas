@@ -16,6 +16,23 @@
     "note": "Three experiments, 54, 37 and 48 undergraduates. The first two used neutral behaviour by a character called Keith; the third used a shooting, and it is the one that was later replicated."
   },
   "evidence": "In Experiment 1 the imperfective group completed more word stems with intention words than the perfective group, 3.89 against 2.68, F(1, 53) = 13.31, p = .001, d = 1.00. In Experiment 2 they rated Keith higher on three items from the Mind Attribution Scale, 5.55 against 4.63, F(1, 35) = 9.28, p = .004, d = 1.00, and tallied more action segments, 4.64 against 2.72, d = 1.23. Experiment 3 put 48 students in the role of a judge reading a five-line report of a shooting after a dice game, adapted from a real case. Rating how knowingly, intentionally and deliberately the shooter caused harm, on three scales running from -5 to +5 averaged together, the imperfective group gave 4.89 and the perfective group 3.69, F(1, 46) = 7.02, p = .01, d = 0.76. The same participants rated the imperfective report easier to picture, 5.40 against 4.48, d = 0.73. Bootstrapped mediation put the indirect effect of aspect on criminal intentionality, through that ease of picturing, between 0.06 and 1.15 with 95% confidence.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "Two sentences in a closing speech",
+      "text": "A lawyer may say that the defendant fired at the window, or that he was firing at the window. The second invites the listener to picture the act unfolding, and a listener who pictures more of it has more from which to read off purpose."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The wording of an incident report",
+      "text": "A report saying a driver was overtaking on the bend reads differently from one saying a driver overtook on the bend. The manoeuvre described is identical and the aspect is all that has moved."
+    },
+    {
+      "kind": "everyday",
+      "tag": "The complaint about a colleague",
+      "text": "A message saying that somebody was taking credit for the work reads as a campaign. Saying that they took credit for the work reads as one occasion. The first presents the act as still in progress, and intent is read into the progress."
+    }
+  ],
   "replication": {
     "state": "failed",
     "headline": "Eleven laboratories plus an online study ran Experiment 3 to a vetted protocol and the difference came out slightly the wrong way.",

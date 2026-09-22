@@ -17,6 +17,23 @@
     "note": "The name Rat Park belongs to the enclosure rather than to any of the papers, none of which use it in their titles. Three papers make up the series, in Psychopharmacology in 1978 and 1979 and in Pharmacology Biochemistry and Behavior in 1981, with a fourth paper in 1980 describing the drop dispenser built to measure individual drinking inside the colony."
   },
   "evidence": "The colony was an L-shaped enclosure of 8.8 square metres holding rats of both sexes, floored with cedarwood sawdust and stocked with boxes, tubes, open-topped cages and a climbing pole. In the 1978 study, rats housed from weaning either alone or in the colony were given 0.5 mg/ml morphine hydrochloride as their only fluid for 57 days, then run through three-day cycles taken from Nichols and colleagues, then a period of abstinence. Its abstract reports that on morphine and water choice days late in forced consumption, between the Nichols cycles and during abstinence, the isolated rats drank more morphine solution than the social rats and the females drank more than the males, both differences called significant. Across the four choice days in the Nichols period the isolated rats increased their intake while the colony rats cut theirs. Gage and Sumnall, reading the papers for Addiction, give the starting groups as four isolated females, six isolated males, ten colony females and twelve colony males, with four rats dying during forced consumption and a fifth during abstinence. They also record that during forced consumption itself, when morphine was the only fluid, mean intake was higher in the colony at 18.6 mg per rat against 13.3 mg in the cages, and that the limited-access data were not reported because of measurement error. The 1979 study used morphine-naive rats, nine of each sex per condition, offered water against a series of morphine and sucrose mixtures. Its abstract reports that in the phase with the greatest consumption the isolated females drank five times as much morphine per kilogram as the colony females, and the isolated males sixteen times as much as the colony males. Gage and Sumnall add that the housing difference appeared only where sucrose was at 10%, and was largest at the weakest morphine concentration. The 1981 study raised rats in one setting, moved half of each group to the other at 65 days, and tested from 80 days against four morphine concentrations and three control solutions. Rats living in the colony when tested drank less morphine solution than isolated rats and no less of the control solutions. Early housing mattered little, reaching significance only at the lowest morphine concentration.",
+"examples": [
+  {
+    "kind": "everyday",
+    "tag": "The same prescription in two households",
+    "text": "Two patients go home from hospital with identical painkillers. One returns to a full house and a job to go back to, the other to an empty flat and no routine. The drug is the same and the pattern of use is not."
+  },
+  {
+    "kind": "everyday",
+    "tag": "The posting to a remote site",
+    "text": "A worker sent alone to a distant project drinks heavily every evening and stops without difficulty on returning to friends and a settled week. Nothing about the alcohol changed between the two places, and the housing did."
+  },
+  {
+    "kind": "everyday",
+    "tag": "The bare residential unit",
+    "text": "A treatment programme keeps residents in an empty building with no work, no visitors and nothing to do, then reads relapse as a measure of how strong the drug is. Conditions were the thing that was never held constant."
+  }
+],
   "replication": {
     "state": "mixed",
     "headline": "The published direct replication attempt failed. Later work in other paradigms mostly supports enrichment reducing opioid intake, and several studies in that literature found nothing.",

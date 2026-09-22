@@ -18,6 +18,23 @@
     "note": "The paper names the effect retrieval-induced forgetting and argues that suppression, not strength-dependent competition, produces it. Its own framing is that three assumptions of existing competition models already imply the effect, and that the data violate the strength-dependence assumption among them. The article states that it appears on University Microfilms as part of Anderson's UCLA doctoral dissertation."
   },
   "evidence": "Anderson, Bjork and Bjork ran three experiments on UCLA psychology students, 36 in the first, 48 in the second and 64 in the third. Experiment 1 gave eight six-item categories, four built from strong exemplars and four from weak ones. Three exemplars from two strong and two weak categories were then retrieved three times each. A 20-minute gap filled with an unrelated task came before category-cued recall. Practised items were recalled at 73.6% against a baseline of 48.4%, F(1, 32) = 136.9, p < .0001, and their unpractised neighbours at 37.5%, F(1, 32) = 30.3, p < .0001. The loss was not spread evenly. Strong unpractised items fell from 56.0% to 40.3%, weak ones only from 41.0% to 34.7%, which runs against the prediction that weak items suffer most. Both losses were reliable, F(1, 32) = 27.4 for strong items and F(1, 32) = 4.5 for weak ones. What differed was their size, not whether they happened. Experiment 2 added a two-letter stem at test and fixed the output order so that unpractised items could be tested before practised ones. Averaged over position the impairment was not reliable, 68.8% against 73%, F(1, 40) = 2.3, p = .13. It held for strong categories alone, 74.7% against 82.7%, F(1, 40) = 7.2, p < .01. Weak categories showed 62.9% against 62.7%. Testing the strong unpractised items first still cost 7.6 points, which is the paper's evidence that the damage outlasts the practice phase. Experiment 3 crossed the strength of practised and unpractised items across four groups of 16. Impairment tracked the strength of the competitor, 53.9% against 63.4%, F(1, 60) = 7.6, p < .01. It did not track the strength of the practised item, where strong and weak practice differed by 2.9 points against 0.3 points, F(1, 60) < 1. Weak unpractised items were if anything helped, 45.1% against 38.8%, F(1, 60) = 3.3, p = .07. Murayama and colleagues later pooled the literature. Searching PsycINFO and Web of Science for work published before August 2012, they identified 194 papers, kept 143, and drew 759 effect sizes from 512 samples. The weighted mean was g = 0.35, 95% CI [0.32, 0.38], with Q(511) = 1381.2 and I-squared of 63.0%. A separate analysis of raw recall rates, restricted to the 221 samples that printed them, put the gap between the two item types at 8.5 percentage points, CI [7.4, 9.6].",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "The shopping list half rehearsed",
+      "text": "On the way to the shop someone repeats the fruit to be bought, apples and pears, and at the counter cannot retrieve the plums that sat on the same line. The vegetables, never rehearsed, come back whole."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Revising four bones of the hand",
+      "text": "A student drills the first four bones on a list and leaves the rest. In the exam the drilled four arrive at once and the undrilled ones from that same list come slower than material from a chapter nobody touched."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Names at a reunion",
+      "text": "Having named three players from an old team, someone finds the remaining teammates harder to reach for the rest of the evening, while colleagues from a different job arrive freely. Nobody was trying to forget anybody."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "The forgetting itself is solid, at g = 0.35 across 512 samples, and about half of it is competition at the moment of the test rather than damage done during practice.",

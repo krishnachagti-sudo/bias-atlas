@@ -16,6 +16,23 @@
     "note": "Kruger set the below-average effect against the Lake Wobegon literature, and his abstract concludes that the tendency to see oneself as above average may not be as ubiquitous as once thought. He puts the label in quotation marks in his own title."
   },
   "evidence": "Kruger's Study 1 gave eight abilities of varying difficulty to 37 Cornell students, 8 men and 29 women, and asked them to rank themselves against their peers. Mean percentile estimates were 58.8 for using a mouse, 65.4 for driving, 64.0 for riding a bicycle and 61.5 for saving money. On the four difficult abilities they were 46.5 for telling jokes, 27.8 for playing chess, 26.5 for juggling and 24.8 for computer programming. Every figure but telling jokes differed from the 50th percentile. Those numbers and that sample description are read off Tables 1 and 4 of Korbmacher, Kwan and Feldman, who reproduce Kruger's own table, because the original paper could not be opened. The same authors report that Kruger's Studies 2 and 3 replaced the domain list with one test, either easy or difficult, and Kruger's abstract says cognitive load in Study 3 made the biases worse. Zell, Strickhouser, Sedikides and Alicke found the same split in their meta-analysis of better-than-average studies. Seven matched samples, holding 373 participants between them, gave dz = 1.10, 95% CI [1.06, 1.15], on easy abilities and dz = -0.52, 95% CI [-0.59, -0.46], on hard ones. The t of 36.84 printed beside that pair tests the gap between the two, not either estimate against zero. Those meta-analytic figures are read from the authors' accepted manuscript in the University of Southampton repository.",
+  "examples": [
+    {
+      "kind": "everyday",
+      "tag": "Rating yourself among jugglers",
+      "text": "Asked where he stands among people who juggle, a beginner puts himself in the bottom quarter, and at the same time expects to keep three balls up for longer than he can. The ranking and the absolute estimate err in opposite directions."
+    },
+    {
+      "kind": "everyday",
+      "tag": "Chess and driving on one form",
+      "text": "A casual player places herself below the average player at chess and above the average driver, on the same questionnaire. Both answers come of starting with her own skill and adjusting too little for everybody else's."
+    },
+    {
+      "kind": "everyday",
+      "tag": "A month into a new language",
+      "text": "A student four weeks into an evening class puts himself below the average learner in the room, while predicting a higher mark on the next test than he goes on to get. A hard skill pushes the ranking down and the estimate up."
+    }
+  ],
   "replication": {
     "state": "replicated",
     "headline": "A preregistered replication found the effect on three of the four difficult abilities Kruger used, and on the fourth it failed in the original too.",
