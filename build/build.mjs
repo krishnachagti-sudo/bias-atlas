@@ -61,7 +61,7 @@ import { buildLlms, buildLlmsFull } from './llms.mjs';
 import { buildSitemap } from './sitemap.mjs';
 import { buildSearchIndex } from './search-index.mjs';
 import { LASTMOD_TOKEN, manifestFile, resolve as resolveLastmod, stamp } from './lastmod.mjs';
-import { renderPng, siteCardSvg, entryCardSvg, scoreCardSvg, hubCardSvg, VERDICT_HUES } from './cards.mjs';
+import { renderPng, renderPngCached, cardStats, siteCardSvg, entryCardSvg, scoreCardSvg, hubCardSvg, VERDICT_HUES } from './cards.mjs';
 
 const cfg = JSON.parse(await readFile('site.config.json', 'utf8'));
 const arg = (name) => (process.argv.find((a) => a.startsWith(`--${name}=`)) || '').split('=')[1];
@@ -460,7 +460,7 @@ const logoSvg = await readFile(join(assetsDir, 'logo.svg'), 'utf8');
 writes.push(write(join(out, 'icon-512.png'), renderPng(logoSvg)));
 writes.push(write(
   join(out, 'og', 'site.png'),
-  renderPng(siteCardSvg({ origin, base, count: entries.length })),
+  renderPngCached(siteCardSvg({ origin, base, count: entries.length })),
 ));
 
 // One card per entry, at the path entry.mjs names in its og:image. Until this
@@ -469,7 +469,7 @@ writes.push(write(
 // apart, and the verdict — the one thing worth knowing before the click — was
 // nowhere in the preview.
 for (const e of entries) {
-  writes.push(write(join(out, 'og', 'bias', `${e.slug}.png`), renderPng(entryCardSvg(e, { origin, base }))));
+  writes.push(write(join(out, 'og', 'bias', `${e.slug}.png`), renderPngCached(entryCardSvg(e, { origin, base }))));
 }
 
 // The hubs. "42 of 544 failed to replicate" is the most shareable sentence this
@@ -485,7 +485,7 @@ for (const state of REPLICATION_STATES) {
   const list = entries.filter((e) => (e.replication || {}).state === state);
   const byField = new Map();
   for (const e of list) byField.set(e.category, (byField.get(e.category) || 0) + 1);
-  writes.push(write(join(out, 'og', 'verdict', `${verdictSlug(state)}.png`), renderPng(hubCardSvg({
+  writes.push(write(join(out, 'og', 'verdict', `${verdictSlug(state)}.png`), renderPngCached(hubCardSvg({
     headline: `${list.length} of ${entries.length}`,
     sub: `cognitive biases in this index ${VLABEL[state]}.`,
     hue: VHUE[state],
@@ -497,7 +497,7 @@ for (const state of REPLICATION_STATES) {
 for (const [key, label] of Object.entries(CATEGORIES)) {
   const list = entries.filter((e) => e.category === key);
   const t = tally(list);
-  writes.push(write(join(out, 'og', 'field', `${slugify(label)}.png`), renderPng(hubCardSvg({
+  writes.push(write(join(out, 'og', 'field', `${slugify(label)}.png`), renderPngCached(hubCardSvg({
     headline: String(list.length),
     sub: `cognitive biases in ${label.toLowerCase()}. ${t.failed} of them failed to replicate.`,
     split: [['Replicated', t.replicated], ['Mixed', t.mixed], ['Failed', t.failed], ['None located', t['none-located']]],
@@ -512,7 +512,7 @@ for (const [key, label] of Object.entries(CATEGORIES)) {
 for (let s = 0; s <= ROUND; s++) {
   writes.push(write(
     join(out, 'og', `quiz-${s}.png`),
-    renderPng(scoreCardSvg({ score: s, total: ROUND, verdict: scoreVerdict(s, ROUND), origin, base })),
+    renderPngCached(scoreCardSvg({ score: s, total: ROUND, verdict: scoreVerdict(s, ROUND), origin, base })),
   ));
 }
 
@@ -557,4 +557,6 @@ if (leaked.length) {
   process.exit(1);
 }
 
+const cs = cardStats();
+if (cs.hit || cs.miss) console.log(`cards: ${cs.miss} rendered, ${cs.hit} from cache`);
 console.log(`built ${Object.keys(pages).length} pages for ${origin}${base} — ${changed.length} changed since the last build, ${entries.length} entries in the corpus.`);

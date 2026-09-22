@@ -35,6 +35,21 @@ jobs:
       #
       # The tests skip those assertions when `dist/` is missing, so a fresh
       # clone is not confusing. Building first is what makes them run at all.
+      # Rasterising the share cards is 64% of a cold build — 565 cards at
+      # ~31ms each, 18 of 28 seconds — and almost none of them change between
+      # deploys. The cache is keyed by a hash of each card's SVG, so a card
+      # whose entry, verdict or template changed gets a new key and is
+      # re-rendered; a stale card cannot be served because it cannot share a
+      # key. Restoring it takes a cold build to roughly a third.
+      #
+      # `restore-keys` matters more than the exact key here: a run whose corpus
+      # changed still reuses the previous cache for the 500-odd cards that did
+      # not change, instead of starting from empty.
+      - uses: actions/cache@v4
+        with:
+          path: .cache/og
+          key: og-${{ hashFiles('src/data/biases/*.json', 'build/cards.mjs') }}
+          restore-keys: og-
       - run: npm run build -- --base=${{ vars.SITE_BASE || format('/{0}/', github.event.repository.name) }} --origin=${{ vars.SITE_ORIGIN || format('https://{0}.github.io', github.repository_owner) }}
       - run: npm test
       # The house-style gate, on the two things in docs/VOICE.md that are rules

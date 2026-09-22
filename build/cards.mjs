@@ -310,3 +310,67 @@ export function siteCardSvg({ origin = '', base = '/', count = 0 } = {}) {
   <text x="90" y="${CARD_H - 50}" font-family="IBM Plex Mono" font-size="22" fill="${GOLD}">${displayUrl}</text>
 </svg>`;
 }
+
+
+// ---- the cache -------------------------------------------------------------
+//
+// Rasterising is 64% of the build. Measured: 31.5ms a card, 565 cards, 18 of a
+// 28-second build — and every one of them is re-rendered on every build even
+// when nothing about the card changed, because dist/ is wiped first and there
+// is nothing left to compare against.
+//
+// So the cache lives outside dist/, and it is keyed by a hash of the SVG
+// STRING rather than by a slug or a timestamp. That is what makes it safe: the
+// SVG is a pure function of the entry's own fields, so if a name, a verdict, a
+// number or the card template itself changes, the SVG changes, the key changes
+// and the card is re-rendered. A stale card cannot be served, because a stale
+// card has no way to have the same key.
+//
+// The cache is gitignored — 33MB of PNGs do not belong in a repository — so a
+// clean checkout still pays full price once. In CI that is what the workflow's
+// cache step restores.
+
+import { createHash } from 'node:crypto';
+import { mkdirSync, readFileSync, writeFileSync, existsSync } from 'node:fs';
+import { join } from 'node:path';
+
+const CACHE_DIR = '.cache/og';
+const stats = { hit: 0, miss: 0 };
+
+/** Cards rendered this build, and cards served from the cache. */
+export function cardStats() { return { ...stats }; }
+
+/**
+ * `renderPng`, memoised on disk by the content of the SVG.
+ *
+ * Falls back to rendering whenever the cache cannot be read or written — a
+ * broken cache must slow a build down, never fail one or, worse, serve
+ * something wrong.
+ *
+ * @param {string} svg
+ * @returns {Buffer} PNG bytes
+ */
+export function renderPngCached(svg) {
+  let key = '';
+  try {
+    key = createHash('sha256').update(svg, 'utf8').digest('hex').slice(0, 20);
+    const hit = join(CACHE_DIR, `${key}.png`);
+    if (existsSync(hit)) {
+      stats.hit++;
+      return readFileSync(hit);
+    }
+  } catch {
+    // unreadable cache: render as though it were empty
+  }
+  const png = renderPng(svg);
+  stats.miss++;
+  if (key) {
+    try {
+      mkdirSync(CACHE_DIR, { recursive: true });
+      writeFileSync(join(CACHE_DIR, `${key}.png`), png);
+    } catch {
+      // unwritable cache: the build is correct, just slow
+    }
+  }
+  return png;
+}
