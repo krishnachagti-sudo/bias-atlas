@@ -168,7 +168,7 @@ ${verdictRows(s, base)}
 
     <h2 class="vd-h">The 25 most looked-up, with their verdicts</h2>
     <p class="vd-p">Entries are numbered in the order they were written, and the order was set by how often each bias is searched for. These twenty-five are therefore the best-known in the index, and they are where a general claim about cognitive bias is usually coming from.</p>
-    <table class="vtable">
+    <table class="vtable vtable--dropno">
       <caption>The twenty-five most looked-up biases in this index.</caption>
       <thead>
         <tr><th scope="col" class="num">№</th><th scope="col">Bias</th><th scope="col">Field</th><th scope="col">Verdict</th></tr>

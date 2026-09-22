@@ -1475,6 +1475,16 @@ a.vs-k:hover{color:var(--accent)}
   .vtable th,.vtable td{padding-right:8px}
   .vtable tbody th{padding-right:10px}
   .vtable .num{font-size:11.5px;padding-left:6px}
+  /* The gutters were not enough, and the reason was one badge. A verdict badge
+     is nowrap everywhere else because a label broken across two lines stops
+     reading as one chip — but "No replication located" is 22 characters, and
+     held on one line it set a floor of 167px for the verdict column, 384px for
+     the table and 402px for /how-solid/. A page with a 402px floor does not
+     scroll sideways on a 390px phone; it zooms the whole document out, so every
+     word on it gets smaller to keep one chip intact. iPhone SE is 320 and most
+     Androids are 360, so that was most phones. Inside a table cell the badge
+     wraps. */
+  .vtable .badge{white-space:normal}
 }
 /* The replication estimate, when it came out smaller than the original. Marked
    rather than coloured red: a shrunken effect is the ordinary case here, not an
@@ -1531,6 +1541,50 @@ a.vs-k:hover{color:var(--accent)}
 .vtable--drop td:last-child,
 .vtable--drop thead th:last-child{display:none}
 }
+/* iPhone SE is 320px, and four columns still would not fit: the table's
+   min-content was 309 inside a 284 content box, so the page zoomed out by 7px.
+   The entry number is the cell to lose. It is an index, not a fact about the
+   bias — the name beside it is what a reader is looking for, and the number is
+   on the entry's own page. Dropped only here, and only below 420, because on
+   the tables where the number IS the subject it has to stay. */
+@media(max-width:420px){
+  .vtable--dropno td:first-child,
+  .vtable--dropno thead th:first-child{display:none}
+}
+/* The last resort, for the tables that cannot be made to fit by dropping a
+   column. /credits/ is four columns of substance — component, what it is,
+   licence, upstream — and its min-content is 572px against the 284px a 320px
+   phone leaves after gutters. Nothing short of stacking the rows closes that,
+   and stacking loses the column alignment that makes a licence table readable.
+   So the table scrolls sideways inside the page. The alternative is what was
+   happening: the document itself widened to 590px and the browser zoomed the
+   whole page out, shrinking every word on it to keep one table intact. A table
+   a reader can swipe beats a page they have to pinch. Tables that already fit
+   are unaffected — an auto scroller with nothing to scroll shows no bar. */
+@media(max-width:560px){
+  .vtable{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}
+}
+/* /embed/ — the page that offers one line of HTML to paste.
+   All four of its classes were written into the template and never into this
+   file, so the page rendered as browser defaults: an unstyled <pre> holding a
+   1,354px iframe snippet on a 320px phone. Nothing scrolled it, so the document
+   widened to 1,372px and the browser zoomed the entire page out to fit — on an
+   indexed page whose whole job is to be copied from.
+   The dead-css gate catches a class defined here and used nowhere. This is the
+   opposite direction, and nothing catches it. */
+.emb-demo{border:1px solid var(--line);border-radius:3px;background:var(--surface);
+  padding:14px;margin:0 0 26px}
+.emb-demo iframe{display:block;width:100%}
+.emb-h{font-family:var(--serif);font-weight:600;font-size:20px;margin:0 0 10px}
+/* The snippet stays on one line: it exists to be selected and pasted, and a
+   soft-wrapped iframe tag invites someone to copy half of it. So it scrolls
+   within its own box rather than wrapping or widening the page. */
+.emb-code{font-family:var(--mono);font-size:12px;line-height:1.6;color:var(--dim);
+  background:var(--surface-2);border:1px solid var(--line);border-radius:2px;
+  padding:10px 12px;margin:0 0 12px;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.emb-code code{white-space:pre}
+.emb-note{font-size:13px;line-height:1.6;color:var(--muted);margin:0 0 30px}
+.emb-note code{font-family:var(--mono);font-size:12px;color:var(--ink)}
 /* The list form of .vd-p, for the about page's reuse routes. Same measure and
    colour, so a list and a paragraph in the same section read as one voice. */
 .vd-list{font-size:15px;line-height:1.72;color:var(--dim);margin:0 0 30px;max-width:70ch;padding-left:20px}

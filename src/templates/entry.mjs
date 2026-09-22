@@ -709,13 +709,31 @@ ${t.reliability ? `        <p class="tm-rel">Rated <b>${escapeHtml(t.reliability
       </div>
 `);
 
-  // The card this page already has. It is built at build time for the link
-  // preview; offering it as a download costs one anchor and makes the thing
-  // shareable by hand, into places that do not unfurl links at all.
+  // Passing an entry on is a different act from citing it, and it wants
+  // different text: a citation is for a bibliography, a share is for someone
+  // who has not read the page yet, so the blurb is the claim itself rather than
+  // the site's name and URL.
+  //
+  // The whole row lives HERE rather than mid-article. It used to sit in the
+  // body between the last section and the questions, which left this panel
+  // holding one download link — on a phone, where the rail stacks under the
+  // article, "Pass it on" was a heading above a single button. The Tome puts
+  // the row in the rail and the rail is sticky on a desktop, so the way to
+  // share is in view the whole way down instead of at one point in the scroll.
+  //
+  // The card download stays appended: the card is built anyway for the link
+  // preview, and offering it costs one anchor while making the entry shareable
+  // by hand into places that do not unfurl a link at all.
   panels.push(`      <div class="panel panel--share">
         <h3>Pass it on</h3>
-        <div class="share share--compact">
-          <a class="sh-b" href="${base}og/bias/${escapeHtml(entry.slug)}.png" download="${escapeHtml(entry.slug)}-bias-atlas.png">Save the card</a>
+${shareRow({
+    url: `${origin}${base}${entryPath(entry)}`,
+    title: entry.name,
+    text: entry.statement,
+    label: `Share ${entry.name}`,
+  })}        <div class="share share--compact">
+          <a class="sh-b" href="${base}og/bias/${escapeHtml(entry.slug)}.png" download="${escapeHtml(entry.slug)}-bias-atlas.png">
+            <svg class="sh-i" aria-hidden="true"><use href="#sh-img"></use></svg> Save the card</a>
         </div>
       </div>
 `);
@@ -902,8 +920,6 @@ ${blocks.map((b) => `        <div class="block" id="${b.id}" data-reveal>
 ${b.body}        </div>
 ${b.after}`).join('')}
 
-        <div class="sk-share">
-${shareRow({ url: `${origin}${base}${path}`, title: entry.name, text: entry.statement, label: 'Share this entry' })}        </div>
 
 ${faq.html}${prevnext}      </div>
 ${asideRail(entry, { base, origin, siblings, related, tome })}    </div>

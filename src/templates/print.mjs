@@ -38,7 +38,7 @@ h2.field .fc{float:right;font:9.5pt/1.8 ui-monospace,Menlo,monospace;color:var(-
 .e-h{margin:0 0 3px;font-size:12.5pt;font-weight:600}
 .e-h .no{font:9pt/1 ui-monospace,Menlo,monospace;color:var(--faint);margin-right:7px;font-weight:400}
 .v{font:8.5pt/1 ui-monospace,Menlo,monospace;letter-spacing:.06em;text-transform:uppercase;
-  border:1px solid var(--line);border-radius:2px;padding:2px 5px;margin-left:6px;white-space:nowrap}
+  border:1px solid var(--line);border-radius:2px;padding:2px 5px;margin-left:4px;white-space:nowrap}
 .e-s{margin:0 0 4px;font-style:italic;color:var(--ink)}
 .e-r{margin:0;font-size:10.5pt;color:var(--dim)}
 .e-o{margin:2px 0 0;font:9pt/1.5 ui-monospace,Menlo,monospace;color:var(--faint)}
@@ -81,7 +81,7 @@ export function printPage(entries, { base = '/', origin = '', categories = {}, b
         const v = replicationLabel(r.state);
         const o = e.origin || {};
         return `    <div class="e">
-      <p class="e-h"><span class="no">${escapeHtml(String(e.no).padStart(3, '0'))}</span>${escapeHtml(e.name)}${v ? `<span class="v">${escapeHtml(v)}</span>` : ''}</p>
+      <p class="e-h"><span class="no">${escapeHtml(String(e.no).padStart(3, '0'))}</span>${escapeHtml(e.name)}${v ? ` <span class="v">${escapeHtml(v)}</span>` : ''}</p>
       <p class="e-s">${escapeHtml(e.statement)}</p>
 ${r.headline ? `      <p class="e-r">${escapeHtml(r.headline)}</p>\n` : ''}${o.year ? `      <p class="e-o">${escapeHtml(String(o.year))} · ${escapeHtml(String(o.who || ''))}</p>\n` : ''}    </div>`;
       }).join('\n');
