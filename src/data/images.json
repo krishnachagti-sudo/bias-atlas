@@ -1,1 +1,56 @@
-{"people":{},"figures":{}}
+{
+  "figures": {
+    "affirming-a-disjunct": {
+      "artist": "Stilfehler",
+      "confirmedVia": "title",
+      "file": "Affirming_a_disjunct.png",
+      "height": 449,
+      "law": "Affirming a disjunct",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "slug": "affirming-a-disjunct",
+      "source": "https://commons.wikimedia.org/wiki/File:Affirming_a_disjunct.png",
+      "width": 640,
+      "wikipedia": "https://en.wikipedia.org/wiki/Affirming_a_disjunct"
+    },
+    "anthropomorphism": {
+      "artist": "Walt Disney, /, Ub Iwerks, Wilfredor",
+      "confirmedVia": "title",
+      "file": "Mickey_Mouse_(poster_version).svg",
+      "height": 719,
+      "law": "Anthropomorphism",
+      "licence": "Public domain",
+      "licenceUrl": "",
+      "slug": "anthropomorphism",
+      "source": "https://commons.wikimedia.org/wiki/File:Mickey_Mouse_(poster_version).svg",
+      "width": 640,
+      "wikipedia": "https://en.wikipedia.org/wiki/Anthropomorphism"
+    },
+    "apophenia": {
+      "artist": "Viking 1, NASA",
+      "confirmedVia": "title",
+      "file": "Martian_face_viking_cropped.jpg",
+      "height": 175,
+      "law": "Apophenia",
+      "licence": "Public domain",
+      "licenceUrl": "",
+      "slug": "apophenia",
+      "source": "https://commons.wikimedia.org/wiki/File:Martian_face_viking_cropped.jpg",
+      "width": 200,
+      "wikipedia": "https://en.wikipedia.org/wiki/Apophenia"
+    },
+    "argument-from-ignorance": {
+      "artist": "John Greenhill",
+      "confirmedVia": "title",
+      "file": "John_Locke_by_John_Greenhill.jpg",
+      "height": 778,
+      "law": "Argument from ignorance",
+      "licence": "Public domain",
+      "licenceUrl": "",
+      "slug": "argument-from-ignorance",
+      "source": "https://commons.wikimedia.org/wiki/File:John_Locke_by_John_Greenhill.jpg",
+      "width": 640,
+      "wikipedia": "https://en.wikipedia.org/wiki/Argument_from_ignorance"
+    }
+  }
+}

@@ -752,7 +752,12 @@ a.stat--link .s-k::after{content:" →";letter-spacing:0;opacity:.55}
 .callout--info .co-ic{color:var(--muted)}
 .lead{font-family:var(--serif);font-size:21px;line-height:1.55;color:var(--ink)}
 /* drop cap on the opening (plain-English) paragraph */
-.lead::first-letter{float:left;font-family:var(--serif);font-weight:600;font-size:3.5em;line-height:.8;margin:5px 12px 0 0;color:var(--accent)}
+/* NOT on the verdict paragraph. `::first-letter` takes the first letter of the
+   block, and that paragraph opens with a badge — so the "F" of "Failed to
+   replicate" was lifted out of the chip at 3.5em and floated, leaving the badge
+   reading "AILED TO REPLICATE" on all 544 entry pages. On the one paragraph
+   that answers the question the whole site exists to answer. */
+.lead:not(.lead--badged)::first-letter{float:left;font-family:var(--serif);font-weight:600;font-size:3.5em;line-height:.8;margin:5px 12px 0 0;color:var(--accent)}
 .example{background:var(--surface);border:1px solid var(--line);border-radius:3px;padding:20px 22px;font-size:15.5px;line-height:1.66;color:var(--ink);box-shadow:var(--e1)}
 .example .ex-tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:9px}
 /* worked examples + variants as fixed 2-column card grids (2×2 for four items) */

@@ -215,7 +215,7 @@ ${faq.html}${hubNav('about/', { base })}  </div>
         ...(faq.jsonld ? [faq.jsonld] : []),
       ],
     })
-    + sprite() + header({ base, active: 'about' }) + section + footer({ base })
+    + sprite() + header({ base, active: 'about', count }) + section + footer({ base })
   );
 }
 

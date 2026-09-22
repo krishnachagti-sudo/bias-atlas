@@ -622,7 +622,7 @@ function replicationBlock(r, { base }) {
   const badge = `<span class="badge ${cls}">${escapeHtml(label)}</span>`;
 
   if (r.state === 'none-located') {
-    return `        <p class="lead">${badge} ${escapeHtml(r.headline)}</p>
+    return `        <p class="lead lead--badged">${badge} ${escapeHtml(r.headline)}</p>
         <p>No replication attempt was found for this effect. That is not evidence that it fails: the search came up empty, and an absence in the literature says nothing either way. <a href="${base}about/">How this index searches</a>.</p>
 `;
   }
@@ -643,8 +643,8 @@ ${orig ? `          <div class="stat"><span class="s-k">In the original study</s
   // identifier that does not carry it.
   const citeText = String(s.cite || '').replace(/\.\s*$/, '');
 
-  return `        <p class="lead">${badge} ${escapeHtml(r.headline)}</p>
-${numbers}${effectPlot(r)}${r.detail ? prose(r.detail) : ''}        <p class="src-trust">Read off${cite ? `<a href="${escapeHtml(cite)}" rel="nofollow noopener">${escapeHtml(citeText)}</a>` : escapeHtml(citeText)}${r.indexedBy ? `. Located via ${escapeHtml(r.indexedBy)}, which points at the study; the numbers above are the study's own` : ''}.</p>
+  return `        <p class="lead lead--badged">${badge} ${escapeHtml(r.headline)}</p>
+${numbers}${effectPlot(r)}${r.detail ? prose(r.detail) : ''}        <p class="src-trust">Read off ${cite ? `<a href="${escapeHtml(cite)}" rel="nofollow noopener">${escapeHtml(citeText)}</a>` : escapeHtml(citeText)}${r.indexedBy ? `. Located via ${escapeHtml(r.indexedBy)}, which points at the study; the numbers above are the study's own` : ''}.</p>
 `;
 }
 
