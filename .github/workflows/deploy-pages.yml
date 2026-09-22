@@ -23,11 +23,27 @@ jobs:
         with:
           node-version: '22'
       - run: npm install
+      # BUILD BEFORE TEST, and the reason is worth keeping.
+      #
+      # This ran `npm test` first, to fail fast on unit tests before spending
+      # time on a build. That was right until tests started asserting on the
+      # BUILT site — that the feed the head advertises is actually written,
+      # that graph.json and the entry rails agree. `dist/` is gitignored, so in
+      # CI those tests read nothing and failed, and every deploy for hours
+      # ended here with the site never updating while the checks looked like
+      # ordinary test failures.
+      #
+      # The tests skip those assertions when `dist/` is missing, so a fresh
+      # clone is not confusing. Building first is what makes them run at all.
+      - run: npm run build -- --base=${{ vars.SITE_BASE || format('/{0}/', github.event.repository.name) }} --origin=${{ vars.SITE_ORIGIN || format('https://{0}.github.io', github.repository_owner) }}
       - run: npm test
       # The house-style gate, on the two things in docs/VOICE.md that are rules
       # rather than signals: a banned word, or an entry over the em-dash limit.
       # Cheap, and it stops the voice drifting back one commit at a time.
       - run: npm run style -- --strict
+      # (The build ran above, before the tests. Kept here in comment form so the
+      # deployment notes below stay where somebody looks for them.)
+      #
       # Build for the host that ACTUALLY serves this artifact.
       #
       # Until there is a domain, these defaults keep the github.io project path
@@ -45,7 +61,6 @@ jobs:
       #      Pages learns the domain. Every deploy replaces the whole artifact,
       #      so that file has to be emitted by the build rather than set once by
       #      hand — otherwise the custom domain silently drops on the next push.
-      - run: npm run build -- --base=${{ vars.SITE_BASE || format('/{0}/', github.event.repository.name) }} --origin=${{ vars.SITE_ORIGIN || format('https://{0}.github.io', github.repository_owner) }}
       # Whole-site checks on the assembled output, run against the SAME base and
       # origin the artifact was built with. This is what catches a canonical
       # still pointing at the old host, a sitemap listing a noindex page, or a

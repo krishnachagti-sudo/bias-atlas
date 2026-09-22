@@ -4,10 +4,18 @@
 
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { readFileSync, readdirSync } from 'node:fs';
+import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 
 import { buildFeed } from '../build/feed.mjs';
+
+// Some assertions here read the BUILT site. `dist/` is gitignored, so it is
+// absent on a fresh clone and was absent in CI, where the workflow ran the
+// tests before the build — which is how four green tests locally became a
+// red pipeline that never deployed. They skip with a reason rather than fail,
+// and the workflow now builds first so they actually run there.
+const BUILT = existsSync('dist/index.html');
+
 
 const DIR = 'src/data/biases';
 const entries = readdirSync(DIR).filter((f) => f.endsWith('.json'))
@@ -90,7 +98,8 @@ test('an entry with no verdict still produces a valid item', () => {
   assert.doesNotMatch(xml, /Verdict:/);
 });
 
-test('the built feeds exist and the head points at them', () => {
+test('the built feeds exist and the head points at them', (t) => {
+  if (!BUILT) return t.skip('no dist/ — run `npm run build` first');
   const home = readFileSync('dist/index.html', 'utf8');
   assert.match(home, /rel="alternate" type="application\/atom\+xml"[^>]*href="[^"]*feed\.xml"/);
   const site = readFileSync('dist/feed.xml', 'utf8');
@@ -103,7 +112,8 @@ test('the built feeds exist and the head points at them', () => {
   assert.match(memFeed, /<title>Bias Atlas — memory<\/title>/);
 });
 
-test('the feed is not in the sitemap, which lists pages', () => {
+test('the feed is not in the sitemap, which lists pages', (t) => {
+  if (!BUILT) return t.skip('no dist/ — run `npm run build` first');
   const sm = readFileSync('dist/sitemap.xml', 'utf8');
   assert.doesNotMatch(sm, /feed\.xml/);
 });

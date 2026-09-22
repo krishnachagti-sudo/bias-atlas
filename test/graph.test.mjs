@@ -11,7 +11,7 @@
 
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { readFileSync, readdirSync } from 'node:fs';
+import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 
 import { buildGraph, graphJson, relatedTo, people } from '../build/graph.mjs';
@@ -21,6 +21,14 @@ const DIR = 'src/data/biases';
 const entries = readdirSync(DIR).filter((f) => f.endsWith('.json'))
   .map((f) => JSON.parse(readFileSync(join(DIR, f), 'utf8')));
 const graph = buildGraph(entries);
+
+// Some assertions here read the BUILT site. `dist/` is gitignored, so it is
+// absent on a fresh clone and was absent in CI, where the workflow ran the
+// tests before the build — which is how four green tests locally became a
+// red pipeline that never deployed. They skip with a reason rather than fail,
+// and the workflow now builds first so they actually run there.
+const BUILT = existsSync('dist/index.html');
+
 
 test('no edge rests on a single-word match', () => {
   // Persistence, Mindset, Denial and Reactance are entries AND ordinary words,
@@ -113,7 +121,8 @@ test("an entry's rail shows only links its own prose supports", () => {
   assert.ok(rel.some((r) => r.to === 'escalation-of-commitment'));
 });
 
-test('the built graph.json and the entry rails agree', () => {
+test('the built graph.json and the entry rails agree', (t) => {
+  if (!BUILT) return t.skip('no dist/ — run `npm run build` first');
   const j = JSON.parse(readFileSync('dist/graph.json', 'utf8'));
   assert.equal(j.counts.nodes, entries.length);
   const html = readFileSync('dist/bias/sunk-cost/index.html', 'utf8');
