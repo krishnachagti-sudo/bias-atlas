@@ -714,6 +714,35 @@ a.stat--link .s-k::after{content:" →";letter-spacing:0;opacity:.55}
 .callout p{margin:0;font-size:16.5px;line-height:1.76;color:var(--read)}
 .callout--key{border-left-color:var(--accent);background:var(--accent-soft)}
 .callout--key .co-ic{color:var(--accent)}
+/* ---- /sheets/ -------------------------------------------------------------
+   A field to a page, built to be printed. The claim column carries the whole
+   statement, so it is the one that gets the room; the name and the verdict are
+   both short and fixed. */
+.sh-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(230px,100%),1fr));gap:14px;margin:26px 0 8px}
+.sh-card{display:flex;flex-direction:column;gap:5px;padding:16px 18px;background:var(--surface);
+  border:1px solid var(--line);border-radius:3px;text-decoration:none;transition:border-color .18s}
+.sh-card:hover{border-color:var(--accent)}
+.sh-card-t{font-family:var(--serif);font-size:17px;color:var(--ink)}
+.sh-card-n{font-family:var(--mono);font-size:11px;color:var(--muted)}
+.sh-card-b{font-family:var(--mono);font-size:10px;color:var(--faint)}
+.sheet-table{margin-top:26px}
+.sheet-table th[scope="row"]{white-space:normal;min-width:11ch}
+.sh-claim{font-size:14px;line-height:1.55;color:var(--dim)}
+.sh-v{white-space:nowrap;vertical-align:top}
+@media(max-width:640px){
+  .sh-claim{font-size:13px}
+}
+/* The point of the page. Everything that is navigation, chrome or invitation
+   comes off, and the table keeps its rules so a printed row is still a row. */
+@media print{
+  .sheet-table{font-size:10pt}
+  .sheet-table .sh-claim{font-size:9.5pt;color:#000}
+  .sheet-table th[scope="row"] a{color:#000;text-decoration:none}
+  .sh-grid,.hub-more,.share,.sk-share,.hub-stats{display:none}
+  .sheet-table tr{break-inside:avoid;page-break-inside:avoid}
+  .sheet-table thead{display:table-header-group}
+}
+
 /* ---- the rail's relationship map ------------------------------------------
    The entry at the centre, the entries its own prose says it is confused with
    around it. Ported from the Tome's rail, where it is the one thing that breaks
