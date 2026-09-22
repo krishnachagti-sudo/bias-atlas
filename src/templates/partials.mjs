@@ -61,6 +61,8 @@ export const NAV = [
 ];
 
 export const MORE = [
+  ['contribute', 'contribute/', 'Send a correction'],
+  ['saved', 'saved/', 'Saved biases'],
   ['author', 'author/', 'Who writes this'],
   ['features', 'features/', 'What it does'],
   ['sources', 'sources/', 'Bibliography'],

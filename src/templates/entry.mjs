@@ -30,6 +30,7 @@ import {
 import { hubFaq, hubJsonLd } from './hub.mjs';
 import { CATEGORIES } from '../../build/corpus.mjs';
 import { fieldPath } from './paths.mjs';
+import { correctionUrl } from './contribute.mjs';
 import { LASTMOD_TOKEN } from '../../build/lastmod.mjs';
 
 export const entryPath = (entry) => `bias/${entry.slug}/`;
@@ -727,7 +728,7 @@ ${sources.map((s, i) => {
     return `          <li><span class="snum">${i + 1}</span><span class="stext">${text}</span>${s.type ? `<span class="stype">${escapeHtml(s.type)}</span>` : ''}</li>`;
   }).join('\n')}
         </ol>
-        <p class="src-trust">Every claim on this page was held against these sources on ${escapeHtml(entry.checkedOn)}. Nothing here is written from memory. Written and checked by <a href="${base}author/">Krishna Chagti</a>; <a href="${base}about/">how entries are written and corrected</a>.</p>\n`],
+        <p class="src-trust">Every claim on this page was held against these sources on ${escapeHtml(entry.checkedOn)}. Nothing here is written from memory. Written and checked by <a href="${base}author/">Krishna Chagti</a>; <a href="${base}about/">how entries are written and corrected</a>. Found a mistake? <a href="${escapeHtml(correctionUrl(entry, { origin, base }))}" rel="nofollow noopener">Report it</a>, with the sentence and a source.</p>\n`],
   ].map(([label, h2, body]) => ({ id: `sec-${label.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}`, label, h2, body }));
 
   // ONE question, and deliberately only one. An earlier draft asked three, and

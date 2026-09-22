@@ -38,6 +38,7 @@ import {
 } from '../src/templates/hubs.mjs';
 import { quizPage, scorePage } from '../src/templates/quiz.mjs';
 import { savedPage } from '../src/templates/saved.mjs';
+import { contributePage } from '../src/templates/contribute.mjs';
 import { ROUND, scoreVerdict } from './quiz.mjs';
 import { entryMarkdown } from './markdown.mjs';
 import { buildApi } from './api.mjs';
@@ -168,6 +169,7 @@ pages['effect-sizes/'] = effectSizesPage({ base, origin, entries });
 // The quiz, and the eleven score landing pages a shared result points at. Both
 // read the prebuilt search index at runtime, so neither needs a build artefact.
 pages['saved/'] = savedPage({ base, origin, count: entries.length });
+pages['contribute/'] = contributePage({ base, origin, count: entries.length });
 pages['quiz/'] = quizPage({ base, origin, count: entries.length, categories: CATEGORIES });
 for (let s = 0; s <= ROUND; s++) {
   pages[`quiz/score/${s}/`] = scorePage({ score: s, total: ROUND, base, origin, count: entries.length });
