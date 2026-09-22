@@ -66,24 +66,36 @@ The pages a reader actually lands on, and the thickest remaining gap.
 
   Commit `src/data/images.json` and `src/assets/img/` when it has run.
 
-## 3. Comparison pages
+## 3. Comparison pages — built
 
-`/compare/<a>-vs-<b>/` — open, and the largest single piece of work left. The
-data is already derived: 689 pairs where an entry's own prose says it is
-confused with another. 408 of those have different verdicts. What is missing is
-the page: two entries side by side, the difference stated, both verdicts shown.
+`/compare/<a>-vs-<b>/`, 611 pages. 689 directed confused-with edges collapse to
+611 unordered pairs; 367 have differing verdicts and the page leads with that
+where it is true. Every pair carries the sentence that produced it, which is
+what stops 611 pages being a farm. Build cost measured: 1,169 pages in 27s
+became 1,781 in 28s.
 
-## 4. The tensions hub
+## 4. The tensions hub — built
 
-**Built, held.** Passing, and one commented line in `build/build.mjs` publishes
-it. 408 pairs with differing verdicts, 22 of them replicated against failed.
-Listed as coming soon on the front page.
+Published, and moved out of the front page's "not here yet" block into the
+feature grid. The same finding also runs per entry, as the rail's relationship
+map: an edge is drawn as a disagreement when the two ends hold different
+verdicts. 355 of 544 entries have a map; the rest name no neighbour.
 
-## 5. Cheat sheets
+## 5. Cheat sheets — built
 
-`/sheets/<field>/` — open. One field on one printable page. `/print/` already
-proves the rendering; this is the same thing cut five ways, and it would also
-fix `/print/` being the heaviest page on the site at 90 KB gzipped.
+`/sheets/<field>/`, five of them, covering all 544. The Tome's selection rule —
+"the 24 best-known", by print frequency — could not be reproduced, because this
+corpus has no popularity signal and inventing one would be a ranking nobody can
+check. So a sheet is the whole field and the density is what makes it a sheet.
+
+## 5a. Also built since this list was last true
+
+- **`/is-it-real/`** — all 544 by verdict, most doubtful first, each with the
+  entry's own sentence about where the claim runs out. 542 of 544 have one.
+- **`/graph/`** — the explorer, ported from the Tome and retuned: the JSON
+  shapes differ, the visible cap drops from 16 to 11 because these names are
+  long, and a red edge means a confused-with pair that came out differently
+  rather than any edge whose ends disagree.
 
 ## 6. The situation filter's ranking
 
@@ -97,10 +109,30 @@ tuning in the dark.
 
 - **OG cards rebuild on every text change** — open. 33 MB, no input hashing, so
   deploys get slower as the corpus grows.
-- **38 orphaned CSS classes** — open. `npm run css` reports them.
+- **37 orphaned CSS classes** — open. `npm run css` reports them.
 - **429 sources in 232 entries say "paywall" without naming the block** — open.
 - **Cross-entry contradictions list** — open. `npm run contradictions` finds 38
   DOIs whose notes disagree between entries; nothing consumes the output.
+
+## 9. Two datasets the corpus holds and no page reads
+
+Found by auditing fields rather than routes, which is the only way these turn
+up — nothing links to a page that does not exist.
+
+- **Where these were first published** — open. `origin.where` is on all 544
+  entries: 276 distinct venues, 24 with four or more. The Journal of Personality
+  and Social Psychology alone accounts for 66. The tempting page is a verdict
+  split by journal, and the spread is real — 13% to 100% held, against 30%
+  corpus-wide. It must not be built as a league table. These 544 were chosen for
+  being notable, not sampled from each journal's output, and a venue with six
+  entries cannot be set beside one with sixty-six. The honest page is about
+  where the ideas came from, with the counts shown and that caveat stated.
+
+- **The big replication projects** — open, and small. 455 entries cite a study
+  and only five studies cover three or more entries, but the largest is Many
+  Labs 2 at 19. A page per multi-lab project — what it tested, what it found,
+  which entries it settled — is a real cut nobody else publishes, and the
+  `retested-by` edges already exist to build it.
 
 ## 8. Decided against
 
