@@ -62,6 +62,7 @@ export const NAV = [
 
 export const MORE = [
   ['is-it-real', 'is-it-real/', 'Is it real?'],
+  ['tensions', 'tensions/', 'Pairs that disagree'],
   ['contribute', 'contribute/', 'Send a correction'],
   ['saved', 'saved/', 'Saved biases'],
   ['author', 'author/', 'Who writes this'],
@@ -98,6 +99,7 @@ export const FOOT_COLS = [
   ['Discover', [
     ['how-solid/', 'How solid is any of this?'],
     ['is-it-real/', 'Is it real?'],
+    ['tensions/', 'Pairs that disagree'],
     ['effect-sizes/', 'Every measured effect'],
     ['quiz/', 'Name that bias'],
     ['embed/', 'Embed a card'],
@@ -657,6 +659,7 @@ ${col(uniq.slice(half))}
 /** One line per destination, so the panel is a menu and not a word list. */
 const MORE_GLOSS = {
   'is-it-real/': 'all 544 by verdict, with each entry\u2019s own caveat',
+  'tensions/': 'pairs people mix up whose verdicts disagree',
   'situations/': 'describe what happened, find the name',
   'a-z/': 'every entry, alphabetically',
   'also-known-as/': 'the other names these go under',

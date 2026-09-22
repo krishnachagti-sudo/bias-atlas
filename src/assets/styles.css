@@ -714,6 +714,40 @@ a.stat--link .s-k::after{content:" →";letter-spacing:0;opacity:.55}
 .callout p{margin:0;font-size:16.5px;line-height:1.76;color:var(--read)}
 .callout--key{border-left-color:var(--accent);background:var(--accent-soft)}
 .callout--key .co-ic{color:var(--accent)}
+/* ---- the rail's relationship map ------------------------------------------
+   The entry at the centre, the entries its own prose says it is confused with
+   around it. Ported from the Tome's rail, where it is the one thing that breaks
+   a column of grey link boxes — a review of this site named that column as the
+   rail's worst problem.
+   `.mg-kind` is deliberately absent: the Tome labels each spoke with a
+   relationship kind because its corpus has several. Every spoke here is the
+   same kind, "confused with", so a label under every dot would be one word
+   repeated five times. What varies is the VERDICT, and that is carried by the
+   dot colour and the dashed edge instead. */
+.minigraph{margin:2px -6px 0}
+.minigraph-svg{display:block;width:100%;height:auto;overflow:visible}
+.mg-ring{fill:none;stroke:var(--line-strong);stroke-width:1;opacity:.5}
+.mg-ring--in{opacity:.28;stroke-dasharray:1 4;stroke-linecap:round}
+.mg-edge{stroke:var(--line-strong);stroke-width:1.2}
+/* A dashed accent edge means the two ends landed on different verdicts. */
+.mg-edge--tension{stroke:var(--accent);stroke-width:1.3;stroke-dasharray:3 3;opacity:.8}
+.mg-focus-halo{fill:none;stroke:var(--accent);stroke-width:1.4;opacity:.45}
+.mg-focus{stroke:var(--bg);stroke-width:2.5}
+.mg-focus-label{font-family:var(--serif);font-weight:700;font-size:12px;fill:var(--ink)}
+.mg-dot{stroke:var(--bg);stroke-width:2;transition:r .18s ease}
+.mg-label{font-family:var(--serif);font-size:11px;fill:var(--muted);transition:fill .18s ease}
+.mg-node{cursor:pointer}
+.mg-node:hover .mg-dot{r:8}
+.mg-node:hover .mg-label{fill:var(--accent)}
+.mg-legend{display:flex;flex-wrap:wrap;gap:14px;margin:10px 0 2px;font-family:var(--mono);font-size:10px;letter-spacing:.03em;color:var(--faint)}
+.mg-lg{display:inline-flex;align-items:center;gap:6px}
+.mg-sw{width:14px;height:0;border-top:2px solid var(--line-strong);flex:none}
+.mg-sw--ten{border-top:2px dashed var(--accent)}
+.mg-link{display:inline-flex;align-items:center;gap:6px;margin-top:14px;padding-top:12px;
+  border-top:1px solid var(--line);font-family:var(--mono);font-size:11px;color:var(--accent);
+  letter-spacing:.02em;text-decoration:none}
+.mg-link:hover{text-decoration:underline}
+
 /* ---- /is-it-real/ ---------------------------------------------------------
    544 rows on one page, so the row is the whole design. Two lines rather than
    three columns: the caveat sentences run to 320 characters and a column that

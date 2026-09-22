@@ -210,10 +210,10 @@ pages['embed/'] = embedDocsPage({ base, origin, entries, count: entries.length }
 for (const e of entries) pages[`embed/${e.slug}/`] = embedCard(e, { base, origin });
 pages['print/'] = printPage(entries, { base, origin, categories: CATEGORIES, buildDate });
 pages['situations/'] = situationsPage({ base, origin, entries });
-// The tensions hub is built and passing, and held back deliberately: it is
-// listed on the front page as coming soon rather than published half-announced.
-// Publishing it is this one line.
-// pages['tensions/'] = tensionsPage({ base, origin, entries, graph });
+// Published. It was held back while it was listed on the front page as coming
+// soon, on the principle that a half-announced page is worse than an absent
+// one; the front page now links it.
+pages['tensions/'] = tensionsPage({ base, origin, entries, graph });
 const sets = collections(entries, graph);
 pages['collections/'] = collectionsPage({ base, origin, entries, sets });
 for (const c of sets) pages[`collections/${c.slug}/`] = collectionPage(c, { base, origin, entries });

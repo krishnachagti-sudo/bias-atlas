@@ -22,6 +22,7 @@ const BLURB = {
   'browse/': 'every bias in the index, and what each one claims',
   'how-solid/': 'what the whole corpus says about whether any of it held up',
   'is-it-real/': 'every entry by verdict, with its own statement of where it stops',
+  'tensions/': 'pairs one entry says it is confused with, whose verdicts differ',
   'data/': 'the corpus as one file, and every entry as plain text',
   'about/': 'how entries are written, sourced and corrected',
   'author/': 'who writes this index, and what that rests on',

@@ -674,7 +674,7 @@ ${numbers}${effectPlot(r)}${r.detail ? prose(r.detail) : ''}        <p class="sr
  * Nothing here repeats the fact strip: verdict, year, field, source count and
  * last-checked date are all already tiles above.
  */
-function asideRail(entry, { base, origin = '', related = [], siblings, tome = null, images = null }) {
+function asideRail(entry, { base, origin = '', related = [], siblings, tome = null, images = null, stateBySlug = new Map() }) {
   const s = entry.replication && entry.replication.study;
   const panels = [];
 
@@ -742,6 +742,80 @@ ${figures.length ? `        <p class="rep-fig">${escapeHtml(figures.join(' · ')
   // sentence in `misreadings` or `limits`, so the panel is the entry pointing
   // at its neighbour rather than the site guessing at one — which is why a
   // relationship map was declined twice before the derivation existed.
+  // The relationship map: this entry at the centre, the entries its own prose
+  // says it is confused with around it.
+  //
+  // Ported from the Tome's rail, where it is the one thing that breaks a column
+  // of grey link-boxes — an independent review of this site named exactly that
+  // as the rail's worst problem here. It earns its place rather than decorating:
+  // every node is a link, and an edge is drawn as a DISAGREEMENT when the two
+  // entries' verdicts differ. That is the Atlas's own version of the Tome's
+  // "tension" edge, and it is the thing worth seeing at a glance — confirmation
+  // bias replicated and the backfire effect did not, and people cite them in
+  // the same breath. It is the /tensions/ page, per entry.
+  //
+  // Colours are literal SVG fills rather than CSS tokens: an <svg> fill cannot
+  // read a custom property without extra plumbing. The chrome around them —
+  // rings, edges, labels — is class-driven and follows the theme.
+  const VERDICT_FILL = {
+    replicated: '#5c8f63', mixed: '#7b86a8', failed: '#b4626a', 'none-located': '#8b949e',
+  };
+  const fillFor = (st) => VERDICT_FILL[st] || VERDICT_FILL['none-located'];
+  const hood = related.map((r) => ({ ...r, state: stateBySlug.get(r.slug) }))
+    .filter((r) => r.state);
+  if (hood.length) {
+    // 380 rather than the Tome's 300. The SVG scales to the panel's width, so a
+    // wider viewBox does not make the card bigger — it buys horizontal room for
+    // the labels, and these names are long. At 300 the east and west spokes had
+    // about 65px for a name and "Embodied cognition" drew straight out of the
+    // card and over the rule beside it.
+    const W = 380;
+    const H = 232;
+    const cx = W / 2;
+    const cy = H / 2 - 4;
+    const nb = hood.length;
+    const R = nb <= 2 ? 66 : 74;
+    const mine = (entry.replication || {}).state;
+    let edges = '';
+    let nodes = '';
+    hood.forEach((o, i) => {
+      const a = (-Math.PI / 2) + (2 * Math.PI * i / Math.max(1, nb)) + (nb === 1 ? 0.5 : 0);
+      const x = +(cx + R * Math.cos(a)).toFixed(1);
+      const y = +(cy + R * Math.sin(a)).toFixed(1);
+      const right = x >= cx;
+      const anchor = Math.abs(x - cx) < 14 ? 'middle' : (right ? 'start' : 'end');
+      const lx = +(x + (anchor === 'middle' ? 0 : right ? 11 : -11)).toFixed(1);
+      const above = y < cy;
+      const nameY = +(y + (above ? -13 : 17)).toFixed(1);
+      const differs = o.state !== mine;
+      edges += `<line class="mg-edge${differs ? ' mg-edge--tension' : ''}" x1="${cx}" y1="${cy}" x2="${x}" y2="${y}"/>`;
+      // Each label gets the room it actually has, rather than one fixed length.
+      // A spoke pointing east can run to the right edge; one pointing west has
+      // only the distance back to zero, and the two are very different budgets.
+      // ~5.6px per character at 11px in this serif, measured.
+      const room = anchor === 'middle' ? W - 24 : (right ? W - lx - 6 : lx - 6);
+      const max = Math.max(8, Math.floor(room / 5.6));
+      const short = o.name.length > max
+        ? `${o.name.slice(0, max).replace(/[\s,;:]+\S*$/, '')}…`
+        : o.name;
+      nodes += `<a href="${base}${escapeHtml(entryPath({ slug: o.slug }))}" class="mg-node">`
+        + `<title>${escapeHtml(o.name)}</title>`
+        + `<circle class="mg-hit" cx="${x}" cy="${y}" r="14" fill="transparent"/>`
+        + `<circle class="mg-dot" cx="${x}" cy="${y}" r="6.5" fill="${fillFor(o.state)}"/>`
+        + `<text class="mg-label" x="${lx}" y="${nameY}" text-anchor="${anchor}">${escapeHtml(short)}</text></a>`;
+    });
+    const focus = `<circle class="mg-focus-halo" cx="${cx}" cy="${cy}" r="13"/>`
+      + `<circle class="mg-focus" cx="${cx}" cy="${cy}" r="8.5" fill="${fillFor(mine)}"/>`
+      + `<text class="mg-focus-label" x="${cx}" y="${cy + 26}" text-anchor="middle">${escapeHtml(entry.name)}</text>`;
+    const disagree = hood.filter((o) => o.state !== mine).length;
+    panels.push(`      <div class="panel panel--map">
+        <h3>Related map</h3>
+        <div class="minigraph"><svg class="minigraph-svg" viewBox="0 0 ${W} ${H}" width="100%" role="img" aria-label="Relationship map for ${escapeHtml(entry.name)}: ${nb} entry${nb === 1 ? '' : ' entries'} it is confused with, ${disagree} with a different verdict.">${`<circle class="mg-ring" cx="${cx}" cy="${cy}" r="${R}"/><circle class="mg-ring mg-ring--in" cx="${cx}" cy="${cy}" r="${(R / 2).toFixed(1)}"/>`}${edges}${nodes}${focus}</svg></div>
+        <div class="mg-legend"><span class="mg-lg"><i class="mg-sw mg-sw--kin"></i>${nb - disagree} same verdict</span>${disagree ? `<span class="mg-lg"><i class="mg-sw mg-sw--ten"></i>${disagree} disagree</span>` : ''}</div>
+        <a class="mg-link" href="${base}tensions/">Where verdicts disagree &rarr;</a>
+      </div>`);
+  }
+
   // The provenance is stated ONCE, under the heading, rather than under every
   // item. `why` reads "Named in this entry's misreadings." — true, and the
   // reason the panel is allowed to exist at all, but it is the same sentence
@@ -853,6 +927,10 @@ export function entryPage(entry, { base = '/', origin = '', count = 0, entries =
   // Previous and next by entry number across the whole corpus, so the foot of a
   // page is a way onward rather than a dead end. The ends of the index simply get
   // one side; the corpus is not wrapped, because № 544 is not next to № 1.
+  // Every entry's verdict, for the rail's relationship map: it draws an edge
+  // differently when the two ends disagree, and that needs the NEIGHBOUR's
+  // verdict, which `related` does not carry.
+  const stateBySlug = new Map(entries.map((e) => [e.slug, (e.replication || {}).state]));
   const order = entries.slice().sort((a, b) => a.no - b.no);
   const here = order.findIndex((o) => o.slug === entry.slug);
   const prev = here > 0 ? order[here - 1] : null;
@@ -1023,7 +1101,7 @@ ${b.after}`).join('')}
 
 
 ${faq.html}${prevnext}      </div>
-${asideRail(entry, { base, origin, siblings, related, tome, images })}    </div>
+${asideRail(entry, { base, origin, siblings, related, tome, images, stateBySlug })}    </div>
   </div>
 `;
 

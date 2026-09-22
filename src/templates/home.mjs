@@ -76,6 +76,7 @@ const IC = {
 
 const FEATURES = [
   ['situations/', IC.feeling, 'Describe what happened', 'Don’t know the name? Say what you saw — “we kept paying because we had already spent so much” — and read the closest matches.'],
+  ['tensions/', IC.tension, 'The pairs that disagree', 'Biases people mix up whose verdicts came out opposite — confirmation bias replicated, the backfire effect did not.'],
   ['how-solid/', IC.shield, 'Replicated, or not?', 'Every entry carries a verdict on the experiments behind it, so you always know whether you are quoting a finding or a story.'],
   ['collections/', IC.stack, 'Collections', 'Cuts across the index, each computed from a rule printed on the page: the effects that shrank, the ones retested at scale, the failed ones still in circulation.'],
   ['timeline/', IC.clock, 'A history of the naming', 'Walk the corpus by decade, from the effects named before 1940 to the ones coined in living memory.'],
@@ -90,7 +91,6 @@ const FEATURES = [
 ];
 
 const SOON = [
-  [IC.tension, 'The pairs that disagree', 'Biases people mix up whose verdicts came out opposite — confirmation bias replicated, the backfire effect did not.'],
   [IC.versus, 'Compare two biases', 'Side by side, for the ones that get swapped in an argument.'],
   [IC.image, 'Portraits and documents', 'The people behind the claims, and the pages the claims first appeared on.'],
   [IC.sheet, 'Cheat sheets', 'One field on one printable page.'],
