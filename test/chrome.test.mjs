@@ -42,7 +42,7 @@ test('every nav destination is one the site actually builds', () => {
   // ALL_PAGES rather than NAV: the footer and the hub feet link the pages the
   // masthead has no room for, and a dead link there is just as dead.
   const BUILT = new Set([
-    '', 'browse/', 'how-solid/', 'data/', 'about/',
+    '', 'browse/', 'how-solid/', 'data/', 'quiz/', 'about/',
     'author/', 'features/', 'sources/', 'manifesto/', 'credits/', 'privacy/',
   ]);
   for (const [, href] of ALL_PAGES) {
@@ -51,16 +51,19 @@ test('every nav destination is one the site actually builds', () => {
 });
 
 test('the masthead stays short, and everything else is still reachable', () => {
-  // Four items in the header; a fifth starts to wrap. The rest live in MORE,
-  // which the footer and the hub feet carry — so the split is navigation rather
-  // than pages that exist and cannot be found.
+  // Five items in the header. The limit was four on the grounds that a fifth
+  // wraps; measured in Chromium when /quiz/ was added, five hold a single line
+  // down to 1024px and the header stays 104px tall, and below 900px the desktop
+  // nav is replaced by the mobile menu before width ever runs out. Six is
+  // untested. The rest live in MORE, which the footer and the hub feet carry —
+  // so the split is navigation rather than pages that cannot be found.
   const h = header({ base: BASE });
   const hrefs = [...h.matchAll(/href="([^"#]*)"/g)]
     .map((m) => m[1])
     .filter((u) => u.startsWith(BASE))
     .map((u) => u.slice(BASE.length));
-  assert.deepEqual([...new Set(hrefs)].sort(), ['', 'about/', 'browse/', 'data/', 'how-solid/']);
-  assert.ok(NAV.length <= 4, `${NAV.length} items in the masthead`);
+  assert.deepEqual([...new Set(hrefs)].sort(), ['', 'about/', 'browse/', 'data/', 'how-solid/', 'quiz/']);
+  assert.ok(NAV.length <= 5, `${NAV.length} items in the masthead`);
 
   // No page may sit in both lists, or the footer renders it twice.
   const navHrefs = new Set(NAV.map(([, href]) => href));

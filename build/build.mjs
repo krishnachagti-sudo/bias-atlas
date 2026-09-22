@@ -36,6 +36,8 @@ import {
   azPage, fallaciesPage, fallacySlugs, decadePage, decades,
   namedBy, verdictPath, fieldPath, personPath, decadePath,
 } from '../src/templates/hubs.mjs';
+import { quizPage, scorePage } from '../src/templates/quiz.mjs';
+import { ROUND } from './quiz.mjs';
 import { entryMarkdown } from './markdown.mjs';
 import { buildApi } from './api.mjs';
 import { buildLlms, buildLlmsFull } from './llms.mjs';
@@ -143,6 +145,12 @@ pages['also-known-as/'] = aliasIndexPage({ base, origin, entries });
 pages['a-z/'] = azPage({ base, origin, entries });
 pages['timeline/'] = timelinePage({ base, origin, entries });
 pages['effect-sizes/'] = effectSizesPage({ base, origin, entries });
+// The quiz, and the eleven score landing pages a shared result points at. Both
+// read the prebuilt search index at runtime, so neither needs a build artefact.
+pages['quiz/'] = quizPage({ base, origin, count: entries.length, categories: CATEGORIES });
+for (let s = 0; s <= ROUND; s++) {
+  pages[`quiz/score/${s}/`] = scorePage({ score: s, total: ROUND, base, origin, count: entries.length });
+}
 // Membership follows Wikipedia's List of fallacies, which the candidate set was
 // drawn from, rather than a judgement made here.
 pages['fallacies/'] = fallaciesPage({
@@ -284,9 +292,14 @@ writes.push(write(join(out, 'robots.txt'), [
   '',
 ].join('\n')));
 
+// A `noindex` page must not be in the sitemap: the sitemap asks a crawler to
+// index a URL the page itself then refuses, which is the contradiction preflight
+// fails on. Read off the rendered HTML rather than a list of known exceptions,
+// so a page that gains a `noindex` later drops out of the sitemap by itself.
+const indexable = Object.keys(pages).filter((k) => !/name="robots"[^>]*noindex/.test(pages[k]));
 writes.push(write(
   join(out, 'sitemap.xml'),
-  buildSitemap(Object.keys(pages), `${origin}${base}`, dates),
+  buildSitemap(indexable, `${origin}${base}`, dates),
 ));
 
 // The share card, and the app icon, both rasterised from SVG at build time.

@@ -56,6 +56,7 @@ export const NAV = [
   ['browse', 'browse/', 'Browse'],
   ['how-solid', 'how-solid/', 'How solid?'],
   ['data', 'data/', 'The data'],
+  ['quiz', 'quiz/', 'Quiz'],
   ['about', 'about/', 'About'],
 ];
 
