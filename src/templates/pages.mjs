@@ -1,7 +1,7 @@
 // The pages that are not entries and not the front door: /browse/, /about/, and
 // the 404. Small enough to share a file until one of them needs more.
 
-import { head, sprite, header, footer, escapeHtml, shareRow, BRAND, founderNode, biasCard, searchBox, browseControls } from './partials.mjs';
+import { head, sprite, header, footer, escapeHtml, shareRow, BRAND, founderRef, biasCard, searchBox, browseControls } from './partials.mjs';
 import { hubHead, hubNav, hubFaq, hubJsonLd } from './hub.mjs';
 import { entryPath, replicationLabel, REPLICATION_CLASS } from './entry.mjs';
 
@@ -183,7 +183,11 @@ ${faq.html}${hubNav('about/', { base })}  </div>
       path: 'about/',
       jsonld: [
         ...hubJsonLd({ name: 'About', description, path: 'about/', origin, base, crumbs: [] }),
-        founderNode(origin, base),
+        // A reference, not a second full description. The author entity is
+        // described once, on /author/, and pointed at from everywhere else —
+        // two full nodes with the same name are how a graph ends up believing
+        // in two people who happen to share one.
+        founderRef(origin, base),
         ...(faq.jsonld ? [faq.jsonld] : []),
       ],
     })

@@ -687,3 +687,112 @@ ${faq.html}${hubNav('features/', { base })}  </div>
     ],
   }) + sprite() + header({ base, active: 'features', count: entries.length }) + section + footer({ base });
 }
+
+/**
+ * /author/ — who wrote this, and why that should count for anything.
+ *
+ * The site already emitted a correct author entity: one Person node, referenced
+ * by @id from every entry's Article and DefinedTerm, with four sameAs links of
+ * which ORCID is reciprocal. What it did not have was a page. The @id was a
+ * fragment on /about/, so a graph resolving it fetched a page about the method,
+ * and a reader was told by the markup and by nothing on screen.
+ *
+ * The expertise claim here is deliberately not a credential. This index is not
+ * written by a psychologist and saying so is more useful than implying
+ * otherwise: what it offers instead is a method that can be checked line by
+ * line — every claim held against a document that can be fetched, the date of
+ * that check printed on the entry, and the source list published beside it. That
+ * is a weaker claim than "trust me, I am qualified" and a far more falsifiable
+ * one, which for a reference site is the trade worth making.
+ *
+ * Nothing biographical is asserted beyond what the repository can support. In
+ * particular no employer and no job title: partials.mjs records that the
+ * Organization node was dropped because whether this site is a Conyso property
+ * has not been decided, and a page about trustworthiness is the last place to
+ * quietly decide it.
+ */
+export function authorPage({ base = '/', origin = '', entries = [] } = {}) {
+  const s = corpusStats(entries);
+  const dates = entries.map((e) => e.checkedOn).filter(Boolean).sort();
+  const answer = `${BRAND} is written and maintained by one person, Krishna Chagti, who holds every claim in it against a document that can be fetched and read, and prints the date of that check on the entry.`;
+
+  const faq = hubFaq([
+    {
+      q: 'Are you a psychologist?',
+      a: 'No, and the index does not rest on that. It rests on the sources being printed beside every claim, the replication verdicts being quoted from the published record rather than assessed here, and each entry carrying the date it was last checked. Those are things you can verify without taking anybody\'s word for anything, which is the point.',
+    },
+    {
+      q: 'What stops an entry being wrong?',
+      a: `Nothing stops it. What the method does is make a wrong entry findable: every claim names the document it came from, so a reader who disagrees can start from the same page rather than from an assertion. Corrections are made and the entry records what changed. Of ${n(s.total)} entries, ${n(s.state['none-located'])} say plainly that no replication has been located rather than guessing at a verdict.`,
+    },
+    {
+      q: 'Can I get in touch about an error?',
+      a: 'Open an issue on <a href="https://github.com/krishnachagti-sudo/biases" rel="nofollow noopener">the repository</a>. Corrections that turn out to be right get made, and the entry says what changed and when.',
+    },
+  ], { heading: 'Questions about who writes this' });
+
+  const section = `<section class="sec">
+  <div class="wrap">
+${hubHead({
+    title: 'Krishna Chagti',
+    sub: 'author and maintainer',
+    answer,
+    base,
+    crumbs: [],
+    stats: [
+      [n(s.total), 'entries written'],
+      [n(s.sources), 'sources checked'],
+      [n(s.domains.size), 'domains cited'],
+      [dates.length ? dates[dates.length - 1] : '—', 'last check'],
+    ],
+  })}
+    <h2 class="vd-h">What I claim, and what I do not</h2>
+    <p class="vd-p">I am not a psychologist, and this index does not ask you to treat me as one. Every claim on every entry names the document it came from; every replication verdict is quoted from the published record rather than rated here; every entry prints the date its claims were last held against its sources. Those are checkable without trusting me, which is a weaker basis than a credential and a much harder one to fake.</p>
+    <p class="vd-p">Where a document could not be obtained, the entry says so instead of citing it as though it had been read. Where the historical record is genuinely disputed, the entry says it is disputed instead of quietly picking a side. Those two rules are why the writing takes as long as it does.</p>
+
+    <h2 class="vd-h">How to check the work</h2>
+    <ul class="vd-list">
+      <li><a href="${base}sources/">The bibliography</a> — ${n(s.sources)} source records across ${n(s.domains.size)} domains, with ${n(s.dois)} resolvable DOIs.</li>
+      <li><a href="${base}how-solid/">What the corpus adds up to</a> — including the finding that where both figures exist, the replication is the smaller of the two in ${n(s.shrank)} cases out of ${n(s.pairs)}.</li>
+      <li><a href="${base}data/">The whole dataset</a>, CC BY 4.0, so the claims can be checked in bulk rather than one page at a time.</li>
+      <li><a href="${base}about/">The method</a> — what an entry must contain before it is published, and what it must not.</li>
+    </ul>
+
+    <h2 class="vd-h">Elsewhere</h2>
+    <p class="vd-p">
+      <a href="https://conyso.com/founder/" rel="author noopener">conyso.com/founder</a> ·
+      <a href="https://orcid.org/0009-0003-6401-1788" rel="nofollow noopener">ORCID</a> ·
+      <a href="https://github.com/krishnachagti-sudo" rel="nofollow noopener">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/krishna-chagti" rel="nofollow noopener">LinkedIn</a>
+    </p>
+
+    <div class="sk-share">
+${shareRow({ url: `${origin}${base}author/`, title: `Krishna Chagti — ${BRAND}`, text: answer, label: 'Share this page' })}    </div>
+
+${faq.html}${hubNav('author/', { base })}  </div>
+</section>
+`;
+
+  const description = `${BRAND} is written and maintained by Krishna Chagti, who holds every claim against a fetchable source and prints the date of the check on the entry.`;
+  return head({
+    title: `Krishna Chagti — Author | ${BRAND}`,
+    description,
+    base,
+    origin,
+    path: 'author/',
+    modified: LASTMOD_TOKEN,
+    jsonld: [
+      ...hubJsonLd({ name: 'Krishna Chagti', description, path: 'author/', origin, base, crumbs: [] }),
+      // The one full description of the author entity on the whole site. Every
+      // other page references it by @id, so the graph gets one person rather
+      // than one per page that happens to share a name.
+      {
+        '@context': 'https://schema.org',
+        ...founderNode(origin, base),
+        mainEntityOfPage: `${origin}${base}author/`,
+        knowsAbout: ['Cognitive bias', 'Replication crisis', 'Metascience'],
+      },
+      ...(faq.jsonld ? [faq.jsonld] : []),
+    ],
+  }) + sprite() + header({ base, active: 'author', count: entries.length }) + section + footer({ base });
+}

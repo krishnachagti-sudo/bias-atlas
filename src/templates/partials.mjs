@@ -60,6 +60,7 @@ export const NAV = [
 ];
 
 export const MORE = [
+  ['author', 'author/', 'Who writes this'],
   ['features', 'features/', 'What it does'],
   ['sources', 'sources/', 'Bibliography'],
   ['manifesto', 'manifesto/', 'Why this exists'],
@@ -153,9 +154,21 @@ const FOUNDER = {
   ],
 };
 
-/** The canonical node id for the creator, stable across every page. */
+/**
+ * The canonical node id for the creator, stable across every page.
+ *
+ * It used to be a fragment on /about/, which made the author entity something
+ * the site mentioned rather than something it had a page for. A knowledge graph
+ * resolves an @id by fetching it, and a fragment on a page about the method
+ * returns a page about the method. /author/ is a page that is about the person,
+ * so the id now points there.
+ *
+ * Moved once, deliberately, while nothing external references the old id — the
+ * backlink export for this project is empty, so there is no citation to break,
+ * and this is the cheapest moment it will ever be.
+ */
 export function founderId(origin = '', base = '/') {
-  return `${origin}${base}about/#krishna-chagti`;
+  return `${origin}${base}author/#krishna-chagti`;
 }
 
 /**

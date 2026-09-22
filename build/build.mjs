@@ -27,11 +27,12 @@ import { homePage } from '../src/templates/home.mjs';
 import { browsePage, aboutPage, notFoundPage } from '../src/templates/pages.mjs';
 import { entryPage, entryPath } from '../src/templates/entry.mjs';
 import {
-  howSolidPage, dataPage, sourcesPage, manifestoPage, creditsPage, featuresPage, privacyPage,
+  howSolidPage, dataPage, sourcesPage, manifestoPage, creditsPage, featuresPage, privacyPage, authorPage,
 } from '../src/templates/meta.mjs';
 import { loadCorpus, CATEGORIES } from './corpus.mjs';
 import { entryMarkdown } from './markdown.mjs';
 import { buildApi } from './api.mjs';
+import { buildLlms, buildLlmsFull } from './llms.mjs';
 import { buildSitemap } from './sitemap.mjs';
 import { buildSearchIndex } from './search-index.mjs';
 import { LASTMOD_TOKEN, manifestFile, resolve as resolveLastmod, stamp } from './lastmod.mjs';
@@ -107,6 +108,7 @@ const pages = {
   'manifesto/': manifestoPage({ base, origin, entries }),
   'features/': featuresPage({ base, origin, entries }),
   'credits/': creditsPage({ base, origin, entries }),
+  'author/': authorPage({ base, origin, entries }),
   'privacy/': privacyPage({ base, origin, entries }),
 };
 for (const e of entries) {
@@ -174,6 +176,19 @@ for (const e of entries) {
 writes.push(write(
   join(out, 'api.json'),
   `${JSON.stringify(buildApi(entries, { baseUrl: `${origin}${base}`, categories: CATEGORIES }), null, 2)}\n`,
+));
+
+// llms.txt and llms-full.txt — a courtesy export, not a citation channel. 97% of
+// published llms.txt files receive zero requests and no AI bot probes for one
+// that is not there, so nothing here should depend on them; they cost two
+// functions over data already in memory. See build/llms.mjs for the evidence.
+writes.push(write(
+  join(out, 'llms.txt'),
+  buildLlms(entries, { baseUrl: `${origin}${base}`, brand: cfg.brand, categories: CATEGORIES }),
+));
+writes.push(write(
+  join(out, 'llms-full.txt'),
+  buildLlmsFull(entries, { baseUrl: `${origin}${base}`, brand: cfg.brand, categories: CATEGORIES, entryMarkdown }),
 ));
 
 // 404.html at the output root: the host serves it for any unmatched path. It is

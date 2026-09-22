@@ -18,7 +18,7 @@
 // the corpus rather than from ambition.
 
 import {
-  head, sprite, header, footer, escapeHtml, searchBox, BRAND, KICKER, founderNode, biasCard,
+  head, sprite, header, footer, escapeHtml, searchBox, BRAND, KICKER, founderRef, biasCard,
 } from './partials.mjs';
 import { hubFaq } from './hub.mjs';
 import { entryPath, replicationLabel, REPLICATION_CLASS } from './entry.mjs';
@@ -101,7 +101,7 @@ ${hook}${first ? `    <div class="stmt-wrap">
 ` : ''}    <div class="hero-actions">
 ${searchBox('Search a bias — or describe what you noticed…')}      <button class="ghost" id="rand" type="button"><i class="ti ti-arrows-shuffle" aria-hidden="true"></i> Random bias</button>
     </div>
-    <p class="hero-credit">By <a href="https://conyso.com/founder/" rel="author">Krishna Chagti</a> · <a href="${base}about/">about &amp; method</a></p>
+    <p class="hero-credit">By <a href="${base}author/" rel="author">Krishna Chagti</a> · <a href="${base}about/">about &amp; method</a></p>
   </div>
 </section>
 `;
@@ -178,7 +178,9 @@ ${faq.html}  </div>
           description,
           inLanguage: 'en',
           license: 'https://creativecommons.org/licenses/by/4.0/',
-          creator: founderNode(origin, base),
+          // A reference. The full node lives on /author/, once, and every other
+          // page points at it by @id.
+          creator: founderRef(origin, base),
           dateModified: LASTMOD_TOKEN,
         },
         ...(faq.jsonld ? [faq.jsonld] : []),

@@ -12,7 +12,7 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 
 import {
-  BRAND, NAV, MORE, ALL_PAGES, head, header, footer, clampTitle, escapeHtml,
+  BRAND, NAV, MORE, ALL_PAGES, head, header, footer, clampTitle, escapeHtml, founderNode, founderRef,
 } from '../src/templates/partials.mjs';
 import { hubFaq, hubNav, hubJsonLd } from '../src/templates/hub.mjs';
 
@@ -43,7 +43,7 @@ test('every nav destination is one the site actually builds', () => {
   // masthead has no room for, and a dead link there is just as dead.
   const BUILT = new Set([
     '', 'browse/', 'how-solid/', 'data/', 'about/',
-    'features/', 'sources/', 'manifesto/', 'credits/', 'privacy/',
+    'author/', 'features/', 'sources/', 'manifesto/', 'credits/', 'privacy/',
   ]);
   for (const [, href] of ALL_PAGES) {
     assert.ok(BUILT.has(href), `nav points at ${href}, which nothing builds`);
@@ -111,4 +111,27 @@ test('the publisher graph claims no parent organisation', () => {
   const [page] = hubJsonLd({ name: 'Browse', description: 'd', path: 'browse/', origin: 'https://example.com', base: BASE });
   assert.equal(page.publisher.name, BRAND);
   assert.equal(page.publisher.parentOrganization, undefined);
+});
+
+test('the author entity is described once and referenced everywhere else', () => {
+  // Three Person nodes with the same name and different contents is not one
+  // person described three times; to a graph it is three people who share a
+  // name. The full node lives on /author/ and nothing else may repeat it.
+  const full = founderNode('https://example.com', BASE);
+  const ref = founderRef('https://example.com', BASE);
+  assert.equal(full['@id'], ref['@id'], 'the reference must point at the node');
+  assert.match(full['@id'], /\/author\/#/, 'the entity lives on a page about the person');
+  assert.ok(Array.isArray(full.sameAs) && full.sameAs.length >= 3, 'the node carries its identifiers');
+  assert.equal(ref.sameAs, undefined, 'a reference carries no second description');
+  assert.equal(ref.description, undefined);
+
+  // Every sameAs must be an absolute https URL: a relative or unresolvable one
+  // is the single way this markup could mislead rather than merely say nothing.
+  for (const u of full.sameAs) assert.match(u, /^https:\/\/\S+$/, `${u} is not a resolvable identifier`);
+
+  // No employer or job title is asserted. partials.mjs records why: whether this
+  // site is a Conyso property has not been decided, and an entity graph is slow
+  // to unlearn a publisher relationship.
+  assert.equal(full.worksFor, undefined);
+  assert.equal(full.jobTitle, undefined);
 });
