@@ -190,7 +190,13 @@ test('the page prints both effect sizes to the same precision', () => {
 test('the page does not answer the same question twice', () => {
   // The first draft carried "Where does it run out?" as both a body heading and
   // an FAQ item with the same paragraph under each.
-  const html = render();
+  //
+  // Counted on the VISIBLE page. The FAQPage structured data now indexes the
+  // page's own question headings with the text under them — the Law Tome's
+  // method, and deliberately a copy, because markup that said anything the
+  // page does not would be the actual fault. A reader never sees it. What
+  // this guards is a reader meeting the same paragraph twice.
+  const html = render().replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, '');
   const limits = loadCorpus({ today: REALLY_TODAY })[0].limits.slice(0, 60);
   const count = html.split(limits).length - 1;
   assert.equal(count, 1, `the limits paragraph appears ${count} times on the page`);

@@ -385,6 +385,17 @@ ${faq.html}  </div>
           // page points at it by @id.
           creator: founderRef(origin, base),
           dateModified: LASTMOD_TOKEN,
+          isAccessibleForFree: true,
+          publishingPrinciples: `${origin}${base}about/`,
+          // search.js has honoured a ?q= deep link since the fork, and its own
+          // comment names this action as the reason — but the action itself
+          // was never declared, so the half that tells a search engine the
+          // site has a search box was missing. The Tome's is identical.
+          potentialAction: {
+            '@type': 'SearchAction',
+            target: { '@type': 'EntryPoint', urlTemplate: `${origin}${base}?q={search_term_string}` },
+            'query-input': 'required name=search_term_string',
+          },
         },
         ...(faq.jsonld ? [faq.jsonld] : []),
       ],

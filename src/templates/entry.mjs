@@ -1022,7 +1022,13 @@ ${related.map((r) => {
           </a>`;
   }).filter(Boolean).join('\n')}
         </div>\n`]] : []),
-    ['Commonly misread as', `What is ${entry.name} confused with?`,
+    // Was "What is X confused with?" — the same question as the section two
+    // above it, which asks which biases X is confused with. Two near-identical
+    // headings on one page leave a reader guessing which to open, and once the
+    // headings became the page's FAQ it would have been one question asked
+    // twice with two different answers. This section is about misreading the
+    // CLAIM, not about a neighbouring bias, so the heading now says that.
+    ['Commonly misread as', `How is ${entry.name} commonly misread?`,
       `        <div class="callout callout--key">${ICON.key}<p>${escapeHtml(paragraphs(entry.misreadings)[0] || '')}</p></div>\n`
         + prose(paragraphs(entry.misreadings).slice(1).join('\n\n'))],
     ['Sources', `Sources for ${entry.name}`,
@@ -1057,6 +1063,64 @@ ${sources.map((s, i) => {
         : 'The effect sizes from the original study and from the replication are printed side by side above, so the comparison is visible rather than asserted.'}`,
     },
   ], { heading: `About ${entry.name}` });
+
+  // THE PAGE'S OWN QUESTIONS, as structured data — the Law Tome's method,
+  // which this index had not taken.
+  //
+  // The rule above, one visible question and no more, stands: a visible FAQ
+  // that restates the sections above it reads as generated. But the sections
+  // ARE questions already. Every heading on this page is one ("Has X been
+  // retested?", "When does X not apply?"), and a reader sees them, so a
+  // FAQPage listing those headings with the text printed under them is an
+  // index of the page, not an addition to it. Nothing here is written for the
+  // markup.
+  //
+  // Each answer is taken from the SAME field the section renders, never from
+  // stripped HTML. The Tome learned why: stripping a card grid ran the tag and
+  // body together ("THE FIRST QUOTE FOR A REPAIRILLUSTRATIONA householder…"),
+  // and stripping a chart put axis labels in an answer. Where a section is
+  // cards rather than prose (examples, the confused-with cards) its answer
+  // joins the cards' own fields with punctuation, which is all it adds.
+  //
+  // It buys no rich result — Google has restricted FAQ rich results to
+  // government and health sites since 2023, and says so. It is for the answer
+  // engines that read the markup, and so the two sites describe their pages
+  // the same way.
+  const joinNames = (names) => (names.length < 2 ? names.join('')
+    : `${names.slice(0, -1).join(', ')} and ${names[names.length - 1]}`);
+  const o = entry.origin || {};
+  const detail0 = r.detail ? String(r.detail).split(/\n\s*\n/)[0] : '';
+  const sectionAnswer = {
+    'What it claims': entry.meaning,
+    'Does it replicate?': `${r.headline || ''} ${detail0}`,
+    Examples: (Array.isArray(entry.examples) ? entry.examples : [])
+      .map((x) => `${String(x.tag || '').replace(/[.:]\s*$/, '')}: ${x.text}`).join(' '),
+    'The experiments': entry.evidence,
+    Origin: [
+      [o.who && `Described by ${o.who}`, o.year && `in ${o.year}`, o.where && `in ${o.where}`]
+        .filter(Boolean).join(', ') + '.',
+      o.note || '',
+    ].join(' '),
+    'Where it runs out': entry.limits,
+    'Often confused with': related.length
+      ? `This entry's own text names ${joinNames(related.map((x) => (bySlug.get(x.slug) || {}).name).filter(Boolean))} as things it gets taken for. Each has its own entry, and a side-by-side comparison.`
+      : '',
+    'Commonly misread as': entry.misreadings,
+  };
+  const plainText = (s) => String(s || '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+  const sectionQs = blocks
+    .filter((b) => /\?\s*$/.test(b.h2))
+    .map((b) => ({ q: b.h2, a: plainText(sectionAnswer[b.label]) }))
+    // A question with nothing under it is dropped rather than padded.
+    .filter((x) => x.a.length >= 40);
+  const faqJsonld = (faq.jsonld || sectionQs.length) ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      ...sectionQs.map(({ q, a }) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })),
+      ...((faq.jsonld && faq.jsonld.mainEntity) || []),
+    ],
+  } : null;
 
   // WHAT THE PAGE IS BIDDING FOR, and why it differs on 131 of the 544.
   //
@@ -1151,6 +1215,11 @@ ${asideRail(entry, { base, origin, siblings, related, tome, images, stateBySlug 
       // and it is reachable and readable by a person too.
       alternates: [{ type: 'text/markdown', title: `${entry.name} (Markdown)`, href: `${origin}${base}${path}index.md` }],
       jsonld: [
+        // The hub helper is borrowed for its breadcrumb and its page node, but
+        // it types that node CollectionPage — right for a hub, which is a list,
+        // and wrong here, where the page is one entry. Every entry page was
+        // declaring itself a collection. Retyped rather than rebuilt, so the
+        // publisher, licence and dates stay exactly as the hubs state them.
         ...hubJsonLd({
           name: entry.name,
           description,
@@ -1158,7 +1227,7 @@ ${asideRail(entry, { base, origin, siblings, related, tome, images, stateBySlug 
           origin,
           base,
           crumbs: [['browse/', 'Browse']],
-        }),
+        }).map((n) => (n && n['@type'] === 'CollectionPage' ? { ...n, '@type': 'WebPage' } : n)),
         {
           '@context': 'https://schema.org',
           '@type': 'DefinedTerm',
@@ -1197,6 +1266,27 @@ ${asideRail(entry, { base, origin, siblings, related, tome, images, stateBySlug 
           headline: `${entry.name} — what it claims, and whether it replicated`,
           description,
           url: `${origin}${base}${path}`,
+          // Four fields the Tome's Article carries and this one did not.
+          // `image` is the one that matters: Google lists it as required for an
+          // Article to be eligible for its enhanced result, and the card
+          // already exists at this URL — it is the page's own og:image.
+          image: {
+            '@type': 'ImageObject',
+            url: `${origin}${base}og/bias/${entry.slug}.png`,
+            // The card renderer's fixed size, and the size og:image:width and
+            // og:image:height already declare in the head.
+            width: 1200,
+            height: 630,
+          },
+          mainEntityOfPage: `${origin}${base}${path}`,
+          isAccessibleForFree: true,
+          // What a voice assistant should read aloud: the name, the claim, and
+          // the verdict — the three things this page exists to say, in the
+          // order it says them. Selectors for elements every entry renders.
+          speakable: { '@type': 'SpeakableSpecification', cssSelector: ['.law-title', '.entry-stmt', '.answer-v'] },
+          // Derived, never chosen: the entry's names, its field, and its
+          // verdict in words. No "meaning, definition, examples" padding.
+          keywords: [entry.name, ...aliases, field, replicationLabel(r.state)].filter(Boolean).join(', '),
           mainEntity: { '@id': `${origin}${base}${path}#term` },
           about: { '@id': `${origin}${base}${path}#term` },
           isPartOf: { '@type': 'WebSite', name: BRAND, url: `${origin}${base}` },
@@ -1218,7 +1308,7 @@ ${asideRail(entry, { base, origin, siblings, related, tome, images, stateBySlug 
             contentUrl: `${origin}${base}${path}index.md`,
           },
         },
-        ...(faq.jsonld ? [faq.jsonld] : []),
+        ...(faqJsonld ? [faqJsonld] : []),
       ],
     })
     + sprite() + header({ base, active: 'browse', count: count > 0 ? count : null }) + section
