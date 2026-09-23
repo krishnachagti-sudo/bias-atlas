@@ -418,7 +418,7 @@
     update();
   }
 
-  function wire() { wireTheme(); wireNav(); wireMotion(); wireCoinForm(); wireToc('.toc'); wireToc('.jumprail'); wireProgress(); wireToTop(); }
+  function wire() { wireTheme(); wireNav(); wireMotion(); wireCoinForm(); wireToc('.toc'); wireToc('.jumprail'); wireToc('.az-nav'); wireProgress(); wireToTop(); }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', wire);
   else wire();
 })();

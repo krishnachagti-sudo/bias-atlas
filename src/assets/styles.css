@@ -2145,3 +2145,31 @@ footer{ padding-bottom: env(safe-area-inset-bottom); }
 .totop[hidden]{display:none}
 .totop:hover{color:var(--accent);border-color:var(--accent)}
 @media print{.totop{display:none}}
+
+/* ============ the A–Z / by-group jump bar on a phone ============
+   It wrapped. That is fine for twenty-six letters on a desktop and wrong on a
+   phone, where the bar is sticky: the Atlas A–Z held three rows, a quarter of
+   the screen, for the whole length of the page, and the Tome's /tension/
+   bar, whose chips are field names, stacked sixteen of them into a column
+   that covered the ENTIRE viewport — the page could not be read at all.
+
+   Below 720px it becomes one row that scrolls sideways, the same shape as the
+   section rails, full bleed under the masthead. The scroll-spy marks the group
+   in view and keeps its chip on screen. */
+@media(max-width:720px){
+  .az-nav{
+    flex-wrap:nowrap;overflow-x:auto;overflow-y:hidden;max-height:none;
+    overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;scrollbar-width:none;
+    top:var(--header-h);gap:0;padding:0 8px;border-radius:0;border-inline:0;
+    margin-inline:calc(50% - 50vw);
+    scroll-padding-inline:16px;
+  }
+  .az-nav::-webkit-scrollbar{display:none}
+  .az-nav a,.az-nav span{flex:none;white-space:nowrap;min-height:44px;min-width:36px;padding:0 10px;
+    border-radius:0;border-bottom:2px solid transparent}
+}
+/* In view: a tint on a desktop, where the chips have no border to colour
+   and adding one would nudge the row by 2px; the accent underline on a phone,
+   where every chip already carries a transparent one. */
+.az-nav a.on{color:var(--ink);font-weight:700;background:var(--surface-2)}
+@media(max-width:720px){.az-nav a.on{background:transparent;border-bottom-color:var(--accent)}}

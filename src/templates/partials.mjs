@@ -453,6 +453,11 @@ export function head({ title, description, base = '/', origin = '', path, canoni
     // styles.css — without that, landscape content slides under the notch. The
     // two belong together and neither should be removed alone.
     '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">',
+    // iOS Safari turns anything shaped like a phone number into a tap-to-call
+    // link, and every entry here is full of them: page ranges ("1124-1131"),
+    // ISSNs ("1864-9335"), sample sizes. In a citation that is wrong, and on a
+    // phone it is a live trap for a mis-tap. No page here has a phone number.
+    '<meta name="format-detection" content="telephone=no">',
     `<title>${escapeHtml(serpTitle)}</title>`,
   ];
   if (serpDescription) out.push(`<meta name="description" content="${escapeHtml(serpDescription)}">`);
