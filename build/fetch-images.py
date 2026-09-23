@@ -112,6 +112,11 @@ def sh(cmd):
 # So the run is slow by design, it checkpoints every single success into the
 # manifest, and it is safe to stop and restart at any point: anything already
 # in src/data/images.json is skipped. Partial coverage is the expected state.
+#
+# --pace raises this for the case the constant cannot serve: a long unattended
+# trickle from a throttled address, where the right spacing is a minute or more
+# and is not known until it has been measured on the day. Retry backoff still
+# applies on top; this only sets the floor.
 MIN_INTERVAL = 4.0
 _last_call = [0.0]
 
@@ -1032,7 +1037,12 @@ def main():
     ap.add_argument('--limit', type=int, default=0)
     ap.add_argument('--only', default='')
     ap.add_argument('--mode', choices=('people', 'figures', 'artifacts', 'people2'), default='people')
+    ap.add_argument('--pace', type=float, default=0.0,
+                    help='seconds between calls (floor; retry backoff still applies)')
     args = ap.parse_args()
+
+    if args.pace > MIN_INTERVAL:
+        globals()['MIN_INTERVAL'] = args.pace
 
     if Image is None:
         sys.exit('Pillow is required to harvest images: pip install Pillow')

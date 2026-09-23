@@ -11,6 +11,7 @@
 
 import { readFileSync, existsSync, readdirSync, statSync } from 'node:fs';
 import { join } from 'node:path';
+import { createHash } from 'node:crypto';
 
 const DIST = 'dist';
 
@@ -138,8 +139,26 @@ for (const [pattern, label] of [
 
 // The owner's personal address must never be published. This is a standing
 // constraint on the project, so it is checked rather than remembered.
-const leaks = all.filter((f) => /\.(html|txt|json|xml)$/.test(f)
-  && /krishnachagti@gmail\.com/i.test(readFileSync(f, 'utf8')));
+//
+// BY DIGEST, because the first version of this check defeated itself. It held
+// the address as a literal regex — which put the address in a public
+// repository, in a file named preflight, findable by anyone reading the source
+// or running a code search across GitHub. A guard against publishing something
+// must not be the thing that publishes it.
+//
+// So: pull every address-shaped string out of each published file, hash it,
+// and compare digests. The digest below discloses nothing, the check is at
+// least as strict — it now catches any casing, which the regex only managed
+// because of its /i — and the address is never written down. Add a digest to
+// the set to guard another address.
+const FORBIDDEN_EMAIL_SHA256 = new Set([
+  'a2be92ec35247c87b4c5be8ae113136df7f34b1f4b7ea6712a6108970fb837a4',
+]);
+const EMAIL_RE = /[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/gi;
+const leaks = all.filter((f) => /\.(html|txt|json|xml|md)$/.test(f)
+  && (readFileSync(f, 'utf8').match(EMAIL_RE) || []).some(
+    (a) => FORBIDDEN_EMAIL_SHA256.has(createHash('sha256').update(a.toLowerCase()).digest('hex')),
+  ));
 check(leaks.length === 0, `personal email address published on ${leaks.length} files: ${leaks.slice(0, 3).join(', ')}`);
 
 if (fail.length) {
