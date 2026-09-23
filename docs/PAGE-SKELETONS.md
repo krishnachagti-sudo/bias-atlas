@@ -67,9 +67,11 @@ Contents:
 - Two `theme-color` tags, one per colour scheme.
 - A canonical link, the web manifest, the icon, the feed link, and the
   stylesheet.
-- Fonts from Google Fonts: Newsreader and Space Mono for the Tome, Source
-  Serif 4 and IBM Plex Mono for the Atlas. Icons are Tabler (`ti ti-*`),
-  served from the site's own `assets/`.
+- Fonts are self-hosted WOFF2 in `assets/fonts/`, subset to Latin and
+  Latin-extended, the body faces preloaded: Newsreader and Space Mono for
+  the Tome, Source Serif 4 and IBM Plex Mono for the Atlas. Nothing loads
+  from Google Fonts or any other third party. Icons are Tabler (`ti ti-*`),
+  also served from `assets/`.
 - One JSON-LD graph per page (section 7 lists the types per page).
 
 ### 2.2 Masthead (`<header>`, sticky)

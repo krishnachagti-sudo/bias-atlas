@@ -16,8 +16,8 @@ on that date. Nothing is from memory.
 | | The Law Tome | The Bias Atlas |
 |---|---|---|
 | What | 1,116 named laws, principles and effects, each rated for how well it holds up | 544 cognitive biases, each with a replication verdict |
-| Repository | `krishnachagti-sudo/law-tome` (site in `lawtome/`) | `krishnachagti-sudo/biases` |
-| Live | https://conyso.com/lawtome/ (nginx on a DigitalOcean server, uploaded by hand) | https://krishnachagti-sudo.github.io/biases/ (GitHub Pages from `main`) |
+| Repository | `krishnachagti-sudo/law-tome` (site in `lawtome/`) | `krishnachagti-sudo/bias-atlas` (renamed from `biases`) |
+| Live | https://conyso.com/lawtome/ (nginx on a DigitalOcean server, uploaded by hand) | https://conyso.com/biases/ (the same server, uploaded by hand) |
 | First commit | 17 July 2026 ("Initial import: design prototype, corpus seed, build scaffolding") | 6 August 2026 ("Fork the Law Tome engine into Bias Atlas") |
 | Commits to 23 Sept | 355 | 966 |
 | HTML pages built | 2,997 | 1,784 |
@@ -60,7 +60,8 @@ Tome on its first three days, 17 to 19 July (54, 50, 37).
     itself never has to appear in the repository.
   - `npm run sources` (Atlas): every DOI must resolve at Crossref or DataCite.
 - **Deploy:**
-  - Atlas: GitHub Actions, checkout then build then Pages.
+  - Atlas: built and uploaded by hand to conyso.com/biases/, like the Tome.
+    GitHub Actions still runs the gates and deploys a GitHub Pages copy.
   - Tome: the Actions workflow deploys a GitHub Pages copy. The canonical site
     at conyso.com/lawtome/ is built and rsynced by hand. It sits behind an nginx
     cache that can serve hub pages days stale (`x-cache: HIT`), so the cache is
@@ -313,7 +314,7 @@ and every site points at it.
 - **Organisations:**
   - Conyso: `https://conyso.com/#organization`
   - Tome: `https://conyso.com/lawtome/#organization`
-  - Atlas: `https://krishnachagti-sudo.github.io/biases/#organization`
+  - Atlas: `https://conyso.com/biases/#organization`
   - Both site organisations name Conyso as `parentOrganization`.
   - Conyso's own page lists both as `subOrganization`. That change is on the
     conyso-site branch `claude/entity-sub-organisations`, which is not yet
@@ -335,6 +336,9 @@ and every site points at it.
   - structured data does less than people think, apart from identity;
   - crawler access is where visibility silently fails;
   - a list of "tricks" triaged into verified, plausible and folklore.
+
+Everything on search, answer and generative visibility, page type by page
+type, with an audit against the checklist, is in `docs/SEARCH-RECORD.md`.
 
 ---
 

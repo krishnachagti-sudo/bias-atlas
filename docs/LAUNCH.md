@@ -139,7 +139,7 @@ Only after step 4, and only once the site is confirmed serving on the new host.
 
 The deploy workflow's `indexnow` job is gated on this and submits only the URLs
 whose content hash actually changed in that build. The key file is published at
-`/004d810a64b7e4344b305a2af4f23681.txt` and is public by design — that is how
+`/1fad8697495a79c8bc03db90a16f1d52.txt` (shared with the Tome, since both sites are on conyso.com and the key file must sit at the host root) and is public by design — that is how
 the protocol proves ownership.
 
 Two reasons not to do this early. Submitting before the host is live tells Bing
