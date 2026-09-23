@@ -53,20 +53,27 @@ The pages a reader actually lands on, and the thickest remaining gap.
   that does not permit republication, refuses any portrait whose subject's own
   article does not name the bias, and records author, licence and source for
   every file. The renderers, the entry-page figure, the rail portrait, the
-  credits table and fifteen tests are all in place, and the site degrades to
-  exactly its previous appearance when the manifest is empty — which it
-  currently is.
+  credits table and fifteen tests are all in place, and an entry with no image
+  renders exactly as it did before there were any.
 
-  What is blocked is only the harvesting. Wikimedia rate-limits this sandbox's
-  egress to roughly one successful request a minute across every host it
-  serves, and a run needs several thousand. Measured: at twelve seconds between
-  calls, four of five still returned 429. The run checkpoints every success and
-  skips anything already in the manifest, so it can be started, stopped and
-  resumed from any machine with ordinary network access:
+  14 figures are harvested and live (this note used to say the manifest was
+  empty; it had not been since the /projects/ commit). No portraits yet.
+
+  What is blocked is the rest of the harvesting. Wikimedia rate-limits this
+  sandbox's egress, and it is per address, not per client: re-measured on
+  23 September, commons.wikimedia.org answered one request and then 429, and
+  en.wikipedia.org 429'd within minutes of a clean run. A real Chromium does
+  not get round it — it leaves through the same proxy. A background run at
+  one call per 75 seconds (`--pace 75`) added nothing in two hours. The run
+  checkpoints every success and skips anything already in the manifest, so it
+  can be started, stopped and resumed from any machine with ordinary network
+  access:
 
       python3 build/fetch-images.py --mode figures   # one per bias, from its own article
       python3 build/fetch-images.py                  # portraits, from origin.who
       python3 build/fetch-images.py --mode artifacts # diagrams further down the article
+
+  `--pace SECONDS` raises the gap between calls if a network is throttled.
 
   Commit `src/data/images.json` and `src/assets/img/` when it has run.
 
