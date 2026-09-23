@@ -167,69 +167,64 @@ export function buildDate() { return BUILD_DATE; }
  *
  * So: described once, referenced everywhere, from a single definition here.
  *
- * `sameAs` is the part that does the work. It is how a knowledge graph decides
- * that the Krishna Chagti on this site is the Krishna Chagti it already knows
- * about, and it is corroboration rather than assertion — every URL in it is a
- * profile that can be fetched and checked back. That is also why it is short.
- * Four identifiers that resolve and agree beat a dozen that cannot be verified,
- * and a sameAs pointing somewhere unverifiable is the one way this markup could
- * actively mislead rather than merely fail.
+ * ONE PERSON ACROSS ALL THREE PROPERTIES, which it was not. Measured on 23
+ * September 2026 against the live sites, the same human was:
  *
- * ORCID earns its place: it is a persistent identifier issued by a body whose
- * whole function is saying that a name refers to one specific human. Its record
- * was fetched and it names Krishna Chagti with a researcher URL pointing back at
- * conyso.com, so the link is reciprocal — which is exactly the property that
- * makes an identity claim checkable.
+ *   conyso.com/founder/  @id conyso.com/founder/#person, 9 sameAs, "Founder of
+ *                        Conyso. Operator and independent researcher…"
+ *   The Law Tome         the same @id and the same 9 — its docs/ENTITY.md rule
+ *                        is that the two are byte-identical
+ *   this site            @id …/biases/author/#krishna-chagti, 4 sameAs,
+ *                        "Creator of this index."
  *
- * No Wikidata item exists for this person. When one does, its QID belongs at the
- * top of this list; it is the strongest single bridge into a knowledge graph and
- * nothing else here substitutes for it.
+ * A knowledge graph merges by @id, so this site was describing a second Krishna
+ * Chagti; and in the Tome's own words, "two properties listing overlapping-but-
+ * different identifier sets is weaker evidence than either alone, because it
+ * reads as two similar people". So the node is now the Tome's, field for field:
+ * the @id at the entity home, the description conyso.com gives, the same nine
+ * identifiers in the same order. It is duplicated source, not shared code —
+ * change conyso.com, the Tome and this file together.
  *
- * NOTE, carried over from the fork checklist: the Person node is kept because it
- * is true — the same human made this. The *Organization* node is not, because
- * whether this site is a Conyso property has not been decided. Asserting a
- * publisher that has not agreed to be one is the one thing in this file that
- * could actively mislead a knowledge graph rather than merely say nothing.
+ * The job title and employer are back. They were dropped on the reasoning that
+ * whether this SITE is a Conyso property is undecided — but being Founder & CEO
+ * of Conyso is a fact about the person, true whoever publishes this index, and
+ * `worksFor` names Conyso by the @id conyso.com itself declares, so it points
+ * at an entity rather than at nothing. What stays undecided is the site's own
+ * relationship to Conyso: the Organization for Bias Atlas names no parent.
+ *
+ * No Wikidata item exists for this person. When one does, its QID belongs at
+ * the top of sameAs, here and in the other two.
  */
 const FOUNDER = {
   name: 'Krishna Chagti',
-  // No `jobTitle` and no `worksFor`. The original paired them with an
-  // Organization node so the employment relationship was asserted from both
-  // sides and could corroborate itself. With that node gone, a bare job title
-  // is a string pointing at nothing — it says "Founder & CEO" of an entity this
-  // page never names, which is less informative than saying nothing and more
-  // likely to be resolved to the wrong company.
-  description: 'Creator of this index.',
+  jobTitle: 'Founder & CEO',
+  description: 'Founder of Conyso. Operator and independent researcher publishing on organizational scaling, signalling economics, and cybernetics.',
   url: 'https://conyso.com/founder/',
-  // Ordered deliberately. A knowledge graph weighs the registries it already
-  // trusts, and ORCID is a registry OF RESEARCHERS — so an identity described
-  // to Google mainly through ORCID gets described back as a researcher. ORCID
-  // stays, because it is the strongest proof that this name refers to one
-  // specific person and its record links back to conyso.com. It is not first,
-  // because being read as a researcher and nothing else is its own distortion.
   sameAs: [
     'https://conyso.com/founder/',
     'https://www.linkedin.com/in/krishna-chagti',
     'https://github.com/krishnachagti-sudo',
     'https://orcid.org/0009-0003-6401-1788',
+    'https://scholar.google.com/citations?user=PMzF_lYAAAAJ',
+    'https://iitm.academia.edu/KrishnaChagti',
+    'https://openalex.org/A5139032279',
+    'https://peerlist.io/krishnachagti',
+    'https://www.connectively.us/p/krishna-chagti-lssbb-psm-ii',
   ],
 };
 
+/** Conyso's @id, as conyso.com declares it. */
+export const CONYSO_ID = 'https://conyso.com/#organization';
+
 /**
- * The canonical node id for the creator, stable across every page.
- *
- * It used to be a fragment on /about/, which made the author entity something
- * the site mentioned rather than something it had a page for. A knowledge graph
- * resolves an @id by fetching it, and a fragment on a page about the method
- * returns a page about the method. /author/ is a page that is about the person,
- * so the id now points there.
- *
- * Moved once, deliberately, while nothing external references the old id — the
- * backlink export for this project is empty, so there is no citation to break,
- * and this is the cheapest moment it will ever be.
+ * The canonical node id for the creator: the entity home at conyso.com, the
+ * same id the Law Tome and conyso.com use. It was `…/biases/author/#krishna-
+ * chagti`, which made a separate entity of the same person. /author/ still
+ * exists and is about him; it references this id rather than owning one.
+ * The arguments are kept so every call site stays unchanged.
  */
-export function founderId(origin = '', base = '/') {
-  return `${origin}${base}author/#krishna-chagti`;
+export function founderId(_origin = '', _base = '/') {
+  return 'https://conyso.com/founder/#person';
 }
 
 /**
@@ -237,7 +232,15 @@ export function founderId(origin = '', base = '/') {
  * everywhere else so the graph has one node rather than several.
  */
 export function founderNode(origin = '', base = '/') {
-  return { '@type': 'Person', '@id': founderId(origin, base), ...FOUNDER };
+  return {
+    '@type': 'Person',
+    '@id': founderId(origin, base),
+    ...FOUNDER,
+    // By @id alone, exactly as conyso.com and the Tome write it: the rule is
+    // byte-identical, and conyso.com is where Conyso is described.
+    worksFor: { '@id': CONYSO_ID },
+    founderOf: { '@id': CONYSO_ID },
+  };
 }
 
 /** A pointer to the node above, for the other places that mention him. */

@@ -151,7 +151,9 @@ test('the author entity is described once and referenced everywhere else', () =>
   const full = founderNode('https://example.com', BASE);
   const ref = founderRef('https://example.com', BASE);
   assert.equal(full['@id'], ref['@id'], 'the reference must point at the node');
-  assert.match(full['@id'], /\/author\/#/, 'the entity lives on a page about the person');
+  // At the entity home, the same id conyso.com and the Law Tome use. It used
+  // to be this site's /author/#, which made a second entity of the same man.
+  assert.equal(full['@id'], 'https://conyso.com/founder/#person', 'the entity lives at its home');
   assert.ok(Array.isArray(full.sameAs) && full.sameAs.length >= 3, 'the node carries its identifiers');
   assert.equal(ref.sameAs, undefined, 'a reference carries no second description');
   assert.equal(ref.description, undefined);
@@ -160,9 +162,17 @@ test('the author entity is described once and referenced everywhere else', () =>
   // is the single way this markup could mislead rather than merely say nothing.
   for (const u of full.sameAs) assert.match(u, /^https:\/\/\S+$/, `${u} is not a resolvable identifier`);
 
-  // No employer or job title is asserted. partials.mjs records why: whether this
-  // site is a Conyso property has not been decided, and an entity graph is slow
-  // to unlearn a publisher relationship.
-  assert.equal(full.worksFor, undefined);
-  assert.equal(full.jobTitle, undefined);
+  // The employer and job title ARE asserted: being Founder & CEO of Conyso is a
+  // fact about the person, whoever publishes this site. They were left out on
+  // the reasoning that this SITE's relationship to Conyso is undecided — which
+  // conflated the two. The site's relationship is still undecided, and is
+  // what stays unasserted: see the publisher check below.
+  assert.equal(full.jobTitle, 'Founder & CEO');
+  assert.deepEqual(full.worksFor, { '@id': 'https://conyso.com/#organization' });
+});
+
+test('the site itself claims no parent organisation until that is decided', () => {
+  const [page] = hubJsonLd({ name: 'Browse', description: 'd', path: 'browse/', origin: 'https://example.com', base: BASE });
+  assert.equal(page.publisher.parentOrganization, undefined, 'a publisher relationship nobody has agreed to');
+  assert.equal(page.publisher['@id'], `https://example.com${BASE}#organization`);
 });

@@ -852,11 +852,15 @@ ${faq.html}${hubNav('author/', { base })}  </div>
       // The one full description of the author entity on the whole site. Every
       // other page references it by @id, so the graph gets one person rather
       // than one per page that happens to share a name.
+      //
+      // Exactly founderNode() and nothing added. It also carried
+      // mainEntityOfPage pointing HERE and its own knowsAbout — but the @id is
+      // conyso.com's, whose node names conyso.com/founder/ as its main page.
+      // One person with two main pages, and a topic list the other two
+      // properties do not have, is the drift this node was aligned to remove.
       {
         '@context': 'https://schema.org',
         ...founderNode(origin, base),
-        mainEntityOfPage: `${origin}${base}author/`,
-        knowsAbout: ['Cognitive bias', 'Replication crisis', 'Metascience'],
       },
       ...(faq.jsonld ? [faq.jsonld] : []),
     ],

@@ -187,6 +187,9 @@ export function hubJsonLd({
     // at face value and is slow to unlearn.
     publisher: {
       '@type': 'Organization',
+      // An @id, as the Tome's publisher now has, so 1,215 mentions are one
+      // entity rather than 1,215 anonymous ones sharing a name.
+      '@id': `${origin}${base}#organization`,
       name: BRAND,
       url: `${origin}${base}`,
       publishingPrinciples: `${origin}${base}about/`,
