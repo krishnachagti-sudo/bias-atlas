@@ -131,8 +131,12 @@ tuning in the dark.
   stylesheet and was reverted. Inert rules beat a stylesheet the browser stops
   parsing halfway down.
 - **Cross-entry contradictions** — built. `npm run contradictions` is now a
-  module and the build warns on every run: 38 DOIs are recorded as obtained by
-  one entry and not obtained by another. Not a page — a reader has no use for
+  module and the build warns on every run: 31 DOIs are recorded as obtained by
+  one entry and not obtained by another. (It said 38 until the detector was
+  fixed: seven were its own misreadings, successful reads worded in ways it
+  did not follow, and deliberate "not read for this entry" notes, which say
+  nothing about whether a paper could be had. Each row now names the copy that
+  worked.) Not a page — a reader has no use for
   the corpus's bookkeeping disagreeing with itself.
 - **Sources with no provenance note** — open, and the one item on this list
   that code cannot close. 27 entries say nothing about how any source was
