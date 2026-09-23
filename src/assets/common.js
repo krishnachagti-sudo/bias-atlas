@@ -306,10 +306,28 @@
     if (!secs.length) return;
 
     var ticking = false, lock = null, lockT = 0;
+    // Below 1240px the same rail is a horizontal strip under the masthead, and
+    // a highlight on a chip that has scrolled off the end of it is no use at
+    // all — on a 390px screen about three of seven are in view. So when it is
+    // horizontal the rail scrolls itself to keep the active chip visible, and
+    // the vertical fill indicator is skipped because it has nothing to fill.
+    function isRail() { return getComputedStyle(toc).flexDirection === 'row'; }
     function mark(a) {
       for (var j = 0; j < links.length; j++) links[j].classList.remove('on');
       if (!a) return;
       a.classList.add('on');
+      if (isRail()) {
+        var want = a.offsetLeft - (toc.clientWidth - a.offsetWidth) / 2;
+        var max = toc.scrollWidth - toc.clientWidth;
+        want = Math.max(0, Math.min(want, max));
+        // Only when it would actually move: a scroll call per frame while the
+        // reader is scrolling the page fights their own sideways swipe.
+        if (Math.abs(toc.scrollLeft - want) > 6) {
+          if (toc.scrollTo) toc.scrollTo({ left: want, behavior: 'smooth' });
+          else toc.scrollLeft = want;
+        }
+        return;
+      }
       // Fill runs to the CENTRE of the active item, so the indicator points at
       // the section name rather than at raw scroll position.
       toc.style.setProperty('--fill', (a.offsetTop + a.offsetHeight / 2) + 'px');
@@ -394,8 +412,17 @@
     var header = document.querySelector('header');
     if (!header) return;
     /* The jump bar sticks directly under the header, so an anchor has to clear
-       both or it lands behind the bar. */
-    var jump = document.querySelector('.az-nav');
+       both or it lands behind the bar.
+
+       On an entry page below 1240px the SECTION RAIL is that bar: the element
+       that is a tall column beside the article on a desktop becomes a strip
+       under the masthead on a phone. Asking the element which way it is
+       pointing is exact; a width test would repeat the breakpoint here and go
+       stale the first time the stylesheet moved it. */
+    var jump = document.querySelector('.az-nav') || document.querySelector('.toc');
+    var horizontal = function (el) {
+      return !!el && getComputedStyle(el).flexDirection === 'row';
+    };
     var last = 0, lastJump = -1;
     var sync = function () {
       var h = Math.round(header.getBoundingClientRect().height);
@@ -403,7 +430,8 @@
         last = h;
         document.documentElement.style.setProperty('--header-h', h + 'px');
       }
-      var j = jump ? Math.round(jump.getBoundingClientRect().height) : 0;
+      var j = jump && (jump.className.indexOf('toc') < 0 || horizontal(jump))
+        ? Math.round(jump.getBoundingClientRect().height) : 0;
       if (j !== lastJump) {
         lastJump = j;
         document.documentElement.style.setProperty('--jump-h', j + 'px');

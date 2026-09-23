@@ -664,11 +664,59 @@ a.stat--link .s-k::after{content:" →";letter-spacing:0;opacity:.55}
 .toc a{font-family:var(--mono);font-size:11.5px;letter-spacing:.02em;color:var(--faint);padding:5px 0;line-height:1.3;transition:color .3s ease,font-size .35s cubic-bezier(.2,.7,.2,1),padding .3s ease,font-weight .3s}
 .toc a:hover{color:var(--muted)}
 .toc a.on{color:var(--accent);font-size:15px;font-weight:700;padding-left:5px}
-/* Hide the sticky TOC rail below the 3-column breakpoint. This rule sits AFTER
-   the base `.toc{display:flex}` above so it wins the cascade — the old hide
-   inside the .entry-layout media block came BEFORE it and was silently
-   overridden, leaving the rail visible (and overlapping the article) on mobile. */
-@media(max-width:1240px){.toc{display:none}}
+/* Below the 3-column breakpoint the rail used to be `display:none`, which meant
+   every phone and tablet got an entry page with NO way to move inside it. These
+   run six to ten screens on a 390px viewport, and the only navigation was
+   scrolling. That is the difference between a site that reflows and a site
+   built for the device: nothing was broken, and nothing helped either.
+
+   So it turns, rather than disappears. The same links become a sticky
+   horizontal rail directly under the masthead, the section you are in is
+   highlighted by the same scroll-spy that drives the desktop column, and the
+   rail scrolls itself so the active chip stays in view. It spans the whole grid
+   (`grid-column:1/-1`) because between 860 and 1240px the layout is still two
+   columns, and a rail occupying one of them would push the article into the
+   aside's slot.
+
+   The provenance note at the foot is dropped here. It earns its place in the
+   desktop column because that column has a screen's height to fill; in a 44px
+   bar it is noise, and it already appears at the foot of the sources. */
+@media(max-width:1240px){
+  .toc{
+    grid-column:1/-1;
+    position:sticky;top:var(--header-h);z-index:12;
+    flex-direction:row;align-items:stretch;justify-content:flex-start;
+    height:auto;align-self:stretch;gap:0;
+    padding:0;border-left:0;border-bottom:1px solid var(--line-strong);
+    background:var(--bg);
+    overflow-x:auto;overflow-y:hidden;
+    /* the rail scrolls sideways, not the page behind it */
+    overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;
+    scrollbar-width:none;
+    /* full bleed to the screen edges: a bar that stops short of them reads as a
+       widget sitting on the page rather than as part of the furniture */
+    margin-inline:calc(50% - 50vw);
+    padding-inline:max(16px,calc(50vw - 50%));
+    scroll-padding-inline:16px;
+  }
+  .toc::-webkit-scrollbar{display:none}
+  /* the vertical fill indicator has nothing to fill in a horizontal bar */
+  .toc::before{display:none}
+  .toc-links{flex-direction:row;gap:0;min-width:max-content}
+  .toc a{
+    align-items:center;gap:7px;white-space:nowrap;
+    min-height:44px;padding:0 13px;
+    border-bottom:2px solid transparent;
+    /* the desktop rail animates font-size on activation; at this size that
+       reflows the whole bar under the reader's thumb */
+    transition:color .25s ease,border-color .25s ease;
+  }
+  .toc a.on{font-size:11.5px;font-weight:700;padding:0 13px;border-bottom-color:var(--accent)}
+  .toc-foot{display:none}
+}
+/* A coarse pointer gets the 44px target; a narrow desktop window does not need
+   one, and the tighter bar shows more sections at once. */
+@media(max-width:1240px) and (pointer:fine){.toc a{min-height:38px}}
 /* sources — understated reference list (deliberately quiet: small, muted, thin
    rules, no card chrome) so citations stay available without competing with the body */
 .sources-list{list-style:none;display:flex;flex-direction:column}
@@ -695,7 +743,11 @@ a.stat--link .s-k::after{content:" →";letter-spacing:0;opacity:.55}
 .entry-layout .lawmain{counter-reset:sec}
 .entry-layout .lawmain .block>.lbl::before{counter-increment:sec;content:counter(sec,decimal-leading-zero);font-size:10px;letter-spacing:.04em;color:var(--faint);border:1px solid var(--line-strong);border-radius:3px;padding:3px 7px}
 /* jumped-to sections must clear the sticky header (72px desktop / 62px mobile) */
-.block{margin-bottom:60px;scroll-margin-top:calc(var(--header-h) + 12px)}
+/* +--jump-h so a section landed from the rail clears the rail itself. It is 0
+   on a desktop, where the rail is a column beside the article and nothing
+   sticks under the masthead; below 1240px it is the height of the strip, and
+   without it every chip tap dropped its own heading behind the bar. */
+.block{margin-bottom:60px;scroll-margin-top:calc(var(--header-h) + var(--jump-h) + 12px)}
 /* Space between paragraphs inside a section. There was none, and it did not
    show, because every block rendered exactly one <p>: the corpus stores each
    prose field as a single string and the template printed it whole. Now that
