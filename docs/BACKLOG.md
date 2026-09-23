@@ -131,8 +131,15 @@ tuning in the dark.
   stylesheet and was reverted. Inert rules beat a stylesheet the browser stops
   parsing halfway down.
 - **Cross-entry contradictions** — built. `npm run contradictions` is now a
-  module and the build warns on every run: 31 DOIs are recorded as obtained by
-  one entry and not obtained by another. (It said 38 until the detector was
+  module and the build warns on every run: 16 DOIs are recorded as obtained by
+  one entry and not obtained by another. It was 31 until 23 September: for 15
+  papers a free full-text copy was fetched and checked to be that paper (its
+  title in the text, and for the HTML ones an article's worth of text, not a
+  landing page), and the entries claiming the paper was unobtainable now say
+  where the copy is, which entry was written from it, and that it was not read
+  for theirs. The 16 left are papers whose working copy could not be verified
+  from here (403, 429, or a bot check); correcting those would mean taking
+  the other entry's word for it. (It said 38 until the detector was
   fixed: seven were its own misreadings, successful reads worded in ways it
   did not follow, and deliberate "not read for this entry" notes, which say
   nothing about whether a paper could be had. Each row now names the copy that
