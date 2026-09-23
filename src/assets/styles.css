@@ -2173,3 +2173,10 @@ footer{ padding-bottom: env(safe-area-inset-bottom); }
    where every chip already carries a transparent one. */
 .az-nav a.on{color:var(--ink);font-weight:700;background:var(--surface-2)}
 @media(max-width:720px){.az-nav a.on{background:transparent;border-bottom-color:var(--accent)}}
+
+/* An index card below the viewport is laid out and painted only when it is
+   about to scroll into view. Every one stays in the HTML, so crawlers,
+   readers without JavaScript and find-in-page see the whole list exactly as
+   before. The intrinsic size is the card's own min-height, so the scrollbar
+   does not jump as cards come into view. */
+.grid > .card{content-visibility:auto;contain-intrinsic-size:auto 186px}
