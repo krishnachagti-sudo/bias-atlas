@@ -186,11 +186,11 @@ export function buildDate() { return BUILD_DATE; }
  * change conyso.com, the Tome and this file together.
  *
  * The job title and employer are back. They were dropped on the reasoning that
- * whether this SITE is a Conyso property is undecided — but being Founder & CEO
- * of Conyso is a fact about the person, true whoever publishes this index, and
- * `worksFor` names Conyso by the @id conyso.com itself declares, so it points
- * at an entity rather than at nothing. What stays undecided is the site's own
- * relationship to Conyso: the Organization for Bias Atlas names no parent.
+ * whether this SITE is a Conyso property was undecided — but being Founder &
+ * CEO of Conyso is a fact about the person, true whoever publishes this index,
+ * and `worksFor` names Conyso by the @id conyso.com itself declares. The site's
+ * own relationship was decided separately on 23 September 2026: it is a Conyso
+ * property, and hub.mjs names Conyso as the publisher's parentOrganization.
  *
  * No Wikidata item exists for this person. When one does, its QID belongs at
  * the top of sameAs, here and in the other two.

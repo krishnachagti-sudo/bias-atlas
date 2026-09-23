@@ -771,11 +771,9 @@ ${faq.html}${hubNav('features/', { base })}  </div>
  * is a weaker claim than "trust me, I am qualified" and a far more falsifiable
  * one, which for a reference site is the trade worth making.
  *
- * Nothing biographical is asserted beyond what the repository can support. In
- * particular no employer and no job title: partials.mjs records that the
- * Organization node was dropped because whether this site is a Conyso property
- * has not been decided, and a page about trustworthiness is the last place to
- * quietly decide it.
+ * Nothing biographical is asserted beyond what the repository can support. The
+ * structured data is founderNode() exactly, the same Person conyso.com and the
+ * Law Tome emit (see partials.mjs).
  */
 export function authorPage({ base = '/', origin = '', entries = [] } = {}) {
   const s = corpusStats(entries);

@@ -135,13 +135,9 @@ test('hubNav offers the other pages and never the current one', () => {
   assert.match(nav, new RegExp(`href="${BASE}about/"`));
 });
 
-test('the publisher graph claims no parent organisation', () => {
-  // The fork inherited a node naming Conyso as parent. Whether this site is a
-  // Conyso property has not been decided, and a publisher relationship is a
-  // claim an entity graph is slow to unlearn.
+test('the publisher is the site, under Conyso', () => {
   const [page] = hubJsonLd({ name: 'Browse', description: 'd', path: 'browse/', origin: 'https://example.com', base: BASE });
   assert.equal(page.publisher.name, BRAND);
-  assert.equal(page.publisher.parentOrganization, undefined);
 });
 
 test('the author entity is described once and referenced everywhere else', () => {
@@ -164,15 +160,18 @@ test('the author entity is described once and referenced everywhere else', () =>
 
   // The employer and job title ARE asserted: being Founder & CEO of Conyso is a
   // fact about the person, whoever publishes this site. They were left out on
-  // the reasoning that this SITE's relationship to Conyso is undecided — which
-  // conflated the two. The site's relationship is still undecided, and is
-  // what stays unasserted: see the publisher check below.
+  // the reasoning that this SITE's relationship to Conyso was undecided — which
+  // conflated the two. The site's relationship is a separate fact, checked
+  // below.
   assert.equal(full.jobTitle, 'Founder & CEO');
   assert.deepEqual(full.worksFor, { '@id': 'https://conyso.com/#organization' });
 });
 
-test('the site itself claims no parent organisation until that is decided', () => {
+test('the site names Conyso as its parent, by the @id conyso.com declares', () => {
+  // Decided 23 September 2026. By reference, never restated: conyso.com is
+  // where Conyso is described.
   const [page] = hubJsonLd({ name: 'Browse', description: 'd', path: 'browse/', origin: 'https://example.com', base: BASE });
-  assert.equal(page.publisher.parentOrganization, undefined, 'a publisher relationship nobody has agreed to');
+  assert.equal(page.publisher.parentOrganization['@id'], 'https://conyso.com/#organization');
+  assert.equal(page.publisher.parentOrganization.description, undefined);
   assert.equal(page.publisher['@id'], `https://example.com${BASE}#organization`);
 });

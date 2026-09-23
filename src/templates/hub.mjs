@@ -11,7 +11,7 @@
 //   2. A crumb and a stat line, so the page states its own scale.
 //   3. A footer of the other hubs, so no way in is a dead end.
 
-import { escapeHtml, BRAND, ALL_PAGES } from './partials.mjs';
+import { escapeHtml, BRAND, ALL_PAGES, CONYSO_ID } from './partials.mjs';
 import { LASTMOD_TOKEN } from '../../build/lastmod.mjs';
 
 // The destinations hubNav offers. Sourced from ALL_PAGES — not from the masthead
@@ -181,10 +181,12 @@ export function hubJsonLd({
     // spell out — who stands behind this, where the method is written down, how
     // to report an error — stopped at the entry level.
     //
-    // `parentOrganization` named Conyso on the original. It is dropped here:
-    // whether this site is a Conyso property has not been decided, and a
-    // publisher relationship is exactly the kind of claim an entity graph takes
-    // at face value and is slow to unlearn.
+    // A Conyso property, decided 23 September 2026. It was left out until
+    // then because a publisher relationship is exactly the kind of claim an
+    // entity graph takes at face value and is slow to unlearn. Referenced by
+    // the @id conyso.com declares, and not described: conyso.com describes
+    // Conyso. conyso.com lists this site among its sub-organisations, so the
+    // relationship is stated from both ends.
     publisher: {
       '@type': 'Organization',
       // An @id, as the Tome's publisher now has, so 1,215 mentions are one
@@ -192,6 +194,7 @@ export function hubJsonLd({
       '@id': `${origin}${base}#organization`,
       name: BRAND,
       url: `${origin}${base}`,
+      parentOrganization: { '@type': 'Organization', '@id': CONYSO_ID, name: 'Conyso', url: 'https://conyso.com' },
       publishingPrinciples: `${origin}${base}about/`,
       correctionsPolicy: `${origin}${base}about/`,
     },
