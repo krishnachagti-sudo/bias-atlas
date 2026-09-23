@@ -889,6 +889,7 @@ ${shareRow({ live: true, compact: true, label: 'Share this page' }).trimEnd()}
     <span>Corpus licensed <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">CC&nbsp;BY&nbsp;4.0</a>.</span>
   </div>
 </footer>
+<a class="totop" href="#main-content" aria-label="Back to top" hidden><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
 ${scripts ? scripts + '\n' : ''}</body>
 </html>
 `;

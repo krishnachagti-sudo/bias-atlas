@@ -29,7 +29,7 @@
 // entry and every caveat is the entry's own prose, quoted, not summarised.
 
 import { head, sprite, header, footer, escapeHtml, listFilter } from './partials.mjs';
-import { hubHead, hubNav, hubFaq, hubJsonLd } from './hub.mjs';
+import { hubHead, hubNav, hubFaq, hubJsonLd, hubRail } from './hub.mjs';
 import { entryPath, replicationLabel, REPLICATION_CLASS } from './entry.mjs';
 import { verdictPath } from './paths.mjs';
 import { VERDICT_GLOSS } from './charts.mjs';
@@ -133,10 +133,10 @@ ${hubHead({
     answer,
     base,
     crumbs: [],
-    stats: present.map((s) => [num(n(s)), replicationLabel(s).toLowerCase()]),
+    stats: present.map((s) => [num(n(s)), replicationLabel(s).toLowerCase(), `#v-${s}`]),
     lede: `Every entry in this index carries a replication verdict, quoted from the papers rather than decided here. This page is all ${num(total)} of them at once, most doubtful first, each with the entry's own sentence about where the claim runs out.`,
   })}
-${listFilter({ target: 'ir', label: 'Filter by name, alias or field', placeholder: 'anchoring, memory, halo…', noun: 'biases' })}
+${hubRail(present.map((s) => [`v-${s}`, replicationLabel(s), num(n(s))]), { label: 'Jump to a verdict' })}${listFilter({ target: 'ir', label: 'Filter by name, alias or field', placeholder: 'anchoring, memory, halo…', noun: 'biases' })}
     <div class="ir-all" id="ir">
 ${present.map(section).join('\n')}
     </div>

@@ -296,8 +296,11 @@
   // Deliberately NOT gated behind <html class="anim">. Knowing which section you
   // are in is navigation, not decoration, so a visitor who turns motion off still
   // gets the highlight — they just get it without the CSS transition.
-  function wireToc() {
-    var toc = document.querySelector('.toc');
+  // Drives both rails: the entry page's section rail (.toc) and the jump rail
+  // on long list pages (.jumprail). Same spy, same click lock, same
+  // keep-the-chip-in-view behaviour; only the container differs.
+  function wireToc(sel) {
+    var toc = document.querySelector(sel || '.toc');
     if (!toc) return;
     var links = [].slice.call(toc.querySelectorAll('a'));
     var secs = links
@@ -337,11 +340,23 @@
     // down the content area — not the one whose heading last crossed the top, and
     // not the one covering the most pixels. Largest-area hands the win to the next
     // section the moment it claims half the screen, which runs ahead of the reader.
-    var HEADER = 92;
+    //
+    // "The content area" starts under whatever is stuck to the top: the
+    // masthead, plus the rail itself once it has turned into a strip. That was
+    // a constant 92px, the desktop masthead, which put the line in the wrong
+    // place on a phone (a shorter masthead, and a strip under it) — so the
+    // live heights the header sync already publishes are read instead.
+    var rootStyle = getComputedStyle(document.documentElement);
+    function covered() {
+      var h = parseFloat(rootStyle.getPropertyValue('--header-h')) || 92;
+      var j = parseFloat(rootStyle.getPropertyValue('--jump-h')) || 0;
+      return h + j;
+    }
     function apply() {
       ticking = false;
       if (lock) { if (Date.now() < lockT) { mark(lock); return; } lock = null; }
-      var line = HEADER + 0.30 * (window.innerHeight - HEADER);
+      var top = covered();
+      var line = top + 0.30 * (window.innerHeight - top);
       var best = null;
       for (var i = 0; i < secs.length; i++) {
         if (secs[i].el.getBoundingClientRect().top <= line) best = secs[i];
@@ -369,7 +384,41 @@
     apply();
   }
 
-  function wire() { wireTheme(); wireNav(); wireMotion(); wireCoinForm(); wireToc(); wireProgress(); }
+  // ---- back to top -----------------------------------------------------------
+  // For phones, where the pages that need it are dozens of screens long and
+  // the masthead is the only way back to navigation. It appears once the reader
+  // is two screens down and only on pages long enough for that to be far: on a
+  // page of three screens a button that follows you is clutter. It ships
+  // `hidden`, so without this script there is simply no button.
+  function wireToTop() {
+    var btn = document.querySelector('.totop');
+    if (!btn) return;
+    var mq = window.matchMedia ? matchMedia('(max-width:860px)') : null;
+    var ticking = false;
+    function update() {
+      ticking = false;
+      var long = document.documentElement.scrollHeight > window.innerHeight * 4;
+      var show = (!mq || mq.matches) && long && window.scrollY > window.innerHeight * 2;
+      if (show === !btn.hidden) return;
+      btn.hidden = !show;
+    }
+    addEventListener('scroll', function () { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+    addEventListener('resize', update);
+    // The href lands on #main-content, which is focusable, so keyboard and
+    // screen-reader users arrive at the start of the content rather than at the
+    // top of an unfocused document. Smooth for everyone else unless they have
+    // asked for less motion.
+    btn.addEventListener('click', function (e) {
+      var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+      var main = document.getElementById('main-content');
+      if (main) main.focus({ preventScroll: true });
+    });
+    update();
+  }
+
+  function wire() { wireTheme(); wireNav(); wireMotion(); wireCoinForm(); wireToc('.toc'); wireToc('.jumprail'); wireProgress(); wireToTop(); }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', wire);
   else wire();
 })();
@@ -419,7 +468,7 @@
        under the masthead on a phone. Asking the element which way it is
        pointing is exact; a width test would repeat the breakpoint here and go
        stale the first time the stylesheet moved it. */
-    var jump = document.querySelector('.az-nav') || document.querySelector('.toc');
+    var jump = document.querySelector('.az-nav') || document.querySelector('.jumprail') || document.querySelector('.toc');
     var horizontal = function (el) {
       return !!el && getComputedStyle(el).flexDirection === 'row';
     };

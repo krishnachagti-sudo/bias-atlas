@@ -56,9 +56,14 @@ export function hubHead({ title, answer, lede = '', sub = '', stats = [], base =
     .map(([href, label]) => `<a href="${base}${href}">${escapeHtml(label)}</a>`)
     .join('<span class="sep">/</span>');
   const crumb = `    <nav class="crumb" aria-label="Breadcrumb">${trail}<span class="sep">/</span>${escapeHtml(title)}</nav>\n`;
+  // A stat may carry a third element, the #id of the group it counts. Then it
+  // is a link: "42 failed to replicate" at the top of a page that lists those
+  // 42 further down should take you to them, and on a phone that list is six
+  // screens away. A stat with no group to point at stays plain text.
   const statRow = stats.length
-    ? `    <div class="hub-stats">${stats.map(([v, l]) =>
-        `<span class="hub-stat"><b>${escapeHtml(String(v))}</b> ${escapeHtml(l)}</span>`).join('')}</div>\n`
+    ? `    <div class="hub-stats">${stats.map(([v, l, href]) => (href
+      ? `<a class="hub-stat hub-stat--go" href="${escapeHtml(href)}"><b>${escapeHtml(String(v))}</b> ${escapeHtml(l)}</a>`
+      : `<span class="hub-stat"><b>${escapeHtml(String(v))}</b> ${escapeHtml(l)}</span>`)).join('')}</div>\n`
     : '';
   return crumb
     + `    <div class="sec-head">
@@ -71,6 +76,30 @@ export function hubHead({ title, answer, lede = '', sub = '', stats = [], base =
     // section head); after a stat row that pulls it up into the numbers, so the
     // hub variant restates the margin.
     + (lede ? `    <p class="sec-lede hub-lede">${lede}</p>\n` : '');
+}
+
+/**
+ * A sticky strip of jump links to the groups on a long list page.
+ *
+ * The entry pages' section rail, for pages whose sections are groups rather
+ * than prose: /is-it-real/ is 544 rows in four verdicts, /published-in/ is
+ * twenty-five venues, /projects/ is twelve studies. On a phone each of those is
+ * dozens of screens with nothing to move by but scrolling. It sticks under the
+ * masthead at every width, since a list page has no side column to put it in;
+ * the same scroll-spy that drives the entry rail marks the group in view and
+ * keeps its chip on screen.
+ *
+ * Two groups is not a list worth jumping around, so fewer renders nothing.
+ *
+ * @param {Array<[string, string, (number|string)?]>} items [#id, label, count]
+ */
+export function hubRail(items = [], { label = 'Jump to' } = {}) {
+  const rows = (Array.isArray(items) ? items : []).filter((x) => x && x[0] && x[1]);
+  if (rows.length < 3) return '';
+  return `    <nav class="jumprail" aria-label="${escapeHtml(label)}">
+${rows.map(([id, l, c]) => `      <a href="#${escapeHtml(String(id).replace(/^#/, ''))}">${escapeHtml(l)}${c != null && c !== '' ? ` <span class="jr-n">${escapeHtml(String(c))}</span>` : ''}</a>`).join('\n')}
+    </nav>
+`;
 }
 
 /** The other ways in, at the foot of every hub. */

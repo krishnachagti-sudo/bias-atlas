@@ -33,7 +33,7 @@
 // on the entry.
 
 import { head, sprite, header, footer, escapeHtml, shareRow, BRAND } from './partials.mjs';
-import { hubHead, hubNav, hubFaq, hubJsonLd } from './hub.mjs';
+import { hubHead, hubNav, hubFaq, hubJsonLd, hubRail } from './hub.mjs';
 import { entryPath, replicationLabel, REPLICATION_CLASS } from './entry.mjs';
 import { CATEGORIES } from '../../build/corpus.mjs';
 import { LASTMOD_TOKEN } from '../../build/lastmod.mjs';
@@ -111,7 +111,11 @@ export function projectsPage({ base = '/', origin = '', entries = [] } = {}) {
     },
   ], { heading: 'Questions about these projects' });
 
-  const section = (p) => {
+  // A project has no slug of its own, so its anchor is its place in the list.
+  // Stable enough: the list is sorted by entry count and then by citation,
+  // both of which only move when the corpus does.
+  const pid = (i) => `p-${i + 1}`;
+  const section = (p, i) => {
     const c = (s) => p.list.filter((e) => (e.replication || {}).state === s).length;
     const href = p.url || (p.doi ? `https://doi.org/${p.doi}` : '');
     const figures = [
@@ -119,7 +123,7 @@ export function projectsPage({ base = '/', origin = '', entries = [] } = {}) {
       p.sites ? `${n(p.sites)} sites` : '',
       p.k ? `${n(p.k)} studies` : '',
     ].filter(Boolean);
-    return `    <section class="pj">
+    return `    <section class="pj" id="${pid(i)}">
       <h2 class="pj-h">${escapeHtml(shortName(p))} <span class="pj-n">${n(p.list.length)} entries</span></h2>
       <p class="pj-cite">${href
     ? `<a href="${escapeHtml(href)}" rel="nofollow noopener">${escapeHtml(String(p.cite).replace(/\.\s*$/, ''))}</a>.`
@@ -142,7 +146,7 @@ ${hubHead({
     stats: [[n(list.length), 'projects'], [n(covered), 'entries covered'], [biggest ? n(biggest.list.length) : '0', 'in the largest']],
     lede: 'A verdict on an entry page looks like its own small story. Often it is one row of a table in a paper that tested forty effects at once — and these are those papers, with everything each of them settled.',
   })}
-${list.map(section).join('\n')}
+${hubRail(list.map((p, i) => [pid(i), shortName(p), p.list.length]), { label: 'Jump to a project' })}${list.map(section).join('\n')}
 ${faq.html}${shareRow({ url: `${origin}${base}projects/`, title: `The replication projects — ${BRAND}`, text: answer.replace(/<[^>]+>/g, ''), label: 'Share this page' })}${hubNav('projects/', { base })}  </div>
 </section>
 `;

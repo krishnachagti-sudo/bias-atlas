@@ -27,7 +27,7 @@
 // no ranking column.
 
 import { head, sprite, header, footer, escapeHtml, shareRow, BRAND } from './partials.mjs';
-import { hubHead, hubNav, hubFaq, hubJsonLd } from './hub.mjs';
+import { hubHead, hubNav, hubFaq, hubJsonLd, hubRail } from './hub.mjs';
 import { entryPath, replicationLabel, REPLICATION_CLASS } from './entry.mjs';
 import { verdictSplit } from './charts.mjs';
 import { LASTMOD_TOKEN } from '../../build/lastmod.mjs';
@@ -76,6 +76,9 @@ export function venuesPage({ base = '/', origin = '', entries = [] } = {}) {
     },
   ], { heading: 'Questions about these numbers' });
 
+  // Anchors from the venue's own name, so a link to one survives the list
+  // being reordered when the corpus grows.
+  const vid = (v) => `v-${String(v.venue).toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}`;
   const block = (v) => {
     const counts = {};
     for (const e of v.list) {
@@ -84,7 +87,7 @@ export function venuesPage({ base = '/', origin = '', entries = [] } = {}) {
     }
     const years = v.list.map((e) => Number(e.origin.year)).filter(Number.isFinite);
     const span = years.length ? `${Math.min(...years)}–${Math.max(...years)}` : '';
-    return `    <section class="vn">
+    return `    <section class="vn" id="${vid(v)}">
       <h2 class="vn-h">${escapeHtml(v.venue)} <span class="vn-n">${n(v.list.length)}${span ? ` · ${escapeHtml(span)}` : ''}</span></h2>
 ${verdictSplit(counts, { base, link: true, labels: false, caption: '' })}      <ul class="vn-list">
 ${v.list.map((e) => `        <li><a href="${base}${entryPath(e)}">${escapeHtml(e.name)}</a> <span class="vn-y">${escapeHtml(String(e.origin.year || ''))}</span> <span class="badge ${REPLICATION_CLASS[(e.replication || {}).state] || 'b-heu'}">${escapeHtml(replicationLabel((e.replication || {}).state))}</span></li>`).join('\n')}
@@ -103,8 +106,8 @@ ${hubHead({
     stats: [[n(total), 'venues'], [n(named.length), 'with four or more'], [n(entries.length - inNamed), 'published elsewhere']],
     lede: `Every entry records the journal, book or paper the claim first appeared in. This is that field, counted. <b>It is not a league table of journals</b> — these entries were picked for being notable rather than sampled from what any journal printed, and a venue with six entries here cannot be set beside one with ${top ? n(top.list.length) : 'sixty-six'}. The verdict split is shown per venue because it is worth seeing; it is not what the page is sorted by, and there is no ranking.`,
   })}
-${named.map(block).join('\n')}
-    <section class="vn">
+${hubRail([...named.map((v) => [vid(v), v.venue, v.list.length]), ['v-elsewhere', 'Everywhere else', rest.length]], { label: 'Jump to a venue' })}${named.map(block).join('\n')}
+    <section class="vn" id="v-elsewhere">
       <h2 class="vn-h">Everywhere else <span class="vn-n">${n(rest.length)} venues</span></h2>
       <p class="vn-note">${n(rest.length)} more venues account for one, two or three entries each. Listed without a split, because three entries is not a distribution.</p>
       <ul class="vn-rest">
