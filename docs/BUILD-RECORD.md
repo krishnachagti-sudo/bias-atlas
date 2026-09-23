@@ -180,6 +180,11 @@ the clinical look at half the height.
 
 ## 4. Page types
 
+The full top-to-bottom skeleton of every page (the chrome, the home page
+section by section, the entry page, the hub and child-page templates, and
+every page type with its title pattern and headings) is in
+`docs/PAGE-SKELETONS.md`. This section is the summary.
+
 ### 4.1 The entry page
 
 Every section heading is the question a reader would type. The headings are
