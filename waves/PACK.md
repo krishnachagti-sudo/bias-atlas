@@ -55,10 +55,10 @@ npm ci && npm run build && npm test && npm run style -- --strict && npm run pref
 
 If anything fails, fix your own change or drop it. Never edit a test to pass.
 Commit only the entry files you changed (never `src/data/lastmod.json`), message
-`in the wild: <bias slug>`, then `git push origin HEAD:main`. The push deploys
-to conyso.com/biases/ only once the production deploy is switched on (the
-`PROD_DEPLOY_ENABLED` repository variable); until then say in the pack that the
-change is committed but not live.
+`in the wild: <bias slug>`, then `git push origin HEAD:main`. The law-tome
+repo's hourly "Deploy Bias Atlas" workflow uploads it to conyso.com/biases/
+within the hour (only while law-tome's `ATLAS_DEPLOY_ENABLED` is true and
+`ATLAS_DEPLOY_DRY_RUN` is not). Say in the pack which applies.
 
 ## Output
 
