@@ -1,0 +1,97 @@
+name: Deploy Bias Atlas to conyso.com
+
+# Builds the Bias Atlas and uploads it to conyso.com/biases/ on the conyso
+# server (Cloudways, behind Cloudflare), the same way the Law Tome deploys. It
+# is what lets the daily wave run publish: a push to main goes live in minutes.
+#
+# OFF until the owner switches it on. Nothing runs without these, on THIS repo
+# (they are the same values the law-tome repo already has):
+#   secrets  DEPLOY_SSH_KEY       private half of the deploy key
+#            DEPLOY_KNOWN_HOSTS   the server's host key line
+#   vars     DEPLOY_HOST          the server's own IP, NOT conyso.com (Cloudflare does not carry SSH)
+#            DEPLOY_PORT          SSH port (22 if unset)
+#            DEPLOY_USER          the deploy user
+#            DEPLOY_ROOT          the folder that contains biases/ (biases/ is added below)
+#            PROD_DEPLOY_ENABLED  true
+# Optional:  PROD_DEPLOY_DRY_RUN  true = list what would change, upload nothing
+#            INDEXNOW_PROD        true = tell Bing which pages changed
+#
+# Never uploads with --delete: entry URLs are permanent, and a bad build must
+# never be able to take live pages down.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+permissions:
+  contents: write   # to commit the lastmod manifest back, so dates stay honest
+
+concurrency:
+  group: deploy-prod
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    if: vars.PROD_DEPLOY_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      BASE: /biases/
+      ORIGIN: https://conyso.com
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm ci
+      - uses: actions/cache@v4
+        with:
+          path: .cache/og
+          key: og-${{ hashFiles('src/data/biases/*.json', 'build/cards.mjs') }}
+          restore-keys: og-
+      # Build before test: some tests read the built site (see deploy-pages.yml).
+      - run: npm run build -- --base=$BASE --origin=$ORIGIN
+      - run: npm test
+      - run: npm run style -- --strict
+      - run: npm run preflight -- --base=$BASE --origin=$ORIGIN
+
+      - name: Set up SSH
+        env:
+          KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+          KNOWN: ${{ secrets.DEPLOY_KNOWN_HOSTS }}
+        run: |
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$KEY" > ~/.ssh/deploy && chmod 600 ~/.ssh/deploy
+          printf '%s\n' "$KNOWN" > ~/.ssh/known_hosts
+          printf 'Host deploy\n  HostName %s\n  Port %s\n  User %s\n  IdentityFile ~/.ssh/deploy\n  StrictHostKeyChecking yes\n' \
+            "${{ vars.DEPLOY_HOST }}" "${{ vars.DEPLOY_PORT || '22' }}" "${{ vars.DEPLOY_USER }}" > ~/.ssh/config
+
+      - name: Upload (no --delete)
+        run: |
+          DRY=""
+          if [ "${{ vars.PROD_DEPLOY_DRY_RUN }}" = "true" ]; then DRY="--dry-run"; echo "DRY RUN: nothing is uploaded"; fi
+          rsync -az --itemize-changes $DRY dist/ "deploy:${{ vars.DEPLOY_ROOT }}/biases/"
+
+      - name: Smoke check
+        if: vars.PROD_DEPLOY_DRY_RUN != 'true'
+        run: |
+          for p in "" "bias/confirmation-bias/" "sitemap.xml"; do
+            code=$(curl -s -o /dev/null -w '%{http_code}' "$ORIGIN$BASE$p?deploy=${{ github.run_id }}")
+            echo "$code $ORIGIN$BASE$p"
+            [ "$code" = "200" ] || { echo "::error::$ORIGIN$BASE$p returned $code"; exit 1; }
+          done
+
+      - name: Tell Bing what changed
+        if: vars.INDEXNOW_PROD == 'true' && vars.PROD_DEPLOY_DRY_RUN != 'true'
+        run: node build/indexnow.mjs --base=$BASE --origin=$ORIGIN
+
+      - name: Save the lastmod manifest
+        if: vars.PROD_DEPLOY_DRY_RUN != 'true'
+        run: |
+          git config user.name 'bias-atlas-deploy'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add src/data/lastmod.json
+          if git diff --cached --quiet; then echo 'manifest unchanged'; exit 0; fi
+          git commit -q -m 'lastmod: dates from the production build [skip ci]'
+          git push -q
