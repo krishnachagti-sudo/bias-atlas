@@ -2180,3 +2180,13 @@ footer{ padding-bottom: env(safe-area-inset-bottom); }
    before. The intrinsic size is the card's own min-height, so the scrollbar
    does not jump as cards come into view. */
 .grid > .card{content-visibility:auto;contain-intrinsic-size:auto 186px}
+
+/* Home: the newest "In the wild" example (renders only once one exists) */
+.home-wild .wild-strip{display:flex;flex-direction:column;gap:6px;border:1px solid color-mix(in srgb,var(--accent,#c9a84c) 45%,var(--line,#ddd));background:var(--surface,#fff);border-radius:3px;padding:18px 22px;text-decoration:none;color:var(--ink)}
+.home-wild .wild-tag{font-family:var(--mono,monospace);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent,#9a6b12);display:inline-flex;align-items:center;gap:8px}
+.home-wild .wild-dot{width:8px;height:8px;border-radius:50%;background:currentColor;box-shadow:0 0 0 4px color-mix(in srgb,currentColor 20%,transparent)}
+.home-wild .wild-h{font-family:var(--serif);font-size:clamp(19px,2.4vw,24px);font-weight:600}
+.home-wild .wild-fine{font-size:15px;color:var(--ink-2,var(--muted,#6b6457))}
+.home-wild .wild-more{margin:10px 2px 0;font-size:14px;color:var(--ink-2,var(--muted,#6b6457))}
+.home-wild .wild-more span{font-family:var(--mono,monospace);font-size:11px;letter-spacing:.08em;text-transform:uppercase;margin-right:6px}
+.home-wild .wild-more a{color:var(--ink)}

@@ -320,3 +320,16 @@ test('a law whose own Wikipedia article is most-read today counts as trending, a
   assert.equal(hits[0].slug, 'the-doppler-effect');
   assert.equal(hits[0].specific, true);
 });
+
+import { wildStrip as atlasWildStrip } from '../src/templates/home.mjs';
+import { test as t2 } from 'node:test';
+import assertStrict from 'node:assert/strict';
+t2('the Atlas home strip is empty until an In-the-wild example exists, then leads with the newest by name', () => {
+  assertStrict.equal(atlasWildStrip([{ slug: 'a', name: 'A', examples: [{ text: 'plain' }] }], '/biases/'), '');
+  const html = atlasWildStrip([
+    { slug: 'anchoring-effect', name: 'Anchoring effect', category: 'x', examples: [{ tag: 'In the wild · Nov 2026', date: '2099-01-02', text: 'A was-price that was never charged. More.' }] },
+    { slug: 'sunk-cost-fallacy', name: 'Sunk cost fallacy', category: 'x', examples: [{ tag: 'In the wild · Nov 2026', date: '2099-01-01', text: 'Older.' }] },
+  ], '/biases/');
+  assertStrict.match(html, /<span class="wild-h">Anchoring effect<\/span>/);
+  assertStrict.ok(html.includes('#sec-examples') && html.includes('Sunk cost fallacy'));
+});

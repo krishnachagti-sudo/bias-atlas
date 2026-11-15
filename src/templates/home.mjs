@@ -112,6 +112,33 @@ function marquee(entries, base) {
 `;
 }
 
+/** The newest dated "In the wild" examples, so a fresh one is one click from
+ *  the front door. Renders nothing until the first one is published. */
+export function wildStrip(entries, base) {
+  const items = [];
+  for (const en of entries || []) for (const ex of Array.isArray(en.examples) ? en.examples : []) {
+    if (ex && typeof ex === 'object' && /^In the wild/.test(ex.tag || '') && /^\d{4}-\d{2}-\d{2}$/.test(ex.date || '')) items.push({ en, ex });
+  }
+  items.sort((a, b) => b.ex.date.localeCompare(a.ex.date) || a.en.slug.localeCompare(b.en.slug));
+  const [top, ...rest] = items;
+  if (!top) return '';
+  const href = (en) => `${base}${entryPath(en)}#sec-examples`;
+  const one = (s, max = 160) => { const m = String(s || '').match(/^.*?[.!?](\s|$)/); const x = (m ? m[0] : String(s || '')).trim(); return x.length > max ? x.slice(0, max - 1).replace(/\s+\S*$/, '') + '…' : x; };
+  const month = new Date(`${top.ex.date}T00:00:00Z`).toLocaleDateString('en-GB', { month: 'short', year: 'numeric', timeZone: 'UTC' });
+  const more = rest.slice(0, 4);
+  return `<section class="sec home-wild">
+  <div class="wrap">
+    <a class="wild-strip" href="${href(top.en)}">
+      <span class="wild-tag"><span class="wild-dot" aria-hidden="true"></span>In the wild · ${escapeHtml(month)}</span>
+      <span class="wild-h">${escapeHtml(top.en.name)}</span>
+      <span class="wild-fine">${escapeHtml(one(top.ex.text))}</span>
+    </a>${more.length ? `
+    <p class="wild-more"><span>Also in the wild:</span> ${more.map((m) => `<a href="${href(m.en)}">${escapeHtml(m.en.name)}</a>`).join(' · ')}</p>` : ''}
+  </div>
+</section>
+`;
+}
+
 /** Entry of the day, and the quiz teaser beside it. */
 function daily(entry, base, n) {
   if (!entry) return '';
@@ -403,6 +430,7 @@ ${faq.html}  </div>
     + sprite()
     + header({ base, count: count > 0 ? count : null })
     + heroSection
+    + wildStrip(entries, base)
     + daily(today, base, n)
     + trust(base, count, n)
     + scale(comparison, base, count, n)
