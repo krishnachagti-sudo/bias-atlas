@@ -28,7 +28,9 @@ Node 22 or later. 15 to 25 minutes: it also reads the news first (feeds plus a
 Bing News search for every bias name) and fills the last 24 hours of
 Wikipedia's hourly dumps (law-tome-waves' Waves workflow keeps most of them
 cached). `node scripts/wave-news.mjs` alone takes about two minutes and writes
-`out/bias-atlas/news-latest.md`. If `src/data/wiki-titles.json` is missing
+`out/bias-atlas/news-latest.md`. The midday run (12:30 IST, news only, shared
+with the Tome) refreshes it and judges what it names; the daily cap covers the
+morning and midday runs together. If `src/data/wiki-titles.json` is missing
 a slug that exists in `src/data/biases/`, run `node scripts/wiki-titles.mjs`
 first and commit the file with your changes.
 
