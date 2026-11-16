@@ -24,11 +24,21 @@ cp "$WAVES/out/bias-atlas/decisions.json" waves/decisions.json 2>/dev/null || tr
 node scripts/wave-detect.mjs
 ```
 
-Node 22 or later. About ten minutes. If `src/data/wiki-titles.json` is missing
+Node 22 or later. 15 to 25 minutes: it also reads the news first (feeds plus a
+Bing News search for every bias name) and fills the last 24 hours of
+Wikipedia's hourly dumps (law-tome-waves' Waves workflow keeps most of them
+cached). `node scripts/wave-news.mjs` alone takes about two minutes and writes
+`out/bias-atlas/news-latest.md`. If `src/data/wiki-titles.json` is missing
 a slug that exists in `src/data/biases/`, run `node scripts/wiki-titles.mjs`
 first and commit the file with your changes.
 
 ## For each bias wave (top 8 by score), and the viral pool (at most 3)
+
+The queue is ranked news first (since 17 Nov 2026). Waves that fired `named`
+come first and carry the story that names the bias; the story is the cause to
+check, so open it before searching for anything else. A story that only uses
+the term in passing, or a political story where the bias fits only by taking a
+side, is still a skip. Explainers and blogs are marked "not counted".
 
 As the Tome's PACK.md steps 1-4: find the cause, open and quote the source,
 apply JUDGE.md, write the refute pass. Publish only when every condition holds,

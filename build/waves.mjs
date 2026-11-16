@@ -180,6 +180,9 @@ export function fired(r) {
   if (r.reddit && !r.reddit.capped && r.reddit.recent48h >= 2 && r.reddit.subs.length >= 2
     && mentionSurge(r.reddit.recent48h, (r.reddit.prior5d ?? 0) * 6).isSurge) out.push('reddit');
   if (r.trending && r.trendSpecific !== false) out.push('trends');
+  // News first: a fresh story naming the bias in its headline, or two outlets
+  // naming it anywhere in the story.
+  if (r.named && (r.named.headline || r.named.outlets >= 2)) out.push('named');
   return out;
 }
 
@@ -197,16 +200,18 @@ export function rankLaws(rows) {
         + (sources.includes('hn') ? strength(r.hn.ratio) : 0)
         + (sources.includes('news') ? strength(mentionSurge(r.news.recent48h, r.news.prior30d).ratio) : 0)
         + (sources.includes('reddit') ? strength(r.reddit.recent48h) : 0)
-        + (sources.includes('trends') ? 5 : 0);
+        + (sources.includes('trends') ? 5 : 0)
+        + (sources.includes('named') ? 3 + 1.5 * Math.min(r.named.outlets, 3) + (r.named.headline ? 1 : 0) : 0);
       // Growth speed ranks waves within the same breadth: a law doubling day on
       // day is earlier in its curve than one that is merely high.
       const v = sources.includes('wikipedia') && r.wiki?.velocity > 1 ? strength(r.wiki.velocity) : 0;
       const searched = sources.includes('wikipedia') || sources.includes('trends');
-      const named = sources.some((x) => ['hn', 'news', 'reddit'].includes(x));
+      const named = sources.some((x) => ['hn', 'news', 'reddit', 'named'].includes(x));
+      const witnesses = sources.length + (sources.includes('named') && r.named.outlets >= 2 ? 1 : 0);
       return {
         ...r, sources,
-        tier: searched && named ? 'spike+invoked' : searched ? 'spike' : 'invoked',
-        confidence: sources.length >= 2 ? 'strong' : 'single-source',
+        tier: sources.includes('named') && !searched ? 'news' : searched && named ? 'spike+invoked' : searched ? 'spike' : 'invoked',
+        confidence: witnesses >= 2 ? 'strong' : 'single-source',
         major: Boolean(r.wiki?.major),
         score: +(s * (1 + 0.5 * (sources.length - 1)) + v).toFixed(1),
       };
@@ -309,7 +314,8 @@ export function upcoming(calendar, today, days = 7) {
 // Kept here, away from the network code, so the shape of each feed is tested.
 // Each returns plain records; a missing field is undefined, never a throw.
 export const decodeXml = (s = '') => s.replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1').replace(/&#39;|&#x27;|&apos;/g, "'")
-  .replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&').trim();
+  .replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&')
+  .replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(+n)).replace(/&#x([0-9a-f]+);/gi, (_, n) => String.fromCodePoint(parseInt(n, 16))).trim();
 const tag = (xml, name) => xml.match(new RegExp(`<${name}[^>]*>([\\s\\S]*?)<\\/${name}>`))?.[1];
 const items = (xml, name) => [...(xml || '').matchAll(new RegExp(`<${name}>([\\s\\S]*?)<\\/${name}>`, 'g'))].map((m) => m[1]);
 
@@ -472,4 +478,123 @@ export function mostReadLawHits(mostRead, laws, wikiTitleOf) {
   const byTitle = new Map(laws.map((l) => [((wikiTitleOf(l) || '').replace(/_/g, ' ')).toLowerCase(), l.slug]).filter(([t]) => t));
   return mostRead.filter((a) => byTitle.has(a.title.toLowerCase()))
     .map((a) => ({ trend: `${a.title} (Wikipedia most-read, ${a.views} views)`, slug: byTitle.get(a.title.toLowerCase()), specific: true }));
+}
+
+// ---- news first ------------------------------------------------------------------
+// Ported from the Law Tome (17 Nov 2026). There, spike-first found a cause for 4
+// of 29 Wikipedia spikes in its first week, and every one was a news story that
+// named the law in its headline, published 2 to 6 days after the story broke. So the
+// news is read first: a story that names a law IS the trigger, and it arrives
+// with its cause attached.
+
+/** Any RSS or Atom feed: title, link, date and the summary text. */
+export function parseFeed(xml) {
+  const strip = (s) => decodeXml(s || '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+  // <item rdf:about="..."> in RSS 1.0 (Nature) carries attributes.
+  const rss = [...(xml || '').matchAll(/<item[\s>]([\s\S]*?)<\/item>/g)].map((m) => m[1]).map((it) => ({
+    title: strip(tag(it, 'title')), url: decodeXml(tag(it, 'link') || ''), date: decodeXml(tag(it, 'pubDate') || tag(it, 'dc:date') || '') || undefined,
+    summary: strip(tag(it, 'description')).slice(0, 600),
+    // Google News and Bing News name the outlet; Bing wraps the link in a redirect.
+    outlet: strip(tag(it, 'News:Source') || tag(it, 'source')) || undefined,
+  })).map((x) => {
+    const real = x.url.match(/[?&]url=([^&]+)/)?.[1];
+    return real && /bing\.com/.test(x.url) ? { ...x, url: decodeURIComponent(real) } : x;
+  });
+  const atom = [...(xml || '').matchAll(/<entry[\s>]([\s\S]*?)<\/entry>/g)].map((m) => m[1]).map((e) => ({
+    title: strip(tag(e, 'title')), url: e.match(/<link[^>]*href="([^"]+)"/)?.[1] || '', date: tag(e, 'published') || tag(e, 'updated'),
+    summary: strip(tag(e, 'summary') || tag(e, 'content')).slice(0, 600),
+  }));
+  return [...rss, ...atom].filter((s) => s.title);
+}
+
+const outletOf = (s) => {
+  if (s.outlet) return s.outlet;
+  const m = (s.title || '').match(/ - ([^-]{2,40})$/); // Google News appends " - Outlet"
+  if (m) return m[1].trim();
+  try { return new URL(s.url).host.replace(/^www\./, ''); } catch { return s.from || 'unknown'; }
+};
+
+// Not every story naming a law is an event. An explainer ("What is the Diderot
+// effect?") is evergreen, and a personal blog or a reposted video is not an
+// outlet. Both are listed for the judge but never count as a trigger: on the
+// first live scan (17 Nov 2026) 5 of the 11 laws named came only from these.
+const EXPLAINER = /^(what|why|how|when|is|does|do|can)\b|\bexplain(ed|er|s)?\b|\bmeaning\b|\bguide\b|\bwhat (it|is|are)\b|\?\s*$|\b(examples?|definition|tips|lessons?)\b/i;
+const NOT_OUTLET = /(^|\.)(note\.com|medium\.com|blogspot\.com|wordpress\.com|linkedin\.com|quora\.com|youtube\.com|tumblr\.com)$|toi-blogs|\/blogs?\//i;
+export function storyKind(s) {
+  let host = '';
+  try { host = new URL(s.url).host.replace(/^www\./, ''); } catch { /* no url */ }
+  if (NOT_OUTLET.test(host) || NOT_OUTLET.test(s.url || '') || /^(YouTube|note)\b/i.test(s.outlet || '') || / on MSN$/.test(s.outlet || '') && /\/vi-/.test(s.url || '')) return 'blog';
+  if (EXPLAINER.test((s.title || '').replace(/ - [^-]{2,40}$/, ''))) return 'explainer';
+  return 'news';
+}
+
+/**
+ * Laws named in fresh stories. Only names that cannot mean anything else
+ * (searchableNames) count, as whole words. A headline mention outranks one in
+ * the summary. Undated stories (front pages) are kept; dated ones must be
+ * inside the window.
+ */
+export function namedInNews(stories, laws, { now = Date.now(), hours = 48 } = {}) {
+  const pats = laws.flatMap((l) => searchableNames(l).map((n) => ({ slug: l.slug, re: new RegExp(`(^|[^a-z0-9])${escapeRe(norm(n))}($|[^a-z0-9])`) })));
+  const seen = new Set();
+  const by = new Map();
+  for (const s of stories) {
+    const t = Date.parse(s.date || '');
+    if (Number.isFinite(t) && (now - t > hours * 3600e3 || t - now > 6 * 3600e3)) continue;
+    const key = (s.url || s.title).toLowerCase();
+    if (seen.has(key)) continue;
+    seen.add(key);
+    const title = norm(s.title || ''), summary = norm(s.summary || '');
+    for (const p of pats) {
+      const inTitle = p.re.test(title);
+      if (!inTitle && !p.re.test(summary)) continue;
+      const e = by.get(p.slug) || { slug: p.slug, stories: [] };
+      if (!e.stories.some((x) => x.url === s.url && x.title === s.title)) e.stories.push({ title: s.title, url: s.url, outlet: outletOf(s), from: s.from, date: Number.isFinite(t) ? new Date(t).toISOString() : null, inTitle, kind: storyKind({ ...s, outlet: outletOf(s) }) });
+      by.set(p.slug, e);
+    }
+  }
+  return [...by.values()].map((e) => {
+    const rank = { news: 0, explainer: 1, blog: 2 };
+    const stories = e.stories.sort((a, b) => (rank[a.kind] - rank[b.kind]) || (b.inTitle - a.inTitle) || String(b.date).localeCompare(String(a.date)));
+    const news = stories.filter((x) => x.kind === 'news');
+    const dates = news.map((x) => x.date).filter(Boolean).sort();
+    // outlets and headline count real news stories only; the rest stay visible.
+    return { slug: e.slug, outlets: new Set(news.map((x) => x.outlet)).size, headline: news.some((x) => x.inTitle), newest: dates.at(-1) || null, stories: stories.slice(0, 6) };
+  }).sort((a, b) => (b.headline - a.headline) || (b.outlets - a.outlets));
+}
+
+// ---- fresh views from the hourly dumps ---------------------------------------
+// The daily pageviews API is 1.5 to 5 days behind when the morning run reads it
+// (on 16 Nov at 00:10 UTC it ended on 14 Nov). The hourly dumps are about three
+// hours behind. So the last 24 hours, summed from the dumps, is the fresh view
+// of a law, judged against its daily median with the same bars as spike().
+// The dumps keep some automated traffic the daily API drops, so they read a
+// little high; the 2.5x bar is wide enough for that.
+export function freshSignal({ last, lastHours, prev, prevHours, baseline }, opts = SPIKE) {
+  if (baseline == null || !lastHours || lastHours < 16) return null;
+  const views = Math.round((last * 24) / lastHours);
+  const med = Math.max(baseline, 1);
+  const ratio = views / med;
+  const p = (views - baseline) / Math.max(baseline, 10);
+  const before = prevHours >= 16 ? Math.round((prev * 24) / prevHours) : null;
+  const traj = before == null ? 'unknown' : views < before * 0.8 ? 'fading' : views > before * 1.1 ? 'building' : 'peaking';
+  return {
+    views, hours: lastHours, ratio: +ratio.toFixed(2), p: +p.toFixed(1), major: p > opts.majorP,
+    prev: before, trajectory: traj, isSpike: views >= opts.minViews && ratio >= opts.minRatio,
+  };
+}
+
+/** Lay the fresh signal over the daily one: fresher data wins the trajectory. */
+export function withFresh(wiki, fresh) {
+  if (!fresh) return wiki;
+  const w = wiki && !wiki.failed ? wiki : {};
+  return {
+    ...w, fresh,
+    isSpike: Boolean(w.isSpike || fresh.isSpike),
+    ratio: Math.max(w.ratio || 0, fresh.isSpike ? fresh.ratio : 0) || w.ratio || fresh.ratio,
+    p: Math.max(w.p ?? -Infinity, fresh.p),
+    major: Boolean(w.major || (fresh.isSpike && fresh.major)),
+    trajectory: fresh.trajectory !== 'unknown' ? fresh.trajectory : w.trajectory,
+    baseline: w.baseline ?? null,
+  };
 }

@@ -32,7 +32,10 @@ import {
   deviceMix, route, missingLaws, hitRate, recentlyDecided, crowded, hitRateBy,
   parseTrendsRss, parseNewsRss, parseRedditFeed, parseRedditApi,
   parseMostRead, parseMastodonLinks, parseLobsters, mostReadLawHits,
+  freshSignal, withFresh,
 } from '../build/waves.mjs';
+import { scanNews } from './wave-news.mjs';
+import { fillHours, sumWindows } from './hourly-dumps.mjs';
 
 const args = process.argv.slice(2);
 const flag = (n) => args.includes(n);
@@ -40,7 +43,11 @@ const num = (n, d) => (args.includes(n) ? Number(args[args.indexOf(n) + 1]) : d)
 const skipHn = flag('--skip-hn');
 const limit = num('--limit', Infinity);
 const deepN = num('--deep', 40);
-const isTest = ['--test', '--skip-hn', '--limit', '--deep', '--reddit'].some(flag);
+const isTest = ['--test', '--skip-hn', '--limit', '--deep', '--reddit', '--no-fresh', '--no-sweep'].some(flag);
+// --no-fresh skips reading the hourly dumps; --no-sweep skips the Bing News
+// name sweep. Both make it a test run.
+const noFresh = flag('--no-fresh');
+const noSweep = flag('--no-sweep');
 const UA = { 'user-agent': 'Mozilla/5.0 (compatible; BiasAtlas-wave-detector/0.1; +https://conyso.com/biases/)' };
 
 const lawDir = new URL('../src/data/biases/', import.meta.url);
@@ -220,15 +227,57 @@ const mastodon = parseMastodonLinks(ok(await get('https://mastodon.social/api/v1
 
 const poolTitles = [...trends.map((t) => t.title), ...wikiTop.map((a) => a.title), ...mostRead.map((a) => a.title),
   ...topNews.map((n) => n.title), ...popular.map((p) => p.title), ...hnTop.map((h) => h.title), ...lobsters.map((x) => x.title), ...mastodon.map((m) => m.title)];
-const trendHits = [...mostReadLawHits(mostRead, laws, wikiTitle), ...trendingLawHits(poolTitles, laws)];
+const trendHits = [...mostReadLawHits(mostRead, laws, wikiTitle), ...trendingLawHits([...trends.map((t) => t.title), ...wikiTop.map((a) => a.title)], laws)];
+
+// ---- news first: biases named in fresh stories ---------------------------------
+// The trigger the queue is built around (see wave-news.mjs). The stories the pool
+// already fetched ride along so nothing is read twice.
+const newsScan = await scanNews(laws, {
+  now, hours: 36, sweep: !noSweep,
+  get: async (url) => ok(await get(url, 'text', 2)),
+  extra: [
+    ...topNews.map((n) => ({ title: n.title, date: n.date, from: `Google News top ${n.geo}` })),
+    ...front.map((h) => ({ title: h.title, url: h.url, from: 'HN front' })),
+    ...hnTop.map((h) => ({ title: h.title, url: h.url, from: 'HN top of day' })),
+    ...lobsters.map((x) => ({ title: x.title, url: x.url, from: 'Lobsters' })),
+    ...mastodon.map((m) => ({ title: m.title, url: m.url, from: 'Mastodon trending' })),
+    ...popular.map((p) => ({ title: p.title, url: p.url, from: `Reddit r/${p.sub || 'popular'}` })),
+  ],
+});
+const namedBy = new Map(newsScan.hits.map((h) => [h.slug, h]));
+
+// ---- fresh views: the last 24 hours from the hourly dumps ----------------------
+// The daily API above ends 1.5 to 5 days ago; the dumps end about 3 hours ago.
+// law-tome-waves' Waves workflow keeps the cache filled every 3 hours.
+const hourlyDir = new URL('../waves/out/hourly/', import.meta.url);
+let freshInfo = { hours: 0, read: 0, failed: 0, newest: null };
+const freshBy = new Map();
+if (!noFresh) {
+  const filled = await fillHours(hourlyDir, laws, { titleOf: wikiTitle, hours: 24, maxRead: Number(process.env.WAVES_FRESH_MAXREAD) || 24 });
+  if (filled.keys.length) {
+    const sums = sumWindows(hourlyDir, filled.keys.at(-1));
+    freshInfo = { hours: sums.lastHours, read: filled.read, failed: filled.failed, newest: filled.keys.at(-1) };
+    const lastReport = readdirSync(new URL('../waves/out/', import.meta.url)).filter((f) => /^\d{4}-\d{2}-\d{2}\.json$/.test(f)).sort().reverse()
+      .map((f) => { try { return JSON.parse(readFileSync(new URL(`../waves/out/${f}`, import.meta.url), 'utf8')); } catch { return null; } })
+      .find((r) => r?.baselines && !r.test);
+    laws.forEach((l, i) => {
+      const baseline = wiki[i] && !wiki[i].failed && wiki[i].baseline != null ? wiki[i].baseline : lastReport?.baselines?.[l.slug];
+      const f = freshSignal({ last: sums.last[l.slug] || 0, lastHours: sums.lastHours, prev: sums.prev[l.slug] || 0, prevHours: sums.prevHours, baseline });
+      if (f) freshBy.set(l.slug, f);
+    });
+  }
+}
 
 // ---- deep pass: Google News + Reddit on the shortlist -----------------------
 // Candidates are anything with a pulse in the wide pass, a looser bar than the
 // queue's: the deep pass is what decides.
 const prelim = laws.map((l, i) => {
   const w = wiki[i]?.failed ? null : wiki[i], h = hn[i]?.failed ? null : hn[i];
+  const f = freshBy.get(l.slug);
   const pulse = (w && w.latest >= 150 ? Math.max(w.ratio - 1, 0) : 0) + (h ? Math.min(h.recent48h, 10) * 0.5 : 0)
-    + (trendHits.some((t) => t.slug === l.slug && t.specific) ? 10 : 0);
+    + (f && f.views >= 150 ? Math.max(f.ratio - 1, 0) : 0)
+    + (trendHits.some((t) => t.slug === l.slug && t.specific) ? 10 : 0)
+    + (namedBy.has(l.slug) ? 12 : 0);
   return { i, pulse };
 }).filter((x) => x.pulse > 0.5).sort((a, b) => b.pulse - a.pulse).slice(0, deepN);
 
@@ -360,7 +409,7 @@ const history = existsSync(histFile) ? JSON.parse(readFileSync(histFile, 'utf8')
 
 const rows = laws.map((l, i) => ({
   slug: l.slug, name: l.name, url: `https://conyso.com/biases/bias/${l.slug}/`,
-  wiki: wiki[i]?.failed ? null : wiki[i], hn: (hn[i]?.failed ? null : hn[i]) || null, news: news[i], reddit: reddit[i],
+  wiki: withFresh(wiki[i]?.failed ? null : wiki[i], freshBy.get(l.slug)) || null, named: namedBy.get(l.slug) || null, hn: (hn[i]?.failed ? null : hn[i]) || null, news: news[i], reddit: reddit[i],
   trending: trendHits.find((h) => h.slug === l.slug)?.trend || null,
   trendSpecific: trendHits.find((h) => h.slug === l.slug)?.specific ?? null,
 }));
@@ -368,7 +417,7 @@ const frontIds = new Set(front.map((s) => s.id));
 const ranked = rankLaws(rows).map((r) => {
   const firstSeen = streakStart(history[r.slug] || [], date);
   const sensitive = sensitiveTerms([
-    r.trending, ...(r.news?.headlines || []).map((h) => h.title),
+    r.trending, ...(r.named?.stories || []).map((s) => s.title), ...(r.news?.headlines || []).map((h) => h.title),
     ...(r.reddit?.posts || []).map((p) => p.title), ...(r.hn?.threads || []).map((t) => t.title),
   ]);
   return { ...r, firstSeen, status: firstSeen === date ? 'new' : 'continuing', hubs: hubs(r, { frontIds, redditMinScore: num('--reddit-hub', 500) }), hold: sensitive.length ? sensitive : null };
@@ -378,7 +427,7 @@ const hubOnly = rows.filter((r) => !ranked.some((w) => w.slug === r.slug))
   .map((r) => ({ ...r, hubs: hubs(r, { frontIds, redditMinScore: num('--reddit-hub', 500) }) })).filter((r) => r.hubs.length);
 // Who is driving each Wikipedia wave: phones (sharing) or desktops (bots,
 // classrooms, offices). Two extra calls per wave, only for ranked waves.
-for (const r of ranked.filter((w) => w.sources.includes('wikipedia') && w.wiki?.title)) {
+for (const r of ranked.filter((w) => w.sources.includes('wikipedia') && w.wiki?.title && !w.wiki.stale)) {
   const series = await Promise.all(['desktop', 'mobile-web'].map(async (acc) => {
     const j = ok(await get(`https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/${acc}/user/${encodeURIComponent(r.wiki.title)}/daily/${start}/${end}`));
     return j?.items ? alignDaily(j.items, dayKeys) : null;
@@ -438,26 +487,30 @@ const report = {
   // Every law's daily median, so wave-hourly.mjs can judge an hour against it.
   baselines: Object.fromEntries(laws.map((l, i) => [l.slug, wiki[i]?.baseline]).filter(([, b]) => b != null)),
   hitRate: hitRate(decisions), missingFromTome: missing,
+  fresh: freshInfo, news: { stories: newsScan.stories, down: newsScan.down, read: newsScan.read },
   waves: ranked, hubs: hubOnly.map(({ slug, name, url, hubs: h }) => ({ slug, name, url, hubs: h })), upcoming: coming, coined: coinedList, viralPool: pool2,
 };
 writeAtomic(new URL(`${date}.json`, outDir), JSON.stringify(report, null, 1) + '\n');
 
 // ---- the human report -------------------------------------------------------------
-const wikiCell = (w) => (!w ? '-' : w.stale ? 'no data for the latest day (not judged)'
-  : `${w.latest} / ${w.baseline} (×${w.ratio}, p ${w.p}${w.velocity ? `, ×${w.velocity} day on day` : ''}), ${w.trajectory}${w.signalOnset ? `, rising since ${w.signalOnset}` : ''}`);
+const freshCell = (f) => (f ? ` · last 24 h ${f.views} vs ${f.prev ?? '?'} the day before (×${f.ratio} normal, ${f.trajectory})` : '');
+const wikiCell = (w) => (!w ? '-' : (w.stale || w.latest == null) ? `daily data not in yet${freshCell(w.fresh)}`
+  : `${w.latest} / ${w.baseline} (×${w.ratio}, p ${w.p}${w.velocity ? `, ×${w.velocity} day on day` : ''}), ${w.trajectory}${w.signalOnset ? `, rising since ${w.signalOnset}` : ''}${freshCell(w.fresh)}`);
 const evidence = (r) => [
+  ...(r.named?.stories || []).slice(0, 4).map((s) => `  - **Story:** ${s.title}${s.inTitle ? '' : ' (named in the summary)'}${s.kind !== 'news' ? ` (${s.kind}, not counted)` : ''} · ${s.outlet}${s.date ? ` · ${s.date.slice(0, 10)}` : ''} ${s.url || ''}`),
   ...(r.news?.headlines || []).slice(0, 3).map((h) => `  - News: ${h.title} (${h.date?.slice(5, 16)})`),
   ...(r.reddit?.posts || []).slice(0, 2).map((p) => `  - Reddit r/${p.sub}: ${p.title} ${p.url || ''}`),
   ...(r.hn?.threads || []).slice(0, 2).map((t) => `  - HN: ${t.title} ${t.url}`),
 ];
 const md = [`# Waves, ${date}${isTest ? ' (test run)' : ''}`, '',
-  `Wikipedia data through ${keyToIso(newest)}; "new" means new to this queue, and the wave itself may be older (see "rising since").`, '',
+  `Daily Wikipedia data through ${keyToIso(newest)}; hourly data through ${freshInfo.newest ? `${freshInfo.newest.slice(0, 4)}-${freshInfo.newest.slice(4, 6)}-${freshInfo.newest.slice(6, 8)} ${freshInfo.newest.slice(9)}:00 UTC (${freshInfo.hours} of the last 24 hours read${freshInfo.failed ? `, ${freshInfo.failed} failed` : ''})` : 'not read'}. "new" means new to this queue, and the wave itself may be older (see "rising since").`, '',
+  `News read first: ${newsScan.stories} fresh stories from ${newsScan.read.filter((x) => x.items).length} of ${newsScan.read.length} feeds${newsScan.down.length ? ` (nothing from ${newsScan.down.join(', ')})` : ''}; ${newsScan.hits.length} biases named.`, '',
   ...(health.length ? [`**⚠ Source down: ${health.join(', ')}.** It returned nothing, so treat today's queue as incomplete.`, ''] : []),
   ...(report.checked.wikiFailed || report.checked.hnFailed ? [`**⚠ Not checked after a retry: ${report.checked.wikiFailed} biases on Wikipedia, ${report.checked.hnFailed} on HN.** Those biases are missing from today's queue, not quiet.`, ''] : []),
   ...(Object.keys(failures).length ? [`Failed requests by host (before retries): ${Object.entries(failures).map(([h, f]) => `${h} ${f.count} (${Object.entries(f.reasons).map(([w, n]) => `${w}×${n}`).join(', ')})`).join('; ')}.`, ''] : []),
   `Checked ${laws.length} biases: ${report.checked.wikiPages} Wikipedia pages${report.checked.wikiStale ? ` (${report.checked.wikiStale} with no data yet for the latest day, not judged)` : ''}, ${skipHn ? 'HN skipped' : `${report.checked.hnNames} names said on HN in 48h`}; deep pass on ${prelim.length} (news on all, Reddit via ${redditMode} on ${redditN}${redditRefused ? `, of which Reddit refused ${redditRefused}, so its counts are partial` : ''}).`, '',
   '## Biases with a measured wave', '',
-  'Strong = two or more independent sources agree. Single-source waves need the cause confirmed before judging.', '',
+  'Ranked news first: a bias named in a fresh story ("fired: named") comes with its cause attached, so judge those first. Strong = two or more independent witnesses agree (two outlets naming it count as two). Single-source waves need the cause confirmed before judging.', '',
   ...(ranked.length ? ranked.flatMap((r) => [
     `### ${r.hold ? '⚠ HUMAN HOLD · ' : ''}${r.name} · ${r.tier}${r.major ? ' · major' : ''} · ${r.confidence} · ${r.status}${r.status === 'continuing' ? ` since ${r.firstSeen}` : ''} · score ${r.score}`,
     ...(r.hold ? [`_Touches ${r.hold.join(', ')}. No auto-draft, no promotion on the page; Krishna decides whether it is a page at all._`, ''] : []),

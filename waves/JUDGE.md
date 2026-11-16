@@ -46,6 +46,15 @@ works. That difference makes three things riskier.
    missing information, plain disagreement). If a rational explanation fits as
    well, skip.
 
+## News first and fresh views
+
+As on the Tome (its JUDGE.md, "News first" and "Fresh views"): a bias named in a
+fresh news story fires `named` with the story attached, and each wave shows the
+last 24 hours of views from the hourly dumps beside the days-old daily numbers.
+The stricter rules above still apply in full: a story naming "implicit bias" in a
+court case is about a policy, so the example describes what the research says
+and never calls anyone in the story biased.
+
 ## Human hold
 
 Death, disaster, attack, illness, abuse, a named private person: never

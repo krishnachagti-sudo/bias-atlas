@@ -333,3 +333,74 @@ t2('the Atlas home strip is empty until an In-the-wild example exists, then lead
   assertStrict.match(html, /<span class="wild-h">Anchoring effect<\/span>/);
   assertStrict.ok(html.includes('#sec-examples') && html.includes('Sunk cost fallacy'));
 });
+
+// ---- news first and fresh views (17 Nov 2026) ----------------------------------
+import { parseFeed, namedInNews, storyKind, freshSignal, withFresh } from '../build/waves.mjs';
+
+test('parseFeed reads RSS 2.0, RSS 1.0 (rdf items) and Atom, with entities and Bing redirects', () => {
+  const rss = '<rss><channel><item><title>Optical experiment demonstrates the strong Mpemba effect &#039;in a qubit&#039;</title><link>https://phys.org/x</link><pubDate>Mon, 09 Nov 2026 03:40:01 GMT</pubDate><description>&lt;p&gt;Hot cools faster.&lt;/p&gt;</description></item></channel></rss>';
+  const rdf = '<rdf:RDF><item rdf:about="https://nature.com/a"><title>A paper</title><link>https://nature.com/a</link><dc:date>2026-11-16</dc:date></item></rdf:RDF>';
+  const atom = '<feed><entry><title>Atom story</title><link href="https://theconversation.com/b"/><published>2026-11-16T10:00:00Z</published><summary>About Goodhart</summary></entry></feed>';
+  const bing = '<rss><channel><item><title>T</title><link>https://www.bing.com/news/apiclick.aspx?ref=x&amp;url=https%3a%2f%2fexample.com%2fstory&amp;c=1</link><News:Source>Example Times</News:Source></item></channel></rss>';
+  const [r] = parseFeed(rss);
+  assert.equal(r.title, "Optical experiment demonstrates the strong Mpemba effect 'in a qubit'");
+  assert.equal(r.summary, 'Hot cools faster.');
+  assert.equal(parseFeed(rdf)[0].url, 'https://nature.com/a');
+  assert.equal(parseFeed(atom)[0].url, 'https://theconversation.com/b');
+  const [b] = parseFeed(bing);
+  assert.equal(b.url, 'https://example.com/story');
+  assert.equal(b.outlet, 'Example Times');
+});
+
+test('namedInNews: whole names only, fresh only, explainers and blogs never count', () => {
+  const laws = [{ slug: 'mpemba-effect', name: 'Mpemba Effect' }, { slug: 'diderot', name: 'The Diderot Effect' }, { slug: 'acid', name: 'ACID' }];
+  const now = Date.parse('2026-11-16T12:00:00Z');
+  const hits = namedInNews([
+    { title: 'Optical experiment demonstrates the strong Mpemba effect', url: 'https://phys.org/a', date: '2026-11-16T03:00:00Z', outlet: 'Phys.org' },
+    { title: 'Quantum states reverse order', summary: 'like the Mpemba effect', url: 'https://quanta.com/b', date: '2026-11-16T05:00:00Z', outlet: 'Quanta' },
+    { title: 'Mpemba effect seen in 2019', url: 'https://old.com/c', date: '2026-11-01T00:00:00Z' },
+    { title: "What is the Diderot effect?", url: 'https://mag.com/d', date: '2026-11-16T01:00:00Z', outlet: 'Mag' },
+    { title: 'The Diderot effect ruined my wallet', url: 'https://note.com/u/n/1', date: '2026-11-16T01:00:00Z' },
+    { title: 'ACID test for the new database', url: 'https://x.com/e', date: '2026-11-16T01:00:00Z' },
+  ], laws, { now, hours: 36 });
+  const m = hits.find((h) => h.slug === 'mpemba-effect');
+  assert.equal(m.outlets, 2);
+  assert.equal(m.headline, true);
+  assert.equal(m.stories.length, 2, 'the 1 Nov story is outside the window');
+  const d = hits.find((h) => h.slug === 'diderot');
+  assert.equal(d.outlets, 0);
+  assert.deepEqual(d.stories.map((s) => s.kind).sort(), ['blog', 'explainer']);
+  assert.ok(!hits.some((h) => h.slug === 'acid'), 'a bare acronym is not a searchable name');
+  assert.equal(storyKind({ title: 'Xi and Trump', url: 'https://www.msn.com/en-us/news/other/x/vi-AA2', outlet: 'Some Channel on MSN' }), 'blog');
+  assert.equal(storyKind({ title: 'Hall Effect Literally Has a New Angle', url: 'https://www.electronicdesign.com/a' }), 'news');
+});
+
+test('a law named in a fresh headline is a wave on its own, and two outlets make it strong', () => {
+  const one = rankLaws([{ slug: 'a', named: { outlets: 1, headline: true, stories: [] } }])[0];
+  assert.deepEqual(one.sources, ['named']);
+  assert.equal(one.tier, 'news');
+  assert.equal(one.confidence, 'single-source');
+  const two = rankLaws([{ slug: 'b', named: { outlets: 2, headline: true, stories: [] } }])[0];
+  assert.equal(two.confidence, 'strong');
+  assert.equal(rankLaws([{ slug: 'c', named: { outlets: 0, headline: false, stories: [] } }]).length, 0, 'explainers alone fire nothing');
+  // News-named waves outrank a plain Wikipedia spike.
+  const ranked = rankLaws([{ slug: 'w', wiki: { isSpike: true, ratio: 4 } }, { slug: 'n', named: { outlets: 1, headline: true, stories: [] } }]);
+  assert.equal(ranked[0].slug, 'n');
+});
+
+test('fresh views: the last 24 hours against the daily median, with a trajectory', () => {
+  assert.equal(freshSignal({ last: 900, lastHours: 12, prev: 0, prevHours: 0, baseline: 100 }), null, 'too few hours');
+  const f = freshSignal({ last: 1800, lastHours: 18, prev: 500, prevHours: 24, baseline: 200 });
+  assert.equal(f.views, 2400);
+  assert.equal(f.ratio, 12);
+  assert.equal(f.isSpike, true);
+  assert.equal(f.major, true);
+  assert.equal(f.trajectory, 'building');
+  assert.equal(freshSignal({ last: 300, lastHours: 24, prev: 1000, prevHours: 24, baseline: 100 }).trajectory, 'fading');
+  // The daily data is stale, the fresh data spikes: the law fires and the fresh trajectory wins.
+  const w = withFresh({ stale: true, isSpike: false, rising: false }, f);
+  assert.equal(w.isSpike, true);
+  assert.equal(w.trajectory, 'building');
+  assert.deepEqual(rankLaws([{ slug: 'x', wiki: w }])[0].sources, ['wikipedia']);
+  assert.equal(withFresh(null, null), null);
+});
