@@ -71,8 +71,6 @@ env:
   SITE: biases
   ENGINE_REPO: krishnachagti-sudo/site-engine
   ENGINE_REF: ${{ vars.ENGINE_REF || 'main' }}
-  CHANGED_FILE: ${{ runner.temp }}/work/changed.txt
-  ADDED_FILE: ${{ runner.temp }}/work/added.txt
   DRY_RUN: ${{ vars.PROD_DEPLOY_DRY_RUN }}
   WORKFLOW: ${{ github.workflow }}
 
@@ -354,6 +352,9 @@ jobs:
           ENGINE_READ_TOKEN: ${{ steps.engine_token.outputs.token }}
         run: |
           mkdir -p "$RUNNER_TEMP/work"
+          # runner.temp is not available in workflow-level env, so the rsync result files are set here
+          echo "CHANGED_FILE=$RUNNER_TEMP/work/changed.txt" >> "$GITHUB_ENV"
+          echo "ADDED_FILE=$RUNNER_TEMP/work/added.txt" >> "$GITHUB_ENV"
           auth=$(printf 'x-access-token:%s' "$ENGINE_READ_TOKEN" | base64 -w0)
           git -c "http.extraheader=AUTHORIZATION: basic $auth" clone --depth 1 --branch "$ENGINE_REF" \
             "https://github.com/$ENGINE_REPO" "$RUNNER_TEMP/engine"
@@ -799,6 +800,9 @@ jobs:
           ENGINE_READ_TOKEN: ${{ steps.engine_token.outputs.token }}
         run: |
           mkdir -p "$RUNNER_TEMP/work"
+          # runner.temp is not available in workflow-level env, so the rsync result files are set here
+          echo "CHANGED_FILE=$RUNNER_TEMP/work/changed.txt" >> "$GITHUB_ENV"
+          echo "ADDED_FILE=$RUNNER_TEMP/work/added.txt" >> "$GITHUB_ENV"
           auth=$(printf 'x-access-token:%s' "$ENGINE_READ_TOKEN" | base64 -w0)
           git -c "http.extraheader=AUTHORIZATION: basic $auth" clone --depth 1 --branch "$ENGINE_REF" \
             "https://github.com/$ENGINE_REPO" "$RUNNER_TEMP/engine"
