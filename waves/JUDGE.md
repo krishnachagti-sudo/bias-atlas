@@ -14,13 +14,29 @@ the day it appears.
 
 ## What a wave becomes
 
-**Only one thing, for now: a dated, sourced example on the bias's own page.**
-No standalone wave pages on the Atlas until Krishna asks for them. The bias page
-is already indexed; a sourced example improves a page that already ranks.
+Since 18 Nov 2026 (Krishna): **every catch that passes gets its own case page
+at /biases/wild/<slug>/, plus the dated example on the bias's own page**, as on
+the Tome. The case page explains the case and keeps it: what happened, how the
+bias works in it step by step, where the reading stops, and every source.
 
-Cap: **5 examples a day.** The caps in `autopublish.json` (law-tome-waves,
-`biasAtlas` block) win if lower. Be generous within the cap: a verified example
-left in a pack for days is a missed wave.
+The substance bar is the Tome's (its JUDGE.md, "What to do with a wave"), and
+`test/wild.test.mjs` enforces it for every file in `src/data/waves/`: a dated
+timeline of 2+ sourced steps, 3+ mechanism steps tied to this event, 2+ limits,
+2+ FAQs, a dated prediction, a 40-60 word answer, every source opened. If you
+can't fill it honestly, publish the example only and say why in the pack.
+
+The Atlas's stricter rules below apply to the case page in full: the page
+describes what was observably said or done and names the pattern; it never says
+a named person was biased, never describes a motive, and never reads as proof
+of an effect the entry's replication verdict rates weak or failed. The "limits"
+must include the entry's replication verdict when it is mixed or failed.
+
+There is no takeover on the Atlas: every case page is `status: settled`.
+
+Caps: **5 catches a day** (each an example plus its case page) and **30 case
+pages a week**. The caps in `autopublish.json` (law-tome-waves, `biasAtlas`
+block) win if lower. Be generous within the cap: a verified example left in a
+pack for days is a missed wave.
 
 ## The rules that are stricter here than on the Tome
 

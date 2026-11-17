@@ -901,7 +901,15 @@ ${panels.join('\n')}
       </aside>\n`;
 }
 
-export function entryPage(entry, { base = '/', origin = '', count = 0, entries = [], related = [], tome = null, images = null } = {}) {
+/** Links to this bias's In-the-wild case pages (src/data/waves/), newest first. */
+function caseLinks(waves, base) {
+  const list = [...(waves || [])].sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
+  if (!list.length) return '';
+  return `
+        <p class="examples-wild"><strong>In the wild:</strong> ${list.map((w) => `<a href="${base}wild/${escapeHtml(w.slug)}/">${escapeHtml(w.h1)}</a>`).join(' · ')}</p>`;
+}
+
+export function entryPage(entry, { base = '/', origin = '', count = 0, entries = [], related = [], tome = null, images = null, waves = [] } = {}) {
   const path = entryPath(entry);
   const r = entry.replication;
   const field = CATEGORIES[entry.category] || entry.category;
@@ -969,7 +977,7 @@ export function entryPage(entry, { base = '/', origin = '', count = 0, entries =
         + vizCard(entry, { base, entries })],
     ['Does it replicate?', `Has ${entry.name} been retested?`, replicationBlock(r, { base })],
     ...(examplesBlock(entry, base)
-      ? [['Examples', `What are some examples of ${entry.name}?`, examplesBlock(entry, base)]]
+      ? [['Examples', `What are some examples of ${entry.name}?`, examplesBlock(entry, base) + caseLinks(waves, base)]]
       : []),
     // The longest section in the corpus — `evidence` runs to a median of 330
     // words and a maximum of 1,058 — and until now the only one of the four

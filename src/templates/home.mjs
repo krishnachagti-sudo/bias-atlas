@@ -114,26 +114,32 @@ function marquee(entries, base) {
 
 /** The newest dated "In the wild" examples, so a fresh one is one click from
  *  the front door. Renders nothing until the first one is published. */
-export function wildStrip(entries, base) {
+export function wildStrip(entries, base, waves = []) {
+  const one = (s, max = 160) => { const m = String(s || '').match(/^.*?[.!?](\s|$)/); const x = (m ? m[0] : String(s || '')).trim(); return x.length > max ? x.slice(0, max - 1).replace(/\s+\S*$/, '') + '…' : x; };
+  const byslug = new Map((entries || []).map((en) => [en.slug, en]));
   const items = [];
-  for (const en of entries || []) for (const ex of Array.isArray(en.examples) ? en.examples : []) {
-    if (ex && typeof ex === 'object' && /^In the wild/.test(ex.tag || '') && /^\d{4}-\d{2}-\d{2}$/.test(ex.date || '')) items.push({ en, ex });
+  // Case pages first on a tie: they are the full story.
+  for (const w of waves || []) {
+    const en = byslug.get(w.law);
+    if (en) items.push({ date: String(w.publishedAt).slice(0, 10), page: 1, href: `${base}wild/${w.slug}/`, head: w.h1, sub: en.name, name: en.name });
   }
-  items.sort((a, b) => b.ex.date.localeCompare(a.ex.date) || a.en.slug.localeCompare(b.en.slug));
+  for (const en of entries || []) for (const ex of Array.isArray(en.examples) ? en.examples : []) {
+    if (ex && typeof ex === 'object' && /^In the wild/.test(ex.tag || '') && /^\d{4}-\d{2}-\d{2}$/.test(ex.date || '')
+      && !items.some((i) => i.page && i.name === en.name)) items.push({ date: ex.date, page: 0, href: `${base}${entryPath(en)}#sec-examples`, head: en.name, sub: one(ex.text), name: en.name });
+  }
+  items.sort((a, b) => b.date.localeCompare(a.date) || b.page - a.page || a.name.localeCompare(b.name));
   const [top, ...rest] = items;
   if (!top) return '';
-  const href = (en) => `${base}${entryPath(en)}#sec-examples`;
-  const one = (s, max = 160) => { const m = String(s || '').match(/^.*?[.!?](\s|$)/); const x = (m ? m[0] : String(s || '')).trim(); return x.length > max ? x.slice(0, max - 1).replace(/\s+\S*$/, '') + '…' : x; };
-  const month = new Date(`${top.ex.date}T00:00:00Z`).toLocaleDateString('en-GB', { month: 'short', year: 'numeric', timeZone: 'UTC' });
+  const month = new Date(`${top.date}T00:00:00Z`).toLocaleDateString('en-GB', { month: 'short', year: 'numeric', timeZone: 'UTC' });
   const more = rest.slice(0, 4);
   return `<section class="sec home-wild">
   <div class="wrap">
-    <a class="wild-strip" href="${href(top.en)}">
+    <a class="wild-strip" href="${top.href}">
       <span class="wild-tag"><span class="wild-dot" aria-hidden="true"></span>In the wild · ${escapeHtml(month)}</span>
-      <span class="wild-h">${escapeHtml(top.en.name)}</span>
-      <span class="wild-fine">${escapeHtml(one(top.ex.text))}</span>
-    </a>${more.length ? `
-    <p class="wild-more"><span>Also in the wild:</span> ${more.map((m) => `<a href="${href(m.en)}">${escapeHtml(m.en.name)}</a>`).join(' · ')}</p>` : ''}
+      <span class="wild-h">${escapeHtml(top.head)}</span>
+      <span class="wild-fine">${escapeHtml(top.sub)}</span>
+    </a>${more.length || (waves || []).length ? `
+    <p class="wild-more">${more.length ? `<span>Also in the wild:</span> ${more.map((m) => `<a href="${m.href}">${escapeHtml(m.name)}</a>`).join(' · ')}` : ''}${(waves || []).length ? `${more.length ? ' · ' : ''}<a href="${base}wild/">All of them</a>` : ''}</p>` : ''}
   </div>
 </section>
 `;
@@ -247,7 +253,7 @@ function contributeBand(base) {
 `;
 }
 
-export function homePage({ base = '/', origin = '', entries = [], mapped = 0, comparison = null, today = null } = {}) {
+export function homePage({ base = '/', origin = '', entries = [], mapped = 0, comparison = null, today = null, waves = [] } = {}) {
   const count = entries.length;
   const n = (x) => Number(x).toLocaleString('en-US');
 
@@ -430,7 +436,7 @@ ${faq.html}  </div>
     + sprite()
     + header({ base, count: count > 0 ? count : null })
     + heroSection
-    + wildStrip(entries, base)
+    + wildStrip(entries, base, waves)
     + daily(today, base, n)
     + trust(base, count, n)
     + scale(comparison, base, count, n)

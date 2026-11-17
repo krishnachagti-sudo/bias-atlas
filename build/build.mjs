@@ -18,7 +18,7 @@
 // changed this morning. See build/lastmod.mjs for the argument.
 
 import { mkdir, writeFile, readFile, cp, rm } from 'node:fs/promises';
-import { existsSync } from 'node:fs';
+import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { join, dirname } from 'node:path';
 
@@ -26,6 +26,7 @@ import { setAssetVersions, setBuildDate } from '../src/templates/partials.mjs';
 import { homePage } from '../src/templates/home.mjs';
 import { browsePage, aboutPage, notFoundPage } from '../src/templates/pages.mjs';
 import { entryPage, entryPath } from '../src/templates/entry.mjs';
+import { wavePage, waveCardSvg, waveHeroSvg, waveTallSvg, wildHubPage, wildFeed, waveMarkdown, wildLlms } from '../src/templates/wave.mjs';
 import {
   howSolidPage, dataPage, sourcesPage, manifestoPage, creditsPage, featuresPage, privacyPage, authorPage,
 } from '../src/templates/meta.mjs';
@@ -94,6 +95,7 @@ const shortHash = async (p) => createHash('sha256')
 setAssetVersions({
   'assets/styles.css': await shortHash(join(assetsDir, 'styles.css')),
   'assets/common.js': await shortHash(join(assetsDir, 'common.js')),
+  'assets/wave.css': await shortHash(join(assetsDir, 'wave.css')),
 });
 
 // ---- the corpus ------------------------------------------------------------
@@ -142,6 +144,14 @@ const MAPPED = new Set(
 
 // ---- pages -----------------------------------------------------------------
 // path (base-relative, '' for the root) -> rendered HTML, tokens intact.
+// In-the-wild case pages (src/data/waves/*.json), one per catch, since 18 Nov
+// 2026 (ported from the Law Tome). Each links to its bias page and back.
+const WAVES = existsSync('src/data/waves')
+  ? readdirSync('src/data/waves').filter((f) => f.endsWith('.json')).sort().map((f) => JSON.parse(readFileSync('src/data/waves/' + f, 'utf8')))
+  : [];
+const BYSLUG = Object.fromEntries(entries.map((x) => [x.slug, x]));
+for (const w of WAVES) if (!BYSLUG[w.law]) throw new Error(`case page ${w.slug}: unknown bias ${w.law}`);
+
 const pages = {
   '': homePage({
     base,
@@ -152,6 +162,7 @@ const pages = {
     // section in home.mjs for why this is data and not copy.
     comparison: COMPARISON,
     today: entries[dayIndex(buildDate, entries.length)],
+    waves: WAVES,
   }),
   'browse/': browsePage({ base, origin, entries, mapped: MAPPED }),
   'about/': aboutPage({ base, origin, mapped: MAPPED, count: entries.length }),
@@ -185,6 +196,7 @@ for (const e of entries) {
       .filter((x) => x.kind === 'confused-with')
       .map((x) => ({ slug: x.to, name: (graph.bySlug.get(x.to) || {}).name || x.to, why: x.why })),
     tome: CROSSWALK.get(e.slug) || null,
+    waves: WAVES.filter((w) => w.law === e.slug),
     images: IMAGES,
   });
 }
@@ -219,6 +231,8 @@ pages['embed/'] = embedDocsPage({ base, origin, entries, count: entries.length }
 // One framed card per entry. Noindex, because a card competing with the entry
 // it quotes would be the site cannibalising itself.
 for (const e of entries) pages[`embed/${e.slug}/`] = embedCard(e, { base, origin });
+for (const w of WAVES) pages[`wild/${w.slug}/`] = wavePage(w, BYSLUG[w.law], { base, origin, count: entries.length, categoryLabel: CATEGORIES[BYSLUG[w.law].category] || BYSLUG[w.law].category });
+if (WAVES.length) pages['wild/'] = wildHubPage(WAVES, BYSLUG, { base, origin, count: entries.length });
 pages['print/'] = printPage(entries, { base, origin, categories: CATEGORIES, buildDate });
 pages['situations/'] = situationsPage({ base, origin, entries });
 // Published. It was held back while it was listed on the front page as coming
@@ -319,11 +333,20 @@ writes.push(write(
 // functions over data already in memory. See build/llms.mjs for the evidence.
 writes.push(write(
   join(out, 'llms.txt'),
-  buildLlms(entries, { baseUrl: `${origin}${base}`, brand: cfg.brand, categories: CATEGORIES }),
+  buildLlms(entries, { baseUrl: `${origin}${base}`, brand: cfg.brand, categories: CATEGORIES }) + wildLlms(WAVES, BYSLUG, { base, origin }),
 ));
+// Case pages' share images, Markdown twins and the In-the-wild feed.
+for (const w of WAVES) {
+  const en = BYSLUG[w.law];
+  writes.push(write(join(out, 'og', 'wild', `${w.slug}.png`), renderPng(waveCardSvg(w, en))));
+  writes.push(write(join(out, 'og', 'wild', `${w.slug}-16x9.png`), renderPng(waveHeroSvg(w))));
+  writes.push(write(join(out, 'og', 'wild', `${w.slug}-tall.png`), renderPng(waveTallSvg(w, en))));
+  writes.push(write(join(out, 'wild', w.slug, 'index.md'), waveMarkdown(w, en, { base, origin })));
+}
+if (WAVES.length) writes.push(write(join(out, 'wild', 'feed.xml'), wildFeed(WAVES, BYSLUG, { base, origin })));
 writes.push(write(
   join(out, 'llms-full.txt'),
-  buildLlmsFull(entries, { baseUrl: `${origin}${base}`, brand: cfg.brand, categories: CATEGORIES, entryMarkdown }),
+  buildLlmsFull(entries, { baseUrl: `${origin}${base}`, brand: cfg.brand, categories: CATEGORIES, entryMarkdown }) + wildLlms(WAVES, BYSLUG, { base, origin }, true),
 ));
 
 // 404.html at the output root: the host serves it for any unmatched path. It is

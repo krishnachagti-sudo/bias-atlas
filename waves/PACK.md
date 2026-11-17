@@ -52,10 +52,26 @@ the news, but they are often the mechanism under a viral story. The shortlist is
 empty until the Atlas has a situations file, so test topics against the entries
 yourself; most should be rejected.
 
+## Publishing a case page (every catch that meets the bar)
+
+Write `src/data/waves/<slug>.json` with the same fields as a Tome case page (use
+`lawtome/src/data/waves/faa-ground-stop-router-cascading-failure.json` in
+law-tome as the model). Differences: `law` is the bias slug; `status` is always
+`settled` with no `takeoverUntil`; the slug describes the case, not the bias.
+Leave out `image`: engravings are added later from Krishna's Chrome, as on the
+Tome. `test/wild.test.mjs` checks the substance bar and that the page renders.
+Commit the case page together with the example on the bias page.
+
+The deploy tells Bing about it (IndexNow); Google indexing is requested later
+from Krishna's Chrome. List every new case page in the report email under
+"Needs you: engraving + Google indexing".
+
 ## Carried over
 
 Read the last 7 Atlas packs (`out/bias-atlas/packs/`). Re-verify and publish any
-`update` they recommended that isn't on the page yet, within the cap.
+`update` they recommended that isn't on the page yet, within the cap. Then the
+backfill: any "In the wild" example on a bias page from the last 14 days with no
+case page gets one, at most 2 per run, if it meets the bar.
 
 ## Checks, then push
 
@@ -66,7 +82,7 @@ npm ci && npm run build && npm test && npm run style -- --strict && npm run pref
 ```
 
 If anything fails, fix your own change or drop it. Never edit a test to pass.
-Commit only the entry files you changed (never `src/data/lastmod.json`), message
+Commit only the entry files and case pages you changed (never `src/data/lastmod.json`), message
 `in the wild: <bias slug>`, then `git push origin HEAD:main`. The law-tome
 repo's hourly "Deploy Bias Atlas" workflow uploads it to conyso.com/biases/
 within the hour (only while law-tome's `ATLAS_DEPLOY_ENABLED` is true and
