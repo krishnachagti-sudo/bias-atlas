@@ -45,11 +45,8 @@ jobs:
       # `restore-keys` matters more than the exact key here: a run whose corpus
       # changed still reuses the previous cache for the 500-odd cards that did
       # not change, instead of starting from empty.
-      - uses: actions/cache@v4
-        with:
-          path: .cache/og
-          key: og-${{ hashFiles('src/data/biases/*.json', 'build/cards.mjs') }}
-          restore-keys: og-
+      # (a step was removed here by site-engine onboarding: the engine gate blocks
+      # every PR while any workflow in this repo restores or saves a build cache)
       - run: npm run build -- --base=${{ vars.SITE_BASE || format('/{0}/', github.event.repository.name) }} --origin=${{ vars.SITE_ORIGIN || format('https://{0}.github.io', github.repository_owner) }}
       - run: npm test
       # The house-style gate, on the two things in docs/VOICE.md that are rules

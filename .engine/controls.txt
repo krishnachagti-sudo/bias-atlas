@@ -1,0 +1,15 @@
+# Control pages: live pages the engine leaves untouched, probed after every deploy next to the
+# changed pages and used as the "unchanged" comparison. One URL per line; # starts a comment.
+# Chosen from dist/sitemap.xml on 2026-11-15, spread across the site's sections.
+# Edit by hand (the builder cannot: .engine/** is denylisted).
+https://conyso.com/biases/bias/confirmation-bias/
+https://conyso.com/biases/bias/transposed-letter-effect/
+https://conyso.com/biases/compare/action-bias-vs-omission-bias/
+https://conyso.com/biases/compare/egocentric-bias-vs-false-consensus-effect/
+https://conyso.com/biases/named-by/elizabeth-f-loftus/
+https://conyso.com/biases/timeline/1970s/
+https://conyso.com/biases/sheets/memory/
+https://conyso.com/biases/collections/famous-and-failed/
+https://conyso.com/biases/field/belief-and-probability/
+https://conyso.com/biases/verdict/replicated/
+https://conyso.com/biases/how-solid/
