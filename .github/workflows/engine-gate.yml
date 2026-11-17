@@ -1,0 +1,65 @@
+# Rendered for site `biases` by `python -m engine.onboard build` from site-engine templates/site/gate.yml.
+# Do not edit here: change the template and re-render.
+name: engine-gate
+on:
+  # pull_request_target: the workflow definition always comes from the default branch, so a PR
+  # can never change the YAML that holds secrets. Head code is only ever checked out by SHA
+  # with persist-credentials false inside the reusable workflow's secret-less measure job.
+  pull_request_target:
+    branches: [main]
+    types: [opened, synchronize, reopened, labeled]
+  schedule:
+    - cron: "0 2 * * *"   # daily: close stale engine:blocked PRs
+
+permissions: {}
+
+jobs:
+  gate:
+    # claude/** builder branches only
+    if: >-
+      github.event_name == 'pull_request_target' &&
+      github.event.pull_request.state == 'open' &&
+      startsWith(github.event.pull_request.head.ref, 'claude/') &&
+      github.event.pull_request.head.repo.full_name == github.repository &&
+      (github.event.action != 'labeled' || !startsWith(github.event.label.name, 'engine:'))
+    permissions:
+      contents: read
+      pull-requests: write
+    uses: krishnachagti-sudo/site-engine/.github/workflows/gate-reusable.yml@main
+    with:
+      site: biases
+      pr_number: ${{ github.event.pull_request.number }}
+    secrets:
+      READER_APP_PRIVATE_KEY: ${{ secrets.READER_APP_PRIVATE_KEY }}
+      MERGER_APP_PRIVATE_KEY: ${{ secrets.MERGER_APP_PRIVATE_KEY }}
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+
+  close-stale:
+    if: github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write        # --delete-branch
+      pull-requests: write
+    steps:
+      - name: Close PRs that have been engine:blocked for more than 7 days
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          cutoff=$(date -u -d '7 days ago' +%Y-%m-%dT%H:%M:%SZ)
+          for n in $(gh pr list --label engine:blocked --state open --json number --jq '.[].number'); do
+            labelled=$(gh api "repos/$GH_REPO/issues/$n/timeline" --paginate \
+              | jq -s -r '[.[][] | select(.event=="labeled" and .label.name=="engine:blocked") | .created_at] | max // empty' || true)
+            if [ -n "$labelled" ] && [ "$labelled" \< "$cutoff" ]; then
+              gh pr close "$n" --delete-branch --comment "Closed by engine: blocked for more than 7 days." || true
+            fi
+          done
+
+      - name: Make sure the engine labels exist
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          gh label create engine:blocked --color B60205 --description "engine gate blocked" --force || true
+          gh label create engine:merged --color 0E8A16 --description "engine gate passed and merged" --force || true

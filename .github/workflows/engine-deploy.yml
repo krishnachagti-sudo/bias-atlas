@@ -1,0 +1,910 @@
+# Rendered for site `biases` by `python -m engine.onboard build` from site-engine templates/site/deploy.yml.
+# Do not edit here: change the template and re-render.
+# DEPLOY_ROOT below is the repo variable (the host docroot, the same value as conyso's) plus /biases.
+name: engine-deploy
+
+# Uploads a merged change to the live server, purges Cloudflare, probes the live pages, and
+# rolls back on its own when the deploy fails. Copy to .github/workflows/engine-deploy.yml in the
+# site repo and replace SITE_NAME.
+#
+# OFF until the owner switches it on. Nothing runs without:
+#   secrets  DEPLOY_SSH_KEY       private half of the deploy key
+#            DEPLOY_KNOWN_HOSTS   the server's host key line (ssh-keyscan -t ed25519 <server IP>)
+#            READER_APP_PRIVATE_KEY + var READER_APP_ID   reader GitHub App (contents: read on the
+#                                 engine repo only); a 1-hour token is minted per run to fetch the engine
+#   vars     DEPLOY_HOST          the server's own IP or a DNS-only hostname, NOT the site's domain:
+#                                 the domain sits behind Cloudflare's proxy, which does not carry SSH
+#            DEPLOY_PORT          SSH port (22 if unset)
+#            DEPLOY_USER          the deploy user
+#            DEPLOY_ROOT          the docroot on the server (absolute, 2+ components)
+#            PROD_DEPLOY_ENABLED  true
+#            ROLLBACK_ACTOR       login that pushes the revert commit: <merger-app-slug>[bot] (or
+#                                 github-actions[bot] without the merger app); only a commit with an exact Engine-Rollback trailer
+#                                 AND this actor is skipped by this workflow, so a revert is never
+#                                 deployed twice or rolled back in a loop
+#            ENGINE_REF           engine tag to run (pin a release tag; falls back to main)
+# Optional:  PROD_DEPLOY_DRY_RUN  true = list what would change, upload nothing
+#            CF_ZONE_ID + secret CF_API_TOKEN (Zone.Cache Purge only) = purge changed pages
+#            INDEXNOW_KEY         tell Bing which pages changed (https://<host>/<key>.txt must exist)
+#            MERGER_APP_PRIVATE_KEY + var MERGER_APP_ID   merger GitHub App: the revert push to main
+#                                 (the only identity the main ruleset lets through; default: workflow token)
+# Site settings come from sites/<site>.yml (engine/deploy/profile.py): what to upload (deploy.source),
+# its exclude list, the files the build rewrites, install_dir (npm ci), build_cmd, pre_deploy_cmd. A
+# deploy.schedule is rendered into `on:` by `python -I -m engine.onboard build`.
+#
+# Never uploads with a delete flag. Host key checking is strict, against the pinned known_hosts.
+#
+# Before uploading: an open issue labelled engine:freeze stops the deploy (the run fails so it is
+# visible), and the deploy always ships the fetched tip of main, not the commit that triggered the
+# run, so a queued run can never re-ship a commit that was already rolled back.
+#
+# Failure handling: an upload, URL-list, purge or verify step that fails after the upload started is
+# a deploy failure and opens an issue labelled engine:freeze (the engine reads that label; this
+# workflow holds no engine write token). Rollback runs when the verifier says ok:false or the upload
+# failed AFTER rsync started (rsync.started exists); a failed purge only freezes. A verifier that crashed
+# (no verify.json) or a refusal before rsync (dirty tree, symlink, bad root) freezes without rolling
+# back. Rollback: revert <last successfully deployed sha>..<deployed sha> on top of origin/main (3
+# push attempts), then ALWAYS rebuild and re-deploy the reverted tree, delete only files rsync really
+# added (added.txt) that the reverted tree lacks, purge, probe again. If the revert cannot be built
+# (fetch failure, conflict) nothing is deployed or deleted: the run fails and the freeze issue
+# carries the details.
+# verify.json is only kept as a build artifact; the engine's own daily run does its own live probe.
+
+on:
+  push:
+    branches: [main]
+    paths-ignore: ['docs/**']
+  workflow_dispatch: {}
+  schedule:
+    - cron: "40 * * * *"   # sites/<site>.yml deploy.schedule
+
+permissions:
+  contents: write    # push the revert commit
+  issues: write      # read and open the freeze issue
+  actions: read      # find the last successful deploy run
+
+concurrency:
+  group: deploy-prod
+  cancel-in-progress: false
+
+env:
+  SITE: biases
+  ENGINE_REPO: krishnachagti-sudo/site-engine
+  ENGINE_REF: ${{ vars.ENGINE_REF || 'main' }}
+  CHANGED_FILE: ${{ runner.temp }}/work/changed.txt
+  ADDED_FILE: ${{ runner.temp }}/work/added.txt
+  DRY_RUN: ${{ vars.PROD_DEPLOY_DRY_RUN }}
+  WORKFLOW: ${{ github.workflow }}
+
+jobs:
+  guard:
+    if: vars.PROD_DEPLOY_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    outputs:
+      skip: ${{ steps.g.outputs.skip }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Skip our own revert and lastmod commits
+        id: g
+        env:
+          ACTOR: ${{ github.actor }}
+          ROLLBACK_ACTOR: ${{ vars.ROLLBACK_ACTOR }}
+        run: |
+          # Exact trailer, parsed by git, and pushed by the rollback identity. A mention of the
+          # marker anywhere else, or by anyone else, does not skip a deploy.
+          tr=$(git log -1 --format=%B HEAD | git interpret-trailers --parse)
+          rid=$(printf '%s\n' "$tr" | sed -n 's/^Engine-Rollback: \([A-Za-z0-9._-]\{1,\}\)$/\1/p' | head -n 1)
+          lid=$(printf '%s\n' "$tr" | sed -n 's/^Engine-Lastmod: \([A-Za-z0-9._-]\{1,\}\)$/\1/p' | head -n 1)
+          # the commit itself must be authored by the bot too (a builder commit can't carry the trailer
+          # onto main: the gate squashes with an engine-composed message)
+          author=$(git log -1 --format=%an HEAD)
+          if [ -n "$rid$lid" ] && [ -n "$ROLLBACK_ACTOR" ] && [ "$ACTOR" = "$ROLLBACK_ACTOR" ] && [ "$author" = "$ROLLBACK_ACTOR" ]; then
+            echo "::notice::skipping deploy: HEAD is the engine's own rollback ($rid) or lastmod ($lid) commit"
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
+  settings:
+    # engine code only (no site code): pins the main tip every later job uses and reads the site's settings
+    needs: guard
+    if: needs.guard.outputs.skip != 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    outputs:
+      sha: ${{ steps.tip.outputs.sha }}
+      source: ${{ steps.cfg.outputs.source }}
+      build_cmd: ${{ steps.cfg.outputs.build_cmd }}
+      install_dir: ${{ steps.cfg.outputs.install_dir }}
+      install_cmd: ${{ steps.cfg.outputs.install_cmd }}
+      pre_deploy_cmd: ${{ steps.cfg.outputs.pre_deploy_cmd }}
+      host_root: ${{ steps.cfg.outputs.host_root }}
+      has_rewrites: ${{ steps.cfg.outputs.has_rewrites }}
+      commit_back: ${{ steps.cfg.outputs.commit_back }}
+      build_image: ${{ steps.cfg.outputs.build_image }}
+      build_date_env: ${{ steps.cfg.outputs.build_date_env }}
+      build_sh: ${{ steps.build_sh_up.outputs.artifact-id }}
+      needs_build: ${{ steps.nb.outputs.needs_build }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: false
+
+      - name: The main tip this run ships (a queued run never re-ships a commit that was rolled back)
+        id: tip
+        run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Read-only token for the engine repo (reader app; its key never leaves this step)
+        id: engine_token
+        uses: actions/create-github-app-token@v2
+        with:
+          app-id: ${{ vars.READER_APP_ID }}
+          private-key: ${{ secrets.READER_APP_PRIVATE_KEY }}
+          owner: krishnachagti-sudo
+          repositories: site-engine
+          permission-contents: read
+
+      - name: Fetch the engine
+        env:
+          ENGINE_READ_TOKEN: ${{ steps.engine_token.outputs.token }}
+        run: |
+          mkdir -p "$RUNNER_TEMP/work"
+          auth=$(printf 'x-access-token:%s' "$ENGINE_READ_TOKEN" | base64 -w0)
+          git -c "http.extraheader=AUTHORIZATION: basic $auth" clone --depth 1 --branch "$ENGINE_REF" \
+            "https://github.com/$ENGINE_REPO" "$RUNNER_TEMP/engine"
+          echo "ENGINE=$RUNNER_TEMP/engine" >> "$GITHUB_ENV"
+          pip install -q -e "$RUNNER_TEMP/engine"
+
+      - name: Site settings from the engine config
+        id: cfg
+        run: |
+          cd "$ENGINE"   # engine Python never runs from the site checkout
+          # source, build_dir, build_cmd, install_dir, pre_deploy_cmd, base_path, host_root, has_rewrites;
+          # the site's rsync exclude list and the files its build rewrites, for deploy.sh
+          python -I -m engine.deploy.profile --site "$SITE" --sites-dir "$ENGINE/sites" \
+            --excludes-out "$RUNNER_TEMP/work/excludes.txt" --ignore-out "$RUNNER_TEMP/work/dirty_ignore.txt" \
+            --commit-back-out "$RUNNER_TEMP/work/commit_back.txt" \
+            --github-output "$GITHUB_OUTPUT"
+          echo "DEPLOY_EXCLUDE_FILE=$RUNNER_TEMP/work/excludes.txt" >> "$GITHUB_ENV"
+          echo "DEPLOY_IGNORE_DIRTY_FILE=$RUNNER_TEMP/work/dirty_ignore.txt" >> "$GITHUB_ENV"
+          echo "COMMIT_BACK_FILE=$RUNNER_TEMP/work/commit_back.txt" >> "$GITHUB_ENV"
+          # the host's /robots.txt belongs to the host-root site; a subfolder site never compares it
+          python -I -m engine.deploy.profile --site "$SITE" --sites-dir "$ENGINE/sites" \
+            | sed -n 's/^host_root=/HOST_ROOT=/p' >> "$GITHUB_ENV"
+
+      - name: The engine's tools (its shared build recipe), for the secret-less build job (the gate runs the same one)
+        run: mkdir -p "$RUNNER_TEMP/engine-tools" && cp -R "$ENGINE/tools/." "$RUNNER_TEMP/engine-tools/"
+
+      - id: build_sh_up
+        uses: actions/upload-artifact@v4
+        with:
+          name: engine-tools-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/engine-tools/
+          if-no-files-found: error
+          retention-days: 3
+
+      - name: Does a secret-less build job have to run
+        id: nb
+        env:
+          HAS_BUILD: ${{ steps.cfg.outputs.build_cmd != '' }}
+          HAS_PRE: ${{ steps.cfg.outputs.pre_deploy_cmd != '' }}
+        run: |
+          n=false
+          if [ "$HAS_BUILD" = "true" ] || [ "$HAS_PRE" = "true" ] || [ -f mart_ready.py ]; then n=true; fi
+          echo "needs_build=$n" >> "$GITHUB_OUTPUT"
+
+  build:
+    # NO secrets and no app key: site code (install, build, pre-deploy checks, mart_ready.py) runs only here
+    needs: settings
+    if: needs.settings.outputs.needs_build == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: read
+    outputs:
+      artifact_id: ${{ steps.up.outputs.artifact-id }}
+      mart_ready: ${{ steps.mart.outputs.ready }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.settings.outputs.sha }}
+          persist-credentials: false
+
+      - uses: actions/setup-node@v4
+        if: needs.settings.outputs.install_dir != ''
+        with:
+          node-version: '22'
+
+      - uses: actions/download-artifact@v4
+        if: needs.settings.outputs.build_cmd != ''
+        with:
+          artifact-ids: ${{ needs.settings.outputs.build_sh }}
+          path: ${{ runner.temp }}/sb
+
+      - name: Install and build with the engine's shared build script (the gate's image, install, network-less build and date)
+        if: needs.settings.outputs.build_cmd != ''
+        env:
+          BUILD_CMD: ${{ needs.settings.outputs.build_cmd }}
+          INSTALL_DIR: ${{ needs.settings.outputs.install_dir }}
+          INSTALL_CMD: ${{ needs.settings.outputs.install_cmd }}
+          BUILD_IMAGE: ${{ needs.settings.outputs.build_image }}
+          BUILD_DATE_ENV: ${{ needs.settings.outputs.build_date_env }}
+        run: |
+          art() { if [ -e "$1/$2" ]; then echo "$1"; return; fi; for d in "$1"/*/; do if [ -e "$d$2" ]; then echo "${d%/}"; return; fi; done; echo "$1"; }   # download-by-id may nest files under the artifact name
+          SB="$(art "$RUNNER_TEMP/sb" site_build.sh)/site_build.sh"
+          # tools/site_build.sh is exactly what the gate's measure job ran on base and head
+          export BUILD_DATE=$(TZ=Asia/Kolkata date +%F)
+          bash "$SB" install .
+          bash "$SB" build .
+
+      - name: Pre-deploy checks (a failure uploads nothing)
+        if: needs.settings.outputs.pre_deploy_cmd != ''
+        env:
+          PRE_DEPLOY_CMD: ${{ needs.settings.outputs.pre_deploy_cmd }}
+          INSTALL_DIR: ${{ needs.settings.outputs.install_dir }}
+        run: (cd "${INSTALL_DIR:-.}" && bash -ec "$PRE_DEPLOY_CMD")
+
+      - name: Is Conyso Mart ready (mart_ready.py runs here, never next to the deploy key)
+        id: mart
+        run: |
+          r=true
+          if [ -f mart_ready.py ]; then python3 -I mart_ready.py >&2 || r=false; fi
+          echo "ready=$r" >> "$GITHUB_OUTPUT"
+
+      - name: Package the built tree and the files the build rewrote (data for the deploy job)
+        if: needs.settings.outputs.build_cmd != ''
+        env:
+          SOURCE: ${{ needs.settings.outputs.source }}
+          REWRITES: ${{ needs.settings.outputs.commit_back }}
+        run: |
+          mkdir -p "$RUNNER_TEMP/out/rewrites"
+          tar -czf "$RUNNER_TEMP/out/built.tgz" --exclude=./.git --exclude=./.engine-deps -C "$SOURCE" .
+          for p in $REWRITES; do
+            if [ -f "$p" ] && [ ! -L "$p" ]; then mkdir -p "$RUNNER_TEMP/out/rewrites/$(dirname "$p")"; cp "$p" "$RUNNER_TEMP/out/rewrites/$p"; fi
+          done
+
+      - id: up
+        if: needs.settings.outputs.build_cmd != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/out/
+          if-no-files-found: error
+          retention-days: 3
+
+  deploy:
+    # secrets (SSH key, Cloudflare, app keys); runs ONLY engine code, git and rsync; never site code
+    needs: [guard, settings, build]
+    if: always() && needs.settings.result == 'success' && (needs.build.result == 'success' || needs.build.result == 'skipped')
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    permissions:
+      contents: write    # the lastmod commit and the revert are pushed with the merger app; this is for checkout
+      issues: write
+      actions: read
+    env:
+      DEPLOY_HOST: ${{ vars.DEPLOY_HOST }}
+      DEPLOY_PORT: ${{ vars.DEPLOY_PORT || '22' }}
+      DEPLOY_USER: ${{ vars.DEPLOY_USER }}
+      DEPLOY_ROOT: ${{ vars.DEPLOY_ROOT }}/biases
+      DEPLOY_IDENTITY: ~/.ssh/deploy
+    outputs:
+      rollback: ${{ steps.decide.outputs.rollback }}
+      revert: ${{ steps.revert.outcome }}
+      rb_artifact_id: ${{ steps.rb_up.outputs.artifact-id }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Make sure the freeze label exists
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          gh label create engine:freeze --color B60205 --description "engine freeze site to observe-only" --force || true
+
+      - name: Stop while the site is frozen
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          n=$(gh issue list --label engine:freeze --state open --json number --jq 'length')
+          if [ "$n" != "0" ]; then
+            echo "::notice::deploy skipped: $n open engine:freeze issue(s). Close them to resume."
+            exit 1
+          fi
+
+      - name: Deploy the current main tip
+        env:
+          SHA: ${{ needs.settings.outputs.sha }}
+        run: |
+          git checkout -q --detach "$SHA"
+          echo "DEPLOYED_SHA=$SHA" >> "$GITHUB_ENV"
+          echo "deploying $SHA (triggered by ${GITHUB_SHA})"
+
+      - name: Read-only token for the engine repo (reader app; its key never leaves this step)
+        id: engine_token
+        uses: actions/create-github-app-token@v2
+        with:
+          app-id: ${{ vars.READER_APP_ID }}
+          private-key: ${{ secrets.READER_APP_PRIVATE_KEY }}
+          owner: krishnachagti-sudo
+          repositories: site-engine
+          permission-contents: read
+
+      - name: Fetch the engine
+        env:
+          ENGINE_READ_TOKEN: ${{ steps.engine_token.outputs.token }}
+        run: |
+          mkdir -p "$RUNNER_TEMP/work"
+          auth=$(printf 'x-access-token:%s' "$ENGINE_READ_TOKEN" | base64 -w0)
+          git -c "http.extraheader=AUTHORIZATION: basic $auth" clone --depth 1 --branch "$ENGINE_REF" \
+            "https://github.com/$ENGINE_REPO" "$RUNNER_TEMP/engine"
+          echo "ENGINE=$RUNNER_TEMP/engine" >> "$GITHUB_ENV"
+          pip install -q -e "$RUNNER_TEMP/engine"
+
+      - name: Site settings from the engine config
+        id: cfg
+        run: |
+          cd "$ENGINE"   # engine Python never runs from the site checkout
+          # source, build_dir, build_cmd, install_dir, pre_deploy_cmd, base_path, host_root, has_rewrites;
+          # the site's rsync exclude list and the files its build rewrites, for deploy.sh
+          python -I -m engine.deploy.profile --site "$SITE" --sites-dir "$ENGINE/sites" \
+            --excludes-out "$RUNNER_TEMP/work/excludes.txt" --ignore-out "$RUNNER_TEMP/work/dirty_ignore.txt" \
+            --commit-back-out "$RUNNER_TEMP/work/commit_back.txt" \
+            --github-output "$GITHUB_OUTPUT"
+          echo "DEPLOY_EXCLUDE_FILE=$RUNNER_TEMP/work/excludes.txt" >> "$GITHUB_ENV"
+          echo "DEPLOY_IGNORE_DIRTY_FILE=$RUNNER_TEMP/work/dirty_ignore.txt" >> "$GITHUB_ENV"
+          echo "COMMIT_BACK_FILE=$RUNNER_TEMP/work/commit_back.txt" >> "$GITHUB_ENV"
+          # the host's /robots.txt belongs to the host-root site; a subfolder site never compares it
+          python -I -m engine.deploy.profile --site "$SITE" --sites-dir "$ENGINE/sites" \
+            | sed -n 's/^host_root=/HOST_ROOT=/p' >> "$GITHUB_ENV"
+
+      - uses: actions/download-artifact@v4
+        if: needs.settings.outputs.build_cmd != ''
+        with:
+          artifact-ids: ${{ needs.build.outputs.artifact_id }}
+          path: ${{ runner.temp }}/built
+
+      - name: Where the deploy reads from (the built tree from the build job, else the checkout)
+        env:
+          SOURCE: ${{ steps.cfg.outputs.source }}
+          BUILT: ${{ needs.settings.outputs.build_cmd != '' }}
+        run: |
+          art() { if [ -e "$1/$2" ]; then echo "$1"; return; fi; for d in "$1"/*/; do if [ -e "$d$2" ]; then echo "${d%/}"; return; fi; done; echo "$1"; }   # download-by-id may nest files under the artifact name
+          if [ "$BUILT" = "true" ]; then
+            # data only, nothing from it is executed; outside the checkout, so the checkout is never touched
+            B=$(art "$RUNNER_TEMP/built" built.tgz)
+            D="$RUNNER_TEMP/site-built"
+            mkdir -p "$D"
+            tar -xzf "$B/built.tgz" -C "$D" --no-same-owner --no-same-permissions
+            find "$D" -type l -delete
+          else
+            D="$GITHUB_WORKSPACE/$SOURCE"
+          fi
+          echo "DEPLOY_DIR=$D" >> "$GITHUB_ENV"
+
+      - name: Set up SSH
+        env:
+          KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+          KNOWN: ${{ secrets.DEPLOY_KNOWN_HOSTS }}
+        run: |
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$KEY" > ~/.ssh/deploy && chmod 600 ~/.ssh/deploy
+          printf '%s\n' "$KNOWN" > ~/.ssh/known_hosts
+          # Only the pinned host is trusted: the job cannot be pointed at an impostor.
+          printf 'Host deploy\n  HostName %s\n  Port %s\n  User %s\n  IdentityFile ~/.ssh/deploy\n  StrictHostKeyChecking yes\n' \
+            "$DEPLOY_HOST" "$DEPLOY_PORT" "$DEPLOY_USER" > ~/.ssh/config
+
+      - name: Find the last successful deploy
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          W="$RUNNER_TEMP/work"
+          LAST_GOOD=""
+          # scan the last 20 successful runs for the first whose artifact carries a deployed_sha
+          ids=$(gh run list --workflow "$WORKFLOW" --status success --limit 20 --json databaseId --jq '.[].databaseId' || true)
+          for id in $ids; do
+            rm -rf "$W/last"
+            if gh run download "$id" -n verify-results -D "$W/last" 2>/dev/null; then
+              LAST_GOOD=$(jq -r '.deployed_sha // empty' "$W/last/verify.json" 2>/dev/null || true)
+              [ -n "$LAST_GOOD" ] && break
+            fi
+          done
+          echo "last good deploy: ${LAST_GOOD:-unknown (falling back to the push's before)}"
+          echo "LAST_GOOD=$LAST_GOOD" >> "$GITHUB_ENV"
+
+      - name: Serve the IndexNow key file at the host root (host-root site only)
+        if: vars.INDEXNOW_KEY != '' && steps.cfg.outputs.host_root == 'true'
+        env:
+          INDEXNOW_KEY: ${{ vars.INDEXNOW_KEY }}
+          BUILD_DIR: ${{ steps.cfg.outputs.source }}
+        run: |
+          # https://<host>/<key>.txt must contain the key, or Bing ignores every ping
+          printf '%s' "$INDEXNOW_KEY" | grep -Eq '^[A-Za-z0-9-]{8,128}$' || { echo "::error::INDEXNOW_KEY must be 8-128 of a-z A-Z 0-9 -"; exit 1; }
+          printf '%s' "$INDEXNOW_KEY" > "$DEPLOY_DIR/$INDEXNOW_KEY.txt"
+
+      - name: Upload (no delete flag)
+        id: upload
+        continue-on-error: true
+        env:
+          BUILD_DIR: ${{ steps.cfg.outputs.source }}
+          DEPLOY_MART_READY: ${{ needs.build.outputs.mart_ready || 'false' }}
+        run: |
+          # deploy.sh refuses a dirty tree and symlinks, and never deploys engine-only files or protected prefixes.
+          flag=""; [ "$DRY_RUN" = "true" ] && flag="--dry-run"
+          bash "$ENGINE/engine/deploy/deploy.sh" $flag "$DEPLOY_DIR" "$DEPLOY_ROOT"
+
+      - name: Work out the URLs
+        id: urls
+        if: steps.upload.outcome == 'success' && vars.PROD_DEPLOY_DRY_RUN != 'true'
+        continue-on-error: true
+        env:
+          TRAILER_AUTHOR: ${{ vars.ROLLBACK_ACTOR }}
+          BUILD_DIR: ${{ steps.cfg.outputs.source }}
+        run: |
+          W="$RUNNER_TEMP/work"
+          cd "$ENGINE"   # engine Python never runs from the site checkout
+          u() { python -I -m engine.deploy.urls --site "$SITE" --sites-dir "$ENGINE/sites" --repo-root "$GITHUB_WORKSPACE" "$@"; }
+          u --kind purge --changed "$CHANGED_FILE" > "$W/purge_urls.txt"
+          u --kind pages --changed "$CHANGED_FILE" > "$W/pages_urls.txt"
+          # the merged items' declared pages first (Engine-Page trailers of the squash commits since the last
+          # good deploy), then the other changed pages, then 10 unchanged control pages (control_dirs
+          # sample, else .engine/controls.txt)
+          RANGE="$DEPLOYED_SHA"; [ -n "$LAST_GOOD" ] && RANGE="$LAST_GOOD..$DEPLOYED_SHA"
+          # trailers count only from commits authored by the merger identity (ROLLBACK_ACTOR); a declared page
+          # is probed first only when this deploy changed it and it is in the deployed tree
+          u --kind verify --changed "$CHANGED_FILE" --build-dir "$DEPLOY_DIR" --declared-from-git "$RANGE" \
+            --trailer-author "$TRAILER_AUTHOR" > "$W/verify_urls.txt"
+          wc -l "$W"/*_urls.txt
+
+      - name: Purge Cloudflare's cache for changed pages
+        id: purge
+        if: steps.upload.outcome == 'success' && steps.urls.outcome == 'success' && vars.PROD_DEPLOY_DRY_RUN != 'true' && vars.CF_ZONE_ID != ''
+        continue-on-error: true
+        env:
+          CF_ZONE_ID: ${{ vars.CF_ZONE_ID }}
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+        run: cd "$ENGINE" && python -I -m engine.deploy.cf_purge --urls-file "$RUNNER_TEMP/work/purge_urls.txt"
+
+      - name: Wait for the edge
+        if: steps.upload.outcome == 'success' && steps.urls.outcome == 'success' && vars.PROD_DEPLOY_DRY_RUN != 'true'
+        run: sleep 60
+
+      - name: Probe the live pages
+        id: verify
+        if: steps.upload.outcome == 'success' && steps.urls.outcome == 'success' && vars.PROD_DEPLOY_DRY_RUN != 'true'
+        continue-on-error: true
+        env:
+          BUILD_DIR: ${{ steps.cfg.outputs.source }}
+        run: |
+          cd "$ENGINE"   # engine Python never runs from the site checkout
+          ROBOTS_ARG=""; [ "$HOST_ROOT" = "true" ] && ROBOTS_ARG=1
+          python -I -m engine.deploy.verify_live --site "$SITE" --sites-dir "$ENGINE/sites" \
+            --urls-file "$RUNNER_TEMP/work/verify_urls.txt" ${ROBOTS_ARG:+--robots-file "$DEPLOY_DIR/robots.txt"} \
+            --deployed-sha "$DEPLOYED_SHA" --out "$RUNNER_TEMP/work/verify.json"
+
+      - name: Decide whether the deploy failed and whether to roll back
+        id: decide
+        if: always() && steps.upload.outcome != 'skipped' && vars.PROD_DEPLOY_DRY_RUN != 'true'
+        env:
+          UPLOAD: ${{ steps.upload.outcome }}
+          URLS: ${{ steps.urls.outcome }}
+          PURGE: ${{ steps.purge.outcome }}
+          VERIFY: ${{ steps.verify.outcome }}
+        run: |
+          V="$RUNNER_TEMP/work/verify.json"
+          failed=false; rollback=false
+          for o in "$UPLOAD" "$URLS" "$PURGE" "$VERIFY"; do [ "$o" = "failure" ] && failed=true; done
+          # verifier verdict: only a verify.json that says ok:false triggers a rollback
+          if [ -f "$V" ] && [ "$(jq -r '.ok' "$V" 2>/dev/null)" = "false" ]; then failed=true; rollback=true; fi
+          # rsync started and did not finish cleanly: live state is unknown. A refusal before rsync
+          # (dirty tree, symlink, bad root) leaves no rsync.started and only freezes.
+          [ "$UPLOAD" = "failure" ] && [ -f "$RUNNER_TEMP/work/rsync.started" ] && rollback=true
+          # a purge failure (e.g. a Cloudflare 429) says nothing about the deployed pages: freeze, never roll back
+          # a verifier that crashed (no verdict) freezes but never rolls back
+          echo "failed=$failed" >> "$GITHUB_OUTPUT"
+          echo "rollback=$rollback" >> "$GITHUB_OUTPUT"
+          echo "upload=$UPLOAD urls=$URLS purge=$PURGE verify=$VERIFY -> failed=$failed rollback=$rollback"
+
+      - name: Tell Bing what changed
+        if: steps.decide.outputs.failed == 'false' && vars.INDEXNOW_KEY != ''
+        env:
+          INDEXNOW_KEY: ${{ vars.INDEXNOW_KEY }}
+        run: cd "$ENGINE" && python -I -m engine.deploy.indexnow --site "$SITE" --sites-dir "$ENGINE/sites" --urls-file "$RUNNER_TEMP/work/pages_urls.txt"
+
+      - name: Token for the lastmod commit (merger app, contents write on this repo)
+        id: lastmod_token
+        if: steps.decide.outputs.failed == 'false' && steps.cfg.outputs.has_rewrites == 'true' && vars.MERGER_APP_ID != ''
+        continue-on-error: true
+        uses: actions/create-github-app-token@v2
+        with:
+          app-id: ${{ vars.MERGER_APP_ID }}
+          private-key: ${{ secrets.MERGER_APP_PRIVATE_KEY }}
+          repositories: ${{ github.event.repository.name }}
+          permission-contents: write
+
+      - name: Commit the lastmod manifest the build wrote (honest dates; never re-deployed)
+        if: steps.decide.outputs.failed == 'false' && steps.cfg.outputs.has_rewrites == 'true' && steps.lastmod_token.outcome == 'success'
+        continue-on-error: true
+        env:
+          PUSH_TOKEN: ${{ steps.lastmod_token.outputs.token }}
+          RUN_ID: ${{ github.run_id }}
+          LASTMOD_AUTHOR: ${{ vars.ROLLBACK_ACTOR }}
+        run: |
+          cd "$ENGINE"   # engine Python never runs from the site checkout
+          art() { if [ -e "$1/$2" ]; then echo "$1"; return; fi; for d in "$1"/*/; do if [ -e "$d$2" ]; then echo "${d%/}"; return; fi; done; echo "$1"; }   # download-by-id may nest files under the artifact name
+          B=$(art "$RUNNER_TEMP/built" built.tgz)
+          python -I -m engine.deploy.lastmod commit --repo "$GITHUB_WORKSPACE" --files-from "$COMMIT_BACK_FILE" \
+            --src-dir "$B/rewrites" --deployed-sha "$DEPLOYED_SHA" --run-id "$RUN_ID"
+
+      # ------------------------------------------------------------------ rollback (rebuild runs in rollback-build)
+      - name: Push token for the revert commit (merger app, contents:write on this repo only)
+        id: merger
+        if: steps.decide.outputs.rollback == 'true' && vars.MERGER_APP_ID != ''
+        continue-on-error: true
+        uses: actions/create-github-app-token@v2
+        with:
+          app-id: ${{ vars.MERGER_APP_ID }}
+          private-key: ${{ secrets.MERGER_APP_PRIVATE_KEY }}
+          repositories: ${{ github.event.repository.name }}
+          permission-contents: write
+
+      - name: Rollback 1/2 revert the push on top of main
+        id: revert
+        if: steps.decide.outputs.rollback == 'true'
+        continue-on-error: true
+        env:
+          PUSH_TOKEN: ${{ steps.merger.outputs.token || github.token }}
+          GIT_AUTHOR_NAME: ${{ vars.ROLLBACK_ACTOR || 'site-engine' }}
+          GIT_COMMITTER_NAME: ${{ vars.ROLLBACK_ACTOR || 'site-engine' }}
+          BEFORE: ${{ github.event.before }}
+          RUN_ID: ${{ github.run_id }}
+          BUILD_DIR: ${{ steps.cfg.outputs.source }}
+        run: |
+          W="$RUNNER_TEMP/work"
+          # put back the tracked files the build rewrote, so the revert starts from a clean tree
+          while IFS= read -r p; do [ -n "$p" ] && git checkout -q -- "$p" 2>/dev/null || true; done < "$DEPLOY_IGNORE_DIRTY_FILE"
+          cd "$ENGINE"   # engine Python never runs from the site checkout
+          # Revert LAST_GOOD..DEPLOYED_SHA on top of origin/main; the push is best effort (3 attempts).
+          # A fetch failure or a conflict exits non-zero: nothing is deployed or deleted, and the freeze
+          # issue carries revert.err.
+          if ! python -I -m engine.deploy.rollback revert --site "$SITE" --sites-dir "$ENGINE/sites" --repo "$GITHUB_WORKSPACE" --sha "$DEPLOYED_SHA" --before "$LAST_GOOD" \
+              --fallback-before "$BEFORE" --run-id "$RUN_ID" --plan-out "$W/plan.json" \
+              --paths-out "$W/rb_paths.txt" --added-file "$ADDED_FILE" --build-dir "$BUILD_DIR" \
+              > "$W/revert.out" 2> "$W/revert.err"; then
+            cat "$W/revert.err" >&2
+            exit 1
+          fi
+          cat "$W/revert.err" >&2
+          jq -r '.restore[]' "$W/plan.json" > "$W/restored.txt"
+
+      - name: Rollback 2/2 hand the reverted tree to the secret-less rebuild (git bundle + plan, data only)
+        if: steps.decide.outputs.rollback == 'true' && steps.revert.outcome == 'success'
+        run: |
+          W="$RUNNER_TEMP/work"
+          mkdir -p "$RUNNER_TEMP/rb"
+          git update-ref refs/engine/revert HEAD
+          git bundle create "$RUNNER_TEMP/rb/revert.bundle" "$DEPLOYED_SHA..refs/engine/revert"
+          cp "$W/plan.json" "$W/rb_paths.txt" "$W/restored.txt" "$RUNNER_TEMP/rb/"
+          cp "$W/purge_urls.txt" "$RUNNER_TEMP/rb/" 2>/dev/null || true
+
+      - id: rb_up
+        if: steps.decide.outputs.rollback == 'true' && steps.revert.outcome == 'success'
+        uses: actions/upload-artifact@v4
+        with:
+          name: rollback-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/rb/
+          if-no-files-found: error
+          retention-days: 3
+
+      - name: Open the freeze issue
+        if: always() && steps.decide.outputs.failed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          STEPS: ${{ format('upload={0} urls={1} purge={2} verify={3} rollback={4} revert={5} reprobe={6}', steps.upload.outcome, steps.urls.outcome, steps.purge.outcome, steps.verify.outcome, steps.decide.outputs.rollback, steps.revert.outcome, 'see rollback-deploy job') }}
+        run: |
+          W="$RUNNER_TEMP/work"
+          gh label create engine:freeze --color B60205 --description "engine: freeze site to observe-only" --force || true
+          {
+            echo "Deploy of ${DEPLOYED_SHA:-$GITHUB_SHA} failed."
+            echo
+            echo "Step outcomes: $STEPS"
+            echo "Run: $RUN_URL"
+            echo
+            echo '```json'
+            cat "$W/verify.json" 2>/dev/null || true
+            echo '```'
+            if [ -s "$W/revert.err" ]; then
+              echo
+              echo "Revert output (a conflict or fetch failure means nothing was rolled back or deleted):"
+              echo '```'
+              cat "$W/revert.err"
+              echo '```'
+            fi
+          } > "$W/freeze_body.md"
+          gh issue create --title "engine: freeze $SITE" --label engine:freeze --body-file "$W/freeze_body.md"
+
+      - name: Keep the probe results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: verify-results
+          path: ${{ runner.temp }}/work/*.json
+          if-no-files-found: ignore
+
+      - name: Fail the run if the deploy failed
+        if: steps.decide.outputs.failed == 'true' || steps.upload.outcome == 'failure'
+        run: |
+          echo "::error::deploy failed; see the steps above (freeze issue opened, rollback attempted if required)"
+          exit 1
+
+  rollback-build:
+    # NO secrets and no app key: site code (install, build, mart_ready.py) runs only here
+    needs: [settings, deploy]
+    if: needs.deploy.outputs.rollback == 'true' && needs.deploy.outputs.revert == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: read
+    outputs:
+      artifact_id: ${{ steps.up.outputs.artifact-id }}
+      mart_ready: ${{ steps.mart.outputs.ready }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.settings.outputs.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+
+      - uses: actions/download-artifact@v4
+        with:
+          artifact-ids: ${{ needs.deploy.outputs.rb_artifact_id }}
+          path: ${{ runner.temp }}/rb
+
+      - name: Check out the reverted tree (from the deploy job's bundle)
+        run: |
+          art() { if [ -e "$1/$2" ]; then echo "$1"; return; fi; for d in "$1"/*/; do if [ -e "$d$2" ]; then echo "${d%/}"; return; fi; done; echo "$1"; }   # download-by-id may nest files under the artifact name
+          R=$(art "$RUNNER_TEMP/rb" revert.bundle)
+          git fetch -q "$R/revert.bundle" refs/engine/revert:refs/engine/revert
+          git checkout -q --detach refs/engine/revert
+          echo "RB=$R" >> "$GITHUB_ENV"
+
+      - uses: actions/setup-node@v4
+        if: needs.settings.outputs.install_dir != ''
+        with:
+          node-version: '22'
+
+      - uses: actions/download-artifact@v4
+        if: needs.settings.outputs.build_cmd != ''
+        with:
+          artifact-ids: ${{ needs.settings.outputs.build_sh }}
+          path: ${{ runner.temp }}/sb
+
+      - name: Install and build with the engine's shared build script (the gate's image, install, network-less build and date)
+        if: needs.settings.outputs.build_cmd != ''
+        env:
+          BUILD_CMD: ${{ needs.settings.outputs.build_cmd }}
+          INSTALL_DIR: ${{ needs.settings.outputs.install_dir }}
+          INSTALL_CMD: ${{ needs.settings.outputs.install_cmd }}
+          BUILD_IMAGE: ${{ needs.settings.outputs.build_image }}
+          BUILD_DATE_ENV: ${{ needs.settings.outputs.build_date_env }}
+        run: |
+          art() { if [ -e "$1/$2" ]; then echo "$1"; return; fi; for d in "$1"/*/; do if [ -e "$d$2" ]; then echo "${d%/}"; return; fi; done; echo "$1"; }   # download-by-id may nest files under the artifact name
+          SB="$(art "$RUNNER_TEMP/sb" site_build.sh)/site_build.sh"
+          # tools/site_build.sh is exactly what the gate's measure job ran on base and head
+          export BUILD_DATE=$(TZ=Asia/Kolkata date +%F)
+          bash "$SB" install .
+          bash "$SB" build .
+
+      - name: Is Conyso Mart ready (mart_ready.py runs here, never next to the deploy key)
+        id: mart
+        run: |
+          r=true
+          if [ -f mart_ready.py ]; then python3 -I mart_ready.py >&2 || r=false; fi
+          echo "ready=$r" >> "$GITHUB_OUTPUT"
+
+      - name: Package the built tree and the files the build rewrote (data for the deploy job)
+        if: needs.settings.outputs.build_cmd != ''
+        env:
+          SOURCE: ${{ needs.settings.outputs.source }}
+          REWRITES: ${{ needs.settings.outputs.commit_back }}
+        run: |
+          mkdir -p "$RUNNER_TEMP/out/rewrites"
+          tar -czf "$RUNNER_TEMP/out/built.tgz" --exclude=./.git --exclude=./.engine-deps -C "$SOURCE" .
+          for p in $REWRITES; do
+            if [ -f "$p" ] && [ ! -L "$p" ]; then mkdir -p "$RUNNER_TEMP/out/rewrites/$(dirname "$p")"; cp "$p" "$RUNNER_TEMP/out/rewrites/$p"; fi
+          done
+
+      - id: up
+        if: needs.settings.outputs.build_cmd != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: rollback-build-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/out/
+          if-no-files-found: error
+          retention-days: 3
+
+  rollback-deploy:
+    # secrets; engine code, git and rsync only: re-deploys the reverted tree, removes what the push added
+    needs: [settings, deploy, rollback-build]
+    if: always() && needs.deploy.outputs.rollback == 'true' && needs.deploy.outputs.revert == 'success' && needs.rollback-build.result == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: read
+      issues: write
+    env:
+      DEPLOY_HOST: ${{ vars.DEPLOY_HOST }}
+      DEPLOY_PORT: ${{ vars.DEPLOY_PORT || '22' }}
+      DEPLOY_USER: ${{ vars.DEPLOY_USER }}
+      DEPLOY_ROOT: ${{ vars.DEPLOY_ROOT }}/biases
+      DEPLOY_IDENTITY: ~/.ssh/deploy
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.settings.outputs.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+
+      - uses: actions/download-artifact@v4
+        with:
+          artifact-ids: ${{ needs.deploy.outputs.rb_artifact_id }}
+          path: ${{ runner.temp }}/rb
+
+      - name: Check out the reverted tree (from the deploy job's bundle)
+        run: |
+          art() { if [ -e "$1/$2" ]; then echo "$1"; return; fi; for d in "$1"/*/; do if [ -e "$d$2" ]; then echo "${d%/}"; return; fi; done; echo "$1"; }   # download-by-id may nest files under the artifact name
+          R=$(art "$RUNNER_TEMP/rb" revert.bundle)
+          git fetch -q "$R/revert.bundle" refs/engine/revert:refs/engine/revert
+          git checkout -q --detach refs/engine/revert
+          echo "RB=$R" >> "$GITHUB_ENV"
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Read-only token for the engine repo (reader app; its key never leaves this step)
+        id: engine_token
+        uses: actions/create-github-app-token@v2
+        with:
+          app-id: ${{ vars.READER_APP_ID }}
+          private-key: ${{ secrets.READER_APP_PRIVATE_KEY }}
+          owner: krishnachagti-sudo
+          repositories: site-engine
+          permission-contents: read
+
+      - name: Fetch the engine
+        env:
+          ENGINE_READ_TOKEN: ${{ steps.engine_token.outputs.token }}
+        run: |
+          mkdir -p "$RUNNER_TEMP/work"
+          auth=$(printf 'x-access-token:%s' "$ENGINE_READ_TOKEN" | base64 -w0)
+          git -c "http.extraheader=AUTHORIZATION: basic $auth" clone --depth 1 --branch "$ENGINE_REF" \
+            "https://github.com/$ENGINE_REPO" "$RUNNER_TEMP/engine"
+          echo "ENGINE=$RUNNER_TEMP/engine" >> "$GITHUB_ENV"
+          pip install -q -e "$RUNNER_TEMP/engine"
+
+      - name: Site settings from the engine config
+        id: cfg
+        run: |
+          cd "$ENGINE"   # engine Python never runs from the site checkout
+          # source, build_dir, build_cmd, install_dir, pre_deploy_cmd, base_path, host_root, has_rewrites;
+          # the site's rsync exclude list and the files its build rewrites, for deploy.sh
+          python -I -m engine.deploy.profile --site "$SITE" --sites-dir "$ENGINE/sites" \
+            --excludes-out "$RUNNER_TEMP/work/excludes.txt" --ignore-out "$RUNNER_TEMP/work/dirty_ignore.txt" \
+            --commit-back-out "$RUNNER_TEMP/work/commit_back.txt" \
+            --github-output "$GITHUB_OUTPUT"
+          echo "DEPLOY_EXCLUDE_FILE=$RUNNER_TEMP/work/excludes.txt" >> "$GITHUB_ENV"
+          echo "DEPLOY_IGNORE_DIRTY_FILE=$RUNNER_TEMP/work/dirty_ignore.txt" >> "$GITHUB_ENV"
+          echo "COMMIT_BACK_FILE=$RUNNER_TEMP/work/commit_back.txt" >> "$GITHUB_ENV"
+          # the host's /robots.txt belongs to the host-root site; a subfolder site never compares it
+          python -I -m engine.deploy.profile --site "$SITE" --sites-dir "$ENGINE/sites" \
+            | sed -n 's/^host_root=/HOST_ROOT=/p' >> "$GITHUB_ENV"
+
+      - uses: actions/download-artifact@v4
+        if: needs.settings.outputs.build_cmd != ''
+        with:
+          artifact-ids: ${{ needs.rollback-build.outputs.artifact_id }}
+          path: ${{ runner.temp }}/built
+
+      - name: Where the deploy reads from (the built tree from the build job, else the checkout)
+        env:
+          SOURCE: ${{ steps.cfg.outputs.source }}
+          BUILT: ${{ needs.settings.outputs.build_cmd != '' }}
+        run: |
+          art() { if [ -e "$1/$2" ]; then echo "$1"; return; fi; for d in "$1"/*/; do if [ -e "$d$2" ]; then echo "${d%/}"; return; fi; done; echo "$1"; }   # download-by-id may nest files under the artifact name
+          if [ "$BUILT" = "true" ]; then
+            # data only, nothing from it is executed; outside the checkout, so the checkout is never touched
+            B=$(art "$RUNNER_TEMP/built" built.tgz)
+            D="$RUNNER_TEMP/site-built"
+            mkdir -p "$D"
+            tar -xzf "$B/built.tgz" -C "$D" --no-same-owner --no-same-permissions
+            find "$D" -type l -delete
+          else
+            D="$GITHUB_WORKSPACE/$SOURCE"
+          fi
+          echo "DEPLOY_DIR=$D" >> "$GITHUB_ENV"
+
+      - name: Set up SSH
+        env:
+          KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+          KNOWN: ${{ secrets.DEPLOY_KNOWN_HOSTS }}
+        run: |
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$KEY" > ~/.ssh/deploy && chmod 600 ~/.ssh/deploy
+          printf '%s\n' "$KNOWN" > ~/.ssh/known_hosts
+          # Only the pinned host is trusted: the job cannot be pointed at an impostor.
+          printf 'Host deploy\n  HostName %s\n  Port %s\n  User %s\n  IdentityFile ~/.ssh/deploy\n  StrictHostKeyChecking yes\n' \
+            "$DEPLOY_HOST" "$DEPLOY_PORT" "$DEPLOY_USER" > ~/.ssh/config
+
+      - name: Re-deploy the reverted tree
+        env:
+          BUILD_DIR: ${{ steps.cfg.outputs.source }}
+          DEPLOY_MART_READY: ${{ needs.rollback-build.outputs.mart_ready || 'false' }}
+        run: |
+          # a known-bad deploy is never left live, whether or not the revert push was accepted
+          bash "$ENGINE/engine/deploy/deploy.sh" "$DEPLOY_DIR" "$DEPLOY_ROOT"
+
+      - name: Remove only files the push added that the reverted tree lacks
+        env:
+          BUILD_DIR: ${{ steps.cfg.outputs.source }}
+        run: |
+          cd "$ENGINE"   # engine Python never runs from the site checkout
+          python -I -m engine.deploy.rollback execute --plan "$RB/plan.json" --remote-root "$DEPLOY_ROOT" --tree-dir "$DEPLOY_DIR" \
+            --site "$SITE" --sites-dir "$ENGINE/sites"
+
+      - name: Purge again
+        if: vars.CF_ZONE_ID != ''
+        env:
+          CF_ZONE_ID: ${{ vars.CF_ZONE_ID }}
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+        run: |
+          cd "$ENGINE"   # engine Python never runs from the site checkout
+          R="$RB"
+          python -I -m engine.deploy.urls --site "$SITE" --sites-dir "$ENGINE/sites" --kind purge --changed "$R/rb_paths.txt" > "$R/rb_purge.txt"
+          cat "$R/purge_urls.txt" >> "$R/rb_purge.txt" 2>/dev/null || true
+          python -I -m engine.deploy.cf_purge --urls-file "$R/rb_purge.txt"
+          sleep 60
+
+      - name: Probe again
+        env:
+          BUILD_DIR: ${{ steps.cfg.outputs.source }}
+        run: |
+          cd "$ENGINE"   # engine Python never runs from the site checkout
+          R="$RB"
+          python -I -m engine.deploy.urls --site "$SITE" --sites-dir "$ENGINE/sites" --repo-root "$GITHUB_WORKSPACE" \
+            --kind verify --changed "$R/restored.txt" --build-dir "$DEPLOY_DIR" > "$R/verify2_urls.txt"
+          ROBOTS_ARG=""; [ "$HOST_ROOT" = "true" ] && ROBOTS_ARG=1
+          python -I -m engine.deploy.verify_live --site "$SITE" --sites-dir "$ENGINE/sites" \
+            --urls-file "$R/verify2_urls.txt" ${ROBOTS_ARG:+--robots-file "$DEPLOY_DIR/robots.txt"} --out "$R/verify2.json"
+
+      - name: Note the rollback result on the freeze issue
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          OUTCOME: ${{ job.status }}
+        run: |
+          n=$(gh issue list --label engine:freeze --state open --json number --jq '.[0].number' || true)
+          [ -n "$n" ] && gh issue comment "$n" --body "Rollback re-deploy finished: $OUTCOME." || true
