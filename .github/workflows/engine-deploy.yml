@@ -430,7 +430,7 @@ jobs:
               [ -n "$LAST_GOOD" ] && break
             fi
           done
-          echo "last good deploy: ${LAST_GOOD:-unknown (falling back to the push's before)}"
+          echo "last good deploy: ${LAST_GOOD:-unknown (falling back to the push before)}"
           echo "LAST_GOOD=$LAST_GOOD" >> "$GITHUB_ENV"
 
       - name: Serve the IndexNow key file at the host root (host-root site only)
