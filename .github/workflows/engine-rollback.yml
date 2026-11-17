@@ -438,6 +438,16 @@ jobs:
           python -I -m engine.deploy.rollback execute --plan "$RB/plan.json" --remote-root "$DEPLOY_ROOT" --tree-dir "$DEPLOY_DIR" \
             --site "$SITE" --sites-dir "$ENGINE/sites"
 
+      - name: Clear the Cloudways app cache (origin Varnish holds HTML for days)
+        if: vars.CLOUDWAYS_APP_ID != ''
+        continue-on-error: true
+        env:
+          CLOUDWAYS_EMAIL: ${{ secrets.CLOUDWAYS_EMAIL }}
+          CLOUDWAYS_API_KEY: ${{ secrets.CLOUDWAYS_API_KEY }}
+          CLOUDWAYS_SERVER_ID: ${{ vars.CLOUDWAYS_SERVER_ID }}
+          CLOUDWAYS_APP_ID: ${{ vars.CLOUDWAYS_APP_ID }}
+        run: cd "$ENGINE" && python -I -m engine.deploy.cloudways_purge
+
       - name: Purge Cloudflare's cache
         if: vars.CF_ZONE_ID != ''
         env:
