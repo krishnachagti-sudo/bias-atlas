@@ -25,6 +25,8 @@ name: engine-deploy
 #            ENGINE_REF           engine tag to run (pin a release tag; falls back to main)
 # Optional:  PROD_DEPLOY_DRY_RUN  true = list what would change, upload nothing
 #            CF_ZONE_ID + secret CF_API_TOKEN (Zone.Cache Purge only) = purge changed pages
+#            CLOUDWAYS_SERVER_ID, CLOUDWAYS_APP_ID + secrets CLOUDWAYS_EMAIL, CLOUDWAYS_API_KEY = clear the
+#            Cloudways app cache (origin Varnish) after every upload
 #            INDEXNOW_KEY         tell Bing which pages changed (https://<host>/<key>.txt must exist)
 #            MERGER_APP_PRIVATE_KEY + var MERGER_APP_ID   merger GitHub App: the revert push to main
 #                                 (the only identity the main ruleset lets through; default: workflow token)
@@ -477,6 +479,17 @@ jobs:
             --trailer-author "$TRAILER_AUTHOR" > "$W/verify_urls.txt"
           wc -l "$W"/*_urls.txt
 
+      - name: Clear the Cloudways app cache (origin Varnish holds HTML for days)
+        id: cwclear
+        if: steps.upload.outcome == 'success' && vars.PROD_DEPLOY_DRY_RUN != 'true' && vars.CLOUDWAYS_APP_ID != ''
+        continue-on-error: true
+        env:
+          CLOUDWAYS_EMAIL: ${{ secrets.CLOUDWAYS_EMAIL }}
+          CLOUDWAYS_API_KEY: ${{ secrets.CLOUDWAYS_API_KEY }}
+          CLOUDWAYS_SERVER_ID: ${{ vars.CLOUDWAYS_SERVER_ID }}
+          CLOUDWAYS_APP_ID: ${{ vars.CLOUDWAYS_APP_ID }}
+        run: cd "$ENGINE" && python -I -m engine.deploy.cloudways_purge
+
       - name: Purge Cloudflare's cache for changed pages
         id: purge
         if: steps.upload.outcome == 'success' && steps.urls.outcome == 'success' && vars.PROD_DEPLOY_DRY_RUN != 'true' && vars.CF_ZONE_ID != ''
@@ -510,21 +523,23 @@ jobs:
           UPLOAD: ${{ steps.upload.outcome }}
           URLS: ${{ steps.urls.outcome }}
           PURGE: ${{ steps.purge.outcome }}
+          CWCLEAR: ${{ steps.cwclear.outcome }}
           VERIFY: ${{ steps.verify.outcome }}
         run: |
           V="$RUNNER_TEMP/work/verify.json"
           failed=false; rollback=false
-          for o in "$UPLOAD" "$URLS" "$PURGE" "$VERIFY"; do [ "$o" = "failure" ] && failed=true; done
+          for o in "$UPLOAD" "$URLS" "$PURGE" "$CWCLEAR" "$VERIFY"; do [ "$o" = "failure" ] && failed=true; done
           # verifier verdict: only a verify.json that says ok:false triggers a rollback
           if [ -f "$V" ] && [ "$(jq -r '.ok' "$V" 2>/dev/null)" = "false" ]; then failed=true; rollback=true; fi
           # rsync started and did not finish cleanly: live state is unknown. A refusal before rsync
           # (dirty tree, symlink, bad root) leaves no rsync.started and only freezes.
           [ "$UPLOAD" = "failure" ] && [ -f "$RUNNER_TEMP/work/rsync.started" ] && rollback=true
-          # a purge failure (e.g. a Cloudflare 429) says nothing about the deployed pages: freeze, never roll back
+          # a purge or cache-clear failure (e.g. a Cloudflare 429, a Cloudways outage) says nothing about the
+          # deployed pages: freeze, never roll back
           # a verifier that crashed (no verdict) freezes but never rolls back
           echo "failed=$failed" >> "$GITHUB_OUTPUT"
           echo "rollback=$rollback" >> "$GITHUB_OUTPUT"
-          echo "upload=$UPLOAD urls=$URLS purge=$PURGE verify=$VERIFY -> failed=$failed rollback=$rollback"
+          echo "upload=$UPLOAD urls=$URLS purge=$PURGE cwclear=$CWCLEAR verify=$VERIFY -> failed=$failed rollback=$rollback"
 
       - name: Tell Bing what changed
         if: steps.decide.outputs.failed == 'false' && vars.INDEXNOW_KEY != ''
@@ -877,6 +892,16 @@ jobs:
           cd "$ENGINE"   # engine Python never runs from the site checkout
           python -I -m engine.deploy.rollback execute --plan "$RB/plan.json" --remote-root "$DEPLOY_ROOT" --tree-dir "$DEPLOY_DIR" \
             --site "$SITE" --sites-dir "$ENGINE/sites"
+
+      - name: Clear the Cloudways app cache again
+        if: vars.CLOUDWAYS_APP_ID != ''
+        continue-on-error: true
+        env:
+          CLOUDWAYS_EMAIL: ${{ secrets.CLOUDWAYS_EMAIL }}
+          CLOUDWAYS_API_KEY: ${{ secrets.CLOUDWAYS_API_KEY }}
+          CLOUDWAYS_SERVER_ID: ${{ vars.CLOUDWAYS_SERVER_ID }}
+          CLOUDWAYS_APP_ID: ${{ vars.CLOUDWAYS_APP_ID }}
+        run: cd "$ENGINE" && python -I -m engine.deploy.cloudways_purge
 
       - name: Purge again
         if: vars.CF_ZONE_ID != ''
