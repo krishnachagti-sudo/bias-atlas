@@ -512,8 +512,8 @@ const md = [`# Waves, ${date}${isTest ? ' (test run)' : ''}`, '',
   '## Biases with a measured wave', '',
   'Ranked news first: a bias named in a fresh story ("fired: named") comes with its cause attached, so judge those first. Strong = two or more independent witnesses agree (two outlets naming it count as two). Single-source waves need the cause confirmed before judging.', '',
   ...(ranked.length ? ranked.flatMap((r) => [
-    `### ${r.hold ? '⚠ HUMAN HOLD · ' : ''}${r.name} · ${r.tier}${r.major ? ' · major' : ''} · ${r.confidence} · ${r.status}${r.status === 'continuing' ? ` since ${r.firstSeen}` : ''} · score ${r.score}`,
-    ...(r.hold ? [`_Touches ${r.hold.join(', ')}. No auto-draft, no promotion on the page; Krishna decides whether it is a page at all._`, ''] : []),
+    `### ${r.hold ? '⚠ SENSITIVE · ' : ''}${r.name} · ${r.tier}${r.major ? ' · major' : ''} · ${r.confidence} · ${r.status}${r.status === 'continuing' ? ` since ${r.firstSeen}` : ''} · score ${r.score}`,
+    ...(r.hold ? [`_Touches ${r.hold.join(', ')}. Judge it under JUDGE.md's sensitive-story rules: never centred on a private person's death, suicide, abuse or illness; cause on the record first; no promotion._`, ''] : []),
     ...(r.hubs?.length ? [`**Reply today:** ${r.hubs.map((h) => `${h.where}: ${h.title} ${h.url}`).join(' · ')}`, ''] : []),
     `**Do:** ${{ page: 'standalone wave page', 'update+reply': 'reply in the thread + bias-page example', update: 'bias-page example', check: 'probably nothing', decide: 'your call' }[r.route.action]} (${r.route.why}).`
       + (r.device ? ` **Driven by:** ${r.device.led === 'mobile' ? 'phones, so likely shared' : r.device.led === 'desktop' ? 'desktops, so check for bots, a course or a work tool before judging' : 'both'} (mobile share ${r.device.mobileShareNow} vs ${r.device.mobileShareBase} normally).` : '')

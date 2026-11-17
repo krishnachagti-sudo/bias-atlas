@@ -381,7 +381,13 @@ export function deviceMix(desktop, mobile, baselineDays = 28) {
 // page Google already crawls, plus a reply in the live thread. A standalone
 // page is only for waves that are broad, big and still building.
 export function route(w) {
-  if (w.hold) return { action: 'decide', why: 'touches a sensitive subject; Krishna decides whether it is anything at all' };
+  // No human hold since 17 Nov 2026 (Krishna): a sensitive wave is routed like any
+  // other and judged under JUDGE.md's sensitive-story rules; the report flags it.
+  const sens = w.hold ? ' (sensitive: apply the sensitive-story rules, floor first)' : '';
+  const r = routeInner(w);
+  return sens ? { ...r, why: r.why + sens } : r;
+}
+function routeInner(w) {
   const lasting = w.wiki?.trajectory === 'building' || w.wiki?.trajectory === 'starting' || w.scheduled;
   if (w.confidence === 'strong' && w.major && lasting) return { action: 'page', why: 'strong, major and still building: worth a standalone page' };
   if (w.hubs?.length) return { action: 'update+reply', why: 'one big thread: reply there today, add the example to the bias page' };

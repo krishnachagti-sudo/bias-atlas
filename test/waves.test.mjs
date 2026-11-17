@@ -258,7 +258,10 @@ test('routing: the fast path is the default, a standalone page is earned', () =>
   assert.equal(route({ confidence: 'strong', major: true, wiki: { trajectory: 'building' } }).action, 'page');
   assert.equal(route({ confidence: 'strong', major: true, wiki: { trajectory: 'fading' } }).action, 'update');
   assert.equal(route({ confidence: 'strong', hubs: [{}] }).action, 'update+reply');
-  assert.equal(route({ hold: ['died'], confidence: 'strong', major: true }).action, 'decide');
+  // No human hold since 17 Nov 2026: a sensitive wave routes normally, flagged in the reason.
+  const sens = route({ hold: ['died'], confidence: 'strong', major: true, wiki: { trajectory: 'building' } });
+  assert.equal(sens.action, 'page');
+  assert.match(sens.why, /sensitive/);
 });
 
 test('law-like trending articles missing from the Tome are found; syndromes are not', () => {

@@ -133,7 +133,7 @@ export function newsMarkdown(scan, names, decisions, today) {
     ...(scan.hits.length ? [...scan.hits].sort((a, b) => (b.outlets > 0) - (a.outlets > 0)).flatMap((h) => {
       const d = recentlyDecided(decisions, h.slug, today);
       return [
-        `### ${h.hold ? '⚠ HUMAN HOLD · ' : ''}${names.get(h.slug) || h.slug} · ${h.outlets ? `${h.outlets} news outlet${h.outlets === 1 ? '' : 's'}` : 'explainers or blogs only'}${h.headline ? ' · in a headline' : ''}${d ? ` · judged ${d.date}: ${d.decision}` : ''}`,
+        `### ${h.hold ? '⚠ SENSITIVE · ' : ''}${names.get(h.slug) || h.slug} · ${h.outlets ? `${h.outlets} news outlet${h.outlets === 1 ? '' : 's'}` : 'explainers or blogs only'}${h.headline ? ' · in a headline' : ''}${d ? ` · judged ${d.date}: ${d.decision}` : ''}`,
         `https://conyso.com/biases/bias/${h.slug}/`, ...h.stories.map(line), ''];
     }) : ['_No bias named in a fresh story._', '']),
   ].join('\n');

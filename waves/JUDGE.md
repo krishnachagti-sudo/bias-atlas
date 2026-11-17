@@ -30,8 +30,8 @@ works. That difference makes three things riskier.
 1. **Never say a named person was biased.** Nobody can see inside a head. Describe
    what was observably said or done, and say it is the pattern the bias names:
    "the pattern the Atlas files under anchoring". Never "X fell for anchoring",
-   never "X's sunk-cost thinking". A named private person is a human hold, as on
-   the Tome; a named public figure is allowed only for what they did on the
+   never "X's sunk-cost thinking". A named private person is never the subject
+   (the sensitive-story floor below); a named public figure is allowed only for what they did on the
    record, never for a motive.
 2. **Never outrun the replication record.** Each entry has a `replication`
    verdict. If the effect failed to replicate or is contested, an in-the-wild
@@ -55,14 +55,15 @@ The stricter rules above still apply in full: a story naming "implicit bias" in 
 court case is about a policy, so the example describes what the research says
 and never calls anyone in the story biased.
 
-## Human hold
+## Sensitive stories (no human hold since 17 Nov 2026)
 
-Death, disaster, attack, illness, abuse, a named private person: never
-published automatically. Same list and same reasons as the Tome. Add one more
-for the Atlas: **diagnosis-adjacent stories** (mental health, a court
-competency question, a person's cognition being argued about in public). The
-Atlas explains patterns everyone shares; it does not weigh in on one person's
-mind.
+As on the Tome: the human hold is gone, and sensitive stories (death, disaster,
+attack, illness, abuse) are judged and published under the Tome's
+"Sensitive stories" rules, floor included. One more floor for the Atlas:
+**never weigh in on one named person's mind** (their mental health, a
+competency question, their cognition being argued about in public). The Atlas
+explains patterns everyone shares; the stricter rules above already forbid
+calling a named person biased.
 
 ## Political stories
 
