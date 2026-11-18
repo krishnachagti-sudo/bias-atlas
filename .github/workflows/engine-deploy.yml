@@ -511,9 +511,11 @@ jobs:
           BUILD_DIR: ${{ steps.cfg.outputs.source }}
         run: |
           cd "$ENGINE"   # engine Python never runs from the site checkout
-          ROBOTS_ARG=""; [ "$HOST_ROOT" = "true" ] && ROBOTS_ARG=1
+          # robots.txt is compared only when this upload carried it: a file the deploy never sent cannot
+          # have been changed by it (conyso's is on the denylist and excluded, 2026-11-18)
+          ROBOTS_ARG=""; [ "$HOST_ROOT" = "true" ] && grep -qx 'robots.txt' "${CHANGED_FILE:-/nonexistent}" 2>/dev/null && ROBOTS_ARG=1
           python -I -m engine.deploy.verify_live --site "$SITE" --sites-dir "$ENGINE/sites" \
-            --urls-file "$RUNNER_TEMP/work/verify_urls.txt" ${ROBOTS_ARG:+--robots-file "$DEPLOY_DIR/robots.txt"} \
+            --urls-file "$RUNNER_TEMP/work/verify_urls.txt" ${ROBOTS_ARG:+--robots-file "$DEPLOY_DIR/robots.txt"} --build-dir "$DEPLOY_DIR" \
             --deployed-sha "$DEPLOYED_SHA" --out "$RUNNER_TEMP/work/verify.json"
 
       - name: Decide whether the deploy failed and whether to roll back
@@ -678,7 +680,9 @@ jobs:
   rollback-build:
     # NO secrets and no app key: site code (install, build, mart_ready.py) runs only here
     needs: [settings, deploy]
-    if: needs.deploy.outputs.rollback == 'true' && needs.deploy.outputs.revert == 'success'
+    # always(): the deploy job FAILS whenever it asks for a rollback, so without it this job never ran
+    # (first conyso deploy, 2026-11-18: main was reverted but the reverted tree was never re-deployed)
+    if: always() && needs.deploy.outputs.rollback == 'true' && needs.deploy.outputs.revert == 'success'
     runs-on: ubuntu-latest
     timeout-minutes: 30
     permissions:
@@ -924,9 +928,11 @@ jobs:
           R="$RB"
           python -I -m engine.deploy.urls --site "$SITE" --sites-dir "$ENGINE/sites" --repo-root "$GITHUB_WORKSPACE" \
             --kind verify --changed "$R/restored.txt" --build-dir "$DEPLOY_DIR" > "$R/verify2_urls.txt"
-          ROBOTS_ARG=""; [ "$HOST_ROOT" = "true" ] && ROBOTS_ARG=1
+          # robots.txt is compared only when this upload carried it: a file the deploy never sent cannot
+          # have been changed by it (conyso's is on the denylist and excluded, 2026-11-18)
+          ROBOTS_ARG=""; [ "$HOST_ROOT" = "true" ] && grep -qx 'robots.txt' "${CHANGED_FILE:-/nonexistent}" 2>/dev/null && ROBOTS_ARG=1
           python -I -m engine.deploy.verify_live --site "$SITE" --sites-dir "$ENGINE/sites" \
-            --urls-file "$R/verify2_urls.txt" ${ROBOTS_ARG:+--robots-file "$DEPLOY_DIR/robots.txt"} --out "$R/verify2.json"
+            --urls-file "$R/verify2_urls.txt" ${ROBOTS_ARG:+--robots-file "$DEPLOY_DIR/robots.txt"} --build-dir "$DEPLOY_DIR" --out "$R/verify2.json"
 
       - name: Note the rollback result on the freeze issue
         if: always()
