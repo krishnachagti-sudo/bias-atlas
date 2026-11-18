@@ -470,9 +470,11 @@ jobs:
           R="$RB"
           python -I -m engine.deploy.urls --site "$SITE" --sites-dir "$ENGINE/sites" --repo-root "$GITHUB_WORKSPACE" \
             --kind verify --changed "$R/restored.txt" --build-dir "$DEPLOY_DIR" > "$R/verify_urls.txt"
-          ROBOTS_ARG=""; [ "$HOST_ROOT" = "true" ] && ROBOTS_ARG=1
+          # robots.txt is compared only when this upload carried it: a file the deploy never sent cannot
+          # have been changed by it (conyso's is on the denylist and excluded, 2026-11-18)
+          ROBOTS_ARG=""; [ "$HOST_ROOT" = "true" ] && grep -qx 'robots.txt' "${CHANGED_FILE:-/nonexistent}" 2>/dev/null && ROBOTS_ARG=1
           python -I -m engine.deploy.verify_live --site "$SITE" --sites-dir "$ENGINE/sites" \
-            --urls-file "$R/verify_urls.txt" ${ROBOTS_ARG:+--robots-file "$DEPLOY_DIR/robots.txt"}
+            --urls-file "$R/verify_urls.txt" ${ROBOTS_ARG:+--robots-file "$DEPLOY_DIR/robots.txt"} --build-dir "$DEPLOY_DIR"
 
   freeze:
     needs: [settings, revert, build, deploy]
