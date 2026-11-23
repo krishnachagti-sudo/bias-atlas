@@ -1,0 +1,118 @@
+{
+  "slug": "november-2026-outages-read-as-coordinated-attack",
+  "law": "clustering-illusion",
+  "kind": "news",
+  "status": "settled",
+  "signalOnset": "2026-11-22",
+  "detectedAt": "2026-11-23",
+  "publishedAt": "2026-11-23",
+  "updatedAt": "2026-11-23",
+  "author": {
+    "name": "Krishna Chagti",
+    "url": "https://conyso.com/founder/"
+  },
+  "title": "Why a Week of Outages Looked Like an Attack",
+  "h1": "Why a week of unrelated outages in November 2026 looked like a coordinated attack",
+  "question": "Why did a run of separate outages at the FAA, Microsoft, banks and Apple look like a coordinated attack?",
+  "answer": "Because a clump of failures in a short window looks as if it must share a cause. The causes traced so far were separate: a router during network work, software bugs, an internal update and maintenance. Officials said the FAA stop was not a cyber-attack. Reading purpose into a chance clump is the clustering illusion.",
+  "event": {
+    "name": "A run of outages after the FAA's nationwide ground stop, November 2026",
+    "date": "2026-11-13"
+  },
+  "artefact": {
+    "text": "The Guardian's analysis of 22 November goes through the outages one by one, gives each its traced cause, and reports how the public read the run.",
+    "url": "https://www.theguardian.com/technology/2026/nov/22/hacks-ai-internet-outages-airlines-banks-microsoft-apple",
+    "label": "Read the Guardian's analysis"
+  },
+  "timeline": [
+    {
+      "date": "2026-11-13",
+      "text": "The FAA issues a nationwide ground stop for all US airports. Transportation Secretary Sean Duffy says a router being replaced in the switch from copper to fibre started flooding other routers in the air traffic control system.",
+      "source": 1
+    },
+    {
+      "date": "2026-11-14",
+      "text": "At a press conference Duffy and FAA Administrator Bryan Bedford say the issue was not the result of a cyber-attack. Homeland Security Secretary Markwayne Mullin says there is no indication of a nefarious attack.",
+      "source": 1
+    },
+    {
+      "date": "2026-11-22",
+      "text": "The Guardian reports that within days of the ground stop, big US banks, Apple and the National Security Agency were also hit by technical glitches, and that the run appears on closer examination to be more a string of coincidences than anything else.",
+      "source": 0
+    }
+  ],
+  "mechanism": [
+    {
+      "h": "Separate failures land close together",
+      "text": "On the Guardian's account each outage had its own cause: a newly replaced router in El Dorado, Arkansas, a Microsoft software bug left in place by a July upgrade, a software bug at JP Morgan Chase, an internal update at Apple, and routine maintenance that went wrong at the NSA."
+    },
+    {
+      "h": "The clump looks like a series",
+      "text": "Large systems fail all the time, and independent failures do not space themselves out evenly. Several arriving inside one week is the kind of bunching chance produces, but seen together in the headlines it reads as one story with one author."
+    },
+    {
+      "h": "A cause is supplied for the clump",
+      "text": "The cause people reached for was a coordinated cyber-attack. Stephan Lewandowsky, a cognitive psychologist at the University of Bristol, told the Guardian that the clustering of events such as multiple outages can be perceived as purposeful coordination rather than chance. That is the error the entry describes: treating the clump itself as evidence of a cause."
+    },
+    {
+      "h": "Gaps in information get filled",
+      "text": "The Guardian reports that social media filled the gaps where organisations could not supply information at once, and that analysts at Mizuho Bank linked a rise in emergency-prep buying at Costco to consumer anxiety after the outages. Lewandowsky's suggested remedy was transparent and accurate communication from governments."
+    }
+  ],
+  "limits": [
+    "The clump is not pure chance. The Guardian reports that software companies have been patching at double the pace because of bugs found by AI, and that the NSA told Congress its outage came from quick fixes to systems flagged as vulnerable by AI. Some outages may share that driver, though it is not the coordinated attack people suspected.",
+    "Suspecting an attack is not unreasonable in itself. The same article notes real disruption by state and criminal actors, from Russia targeting undersea cables to the attack on Jaguar Land Rover. The pattern the entry names is reading the clump as the proof, not the suspicion.",
+    "The evidence on how the public read the outages is reporting: interviews, social media posts, an analyst note and one expert's comment. No survey here measures how many people believed it was an attack.",
+    "The lab evidence for the clustering illusion is about streaks in sequences, and the Atlas rates it replicated, with modern effect sizes smaller than the classic figures. Applying it to a week of news is our reading, not something those studies tested.",
+    "The sources disagree on a date. The Guardian says the incident began on Thursday 12 November. FedScoop, published on Friday 13 November, says the ground stop came on Friday. This page follows FedScoop."
+  ],
+  "faqs": [
+    {
+      "q": "Were the November 2026 outages a cyber-attack?",
+      "a": "Officials said the FAA ground stop was not. Duffy and Bedford said it was not the result of a cyber-attack. The Guardian traces the Microsoft, JP Morgan Chase, Apple and NSA outages to a software bug, an internal update and maintenance, not to an attack."
+    },
+    {
+      "q": "Why do separate failures feel connected when they come close together?",
+      "a": "Chance produces clumps more often than people expect, and a clump looks like it needs an explanation. The clustering illusion is the habit of treating that bunching as a sign of a hidden cause."
+    },
+    {
+      "q": "Does this mean a run of failures never has a common cause?",
+      "a": "No. Sometimes it does, and here faster patching driven by AI-found bugs may link some of them. The point is to check each failure's own cause before deciding that the run itself proves a plan."
+    }
+  ],
+  "predictions": [
+    {
+      "text": "By 31 May 2027 no official investigation will attribute the FAA's 13 November ground stop to a cyber-attack. This is wrong if the FAA, the Department of Transportation or another federal body publishes a finding that an attack caused it.",
+      "checkBy": "2027-05-31",
+      "status": "open"
+    }
+  ],
+  "actions": [
+    "Before treating a run of failures as one story, look for each failure's own published cause.",
+    "Ask how many outages of this size happen in an ordinary month, so a busy week has something to be compared with.",
+    "Wait for the first official cause before sharing a theory that links the events."
+  ],
+  "whyItMatters": "A run of outages invites one big explanation, and the explanation spreads faster than the separate, dull causes do. The clustering illusion is why the clump itself feels like evidence. Knowing that does not rule out a real attack, but it puts the burden where it belongs: on a cause that is found, not on the timing.",
+  "sources": [
+    {
+      "text": "Dan Milmo, Gaya Gupta and Aisha Down, \"Hacks, AI and conspiracy theories: why are we having so many outages?\", The Guardian, 22 Nov 2026",
+      "url": "https://www.theguardian.com/technology/2026/nov/22/hacks-ai-internet-outages-airlines-banks-microsoft-apple",
+      "checked": "2026-11-23",
+      "supports": "the outages at Microsoft, JP Morgan Chase, Apple and the NSA and their traced causes, the El Dorado router, 'more a string of coincidences than anything else', Lewandowsky's comment on clustering, social media filling gaps, the Mizuho note on emergency-prep buying, faster patching driven by AI-found bugs, the NSA's account to Congress, real attacks by state and criminal actors, and the 12 November start date"
+    },
+    {
+      "text": "\"FAA nationwide ground stop\", FedScoop, 13 Nov 2026, updated 16 Nov 2026",
+      "url": "https://fedscoop.com/faa-nationwide-ground-stop-tech-telecommunications-issue/",
+      "checked": "2026-11-23",
+      "supports": "the Friday nationwide ground stop, Duffy's account of the router being replaced in the switch from copper to fibre, the statements by Duffy and Bedford that it was not a cyber-attack, and Mullin's 'no indication of a nefarious attack'"
+    }
+  ],
+  "publisher": "The Bias Atlas is an independent, sourced reference of named biases and effects, written by Krishna Chagti. No ads, no account, nothing for sale on this page.",
+  "headings": {
+    "what": "What happened in the week of outages?",
+    "how": "How does a clump of failures come to look like a plan?",
+    "calc": "How big was it?",
+    "limits": "Where does this reading stop?",
+    "faq": "What else are people asking?"
+  }
+}
