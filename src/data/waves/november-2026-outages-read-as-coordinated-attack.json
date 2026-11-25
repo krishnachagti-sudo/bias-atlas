@@ -114,5 +114,11 @@
     "calc": "How big was it?",
     "limits": "Where does this reading stop?",
     "faq": "What else are people asking?"
+  },
+  "image": {
+    "alt": "Engraving of a Victorian gentleman bending over a table of randomly scattered white beans, peering through a magnifying glass as he draws a red chalk circle around a few that happen to lie bunched together",
+    "caption": "Circling a chance clump",
+    "width": 1400,
+    "height": 788
   }
 }
